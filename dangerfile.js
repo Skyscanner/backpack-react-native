@@ -23,7 +23,7 @@
 import fs from 'fs';
 import { includes } from 'lodash';
 import { danger, fail, warn, message } from 'danger';
-import { props as iosProps } from './packages/bpk-tokens/tokens/base.raw.ios.json';
+import { props as iosProps } from './native/node_modules/bpk-tokens/tokens/base.raw.ios.json';
 
 import * as meta from './meta.json';
 
