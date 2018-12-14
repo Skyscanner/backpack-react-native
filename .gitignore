@@ -1,8 +1,8 @@
 .DS_Store
 .vscode
 lerna-debug.log
-/android/captures
-native/ios/Pods
+android/captures
+ios/Pods
 
 build/
 
