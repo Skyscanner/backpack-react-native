@@ -19,7 +19,7 @@
     "lint:js:fix": "eslint . --ext .js,.jsx --fix",
     "lint": "npm run lint:js",
     "jest:native:update": "jest --updateSnapshot",
-    "jest:native:watch": "jest --watch)",
+    "jest:native:watch": "jest --watch",
     "flow": "flow",
     "flow-typed": "flow-typed",
     "check-bpk-dependencies": "node scripts/npm/check-bpk-dependencies.js",
