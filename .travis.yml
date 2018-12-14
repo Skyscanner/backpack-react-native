@@ -15,10 +15,9 @@ script:
   - #npm run danger
   - npm test
 
-cache:
-  directories:
-    - node_modules
-    - native/node_modules
+#cache:
+  #directories:
+    #- node_modules
 
 branches:
   only:
