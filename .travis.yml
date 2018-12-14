@@ -7,11 +7,11 @@ env:
 
 install:
   - npm install
-  - npm run build
+  - npm run link
 
 script:
   - set -e
-  - ./scripts/check-pristine-state package-lock.json native/ios/native.xcodeproj/project.pbxproj native/ios/native/Info.plist
+  - ./scripts/check-pristine-state package-lock.json ios/native.xcodeproj/project.pbxproj ios/native/Info.plist
   - #npm run danger
   - npm test
 

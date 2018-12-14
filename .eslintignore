@@ -1,8 +1,3 @@
 node_modules
 flow-typed
-dist
 coverage
-/packages/bpk-stylesheets/base.js
-/packages/bpk-component-icon/*/
-!/packages/bpk-component-icon/src
-/packages/bpk-tokens/tokens

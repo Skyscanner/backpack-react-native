@@ -36,7 +36,7 @@ exports[`iOS BpkNavigationBarBackButtonIOS should render correctly 1`] = `
   <Image
     source={
       Object {
-        "testUri": "../../../native/packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
+        "testUri": "../../../packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
       }
     }
     style={
@@ -89,7 +89,7 @@ exports[`iOS BpkNavigationBarBackButtonIOS should render correctly with title 1`
   <Image
     source={
       Object {
-        "testUri": "../../../native/packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
+        "testUri": "../../../packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
       }
     }
     style={

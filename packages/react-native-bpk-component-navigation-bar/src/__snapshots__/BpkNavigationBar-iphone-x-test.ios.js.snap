@@ -73,7 +73,7 @@ exports[`ios - iPhone X  BpkNavigationBar should render correctly 1`] = `
       <Image
         source={
           Object {
-            "testUri": "../../../native/packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
+            "testUri": "../../../packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
           }
         }
         style={
