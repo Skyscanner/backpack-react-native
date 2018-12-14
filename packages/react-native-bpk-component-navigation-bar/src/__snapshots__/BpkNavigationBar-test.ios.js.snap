@@ -70,7 +70,7 @@ exports[`ios BpkNavigationBar should render correctly 1`] = `
       <Image
         source={
           Object {
-            "testUri": "../../../native/packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
+            "testUri": "../../../packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
           }
         }
         style={
@@ -243,7 +243,7 @@ exports[`ios BpkNavigationBar should render correctly with a subtitle view 1`] =
       <Image
         source={
           Object {
-            "testUri": "../../../native/packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
+            "testUri": "../../../packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
           }
         }
         style={
@@ -424,7 +424,7 @@ exports[`ios BpkNavigationBar should render correctly with a title view 1`] = `
       <Image
         source={
           Object {
-            "testUri": "../../../native/packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
+            "testUri": "../../../packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
           }
         }
         style={
@@ -563,7 +563,7 @@ exports[`ios BpkNavigationBar should render correctly with an icon in the title 
       <Image
         source={
           Object {
-            "testUri": "../../../native/packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
+            "testUri": "../../../packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
           }
         }
         style={
@@ -766,7 +766,7 @@ exports[`ios BpkNavigationBar should render correctly with custom style 1`] = `
       <Image
         source={
           Object {
-            "testUri": "../../../native/packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
+            "testUri": "../../../packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
           }
         }
         style={
