@@ -11,10 +11,9 @@
     "postinstall": "npm run bootstrap",
     "bootstrap": "lerna bootstrap --no-ci",
     "lerna": "lerna",
-    "clean:dist": "rm -rf dist",
     "clean:lerna": "lerna clean --yes",
     "clean:node_modules": "rm -rf node_modules",
-    "clean": "npm run clean:dist && npm run clean:lerna && npm run clean:node_modules",
+    "clean": "npm run clean:lerna && npm run clean:node_modules",
     "lint:js": "eslint . --ext .js,.jsx",
     "lint:js:fix": "eslint . --ext .js,.jsx --fix",
     "lint": "npm run lint:js",
@@ -31,14 +30,14 @@
     "danger": "danger ci",
     "prettier": "prettier --config .prettierrc --write \"**/*.js\"",
     "create-component": "node scripts/npm/create-component.js",
-    "build": "react-native link",
+    "link": "react-native link",
     "start": "react-native start",
     "ios": "react-native run-ios --simulator=\"iPhone 8\"",
     "android:emulator": "$ANDROID_SDK_ROOT/emulator/emulator -avd bpk-avd",
     "android:emulator:min": "$ANDROID_SDK_ROOT/emulator/emulator -avd bpk-avd-min",
     "android:build": "react-native run-android",
     "android": "npm run android:emulator & npm run android:build",
-    "storybook": "storybook start -p 7007 --root ../"
+    "storybook": "storybook start -p 7007 --root ."
   },
   "rnpm": {
     "assets": [
