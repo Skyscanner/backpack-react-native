@@ -24,6 +24,12 @@
     }
   },
   "rules": {
+    "backpack/use-tokens": [
+      "error",
+      {
+        "platform": "native"
+      }
+    ],
     "prettier/prettier": "error",
     "react/jsx-filename-extension": "off",
     "import/no-extraneous-dependencies": "off",
