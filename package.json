@@ -25,7 +25,6 @@
     "check-bpk-dependencies": "node scripts/npm/check-bpk-dependencies.js",
     "fix-bpk-dependencies": "node scripts/npm/check-bpk-dependencies.js --fix",
     "test": "npm run lint && npm run check-bpk-dependencies && jest --coverage && npm run flow",
-    "test:native": "./subshell ./native npm test -- --forceExit",
     "check-owners": "npm whoami && ( node scripts/npm/get-owners.js | grep -E $(npm whoami) ) && node scripts/npm/check-owners.js",
     "publish": "npm run check-owners && npm run build && git pull --rebase && npm run flow stop && npm run test && lerna publish",
     "release": "npm run publish",
@@ -39,7 +38,7 @@
     "android:emulator:min": "$ANDROID_SDK_ROOT/emulator/emulator -avd bpk-avd-min",
     "android:build": "react-native run-android",
     "android": "npm run android:emulator & npm run android:build",
-    "storybook": "(cd native && storybook start -p 7007 --root ../)"
+    "storybook": "storybook start -p 7007 --root ../"
   },
   "rnpm": {
     "assets": [
