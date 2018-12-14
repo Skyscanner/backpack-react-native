@@ -14,10 +14,6 @@ script:
   - ./scripts/check-pristine-state package-lock.json native/ios/native.xcodeproj/project.pbxproj native/ios/native/Info.plist
   - npm run danger
   - npm test
-  - npm run docs:dist
-  - if [ "$TRAVIS_BRANCH" == 'master' ] && [ "$TRAVIS_PULL_REQUEST" == 'false' ]; then npm run storybook:dist; fi
-  - test -e dist/index.html
-  - test -e dist/sassdoc/index.html
 
 cache:
   directories:
