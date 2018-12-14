@@ -53,19 +53,19 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = native/main.m; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* Backpack Native-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Backpack Native-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* Backpack Native-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Backpack Native-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		349CF328083441A0845E0C8D /* BpkIcon.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = BpkIcon.ttf; path = "../node_modules/bpk-svgs/dist/font/BpkIcon.ttf"; sourceTree = "<group>"; };
-		3CA50A36B56148BD95AF98C2 /* iconMapping.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = iconMapping.json; path = "../node_modules/bpk-svgs/dist/font/iconMapping.json"; sourceTree = "<group>"; };
+		349CF328083441A0845E0C8D /* BpkIcon.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = BpkIcon.ttf; path = "../../node_modules/bpk-svgs/dist/font/BpkIcon.ttf"; sourceTree = "<group>"; };
+		3CA50A36B56148BD95AF98C2 /* iconMapping.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = iconMapping.json; path = "../../node_modules/bpk-svgs/dist/font/iconMapping.json"; sourceTree = "<group>"; };
 		6B59545B47D6FA3C28AB6F8B /* Pods-Backpack Native.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backpack Native.release.xcconfig"; path = "Pods/Target Support Files/Pods-Backpack Native/Pods-Backpack Native.release.xcconfig"; sourceTree = "<group>"; };
-		8C8F437769B54A038A210159 /* BpkIcon.eot */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = BpkIcon.eot; path = "../node_modules/bpk-svgs/dist/font/BpkIcon.eot"; sourceTree = "<group>"; };
+		8C8F437769B54A038A210159 /* BpkIcon.eot */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = BpkIcon.eot; path = "../../node_modules/bpk-svgs/dist/font/BpkIcon.eot"; sourceTree = "<group>"; };
 		ABDC175C9DB0F0B9CBD71B51 /* libPods-Backpack Native.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Backpack Native.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3896E08C3804FF089E1E50B /* libRCTRestart.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTRestart.a; sourceTree = "<group>"; };
 		D60ACAA41FD8532E009E5946 /* he-IL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "he-IL"; path = "he-IL.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		D66FC4872109D8610063B1A6 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D66FC48F2109DA3C0063B1A6 /* StorybookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorybookViewController.h; sourceTree = "<group>"; };
 		D66FC4902109DA3C0063B1A6 /* StorybookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = StorybookViewController.m; sourceTree = "<group>"; tabWidth = 4; };
-		E436C94A65D1410092B05450 /* BpkIcon.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = BpkIcon.woff; path = "../node_modules/bpk-svgs/dist/font/BpkIcon.woff"; sourceTree = "<group>"; };
+		E436C94A65D1410092B05450 /* BpkIcon.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = BpkIcon.woff; path = "../../node_modules/bpk-svgs/dist/font/BpkIcon.woff"; sourceTree = "<group>"; };
 		FBB4289347D8862ADA374625 /* Pods-Backpack Native.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backpack Native.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Backpack Native/Pods-Backpack Native.debug.xcconfig"; sourceTree = "<group>"; };
-		83C39DAE966144799B2F2FB7 /* BpkIconIOS.ttf */ = {isa = PBXFileReference; name = "BpkIconIOS.ttf"; path = "../node_modules/bpk-svgs/dist/font/BpkIconIOS.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		83C39DAE966144799B2F2FB7 /* BpkIconIOS.ttf */ = {isa = PBXFileReference; name = "BpkIconIOS.ttf"; path = "../../node_modules/bpk-svgs/dist/font/BpkIconIOS.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -380,7 +380,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
 		15D87A37959EDA41EF13445E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -412,7 +412,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
 /* End PBXShellScriptBuildPhase section */
 
