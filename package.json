@@ -8,7 +8,8 @@
   },
   "scripts": {
     "preinstall": "npx ensure-node-env",
-    "postinstall": "npm run bootstrap",
+    "postinstall": "npm run bootstrap && npm run link",
+    "install:cocoapods": "(cd ios && bundle install && bundle exec pod install)",
     "bootstrap": "lerna bootstrap --no-ci",
     "lerna": "lerna",
     "clean:lerna": "lerna clean --yes",
@@ -30,13 +31,12 @@
     "prettier": "prettier --config .prettierrc --write \"**/*.js\"",
     "create-component": "node scripts/npm/create-component.js",
     "link": "react-native link",
-    "start": "react-native start",
-    "ios": "react-native run-ios --simulator=\"iPhone 8\"",
+    "ios": "npm run install:cocoapods && react-native run-ios --simulator=\"iPhone 8\"",
     "android:emulator": "$ANDROID_SDK_ROOT/emulator/emulator -avd bpk-avd",
     "android:emulator:min": "$ANDROID_SDK_ROOT/emulator/emulator -avd bpk-avd-min",
     "android:build": "react-native run-android",
     "android": "npm run android:emulator & npm run android:build",
-    "storybook": "storybook start -p 7007 --root ."
+    "start": "storybook start -p 7007 --root ."
   },
   "rnpm": {
     "assets": [
