@@ -88,6 +88,8 @@ configure(() => {
 
 const StorybookUI = getStorybookUI({ onDeviceUI: true });
 
+// AppRegistry.registerComponent('native', () => StorybookUI);
+
 onChannelAvailable(enableRtlFromUi, hideWarnings);
 
 export default StorybookUI;
