@@ -17,7 +17,6 @@
  */
 
 import { AppRegistry } from 'react-native';
+import Storybook from './storybook';
 
-import App from './app/index';
-
-AppRegistry.registerComponent('native', () => App);
+AppRegistry.registerComponent('native', () => Storybook);

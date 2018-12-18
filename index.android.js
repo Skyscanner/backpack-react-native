@@ -17,7 +17,16 @@
  */
 
 import { AppRegistry } from 'react-native';
+import Storybook from './storybook';
 
-import App from './app/index';
+// https://github.com/facebook/react-native/issues/15902
+// Symbol polyfills
+global.Symbol = require('core-js/es6/symbol');
+require('core-js/fn/symbol/iterator');
 
-AppRegistry.registerComponent('native', () => App);
+// Collection fn polyfills
+require('core-js/fn/map');
+require('core-js/fn/set');
+require('core-js/fn/array/find');
+
+AppRegistry.registerComponent('native', () => Storybook);

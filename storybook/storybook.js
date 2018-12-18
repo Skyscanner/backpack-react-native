@@ -17,7 +17,7 @@
  */
 
 import addon from '@storybook/addons';
-import { I18nManager, AppRegistry, YellowBox } from 'react-native';
+import { I18nManager, YellowBox } from 'react-native';
 import { getStorybookUI, configure } from '@storybook/react-native';
 
 import { RTL_EVENT, CHANNEL_POLL_INTERVAL } from './constants';
@@ -88,7 +88,7 @@ configure(() => {
 
 const StorybookUI = getStorybookUI({ onDeviceUI: true });
 
-AppRegistry.registerComponent('native', () => StorybookUI);
+// AppRegistry.registerComponent('native', () => StorybookUI);
 
 onChannelAvailable(enableRtlFromUi, hideWarnings);
 
