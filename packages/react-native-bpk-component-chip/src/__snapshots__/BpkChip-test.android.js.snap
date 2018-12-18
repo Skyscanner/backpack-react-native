@@ -13,12 +13,8 @@ exports[`Android BpkChip should render correctly 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityLabel="Accessibility label"
-    accessibilityTraits={undefined}
     accessible={true}
-    hasTVPreferredFocus={undefined}
-    hitSlop={undefined}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -26,7 +22,6 @@ exports[`Android BpkChip should render correctly 1`] = `
         "type": "ThemeAttrAndroid",
       }
     }
-    onLayout={undefined}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -46,12 +41,8 @@ exports[`Android BpkChip should render correctly 1`] = `
         },
       ]
     }
-    testID={undefined}
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -90,12 +81,8 @@ exports[`Android BpkChip should render correctly with "disabled" 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityLabel="Accessibility label"
-    accessibilityTraits={undefined}
     accessible={true}
-    hasTVPreferredFocus={undefined}
-    hitSlop={undefined}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -103,7 +90,6 @@ exports[`Android BpkChip should render correctly with "disabled" 1`] = `
         "type": "ThemeAttrAndroid",
       }
     }
-    onLayout={undefined}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -126,12 +112,8 @@ exports[`Android BpkChip should render correctly with "disabled" 1`] = `
         },
       ]
     }
-    testID={undefined}
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -173,12 +155,8 @@ exports[`Android BpkChip should render correctly with "selected" 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityLabel="Accessibility label"
-    accessibilityTraits={undefined}
     accessible={true}
-    hasTVPreferredFocus={undefined}
-    hitSlop={undefined}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -186,7 +164,6 @@ exports[`Android BpkChip should render correctly with "selected" 1`] = `
         "type": "ThemeAttrAndroid",
       }
     }
-    onLayout={undefined}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -209,12 +186,8 @@ exports[`Android BpkChip should render correctly with "selected" 1`] = `
         },
       ]
     }
-    testID={undefined}
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -256,12 +229,8 @@ exports[`Android BpkChip should render correctly with arbitrary props 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityLabel="Accessibility label"
-    accessibilityTraits={undefined}
     accessible={true}
-    hasTVPreferredFocus={undefined}
-    hitSlop={undefined}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -269,7 +238,6 @@ exports[`Android BpkChip should render correctly with arbitrary props 1`] = `
         "type": "ThemeAttrAndroid",
       }
     }
-    onLayout={undefined}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -292,9 +260,6 @@ exports[`Android BpkChip should render correctly with arbitrary props 1`] = `
     testID="123"
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -335,12 +300,8 @@ exports[`Android BpkChip should render correctly with custom style 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityLabel="Accessibility label"
-    accessibilityTraits={undefined}
     accessible={true}
-    hasTVPreferredFocus={undefined}
-    hitSlop={undefined}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -348,7 +309,6 @@ exports[`Android BpkChip should render correctly with custom style 1`] = `
         "type": "ThemeAttrAndroid",
       }
     }
-    onLayout={undefined}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -368,12 +328,8 @@ exports[`Android BpkChip should render correctly with custom style 1`] = `
         },
       ]
     }
-    testID={undefined}
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {

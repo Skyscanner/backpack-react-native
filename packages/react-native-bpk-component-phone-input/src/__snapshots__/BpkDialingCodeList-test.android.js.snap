@@ -28,7 +28,6 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
   getItemCount={[Function]}
   horizontal={false}
   initialNumToRender={10}
-  invertStickyHeaders={undefined}
   keyExtractor={[Function]}
   maxToRenderPerBatch={10}
   numColumns={1}
@@ -60,9 +59,6 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
           ]
         }
         accessible={true}
-        hitSlop={undefined}
-        nativeID={undefined}
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -80,7 +76,6 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
             "paddingVertical": 8,
           }
         }
-        testID={undefined}
       >
         <View
           style={
@@ -113,17 +108,14 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
             }
           />
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Array [
                 Object {
                   "color": "rgb(82, 76, 97)",
-                  "fontFamily": "System",
+                  "fontFamily": "sans-serif",
                   "fontSize": 16,
                   "fontWeight": "400",
-                  "letterSpacing": 0.12,
+                  "letterSpacing": -0.2,
                 },
                 Object {},
                 Array [
@@ -139,9 +131,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
           </Text>
         </View>
         <Text
-          accessible={true}
           allowFontScaling={false}
-          ellipsizeMode="tail"
           style={
             Array [
               Object {
@@ -205,9 +195,6 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
           ]
         }
         accessible={true}
-        hitSlop={undefined}
-        nativeID={undefined}
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -225,7 +212,6 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
             "paddingVertical": 8,
           }
         }
-        testID={undefined}
       >
         <View
           style={
@@ -258,17 +244,14 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
             }
           />
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Array [
                 Object {
                   "color": "rgb(82, 76, 97)",
-                  "fontFamily": "System",
+                  "fontFamily": "sans-serif",
                   "fontSize": 16,
                   "fontWeight": "400",
-                  "letterSpacing": 0.12,
+                  "letterSpacing": -0.2,
                 },
                 Object {},
                 Array [
@@ -284,9 +267,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
           </Text>
         </View>
         <Text
-          accessible={true}
           allowFontScaling={false}
-          ellipsizeMode="tail"
           style={
             Array [
               Object {
@@ -350,9 +331,6 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
           ]
         }
         accessible={true}
-        hitSlop={undefined}
-        nativeID={undefined}
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -370,7 +348,6 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
             "paddingVertical": 8,
           }
         }
-        testID={undefined}
       >
         <View
           style={
@@ -403,17 +380,14 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
             }
           />
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Array [
                 Object {
                   "color": "rgb(82, 76, 97)",
-                  "fontFamily": "System",
+                  "fontFamily": "sans-serif",
                   "fontSize": 16,
                   "fontWeight": "400",
-                  "letterSpacing": 0.12,
+                  "letterSpacing": -0.2,
                 },
                 Object {},
                 Array [
@@ -429,9 +403,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
           </Text>
         </View>
         <Text
-          accessible={true}
           allowFontScaling={false}
-          ellipsizeMode="tail"
           style={
             Array [
               Object {
@@ -504,7 +476,6 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
   getItemCount={[Function]}
   horizontal={false}
   initialNumToRender={10}
-  invertStickyHeaders={undefined}
   keyExtractor={[Function]}
   maxToRenderPerBatch={10}
   numColumns={1}
@@ -536,9 +507,6 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
           ]
         }
         accessible={true}
-        hitSlop={undefined}
-        nativeID={undefined}
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -556,7 +524,6 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
             "paddingVertical": 8,
           }
         }
-        testID={undefined}
       >
         <View
           style={
@@ -589,17 +556,14 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
             }
           />
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Array [
                 Object {
                   "color": "rgb(82, 76, 97)",
-                  "fontFamily": "System",
+                  "fontFamily": "sans-serif",
                   "fontSize": 16,
                   "fontWeight": "400",
-                  "letterSpacing": 0.12,
+                  "letterSpacing": -0.2,
                 },
                 Object {},
                 Array [
@@ -617,9 +581,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
           </Text>
         </View>
         <Text
-          accessible={true}
           allowFontScaling={false}
-          ellipsizeMode="tail"
           style={
             Array [
               Object {
@@ -686,9 +648,6 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
           ]
         }
         accessible={true}
-        hitSlop={undefined}
-        nativeID={undefined}
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -706,7 +665,6 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
             "paddingVertical": 8,
           }
         }
-        testID={undefined}
       >
         <View
           style={
@@ -739,17 +697,14 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
             }
           />
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Array [
                 Object {
                   "color": "rgb(82, 76, 97)",
-                  "fontFamily": "System",
+                  "fontFamily": "sans-serif",
                   "fontSize": 16,
                   "fontWeight": "400",
-                  "letterSpacing": 0.12,
+                  "letterSpacing": -0.2,
                 },
                 Object {},
                 Array [
@@ -765,9 +720,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
           </Text>
         </View>
         <Text
-          accessible={true}
           allowFontScaling={false}
-          ellipsizeMode="tail"
           style={
             Array [
               Object {
@@ -831,9 +784,6 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
           ]
         }
         accessible={true}
-        hitSlop={undefined}
-        nativeID={undefined}
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -851,7 +801,6 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
             "paddingVertical": 8,
           }
         }
-        testID={undefined}
       >
         <View
           style={
@@ -884,17 +833,14 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
             }
           />
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Array [
                 Object {
                   "color": "rgb(82, 76, 97)",
-                  "fontFamily": "System",
+                  "fontFamily": "sans-serif",
                   "fontSize": 16,
                   "fontWeight": "400",
-                  "letterSpacing": 0.12,
+                  "letterSpacing": -0.2,
                 },
                 Object {},
                 Array [
@@ -910,9 +856,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
           </Text>
         </View>
         <Text
-          accessible={true}
           allowFontScaling={false}
-          ellipsizeMode="tail"
           style={
             Array [
               Object {

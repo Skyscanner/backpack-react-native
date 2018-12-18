@@ -4,11 +4,7 @@ exports[`iOS BpkCard should render correctly 1`] = `
 <View
   accessibilityComponentType="button"
   accessibilityLabel="Example Card"
-  accessibilityTraits={undefined}
   accessible={true}
-  hitSlop={undefined}
-  nativeID={undefined}
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -33,7 +29,6 @@ exports[`iOS BpkCard should render correctly 1`] = `
       },
     ]
   }
-  testID={undefined}
 >
   <View
     style={
@@ -45,9 +40,6 @@ exports[`iOS BpkCard should render correctly 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -90,11 +82,7 @@ exports[`iOS BpkCard should render correctly when "cornerStyle=large" 1`] = `
 <View
   accessibilityComponentType="button"
   accessibilityLabel="Example Card"
-  accessibilityTraits={undefined}
   accessible={true}
-  hitSlop={undefined}
-  nativeID={undefined}
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -122,7 +110,6 @@ exports[`iOS BpkCard should render correctly when "cornerStyle=large" 1`] = `
       },
     ]
   }
-  testID={undefined}
 >
   <View
     style={
@@ -134,9 +121,6 @@ exports[`iOS BpkCard should render correctly when "cornerStyle=large" 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -179,11 +163,7 @@ exports[`iOS BpkCard should render correctly with arbitrary props 1`] = `
 <View
   accessibilityComponentType="button"
   accessibilityLabel="Example Card"
-  accessibilityTraits={undefined}
   accessible={true}
-  hitSlop={undefined}
-  nativeID={undefined}
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -220,9 +200,6 @@ exports[`iOS BpkCard should render correctly with arbitrary props 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -265,11 +242,7 @@ exports[`iOS BpkCard should render correctly with custom inner style 1`] = `
 <View
   accessibilityComponentType="button"
   accessibilityLabel="Example Card"
-  accessibilityTraits={undefined}
   accessible={true}
-  hitSlop={undefined}
-  nativeID={undefined}
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -294,7 +267,6 @@ exports[`iOS BpkCard should render correctly with custom inner style 1`] = `
       },
     ]
   }
-  testID={undefined}
 >
   <View
     style={
@@ -309,9 +281,6 @@ exports[`iOS BpkCard should render correctly with custom inner style 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -354,11 +323,7 @@ exports[`iOS BpkCard should render correctly with custom style 1`] = `
 <View
   accessibilityComponentType="button"
   accessibilityLabel="Example Card"
-  accessibilityTraits={undefined}
   accessible={true}
-  hitSlop={undefined}
-  nativeID={undefined}
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -386,7 +351,6 @@ exports[`iOS BpkCard should render correctly with custom style 1`] = `
       },
     ]
   }
-  testID={undefined}
 >
   <View
     style={
@@ -398,9 +362,6 @@ exports[`iOS BpkCard should render correctly with custom style 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -443,11 +404,7 @@ exports[`iOS BpkCard should render correctly with the "focused" state 1`] = `
 <View
   accessibilityComponentType="button"
   accessibilityLabel="Example Card"
-  accessibilityTraits={undefined}
   accessible={true}
-  hitSlop={undefined}
-  nativeID={undefined}
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -481,7 +438,6 @@ exports[`iOS BpkCard should render correctly with the "focused" state 1`] = `
       },
     ]
   }
-  testID={undefined}
 >
   <View
     style={
@@ -493,9 +449,6 @@ exports[`iOS BpkCard should render correctly with the "focused" state 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -538,11 +491,7 @@ exports[`iOS BpkCard should render correctly without padding 1`] = `
 <View
   accessibilityComponentType="button"
   accessibilityLabel="Example Card"
-  accessibilityTraits={undefined}
   accessible={true}
-  hitSlop={undefined}
-  nativeID={undefined}
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -564,7 +513,6 @@ exports[`iOS BpkCard should render correctly without padding 1`] = `
       },
     ]
   }
-  testID={undefined}
 >
   <View
     style={
@@ -576,9 +524,6 @@ exports[`iOS BpkCard should render correctly without padding 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {

@@ -13,12 +13,8 @@ exports[`Android BpkCard should render correctly 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityLabel="Example Card"
-    accessibilityTraits={undefined}
     accessible={true}
-    hasTVPreferredFocus={undefined}
-    hitSlop={undefined}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -26,7 +22,6 @@ exports[`Android BpkCard should render correctly 1`] = `
         "type": "ThemeAttrAndroid",
       }
     }
-    onLayout={undefined}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -40,12 +35,8 @@ exports[`Android BpkCard should render correctly 1`] = `
         },
       ]
     }
-    testID={undefined}
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -81,12 +72,8 @@ exports[`Android BpkCard should render correctly when "cornerStyle=large" 1`] = 
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityLabel="Example Card"
-    accessibilityTraits={undefined}
     accessible={true}
-    hasTVPreferredFocus={undefined}
-    hitSlop={undefined}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -94,7 +81,6 @@ exports[`Android BpkCard should render correctly when "cornerStyle=large" 1`] = 
         "type": "ThemeAttrAndroid",
       }
     }
-    onLayout={undefined}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -108,12 +94,8 @@ exports[`Android BpkCard should render correctly when "cornerStyle=large" 1`] = 
         },
       ]
     }
-    testID={undefined}
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -146,12 +128,8 @@ exports[`Android BpkCard should render correctly with arbitrary props 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityLabel="Example Card"
-    accessibilityTraits={undefined}
     accessible={true}
-    hasTVPreferredFocus={undefined}
-    hitSlop={undefined}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -159,7 +137,6 @@ exports[`Android BpkCard should render correctly with arbitrary props 1`] = `
         "type": "ThemeAttrAndroid",
       }
     }
-    onLayout={undefined}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -176,9 +153,6 @@ exports[`Android BpkCard should render correctly with arbitrary props 1`] = `
     testID="arbitrary value"
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -211,12 +185,8 @@ exports[`Android BpkCard should render correctly with custom inner style 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityLabel="Example Card"
-    accessibilityTraits={undefined}
     accessible={true}
-    hasTVPreferredFocus={undefined}
-    hitSlop={undefined}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -224,7 +194,6 @@ exports[`Android BpkCard should render correctly with custom inner style 1`] = `
         "type": "ThemeAttrAndroid",
       }
     }
-    onLayout={undefined}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -241,12 +210,8 @@ exports[`Android BpkCard should render correctly with custom inner style 1`] = `
         },
       ]
     }
-    testID={undefined}
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -282,12 +247,8 @@ exports[`Android BpkCard should render correctly with custom style 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityLabel="Example Card"
-    accessibilityTraits={undefined}
     accessible={true}
-    hasTVPreferredFocus={undefined}
-    hitSlop={undefined}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -295,7 +256,6 @@ exports[`Android BpkCard should render correctly with custom style 1`] = `
         "type": "ThemeAttrAndroid",
       }
     }
-    onLayout={undefined}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -309,12 +269,8 @@ exports[`Android BpkCard should render correctly with custom style 1`] = `
         },
       ]
     }
-    testID={undefined}
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -350,12 +306,8 @@ exports[`Android BpkCard should render correctly with the "focused" state 1`] = 
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityLabel="Example Card"
-    accessibilityTraits={undefined}
     accessible={true}
-    hasTVPreferredFocus={undefined}
-    hitSlop={undefined}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -363,7 +315,6 @@ exports[`Android BpkCard should render correctly with the "focused" state 1`] = 
         "type": "ThemeAttrAndroid",
       }
     }
-    onLayout={undefined}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -377,12 +328,8 @@ exports[`Android BpkCard should render correctly with the "focused" state 1`] = 
         },
       ]
     }
-    testID={undefined}
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -415,12 +362,8 @@ exports[`Android BpkCard should render correctly without padding 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityLabel="Example Card"
-    accessibilityTraits={undefined}
     accessible={true}
-    hasTVPreferredFocus={undefined}
-    hitSlop={undefined}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -428,7 +371,6 @@ exports[`Android BpkCard should render correctly without padding 1`] = `
         "type": "ThemeAttrAndroid",
       }
     }
-    onLayout={undefined}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -436,12 +378,8 @@ exports[`Android BpkCard should render correctly without padding 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={Array []}
-    testID={undefined}
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
