@@ -14,7 +14,7 @@
     "react-native": ">= 0.47.0"
   },
   "dependencies": {
-    "bpk-tokens": "^27.4.1",
+    "bpk-tokens": "^27.4.4",
     "prop-types": "^15.5.8",
     "react-native-bpk-component-animate-height": "^2.0.56",
     "react-native-bpk-component-button-link": "^4.0.10",

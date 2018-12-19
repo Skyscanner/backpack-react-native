@@ -28,13 +28,13 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <BpkText textStyle='xxl'>Flights to Edinburgh</BpkText>
-        <BpkText textStyle='xl' weight={WEIGHT_STYLES.heavy}>Flights to Edinburgh</BpkText>
-        <BpkText textStyle='lg' weight={WEIGHT_STYLES.emphasized}>Flights to Edinburgh</BpkText>
-        <BpkText textStyle='base'>Flights to Edinburgh</BpkText>
-        <BpkText textStyle='sm'>Flights to Edinburgh</BpkText>
-        <BpkText textStyle='xs'>Flights to Edinburgh</BpkText>
-        <BpkText textStyle='caps'>FLIGHTS TO EDINBURGH</BpkText>
+        <BpkText textStyle='xxl'>Backpack rocks!</BpkText>
+        <BpkText textStyle='xl' weight={WEIGHT_STYLES.heavy}>Backpack rocks!</BpkText>
+        <BpkText textStyle='lg' weight={WEIGHT_STYLES.emphasized}>Backpack rocks!</BpkText>
+        <BpkText textStyle='base'>Backpack rocks!</BpkText>
+        <BpkText textStyle='sm'>Backpack rocks!</BpkText>
+        <BpkText textStyle='xs'>Backpack rocks!</BpkText>
+        <BpkText textStyle='caps'>BACKPACK ROCKS!</BpkText>
       </View>
     );
   }
