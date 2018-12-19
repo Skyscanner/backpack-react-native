@@ -21,5 +21,8 @@ import Storybook from './storybook';
 
 // https://github.com/facebook/react-native/issues/15902
 import 'core-js/es6/symbol';
+import 'core-js/fn/map';
+import 'core-js/fn/set';
+import 'core-js/fn/array/find';
 
 AppRegistry.registerComponent('native', () => Storybook);
