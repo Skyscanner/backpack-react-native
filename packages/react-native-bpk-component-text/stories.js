@@ -37,87 +37,87 @@ storiesOf('react-native-bpk-component-text', module)
   .addDecorator(CenterDecorator)
   .add('docs:default', () => (
     <View>
-      <BpkText textStyle="xxxl">Flights to Edinburgh</BpkText>
-      <BpkText textStyle="xxl">Flights to Edinburgh</BpkText>
-      <BpkText textStyle="xl">Flights to Edinburgh</BpkText>
-      <BpkText textStyle="lg">Flights to Edinburgh</BpkText>
-      <BpkText textStyle="base">Flights to Edinburgh</BpkText>
-      <BpkText textStyle="sm">Flights to Edinburgh</BpkText>
-      <BpkText textStyle="xs">Flights to Edinburgh</BpkText>
-      <BpkText textStyle="caps">FLIGHTS TO EDINBURGH</BpkText>
+      <BpkText textStyle="xxxl">Backpack rocks!</BpkText>
+      <BpkText textStyle="xxl">Backpack rocks!</BpkText>
+      <BpkText textStyle="xl">Backpack rocks!</BpkText>
+      <BpkText textStyle="lg">Backpack rocks!</BpkText>
+      <BpkText textStyle="base">Backpack rocks!</BpkText>
+      <BpkText textStyle="sm">Backpack rocks!</BpkText>
+      <BpkText textStyle="xs">Backpack rocks!</BpkText>
+      <BpkText textStyle="caps">BACKPACK ROCKS!</BpkText>
     </View>
   ))
   .add('docs:emphasize', () => (
     <View>
       <BpkText textStyle="xxxl" weight={WEIGHT_STYLES.emphasized}>
-        Flights to Edinburgh
+        Backpack rocks!
       </BpkText>
       <BpkText textStyle="xxl" weight={WEIGHT_STYLES.emphasized}>
-        Flights to Edinburgh
+        Backpack rocks!
       </BpkText>
       <BpkText textStyle="xl" weight={WEIGHT_STYLES.emphasized}>
-        Flights to Edinburgh
+        Backpack rocks!
       </BpkText>
       <BpkText textStyle="lg" weight={WEIGHT_STYLES.emphasized}>
-        Flights to Edinburgh
+        Backpack rocks!
       </BpkText>
       <BpkText textStyle="base" weight={WEIGHT_STYLES.emphasized}>
-        Flights to Edinburgh
+        Backpack rocks!
       </BpkText>
       <BpkText textStyle="sm" weight={WEIGHT_STYLES.emphasized}>
-        Flights to Edinburgh
+        Backpack rocks!
       </BpkText>
       <BpkText textStyle="xs" weight={WEIGHT_STYLES.emphasized}>
-        Flights to Edinburgh
+        Backpack rocks!
       </BpkText>
       <BpkText textStyle="caps" weight={WEIGHT_STYLES.emphasized}>
-        FLIGHTS TO EDINBURGH
+        BACKPACK ROCKS!
       </BpkText>
     </View>
   ))
   .add('docs:heavy', () => (
     <View>
       <BpkText textStyle="xxxl" weight={WEIGHT_STYLES.heavy}>
-        Flights to Edinburgh
+        Backpack rocks!
       </BpkText>
       <BpkText textStyle="xxl" weight={WEIGHT_STYLES.heavy}>
-        Flights to Edinburgh
+        Backpack rocks!
       </BpkText>
       <BpkText textStyle="xl" weight={WEIGHT_STYLES.heavy}>
-        Flights to Edinburgh
+        Backpack rocks!
       </BpkText>
     </View>
   ))
   .add('Colours', () => (
     <View>
       <BpkText textStyle="xxxl" style={{ color: colorBlue700 }}>
-        Flights to Edinburgh
+        Backpack rocks!
       </BpkText>
       <BpkText textStyle="xxl" style={{ color: colorRed500 }}>
-        Flights to Edinburgh
+        Backpack rocks!
       </BpkText>
       <BpkText textStyle="xl" style={{ color: colorGreen500 }}>
-        Flights to Edinburgh
+        Backpack rocks!
       </BpkText>
       <BpkText textStyle="lg" style={{ color: colorYellow500 }}>
-        Flights to Edinburgh
+        Backpack rocks!
       </BpkText>
       <BpkText textStyle="base" style={{ color: colorPink500 }}>
-        Flights to Edinburgh
+        Backpack rocks!
       </BpkText>
       <BpkText textStyle="sm" style={{ color: colorBlue700 }}>
-        Flights to Edinburgh
+        Backpack rocks!
       </BpkText>
       <BpkText textStyle="xs" style={{ color: colorGray500 }}>
-        Flights to Edinburgh
+        Backpack rocks!
       </BpkText>
       <BpkText textStyle="caps" style={{ color: colorRed500 }}>
-        FLIGHTS TO EDINBURGH
+        BACKPACK ROCKS!
       </BpkText>
     </View>
   ))
   .add('Emphasised (deprecated)', () => (
     <View>
-      <BpkText emphasize>Flights to Edinburgh</BpkText>
+      <BpkText emphasize>Backpack rocks!</BpkText>
     </View>
   ));

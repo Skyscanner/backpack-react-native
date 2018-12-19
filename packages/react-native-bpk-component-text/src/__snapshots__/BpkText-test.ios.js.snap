@@ -254,7 +254,7 @@ exports[`iOS BpkText should render correctly with textStyle="xl and weight="heav
         "letterSpacing": null,
       },
       Object {
-        "fontWeight": undefined,
+        "fontWeight": "800",
       },
     ]
   }
@@ -355,7 +355,7 @@ exports[`iOS BpkText should render correctly with textStyle="xxl and weight="hea
         "letterSpacing": null,
       },
       Object {
-        "fontWeight": undefined,
+        "fontWeight": "800",
       },
     ]
   }
@@ -416,7 +416,7 @@ exports[`iOS BpkText should render correctly with textStyle="xxxl and weight="he
         "letterSpacing": null,
       },
       Object {
-        "fontWeight": undefined,
+        "fontWeight": "800",
       },
     ]
   }
