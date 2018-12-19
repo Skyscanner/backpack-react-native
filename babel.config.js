@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-import { AppRegistry } from 'react-native';
-import Storybook from './storybook';
-
-AppRegistry.registerComponent('native', () => Storybook);
+module.exports = {
+  presets: ['module:metro-react-native-babel-preset'],
+  plugins: ['jest-hoist'],
+};

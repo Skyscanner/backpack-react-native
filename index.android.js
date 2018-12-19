@@ -17,7 +17,12 @@
  */
 
 import { AppRegistry } from 'react-native';
+import Storybook from './storybook';
 
-import App from './app/index';
+// https://github.com/facebook/react-native/issues/15902
+import 'core-js/es6/symbol';
+import 'core-js/fn/map';
+import 'core-js/fn/set';
+import 'core-js/fn/array/find';
 
-AppRegistry.registerComponent('native', () => App);
+AppRegistry.registerComponent('native', () => Storybook);

@@ -2,16 +2,7 @@
 
 exports[`Android BpkSelect should render correctly 1`] = `
 <View
-  accessibilityComponentType="button"
-  accessibilityLabel={undefined}
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
   accessible={true}
-  hasTVPreferredFocus={undefined}
-  hitSlop={undefined}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -19,7 +10,6 @@ exports[`Android BpkSelect should render correctly 1`] = `
       "type": "ThemeAttrAndroid",
     }
   }
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -38,12 +28,9 @@ exports[`Android BpkSelect should render correctly 1`] = `
       },
     ]
   }
-  testID={undefined}
 >
   <Text
-    accessible={true}
     allowFontScaling={false}
-    ellipsizeMode="tail"
     style={
       Array [
         Object {
@@ -68,16 +55,7 @@ exports[`Android BpkSelect should render correctly 1`] = `
 
 exports[`Android BpkSelect should render correctly with "showImage" and image 1`] = `
 <View
-  accessibilityComponentType="button"
-  accessibilityLabel={undefined}
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
   accessible={true}
-  hasTVPreferredFocus={undefined}
-  hitSlop={undefined}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -85,7 +63,6 @@ exports[`Android BpkSelect should render correctly with "showImage" and image 1`
       "type": "ThemeAttrAndroid",
     }
   }
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -104,7 +81,6 @@ exports[`Android BpkSelect should render correctly with "showImage" and image 1`
       },
     ]
   }
-  testID={undefined}
 >
   <Image
     style={
@@ -120,9 +96,7 @@ exports[`Android BpkSelect should render correctly with "showImage" and image 1`
     }
   />
   <Text
-    accessible={true}
     allowFontScaling={false}
-    ellipsizeMode="tail"
     style={
       Array [
         Object {
@@ -147,16 +121,7 @@ exports[`Android BpkSelect should render correctly with "showImage" and image 1`
 
 exports[`Android BpkSelect should render correctly with "showImage" and no image 1`] = `
 <View
-  accessibilityComponentType="button"
-  accessibilityLabel={undefined}
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
   accessible={true}
-  hasTVPreferredFocus={undefined}
-  hitSlop={undefined}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -164,7 +129,6 @@ exports[`Android BpkSelect should render correctly with "showImage" and no image
       "type": "ThemeAttrAndroid",
     }
   }
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -183,7 +147,6 @@ exports[`Android BpkSelect should render correctly with "showImage" and no image
       },
     ]
   }
-  testID={undefined}
 >
   <View
     style={
@@ -196,9 +159,7 @@ exports[`Android BpkSelect should render correctly with "showImage" and no image
     }
   />
   <Text
-    accessible={true}
     allowFontScaling={false}
-    ellipsizeMode="tail"
     style={
       Array [
         Object {
@@ -223,16 +184,7 @@ exports[`Android BpkSelect should render correctly with "showImage" and no image
 
 exports[`Android BpkSelect should render correctly with "valid" false 1`] = `
 <View
-  accessibilityComponentType="button"
-  accessibilityLabel={undefined}
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
   accessible={true}
-  hasTVPreferredFocus={undefined}
-  hitSlop={undefined}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -240,7 +192,6 @@ exports[`Android BpkSelect should render correctly with "valid" false 1`] = `
       "type": "ThemeAttrAndroid",
     }
   }
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -262,12 +213,9 @@ exports[`Android BpkSelect should render correctly with "valid" false 1`] = `
       },
     ]
   }
-  testID={undefined}
 >
   <Text
-    accessible={true}
     allowFontScaling={false}
-    ellipsizeMode="tail"
     style={
       Array [
         Object {
@@ -293,9 +241,7 @@ exports[`Android BpkSelect should render correctly with "valid" false 1`] = `
     
   </Text>
   <Text
-    accessible={true}
     allowFontScaling={false}
-    ellipsizeMode="tail"
     style={
       Array [
         Object {
@@ -321,16 +267,7 @@ exports[`Android BpkSelect should render correctly with "valid" false 1`] = `
 exports[`Android BpkSelect should render correctly with "valid" false and a validation message 1`] = `
 <View>
   <View
-    accessibilityComponentType="button"
-    accessibilityLabel={undefined}
-    accessibilityTraits={
-      Array [
-        "button",
-      ]
-    }
     accessible={true}
-    hasTVPreferredFocus={undefined}
-    hitSlop={undefined}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -338,7 +275,6 @@ exports[`Android BpkSelect should render correctly with "valid" false and a vali
         "type": "ThemeAttrAndroid",
       }
     }
-    onLayout={undefined}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -360,12 +296,9 @@ exports[`Android BpkSelect should render correctly with "valid" false and a vali
         },
       ]
     }
-    testID={undefined}
   >
     <Text
-      accessible={true}
       allowFontScaling={false}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -391,9 +324,7 @@ exports[`Android BpkSelect should render correctly with "valid" false and a vali
       
     </Text>
     <Text
-      accessible={true}
       allowFontScaling={false}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -415,9 +346,6 @@ exports[`Android BpkSelect should render correctly with "valid" false and a vali
     </Text>
   </View>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Array [
         Object {
@@ -442,16 +370,7 @@ exports[`Android BpkSelect should render correctly with "valid" false and a vali
 
 exports[`Android BpkSelect should render correctly with "valid" true 1`] = `
 <View
-  accessibilityComponentType="button"
-  accessibilityLabel={undefined}
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
   accessible={true}
-  hasTVPreferredFocus={undefined}
-  hitSlop={undefined}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -459,7 +378,6 @@ exports[`Android BpkSelect should render correctly with "valid" true 1`] = `
       "type": "ThemeAttrAndroid",
     }
   }
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -481,12 +399,9 @@ exports[`Android BpkSelect should render correctly with "valid" true 1`] = `
       },
     ]
   }
-  testID={undefined}
 >
   <Text
-    accessible={true}
     allowFontScaling={false}
-    ellipsizeMode="tail"
     style={
       Array [
         Object {
@@ -512,9 +427,7 @@ exports[`Android BpkSelect should render correctly with "valid" true 1`] = `
     
   </Text>
   <Text
-    accessible={true}
     allowFontScaling={false}
-    ellipsizeMode="tail"
     style={
       Array [
         Object {
@@ -539,16 +452,7 @@ exports[`Android BpkSelect should render correctly with "valid" true 1`] = `
 
 exports[`Android BpkSelect should render correctly with a text label 1`] = `
 <View
-  accessibilityComponentType="button"
-  accessibilityLabel={undefined}
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
   accessible={true}
-  hasTVPreferredFocus={undefined}
-  hitSlop={undefined}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -556,7 +460,6 @@ exports[`Android BpkSelect should render correctly with a text label 1`] = `
       "type": "ThemeAttrAndroid",
     }
   }
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -575,12 +478,8 @@ exports[`Android BpkSelect should render correctly with a text label 1`] = `
       },
     ]
   }
-  testID={undefined}
 >
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Array [
         Object {
@@ -603,9 +502,7 @@ exports[`Android BpkSelect should render correctly with a text label 1`] = `
     label
   </Text>
   <Text
-    accessible={true}
     allowFontScaling={false}
-    ellipsizeMode="tail"
     style={
       Array [
         Object {
@@ -630,16 +527,7 @@ exports[`Android BpkSelect should render correctly with a text label 1`] = `
 
 exports[`Android BpkSelect should render correctly with an element label 1`] = `
 <View
-  accessibilityComponentType="button"
-  accessibilityLabel={undefined}
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
   accessible={true}
-  hasTVPreferredFocus={undefined}
-  hitSlop={undefined}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -647,7 +535,6 @@ exports[`Android BpkSelect should render correctly with an element label 1`] = `
       "type": "ThemeAttrAndroid",
     }
   }
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -666,13 +553,10 @@ exports[`Android BpkSelect should render correctly with an element label 1`] = `
       },
     ]
   }
-  testID={undefined}
 >
   <View />
   <Text
-    accessible={true}
     allowFontScaling={false}
-    ellipsizeMode="tail"
     style={
       Array [
         Object {
@@ -697,16 +581,7 @@ exports[`Android BpkSelect should render correctly with an element label 1`] = `
 
 exports[`Android BpkSelect should render correctly with custom styles 1`] = `
 <View
-  accessibilityComponentType="button"
-  accessibilityLabel={undefined}
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
   accessible={true}
-  hasTVPreferredFocus={undefined}
-  hitSlop={undefined}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -714,7 +589,6 @@ exports[`Android BpkSelect should render correctly with custom styles 1`] = `
       "type": "ThemeAttrAndroid",
     }
   }
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -733,12 +607,8 @@ exports[`Android BpkSelect should render correctly with custom styles 1`] = `
       },
     ]
   }
-  testID={undefined}
 >
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Array [
         Object {
@@ -761,9 +631,7 @@ exports[`Android BpkSelect should render correctly with custom styles 1`] = `
     label
   </Text>
   <Text
-    accessible={true}
     allowFontScaling={false}
-    ellipsizeMode="tail"
     style={
       Array [
         Object {
@@ -788,17 +656,7 @@ exports[`Android BpkSelect should render correctly with custom styles 1`] = `
 
 exports[`Android BpkSelect should render correctly with the disabled prop 1`] = `
 <View
-  accessibilityComponentType="button"
-  accessibilityLabel={undefined}
-  accessibilityTraits={
-    Array [
-      "button",
-      "disabled",
-    ]
-  }
   accessible={true}
-  hasTVPreferredFocus={undefined}
-  hitSlop={undefined}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -806,7 +664,6 @@ exports[`Android BpkSelect should render correctly with the disabled prop 1`] = 
       "type": "ThemeAttrAndroid",
     }
   }
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -825,12 +682,8 @@ exports[`Android BpkSelect should render correctly with the disabled prop 1`] = 
       },
     ]
   }
-  testID={undefined}
 >
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Array [
         Object {
@@ -855,9 +708,7 @@ exports[`Android BpkSelect should render correctly with the disabled prop 1`] = 
     label
   </Text>
   <Text
-    accessible={true}
     allowFontScaling={false}
-    ellipsizeMode="tail"
     style={
       Array [
         Object {

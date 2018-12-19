@@ -142,7 +142,6 @@ We use [Storybook](https://storybook.js.org/) for our development environment.
 2. Open another terminal tab/window.
 3. Run `npm run ios` to run the Backpack app on an iPhone simulator.
 4. Run `npm run android` to run the Backpack app on an Android emulator.
-5. Go to [http://localhost:7007](http://localhost:7007) in a web browser.
 
 At this point, you should have a functioning development environment running on your local machine.
 

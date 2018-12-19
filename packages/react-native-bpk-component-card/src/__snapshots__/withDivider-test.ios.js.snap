@@ -12,11 +12,11 @@ exports[`iOS withDivider should render correctly 1`] = `
       },
     ]
   }
-  onPress={[Function]}
+  onPress={[MockFunction]}
   padded={false}
   style={null}
 >
-  <Component
+  <View
     style={
       Array [
         Object {
@@ -36,7 +36,7 @@ exports[`iOS withDivider should render correctly 1`] = `
     >
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
     </BpkText>
-  </Component>
+  </View>
   <_class
     dashColor="rgb(230, 228, 235)"
     dashGap={4}
@@ -53,7 +53,7 @@ exports[`iOS withDivider should render correctly 1`] = `
       ]
     }
   />
-  <Component
+  <View
     style={
       Array [
         Object {
@@ -73,7 +73,7 @@ exports[`iOS withDivider should render correctly 1`] = `
     >
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
     </BpkText>
-  </Component>
+  </View>
 </BpkCard>
 `;
 
@@ -89,11 +89,11 @@ exports[`iOS withDivider should render correctly with "cornerStyle=large" 1`] = 
       },
     ]
   }
-  onPress={[Function]}
+  onPress={[MockFunction]}
   padded={false}
   style={null}
 >
-  <Component
+  <View
     style={
       Array [
         Object {
@@ -113,7 +113,7 @@ exports[`iOS withDivider should render correctly with "cornerStyle=large" 1`] = 
     >
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
     </BpkText>
-  </Component>
+  </View>
   <_class
     dashColor="rgb(230, 228, 235)"
     dashGap={4}
@@ -130,7 +130,7 @@ exports[`iOS withDivider should render correctly with "cornerStyle=large" 1`] = 
       ]
     }
   />
-  <Component
+  <View
     style={
       Array [
         Object {
@@ -150,7 +150,7 @@ exports[`iOS withDivider should render correctly with "cornerStyle=large" 1`] = 
     >
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
     </BpkText>
-  </Component>
+  </View>
 </BpkCard>
 `;
 
@@ -166,12 +166,12 @@ exports[`iOS withDivider should render correctly with arbitrary props 1`] = `
       },
     ]
   }
-  onPress={[Function]}
+  onPress={[MockFunction]}
   padded={false}
   style={null}
   testID="arbitrary value"
 >
-  <Component
+  <View
     style={
       Array [
         Object {
@@ -191,7 +191,7 @@ exports[`iOS withDivider should render correctly with arbitrary props 1`] = `
     >
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
     </BpkText>
-  </Component>
+  </View>
   <_class
     dashColor="rgb(230, 228, 235)"
     dashGap={4}
@@ -208,7 +208,7 @@ exports[`iOS withDivider should render correctly with arbitrary props 1`] = `
       ]
     }
   />
-  <Component
+  <View
     style={
       Array [
         Object {
@@ -228,7 +228,7 @@ exports[`iOS withDivider should render correctly with arbitrary props 1`] = `
     >
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
     </BpkText>
-  </Component>
+  </View>
 </BpkCard>
 `;
 
@@ -244,11 +244,11 @@ exports[`iOS withDivider should render correctly with custom main style 1`] = `
       },
     ]
   }
-  onPress={[Function]}
+  onPress={[MockFunction]}
   padded={false}
   style={null}
 >
-  <Component
+  <View
     style={
       Array [
         Object {
@@ -271,7 +271,7 @@ exports[`iOS withDivider should render correctly with custom main style 1`] = `
     >
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
     </BpkText>
-  </Component>
+  </View>
   <_class
     dashColor="rgb(230, 228, 235)"
     dashGap={4}
@@ -288,7 +288,7 @@ exports[`iOS withDivider should render correctly with custom main style 1`] = `
       ]
     }
   />
-  <Component
+  <View
     style={
       Array [
         Object {
@@ -308,7 +308,7 @@ exports[`iOS withDivider should render correctly with custom main style 1`] = `
     >
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
     </BpkText>
-  </Component>
+  </View>
 </BpkCard>
 `;
 
@@ -324,11 +324,11 @@ exports[`iOS withDivider should render correctly with custom stub style 1`] = `
       },
     ]
   }
-  onPress={[Function]}
+  onPress={[MockFunction]}
   padded={false}
   style={null}
 >
-  <Component
+  <View
     style={
       Array [
         Object {
@@ -348,7 +348,7 @@ exports[`iOS withDivider should render correctly with custom stub style 1`] = `
     >
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
     </BpkText>
-  </Component>
+  </View>
   <_class
     dashColor="rgb(230, 228, 235)"
     dashGap={4}
@@ -365,7 +365,7 @@ exports[`iOS withDivider should render correctly with custom stub style 1`] = `
       ]
     }
   />
-  <Component
+  <View
     style={
       Array [
         Object {
@@ -388,7 +388,7 @@ exports[`iOS withDivider should render correctly with custom stub style 1`] = `
     >
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
     </BpkText>
-  </Component>
+  </View>
 </BpkCard>
 `;
 
@@ -404,11 +404,11 @@ exports[`iOS withDivider should render correctly without padding 1`] = `
       },
     ]
   }
-  onPress={[Function]}
+  onPress={[MockFunction]}
   padded={false}
   style={null}
 >
-  <Component
+  <View
     style={
       Array [
         Object {
@@ -425,7 +425,7 @@ exports[`iOS withDivider should render correctly without padding 1`] = `
     >
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
     </BpkText>
-  </Component>
+  </View>
   <_class
     dashColor="rgb(230, 228, 235)"
     dashGap={4}
@@ -442,7 +442,7 @@ exports[`iOS withDivider should render correctly without padding 1`] = `
       ]
     }
   />
-  <Component
+  <View
     style={
       Array [
         Object {
@@ -459,6 +459,6 @@ exports[`iOS withDivider should render correctly without padding 1`] = `
     >
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
     </BpkText>
-  </Component>
+  </View>
 </BpkCard>
 `;

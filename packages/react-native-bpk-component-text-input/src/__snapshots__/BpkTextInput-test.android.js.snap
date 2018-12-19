@@ -18,9 +18,6 @@ exports[`Android BpkTextInput should ignore when placeholder is provided, as ele
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      collapsable={undefined}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -38,7 +35,6 @@ exports[`Android BpkTextInput should ignore when placeholder is provided, as ele
       Name
     </Text>
     <View
-      collapsable={undefined}
       style={
         Object {
           "alignItems": "center",
@@ -95,9 +91,6 @@ exports[`Android BpkTextInput should render correctly 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      collapsable={undefined}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -115,7 +108,6 @@ exports[`Android BpkTextInput should render correctly 1`] = `
       Name
     </Text>
     <View
-      collapsable={undefined}
       style={
         Object {
           "alignItems": "center",
@@ -172,9 +164,6 @@ exports[`Android BpkTextInput should render correctly with \`accessoryView\` 1`]
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      collapsable={undefined}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -193,7 +182,6 @@ exports[`Android BpkTextInput should render correctly with \`accessoryView\` 1`]
     </Text>
     <View />
     <View
-      collapsable={undefined}
       style={
         Object {
           "alignItems": "center",
@@ -251,9 +239,6 @@ exports[`Android BpkTextInput should render correctly with arbitrary props 1`] =
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      collapsable={undefined}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -271,7 +256,6 @@ exports[`Android BpkTextInput should render correctly with arbitrary props 1`] =
       Name
     </Text>
     <View
-      collapsable={undefined}
       style={
         Object {
           "alignItems": "center",
@@ -331,9 +315,6 @@ exports[`Android BpkTextInput should render correctly with custom style 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      collapsable={undefined}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -351,7 +332,6 @@ exports[`Android BpkTextInput should render correctly with custom style 1`] = `
       Name
     </Text>
     <View
-      collapsable={undefined}
       style={
         Object {
           "alignItems": "center",
@@ -408,9 +388,6 @@ exports[`Android BpkTextInput should render correctly with description 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      collapsable={undefined}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -428,7 +405,6 @@ exports[`Android BpkTextInput should render correctly with description 1`] = `
       Name
     </Text>
     <View
-      collapsable={undefined}
       style={
         Object {
           "alignItems": "center",
@@ -465,9 +441,6 @@ exports[`Android BpkTextInput should render correctly with description 1`] = `
     </View>
   </View>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Array [
         Object {
@@ -508,9 +481,6 @@ exports[`Android BpkTextInput should render correctly with description, valid=fa
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      collapsable={undefined}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -528,7 +498,6 @@ exports[`Android BpkTextInput should render correctly with description, valid=fa
       Name
     </Text>
     <View
-      collapsable={undefined}
       style={
         Object {
           "alignItems": "center",
@@ -563,9 +532,7 @@ exports[`Android BpkTextInput should render correctly with description, valid=fa
         value="Somebody other than Kel loves orange soda"
       />
       <Text
-        accessible={true}
         allowFontScaling={false}
-        ellipsizeMode="tail"
         style={
           Array [
             Object {
@@ -594,9 +561,6 @@ exports[`Android BpkTextInput should render correctly with description, valid=fa
     </View>
   </View>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Array [
         Object {
@@ -637,9 +601,6 @@ exports[`Android BpkTextInput should render correctly with editable=false 1`] = 
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      collapsable={undefined}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -657,7 +618,6 @@ exports[`Android BpkTextInput should render correctly with editable=false 1`] = 
       Name
     </Text>
     <View
-      collapsable={undefined}
       style={
         Object {
           "alignItems": "center",
@@ -714,9 +674,6 @@ exports[`Android BpkTextInput should render correctly with inputRef set 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      collapsable={undefined}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -734,7 +691,6 @@ exports[`Android BpkTextInput should render correctly with inputRef set 1`] = `
       Name
     </Text>
     <View
-      collapsable={undefined}
       style={
         Object {
           "alignItems": "center",
@@ -791,9 +747,6 @@ exports[`Android BpkTextInput should render correctly with mask="99/99" 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      collapsable={undefined}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -811,7 +764,6 @@ exports[`Android BpkTextInput should render correctly with mask="99/99" 1`] = `
       Name
     </Text>
     <View
-      collapsable={undefined}
       style={
         Object {
           "alignItems": "center",
@@ -868,9 +820,6 @@ exports[`Android BpkTextInput should render correctly with mask="9999-9999-9999-
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      collapsable={undefined}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -888,7 +837,6 @@ exports[`Android BpkTextInput should render correctly with mask="9999-9999-9999-
       Name
     </Text>
     <View
-      collapsable={undefined}
       style={
         Object {
           "alignItems": "center",
@@ -945,9 +893,6 @@ exports[`Android BpkTextInput should render correctly with valid 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      collapsable={undefined}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -965,7 +910,6 @@ exports[`Android BpkTextInput should render correctly with valid 1`] = `
       Name
     </Text>
     <View
-      collapsable={undefined}
       style={
         Object {
           "alignItems": "center",
@@ -1000,9 +944,7 @@ exports[`Android BpkTextInput should render correctly with valid 1`] = `
         value=""
       />
       <Text
-        accessible={true}
         allowFontScaling={false}
-        ellipsizeMode="tail"
         style={
           Array [
             Object {
@@ -1051,9 +993,6 @@ exports[`Android BpkTextInput should render correctly with valid false 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      collapsable={undefined}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -1071,7 +1010,6 @@ exports[`Android BpkTextInput should render correctly with valid false 1`] = `
       Name
     </Text>
     <View
-      collapsable={undefined}
       style={
         Object {
           "alignItems": "center",
@@ -1106,9 +1044,7 @@ exports[`Android BpkTextInput should render correctly with valid false 1`] = `
         value=""
       />
       <Text
-        accessible={true}
         allowFontScaling={false}
-        ellipsizeMode="tail"
         style={
           Array [
             Object {
@@ -1157,9 +1093,6 @@ exports[`Android BpkTextInput should render correctly with valid false and a val
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      collapsable={undefined}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -1177,7 +1110,6 @@ exports[`Android BpkTextInput should render correctly with valid false and a val
       Name
     </Text>
     <View
-      collapsable={undefined}
       style={
         Object {
           "alignItems": "center",
@@ -1212,9 +1144,7 @@ exports[`Android BpkTextInput should render correctly with valid false and a val
         value=""
       />
       <Text
-        accessible={true}
         allowFontScaling={false}
-        ellipsizeMode="tail"
         style={
           Array [
             Object {
@@ -1243,9 +1173,6 @@ exports[`Android BpkTextInput should render correctly with valid false and a val
     </View>
   </View>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Array [
         Object {
@@ -1286,9 +1213,6 @@ exports[`Android BpkTextInput should render correctly with value 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      collapsable={undefined}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -1306,7 +1230,6 @@ exports[`Android BpkTextInput should render correctly with value 1`] = `
       Name
     </Text>
     <View
-      collapsable={undefined}
       style={
         Object {
           "alignItems": "center",

@@ -13,12 +13,8 @@ exports[`Android BpkDismissibleChip should render correctly 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityLabel="Dismiss"
-    accessibilityTraits={undefined}
     accessible={true}
-    hasTVPreferredFocus={undefined}
-    hitSlop={undefined}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -26,7 +22,6 @@ exports[`Android BpkDismissibleChip should render correctly 1`] = `
         "type": "ThemeAttrAndroid",
       }
     }
-    onLayout={undefined}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -46,12 +41,8 @@ exports[`Android BpkDismissibleChip should render correctly 1`] = `
         },
       ]
     }
-    testID={undefined}
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -74,9 +65,7 @@ exports[`Android BpkDismissibleChip should render correctly 1`] = `
       Label
     </Text>
     <Text
-      accessible={true}
       allowFontScaling={false}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -117,12 +106,8 @@ exports[`Android BpkDismissibleChip should render correctly with "disabled" 1`] 
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityLabel="Dismiss"
-    accessibilityTraits={undefined}
     accessible={true}
-    hasTVPreferredFocus={undefined}
-    hitSlop={undefined}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -130,7 +115,6 @@ exports[`Android BpkDismissibleChip should render correctly with "disabled" 1`] 
         "type": "ThemeAttrAndroid",
       }
     }
-    onLayout={undefined}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -153,12 +137,8 @@ exports[`Android BpkDismissibleChip should render correctly with "disabled" 1`] 
         },
       ]
     }
-    testID={undefined}
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -184,9 +164,7 @@ exports[`Android BpkDismissibleChip should render correctly with "disabled" 1`] 
       Label
     </Text>
     <Text
-      accessible={true}
       allowFontScaling={false}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -230,12 +208,8 @@ exports[`Android BpkDismissibleChip should render correctly with arbitrary props
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityLabel="Dismiss"
-    accessibilityTraits={undefined}
     accessible={true}
-    hasTVPreferredFocus={undefined}
-    hitSlop={undefined}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -243,7 +217,6 @@ exports[`Android BpkDismissibleChip should render correctly with arbitrary props
         "type": "ThemeAttrAndroid",
       }
     }
-    onLayout={undefined}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -266,9 +239,6 @@ exports[`Android BpkDismissibleChip should render correctly with arbitrary props
     testID="123"
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -291,9 +261,7 @@ exports[`Android BpkDismissibleChip should render correctly with arbitrary props
       Label
     </Text>
     <Text
-      accessible={true}
       allowFontScaling={false}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -336,12 +304,8 @@ exports[`Android BpkDismissibleChip should render correctly with custom style 1`
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityLabel="Dismiss"
-    accessibilityTraits={undefined}
     accessible={true}
-    hasTVPreferredFocus={undefined}
-    hitSlop={undefined}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -349,7 +313,6 @@ exports[`Android BpkDismissibleChip should render correctly with custom style 1`
         "type": "ThemeAttrAndroid",
       }
     }
-    onLayout={undefined}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -369,12 +332,8 @@ exports[`Android BpkDismissibleChip should render correctly with custom style 1`
         },
       ]
     }
-    testID={undefined}
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -397,9 +356,7 @@ exports[`Android BpkDismissibleChip should render correctly with custom style 1`
       Label
     </Text>
     <Text
-      accessible={true}
       allowFontScaling={false}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {

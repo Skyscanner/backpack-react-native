@@ -19,7 +19,8 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import BpkText from 'react-native-bpk-component-text';
-import { storiesOf, action } from '@storybook/react-native';
+import { storiesOf } from '@storybook/react-native';
+import { action } from '@storybook/addon-actions';
 import { borderRadiusSm, spacingMd } from 'bpk-tokens/tokens/base.react.native';
 
 import CenterDecorator from '../../storybook/CenterDecorator';

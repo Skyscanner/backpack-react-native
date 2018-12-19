@@ -20,7 +20,8 @@
 
 import React from 'react';
 import BpkButton from 'react-native-bpk-component-button';
-import { storiesOf, action } from '@storybook/react-native';
+import { storiesOf } from '@storybook/react-native';
+import { action } from '@storybook/addon-actions';
 
 import BpkAlert from './index';
 import CenterDecorator from '../../storybook/CenterDecorator';
