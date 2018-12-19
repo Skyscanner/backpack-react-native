@@ -42,15 +42,17 @@ const getColors = (themeAttributes: ?Object, value: boolean): Object => {
   // The color props mean different things based on the platform.
   const colors = Platform.select({
     ios: {
-      tintColor: secondaryColor, // Border around the switch when off.
-      // Must be unset or the the handles loses its drop shadow. https://github.com/facebook/react-native/issues/16764
-      thumbTintColor: null,
-      onTintColor: primaryColor,
+      trackColor: {
+        false: secondaryColor,
+        true: primaryColor,
+      },
     },
     android: {
-      tintColor: secondaryColor, // Track when OFF.
-      thumbTintColor: value ? primaryColor : colorGray50,
-      onTintColor: secondaryColor, // Track when ON.
+      thumbColor: value ? primaryColor : colorGray50,
+      trackColor: {
+        false: secondaryColor,
+        true: secondaryColor,
+      },
     },
   });
   return colors;
