@@ -20,6 +20,6 @@ import { AppRegistry } from 'react-native';
 import Storybook from './storybook';
 
 // https://github.com/facebook/react-native/issues/15902
-global.Symbol = require('core-js/es6/symbol');
+import 'core-js/es6/symbol';
 
 AppRegistry.registerComponent('native', () => Storybook);
