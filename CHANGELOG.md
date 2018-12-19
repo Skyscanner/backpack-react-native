@@ -2,6 +2,16 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2018-12-19 - Fixes for switch and text components to support RN 57 upgrade
+
+**Fixed:**
+
+- react-native-bpk-component-switch: 1.0.76 => 1.0.77
+  - Update internal workings to remove deprecation warnings.
+
+ - react-native-bpk-component-text: 4.0.3 => 4.0.4
+   - (iOS only) Fixed an issue where the font-weight prop value `heavy` was not setting the font-weight correctly. Note this affected only some versions of iOS / RN.
+
 # 2018-12-13 - Fixes for text and text input components
 
 **Fixed:**
