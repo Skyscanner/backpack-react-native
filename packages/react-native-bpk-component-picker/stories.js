@@ -22,7 +22,7 @@ import React, { Component } from 'react';
 import { StyleSheet, View, ViewPropTypes } from 'react-native';
 import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react-native';
-import BpkSelect from 'react-native-bpk-component-select';
+import BpkButton from 'react-native-bpk-component-button';
 import {
   colorGreen500,
   spacingBase,
@@ -106,10 +106,13 @@ class StatefulBpkPicker extends Component<Props, State> {
     };
     return (
       <View style={style}>
-        <BpkSelect
-          disabled={disabled}
-          label={data[this.state.value] || 'Choose an option'}
+        <BpkButton
           onPress={this.openPicker}
+          title={
+            data[this.state.value]
+              ? `Selected: ${data[this.state.value]}`
+              : 'Open picker'
+          }
         />
         <BpkPicker
           isOpen={this.state.isOpen}
@@ -133,7 +136,7 @@ storiesOf('react-native-bpk-component-picker', module)
   .addDecorator(CenterDecorator)
   .add('docs:default', () => (
     <View>
-      <StatefulBpkPicker isOpen style={styles.picker} />
+      <StatefulBpkPicker style={styles.picker} />
     </View>
   ))
   .add('picker-closed', () => (
