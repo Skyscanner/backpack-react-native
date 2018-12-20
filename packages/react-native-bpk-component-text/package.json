@@ -14,7 +14,6 @@
     "react-native": ">= 0.47.0"
   },
   "dependencies": {
-    "bpk-react-utils": "^2.7.0",
     "bpk-tokens": "^27.4.4",
     "prop-types": "^15.5.8"
   }

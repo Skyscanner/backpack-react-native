@@ -19,9 +19,8 @@
 /* @flow */
 
 import { type Node } from 'react';
-import PropTypes from 'prop-types';
+import PropTypes, { type PropType } from 'prop-types';
 import { StyleSheet, type StyleObj } from 'react-native';
-import { deprecated } from 'bpk-react-utils';
 
 export const TEXT_STYLES = [
   'caps',
@@ -106,6 +105,20 @@ export const weightPropType = (
     componentName,
     ...rest,
   );
+};
+
+const deprecated = (propType: PropType, alternativeSuggestion: string) => (
+  props: { [string]: any },
+  propName: string,
+  componentName: string,
+  ...rest: [any]
+) => {
+  if (props[propName] != null) {
+    const message = `"${propName}" property of "${componentName}" has been deprecated. ${alternativeSuggestion}`;
+    // eslint-disable-next-line no-console
+    console.warn(message);
+  }
+  return propType(props, propName, componentName, ...rest);
 };
 
 export const propTypes = {
