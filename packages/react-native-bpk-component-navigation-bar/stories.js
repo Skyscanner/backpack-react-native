@@ -17,13 +17,15 @@
  */
 
 import React from 'react';
-import { I18nManager, Platform } from 'react-native';
+import { I18nManager, Platform, StyleSheet } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
 import BpkThemeProvider from 'react-native-bpk-theming';
 import BpkCard from 'react-native-bpk-component-card';
 import BpkText from 'react-native-bpk-component-text';
 import BpkImage from 'react-native-bpk-component-image';
+
+import isIphoneX from './src/isIphoneX';
 
 import themeAttributes from '../../storybook/themeAttributes';
 import BpkNavigationBar, {
@@ -34,6 +36,20 @@ import BpkNavigationBar, {
 } from './index';
 
 const exampleLogo = require('./logo.png');
+
+/*
+HACK
+On iOS, Storybook's UI covers the status bar which affects the appearance
+of the navigation bar. This pulls it upwards to counteract it.
+*/
+const IOS_STATUS_BAR_HEIGHT = isIphoneX ? 44 : 20;
+const styles = StyleSheet.create({
+  navigationBar: Platform.select({
+    ios: {
+      marginTop: -IOS_STATUS_BAR_HEIGHT,
+    },
+  }),
+});
 
 const backIcon = () =>
   I18nManager.isRTL ? 'native-android--forward' : 'native-android--back';
@@ -109,13 +125,18 @@ const addButton = Platform.select({
 
 storiesOf('react-native-bpk-component-navigation-bar', module)
   .add('docs:default', () => (
-    <BpkNavigationBar leadingButton={backButton()} title="Backpack" />
+    <BpkNavigationBar
+      leadingButton={backButton()}
+      title="Backpack"
+      style={styles.navigationBar}
+    />
   ))
   .add('docs:modal', () => (
     <BpkNavigationBar
       leadingButton={cancelButton()}
       trailingButton={doneButton()}
       title="Backpack"
+      style={styles.navigationBar}
     />
   ))
   .add('docs:subtitle-view', () => (
@@ -127,12 +148,14 @@ storiesOf('react-native-bpk-component-navigation-bar', module)
           <BpkText>Hello</BpkText>
         </BpkCard>
       }
+      style={styles.navigationBar}
     />
   ))
   .add('docs:icon-in-title', () => (
     <BpkNavigationBar
       leadingButton={backButton()}
       title={{ value: 'Checkout', icon: 'lock', iconPosition: 'leading' }}
+      style={styles.navigationBar}
     />
   ))
   .add('Themed', () => (
@@ -140,6 +163,7 @@ storiesOf('react-native-bpk-component-navigation-bar', module)
       <BpkNavigationBar
         leadingButton={backButton()}
         title={<BpkImage alt="logo" source={exampleLogo} />}
+        style={styles.navigationBar}
       />
     </BpkThemeProvider>
   ))
@@ -147,6 +171,7 @@ storiesOf('react-native-bpk-component-navigation-bar', module)
     <BpkNavigationBar
       leadingButton={backButton()}
       title="This is a very long title with a lot of content"
+      style={styles.navigationBar}
     />
   ))
   .add('Disabled button', () => (
@@ -154,8 +179,13 @@ storiesOf('react-native-bpk-component-navigation-bar', module)
       leadingButton={cancelButton()}
       trailingButton={doneButton(true)}
       title="Backpack"
+      style={styles.navigationBar}
     />
   ))
   .add('iOS icon button', () => (
-    <BpkNavigationBar trailingButton={addButton()} title="Backpack" />
+    <BpkNavigationBar
+      trailingButton={addButton()}
+      title="Backpack"
+      style={styles.navigationBar}
+    />
   ));
