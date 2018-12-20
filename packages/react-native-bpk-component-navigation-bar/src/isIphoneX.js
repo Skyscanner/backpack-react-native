@@ -17,9 +17,13 @@
  */
 /* @flow */
 
-import { DeviceInfo } from 'react-native';
+import { DeviceInfo, Platform } from 'react-native';
 
 export default (() => {
+  if (Platform.OS === 'android') {
+    return false;
+  }
+
   const { width, height } = DeviceInfo.Dimensions.window;
 
   // iPhone X and XS
