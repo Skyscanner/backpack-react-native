@@ -20,7 +20,6 @@
 
 import PropTypes from 'prop-types';
 import { StyleSheet } from 'react-native';
-import { deprecated } from 'bpk-react-utils';
 import { spacingSm } from 'bpk-tokens/tokens/base.react.native';
 
 import { stylePropType, weightPropType, WEIGHT_STYLES } from './common-types';
@@ -79,24 +78,6 @@ describe('stylePropType', () => {
         weight: WEIGHT_STYLES.heavy,
       },
       'weight',
-      'BpkText',
-    );
-
-    expect(consoleWarnFn.mock.calls.length).toBe(1);
-  });
-
-  it('should warn when emphasize prop is used', () => {
-    const consoleWarnFn = jest.fn();
-    jest.spyOn(console, 'warn').mockImplementation(consoleWarnFn);
-
-    PropTypes.checkPropTypes(
-      {
-        emphasize: deprecated(PropTypes.bool, 'Use "weight" instead.'),
-      },
-      {
-        emphasize: true,
-      },
-      'emphasize',
       'BpkText',
     );
 
