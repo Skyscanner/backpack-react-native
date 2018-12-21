@@ -16,12 +16,8 @@
  * limitations under the License.
  */
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import {
-  spacingBase,
-  spacingLg,
-  spacingXxl,
-} from 'bpk-tokens/tokens/base.react.native';
+import { StyleSheet, ScrollView } from 'react-native';
+import { spacingBase, spacingLg } from 'bpk-tokens/tokens/base.react.native';
 
 const styles = StyleSheet.create({
   centered: {
@@ -32,15 +28,10 @@ const styles = StyleSheet.create({
     width: '100%',
     marginTop: spacingLg,
   },
-  rtlButton: {
-    justifyContent: 'flex-end',
-    marginVertical: spacingBase,
-    width: spacingXxl * 3,
-  },
 });
 
 const CenterDecorator = getStory => (
-  <View style={styles.centered}>{getStory()}</View>
+  <ScrollView contentContainerStyle={styles.centered}>{getStory()}</ScrollView>
 );
 
 export default CenterDecorator;
