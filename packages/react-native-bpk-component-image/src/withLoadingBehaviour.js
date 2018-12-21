@@ -17,7 +17,22 @@
  */
 
 import React from 'react';
-import { wrapDisplayName } from 'bpk-react-utils';
+
+// From Recompose: https://github.com/acdlite/recompose/blob/master/src/packages/recompose/getDisplayName.js
+const getDisplayName = Component => {
+  if (typeof Component === 'string') {
+    return Component;
+  }
+
+  if (!Component) {
+    return undefined;
+  }
+
+  return Component.displayName || Component.name || 'Component';
+};
+
+const wrapDisplayName = (BaseComponent, hocName) =>
+  `${hocName}(${getDisplayName(BaseComponent)})`;
 
 export default function withLoadingBehavior(Component) {
   class WithLoadingBehavior extends React.Component {
