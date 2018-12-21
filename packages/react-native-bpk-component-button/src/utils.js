@@ -187,7 +187,7 @@ export const getAndroidBackgroundColour = (
   props: Object,
 ): Object => {
   const style = {
-    backgroundColor: 'transparent',
+    backgroundColor: colorWhite,
   };
 
   /**
