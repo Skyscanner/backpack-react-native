@@ -25,7 +25,7 @@ exports[`Android BpkNudger should disable theming if the required attribute is o
           "marginRight": 4,
         },
         Object {
-          "backgroundColor": "transparent",
+          "backgroundColor": "rgb(255, 255, 255)",
         },
       ]
     }
@@ -69,7 +69,7 @@ exports[`Android BpkNudger should disable theming if the required attribute is o
             },
           ],
           Object {
-            "backgroundColor": "transparent",
+            "backgroundColor": "rgb(255, 255, 255)",
           },
         ]
       }
@@ -151,7 +151,7 @@ exports[`Android BpkNudger should disable theming if the required attribute is o
           "marginLeft": 4,
         },
         Object {
-          "backgroundColor": "transparent",
+          "backgroundColor": "rgb(255, 255, 255)",
         },
       ]
     }
@@ -195,7 +195,7 @@ exports[`Android BpkNudger should disable theming if the required attribute is o
             },
           ],
           Object {
-            "backgroundColor": "transparent",
+            "backgroundColor": "rgb(255, 255, 255)",
           },
         ]
       }
@@ -270,7 +270,7 @@ exports[`Android BpkNudger should render correctly 1`] = `
           "marginRight": 4,
         },
         Object {
-          "backgroundColor": "transparent",
+          "backgroundColor": "rgb(255, 255, 255)",
         },
       ]
     }
@@ -314,7 +314,7 @@ exports[`Android BpkNudger should render correctly 1`] = `
             },
           ],
           Object {
-            "backgroundColor": "transparent",
+            "backgroundColor": "rgb(255, 255, 255)",
           },
         ]
       }
@@ -396,7 +396,7 @@ exports[`Android BpkNudger should render correctly 1`] = `
           "marginLeft": 4,
         },
         Object {
-          "backgroundColor": "transparent",
+          "backgroundColor": "rgb(255, 255, 255)",
         },
       ]
     }
@@ -440,7 +440,7 @@ exports[`Android BpkNudger should render correctly 1`] = `
             },
           ],
           Object {
-            "backgroundColor": "transparent",
+            "backgroundColor": "rgb(255, 255, 255)",
           },
         ]
       }
@@ -647,7 +647,7 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
           "marginLeft": 4,
         },
         Object {
-          "backgroundColor": "transparent",
+          "backgroundColor": "rgb(255, 255, 255)",
         },
       ]
     }
@@ -691,7 +691,7 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
             },
           ],
           Object {
-            "backgroundColor": "transparent",
+            "backgroundColor": "rgb(255, 255, 255)",
           },
         ]
       }
@@ -766,7 +766,7 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
           "marginRight": 4,
         },
         Object {
-          "backgroundColor": "transparent",
+          "backgroundColor": "rgb(255, 255, 255)",
         },
       ]
     }
@@ -810,7 +810,7 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
             },
           ],
           Object {
-            "backgroundColor": "transparent",
+            "backgroundColor": "rgb(255, 255, 255)",
           },
         ]
       }
@@ -1149,7 +1149,7 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
           "marginLeft": 4,
         },
         Object {
-          "backgroundColor": "transparent",
+          "backgroundColor": "rgb(255, 255, 255)",
         },
       ]
     }
@@ -1193,7 +1193,7 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
             },
           ],
           Object {
-            "backgroundColor": "transparent",
+            "backgroundColor": "rgb(255, 255, 255)",
           },
         ]
       }

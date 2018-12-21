@@ -744,7 +744,7 @@ exports[`Android BpkButton should render correctly with type="destructive" 1`] =
       ],
       null,
       Object {
-        "backgroundColor": "transparent",
+        "backgroundColor": "rgb(255, 255, 255)",
       },
     ]
   }
@@ -784,7 +784,7 @@ exports[`Android BpkButton should render correctly with type="destructive" 1`] =
           },
         ],
         Object {
-          "backgroundColor": "transparent",
+          "backgroundColor": "rgb(255, 255, 255)",
         },
       ]
     }
@@ -1263,7 +1263,7 @@ exports[`Android BpkButton should render correctly with type="secondary" 1`] = `
       ],
       null,
       Object {
-        "backgroundColor": "transparent",
+        "backgroundColor": "rgb(255, 255, 255)",
       },
     ]
   }
@@ -1303,7 +1303,7 @@ exports[`Android BpkButton should render correctly with type="secondary" 1`] = `
           },
         ],
         Object {
-          "backgroundColor": "transparent",
+          "backgroundColor": "rgb(255, 255, 255)",
         },
       ]
     }
@@ -2030,7 +2030,7 @@ exports[`Android BpkButton should support the "secondary" property 1`] = `
       ],
       null,
       Object {
-        "backgroundColor": "transparent",
+        "backgroundColor": "rgb(255, 255, 255)",
       },
     ]
   }
@@ -2070,7 +2070,7 @@ exports[`Android BpkButton should support the "secondary" property 1`] = `
           },
         ],
         Object {
-          "backgroundColor": "transparent",
+          "backgroundColor": "rgb(255, 255, 255)",
         },
       ]
     }
