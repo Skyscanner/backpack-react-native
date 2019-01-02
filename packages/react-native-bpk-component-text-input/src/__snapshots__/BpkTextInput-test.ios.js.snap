@@ -18,6 +18,7 @@ exports[`iOS BpkTextInput should ignore when placeholder is provided, as element
     }
   >
     <Text
+      allowFontScaling={true}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -91,6 +92,7 @@ exports[`iOS BpkTextInput should render correctly 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -164,6 +166,7 @@ exports[`iOS BpkTextInput should render correctly with \`accessoryView\` 1`] = `
     }
   >
     <Text
+      allowFontScaling={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -239,6 +242,7 @@ exports[`iOS BpkTextInput should render correctly with arbitrary props 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -315,6 +319,7 @@ exports[`iOS BpkTextInput should render correctly with custom style 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -388,6 +393,7 @@ exports[`iOS BpkTextInput should render correctly with description 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -481,6 +487,7 @@ exports[`iOS BpkTextInput should render correctly with description, valid=false 
     }
   >
     <Text
+      allowFontScaling={true}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -601,6 +608,7 @@ exports[`iOS BpkTextInput should render correctly with editable=false 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -674,6 +682,7 @@ exports[`iOS BpkTextInput should render correctly with inputRef set 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -747,6 +756,7 @@ exports[`iOS BpkTextInput should render correctly with mask="99/99" 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -820,6 +830,7 @@ exports[`iOS BpkTextInput should render correctly with mask="9999-9999-9999-9999
     }
   >
     <Text
+      allowFontScaling={true}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -893,6 +904,7 @@ exports[`iOS BpkTextInput should render correctly with valid 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -993,6 +1005,7 @@ exports[`iOS BpkTextInput should render correctly with valid false 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -1093,6 +1106,7 @@ exports[`iOS BpkTextInput should render correctly with valid false and a validat
     }
   >
     <Text
+      allowFontScaling={true}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -1213,6 +1227,7 @@ exports[`iOS BpkTextInput should render correctly with value 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
