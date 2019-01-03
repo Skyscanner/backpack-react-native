@@ -57,9 +57,9 @@ export default class App extends Component {
 
 | Property              | PropType                                                                  | Required | Default Value |
 | --------------------- | --------------------------------------------------------------------------| -------- | ------------- |
-| message               | string                                                                    | true     | -             |
 | accessoryView         | element                                                                   | false    | null          |
 | docked                | oneOf('start', 'end')                                                     | false    | null          |
+| message               | string                                                                    | false    | null          |
 | type                  | oneOf('success', 'warning', 'destructive', 'light', 'inverse', 'outline') | false    | warning       |
 
 ## `accessoryView`

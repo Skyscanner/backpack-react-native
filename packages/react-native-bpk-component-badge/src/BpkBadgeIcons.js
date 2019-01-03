@@ -30,6 +30,9 @@ const styles = StyleSheet.create({
     includeFontPadding: false,
     marginEnd: spacingSm,
   },
+  lastItem: {
+    marginEnd: 0,
+  },
 });
 
 export type Props = {
@@ -47,10 +50,10 @@ const BpkBadgeIcons = (props: Props) => {
     itemStyle.push(StyleSheet.flatten(userItemStyle));
   }
 
-  const adjustedIcons = icons.map(icon =>
+  const adjustedIcons = icons.map((icon, index) =>
     React.cloneElement(icon, {
       small: true,
-      style: itemStyle,
+      style: [itemStyle, index === icons.length - 1 ? styles.lastItem : null],
     }),
   );
 

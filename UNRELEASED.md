@@ -1,5 +1,11 @@
 # Unreleased
 
+**Added:**
+
+- react-native-bpk-component-badge:
+  - The `message` prop is now optional for when badges have only an `accessoryView`.
+  - Fixed padding issues when badges had no `message` and an `accessoryView`.
+
 **Fixed:**
 
 - react-native-bpk-component-text-input:

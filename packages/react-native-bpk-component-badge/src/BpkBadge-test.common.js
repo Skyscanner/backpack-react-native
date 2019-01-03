@@ -36,12 +36,14 @@ const generateBadgeStory = (config: {
   docked?: $Keys<typeof BADGE_DOCKED_TYPES>,
   icons?: string,
   style?: Object,
+  message?: string,
 }) => {
+  const message = config.message !== undefined ? config.message : 'Badge';
   const badges = Object.keys(BADGE_TYPES).map(type => (
     <BpkBadge
       key={type}
       style={config.style}
-      message="Badge"
+      message={message}
       docked={config.docked}
       type={type}
       accessoryView={
@@ -75,6 +77,13 @@ const commonTests = () => {
     it('should render correctly with multiple icons', () => {
       const tree = renderer
         .create(generateBadgeStory({ icons: 'multiple' }))
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
+    it('should render correctly with multiple icons and no message', () => {
+      const tree = renderer
+        .create(generateBadgeStory({ icons: 'multiple', message: null }))
         .toJSON();
       expect(tree).toMatchSnapshot();
     });

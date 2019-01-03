@@ -73,6 +73,9 @@ const styles = StyleSheet.create({
   textOutline: {
     color: colorWhite,
   },
+  textWithAccessoryView: {
+    marginStart: spacingSm,
+  },
   borderBase: {
     borderTopLeftRadius: borderRadiusSm,
     borderBottomLeftRadius: borderRadiusSm,
@@ -116,7 +119,7 @@ export const BADGE_DOCKED_TYPES = {
 };
 
 export type Props = {
-  message: string,
+  message: ?string,
   accessoryView: ?Element<*>,
   type: $Keys<typeof BADGE_TYPES>,
   docked: ?$Keys<typeof BADGE_DOCKED_TYPES>,
@@ -158,26 +161,33 @@ const BpkBadge = (props: Props) => {
     viewStyle.push(userStyle);
   }
 
+  const accessoryViewItemStyle = textStyle.slice(0);
   const adjustedAccessoryView =
     accessoryView &&
     React.cloneElement(accessoryView, {
-      itemStyle: textStyle,
+      itemStyle: accessoryViewItemStyle,
     });
+
+  if (accessoryView) {
+    textStyle.push(styles.textWithAccessoryView);
+  }
 
   return (
     <View style={viewStyle}>
       {adjustedAccessoryView}
-      <BpkText allowFontScaling={false} style={textStyle} textStyle="xs">
-        {message}
-      </BpkText>
+      {message && (
+        <BpkText allowFontScaling={false} style={textStyle} textStyle="xs">
+          {message}
+        </BpkText>
+      )}
     </View>
   );
 };
 
 BpkBadge.propTypes = {
-  message: PropTypes.string.isRequired,
-  docked: PropTypes.oneOf(Object.keys(BADGE_DOCKED_TYPES)),
   accessoryView: PropTypes.element,
+  docked: PropTypes.oneOf(Object.keys(BADGE_DOCKED_TYPES)),
+  message: PropTypes.string,
   style: ViewPropTypes.style,
   type: PropTypes.oneOf(Object.keys(BADGE_TYPES)),
 };
@@ -185,6 +195,7 @@ BpkBadge.propTypes = {
 BpkBadge.defaultProps = {
   accessoryView: null,
   docked: null,
+  message: null,
   style: null,
   type: BADGE_TYPES.warning,
 };
