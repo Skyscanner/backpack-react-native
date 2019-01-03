@@ -226,6 +226,7 @@ class BpkTextInput extends Component<Props, State> {
             numberOfLines={1}
             ellipsizeMode="tail"
             style={animatedLabelStyle}
+            allowFontScaling={!hasAccessoryView}
           >
             {label}
           </Animated.Text>

@@ -18,6 +18,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
     }
   >
     <Text
+      allowFontScaling={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -202,6 +203,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
     }
   >
     <Text
+      allowFontScaling={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
