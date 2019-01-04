@@ -36,7 +36,7 @@ const generateBadgeStory = (config: {
   docked?: $Keys<typeof BADGE_DOCKED_TYPES>,
   icons?: string,
   style?: Object,
-  message?: string,
+  message?: ?string,
 }) => {
   const message = config.message !== undefined ? config.message : 'Badge';
   const badges = Object.keys(BADGE_TYPES).map(type => (
