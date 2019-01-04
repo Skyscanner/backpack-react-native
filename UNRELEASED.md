@@ -1,6 +1,6 @@
 # Unreleased
 
-**Breaking:**
+**Added:**
 
 - react-native-bpk-component-badge:
   - The `message` prop is now optional. This is for when badges have only an `accessoryView` and no text.
