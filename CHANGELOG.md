@@ -2,6 +2,29 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-01-04 - Badge improvements plus sundry bug fixes
+
+**Added:**
+
+- react-native-bpk-component-badge: 2.1.4 => 2.2.0
+  - The `message` prop is now optional. This is for when badges have only an `accessoryView` and no text.
+  - Added an `accessibilityLabel` prop. This defaults to the contents of `message` and is only a required prop when `message` is `null`.
+  - Fixed padding issues when badges had no `message` and an `accessoryView`.
+
+**Fixed:**
+
+- react-native-bpk-component-text-input: 3.0.10 => 3.0.11
+  - Disabled font scaling for the label when an accessory view is present.
+- react-native-bpk-component-phone-input: 3.0.10 => 3.0.11
+  - Disabled font scaling for the label.
+
+- react-native-bpk-component-button: 8.0.12 => 3.0.11
+  - Secondary and destructive buttons now correctly have white backgrounds instead of transparent.
+
+- react-native-bpk-component-image: 1.1.22 => 1.1.23
+- react-native-bpk-component-text: 4.0.4 => 4.0.5
+  - Remove dependency on `bpk-react-utils`.
+
 # 2018-12-19 - Fixes for switch and text components to support RN 57 upgrade
 
 **Fixed:**
