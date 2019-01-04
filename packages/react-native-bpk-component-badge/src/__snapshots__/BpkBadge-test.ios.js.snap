@@ -3,6 +3,9 @@
 exports[`iOS BpkBadge should render correctly docked to the end 1`] = `
 <View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -58,6 +61,9 @@ exports[`iOS BpkBadge should render correctly docked to the end 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -113,6 +119,9 @@ exports[`iOS BpkBadge should render correctly docked to the end 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -170,6 +179,9 @@ exports[`iOS BpkBadge should render correctly docked to the end 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -225,6 +237,9 @@ exports[`iOS BpkBadge should render correctly docked to the end 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -280,6 +295,9 @@ exports[`iOS BpkBadge should render correctly docked to the end 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -349,6 +367,9 @@ exports[`iOS BpkBadge should render correctly docked to the end 1`] = `
 exports[`iOS BpkBadge should render correctly docked to the start 1`] = `
 <View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -404,6 +425,9 @@ exports[`iOS BpkBadge should render correctly docked to the start 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -459,6 +483,9 @@ exports[`iOS BpkBadge should render correctly docked to the start 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -516,6 +543,9 @@ exports[`iOS BpkBadge should render correctly docked to the start 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -571,6 +601,9 @@ exports[`iOS BpkBadge should render correctly docked to the start 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -626,6 +659,9 @@ exports[`iOS BpkBadge should render correctly docked to the start 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -695,6 +731,9 @@ exports[`iOS BpkBadge should render correctly docked to the start 1`] = `
 exports[`iOS BpkBadge should render correctly in normal mode 1`] = `
 <View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -742,6 +781,9 @@ exports[`iOS BpkBadge should render correctly in normal mode 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -789,6 +831,9 @@ exports[`iOS BpkBadge should render correctly in normal mode 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -838,6 +883,9 @@ exports[`iOS BpkBadge should render correctly in normal mode 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -885,6 +933,9 @@ exports[`iOS BpkBadge should render correctly in normal mode 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -932,6 +983,9 @@ exports[`iOS BpkBadge should render correctly in normal mode 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -993,6 +1047,9 @@ exports[`iOS BpkBadge should render correctly in normal mode 1`] = `
 exports[`iOS BpkBadge should render correctly with icon 1`] = `
 <View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -1028,13 +1085,18 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
             "fontSize": 16,
           },
           Array [
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+            ],
             Object {
-              "includeFontPadding": false,
-              "marginEnd": 4,
-            },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
+              "marginEnd": 0,
             },
           ],
         ]
@@ -1060,6 +1122,9 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
               "includeFontPadding": false,
             },
             undefined,
+            Object {
+              "marginStart": 4,
+            },
           ],
         ]
       }
@@ -1068,6 +1133,9 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -1103,13 +1171,18 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
             "fontSize": 16,
           },
           Array [
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+            ],
             Object {
-              "includeFontPadding": false,
-              "marginEnd": 4,
-            },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
+              "marginEnd": 0,
             },
           ],
         ]
@@ -1135,6 +1208,9 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
               "includeFontPadding": false,
             },
             undefined,
+            Object {
+              "marginStart": 4,
+            },
           ],
         ]
       }
@@ -1143,6 +1219,9 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -1178,13 +1257,18 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
             "fontSize": 16,
           },
           Array [
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+                "includeFontPadding": false,
+              },
+            ],
             Object {
-              "includeFontPadding": false,
-              "marginEnd": 4,
-            },
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "includeFontPadding": false,
+              "marginEnd": 0,
             },
           ],
         ]
@@ -1212,6 +1296,9 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
             Object {
               "color": "rgb(255, 255, 255)",
             },
+            Object {
+              "marginStart": 4,
+            },
           ],
         ]
       }
@@ -1220,6 +1307,9 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -1255,13 +1345,18 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
             "fontSize": 16,
           },
           Array [
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+            ],
             Object {
-              "includeFontPadding": false,
-              "marginEnd": 4,
-            },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
+              "marginEnd": 0,
             },
           ],
         ]
@@ -1287,6 +1382,9 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
               "includeFontPadding": false,
             },
             undefined,
+            Object {
+              "marginStart": 4,
+            },
           ],
         ]
       }
@@ -1295,6 +1393,9 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -1330,13 +1431,18 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
             "fontSize": 16,
           },
           Array [
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+            ],
             Object {
-              "includeFontPadding": false,
-              "marginEnd": 4,
-            },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
+              "marginEnd": 0,
             },
           ],
         ]
@@ -1362,6 +1468,9 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
               "includeFontPadding": false,
             },
             undefined,
+            Object {
+              "marginStart": 4,
+            },
           ],
         ]
       }
@@ -1370,6 +1479,9 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -1412,13 +1524,18 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
             "fontSize": 16,
           },
           Array [
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+                "includeFontPadding": false,
+              },
+            ],
             Object {
-              "includeFontPadding": false,
-              "marginEnd": 4,
-            },
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "includeFontPadding": false,
+              "marginEnd": 0,
             },
           ],
         ]
@@ -1445,6 +1562,9 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
             },
             Object {
               "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "marginStart": 4,
             },
           ],
         ]
@@ -1459,6 +1579,9 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
 exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
 <View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -1494,14 +1617,17 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
             "fontSize": 16,
           },
           Array [
-            Object {
-              "includeFontPadding": false,
-              "marginEnd": 4,
-            },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+            ],
+            null,
           ],
         ]
       }
@@ -1549,13 +1675,18 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
             "fontSize": 16,
           },
           Array [
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+            ],
             Object {
-              "includeFontPadding": false,
-              "marginEnd": 4,
-            },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
+              "marginEnd": 0,
             },
           ],
         ]
@@ -1581,6 +1712,9 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
               "includeFontPadding": false,
             },
             undefined,
+            Object {
+              "marginStart": 4,
+            },
           ],
         ]
       }
@@ -1589,6 +1723,9 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -1624,14 +1761,17 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
             "fontSize": 16,
           },
           Array [
-            Object {
-              "includeFontPadding": false,
-              "marginEnd": 4,
-            },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+            ],
+            null,
           ],
         ]
       }
@@ -1679,13 +1819,18 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
             "fontSize": 16,
           },
           Array [
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+            ],
             Object {
-              "includeFontPadding": false,
-              "marginEnd": 4,
-            },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
+              "marginEnd": 0,
             },
           ],
         ]
@@ -1711,6 +1856,9 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
               "includeFontPadding": false,
             },
             undefined,
+            Object {
+              "marginStart": 4,
+            },
           ],
         ]
       }
@@ -1719,6 +1867,9 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -1754,14 +1905,17 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
             "fontSize": 16,
           },
           Array [
-            Object {
-              "includeFontPadding": false,
-              "marginEnd": 4,
-            },
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+                "includeFontPadding": false,
+              },
+            ],
+            null,
           ],
         ]
       }
@@ -1809,13 +1963,18 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
             "fontSize": 16,
           },
           Array [
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+                "includeFontPadding": false,
+              },
+            ],
             Object {
-              "includeFontPadding": false,
-              "marginEnd": 4,
-            },
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "includeFontPadding": false,
+              "marginEnd": 0,
             },
           ],
         ]
@@ -1843,6 +2002,9 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
             Object {
               "color": "rgb(255, 255, 255)",
             },
+            Object {
+              "marginStart": 4,
+            },
           ],
         ]
       }
@@ -1851,6 +2013,9 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -1886,14 +2051,17 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
             "fontSize": 16,
           },
           Array [
-            Object {
-              "includeFontPadding": false,
-              "marginEnd": 4,
-            },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+            ],
+            null,
           ],
         ]
       }
@@ -1941,13 +2109,18 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
             "fontSize": 16,
           },
           Array [
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+            ],
             Object {
-              "includeFontPadding": false,
-              "marginEnd": 4,
-            },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
+              "marginEnd": 0,
             },
           ],
         ]
@@ -1973,6 +2146,9 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
               "includeFontPadding": false,
             },
             undefined,
+            Object {
+              "marginStart": 4,
+            },
           ],
         ]
       }
@@ -1981,6 +2157,9 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -2016,14 +2195,17 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
             "fontSize": 16,
           },
           Array [
-            Object {
-              "includeFontPadding": false,
-              "marginEnd": 4,
-            },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+            ],
+            null,
           ],
         ]
       }
@@ -2071,13 +2253,18 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
             "fontSize": 16,
           },
           Array [
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+            ],
             Object {
-              "includeFontPadding": false,
-              "marginEnd": 4,
-            },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
+              "marginEnd": 0,
             },
           ],
         ]
@@ -2103,6 +2290,9 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
               "includeFontPadding": false,
             },
             undefined,
+            Object {
+              "marginStart": 4,
+            },
           ],
         ]
       }
@@ -2111,6 +2301,9 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -2153,14 +2346,17 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
             "fontSize": 16,
           },
           Array [
-            Object {
-              "includeFontPadding": false,
-              "marginEnd": 4,
-            },
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+                "includeFontPadding": false,
+              },
+            ],
+            null,
           ],
         ]
       }
@@ -2208,13 +2404,18 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
             "fontSize": 16,
           },
           Array [
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+                "includeFontPadding": false,
+              },
+            ],
             Object {
-              "includeFontPadding": false,
-              "marginEnd": 4,
-            },
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "includeFontPadding": false,
+              "marginEnd": 0,
             },
           ],
         ]
@@ -2242,6 +2443,9 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
             Object {
               "color": "rgb(255, 255, 255)",
             },
+            Object {
+              "marginStart": 4,
+            },
           ],
         ]
       }
@@ -2252,9 +2456,726 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
 </View>
 `;
 
+exports[`iOS BpkBadge should render correctly with multiple icons and no message 1`] = `
+<View>
+  <View
+    accessibilityLabel="I am accessible"
+    accessibilityRole="text"
+    accessible={true}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 20,
+          "justifyContent": "center",
+          "paddingHorizontal": 8,
+        },
+        Object {
+          "borderBottomLeftRadius": 4,
+          "borderBottomRightRadius": 4,
+          "borderTopLeftRadius": 4,
+          "borderTopRightRadius": 4,
+        },
+        Object {
+          "backgroundColor": "rgb(0, 215, 117)",
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+            ],
+            null,
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "System",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {},
+          Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
+            Object {
+              "color": "rgb(82, 76, 97)",
+              "includeFontPadding": false,
+            },
+          ],
+        ]
+      }
+    >
+      +
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+            ],
+            Object {
+              "marginEnd": 0,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    accessibilityLabel="I am accessible"
+    accessibilityRole="text"
+    accessible={true}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 20,
+          "justifyContent": "center",
+          "paddingHorizontal": 8,
+        },
+        Object {
+          "borderBottomLeftRadius": 4,
+          "borderBottomRightRadius": 4,
+          "borderTopLeftRadius": 4,
+          "borderTopRightRadius": 4,
+        },
+        Object {
+          "backgroundColor": "rgb(255, 187, 0)",
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+            ],
+            null,
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "System",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {},
+          Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
+            Object {
+              "color": "rgb(82, 76, 97)",
+              "includeFontPadding": false,
+            },
+          ],
+        ]
+      }
+    >
+      +
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+            ],
+            Object {
+              "marginEnd": 0,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    accessibilityLabel="I am accessible"
+    accessibilityRole="text"
+    accessible={true}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 20,
+          "justifyContent": "center",
+          "paddingHorizontal": 8,
+        },
+        Object {
+          "borderBottomLeftRadius": 4,
+          "borderBottomRightRadius": 4,
+          "borderTopLeftRadius": 4,
+          "borderTopRightRadius": 4,
+        },
+        Object {
+          "backgroundColor": "rgb(255, 84, 82)",
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+                "includeFontPadding": false,
+              },
+            ],
+            null,
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "System",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {},
+          Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+              "includeFontPadding": false,
+            },
+          ],
+        ]
+      }
+    >
+      +
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+                "includeFontPadding": false,
+              },
+            ],
+            Object {
+              "marginEnd": 0,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    accessibilityLabel="I am accessible"
+    accessibilityRole="text"
+    accessible={true}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 20,
+          "justifyContent": "center",
+          "paddingHorizontal": 8,
+        },
+        Object {
+          "borderBottomLeftRadius": 4,
+          "borderBottomRightRadius": 4,
+          "borderTopLeftRadius": 4,
+          "borderTopRightRadius": 4,
+        },
+        Object {
+          "backgroundColor": "rgb(243, 242, 245)",
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+            ],
+            null,
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "System",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {},
+          Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
+            Object {
+              "color": "rgb(82, 76, 97)",
+              "includeFontPadding": false,
+            },
+          ],
+        ]
+      }
+    >
+      +
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+            ],
+            Object {
+              "marginEnd": 0,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    accessibilityLabel="I am accessible"
+    accessibilityRole="text"
+    accessible={true}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 20,
+          "justifyContent": "center",
+          "paddingHorizontal": 8,
+        },
+        Object {
+          "borderBottomLeftRadius": 4,
+          "borderBottomRightRadius": 4,
+          "borderTopLeftRadius": 4,
+          "borderTopRightRadius": 4,
+        },
+        Object {
+          "backgroundColor": "rgb(255, 255, 255)",
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+            ],
+            null,
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "System",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {},
+          Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
+            Object {
+              "color": "rgb(82, 76, 97)",
+              "includeFontPadding": false,
+            },
+          ],
+        ]
+      }
+    >
+      +
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+            ],
+            Object {
+              "marginEnd": 0,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    accessibilityLabel="I am accessible"
+    accessibilityRole="text"
+    accessible={true}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 20,
+          "justifyContent": "center",
+          "paddingHorizontal": 8,
+        },
+        Object {
+          "borderBottomLeftRadius": 4,
+          "borderBottomRightRadius": 4,
+          "borderTopLeftRadius": 4,
+          "borderTopRightRadius": 4,
+        },
+        Array [
+          Object {
+            "backgroundColor": "rgba(255, 255, 255, 0.2)",
+            "paddingHorizontal": 7,
+          },
+          Object {
+            "borderColor": "rgb(255, 255, 255)",
+            "borderWidth": 1,
+          },
+        ],
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+                "includeFontPadding": false,
+              },
+            ],
+            null,
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "System",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {},
+          Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+              "includeFontPadding": false,
+            },
+          ],
+        ]
+      }
+    >
+      +
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Array [
+              Object {
+                "includeFontPadding": false,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+                "includeFontPadding": false,
+              },
+            ],
+            Object {
+              "marginEnd": 0,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</View>
+`;
+
 exports[`iOS BpkBadge should render correctly with user provided style 1`] = `
 <View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -2305,6 +3226,9 @@ exports[`iOS BpkBadge should render correctly with user provided style 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -2355,6 +3279,9 @@ exports[`iOS BpkBadge should render correctly with user provided style 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -2407,6 +3334,9 @@ exports[`iOS BpkBadge should render correctly with user provided style 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -2457,6 +3387,9 @@ exports[`iOS BpkBadge should render correctly with user provided style 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -2507,6 +3440,9 @@ exports[`iOS BpkBadge should render correctly with user provided style 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {

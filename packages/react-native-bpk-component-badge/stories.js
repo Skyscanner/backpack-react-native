@@ -18,7 +18,7 @@
 
 /* @flow */
 
-import React from 'react';
+import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react-native';
 import { View, StyleSheet } from 'react-native';
 import BpkIcon, { icons } from 'react-native-bpk-component-icon';
@@ -96,21 +96,38 @@ const generateBadgeStory = (
       <StorySubheading>{capitalize(i)}</StorySubheading>
       <View style={[badgeWrapperStyle, style[i]]}>
         {contents.map(content => (
-          <BpkBadge
-            key={content}
-            message={content}
-            accessoryView={
-              config.icons ? (
-                <BpkBadgeIcons
-                  icons={iconSets[config.icons]}
-                  separator={config.icons === 'multiple' ? '+' : null}
-                />
-              ) : null
-            }
-            docked={config.docked}
-            type={i}
-            style={style.badge}
-          />
+          <Fragment key={content}>
+            <BpkBadge
+              message={content}
+              accessoryView={
+                config.icons ? (
+                  <BpkBadgeIcons
+                    icons={iconSets[config.icons]}
+                    separator={config.icons === 'multiple' ? '+' : null}
+                  />
+                ) : null
+              }
+              docked={config.docked}
+              type={i}
+              style={style.badge}
+            />
+            {config.icons === 'multiple' && (
+              <BpkBadge
+                accessibilityLabel={content}
+                accessoryView={
+                  config.icons ? (
+                    <BpkBadgeIcons
+                      icons={iconSets[config.icons]}
+                      separator={config.icons === 'multiple' ? '+' : null}
+                    />
+                  ) : null
+                }
+                docked={config.docked}
+                type={i}
+                style={style.badge}
+              />
+            )}
+          </Fragment>
         ))}
       </View>
     </View>

@@ -1,5 +1,12 @@
 # Unreleased
 
+**Added:**
+
+- react-native-bpk-component-badge:
+  - The `message` prop is now optional. This is for when badges have only an `accessoryView` and no text.
+  - Added an `accessibilityLabel` prop. This defaults to the contents of `message` and is only a required prop when `message` is `null`.
+  - Fixed padding issues when badges had no `message` and an `accessoryView`.
+
 **Fixed:**
 
 - react-native-bpk-component-text-input:
