@@ -113,6 +113,7 @@ const generateBadgeStory = (
             />
             {config.icons === 'multiple' && (
               <BpkBadge
+                // accessibilityLabel={content}
                 accessoryView={
                   config.icons ? (
                     <BpkBadgeIcons

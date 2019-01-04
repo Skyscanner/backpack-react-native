@@ -119,10 +119,11 @@ export const BADGE_DOCKED_TYPES = {
 };
 
 export type Props = {
-  message: ?string,
+  accessibilityLabel: ?string,
   accessoryView: ?Element<*>,
-  type: $Keys<typeof BADGE_TYPES>,
   docked: ?$Keys<typeof BADGE_DOCKED_TYPES>,
+  message: ?string,
+  type: $Keys<typeof BADGE_TYPES>,
   style: ?(Object | Array<Object>),
 };
 
@@ -141,7 +142,14 @@ const textStyleMap: { [key: string]: Object | Array<Object> } = {
 };
 
 const BpkBadge = (props: Props) => {
-  const { accessoryView, message, docked, type, style: userStyle } = props;
+  const {
+    accessoryView,
+    accessibilityLabel,
+    message,
+    docked,
+    type,
+    style: userStyle,
+  } = props;
 
   const viewStyle = [styles.viewBase, styles.borderBase];
   const textStyle = [styles.textBase];
@@ -173,7 +181,12 @@ const BpkBadge = (props: Props) => {
   }
 
   return (
-    <View style={viewStyle}>
+    <View
+      accessible
+      accessibilityLabel={accessibilityLabel || message}
+      accessibilityRole="text"
+      style={viewStyle}
+    >
       {adjustedAccessoryView}
       {message && (
         <BpkText allowFontScaling={false} style={textStyle} textStyle="xs">
@@ -184,7 +197,22 @@ const BpkBadge = (props: Props) => {
   );
 };
 
+const accessibilityLabelPropType = (
+  props: { [string]: any },
+  propName: string,
+  componentName: string,
+  ...rest: [any]
+) => {
+  if (!props[propName] && !props.message) {
+    return new Error(
+      `${componentName}: "accessibilityLabel" is required when "message" is not provided.`,
+    );
+  }
+  return PropTypes.string(props, propName, componentName, ...rest);
+};
+
 BpkBadge.propTypes = {
+  accessibilityLabel: accessibilityLabelPropType,
   accessoryView: PropTypes.element,
   docked: PropTypes.oneOf(Object.keys(BADGE_DOCKED_TYPES)),
   message: PropTypes.string,
@@ -193,6 +221,7 @@ BpkBadge.propTypes = {
 };
 
 BpkBadge.defaultProps = {
+  accessibilityLabel: null,
   accessoryView: null,
   docked: null,
   message: null,

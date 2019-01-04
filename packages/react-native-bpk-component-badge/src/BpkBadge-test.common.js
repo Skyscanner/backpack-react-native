@@ -43,6 +43,7 @@ const generateBadgeStory = (config: {
     <BpkBadge
       key={type}
       style={config.style}
+      accessibilityLabel={message || 'I am accessible'}
       message={message}
       docked={config.docked}
       type={type}
@@ -110,7 +111,7 @@ const commonTests = () => {
       expect(() => {
         // $FlowFixMe
         renderer.create(generateBadgeStory({ docked: 'unknown' }));
-      }).toThrow();
+      }).toThrowError();
     });
 
     it('should render correctly with user provided style', () => {

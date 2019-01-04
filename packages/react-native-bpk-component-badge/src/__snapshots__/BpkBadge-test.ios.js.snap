@@ -3,6 +3,9 @@
 exports[`iOS BpkBadge should render correctly docked to the end 1`] = `
 <View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -58,6 +61,9 @@ exports[`iOS BpkBadge should render correctly docked to the end 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -113,6 +119,9 @@ exports[`iOS BpkBadge should render correctly docked to the end 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -170,6 +179,9 @@ exports[`iOS BpkBadge should render correctly docked to the end 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -225,6 +237,9 @@ exports[`iOS BpkBadge should render correctly docked to the end 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -280,6 +295,9 @@ exports[`iOS BpkBadge should render correctly docked to the end 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -349,6 +367,9 @@ exports[`iOS BpkBadge should render correctly docked to the end 1`] = `
 exports[`iOS BpkBadge should render correctly docked to the start 1`] = `
 <View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -404,6 +425,9 @@ exports[`iOS BpkBadge should render correctly docked to the start 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -459,6 +483,9 @@ exports[`iOS BpkBadge should render correctly docked to the start 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -516,6 +543,9 @@ exports[`iOS BpkBadge should render correctly docked to the start 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -571,6 +601,9 @@ exports[`iOS BpkBadge should render correctly docked to the start 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -626,6 +659,9 @@ exports[`iOS BpkBadge should render correctly docked to the start 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -695,6 +731,9 @@ exports[`iOS BpkBadge should render correctly docked to the start 1`] = `
 exports[`iOS BpkBadge should render correctly in normal mode 1`] = `
 <View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -742,6 +781,9 @@ exports[`iOS BpkBadge should render correctly in normal mode 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -789,6 +831,9 @@ exports[`iOS BpkBadge should render correctly in normal mode 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -838,6 +883,9 @@ exports[`iOS BpkBadge should render correctly in normal mode 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -885,6 +933,9 @@ exports[`iOS BpkBadge should render correctly in normal mode 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -932,6 +983,9 @@ exports[`iOS BpkBadge should render correctly in normal mode 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -993,6 +1047,9 @@ exports[`iOS BpkBadge should render correctly in normal mode 1`] = `
 exports[`iOS BpkBadge should render correctly with icon 1`] = `
 <View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -1076,6 +1133,9 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -1159,6 +1219,9 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -1244,6 +1307,9 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -1327,6 +1393,9 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -1410,6 +1479,9 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -1507,6 +1579,9 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
 exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
 <View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -1648,6 +1723,9 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -1789,6 +1867,9 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -1932,6 +2013,9 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -2073,6 +2157,9 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -2214,6 +2301,9 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -2369,6 +2459,9 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
 exports[`iOS BpkBadge should render correctly with multiple icons and no message 1`] = `
 <View>
   <View
+    accessibilityLabel="I am accessible"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -2483,6 +2576,9 @@ exports[`iOS BpkBadge should render correctly with multiple icons and no message
     </Text>
   </View>
   <View
+    accessibilityLabel="I am accessible"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -2597,6 +2693,9 @@ exports[`iOS BpkBadge should render correctly with multiple icons and no message
     </Text>
   </View>
   <View
+    accessibilityLabel="I am accessible"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -2711,6 +2810,9 @@ exports[`iOS BpkBadge should render correctly with multiple icons and no message
     </Text>
   </View>
   <View
+    accessibilityLabel="I am accessible"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -2825,6 +2927,9 @@ exports[`iOS BpkBadge should render correctly with multiple icons and no message
     </Text>
   </View>
   <View
+    accessibilityLabel="I am accessible"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -2939,6 +3044,9 @@ exports[`iOS BpkBadge should render correctly with multiple icons and no message
     </Text>
   </View>
   <View
+    accessibilityLabel="I am accessible"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -3065,6 +3173,9 @@ exports[`iOS BpkBadge should render correctly with multiple icons and no message
 exports[`iOS BpkBadge should render correctly with user provided style 1`] = `
 <View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -3115,6 +3226,9 @@ exports[`iOS BpkBadge should render correctly with user provided style 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -3165,6 +3279,9 @@ exports[`iOS BpkBadge should render correctly with user provided style 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -3217,6 +3334,9 @@ exports[`iOS BpkBadge should render correctly with user provided style 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -3267,6 +3387,9 @@ exports[`iOS BpkBadge should render correctly with user provided style 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {
@@ -3317,6 +3440,9 @@ exports[`iOS BpkBadge should render correctly with user provided style 1`] = `
     </Text>
   </View>
   <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
     style={
       Array [
         Object {

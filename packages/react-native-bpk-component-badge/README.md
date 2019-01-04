@@ -29,7 +29,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <BpkBadge message="Badge" type={BADGE_TYPES.success} />
+        <BpkBadge message="Badge" accessibilityLabel="This is a badge" type={BADGE_TYPES.success} />
         <BpkBadge message="Badge" type={BADGE_TYPES.warning} />
         <BpkBadge message="Badge" type={BADGE_TYPES.destructive} />
         <BpkBadge message="Badge" type={BADGE_TYPES.inverse} />
@@ -55,12 +55,13 @@ export default class App extends Component {
 
 ## Props
 
-| Property              | PropType                                                                  | Required | Default Value |
-| --------------------- | --------------------------------------------------------------------------| -------- | ------------- |
-| accessoryView         | element                                                                   | false    | null          |
-| docked                | oneOf('start', 'end')                                                     | false    | null          |
-| message               | string                                                                    | false    | null          |
-| type                  | oneOf('success', 'warning', 'destructive', 'light', 'inverse', 'outline') | false    | warning       |
+| Property              | PropType                                                                  | Required              | Default Value |
+| --------------------- | --------------------------------------------------------------------------| --------------------- | ------------- |
+| accessibilityLabel    | string                                                                    | if `message === null` | props.message |
+| accessoryView         | element                                                                   | false                 | null          |
+| docked                | oneOf('start', 'end')                                                     | false                 | null          |
+| message               | string                                                                    | false                 | null          |
+| type                  | oneOf('success', 'warning', 'destructive', 'light', 'inverse', 'outline') | false                 | warning       |
 
 ## `accessoryView`
 
