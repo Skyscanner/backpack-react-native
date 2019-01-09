@@ -1,4 +1,6 @@
 PODS:
+  - Backpack (5.0.0):
+    - FSCalendar (~> 2.8)
   - boost-for-react-native (1.63.0)
   - BVLinearGradient (2.4.0):
     - React
@@ -7,9 +9,12 @@ PODS:
     - boost-for-react-native
     - DoubleConversion
     - glog
+  - FSCalendar (2.8.0)
   - glog (0.3.5)
   - React (0.57.7):
     - React/Core (= 0.57.7)
+  - react-native-bpk-component-calendar (0.0.17):
+    - React
   - react-native-maps (0.21.0):
     - React
   - React/Core (0.57.7):
@@ -50,10 +55,12 @@ PODS:
   - yoga (0.57.7.React)
 
 DEPENDENCIES:
+  - Backpack
   - BVLinearGradient (from `../node_modules/react-native-linear-gradient`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
+  - react-native-bpk-component-calendar (from `../packages/react-native-bpk-component-calendar`)
   - react-native-maps (from `../packages/react-native-bpk-component-map/node_modules/react-native-maps`)
   - React/Core (from `../node_modules/react-native`)
   - React/CxxBridge (from `../node_modules/react-native`)
@@ -67,7 +74,9 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Backpack
     - boost-for-react-native
+    - FSCalendar
 
 EXTERNAL SOURCES:
   BVLinearGradient:
@@ -80,21 +89,26 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
   React:
     :path: "../node_modules/react-native"
+  react-native-bpk-component-calendar:
+    :path: "../packages/react-native-bpk-component-calendar"
   react-native-maps:
     :path: "../packages/react-native-bpk-component-map/node_modules/react-native-maps"
   yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  Backpack: 1e5f8dff158575477adb3d7aef3f85e4d3b48161
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BVLinearGradient: 6d8909e3fc6b089defa4b89d967441fa6827a2ee
   DoubleConversion: bb338842f62ab1d708ceb63ec3d999f0f3d98ecd
   Folly: c89ac2d5c6ab169cd7397ef27485c44f35f742c7
+  FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
   glog: e8acf0ebbf99759d3ff18c86c292a5898282dcde
   React: 1fe0eb13d90b625d94c3b117c274dcfd2e760e11
+  react-native-bpk-component-calendar: bf4189794d252de0ffb85bbb4e7ae2362284d395
   react-native-maps: 066c2afcc89e18726377bcc685315f989ca22449
   yoga: b1ce48b6cf950b98deae82838f5173ea7cf89e85
 
-PODFILE CHECKSUM: a820fd1dbae2729bbf89b107411a41e83d79792a
+PODFILE CHECKSUM: 71a199c6f498272144834817820281fc2458eb82
 
 COCOAPODS: 1.5.3
