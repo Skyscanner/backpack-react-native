@@ -57,6 +57,7 @@ configure(() => {
   require('../packages/react-native-bpk-component-banner-alert/stories');
   require('../packages/react-native-bpk-component-button-link/stories');
   require('../packages/react-native-bpk-component-button/stories');
+  require('../packages/react-native-bpk-component-calendar/stories');
   require('../packages/react-native-bpk-component-card/stories');
   require('../packages/react-native-bpk-component-carousel-indicator/stories');
   require('../packages/react-native-bpk-component-carousel/stories');

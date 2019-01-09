@@ -1,0 +1,21 @@
+{
+  "name": "react-native-bpk-component-calendar",
+  "private": true,
+  "version": "0.0.17",
+  "main": "index.js",
+  "description": "Backpack React Native calendar component.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Skyscanner/backpack.git"
+  },
+  "author": "Backpack Design System <backpack@skyscanner.net>",
+  "license": "Apache-2.0",
+  "peerDependencies": {
+    "react": "^16.0.0-alpha.1",
+    "react-native": ">= 0.47.0"
+  },
+  "dependencies": {
+    "bpk-tokens": "^27.4.4",
+    "prop-types": "^15.5.8"
+  }
+}
