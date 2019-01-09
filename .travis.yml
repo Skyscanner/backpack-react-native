@@ -13,7 +13,7 @@ script:
   - set -e
   - ./scripts/check-pristine-state package-lock.json ios/native.xcodeproj/project.pbxproj ios/native/Info.plist
   - npm run danger
-  - npm test
+  - TZ=Europe/London npm test
 
 cache:
   directories:

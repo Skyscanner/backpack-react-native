@@ -1,4 +1,4 @@
-platform :ios, '9.0'
+platform :ios, '10.0'
 
 target 'Backpack Native' do
 
@@ -23,6 +23,9 @@ target 'Backpack Native' do
   pod 'glog', podspec: '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', podspec: '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
+  # RN Bridging Pods
+  pod 'Backpack', '~> 6.0.0'
+  pod 'react-native-bpk-component-calendar', path: '../packages/react-native-bpk-component-calendar'
 
   # Third party pods
   pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
