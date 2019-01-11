@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-01-11 - Improve iOS picker accessory view
+
+**Fixed**
+
+- react-native-bpk-component-picker: 3.0.14 => 3.0.15
+  - (iOS only) The accessory view above the picker now uses the default iOS styles to match other inputs.
+
 # 2019-01-04 - Badge improvements plus sundry bug fixes
 
 **Added:**
