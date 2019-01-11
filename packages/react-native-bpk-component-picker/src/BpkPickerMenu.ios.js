@@ -28,17 +28,19 @@ import {
 } from 'react-native';
 import PropTypes from 'prop-types';
 import BpkButtonLink from 'react-native-bpk-component-button-link';
-import {
-  colorGray50,
-  colorGray200,
-  spacingSm,
-  spacingMd,
-} from 'bpk-tokens/tokens/base.react.native';
+import { colorGray200, spacingBase } from 'bpk-tokens/tokens/base.react.native';
 import {
   PICKER_MENU_PROP_TYPE,
   PICKER_MENU_DEFAULT_PROPS,
   type PickerMenuProps,
 } from './common-types';
+
+// Set to match built-in input accessory views in iOS.
+const IOS_INPUT_ACCESSORY_VIEW_BACKGROUND_COLOR = '#f9f9f9';
+const IOS_INPUT_ACCESSORY_VIEW_HEIGHT = 45;
+const IOS_INPUT_ACCESSORY_VIEW_DONE_LABEL_COLOR = '#007aff';
+const IOS_INPUT_ACCESSORY_VIEW_DONE_LABEL_FONT_SIZE = 17;
+const IOS_PICKER_MODAL_BACKGROUND_COLOR = '#d0d4da';
 
 const styles = StyleSheet.create({
   dismissOverlay: {
@@ -47,19 +49,24 @@ const styles = StyleSheet.create({
   modal: {
     flexDirection: 'column',
     width: '100%',
-    backgroundColor: colorGray200,
+    backgroundColor: IOS_PICKER_MODAL_BACKGROUND_COLOR,
     position: 'absolute',
     bottom: 0,
   },
   modalHeader: {
     flex: 1,
-    paddingVertical: spacingSm * 0.5,
-    paddingHorizontal: spacingMd,
+    paddingHorizontal: spacingBase,
     flexDirection: 'row',
-    backgroundColor: colorGray50,
+    backgroundColor: IOS_INPUT_ACCESSORY_VIEW_BACKGROUND_COLOR,
     borderTopWidth: 1, // eslint-disable-line backpack/use-tokens
     borderColor: colorGray200,
     justifyContent: 'flex-end',
+    height: IOS_INPUT_ACCESSORY_VIEW_HEIGHT,
+    alignItems: 'center',
+  },
+  doneLabel: {
+    color: IOS_INPUT_ACCESSORY_VIEW_DONE_LABEL_COLOR,
+    fontSize: IOS_INPUT_ACCESSORY_VIEW_DONE_LABEL_FONT_SIZE,
   },
 });
 
@@ -97,6 +104,7 @@ const BpkPickerMenu = (props: Props) => {
             onPress={onClose}
             textProps={{
               allowFontScaling: false,
+              style: styles.doneLabel,
             }}
           />
         </View>

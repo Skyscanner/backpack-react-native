@@ -30,7 +30,7 @@ exports[`iOS BpkPicker should render correctly 1`] = `
   <View
     style={
       Object {
-        "backgroundColor": "rgb(204, 201, 212)",
+        "backgroundColor": "#d0d4da",
         "bottom": 0,
         "flexDirection": "column",
         "position": "absolute",
@@ -41,14 +41,15 @@ exports[`iOS BpkPicker should render correctly 1`] = `
     <View
       style={
         Object {
-          "backgroundColor": "rgb(243, 242, 245)",
+          "alignItems": "center",
+          "backgroundColor": "#f9f9f9",
           "borderColor": "rgb(204, 201, 212)",
           "borderTopWidth": 1,
           "flex": 1,
           "flexDirection": "row",
+          "height": 45,
           "justifyContent": "flex-end",
-          "paddingHorizontal": 8,
-          "paddingVertical": 2,
+          "paddingHorizontal": 16,
         }
       }
     >
@@ -95,11 +96,10 @@ exports[`iOS BpkPicker should render correctly 1`] = `
                 Object {
                   "fontWeight": "600",
                 },
-                Array [
-                  Object {
-                    "color": "rgb(0, 178, 214)",
-                  },
-                ],
+                Object {
+                  "color": "#007aff",
+                  "fontSize": 17,
+                },
               ]
             }
           >
@@ -172,7 +172,7 @@ exports[`iOS BpkPicker should render correctly with a selected value 1`] = `
   <View
     style={
       Object {
-        "backgroundColor": "rgb(204, 201, 212)",
+        "backgroundColor": "#d0d4da",
         "bottom": 0,
         "flexDirection": "column",
         "position": "absolute",
@@ -183,14 +183,15 @@ exports[`iOS BpkPicker should render correctly with a selected value 1`] = `
     <View
       style={
         Object {
-          "backgroundColor": "rgb(243, 242, 245)",
+          "alignItems": "center",
+          "backgroundColor": "#f9f9f9",
           "borderColor": "rgb(204, 201, 212)",
           "borderTopWidth": 1,
           "flex": 1,
           "flexDirection": "row",
+          "height": 45,
           "justifyContent": "flex-end",
-          "paddingHorizontal": 8,
-          "paddingVertical": 2,
+          "paddingHorizontal": 16,
         }
       }
     >
@@ -237,11 +238,10 @@ exports[`iOS BpkPicker should render correctly with a selected value 1`] = `
                 Object {
                   "fontWeight": "600",
                 },
-                Array [
-                  Object {
-                    "color": "rgb(0, 178, 214)",
-                  },
-                ],
+                Object {
+                  "color": "#007aff",
+                  "fontSize": 17,
+                },
               ]
             }
           >
