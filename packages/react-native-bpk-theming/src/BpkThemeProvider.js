@@ -16,12 +16,9 @@
  * limitations under the License.
  */
 
-import { ThemeProvider } from 'theming';
-
-import createWithTheme from './create-with-theme';
+import { withTheme, ThemeProvider } from 'theming';
 
 const BpkThemeProvider = ThemeProvider;
 
 export default BpkThemeProvider;
-const withTheme = createWithTheme();
 export { withTheme };
