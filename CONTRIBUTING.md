@@ -93,13 +93,13 @@ $ANDROID_SDK_ROOT/tools/bin/sdkmanager --licenses
 Download Android system images for the minimum and targeted API levels. Note that you may get a warning about a `.cfg` file not being present. You're safe to ignore this.
 
 ```
-$ANDROID_SDK_ROOT/tools/bin/sdkmanager "system-images;android-27;google_apis;x86"
+$ANDROID_SDK_ROOT/tools/bin/sdkmanager "system-images;android-28;google_apis;x86"
 $ANDROID_SDK_ROOT/tools/bin/sdkmanager "system-images;android-21;google_apis;x86"
 ```
 Create Android Virtual Devices (AVDs):
 
 ```
-$ANDROID_SDK_ROOT/tools/bin/avdmanager create avd --name "bpk-avd" --package "system-images;android-27;google_apis;x86" --device "pixel" && cp android/bpk-avd.ini ~/.android/avd/bpk-avd.avd/config.ini
+$ANDROID_SDK_ROOT/tools/bin/avdmanager create avd --name "bpk-avd" --package "system-images;android-28;google_apis;x86" --device "pixel" && cp android/bpk-avd.ini ~/.android/avd/bpk-avd.avd/config.ini
 $ANDROID_SDK_ROOT/tools/bin/avdmanager create avd --name "bpk-avd-min" --package "system-images;android-21;google_apis;x86" --device "Nexus 5"
 ```
 
