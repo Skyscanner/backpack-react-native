@@ -36,15 +36,9 @@ type Props = {
 const BpkTouchableNativeFeedback = (props: Props) => {
   const { children, style, borderlessBackground, color, ...rest } = props;
   const preLollipop = Platform.Version < 21;
-  let background = TouchableNativeFeedback.SelectableBackground();
-
-  if (!preLollipop && borderlessBackground) {
-    if (color) {
-      background = TouchableNativeFeedback.Ripple(color, true);
-    } else {
-      background = TouchableNativeFeedback.SelectableBackgroundBorderless();
-    }
-  }
+  const background = preLollipop
+    ? TouchableNativeFeedback.SelectableBackground()
+    : TouchableNativeFeedback.Ripple(color, borderlessBackground);
 
   return (
     // eslint-disable-next-line backpack/use-components

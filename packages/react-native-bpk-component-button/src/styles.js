@@ -40,6 +40,7 @@ import { Platform, StyleSheet } from 'react-native';
 const base = StyleSheet.create({
   androidContainer: {
     borderRadius: borderRadiusPill,
+    overflow: 'hidden',
   },
   button: {
     borderRadius: borderRadiusPill,

@@ -23,7 +23,7 @@ import { withTheme } from 'react-native-bpk-theming';
 import BpkIcon from 'react-native-bpk-component-icon';
 import BpkText, { WEIGHT_STYLES } from 'react-native-bpk-component-text';
 import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-native-feedback';
-import { View } from 'react-native';
+import { Platform, View } from 'react-native';
 
 import {
   isTypeThemeable,
@@ -88,6 +88,7 @@ const BpkButton = (props: Props) => {
         disabled={disabled}
         onPress={onPress}
         type={type}
+        borderlessBackground={Platform.Version !== 28}
         accessibilityComponentType="button"
         accessibilityLabel={accessibilityLabel || title}
         accessibilityTraits={accessibilityTraits}
