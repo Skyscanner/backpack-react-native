@@ -9,6 +9,7 @@ import com.facebook.react.ReactPackage
 import com.facebook.react.shell.MainReactPackage
 import com.facebook.soloader.SoLoader
 import com.airbnb.android.react.maps.MapsPackage
+import net.skyscanner.backpack.reactnative.calendar.CalendarViewPackage
 
 import java.util.Arrays
 
@@ -23,7 +24,8 @@ class MainApplication : Application(), ReactApplication {
             return Arrays.asList(
                     MainReactPackage(),
                     MapsPackage(),
-                    LinearGradientPackage()
+                    LinearGradientPackage(),
+                    CalendarViewPackage()
             )
         }
     }

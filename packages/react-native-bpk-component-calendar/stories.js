@@ -47,11 +47,7 @@ class DatePickerExample extends Component {
   };
 
   handleNewDates = newDates => {
-    let selectedDateString = '';
-    if (newDates.length > 0) {
-      const firstDate = newDates[0].toLocaleDateString();
-      selectedDateString = firstDate;
-    }
+    const selectedDateString = newDates.map( dt => dt.toLocaleDateString()).toString()
     this.setState({
       selectedDates: newDates,
       selectedDateString,

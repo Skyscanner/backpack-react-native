@@ -1,0 +1,42 @@
+package net.skyscanner.backpack.reactnative.calendar.calendar
+
+import android.content.Context
+import android.util.AttributeSet
+import android.widget.LinearLayout
+import net.skyscanner.backpack.reactnative.calendar.calendar.presenter.BpkCalendarController
+import net.skyscanner.backpack.reactnative.calendar.calendar.view.CalendarView
+import net.skyscanner.backpack.reactnative.calendar.calendar.view.WeekdayHeaderView
+
+
+open class BpkCalendar @JvmOverloads constructor(
+  context: Context,
+  attrs: AttributeSet? = null,
+  defStyle: Int = 0
+) : LinearLayout(context, attrs, defStyle) {
+
+  private val calendarView: CalendarView by lazy {
+    CalendarView(context, attrs).also { calendarView ->
+      LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT)
+        .also { calendarView.layoutParams = it }
+    }
+  }
+
+  private val weekdayHeaderView: WeekdayHeaderView by lazy {
+    WeekdayHeaderView(context, attrs)
+  }
+
+  init {
+    orientation = LinearLayout.VERTICAL
+    layoutParams = LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT)
+
+    addView(weekdayHeaderView)
+    addView(LinearLayout(context).also {
+      it.addView(calendarView)
+    })
+  }
+
+  fun setController(controller: BpkCalendarController) {
+    weekdayHeaderView.initializeWithLocale(controller.locale)
+    calendarView.controller = controller
+  }
+}

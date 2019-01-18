@@ -123,7 +123,7 @@ android {
         multiDexEnabled true
         testBuildType System.getProperty('testBuildType', 'debug')
         missingDimensionStrategy "minReactNative", "minReactNative46"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         manifestPlaceholders = [googleMapsApiKey: getGMapsApiKey()]
     }
 
@@ -169,22 +169,23 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
+    implementation "androidx.appcompat:appcompat:1.0.0"
     // From node_modules
     implementation 'com.facebook.react:react-native:+'
     // From node_modules
-    implementation 'net.skyscanner.backpack:Backpack:0.2.0'
+    implementation 'com.github.skyscanner:backpack-android:2604aac25dacb7b003c62f6a64df386569e1529e'
     implementation project(':react-native-maps')
     implementation project(':react-native-linear-gradient')
-    implementation "com.android.support:support-v4:${rootProject.ext.supportLibVersion}"
-    implementation "com.android.support:recyclerview-v7:${rootProject.ext.supportLibVersion}"
-    implementation "com.android.support:design:${rootProject.ext.supportLibVersion}"
-    implementation 'com.android.support:support-v4:27.1.1'
-    implementation 'com.android.support:recyclerview-v7:27.1.1'
-    implementation 'com.android.support:design:27.1.1'
+    implementation project(':react-native-calendar')
+    implementation "androidx.legacy:legacy-support-v4:1.0.0"
+    implementation "androidx.recyclerview:recyclerview:1.0.0"
+    implementation "com.google.android.material:material:1.0.0"
+//    implementation 'androidx.legacy:legacy-support-v4:1.0.0-beta01'
+//    implementation 'androidx.recyclerview:recyclerview:1.0.0-beta01'
+//    implementation 'com.google.android.material:material:1.0.0-beta01'
     androidTestImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.1'
-    androidTestImplementation 'com.android.support.test:rules:1.0.1'
+    androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
+    androidTestImplementation 'androidx.test:rules:1.1.0-alpha4'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
     implementation 'com.squareup.picasso:picasso:2.71828'

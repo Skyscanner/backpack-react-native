@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 28
+  buildToolsVersion "28.0.3"
+
+    defaultConfig {
+//        applicationId "net.skyscanner.backpack"
+        minSdkVersion 21
+        targetSdkVersion 28
+//        versionCode 1
+//        versionName "1.0"
+//        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+//    buildTypes {
+//        release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//    }
+}
+
+dependencies {
+  compileOnly "com.facebook.react:react-native:+"
+  implementation "com.github.skyscanner:backpack-android:2604aac25dacb7b003c62f6a64df386569e1529e"
+}

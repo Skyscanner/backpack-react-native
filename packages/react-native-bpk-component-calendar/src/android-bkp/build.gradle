@@ -1,0 +1,51 @@
+apply plugin: 'com.android.library'
+
+def DEFAULT_COMPILE_SDK_VERSION               = 28
+def DEFAULT_BUILD_TOOLS_VERSION               = "28.0.3"
+def DEFAULT_TARGET_SDK_VERSION                = 28
+def DEFAULT_MIN_SDK_VERSION                   = 21
+
+def safeExtGet(prop, fallback) {
+    rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
+}
+
+//version = 0.1 //TODO: align with component version?
+//group='com.github.skyscanner.backpack-react-native'
+
+buildscript {
+  repositories {
+    jcenter()
+    google()
+  }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:3.2.0'
+  }
+}
+
+repositories {
+  maven { url 'https://jitpack.io' }
+  maven {
+    // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
+    url "$rootDir/node_modules/react-native/android"
+  }
+  google()
+  mavenCentral()
+}
+
+android {
+  compileSdkVersion safeExtGet('compileSdkVersion', DEFAULT_COMPILE_SDK_VERSION)
+  buildToolsVersion safeExtGet('buildToolsVersion', DEFAULT_BUILD_TOOLS_VERSION)
+
+
+  defaultConfig {
+    minSdkVersion safeExtGet('minSdkVersion', DEFAULT_MIN_SDK_VERSION)
+    targetSdkVersion safeExtGet('targetSdkVersion', DEFAULT_TARGET_SDK_VERSION)
+    versionName "1.0"
+  }
+}
+
+dependencies {
+  compileOnly "com.facebook.react:react-native:+"
+  implementation 'com.github.skyscanner:backpack-android:2.3.1'
+  // TODO: backpack
+}

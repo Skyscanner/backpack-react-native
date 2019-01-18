@@ -25,19 +25,32 @@ import {
   StyleSheet,
   View,
   ViewPropTypes,
+  requireNativeComponent,
 } from 'react-native';
+
+console.log('NativeModules');
+
+const RCTCalendarView = requireNativeComponent('RCTCalendarView');
 
 /* eslint-disable */
 const styles = StyleSheet.create({
   base: {
-    backgroundColor: 'red',
+    backgroundColor: 'white',
+    // height: 300,
+    // width: 300
   },
+  calendar: {
+    width: '100%',
+    height: '95%'
+  }
 });
 /* eslint-enable */
 
 export type Props = {
   style: ?StyleObj,
 };
+
+var hack_dates = "";
 
 const BpkCalendar = (props: Props) => {
   const { style: userStyle, ...rest } = props;
@@ -50,7 +63,19 @@ const BpkCalendar = (props: Props) => {
   /* eslint-disable */
   return (
     <View style={style} {...rest}>
-      <Text>THIS COMPONENT HAS NOT BEEN BRIDGED YET</Text>
+      <Text>{hack_dates}</Text>
+      <RCTCalendarView 
+        style={styles.calendar}
+        onChange={(event) => { 
+          if (props.onDateSelectionChanged) {
+            const dates = event.nativeEvent.dates;
+            hack_dates = dates.toString()
+            const parsed = dates.map( dt => new Date(dt))
+            props.onDateSelectionChanged(parsed)
+          }
+        }}
+        selectedDates={[]}
+      />
     </View>
   );
   /* eslint-enable */

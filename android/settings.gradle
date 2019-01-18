@@ -9,3 +9,5 @@ project(':react-native-maps').projectDir = new File(rootProject.projectDir, '../
 include ':react-native-linear-gradient'
 project(':react-native-linear-gradient').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-linear-gradient/android')
 
+include ':react-native-calendar'
+project(':react-native-calendar').projectDir = new File(rootProject.projectDir, '../packages/react-native-bpk-component-calendar/src/android/app')

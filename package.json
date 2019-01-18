@@ -13,7 +13,7 @@
   "author": "Backpack Design System <backpack@skyscanner.net>",
   "license": "Apache-2.0",
   "scripts": {
-    "preinstall": "npx ensure-node-env",
+    "preinstall": "",
     "postinstall": "npm run bootstrap && npm run link",
     "install:cocoapods": "(cd ios && bundle install && bundle exec pod install)",
     "bootstrap": "lerna bootstrap --no-ci",

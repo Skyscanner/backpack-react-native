@@ -61,7 +61,7 @@ const BpkCalendar = props => {
   return (
     <View style={style} {...rest}>
       <RCTCalendarView
-        locale="en-GB"
+        locale="pt-BR"
         onDateSelection={event => {
           const datesConverted = event.nativeEvent.selectedDates.map(
             dateString => new Date(Date.parse(dateString)),
