@@ -7,6 +7,7 @@ exports[`Android API levels Android API<21 should render without ripple 1`] = `
       Array [
         Object {
           "borderRadius": 40,
+          "overflow": "hidden",
         },
       ],
       null,
@@ -88,6 +89,7 @@ exports[`Android API levels Android API>=21 should render with ripple 1`] = `
       Array [
         Object {
           "borderRadius": 40,
+          "overflow": "hidden",
         },
       ],
       null,
@@ -103,8 +105,9 @@ exports[`Android API levels Android API>=21 should render with ripple 1`] = `
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -169,6 +172,7 @@ exports[`Android BpkButton should render correctly 1`] = `
       Array [
         Object {
           "borderRadius": 40,
+          "overflow": "hidden",
         },
       ],
       null,
@@ -184,8 +188,9 @@ exports[`Android BpkButton should render correctly 1`] = `
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -250,6 +255,7 @@ exports[`Android BpkButton should render correctly with iconAlignment="centerLea
       Array [
         Object {
           "borderRadius": 40,
+          "overflow": "hidden",
         },
         undefined,
       ],
@@ -266,8 +272,9 @@ exports[`Android BpkButton should render correctly with iconAlignment="centerLea
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -374,6 +381,7 @@ exports[`Android BpkButton should render correctly with iconAlignment="centerTra
       Array [
         Object {
           "borderRadius": 40,
+          "overflow": "hidden",
         },
       ],
       null,
@@ -389,8 +397,9 @@ exports[`Android BpkButton should render correctly with iconAlignment="centerTra
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -488,6 +497,7 @@ exports[`Android BpkButton should render correctly with iconAlignment="leading" 
       Array [
         Object {
           "borderRadius": 40,
+          "overflow": "hidden",
         },
         undefined,
         undefined,
@@ -505,8 +515,9 @@ exports[`Android BpkButton should render correctly with iconAlignment="leading" 
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -619,6 +630,7 @@ exports[`Android BpkButton should render correctly with iconAlignment="trailing"
       Array [
         Object {
           "borderRadius": 40,
+          "overflow": "hidden",
         },
         undefined,
       ],
@@ -635,8 +647,9 @@ exports[`Android BpkButton should render correctly with iconAlignment="trailing"
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -740,6 +753,7 @@ exports[`Android BpkButton should render correctly with type="destructive" 1`] =
       Array [
         Object {
           "borderRadius": 40,
+          "overflow": "hidden",
         },
       ],
       null,
@@ -755,8 +769,9 @@ exports[`Android BpkButton should render correctly with type="destructive" 1`] =
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -830,6 +845,7 @@ exports[`Android BpkButton should render correctly with type="destructive" and d
       Array [
         Object {
           "borderRadius": 40,
+          "overflow": "hidden",
         },
         undefined,
       ],
@@ -846,8 +862,9 @@ exports[`Android BpkButton should render correctly with type="destructive" and d
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -925,6 +942,7 @@ exports[`Android BpkButton should render correctly with type="featured" 1`] = `
       Array [
         Object {
           "borderRadius": 40,
+          "overflow": "hidden",
         },
       ],
       null,
@@ -940,8 +958,9 @@ exports[`Android BpkButton should render correctly with type="featured" 1`] = `
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -1006,6 +1025,7 @@ exports[`Android BpkButton should render correctly with type="featured" and disa
       Array [
         Object {
           "borderRadius": 40,
+          "overflow": "hidden",
         },
         undefined,
       ],
@@ -1022,8 +1042,9 @@ exports[`Android BpkButton should render correctly with type="featured" and disa
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -1092,6 +1113,7 @@ exports[`Android BpkButton should render correctly with type="primary" 1`] = `
       Array [
         Object {
           "borderRadius": 40,
+          "overflow": "hidden",
         },
       ],
       null,
@@ -1107,8 +1129,9 @@ exports[`Android BpkButton should render correctly with type="primary" 1`] = `
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -1173,6 +1196,7 @@ exports[`Android BpkButton should render correctly with type="primary" and disab
       Array [
         Object {
           "borderRadius": 40,
+          "overflow": "hidden",
         },
         undefined,
       ],
@@ -1189,8 +1213,9 @@ exports[`Android BpkButton should render correctly with type="primary" and disab
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -1259,6 +1284,7 @@ exports[`Android BpkButton should render correctly with type="secondary" 1`] = `
       Array [
         Object {
           "borderRadius": 40,
+          "overflow": "hidden",
         },
       ],
       null,
@@ -1274,8 +1300,9 @@ exports[`Android BpkButton should render correctly with type="secondary" 1`] = `
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -1349,6 +1376,7 @@ exports[`Android BpkButton should render correctly with type="secondary" and dis
       Array [
         Object {
           "borderRadius": 40,
+          "overflow": "hidden",
         },
         undefined,
       ],
@@ -1365,8 +1393,9 @@ exports[`Android BpkButton should render correctly with type="secondary" and dis
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -1444,6 +1473,7 @@ exports[`Android BpkButton should support elements as icons 1`] = `
       Array [
         Object {
           "borderRadius": 40,
+          "overflow": "hidden",
         },
         undefined,
       ],
@@ -1460,8 +1490,9 @@ exports[`Android BpkButton should support elements as icons 1`] = `
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -1519,6 +1550,7 @@ exports[`Android BpkButton should support having an icon as well as a title 1`] 
       Array [
         Object {
           "borderRadius": 40,
+          "overflow": "hidden",
         },
         undefined,
       ],
@@ -1535,8 +1567,9 @@ exports[`Android BpkButton should support having an icon as well as a title 1`] 
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -1640,6 +1673,7 @@ exports[`Android BpkButton should support overwriting styles 1`] = `
       Array [
         Object {
           "borderRadius": 40,
+          "overflow": "hidden",
         },
       ],
       Object {
@@ -1657,8 +1691,9 @@ exports[`Android BpkButton should support overwriting styles 1`] = `
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -1723,6 +1758,7 @@ exports[`Android BpkButton should support the "disabled" property 1`] = `
       Array [
         Object {
           "borderRadius": 40,
+          "overflow": "hidden",
         },
         undefined,
       ],
@@ -1739,8 +1775,9 @@ exports[`Android BpkButton should support the "disabled" property 1`] = `
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -1809,6 +1846,7 @@ exports[`Android BpkButton should support the "icon" property 1`] = `
       Array [
         Object {
           "borderRadius": 40,
+          "overflow": "hidden",
         },
         undefined,
       ],
@@ -1825,8 +1863,9 @@ exports[`Android BpkButton should support the "icon" property 1`] = `
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -1930,6 +1969,7 @@ exports[`Android BpkButton should support the "iconOnly" property 1`] = `
       Array [
         Object {
           "borderRadius": 40,
+          "overflow": "hidden",
         },
         undefined,
       ],
@@ -1946,8 +1986,9 @@ exports[`Android BpkButton should support the "iconOnly" property 1`] = `
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -2026,6 +2067,7 @@ exports[`Android BpkButton should support the "secondary" property 1`] = `
       Array [
         Object {
           "borderRadius": 40,
+          "overflow": "hidden",
         },
       ],
       null,
@@ -2041,8 +2083,9 @@ exports[`Android BpkButton should support the "secondary" property 1`] = `
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -2116,6 +2159,7 @@ exports[`Android BpkButtonThemed should render correctly 1`] = `
       Array [
         Object {
           "borderRadius": 40,
+          "overflow": "hidden",
         },
       ],
       null,
@@ -2131,8 +2175,9 @@ exports[`Android BpkButtonThemed should render correctly 1`] = `
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}

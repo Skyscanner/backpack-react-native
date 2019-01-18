@@ -40,8 +40,9 @@ exports[`Android BpkPhoneNumberInput should render correctly 1`] = `
       isTVSelectable={true}
       nativeBackgroundAndroid={
         Object {
-          "attribute": "selectableItemBackground",
-          "type": "ThemeAttrAndroid",
+          "borderless": false,
+          "color": null,
+          "type": "RippleAndroid",
         }
       }
       onResponderGrant={[Function]}
@@ -202,8 +203,9 @@ exports[`Android BpkPhoneNumberInput should render correctly with \`editable\` f
       isTVSelectable={true}
       nativeBackgroundAndroid={
         Object {
-          "attribute": "selectableItemBackground",
-          "type": "ThemeAttrAndroid",
+          "borderless": false,
+          "color": null,
+          "type": "RippleAndroid",
         }
       }
       onResponderGrant={[Function]}

@@ -25,8 +25,9 @@ exports[`BpkTouchableNativeFeedback should render correctly on API >= 21 1`] = `
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
-      "attribute": "selectableItemBackgroundBorderless",
-      "type": "ThemeAttrAndroid",
+      "borderless": true,
+      "color": null,
+      "type": "RippleAndroid",
     }
   }
   onResponderGrant={[Function]}
@@ -44,8 +45,9 @@ exports[`BpkTouchableNativeFeedback should render correctly with arbitrary props
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
-      "attribute": "selectableItemBackgroundBorderless",
-      "type": "ThemeAttrAndroid",
+      "borderless": true,
+      "color": null,
+      "type": "RippleAndroid",
     }
   }
   onResponderGrant={[Function]}
@@ -64,8 +66,9 @@ exports[`BpkTouchableNativeFeedback should render correctly with custom style pr
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
-      "attribute": "selectableItemBackgroundBorderless",
-      "type": "ThemeAttrAndroid",
+      "borderless": true,
+      "color": null,
+      "type": "RippleAndroid",
     }
   }
   onResponderGrant={[Function]}

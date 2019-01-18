@@ -18,6 +18,7 @@ exports[`Android BpkNudger should disable theming if the required attribute is o
         Array [
           Object {
             "borderRadius": 40,
+            "overflow": "hidden",
           },
           undefined,
         ],
@@ -36,8 +37,9 @@ exports[`Android BpkNudger should disable theming if the required attribute is o
       isTVSelectable={true}
       nativeBackgroundAndroid={
         Object {
-          "attribute": "selectableItemBackgroundBorderless",
-          "type": "ThemeAttrAndroid",
+          "borderless": true,
+          "color": null,
+          "type": "RippleAndroid",
         }
       }
       onResponderGrant={[Function]}
@@ -144,6 +146,7 @@ exports[`Android BpkNudger should disable theming if the required attribute is o
         Array [
           Object {
             "borderRadius": 40,
+            "overflow": "hidden",
           },
           undefined,
         ],
@@ -162,8 +165,9 @@ exports[`Android BpkNudger should disable theming if the required attribute is o
       isTVSelectable={true}
       nativeBackgroundAndroid={
         Object {
-          "attribute": "selectableItemBackgroundBorderless",
-          "type": "ThemeAttrAndroid",
+          "borderless": true,
+          "color": null,
+          "type": "RippleAndroid",
         }
       }
       onResponderGrant={[Function]}
@@ -263,6 +267,7 @@ exports[`Android BpkNudger should render correctly 1`] = `
         Array [
           Object {
             "borderRadius": 40,
+            "overflow": "hidden",
           },
           undefined,
         ],
@@ -281,8 +286,9 @@ exports[`Android BpkNudger should render correctly 1`] = `
       isTVSelectable={true}
       nativeBackgroundAndroid={
         Object {
-          "attribute": "selectableItemBackgroundBorderless",
-          "type": "ThemeAttrAndroid",
+          "borderless": true,
+          "color": null,
+          "type": "RippleAndroid",
         }
       }
       onResponderGrant={[Function]}
@@ -389,6 +395,7 @@ exports[`Android BpkNudger should render correctly 1`] = `
         Array [
           Object {
             "borderRadius": 40,
+            "overflow": "hidden",
           },
           undefined,
         ],
@@ -407,8 +414,9 @@ exports[`Android BpkNudger should render correctly 1`] = `
       isTVSelectable={true}
       nativeBackgroundAndroid={
         Object {
-          "attribute": "selectableItemBackgroundBorderless",
-          "type": "ThemeAttrAndroid",
+          "borderless": true,
+          "color": null,
+          "type": "RippleAndroid",
         }
       }
       onResponderGrant={[Function]}
@@ -508,6 +516,7 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
         Array [
           Object {
             "borderRadius": 40,
+            "overflow": "hidden",
           },
           undefined,
           undefined,
@@ -527,8 +536,9 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
       isTVSelectable={true}
       nativeBackgroundAndroid={
         Object {
-          "attribute": "selectableItemBackgroundBorderless",
-          "type": "ThemeAttrAndroid",
+          "borderless": true,
+          "color": null,
+          "type": "RippleAndroid",
         }
       }
       onResponderGrant={[Function]}
@@ -640,6 +650,7 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
         Array [
           Object {
             "borderRadius": 40,
+            "overflow": "hidden",
           },
           undefined,
         ],
@@ -658,8 +669,9 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
       isTVSelectable={true}
       nativeBackgroundAndroid={
         Object {
-          "attribute": "selectableItemBackgroundBorderless",
-          "type": "ThemeAttrAndroid",
+          "borderless": true,
+          "color": null,
+          "type": "RippleAndroid",
         }
       }
       onResponderGrant={[Function]}
@@ -759,6 +771,7 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
         Array [
           Object {
             "borderRadius": 40,
+            "overflow": "hidden",
           },
           undefined,
         ],
@@ -777,8 +790,9 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
       isTVSelectable={true}
       nativeBackgroundAndroid={
         Object {
-          "attribute": "selectableItemBackgroundBorderless",
-          "type": "ThemeAttrAndroid",
+          "borderless": true,
+          "color": null,
+          "type": "RippleAndroid",
         }
       }
       onResponderGrant={[Function]}
@@ -885,6 +899,7 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
         Array [
           Object {
             "borderRadius": 40,
+            "overflow": "hidden",
           },
           undefined,
           undefined,
@@ -904,8 +919,9 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
       isTVSelectable={true}
       nativeBackgroundAndroid={
         Object {
-          "attribute": "selectableItemBackgroundBorderless",
-          "type": "ThemeAttrAndroid",
+          "borderless": true,
+          "color": null,
+          "type": "RippleAndroid",
         }
       }
       onResponderGrant={[Function]}
@@ -1010,6 +1026,7 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
         Array [
           Object {
             "borderRadius": 40,
+            "overflow": "hidden",
           },
           undefined,
           undefined,
@@ -1029,8 +1046,9 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
       isTVSelectable={true}
       nativeBackgroundAndroid={
         Object {
-          "attribute": "selectableItemBackgroundBorderless",
-          "type": "ThemeAttrAndroid",
+          "borderless": true,
+          "color": null,
+          "type": "RippleAndroid",
         }
       }
       onResponderGrant={[Function]}
@@ -1142,6 +1160,7 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
         Array [
           Object {
             "borderRadius": 40,
+            "overflow": "hidden",
           },
           undefined,
         ],
@@ -1160,8 +1179,9 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
       isTVSelectable={true}
       nativeBackgroundAndroid={
         Object {
-          "attribute": "selectableItemBackgroundBorderless",
-          "type": "ThemeAttrAndroid",
+          "borderless": true,
+          "color": null,
+          "type": "RippleAndroid",
         }
       }
       onResponderGrant={[Function]}
@@ -1261,6 +1281,7 @@ exports[`Android BpkNudger should support theming 1`] = `
         Array [
           Object {
             "borderRadius": 40,
+            "overflow": "hidden",
           },
           undefined,
         ],
@@ -1279,8 +1300,9 @@ exports[`Android BpkNudger should support theming 1`] = `
       isTVSelectable={true}
       nativeBackgroundAndroid={
         Object {
-          "attribute": "selectableItemBackgroundBorderless",
-          "type": "ThemeAttrAndroid",
+          "borderless": true,
+          "color": null,
+          "type": "RippleAndroid",
         }
       }
       onResponderGrant={[Function]}
@@ -1389,6 +1411,7 @@ exports[`Android BpkNudger should support theming 1`] = `
         Array [
           Object {
             "borderRadius": 40,
+            "overflow": "hidden",
           },
           undefined,
         ],
@@ -1407,8 +1430,9 @@ exports[`Android BpkNudger should support theming 1`] = `
       isTVSelectable={true}
       nativeBackgroundAndroid={
         Object {
-          "attribute": "selectableItemBackgroundBorderless",
-          "type": "ThemeAttrAndroid",
+          "borderless": true,
+          "color": null,
+          "type": "RippleAndroid",
         }
       }
       onResponderGrant={[Function]}

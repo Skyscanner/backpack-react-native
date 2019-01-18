@@ -6,8 +6,9 @@ exports[`Android BpkSelect should render correctly 1`] = `
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
     }
   }
   onResponderGrant={[Function]}
@@ -59,8 +60,9 @@ exports[`Android BpkSelect should render correctly with "showImage" and image 1`
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
     }
   }
   onResponderGrant={[Function]}
@@ -125,8 +127,9 @@ exports[`Android BpkSelect should render correctly with "showImage" and no image
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
     }
   }
   onResponderGrant={[Function]}
@@ -188,8 +191,9 @@ exports[`Android BpkSelect should render correctly with "valid" false 1`] = `
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
     }
   }
   onResponderGrant={[Function]}
@@ -271,8 +275,9 @@ exports[`Android BpkSelect should render correctly with "valid" false and a vali
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackground",
-        "type": "ThemeAttrAndroid",
+        "borderless": false,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -374,8 +379,9 @@ exports[`Android BpkSelect should render correctly with "valid" true 1`] = `
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
     }
   }
   onResponderGrant={[Function]}
@@ -456,8 +462,9 @@ exports[`Android BpkSelect should render correctly with a text label 1`] = `
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
     }
   }
   onResponderGrant={[Function]}
@@ -531,8 +538,9 @@ exports[`Android BpkSelect should render correctly with an element label 1`] = `
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
     }
   }
   onResponderGrant={[Function]}
@@ -585,8 +593,9 @@ exports[`Android BpkSelect should render correctly with custom styles 1`] = `
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
     }
   }
   onResponderGrant={[Function]}
@@ -660,8 +669,9 @@ exports[`Android BpkSelect should render correctly with the disabled prop 1`] = 
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
     }
   }
   onResponderGrant={[Function]}
