@@ -24,6 +24,8 @@ allprojects {
             // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
             url "$rootDir/../node_modules/react-native/android"
         }
+        maven { url 'https://jitpack.io' }
+
         buildscript {
             repositories {
                 google()
@@ -37,7 +39,7 @@ ext {
     targetSdkVersion    = 28
     minSdkVersion       = 21
     buildToolsVersion   = "28.0.3"
-    supportLibVersion   = "27.1.1"
+    androidx            = '1.0.0'
     googlePlayServicesVersion = "15.0.1"
     androidMapsUtilsVersion = "0.5+"
 }
