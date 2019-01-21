@@ -2,6 +2,17 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-01-21 - Fix Android Pie (API level 28) ripple effect
+
+**Fixed:**
+
+- react-native-bpk-component-button: 8.0.14
+- react-native-bpk-component-card: 1.3.6
+- react-native-bpk-component-chip: 3.1.12
+- react-native-bpk-component-nudger: 2.0.14
+- react-native-bpk-component-touchable-native-feedback: 1.1.43
+  - Fix ripple effect overflowing outside component borders on Android Pie (API level 28).
+
 # 2019-01-11 - Improve iOS picker accessory view
 
 **Fixed**
