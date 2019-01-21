@@ -7,8 +7,9 @@ exports[`Android BpkFlatListItem should render correctly 1`] = `
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
     }
   }
   onResponderGrant={[Function]}
@@ -99,8 +100,9 @@ exports[`Android BpkFlatListItem should support the "image" property 1`] = `
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
     }
   }
   onResponderGrant={[Function]}
@@ -201,8 +203,9 @@ exports[`Android BpkFlatListItem should support the "selected" property 1`] = `
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
     }
   }
   onResponderGrant={[Function]}

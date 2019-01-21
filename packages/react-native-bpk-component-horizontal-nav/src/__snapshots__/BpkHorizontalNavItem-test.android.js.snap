@@ -7,8 +7,9 @@ exports[`Android BpkHorizontalNavItem should render correctly 1`] = `
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
     }
   }
   onResponderGrant={[Function]}
@@ -58,8 +59,9 @@ exports[`Android BpkHorizontalNavItem should render correctly with "selected" pr
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
     }
   }
   onResponderGrant={[Function]}
@@ -112,8 +114,9 @@ exports[`Android BpkHorizontalNavItem should render correctly with "small" prop 
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
     }
   }
   onResponderGrant={[Function]}
@@ -166,8 +169,9 @@ exports[`Android BpkHorizontalNavItem should render correctly with "spaceAround"
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
     }
   }
   onResponderGrant={[Function]}
@@ -217,8 +221,9 @@ exports[`Android BpkHorizontalNavItem should render correctly with arbitrary pro
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
     }
   }
   onResponderGrant={[Function]}
@@ -268,8 +273,9 @@ exports[`Android BpkHorizontalNavItem should render correctly with custom "style
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
     }
   }
   onResponderGrant={[Function]}
@@ -322,8 +328,9 @@ exports[`Android BpkHorizontalNavItem should support theming 1`] = `
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
     }
   }
   onResponderGrant={[Function]}

@@ -747,8 +747,9 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
         isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
-            "attribute": "selectableItemBackgroundBorderless",
-            "type": "ThemeAttrAndroid",
+            "borderless": true,
+            "color": null,
+            "type": "RippleAndroid",
           }
         }
         onResponderGrant={[Function]}
@@ -934,8 +935,9 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
         isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
-            "attribute": "selectableItemBackgroundBorderless",
-            "type": "ThemeAttrAndroid",
+            "borderless": true,
+            "color": null,
+            "type": "RippleAndroid",
           }
         }
         onResponderGrant={[Function]}
@@ -1427,8 +1429,9 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
         isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
-            "attribute": "selectableItemBackgroundBorderless",
-            "type": "ThemeAttrAndroid",
+            "borderless": true,
+            "color": null,
+            "type": "RippleAndroid",
           }
         }
         onResponderGrant={[Function]}
@@ -1614,8 +1617,9 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
         isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
-            "attribute": "selectableItemBackgroundBorderless",
-            "type": "ThemeAttrAndroid",
+            "borderless": true,
+            "color": null,
+            "type": "RippleAndroid",
           }
         }
         onResponderGrant={[Function]}

@@ -10,8 +10,9 @@ exports[`Android BpkButtonLink should render correctly 1`] = `
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -69,8 +70,9 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="leadi
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -159,8 +161,9 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="trail
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -242,8 +245,9 @@ exports[`Android BpkButtonLink should render correctly with text props provided 
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -302,8 +306,9 @@ exports[`Android BpkButtonLink should render correctly with theme prop 1`] = `
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -364,8 +369,9 @@ exports[`Android BpkButtonLink should support elements as icons 1`] = `
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -443,8 +449,9 @@ exports[`Android BpkButtonLink should support overwriting styles 1`] = `
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -502,8 +509,9 @@ exports[`Android BpkButtonLink should support the "disabled" property 1`] = `
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -564,8 +572,9 @@ exports[`Android BpkButtonLink should support the "icon" property 1`] = `
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackgroundBorderless",
-        "type": "ThemeAttrAndroid",
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}
@@ -647,8 +656,9 @@ exports[`Android should support "borderlessBackground" equal to false 1`] = `
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
-        "attribute": "selectableItemBackground",
-        "type": "ThemeAttrAndroid",
+        "borderless": false,
+        "color": null,
+        "type": "RippleAndroid",
       }
     }
     onResponderGrant={[Function]}

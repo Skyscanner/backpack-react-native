@@ -19,7 +19,7 @@
 /* @flow */
 
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { Platform, View, StyleSheet } from 'react-native';
 
 import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-native-feedback';
 import {
@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
   wrapper: {
     elevation: elevationSm,
     borderRadius: borderRadiusPill,
+    overflow: 'hidden',
   },
 });
 
@@ -42,6 +43,7 @@ const BpkChipInner = (props: InnerProps) => {
   return (
     <View style={[styles.wrapper, userStyle]}>
       <BpkTouchableNativeFeedback
+        borderlessBackground={Platform.Version !== 28}
         accessibilityLabel={accessibilityLabel}
         accessibilityComponentType="button"
         {...rest}

@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-import { View, StyleSheet, ViewPropTypes } from 'react-native';
+import { Platform, View, StyleSheet, ViewPropTypes } from 'react-native';
 import {
   colorWhite,
   elevationSm,
@@ -79,7 +79,11 @@ const BpkCard = props => {
 
   return (
     <View style={style}>
-      <BpkTouchableNativeFeedback accessibilityComponentType="button" {...rest}>
+      <BpkTouchableNativeFeedback
+        borderlessBackground={Platform.Version !== 28}
+        accessibilityComponentType="button"
+        {...rest}
+      >
         <View style={innerStyle}>{children}</View>
       </BpkTouchableNativeFeedback>
     </View>
