@@ -1,6 +1,6 @@
 {
   "name": "react-native-bpk-component-chip",
-  "version": "3.1.11",
+  "version": "3.1.12",
   "main": "index.js",
   "description": "Backpack React Native chip component.",
   "repository": {
@@ -18,7 +18,7 @@
     "prop-types": "^15.5.8",
     "react-native-bpk-component-icon": "^1.10.23",
     "react-native-bpk-component-text": "^4.0.5",
-    "react-native-bpk-component-touchable-native-feedback": "^1.1.42",
+    "react-native-bpk-component-touchable-native-feedback": "^1.1.43",
     "react-native-bpk-component-touchable-overlay": "^1.1.5",
     "react-native-bpk-styles": "^1.1.29"
   }
