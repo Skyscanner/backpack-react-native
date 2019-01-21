@@ -41,8 +41,8 @@ jest.mock('bpk-tokens/tokens/base.react.native', () =>
   jest.requireActual('bpk-tokens/tokens/base.react.native.android.js'),
 );
 
-jest.mock('./BpkCalendar', () =>
-  jest.requireActual('./BpkCalendar.android.js'),
+jest.mock('./NativeCalendar', () =>
+  jest.requireActual('./NativeCalendar.android.js'),
 );
 
 describe('Android', () => {

@@ -19,17 +19,47 @@
 /* @flow */
 
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { View, Platform, StyleSheet } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
 import BpkTextInput from 'react-native-bpk-component-text-input';
 import BpkPicker, { BpkPickerItem } from 'react-native-bpk-component-picker';
 import BpkSelect from 'react-native-bpk-component-select';
+import { colorWhite } from 'bpk-tokens/tokens/base.react.native';
 
 import CenterDecorator from '../../storybook/CenterDecorator';
 import BpkCalendar, {
   SELECTION_TYPES,
   type BpkCalendarSelectionType,
 } from './index';
+
+const styles = StyleSheet.create({
+  base: {
+    display: 'flex',
+    maxHeight: '100%',
+    height: '100%',
+    backgroundColor: colorWhite,
+  },
+  calendar: {
+    flexGrow: 1,
+  },
+  calendarOnly: {
+    backgroundColor: colorWhite,
+    maxHeight: '100%',
+    height: '100%',
+    width: '100%',
+  },
+});
+
+const locales = {
+  en_GB: Platform.select({
+    ios: 'en_GB',
+    android: 'en-gb',
+  }),
+  pt_BR: Platform.select({
+    ios: 'pt_BR',
+    android: 'pt-br',
+  }),
+};
 
 /* eslint-disable react/no-multi-comp */
 
@@ -48,18 +78,19 @@ class BpkCalendarExample extends Component<
   }
 
   render() {
+    const { selectionType, onChangeSelectedDates, ...rest } = this.props;
     return (
       <BpkCalendar
-        locale="en_GB"
-        selectionType={this.props.selectionType}
+        locale={locales.en_GB}
+        selectionType={selectionType}
+        selectedDates={this.state.selectedDates}
         onChangeSelectedDates={newDates => {
-          if (this.props.onChangeSelectedDates) {
-            this.props.onChangeSelectedDates(newDates);
+          if (onChangeSelectedDates) {
+            onChangeSelectedDates(newDates);
           }
           this.setState({ selectedDates: newDates });
         }}
-        style={{ flexGrow: 1 }}
-        selectedDates={this.state.selectedDates}
+        {...rest}
       />
     );
   }
@@ -99,7 +130,7 @@ class ExampleWithLinkedInputs extends Component<
     const { range } = this.props;
     const { selectedDates } = this.state;
     return (
-      <View style={{ flex: 1 }}>
+      <View style={styles.base}>
         <BpkTextInput
           label={range ? 'Start date' : 'Selected date'}
           value={selectedDates[0] ? selectedDates[0].toLocaleDateString() : ''}
@@ -116,6 +147,7 @@ class ExampleWithLinkedInputs extends Component<
           />
         )}
         <BpkCalendarExample
+          style={styles.calendar}
           selectionType={range ? SELECTION_TYPES.range : SELECTION_TYPES.single}
           selectedDates={this.state.selectedDates}
           onChangeSelectedDates={this.handleNewDates}
@@ -156,12 +188,15 @@ class ChangeableSelectionTypeStory extends Component<
 
   render() {
     return (
-      <View style={{ flowDirection: 'column', flex: 1 }}>
+      <View style={styles.base}>
         <BpkSelect
           onPress={this.togglePicker}
           label={this.state.selectionType}
         />
-        <BpkCalendarExample selectionType={this.state.selectionType} />
+        <BpkCalendarExample
+          style={styles.calendar}
+          selectionType={this.state.selectionType}
+        />
         <BpkPicker
           doneLabel="Done"
           isOpen={this.state.pickerOpen}
@@ -185,13 +220,22 @@ class ChangeableSelectionTypeStory extends Component<
 storiesOf('react-native-bpk-component-calendar', module)
   .addDecorator(CenterDecorator)
   .add('docs:single', () => (
-    <BpkCalendarExample selectionType={SELECTION_TYPES.single} />
+    <BpkCalendarExample
+      style={styles.calendarOnly}
+      selectionType={SELECTION_TYPES.single}
+    />
   ))
   .add('docs:multiple', () => (
-    <BpkCalendarExample selectionType={SELECTION_TYPES.multiple} />
+    <BpkCalendarExample
+      style={styles.calendarOnly}
+      selectionType={SELECTION_TYPES.multiple}
+    />
   ))
   .add('docs:range', () => (
-    <BpkCalendarExample selectionType={SELECTION_TYPES.range} />
+    <BpkCalendarExample
+      style={styles.calendarOnly}
+      selectionType={SELECTION_TYPES.range}
+    />
   ))
   .add('Changeable selection type', () => <ChangeableSelectionTypeStory />)
   .add('Hooked up to input field (single)', () => (
@@ -199,4 +243,28 @@ storiesOf('react-native-bpk-component-calendar', module)
   ))
   .add('Hooked up to input field (range)', () => (
     <ExampleWithLinkedInputs range />
+  ))
+  .add('With min and max dates', () => (
+    <BpkCalendarExample
+      style={styles.calendarOnly}
+      selectionType={SELECTION_TYPES.single}
+      minDate={new Date(2019, 0, 2)}
+      maxDate={new Date(2020, 11, 31)}
+    />
+  ))
+  .add('With selected dates', () => (
+    <BpkCalendarExample
+      style={styles.calendarOnly}
+      selectionType={SELECTION_TYPES.range}
+      minDate={new Date(2019, 0, 2)}
+      maxDate={new Date(2020, 11, 31)}
+      selectedDates={[new Date(2019, 0, 3), new Date(2019, 0, 7)]}
+    />
+  ))
+  .add('With different locale', () => (
+    <BpkCalendarExample
+      style={styles.calendarOnly}
+      selectionType={SELECTION_TYPES.single}
+      locale={locales.pt_BR}
+    />
   ));

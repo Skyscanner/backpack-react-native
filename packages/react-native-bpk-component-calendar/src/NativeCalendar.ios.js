@@ -57,7 +57,7 @@ const BpkCalendar = (props: Props) => {
       onDateSelection={event => {
         if (event.nativeEvent.selectedDates) {
           const convertedDates = event.nativeEvent.selectedDates.map(
-            dateString => new Date(Date.parse(dateString)),
+            dateStr => new Date(dateStr),
           );
           if (onChangeSelectedDates) {
             onChangeSelectedDates(convertedDates);
