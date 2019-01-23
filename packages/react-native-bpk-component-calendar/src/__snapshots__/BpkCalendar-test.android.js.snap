@@ -1,0 +1,243 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Android BpkCalendar should render correctly 1`] = `
+<View
+  locale="en_GB"
+  selectionType="single"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "red",
+      },
+    ]
+  }
+>
+  <Text>
+    THIS COMPONENT HAS NOT BEEN BRIDGED YET
+  </Text>
+</View>
+`;
+
+exports[`Android BpkCalendar should render correctly for selectionType={'multiple'} 1`] = `
+<View
+  locale="en_GB"
+  selectionType="multiple"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "red",
+      },
+    ]
+  }
+>
+  <Text>
+    THIS COMPONENT HAS NOT BEEN BRIDGED YET
+  </Text>
+</View>
+`;
+
+exports[`Android BpkCalendar should render correctly for selectionType={'range'} 1`] = `
+<View
+  locale="en_GB"
+  selectionType="range"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "red",
+      },
+    ]
+  }
+>
+  <Text>
+    THIS COMPONENT HAS NOT BEEN BRIDGED YET
+  </Text>
+</View>
+`;
+
+exports[`Android BpkCalendar should render correctly for selectionType={'single'} 1`] = `
+<View
+  locale="en_GB"
+  selectionType="single"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "red",
+      },
+    ]
+  }
+>
+  <Text>
+    THIS COMPONENT HAS NOT BEEN BRIDGED YET
+  </Text>
+</View>
+`;
+
+exports[`Android BpkCalendar should render correctly with arbitrary props 1`] = `
+<View
+  locale="en_GB"
+  selectionType="single"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "red",
+      },
+    ]
+  }
+  testID="123"
+>
+  <Text>
+    THIS COMPONENT HAS NOT BEEN BRIDGED YET
+  </Text>
+</View>
+`;
+
+exports[`Android BpkCalendar should render correctly with both minDate and maxDate 1`] = `
+<View
+  locale="en_GB"
+  maxDate={2020-05-18T23:00:00.000Z}
+  minDate={2019-05-18T23:00:00.000Z}
+  selectionType="single"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "red",
+      },
+    ]
+  }
+>
+  <Text>
+    THIS COMPONENT HAS NOT BEEN BRIDGED YET
+  </Text>
+</View>
+`;
+
+exports[`Android BpkCalendar should render correctly with custom style 1`] = `
+<View
+  locale="en_GB"
+  selectionType="single"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "red",
+      },
+      Object {
+        "flex": 1,
+      },
+    ]
+  }
+>
+  <Text>
+    THIS COMPONENT HAS NOT BEEN BRIDGED YET
+  </Text>
+</View>
+`;
+
+exports[`Android BpkCalendar should render correctly with maxDate 1`] = `
+<View
+  locale="en_GB"
+  maxDate={2020-05-18T23:00:00.000Z}
+  selectionType="single"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "red",
+      },
+    ]
+  }
+>
+  <Text>
+    THIS COMPONENT HAS NOT BEEN BRIDGED YET
+  </Text>
+</View>
+`;
+
+exports[`Android BpkCalendar should render correctly with minDate 1`] = `
+<View
+  locale="en_GB"
+  minDate={2019-05-18T23:00:00.000Z}
+  selectionType="single"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "red",
+      },
+    ]
+  }
+>
+  <Text>
+    THIS COMPONENT HAS NOT BEEN BRIDGED YET
+  </Text>
+</View>
+`;
+
+exports[`Android BpkCalendar should render correctly with selection type "multiple" and selected dates 1`] = `
+<View
+  locale="en_GB"
+  selectedDates={
+    Array [
+      2019-05-18T23:00:00.000Z,
+      2019-05-20T23:00:00.000Z,
+      2019-05-28T23:00:00.000Z,
+    ]
+  }
+  selectionType="multiple"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "red",
+      },
+    ]
+  }
+>
+  <Text>
+    THIS COMPONENT HAS NOT BEEN BRIDGED YET
+  </Text>
+</View>
+`;
+
+exports[`Android BpkCalendar should render correctly with selection type "range" and selected dates 1`] = `
+<View
+  locale="en_GB"
+  selectedDates={
+    Array [
+      2019-05-18T23:00:00.000Z,
+      2019-05-20T23:00:00.000Z,
+    ]
+  }
+  selectionType="single"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "red",
+      },
+    ]
+  }
+>
+  <Text>
+    THIS COMPONENT HAS NOT BEEN BRIDGED YET
+  </Text>
+</View>
+`;
+
+exports[`Android BpkCalendar should render correctly with selection type "single" and selected dates 1`] = `
+<View
+  locale="en_GB"
+  selectedDates={
+    Array [
+      2019-05-18T23:00:00.000Z,
+    ]
+  }
+  selectionType="single"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "red",
+      },
+    ]
+  }
+>
+  <Text>
+    THIS COMPONENT HAS NOT BEEN BRIDGED YET
+  </Text>
+</View>
+`;
