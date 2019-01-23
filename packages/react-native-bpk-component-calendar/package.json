@@ -1,7 +1,6 @@
 {
   "name": "react-native-bpk-component-calendar",
-  "private": true,
-  "version": "0.0.1",
+  "version": "0.0.0",
   "main": "index.js",
   "description": "Backpack React Native calendar component.",
   "repository": {
