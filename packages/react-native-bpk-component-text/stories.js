@@ -33,91 +33,93 @@ import CenterDecorator from '../../storybook/CenterDecorator';
 
 import BpkText, { WEIGHT_STYLES } from './index';
 
+const TEXT = 'Lorem ipsum';
+
 storiesOf('react-native-bpk-component-text', module)
   .addDecorator(CenterDecorator)
   .add('docs:default', () => (
     <View>
-      <BpkText textStyle="xxxl">Backpack rocks!</BpkText>
-      <BpkText textStyle="xxl">Backpack rocks!</BpkText>
-      <BpkText textStyle="xl">Backpack rocks!</BpkText>
-      <BpkText textStyle="lg">Backpack rocks!</BpkText>
-      <BpkText textStyle="base">Backpack rocks!</BpkText>
-      <BpkText textStyle="sm">Backpack rocks!</BpkText>
-      <BpkText textStyle="xs">Backpack rocks!</BpkText>
-      <BpkText textStyle="caps">BACKPACK ROCKS!</BpkText>
+      <BpkText textStyle="xxxl">{TEXT}</BpkText>
+      <BpkText textStyle="xxl">{TEXT}</BpkText>
+      <BpkText textStyle="xl">{TEXT}</BpkText>
+      <BpkText textStyle="lg">{TEXT}</BpkText>
+      <BpkText textStyle="base">{TEXT}</BpkText>
+      <BpkText textStyle="sm">{TEXT}</BpkText>
+      <BpkText textStyle="xs">{TEXT}</BpkText>
+      <BpkText textStyle="caps">{TEXT.toUpperCase()}</BpkText>
     </View>
   ))
   .add('docs:emphasize', () => (
     <View>
       <BpkText textStyle="xxxl" weight={WEIGHT_STYLES.emphasized}>
-        Backpack rocks!
+        {TEXT}
       </BpkText>
       <BpkText textStyle="xxl" weight={WEIGHT_STYLES.emphasized}>
-        Backpack rocks!
+        {TEXT}
       </BpkText>
       <BpkText textStyle="xl" weight={WEIGHT_STYLES.emphasized}>
-        Backpack rocks!
+        {TEXT}
       </BpkText>
       <BpkText textStyle="lg" weight={WEIGHT_STYLES.emphasized}>
-        Backpack rocks!
+        {TEXT}
       </BpkText>
       <BpkText textStyle="base" weight={WEIGHT_STYLES.emphasized}>
-        Backpack rocks!
+        {TEXT}
       </BpkText>
       <BpkText textStyle="sm" weight={WEIGHT_STYLES.emphasized}>
-        Backpack rocks!
+        {TEXT}
       </BpkText>
       <BpkText textStyle="xs" weight={WEIGHT_STYLES.emphasized}>
-        Backpack rocks!
+        {TEXT}
       </BpkText>
       <BpkText textStyle="caps" weight={WEIGHT_STYLES.emphasized}>
-        BACKPACK ROCKS!
+        {TEXT.toUpperCase()}
       </BpkText>
     </View>
   ))
   .add('docs:heavy', () => (
     <View>
       <BpkText textStyle="xxxl" weight={WEIGHT_STYLES.heavy}>
-        Backpack rocks!
+        {TEXT}
       </BpkText>
       <BpkText textStyle="xxl" weight={WEIGHT_STYLES.heavy}>
-        Backpack rocks!
+        {TEXT}
       </BpkText>
       <BpkText textStyle="xl" weight={WEIGHT_STYLES.heavy}>
-        Backpack rocks!
+        {TEXT}
       </BpkText>
     </View>
   ))
   .add('Colours', () => (
     <View>
       <BpkText textStyle="xxxl" style={{ color: colorBlue700 }}>
-        Backpack rocks!
+        {TEXT}
       </BpkText>
       <BpkText textStyle="xxl" style={{ color: colorRed500 }}>
-        Backpack rocks!
+        {TEXT}
       </BpkText>
       <BpkText textStyle="xl" style={{ color: colorGreen500 }}>
-        Backpack rocks!
+        {TEXT}
       </BpkText>
       <BpkText textStyle="lg" style={{ color: colorYellow500 }}>
-        Backpack rocks!
+        {TEXT}
       </BpkText>
       <BpkText textStyle="base" style={{ color: colorPink500 }}>
-        Backpack rocks!
+        {TEXT}
       </BpkText>
       <BpkText textStyle="sm" style={{ color: colorBlue700 }}>
-        Backpack rocks!
+        {TEXT}
       </BpkText>
       <BpkText textStyle="xs" style={{ color: colorGray500 }}>
-        Backpack rocks!
+        {TEXT}
       </BpkText>
       <BpkText textStyle="caps" style={{ color: colorRed500 }}>
-        BACKPACK ROCKS!
+        {TEXT.toUpperCase()}
       </BpkText>
     </View>
   ))
   .add('Emphasised (deprecated)', () => (
     <View>
-      <BpkText emphasize>Backpack rocks!</BpkText>
+      <BpkText emphasize>{TEXT}</BpkText>
     </View>
   ));
