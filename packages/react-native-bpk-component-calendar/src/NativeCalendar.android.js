@@ -61,7 +61,6 @@ const parseDateToNative = date => {
 
 const BpkCalendar = (props: Props) => {
   const {
-    locale,
     maxDate,
     minDate,
     onChangeSelectedDates,
@@ -75,18 +74,15 @@ const BpkCalendar = (props: Props) => {
     normalizedDates = normalizedDates.splice(0, 2);
   }
 
-  /* eslint-disable */
   return (
     <AndroidBPKCalendarView
       minDate={parseDateToNative(minDate)}
       maxDate={parseDateToNative(maxDate)}
       selectedDates={normalizedDates.map(parseDateToNative)}
-      locale={locale}
       onChange={createOnChangeHandler(onChangeSelectedDates)}
       {...rest}
     />
   );
-  /* eslint-enable */
 };
 
 BpkCalendar.propTypes = commonPropTypes;
