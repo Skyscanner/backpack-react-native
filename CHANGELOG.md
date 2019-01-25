@@ -2,6 +2,15 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-01-25 - New speaker icon
+
+**Added**
+- react-native-bpk-component-button-link: 4.0.14
+- react-native-bpk-component-button: 8.0.15
+- react-native-bpk-component-icon: 1.11.0
+- react-native-bpk-component-navigation-bar: 4.0.16
+  - New speaker icon.
+
 # 2019-01-21 - Fix Android Pie (API level 28) ripple effect
 
 **Fixed:**
