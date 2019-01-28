@@ -19,7 +19,7 @@
 /* @flow */
 
 import React, { Component } from 'react';
-import { View, Platform, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
 import BpkTextInput from 'react-native-bpk-component-text-input';
 import BpkPicker, { BpkPickerItem } from 'react-native-bpk-component-picker';
@@ -51,14 +51,8 @@ const styles = StyleSheet.create({
 });
 
 const locales = {
-  en_GB: Platform.select({
-    ios: 'en_GB',
-    android: 'en-gb',
-  }),
-  pt_BR: Platform.select({
-    ios: 'pt_BR',
-    android: 'pt-br',
-  }),
+  en_GB: 'en-gb',
+  pt_BR: 'pt-br',
 };
 
 /* eslint-disable react/no-multi-comp */
