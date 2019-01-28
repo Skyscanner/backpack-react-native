@@ -1,0 +1,32 @@
+apply plugin: "com.android.library"
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+def safeExtGet(prop, fallback) {
+  rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
+}
+
+def _reactNativeVersion = safeExtGet("reactNative", "+")
+def _compileSdkVersion = safeExtGet("compileSdkVersion", 28)
+def _backpackVersion = safeExtGet("backpackVersion", "47ae74e60fbeac32aa1e03375547eb5f6623cce5")
+
+android {
+  compileSdkVersion _compileSdkVersion
+  buildToolsVersion safeExtGet("buildToolsVersion", "26.0.3")
+
+  defaultConfig {
+    minSdkVersion safeExtGet("minSdkVersion", 21)
+    targetSdkVersion safeExtGet("targetSdkVersion", 28)
+
+    // TODO: read from JSON
+    versionCode 1
+    versionName "1.0"
+  }
+}
+
+dependencies {
+  compileOnly "com.facebook.react:react-native:${_reactNativeVersion}"
+  compileOnly("com.github.skyscanner:backpack-android:${_backpackVersion}")
+}

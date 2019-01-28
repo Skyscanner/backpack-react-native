@@ -19,49 +19,48 @@
 /* @flow */
 
 import React from 'react';
-import {
-  type StyleObj,
-  Text,
-  StyleSheet,
-  View,
-  ViewPropTypes,
-} from 'react-native';
 
-/* eslint-disable */
-const styles = StyleSheet.create({
-  base: {
-    backgroundColor: 'red',
-  },
-});
-/* eslint-enable */
+import {
+  commonPropTypes,
+  commonDefaultProps,
+  type CommonProps,
+} from './common-types';
+
+import NativeCalendar from './NativeCalendar';
 
 export type Props = {
-  style: ?StyleObj,
+  ...$Exact<CommonProps>,
 };
 
 const BpkCalendar = (props: Props) => {
-  const { style: userStyle, ...rest } = props;
+  const {
+    minDate,
+    maxDate,
+    onChangeSelectedDates,
+    selectedDates,
+    ...rest
+  } = props;
 
-  const style = [styles.base];
-  if (userStyle) {
-    style.push(userStyle);
+  if (minDate && maxDate) {
+    if (minDate > maxDate) {
+      // It's safer to throw an error rather than use a prop type because if
+      // we let this get rendered it will crash the calendar.
+      throw new Error(`BpkCalendar: "minDate" must be before "maxDate".`);
+    }
   }
 
-  /* eslint-disable */
   return (
-    <View style={style} {...rest}>
-      <Text>THIS COMPONENT HAS NOT BEEN BRIDGED YET</Text>
-    </View>
+    <NativeCalendar
+      minDate={minDate}
+      maxDate={maxDate}
+      onChangeSelectedDates={onChangeSelectedDates}
+      selectedDates={selectedDates}
+      {...rest}
+    />
   );
-  /* eslint-enable */
 };
 
-BpkCalendar.propTypes = {
-  style: ViewPropTypes.style,
-};
-
-BpkCalendar.defaultProps = {
-  style: null,
-};
+BpkCalendar.propTypes = commonPropTypes;
+BpkCalendar.defaultProps = commonDefaultProps;
 
 export default BpkCalendar;
