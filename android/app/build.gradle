@@ -182,7 +182,7 @@ dependencies {
     // we do the same
     implementation 'com.airbnb.android:react-native-maps:0.17.1'
     implementation project(':react-native-linear-gradient')
-    implementation project(':react-native-calendar')
+    implementation project(':react-native-bpk-component-calendar')
     implementation "androidx.legacy:legacy-support-v4:${rootProject.ext.androidx}"
     implementation "androidx.recyclerview:recyclerview:${rootProject.ext.androidx}"
     implementation "com.google.android.material:material:${rootProject.ext.androidx}"
