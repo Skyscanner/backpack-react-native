@@ -48,7 +48,7 @@ const commonTests = () => {
           <BpkCalendar
             selectionType={SELECTION_TYPES.single}
             {...defaultProps}
-            minDate={new Date(2019, 4, 19)}
+            minDate={new Date(Date.UTC(2019, 4, 19))}
           />,
         )
         .toJSON();
@@ -61,7 +61,7 @@ const commonTests = () => {
           <BpkCalendar
             selectionType={SELECTION_TYPES.single}
             {...defaultProps}
-            maxDate={new Date(2020, 4, 19)}
+            maxDate={new Date(Date.UTC(2020, 4, 19))}
           />,
         )
         .toJSON();
@@ -74,8 +74,8 @@ const commonTests = () => {
           <BpkCalendar
             selectionType={SELECTION_TYPES.single}
             {...defaultProps}
-            minDate={new Date(2019, 4, 19)}
-            maxDate={new Date(2020, 4, 19)}
+            minDate={new Date(Date.UTC(2019, 4, 19))}
+            maxDate={new Date(Date.UTC(2020, 4, 19))}
           />,
         )
         .toJSON();
@@ -87,7 +87,7 @@ const commonTests = () => {
         .create(
           <BpkCalendar
             selectionType={SELECTION_TYPES.single}
-            selectedDates={[new Date(2019, 4, 19)]}
+            selectedDates={[new Date(Date.UTC(2019, 4, 19))]}
             {...defaultProps}
           />,
         )
@@ -100,7 +100,10 @@ const commonTests = () => {
         .create(
           <BpkCalendar
             selectionType={SELECTION_TYPES.single}
-            selectedDates={[new Date(2019, 4, 19), new Date(2019, 4, 21)]}
+            selectedDates={[
+              new Date(Date.UTC(2019, 4, 19)),
+              new Date(Date.UTC(2019, 4, 21)),
+            ]}
             {...defaultProps}
           />,
         )
@@ -157,9 +160,9 @@ const commonTests = () => {
           <BpkCalendar
             selectionType={SELECTION_TYPES.multiple}
             selectedDates={[
-              new Date(2019, 4, 19),
-              new Date(2019, 4, 21),
-              new Date(2019, 4, 29),
+              new Date(Date.UTC(2019, 4, 19)),
+              new Date(Date.UTC(2019, 4, 21)),
+              new Date(Date.UTC(2019, 4, 29)),
             ]}
             {...defaultProps}
           />,

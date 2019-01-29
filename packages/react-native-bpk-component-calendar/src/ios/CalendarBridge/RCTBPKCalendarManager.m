@@ -19,6 +19,7 @@
 #import "RCTBPKCalendarManager.h"
 #import "RCTConvert+RCTBPKCalendar.h"
 #import "RCTBPKCalendar.h"
+#import "RCTBPKCalendarDateUtils.h"
 
 @interface RCTBPKCalendarManager() <BPKCalendarDelegate>
 
@@ -55,15 +56,17 @@ RCT_EXPORT_VIEW_PROPERTY(onDateSelection, RCTBubblingEventBlock)
         return;
     }
 
-    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-    [dateFormat setDateFormat:@"yyyy'-'MM'-'dd'T'HH':'mm':'ss.SSS'Z'"];
-
-    NSMutableArray * stringArray = [[NSMutableArray alloc]init];
+    NSMutableArray<NSNumber *> * dateArray = [[NSMutableArray alloc] initWithCapacity:dateList.count];
     for (NSDate *date in dateList) {
-        [stringArray addObject:[dateFormat stringFromDate:date]];
+        // The React Native interface uses UTC dates regardless of the local time zone
+        // Thus we need to convert the dates to UTC instead of the local time zone here.
+        NSDate *dateInUTC = [RCTBPKCalendarDateUtils convertDateToUTC:date
+                                                        localCalendar:calendar.gregorian
+                                                          utcCalendar:calendar.utcCalendar];
+        [dateArray addObject:@([dateInUTC timeIntervalSince1970])];
     }
 
-    calendar.onDateSelection(@{@"selectedDates": stringArray});
+    calendar.onDateSelection(@{@"selectedDates": dateArray});
 }
 
 @end

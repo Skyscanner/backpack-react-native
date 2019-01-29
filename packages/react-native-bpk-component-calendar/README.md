@@ -22,8 +22,28 @@ For example:
 ```
   pod 'react-native-bpk-component-calendar', path: '../node_modules/react-native-bpk-component-calendar'
 ```
+## Time Zones
+
+`BpkCalendar` uses dates at the `UTC` midnight boundary exclusively for selected dates and expects that format for `minDate` and `maxDate`. If `BpkCalendar` is used with dates that are **not** `UTC` it will behave in undefined ways and most likely not work.
+
+To create dates to be used with the component we recommend the following
+
+```javascript
+// Min date of the calendar at 2019-01-02
+const minDate = new Date(Date.UTC(2019, 0, 2));
+```
+
+To format the dates for display use
+
+```javascript
+const locale = 'en-GB';
+const formatter = new Intl.DateTimeFormat(locale, { timeZone: 'UTC' });
+
+const formattedDate = formatter.format(date);
+```
 
 ## Usage
+
 
 ```js
 import React, { Component } from 'react';
