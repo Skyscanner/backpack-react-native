@@ -55,6 +55,12 @@ const locales = {
   pt_BR: 'pt-br',
 };
 
+const formatDateForDisplay = (date: Date, locale: string) => {
+  const formatter = new Intl.DateTimeFormat(locale, { timeZone: 'UTC' });
+
+  return formatter.format(date);
+};
+
 /* eslint-disable react/no-multi-comp */
 
 class BpkCalendarExample extends Component<
@@ -127,7 +133,11 @@ class ExampleWithLinkedInputs extends Component<
       <View style={styles.base}>
         <BpkTextInput
           label={range ? 'Start date' : 'Selected date'}
-          value={selectedDates[0] ? selectedDates[0].toLocaleDateString() : ''}
+          value={
+            selectedDates[0]
+              ? formatDateForDisplay(selectedDates[0], locales.en_GB)
+              : ''
+          }
           onChangeText={this.onChangeText}
         />
         {range && (
@@ -135,7 +145,9 @@ class ExampleWithLinkedInputs extends Component<
             editable={!!selectedDates[0]}
             label="End date"
             value={
-              selectedDates[1] ? selectedDates[1].toLocaleDateString() : ''
+              selectedDates[1]
+                ? formatDateForDisplay(selectedDates[1], locales.en_GB)
+                : ''
             }
             onChangeText={this.onChangeText}
           />
@@ -242,17 +254,20 @@ storiesOf('react-native-bpk-component-calendar', module)
     <BpkCalendarExample
       style={styles.calendarOnly}
       selectionType={SELECTION_TYPES.single}
-      minDate={new Date(2019, 0, 2)}
-      maxDate={new Date(2020, 11, 31)}
+      minDate={new Date(Date.UTC(2019, 0, 2))}
+      maxDate={new Date(Date.UTC(2020, 11, 31))}
     />
   ))
   .add('With selected dates', () => (
     <BpkCalendarExample
       style={styles.calendarOnly}
       selectionType={SELECTION_TYPES.range}
-      minDate={new Date(2019, 0, 2)}
-      maxDate={new Date(2020, 11, 31)}
-      selectedDates={[new Date(2019, 0, 3), new Date(2019, 0, 7)]}
+      minDate={new Date(Date.UTC(2019, 0, 2))}
+      maxDate={new Date(Date.UTC(2020, 11, 31))}
+      selectedDates={[
+        new Date(Date.UTC(2019, 0, 3)),
+        new Date(Date.UTC(2019, 0, 7)),
+      ]}
     />
   ))
   .add('With different locale', () => (

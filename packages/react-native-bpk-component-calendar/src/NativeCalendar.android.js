@@ -54,7 +54,7 @@ const parseDateToNative = date => {
   if (date) {
     // Return as unix timestamp because the only number data type that allows null
     // in the native side is Integer, and the original milliseconds will overflow it.
-    return Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()) / 1000;
+    return date.getTime() / 1000;
   }
   return date;
 };

@@ -22,5 +22,5 @@
 @interface RCTBPKCalendar : BPKCalendar
 
 @property (nonatomic, copy) RCTBubblingEventBlock onDateSelection;
-
+@property(nonatomic, strong, readonly) NSCalendar *utcCalendar;
 @end

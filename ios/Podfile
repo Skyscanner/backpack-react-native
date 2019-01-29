@@ -24,11 +24,15 @@ target 'Backpack Native' do
   pod 'Folly', podspec: '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
   # RN Bridging Pods
-  pod 'Backpack', '~> 6.0.0'
+  pod 'Backpack', '~> 6.1.1'
   pod 'react-native-bpk-component-calendar', path: '../packages/react-native-bpk-component-calendar'
 
   # Third party pods
   pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
   pod 'react-native-maps', path: '../packages/react-native-bpk-component-map/node_modules/react-native-maps'
+
+  target 'Backpack Native Tests' do
+    inherit! :search_paths
+  end
 end
 

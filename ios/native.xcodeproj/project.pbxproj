@@ -19,8 +19,10 @@
 		93A11238766E920180390589 /* libPods-Backpack Native.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABDC175C9DB0F0B9CBD71B51 /* libPods-Backpack Native.a */; };
 		C8B831744C5A4256BD1B5010 /* BpkIcon.eot in Resources */ = {isa = PBXBuildFile; fileRef = 8C8F437769B54A038A210159 /* BpkIcon.eot */; };
 		CD97D274772C442994C3117B /* BpkIconIOS.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83C39DAE966144799B2F2FB7 /* BpkIconIOS.ttf */; };
+		D61144CB2200516700F76EAE /* RCTBPKCalendarDateUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D61144CA2200516700F76EAE /* RCTBPKCalendarDateUtilsTests.m */; };
 		D66FC4882109D8610063B1A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66FC4872109D8610063B1A6 /* Main.storyboard */; };
 		D66FC4912109DA3C0063B1A6 /* StorybookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FC4902109DA3C0063B1A6 /* StorybookViewController.m */; };
+		E120F32FF8B3695B5E878AC8 /* libPods-Backpack Native Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 967DA828F1B29C9BC73AEB4E /* libPods-Backpack Native Tests.a */; };
 		E19140ED6394488C9626FE7A /* BpkIcon.woff in Resources */ = {isa = PBXBuildFile; fileRef = E436C94A65D1410092B05450 /* BpkIcon.woff */; };
 /* End PBXBuildFile section */
 
@@ -57,11 +59,15 @@
 		349CF328083441A0845E0C8D /* BpkIcon.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = BpkIcon.ttf; path = "../node_modules/bpk-svgs/dist/font/BpkIcon.ttf"; sourceTree = "<group>"; };
 		3CA50A36B56148BD95AF98C2 /* iconMapping.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = iconMapping.json; path = "../node_modules/bpk-svgs/dist/font/iconMapping.json"; sourceTree = "<group>"; };
 		6B59545B47D6FA3C28AB6F8B /* Pods-Backpack Native.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backpack Native.release.xcconfig"; path = "Pods/Target Support Files/Pods-Backpack Native/Pods-Backpack Native.release.xcconfig"; sourceTree = "<group>"; };
-		83C39DAE966144799B2F2FB7 /* BpkIconIOS.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = BpkIconIOS.ttf; path = "../node_modules/bpk-svgs/dist/font/BpkIconIOS.ttf"; sourceTree = "<group>"; };
+		83C39DAE966144799B2F2FB7 /* BpkIconIOS.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = BpkIconIOS.ttf; path = "../node_modules/bpk-svgs/dist/font/BpkIconIOS.ttf"; sourceTree = "<group>"; };
 		8C8F437769B54A038A210159 /* BpkIcon.eot */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = BpkIcon.eot; path = "../node_modules/bpk-svgs/dist/font/BpkIcon.eot"; sourceTree = "<group>"; };
+		967DA828F1B29C9BC73AEB4E /* libPods-Backpack Native Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Backpack Native Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABDC175C9DB0F0B9CBD71B51 /* libPods-Backpack Native.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Backpack Native.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3896E08C3804FF089E1E50B /* libRCTRestart.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTRestart.a; sourceTree = "<group>"; };
+		C63703994133B719A6838A67 /* Pods-Backpack Native Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backpack Native Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Backpack Native Tests/Pods-Backpack Native Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C97A3DDE34691C31B4D830BA /* Pods-Backpack Native Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backpack Native Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Backpack Native Tests/Pods-Backpack Native Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D60ACAA41FD8532E009E5946 /* he-IL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "he-IL"; path = "he-IL.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		D61144CA2200516700F76EAE /* RCTBPKCalendarDateUtilsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTBPKCalendarDateUtilsTests.m; sourceTree = "<group>"; };
 		D66FC4872109D8610063B1A6 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D66FC48F2109DA3C0063B1A6 /* StorybookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorybookViewController.h; sourceTree = "<group>"; };
 		D66FC4902109DA3C0063B1A6 /* StorybookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = StorybookViewController.m; sourceTree = "<group>"; tabWidth = 4; };
@@ -74,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E120F32FF8B3695B5E878AC8 /* libPods-Backpack Native Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				00E356F01AD99517003FC87E /* Supporting Files */,
+				D61144CA2200516700F76EAE /* RCTBPKCalendarDateUtilsTests.m */,
 			);
 			path = nativeTests;
 			sourceTree = "<group>";
@@ -173,6 +181,8 @@
 			children = (
 				FBB4289347D8862ADA374625 /* Pods-Backpack Native.debug.xcconfig */,
 				6B59545B47D6FA3C28AB6F8B /* Pods-Backpack Native.release.xcconfig */,
+				C97A3DDE34691C31B4D830BA /* Pods-Backpack Native Tests.debug.xcconfig */,
+				C63703994133B719A6838A67 /* Pods-Backpack Native Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -203,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				ABDC175C9DB0F0B9CBD71B51 /* libPods-Backpack Native.a */,
+				967DA828F1B29C9BC73AEB4E /* libPods-Backpack Native Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -214,6 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "Backpack Native Tests" */;
 			buildPhases = (
+				B20BA0FEC10E3BCE40A8EEA6 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
@@ -434,6 +446,24 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Backpack Native/Pods-Backpack Native-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B20BA0FEC10E3BCE40A8EEA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Backpack Native Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -441,6 +471,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D61144CB2200516700F76EAE /* RCTBPKCalendarDateUtilsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +532,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C97A3DDE34691C31B4D830BA /* Pods-Backpack Native Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -525,6 +557,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C63703994133B719A6838A67 /* Pods-Backpack Native Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
