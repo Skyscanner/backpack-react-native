@@ -2,6 +2,19 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-01-29 - React Native Calendar UTC dates
+
+**Breaking:**
+
+ - react-native-bpk-component-calendar: 0.0.2 => 0.1.0
+  - Changed all input and output dates to use `UTC`.
+
+**Added:**
+
+ - react-native-bpk-component-calendar: 0.0.2 => 0.1.0
+  - added brdige for the android calendar.
+
+
 # 2019-01-25 - New speaker icon
 
 **Added**
