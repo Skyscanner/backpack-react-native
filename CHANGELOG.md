@@ -2,6 +2,15 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-01-30 - New social-like icon
+
+**Added:**
+- react-native-bpk-component-button-link@4.1.0
+- react-native-bpk-component-button@8.1.0
+- react-native-bpk-component-icon@1.12.0
+- react-native-bpk-component-navigation-bar@4.1.0
+  - New social-like icon.
+
 # 2019-01-29 - React Native Calendar UTC dates
 
 **Breaking:**
