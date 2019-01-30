@@ -1,5 +1,4 @@
 [ignore]
-.*/packages/.*/node_modules/.*
 
 [include]
 
@@ -14,7 +13,6 @@ module.name_mapper='\(@storybook/react-native\)' -> '<PROJECT_ROOT>/scripts/stub
 module.name_mapper='\(@skyscanner/react-native-transitiongroup\)' -> '<PROJECT_ROOT>/scripts/stubs/jsModuleStub.js'
 module.name_mapper='\(react-native-maps\)' -> '<PROJECT_ROOT>/scripts/stubs/jsModuleStub.js'
 module.name_mapper='\(recyclerlistview\)' -> '<PROJECT_ROOT>/scripts/stubs/jsModuleStub.js'
-module.name_mapper='\(bpk-react-utils\)' -> '<PROJECT_ROOT>/scripts/stubs/jsModuleStub.js'
 emoji=true
 
 module.file_ext=.js
