@@ -54,16 +54,7 @@ const BpkCalendar = (props: Props) => {
     <RCTBPKCalendar
       minDate={minDate}
       maxDate={maxDate}
-      onDateSelection={event => {
-        if (event.nativeEvent.selectedDates) {
-          const convertedDates = event.nativeEvent.selectedDates.map(
-            timestamp => new Date(timestamp * 1000),
-          );
-          if (onChangeSelectedDates) {
-            onChangeSelectedDates(convertedDates);
-          }
-        }
-      }}
+      onDateSelection={onChangeSelectedDates}
       selectedDates={selectedDates}
       {...rest}
     />

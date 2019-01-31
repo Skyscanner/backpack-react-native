@@ -258,7 +258,7 @@ storiesOf('react-native-bpk-component-calendar', module)
       maxDate={new Date(Date.UTC(2020, 11, 31))}
     />
   ))
-  .add('With selected dates', () => (
+  .add('With selected dates (UTC)', () => (
     <BpkCalendarExample
       style={styles.calendarOnly}
       selectionType={SELECTION_TYPES.range}
@@ -267,6 +267,18 @@ storiesOf('react-native-bpk-component-calendar', module)
       selectedDates={[
         new Date(Date.UTC(2019, 0, 3)),
         new Date(Date.UTC(2019, 0, 7)),
+      ]}
+    />
+  ))
+  .add('With selected dates (UTC number)', () => (
+    <BpkCalendarExample
+      style={styles.calendarOnly}
+      selectionType={SELECTION_TYPES.range}
+      minDate={new Date(Date.UTC(2019, 0, 2))}
+      maxDate={new Date(Date.UTC(2020, 11, 31))}
+      selectedDates={[
+        new Date(Date.UTC(2019, 0, 3)).getTime(),
+        new Date(Date.UTC(2019, 0, 7)).getTime(),
       ]}
     />
   ))
