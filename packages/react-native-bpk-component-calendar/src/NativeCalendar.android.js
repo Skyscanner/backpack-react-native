@@ -33,10 +33,12 @@ export type Props = {
   ...$Exact<CommonProps>,
 };
 
-const parseDateToNative = date => {
+const parseDateToNative = (date: ?Date) => {
   if (date) {
     // Return as unix timestamp because the only number data type that allows null
     // in the native side is Integer, and the original milliseconds will overflow it.
+
+    // The consumer-provided date value could be a number, so wrapping it inside a Date constructor in case
     return new Date(date).getTime() / 1000;
   }
   return date;

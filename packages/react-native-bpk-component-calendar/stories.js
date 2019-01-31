@@ -274,12 +274,9 @@ storiesOf('react-native-bpk-component-calendar', module)
     <BpkCalendarExample
       style={styles.calendarOnly}
       selectionType={SELECTION_TYPES.range}
-      minDate={new Date(Date.UTC(2019, 0, 2))}
-      maxDate={new Date(Date.UTC(2020, 11, 31))}
-      selectedDates={[
-        new Date(Date.UTC(2019, 0, 3)).getTime(),
-        new Date(Date.UTC(2019, 0, 7)).getTime(),
-      ]}
+      minDate={Date.UTC(2019, 0, 2)}
+      maxDate={Date.UTC(2020, 11, 31)}
+      selectedDates={[Date.UTC(2019, 0, 3), Date.UTC(2019, 0, 7)]}
     />
   ))
   .add('With different locale', () => (

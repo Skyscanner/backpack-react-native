@@ -36,7 +36,7 @@ export type Props = {
 const createOnChangeHandler = memoize(callback => event => {
   if (event.nativeEvent.selectedDates) {
     const convertedDates = event.nativeEvent.selectedDates.map(
-      dt => new Date(dt * 1000),
+      timestamp => new Date(timestamp * 1000),
     );
     if (callback) {
       callback(convertedDates);
