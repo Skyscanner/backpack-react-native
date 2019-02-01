@@ -223,6 +223,8 @@ class ChangeableSelectionTypeStory extends Component<
   }
 }
 
+const today = new Date();
+
 storiesOf('react-native-bpk-component-calendar', module)
   .addDecorator(CenterDecorator)
   .add('docs:single', () => (
@@ -254,19 +256,19 @@ storiesOf('react-native-bpk-component-calendar', module)
     <BpkCalendarExample
       style={styles.calendarOnly}
       selectionType={SELECTION_TYPES.single}
-      minDate={new Date(Date.UTC(2019, 0, 2))}
-      maxDate={new Date(Date.UTC(2020, 11, 31))}
+      minDate={new Date(Date.UTC(today.getFullYear(), 0, 2))}
+      maxDate={new Date(Date.UTC(today.getFullYear() + 1, 11, 31))}
     />
   ))
   .add('With selected dates (UTC)', () => (
     <BpkCalendarExample
       style={styles.calendarOnly}
       selectionType={SELECTION_TYPES.range}
-      minDate={new Date(Date.UTC(2019, 0, 2))}
-      maxDate={new Date(Date.UTC(2020, 11, 31))}
+      minDate={new Date(Date.UTC(today.getFullYear(), 0, 2))}
+      maxDate={new Date(Date.UTC(today.getFullYear() + 1, 11, 31))}
       selectedDates={[
-        new Date(Date.UTC(2019, 0, 3)),
-        new Date(Date.UTC(2019, 0, 7)),
+        new Date(Date.UTC(today.getFullYear(), today.getMonth(), 3)),
+        new Date(Date.UTC(today.getFullYear(), today.getMonth(), 7)),
       ]}
     />
   ))
@@ -274,9 +276,12 @@ storiesOf('react-native-bpk-component-calendar', module)
     <BpkCalendarExample
       style={styles.calendarOnly}
       selectionType={SELECTION_TYPES.range}
-      minDate={Date.UTC(2019, 0, 2)}
-      maxDate={Date.UTC(2020, 11, 31)}
-      selectedDates={[Date.UTC(2019, 0, 3), Date.UTC(2019, 0, 7)]}
+      minDate={Date.UTC(today.getFullYear(), 0, 2)}
+      maxDate={Date.UTC(today.getFullYear() + 1, 11, 31)}
+      selectedDates={[
+        Date.UTC(today.getFullYear(), today.getMonth(), 3),
+        Date.UTC(today.getFullYear(), today.getMonth(), 7),
+      ]}
     />
   ))
   .add('With different locale', () => (
