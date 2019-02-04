@@ -37,13 +37,10 @@ const parseDateToNative = (date: ?(Date | number)) => {
   if (date) {
     // Return as unix timestamp because the only number data type that allows null
     // in the native side is Integer, and the original milliseconds will overflow it.
-
-    // The consumer-provided date value could be a number, so wrapping it inside a Date constructor in case
-    if (typeof date === 'number') {
-      return date / 1000;
-    }
-    return date.getTime() / 1000;
+    const timestamp = typeof date === 'number' ? date : date.getTime();
+    return timestamp / 1000;
   }
+
   return date;
 };
 

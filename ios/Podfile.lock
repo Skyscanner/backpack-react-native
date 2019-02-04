@@ -13,7 +13,7 @@ PODS:
   - glog (0.3.5)
   - React (0.57.7):
     - React/Core (= 0.57.7)
-  - react-native-bpk-component-calendar (0.1.0):
+  - react-native-bpk-component-calendar (0.1.1):
     - Backpack (~> 6.1.0)
     - React
   - react-native-maps (0.23.0):
