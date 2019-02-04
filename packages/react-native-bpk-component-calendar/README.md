@@ -11,10 +11,71 @@ npm install react-native-bpk-component-calendar --save-dev
 Because this package ships with native code, it is also necessary to add some native dependencies to your RN project:
 
 ### Android
-TODO - NEED TO WRITE THIS BIT
+
+Having installed the NPM package, add the following configuration to gradle:
+
+  1. Define the `react-native-bpk-component-calendar` project in your `settings.gradle` file:
+
+```groovy
+    include ':react-native-bpk-component-calendar'
+    project(':react-native-bpk-component-calendar').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-bpk-component-calendar/src/android')
+```
+
+  2. Add `react-native-bpk-component-calendar` as a dependency in your `build.gradle` file:
+
+```groovy
+    dependencies {
+      implementation project(':react-native-bpk-component-calendar')
+    }
+```
+
+If you have defined project-wide properties in your root `build.gradle`, this library will detect the presence of the following properties:
+
+```groovy
+ext {
+    compileSdkVersion   = 28
+    targetSdkVersion    = 28
+    minSdkVersion       = 21
+    buildToolsVersion   = "28.0.3"
+}
+```
+
+If you haven't or are using the pre compiled version bellow, it will use the values shown above.
+
+#### Pre compiled version
+
+Alternativelly, if you are Skyscanner employee and have access to the internal artifactory, you can use the pre compiled version directly. Make sure you have the `infrastructure-maven` registry configured and are logged in, then add the following dependency to your `build.gradle` file:
+
+```groovy
+    dependencies {
+      implementation 'net.skyscanner.backpack:react-native-bpk-component-calendar:<version>'
+    }
+```
+
+**Note:** The version should be the same used for the npm package.
+
+
+#### Importing the bridge package
+
+After you have installed the lib, import the `CalendarPackage()` in your react application:
+
+```java
+import net.skyscanner.backpack.reactnative.calendar.CalendarPackage
+
+....
+
+@Override
+protected List<ReactPackage> getPackages() {
+    return Arrays.<ReactPackage>asList(
+            new MainReactPackage(),
+            new CalendarPackage()
+    );
+}
+```
 
 ### iOS
-Having installed the NPM package, you need to add the following dependencies to your Podfile:
+
+Having installed the NPM package, add the following dependencies to your Podfile:
 
  - `react-native-bpk-component-calendar`, using a relative path via `node_modules`
 
