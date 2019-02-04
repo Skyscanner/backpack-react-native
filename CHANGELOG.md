@@ -2,9 +2,18 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-02-04 - Breaking changes to the calendar component
+
+**Breaking:**
+
+- react-native-bpk-component-calendar: 0.1.1 => 0.2.0
+  - Changed date prop format to allow date timestamps in milliseconds, as well as Date object
+  - Android: Changed all input and output dates to use `UTC`.
+
 # 2019-01-30 - New social-like icon
 
 **Added:**
+
 - react-native-bpk-component-button-link@4.1.0
 - react-native-bpk-component-button@8.1.0
 - react-native-bpk-component-icon@1.12.0
@@ -21,7 +30,7 @@
 **Added:**
 
  - react-native-bpk-component-calendar: 0.0.2 => 0.1.0
-  - added brdige for the android calendar.
+  - added bridge for the android calendar.
 
 
 # 2019-01-25 - New speaker icon
