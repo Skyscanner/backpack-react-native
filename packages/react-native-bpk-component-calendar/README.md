@@ -21,7 +21,7 @@ Having installed the NPM package, add the following configuration to gradle:
     project(':react-native-bpk-component-calendar').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-bpk-component-calendar/src/android')
 ```
 
-  2. Add `react-native-bpk-component-calendar` as a dependency in your `build.gradle` file:
+  2. Add `react-native-bpk-component-calendar` as a dependency in your app/module `build.gradle` file:
 
 ```groovy
     dependencies {
@@ -44,7 +44,7 @@ If you haven't or are using the pre compiled version bellow, it will use the val
 
 #### Pre compiled version
 
-Alternativelly, if you are Skyscanner employee and have access to the internal artifactory, you can use the pre compiled version directly. Make sure you have the `infrastructure-maven` registry configured and are logged in, then add the following dependency to your `build.gradle` file:
+Alternativelly, the pre compiled version is available on Skyscanner's internal artifactory. Make sure you have the `infrastructure-maven` registry configured and are logged in, then add the following dependency to your `build.gradle` file:
 
 ```groovy
     dependencies {
