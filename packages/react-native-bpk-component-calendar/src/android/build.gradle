@@ -18,15 +18,17 @@ def safeExtGet(prop, fallback) {
 
 def _reactNativeVersion = safeExtGet("reactNative", "+")
 def _compileSdkVersion = safeExtGet("compileSdkVersion", 28)
-def _backpackVersion = safeExtGet("backpackVersion", "47ae74e60fbeac32aa1e03375547eb5f6623cce5")
+def _targetSdkVersion = safeExtGet("targetSdkVersion", 28)
+def _minSdkVersion = safeExtGet("minSdkVersion", 21)
+def _buildToolsVersion = safeExtGet("buildToolsVersion", "28.0.3")
 
 android {
   compileSdkVersion _compileSdkVersion
-  buildToolsVersion safeExtGet("buildToolsVersion", "26.0.3")
+  buildToolsVersion _buildToolsVersion
 
   defaultConfig {
-    minSdkVersion safeExtGet("minSdkVersion", 21)
-    targetSdkVersion safeExtGet("targetSdkVersion", 28)
+    minSdkVersion _minSdkVersion
+    targetSdkVersion _targetSdkVersion
 
     versionName getVersionFromJsPackage(project)
   }
@@ -34,5 +36,5 @@ android {
 
 dependencies {
   compileOnly "com.facebook.react:react-native:${_reactNativeVersion}"
-  implementation "com.github.skyscanner:backpack-android:${_backpackVersion}"
+  implementation "com.github.skyscanner:backpack-android:2.5.0"
 }
