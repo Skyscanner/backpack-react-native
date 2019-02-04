@@ -12,7 +12,7 @@ Because this package ships with native code, it is also necessary to add some na
 
 ### Android
 
-Having installed the NPM package, add the following configuration to gradle:
+Add the following configurations to gradle:
 
   1. Define the `react-native-bpk-component-calendar` project in your `settings.gradle` file:
 
@@ -75,14 +75,14 @@ protected List<ReactPackage> getPackages() {
 
 ### iOS
 
-Having installed the NPM package, add the following dependencies to your Podfile:
+Add a dependency to your Podfile using the path to the NPM package as follows:
 
- - `react-native-bpk-component-calendar`, using a relative path via `node_modules`
-
-For example:
 ```
   pod 'react-native-bpk-component-calendar', path: '../node_modules/react-native-bpk-component-calendar'
 ```
+
+Note that the `react-native-bpk-component-calendar` depends on [Backpack](https://cocoapods.org/pods/Backpack). If your Podfile also depends on this directly, both dependencies must be for compatible semver versions.
+
 ## Time Zones
 
 `BpkCalendar` uses dates at the `UTC` midnight boundary exclusively for selected dates and expects that format for `minDate` and `maxDate`. If `BpkCalendar` is used with dates that are **not** `UTC` it will behave in undefined ways and most likely not work.
@@ -92,15 +92,16 @@ To create dates to be used with the component we recommend the following
 ```javascript
 // Min date of the calendar at 2019-01-02
 const minDate = new Date(Date.UTC(2019, 0, 2));
+
+// Dates can also be provided as timestamps
+const minDate = Date.UTC(2019, 0, 2);
 ```
 
 To format the dates for display use
 
 ```javascript
-const locale = 'en-GB';
-const formatter = new Intl.DateTimeFormat(locale, { timeZone: 'UTC' });
-
-const formattedDate = formatter.format(date);
+const locale = 'en-gb';
+const formattedDate = date.toLocaleDateString(locale, { timeZone: 'UTC' });
 ```
 
 ## Usage
@@ -112,25 +113,33 @@ import { StyleSheet, View } from 'react-native';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
 import BpkCalendar, { SELECTION_TYPES } from 'react-native-bpk-component-calendar';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    padding: spacingBase,
-  },
-});
+class App extends Component {
+  constructor(props) {
+    super(props);
 
-export default () => (
-  <View style={styles.container}>
-    <BpkCalendar
-      selectionType={SELECTION_TYPES.single}
-      selectedDates={[new Date()]}
-      onChangeSelectedDates={newDates => {
-        console.warn("Date selection changed");
-      }}
-    />
-  </View>
-);
+    this.state = { selectedDates: [] };
+  }
+
+  handleNewDates = newDates => {
+    this.setState({
+      selectedDates: newDates,
+    });
+  };
+
+  render() {
+    const { selectionType, onChangeSelectedDates, ...rest } = this.props;
+    return (
+      <BpkCalendar
+        locale={'en-gb'}
+        selectionType={SELECTION_TYPES.range}
+        selectedDates={this.state.selectedDates}
+        onChangeSelectedDates={this.handleNewDates}
+        minDate={Date.UTC(2019, 0, 2)}
+        maxDate={Date.UTC(2019, 11, 31)}
+      />
+    );
+  }
+}
 ```
 
 ## Props
@@ -140,15 +149,11 @@ export default () => (
 | Property                | PropType               | Required   | Default Value          |
 | ----------------------- | ---------------------- | ---------- | ---------------------- |
 | locale                  | string                 | true       | -                      |
-| maxDate                 | Date                   | false      | null                   |
-| minDate                 | Date                   | false      | null                   |
+| maxDate                 | oneOf(Date, number)    | false      | today + 1 year         |
+| minDate                 | oneOf(Date, number)    | false      | today                  |
 | onChangeSelectedDates   | function               | false      | null                   |
-| selectedDates           | Array(Date)            | false      | null                   |
+| selectedDates           | arrayOf(Date, number)  | false      | []                     |
 | selectionType           | oneOf(SELECTION_TYPES) | false      | SELECTION_TYPES.single |
-
-#### locale
-
-TODO explain locale
 
 #### selectedDates
 
