@@ -228,6 +228,37 @@ Be aware that if `bpk-tokens` has changed, *all* packages in the repository will
 
 When a component is released for the first time on npm, remember to add the component to the Skyscanner organisation through the [npm UI](https://www.npmjs.com/settings/skyscanner/teams/team/backpack-react-native/access).
 
+### Native Android bridges
+
+Android bridges should be compiled and published into the internal archifatory, to do so after the js package has been released, run:
+
+```
+cd android
+./gradlew :<project-name>:publish
+```
+
+#### Authentication
+
+To authenticate add the following properties to `android/local.properties`
+
+```
+jfrog_username=<your_name>
+jfrog_password=<your_password>
+```
+
+Alternativally you can set the env variables `JFROG_USERNAME` and `JFROG_PASSWORD`
+
+#### Versioning
+
+Versions should follow what is in the `package.json` of the corresponding js code, and will do so automatically. Once one version is published it can't be replaced, to do a new release the js package should also be released again.
+
+If you want to publish test code set the env variable `SNAPSHOT=true`, this will publish a snapshot version that can be replaced.
+
+```
+cd android
+SNAPSHOT=true ./gradlew :<project-name>:publish
+```
+
 </details>
 
 ## And finally..

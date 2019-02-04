@@ -4,6 +4,14 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply from: '../../../../android/gradle-maven-push.gradle'
+
+description='Bridge code for react-native-bpk-component-calendar'
+
+group='net.skyscanner.backpack'
+
+version=getVersionFromJsPackage(project)
+
 def safeExtGet(prop, fallback) {
   rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
 }
@@ -20,13 +28,11 @@ android {
     minSdkVersion safeExtGet("minSdkVersion", 21)
     targetSdkVersion safeExtGet("targetSdkVersion", 28)
 
-    // TODO: read from JSON
-    versionCode 1
-    versionName "1.0"
+    versionName getVersionFromJsPackage(project)
   }
 }
 
 dependencies {
   compileOnly "com.facebook.react:react-native:${_reactNativeVersion}"
-  compileOnly("com.github.skyscanner:backpack-android:${_backpackVersion}")
+  implementation "com.github.skyscanner:backpack-android:${_backpackVersion}"
 }
