@@ -20,7 +20,6 @@
 
 import React from 'react';
 import { requireNativeComponent } from 'react-native';
-import memoize from 'lodash/memoize';
 
 import {
   commonPropTypes,
@@ -34,28 +33,14 @@ export type Props = {
   ...$Exact<CommonProps>,
 };
 
-const createOnChangeHandler = memoize(callback => event => {
-  if (event.nativeEvent.selectedDates) {
-    const convertedDates = event.nativeEvent.selectedDates.map(dt => {
-      const utcDate = new Date(dt);
-      return new Date(
-        utcDate.getUTCFullYear(),
-        utcDate.getUTCMonth(),
-        utcDate.getUTCDate(),
-      );
-    });
-    if (callback) {
-      callback(convertedDates);
-    }
-  }
-});
-
-const parseDateToNative = date => {
+const parseDateToNative = (date: ?(Date | number)) => {
   if (date) {
     // Return as unix timestamp because the only number data type that allows null
     // in the native side is Integer, and the original milliseconds will overflow it.
-    return date.getTime() / 1000;
+    const timestamp = typeof date === 'number' ? date : date.getTime();
+    return timestamp / 1000;
   }
+
   return date;
 };
 
@@ -79,7 +64,7 @@ const BpkCalendar = (props: Props) => {
       minDate={parseDateToNative(minDate)}
       maxDate={parseDateToNative(maxDate)}
       selectedDates={normalizedDates.map(parseDateToNative)}
-      onChange={createOnChangeHandler(onChangeSelectedDates)}
+      onChange={onChangeSelectedDates}
       {...rest}
     />
   );

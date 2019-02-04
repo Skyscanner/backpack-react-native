@@ -39,6 +39,11 @@ export type CommonProps = {
   style: ?StyleObj,
 };
 
+const datePropType = PropTypes.oneOfType([
+  PropTypes.instanceOf(Date),
+  PropTypes.number,
+]);
+
 const selectedDatesPropType = (
   props: { [string]: any },
   propName: string,
@@ -64,7 +69,7 @@ const selectedDatesPropType = (
       );
     }
   }
-  return PropTypes.arrayOf(PropTypes.instanceOf(Date))(
+  return PropTypes.arrayOf(datePropType)(
     props,
     propName,
     componentName,
@@ -74,8 +79,8 @@ const selectedDatesPropType = (
 
 export const commonPropTypes = {
   locale: PropTypes.string.isRequired,
-  minDate: PropTypes.instanceOf(Date),
-  maxDate: PropTypes.instanceOf(Date),
+  minDate: datePropType,
+  maxDate: datePropType,
   onChangeSelectedDates: PropTypes.func,
   selectedDates: selectedDatesPropType,
   selectionType: PropTypes.oneOf(Object.keys(SELECTION_TYPES)),

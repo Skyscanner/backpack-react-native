@@ -55,11 +55,8 @@ const locales = {
   pt_BR: 'pt-br',
 };
 
-const formatDateForDisplay = (date: Date, locale: string) => {
-  const formatter = new Intl.DateTimeFormat(locale, { timeZone: 'UTC' });
-
-  return formatter.format(date);
-};
+const formatDateForDisplay = (date: Date, locale: string) =>
+  date.toLocaleDateString(locale, { timeZone: 'UTC' });
 
 /* eslint-disable react/no-multi-comp */
 
@@ -67,6 +64,7 @@ class BpkCalendarExample extends Component<
   {
     onChangeSelectedDates?: (Date[]) => mixed,
     selectionType: BpkCalendarSelectionType,
+    initiallySelectedDates?: Array<Date | number>,
   },
   {
     selectedDates: Date[],
@@ -74,11 +72,16 @@ class BpkCalendarExample extends Component<
 > {
   constructor(props) {
     super(props);
-    this.state = { selectedDates: [] };
+    this.state = { selectedDates: props.initiallySelectedDates || [] };
   }
 
   render() {
-    const { selectionType, onChangeSelectedDates, ...rest } = this.props;
+    const {
+      selectionType,
+      initiallySelectedDates: _,
+      onChangeSelectedDates,
+      ...rest
+    } = this.props;
     return (
       <BpkCalendar
         locale={locales.en_GB}
@@ -223,6 +226,8 @@ class ChangeableSelectionTypeStory extends Component<
   }
 }
 
+const today = new Date();
+
 storiesOf('react-native-bpk-component-calendar', module)
   .addDecorator(CenterDecorator)
   .add('docs:single', () => (
@@ -254,19 +259,31 @@ storiesOf('react-native-bpk-component-calendar', module)
     <BpkCalendarExample
       style={styles.calendarOnly}
       selectionType={SELECTION_TYPES.single}
-      minDate={new Date(Date.UTC(2019, 0, 2))}
-      maxDate={new Date(Date.UTC(2020, 11, 31))}
+      minDate={new Date(Date.UTC(today.getFullYear(), 0, 2))}
+      maxDate={new Date(Date.UTC(today.getFullYear() + 1, 11, 31))}
     />
   ))
-  .add('With selected dates', () => (
+  .add('With selected dates (UTC)', () => (
     <BpkCalendarExample
       style={styles.calendarOnly}
       selectionType={SELECTION_TYPES.range}
-      minDate={new Date(Date.UTC(2019, 0, 2))}
-      maxDate={new Date(Date.UTC(2020, 11, 31))}
-      selectedDates={[
-        new Date(Date.UTC(2019, 0, 3)),
-        new Date(Date.UTC(2019, 0, 7)),
+      minDate={new Date(Date.UTC(today.getFullYear(), 0, 2))}
+      maxDate={new Date(Date.UTC(today.getFullYear() + 1, 11, 31))}
+      initiallySelectedDates={[
+        new Date(Date.UTC(today.getFullYear(), today.getMonth(), 3)),
+        new Date(Date.UTC(today.getFullYear(), today.getMonth(), 7)),
+      ]}
+    />
+  ))
+  .add('With selected dates (UTC number)', () => (
+    <BpkCalendarExample
+      style={styles.calendarOnly}
+      selectionType={SELECTION_TYPES.range}
+      minDate={Date.UTC(today.getFullYear(), 0, 2)}
+      maxDate={Date.UTC(today.getFullYear() + 1, 11, 31)}
+      initiallySelectedDates={[
+        Date.UTC(today.getFullYear(), today.getMonth(), 3),
+        Date.UTC(today.getFullYear(), today.getMonth(), 7),
       ]}
     />
   ))

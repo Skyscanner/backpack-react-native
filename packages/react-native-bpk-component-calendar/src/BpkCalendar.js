@@ -19,6 +19,7 @@
 /* @flow */
 
 import React from 'react';
+import memoize from 'lodash/memoize';
 
 import {
   commonPropTypes,
@@ -31,6 +32,17 @@ import NativeCalendar from './NativeCalendar';
 export type Props = {
   ...$Exact<CommonProps>,
 };
+
+const createOnChangeHandler = memoize(callback => event => {
+  if (event.nativeEvent.selectedDates) {
+    const convertedDates = event.nativeEvent.selectedDates.map(
+      timestamp => new Date(timestamp * 1000),
+    );
+    if (callback) {
+      callback(convertedDates);
+    }
+  }
+});
 
 const BpkCalendar = (props: Props) => {
   const {
@@ -53,7 +65,7 @@ const BpkCalendar = (props: Props) => {
     <NativeCalendar
       minDate={minDate}
       maxDate={maxDate}
-      onChangeSelectedDates={onChangeSelectedDates}
+      onChangeSelectedDates={createOnChangeHandler(onChangeSelectedDates)}
       selectedDates={selectedDates}
       {...rest}
     />

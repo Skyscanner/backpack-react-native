@@ -44,7 +44,7 @@ class CalendarChangeEvent(
   private fun serializeEventData(): WritableMap {
     val eventData = Arguments.createMap()
     val parsedDates = selectedDates
-      .map { it.date.time }
+      .map { it.date.time / 1000 }
 
     val datesArray = Arguments.createArray()
     parsedDates.forEach {
