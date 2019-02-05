@@ -22,6 +22,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react-native';
 
 import CenterDecorator from '../../storybook/CenterDecorator';
+
 import BpkBoilerplate from './index';
 
 storiesOf('react-native-bpk-component-boilerplate', module)

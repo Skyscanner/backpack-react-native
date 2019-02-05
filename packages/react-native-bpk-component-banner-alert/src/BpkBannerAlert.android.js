@@ -43,7 +43,6 @@ import {
   propTypes,
   defaultProps,
 } from './common-types';
-
 import AnimateAndFade from './AnimateAndFade';
 
 const STYLES = StyleSheet.create({

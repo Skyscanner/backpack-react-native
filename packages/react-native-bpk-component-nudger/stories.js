@@ -24,9 +24,11 @@ import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
 import BpkThemeProvider from 'react-native-bpk-theming';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
+
 import CenterDecorator from '../../storybook/CenterDecorator';
 import themeAttributes from '../../storybook/themeAttributes';
 import { StorySubheading } from '../../storybook/TextStyles';
+
 import BpkNudger from './index';
 
 const styles = StyleSheet.create({

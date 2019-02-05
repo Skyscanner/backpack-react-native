@@ -28,6 +28,7 @@ import {
 import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-native-feedback';
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import CORNER_STYLES, { defaultCornerStyle } from './BpkCardCornerStyles';
 
 const styles = StyleSheet.create({

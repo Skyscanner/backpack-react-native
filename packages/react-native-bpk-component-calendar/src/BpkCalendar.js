@@ -26,7 +26,6 @@ import {
   commonDefaultProps,
   type CommonProps,
 } from './common-types';
-
 import NativeCalendar from './NativeCalendar';
 
 export type Props = {

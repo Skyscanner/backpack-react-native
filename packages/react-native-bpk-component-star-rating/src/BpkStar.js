@@ -26,6 +26,7 @@ import {
   colorYellow500,
   colorGray100,
 } from 'bpk-tokens/tokens/base.react.native';
+
 import { STAR_TYPES } from './star-types';
 
 const STAR_SIZE = spacingMd + spacingSm;

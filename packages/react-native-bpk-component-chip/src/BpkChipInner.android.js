@@ -20,7 +20,6 @@
 
 import React from 'react';
 import { Platform, View, StyleSheet } from 'react-native';
-
 import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-native-feedback';
 import {
   borderRadiusPill,

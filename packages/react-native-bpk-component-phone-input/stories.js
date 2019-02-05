@@ -24,14 +24,16 @@ import { Image, Modal, StyleSheet, View } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
+
 import CenterDecorator from '../../storybook/CenterDecorator';
 
-import { BpkDialingCodeList } from './index';
 import { type Id, type Code } from './src/common-types';
 import BpkPhoneNumberInput, {
   type Props,
   propTypes as phoneNumberInputPropTypes,
 } from './src/BpkPhoneNumberInput';
+
+import { BpkDialingCodeList } from './index';
 
 const styles = StyleSheet.create({
   fullOuter: {

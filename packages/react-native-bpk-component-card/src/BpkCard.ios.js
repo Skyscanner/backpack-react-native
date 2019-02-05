@@ -27,6 +27,7 @@ import { shadows } from 'react-native-bpk-styles';
 import React from 'react';
 import PropTypes from 'prop-types';
 import BpkTouchableOverlay from 'react-native-bpk-component-touchable-overlay';
+
 import CORNER_STYLES, { defaultCornerStyle } from './BpkCardCornerStyles';
 
 const styles = StyleSheet.create({

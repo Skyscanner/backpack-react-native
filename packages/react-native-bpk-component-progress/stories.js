@@ -23,11 +23,13 @@ import { storiesOf } from '@storybook/react-native';
 import { spacingMd } from 'bpk-tokens/tokens/base.react.native';
 import BpkThemeProvider from 'react-native-bpk-theming';
 import capitalize from 'lodash/capitalize';
+
 import CenterDecorator from '../../storybook/CenterDecorator';
 import BpkButton from '../react-native-bpk-component-button';
 import BpkText from '../react-native-bpk-component-text';
-import BpkProgress from './index';
 import themeAttributes from '../../storybook/themeAttributes';
+
+import BpkProgress from './index';
 
 const styles = StyleSheet.create({
   barContainer: {

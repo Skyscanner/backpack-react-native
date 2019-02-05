@@ -30,6 +30,7 @@ import {
 import BpkText from 'react-native-bpk-component-text';
 import { animationDurationSm } from 'bpk-tokens/tokens/base.react.native';
 import TinyMask from 'tinymask';
+
 import { ValidIcon, InvalidIcon } from './BpkTextInputIcons';
 import { getLabelStyle, getInputContainerStyle, styles } from './styles';
 

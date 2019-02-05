@@ -38,7 +38,6 @@ import {
   THEME_ATTRIBUTES,
   TITLE_PROPTYPE,
 } from './common-types';
-
 import BpkNavigationBarBackButtonIOS from './BpkNavigationBarBackButtonIOS';
 import BpkNavigationBarTextButtonIOS from './BpkNavigationBarTextButtonIOS';
 import BpkNavigationBarIconButtonIOS from './BpkNavigationBarIconButtonIOS';

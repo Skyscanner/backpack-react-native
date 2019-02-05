@@ -22,6 +22,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import BpkText from 'react-native-bpk-component-text';
 import { spacingSm } from 'bpk-tokens/tokens/base.react.native';
+
 import BpkCarouselItem from './BpkCarouselItem';
 
 const commonTests = () => {

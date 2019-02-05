@@ -21,6 +21,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import BpkText from 'react-native-bpk-component-text';
+
 import AnimateAndFade from './AnimateAndFade';
 
 const child = (

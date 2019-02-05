@@ -18,6 +18,7 @@
 
 import React from 'react';
 import TestRenderer from 'react-test-renderer';
+
 import BpkPickerItem from './BpkPickerItem.android';
 
 jest.mock('react-native', () => {

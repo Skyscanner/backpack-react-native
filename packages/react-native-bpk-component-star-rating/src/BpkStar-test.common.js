@@ -18,8 +18,8 @@
 
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { STAR_TYPES } from './star-types';
 
+import { STAR_TYPES } from './star-types';
 import BpkStar from './BpkStar';
 
 const commonTests = () => {

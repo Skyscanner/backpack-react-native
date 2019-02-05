@@ -22,10 +22,11 @@ import { storiesOf } from '@storybook/react-native';
 import BpkThemeProvider from 'react-native-bpk-theming';
 import { spacingXl, spacingBase } from 'bpk-tokens/tokens/base.react.native';
 
-import BpkSwitch from './index';
 import { StorySubheading } from '../../storybook/TextStyles';
 import CenterDecorator from '../../storybook/CenterDecorator';
 import themeAttributes from '../../storybook/themeAttributes';
+
+import BpkSwitch from './index';
 
 const styles = StyleSheet.create({
   //  Necessary because on iOS the switches get left aligned, on Android right

@@ -37,7 +37,6 @@ import {
   borderRadiusPill,
   spacingXxl,
 } from 'bpk-tokens/tokens/base.react.native';
-
 import {
   getThemeAttributes,
   withTheme,

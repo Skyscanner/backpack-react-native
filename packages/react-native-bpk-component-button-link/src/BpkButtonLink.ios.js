@@ -26,7 +26,6 @@ import BpkIcon from 'react-native-bpk-component-icon';
 import BpkText, { WEIGHT_STYLES } from 'react-native-bpk-component-text';
 
 import styles from './styles';
-
 import {
   type CommonProps,
   commonPropTypes,

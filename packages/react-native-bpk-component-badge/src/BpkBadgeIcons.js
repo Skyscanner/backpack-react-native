@@ -62,16 +62,11 @@ const BpkBadgeIcons = (props: Props) => {
       {adjustedIcons.map((icon, index) => (
         <Fragment key={`${icon.props.icon}`}>
           {icon}
-          {separator &&
-            index < adjustedIcons.length - 1 && (
-              <BpkText
-                allowFontScaling={false}
-                style={itemStyle}
-                textStyle="xs"
-              >
-                {separator}
-              </BpkText>
-            )}
+          {separator && index < adjustedIcons.length - 1 && (
+            <BpkText allowFontScaling={false} style={itemStyle} textStyle="xs">
+              {separator}
+            </BpkText>
+          )}
         </Fragment>
       ))}
     </Fragment>

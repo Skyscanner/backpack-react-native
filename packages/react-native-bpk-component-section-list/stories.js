@@ -20,6 +20,7 @@ import React from 'react';
 import { Image, Platform, StyleSheet, View } from 'react-native';
 import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react-native';
+
 import BpkSectionList, {
   BpkSectionListItem,
   BpkSectionListItemSeparator,

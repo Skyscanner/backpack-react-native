@@ -21,10 +21,11 @@
 // See http://danger.systems/js if you're not sure what this is.
 
 import fs from 'fs';
+
 import { includes } from 'lodash';
 import { danger, fail, warn, message } from 'danger';
-import { props as iosProps } from './node_modules/bpk-tokens/tokens/base.raw.ios.json';
 
+import { props as iosProps } from './node_modules/bpk-tokens/tokens/base.raw.ios.json';
 import * as meta from './meta.json';
 
 const AVOID_EXACT_WORDS = [

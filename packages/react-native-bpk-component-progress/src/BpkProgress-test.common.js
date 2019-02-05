@@ -23,6 +23,7 @@ import { StyleSheet } from 'react-native';
 import renderer from 'react-test-renderer';
 import BpkThemeProvider from 'react-native-bpk-theming';
 import { spacingSm, colorRed500 } from 'bpk-tokens/tokens/base.react.native';
+
 import BpkProgress from './BpkProgress';
 
 // Manually triggers the onLayout callback with the value provided
