@@ -28,13 +28,14 @@ import {
   spacingSm,
 } from 'bpk-tokens/tokens/base.react.native';
 
+import { StorySubheading } from '../../storybook/TextStyles';
+import CenterDecorator from '../../storybook/CenterDecorator';
+
 import BpkBadge, {
   BpkBadgeIcons,
   BADGE_TYPES,
   BADGE_DOCKED_TYPES,
 } from './index';
-import { StorySubheading } from '../../storybook/TextStyles';
-import CenterDecorator from '../../storybook/CenterDecorator';
 
 const style = StyleSheet.create({
   container: {

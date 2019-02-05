@@ -20,6 +20,7 @@ import React from 'react';
 import { View } from 'react-native';
 import TestRenderer from 'react-test-renderer';
 import { spacingSm } from 'bpk-tokens/tokens/base.react.native';
+
 import BpkSelect from './BpkSelect';
 
 const FakeImage = 'Image';

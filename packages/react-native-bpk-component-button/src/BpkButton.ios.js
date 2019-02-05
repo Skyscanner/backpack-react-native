@@ -35,7 +35,6 @@ import {
   textStyle,
   iconStyle,
 } from './utils';
-
 import {
   type CommonProps,
   commonPropTypes,

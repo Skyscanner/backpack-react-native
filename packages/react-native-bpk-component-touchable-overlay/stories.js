@@ -22,6 +22,7 @@ import BpkText from 'react-native-bpk-component-text';
 import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
 import { colorWhite } from 'bpk-tokens/tokens/base.react.native';
+
 import CenterDecorator from '../../storybook/CenterDecorator';
 
 import BpkTouchableOverlay from './index';

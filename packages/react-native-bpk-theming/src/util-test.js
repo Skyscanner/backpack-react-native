@@ -17,6 +17,7 @@
  */
 /* @flow */
 import { colorRed500 } from 'bpk-tokens/tokens/base.react.native';
+
 import { isValidTheme, makeThemePropType, getThemeAttributes } from './util';
 
 const REQUIRED_ATTRIBUTES: Array<string> = [

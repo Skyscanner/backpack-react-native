@@ -19,7 +19,6 @@
 /* @flow */
 
 import React from 'react';
-
 import BpkTouchableOverlay from 'react-native-bpk-component-touchable-overlay';
 
 import { type InnerProps } from './common-types';

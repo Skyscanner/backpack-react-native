@@ -20,6 +20,7 @@
 
 import React, { type Node } from 'react';
 import PropTypes from 'prop-types';
+
 import BpkPickerMenu from './BpkPickerMenu';
 import { PICKER_VALUE_PROP_TYPE, type PickerValue } from './common-types';
 

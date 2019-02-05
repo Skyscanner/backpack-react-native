@@ -20,6 +20,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import BpkThemeProvider from 'react-native-bpk-theming';
 import { spacingSm } from 'bpk-tokens/tokens/base.react.native';
+
 import BpkHorizontalNavItem from './BpkHorizontalNavItem';
 
 const commonTests = () => {

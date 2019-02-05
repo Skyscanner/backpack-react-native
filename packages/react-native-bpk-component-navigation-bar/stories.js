@@ -25,9 +25,10 @@ import BpkCard from 'react-native-bpk-component-card';
 import BpkText from 'react-native-bpk-component-text';
 import BpkImage from 'react-native-bpk-component-image';
 
+import themeAttributes from '../../storybook/themeAttributes';
+
 import isIphoneX from './src/isIphoneX';
 
-import themeAttributes from '../../storybook/themeAttributes';
 import BpkNavigationBar, {
   BpkNavigationBarButtonAndroid,
   BpkNavigationBarBackButtonIOS,

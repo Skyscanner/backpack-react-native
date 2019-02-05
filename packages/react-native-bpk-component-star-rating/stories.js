@@ -21,8 +21,10 @@ import { View, StyleSheet } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
 import BpkText from 'react-native-bpk-component-text';
-import BpkStarRating, { BpkStar, STAR_TYPES } from './index';
+
 import CenterDecorator from '../../storybook/CenterDecorator';
+
+import BpkStarRating, { BpkStar, STAR_TYPES } from './index';
 
 const StarRating = props => (
   <BpkStarRating ratingLabel={(r, m) => `${r} out of ${m} stars`} {...props} />

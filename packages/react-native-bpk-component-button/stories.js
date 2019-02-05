@@ -27,10 +27,11 @@ import { icons } from 'react-native-bpk-component-icon';
 import { spacingMd } from 'bpk-tokens/tokens/base.react.native';
 import BpkText from 'react-native-bpk-component-text';
 
-import BpkButton, { BUTTON_TYPES, ICON_ALIGNMENTS } from './index';
 import themeAttributes from '../../storybook/themeAttributes';
 import { StoryHeading, StorySubheading } from '../../storybook/TextStyles';
 import CenterDecorator from '../../storybook/CenterDecorator';
+
+import BpkButton, { BUTTON_TYPES, ICON_ALIGNMENTS } from './index';
 
 const styles = StyleSheet.create({
   btnContainer: {

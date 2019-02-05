@@ -19,6 +19,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { Image } from 'react-native';
+
 import BpkFlatListItem from './BpkFlatListItem';
 
 const onPressFn = jest.fn();

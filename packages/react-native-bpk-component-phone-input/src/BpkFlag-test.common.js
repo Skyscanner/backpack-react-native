@@ -20,6 +20,7 @@ import React from 'react';
 import { Image } from 'react-native';
 import renderer from 'react-test-renderer';
 import { spacingSm } from 'bpk-tokens/tokens/base.react.native';
+
 import BpkFlag from './BpkFlag';
 
 const commonTests = () => {

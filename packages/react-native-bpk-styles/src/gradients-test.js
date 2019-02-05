@@ -19,6 +19,7 @@ import {
   colorBlue500,
   colorPrimaryGradientLight,
 } from 'bpk-tokens/tokens/base.react.native';
+
 import gradients from './gradients';
 
 const colors = [colorBlue500, colorPrimaryGradientLight];

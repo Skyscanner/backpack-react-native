@@ -24,6 +24,7 @@ import { spacingLg } from 'bpk-tokens/tokens/base.react.native';
 import { storiesOf } from '@storybook/react-native';
 
 import CenterDecorator from '../../storybook/CenterDecorator';
+
 import BpkImage, { withLoadingBehaviour } from './index';
 
 const BpkImageWithLoading = withLoadingBehaviour(BpkImage);

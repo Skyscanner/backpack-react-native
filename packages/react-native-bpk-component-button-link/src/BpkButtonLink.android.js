@@ -27,7 +27,6 @@ import { getThemeAttributes, withTheme } from 'react-native-bpk-theming';
 import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-native-feedback';
 
 import styles from './styles';
-
 import {
   type CommonProps,
   commonPropTypes,

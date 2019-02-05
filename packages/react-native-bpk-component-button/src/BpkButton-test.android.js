@@ -20,6 +20,7 @@
 
 import React from 'react';
 import renderer from 'react-test-renderer';
+
 import BpkButton from './BpkButton';
 import commonTests from './BpkButton-test.common';
 

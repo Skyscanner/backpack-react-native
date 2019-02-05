@@ -19,6 +19,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StyleSheet, View } from 'react-native';
+
 import { getTypeByRating } from './star-types';
 import BpkStar from './BpkStar';
 

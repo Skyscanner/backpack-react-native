@@ -22,8 +22,9 @@ import BpkText from 'react-native-bpk-component-text';
 import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
 
-import BpkCard, { CORNER_STYLES, withDivider } from './index';
 import CenterDecorator from '../../storybook/CenterDecorator';
+
+import BpkCard, { CORNER_STYLES, withDivider } from './index';
 
 const BpkCardWithDivider = withDivider(BpkCard);
 

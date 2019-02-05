@@ -17,6 +17,7 @@
  */
 import React from 'react';
 import addons from '@storybook/addons';
+
 import { RTL_EVENT } from '../constants';
 
 class Panel extends React.Component {

@@ -159,16 +159,14 @@ storiesOf('react-native-bpk-component-carousel-indicator', module)
         <StorySubheading>
           More than 5 pages (shown with different selected indexes)
         </StorySubheading>
-        {new Array(6)
-          .fill()
-          .map((_, index) => (
-            <BpkCarouselIndicator
-              key={index.toString()}
-              pageCount={6}
-              selectedIndex={index}
-              style={styles.storyInstance}
-            />
-          ))}
+        {new Array(6).fill().map((_, index) => (
+          <BpkCarouselIndicator
+            key={index.toString()}
+            pageCount={6}
+            selectedIndex={index}
+            style={styles.storyInstance}
+          />
+        ))}
       </View>
     </View>
   ))

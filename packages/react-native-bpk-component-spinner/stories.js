@@ -22,10 +22,11 @@ import BpkThemeProvider from 'react-native-bpk-theming';
 import { View, ScrollView, StyleSheet } from 'react-native';
 import { colorGray900, spacingBase } from 'bpk-tokens/tokens/base.react.native';
 
-import BpkSpinner from './index';
 import themeAttributes from '../../storybook/themeAttributes';
 import { StoryHeading, StorySubheading } from '../../storybook/TextStyles';
 import CenterDecorator from '../../storybook/CenterDecorator';
+
+import BpkSpinner from './index';
 
 const styles = StyleSheet.create({
   dark: {

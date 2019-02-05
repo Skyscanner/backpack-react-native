@@ -27,6 +27,7 @@ import BpkSelect from 'react-native-bpk-component-select';
 import { colorWhite } from 'bpk-tokens/tokens/base.react.native';
 
 import CenterDecorator from '../../storybook/CenterDecorator';
+
 import BpkCalendar, {
   SELECTION_TYPES,
   type BpkCalendarSelectionType,
@@ -62,14 +63,19 @@ const formatDateForDisplay = (date: Date, locale: string) =>
 
 class BpkCalendarExample extends Component<
   {
-    onChangeSelectedDates?: (Date[]) => mixed,
+    onChangeSelectedDates: ?(Date[]) => mixed,
     selectionType: BpkCalendarSelectionType,
-    initiallySelectedDates?: Array<Date | number>,
+    initiallySelectedDates: ?Array<Date | number>,
   },
   {
     selectedDates: Date[],
   },
 > {
+  static defaultProps = {
+    onChangeSelectedDates: null,
+    initiallySelectedDates: null,
+  };
+
   constructor(props) {
     super(props);
     this.state = { selectedDates: props.initiallySelectedDates || [] };

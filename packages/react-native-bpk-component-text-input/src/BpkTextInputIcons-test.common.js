@@ -18,6 +18,7 @@
 
 import React from 'react';
 import TestRenderer from 'react-test-renderer';
+
 import { ValidIcon, InvalidIcon } from './BpkTextInputIcons';
 
 const commonTests = () => {

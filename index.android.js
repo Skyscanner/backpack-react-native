@@ -17,6 +17,7 @@
  */
 
 import { AppRegistry } from 'react-native';
+
 import Storybook from './storybook';
 
 // https://github.com/facebook/react-native/issues/15902

@@ -21,7 +21,6 @@
 import React from 'react';
 import { StyleSheet, Platform } from 'react-native';
 import PropTypes from 'prop-types';
-
 import BpkIcon from 'react-native-bpk-component-icon';
 import BpkText from 'react-native-bpk-component-text';
 import {

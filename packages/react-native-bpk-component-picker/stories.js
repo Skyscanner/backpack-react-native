@@ -28,10 +28,12 @@ import {
   spacingBase,
   spacingMd,
 } from 'bpk-tokens/tokens/base.react.native';
+
 import CenterDecorator from '../../storybook/CenterDecorator';
 
-import BpkPicker, { BpkPickerItem } from './index';
 import { type PickerValue } from './src/common-types';
+
+import BpkPicker, { BpkPickerItem } from './index';
 
 const styles = StyleSheet.create({
   picker: {

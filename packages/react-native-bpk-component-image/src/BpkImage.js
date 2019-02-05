@@ -30,7 +30,6 @@ import {
   type ImageProps,
 } from 'react-native';
 import BpkSpinner from 'react-native-bpk-component-spinner';
-
 import {
   borderRadiusSm,
   animationDurationBase,

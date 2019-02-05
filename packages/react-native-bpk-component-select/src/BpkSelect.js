@@ -40,6 +40,7 @@ import {
   spacingMd,
   spacingSm,
 } from 'bpk-tokens/tokens/base.react.native';
+
 import { ValidIcon, InvalidIcon, SelectIcon } from './BpkSelectIcons';
 
 const styles = StyleSheet.create({

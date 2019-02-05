@@ -25,10 +25,11 @@ import BpkThemeProvider from 'react-native-bpk-theming';
 import { View, Platform, StyleSheet } from 'react-native';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
 
-import BpkButtonLink from './src/BpkButtonLink';
 import { StorySubheading } from '../../storybook/TextStyles';
 import themeAttributes from '../../storybook/themeAttributes';
 import CenterDecorator from '../../storybook/CenterDecorator';
+
+import BpkButtonLink from './src/BpkButtonLink';
 
 const styles = StyleSheet.create({
   buttonStory: {

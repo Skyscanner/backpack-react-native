@@ -17,11 +17,7 @@
  */
 
 import BpkNavigationBar from './src/BpkNavigationBar';
-
-// Android
 import BpkNavigationBarButtonAndroid from './src/BpkNavigationBarButtonAndroid';
-
-// iOS
 import BpkNavigationBarBackButtonIOS from './src/BpkNavigationBarBackButtonIOS';
 import BpkNavigationBarTextButtonIOS from './src/BpkNavigationBarTextButtonIOS';
 import BpkNavigationBarIconButtonIOS from './src/BpkNavigationBarIconButtonIOS';

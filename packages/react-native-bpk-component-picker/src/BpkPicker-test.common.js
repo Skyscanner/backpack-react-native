@@ -18,6 +18,7 @@
 
 import React from 'react';
 import TestRenderer from 'react-test-renderer';
+
 import BpkPicker from './BpkPicker';
 import BpkPickerItem from './BpkPickerItem';
 

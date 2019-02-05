@@ -22,7 +22,6 @@ import React, { Fragment } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
-
 import BpkText from 'react-native-bpk-component-text';
 import {
   spacingSm,
@@ -31,6 +30,7 @@ import {
 } from 'bpk-tokens/tokens/base.react.native';
 
 import CenterDecorator from '../../storybook/CenterDecorator';
+
 import BpkChip, { BpkDismissibleChip } from './index';
 
 const styles = StyleSheet.create({

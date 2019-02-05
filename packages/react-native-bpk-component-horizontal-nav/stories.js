@@ -24,10 +24,11 @@ import { action } from '@storybook/addon-actions';
 import BpkThemeProvider from 'react-native-bpk-theming';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
 
-import BpkHorizontalNav, { BpkHorizontalNavItem } from './index';
 import { StorySubheading } from '../../storybook/TextStyles';
 import themeAttributes from '../../storybook/themeAttributes';
 import CenterDecorator from '../../storybook/CenterDecorator';
+
+import BpkHorizontalNav, { BpkHorizontalNavItem } from './index';
 
 const styles = StyleSheet.create({
   bottomMargin: {

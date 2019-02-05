@@ -24,7 +24,9 @@ import BpkText from 'react-native-bpk-component-text';
 import BpkImage, {
   withLoadingBehaviour,
 } from 'react-native-bpk-component-image';
+
 import CenterDecorator from '../../storybook/CenterDecorator';
+
 import BpkCarousel, { BpkCarouselItem } from './index';
 
 const WithLoadingBpkImage = withLoadingBehaviour(BpkImage);

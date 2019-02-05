@@ -29,9 +29,10 @@ import {
   spacingSm,
 } from 'bpk-tokens/tokens/base.react.native';
 
-import BpkIcon, { icons } from './index';
 import { StorySubheading } from '../../storybook/TextStyles';
 import CenterDecorator from '../../storybook/CenterDecorator';
+
+import BpkIcon, { icons } from './index';
 
 const styles = StyleSheet.create({
   container: {

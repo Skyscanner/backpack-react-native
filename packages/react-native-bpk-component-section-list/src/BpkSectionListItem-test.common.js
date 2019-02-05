@@ -19,6 +19,7 @@
 import React from 'react';
 import { Image } from 'react-native';
 import renderer from 'react-test-renderer';
+
 import BpkSectionListItem from './BpkSectionListItem';
 
 const onPressFn = jest.fn();

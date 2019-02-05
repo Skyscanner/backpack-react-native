@@ -29,6 +29,7 @@ import {
 import BpkText from 'react-native-bpk-component-text';
 
 import CenterDecorator from '../../storybook/CenterDecorator';
+
 import { gradients } from './index';
 
 const styles = StyleSheet.create({

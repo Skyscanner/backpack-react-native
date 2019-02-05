@@ -29,6 +29,7 @@ import {
 } from 'bpk-tokens/tokens/base.react.native';
 import { View } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
+
 import CenterDecorator from '../../storybook/CenterDecorator';
 
 import BpkText, { WEIGHT_STYLES } from './index';

@@ -23,8 +23,9 @@ import { storiesOf } from '@storybook/react-native';
 import { ScrollView, StyleSheet } from 'react-native';
 import BpkText from 'react-native-bpk-component-text';
 
-import BpkPanel, { withDivider } from './index';
 import CenterDecorator from '../../storybook/CenterDecorator';
+
+import BpkPanel, { withDivider } from './index';
 
 const BpkPanelWithDivider = withDivider(BpkPanel);
 

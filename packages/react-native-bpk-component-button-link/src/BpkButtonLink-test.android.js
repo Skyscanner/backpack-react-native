@@ -19,8 +19,8 @@
 /* @flow */
 import React from 'react';
 import renderer from 'react-test-renderer';
-import commonTests from './BpkButtonLink-test.common';
 
+import commonTests from './BpkButtonLink-test.common';
 import BpkButtonLink from './BpkButtonLink';
 
 jest.mock('react-native', () => {
