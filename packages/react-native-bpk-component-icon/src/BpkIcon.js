@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
 const mapCharacterCode = characterCode =>
   String.fromCharCode(parseInt(characterCode, 16));
 
-type Props = {
+export type Props = {
   icon: string,
   small?: boolean,
   style: ?(Object | Array<Object>),

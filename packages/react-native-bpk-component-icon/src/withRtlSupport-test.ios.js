@@ -18,8 +18,8 @@
 
 /* @flow */
 
-import BpkIcon, { icons } from './src/BpkIcon';
-import withRtlSupport from './src/withRtlSupport';
+import commonTests from './withRtlSupport-test.common';
 
-export default BpkIcon;
-export { icons, withRtlSupport };
+describe('iOS', () => {
+  commonTests();
+});
