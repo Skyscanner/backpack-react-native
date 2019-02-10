@@ -82,13 +82,13 @@ import React, { Component } from 'react';
 import BpkIcon, { icons, withRtlSupport } from 'react-native-bpk-component-icon';
 import { spacingBase, colorBlue500 } from 'bpk-tokens/tokens/base.react.native';
 
-const BpkIconwithRtlSupport = withDivider(BpkIcon);
+const BpkIconwithRtlSupport = withRtlSupport(BpkIcon);
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    padding: spacingBase,BpkIconwithRtlSupport
+    padding: spacingBase,
   }
 });
 
