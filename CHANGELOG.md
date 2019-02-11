@@ -2,6 +2,19 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-02-11 - New `withRtlSuppport` HOC for icons
+
+**Added:**
+
+- react-native-bpk-component-icon: 1.13.0
+  - New `withRtlSupport` HOC.
+
+- react-native-bpk-component-button-link: 4.2.0
+- react-native-bpk-component-button: 8.2.0
+- react-native-bpk-component-icon: 1.13.0
+- react-native-bpk-component-navigation-bar: 4.2.0
+  - Added new icon `grid-layout`.
+
 # 2019-02-04 - Breaking changes to the calendar component
 
 **Breaking:**
