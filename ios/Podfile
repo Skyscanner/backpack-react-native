@@ -24,7 +24,7 @@ target 'Backpack Native' do
   pod 'Folly', podspec: '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
   # RN Bridging Pods
-  pod 'Backpack', '~> 6.1.1'
+  pod 'Backpack', '~> 6.3.0'
   pod 'react-native-bpk-component-calendar', path: '../packages/react-native-bpk-component-calendar'
 
   # Third party pods
