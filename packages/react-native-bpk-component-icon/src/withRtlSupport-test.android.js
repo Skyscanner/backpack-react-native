@@ -18,8 +18,21 @@
 
 /* @flow */
 
-import BpkIcon, { icons } from './src/BpkIcon';
-import withRtlSupport from './src/withRtlSupport';
+import commonTests from './withRtlSupport-test.common';
 
-export default BpkIcon;
-export { icons, withRtlSupport };
+jest.mock('react-native', () => {
+  const reactNative = jest.requireActual('react-native');
+  jest
+    .spyOn(reactNative.Platform, 'select')
+    .mockImplementation(obj => obj.android || obj.default);
+  reactNative.Platform.OS = 'android';
+  return reactNative;
+});
+
+jest.mock('bpk-tokens/tokens/base.react.native', () =>
+  jest.requireActual('bpk-tokens/tokens/base.react.native.android'),
+);
+
+describe('Android', () => {
+  commonTests();
+});

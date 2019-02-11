@@ -74,6 +74,38 @@ export default class App extends Component {
 }
 ```
 
+### `withRtlSupport` HOC
+
+```js
+import { View } from 'react-native';
+import React, { Component } from 'react';
+import BpkIcon, { icons, withRtlSupport } from 'react-native-bpk-component-icon';
+import { spacingBase, colorBlue500 } from 'bpk-tokens/tokens/base.react.native';
+
+const BpkIconwithRtlSupport = withRtlSupport(BpkIcon);
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    padding: spacingBase,
+  }
+});
+
+export default class App extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <BpkIconwithRtlSupport
+          icon={icons.beer}
+          style={{ color: colorBlue500 }}
+        />
+      </View>
+    );
+  }
+}
+```
+
 ## Props
 
 | Property  | PropType  | Required | Default Value |

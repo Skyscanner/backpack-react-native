@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`iOS withRtlSupport should apply user props next to transform 1`] = `
+<Text
+  allowFontScaling={false}
+  style={
+    Array [
+      Object {
+        "color": "rgb(82, 76, 97)",
+        "fontFamily": "BpkIcon",
+        "fontSize": 24,
+        "includeFontPadding": false,
+      },
+      Array [
+        Object {
+          "transform": Array [
+            Object {
+              "scaleX": -1,
+            },
+          ],
+        },
+        Object {
+          "color": "rgb(0, 178, 214)",
+        },
+      ],
+    ]
+  }
+>
+  
+</Text>
+`;
+
+exports[`iOS withRtlSupport should render correctly 1`] = `
+<Text
+  allowFontScaling={false}
+  style={
+    Array [
+      Object {
+        "color": "rgb(82, 76, 97)",
+        "fontFamily": "BpkIcon",
+        "fontSize": 24,
+        "includeFontPadding": false,
+      },
+      Array [
+        Object {
+          "transform": Array [
+            Object {
+              "scaleX": -1,
+            },
+          ],
+        },
+      ],
+    ]
+  }
+>
+  
+</Text>
+`;
+
+exports[`iOS withRtlSupport should render correctly for RTL 1`] = `
+<Text
+  allowFontScaling={false}
+  style={
+    Array [
+      Object {
+        "color": "rgb(82, 76, 97)",
+        "fontFamily": "BpkIcon",
+        "fontSize": 24,
+        "includeFontPadding": false,
+      },
+      Array [
+        Object {
+          "transform": Array [
+            Object {
+              "scaleX": -1,
+            },
+          ],
+        },
+      ],
+    ]
+  }
+>
+  
+</Text>
+`;

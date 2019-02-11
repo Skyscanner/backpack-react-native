@@ -8,3 +8,6 @@
 - react-native-bpk-component-navigation-bar:
   - Added new icon `grid-layout`.
 
+- react-native-bpk-component-icon:
+  - New `withRtlSupport` HOC.
+

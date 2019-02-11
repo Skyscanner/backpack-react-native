@@ -18,8 +18,14 @@
 
 /* @flow */
 
-import BpkIcon, { icons } from './src/BpkIcon';
-import withRtlSupport from './src/withRtlSupport';
+import commonTests from './withRtlSupport-test.common';
 
-export default BpkIcon;
-export { icons, withRtlSupport };
+jest.mock('react-native', () => {
+  const reactNative = jest.requireActual('react-native');
+  Object.defineProperty(reactNative.I18nManager, 'isRTL', { value: true });
+  return reactNative;
+});
+
+describe('iOS', () => {
+  commonTests();
+});
