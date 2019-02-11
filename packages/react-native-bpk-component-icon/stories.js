@@ -25,14 +25,14 @@ import {
   colorBlue500,
   colorGreen500,
   colorYellow500,
-  spacingBase,
   spacingSm,
+  spacingBase,
 } from 'bpk-tokens/tokens/base.react.native';
 
 import { StorySubheading } from '../../storybook/TextStyles';
 import CenterDecorator from '../../storybook/CenterDecorator';
 
-import BpkIcon, { icons } from './index';
+import BpkIcon, { icons, withRtlSupport } from './index';
 
 const styles = StyleSheet.create({
   container: {
@@ -57,6 +57,8 @@ const styles = StyleSheet.create({
     color: colorBlue500,
   },
 });
+
+const RtlIcon = withRtlSupport(BpkIcon);
 
 const getSmallIcons = () => (
   <View style={styles.column}>
@@ -115,6 +117,18 @@ storiesOf('react-native-bpk-component-icon', module)
         {Object.keys(icons).map(name => (
           <BpkIcon key={name} icon={name} style={styles.icon} />
         ))}
+      </View>
+    </View>
+  ))
+  .add('With RTL support', () => (
+    <View style={styles.container}>
+      <StorySubheading>Normal</StorySubheading>
+      <View style={styles.group}>
+        <BpkIcon style={styles.singleIcon} icon={icons['long-arrow-right']} />
+      </View>
+      <StorySubheading>With RTL support</StorySubheading>
+      <View style={styles.group}>
+        <RtlIcon style={styles.singleIcon} icon={icons['long-arrow-right']} />
       </View>
     </View>
   ));
