@@ -1,6 +1,6 @@
 {
   "name": "react-native-bpk-component-select",
-  "version": "2.1.15",
+  "version": "2.1.16",
   "main": "index.js",
   "description": "Backpack React Native select component.",
   "repository": {
@@ -16,9 +16,9 @@
   "dependencies": {
     "bpk-tokens": "^27.4.7",
     "prop-types": "^15.5.8",
-    "react-native-bpk-component-icon": "^1.12.0",
-    "react-native-bpk-component-text": "^4.0.6",
-    "react-native-bpk-component-touchable-native-feedback": "^1.1.44",
-    "react-native-bpk-component-touchable-overlay": "^1.1.6"
+    "react-native-bpk-component-icon": "^1.13.0",
+    "react-native-bpk-component-text": "^4.0.7",
+    "react-native-bpk-component-touchable-native-feedback": "^1.1.45",
+    "react-native-bpk-component-touchable-overlay": "^1.1.7"
   }
 }
