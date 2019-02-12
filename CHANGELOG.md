@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-02-12 - Fix range selection bug in calendar
+
+**Fixed:**
+
+ - react-native-bpk-component-calendar: 0.2.1 => 0.2.2
+  - Fixed a bug were on initial render, on iOS, the calendar would render with broken layout in some cases.
+
 # 2019-02-11 - New `withRtlSuppport` HOC for icons
 
 **Added:**
