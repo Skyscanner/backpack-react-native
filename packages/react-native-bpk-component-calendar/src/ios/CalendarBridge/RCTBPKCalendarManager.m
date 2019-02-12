@@ -17,9 +17,14 @@
  */
 
 #import "RCTBPKCalendarManager.h"
+#import <React/RCTBridge.h>
+#import <React/RCTUIManager.h>
+
+
 #import "RCTConvert+RCTBPKCalendar.h"
 #import "RCTBPKCalendar.h"
 #import "RCTBPKCalendarDateUtils.h"
+
 
 @interface RCTBPKCalendarManager() <BPKCalendarDelegate>
 
@@ -44,6 +49,40 @@ RCT_EXPORT_VIEW_PROPERTY(locale, NSLocale)
 RCT_EXPORT_VIEW_PROPERTY(selectedDates, NSArray<NSDate *> *)
 
 RCT_EXPORT_VIEW_PROPERTY(onDateSelection, RCTBubblingEventBlock)
+
+
+/*
+ * When the calendar renders in certain configurations the initial
+ * render is incorrect. With this method, called from `componentDidMount`,
+ * is called the calendar is forced to re-render to fix the bug.
+ */
+RCT_EXPORT_METHOD(forceRender:(nonnull NSNumber *)reactTag) {
+    [self.bridge.uiManager addUIBlock:
+     ^(__unused RCTUIManager *uiManager, NSDictionary<NSNumber *, UIView *> *viewRegistry){
+         UIView *view = viewRegistry[reactTag];
+
+         if ([view isKindOfClass:[BPKCalendar class]]) {
+             BPKCalendar *calendar = (BPKCalendar *)view;
+             NSArray<NSDate* > *selectedDates = calendar.selectedDates;
+
+             calendar.selectedDates = @[];
+             [calendar reloadData];
+
+             /*
+              * Force a slight pause before rendering again with the
+              * selected dates.
+              */
+             [[NSOperationQueue currentQueue] addOperationWithBlock:^{
+                 calendar.selectedDates = selectedDates;
+                 [calendar reloadData];
+             }];
+         } else {
+             RCTLogError(@"tried to force render: on non-BPKCalendar view %@ "
+                         "with tag #%@", view, reactTag);
+         }
+     }];
+
+}
 
 #pragma mark RCTCalendarViewDelegate
 

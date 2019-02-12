@@ -1,5 +1,5 @@
 PODS:
-  - Backpack (6.1.1):
+  - Backpack (6.3.0):
     - FSCalendar (~> 2.8)
   - boost-for-react-native (1.63.0)
   - BVLinearGradient (2.4.0):
@@ -13,8 +13,8 @@ PODS:
   - glog (0.3.5)
   - React (0.57.7):
     - React/Core (= 0.57.7)
-  - react-native-bpk-component-calendar (0.2.0):
-    - Backpack (~> 6.1.0)
+  - react-native-bpk-component-calendar (0.2.1):
+    - Backpack (~> 6.3.0)
     - React
   - react-native-maps (0.23.0):
     - React
@@ -56,7 +56,7 @@ PODS:
   - yoga (0.57.7.React)
 
 DEPENDENCIES:
-  - Backpack (~> 6.1.1)
+  - Backpack (~> 6.3.0)
   - BVLinearGradient (from `../node_modules/react-native-linear-gradient`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
@@ -98,7 +98,7 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  Backpack: b14839fcce112efda3435aea9758f9de77672af6
+  Backpack: 6ec1bbe6b02798550ee219239d8b8d4b2b19b392
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BVLinearGradient: 6d8909e3fc6b089defa4b89d967441fa6827a2ee
   DoubleConversion: bb338842f62ab1d708ceb63ec3d999f0f3d98ecd
@@ -106,10 +106,10 @@ SPEC CHECKSUMS:
   FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
   glog: e8acf0ebbf99759d3ff18c86c292a5898282dcde
   React: 1fe0eb13d90b625d94c3b117c274dcfd2e760e11
-  react-native-bpk-component-calendar: a41a5628f3525333dbe6a263601c74a666745e59
+  react-native-bpk-component-calendar: 9492c4df99ff0d4a22245ea65b25ac0c286929b8
   react-native-maps: 066c2afcc89e18726377bcc685315f989ca22449
   yoga: b1ce48b6cf950b98deae82838f5173ea7cf89e85
 
-PODFILE CHECKSUM: 6117e2a18dadc7ce4d56da15b1f688dc55f78eda
+PODFILE CHECKSUM: 1169f543a99bd602269c464bc58ab407c1afeaeb
 
 COCOAPODS: 1.5.3
