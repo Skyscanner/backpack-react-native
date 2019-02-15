@@ -142,5 +142,77 @@ describe('iOS', () => {
         .toJSON();
       expect(tree).toMatchSnapshot();
     });
+
+    it('should respect "primaryTintColor" over "tintColor" if type="primary"', () => {
+      const tree = renderer
+        .create(
+          <BpkNavigationBarTextButtonIOS
+            title="Done"
+            leading={false}
+            onPress={jest.fn()}
+            type={BUTTON_TYPES.primary}
+            tintColor="red"
+            disabledTintColor="yellow"
+            primaryTintColor="blue"
+            primaryDisabledTintColor="green"
+          />,
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
+    it('should respect "primaryDisabledTintColor" over "disabledTintColor" if type="primary" and disabled=true', () => {
+      const tree = renderer
+        .create(
+          <BpkNavigationBarTextButtonIOS
+            title="Done"
+            leading={false}
+            onPress={jest.fn()}
+            type={BUTTON_TYPES.primary}
+            tintColor="red"
+            disabledTintColor="yellow"
+            primaryTintColor="blue"
+            primaryDisabledTintColor="green"
+            disabled
+          />,
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
+    it('should respect "tintColor" over "primaryTintColor" if type="default"', () => {
+      const tree = renderer
+        .create(
+          <BpkNavigationBarTextButtonIOS
+            title="Done"
+            leading={false}
+            onPress={jest.fn()}
+            tintColor="red"
+            disabledTintColor="yellow"
+            primaryTintColor="blue"
+            primaryDisabledTintColor="green"
+          />,
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
+    it('should respect "disabledTintColor" over "primaryDisabledTintColor" if type="default" and disabled=true', () => {
+      const tree = renderer
+        .create(
+          <BpkNavigationBarTextButtonIOS
+            title="Done"
+            leading={false}
+            onPress={jest.fn()}
+            tintColor="red"
+            disabledTintColor="yellow"
+            primaryTintColor="blue"
+            primaryDisabledTintColor="green"
+            disabled
+          />,
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
   });
 });
