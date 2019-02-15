@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import React from 'react';
 import { I18nManager, Platform, StyleSheet } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
@@ -107,8 +109,8 @@ const doneButton = Platform.select({
   ),
 });
 
-const PrimaryDoneButtonIOS = () => (
-  <BpkNavigationBarTextButtonIOS title="Done" emphasize type="primary" />
+const PrimaryButtonIOS = ({ text }: { text: string }) => (
+  <BpkNavigationBarTextButtonIOS title={text} emphasize type="primary" />
 );
 
 const addButton = Platform.select({
@@ -144,11 +146,11 @@ storiesOf('react-native-bpk-component-navigation-bar', module)
       style={styles.navigationBar}
     />
   ))
-  .add('docs:primary-text-button', () =>
+  .add('docs:primary-text-buttons', () =>
     Platform.OS === 'ios' ? (
       <BpkNavigationBar
-        leadingButton={cancelButton()}
-        trailingButton={<PrimaryDoneButtonIOS />}
+        leadingButton={<PrimaryButtonIOS text="Cancel" />}
+        trailingButton={<PrimaryButtonIOS text="Done" />}
         title="Backpack"
         style={styles.navigationBar}
       />
