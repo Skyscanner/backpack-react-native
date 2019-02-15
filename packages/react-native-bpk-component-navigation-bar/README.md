@@ -113,6 +113,8 @@ PropTypes.shape({
 **iOS:**
 
 + `navigationBarShadowColor`
++ `navigationBarPrimaryColor`
++ `navigationBarDisabledPrimaryColor`
 
 ### `BpkNavigationBarButtonAndroid`
 
@@ -165,7 +167,7 @@ import { BpkNavigationBarTextButtonIOS } from 'react-native-bpk-component-naviga
 | disabled  | bool                         | false    | false         |
 | emphasize | bool                         | false    | false         |
 | onPress   | func                         | false    | null          |
-| type      | oneOf('default', 'primary')  | false    | primary       |
+| type      | oneOf('default', 'primary')  | false    | default       |
 
 ### `BpkNavigationBarIconButtonIOS`
 

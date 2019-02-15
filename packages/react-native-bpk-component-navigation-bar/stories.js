@@ -109,7 +109,7 @@ const doneButton = Platform.select({
   ),
 });
 
-const PrimaryButtonIOS = ({ text }: { text: string }) => (
+const primaryButtonIOS = text => (
   <BpkNavigationBarTextButtonIOS title={text} emphasize type="primary" />
 );
 
@@ -149,8 +149,8 @@ storiesOf('react-native-bpk-component-navigation-bar', module)
   .add('docs:primary-text-buttons', () =>
     Platform.OS === 'ios' ? (
       <BpkNavigationBar
-        leadingButton={<PrimaryButtonIOS text="Cancel" />}
-        trailingButton={<PrimaryButtonIOS text="Done" />}
+        leadingButton={primaryButtonIOS('Cancel')}
+        trailingButton={primaryButtonIOS('Done')}
         title="Backpack"
         style={styles.navigationBar}
       />
@@ -181,6 +181,7 @@ storiesOf('react-native-bpk-component-navigation-bar', module)
     <BpkThemeProvider theme={themeAttributes}>
       <BpkNavigationBar
         leadingButton={backButton()}
+        trailingButton={primaryButtonIOS('Done')}
         title={<BpkImage alt="logo" source={exampleLogo} />}
         style={styles.navigationBar}
       />

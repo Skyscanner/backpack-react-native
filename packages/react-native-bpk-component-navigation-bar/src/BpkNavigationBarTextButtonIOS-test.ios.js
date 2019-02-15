@@ -112,7 +112,7 @@ describe('iOS', () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it('should respect "tintColor"', () => {
+    it('should respect "tintColor" over "type"', () => {
       const tree = renderer
         .create(
           <BpkNavigationBarTextButtonIOS
@@ -127,7 +127,7 @@ describe('iOS', () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it('should respect "disabledTintColor"', () => {
+    it('should respect "disabledTintColor" over "type"', () => {
       const tree = renderer
         .create(
           <BpkNavigationBarTextButtonIOS

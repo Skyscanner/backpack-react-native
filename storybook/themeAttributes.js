@@ -54,6 +54,8 @@ const themeAttributes = {
   navigationBarStatusBarColor: theme.brandColors.gradientEnd,
   navigationBarStatusBarStyle: 'dark-content',
   navigationBarShadowColor: theme.brandColors.gradientEnd,
+  navigationBarPrimaryColor: '#c00',
+  navigationBarDisabledPrimaryColor: '#e86363',
 
   // Used in BpkProgress
   progressFillBackgroundColor: theme.contentColor,

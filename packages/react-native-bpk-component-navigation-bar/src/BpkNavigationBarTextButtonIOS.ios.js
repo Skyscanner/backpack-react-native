@@ -46,6 +46,8 @@ export type Props = {
   leading: boolean,
   tintColor: ?string,
   disabledTintColor: ?string,
+  primaryTintColor: ?string,
+  primaryDisabledTintColor: ?string,
 };
 
 const styles = StyleSheet.create({
@@ -79,11 +81,21 @@ const BpkNavigationBarTextButtonIOS = (props: Props) => {
     onPress,
     disabledTintColor,
     tintColor,
+    primaryDisabledTintColor,
+    primaryTintColor,
     leading,
   } = props;
-  const tintColorFinal = disabled
-    ? disabledTintColor || disabledTintColors[type]
-    : tintColor || tintColors[type];
+
+  let tintColorFinal = disabled ? disabledTintColors[type] : tintColors[type];
+  if (
+    type === BUTTON_TYPES.primary &&
+    primaryDisabledTintColor &&
+    primaryTintColor
+  ) {
+    tintColorFinal = disabled ? primaryDisabledTintColor : primaryTintColor;
+  } else if (tintColor && disabledTintColor) {
+    tintColorFinal = disabled ? disabledTintColor : tintColor;
+  }
 
   const titleStyle = [{ color: tintColorFinal }];
   const buttonStyle = [
@@ -128,6 +140,8 @@ BpkNavigationBarTextButtonIOS.propTypes = {
   leading: PropTypes.bool,
   tintColor: PropTypes.string,
   disabledTintColor: PropTypes.string,
+  primaryTintColor: PropTypes.string,
+  primaryDisabledTintColor: PropTypes.string,
 };
 
 BpkNavigationBarTextButtonIOS.defaultProps = {
@@ -140,6 +154,8 @@ BpkNavigationBarTextButtonIOS.defaultProps = {
   leading: false,
   tintColor: null,
   disabledTintColor: null,
+  primaryTintColor: null,
+  primaryDisabledTintColor: null,
 };
 
 export default BpkNavigationBarTextButtonIOS;
