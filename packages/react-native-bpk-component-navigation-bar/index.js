@@ -16,8 +16,6 @@
  * limitations under the License.
  */
 
-/* @flow */
-
 import BpkNavigationBar from './src/BpkNavigationBar';
 import BpkNavigationBarButtonAndroid from './src/BpkNavigationBarButtonAndroid';
 import BpkNavigationBarBackButtonIOS from './src/BpkNavigationBarBackButtonIOS';
