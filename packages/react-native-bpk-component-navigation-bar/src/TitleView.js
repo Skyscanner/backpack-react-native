@@ -21,7 +21,7 @@ import React from 'react';
 import { StyleSheet, View, Platform } from 'react-native';
 import BpkText, { WEIGHT_STYLES } from 'react-native-bpk-component-text';
 import BpkIcon, { icons } from 'react-native-bpk-component-icon';
-import { spacingSm } from 'bpk-tokens/tokens/base.react.native';
+import { colorGray700, spacingSm } from 'bpk-tokens/tokens/base.react.native';
 
 import { type TitleWithIcon } from './common-types';
 
@@ -45,10 +45,12 @@ const styles = StyleSheet.create({
 
 const TitleView = (props: {
   title: string | TitleWithIcon,
-  tintColor: string,
+  tintColor: ?string,
   style: any,
 }) => {
   const { title, tintColor, style, ...rest } = props;
+
+  const tintColorFinal = tintColor || colorGray700;
 
   const titleValue = typeof title === 'object' ? title.value : title;
   const hasIcon = typeof title === 'object';
@@ -65,7 +67,7 @@ const TitleView = (props: {
         small
         style={[
           isLeading ? styles.leadingIcon : styles.trailingIcon,
-          { color: tintColor },
+          { color: tintColorFinal },
         ]}
       />
     );
@@ -80,7 +82,10 @@ const TitleView = (props: {
         allowFontScaling={false}
         numberOfLines={1}
         ellipsizeMode="tail"
-        style={[{ color: tintColor }, hasIcon ? styles.textWithIcon : null]}
+        style={[
+          { color: tintColorFinal },
+          hasIcon ? styles.textWithIcon : null,
+        ]}
       >
         {titleValue}
       </BpkText>

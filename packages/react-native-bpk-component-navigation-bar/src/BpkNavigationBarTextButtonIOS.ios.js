@@ -22,12 +22,22 @@ import PropTypes from 'prop-types';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 import BpkText, { WEIGHT_STYLES } from 'react-native-bpk-component-text';
 import {
+  colorBlue300,
+  colorBlue500,
   colorGray300,
   colorGray700,
 } from 'bpk-tokens/tokens/base.react.native';
 
+export const BUTTON_TYPES = {
+  default: 'default',
+  primary: 'primary',
+};
+
+export type ButtonType = $Keys<typeof BUTTON_TYPES>;
+
 export type Props = {
   title: string,
+  type: ButtonType,
   emphasize: boolean,
   disabled: boolean,
   onPress: ?() => mixed,
@@ -50,9 +60,20 @@ const styles = StyleSheet.create({
   },
 });
 
+const tintColors = {
+  [BUTTON_TYPES.default]: colorGray700,
+  [BUTTON_TYPES.primary]: colorBlue500,
+};
+
+const disabledTintColors = {
+  [BUTTON_TYPES.default]: colorGray300,
+  [BUTTON_TYPES.primary]: colorBlue300,
+};
+
 const BpkNavigationBarTextButtonIOS = (props: Props) => {
   const {
     title,
+    type,
     disabled,
     emphasize,
     onPress,
@@ -61,8 +82,9 @@ const BpkNavigationBarTextButtonIOS = (props: Props) => {
     leading,
   } = props;
   const tintColorFinal = disabled
-    ? disabledTintColor || colorGray300
-    : tintColor || colorGray700;
+    ? disabledTintColor || disabledTintColors[type]
+    : tintColor || tintColors[type];
+
   const titleStyle = [{ color: tintColorFinal }];
   const buttonStyle = [
     styles.button,
@@ -100,6 +122,7 @@ BpkNavigationBarTextButtonIOS.propTypes = {
   emphasize: PropTypes.bool,
   disabled: PropTypes.bool,
   onPress: PropTypes.func,
+  type: PropTypes.oneOf(Object.keys(BUTTON_TYPES)),
 
   // Internal only
   leading: PropTypes.bool,
@@ -111,6 +134,7 @@ BpkNavigationBarTextButtonIOS.defaultProps = {
   emphasize: false,
   disabled: false,
   onPress: null,
+  type: BUTTON_TYPES.default,
 
   // Internal only
   leading: false,

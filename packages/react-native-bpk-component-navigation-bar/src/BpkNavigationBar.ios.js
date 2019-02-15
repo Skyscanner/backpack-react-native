@@ -25,12 +25,7 @@ import {
   getThemeAttributes,
   makeThemePropType,
 } from 'react-native-bpk-theming';
-import {
-  colorGray50,
-  colorGray100,
-  colorGray300,
-  colorGray700,
-} from 'bpk-tokens/tokens/base.react.native';
+import { colorGray50, colorGray100 } from 'bpk-tokens/tokens/base.react.native';
 
 import {
   type CommonTheme,
@@ -165,8 +160,8 @@ class BpkNavigationBar extends Component<Props, {}> {
     const outerBarStyle = [styles.barOuter];
     const innerBarStyle = [styles.barInner, isIphoneX && styles.iPhoneXBar];
 
-    let tintColor = colorGray700;
-    let disabledTintColor = colorGray300;
+    let tintColor = null;
+    let disabledTintColor = null;
     if (this.theme) {
       const {
         navigationBarTintColor,

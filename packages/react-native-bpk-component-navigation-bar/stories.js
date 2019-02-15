@@ -107,6 +107,10 @@ const doneButton = Platform.select({
   ),
 });
 
+const PrimaryDoneButtonIOS = () => (
+  <BpkNavigationBarTextButtonIOS title="Done" emphasize type="primary" />
+);
+
 const addButton = Platform.select({
   android: () => (
     <BpkNavigationBarButtonAndroid
@@ -140,6 +144,18 @@ storiesOf('react-native-bpk-component-navigation-bar', module)
       style={styles.navigationBar}
     />
   ))
+  .add('docs:primary-text-button', () =>
+    Platform.OS === 'ios' ? (
+      <BpkNavigationBar
+        leadingButton={cancelButton()}
+        trailingButton={<PrimaryDoneButtonIOS />}
+        title="Backpack"
+        style={styles.navigationBar}
+      />
+    ) : (
+      <BpkText>Not implemented for Android.</BpkText>
+    ),
+  )
   .add('docs:subtitle-view', () => (
     <BpkNavigationBar
       leadingButton={backButton()}
