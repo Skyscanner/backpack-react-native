@@ -19,7 +19,14 @@
 /* @flow */
 
 import BpkButtonLink, { type Props } from './src/BpkButtonLink';
+import NewButtonLink, {
+  type Props as NewButtonPropsTemp,
+} from './src/NewButtonLink';
 
 export type BpkButtonLinkProps = Props;
+
+export type NewButtonProps = NewButtonPropsTemp;
+
+export { NewButtonLink };
 
 export default BpkButtonLink;

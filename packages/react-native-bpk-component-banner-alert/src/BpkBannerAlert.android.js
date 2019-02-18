@@ -33,7 +33,7 @@ import {
 import { StyleSheet, View } from 'react-native';
 import BpkText from 'react-native-bpk-component-text';
 import BpkIcon, { icons } from 'react-native-bpk-component-icon';
-import BpkButtonLink from 'react-native-bpk-component-button-link';
+import { NewButtonLink } from 'react-native-bpk-component-button-link';
 import BpkAnimateHeight from 'react-native-bpk-component-animate-height';
 import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-native-feedback';
 
@@ -143,7 +143,7 @@ const BpkBannerAlert = (props: Props) => {
         />
       )}
       {dismissable && (
-        <BpkButtonLink
+        <NewButtonLink
           style={STYLES.closeButton}
           title={dismissButtonLabel}
           onPress={onDismiss}
