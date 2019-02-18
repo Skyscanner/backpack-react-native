@@ -102,7 +102,7 @@ const BpkButtonLink = (props: Props) => {
             style={textStyle}
             {...textProps}
           >
-            {title.toUpperCase()}
+            {title}
           </BpkText>
           {typeof icon === 'string' ? (
             <BpkIcon icon={icon} style={iconStyle} small />
