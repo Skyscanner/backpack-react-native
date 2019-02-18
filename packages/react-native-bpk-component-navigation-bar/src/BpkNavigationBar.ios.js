@@ -25,12 +25,7 @@ import {
   getThemeAttributes,
   makeThemePropType,
 } from 'react-native-bpk-theming';
-import {
-  colorGray50,
-  colorGray100,
-  colorGray300,
-  colorGray700,
-} from 'bpk-tokens/tokens/base.react.native';
+import { colorGray50, colorGray100 } from 'bpk-tokens/tokens/base.react.native';
 
 import {
   type CommonTheme,
@@ -44,7 +39,11 @@ import BpkNavigationBarIconButtonIOS from './BpkNavigationBarIconButtonIOS';
 import TitleView from './TitleView';
 import isIphoneX from './isIphoneX';
 
-const IOS_THEME_ATTRIBUTES = [...THEME_ATTRIBUTES, 'navigationBarShadowColor'];
+const IOS_THEME_ATTRIBUTES = [
+  ...THEME_ATTRIBUTES,
+  'navigationBarShadowColor',
+  'navigationBarPrimaryColor',
+];
 
 const statusBarPadding = isIphoneX ? 44 : 20;
 
@@ -99,6 +98,7 @@ const styles = StyleSheet.create({
 type IOSTheme = {
   ...$Exact<CommonTheme>,
   navigationBarShadowColor: string,
+  navigationBarPrimaryColor: string,
 };
 
 type ButtonType =
@@ -165,14 +165,17 @@ class BpkNavigationBar extends Component<Props, {}> {
     const outerBarStyle = [styles.barOuter];
     const innerBarStyle = [styles.barInner, isIphoneX && styles.iPhoneXBar];
 
-    let tintColor = colorGray700;
-    let disabledTintColor = colorGray300;
+    let tintColor = null;
+    let disabledTintColor = null;
+    let primaryTintColor = null;
+
     if (this.theme) {
       const {
         navigationBarTintColor,
         navigationBarDisabledTintColor,
         navigationBarShadowColor,
         navigationBarBackgroundColor,
+        navigationBarPrimaryColor,
       } = this.theme;
       outerBarStyle.push({
         shadowColor: navigationBarShadowColor,
@@ -181,6 +184,7 @@ class BpkNavigationBar extends Component<Props, {}> {
       titleStyle.push({ color: navigationBarTintColor });
       tintColor = navigationBarTintColor;
       disabledTintColor = navigationBarDisabledTintColor;
+      primaryTintColor = navigationBarPrimaryColor;
     }
 
     let titleView = null;
@@ -228,6 +232,7 @@ class BpkNavigationBar extends Component<Props, {}> {
             React.cloneElement(leadingButton, {
               disabledTintColor,
               tintColor,
+              primaryTintColor,
               leading: true,
             })}
           <View style={styles.titleContainer}>{titleView}</View>
@@ -235,6 +240,7 @@ class BpkNavigationBar extends Component<Props, {}> {
             React.cloneElement(trailingButton, {
               disabledTintColor,
               tintColor,
+              primaryTintColor,
               leading: false,
             })}
         </View>

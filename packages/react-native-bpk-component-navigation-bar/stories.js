@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import React from 'react';
 import { I18nManager, Platform, StyleSheet } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
@@ -107,6 +109,10 @@ const doneButton = Platform.select({
   ),
 });
 
+const primaryButtonIOS = text => (
+  <BpkNavigationBarTextButtonIOS title={text} emphasize type="primary" />
+);
+
 const addButton = Platform.select({
   android: () => (
     <BpkNavigationBarButtonAndroid
@@ -140,6 +146,18 @@ storiesOf('react-native-bpk-component-navigation-bar', module)
       style={styles.navigationBar}
     />
   ))
+  .add('docs:primary-text-buttons', () =>
+    Platform.OS === 'ios' ? (
+      <BpkNavigationBar
+        leadingButton={primaryButtonIOS('Cancel')}
+        trailingButton={primaryButtonIOS('Done')}
+        title="Backpack"
+        style={styles.navigationBar}
+      />
+    ) : (
+      <BpkText>Not implemented for Android.</BpkText>
+    ),
+  )
   .add('docs:subtitle-view', () => (
     <BpkNavigationBar
       leadingButton={backButton()}
@@ -163,6 +181,7 @@ storiesOf('react-native-bpk-component-navigation-bar', module)
     <BpkThemeProvider theme={themeAttributes}>
       <BpkNavigationBar
         leadingButton={backButton()}
+        trailingButton={primaryButtonIOS('Done')}
         title={<BpkImage alt="logo" source={exampleLogo} />}
         style={styles.navigationBar}
       />

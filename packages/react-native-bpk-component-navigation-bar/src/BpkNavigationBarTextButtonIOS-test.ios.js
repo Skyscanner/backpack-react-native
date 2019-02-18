@@ -19,7 +19,9 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import BpkNavigationBarTextButtonIOS from './BpkNavigationBarTextButtonIOS.ios';
+import BpkNavigationBarTextButtonIOS, {
+  BUTTON_TYPES,
+} from './BpkNavigationBarTextButtonIOS.ios';
 
 jest.mock('bpk-tokens/tokens/base.react.native', () =>
   jest.requireActual('bpk-tokens/tokens/base.react.native.android.js'),
@@ -81,13 +83,43 @@ describe('iOS', () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it('should resepect "tintColor"', () => {
+    it('should render correctly with type="primary"', () => {
       const tree = renderer
         .create(
           <BpkNavigationBarTextButtonIOS
             title="Done"
             leading={false}
             onPress={jest.fn()}
+            type={BUTTON_TYPES.primary}
+          />,
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
+    it('should render correctly with type="primary" and disabled', () => {
+      const tree = renderer
+        .create(
+          <BpkNavigationBarTextButtonIOS
+            title="Done"
+            leading={false}
+            onPress={jest.fn()}
+            type={BUTTON_TYPES.primary}
+            disabled
+          />,
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
+    it('should respect "tintColor" over "type"', () => {
+      const tree = renderer
+        .create(
+          <BpkNavigationBarTextButtonIOS
+            title="Done"
+            leading={false}
+            onPress={jest.fn()}
+            type={BUTTON_TYPES.primary}
             tintColor="red"
           />,
         )
@@ -95,7 +127,7 @@ describe('iOS', () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it('should resepect "disabledTintColor"', () => {
+    it('should respect "disabledTintColor" over "type"', () => {
       const tree = renderer
         .create(
           <BpkNavigationBarTextButtonIOS
@@ -103,7 +135,41 @@ describe('iOS', () => {
             leading={false}
             onPress={jest.fn()}
             disabledTintColor="red"
+            type={BUTTON_TYPES.primary}
             disabled
+          />,
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
+    it('should respect "primaryTintColor" over "tintColor" if type="primary"', () => {
+      const tree = renderer
+        .create(
+          <BpkNavigationBarTextButtonIOS
+            title="Done"
+            leading={false}
+            onPress={jest.fn()}
+            type={BUTTON_TYPES.primary}
+            tintColor="red"
+            disabledTintColor="yellow"
+            primaryTintColor="blue"
+          />,
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
+    it('should respect "tintColor" over "primaryTintColor" if type="default"', () => {
+      const tree = renderer
+        .create(
+          <BpkNavigationBarTextButtonIOS
+            title="Done"
+            leading={false}
+            onPress={jest.fn()}
+            tintColor="red"
+            disabledTintColor="yellow"
+            primaryTintColor="blue"
           />,
         )
         .toJSON();

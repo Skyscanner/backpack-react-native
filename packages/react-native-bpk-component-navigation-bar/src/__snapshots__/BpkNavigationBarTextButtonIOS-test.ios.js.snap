@@ -174,7 +174,93 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly leading confi
 </View>
 `;
 
-exports[`iOS BpkNavigationBarTextButtonIOS should resepect "disabledTintColor" 1`] = `
+exports[`iOS BpkNavigationBarTextButtonIOS should render correctly with type="primary" 1`] = `
+<View
+  accessibilityLabel="Done"
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "marginEnd": 8,
+      "opacity": 1,
+      "zIndex": 2,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "rgb(82, 76, 97)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.12,
+        },
+        Object {},
+        Array [
+          Object {
+            "color": "rgb(0, 178, 214)",
+          },
+        ],
+      ]
+    }
+  >
+    Done
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkNavigationBarTextButtonIOS should render correctly with type="primary" and disabled 1`] = `
+<View
+  accessibilityLabel="Done"
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "marginEnd": 8,
+      "opacity": 1,
+      "zIndex": 2,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "rgb(82, 76, 97)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.12,
+        },
+        Object {},
+        Array [
+          Object {
+            "color": "rgb(178, 174, 189)",
+          },
+        ],
+      ]
+    }
+  >
+    Done
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkNavigationBarTextButtonIOS should respect "disabledTintColor" over "type" 1`] = `
 <View
   accessibilityLabel="Done"
   accessible={true}
@@ -217,7 +303,93 @@ exports[`iOS BpkNavigationBarTextButtonIOS should resepect "disabledTintColor" 1
 </View>
 `;
 
-exports[`iOS BpkNavigationBarTextButtonIOS should resepect "tintColor" 1`] = `
+exports[`iOS BpkNavigationBarTextButtonIOS should respect "primaryTintColor" over "tintColor" if type="primary" 1`] = `
+<View
+  accessibilityLabel="Done"
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "marginEnd": 8,
+      "opacity": 1,
+      "zIndex": 2,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "rgb(82, 76, 97)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.12,
+        },
+        Object {},
+        Array [
+          Object {
+            "color": "blue",
+          },
+        ],
+      ]
+    }
+  >
+    Done
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkNavigationBarTextButtonIOS should respect "tintColor" over "primaryTintColor" if type="default" 1`] = `
+<View
+  accessibilityLabel="Done"
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "marginEnd": 8,
+      "opacity": 1,
+      "zIndex": 2,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "rgb(82, 76, 97)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.12,
+        },
+        Object {},
+        Array [
+          Object {
+            "color": "red",
+          },
+        ],
+      ]
+    }
+  >
+    Done
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkNavigationBarTextButtonIOS should respect "tintColor" over "type" 1`] = `
 <View
   accessibilityLabel="Done"
   accessible={true}
