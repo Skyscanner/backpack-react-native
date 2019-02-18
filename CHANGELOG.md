@@ -2,6 +2,15 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-02-18 - New navigation bar property and theming prop
+
+**Breaking:**
+
+- react-native-bpk-component-navigation-bar: 4.2.0 => 5.0.0
+  - New `type` prop for `BpkNavigationBarTextButtonIOS` to change the button colour.
+  - Added `navigationBarPrimaryColor` theme property, applied to `BpkNavigationBarTextButtonIOS` when type is `primary`. This is a breaking change as you must now supply this theme property to theme the component. If you are not using theming, this release is not breaking.
+
+
 # 2019-02-12 - Fix range selection bug in calendar
 
 **Fixed:**
