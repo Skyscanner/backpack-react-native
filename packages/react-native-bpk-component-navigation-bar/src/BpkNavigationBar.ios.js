@@ -43,7 +43,6 @@ const IOS_THEME_ATTRIBUTES = [
   ...THEME_ATTRIBUTES,
   'navigationBarShadowColor',
   'navigationBarPrimaryColor',
-  'navigationBarDisabledPrimaryColor',
 ];
 
 const statusBarPadding = isIphoneX ? 44 : 20;
@@ -100,7 +99,6 @@ type IOSTheme = {
   ...$Exact<CommonTheme>,
   navigationBarShadowColor: string,
   navigationBarPrimaryColor: string,
-  navigationBarDisabledPrimaryColor: string,
 };
 
 type ButtonType =
@@ -170,7 +168,6 @@ class BpkNavigationBar extends Component<Props, {}> {
     let tintColor = null;
     let disabledTintColor = null;
     let primaryTintColor = null;
-    let primaryDisabledTintColor = null;
 
     if (this.theme) {
       const {
@@ -179,7 +176,6 @@ class BpkNavigationBar extends Component<Props, {}> {
         navigationBarShadowColor,
         navigationBarBackgroundColor,
         navigationBarPrimaryColor,
-        navigationBarDisabledPrimaryColor,
       } = this.theme;
       outerBarStyle.push({
         shadowColor: navigationBarShadowColor,
@@ -189,7 +185,6 @@ class BpkNavigationBar extends Component<Props, {}> {
       tintColor = navigationBarTintColor;
       disabledTintColor = navigationBarDisabledTintColor;
       primaryTintColor = navigationBarPrimaryColor;
-      primaryDisabledTintColor = navigationBarDisabledPrimaryColor;
     }
 
     let titleView = null;
@@ -238,7 +233,6 @@ class BpkNavigationBar extends Component<Props, {}> {
               disabledTintColor,
               tintColor,
               primaryTintColor,
-              primaryDisabledTintColor,
               leading: true,
             })}
           <View style={styles.titleContainer}>{titleView}</View>
@@ -247,7 +241,6 @@ class BpkNavigationBar extends Component<Props, {}> {
               disabledTintColor,
               tintColor,
               primaryTintColor,
-              primaryDisabledTintColor,
               leading: false,
             })}
         </View>

@@ -22,7 +22,6 @@ import PropTypes from 'prop-types';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 import BpkText, { WEIGHT_STYLES } from 'react-native-bpk-component-text';
 import {
-  colorBlue300,
   colorBlue500,
   colorGray300,
   colorGray700,
@@ -47,7 +46,6 @@ export type Props = {
   tintColor: ?string,
   disabledTintColor: ?string,
   primaryTintColor: ?string,
-  primaryDisabledTintColor: ?string,
 };
 
 const styles = StyleSheet.create({
@@ -67,11 +65,6 @@ const tintColors = {
   [BUTTON_TYPES.primary]: colorBlue500,
 };
 
-const disabledTintColors = {
-  [BUTTON_TYPES.default]: colorGray300,
-  [BUTTON_TYPES.primary]: colorBlue300,
-};
-
 const BpkNavigationBarTextButtonIOS = (props: Props) => {
   const {
     title,
@@ -81,20 +74,21 @@ const BpkNavigationBarTextButtonIOS = (props: Props) => {
     onPress,
     disabledTintColor,
     tintColor,
-    primaryDisabledTintColor,
     primaryTintColor,
     leading,
   } = props;
 
-  let tintColorFinal = disabled ? disabledTintColors[type] : tintColors[type];
-  if (
-    type === BUTTON_TYPES.primary &&
-    primaryDisabledTintColor &&
-    primaryTintColor
-  ) {
-    tintColorFinal = disabled ? primaryDisabledTintColor : primaryTintColor;
-  } else if (tintColor && disabledTintColor) {
-    tintColorFinal = disabled ? disabledTintColor : tintColor;
+  let tintColorFinal = tintColors[type];
+  if (type === BUTTON_TYPES.primary && primaryTintColor) {
+    tintColorFinal = primaryTintColor;
+  } else if (tintColor) {
+    tintColorFinal = tintColor;
+  }
+
+  const accessibilityTraits = ['button'];
+  if (disabled) {
+    accessibilityTraits.push('disabled');
+    tintColorFinal = disabledTintColor || colorGray300;
   }
 
   const titleStyle = [{ color: tintColorFinal }];
@@ -102,11 +96,6 @@ const BpkNavigationBarTextButtonIOS = (props: Props) => {
     styles.button,
     leading ? styles.leading : styles.trailing,
   ];
-  const accessibilityTraits = ['button'];
-
-  if (disabled) {
-    accessibilityTraits.push('disabled');
-  }
 
   return (
     <TouchableOpacity
@@ -141,7 +130,6 @@ BpkNavigationBarTextButtonIOS.propTypes = {
   tintColor: PropTypes.string,
   disabledTintColor: PropTypes.string,
   primaryTintColor: PropTypes.string,
-  primaryDisabledTintColor: PropTypes.string,
 };
 
 BpkNavigationBarTextButtonIOS.defaultProps = {
@@ -155,7 +143,6 @@ BpkNavigationBarTextButtonIOS.defaultProps = {
   tintColor: null,
   disabledTintColor: null,
   primaryTintColor: null,
-  primaryDisabledTintColor: null,
 };
 
 export default BpkNavigationBarTextButtonIOS;

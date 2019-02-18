@@ -19,6 +19,7 @@
 const theme = {
   contentColor: '#2d244c',
   contentGray: '#757380',
+  secondaryColor: '#e8c410',
   // Because it's a theme, Backpack tokens shouldn't be used.
   // eslint-disable-next-line backpack/use-tokens
   backgroundColor: '#fff',
@@ -54,8 +55,7 @@ const themeAttributes = {
   navigationBarStatusBarColor: theme.brandColors.gradientEnd,
   navigationBarStatusBarStyle: 'dark-content',
   navigationBarShadowColor: theme.brandColors.gradientEnd,
-  navigationBarPrimaryColor: '#c00',
-  navigationBarDisabledPrimaryColor: '#e86363',
+  navigationBarPrimaryColor: theme.secondaryColor,
 
   // Used in BpkProgress
   progressFillBackgroundColor: theme.contentColor,

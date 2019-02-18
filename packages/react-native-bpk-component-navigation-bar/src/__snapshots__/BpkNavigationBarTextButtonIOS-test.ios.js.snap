@@ -249,50 +249,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly with type="pr
         Object {},
         Array [
           Object {
-            "color": "rgb(127, 215, 232)",
-          },
-        ],
-      ]
-    }
-  >
-    Done
-  </Text>
-</View>
-`;
-
-exports[`iOS BpkNavigationBarTextButtonIOS should respect "disabledTintColor" over "primaryDisabledTintColor" if type="default" and disabled=true 1`] = `
-<View
-  accessibilityLabel="Done"
-  accessible={true}
-  isTVSelectable={true}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "marginEnd": 8,
-      "opacity": 1,
-      "zIndex": 2,
-    }
-  }
->
-  <Text
-    style={
-      Array [
-        Object {
-          "color": "rgb(82, 76, 97)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
-        },
-        Object {},
-        Array [
-          Object {
-            "color": "yellow",
+            "color": "rgb(178, 174, 189)",
           },
         ],
       ]
@@ -335,50 +292,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS should respect "disabledTintColor" ov
         Object {},
         Array [
           Object {
-            "color": "rgb(127, 215, 232)",
-          },
-        ],
-      ]
-    }
-  >
-    Done
-  </Text>
-</View>
-`;
-
-exports[`iOS BpkNavigationBarTextButtonIOS should respect "primaryDisabledTintColor" over "disabledTintColor" if type="primary" and disabled=true 1`] = `
-<View
-  accessibilityLabel="Done"
-  accessible={true}
-  isTVSelectable={true}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "marginEnd": 8,
-      "opacity": 1,
-      "zIndex": 2,
-    }
-  }
->
-  <Text
-    style={
-      Array [
-        Object {
-          "color": "rgb(82, 76, 97)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
-        },
-        Object {},
-        Array [
-          Object {
-            "color": "green",
+            "color": "red",
           },
         ],
       ]
@@ -507,7 +421,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS should respect "tintColor" over "type
         Object {},
         Array [
           Object {
-            "color": "rgb(0, 178, 214)",
+            "color": "red",
           },
         ],
       ]

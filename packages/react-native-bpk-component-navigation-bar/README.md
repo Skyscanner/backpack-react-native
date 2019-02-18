@@ -114,7 +114,6 @@ PropTypes.shape({
 
 + `navigationBarShadowColor`
 + `navigationBarPrimaryColor`
-+ `navigationBarDisabledPrimaryColor`
 
 ### `BpkNavigationBarButtonAndroid`
 
