@@ -97,7 +97,7 @@
     "lerna": "^3.10.7",
     "lint-staged": "^8.1.0",
     "lodash": "^4.17.11",
-    "metro-react-native-babel-preset": "^0.51.0",
+    "metro-react-native-babel-preset": "^0.52.0",
     "prompt": "^1.0.0",
     "prop-types": "^15.5.10",
     "react": "16.6.1",
