@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import React from 'react';
 import { Image, Platform, StyleSheet, View } from 'react-native';
 import PropTypes from 'prop-types';
@@ -78,10 +80,15 @@ const getFlagUriFromCountryCode = countryCode =>
   `https://images.skyscnr.com/images/country/flag/header/${countryCode.toLowerCase()}.png`;
 
 // eslint-disable-next-line react/no-multi-comp
-class StatefulBpkSectionList extends React.Component<{
-  extraEntries: number,
-  showImages: boolean,
-}> {
+class StatefulBpkSectionList extends React.Component<
+  {
+    extraEntries: number,
+    showImages: boolean,
+  },
+  { selectedAirport: string },
+> {
+  itemPressCallbacks: { [string]: () => mixed };
+
   static propTypes = {
     extraEntries: PropTypes.number,
     showImages: PropTypes.bool,
@@ -98,7 +105,7 @@ class StatefulBpkSectionList extends React.Component<{
     this.state = { selectedAirport: 'GLA' };
   }
 
-  getOnItemPressCallback = id => {
+  getOnItemPressCallback = (id): (() => mixed) => {
     this.itemPressCallbacks[id] =
       this.itemPressCallbacks[id] ||
       (() => this.setState({ selectedAirport: id }));

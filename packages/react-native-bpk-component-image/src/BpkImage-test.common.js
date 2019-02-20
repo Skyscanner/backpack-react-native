@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import React from 'react';
 import { StyleSheet } from 'react-native';
 import renderer from 'react-test-renderer';
@@ -86,6 +88,7 @@ const commonTests = () => {
 
     it('should render correctly with a custom image component', () => {
       const tree = renderer
+        // $FlowFixMe, imageComponent shouldnt be a string however react test renderer conveniently treats strings as custom components
         .create(<BpkImage imageComponent={CustomImage} {...requiredProps} />)
         .toJSON();
 

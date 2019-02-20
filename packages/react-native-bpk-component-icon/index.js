@@ -21,5 +21,6 @@
 import BpkIcon, { icons } from './src/BpkIcon';
 import withRtlSupport from './src/withRtlSupport';
 
+export type { Props as BpkIconProps } from './src/BpkIcon';
 export default BpkIcon;
 export { icons, withRtlSupport };

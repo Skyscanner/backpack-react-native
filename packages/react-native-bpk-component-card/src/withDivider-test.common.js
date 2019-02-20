@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import React from 'react';
 import { StyleSheet } from 'react-native';
 import ShallowRenderer from 'react-test-renderer/shallow';

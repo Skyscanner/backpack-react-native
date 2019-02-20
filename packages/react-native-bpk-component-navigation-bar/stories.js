@@ -109,10 +109,6 @@ const doneButton = Platform.select({
   ),
 });
 
-const primaryButtonIOS = text => (
-  <BpkNavigationBarTextButtonIOS title={text} emphasize type="primary" />
-);
-
 const addButton = Platform.select({
   android: () => (
     <BpkNavigationBarButtonAndroid
@@ -127,6 +123,13 @@ const addButton = Platform.select({
       icon="share--ios"
       onPress={action('Tapped trailing button')}
     />
+  ),
+});
+
+const textButton = Platform.select({
+  android: () => <BpkText>Not implemented for Android.</BpkText>,
+  ios: () => (
+    <BpkNavigationBarTextButtonIOS title="Text" emphasize type="primary" />
   ),
 });
 
@@ -146,18 +149,14 @@ storiesOf('react-native-bpk-component-navigation-bar', module)
       style={styles.navigationBar}
     />
   ))
-  .add('docs:primary-text-buttons', () =>
-    Platform.OS === 'ios' ? (
-      <BpkNavigationBar
-        leadingButton={primaryButtonIOS('Cancel')}
-        trailingButton={primaryButtonIOS('Done')}
-        title="Backpack"
-        style={styles.navigationBar}
-      />
-    ) : (
-      <BpkText>Not implemented for Android.</BpkText>
-    ),
-  )
+  .add('docs:primary-text-buttons', () => (
+    <BpkNavigationBar
+      leadingButton={textButton()}
+      trailingButton={textButton()}
+      title="Backpack"
+      style={styles.navigationBar}
+    />
+  ))
   .add('docs:subtitle-view', () => (
     <BpkNavigationBar
       leadingButton={backButton()}
@@ -181,7 +180,6 @@ storiesOf('react-native-bpk-component-navigation-bar', module)
     <BpkThemeProvider theme={themeAttributes}>
       <BpkNavigationBar
         leadingButton={backButton()}
-        trailingButton={primaryButtonIOS('Done')}
         title={<BpkImage alt="logo" source={exampleLogo} />}
         style={styles.navigationBar}
       />

@@ -16,6 +16,9 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import BpkSwitch from './src/BpkSwitch';
 
+export type { Props as BpkSwitchProps } from './src/BpkSwitch';
 export default BpkSwitch;

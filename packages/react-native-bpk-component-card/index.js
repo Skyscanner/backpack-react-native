@@ -16,9 +16,12 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import BpkCard from './src/BpkCard';
 import CORNER_STYLES from './src/BpkCardCornerStyles';
 import withDivider from './src/withDivider';
 
+export type { Props as BpkCardProps } from './src/BpkCard';
 export { CORNER_STYLES, withDivider };
 export default BpkCard;

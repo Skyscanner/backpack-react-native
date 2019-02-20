@@ -15,7 +15,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 /* @flow */
+
+export type Props = {};
 
 const DummyBpkNavigationBarTextButtonIOS = () => {
   throw new Error(

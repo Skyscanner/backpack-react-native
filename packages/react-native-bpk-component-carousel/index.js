@@ -18,11 +18,10 @@
 
 /* @flow */
 
-import BpkCarousel, { type Props as BpkCarouselProps } from './src/BpkCarousel';
-import BpkCarouselItem, {
-  type Props as BpkCarouselItemProps,
-} from './src/BpkCarouselItem';
+import BpkCarousel from './src/BpkCarousel';
+import BpkCarouselItem from './src/BpkCarouselItem';
 
-export type { BpkCarouselProps, BpkCarouselItemProps };
+export type { Props as BpkCarouselProps } from './src/BpkCarousel';
+export type { Props as BpkCarouselItemProps } from './src/BpkCarouselItem';
 export { BpkCarouselItem };
 export default BpkCarousel;

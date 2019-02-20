@@ -16,10 +16,16 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import React from 'react';
 import { Animated, StyleSheet } from 'react-native';
 import PropTypes from 'prop-types';
-import { getThemeAttributes, withTheme } from 'react-native-bpk-theming';
+import {
+  getThemeAttributes,
+  withTheme,
+  type Theme,
+} from 'react-native-bpk-theming';
 import {
   colorBlue700,
   borderSizeLg,
@@ -34,11 +40,18 @@ const styles = StyleSheet.create({
   },
 });
 
-const BpkHorizontalNavSelectedIndicator = props => {
-  const { theme, xOffset, width } = props;
+export type Props = {
+  xOffset: ?(number | Object),
+  width: ?(number | Object),
+  theme: ?Theme,
+};
+
+const BpkHorizontalNavSelectedIndicator = (props: Props) => {
+  const { xOffset, width, theme } = props;
   const style = [styles.selectedIndicator];
 
   const themeAttributes = getThemeAttributes(REQUIRED_THEME_ATTRIBUTES, theme);
+
   if (themeAttributes) {
     style.push({
       backgroundColor: themeAttributes.horizontalNavSelectedTextColor,
@@ -53,22 +66,25 @@ const BpkHorizontalNavSelectedIndicator = props => {
     ],
     width,
   };
+
   return <Animated.View style={[style, animationStyles]} />;
 };
 
-const propTypes = {
+BpkHorizontalNavSelectedIndicator.propTypes = {
+  xOffset: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.instanceOf(Object),
+  ]),
+  width: PropTypes.oneOfType([PropTypes.number, PropTypes.instanceOf(Object)]),
   theme: themePropType,
-  xOffset: PropTypes.oneOfType([PropTypes.number, PropTypes.instanceOf(Object)])
-    .isRequired,
-  width: PropTypes.oneOfType([PropTypes.number, PropTypes.instanceOf(Object)])
-    .isRequired,
 };
 
-BpkHorizontalNavSelectedIndicator.propTypes = propTypes;
-
 BpkHorizontalNavSelectedIndicator.defaultProps = {
+  xOffset: null,
+  width: null,
   theme: null,
 };
 
-export default withTheme(BpkHorizontalNavSelectedIndicator);
-export { propTypes };
+export default (withTheme(
+  BpkHorizontalNavSelectedIndicator,
+): typeof BpkHorizontalNavSelectedIndicator);

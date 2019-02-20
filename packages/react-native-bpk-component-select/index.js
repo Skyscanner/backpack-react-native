@@ -17,6 +17,8 @@
  */
 
 /* @flow */
+
 import BpkSelect from './src/BpkSelect';
 
+export type { Props as BpkSelectProps } from './src/BpkSelect';
 export default BpkSelect;

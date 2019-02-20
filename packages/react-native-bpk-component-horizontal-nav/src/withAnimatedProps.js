@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 /*
  Higher order component that takes a component and an array of property names,
  then converts said properties into instances of Animated.Value, then adds
@@ -24,43 +26,52 @@
 
  Sample usage:
 
- const myComponent (props) = <Animated.View style={{ width: props.someProp }} />;
- const animatedComponent = withAnimatedProps(myComponent, ['someProp']);
+ const MyComponent (props) = <Animated.View style={{ width: props.someProp }} />;
+ const animatedComponent = withAnimatedProps(MyComponent, ['someProp']);
 
  Now when `someProp` changes, it will be animated.
  */
 
-import React from 'react';
 import { Animated } from 'react-native';
+import React, { Component, type ComponentType } from 'react';
 import { animationDurationSm } from 'bpk-tokens/tokens/base.react.native';
 
-const withAnimatedProps = (Component, propsToMonitor) =>
-  class extends React.Component {
-    constructor(props) {
+function withAnimatedProps<Props: {}>(
+  WrappedComponent: ComponentType<Props>,
+  animatedProps: Array<string>,
+): ComponentType<Props> {
+  return class WithAnimatedProps extends Component<Props, {}> {
+    constructor(props: Props) {
       super(props);
+
       this.state = {};
-      propsToMonitor.forEach(prop => {
+
+      animatedProps.forEach(prop => {
         this.state[prop] = new Animated.Value(props[prop]);
       });
     }
 
-    componentWillReceiveProps(nextProps) {
-      const animations = propsToMonitor.map(prop =>
+    componentWillReceiveProps(nextProps: Props) {
+      const animations = animatedProps.map(prop =>
         Animated.timing(this.state[prop], {
           toValue: nextProps[prop],
           duration: animationDurationSm,
         }),
       );
+
       Animated.parallel(animations).start();
     }
 
     render() {
       const newProps = {};
-      propsToMonitor.forEach(prop => {
+
+      animatedProps.forEach(prop => {
         newProps[prop] = this.state[prop];
       });
-      return <Component {...this.props} {...newProps} />;
+
+      return <WrappedComponent {...this.props} {...newProps} />;
     }
   };
+}
 
 export default withAnimatedProps;

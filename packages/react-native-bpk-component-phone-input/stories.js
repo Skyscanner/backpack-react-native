@@ -210,8 +210,7 @@ class FullyIntegrated extends React.Component<
           label="Phone number"
           value={this.state.phoneNumber}
           onDialingCodePress={this.openPicker}
-          // Flow error ignored because this is a story :/
-          // $FlowFixMe
+          // $FlowFixMe, because this is a story :/
           dialingCode={this.props.codes.find(
             code => code.id === this.state.selectedId,
           )}

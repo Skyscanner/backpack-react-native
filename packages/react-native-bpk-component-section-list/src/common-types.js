@@ -28,7 +28,7 @@ type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
 export type SectionListItemImage = Element<any>;
 
 export type SectionListItemProps = {
-  onPress: () => void,
+  onPress: () => mixed,
   title: string,
   selected: boolean,
   image: ?SectionListItemImage,

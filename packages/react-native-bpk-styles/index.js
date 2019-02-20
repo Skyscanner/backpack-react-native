@@ -15,10 +15,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 /* @flow */
 
 import shadows from './src/shadows';
-import gradients, { type Angle } from './src/gradients';
+import gradients from './src/gradients';
 
-export type GradientAngle = Angle;
+export type { Angle as GradientAngle } from './src/gradients';
 export { shadows, gradients };

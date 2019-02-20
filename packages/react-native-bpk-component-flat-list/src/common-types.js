@@ -28,7 +28,7 @@ type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
 export type FlatListItemImage = Element<any>;
 
 export type FlatListItemProps = {
-  onPress: () => void,
+  onPress: () => mixed,
   title: string,
   selected: boolean,
   image: ?FlatListItemImage,

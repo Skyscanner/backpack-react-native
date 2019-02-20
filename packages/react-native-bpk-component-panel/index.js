@@ -18,10 +18,10 @@
 
 /* @flow */
 
-import BpkPanel, { type Props } from './src/BpkPanel';
+import BpkPanel from './src/BpkPanel';
 import withDivider from './src/withDivider';
 
-export type BpkPanelProps = Props;
-
+export type { Props as BpkPanelProps } from './src/BpkPanel';
+export type { Props as WithDividerProps } from './src/withDivider';
 export { withDivider };
 export default BpkPanel;

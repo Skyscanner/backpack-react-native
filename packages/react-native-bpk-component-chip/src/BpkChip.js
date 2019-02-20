@@ -28,7 +28,7 @@ import {
   commonDefaultProps,
 } from './common-types';
 
-type Props = {
+export type Props = {
   ...$Exact<CommonProps>,
   selected: boolean,
 };

@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import {
   I18nManager,
   ScrollView,
@@ -23,20 +25,21 @@ import {
   View,
   ViewPropTypes,
 } from 'react-native';
-import React from 'react';
+import React, { type Node, type ElementProps } from 'react';
 import PropTypes from 'prop-types';
 import {
   colorGray100,
   borderSizeSm,
 } from 'bpk-tokens/tokens/base.react.native';
 
-import BpkHorizontalNavSelectedIndicator from './BpkHorizontalNavSelectedIndicator';
 import withAnimatedProps from './withAnimatedProps';
+import BpkHorizontalNavSelectedIndicator from './BpkHorizontalNavSelectedIndicator';
 
-const AnimatedIndicator = withAnimatedProps(BpkHorizontalNavSelectedIndicator, [
-  'xOffset',
-  'width',
-]);
+// $FlowFixMe, because HOCs
+const AnimatedIndicator: typeof BpkHorizontalNavSelectedIndicator = withAnimatedProps(
+  BpkHorizontalNavSelectedIndicator,
+  ['xOffset', 'width'],
+);
 
 const styles = StyleSheet.create({
   nav: {
@@ -62,18 +65,47 @@ const styles = StyleSheet.create({
   },
 });
 
-class BpkHorizontalNav extends React.Component {
-  constructor(props) {
-    super(props);
+type ViewProps = ElementProps<typeof View>;
+type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
+
+export type Props = {
+  children: Node,
+  selectedId: string,
+  spaceAround: boolean,
+  style: ViewStyleProp,
+};
+
+type State = {
+  indicatorOffsetX: ?number,
+  indicatorWidth: ?number,
+};
+
+class BpkHorizontalNav extends React.Component<Props, State> {
+  static propTypes = {
+    children: PropTypes.node.isRequired,
+    selectedId: PropTypes.string.isRequired,
+    spaceAround: PropTypes.bool,
+    style: ViewPropTypes.style,
+  };
+
+  static defaultProps = {
+    spaceAround: false,
+    style: null,
+  };
+
+  constructor() {
+    super();
+
     this.state = {
       indicatorOffsetX: null,
       indicatorWidth: null,
     };
   }
 
-  componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps(nextProps: Props) {
     if (nextProps.selectedId && this.childrenPositions[nextProps.selectedId]) {
       const nextLayoutProps = this.childrenPositions[nextProps.selectedId];
+
       this.setState({
         indicatorOffsetX: nextLayoutProps.x,
         indicatorWidth: nextLayoutProps.width,
@@ -81,7 +113,7 @@ class BpkHorizontalNav extends React.Component {
     }
   }
 
-  onChildLayout = (event, id) => {
+  onChildLayout = (event: any, id: string) => {
     const { width, x } = event.nativeEvent.layout;
     this.childrenPositions[id] = { width, x };
 
@@ -129,6 +161,7 @@ class BpkHorizontalNav extends React.Component {
       if (this.state.indicatorOffsetX === null) {
         return null;
       }
+
       return (
         <View style={styles.indicatorWrapper}>
           <AnimatedIndicator
@@ -153,17 +186,5 @@ class BpkHorizontalNav extends React.Component {
     );
   }
 }
-
-BpkHorizontalNav.propTypes = {
-  children: PropTypes.node.isRequired,
-  selectedId: PropTypes.string.isRequired,
-  spaceAround: PropTypes.bool,
-  style: ViewPropTypes.style,
-};
-
-BpkHorizontalNav.defaultProps = {
-  spaceAround: false,
-  style: null,
-};
 
 export default BpkHorizontalNav;

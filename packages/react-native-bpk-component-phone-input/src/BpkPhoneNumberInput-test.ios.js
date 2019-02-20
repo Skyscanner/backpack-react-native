@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import commonTests from './BpkPhoneNumberInput-test.common';
 
 describe('iOS', () => {

@@ -15,6 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 /* @flow */
 
 import React, { Component, isValidElement, type Element } from 'react';
@@ -246,4 +247,4 @@ class BpkNavigationBar extends Component<Props, {}> {
   }
 }
 
-export default withTheme(BpkNavigationBar);
+export default (withTheme(BpkNavigationBar): typeof BpkNavigationBar);

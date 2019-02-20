@@ -16,49 +16,42 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import React from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
 
 import BpkStarRating from './BpkStarRating';
 
+const ratingLabel = (rating, maxRating) =>
+  `${rating} out of ${maxRating} stars`;
+
 const commonTests = () => {
-  let renderer = null;
-  let accessibilityLabel = null;
-  beforeEach(() => {
+  let renderer;
+
+  beforeAll(() => {
     renderer = new ShallowRenderer();
-    accessibilityLabel = (rating, maxRating) =>
-      `${rating} out of ${maxRating} stars`;
   });
 
   describe('BpkStarRating', () => {
     it('should render correctly', () => {
-      renderer.render(
-        <BpkStarRating rating={3} ratingLabel={accessibilityLabel} />,
-      );
+      renderer.render(<BpkStarRating rating={3} ratingLabel={ratingLabel} />);
       expect(renderer.getRenderOutput()).toMatchSnapshot();
     });
 
     it('should render correctly with stars rounded down', () => {
-      renderer.render(
-        <BpkStarRating rating={3.3} ratingLabel={accessibilityLabel} />,
-      );
+      renderer.render(<BpkStarRating rating={3.3} ratingLabel={ratingLabel} />);
       expect(renderer.getRenderOutput()).toMatchSnapshot();
     });
 
     it('should render correctly with stars rounded down to half star', () => {
-      renderer.render(
-        <BpkStarRating rating={3.7} ratingLabel={accessibilityLabel} />,
-      );
+      renderer.render(<BpkStarRating rating={3.7} ratingLabel={ratingLabel} />);
       expect(renderer.getRenderOutput()).toMatchSnapshot();
     });
 
     it('should render correctly with custom `maxRating` attribute', () => {
       renderer.render(
-        <BpkStarRating
-          rating={3}
-          maxRating={10}
-          ratingLabel={accessibilityLabel}
-        />,
+        <BpkStarRating rating={3} maxRating={10} ratingLabel={ratingLabel} />,
       );
       expect(renderer.getRenderOutput()).toMatchSnapshot();
     });

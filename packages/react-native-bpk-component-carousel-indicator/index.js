@@ -20,4 +20,7 @@
 
 import BpkCarouselIndicator from './src/BpkCarouselIndicator';
 
+export type {
+  Props as BpkCarouselIndicatorProps,
+} from './src/BpkCarouselIndicator';
 export default BpkCarouselIndicator;

@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import { I18nManager, StyleSheet, View } from 'react-native';
@@ -57,7 +59,11 @@ const styles = StyleSheet.create({
   },
 });
 
-const BpkStar = props => {
+export type Props = {
+  type: $Keys<typeof STAR_TYPES>,
+};
+
+const BpkStar = (props: Props) => {
   const { type, ...rest } = props;
   const iconType = type === STAR_TYPES.FULL ? icons.star : icons['star-half'];
 
@@ -89,8 +95,7 @@ const BpkStar = props => {
 };
 
 BpkStar.propTypes = {
-  type: PropTypes.oneOf([STAR_TYPES.EMPTY, STAR_TYPES.HALF, STAR_TYPES.FULL])
-    .isRequired,
+  type: PropTypes.oneOf(Object.keys(STAR_TYPES)).isRequired,
 };
 
 export default BpkStar;

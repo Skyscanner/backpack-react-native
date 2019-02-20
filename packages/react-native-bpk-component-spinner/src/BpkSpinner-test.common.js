@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import React from 'react';
 import renderer from 'react-test-renderer';
 import BpkThemeProvider from 'react-native-bpk-theming';
@@ -45,6 +47,9 @@ const commonTests = () => {
 
     it('should throw an error for invalid spinner type', () => {
       jest.spyOn(console, 'error').mockImplementation(() => jest.fn());
+      // Ignoring this false positive flow error.
+      // The test is asserting that our prop type works for non flow users.
+      // $FlowFixMe
       expect(() => renderer.create(<BpkSpinner type="silly" />)).toThrow(
         '"silly" is not a valid spinner type. Valid types are primary, light, dark',
       );
@@ -57,7 +62,7 @@ const commonTests = () => {
       const tree = renderer
         .create(
           <BpkThemeProvider theme={theme}>
-            <BpkSpinner />
+            <BpkSpinner type="primary" />
           </BpkThemeProvider>,
         )
         .toJSON();
@@ -68,7 +73,7 @@ const commonTests = () => {
       const theme = {};
       const tree = renderer
         .create(
-          <BpkThemeProvider theme={theme} type="primary">
+          <BpkThemeProvider theme={theme}>
             <BpkSpinner />
           </BpkThemeProvider>,
         )

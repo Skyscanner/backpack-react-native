@@ -18,14 +18,9 @@
 
 /* @flow */
 
-import {
-  type Props,
-  propTypes,
-  defaultProps,
-  ALERT_TYPES,
-} from './src/common-types';
+import { propTypes, defaultProps, ALERT_TYPES } from './src/common-types';
 import BpkBannerAlert from './src/BpkBannerAlert';
 
-export type BpkBannerAlertProps = Props;
+export type { Props as BpkBannerAlertProps } from './src/common-types';
 export { ALERT_TYPES, propTypes, defaultProps };
 export default BpkBannerAlert;

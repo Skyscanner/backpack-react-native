@@ -17,6 +17,7 @@
  */
 
 /* @flow */
+
 import React, { Component } from 'react';
 import { storiesOf } from '@storybook/react-native';
 import { StyleSheet, View } from 'react-native';

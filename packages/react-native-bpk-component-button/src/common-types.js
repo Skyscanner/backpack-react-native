@@ -43,7 +43,7 @@ export const ICON_ALIGNMENTS = {
 };
 
 export type CommonProps = {
-  onPress: (event: SyntheticEvent<>) => void,
+  onPress: (event: SyntheticEvent<>) => mixed,
   title: string,
   accessibilityLabel: ?string,
   disabled: boolean,

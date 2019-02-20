@@ -16,7 +16,9 @@
  * limitations under the License.
  */
 
-import React from 'react';
+/* @flow */
+
+import React, { type Node, type ElementProps } from 'react';
 import PropTypes from 'prop-types';
 import {
   borderRadiusSm,
@@ -57,7 +59,19 @@ const styles = StyleSheet.create({
   },
 });
 
-const BpkTouchableOverlay = props => {
+type ViewProps = ElementProps<typeof View>;
+type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
+
+export type Props = {
+  children: Node,
+  borderRadius: ?('sm' | 'lg' | 'pill'),
+  style: ViewStyleProp,
+  overlayStyle: ViewStyleProp,
+  onPressIn: ?() => mixed,
+  onPressOut: ?() => mixed,
+};
+
+const BpkTouchableOverlay = (props: Props) => {
   const {
     children,
     borderRadius,
@@ -68,7 +82,7 @@ const BpkTouchableOverlay = props => {
     ...rest
   } = props;
 
-  let overlayRef = null;
+  let overlayRef;
 
   const overlayStyles = [styles.overlay];
   if (borderRadius === 'sm') {
@@ -88,15 +102,21 @@ const BpkTouchableOverlay = props => {
     <TouchableWithoutFeedback
       {...rest}
       onPressIn={() => {
-        overlayRef.setNativeProps({
-          style: [styles.overlay, styles.overlayShow],
-        });
+        if (overlayRef) {
+          overlayRef.setNativeProps({
+            style: [styles.overlay, styles.overlayShow],
+          });
+        }
+
         if (onPressIn) {
           onPressIn();
         }
       }}
       onPressOut={() => {
-        overlayRef.setNativeProps({ style: [styles.overlay] });
+        if (overlayRef) {
+          overlayRef.setNativeProps({ style: [styles.overlay] });
+        }
+
         if (onPressOut) {
           onPressOut();
         }

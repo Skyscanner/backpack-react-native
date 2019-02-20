@@ -19,7 +19,7 @@
 /* @flow */
 
 import React, { type ComponentType } from 'react';
-import { I18nManager, StyleSheet } from 'react-native';
+import { Text, I18nManager, StyleSheet } from 'react-native';
 
 import BpkIcon, { type Props as BpkIconProps } from './BpkIcon';
 
@@ -33,11 +33,24 @@ const styles = StyleSheet.create({
   },
 });
 
-export type Props = {
-  ...$Exact<BpkIconProps>,
+// Based loosely on https://github.com/acdlite/recompose/blob/master/src/packages/recompose/getDisplayName.js
+const getDisplayName = Component => {
+  if (typeof Component === 'string') {
+    return Component;
+  }
+
+  if (!Component) {
+    return 'Unknown';
+  }
+
+  return Component.displayName || Component.name || 'Component';
 };
 
-const withRtlSupport = (IconComponent: ComponentType<BpkIconProps>) => {
+export type Props = $Exact<BpkIconProps>;
+
+const withRtlSupport = (
+  IconComponent: ComponentType<any>,
+): ComponentType<any> => {
   const WithRtlSupport = (props: Props) => {
     const { style: userStyle, ...rest } = props;
     const rtlStyle = [styles.rtl];
@@ -49,13 +62,21 @@ const withRtlSupport = (IconComponent: ComponentType<BpkIconProps>) => {
     return <IconComponent style={rtlStyle} {...rest} />;
   };
 
-  withRtlSupport.propTypes = {
+  WithRtlSupport.propTypes = {
     ...BpkIcon.propTypes,
+    style: Text.propTypes.style,
   };
 
-  withRtlSupport.defaultProps = {
+  WithRtlSupport.defaultProps = {
     ...BpkIcon.defaultProps,
+    style: null,
   };
+
+  if (process.env.NODE_ENV !== 'production') {
+    WithRtlSupport.displayName = `withRtlSupport(${getDisplayName(
+      IconComponent,
+    )})`;
+  }
 
   return WithRtlSupport;
 };
