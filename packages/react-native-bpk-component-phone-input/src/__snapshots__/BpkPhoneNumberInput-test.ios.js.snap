@@ -2,12 +2,7 @@
 
 exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
 <View
-  style={
-    Array [
-      undefined,
-      null,
-    ]
-  }
+  style={null}
 >
   <View
     style={
@@ -187,12 +182,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
 
 exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false 1`] = `
 <View
-  style={
-    Array [
-      undefined,
-      null,
-    ]
-  }
+  style={null}
 >
   <View
     style={
