@@ -18,7 +18,7 @@
 
 /* @flow */
 
-import commonTests from './BpkThemeProvider-test.common';
+import commonTests from './index-test.common';
 
 jest.mock('react-native', () => {
   const reactNative = jest.requireActual('react-native');

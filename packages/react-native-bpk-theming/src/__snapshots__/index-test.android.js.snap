@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Android Theming E2E should render correctly 1`] = `
+<Text>
+  rgb(255, 255, 255)
+</Text>
+`;
+
+exports[`Android withTheme should render correctly without theme 1`] = `
+<Text>
+  no theme applied
+</Text>
+`;

@@ -15,7 +15,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 /* @flow */
+
 import { colorRed500 } from 'bpk-tokens/tokens/base.react.native';
 
 import { isValidTheme, makeThemePropType, getThemeAttributes } from './util';

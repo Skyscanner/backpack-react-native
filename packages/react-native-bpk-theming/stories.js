@@ -15,6 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+ 
 /* @flow */
 
 import React, { Component } from 'react';
@@ -108,7 +109,7 @@ class BpkThemePicker extends Component<{}, State> {
     };
   }
 
-  switchTheme = value => {
+  switchTheme = (value: ThemeId) => {
     this.setState({
       themeId: value,
       theme: this.themes[value],

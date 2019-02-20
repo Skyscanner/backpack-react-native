@@ -14,7 +14,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 /* @flow */
+
 import has from 'lodash/has';
 import isBoolean from 'lodash/isBoolean';
 import isNumber from 'lodash/isNumber';

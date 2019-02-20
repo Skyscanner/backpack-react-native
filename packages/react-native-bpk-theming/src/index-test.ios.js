@@ -16,12 +16,10 @@
  * limitations under the License.
  */
 
-import { ThemeProvider } from 'theming';
+/* @flow */
 
-import createWithTheme from './create-with-theme';
+import commonTests from './index-test.common';
 
-const BpkThemeProvider = ThemeProvider;
-
-export default BpkThemeProvider;
-const withTheme = createWithTheme();
-export { withTheme };
+describe('iOS', () => {
+  commonTests();
+});
