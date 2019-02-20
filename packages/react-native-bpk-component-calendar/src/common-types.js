@@ -18,8 +18,9 @@
 
 /* @flow */
 
-import { ViewPropTypes, type StyleObj } from 'react-native';
+import { ViewPropTypes } from 'react-native';
 import PropTypes from 'prop-types';
+import { type ViewStyleProp } from 'react-native/Libraries/StyleSheet/StyleSheet';
 
 export const SELECTION_TYPES = {
   single: 'single',
@@ -36,7 +37,7 @@ export type CommonProps = {
   onChangeSelectedDates: ?(Date[]) => mixed,
   selectedDates: Date[],
   selectionType: SelectionType,
-  style: ?StyleObj,
+  style: ViewStyleProp,
 };
 
 const datePropType = PropTypes.oneOfType([

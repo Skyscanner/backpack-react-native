@@ -17,7 +17,8 @@
  */
 /* @flow */
 
-import { StyleSheet, I18nManager, type AnimatedValue } from 'react-native';
+import { StyleSheet, I18nManager } from 'react-native';
+import AnimatedValue from 'react-native/Libraries/Animated/src/nodes/AnimatedValue';
 import {
   borderSizeSm,
   colorBlue500,

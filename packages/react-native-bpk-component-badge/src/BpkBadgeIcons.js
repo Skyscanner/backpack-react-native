@@ -53,7 +53,7 @@ const BpkBadgeIcons = (props: Props) => {
   const adjustedIcons = icons.map((icon, index) =>
     React.cloneElement(icon, {
       small: true,
-      style: [itemStyle, index === icons.length - 1 ? styles.lastItem : null],
+      style: [...itemStyle, index === icons.length - 1 ? styles.lastItem : {}],
     }),
   );
 
@@ -63,6 +63,7 @@ const BpkBadgeIcons = (props: Props) => {
         <Fragment key={`${icon.props.icon}`}>
           {icon}
           {separator && index < adjustedIcons.length - 1 && (
+            // $FlowFixMe
             <BpkText allowFontScaling={false} style={itemStyle} textStyle="xs">
               {separator}
             </BpkText>

@@ -17,14 +17,14 @@
  */
 /* @flow */
 
-import React, { Component, isValidElement } from 'react';
 import PropTypes from 'prop-types';
-import { type Element, StyleSheet, View, ViewPropTypes } from 'react-native';
 import {
   withTheme,
   getThemeAttributes,
   makeThemePropType,
 } from 'react-native-bpk-theming';
+import { StyleSheet, View, ViewPropTypes } from 'react-native';
+import React, { Component, isValidElement, type Element } from 'react';
 import { colorGray50, colorGray100 } from 'bpk-tokens/tokens/base.react.native';
 
 import {
@@ -229,6 +229,7 @@ class BpkNavigationBar extends Component<Props, {}> {
       <View style={outerBarStyle}>
         <View style={innerBarStyle}>
           {leadingButton &&
+            // $FlowFixMe
             React.cloneElement(leadingButton, {
               disabledTintColor,
               tintColor,
@@ -237,6 +238,7 @@ class BpkNavigationBar extends Component<Props, {}> {
             })}
           <View style={styles.titleContainer}>{titleView}</View>
           {trailingButton &&
+            // $FlowFixMe
             React.cloneElement(trailingButton, {
               disabledTintColor,
               tintColor,

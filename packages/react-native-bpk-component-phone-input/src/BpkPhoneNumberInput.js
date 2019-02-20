@@ -17,8 +17,8 @@
  */
 /* @flow */
 
-import React, { cloneElement } from 'react';
-import { type Node, Platform, StyleSheet } from 'react-native';
+import React, { cloneElement, type Node } from 'react';
+import { Platform, StyleSheet } from 'react-native';
 import PropTypes from 'prop-types';
 import BpkTextInput, {
   propTypes as textInputPropTypes,

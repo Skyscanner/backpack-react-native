@@ -90,7 +90,6 @@ const BpkButtonLink = (props: Props) => {
       accessibilityTraits={accessibilityTraits}
       onPress={onPress}
       disabled={disabled}
-      icon={icon}
       {...rest}
     >
       <View style={viewStyle}>

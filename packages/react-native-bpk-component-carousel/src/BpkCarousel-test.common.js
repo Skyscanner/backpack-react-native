@@ -42,7 +42,11 @@ const renderWithLayout = (
       layout,
     },
   };
-  rendered.toJSON().props.onLayout(mockNativeEvent);
+  const json = rendered.toJSON();
+  if (!json) {
+    throw new Error('');
+  }
+  json.props.onLayout(mockNativeEvent);
   return rendered;
 };
 

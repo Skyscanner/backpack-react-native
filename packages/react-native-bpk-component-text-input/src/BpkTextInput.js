@@ -20,14 +20,9 @@
 
 import PropTypes from 'prop-types';
 import React, { Component, type Node } from 'react';
-import {
-  Animated,
-  type AnimatedValue,
-  TextInput,
-  View,
-  ViewPropTypes,
-} from 'react-native';
+import { Animated, TextInput, View, ViewPropTypes } from 'react-native';
 import BpkText from 'react-native-bpk-component-text';
+import AnimatedValue from 'react-native/Libraries/Animated/src/nodes/AnimatedValue';
 import { animationDurationSm } from 'bpk-tokens/tokens/base.react.native';
 import TinyMask from 'tinymask';
 
@@ -221,7 +216,7 @@ class BpkTextInput extends Component<Props, State> {
     };
 
     return (
-      <View style={[styles.container, userStyle]}>
+      <View style={userStyle}>
         <View style={styles.rowContainer}>
           <Animated.Text
             numberOfLines={1}
@@ -239,6 +234,7 @@ class BpkTextInput extends Component<Props, State> {
               style={styles.input}
               onFocus={this.onFocus}
               onBlur={this.onBlur}
+              // $FlowFixMe
               ref={inputRef}
               underlineColorAndroid="transparent"
               {...rest}

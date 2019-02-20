@@ -18,8 +18,9 @@
 
 /* @flow */
 
-import { type Element, Image } from 'react-native';
 import PropTypes from 'prop-types';
+import { type Element } from 'react';
+import { Image } from 'react-native';
 
 export type Id = string;
 

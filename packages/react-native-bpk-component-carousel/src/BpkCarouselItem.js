@@ -18,13 +18,14 @@
 
 /* @flow */
 
-import React, { type Node } from 'react';
 import PropTypes from 'prop-types';
-import { View, type StyleObj, ViewPropTypes } from 'react-native';
+import React, { type Node } from 'react';
+import { View, ViewPropTypes } from 'react-native';
+import { type ViewStyleProp } from 'react-native/Libraries/StyleSheet/StyleSheet';
 
 export type Props = {
   children: Node,
-  style: ?StyleObj,
+  style: ViewStyleProp,
 };
 
 const BpkCarouselItem = ({ children, style }: Props) => (

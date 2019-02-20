@@ -19,7 +19,8 @@
 /* @flow */
 
 import React from 'react';
-import { type StyleObj, StyleSheet, View, ViewPropTypes } from 'react-native';
+import { StyleSheet, View, ViewPropTypes } from 'react-native';
+import { type ViewStyleProp } from 'react-native/Libraries/StyleSheet/StyleSheet';
 
 const styles = StyleSheet.create({
   base: {
@@ -28,7 +29,7 @@ const styles = StyleSheet.create({
 });
 
 export type Props = {
-  style: ?StyleObj,
+  style: ViewStyleProp,
 };
 
 const BpkBoilerplate = (props: Props) => {

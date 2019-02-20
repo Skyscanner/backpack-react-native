@@ -18,14 +18,8 @@
 
 /* @flow */
 
-import React, { cloneElement } from 'react';
-import {
-  Platform,
-  StyleSheet,
-  View,
-  ViewPropTypes,
-  type Element,
-} from 'react-native';
+import React, { cloneElement, type Element } from 'react';
+import { Platform, StyleSheet, View, ViewPropTypes, Image } from 'react-native';
 import PropTypes from 'prop-types';
 import BpkTouchableOverlay from 'react-native-bpk-component-touchable-overlay';
 import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-native-feedback';
@@ -84,7 +78,7 @@ const TouchablePlatformComponent = Platform.select({
 type Props = {
   disabled: boolean,
   onPress: () => mixed,
-  label: ?(string | Element),
+  label: ?(string | Element<any>),
   style: ?any,
   valid: ?boolean,
   validationMessage: ?string,

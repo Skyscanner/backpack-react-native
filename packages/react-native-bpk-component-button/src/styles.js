@@ -52,11 +52,11 @@ const base = StyleSheet.create({
   },
   text: {
     color: colorWhite,
-    lineHeight: Platform.OS === 'android' ? spacingLg - spacingSm : null,
+    ...(Platform.OS === 'android' ? { lineHeight: spacingLg - spacingSm } : {}),
   },
   icon: {
     marginStart: spacingSm,
-    lineHeight: Platform.OS === 'android' ? spacingLg - spacingSm : null,
+    ...(Platform.OS === 'android' ? { lineHeight: spacingLg - spacingSm } : {}),
   },
 });
 

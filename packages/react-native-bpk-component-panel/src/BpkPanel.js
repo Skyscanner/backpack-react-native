@@ -18,7 +18,7 @@
 
 /* @flow */
 
-import React from 'react';
+import React, { type Node } from 'react';
 import PropTypes from 'prop-types';
 import {
   colorWhite,
@@ -27,7 +27,7 @@ import {
   borderSizeSm,
   borderRadiusSm,
 } from 'bpk-tokens/tokens/base.react.native';
-import { StyleSheet, View, ViewPropTypes, type Node } from 'react-native';
+import { StyleSheet, View, ViewPropTypes } from 'react-native';
 
 const styles = StyleSheet.create({
   panel: {

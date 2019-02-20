@@ -33,6 +33,7 @@ export type Props = {
 };
 
 const createOnChangeHandler = memoize(callback => event => {
+  // $FlowFixMe
   if (event.nativeEvent.selectedDates) {
     const convertedDates = event.nativeEvent.selectedDates.map(
       timestamp => new Date(timestamp * 1000),

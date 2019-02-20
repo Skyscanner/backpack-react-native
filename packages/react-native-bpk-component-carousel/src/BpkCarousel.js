@@ -20,7 +20,8 @@
 
 import React, { type Element, type ChildrenArray } from 'react';
 import PropTypes from 'prop-types';
-import { type StyleObj, ViewPropTypes, StyleSheet, View } from 'react-native';
+import { ViewPropTypes, StyleSheet, View } from 'react-native';
+import { type ViewStyleProp } from 'react-native/Libraries/StyleSheet/StyleSheet';
 import {
   DataProvider,
   LayoutProvider,
@@ -49,7 +50,7 @@ const styles = StyleSheet.create({
 export type Props = {
   accessibilityLabel: string | ((number, number) => string),
   children: ChildrenArray<Element<BpkCarouselItem>>,
-  style: ?StyleObj,
+  style: ViewStyleProp,
   showIndicator: ?boolean,
 };
 
