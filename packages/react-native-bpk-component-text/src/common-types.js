@@ -65,9 +65,8 @@ export const stylePropType = (
 ) => {
   const value = StyleSheet.flatten(props[propName]);
 
-  if (value === undefined) return false;
+  if (!value) return false;
 
-  // $FlowFixMe
   if (value.fontWeight) {
     return new Error(
       `Invalid prop \`${propName}\` with \`fontWeight\` value \`${

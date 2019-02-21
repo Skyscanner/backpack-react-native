@@ -1089,10 +1089,13 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
             Object {
               "marginEnd": 0,
             },
@@ -1173,10 +1176,13 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
             Object {
               "marginEnd": 0,
             },
@@ -1257,10 +1263,15 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+              },
+            ],
             Object {
               "marginEnd": 0,
             },
@@ -1343,10 +1354,13 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
             Object {
               "marginEnd": 0,
             },
@@ -1427,10 +1441,13 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
             Object {
               "marginEnd": 0,
             },
@@ -1518,10 +1535,15 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+              },
+            ],
             Object {
               "marginEnd": 0,
             },
@@ -1609,10 +1631,13 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
             Object {},
           ],
         ]
@@ -1637,10 +1662,13 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
           ],
         ]
       }
@@ -1665,10 +1693,13 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
             Object {
               "marginEnd": 0,
             },
@@ -1749,10 +1780,13 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
             Object {},
           ],
         ]
@@ -1777,10 +1811,13 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
           ],
         ]
       }
@@ -1805,10 +1842,13 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
             Object {
               "marginEnd": 0,
             },
@@ -1889,10 +1929,15 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+              },
+            ],
             Object {},
           ],
         ]
@@ -1917,10 +1962,15 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+              },
+            ],
           ],
         ]
       }
@@ -1945,10 +1995,15 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+              },
+            ],
             Object {
               "marginEnd": 0,
             },
@@ -2031,10 +2086,13 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
             Object {},
           ],
         ]
@@ -2059,10 +2117,13 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
           ],
         ]
       }
@@ -2087,10 +2148,13 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
             Object {
               "marginEnd": 0,
             },
@@ -2171,10 +2235,13 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
             Object {},
           ],
         ]
@@ -2199,10 +2266,13 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
           ],
         ]
       }
@@ -2227,10 +2297,13 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
             Object {
               "marginEnd": 0,
             },
@@ -2318,10 +2391,15 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+              },
+            ],
             Object {},
           ],
         ]
@@ -2346,10 +2424,15 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+              },
+            ],
           ],
         ]
       }
@@ -2374,10 +2457,15 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+              },
+            ],
             Object {
               "marginEnd": 0,
             },
@@ -2465,10 +2553,13 @@ exports[`iOS BpkBadge should render correctly with multiple icons and no message
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
             Object {},
           ],
         ]
@@ -2493,10 +2584,13 @@ exports[`iOS BpkBadge should render correctly with multiple icons and no message
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
           ],
         ]
       }
@@ -2521,10 +2615,13 @@ exports[`iOS BpkBadge should render correctly with multiple icons and no message
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
             Object {
               "marginEnd": 0,
             },
@@ -2578,10 +2675,13 @@ exports[`iOS BpkBadge should render correctly with multiple icons and no message
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
             Object {},
           ],
         ]
@@ -2606,10 +2706,13 @@ exports[`iOS BpkBadge should render correctly with multiple icons and no message
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
           ],
         ]
       }
@@ -2634,10 +2737,13 @@ exports[`iOS BpkBadge should render correctly with multiple icons and no message
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
             Object {
               "marginEnd": 0,
             },
@@ -2691,10 +2797,15 @@ exports[`iOS BpkBadge should render correctly with multiple icons and no message
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+              },
+            ],
             Object {},
           ],
         ]
@@ -2719,10 +2830,15 @@ exports[`iOS BpkBadge should render correctly with multiple icons and no message
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+              },
+            ],
           ],
         ]
       }
@@ -2747,10 +2863,15 @@ exports[`iOS BpkBadge should render correctly with multiple icons and no message
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+              },
+            ],
             Object {
               "marginEnd": 0,
             },
@@ -2804,10 +2925,13 @@ exports[`iOS BpkBadge should render correctly with multiple icons and no message
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
             Object {},
           ],
         ]
@@ -2832,10 +2956,13 @@ exports[`iOS BpkBadge should render correctly with multiple icons and no message
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
           ],
         ]
       }
@@ -2860,10 +2987,13 @@ exports[`iOS BpkBadge should render correctly with multiple icons and no message
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
             Object {
               "marginEnd": 0,
             },
@@ -2917,10 +3047,13 @@ exports[`iOS BpkBadge should render correctly with multiple icons and no message
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
             Object {},
           ],
         ]
@@ -2945,10 +3078,13 @@ exports[`iOS BpkBadge should render correctly with multiple icons and no message
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
           ],
         ]
       }
@@ -2973,10 +3109,13 @@ exports[`iOS BpkBadge should render correctly with multiple icons and no message
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
             Object {
               "marginEnd": 0,
             },
@@ -3037,10 +3176,15 @@ exports[`iOS BpkBadge should render correctly with multiple icons and no message
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+              },
+            ],
             Object {},
           ],
         ]
@@ -3065,10 +3209,15 @@ exports[`iOS BpkBadge should render correctly with multiple icons and no message
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+              },
+            ],
           ],
         ]
       }
@@ -3093,10 +3242,15 @@ exports[`iOS BpkBadge should render correctly with multiple icons and no message
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+              },
+            ],
             Object {
               "marginEnd": 0,
             },

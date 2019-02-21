@@ -159,6 +159,8 @@ const commonTests = () => {
       jest.spyOn(console, 'error').mockImplementation(() => null);
 
       const willThrow = () =>
+        // Ignoring this false positive flow error.
+        // The test is asserting that our prop type works for non flow users.
         // $FlowFixMe
         renderer.create(<BpkBannerAlert message="Neutral alert." />);
 

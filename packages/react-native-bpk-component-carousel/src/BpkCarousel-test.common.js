@@ -44,7 +44,7 @@ const renderWithLayout = (
   };
   const json = rendered.toJSON();
   if (!json) {
-    throw new Error('');
+    throw new Error('renderWithLayout failed when calling toJSON');
   }
   json.props.onLayout(mockNativeEvent);
   return rendered;

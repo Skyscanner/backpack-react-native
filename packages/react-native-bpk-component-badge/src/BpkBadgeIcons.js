@@ -47,7 +47,7 @@ const BpkBadgeIcons = (props: Props) => {
   const itemStyle = [styles.item];
 
   if (userItemStyle) {
-    itemStyle.push(StyleSheet.flatten(userItemStyle));
+    itemStyle.push(userItemStyle);
   }
 
   const adjustedIcons = icons.map((icon, index) =>
@@ -63,7 +63,6 @@ const BpkBadgeIcons = (props: Props) => {
         <Fragment key={`${icon.props.icon}`}>
           {icon}
           {separator && index < adjustedIcons.length - 1 && (
-            // $FlowFixMe
             <BpkText allowFontScaling={false} style={itemStyle} textStyle="xs">
               {separator}
             </BpkText>
