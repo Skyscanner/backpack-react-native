@@ -96,7 +96,6 @@ exports[`iOS BpkNudger should disable theming if the required attribute is omitt
               Array [
                 Object {
                   "color": "rgb(255, 255, 255)",
-                  "lineHeight": null,
                 },
                 Object {
                   "color": "rgb(0, 178, 214)",
@@ -106,7 +105,6 @@ exports[`iOS BpkNudger should disable theming if the required attribute is omitt
               Object {},
               Array [
                 Object {
-                  "lineHeight": null,
                   "marginStart": 4,
                 },
                 Object {
@@ -246,7 +244,6 @@ exports[`iOS BpkNudger should disable theming if the required attribute is omitt
               Array [
                 Object {
                   "color": "rgb(255, 255, 255)",
-                  "lineHeight": null,
                 },
                 Object {
                   "color": "rgb(0, 178, 214)",
@@ -256,7 +253,6 @@ exports[`iOS BpkNudger should disable theming if the required attribute is omitt
               Object {},
               Array [
                 Object {
-                  "lineHeight": null,
                   "marginStart": 4,
                 },
                 Object {
@@ -389,7 +385,6 @@ exports[`iOS BpkNudger should render correctly 1`] = `
               Array [
                 Object {
                   "color": "rgb(255, 255, 255)",
-                  "lineHeight": null,
                 },
                 Object {
                   "color": "rgb(0, 178, 214)",
@@ -399,7 +394,6 @@ exports[`iOS BpkNudger should render correctly 1`] = `
               Object {},
               Array [
                 Object {
-                  "lineHeight": null,
                   "marginStart": 4,
                 },
                 Object {
@@ -539,7 +533,6 @@ exports[`iOS BpkNudger should render correctly 1`] = `
               Array [
                 Object {
                   "color": "rgb(255, 255, 255)",
-                  "lineHeight": null,
                 },
                 Object {
                   "color": "rgb(0, 178, 214)",
@@ -549,7 +542,6 @@ exports[`iOS BpkNudger should render correctly 1`] = `
               Object {},
               Array [
                 Object {
-                  "lineHeight": null,
                   "marginStart": 4,
                 },
                 Object {
@@ -684,7 +676,6 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
               Array [
                 Object {
                   "color": "rgb(255, 255, 255)",
-                  "lineHeight": null,
                 },
                 Object {
                   "color": "rgb(0, 178, 214)",
@@ -697,7 +688,6 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
               Object {},
               Array [
                 Object {
-                  "lineHeight": null,
                   "marginStart": 4,
                 },
                 undefined,
@@ -838,7 +828,6 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
               Array [
                 Object {
                   "color": "rgb(255, 255, 255)",
-                  "lineHeight": null,
                 },
                 Object {
                   "color": "rgb(0, 178, 214)",
@@ -848,7 +837,6 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
               Object {},
               Array [
                 Object {
-                  "lineHeight": null,
                   "marginStart": 4,
                 },
                 Object {
@@ -981,7 +969,6 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
               Array [
                 Object {
                   "color": "rgb(255, 255, 255)",
-                  "lineHeight": null,
                 },
                 Object {
                   "color": "rgb(0, 178, 214)",
@@ -991,7 +978,6 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
               Object {},
               Array [
                 Object {
-                  "lineHeight": null,
                   "marginStart": 4,
                 },
                 Object {
@@ -1133,7 +1119,6 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
               Array [
                 Object {
                   "color": "rgb(255, 255, 255)",
-                  "lineHeight": null,
                 },
                 Object {
                   "color": "rgb(0, 178, 214)",
@@ -1146,7 +1131,6 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
               Object {},
               Array [
                 Object {
-                  "lineHeight": null,
                   "marginStart": 4,
                 },
                 undefined,
@@ -1282,7 +1266,6 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
               Array [
                 Object {
                   "color": "rgb(255, 255, 255)",
-                  "lineHeight": null,
                 },
                 Object {
                   "color": "rgb(0, 178, 214)",
@@ -1295,7 +1278,6 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
               Object {},
               Array [
                 Object {
-                  "lineHeight": null,
                   "marginStart": 4,
                 },
                 undefined,
@@ -1436,7 +1418,6 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
               Array [
                 Object {
                   "color": "rgb(255, 255, 255)",
-                  "lineHeight": null,
                 },
                 Object {
                   "color": "rgb(0, 178, 214)",
@@ -1446,7 +1427,6 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
               Object {},
               Array [
                 Object {
-                  "lineHeight": null,
                   "marginStart": 4,
                 },
                 Object {
@@ -1579,7 +1559,6 @@ exports[`iOS BpkNudger should support theming 1`] = `
               Array [
                 Object {
                   "color": "rgb(255, 255, 255)",
-                  "lineHeight": null,
                 },
                 Object {
                   "color": "rgb(0, 178, 214)",
@@ -1591,7 +1570,6 @@ exports[`iOS BpkNudger should support theming 1`] = `
               },
               Array [
                 Object {
-                  "lineHeight": null,
                   "marginStart": 4,
                 },
                 Object {
@@ -1731,7 +1709,6 @@ exports[`iOS BpkNudger should support theming 1`] = `
               Array [
                 Object {
                   "color": "rgb(255, 255, 255)",
-                  "lineHeight": null,
                 },
                 Object {
                   "color": "rgb(0, 178, 214)",
@@ -1743,7 +1720,6 @@ exports[`iOS BpkNudger should support theming 1`] = `
               },
               Array [
                 Object {
-                  "lineHeight": null,
                   "marginStart": 4,
                 },
                 Object {

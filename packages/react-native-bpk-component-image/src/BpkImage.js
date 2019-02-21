@@ -20,21 +20,15 @@
 
 import React, { Component, type ComponentType } from 'react';
 import PropTypes from 'prop-types';
-import {
-  Animated,
-  StyleSheet,
-  View,
-  ViewPropTypes,
-  type ImageSourcePropType,
-  type StyleObj,
-  type ImageProps,
-} from 'react-native';
-import BpkSpinner from 'react-native-bpk-component-spinner';
+import { Animated, StyleSheet, View, ViewPropTypes } from 'react-native';
 import {
   borderRadiusSm,
   animationDurationBase,
   colorGray300,
 } from 'bpk-tokens/tokens/base.react.native';
+import AnimatedValue from 'react-native/Libraries/Animated/src/nodes/AnimatedValue';
+import { type ImageProps } from 'react-native/Libraries/Image/ImageProps';
+import BpkSpinner from 'react-native-bpk-component-spinner';
 
 const styles = StyleSheet.create({
   outer: {
@@ -61,25 +55,21 @@ const styles = StyleSheet.create({
 });
 
 export type Props = {
-  alt: string,
-  source: ImageSourcePropType,
+  ...$Exact<ImageProps>,
   inView: boolean,
   loaded: boolean,
-  onLoad: ?() => mixed,
   rounded: boolean,
-  style: ?StyleObj,
   imageComponent: ComponentType<ImageProps>,
 };
 
 class BpkImage extends Component<Props> {
   showLoadingIndicator: boolean;
 
-  imageOpacity: number;
+  imageOpacity: AnimatedValue;
 
-  loadingIndicatorOpacity: number;
+  loadingIndicatorOpacity: AnimatedValue;
 
   static propTypes = {
-    alt: PropTypes.string.isRequired,
     // see: https://github.com/facebook/react-native/blob/master/Libraries/Image/ImageSourcePropType.js#L82
     source: PropTypes.oneOfType([
       PropTypes.object,
@@ -128,12 +118,6 @@ class BpkImage extends Component<Props> {
     }
   };
 
-  onImageLoad = () => {
-    if (this.props.onLoad) {
-      this.props.onLoad();
-    }
-  };
-
   render() {
     const {
       style: userStyle,
@@ -164,14 +148,14 @@ class BpkImage extends Component<Props> {
         </Animated.View>
         {inView && (
           <ImageComponent
-            onLoad={this.onImageLoad}
+            onLoad={this.props.onLoad}
             style={[styles.image, { opacity: this.imageOpacity }]}
             {...rest}
           />
         )}
       </View>
     ) : (
-      <ImageComponent onLoad={this.onImageLoad} style={outerStyle} {...rest} />
+      <ImageComponent onLoad={this.props.onLoad} style={outerStyle} {...rest} />
     );
   }
 }

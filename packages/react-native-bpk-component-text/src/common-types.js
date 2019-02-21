@@ -19,8 +19,9 @@
 /* @flow */
 
 import { type Node } from 'react';
-import PropTypes, { type PropType } from 'prop-types';
-import { StyleSheet, type StyleObj } from 'react-native';
+import PropTypes from 'prop-types';
+import { StyleSheet } from 'react-native';
+import { type TextStyleProp } from 'react-native/Libraries/StyleSheet/StyleSheet';
 
 export const TEXT_STYLES = [
   'caps',
@@ -52,7 +53,7 @@ export type Weight = $Keys<typeof WEIGHT_STYLES>;
 export type Props = {
   children: Node,
   emphasize: ?boolean,
-  style: ?StyleObj,
+  style: TextStyleProp,
   textStyle: TextStyle,
   weight: Weight,
 };
@@ -64,7 +65,7 @@ export const stylePropType = (
 ) => {
   const value = StyleSheet.flatten(props[propName]);
 
-  if (value === undefined) return false;
+  if (!value) return false;
 
   if (value.fontWeight) {
     return new Error(
@@ -106,6 +107,12 @@ export const weightPropType = (
     ...rest,
   );
 };
+type PropType = (
+  props: any,
+  propName: string,
+  componentName: string,
+  href?: string,
+) => ?Error;
 
 const deprecated = (propType: PropType, alternativeSuggestion: string) => (
   props: { [string]: any },

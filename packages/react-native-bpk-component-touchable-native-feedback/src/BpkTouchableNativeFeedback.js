@@ -17,17 +17,12 @@
  */
 /* @flow */
 
-import React from 'react';
+import React, { type Node } from 'react';
 import PropTypes from 'prop-types';
-import {
-  type Element,
-  Platform,
-  TouchableNativeFeedback,
-  ViewPropTypes,
-} from 'react-native';
+import { Platform, TouchableNativeFeedback, ViewPropTypes } from 'react-native';
 
 type Props = {
-  children: Element,
+  children: Node,
   borderlessBackground: boolean,
   color: ?string,
   style: ?(Object | Array<Object>),

@@ -39,7 +39,7 @@ export type Props = {
 };
 
 class BpkCalendar extends Component<Props, {}> {
-  calendarRef: ElementRef<typeof RCTBPKCalendar>;
+  calendarRef: ElementRef<any>;
 
   static propTypes = commonPropTypes;
 

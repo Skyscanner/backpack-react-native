@@ -20,7 +20,13 @@
 
 import PropTypes from 'prop-types';
 import React, { Component, type Node } from 'react';
-import { View, Animated, ViewPropTypes, StyleSheet } from 'react-native';
+import {
+  View,
+  Animated,
+  ViewPropTypes,
+  StyleSheet,
+  type View as ReactNativeView,
+} from 'react-native';
 import { animationDurationSm } from 'bpk-tokens/tokens/base.react.native';
 
 const COLLAPSED_HEIGHT = 0.01;
@@ -36,19 +42,6 @@ const STYLES = StyleSheet.create({
     opacity: 0,
   },
 });
-
-type MeasureCallback = (
-  x: number,
-  y: number,
-  width: number,
-  height: number,
-  pageX: number,
-  pageY: number,
-) => mixed;
-
-type ReactNativeView = {
-  measure(callback: ?MeasureCallback): mixed,
-};
 
 type Props = {
   children: Node,
@@ -120,7 +113,9 @@ class AnimateAndFade extends Component<Props> {
     this.measure(this.animate);
   }
 
-  measure = (callback: ?MeasureCallback) =>
+  measure = (
+    callback: (x: number, y: number, width: number, height: number) => void,
+  ) =>
     requestAnimationFrame(() => {
       if (this.innerViewRef) {
         this.innerViewRef.measure(callback);
@@ -128,6 +123,10 @@ class AnimateAndFade extends Component<Props> {
     });
 
   animate = (x: number, y: number, width: number, height: number) => {
+    if (!this.height) {
+      return;
+    }
+
     const { show, animateOnEnter, animateOnLeave } = this.props;
 
     const animatingOnEnter = show && animateOnEnter;
@@ -178,8 +177,8 @@ class AnimateAndFade extends Component<Props> {
     return (
       <Animated.View {...rest} style={style}>
         {/* This extra view is here only to measure the "natural" height in order to do the correct annimation.
-        Since the upgrade to react-native 0.55.3 the inner view does not render outside its parent height on IOS, 
-        unless position is absolute. To avoid changing the children's style we use this hidden view with position 
+        Since the upgrade to react-native 0.55.3 the inner view does not render outside its parent height on IOS,
+        unless position is absolute. To avoid changing the children's style we use this hidden view with position
         absolute for measurment and render the children again bellow with its normal style */}
         <View
           ref={ref => {

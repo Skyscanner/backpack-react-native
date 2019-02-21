@@ -19,8 +19,8 @@
 /* @flow */
 
 import PropTypes from 'prop-types';
-import React, { type ComponentType } from 'react';
-import { View, StyleSheet, ViewPropTypes, type Node } from 'react-native';
+import React, { type ComponentType, type Node } from 'react';
+import { View, StyleSheet, ViewPropTypes } from 'react-native';
 import { colorGray100, spacingBase } from 'bpk-tokens/tokens/base.react.native';
 
 import BpkPanel, { type Props as BpkPanelProps } from './BpkPanel';
@@ -36,6 +36,8 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   panelMainVertical: {
+    // Ignoring this flow error ... how else are you supposed to unset the flex value?
+    // $FlowFixMe
     flex: null,
   },
   panelMainPadded: {
@@ -55,6 +57,8 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   panelStubVertical: {
+    // Ignoring this flow error ... how else are you supposed to unset the flex value?
+    // $FlowFixMe
     flex: null,
   },
   panelStubPadded: {

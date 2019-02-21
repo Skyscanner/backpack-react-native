@@ -68,7 +68,6 @@ exports[`Android API levels Android API<21 should render without ripple 1`] = `
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
-                "lineHeight": null,
               },
             ],
             Object {},
@@ -151,7 +150,6 @@ exports[`Android API levels Android API>=21 should render with ripple 1`] = `
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
-                "lineHeight": null,
               },
             ],
             Object {},
@@ -234,7 +232,6 @@ exports[`Android BpkButton should render correctly 1`] = `
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
-                "lineHeight": null,
               },
             ],
             Object {},
@@ -321,7 +318,6 @@ exports[`Android BpkButton should render correctly with iconAlignment="centerLea
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
-                "lineHeight": null,
               },
               undefined,
             ],
@@ -349,14 +345,12 @@ exports[`Android BpkButton should render correctly with iconAlignment="centerLea
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
-                "lineHeight": null,
               },
               undefined,
             ],
             Object {},
             Array [
               Object {
-                "lineHeight": null,
                 "marginStart": 4,
               },
               Object {
@@ -443,7 +437,6 @@ exports[`Android BpkButton should render correctly with iconAlignment="centerTra
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
-                "lineHeight": null,
               },
             ],
             Object {},
@@ -470,13 +463,11 @@ exports[`Android BpkButton should render correctly with iconAlignment="centerTra
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
-                "lineHeight": null,
               },
             ],
             Object {},
             Array [
               Object {
-                "lineHeight": null,
                 "marginStart": 4,
               },
             ],
@@ -567,7 +558,6 @@ exports[`Android BpkButton should render correctly with iconAlignment="leading" 
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
-                "lineHeight": null,
               },
               undefined,
               undefined,
@@ -596,7 +586,6 @@ exports[`Android BpkButton should render correctly with iconAlignment="leading" 
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
-                "lineHeight": null,
               },
               undefined,
               undefined,
@@ -604,7 +593,6 @@ exports[`Android BpkButton should render correctly with iconAlignment="leading" 
             Object {},
             Array [
               Object {
-                "lineHeight": null,
                 "marginStart": 4,
               },
               undefined,
@@ -696,7 +684,6 @@ exports[`Android BpkButton should render correctly with iconAlignment="trailing"
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
-                "lineHeight": null,
               },
               undefined,
             ],
@@ -724,14 +711,12 @@ exports[`Android BpkButton should render correctly with iconAlignment="trailing"
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
-                "lineHeight": null,
               },
               undefined,
             ],
             Object {},
             Array [
               Object {
-                "lineHeight": null,
                 "marginStart": 4,
               },
               undefined,
@@ -821,7 +806,6 @@ exports[`Android BpkButton should render correctly with type="destructive" 1`] =
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
-                "lineHeight": null,
               },
               Object {
                 "color": "rgb(255, 84, 82)",
@@ -915,7 +899,6 @@ exports[`Android BpkButton should render correctly with type="destructive" and d
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
-                "lineHeight": null,
               },
               Object {
                 "color": "rgb(255, 84, 82)",
@@ -1004,7 +987,6 @@ exports[`Android BpkButton should render correctly with type="featured" 1`] = `
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
-                "lineHeight": null,
               },
             ],
             Object {},
@@ -1089,7 +1071,6 @@ exports[`Android BpkButton should render correctly with type="featured" and disa
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
-                "lineHeight": null,
               },
               Object {
                 "color": "rgb(178, 174, 189)",
@@ -1175,7 +1156,6 @@ exports[`Android BpkButton should render correctly with type="primary" 1`] = `
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
-                "lineHeight": null,
               },
             ],
             Object {},
@@ -1260,7 +1240,6 @@ exports[`Android BpkButton should render correctly with type="primary" and disab
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
-                "lineHeight": null,
               },
               Object {
                 "color": "rgb(178, 174, 189)",
@@ -1352,7 +1331,6 @@ exports[`Android BpkButton should render correctly with type="secondary" 1`] = `
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
-                "lineHeight": null,
               },
               Object {
                 "color": "rgb(0, 178, 214)",
@@ -1446,7 +1424,6 @@ exports[`Android BpkButton should render correctly with type="secondary" and dis
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
-                "lineHeight": null,
               },
               Object {
                 "color": "rgb(0, 178, 214)",
@@ -1616,7 +1593,6 @@ exports[`Android BpkButton should support having an icon as well as a title 1`] 
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
-                "lineHeight": null,
               },
               undefined,
             ],
@@ -1644,14 +1620,12 @@ exports[`Android BpkButton should support having an icon as well as a title 1`] 
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
-                "lineHeight": null,
               },
               undefined,
             ],
             Object {},
             Array [
               Object {
-                "lineHeight": null,
                 "marginStart": 4,
               },
               undefined,
@@ -1737,7 +1711,6 @@ exports[`Android BpkButton should support overwriting styles 1`] = `
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
-                "lineHeight": null,
               },
             ],
             Object {},
@@ -1822,7 +1795,6 @@ exports[`Android BpkButton should support the "disabled" property 1`] = `
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
-                "lineHeight": null,
               },
               Object {
                 "color": "rgb(178, 174, 189)",
@@ -1912,7 +1884,6 @@ exports[`Android BpkButton should support the "icon" property 1`] = `
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
-                "lineHeight": null,
               },
               undefined,
             ],
@@ -1940,14 +1911,12 @@ exports[`Android BpkButton should support the "icon" property 1`] = `
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
-                "lineHeight": null,
               },
               undefined,
             ],
             Object {},
             Array [
               Object {
-                "lineHeight": null,
                 "marginStart": 4,
               },
               undefined,
@@ -2036,14 +2005,12 @@ exports[`Android BpkButton should support the "iconOnly" property 1`] = `
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
-                "lineHeight": null,
               },
               undefined,
             ],
             Object {},
             Array [
               Object {
-                "lineHeight": null,
                 "marginStart": 4,
               },
               Object {
@@ -2135,7 +2102,6 @@ exports[`Android BpkButton should support the "secondary" property 1`] = `
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
-                "lineHeight": null,
               },
               Object {
                 "color": "rgb(0, 178, 214)",
@@ -2221,7 +2187,6 @@ exports[`Android BpkButtonThemed should render correctly 1`] = `
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
-                "lineHeight": null,
               },
             ],
             Object {

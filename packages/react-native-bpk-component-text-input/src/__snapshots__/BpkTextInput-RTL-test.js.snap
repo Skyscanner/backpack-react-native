@@ -2,12 +2,7 @@
 
 exports[`RTL BpkTextInput should ignore when placeholder is provided, as element is not focused 1`] = `
 <View
-  style={
-    Array [
-      undefined,
-      null,
-    ]
-  }
+  style={null}
 >
   <View
     style={
@@ -76,12 +71,7 @@ exports[`RTL BpkTextInput should ignore when placeholder is provided, as element
 
 exports[`RTL BpkTextInput should render correctly 1`] = `
 <View
-  style={
-    Array [
-      undefined,
-      null,
-    ]
-  }
+  style={null}
 >
   <View
     style={
@@ -150,12 +140,7 @@ exports[`RTL BpkTextInput should render correctly 1`] = `
 
 exports[`RTL BpkTextInput should render correctly with \`accessoryView\` 1`] = `
 <View
-  style={
-    Array [
-      undefined,
-      null,
-    ]
-  }
+  style={null}
 >
   <View
     style={
@@ -226,12 +211,7 @@ exports[`RTL BpkTextInput should render correctly with \`accessoryView\` 1`] = `
 
 exports[`RTL BpkTextInput should render correctly with arbitrary props 1`] = `
 <View
-  style={
-    Array [
-      undefined,
-      null,
-    ]
-  }
+  style={null}
 >
   <View
     style={
@@ -302,12 +282,9 @@ exports[`RTL BpkTextInput should render correctly with arbitrary props 1`] = `
 exports[`RTL BpkTextInput should render correctly with custom style 1`] = `
 <View
   style={
-    Array [
-      undefined,
-      Object {
-        "marginLeft": 4,
-      },
-    ]
+    Object {
+      "marginLeft": 4,
+    }
   }
 >
   <View
@@ -377,12 +354,7 @@ exports[`RTL BpkTextInput should render correctly with custom style 1`] = `
 
 exports[`RTL BpkTextInput should render correctly with description 1`] = `
 <View
-  style={
-    Array [
-      undefined,
-      null,
-    ]
-  }
+  style={null}
 >
   <View
     style={
@@ -471,12 +443,7 @@ exports[`RTL BpkTextInput should render correctly with description 1`] = `
 
 exports[`RTL BpkTextInput should render correctly with description, valid=false and a validationMessage 1`] = `
 <View
-  style={
-    Array [
-      undefined,
-      null,
-    ]
-  }
+  style={null}
 >
   <View
     style={
@@ -592,12 +559,7 @@ exports[`RTL BpkTextInput should render correctly with description, valid=false 
 
 exports[`RTL BpkTextInput should render correctly with editable=false 1`] = `
 <View
-  style={
-    Array [
-      undefined,
-      null,
-    ]
-  }
+  style={null}
 >
   <View
     style={
@@ -666,12 +628,7 @@ exports[`RTL BpkTextInput should render correctly with editable=false 1`] = `
 
 exports[`RTL BpkTextInput should render correctly with inputRef set 1`] = `
 <View
-  style={
-    Array [
-      undefined,
-      null,
-    ]
-  }
+  style={null}
 >
   <View
     style={
@@ -740,12 +697,7 @@ exports[`RTL BpkTextInput should render correctly with inputRef set 1`] = `
 
 exports[`RTL BpkTextInput should render correctly with mask="99/99" 1`] = `
 <View
-  style={
-    Array [
-      undefined,
-      null,
-    ]
-  }
+  style={null}
 >
   <View
     style={
@@ -814,12 +766,7 @@ exports[`RTL BpkTextInput should render correctly with mask="99/99" 1`] = `
 
 exports[`RTL BpkTextInput should render correctly with mask="9999-9999-9999-9999" 1`] = `
 <View
-  style={
-    Array [
-      undefined,
-      null,
-    ]
-  }
+  style={null}
 >
   <View
     style={
@@ -888,12 +835,7 @@ exports[`RTL BpkTextInput should render correctly with mask="9999-9999-9999-9999
 
 exports[`RTL BpkTextInput should render correctly with valid 1`] = `
 <View
-  style={
-    Array [
-      undefined,
-      null,
-    ]
-  }
+  style={null}
 >
   <View
     style={
@@ -989,12 +931,7 @@ exports[`RTL BpkTextInput should render correctly with valid 1`] = `
 
 exports[`RTL BpkTextInput should render correctly with valid false 1`] = `
 <View
-  style={
-    Array [
-      undefined,
-      null,
-    ]
-  }
+  style={null}
 >
   <View
     style={
@@ -1090,12 +1027,7 @@ exports[`RTL BpkTextInput should render correctly with valid false 1`] = `
 
 exports[`RTL BpkTextInput should render correctly with valid false and a validation message 1`] = `
 <View
-  style={
-    Array [
-      undefined,
-      null,
-    ]
-  }
+  style={null}
 >
   <View
     style={
@@ -1211,12 +1143,7 @@ exports[`RTL BpkTextInput should render correctly with valid false and a validat
 
 exports[`RTL BpkTextInput should render correctly with value 1`] = `
 <View
-  style={
-    Array [
-      undefined,
-      null,
-    ]
-  }
+  style={null}
 >
   <View
     style={

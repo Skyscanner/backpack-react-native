@@ -17,15 +17,16 @@
  */
 /* @flow */
 
-import React, { Component, isValidElement } from 'react';
 import PropTypes from 'prop-types';
-import { type Element, StyleSheet, View, ViewPropTypes } from 'react-native';
 import {
   withTheme,
   getThemeAttributes,
   makeThemePropType,
 } from 'react-native-bpk-theming';
+import { StyleSheet, View, ViewPropTypes } from 'react-native';
+import React, { Component, isValidElement, type Element } from 'react';
 import { colorGray50, colorGray100 } from 'bpk-tokens/tokens/base.react.native';
+import { type ViewStyleProp } from 'react-native/Libraries/StyleSheet/StyleSheet';
 
 import {
   type CommonTheme,
@@ -33,9 +34,6 @@ import {
   THEME_ATTRIBUTES,
   TITLE_PROPTYPE,
 } from './common-types';
-import BpkNavigationBarBackButtonIOS from './BpkNavigationBarBackButtonIOS';
-import BpkNavigationBarTextButtonIOS from './BpkNavigationBarTextButtonIOS';
-import BpkNavigationBarIconButtonIOS from './BpkNavigationBarIconButtonIOS';
 import TitleView from './TitleView';
 import isIphoneX from './isIphoneX';
 
@@ -101,19 +99,13 @@ type IOSTheme = {
   navigationBarPrimaryColor: string,
 };
 
-type ButtonType =
-  | typeof BpkNavigationBarBackButtonIOS
-  | typeof BpkNavigationBarTextButtonIOS
-  | typeof BpkNavigationBarIconButtonIOS;
-
 export type Props = {
   title: TitleProp,
   theme: ?IOSTheme,
-  leadingButton: ?Element<ButtonType>,
-  trailingButton: ?Element<ButtonType>,
+  leadingButton: ?Element<any>,
+  trailingButton: ?Element<any>,
   subtitleView: ?Element<any>,
-  // FIXME: We need a better flow type for style
-  style: any,
+  style: ViewStyleProp,
 };
 
 class BpkNavigationBar extends Component<Props, {}> {

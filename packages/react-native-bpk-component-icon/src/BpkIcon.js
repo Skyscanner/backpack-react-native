@@ -27,6 +27,7 @@ import {
   spacingLg,
   colorGray700,
 } from 'bpk-tokens/tokens/base.react.native';
+import { type TextStyleProp } from 'react-native/Libraries/StyleSheet/StyleSheet';
 
 const styles = StyleSheet.create({
   icon: {
@@ -46,7 +47,7 @@ const mapCharacterCode = characterCode =>
 export type Props = {
   icon: string,
   small?: boolean,
-  style: ?(Object | Array<Object>),
+  style: TextStyleProp,
 };
 
 const BpkIcon = (props: Props) => {

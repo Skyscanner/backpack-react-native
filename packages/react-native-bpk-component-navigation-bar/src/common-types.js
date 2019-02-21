@@ -17,7 +17,7 @@
  */
 /* @flow */
 import PropTypes from 'prop-types';
-import { type Element } from 'react-native';
+import { type Element } from 'react';
 
 type StatusBarStyle = 'light-content' | 'dark-content';
 

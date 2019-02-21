@@ -20,14 +20,15 @@
 
 import { type Node } from 'react';
 import PropTypes from 'prop-types';
-import { type StyleObj, ViewPropTypes } from 'react-native';
+import { ViewPropTypes } from 'react-native';
+import { type ViewStyleProp } from 'react-native/Libraries/StyleSheet/StyleSheet';
 
 export type Props = {
   accessibilityLabel: string,
   disabled: boolean,
   onPress: () => mixed,
   label: string,
-  style: ?StyleObj,
+  style: ViewStyleProp,
 };
 
 export type InnerProps = {
@@ -35,8 +36,8 @@ export type InnerProps = {
   children: Node,
   disabled: boolean,
   selected: boolean,
-  style: StyleObj,
-  userStyle: ?StyleObj,
+  style: ViewStyleProp,
+  userStyle: ViewStyleProp,
 };
 
 export const commonPropTypes = {

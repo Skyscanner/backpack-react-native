@@ -41,7 +41,6 @@ storiesOf('react-native-bpk-component-image', module)
   .addDecorator(CenterDecorator)
   .add('docs:default', () => (
     <BpkImage
-      alt="test"
       source={{
         uri: 'https://unsplash.com/photos/fZ1gqh4jPgM/download?force=true',
       }}
@@ -51,7 +50,6 @@ storiesOf('react-native-bpk-component-image', module)
   .add('docs:no-border-radius', () => (
     <BpkImage
       rounded={false}
-      alt="test"
       source={{
         uri: 'https://unsplash.com/photos/NCq2PGvLWKM/download?force=true',
       }}
@@ -60,7 +58,6 @@ storiesOf('react-native-bpk-component-image', module)
   ))
   .add('With Loading Behaviour', () => (
     <BpkImageWithLoading
-      alt="test"
       style={styles.image}
       source={{
         uri: 'https://unsplash.com/photos/HEkMWKpynBA/download?force=true',
@@ -71,7 +68,6 @@ storiesOf('react-native-bpk-component-image', module)
     <BpkImage
       inView={false}
       loaded={false}
-      alt="test"
       source={{
         uri: 'https://unsplash.com/photos/fZ1gqh4jPgM/download?force=true',
       }}
@@ -81,7 +77,6 @@ storiesOf('react-native-bpk-component-image', module)
   .add('With Custom Image Component', () => (
     <BpkImage
       imageComponent={CustomImage}
-      alt="test"
       source={{
         uri: 'https://unsplash.com/photos/InrNz281-S8/download?force=true',
       }}
@@ -91,7 +86,6 @@ storiesOf('react-native-bpk-component-image', module)
   .add('With Custom Loading Image Component', () => (
     <BpkImageWithLoading
       imageComponent={CustomImage}
-      alt="test"
       source={{
         uri: 'https://unsplash.com/photos/InrNz281-S8/download?force=true',
       }}

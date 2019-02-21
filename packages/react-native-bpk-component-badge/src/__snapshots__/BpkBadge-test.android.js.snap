@@ -1085,15 +1085,16 @@ exports[`Android BpkBadge should render correctly with icon 1`] = `
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
-              Object {
-                "includeFontPadding": false,
-                "marginEnd": 4,
-              },
               Object {
                 "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
               },
+              undefined,
             ],
             Object {
               "marginEnd": 0,
@@ -1171,15 +1172,16 @@ exports[`Android BpkBadge should render correctly with icon 1`] = `
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
-              Object {
-                "includeFontPadding": false,
-                "marginEnd": 4,
-              },
               Object {
                 "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
               },
+              undefined,
             ],
             Object {
               "marginEnd": 0,
@@ -1257,14 +1259,17 @@ exports[`Android BpkBadge should render correctly with icon 1`] = `
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
               Object {
+                "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
-                "marginEnd": 4,
               },
               Object {
                 "color": "rgb(255, 255, 255)",
-                "includeFontPadding": false,
               },
             ],
             Object {
@@ -1345,15 +1350,16 @@ exports[`Android BpkBadge should render correctly with icon 1`] = `
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
-              Object {
-                "includeFontPadding": false,
-                "marginEnd": 4,
-              },
               Object {
                 "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
               },
+              undefined,
             ],
             Object {
               "marginEnd": 0,
@@ -1431,15 +1437,16 @@ exports[`Android BpkBadge should render correctly with icon 1`] = `
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
-              Object {
-                "includeFontPadding": false,
-                "marginEnd": 4,
-              },
               Object {
                 "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
               },
+              undefined,
             ],
             Object {
               "marginEnd": 0,
@@ -1524,14 +1531,17 @@ exports[`Android BpkBadge should render correctly with icon 1`] = `
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
               Object {
+                "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
-                "marginEnd": 4,
               },
               Object {
                 "color": "rgb(255, 255, 255)",
-                "includeFontPadding": false,
               },
             ],
             Object {
@@ -1617,17 +1627,18 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
-              Object {
-                "includeFontPadding": false,
-                "marginEnd": 4,
-              },
               Object {
                 "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
               },
+              undefined,
             ],
-            null,
+            Object {},
           ],
         ]
       }
@@ -1651,10 +1662,13 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
           ],
         ]
       }
@@ -1675,15 +1689,16 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
-              Object {
-                "includeFontPadding": false,
-                "marginEnd": 4,
-              },
               Object {
                 "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
               },
+              undefined,
             ],
             Object {
               "marginEnd": 0,
@@ -1761,17 +1776,18 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
-              Object {
-                "includeFontPadding": false,
-                "marginEnd": 4,
-              },
               Object {
                 "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
               },
+              undefined,
             ],
-            null,
+            Object {},
           ],
         ]
       }
@@ -1795,10 +1811,13 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
           ],
         ]
       }
@@ -1819,15 +1838,16 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
-              Object {
-                "includeFontPadding": false,
-                "marginEnd": 4,
-              },
               Object {
                 "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
               },
+              undefined,
             ],
             Object {
               "marginEnd": 0,
@@ -1905,17 +1925,20 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
               Object {
+                "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
-                "marginEnd": 4,
               },
               Object {
                 "color": "rgb(255, 255, 255)",
-                "includeFontPadding": false,
               },
             ],
-            null,
+            Object {},
           ],
         ]
       }
@@ -1939,10 +1962,15 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+              },
+            ],
           ],
         ]
       }
@@ -1963,14 +1991,17 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
               Object {
+                "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
-                "marginEnd": 4,
               },
               Object {
                 "color": "rgb(255, 255, 255)",
-                "includeFontPadding": false,
               },
             ],
             Object {
@@ -2051,17 +2082,18 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
-              Object {
-                "includeFontPadding": false,
-                "marginEnd": 4,
-              },
               Object {
                 "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
               },
+              undefined,
             ],
-            null,
+            Object {},
           ],
         ]
       }
@@ -2085,10 +2117,13 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
           ],
         ]
       }
@@ -2109,15 +2144,16 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
-              Object {
-                "includeFontPadding": false,
-                "marginEnd": 4,
-              },
               Object {
                 "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
               },
+              undefined,
             ],
             Object {
               "marginEnd": 0,
@@ -2195,17 +2231,18 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
-              Object {
-                "includeFontPadding": false,
-                "marginEnd": 4,
-              },
               Object {
                 "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
               },
+              undefined,
             ],
-            null,
+            Object {},
           ],
         ]
       }
@@ -2229,10 +2266,13 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
           ],
         ]
       }
@@ -2253,15 +2293,16 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
-              Object {
-                "includeFontPadding": false,
-                "marginEnd": 4,
-              },
               Object {
                 "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
               },
+              undefined,
             ],
             Object {
               "marginEnd": 0,
@@ -2346,17 +2387,20 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
               Object {
+                "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
-                "marginEnd": 4,
               },
               Object {
                 "color": "rgb(255, 255, 255)",
-                "includeFontPadding": false,
               },
             ],
-            null,
+            Object {},
           ],
         ]
       }
@@ -2380,10 +2424,15 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+              },
+            ],
           ],
         ]
       }
@@ -2404,14 +2453,17 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
               Object {
+                "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
-                "marginEnd": 4,
               },
               Object {
                 "color": "rgb(255, 255, 255)",
-                "includeFontPadding": false,
               },
             ],
             Object {
@@ -2497,17 +2549,18 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
-              Object {
-                "includeFontPadding": false,
-                "marginEnd": 4,
-              },
               Object {
                 "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
               },
+              undefined,
             ],
-            null,
+            Object {},
           ],
         ]
       }
@@ -2531,10 +2584,13 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
           ],
         ]
       }
@@ -2555,15 +2611,16 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
-              Object {
-                "includeFontPadding": false,
-                "marginEnd": 4,
-              },
               Object {
                 "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
               },
+              undefined,
             ],
             Object {
               "marginEnd": 0,
@@ -2614,17 +2671,18 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
-              Object {
-                "includeFontPadding": false,
-                "marginEnd": 4,
-              },
               Object {
                 "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
               },
+              undefined,
             ],
-            null,
+            Object {},
           ],
         ]
       }
@@ -2648,10 +2706,13 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
           ],
         ]
       }
@@ -2672,15 +2733,16 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
-              Object {
-                "includeFontPadding": false,
-                "marginEnd": 4,
-              },
               Object {
                 "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
               },
+              undefined,
             ],
             Object {
               "marginEnd": 0,
@@ -2731,17 +2793,20 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
               Object {
+                "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
-                "marginEnd": 4,
               },
               Object {
                 "color": "rgb(255, 255, 255)",
-                "includeFontPadding": false,
               },
             ],
-            null,
+            Object {},
           ],
         ]
       }
@@ -2765,10 +2830,15 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+              },
+            ],
           ],
         ]
       }
@@ -2789,14 +2859,17 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
               Object {
+                "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
-                "marginEnd": 4,
               },
               Object {
                 "color": "rgb(255, 255, 255)",
-                "includeFontPadding": false,
               },
             ],
             Object {
@@ -2848,17 +2921,18 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
-              Object {
-                "includeFontPadding": false,
-                "marginEnd": 4,
-              },
               Object {
                 "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
               },
+              undefined,
             ],
-            null,
+            Object {},
           ],
         ]
       }
@@ -2882,10 +2956,13 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
           ],
         ]
       }
@@ -2906,15 +2983,16 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
-              Object {
-                "includeFontPadding": false,
-                "marginEnd": 4,
-              },
               Object {
                 "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
               },
+              undefined,
             ],
             Object {
               "marginEnd": 0,
@@ -2965,17 +3043,18 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
-              Object {
-                "includeFontPadding": false,
-                "marginEnd": 4,
-              },
               Object {
                 "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
               },
+              undefined,
             ],
-            null,
+            Object {},
           ],
         ]
       }
@@ -2999,10 +3078,13 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(82, 76, 97)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
           ],
         ]
       }
@@ -3023,15 +3105,16 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
-              Object {
-                "includeFontPadding": false,
-                "marginEnd": 4,
-              },
               Object {
                 "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
               },
+              undefined,
             ],
             Object {
               "marginEnd": 0,
@@ -3089,17 +3172,20 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
               Object {
+                "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
-                "marginEnd": 4,
               },
               Object {
                 "color": "rgb(255, 255, 255)",
-                "includeFontPadding": false,
               },
             ],
-            null,
+            Object {},
           ],
         ]
       }
@@ -3123,10 +3209,15 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
               "includeFontPadding": false,
               "marginEnd": 4,
             },
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "includeFontPadding": false,
-            },
+            Array [
+              Object {
+                "color": "rgb(82, 76, 97)",
+                "includeFontPadding": false,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+              },
+            ],
           ],
         ]
       }
@@ -3147,14 +3238,17 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
             "fontSize": 16,
           },
           Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
             Array [
               Object {
+                "color": "rgb(82, 76, 97)",
                 "includeFontPadding": false,
-                "marginEnd": 4,
               },
               Object {
                 "color": "rgb(255, 255, 255)",
-                "includeFontPadding": false,
               },
             ],
             Object {

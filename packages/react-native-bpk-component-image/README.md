@@ -72,7 +72,6 @@ export default () => (
 
 | Property        | PropType                               | Required  | Default Value   |
 | --------------- | -------------------------------------- | --------- | --------------- |
-| alt             | string                                 | true      | -               |
 | source          | oneOf(number, object, arrayOf(object)) | true      | -               |
 | imageComponent  | function                               | false     | Animated.Image  |
 | inView          | boolean                                | false     | true            |

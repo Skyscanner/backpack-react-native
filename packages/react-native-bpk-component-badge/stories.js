@@ -70,6 +70,9 @@ const style = StyleSheet.create({
   inverse: {
     backgroundColor: colorGray700,
   },
+  destructive: {},
+  success: {},
+  warning: {},
 });
 
 const capitalize = input => input.charAt(0).toUpperCase() + input.slice(1);
@@ -95,7 +98,7 @@ const generateBadgeStory = (
   const badges = Object.keys(BADGE_TYPES).map(i => (
     <View key={i}>
       <StorySubheading>{capitalize(i)}</StorySubheading>
-      <View style={[badgeWrapperStyle, style[i]]}>
+      <View style={[badgeWrapperStyle, style[i] ? style[i] : {}]}>
         {contents.map(content => (
           <Fragment key={content}>
             <BpkBadge
@@ -110,7 +113,6 @@ const generateBadgeStory = (
               }
               docked={config.docked}
               type={i}
-              style={style.badge}
             />
             {config.icons === 'multiple' && (
               <BpkBadge
@@ -125,7 +127,6 @@ const generateBadgeStory = (
                 }
                 docked={config.docked}
                 type={i}
-                style={style.badge}
               />
             )}
           </Fragment>

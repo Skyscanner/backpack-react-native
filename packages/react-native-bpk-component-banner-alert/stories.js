@@ -231,7 +231,7 @@ storiesOf('react-native-bpk-component-banner-alert', module)
         type={ALERT_TYPES.neutral}
         message="Neutral alert with more information."
       >
-        <BpkText textStyle="sm" style={styles.child}>
+        <BpkText textStyle="sm">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
           sagittis sagittis purus, id blandit ipsum. Pellentesque nec diam nec
           erat condimentum dapibus. Nunc diam augue, egestas id egestas ut,
@@ -244,7 +244,7 @@ storiesOf('react-native-bpk-component-banner-alert', module)
         type={ALERT_TYPES.neutral}
         message="Neutral alert with more information and long message with emoji 😀."
       >
-        <BpkText textStyle="sm" style={styles.child}>
+        <BpkText textStyle="sm">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
           sagittis sagittis purus, id blandit ipsum. Pellentesque nec diam nec
           erat condimentum dapibus. Nunc diam augue, egestas id egestas ut,
@@ -257,7 +257,7 @@ storiesOf('react-native-bpk-component-banner-alert', module)
         type={ALERT_TYPES.success}
         message="Successful alert with more information."
       >
-        <BpkText textStyle="sm" style={styles.child}>
+        <BpkText textStyle="sm">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
           sagittis sagittis purus, id blandit ipsum. Pellentesque nec diam nec
           erat condimentum dapibus. Nunc diam augue, egestas id egestas ut,
@@ -270,7 +270,7 @@ storiesOf('react-native-bpk-component-banner-alert', module)
         type={ALERT_TYPES.warn}
         message="Warn alert with more information."
       >
-        <BpkText textStyle="sm" style={styles.child}>
+        <BpkText textStyle="sm">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
           sagittis sagittis purus, id blandit ipsum. Pellentesque nec diam nec
           erat condimentum dapibus. Nunc diam augue, egestas id egestas ut,
@@ -283,7 +283,7 @@ storiesOf('react-native-bpk-component-banner-alert', module)
         type={ALERT_TYPES.error}
         message="Error alert with more information."
       >
-        <BpkText textStyle="sm" style={styles.child}>
+        <BpkText textStyle="sm">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
           sagittis sagittis purus, id blandit ipsum. Pellentesque nec diam nec
           erat condimentum dapibus. Nunc diam augue, egestas id egestas ut,
@@ -316,7 +316,7 @@ storiesOf('react-native-bpk-component-banner-alert', module)
         type={ALERT_TYPES.error}
         message="Error alert with more information."
       >
-        <BpkText textStyle="sm" style={styles.child}>
+        <BpkText textStyle="sm">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
           sagittis sagittis purus, id blandit ipsum. Pellentesque nec diam nec
           erat condimentum dapibus. Nunc diam augue, egestas id egestas ut,
@@ -367,7 +367,7 @@ storiesOf('react-native-bpk-component-banner-alert', module)
           expanded
           onToggleExpanded={() => null}
         >
-          <BpkText textStyle="sm" style={styles.child}>
+          <BpkText textStyle="sm">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             sagittis sagittis purus, id blandit ipsum. Pellentesque nec diam nec
             erat condimentum dapibus. Nunc diam augue, egestas id egestas ut,

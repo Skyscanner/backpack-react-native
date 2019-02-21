@@ -29,7 +29,8 @@ import {
   spacingLg,
 } from 'bpk-tokens/tokens/base.react.native';
 import TransitionGroup from '@skyscanner/react-native-transitiongroup';
-import { StyleSheet, ViewPropTypes, type StyleObj } from 'react-native';
+import { StyleSheet, ViewPropTypes } from 'react-native';
+import { type ViewStyleProp } from 'react-native/Libraries/StyleSheet/StyleSheet';
 
 import BpkCarouselIndicatorDot, {
   INDICATOR_SIZES,
@@ -92,7 +93,7 @@ const getIndicatorSize = (pageCount, index, selectedIndex) => {
 export type Props = {
   pageCount: number,
   selectedIndex: number,
-  style: ?StyleObj,
+  style: ViewStyleProp,
 };
 
 const getIndicatorIndexFromKey = key => parseInt(key.replace(/\D/g, ''), 10);

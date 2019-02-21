@@ -30,7 +30,8 @@ import {
   carouselIndicatorDotSizeMd,
   carouselIndicatorDotSizeBase,
 } from 'bpk-tokens/tokens/base.react.native';
-import { Animated, StyleSheet, type AnimatedValue } from 'react-native';
+import { Animated, StyleSheet } from 'react-native';
+import AnimatedValue from 'react-native/Libraries/Animated/src/nodes/AnimatedValue';
 
 const styles = StyleSheet.create({
   indicator: {
@@ -85,17 +86,17 @@ class BpkCarouselIndicatorDot extends React.PureComponent<Props, {}> {
     this.animate(this.props.size);
   }
 
-  componentWillEnter(callback: () => mixed) {
+  componentWillEnter(callback: () => void) {
     this.size.setValue(indicatorDimensions[INDICATOR_SIZES.invisible]);
 
     this.animate(this.props.size, callback);
   }
 
-  componentWillLeave(callback: () => mixed) {
+  componentWillLeave(callback: () => void) {
     this.animate(INDICATOR_SIZES.invisible, callback);
   }
 
-  animate = (size: $Keys<typeof INDICATOR_SIZES>, callback: ?() => mixed) => {
+  animate = (size: $Keys<typeof INDICATOR_SIZES>, callback: ?() => void) => {
     Animated.timing(this.size, {
       duration: animationDurationSm,
       toValue: indicatorDimensions[size],

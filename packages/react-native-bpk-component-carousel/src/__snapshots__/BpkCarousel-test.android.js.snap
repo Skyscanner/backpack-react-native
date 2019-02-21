@@ -87,7 +87,7 @@ exports[`Android BpkCarousel should render correctly 1`] = `
                 "calls": [Circular],
                 "results": Array [
                   Object {
-                    "isThrow": false,
+                    "type": "return",
                     "value": undefined,
                   },
                 ],
@@ -117,7 +117,7 @@ exports[`Android BpkCarousel should render correctly 1`] = `
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -286,11 +286,11 @@ exports[`Android BpkCarousel should render correctly with an "accessibilityLabel
                 "calls": [Circular],
                 "results": Array [
                   Object {
-                    "isThrow": false,
+                    "type": "return",
                     "value": undefined,
                   },
                   Object {
-                    "isThrow": false,
+                    "type": "return",
                     "value": undefined,
                   },
                 ],
@@ -364,11 +364,11 @@ exports[`Android BpkCarousel should render correctly with an "accessibilityLabel
                 "calls": [Circular],
                 "results": Array [
                   Object {
-                    "isThrow": false,
+                    "type": "return",
                     "value": undefined,
                   },
                   Object {
-                    "isThrow": false,
+                    "type": "return",
                     "value": undefined,
                   },
                 ],
@@ -398,11 +398,11 @@ exports[`Android BpkCarousel should render correctly with an "accessibilityLabel
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -571,15 +571,15 @@ exports[`Android BpkCarousel should render correctly without indicators 1`] = `
                 "calls": [Circular],
                 "results": Array [
                   Object {
-                    "isThrow": false,
+                    "type": "return",
                     "value": undefined,
                   },
                   Object {
-                    "isThrow": false,
+                    "type": "return",
                     "value": undefined,
                   },
                   Object {
-                    "isThrow": false,
+                    "type": "return",
                     "value": undefined,
                   },
                 ],
@@ -653,15 +653,15 @@ exports[`Android BpkCarousel should render correctly without indicators 1`] = `
                 "calls": [Circular],
                 "results": Array [
                   Object {
-                    "isThrow": false,
+                    "type": "return",
                     "value": undefined,
                   },
                   Object {
-                    "isThrow": false,
+                    "type": "return",
                     "value": undefined,
                   },
                   Object {
-                    "isThrow": false,
+                    "type": "return",
                     "value": undefined,
                   },
                 ],
@@ -735,15 +735,15 @@ exports[`Android BpkCarousel should render correctly without indicators 1`] = `
                 "calls": [Circular],
                 "results": Array [
                   Object {
-                    "isThrow": false,
+                    "type": "return",
                     "value": undefined,
                   },
                   Object {
-                    "isThrow": false,
+                    "type": "return",
                     "value": undefined,
                   },
                   Object {
-                    "isThrow": false,
+                    "type": "return",
                     "value": undefined,
                   },
                 ],
@@ -773,15 +773,15 @@ exports[`Android BpkCarousel should render correctly without indicators 1`] = `
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],

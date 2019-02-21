@@ -47,13 +47,13 @@ const BpkBadgeIcons = (props: Props) => {
   const itemStyle = [styles.item];
 
   if (userItemStyle) {
-    itemStyle.push(StyleSheet.flatten(userItemStyle));
+    itemStyle.push(userItemStyle);
   }
 
   const adjustedIcons = icons.map((icon, index) =>
     React.cloneElement(icon, {
       small: true,
-      style: [itemStyle, index === icons.length - 1 ? styles.lastItem : null],
+      style: [...itemStyle, index === icons.length - 1 ? styles.lastItem : {}],
     }),
   );
 
