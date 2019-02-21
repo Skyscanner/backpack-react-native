@@ -108,6 +108,7 @@
   },
   "greenkeeper": {
     "ignore": [
+      "flow-bin",
       "react",
       "react-dom",
       "react-test-renderer",
