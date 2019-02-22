@@ -14,7 +14,7 @@
     "react-native": ">= 0.47.0"
   },
   "dependencies": {
-    "bpk-svgs": "^6.3.1",
+    "bpk-svgs": "^6.4.0",
     "bpk-tokens": "^27.4.7",
     "prop-types": "^15.5.8"
   },
