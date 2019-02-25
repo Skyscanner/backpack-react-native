@@ -20,24 +20,29 @@
 
 import PropTypes from 'prop-types';
 import { type Element } from 'react';
+import { ViewPropTypes } from 'react-native';
+import { type ViewStyleProp } from 'react-native/Libraries/StyleSheet/StyleSheet';
 
-export type ListItemImage = Element<any>;
+export type SectionListItemImage = Element<any>;
 
-export type ListItemProps = {
-  onPress: ListItemProps => void,
+export type SectionListItemProps = {
+  onPress: () => void,
   title: string,
   selected: boolean,
-  image: ?ListItemImage,
+  image: ?SectionListItemImage,
+  style: ViewStyleProp,
 };
 
-export const LIST_ITEM_PROP_TYPES = {
+export const SECTION_LIST_ITEM_PROP_TYPES = {
   onPress: PropTypes.func.isRequired,
   title: PropTypes.string.isRequired,
   image: PropTypes.element,
   selected: PropTypes.bool,
+  style: ViewPropTypes.style,
 };
 
-export const LIST_ITEM_DEFAULT_PROPS = {
+export const SECTION_LIST_ITEM_DEFAULT_PROPS = {
   image: null,
   selected: false,
+  style: null,
 };

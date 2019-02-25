@@ -30,9 +30,9 @@ import {
 
 import BpkRadioIcon from './BpkRadioIcon.android';
 import {
-  type ListItemProps,
-  LIST_ITEM_PROP_TYPES,
-  LIST_ITEM_DEFAULT_PROPS,
+  type SectionListItemProps,
+  SECTION_LIST_ITEM_PROP_TYPES,
+  SECTION_LIST_ITEM_DEFAULT_PROPS,
 } from './common-types';
 
 const ANDROID_LIST_ITEM_HEIGHT = 48;
@@ -64,10 +64,10 @@ const styles = StyleSheet.create({
   },
 });
 
-class BpkSectionListItem extends React.PureComponent<ListItemProps> {
-  static propTypes = LIST_ITEM_PROP_TYPES;
+class BpkSectionListItem extends React.PureComponent<SectionListItemProps> {
+  static propTypes = SECTION_LIST_ITEM_PROP_TYPES;
 
-  static defaultProps = LIST_ITEM_DEFAULT_PROPS;
+  static defaultProps = SECTION_LIST_ITEM_DEFAULT_PROPS;
 
   render() {
     const { image, title, selected, ...rest } = this.props;

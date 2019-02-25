@@ -31,7 +31,7 @@ import {
 } from 'bpk-tokens/tokens/base.react.native';
 
 import {
-  type ListItemProps,
+  type FlatListItemProps,
   LIST_ITEM_PROP_TYPES,
   LIST_ITEM_DEFAULT_PROPS,
 } from './common-types';
@@ -71,13 +71,13 @@ const styles = StyleSheet.create({
   },
 });
 
-class BpkFlatListItem extends React.PureComponent<ListItemProps> {
+class BpkFlatListItem extends React.PureComponent<FlatListItemProps> {
   static propTypes = LIST_ITEM_PROP_TYPES;
 
   static defaultProps = LIST_ITEM_DEFAULT_PROPS;
 
   render() {
-    const { image, title, selected, ...rest } = this.props;
+    const { image, title, selected, style, ...rest } = this.props;
     const iconStyles = [styles.tick];
     if (selected) {
       iconStyles.push(styles.tickVisible);
@@ -94,7 +94,7 @@ class BpkFlatListItem extends React.PureComponent<ListItemProps> {
         accessibilityComponentType="button"
         accessibilityLabel={title}
         accessibilityTraits={['button']}
-        style={styles.outer}
+        style={[styles.outer, style]}
         {...rest}
       >
         <View style={styles.content}>

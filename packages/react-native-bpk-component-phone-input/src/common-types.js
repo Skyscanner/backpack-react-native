@@ -31,19 +31,12 @@ export type Code = {
   name: string,
 };
 
-export type ListItemProps = {
-  ...$Exact<Code>,
-  onPress: any => void,
-  selected: boolean,
-  flag: ?Flag,
-};
-
 export type RenderFlag = Code => ?Flag;
 
-export type ListCommonProps = {
+export type DialingCodeListProps = {
   dialingCodes: Array<Code>,
   renderFlag: RenderFlag,
-  onItemPress: any => void,
+  onItemPress: Code => void,
   selectedId: ?string,
 };
 
