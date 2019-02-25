@@ -21,6 +21,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StyleSheet, View, ViewPropTypes } from 'react-native';
 import { spacingLg, colorGray100 } from 'bpk-tokens/tokens/base.react.native';
+import { type ViewStyleProp } from 'react-native/Libraries/StyleSheet/StyleSheet';
 
 import { type Flag } from './common-types';
 
@@ -29,7 +30,7 @@ const ASPECT_RATIO = 3 / 2; // 3:2
 type Props = {
   width: number,
   flag: ?Flag,
-  style: ?(Object | Array<Object>),
+  style: ViewStyleProp,
 };
 
 const styles = StyleSheet.create({

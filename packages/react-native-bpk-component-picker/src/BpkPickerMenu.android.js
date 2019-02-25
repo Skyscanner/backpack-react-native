@@ -121,7 +121,7 @@ const BpkPickerMenu = (props: PickerMenuProps) => {
           })}
           initialScrollIndex={initialScrollIndex}
           initialNumToRender={MAX_ROWS_TO_DISPLAY}
-          keyExtractor={item => item.index}
+          keyExtractor={item => `${item.index}`}
           renderItem={({ item }) => {
             const { index } = item;
             return (

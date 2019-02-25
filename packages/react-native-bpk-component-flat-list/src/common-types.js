@@ -20,9 +20,8 @@
 
 import PropTypes from 'prop-types';
 import { type Element } from 'react';
-import { Image } from 'react-native';
 
-export type ListItemImage = Element<typeof Image>;
+export type ListItemImage = Element<any>;
 
 export type ListItemProps = {
   onPress: ListItemProps => void,

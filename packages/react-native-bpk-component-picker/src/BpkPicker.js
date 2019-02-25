@@ -30,7 +30,7 @@ type Props = {
   onClose: () => mixed,
   onValueChange: (PickerValue, number) => mixed,
   isOpen: boolean,
-  selectedValue: ?PickerValue,
+  selectedValue: PickerValue,
 };
 
 const BpkPicker = (props: Props) => {
