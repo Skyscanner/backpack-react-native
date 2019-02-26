@@ -69,4 +69,20 @@ describe('Android', () => {
 
     expect(tree).toMatchSnapshot();
   });
+
+  it('should support "uppercase" equal to false', () => {
+    const onPressFn = jest.fn();
+
+    const tree = renderer
+      .create(
+        <BpkButtonLink
+          title="Lorem ipsum"
+          onPress={onPressFn}
+          uppercase={false}
+        />,
+      )
+      .toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
 });

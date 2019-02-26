@@ -705,3 +705,63 @@ exports[`Android should support "borderlessBackground" equal to false 1`] = `
   </View>
 </View>
 `;
+
+exports[`Android should support "uppercase" equal to false 1`] = `
+<View
+  style={null}
+>
+  <View
+    accessibilityLabel="Lorem ipsum"
+    accessible={true}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "minHeight": 32,
+        },
+      ]
+    }
+  >
+    <Text
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "color": "rgb(0, 178, 214)",
+            },
+          ],
+        ]
+      }
+    >
+      Lorem ipsum
+    </Text>
+  </View>
+</View>
+`;
