@@ -18,15 +18,19 @@
 /* @flow */
 
 import PropTypes from 'prop-types';
+import React, {
+  Component,
+  isValidElement,
+  type Element,
+  type ElementProps,
+} from 'react';
 import {
   withTheme,
   getThemeAttributes,
   makeThemePropType,
 } from 'react-native-bpk-theming';
 import { StyleSheet, View, ViewPropTypes } from 'react-native';
-import React, { Component, isValidElement, type Element } from 'react';
 import { colorGray50, colorGray100 } from 'bpk-tokens/tokens/base.react.native';
-import { type ViewStyleProp } from 'react-native/Libraries/StyleSheet/StyleSheet';
 
 import {
   type CommonTheme,
@@ -36,6 +40,9 @@ import {
 } from './common-types';
 import TitleView from './TitleView';
 import isIphoneX from './isIphoneX';
+
+type ViewProps = ElementProps<typeof View>;
+type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
 
 const IOS_THEME_ATTRIBUTES = [
   ...THEME_ATTRIBUTES,

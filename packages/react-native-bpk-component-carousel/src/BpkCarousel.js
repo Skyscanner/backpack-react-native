@@ -18,10 +18,13 @@
 
 /* @flow */
 
-import React, { type Element, type ChildrenArray } from 'react';
+import React, {
+  type Element,
+  type ChildrenArray,
+  type ElementProps,
+} from 'react';
 import PropTypes from 'prop-types';
 import { ViewPropTypes, StyleSheet, View } from 'react-native';
-import { type ViewStyleProp } from 'react-native/Libraries/StyleSheet/StyleSheet';
 import {
   DataProvider,
   LayoutProvider,
@@ -31,6 +34,9 @@ import BpkCarouselIndicator from 'react-native-bpk-component-carousel-indicator'
 import { spacingXl } from 'bpk-tokens/tokens/base.react.native';
 
 import typeof BpkCarouselItem from './BpkCarouselItem';
+
+type ViewProps = ElementProps<typeof View>;
+type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
 
 // 16ms would mean 60fps (1000ms / 60fps = 16ms) but that leads to too much
 // calls to setState when the carousel is being scrolled fast.

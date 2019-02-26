@@ -18,9 +18,11 @@
 
 /* @flow */
 
-import React from 'react';
+import React, { type ElementProps } from 'react';
 import { StyleSheet, View, ViewPropTypes } from 'react-native';
-import { type ViewStyleProp } from 'react-native/Libraries/StyleSheet/StyleSheet';
+
+type ViewProps = ElementProps<typeof View>;
+type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
 
 const styles = StyleSheet.create({
   base: {

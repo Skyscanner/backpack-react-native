@@ -18,9 +18,12 @@
 
 /* @flow */
 
-import { ViewPropTypes } from 'react-native';
+import { type ElementProps } from 'react';
+import { View, ViewPropTypes } from 'react-native';
 import PropTypes from 'prop-types';
-import { type ViewStyleProp } from 'react-native/Libraries/StyleSheet/StyleSheet';
+
+type ViewProps = ElementProps<typeof View>;
+type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
 
 export const SELECTION_TYPES = {
   single: 'single',

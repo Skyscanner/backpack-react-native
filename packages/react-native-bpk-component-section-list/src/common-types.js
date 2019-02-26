@@ -19,9 +19,11 @@
 /* @flow */
 
 import PropTypes from 'prop-types';
-import { type Element } from 'react';
-import { ViewPropTypes } from 'react-native';
-import { type ViewStyleProp } from 'react-native/Libraries/StyleSheet/StyleSheet';
+import { View, ViewPropTypes } from 'react-native';
+import { type Element, type ElementProps } from 'react';
+
+type ViewProps = ElementProps<typeof View>;
+type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
 
 export type SectionListItemImage = Element<any>;
 

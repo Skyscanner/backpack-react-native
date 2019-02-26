@@ -19,9 +19,11 @@
 /* @flow */
 
 import PropTypes from 'prop-types';
-import React, { type Node } from 'react';
 import { View, ViewPropTypes } from 'react-native';
-import { type ViewStyleProp } from 'react-native/Libraries/StyleSheet/StyleSheet';
+import React, { type Node, type ElementProps } from 'react';
+
+type ViewProps = ElementProps<typeof View>;
+type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
 
 export type Props = {
   children: Node,
