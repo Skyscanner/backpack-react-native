@@ -28,7 +28,7 @@ import BpkSectionList, {
 
 import BpkFlag from './BpkFlag';
 import {
-  type ListCommonProps,
+  type DialingCodeListProps,
   LIST_COMMON_PROP_TYPES,
   LIST_COMMON_DEFAULT_PROPS,
 } from './common-types';
@@ -62,7 +62,7 @@ const convertCodesIntoSections = data => {
 };
 
 export type Props = {
-  ...$Exact<ListCommonProps>,
+  ...$Exact<DialingCodeListProps>,
 };
 
 const BpkDialingCodeList = ({

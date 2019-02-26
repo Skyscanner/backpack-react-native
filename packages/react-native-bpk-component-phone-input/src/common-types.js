@@ -20,11 +20,10 @@
 
 import PropTypes from 'prop-types';
 import { type Element } from 'react';
-import { Image } from 'react-native';
 
 export type Id = string;
 
-export type Flag = Element<typeof Image>;
+export type Flag = Element<any>;
 
 export type Code = {
   id: Id,
@@ -32,19 +31,12 @@ export type Code = {
   name: string,
 };
 
-export type ListItemProps = {
-  ...$Exact<Code>,
-  onPress: ListItemProps => void,
-  selected: boolean,
-  flag: ?Flag,
-};
-
 export type RenderFlag = Code => ?Flag;
 
-export type ListCommonProps = {
+export type DialingCodeListProps = {
   dialingCodes: Array<Code>,
   renderFlag: RenderFlag,
-  onItemPress: ListItemProps => void,
+  onItemPress: Code => void,
   selectedId: ?string,
 };
 

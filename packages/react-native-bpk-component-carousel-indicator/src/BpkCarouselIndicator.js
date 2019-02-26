@@ -18,7 +18,7 @@
 
 /* @flow */
 
-import React from 'react';
+import React, { type ElementProps } from 'react';
 import PropTypes from 'prop-types';
 import { setOpacity } from 'bpk-tokens';
 import {
@@ -29,12 +29,14 @@ import {
   spacingLg,
 } from 'bpk-tokens/tokens/base.react.native';
 import TransitionGroup from '@skyscanner/react-native-transitiongroup';
-import { StyleSheet, ViewPropTypes } from 'react-native';
-import { type ViewStyleProp } from 'react-native/Libraries/StyleSheet/StyleSheet';
+import { View, StyleSheet, ViewPropTypes } from 'react-native';
 
 import BpkCarouselIndicatorDot, {
   INDICATOR_SIZES,
 } from './BpkCarouselIndicatorDot';
+
+type ViewProps = ElementProps<typeof View>;
+type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
 
 const styles = StyleSheet.create({
   wrapper: {

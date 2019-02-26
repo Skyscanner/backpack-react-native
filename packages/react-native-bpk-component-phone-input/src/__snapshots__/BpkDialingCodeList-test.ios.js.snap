@@ -155,15 +155,18 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          Object {
-            "alignItems": "center",
-            "flex": 1,
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "minHeight": 44,
-            "paddingHorizontal": 16,
-            "paddingVertical": 8,
-          }
+          Array [
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "minHeight": 44,
+              "paddingHorizontal": 16,
+              "paddingVertical": 8,
+            },
+            null,
+          ]
         }
       >
         <View
@@ -321,15 +324,18 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          Object {
-            "alignItems": "center",
-            "flex": 1,
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "minHeight": 44,
-            "paddingHorizontal": 16,
-            "paddingVertical": 8,
-          }
+          Array [
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "minHeight": 44,
+              "paddingHorizontal": 16,
+              "paddingVertical": 8,
+            },
+            null,
+          ]
         }
       >
         <View
@@ -487,15 +493,18 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          Object {
-            "alignItems": "center",
-            "flex": 1,
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "minHeight": 44,
-            "paddingHorizontal": 16,
-            "paddingVertical": 8,
-          }
+          Array [
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "minHeight": 44,
+              "paddingHorizontal": 16,
+              "paddingVertical": 8,
+            },
+            null,
+          ]
         }
       >
         <View
@@ -756,15 +765,18 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          Object {
-            "alignItems": "center",
-            "flex": 1,
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "minHeight": 44,
-            "paddingHorizontal": 16,
-            "paddingVertical": 8,
-          }
+          Array [
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "minHeight": 44,
+              "paddingHorizontal": 16,
+              "paddingVertical": 8,
+            },
+            null,
+          ]
         }
       >
         <View
@@ -927,15 +939,18 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          Object {
-            "alignItems": "center",
-            "flex": 1,
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "minHeight": 44,
-            "paddingHorizontal": 16,
-            "paddingVertical": 8,
-          }
+          Array [
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "minHeight": 44,
+              "paddingHorizontal": 16,
+              "paddingVertical": 8,
+            },
+            null,
+          ]
         }
       >
         <View
@@ -1093,15 +1108,18 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          Object {
-            "alignItems": "center",
-            "flex": 1,
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "minHeight": 44,
-            "paddingHorizontal": 16,
-            "paddingVertical": 8,
-          }
+          Array [
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "minHeight": 44,
+              "paddingHorizontal": 16,
+              "paddingVertical": 8,
+            },
+            null,
+          ]
         }
       >
         <View

@@ -30,7 +30,7 @@ import {
 
 import BpkRadioIcon from './BpkRadioIcon.android';
 import {
-  type ListItemProps,
+  type FlatListItemProps,
   LIST_ITEM_PROP_TYPES,
   LIST_ITEM_DEFAULT_PROPS,
 } from './common-types';
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
   },
 });
 
-class BpkFlatListItem extends React.PureComponent<ListItemProps> {
+class BpkFlatListItem extends React.PureComponent<FlatListItemProps> {
   static propTypes = LIST_ITEM_PROP_TYPES;
 
   static defaultProps = LIST_ITEM_DEFAULT_PROPS;

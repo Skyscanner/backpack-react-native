@@ -21,13 +21,13 @@
 import { type Node } from 'react';
 import PropTypes from 'prop-types';
 
-export type PickerValue = string | number;
+export type PickerValue = ?(string | number);
 
 export type PickerMenuProps = {
   children: Node,
   onClose: () => mixed,
   onValueChange: (PickerValue, number) => mixed,
-  selectedValue: ?PickerValue,
+  selectedValue: PickerValue,
   visible: boolean,
 };
 

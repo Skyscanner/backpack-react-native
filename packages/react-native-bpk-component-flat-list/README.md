@@ -82,7 +82,7 @@ Inherits all props from React Native's [FlatList](https://facebook.github.io/rea
 | ------------------ | ------------------------------------- | -------- | ------------- |
 | onPress            | func                                  | true     | -             |
 | title              | string                                | true     | -             |
-| image              | instanceOf(Image)                     | false    | null          |
+| image              | element                               | false    | null          |
 | selected           | bool                                  | false    | false         |
 
 ### BpkFlatListItemSeparator

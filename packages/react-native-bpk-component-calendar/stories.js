@@ -187,7 +187,7 @@ class ChangeableSelectionTypeStory extends Component<
     };
   }
 
-  onSelectionTypeChange = (selectionType: string | number) => {
+  onSelectionTypeChange = (selectionType: ?(string | number)) => {
     const maybe = Object.keys(SELECTION_TYPES).find(x => x === selectionType);
 
     if (maybe) {

@@ -1,6 +1,6 @@
 [ignore]
-; We fork some components by platform
-.*/*[.]android.js
+; Ignore Android-specific modules from RN because they will confuse Flow when the same module is exported from two files.
+<PROJECT_ROOT>/node_modules/react-native/.*/*[.]android.js
 
 ; Ignore "BUCK" generated dirs
 <PROJECT_ROOT>/\.buckd/

@@ -34,7 +34,7 @@ const mockPlatform = (platform, version) => {
   reactNative.Platform.OS = platform;
 
   Object.defineProperty(reactNative.Platform, 'Version', {
-    get: () => version,
+    value: version,
   });
 
   return reactNative;

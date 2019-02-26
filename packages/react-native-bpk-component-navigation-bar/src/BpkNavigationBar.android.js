@@ -17,9 +17,9 @@
  */
 /* @flow */
 
-import React, { Component, isValidElement } from 'react';
+import React, { Component, isValidElement, type Element } from 'react';
 import PropTypes from 'prop-types';
-import { type Element, StyleSheet, View, ViewPropTypes } from 'react-native';
+import { StyleSheet, View, ViewPropTypes } from 'react-native';
 import {
   withTheme,
   getThemeAttributes,

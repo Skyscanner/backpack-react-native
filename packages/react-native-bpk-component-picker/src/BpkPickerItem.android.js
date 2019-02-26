@@ -38,8 +38,8 @@ const styles = StyleSheet.create({
 
 type Props = {
   label: string,
-  value: ?PickerValue,
-  onPress: ?(?PickerValue) => mixed,
+  value: PickerValue,
+  onPress: ?(PickerValue) => mixed,
   selected: boolean,
 };
 

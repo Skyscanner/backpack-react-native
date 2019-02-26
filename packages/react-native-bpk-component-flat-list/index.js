@@ -24,3 +24,4 @@ import BpkFlatListItemSeparator from './src/BpkFlatListItemSeparator';
 
 export default BpkFlatList;
 export { BpkFlatListItem, BpkFlatListItemSeparator };
+export type { FlatListItemProps } from './src/common-types';

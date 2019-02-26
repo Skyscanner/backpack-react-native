@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
 
 type Props = {
   disabled: boolean,
-  selectedValue: ?PickerValue,
+  selectedValue: PickerValue,
   style: ?any,
 };
 
@@ -111,7 +111,7 @@ class StatefulBpkPicker extends Component<Props, State> {
         <BpkButton
           onPress={this.openPicker}
           title={
-            data[this.state.value]
+            this.state.value && data[this.state.value]
               ? `Selected: ${data[this.state.value]}`
               : 'Open picker'
           }

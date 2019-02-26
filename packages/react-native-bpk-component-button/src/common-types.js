@@ -18,13 +18,15 @@
 
 /* @flow */
 
-import { type Node } from 'react';
+import { type Node, type ElementProps } from 'react';
 import PropTypes from 'prop-types';
-import { ViewPropTypes } from 'react-native';
+import { View, ViewPropTypes } from 'react-native';
 import { type Theme } from 'react-native-bpk-theming';
-import { type ViewStyleProp } from 'react-native/Libraries/StyleSheet/StyleSheet';
 
 import { themePropType, iconPropType } from './utils';
+
+type ViewProps = ElementProps<typeof View>;
+type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
 
 export const BUTTON_TYPES = {
   primary: 'primary',

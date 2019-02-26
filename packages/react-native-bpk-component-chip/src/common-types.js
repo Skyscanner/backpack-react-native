@@ -18,10 +18,12 @@
 
 /* @flow */
 
-import { type Node } from 'react';
 import PropTypes from 'prop-types';
-import { ViewPropTypes } from 'react-native';
-import { type ViewStyleProp } from 'react-native/Libraries/StyleSheet/StyleSheet';
+import { type Node, type ElementProps } from 'react';
+import { View, ViewPropTypes } from 'react-native';
+
+type ViewProps = ElementProps<typeof View>;
+type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
 
 export type Props = {
   accessibilityLabel: string,
