@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-02-26 - `uppercase` prop for Android link buttons
+
+**Added:**
+- react-native-bpk-component-button-link: 4.3.0 => 4.4.0
+  - Added optional `uppercase` prop for Android to toggle whether the button title should be in uppercase.
+
+
 # 2019-02-26 - New `eco-leaf` icon
 
 *Added:*
