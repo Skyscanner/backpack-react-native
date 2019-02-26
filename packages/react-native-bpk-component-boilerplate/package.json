@@ -1,7 +1,7 @@
 {
   "name": "react-native-bpk-component-boilerplate",
   "private": true,
-  "version": "0.0.20",
+  "version": "0.0.21",
   "main": "index.js",
   "description": "Backpack React Native boilerplate component.",
   "repository": {
