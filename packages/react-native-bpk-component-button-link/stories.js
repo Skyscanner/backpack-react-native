@@ -52,6 +52,13 @@ const ButtonStory = () => (
         title="Disabled"
         onPress={action('This should not be possible')}
       />
+      {Platform.OS === 'android' && (
+        <BpkButtonLink
+          uppercase={false}
+          title="Not uppercase"
+          onPress={action(`Not uppercase button pressed`)}
+        />
+      )}
       <BpkButtonLink
         title="With Leading icon"
         iconAlignment="leading"
