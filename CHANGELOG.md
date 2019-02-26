@@ -2,6 +2,15 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-02-26 - New `eco-leaf` icon
+
+*Added:*
+- react-native-bpk-component-button-link:
+- react-native-bpk-component-button:
+- react-native-bpk-component-icon:
+- react-native-bpk-component-navigation-bar:
+  - Added new icon `eco-leaf`.
+
 # 2019-02-18 - New navigation bar property and theming prop
 
 **Breaking:**
