@@ -26,7 +26,6 @@ import BpkText, { WEIGHT_STYLES } from 'react-native-bpk-component-text';
 import { getThemeAttributes, withTheme } from 'react-native-bpk-theming';
 import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-native-feedback';
 
-import styles from './styles';
 import {
   type CommonProps,
   commonPropTypes,
@@ -34,6 +33,7 @@ import {
   ICON_ALIGNMENTS,
   REQUIRED_THEME_ATTRIBUTES,
 } from './common-types';
+import styles from './styles';
 
 export type Props = {
   ...$Exact<CommonProps>,
@@ -116,14 +116,12 @@ const BpkButtonLink = (props: Props) => {
   );
 };
 
-const propTypes = {
+BpkButtonLink.propTypes = {
   ...commonPropTypes,
   borderlessBackground: PropTypes.bool,
   uppercase: PropTypes.bool,
   style: ViewPropTypes.style,
 };
-
-BpkButtonLink.propTypes = propTypes;
 
 BpkButtonLink.defaultProps = {
   ...commonDefaultProps,
@@ -132,4 +130,5 @@ BpkButtonLink.defaultProps = {
   style: null,
 };
 
-export default withTheme(BpkButtonLink);
+// $FlowFixMe
+export default (withTheme(BpkButtonLink): typeof BpkButtonLink);

@@ -16,7 +16,9 @@
  * limitations under the License.
  */
 
-import { StyleSheet, View, ViewPropTypes } from 'react-native';
+/* @flow */
+
+import PropTypes from 'prop-types';
 import {
   colorWhite,
   borderRadiusSm,
@@ -24,8 +26,8 @@ import {
   spacingBase,
 } from 'bpk-tokens/tokens/base.react.native';
 import { shadows } from 'react-native-bpk-styles';
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { type Node, type ElementProps } from 'react';
+import { StyleSheet, View, ViewPropTypes } from 'react-native';
 import BpkTouchableOverlay from 'react-native-bpk-component-touchable-overlay';
 
 import CORNER_STYLES, { defaultCornerStyle } from './BpkCardCornerStyles';
@@ -48,7 +50,20 @@ const styles = StyleSheet.create({
   },
 });
 
-const BpkCard = props => {
+type ViewProps = ElementProps<typeof View>;
+type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
+
+export type Props = {
+  children: Node,
+  onPress: (SyntheticEvent<>) => mixed,
+  cornerStyle: ?$Keys<typeof CORNER_STYLES>,
+  focused: boolean,
+  padded: boolean,
+  innerStyle: ViewStyleProp,
+  style: ViewStyleProp,
+};
+
+const BpkCard = (props: Props) => {
   const {
     children,
     cornerStyle,
@@ -95,16 +110,16 @@ BpkCard.propTypes = {
   onPress: PropTypes.func.isRequired,
   cornerStyle: PropTypes.oneOf(Object.keys(CORNER_STYLES)),
   focused: PropTypes.bool,
-  innerStyle: ViewPropTypes.style,
   padded: PropTypes.bool,
+  innerStyle: ViewPropTypes.style,
   style: ViewPropTypes.style,
 };
 
 BpkCard.defaultProps = {
   cornerStyle: defaultCornerStyle,
   focused: false,
-  innerStyle: null,
   padded: true,
+  innerStyle: null,
   style: null,
 };
 

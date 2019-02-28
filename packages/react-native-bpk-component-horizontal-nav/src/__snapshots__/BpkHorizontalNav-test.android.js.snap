@@ -120,16 +120,16 @@ exports[`Android BpkHorizontalNav should render correctly with the "selected" pr
         ]
       }
     >
-      <BpkHorizontalNavItem
-        id="0"
-        onLayout={[Function]}
-        selected={true}
-      />
-      <BpkHorizontalNavItem
-        id="1"
-        onLayout={[Function]}
-        selected={false}
-      />
+      <Text
+        testID="0"
+      >
+        Selected
+      </Text>
+      <Text
+        testID="1"
+      >
+        Not selected
+      </Text>
     </View>
   </View>
 </RCTScrollView>

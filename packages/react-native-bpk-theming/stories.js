@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import React, { Component } from 'react';
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react-native';
@@ -53,7 +55,18 @@ const styles = StyleSheet.create({
   },
 });
 
-class BpkThemePicker extends Component {
+type ThemeId = 'blue' | 'yellow' | 'red';
+
+class BpkThemePicker extends Component<
+  {},
+  { themeId: ThemeId, theme: Object },
+> {
+  themes: {
+    blue: Object,
+    yellow: Object,
+    red: Object,
+  };
+
   constructor() {
     super();
 
@@ -69,7 +82,7 @@ class BpkThemePicker extends Component {
     };
   }
 
-  switchTheme = value => {
+  switchTheme = (value: ThemeId) => {
     this.setState({
       themeId: value,
       theme: this.themes[value],

@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { View, StyleSheet } from 'react-native';
@@ -29,7 +31,7 @@ import BpkButton from '../react-native-bpk-component-button';
 import BpkText from '../react-native-bpk-component-text';
 import themeAttributes from '../../storybook/themeAttributes';
 
-import BpkProgress from './index';
+import BpkProgress, { type BpkProgressProps } from './index';
 
 const styles = StyleSheet.create({
   barContainer: {
@@ -42,12 +44,23 @@ const styles = StyleSheet.create({
   },
 });
 
-class ProgressContainer extends Component {
+type BpkProgressType = $PropertyType<BpkProgressProps, 'type'>;
+
+class ProgressContainer extends Component<
+  { initialValue: number, steps: Array<number>, types: Array<BpkProgressType> },
+  { progress: number },
+> {
+  static propTypes = {
+    steps: PropTypes.arrayOf(PropTypes.number).isRequired,
+    initialValue: PropTypes.number.isRequired,
+    types: PropTypes.arrayOf(PropTypes.string).isRequired,
+  };
+
   constructor(props) {
-    super();
+    super(props);
 
     this.state = {
-      progress: props.initialValue,
+      progress: this.props.initialValue,
     };
   }
 
@@ -83,7 +96,6 @@ class ProgressContainer extends Component {
               type="secondary"
               onPress={() => this.handleChange(step)}
               title={`${step}`}
-              style={styles.step}
             />
           ))}
         </View>
@@ -91,12 +103,6 @@ class ProgressContainer extends Component {
     );
   }
 }
-
-ProgressContainer.propTypes = {
-  steps: PropTypes.arrayOf(PropTypes.number).isRequired,
-  initialValue: PropTypes.number.isRequired,
-  types: PropTypes.arrayOf(PropTypes.string).isRequired,
-};
 
 storiesOf('react-native-bpk-component-progress', module)
   .addDecorator(CenterDecorator)

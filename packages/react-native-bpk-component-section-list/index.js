@@ -23,6 +23,13 @@ import BpkSectionListItem from './src/BpkSectionListItem';
 import BpkSectionListHeader from './src/BpkSectionListHeader';
 import BpkSectionListItemSeparator from './src/BpkSectionListItemSeparator';
 
+export type {
+  SectionListItemProps as BpkSectionListItemProps,
+} from './src/common-types';
+export type {
+  Props as BpkSectionListHeaderProps,
+} from './src/BpkSectionListHeader';
+
 export default BpkSectionList;
 export {
   BpkSectionListItem,

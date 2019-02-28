@@ -15,6 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 /* @flow */
 
 import PropTypes from 'prop-types';
@@ -251,4 +252,4 @@ class BpkNavigationBar extends Component<Props, {}> {
   }
 }
 
-export default withTheme(BpkNavigationBar);
+export default (withTheme(BpkNavigationBar): typeof BpkNavigationBar);

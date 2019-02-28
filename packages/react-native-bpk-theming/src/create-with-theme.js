@@ -16,48 +16,45 @@
  * limitations under the License.
  */
 
-// This is the same as https://github.com/iamstarkov/theming/blob/master/src/create-with-theme.js
-// but using the custom themeListener from above.
-import React from 'react';
+/* @flow */
 
-import createThemeListener from './create-theme-listener';
+import React, { type ComponentType, type Context } from 'react';
+import hoist from 'hoist-non-react-statics';
 
-const getDisplayName = Component =>
-  Component.displayName || Component.name || 'Component';
+// Based loosely on https://github.com/acdlite/recompose/blob/master/src/packages/recompose/getDisplayName.js
+const getDisplayName = Component => {
+  if (typeof Component === 'string') {
+    return Component;
+  }
 
-const createWithTheme = () => {
-  const themeListener = createThemeListener();
+  if (!Component) {
+    return 'Unknown';
+  }
 
-  return Component => {
-    class WithTheme extends React.Component {
-      constructor(props, context) {
-        super(props, context);
-        this.state = { theme: themeListener.initial(context) };
-        this.setTheme = theme => this.setState({ theme });
-      }
+  return Component.displayName || Component.name || 'Component';
+};
 
-      componentDidMount() {
-        this.unsubscribe = themeListener.subscribe(this.context, this.setTheme);
-      }
+// This is the same as https://github.com/cssinjs/theming/blob/a2e1f4bdb1dc9c8ac705ee9987c86125c34ed485/src/create-with-theme.js
+// except we have removed the warning when `theme` is not defined.
+export default function createWithTheme<Theme>(context: Context<Theme>) {
+  return function withTheme<
+    InnerProps,
+    InnerComponent: ComponentType<InnerProps>,
+    OuterProps: { ...InnerProps, theme?: $NonMaybeType<Theme> },
+  >(Component: InnerComponent): ComponentType<OuterProps> {
+    // $FlowFixMe
+    const WithTheme = React.forwardRef((props, ref) => (
+      <context.Consumer>
+        {theme => <Component theme={theme} ref={ref} {...props} />}
+      </context.Consumer>
+    ));
 
-      componentWillUnmount() {
-        if (typeof this.unsubscribe === 'function') {
-          this.unsubscribe();
-        }
-      }
-
-      render() {
-        const { theme } = this.state;
-        return <Component theme={theme} {...this.props} />;
-      }
+    if (process.env.NODE_ENV !== 'production') {
+      WithTheme.displayName = `WithTheme(${getDisplayName(Component)})`;
     }
 
-    WithTheme.displayName = `withTheme(${getDisplayName(Component)})`;
-
-    WithTheme.contextTypes = themeListener.contextTypes;
+    hoist(WithTheme, Component);
 
     return WithTheme;
   };
-};
-
-export default createWithTheme;
+}

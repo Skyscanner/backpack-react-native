@@ -234,8 +234,7 @@ class BpkTextInput extends Component<Props, State> {
               style={styles.input}
               onFocus={this.onFocus}
               onBlur={this.onBlur}
-              // Ignored because we simply do not understand it
-              // $FlowFixMe
+              // $FlowFixMe, because we simply do not understand it
               ref={inputRef}
               underlineColorAndroid="transparent"
               {...rest}

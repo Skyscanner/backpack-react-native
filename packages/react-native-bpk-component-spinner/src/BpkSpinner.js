@@ -15,6 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 /* @flow */
 
 import React from 'react';
@@ -24,6 +25,7 @@ import {
   getThemeAttributes,
   makeThemePropType,
   withTheme,
+  type Theme,
 } from 'react-native-bpk-theming';
 import {
   colorBlue500,
@@ -55,15 +57,21 @@ const getSpinnerColor = (themeAttributes: ?Object, type: SpinnerType) => {
   return colorMappings[type];
 };
 
-const BpkSpinner = props => {
-  const { small, type, ...rest } = props;
-  const { theme } = props;
+export type Props = {
+  small: boolean,
+  theme: ?Theme,
+  type: ?SpinnerType,
+};
+
+const BpkSpinner = (props: Props) => {
+  const { small, type, theme, ...rest } = props;
+  const spinnerType = type || SPINNER_TYPES.primary;
   let themeAttributes = getThemeAttributes(REQUIRED_THEME_ATTRIBUTES, theme);
 
   // Validate type.
-  if (!Object.keys(SPINNER_TYPES).includes(type)) {
+  if (!Object.keys(SPINNER_TYPES).includes(spinnerType)) {
     throw new Error(
-      `"${type}" is not a valid spinner type. Valid types are ${Object.keys(
+      `"${spinnerType}" is not a valid spinner type. Valid types are ${Object.keys(
         SPINNER_TYPES,
       ).join(', ')}`,
     );
@@ -71,27 +79,25 @@ const BpkSpinner = props => {
 
   // Validate that spinner is themeable and correct theming attribute has been
   // supplied. If not, disable theming.
-  if (themeAttributes && type !== 'primary') {
+  if (themeAttributes && spinnerType !== 'primary') {
     themeAttributes = null;
   }
 
   return (
     // eslint-disable-next-line backpack/use-components
     <ActivityIndicator
-      color={getSpinnerColor(themeAttributes, type)}
+      color={getSpinnerColor(themeAttributes, spinnerType)}
       size={small ? 'small' : 'large'}
       {...rest}
     />
   );
 };
 
-const propTypes = {
+BpkSpinner.propTypes = {
   small: PropTypes.bool,
   theme: makeThemePropType(REQUIRED_THEME_ATTRIBUTES),
   type: PropTypes.oneOf(Object.keys(SPINNER_TYPES)),
 };
-
-BpkSpinner.propTypes = propTypes;
 
 BpkSpinner.defaultProps = {
   small: false,
@@ -99,5 +105,5 @@ BpkSpinner.defaultProps = {
   type: 'primary',
 };
 
-export default withTheme(BpkSpinner);
-export { propTypes, SPINNER_TYPES };
+export { SPINNER_TYPES };
+export default (withTheme(BpkSpinner): typeof BpkSpinner);

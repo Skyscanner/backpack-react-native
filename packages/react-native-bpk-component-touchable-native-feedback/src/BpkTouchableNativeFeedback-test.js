@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import React from 'react';
 import renderer from 'react-test-renderer';
 
@@ -28,7 +30,7 @@ const mockPlatform = (platform, version) => {
     .mockImplementation(obj => obj.platform || obj.default);
   reactNative.Platform.OS = platform;
   Object.defineProperty(reactNative.Platform, 'Version', {
-    get: () => version,
+    value: version,
   });
   return reactNative;
 };

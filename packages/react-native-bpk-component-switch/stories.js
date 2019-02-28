@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
@@ -39,9 +41,10 @@ const styles = StyleSheet.create({
   },
 });
 
-class SwitchContainer extends Component {
-  constructor(props) {
-    super(props);
+class SwitchContainer extends Component<{}, { value: boolean }> {
+  constructor() {
+    super();
+
     this.state = { value: false };
   }
 

@@ -122,5 +122,6 @@ BpkButton.defaultProps = {
   ...commonDefaultProps,
 };
 
-export default withTheme(BpkButton);
 export { BUTTON_TYPES, ICON_ALIGNMENTS };
+// $FlowFixMe
+export default (withTheme(BpkButton): typeof BpkButton);

@@ -15,6 +15,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+/* @flow */
+
 import { STAR_TYPES, getTypeByRating } from './star-types';
 
 describe('star-types', () => {

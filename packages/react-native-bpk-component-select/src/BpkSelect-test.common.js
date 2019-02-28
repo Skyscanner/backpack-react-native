@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import React from 'react';
 import { View } from 'react-native';
 import TestRenderer from 'react-test-renderer';
@@ -74,6 +76,7 @@ const commonTests = () => {
 
     it('should render correctly with "showImage" and image', () => {
       const testRenderer = TestRenderer.create(
+        // $FlowFixMe, imageComponent shouldnt be a string however react test renderer conveniently treats strings as custom components
         <BpkSelect onPress={emptyFn} showImage image={<FakeImage />} />,
       );
       expect(testRenderer.toJSON()).toMatchSnapshot();

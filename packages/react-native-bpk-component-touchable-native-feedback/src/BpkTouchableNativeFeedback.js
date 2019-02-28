@@ -15,13 +15,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 /* @flow */
 
 import React, { type Node } from 'react';
 import PropTypes from 'prop-types';
 import { Platform, TouchableNativeFeedback, ViewPropTypes } from 'react-native';
 
-type Props = {
+export type Props = {
   children: Node,
   borderlessBackground: boolean,
   color: ?string,

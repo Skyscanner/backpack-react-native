@@ -18,7 +18,7 @@
 
 /* @flow */
 
-import BpkNudger, { type Props } from './src/BpkNudger';
+import BpkNudger from './src/BpkNudger';
 
-export type BpkNudgerProps = Props;
+export type { Props as BpkNudgerProps } from './src/BpkNudger';
 export default BpkNudger;

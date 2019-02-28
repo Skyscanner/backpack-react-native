@@ -18,8 +18,11 @@
 
 /* @flow */
 
+import { type ElementProps } from 'react';
 import { Picker } from 'react-native';
 
 const BpkPickerItem = Picker.Item;
+
+export type Props = ElementProps<BpkPickerItem>;
 
 export default BpkPickerItem;

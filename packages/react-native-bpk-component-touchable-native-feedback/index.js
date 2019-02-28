@@ -16,6 +16,11 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import BpkTouchableNativeFeedback from './src/BpkTouchableNativeFeedback';
 
+export type {
+  Props as BpkTouchableNativeFeedbackProps,
+} from './src/BpkTouchableNativeFeedback';
 export default BpkTouchableNativeFeedback;

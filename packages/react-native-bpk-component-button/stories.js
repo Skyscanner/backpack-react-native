@@ -52,7 +52,7 @@ const getIconType = type =>
   type === 'destructive' ? icons.trash : icons['long-arrow-right'];
 
 const generateButtonStoryForType = (
-  type: string,
+  type: $Keys<typeof BUTTON_TYPES>,
   storyAsLabel: boolean = false,
 ) => {
   const formattedType = `${type[0].toUpperCase()}${type.substring(1)}`;

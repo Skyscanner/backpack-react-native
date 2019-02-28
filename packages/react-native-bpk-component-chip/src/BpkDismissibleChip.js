@@ -27,7 +27,7 @@ import {
   commonDefaultProps,
 } from './common-types';
 
-type Props = CommonProps;
+export type Props = CommonProps;
 
 const BpkDismissibleChip = (props: Props) => {
   const { ...rest } = props;

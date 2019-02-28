@@ -16,13 +16,18 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 export const STAR_TYPES = {
-  EMPTY: 'empty',
-  HALF: 'half',
-  FULL: 'full',
+  EMPTY: 'EMPTY',
+  HALF: 'HALF',
+  FULL: 'FULL',
 };
 
-export const getTypeByRating = (starNumber, rating) => {
+export const getTypeByRating = (
+  starNumber: number,
+  rating: number,
+): $Keys<typeof STAR_TYPES> => {
   if (starNumber <= rating) {
     return STAR_TYPES.FULL;
   }

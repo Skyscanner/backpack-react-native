@@ -36,8 +36,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   panelMainVertical: {
-    // Ignoring this flow error ... how else are you supposed to unset the flex value?
-    // $FlowFixMe
+    // $FlowFixMe, because how else are you supposed to reset a flex value?
     flex: null,
   },
   panelMainPadded: {
@@ -57,8 +56,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   panelStubVertical: {
-    // Ignoring this flow error ... how else are you supposed to unset the flex value?
-    // $FlowFixMe
+    // $FlowFixMe, because how else are you supposed to reset a flex value?
     flex: null,
   },
   panelStubPadded: {

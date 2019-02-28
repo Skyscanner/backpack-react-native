@@ -16,6 +16,11 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import BpkTouchableOverlay from './src/BpkTouchableOverlay';
 
+export type {
+  Props as BpkTouchableOverlayProps,
+} from './src/BpkTouchableOverlay';
 export default BpkTouchableOverlay;

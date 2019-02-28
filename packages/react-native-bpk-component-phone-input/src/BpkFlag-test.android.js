@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import commonTests from './BpkFlag-test.common';
 
 jest.mock('react-native', () => {

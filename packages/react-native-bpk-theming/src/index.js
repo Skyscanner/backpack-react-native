@@ -16,23 +16,13 @@
  * limitations under the License.
  */
 
-// This is the same as https://github.com/iamstarkov/theming/blob/master/src/create-theme-listener.js
-// but returns null instead of an error when context[CHANNEL] is undefined.
+/* @flow */
 
-import PropTypes from 'prop-types';
+import { ThemeProvider as BpkThemeProvider } from 'theming';
 
-const createThemeListener = () => {
-  const CHANNEL = '__THEMING__';
+import createWithTheme from './create-with-theme';
 
-  const contextTypes = { [CHANNEL]: PropTypes.object };
+const withTheme = createWithTheme();
 
-  const initial = context =>
-    context[CHANNEL] ? context[CHANNEL].getState() : null;
-
-  const subscribe = (context, cb) =>
-    context[CHANNEL] ? context[CHANNEL].subscribe(cb) : null;
-
-  return { contextTypes, initial, subscribe };
-};
-
-export default createThemeListener;
+export { withTheme };
+export default BpkThemeProvider;

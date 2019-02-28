@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import commonTests from './withDivider-test.common';
 
 describe('iOS', () => {

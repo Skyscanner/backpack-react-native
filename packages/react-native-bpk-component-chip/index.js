@@ -21,5 +21,9 @@
 import BpkChip from './src/BpkChip';
 import BpkDismissibleChip from './src/BpkDismissibleChip';
 
-export default BpkChip;
+export type { Props as BpkChipProps } from './src/BpkChip';
+export type {
+  Props as BpkDismissibleChipProps,
+} from './src/BpkDismissibleChip';
 export { BpkDismissibleChip };
+export default BpkChip;

@@ -15,7 +15,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 /* @flow */
+
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { Image } from 'react-native';

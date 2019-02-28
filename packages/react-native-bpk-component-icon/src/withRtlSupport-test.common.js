@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { colorBlue500 } from 'bpk-tokens/tokens/base.react.native';
@@ -23,7 +25,8 @@ import { colorBlue500 } from 'bpk-tokens/tokens/base.react.native';
 import BpkIcon, { icons } from './BpkIcon';
 import withRtlSupport from './withRtlSupport';
 
-const BpkIconWithRtlSupport = withRtlSupport(BpkIcon);
+// $FlowFixMe, because HOCs
+const BpkIconWithRtlSupport: typeof BpkIcon = withRtlSupport(BpkIcon);
 
 const commonTests = () => {
   describe('withRtlSupport', () => {

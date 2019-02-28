@@ -127,5 +127,6 @@ BpkButton.defaultProps = {
   large: false,
 };
 
-export default withTheme(BpkButton);
 export { BUTTON_TYPES, ICON_ALIGNMENTS };
+// $FlowFixMe
+export default (withTheme(BpkButton): typeof BpkButton);

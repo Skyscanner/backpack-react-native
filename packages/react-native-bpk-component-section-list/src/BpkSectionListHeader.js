@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
   },
 });
 
-type Props = {
+export type Props = {
   title: string,
 };
 

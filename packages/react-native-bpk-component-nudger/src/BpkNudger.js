@@ -49,7 +49,7 @@ export type Props = {
   increaseButtonLabel: string,
   max: number,
   min: number,
-  onChange: number => void,
+  onChange: number => mixed,
   value: number,
   style: ?(Object | Array<Object>),
 };

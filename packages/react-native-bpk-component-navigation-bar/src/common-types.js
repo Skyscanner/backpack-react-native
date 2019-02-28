@@ -15,7 +15,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 /* @flow */
+
 import PropTypes from 'prop-types';
 import { type Element } from 'react';
 
@@ -27,7 +29,7 @@ export type TitleWithIcon = {|
   iconPosition: 'leading' | 'trailing',
 |};
 
-export type TitleProp = 'string' | TitleWithIcon | Element<any>;
+export type TitleProp = string | TitleWithIcon | Element<any>;
 
 export const TITLE_PROPTYPE = PropTypes.oneOfType([
   PropTypes.string,

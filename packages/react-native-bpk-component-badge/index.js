@@ -18,14 +18,10 @@
 
 /* @flow */
 
-import BpkBadge, {
-  type Props,
-  BADGE_TYPES,
-  BADGE_DOCKED_TYPES,
-} from './src/BpkBadge';
+import BpkBadge, { BADGE_TYPES, BADGE_DOCKED_TYPES } from './src/BpkBadge';
 import BpkBadgeIcons from './src/BpkBadgeIcons';
 
-export type BpkBadgeProps = Props;
-
+export type { Props as BpkBadgeProps } from './src/BpkBadge';
+export type { Props as BpkBadgeIconsProps } from './src/BpkBadgeIcons';
 export { BpkBadgeIcons, BADGE_TYPES, BADGE_DOCKED_TYPES };
 export default BpkBadge;

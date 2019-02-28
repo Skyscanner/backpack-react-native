@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import React from 'react';
 import { ScrollView, StyleSheet } from 'react-native';
 import BpkText from 'react-native-bpk-component-text';
