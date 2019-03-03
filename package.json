@@ -93,7 +93,7 @@
     "eslint-plugin-flowtype": "^3.2.0",
     "eslint_d": "^7.2.0",
     "flow-bin": "^0.78.0",
-    "globby": "^8.0.1",
+    "globby": "^9.1.0",
     "husky": "^1.2.1",
     "jest": "^24.1.0",
     "lerna": "^3.10.7",
