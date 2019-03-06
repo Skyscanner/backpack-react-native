@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BpkThemeAttributes uses the default primary color when rendered outside a theme provider 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "rgb(0, 178, 214)",
+    }
+  }
+/>
+`;
+
+exports[`BpkThemeAttributes uses the primary color from the theme when rendered inside a theme provider 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "white",
+    }
+  }
+/>
+`;
