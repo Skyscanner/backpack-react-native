@@ -18,6 +18,11 @@
 
 /* @flow */
 
+import React from 'react';
+import renderer from 'react-test-renderer';
+import BpkThemeProvider from 'react-native-bpk-theming';
+
+import BpkText from './BpkText';
 import commonTests from './BpkText-test.common';
 
 jest.mock('react-native', () => {
@@ -36,4 +41,22 @@ jest.mock('bpk-tokens/tokens/base.react.native', () =>
 
 describe('Android', () => {
   commonTests();
+
+  it('should render correctly with theming', () => {
+    const theme = {
+      textFontFamily: 'serif-monospace',
+    };
+    const tree = renderer
+      .create(
+        <BpkThemeProvider theme={theme}>
+          <BpkText>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          </BpkText>
+        </BpkThemeProvider>,
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });

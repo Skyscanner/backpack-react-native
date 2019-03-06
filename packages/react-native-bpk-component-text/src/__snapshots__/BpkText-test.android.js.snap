@@ -465,3 +465,25 @@ exports[`Android BpkText should support overwriting styles 1`] = `
   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 </Text>
 `;
+
+exports[`Android should render correctly with theming 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "rgb(82, 76, 97)",
+        "fontFamily": "sans-serif",
+        "fontSize": 16,
+        "fontWeight": "400",
+        "letterSpacing": -0.2,
+      },
+      Object {},
+      Object {
+        "fontFamily": "serif-monospace",
+      },
+    ]
+  }
+>
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+</Text>
+`;

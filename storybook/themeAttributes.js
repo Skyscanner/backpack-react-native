@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+import { Platform } from 'react-native';
+
 const theme = {
   contentColor: '#2d244c',
   contentGray: '#757380',
@@ -60,6 +62,9 @@ const themeAttributes = {
   // Used in BpkProgress
   progressFillBackgroundColor: theme.contentColor,
   progressTrackBackgroundColor: theme.contentGray,
+
+  // Used in BpkText
+  textFontFamily: Platform.OS === 'ios' ? 'Courier' : 'serif-monospace',
 };
 
 export default themeAttributes;
