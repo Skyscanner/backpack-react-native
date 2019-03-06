@@ -49,3 +49,7 @@ export default class App extends Component {
 | textStyle                            | oneOf('xxl', 'xl', 'lg', 'base', 'sm', 'xs', 'caps') | false    | base          |
 | weight                               | oneOf('regular', 'emphasized', 'heavy')              | false    | regular       |
 | emphasize (deprecated, use `weight`) | bool                                                 | false    | false         |
+
+## Theme props
+
+* `textFontFamily`

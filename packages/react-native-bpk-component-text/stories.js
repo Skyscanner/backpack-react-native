@@ -29,7 +29,9 @@ import {
 } from 'bpk-tokens/tokens/base.react.native';
 import { View } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
+import BpkThemeProvider from 'react-native-bpk-theming';
 
+import themeAttributes from '../../storybook/themeAttributes';
 import CenterDecorator from '../../storybook/CenterDecorator';
 
 import BpkText, { WEIGHT_STYLES } from './index';
@@ -90,6 +92,20 @@ storiesOf('react-native-bpk-component-text', module)
         {TEXT}
       </BpkText>
     </View>
+  ))
+  .add('Themed', () => (
+    <BpkThemeProvider theme={themeAttributes}>
+      <View>
+        <BpkText textStyle="xxxl">{TEXT}</BpkText>
+        <BpkText textStyle="xxl">{TEXT}</BpkText>
+        <BpkText textStyle="xl">{TEXT}</BpkText>
+        <BpkText textStyle="lg">{TEXT}</BpkText>
+        <BpkText textStyle="base">{TEXT}</BpkText>
+        <BpkText textStyle="sm">{TEXT}</BpkText>
+        <BpkText textStyle="xs">{TEXT}</BpkText>
+        <BpkText textStyle="caps">{TEXT.toUpperCase()}</BpkText>
+      </View>
+    </BpkThemeProvider>
   ))
   .add('Colours', () => (
     <View>

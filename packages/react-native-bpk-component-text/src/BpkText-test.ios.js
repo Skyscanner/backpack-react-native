@@ -20,6 +20,7 @@
 
 import React from 'react';
 import renderer from 'react-test-renderer';
+import BpkThemeProvider from 'react-native-bpk-theming';
 
 import BpkText from './BpkText';
 import commonTests from './BpkText-test.common';
@@ -36,6 +37,24 @@ describe('iOS', () => {
           commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
           et magnis dis parturient montes, nascetur ridiculus mus.
         </BpkText>,
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it('should render correctly with theming', () => {
+    const theme = {
+      textFontFamily: 'Courier',
+    };
+    const tree = renderer
+      .create(
+        <BpkThemeProvider theme={theme}>
+          <BpkText>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          </BpkText>
+        </BpkThemeProvider>,
       )
       .toJSON();
     expect(tree).toMatchSnapshot();

@@ -486,3 +486,25 @@ exports[`iOS should not apply \`emphasize\` for textStyle="xxl" 1`] = `
   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 </Text>
 `;
+
+exports[`iOS should render correctly with theming 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "rgb(82, 76, 97)",
+        "fontFamily": "System",
+        "fontSize": 16,
+        "fontWeight": "400",
+        "letterSpacing": 0.12,
+      },
+      Object {},
+      Object {
+        "fontFamily": "Courier",
+      },
+    ]
+  }
+>
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+</Text>
+`;

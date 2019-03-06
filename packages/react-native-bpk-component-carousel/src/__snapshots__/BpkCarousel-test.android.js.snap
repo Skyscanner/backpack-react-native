@@ -21,14 +21,9 @@ exports[`Android BpkCarousel should render correctly 1`] = `
           <BpkCarouselItem
             style={null}
           >
-            <BpkText
-              emphasize={null}
-              style={null}
-              textStyle="base"
-              weight="regular"
-            >
+            <withTheme(BpkText)>
               View 1
-            </BpkText>
+            </withTheme(BpkText)>
           </BpkCarouselItem>,
         ],
         "_firstIndexToProcess": 0,
@@ -68,14 +63,9 @@ exports[`Android BpkCarousel should render correctly 1`] = `
                   <BpkCarouselItem
                     style={null}
                   >
-                    <BpkText
-                      emphasize={null}
-                      style={null}
-                      textStyle="base"
-                      weight="regular"
-                    >
+                    <withTheme(BpkText)>
                       View 1
-                    </BpkText>
+                    </withTheme(BpkText)>
                   </BpkCarouselItem>,
                 ],
                 "_firstIndexToProcess": 0,
@@ -220,14 +210,9 @@ exports[`Android BpkCarousel should render correctly with an "accessibilityLabel
           <BpkCarouselItem
             style={null}
           >
-            <BpkText
-              emphasize={null}
-              style={null}
-              textStyle="base"
-              weight="regular"
-            >
+            <withTheme(BpkText)>
               View 1
-            </BpkText>
+            </withTheme(BpkText)>
           </BpkCarouselItem>,
         ],
         "_firstIndexToProcess": 0,
@@ -267,14 +252,9 @@ exports[`Android BpkCarousel should render correctly with an "accessibilityLabel
                   <BpkCarouselItem
                     style={null}
                   >
-                    <BpkText
-                      emphasize={null}
-                      style={null}
-                      textStyle="base"
-                      weight="regular"
-                    >
+                    <withTheme(BpkText)>
                       View 1
-                    </BpkText>
+                    </withTheme(BpkText)>
                   </BpkCarouselItem>,
                 ],
                 "_firstIndexToProcess": 0,
@@ -345,14 +325,9 @@ exports[`Android BpkCarousel should render correctly with an "accessibilityLabel
                   <BpkCarouselItem
                     style={null}
                   >
-                    <BpkText
-                      emphasize={null}
-                      style={null}
-                      textStyle="base"
-                      weight="regular"
-                    >
+                    <withTheme(BpkText)>
                       View 1
-                    </BpkText>
+                    </withTheme(BpkText)>
                   </BpkCarouselItem>,
                 ],
                 "_firstIndexToProcess": 0,
@@ -505,14 +480,9 @@ exports[`Android BpkCarousel should render correctly without indicators 1`] = `
           <BpkCarouselItem
             style={null}
           >
-            <BpkText
-              emphasize={null}
-              style={null}
-              textStyle="base"
-              weight="regular"
-            >
+            <withTheme(BpkText)>
               View 1
-            </BpkText>
+            </withTheme(BpkText)>
           </BpkCarouselItem>,
         ],
         "_firstIndexToProcess": 0,
@@ -552,14 +522,9 @@ exports[`Android BpkCarousel should render correctly without indicators 1`] = `
                   <BpkCarouselItem
                     style={null}
                   >
-                    <BpkText
-                      emphasize={null}
-                      style={null}
-                      textStyle="base"
-                      weight="regular"
-                    >
+                    <withTheme(BpkText)>
                       View 1
-                    </BpkText>
+                    </withTheme(BpkText)>
                   </BpkCarouselItem>,
                 ],
                 "_firstIndexToProcess": 0,
@@ -634,14 +599,9 @@ exports[`Android BpkCarousel should render correctly without indicators 1`] = `
                   <BpkCarouselItem
                     style={null}
                   >
-                    <BpkText
-                      emphasize={null}
-                      style={null}
-                      textStyle="base"
-                      weight="regular"
-                    >
+                    <withTheme(BpkText)>
                       View 1
-                    </BpkText>
+                    </withTheme(BpkText)>
                   </BpkCarouselItem>,
                 ],
                 "_firstIndexToProcess": 0,
@@ -716,14 +676,9 @@ exports[`Android BpkCarousel should render correctly without indicators 1`] = `
                   <BpkCarouselItem
                     style={null}
                   >
-                    <BpkText
-                      emphasize={null}
-                      style={null}
-                      textStyle="base"
-                      weight="regular"
-                    >
+                    <withTheme(BpkText)>
                       View 1
-                    </BpkText>
+                    </withTheme(BpkText)>
                   </BpkCarouselItem>,
                 ],
                 "_firstIndexToProcess": 0,

@@ -22,6 +22,9 @@ import { type Node } from 'react';
 import PropTypes from 'prop-types';
 import { StyleSheet } from 'react-native';
 import { type TextStyleProp } from 'react-native/Libraries/StyleSheet/StyleSheet';
+import { type Theme } from 'react-native-bpk-theming';
+
+import { themePropType } from './theming';
 
 export const TEXT_STYLES = [
   'caps',
@@ -55,6 +58,7 @@ export type Props = {
   emphasize: ?boolean,
   style: TextStyleProp,
   textStyle: TextStyle,
+  theme: ?Theme,
   weight: Weight,
 };
 
@@ -133,6 +137,7 @@ export const propTypes = {
   emphasize: deprecated(PropTypes.bool, 'Use "weight" instead.'),
   style: stylePropType,
   textStyle: PropTypes.oneOf(TEXT_STYLES),
+  theme: themePropType,
   weight: weightPropType,
 };
 
@@ -140,5 +145,6 @@ export const defaultProps = {
   emphasize: null,
   style: null,
   textStyle: 'base',
+  theme: null,
   weight: WEIGHT_STYLES.regular,
 };
