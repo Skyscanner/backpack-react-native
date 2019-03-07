@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-03-07 - Themeability for `BpkText`
+
+**Added:**
+
+- react-native-bpk-component-text:
+  - Added support for changing the font using a new `textFontFamily` theme prop.
+
 # 2019-02-26 - `uppercase` prop for Android link buttons
 
 **Added:**
