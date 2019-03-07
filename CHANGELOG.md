@@ -6,7 +6,7 @@
 
 **Added:**
 
-- react-native-bpk-component-text:
+- react-native-bpk-component-text: 4.0.9 => 4.1.0
   - Added support for changing the font using a new `textFontFamily` theme prop.
 
 # 2019-02-26 - `uppercase` prop for Android link buttons
