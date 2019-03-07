@@ -8,6 +8,15 @@
 
 - react-native-bpk-component-text: 4.0.9 => 4.1.0
   - Added support for changing the font using a new `textFontFamily` theme prop.
+ - react-native-bpk-theming: 1.0.91 => 1.1.0
+  - Added a new Render Prop component `BpkThemeAttributes` to support arbitrary usage of a theme's `primaryColor` attribute. If rendered outside of a `BpkThemeProvider` with a defined theme `colorBlue500` is used instead.
+    ```javascript
+    const Color = () => (
+      <BpkThemeAttributes>
+        {({ primaryColor }) => <View style={{ backgroundColor: primaryColor }} />}
+      </BpkThemeAttributes>
+    );
+    ```
 
 # 2019-02-26 - `uppercase` prop for Android link buttons
 
