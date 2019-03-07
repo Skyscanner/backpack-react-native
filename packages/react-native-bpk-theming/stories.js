@@ -15,6 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* @flow */
 
 import React, { Component } from 'react';
 import { action } from '@storybook/addon-actions';
@@ -36,24 +37,59 @@ import {
 import BpkButton from '../react-native-bpk-component-button';
 import CenterDecorator from '../../storybook/CenterDecorator';
 
-import BpkThemeProvider from './index';
+import BpkThemeProvider, { BpkThemeAttributes } from './index';
 
-const generateThemeAttributes = (gradientStartColor, gradientEndColor) => ({
+type Theme = {
+  buttonPrimaryTextColor: string,
+  buttonPrimaryGradientStartColor: string,
+  buttonPrimaryGradientEndColor: string,
+  buttonSecondaryTextColor: string,
+  buttonSecondaryBackgroundColor: string,
+  buttonSecondaryBorderColor: string,
+  primaryColor: string,
+};
+
+const generateThemeAttributes = (
+  gradientStartColor: string,
+  gradientEndColor: string,
+): Theme => ({
   buttonPrimaryTextColor: colorWhite,
   buttonPrimaryGradientStartColor: gradientStartColor,
   buttonPrimaryGradientEndColor: gradientEndColor,
   buttonSecondaryTextColor: gradientEndColor,
   buttonSecondaryBackgroundColor: colorWhite,
   buttonSecondaryBorderColor: gradientEndColor,
+  primaryColor: gradientStartColor,
 });
 
 const styles = StyleSheet.create({
   bottomMargin: {
     marginBottom: spacingMd,
   },
+  solidColorBlock: {
+    width: '100%',
+    height: spacingMd * 3,
+  },
 });
 
-class BpkThemePicker extends Component {
+type State = {
+  themeId: string,
+  theme: Theme,
+};
+
+const SolidColorBlock = () => (
+  <BpkThemeAttributes>
+    {({ primaryColor }) => (
+      <View
+        style={[styles.solidColorBlock, { backgroundColor: primaryColor }]}
+      />
+    )}
+  </BpkThemeAttributes>
+);
+
+class BpkThemePicker extends Component<{}, State> {
+  themes: {| blue: Theme, yellow: Theme, red: Theme |};
+
   constructor() {
     super();
 
@@ -99,7 +135,9 @@ class BpkThemePicker extends Component {
               type="secondary"
               title="Go back"
               onPress={action('secondary themed button pressed')}
+              style={styles.bottomMargin}
             />
+            <SolidColorBlock />
           </View>
         </BpkThemeProvider>
       </View>
