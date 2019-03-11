@@ -18,7 +18,7 @@
 
 /* @flow */
 
-import React from 'react';
+import React, { Component, type ElementProps } from 'react';
 import PropTypes from 'prop-types';
 import {
   StyleSheet,
@@ -77,13 +77,16 @@ const BAR_TYPES = {
   bar: 'bar',
 };
 
-type Props = {
+type ViewProps = ElementProps<typeof View>;
+type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
+
+export type Props = {
   max: number,
   min: number,
   value: number,
   type: $Keys<typeof BAR_TYPES>,
-  style: ?any,
-  fillStyle: ?any,
+  style: ViewStyleProp,
+  fillStyle: ViewStyleProp,
   theme: ?Theme,
   accessibilityLabel: string | ((number, number, number) => string),
 };
@@ -92,7 +95,7 @@ type State = {
   width: number,
 };
 
-class ProgressBar extends React.Component<Props, State> {
+class BpkProgress extends Component<Props, State> {
   progressAnimation: Animated.Value;
 
   static propTypes = {
@@ -199,4 +202,4 @@ class ProgressBar extends React.Component<Props, State> {
   }
 }
 
-export default withTheme(ProgressBar);
+export default (withTheme(BpkProgress): typeof BpkProgress);

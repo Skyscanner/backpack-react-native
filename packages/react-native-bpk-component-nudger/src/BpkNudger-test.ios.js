@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import commonTests from './BpkNudger-test.common';
 
 describe('iOS', () => {

@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import React from 'react';
 import { Image, Platform, StyleSheet, View } from 'react-native';
 import PropTypes from 'prop-types';
@@ -51,10 +53,15 @@ const countries = [
   { id: 'US', name: 'USA' },
 ];
 
-class StatefulBpkFlatList extends React.Component<{
-  extraEntries: number,
-  showImages: boolean,
-}> {
+class StatefulBpkFlatList extends React.Component<
+  {
+    extraEntries: number,
+    showImages: boolean,
+  },
+  { selectedCountry: string },
+> {
+  itemPressCallbacks: { [string]: () => mixed };
+
   static propTypes = {
     extraEntries: PropTypes.number,
     showImages: PropTypes.bool,
@@ -71,7 +78,7 @@ class StatefulBpkFlatList extends React.Component<{
     this.state = { selectedCountry: 'DJ' };
   }
 
-  getOnItemPressCallback = id => {
+  getOnItemPressCallback = (id: string) => {
     this.itemPressCallbacks[id] =
       this.itemPressCallbacks[id] ||
       (() => this.setState({ selectedCountry: id }));

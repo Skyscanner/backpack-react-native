@@ -21,5 +21,7 @@
 import BpkPicker from './src/BpkPicker';
 import BpkPickerItem from './src/BpkPickerItem';
 
+export type { Props as BpkPickerProps } from './src/BpkPicker';
+export type { Props as BpkPickerItemProps } from './src/BpkPickerItem';
 export default BpkPicker;
 export { BpkPickerItem };

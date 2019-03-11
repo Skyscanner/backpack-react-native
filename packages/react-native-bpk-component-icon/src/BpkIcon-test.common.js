@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { colorBlue500 } from 'bpk-tokens/tokens/base.react.native';

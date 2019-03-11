@@ -16,11 +16,27 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import BpkNavigationBar from './src/BpkNavigationBar';
 import BpkNavigationBarButtonAndroid from './src/BpkNavigationBarButtonAndroid';
 import BpkNavigationBarBackButtonIOS from './src/BpkNavigationBarBackButtonIOS';
 import BpkNavigationBarTextButtonIOS from './src/BpkNavigationBarTextButtonIOS';
 import BpkNavigationBarIconButtonIOS from './src/BpkNavigationBarIconButtonIOS';
+
+export type { Props as BpkNavigationBarProps } from './src/BpkNavigationBar';
+export type {
+  Props as BpkNavigationBarBackButtonIOSProps,
+} from './src/BpkNavigationBarBackButtonIOS';
+export type {
+  Props as BpkNavigationBarButtonAndroidProps,
+} from './src/BpkNavigationBarButtonAndroid';
+export type {
+  Props as BpkNavigationBarTextButtonIOSProps,
+} from './src/BpkNavigationBarTextButtonIOS';
+export type {
+  Props as BpkNavigationBarIconButtonIOSProps,
+} from './src/BpkNavigationBarIconButtonIOS';
 
 export {
   // Android

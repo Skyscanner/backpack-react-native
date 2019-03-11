@@ -20,4 +20,5 @@
 
 import BpkProgress from './src/BpkProgress';
 
+export type { Props as BpkProgressProps } from './src/BpkProgress';
 export default BpkProgress;

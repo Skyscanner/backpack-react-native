@@ -15,6 +15,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+/* @flow */
+
 import {
   colorBlue500,
   colorPrimaryGradientLight,
@@ -43,6 +46,9 @@ describe('gradients', () => {
     });
 
     it('should default to default for unknown angles', () => {
+      // Ignoring this false positive flow error.
+      // The test is asserting that our prop type works for non flow users.
+      // $FlowFixMe
       expect(gradients.primary('notAnAngle')).toEqual({
         colors,
         start: { x: 0.0, y: 0.0 },

@@ -127,5 +127,5 @@ BpkButton.defaultProps = {
   large: false,
 };
 
-export default withTheme(BpkButton);
 export { BUTTON_TYPES, ICON_ALIGNMENTS };
+export default (withTheme(BpkButton): typeof BpkButton);

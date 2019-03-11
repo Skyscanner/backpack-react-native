@@ -75,7 +75,7 @@ const TouchablePlatformComponent = Platform.select({
   android: BpkTouchableNativeFeedback,
 });
 
-type Props = {
+export type Props = {
   disabled: boolean,
   onPress: () => mixed,
   label: ?(string | Element<any>),

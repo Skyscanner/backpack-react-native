@@ -142,7 +142,7 @@ const BpkBannerAlert = (props: Props) => {
           small
         />
       )}
-      {dismissable && (
+      {dismissable && dismissButtonLabel && onDismiss && (
         <BpkButtonLink
           style={STYLES.closeButton}
           title={dismissButtonLabel}

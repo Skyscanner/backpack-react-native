@@ -54,7 +54,6 @@ exports[`iOS BpkImage should render correctly when not loaded 1`] = `
       color="rgb(82, 76, 97)"
       hidesWhenStopped={true}
       size="small"
-      theme={null}
     />
   </View>
   <Image

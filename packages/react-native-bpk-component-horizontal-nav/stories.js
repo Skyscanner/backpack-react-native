@@ -16,7 +16,9 @@
  * limitations under the License.
  */
 
-import React from 'react';
+/* @flow */
+
+import React, { Component } from 'react';
 import { View, StyleSheet } from 'react-native';
 import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react-native';
@@ -36,9 +38,10 @@ const styles = StyleSheet.create({
   },
 });
 
-class ManagedNav extends React.Component {
-  constructor(props) {
-    super(props);
+class ManagedNav extends Component<{}, { selectedId: string }> {
+  constructor() {
+    super();
+
     this.state = { selectedId: '2' };
   }
 

@@ -25,7 +25,6 @@ import { View, TouchableOpacity } from 'react-native';
 import BpkIcon from 'react-native-bpk-component-icon';
 import BpkText, { WEIGHT_STYLES } from 'react-native-bpk-component-text';
 
-import styles from './styles';
 import {
   type CommonProps,
   commonPropTypes,
@@ -33,6 +32,7 @@ import {
   ICON_ALIGNMENTS,
   REQUIRED_THEME_ATTRIBUTES,
 } from './common-types';
+import styles from './styles';
 
 export type Props = {
   ...$Exact<CommonProps>,
@@ -122,4 +122,4 @@ BpkButtonLink.defaultProps = {
   large: false,
 };
 
-export default withTheme(BpkButtonLink);
+export default (withTheme(BpkButtonLink): typeof BpkButtonLink);

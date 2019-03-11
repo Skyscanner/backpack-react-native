@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import commonTests from './BpkSelect-test.common';
 
 describe('iOS', () => {

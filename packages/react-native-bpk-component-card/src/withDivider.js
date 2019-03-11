@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-import { View, StyleSheet, ViewPropTypes } from 'react-native';
-import React from 'react';
+/* @flow */
+
 import PropTypes from 'prop-types';
 import Dash from 'react-native-dash';
 import {
@@ -26,6 +26,8 @@ import {
   spacingMd,
   spacingBase,
 } from 'bpk-tokens/tokens/base.react.native';
+import { View, StyleSheet, ViewPropTypes } from 'react-native';
+import React, { type Node, type ElementProps, type ComponentType } from 'react';
 
 const styles = StyleSheet.create({
   cardInner: {
@@ -38,6 +40,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   cardMainVertical: {
+    // $FlowFixMe, becuase how else are you supposed to reset a flex value?
     flex: null,
   },
   cardMainPadded: {
@@ -61,6 +64,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   cardStubVertical: {
+    // $FlowFixMe, becuase how else are you supposed to reset a flex value?
     flex: null,
   },
   cardStubPadded: {
@@ -68,8 +72,20 @@ const styles = StyleSheet.create({
   },
 });
 
-const withDivider = CardComponent => {
-  const WithDivider = props => {
+type ViewProps = ElementProps<typeof View>;
+type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
+
+export type Props = {
+  children: Node,
+  stub: Node,
+  padded: boolean,
+  vertical: boolean,
+  mainStyle: ViewStyleProp,
+  stubStyle: ViewStyleProp,
+};
+
+const withDivider = (CardComponent: ComponentType<any>): ComponentType<any> => {
+  const WithDivider = (props: Props) => {
     const {
       children,
       stub,

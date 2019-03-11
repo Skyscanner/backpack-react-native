@@ -16,14 +16,23 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import React from 'react';
+import { Text } from 'react-native';
 import renderer from 'react-test-renderer';
 import { spacingSm } from 'bpk-tokens/tokens/base.react.native';
 
 import BpkHorizontalNav from './BpkHorizontalNav';
-import BpkHorizontalNavItem from './BpkHorizontalNavItem';
 
 jest.mock('./BpkHorizontalNavItem', () => 'BpkHorizontalNavItem');
+
+const MyNavItem = (props: { id: string, selected: boolean }) => (
+  // eslint-disable-next-line backpack/use-components
+  <Text testID={props.id}>{props.selected ? 'Selected' : 'Not selected'}</Text>
+);
+
+MyNavItem.defaultProps = { selected: false };
 
 const commonTests = () => {
   describe('BpkHorizontalNav', () => {
@@ -40,8 +49,8 @@ const commonTests = () => {
       const tree = renderer
         .create(
           <BpkHorizontalNav selectedId="0">
-            <BpkHorizontalNavItem id="0" />
-            <BpkHorizontalNavItem id="1" />
+            <MyNavItem id="0" />
+            <MyNavItem id="1" />
           </BpkHorizontalNav>,
         )
         .toJSON();

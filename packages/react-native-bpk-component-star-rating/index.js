@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import BpkStarRating from './src/BpkStarRating';
 import BpkStar from './src/BpkStar';
 import { STAR_TYPES } from './src/star-types';

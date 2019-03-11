@@ -18,12 +18,12 @@
 
 /* @flow */
 
-import BpkCalendar, { type Props as BpkCalendarProps } from './src/BpkCalendar';
-import {
-  SELECTION_TYPES,
-  type SelectionType as BpkCalendarSelectionType,
-} from './src/common-types';
+import BpkCalendar from './src/BpkCalendar';
+import { SELECTION_TYPES } from './src/common-types';
 
-export type { BpkCalendarProps, BpkCalendarSelectionType };
+export type { Props as BpkCalendarProps } from './src/BpkCalendar';
+export type {
+  SelectionType as BpkCalendarSelectionType,
+} from './src/common-types';
 export default BpkCalendar;
 export { SELECTION_TYPES };

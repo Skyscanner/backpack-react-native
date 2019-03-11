@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import { PixelRatio } from 'react-native';
 import {
   shadowSmColor,

@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StyleSheet, View } from 'react-native';
@@ -29,7 +31,13 @@ const styles = StyleSheet.create({
   },
 });
 
-const BpkStarRating = props => {
+export type Props = {
+  ratingLabel: string | ((rating: number, maxRating: number) => string),
+  rating: number,
+  maxRating: number,
+};
+
+const BpkStarRating = (props: Props) => {
   const { ratingLabel, rating, maxRating, ...rest } = props;
 
   const stars = new Array(maxRating).fill(undefined).map((_, i) => {

@@ -16,7 +16,9 @@
  * limitations under the License.
  */
 
-import React from 'react';
+/* @flow */
+
+import React, { Component, type Node } from 'react';
 import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react-native';
 import { StyleSheet, View } from 'react-native';
@@ -52,12 +54,36 @@ const animateHeightContent = (
   </BpkText>
 );
 
-class AnimateHeightDemo extends React.Component {
-  constructor(props) {
+export type Props = {
+  children: Node,
+  expandDelay: number,
+  collapseDelay: number,
+  animationDuration: number,
+  startExpanded: boolean,
+};
+
+class AnimateHeightDemo extends Component<Props, { expanded: boolean }> {
+  static propTypes = {
+    children: PropTypes.node,
+    expandDelay: PropTypes.number,
+    collapseDelay: PropTypes.number,
+    animationDuration: PropTypes.number,
+    startExpanded: PropTypes.bool,
+  };
+
+  static defaultProps = {
+    children: null,
+    expandDelay: 0,
+    collapseDelay: 0,
+    animationDuration: animationDurationBase,
+    startExpanded: false,
+  };
+
+  constructor(props: Props) {
     super(props);
 
     this.state = {
-      expanded: !!props.startExpanded,
+      expanded: !!this.props.startExpanded,
     };
   }
 
@@ -66,41 +92,29 @@ class AnimateHeightDemo extends React.Component {
   };
 
   render() {
+    const {
+      children,
+      expandDelay,
+      collapseDelay,
+      animationDuration,
+    } = this.props;
+
     return (
       <View>
         <BpkAnimateHeight
           expanded={this.state.expanded}
-          expandDelay={this.props.expandDelay}
-          collapseDelay={this.props.collapseDelay}
-          animationDuration={this.props.animationDuration}
+          expandDelay={expandDelay}
+          collapseDelay={collapseDelay}
+          animationDuration={animationDuration}
           style={{ marginBottom: spacingBase }}
         >
-          {this.props.children}
+          {children}
         </BpkAnimateHeight>
         <BpkButton title="Toggle" onPress={this.onToggle} />
       </View>
     );
   }
 }
-
-AnimateHeightDemo.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]),
-  expandDelay: PropTypes.number,
-  collapseDelay: PropTypes.number,
-  animationDuration: PropTypes.number,
-  startExpanded: PropTypes.bool,
-};
-
-AnimateHeightDemo.defaultProps = {
-  children: null,
-  expandDelay: 0,
-  collapseDelay: 0,
-  animationDuration: animationDurationBase,
-  startExpanded: false,
-};
 
 storiesOf('react-native-bpk-component-animate-height', module)
   .addDecorator(getStory => <View style={styles.centered}>{getStory()}</View>)

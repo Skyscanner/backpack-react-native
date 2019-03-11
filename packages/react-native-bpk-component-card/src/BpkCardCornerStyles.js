@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 const CORNER_STYLES = { sm: 'sm', lg: 'lg' };
 const defaultCornerStyle = CORNER_STYLES.sm;
 

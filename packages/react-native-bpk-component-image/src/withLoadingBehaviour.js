@@ -16,26 +16,27 @@
  * limitations under the License.
  */
 
-import React from 'react';
+/* @flow */
+
+import React, { Component, type ComponentType } from 'react';
 
 // From Recompose: https://github.com/acdlite/recompose/blob/master/src/packages/recompose/getDisplayName.js
-const getDisplayName = Component => {
-  if (typeof Component === 'string') {
-    return Component;
+const getDisplayName = WrappedComponent => {
+  if (typeof WrappedComponent === 'string') {
+    return WrappedComponent;
   }
 
-  if (!Component) {
-    return undefined;
+  if (!WrappedComponent) {
+    return 'Unknown';
   }
 
-  return Component.displayName || Component.name || 'Component';
+  return WrappedComponent.displayName || WrappedComponent.name || 'Component';
 };
 
-const wrapDisplayName = (BaseComponent, hocName) =>
-  `${hocName}(${getDisplayName(BaseComponent)})`;
-
-export default function withLoadingBehavior(Component) {
-  class WithLoadingBehavior extends React.Component {
+const withLoadingBehavior = (
+  WrappedComponent: ComponentType<any>,
+): ComponentType<any> => {
+  class WithLoadingBehavior extends Component<{}, { loaded: boolean }> {
     constructor() {
       super();
 
@@ -52,7 +53,7 @@ export default function withLoadingBehavior(Component) {
 
     render() {
       return (
-        <Component
+        <WrappedComponent
           onLoad={this.onLoad}
           loaded={this.state.loaded}
           {...this.props}
@@ -60,9 +61,14 @@ export default function withLoadingBehavior(Component) {
       );
     }
   }
-  WithLoadingBehavior.displayName = wrapDisplayName(
-    Component,
-    'withLoadingBehavior',
-  );
+
+  if (process.env.NODE_ENV !== 'production') {
+    WithLoadingBehavior.displayName = `withLoadingBehavior(${getDisplayName(
+      WrappedComponent,
+    )})`;
+  }
+
   return WithLoadingBehavior;
-}
+};
+
+export default withLoadingBehavior;

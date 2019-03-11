@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import commonTests from './BpkSwitch-test.common';
 
 describe('iOS', () => {

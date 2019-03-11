@@ -18,7 +18,9 @@
 
 // If theming is ever expanded to support other types, this should be changed
 // to something akin to BpkButton's theming functions.
+
 /* @flow */
+
 import { makeThemePropType } from 'react-native-bpk-theming';
 
 const REQUIRED_THEME_ATTRIBUTES: Array<string> = [

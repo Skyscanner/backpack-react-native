@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import { Platform, StyleSheet, View, ViewPropTypes } from 'react-native';
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -56,7 +58,19 @@ const styles = StyleSheet.create({
   },
 });
 
-const BpkHorizontalNavItem = props => {
+export type Props = {
+  id: string,
+  onPress: (event: SyntheticEvent<>) => mixed,
+  title: string,
+  accessibilityLabel: ?string,
+  disabled: boolean,
+  selected: boolean,
+  style: ViewPropTypes.style,
+  small: boolean,
+  theme: ?Object,
+};
+
+const BpkHorizontalNavItem = (props: Props) => {
   const {
     accessibilityLabel,
     disabled,
@@ -122,7 +136,7 @@ const BpkHorizontalNavItem = props => {
   );
 };
 
-const propTypes = {
+BpkHorizontalNavItem.propTypes = {
   id: PropTypes.string.isRequired,
   onPress: PropTypes.func.isRequired,
   title: PropTypes.string.isRequired,
@@ -134,8 +148,6 @@ const propTypes = {
   theme: themePropType,
 };
 
-BpkHorizontalNavItem.propTypes = propTypes;
-
 BpkHorizontalNavItem.defaultProps = {
   accessibilityLabel: null,
   disabled: false,
@@ -145,5 +157,4 @@ BpkHorizontalNavItem.defaultProps = {
   theme: null,
 };
 
-export { propTypes };
-export default withTheme(BpkHorizontalNavItem);
+export default (withTheme(BpkHorizontalNavItem): typeof BpkHorizontalNavItem);

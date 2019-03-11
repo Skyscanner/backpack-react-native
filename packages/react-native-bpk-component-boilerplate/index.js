@@ -18,9 +18,7 @@
 
 /* @flow */
 
-import BpkBoilerplate, {
-  type Props as BpkBoilerplateProps,
-} from './src/BpkBoilerplate';
+import BpkBoilerplate from './src/BpkBoilerplate';
 
-export type { BpkBoilerplateProps };
+export type { Props as BpkBoilerplateProps } from './src/BpkBoilerplate';
 export default BpkBoilerplate;

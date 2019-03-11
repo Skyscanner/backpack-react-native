@@ -15,6 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 /* @flow */
 
 import React from 'react';
@@ -33,7 +34,7 @@ import {
 
 const REQUIRED_THEME_ATTRIBUTES: Array<string> = ['switchPrimaryColor'];
 
-const getColors = (themeAttributes: ?Object, value: boolean): Object => {
+const getColors = (themeAttributes: ?Object, value: ?boolean): Object => {
   const primaryColor = themeAttributes
     ? themeAttributes.switchPrimaryColor
     : colorBlue500;
@@ -58,7 +59,12 @@ const getColors = (themeAttributes: ?Object, value: boolean): Object => {
   return colors;
 };
 
-const BpkSwitch = props => {
+export type Props = {
+  value: ?boolean,
+  theme: ?Object,
+};
+
+const BpkSwitch = (props: Props) => {
   const { value, theme, ...rest } = props;
   const themeAttributes = getThemeAttributes(REQUIRED_THEME_ATTRIBUTES, theme);
 
@@ -67,17 +73,14 @@ const BpkSwitch = props => {
   );
 };
 
-const propTypes = {
-  theme: makeThemePropType(REQUIRED_THEME_ATTRIBUTES),
+BpkSwitch.propTypes = {
   value: PropTypes.bool,
+  theme: makeThemePropType(REQUIRED_THEME_ATTRIBUTES),
 };
-
-BpkSwitch.propTypes = propTypes;
 
 BpkSwitch.defaultProps = {
-  theme: null,
   value: false,
+  theme: null,
 };
 
-export default withTheme(BpkSwitch);
-export { propTypes };
+export default (withTheme(BpkSwitch): typeof BpkSwitch);

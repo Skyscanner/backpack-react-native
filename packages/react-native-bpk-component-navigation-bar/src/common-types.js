@@ -27,7 +27,7 @@ export type TitleWithIcon = {|
   iconPosition: 'leading' | 'trailing',
 |};
 
-export type TitleProp = 'string' | TitleWithIcon | Element<any>;
+export type TitleProp = string | TitleWithIcon | Element<any>;
 
 export const TITLE_PROPTYPE = PropTypes.oneOfType([
   PropTypes.string,

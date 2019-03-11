@@ -6,7 +6,6 @@ exports[`Android BpkSpinner should disable theming if the required attribute is 
   color="rgb(0, 178, 214)"
   hidesWhenStopped={true}
   size="large"
-  theme={Object {}}
 />
 `;
 
@@ -16,7 +15,6 @@ exports[`Android BpkSpinner should render correctly 1`] = `
   color="rgb(0, 178, 214)"
   hidesWhenStopped={true}
   size="large"
-  theme={null}
 />
 `;
 
@@ -26,7 +24,6 @@ exports[`Android BpkSpinner should support the "small" property 1`] = `
   color="rgb(0, 178, 214)"
   hidesWhenStopped={true}
   size="small"
-  theme={null}
 />
 `;
 
@@ -36,11 +33,6 @@ exports[`Android BpkSpinner should support theming 1`] = `
   color="red"
   hidesWhenStopped={true}
   size="large"
-  theme={
-    Object {
-      "spinnerPrimaryColor": "red",
-    }
-  }
 />
 `;
 
@@ -50,7 +42,6 @@ exports[`Android BpkSpinner should support type="dark" 1`] = `
   color="rgb(82, 76, 97)"
   hidesWhenStopped={true}
   size="large"
-  theme={null}
 />
 `;
 
@@ -60,7 +51,6 @@ exports[`Android BpkSpinner should support type="light" 1`] = `
   color="rgb(255, 255, 255)"
   hidesWhenStopped={true}
   size="large"
-  theme={null}
 />
 `;
 
@@ -70,6 +60,5 @@ exports[`Android BpkSpinner should support type="primary" 1`] = `
   color="rgb(0, 178, 214)"
   hidesWhenStopped={true}
   size="large"
-  theme={null}
 />
 `;

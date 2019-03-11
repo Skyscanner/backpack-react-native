@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
   },
 });
 
-type Props = {
+export type Props = {
   label: string,
   value: PickerValue,
   onPress: ?(PickerValue) => mixed,
