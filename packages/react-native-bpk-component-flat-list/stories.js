@@ -22,6 +22,9 @@ import React from 'react';
 import { Image, Platform, StyleSheet, View } from 'react-native';
 import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react-native';
+import BpkThemeProvider from 'react-native-bpk-theming';
+
+import themeAttributes from '../../storybook/themeAttributes';
 
 import BpkFlatList, {
   BpkFlatListItem,
@@ -133,4 +136,9 @@ storiesOf('react-native-bpk-component-flat-list', module)
   .addDecorator(getStory => <View style={styles.topMargin}>{getStory()}</View>)
   .add('docs:default', () => <StatefulBpkFlatList />)
   .add('docs:with-images', () => <StatefulBpkFlatList showImages />)
-  .add('Perf (Long list)', () => <StatefulBpkFlatList extraEntries={200} />);
+  .add('Perf (Long list)', () => <StatefulBpkFlatList extraEntries={200} />)
+  .add('Themed', () => (
+    <BpkThemeProvider theme={themeAttributes}>
+      <StatefulBpkFlatList />
+    </BpkThemeProvider>
+  ));

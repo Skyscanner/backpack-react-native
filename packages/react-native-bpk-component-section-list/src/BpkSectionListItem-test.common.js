@@ -21,6 +21,7 @@
 import React from 'react';
 import { Image } from 'react-native';
 import renderer from 'react-test-renderer';
+import BpkThemeProvider from 'react-native-bpk-theming';
 
 import BpkSectionListItem from './BpkSectionListItem';
 
@@ -57,6 +58,21 @@ const commonTests = () => {
         .toJSON();
       expect(tree).toMatchSnapshot();
     });
+  });
+
+  it('should support theming when selected', () => {
+    const theme = {
+      sectionListSelectedItemColor: 'red',
+      textFontFamily: 'System',
+    };
+    const tree = renderer
+      .create(
+        <BpkThemeProvider theme={theme}>
+          <BpkSectionListItem title="List item" onPress={onPressFn} selected />
+        </BpkThemeProvider>,
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
   });
 };
 

@@ -29,7 +29,9 @@ import {
   spacingLg,
   colorBlue600,
 } from 'bpk-tokens/tokens/base.react.native';
+import { getThemeAttributes, withTheme } from 'react-native-bpk-theming';
 
+import { REQUIRED_THEME_ATTRIBUTES } from './theming';
 import {
   type SectionListItemProps,
   SECTION_LIST_ITEM_PROP_TYPES,
@@ -77,10 +79,26 @@ class BpkSectionListItem extends React.PureComponent<SectionListItemProps> {
   static defaultProps = SECTION_LIST_ITEM_DEFAULT_PROPS;
 
   render() {
-    const { image, title, selected, style, ...rest } = this.props;
+    const { image, title, selected, style, theme, ...rest } = this.props;
     const iconStyles = [styles.tick];
+    const textStyles = [styles.text];
+
     if (selected) {
       iconStyles.push(styles.tickVisible);
+      textStyles.push(styles.textSelected);
+
+      const themeAttributes = getThemeAttributes(
+        REQUIRED_THEME_ATTRIBUTES,
+        theme,
+      );
+      if (themeAttributes) {
+        iconStyles.push({
+          color: themeAttributes.sectionListSelectedItemColor,
+        });
+        textStyles.push({
+          color: themeAttributes.sectionListSelectedItemColor,
+        });
+      }
     }
 
     const styledImage = image
@@ -97,10 +115,7 @@ class BpkSectionListItem extends React.PureComponent<SectionListItemProps> {
       >
         <View style={styles.content}>
           {styledImage}
-          <BpkText
-            textStyle="base"
-            style={[styles.text, selected ? styles.textSelected : null]}
-          >
+          <BpkText textStyle="base" style={textStyles}>
             {title}
           </BpkText>
         </View>
@@ -110,4 +125,4 @@ class BpkSectionListItem extends React.PureComponent<SectionListItemProps> {
   }
 }
 
-export default BpkSectionListItem;
+export default withTheme(BpkSectionListItem);

@@ -88,3 +88,7 @@ Inherits all props from React Native's [FlatList](https://facebook.github.io/rea
 ### BpkFlatListItemSeparator
 
 None.
+
+## Theme Props
+
+* `flatListSelectedItemColor`

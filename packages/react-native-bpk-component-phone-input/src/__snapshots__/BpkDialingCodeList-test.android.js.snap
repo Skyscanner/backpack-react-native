@@ -125,7 +125,6 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
                   Object {
                     "flex": 1,
                   },
-                  null,
                 ],
               ]
             }
@@ -264,7 +263,6 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
                   Object {
                     "flex": 1,
                   },
-                  null,
                 ],
               ]
             }
@@ -403,7 +401,6 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
                   Object {
                     "flex": 1,
                   },
-                  null,
                 ],
               ]
             }
@@ -726,7 +723,6 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
                   Object {
                     "flex": 1,
                   },
-                  null,
                 ],
               ]
             }
@@ -865,7 +861,6 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
                   Object {
                     "flex": 1,
                   },
-                  null,
                 ],
               ]
             }

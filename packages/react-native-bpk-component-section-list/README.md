@@ -124,3 +124,7 @@ Inherits all props from React Native's [SectionList](https://facebook.github.io/
 ### BpkSectionListItemSeparator
 
 None.
+
+## Theme Props
+
+* `sectionListSelectedItemColor`

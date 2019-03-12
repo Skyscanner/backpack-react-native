@@ -45,12 +45,14 @@ jest.mock('bpk-tokens/tokens/base.react.native', () =>
 describe('Android', () => {
   describe('BpkRadioIcon', () => {
     it('should render correctly', () => {
-      const tree = renderer.create(<BpkRadioIcon />).toJSON();
+      const tree = renderer.create(<BpkRadioIcon tintColor="red" />).toJSON();
       expect(tree).toMatchSnapshot();
     });
 
     it('should render correctly with "selected"', () => {
-      const tree = renderer.create(<BpkRadioIcon selected />).toJSON();
+      const tree = renderer
+        .create(<BpkRadioIcon tintColor="red" selected />)
+        .toJSON();
       expect(tree).toMatchSnapshot();
     });
   });

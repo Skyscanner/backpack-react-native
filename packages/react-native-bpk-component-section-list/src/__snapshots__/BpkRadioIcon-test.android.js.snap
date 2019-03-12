@@ -45,7 +45,7 @@ exports[`Android BpkRadioIcon should render correctly with "selected" 1`] = `
         "width": 20,
       },
       Object {
-        "borderColor": "rgb(0, 178, 214)",
+        "borderColor": "red",
       },
     ]
   }
@@ -60,7 +60,7 @@ exports[`Android BpkRadioIcon should render correctly with "selected" 1`] = `
           "width": 10,
         },
         Object {
-          "backgroundColor": "rgb(0, 178, 214)",
+          "backgroundColor": "red",
         },
       ]
     }

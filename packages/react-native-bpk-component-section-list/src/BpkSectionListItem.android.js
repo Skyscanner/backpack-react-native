@@ -27,7 +27,9 @@ import {
   colorBlue500,
   colorGray700,
 } from 'bpk-tokens/tokens/base.react.native';
+import { getThemeAttributes, withTheme } from 'react-native-bpk-theming';
 
+import { REQUIRED_THEME_ATTRIBUTES } from './theming';
 import BpkRadioIcon from './BpkRadioIcon.android';
 import {
   type SectionListItemProps,
@@ -37,6 +39,7 @@ import {
 
 const ANDROID_LIST_ITEM_HEIGHT = 48;
 const ANDROID_LIST_ITEM_IMAGE_MARGIN = 32;
+const tintColor = colorBlue500;
 
 const styles = StyleSheet.create({
   outer: {
@@ -57,7 +60,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   textSelected: {
-    color: colorBlue500,
+    color: tintColor,
   },
   image: {
     marginRight: ANDROID_LIST_ITEM_IMAGE_MARGIN,
@@ -70,7 +73,24 @@ class BpkSectionListItem extends React.PureComponent<SectionListItemProps> {
   static defaultProps = SECTION_LIST_ITEM_DEFAULT_PROPS;
 
   render() {
-    const { image, title, selected, ...rest } = this.props;
+    const { image, title, selected, theme, ...rest } = this.props;
+
+    let tintColorFinal = tintColor;
+
+    const textStyles = [styles.text];
+    if (selected) {
+      textStyles.push(styles.textSelected);
+      const themeAttributes = getThemeAttributes(
+        REQUIRED_THEME_ATTRIBUTES,
+        theme,
+      );
+      if (themeAttributes) {
+        textStyles.push({
+          color: themeAttributes.sectionListSelectedItemColor,
+        });
+        tintColorFinal = themeAttributes.sectionListSelectedItemColor;
+      }
+    }
 
     const styledImage = image
       ? React.cloneElement(image, { style: [image.props.style, styles.image] })
@@ -87,18 +107,15 @@ class BpkSectionListItem extends React.PureComponent<SectionListItemProps> {
         <View style={styles.outer}>
           <View style={styles.content}>
             {styledImage}
-            <BpkText
-              textStyle="base"
-              style={[styles.text, selected ? styles.textSelected : null]}
-            >
+            <BpkText textStyle="base" style={textStyles}>
               {title}
             </BpkText>
           </View>
-          <BpkRadioIcon selected={selected} />
+          <BpkRadioIcon selected={selected} tintColor={tintColorFinal} />
         </View>
       </BpkTouchableNativeFeedback>
     );
   }
 }
 
-export default BpkSectionListItem;
+export default withTheme(BpkSectionListItem);

@@ -21,6 +21,9 @@
 import PropTypes from 'prop-types';
 import { View, ViewPropTypes } from 'react-native';
 import { type Element, type ElementProps } from 'react';
+import { type Theme } from 'react-native-bpk-theming';
+
+import { themePropType } from './theming';
 
 type ViewProps = ElementProps<typeof View>;
 type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
@@ -33,6 +36,7 @@ export type FlatListItemProps = {
   selected: boolean,
   image: ?FlatListItemImage,
   style: ViewStyleProp,
+  theme: ?Theme,
 };
 
 export const LIST_ITEM_PROP_TYPES = {
@@ -41,10 +45,12 @@ export const LIST_ITEM_PROP_TYPES = {
   image: PropTypes.element,
   selected: PropTypes.bool,
   style: ViewPropTypes.style,
+  theme: themePropType,
 };
 
 export const LIST_ITEM_DEFAULT_PROPS = {
   image: null,
   selected: false,
   style: null,
+  theme: null,
 };
