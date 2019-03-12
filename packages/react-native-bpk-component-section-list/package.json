@@ -17,6 +17,7 @@
     "bpk-tokens": "^27.4.7",
     "prop-types": "^15.5.8",
     "react-native-bpk-component-icon": "^1.14.3",
+    "react-native-bpk-component-flat-list": "^3.0.19",
     "react-native-bpk-component-text": "^4.1.1",
     "react-native-bpk-component-touchable-native-feedback": "^1.1.49",
     "react-native-bpk-component-touchable-overlay": "^1.1.11",

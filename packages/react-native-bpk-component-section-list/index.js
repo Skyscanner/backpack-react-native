@@ -18,14 +18,16 @@
 
 /* @flow */
 
-import BpkSectionList from './src/BpkSectionList';
-import BpkSectionListItem from './src/BpkSectionListItem';
-import BpkSectionListHeader from './src/BpkSectionListHeader';
-import BpkSectionListItemSeparator from './src/BpkSectionListItemSeparator';
+import {
+  BpkFlatListItem as BpkSectionListItem,
+  BpkFlatListItemSeparator as BpkSectionListItemSeparator,
+  type FlatListItemProps,
+} from 'react-native-bpk-component-flat-list';
 
-export type {
-  SectionListItemProps as BpkSectionListItemProps,
-} from './src/common-types';
+import BpkSectionList from './src/BpkSectionList';
+import BpkSectionListHeader from './src/BpkSectionListHeader';
+
+export type { FlatListItemProps as BpkSectionListItemProps };
 export type {
   Props as BpkSectionListHeaderProps,
 } from './src/BpkSectionListHeader';

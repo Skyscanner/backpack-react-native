@@ -393,7 +393,7 @@ exports[`iOS should support theming when selected 1`] = `
               "color": "rgb(0, 157, 189)",
             },
             Object {
-              "color": undefined,
+              "color": "red",
             },
           ],
         ]
@@ -424,7 +424,7 @@ exports[`iOS should support theming when selected 1`] = `
             "opacity": 1,
           },
           Object {
-            "color": undefined,
+            "color": "red",
           },
         ],
       ]

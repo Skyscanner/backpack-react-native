@@ -127,4 +127,4 @@ None.
 
 ## Theme Props
 
-* `sectionListSelectedItemColor`
+Same as [flat list](/components/native/flat-list?platform=native#theme-props).

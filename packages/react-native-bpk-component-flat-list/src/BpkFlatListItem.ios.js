@@ -94,10 +94,10 @@ class BpkFlatListItem extends React.PureComponent<FlatListItemProps> {
       );
       if (themeAttributes) {
         iconStyles.push({
-          color: themeAttributes.sectionListSelectedItemColor,
+          color: themeAttributes.flatListSelectedItemColor,
         });
         textStyles.push({
-          color: themeAttributes.sectionListSelectedItemColor,
+          color: themeAttributes.flatListSelectedItemColor,
         });
       }
     }

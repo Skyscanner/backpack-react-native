@@ -66,11 +66,8 @@ const themeAttributes = {
   // Used in BpkText
   textFontFamily: Platform.OS === 'ios' ? 'Courier' : 'serif-monospace',
 
-  // Used in BpkFlatList
+  // Used in BpkFlatList and BpkSectionList
   flatListSelectedItemColor: theme.brandColors.gradientStart,
-
-  // Used in BpkSectionList
-  sectionListSelectedItemColor: theme.brandColors.gradientStart,
 };
 
 export default themeAttributes;
