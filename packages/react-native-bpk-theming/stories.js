@@ -30,6 +30,7 @@ import {
   colorBlue500,
   colorYellow400,
   colorYellow500,
+  fontFamily,
 } from 'bpk-tokens/tokens/base.react.native';
 
 // We import relatively because a) it's just for a story and
@@ -47,6 +48,7 @@ type Theme = {
   buttonSecondaryBackgroundColor: string,
   buttonSecondaryBorderColor: string,
   primaryColor: string,
+  textFontFamily: string,
 };
 
 const generateThemeAttributes = (
@@ -60,6 +62,7 @@ const generateThemeAttributes = (
   buttonSecondaryBackgroundColor: colorWhite,
   buttonSecondaryBorderColor: gradientEndColor,
   primaryColor: gradientStartColor,
+  textFontFamily: fontFamily,
 });
 
 const styles = StyleSheet.create({
