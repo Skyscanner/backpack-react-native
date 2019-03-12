@@ -102,10 +102,10 @@
     "metro-react-native-babel-preset": "^0.53.0",
     "prompt": "^1.0.0",
     "prop-types": "^15.5.10",
-    "react": "16.6.1",
-    "react-dom": "16.6.1",
-    "react-native": "0.57.7",
-    "react-native-linear-gradient": "react-native-community/react-native-linear-gradient#20928ce2ac8038e8545c7f6c3faab05f866deabd",
+    "react": "16.6.3",
+    "react-dom": "16.6.3",
+    "react-native": "0.58.5",
+    "react-native-linear-gradient": "^2.5.3",
     "react-test-renderer": "16.6.1"
   },
   "greenkeeper": {
