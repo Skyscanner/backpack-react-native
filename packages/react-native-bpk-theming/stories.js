@@ -109,10 +109,12 @@ class BpkThemePicker extends Component<{}, State> {
   }
 
   switchTheme = value => {
-    this.setState({
-      themeId: value,
-      theme: this.themes[value],
-    });
+    if (typeof value === 'string') {
+      this.setState({
+        themeId: value,
+        theme: this.themes[value],
+      });
+    }
   };
 
   render() {

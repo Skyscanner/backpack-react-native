@@ -21,6 +21,7 @@
 import { type Node } from 'react';
 import PropTypes from 'prop-types';
 import { makeThemePropType } from 'react-native-bpk-theming';
+import type { PressEvent } from 'react-native/Libraries/Types/CoreEventTypes';
 
 export const REQUIRED_THEME_ATTRIBUTES = ['buttonLinkTextColor'];
 
@@ -32,7 +33,7 @@ export const ICON_ALIGNMENTS = {
 };
 
 export type CommonProps = {
-  onPress: (event: SyntheticEvent<>) => mixed,
+  onPress: (event: PressEvent) => mixed,
   title: string,
   disabled: boolean,
   accessibilityLabel: ?string,

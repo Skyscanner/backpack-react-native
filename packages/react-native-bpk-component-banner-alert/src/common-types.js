@@ -21,6 +21,7 @@
 import { type Node } from 'react';
 import PropTypes from 'prop-types';
 import { ViewPropTypes } from 'react-native';
+import type { PressEvent } from 'react-native/Libraries/Types/CoreEventTypes';
 
 import {
   dismissablePropType,
@@ -44,8 +45,8 @@ export type Props = {
   dismissable: boolean,
   dismissButtonLabel: ?string,
   expanded: boolean,
-  onDismiss: ?(event: SyntheticEvent<>) => mixed,
-  onToggleExpanded: ?(event: SyntheticEvent<>) => mixed,
+  onDismiss: ?(event: PressEvent) => mixed,
+  onToggleExpanded: ?(event: PressEvent) => mixed,
   show: boolean,
   toggleExpandedButtonLabel: ?string,
   bannerStyle: ?any,
