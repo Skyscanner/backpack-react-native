@@ -29,7 +29,9 @@ import {
   spacingLg,
   colorBlue600,
 } from 'bpk-tokens/tokens/base.react.native';
+import { getThemeAttributes, withTheme } from 'react-native-bpk-theming';
 
+import { REQUIRED_THEME_ATTRIBUTES } from './theming';
 import {
   type FlatListItemProps,
   LIST_ITEM_PROP_TYPES,
@@ -77,10 +79,27 @@ class BpkFlatListItem extends React.PureComponent<FlatListItemProps> {
   static defaultProps = LIST_ITEM_DEFAULT_PROPS;
 
   render() {
-    const { image, title, selected, style, ...rest } = this.props;
+    const { image, title, selected, style, theme, ...rest } = this.props;
+
     const iconStyles = [styles.tick];
+    const textStyles = [styles.text];
+
     if (selected) {
       iconStyles.push(styles.tickVisible);
+      textStyles.push(styles.textSelected);
+
+      const themeAttributes = getThemeAttributes(
+        REQUIRED_THEME_ATTRIBUTES,
+        theme,
+      );
+      if (themeAttributes) {
+        iconStyles.push({
+          color: themeAttributes.flatListSelectedItemColor,
+        });
+        textStyles.push({
+          color: themeAttributes.flatListSelectedItemColor,
+        });
+      }
     }
 
     const styledImage = image
@@ -99,10 +118,7 @@ class BpkFlatListItem extends React.PureComponent<FlatListItemProps> {
       >
         <View style={styles.content}>
           {styledImage}
-          <BpkText
-            textStyle="base"
-            style={[styles.text, selected ? styles.textSelected : null]}
-          >
+          <BpkText textStyle="base" style={textStyles}>
             {title}
           </BpkText>
         </View>
@@ -114,4 +130,4 @@ class BpkFlatListItem extends React.PureComponent<FlatListItemProps> {
 
 BpkFlatListItem.defaultProps = LIST_ITEM_DEFAULT_PROPS;
 
-export default BpkFlatListItem;
+export default withTheme(BpkFlatListItem);

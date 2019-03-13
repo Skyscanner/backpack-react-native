@@ -20,7 +20,7 @@
 
 import { makeThemePropType } from 'react-native-bpk-theming';
 
-const REQUIRED_THEME_ATTRIBUTES: Array<string> = [
+const REQUIRED_THEME_ATTRIBUTES = [
   'progressFillBackgroundColor',
   'progressTrackBackgroundColor',
 ];

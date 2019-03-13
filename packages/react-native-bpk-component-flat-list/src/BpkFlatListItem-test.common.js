@@ -21,6 +21,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { Image } from 'react-native';
+import BpkThemeProvider from 'react-native-bpk-theming';
 
 import BpkFlatListItem from './BpkFlatListItem';
 
@@ -57,6 +58,21 @@ const commonTests = () => {
         .toJSON();
       expect(tree).toMatchSnapshot();
     });
+  });
+
+  it('should support theming when selected', () => {
+    const theme = {
+      flatListSelectedItemColor: 'red',
+      textFontFamily: 'System',
+    };
+    const tree = renderer
+      .create(
+        <BpkThemeProvider theme={theme}>
+          <BpkFlatListItem title="List item" onPress={onPressFn} selected />
+        </BpkThemeProvider>,
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
   });
 };
 

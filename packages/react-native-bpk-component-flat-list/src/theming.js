@@ -16,32 +16,12 @@
  * limitations under the License.
  */
 
+// If theming is ever expanded to support other types, this should be changed
+// to something akin to BpkButton's theming functions.
 /* @flow */
+import { makeThemePropType } from 'react-native-bpk-theming';
 
-import { Platform, StyleSheet, View } from 'react-native';
-import React from 'react';
-import {
-  spacingMd,
-  spacingBase,
-  colorGray100,
-} from 'bpk-tokens/tokens/base.react.native';
+const REQUIRED_THEME_ATTRIBUTES = ['flatListSelectedItemColor'];
+const themePropType = makeThemePropType(REQUIRED_THEME_ATTRIBUTES);
 
-const styles = StyleSheet.create({
-  separator: {
-    flex: 1,
-    height: 1, // eslint-disable-line backpack/use-tokens
-    backgroundColor: colorGray100,
-    ...Platform.select({
-      ios: {
-        marginLeft: spacingBase,
-      },
-      android: {
-        marginHorizontal: spacingMd,
-      },
-    }),
-  },
-});
-
-const BpkSectionListItemSeparator = () => <View style={styles.separator} />;
-
-export default BpkSectionListItemSeparator;
+export { REQUIRED_THEME_ATTRIBUTES, themePropType };

@@ -22,6 +22,9 @@ import React from 'react';
 import { Image, Platform, StyleSheet, View } from 'react-native';
 import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react-native';
+import BpkThemeProvider from 'react-native-bpk-theming';
+
+import themeAttributes from '../../storybook/themeAttributes';
 
 import BpkSectionList, {
   BpkSectionListItem,
@@ -164,4 +167,9 @@ storiesOf('react-native-bpk-component-section-list', module)
   .addDecorator(getStory => <View style={styles.topMargin}>{getStory()}</View>)
   .add('docs:default', () => <StatefulBpkSectionList />)
   .add('docs:with-images', () => <StatefulBpkSectionList showImages />)
-  .add('Perf (Long list)', () => <StatefulBpkSectionList extraEntries={200} />);
+  .add('Perf (Long list)', () => <StatefulBpkSectionList extraEntries={200} />)
+  .add('Themed', () => (
+    <BpkThemeProvider theme={themeAttributes}>
+      <StatefulBpkSectionList />
+    </BpkThemeProvider>
+  ));

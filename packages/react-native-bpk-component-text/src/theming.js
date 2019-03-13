@@ -21,7 +21,7 @@
 /* @flow */
 import { makeThemePropType } from 'react-native-bpk-theming';
 
-const REQUIRED_THEME_ATTRIBUTES: Array<string> = ['textFontFamily'];
+const REQUIRED_THEME_ATTRIBUTES = ['textFontFamily'];
 const themePropType = makeThemePropType(REQUIRED_THEME_ATTRIBUTES);
 
 export { REQUIRED_THEME_ATTRIBUTES, themePropType };

@@ -25,7 +25,7 @@ import { type Theme } from 'react-native-bpk-theming';
 
 import styles from './styles';
 
-const REQUIRED_THEME_ATTRIBUTES: Object = {
+const REQUIRED_THEME_ATTRIBUTES = {
   primary: [
     styles.themeMappings.text.color.primary,
     styles.themeMappings.gradient.primary.startColor,

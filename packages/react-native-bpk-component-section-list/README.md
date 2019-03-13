@@ -124,3 +124,7 @@ Inherits all props from React Native's [SectionList](https://facebook.github.io/
 ### BpkSectionListItemSeparator
 
 None.
+
+## Theme Props
+
+Same as [flat list](/components/native/flat-list?platform=native#theme-props).
