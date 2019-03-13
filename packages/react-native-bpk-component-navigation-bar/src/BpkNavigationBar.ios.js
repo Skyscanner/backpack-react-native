@@ -137,7 +137,7 @@ class BpkNavigationBar extends Component<Props, {}> {
     style: null,
   };
 
-  constructor(props) {
+  constructor(props: Props) {
     super(props);
     this.theme = getThemeAttributes(
       IOS_THEME_ATTRIBUTES,
