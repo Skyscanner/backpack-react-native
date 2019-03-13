@@ -159,6 +159,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        rejectResponderTermination={true}
         style={
           Object {
             "borderBottomWidth": 0,
@@ -342,6 +343,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        rejectResponderTermination={true}
         style={
           Object {
             "borderBottomWidth": 0,

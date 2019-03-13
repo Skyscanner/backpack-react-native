@@ -2,6 +2,7 @@
 
 exports[`Android BpkSwitch should disable theming if the required attribute is omitted 1`] = `
 <AndroidSwitch
+  accessibilityRole="button"
   enabled={true}
   on={true}
   onChange={[Function]}
@@ -14,6 +15,7 @@ exports[`Android BpkSwitch should disable theming if the required attribute is o
 
 exports[`Android BpkSwitch should render correctly 1`] = `
 <AndroidSwitch
+  accessibilityRole="button"
   enabled={true}
   on={false}
   onChange={[Function]}
@@ -26,6 +28,7 @@ exports[`Android BpkSwitch should render correctly 1`] = `
 
 exports[`Android BpkSwitch should support the "value" prop 1`] = `
 <AndroidSwitch
+  accessibilityRole="button"
   enabled={true}
   on={true}
   onChange={[Function]}
@@ -38,6 +41,7 @@ exports[`Android BpkSwitch should support the "value" prop 1`] = `
 
 exports[`Android BpkSwitch should support theming 1`] = `
 <AndroidSwitch
+  accessibilityRole="button"
   enabled={true}
   on={true}
   onChange={[Function]}

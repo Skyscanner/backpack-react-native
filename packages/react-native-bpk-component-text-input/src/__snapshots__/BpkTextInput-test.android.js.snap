@@ -48,6 +48,7 @@ exports[`Android BpkTextInput should ignore when placeholder is provided, as ele
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        rejectResponderTermination={true}
         style={
           Object {
             "borderBottomWidth": 0,
@@ -117,6 +118,7 @@ exports[`Android BpkTextInput should render correctly 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        rejectResponderTermination={true}
         style={
           Object {
             "borderBottomWidth": 0,
@@ -188,6 +190,7 @@ exports[`Android BpkTextInput should render correctly with \`accessoryView\` 1`]
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        rejectResponderTermination={true}
         style={
           Object {
             "borderBottomWidth": 0,
@@ -257,6 +260,7 @@ exports[`Android BpkTextInput should render correctly with arbitrary props 1`] =
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        rejectResponderTermination={true}
         style={
           Object {
             "borderBottomWidth": 0,
@@ -331,6 +335,7 @@ exports[`Android BpkTextInput should render correctly with custom style 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        rejectResponderTermination={true}
         style={
           Object {
             "borderBottomWidth": 0,
@@ -400,6 +405,7 @@ exports[`Android BpkTextInput should render correctly with description 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        rejectResponderTermination={true}
         style={
           Object {
             "borderBottomWidth": 0,
@@ -489,6 +495,7 @@ exports[`Android BpkTextInput should render correctly with description, valid=fa
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        rejectResponderTermination={true}
         style={
           Object {
             "borderBottomWidth": 0,
@@ -605,6 +612,7 @@ exports[`Android BpkTextInput should render correctly with editable=false 1`] = 
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        rejectResponderTermination={true}
         style={
           Object {
             "borderBottomWidth": 0,
@@ -674,6 +682,7 @@ exports[`Android BpkTextInput should render correctly with inputRef set 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        rejectResponderTermination={true}
         style={
           Object {
             "borderBottomWidth": 0,
@@ -743,6 +752,7 @@ exports[`Android BpkTextInput should render correctly with mask="99/99" 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        rejectResponderTermination={true}
         style={
           Object {
             "borderBottomWidth": 0,
@@ -812,6 +822,7 @@ exports[`Android BpkTextInput should render correctly with mask="9999-9999-9999-
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        rejectResponderTermination={true}
         style={
           Object {
             "borderBottomWidth": 0,
@@ -881,6 +892,7 @@ exports[`Android BpkTextInput should render correctly with valid 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        rejectResponderTermination={true}
         style={
           Object {
             "borderBottomWidth": 0,
@@ -977,6 +989,7 @@ exports[`Android BpkTextInput should render correctly with valid false 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        rejectResponderTermination={true}
         style={
           Object {
             "borderBottomWidth": 0,
@@ -1073,6 +1086,7 @@ exports[`Android BpkTextInput should render correctly with valid false and a val
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        rejectResponderTermination={true}
         style={
           Object {
             "borderBottomWidth": 0,
@@ -1189,6 +1203,7 @@ exports[`Android BpkTextInput should render correctly with value 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        rejectResponderTermination={true}
         style={
           Object {
             "borderBottomWidth": 0,
