@@ -41,7 +41,7 @@ const SPINNER_TYPES = {
 
 type SpinnerType = $Keys<typeof SPINNER_TYPES>;
 
-const REQUIRED_THEME_ATTRIBUTES: Array<string> = ['spinnerPrimaryColor'];
+const REQUIRED_THEME_ATTRIBUTES = ['spinnerPrimaryColor'];
 
 const getSpinnerColor = (themeAttributes: ?Object, type: SpinnerType) => {
   const colorMappings = {

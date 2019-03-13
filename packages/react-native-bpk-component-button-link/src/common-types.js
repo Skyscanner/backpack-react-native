@@ -22,7 +22,7 @@ import { type Node } from 'react';
 import PropTypes from 'prop-types';
 import { makeThemePropType } from 'react-native-bpk-theming';
 
-export const REQUIRED_THEME_ATTRIBUTES: Array<string> = ['buttonLinkTextColor'];
+export const REQUIRED_THEME_ATTRIBUTES = ['buttonLinkTextColor'];
 
 const themePropType = makeThemePropType(REQUIRED_THEME_ATTRIBUTES);
 

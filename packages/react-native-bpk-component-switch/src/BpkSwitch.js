@@ -32,7 +32,7 @@ import {
   colorGray50,
 } from 'bpk-tokens/tokens/base.react.native';
 
-const REQUIRED_THEME_ATTRIBUTES: Array<string> = ['switchPrimaryColor'];
+const REQUIRED_THEME_ATTRIBUTES = ['switchPrimaryColor'];
 
 const getColors = (themeAttributes: ?Object, value: ?boolean): Object => {
   const primaryColor = themeAttributes
