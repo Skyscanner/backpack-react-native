@@ -6,8 +6,8 @@
 
 **Added:**
 
-- react-native-bpk-component-flat-list:
-- react-native-bpk-component-section-list:
+- react-native-bpk-component-flat-list: 3.0.19 => 3.1.0
+- react-native-bpk-component-section-list: 3.0.19 => 3.1.0
   - Added a new `flatListSelectedItemColor` theme prop for changing the colour of the selected list item.
 
 # 2019-03-07 - Themeability for `BpkText`
