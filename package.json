@@ -84,7 +84,7 @@
   "devDependencies": {
     "@storybook/addon-actions": "^4.1.1",
     "@storybook/addon-links": "^4.1.1",
-    "@storybook/react-native": "^4.1.1",
+    "@storybook/react-native": "^4.1.14",
     "babel-jest": "^24.5.0",
     "babel-plugin-jest-hoist": "^24.3.0",
     "bpk-tokens": "^27.4.7",

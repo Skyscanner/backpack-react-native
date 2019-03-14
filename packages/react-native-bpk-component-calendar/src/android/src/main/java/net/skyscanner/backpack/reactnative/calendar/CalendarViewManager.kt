@@ -66,7 +66,7 @@ class CalendarViewManager : SimpleViewManager<RNCalendarView>() {
     }
   }
 
-  override fun addEventEmitters(reactContext: ThemedReactContext?, view: RNCalendarView?) {
+  override fun addEventEmitters(reactContext: ThemedReactContext, view: RNCalendarView) {
     val dispatcher = reactContext!!.getNativeModule(UIManagerModule::class.java).eventDispatcher
 
     view?.onDatesChange = { range ->
