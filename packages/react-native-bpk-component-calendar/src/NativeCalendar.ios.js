@@ -34,6 +34,17 @@ import {
 
 const RCTBPKCalendar = requireNativeComponent('RCTBPKCalendar');
 
+const parseDateToNative = (date: ?(Date | number)) => {
+  if (date) {
+    // Use timestamps instead of Date objects because something goes awry over the bridge
+    // when we try to send dates.
+    const timestamp = typeof date === 'number' ? date : date.getTime();
+    return timestamp;
+  }
+
+  return date;
+};
+
 export type Props = {
   ...$Exact<CommonProps>,
 };
@@ -59,7 +70,7 @@ class BpkCalendar extends Component<Props, {}> {
       const handle = findNodeHandle(this.calendarRef.current);
       UIManager.dispatchViewManagerCommand(
         handle,
-        UIManager.RCTBPKCalendar.Commands.forceRender,
+        UIManager.getViewManagerConfig('RCTBPKCalendar').Commands.forceRender,
         [],
       );
     }
@@ -86,10 +97,10 @@ class BpkCalendar extends Component<Props, {}> {
     return (
       <RCTBPKCalendar
         ref={this.calendarRef}
-        minDate={minDate}
-        maxDate={maxDate}
+        minDate={parseDateToNative(minDate)}
+        maxDate={parseDateToNative(maxDate)}
         onDateSelection={onChangeSelectedDates}
-        selectedDates={selectedDates}
+        selectedDates={selectedDates.map(parseDateToNative)}
         selectionType={selectionType}
         {...rest}
       />
