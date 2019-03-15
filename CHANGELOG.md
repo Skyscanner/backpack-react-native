@@ -362,7 +362,7 @@
 **Fixed:**
 
 - react-native-bpk-component-button: 7.1.22 => 7.1.23
-  - Fixed ripple effect for Android and react native `0.57.x`
+  - Fixed ripple effect for Android and React Native `0.57.x`
 
 **Added:**
 
