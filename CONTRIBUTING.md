@@ -132,7 +132,7 @@ To ensure that maps powered by Google work set the `google_maps_api_key` in `and
 
 ##### APK signing
 
-For members of Backpack we have a keystore tied to our Google Maps API key in LastPass. Retrieve this key and place it in `android/backpack.keystore`. For contributors who are not members of Backpack nothing needs to be done, but Google Maps will not work. If you need Google Maps to work you'll need to supply your own Google Maps Api Key and possible keystore.
+For members of Backpack we have a keystore tied to our Google Maps API key in LastPass. Retrieve this key and place it in `android/backpack.keystore`. For contributors who are not members of Backpack nothing needs to be done, but Google Maps will not work. If you need Google Maps to work you'll need to supply your own Google Maps API Key and possible keystore.
 
 ### Run the development environment
 
@@ -230,7 +230,7 @@ When a component is released for the first time on npm, remember to add the comp
 
 ### Native Android bridges
 
-Android bridges should be compiled and published into the internal archifatory, to do so after the js package has been released, run:
+Android bridges should be compiled and published into the internal Artifactory, to do so after the JS package has been released, run:
 
 ```
 cd android
@@ -246,11 +246,11 @@ jfrog_username=<your_name>
 jfrog_password=<your_password>
 ```
 
-Alternativally you can set the env variables `JFROG_USERNAME` and `JFROG_PASSWORD`
+Alternatively you can set the env variables `JFROG_USERNAME` and `JFROG_PASSWORD`
 
 #### Versioning
 
-Versions should follow what is in the `package.json` of the corresponding js code, and will do so automatically. Once one version is published it can't be replaced, to do a new release the js package should also be released again.
+Versions should follow what is in the `package.json` of the corresponding JS code, and will do so automatically. Once one version is published it can't be replaced, to do a new release the JS package should also be released again.
 
 If you want to publish test code set the env variable `SNAPSHOT=true`, this will publish a snapshot version that can be replaced.
 
