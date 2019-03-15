@@ -70,7 +70,7 @@ export default class App extends Component {
 
 | Property                    | PropType                                                    | Required | Default Value |
 | --------------------------- | ----------------------------------------------------------- | -------- | ------------- |
-| dialingCodes                | arrayOf({id, diallingCode, name})                           | true     | -             |
+| dialingCodes                | arrayOf({id, dialingCode, name})                           | true     | -             |
 | onItemPress                 | func                                                        | true     | -             |
 | renderFlag                  | func                                                        | true     | -             |
 | selectedId                  | string                                                      | false    | null          |
@@ -114,7 +114,7 @@ Inherits all props from [`BpkTextInput`](https://backpack.github.io/components/n
 
 | Property                    | PropType                                                    | Required | Default Value |
 | --------------------------- | ----------------------------------------------------------- | -------- | ------------- |
-| dialingCode                 | {id, diallingCode, name}                                    | true     | -             |
+| dialingCode                 | {id, dialingCode, name}                                    | true     | -             |
 | onDialingCodePress          | func                                                        | true     | -             |
 | renderFlag                  | func                                                        | true     | -             |
 

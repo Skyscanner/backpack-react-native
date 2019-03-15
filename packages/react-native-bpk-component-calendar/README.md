@@ -44,7 +44,7 @@ If you haven't or are using the pre compiled version bellow, it will use the val
 
 #### Pre compiled version
 
-Alternativelly, the pre compiled version is available on Skyscanner's internal artifactory. Make sure you have the `infrastructure-maven` registry configured and are logged in, then add the following dependency to your `build.gradle` file:
+Alternatively, the pre compiled version is available on Skyscanner's internal Artifactory. Make sure you have the `infrastructure-maven` registry configured and are logged in, then add the following dependency to your `build.gradle` file:
 
 ```groovy
     dependencies {

@@ -1,4 +1,4 @@
-# react-native-bpk-component-horizontal nav
+# react-native-bpk-component-horizontal-nav
 
 > Backpack React Native horizontal navigation component.
 
