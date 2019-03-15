@@ -45,7 +45,8 @@
     "android": "npm run android:emulator & npm run android:build",
     "spellcheck": "mdspell -r --en-gb --ignore-acronyms --ignore-numbers --no-suggestions '*.md' '**/*.md' '!**/node_modules/**/*.md' '!ios/Pods/**/*.md'",
     "spellcheck:interactive": "mdspell --en-gb --ignore-acronyms --ignore-numbers '*.md' '**/*.md' '!**/node_modules/**/*.md' '!ios/Pods/**/*.md'",
-    "start": "react-native start"
+    "start": "react-native start",
+    "fix:package-lock": "git status -s | grep package-lock.json | awk '{print $2}' | xargs replace --silent 'http://' 'https://'"
   },
   "jest": {
     "preset": "react-native",
@@ -109,7 +110,8 @@
     "react-dom": "16.6.1",
     "react-native": "0.57.7",
     "react-native-linear-gradient": "react-native-community/react-native-linear-gradient#20928ce2ac8038e8545c7f6c3faab05f866deabd",
-    "react-test-renderer": "16.6.1"
+    "react-test-renderer": "16.6.1",
+    "replace": "^1.1.0"
   },
   "greenkeeper": {
     "ignore": [
