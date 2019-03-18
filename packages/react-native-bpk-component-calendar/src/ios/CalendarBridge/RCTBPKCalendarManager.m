@@ -63,7 +63,7 @@ RCT_EXPORT_METHOD(forceRender:(nonnull NSNumber *)reactTag) {
 
          if ([view isKindOfClass:[BPKCalendar class]]) {
              BPKCalendar *calendar = (BPKCalendar *)view;
-             NSArray<NSDate* > *selectedDates = calendar.selectedDates;
+             NSArray<BPKSimpleDate* > *selectedDates = calendar.selectedDates;
 
              calendar.selectedDates = @[];
              [calendar reloadData];
@@ -90,16 +90,17 @@ RCT_EXPORT_METHOD(forceRender:(nonnull NSNumber *)reactTag) {
  * `RCTBPKCalendarManager` acts as the delegate of all of the `RCTBPKCalendar` views. This is just one
  * pattern and it's perfectly fine to call `onDateSelection` from the `RCTBPKCalendar` directly.
  */
-- (void)calendar:(RCTBPKCalendar *)calendar didChangeDateSelection:(NSArray<NSDate *> *)dateList {
+- (void)calendar:(RCTBPKCalendar *)calendar didChangeDateSelection:(NSArray<BPKSimpleDate *> *)dateList {
     if (!calendar.onDateSelection) {
         return;
     }
 
     NSMutableArray<NSNumber *> * dateArray = [[NSMutableArray alloc] initWithCapacity:dateList.count];
-    for (NSDate *date in dateList) {
+    for (BPKSimpleDate *date in dateList) {
         // The React Native interface uses UTC dates regardless of the local time zone
         // Thus we need to convert the dates to UTC instead of the local time zone here.
-        NSDate *dateInUTC = [RCTBPKCalendarDateUtils convertDateToUTC:date
+        NSDate* localDate = [calendar dateFromSimpleDate:date];
+        NSDate *dateInUTC = [RCTBPKCalendarDateUtils convertDateToUTC:localDate
                                                         localCalendar:calendar.gregorian
                                                           utcCalendar:calendar.utcCalendar];
         [dateArray addObject:@([dateInUTC timeIntervalSince1970])];
