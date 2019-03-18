@@ -68,28 +68,31 @@ NS_ASSUME_NONNULL_BEGIN
     NSDate *localDate = [RCTBPKCalendarDateUtils convertDateToLocal:minDate
                                                       localCalendar:self.gregorian
                                                         utcCalendar:self.utcCalendar];
-    [super setMinDate:localDate];
+    BPKSimpleDate *simpleDate = [super simpleDateFromDate:localDate];
+    [super setMinDate:simpleDate];
 }
 
 - (void)setMaxDate:(NSDate *)maxDate {
     NSDate *localDate = [RCTBPKCalendarDateUtils convertDateToLocal:maxDate
                                                       localCalendar:self.gregorian
                                                         utcCalendar:self.utcCalendar];
-    [super setMaxDate:localDate];
+    BPKSimpleDate *simpleDate = [super simpleDateFromDate:localDate];
+    [super setMaxDate:simpleDate];
 }
 
 - (void)setSelectedDates:(NSArray<NSDate *> *)selectedDates {
-    NSMutableArray *localDates = [[NSMutableArray alloc] initWithCapacity:selectedDates.count];
+    NSMutableArray *simpleDates = [[NSMutableArray alloc] initWithCapacity:selectedDates.count];
 
     for (NSDate *utcDate in selectedDates) {
         NSDate *localDate = [RCTBPKCalendarDateUtils convertDateToLocal:utcDate
                                                           localCalendar:self.gregorian
                                                             utcCalendar:self.utcCalendar];
-        [localDates addObject:localDate];
+        BPKSimpleDate *simpleDate = [super simpleDateFromDate:localDate];
+        [simpleDates addObject:simpleDate];
     }
 
 
-    [super setSelectedDates:localDates];
+    [super setSelectedDates:simpleDates];
 }
 
 @end
