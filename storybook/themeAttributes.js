@@ -68,6 +68,9 @@ const themeAttributes = {
 
   // Used in BpkFlatList and BpkSectionList
   flatListSelectedItemColor: theme.brandColors.gradientStart,
+
+  // Used in BpkTextInput
+  textInputFocusedColor: theme.contentColor,
 };
 
 export default themeAttributes;

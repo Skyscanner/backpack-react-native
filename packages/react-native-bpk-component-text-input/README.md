@@ -117,3 +117,7 @@ export default class App extends Component {
 ## Mask
 
 More details about how to use and define a mask can be found here: https://github.com/benhurott/tinymask
+
+## Theme Props
+
+* `textInputFocusedColor`

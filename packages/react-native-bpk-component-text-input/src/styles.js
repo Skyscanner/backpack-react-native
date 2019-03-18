@@ -137,6 +137,7 @@ const getLabelStyle = (
     editable: boolean,
     hasAccessoryView: boolean,
   },
+  focusedColor: String = colorBlue500,
 ) => {
   const labelTypography = getLabelTypography(hasAccessoryView);
   const animatedStyle = {
@@ -144,7 +145,7 @@ const getLabelStyle = (
       inputRange: INPUT_RANGE,
       outputRange: [
         getLabelColorValue(value, valid, editable, hasAccessoryView),
-        colorBlue500,
+        focusedColor,
       ],
     }),
     top: animatedLabelValue.interpolate({
@@ -174,12 +175,13 @@ const getInputContainerStyle = (
   animatedColorValue: AnimatedValue,
   hasAccessoryView: boolean,
   valid: ?boolean,
+  focusedColor: String = colorBlue500,
 ) => {
   const underlineColorValue = valid === false ? colorRed500 : colorGray100;
   const animatedStyle = {
     borderBottomColor: animatedColorValue.interpolate({
       inputRange: INPUT_RANGE,
-      outputRange: [underlineColorValue, colorBlue500],
+      outputRange: [underlineColorValue, focusedColor],
     }),
   };
   const result = [animatedStyles.inputContainer, animatedStyle];

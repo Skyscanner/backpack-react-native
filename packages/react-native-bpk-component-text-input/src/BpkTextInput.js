@@ -22,12 +22,18 @@ import PropTypes from 'prop-types';
 import React, { Component, type Node } from 'react';
 import { Animated, TextInput, View, ViewPropTypes } from 'react-native';
 import BpkText from 'react-native-bpk-component-text';
+import {
+  getThemeAttributes,
+  withTheme,
+  type Theme,
+} from 'react-native-bpk-theming';
 import AnimatedValue from 'react-native/Libraries/Animated/src/nodes/AnimatedValue';
 import { animationDurationSm } from 'bpk-tokens/tokens/base.react.native';
 import TinyMask from 'tinymask';
 
 import { ValidIcon, InvalidIcon } from './BpkTextInputIcons';
 import { getLabelStyle, getInputContainerStyle, styles } from './styles';
+import { REQUIRED_THEME_ATTRIBUTES, themePropType } from './theming';
 
 export type Props = {
   label: string,
@@ -44,6 +50,7 @@ export type Props = {
   valid: ?boolean,
   validationMessage: ?string,
   accessoryView: ?Node,
+  theme: ?Theme,
 };
 
 export const propTypes = {
@@ -62,6 +69,7 @@ export const propTypes = {
   valid: PropTypes.oneOf([true, false, null]),
   validationMessage: PropTypes.string,
   accessoryView: PropTypes.node,
+  theme: themePropType,
 };
 
 export const defaultProps = {
@@ -77,6 +85,7 @@ export const defaultProps = {
   valid: null,
   validationMessage: null,
   accessoryView: null,
+  theme: null,
 };
 
 type State = {
@@ -174,6 +183,7 @@ class BpkTextInput extends Component<Props, State> {
       onFocus,
       onBlur,
       accessoryView,
+      theme,
       ...rest
     } = this.props;
     const hasAccessoryView = accessoryView !== null;
@@ -185,16 +195,27 @@ class BpkTextInput extends Component<Props, State> {
       valid === false && <InvalidIcon />
     );
 
+    const themeAttributes = getThemeAttributes(
+      REQUIRED_THEME_ATTRIBUTES,
+      theme,
+    );
+
+    const focusedColor = themeAttributes
+      ? themeAttributes.textInputFocusedColor
+      : undefined;
+
     const animatedLabelStyle = getLabelStyle(
       this.animatedValues.color,
       this.animatedValues.labelPosition,
       { value, valid, editable, hasAccessoryView },
+      focusedColor,
     );
 
     const animatedInputStyle = getInputContainerStyle(
       this.animatedValues.color,
       hasAccessoryView,
       valid,
+      focusedColor,
     );
 
     const renderExtraInfo = () => {
@@ -250,4 +271,4 @@ class BpkTextInput extends Component<Props, State> {
   }
 }
 
-export default BpkTextInput;
+export default withTheme(BpkTextInput);
