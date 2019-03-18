@@ -30,6 +30,49 @@ const globby = require('globby');
 
 const STORYBOOK_CONFIG_SPLIT_POINT_1 = 'configure(() => {';
 const STORYBOOK_CONFIG_SPLIT_POINT_2 = '}, module);';
+const SPELLING_COMPONENTS_SPLIT_POINT_1 = '# Component names';
+const SPELLING_COMPONENTS_SPLIT_POINT_2 = '# End of component names';
+const SPELLING_PACKAGES_SPLIT_POINT_1 = '# Package names';
+const SPELLING_PACKAGES_SPLIT_POINT_2 = '# End of package names';
+
+const sortLines = (lineA, lineB) => {
+  const trimmedA = lineA.trim();
+  const trimmedB = lineB.trim();
+  if (trimmedA < trimmedB) {
+    return -1;
+  }
+  if (trimmedA > trimmedB) {
+    return 1;
+  }
+  return 0;
+};
+
+const addValueToFile = (
+  filename,
+  value,
+  insertAfterPoint,
+  insertBeforePoint,
+) => {
+  const fileContent = fs.readFileSync(filename).toString();
+
+  const valuesToUpdate = fileContent
+    .split(insertAfterPoint)[1]
+    .split(insertBeforePoint)[0]
+    .split('\n')
+    .filter(s => !_.isEmpty(s));
+
+  valuesToUpdate.push(value);
+
+  const newFileContent = `${
+    fileContent.split(insertAfterPoint)[0]
+  }${insertAfterPoint}\n${valuesToUpdate
+    .sort(sortLines)
+    .join('\n')}\n${insertBeforePoint}${
+    fileContent.split(insertBeforePoint)[1]
+  }`;
+
+  fs.writeFileSync(filename, newFileContent, 'utf8');
+};
 
 const schema = {
   properties: {
@@ -77,18 +120,6 @@ const Replacer = (source, destination) =>
     },
   });
 
-const sortLines = (lineA, lineB) => {
-  const trimmedA = lineA.trim();
-  const trimmedB = lineB.trim();
-  if (trimmedA < trimmedB) {
-    return -1;
-  }
-  if (trimmedA > trimmedB) {
-    return 1;
-  }
-  return 0;
-};
-
 const createComponent = async (err, { name }) => {
   if (err) {
     console.error(err);
@@ -98,6 +129,7 @@ const createComponent = async (err, { name }) => {
   const boilerplateComponentPath = `packages/react-native-bpk-component-boilerplate`;
   const newComponentPath = `packages/react-native-bpk-component-${name}`;
   const storybookConfigFile = `storybook/storybook.js`;
+  const spellingFile = `.spelling`;
   const storybookImport = `require('../packages/react-native-bpk-component-${name}/stories');`;
 
   const pascalCaseName = _.pascalCase(name);
@@ -143,27 +175,26 @@ const createComponent = async (err, { name }) => {
     );
 
     // Add the new component to storybook config:
-    const storybookConfigContent = fs
-      .readFileSync(storybookConfigFile)
-      .toString();
+    addValueToFile(
+      storybookConfigFile,
+      storybookImport,
+      STORYBOOK_CONFIG_SPLIT_POINT_1,
+      STORYBOOK_CONFIG_SPLIT_POINT_2,
+    );
 
-    const storybookConfigContentImports = storybookConfigContent
-      .split(STORYBOOK_CONFIG_SPLIT_POINT_1)[1]
-      .split(STORYBOOK_CONFIG_SPLIT_POINT_2)[0]
-      .split('\n')
-      .filter(s => !_.isEmpty(s));
-
-    storybookConfigContentImports.push(storybookImport);
-
-    const newStorybookConfigContent = `${
-      storybookConfigContent.split(STORYBOOK_CONFIG_SPLIT_POINT_1)[0]
-    }${STORYBOOK_CONFIG_SPLIT_POINT_1}\n${storybookConfigContentImports
-      .sort(sortLines)
-      .join('\n')}\n${STORYBOOK_CONFIG_SPLIT_POINT_2}${
-      storybookConfigContent.split(STORYBOOK_CONFIG_SPLIT_POINT_2)[1]
-    }`;
-
-    fs.writeFileSync(storybookConfigFile, newStorybookConfigContent, 'utf8');
+    // Add the new component to .spelling:
+    addValueToFile(
+      spellingFile,
+      `Bpk${pascalCaseName}`,
+      SPELLING_COMPONENTS_SPLIT_POINT_1,
+      SPELLING_COMPONENTS_SPLIT_POINT_2,
+    );
+    addValueToFile(
+      spellingFile,
+      `bpk-${name}`,
+      SPELLING_PACKAGES_SPLIT_POINT_1,
+      SPELLING_PACKAGES_SPLIT_POINT_2,
+    );
 
     // Fix eslint errors and run Prettier.
     execSync(`npx eslint --fix ${newComponentPath} ${storybookConfigFile}`);
