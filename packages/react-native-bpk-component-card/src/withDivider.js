@@ -19,7 +19,7 @@
 /* @flow */
 
 import PropTypes from 'prop-types';
-import Dash from 'react-native-dash';
+import Dash from '@skyscanner/react-native-dash';
 import {
   colorGray100,
   spacingSm,
