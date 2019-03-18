@@ -2,6 +2,12 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-03-18 - Updated `react-native-dash` dependency
+
+**Fixed:**
+ - react-native-bpk-component-card: 1.3.13 => 1.4.0
+   - Updated `react-native-dash` dependency to fix an issue that arises under React Native 0.59.
+
 # 2019-03-11 - Themeability for `BpkFlatList` and `BpkSectionList`
 
 **Added:**
