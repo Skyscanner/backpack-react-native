@@ -128,7 +128,7 @@ class BpkNavigationBar extends Component<Props, {}> {
     style: null,
   };
 
-  constructor(props) {
+  constructor(props: Props) {
     super(props);
     this.theme = getThemeAttributes(
       ANDROID_THEME_ATTRIBUTES,

@@ -2,6 +2,7 @@
 
 exports[`iOS BpkSwitch should disable theming if the required attribute is omitted 1`] = `
 <RCTSwitch
+  accessibilityRole="button"
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
@@ -19,6 +20,7 @@ exports[`iOS BpkSwitch should disable theming if the required attribute is omitt
 
 exports[`iOS BpkSwitch should render correctly 1`] = `
 <RCTSwitch
+  accessibilityRole="button"
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
@@ -36,6 +38,7 @@ exports[`iOS BpkSwitch should render correctly 1`] = `
 
 exports[`iOS BpkSwitch should support the "value" prop 1`] = `
 <RCTSwitch
+  accessibilityRole="button"
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
@@ -53,6 +56,7 @@ exports[`iOS BpkSwitch should support the "value" prop 1`] = `
 
 exports[`iOS BpkSwitch should support theming 1`] = `
 <RCTSwitch
+  accessibilityRole="button"
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}

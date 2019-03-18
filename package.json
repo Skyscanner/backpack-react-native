@@ -51,6 +51,7 @@
     "preset": "react-native",
     "verbose": true,
     "testRegex": ".*-test(\\.ios)?(\\.android)?\\.js$",
+    "testMatch": null,
     "transformIgnorePatterns": [
       "node_modules/(?!react-native|bpk|@skyscanner|lodash-es)"
     ],
@@ -85,16 +86,16 @@
   "devDependencies": {
     "@storybook/addon-actions": "^4.1.1",
     "@storybook/addon-links": "^4.1.1",
-    "@storybook/react-native": "^4.1.1",
-    "babel-jest": "^23.6.0",
-    "babel-plugin-jest-hoist": "^23.2.0",
+    "@storybook/react-native": "^4.1.14",
+    "babel-jest": "^24.5.0",
+    "babel-plugin-jest-hoist": "^24.3.0",
     "bpk-tokens": "^27.4.7",
     "colors": "^1.3.3",
     "danger": "^7.0.11",
     "eslint-config-skyscanner-with-prettier": "^0.8.0",
     "eslint-plugin-flowtype": "^3.2.0",
     "eslint_d": "^7.2.0",
-    "flow-bin": "^0.78.0",
+    "flow-bin": "^0.92.0",
     "globby": "^9.1.0",
     "husky": "^1.2.1",
     "jest": "^24.1.0",
@@ -105,11 +106,11 @@
     "metro-react-native-babel-preset": "^0.53.0",
     "prompt": "^1.0.0",
     "prop-types": "^15.5.10",
-    "react": "16.6.1",
-    "react-dom": "16.6.1",
-    "react-native": "0.57.7",
-    "react-native-linear-gradient": "react-native-community/react-native-linear-gradient#20928ce2ac8038e8545c7f6c3faab05f866deabd",
-    "react-test-renderer": "16.6.1"
+    "react": "16.8.3",
+    "react-dom": "16.8.3",
+    "react-native": "0.59.0",
+    "react-native-linear-gradient": "^2.5.3",
+    "react-test-renderer": "16.8.3"
   },
   "greenkeeper": {
     "ignore": [
@@ -117,8 +118,7 @@
       "react",
       "react-dom",
       "react-test-renderer",
-      "react-native",
-      "react-native-linear-gradient"
+      "react-native"
     ]
   }
 }

@@ -18,17 +18,20 @@
 
 /* @flow */
 
-import React, { Component, type ComponentType } from 'react';
+import React, { Component, type ComponentType, type ElementProps } from 'react';
 import PropTypes from 'prop-types';
-import { Animated, StyleSheet, View, ViewPropTypes } from 'react-native';
+import { Animated, StyleSheet, View, ViewPropTypes, Image } from 'react-native';
 import {
   borderRadiusSm,
   animationDurationBase,
   colorGray300,
 } from 'bpk-tokens/tokens/base.react.native';
 import AnimatedValue from 'react-native/Libraries/Animated/src/nodes/AnimatedValue';
-import { type ImageProps } from 'react-native/Libraries/Image/ImageProps';
 import BpkSpinner from 'react-native-bpk-component-spinner';
+
+type ImageProps = ElementProps<typeof Image>;
+type ViewProps = ElementProps<typeof View>;
+type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
 
 const styles = StyleSheet.create({
   outer: {
@@ -56,6 +59,7 @@ const styles = StyleSheet.create({
 
 export type Props = {
   ...$Exact<ImageProps>,
+  style: ViewStyleProp,
   inView: boolean,
   loaded: boolean,
   rounded: boolean,

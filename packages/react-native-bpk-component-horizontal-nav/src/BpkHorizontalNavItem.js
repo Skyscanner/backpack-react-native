@@ -19,7 +19,7 @@
 /* @flow */
 
 import { Platform, StyleSheet, View, ViewPropTypes } from 'react-native';
-import React from 'react';
+import React, { type ElementProps } from 'react';
 import PropTypes from 'prop-types';
 import {
   colorGray300,
@@ -37,6 +37,9 @@ import BpkTouchableOverlay from 'react-native-bpk-component-touchable-overlay';
 import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-native-feedback';
 
 import { REQUIRED_THEME_ATTRIBUTES, themePropType } from './theming';
+
+type ViewProps = ElementProps<typeof View>;
+type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
 
 const styles = StyleSheet.create({
   view: {
@@ -65,7 +68,7 @@ export type Props = {
   accessibilityLabel: ?string,
   disabled: boolean,
   selected: boolean,
-  style: ViewPropTypes.style,
+  style: ViewStyleProp,
   small: boolean,
   theme: ?Object,
 };

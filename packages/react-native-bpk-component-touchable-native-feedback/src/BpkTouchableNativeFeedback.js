@@ -18,15 +18,23 @@
 
 /* @flow */
 
-import React, { type Node } from 'react';
+import React, { type Node, type ElementProps } from 'react';
 import PropTypes from 'prop-types';
-import { Platform, TouchableNativeFeedback, ViewPropTypes } from 'react-native';
+import {
+  Platform,
+  TouchableNativeFeedback,
+  View,
+  ViewPropTypes,
+} from 'react-native';
+
+type ViewProps = ElementProps<typeof View>;
+type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
 
 export type Props = {
   children: Node,
   borderlessBackground: boolean,
   color: ?string,
-  style: ?(Object | Array<Object>),
+  style: ViewStyleProp,
 };
 
 const BpkTouchableNativeFeedback = (props: Props) => {

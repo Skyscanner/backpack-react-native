@@ -64,8 +64,8 @@ exports[`iOS BpkCalendar should render correctly with arbitrary props 1`] = `
 exports[`iOS BpkCalendar should render correctly with both minDate and maxDate 1`] = `
 <RCTBPKCalendar
   locale="en_GB"
-  maxDate={2020-05-19T00:00:00.000Z}
-  minDate={2019-05-19T00:00:00.000Z}
+  maxDate={1589846400000}
+  minDate={1558224000000}
   onDateSelection={[Function]}
   selectedDates={Array []}
   selectionType="single"
@@ -92,7 +92,7 @@ exports[`iOS BpkCalendar should render correctly with custom style 1`] = `
 exports[`iOS BpkCalendar should render correctly with maxDate 1`] = `
 <RCTBPKCalendar
   locale="en_GB"
-  maxDate={2020-05-19T00:00:00.000Z}
+  maxDate={1589846400000}
   minDate={null}
   onDateSelection={[Function]}
   selectedDates={Array []}
@@ -105,7 +105,7 @@ exports[`iOS BpkCalendar should render correctly with minDate 1`] = `
 <RCTBPKCalendar
   locale="en_GB"
   maxDate={null}
-  minDate={2019-05-19T00:00:00.000Z}
+  minDate={1558224000000}
   onDateSelection={[Function]}
   selectedDates={Array []}
   selectionType="single"
@@ -121,9 +121,9 @@ exports[`iOS BpkCalendar should render correctly with selection type "multiple" 
   onDateSelection={[Function]}
   selectedDates={
     Array [
-      2019-05-19T00:00:00.000Z,
-      2019-05-21T00:00:00.000Z,
-      2019-05-29T00:00:00.000Z,
+      1558224000000,
+      1558396800000,
+      1559088000000,
     ]
   }
   selectionType="multiple"
@@ -139,8 +139,8 @@ exports[`iOS BpkCalendar should render correctly with selection type "range" and
   onDateSelection={[Function]}
   selectedDates={
     Array [
-      2019-05-19T00:00:00.000Z,
-      2019-05-21T00:00:00.000Z,
+      1558224000000,
+      1558396800000,
     ]
   }
   selectionType="single"
@@ -156,7 +156,7 @@ exports[`iOS BpkCalendar should render correctly with selection type "single" an
   onDateSelection={[Function]}
   selectedDates={
     Array [
-      2019-05-19T00:00:00.000Z,
+      1558224000000,
     ]
   }
   selectionType="single"
