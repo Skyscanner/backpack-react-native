@@ -161,17 +161,19 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
         placeholder={null}
         rejectResponderTermination={true}
         style={
-          Object {
-            "borderBottomWidth": 0,
-            "color": "rgb(82, 76, 97)",
-            "flex": 1,
-            "fontSize": 16,
-            "fontWeight": "400",
-            "minHeight": 27,
-            "paddingHorizontal": 0,
-            "paddingVertical": 4,
-            "textAlign": "left",
-          }
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(82, 76, 97)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "left",
+            },
+          ]
         }
         underlineColorAndroid="transparent"
         value=""
@@ -345,17 +347,19 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
         placeholder={null}
         rejectResponderTermination={true}
         style={
-          Object {
-            "borderBottomWidth": 0,
-            "color": "rgb(82, 76, 97)",
-            "flex": 1,
-            "fontSize": 16,
-            "fontWeight": "400",
-            "minHeight": 27,
-            "paddingHorizontal": 0,
-            "paddingVertical": 4,
-            "textAlign": "left",
-          }
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(82, 76, 97)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "left",
+            },
+          ]
         }
         underlineColorAndroid="transparent"
         value=""

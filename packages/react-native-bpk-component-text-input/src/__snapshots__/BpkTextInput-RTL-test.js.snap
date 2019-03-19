@@ -50,17 +50,19 @@ exports[`RTL BpkTextInput should ignore when placeholder is provided, as element
         placeholder={null}
         rejectResponderTermination={true}
         style={
-          Object {
-            "borderBottomWidth": 0,
-            "color": "rgb(82, 76, 97)",
-            "flex": 1,
-            "fontSize": 16,
-            "fontWeight": "400",
-            "minHeight": 27,
-            "paddingHorizontal": 0,
-            "paddingVertical": 4,
-            "textAlign": "right",
-          }
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(82, 76, 97)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
         }
         underlineColorAndroid="transparent"
         value=""
@@ -120,17 +122,19 @@ exports[`RTL BpkTextInput should render correctly 1`] = `
         placeholder={null}
         rejectResponderTermination={true}
         style={
-          Object {
-            "borderBottomWidth": 0,
-            "color": "rgb(82, 76, 97)",
-            "flex": 1,
-            "fontSize": 16,
-            "fontWeight": "400",
-            "minHeight": 27,
-            "paddingHorizontal": 0,
-            "paddingVertical": 4,
-            "textAlign": "right",
-          }
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(82, 76, 97)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
         }
         underlineColorAndroid="transparent"
         value=""
@@ -192,17 +196,19 @@ exports[`RTL BpkTextInput should render correctly with \`accessoryView\` 1`] = `
         placeholder={null}
         rejectResponderTermination={true}
         style={
-          Object {
-            "borderBottomWidth": 0,
-            "color": "rgb(82, 76, 97)",
-            "flex": 1,
-            "fontSize": 16,
-            "fontWeight": "400",
-            "minHeight": 27,
-            "paddingHorizontal": 0,
-            "paddingVertical": 4,
-            "textAlign": "right",
-          }
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(82, 76, 97)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
         }
         underlineColorAndroid="transparent"
         value=""
@@ -262,17 +268,19 @@ exports[`RTL BpkTextInput should render correctly with arbitrary props 1`] = `
         placeholder={null}
         rejectResponderTermination={true}
         style={
-          Object {
-            "borderBottomWidth": 0,
-            "color": "rgb(82, 76, 97)",
-            "flex": 1,
-            "fontSize": 16,
-            "fontWeight": "400",
-            "minHeight": 27,
-            "paddingHorizontal": 0,
-            "paddingVertical": 4,
-            "textAlign": "right",
-          }
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(82, 76, 97)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
         }
         testId="arbitrary"
         underlineColorAndroid="transparent"
@@ -337,17 +345,19 @@ exports[`RTL BpkTextInput should render correctly with custom style 1`] = `
         placeholder={null}
         rejectResponderTermination={true}
         style={
-          Object {
-            "borderBottomWidth": 0,
-            "color": "rgb(82, 76, 97)",
-            "flex": 1,
-            "fontSize": 16,
-            "fontWeight": "400",
-            "minHeight": 27,
-            "paddingHorizontal": 0,
-            "paddingVertical": 4,
-            "textAlign": "right",
-          }
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(82, 76, 97)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
         }
         underlineColorAndroid="transparent"
         value=""
@@ -407,17 +417,19 @@ exports[`RTL BpkTextInput should render correctly with description 1`] = `
         placeholder={null}
         rejectResponderTermination={true}
         style={
-          Object {
-            "borderBottomWidth": 0,
-            "color": "rgb(82, 76, 97)",
-            "flex": 1,
-            "fontSize": 16,
-            "fontWeight": "400",
-            "minHeight": 27,
-            "paddingHorizontal": 0,
-            "paddingVertical": 4,
-            "textAlign": "right",
-          }
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(82, 76, 97)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
         }
         underlineColorAndroid="transparent"
         value="Kel loves orange soda"
@@ -497,17 +509,19 @@ exports[`RTL BpkTextInput should render correctly with description, valid=false 
         placeholder={null}
         rejectResponderTermination={true}
         style={
-          Object {
-            "borderBottomWidth": 0,
-            "color": "rgb(82, 76, 97)",
-            "flex": 1,
-            "fontSize": 16,
-            "fontWeight": "400",
-            "minHeight": 27,
-            "paddingHorizontal": 0,
-            "paddingVertical": 4,
-            "textAlign": "right",
-          }
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(82, 76, 97)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
         }
         underlineColorAndroid="transparent"
         value="Somebody other than Kel loves orange soda"
@@ -614,17 +628,19 @@ exports[`RTL BpkTextInput should render correctly with editable=false 1`] = `
         placeholder={null}
         rejectResponderTermination={true}
         style={
-          Object {
-            "borderBottomWidth": 0,
-            "color": "rgb(82, 76, 97)",
-            "flex": 1,
-            "fontSize": 16,
-            "fontWeight": "400",
-            "minHeight": 27,
-            "paddingHorizontal": 0,
-            "paddingVertical": 4,
-            "textAlign": "right",
-          }
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(82, 76, 97)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
         }
         underlineColorAndroid="transparent"
         value=""
@@ -684,17 +700,19 @@ exports[`RTL BpkTextInput should render correctly with inputRef set 1`] = `
         placeholder={null}
         rejectResponderTermination={true}
         style={
-          Object {
-            "borderBottomWidth": 0,
-            "color": "rgb(82, 76, 97)",
-            "flex": 1,
-            "fontSize": 16,
-            "fontWeight": "400",
-            "minHeight": 27,
-            "paddingHorizontal": 0,
-            "paddingVertical": 4,
-            "textAlign": "right",
-          }
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(82, 76, 97)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
         }
         underlineColorAndroid="transparent"
         value=""
@@ -754,17 +772,19 @@ exports[`RTL BpkTextInput should render correctly with mask="99/99" 1`] = `
         placeholder={null}
         rejectResponderTermination={true}
         style={
-          Object {
-            "borderBottomWidth": 0,
-            "color": "rgb(82, 76, 97)",
-            "flex": 1,
-            "fontSize": 16,
-            "fontWeight": "400",
-            "minHeight": 27,
-            "paddingHorizontal": 0,
-            "paddingVertical": 4,
-            "textAlign": "right",
-          }
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(82, 76, 97)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
         }
         underlineColorAndroid="transparent"
         value="12/34"
@@ -824,17 +844,19 @@ exports[`RTL BpkTextInput should render correctly with mask="9999-9999-9999-9999
         placeholder={null}
         rejectResponderTermination={true}
         style={
-          Object {
-            "borderBottomWidth": 0,
-            "color": "rgb(82, 76, 97)",
-            "flex": 1,
-            "fontSize": 16,
-            "fontWeight": "400",
-            "minHeight": 27,
-            "paddingHorizontal": 0,
-            "paddingVertical": 4,
-            "textAlign": "right",
-          }
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(82, 76, 97)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
         }
         underlineColorAndroid="transparent"
         value="1234-1234-1234-1234"
@@ -894,17 +916,19 @@ exports[`RTL BpkTextInput should render correctly with valid 1`] = `
         placeholder={null}
         rejectResponderTermination={true}
         style={
-          Object {
-            "borderBottomWidth": 0,
-            "color": "rgb(82, 76, 97)",
-            "flex": 1,
-            "fontSize": 16,
-            "fontWeight": "400",
-            "minHeight": 27,
-            "paddingHorizontal": 0,
-            "paddingVertical": 4,
-            "textAlign": "right",
-          }
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(82, 76, 97)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
         }
         underlineColorAndroid="transparent"
         value=""
@@ -991,17 +1015,19 @@ exports[`RTL BpkTextInput should render correctly with valid false 1`] = `
         placeholder={null}
         rejectResponderTermination={true}
         style={
-          Object {
-            "borderBottomWidth": 0,
-            "color": "rgb(82, 76, 97)",
-            "flex": 1,
-            "fontSize": 16,
-            "fontWeight": "400",
-            "minHeight": 27,
-            "paddingHorizontal": 0,
-            "paddingVertical": 4,
-            "textAlign": "right",
-          }
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(82, 76, 97)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
         }
         underlineColorAndroid="transparent"
         value=""
@@ -1088,17 +1114,19 @@ exports[`RTL BpkTextInput should render correctly with valid false and a validat
         placeholder={null}
         rejectResponderTermination={true}
         style={
-          Object {
-            "borderBottomWidth": 0,
-            "color": "rgb(82, 76, 97)",
-            "flex": 1,
-            "fontSize": 16,
-            "fontWeight": "400",
-            "minHeight": 27,
-            "paddingHorizontal": 0,
-            "paddingVertical": 4,
-            "textAlign": "right",
-          }
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(82, 76, 97)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
         }
         underlineColorAndroid="transparent"
         value=""
@@ -1205,17 +1233,19 @@ exports[`RTL BpkTextInput should render correctly with value 1`] = `
         placeholder={null}
         rejectResponderTermination={true}
         style={
-          Object {
-            "borderBottomWidth": 0,
-            "color": "rgb(82, 76, 97)",
-            "flex": 1,
-            "fontSize": 16,
-            "fontWeight": "400",
-            "minHeight": 27,
-            "paddingHorizontal": 0,
-            "paddingVertical": 4,
-            "textAlign": "right",
-          }
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(82, 76, 97)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
         }
         underlineColorAndroid="transparent"
         value="Joe"
@@ -1273,18 +1303,21 @@ exports[`RTL BpkTextInput should support theming 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        rejectResponderTermination={true}
         style={
-          Object {
-            "borderBottomWidth": 0,
-            "color": "rgb(82, 76, 97)",
-            "flex": 1,
-            "fontSize": 16,
-            "fontWeight": "400",
-            "minHeight": 27,
-            "paddingHorizontal": 0,
-            "paddingVertical": 4,
-            "textAlign": "right",
-          }
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(82, 76, 97)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
         }
         underlineColorAndroid="transparent"
         value=""
