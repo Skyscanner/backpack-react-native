@@ -2,6 +2,8 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-03-19 - Theming support for `BpkTextInput`
+
 **Added:**
 
 - react-native-bpk-component-text-input: 3.0.20 => 3.1.0
