@@ -21,6 +21,7 @@ import { Platform } from 'react-native';
 const theme = {
   contentColor: '#2d244c',
   contentGray: '#757380',
+  primaryColor: '#FF0000',
   secondaryColor: '#e8c410',
   // Because it's a theme, Backpack tokens shouldn't be used.
   // eslint-disable-next-line backpack/use-tokens
@@ -68,6 +69,9 @@ const themeAttributes = {
 
   // Used in BpkFlatList and BpkSectionList
   flatListSelectedItemColor: theme.brandColors.gradientStart,
+
+  // Used in BpkTextInput
+  textInputFocusedColor: theme.primaryColor,
 };
 
 export default themeAttributes;
