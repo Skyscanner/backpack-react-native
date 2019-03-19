@@ -2,6 +2,11 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+**Added:**
+
+- react-native-bpk-component-text-input: 3.0.20 => 3.1.0
+  - Added theme props `textInputFocusedColor` and `textFontFamily` to `BpkTextInput`.
+
 # 2019-03-18 - Updated `react-native-dash` dependency
 
 **Fixed:**
