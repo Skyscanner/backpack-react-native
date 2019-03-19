@@ -18,16 +18,27 @@
 
 import { Platform } from 'react-native';
 
+const londonTheme = {
+  primaryColor300: '#F28494',
+  primaryColor500: '#ED1B28',
+  primaryColor600: '#D11622',
+  primaryColor700: '#B1121C',
+  secondaryColor300: '#6889AB',
+  secondaryColor500: '#013A76',
+  secondaryColor600: '#002F61',
+  secondaryColor700: '#00254B',
+};
+
 const theme = {
-  contentColor: '#2d244c',
-  contentGray: '#757380',
-  secondaryColor: '#e8c410',
+  contentColor: londonTheme.secondaryColor500,
+  contentGray: londonTheme.secondaryColor300,
+  secondaryColor: londonTheme.secondaryColor500,
   // Because it's a theme, Backpack tokens shouldn't be used.
   // eslint-disable-next-line backpack/use-tokens
   backgroundColor: '#fff',
   brandColors: {
-    gradientStart: '#fce134',
-    gradientEnd: '#f8c42d',
+    gradientStart: londonTheme.primaryColor500,
+    gradientEnd: londonTheme.primaryColor600,
   },
 };
 
