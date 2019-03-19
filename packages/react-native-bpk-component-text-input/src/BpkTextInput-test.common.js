@@ -21,6 +21,7 @@
 import React from 'react';
 import TestRenderer from 'react-test-renderer';
 import { StyleSheet, View } from 'react-native';
+import BpkThemeProvider from 'react-native-bpk-theming';
 import { spacingSm } from 'bpk-tokens/tokens/base.react.native';
 
 import BpkTextInput from './BpkTextInput';
@@ -176,6 +177,18 @@ const commonTests = () => {
         />,
       );
 
+      expect(testRenderer.toJSON()).toMatchSnapshot();
+    });
+
+    it('should support theming', () => {
+      const theme = {
+        textInputFocusedColor: 'green',
+      };
+      const testRenderer = TestRenderer.create(
+        <BpkThemeProvider theme={theme}>
+          <BpkTextInput label="Name" value="" />
+        </BpkThemeProvider>,
+      );
       expect(testRenderer.toJSON()).toMatchSnapshot();
     });
   });

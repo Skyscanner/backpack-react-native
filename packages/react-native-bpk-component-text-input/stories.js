@@ -27,8 +27,10 @@ import {
   colorGray500,
   spacingBase,
 } from 'bpk-tokens/tokens/base.react.native';
+import BpkThemeProvider from 'react-native-bpk-theming';
 
 import CenterDecorator from '../../storybook/CenterDecorator';
+import themeAttributes from '../../storybook/themeAttributes';
 
 import BpkTextInput from './index';
 
@@ -171,4 +173,23 @@ storiesOf('react-native-bpk-component-text-input', module)
         accessoryView={<View style={styles.accessoryView} />}
       />
     </ScrollView>
+  ))
+  .add('Themed', () => (
+    <BpkThemeProvider theme={themeAttributes}>
+      <ScrollView>
+        <StatefulBpkTextInput
+          label="Input"
+          initialValue=""
+          style={styles.input}
+          placeholder="3 letter airport code"
+        />
+        <StatefulBpkTextInput
+          label="Invalid input"
+          initialValue="Edinbvrgh"
+          valid={false}
+          validationMessage="'Edinbvrgh' is not a valid city."
+          style={styles.input}
+        />
+      </ScrollView>
+    </BpkThemeProvider>
   ));
