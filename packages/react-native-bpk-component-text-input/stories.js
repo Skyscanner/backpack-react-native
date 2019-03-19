@@ -176,11 +176,20 @@ storiesOf('react-native-bpk-component-text-input', module)
   ))
   .add('Themed', () => (
     <BpkThemeProvider theme={themeAttributes}>
-      <StatefulBpkTextInput
-        label="Input"
-        initialValue=""
-        style={styles.input}
-        placeholder="3 letter airport code"
-      />
+      <ScrollView>
+        <StatefulBpkTextInput
+          label="Input"
+          initialValue=""
+          style={styles.input}
+          placeholder="3 letter airport code"
+        />
+        <StatefulBpkTextInput
+          label="Invalid input"
+          initialValue="Edinbvrgh"
+          valid={false}
+          validationMessage="'Edinbvrgh' is not a valid city."
+          style={styles.input}
+        />
+      </ScrollView>
     </BpkThemeProvider>
   ));

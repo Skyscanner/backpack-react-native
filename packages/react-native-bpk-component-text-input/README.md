@@ -120,4 +120,5 @@ More details about how to use and define a mask can be found here: https://githu
 
 ## Theme Props
 
+* `textFontFamily`
 * `textInputFocusedColor`

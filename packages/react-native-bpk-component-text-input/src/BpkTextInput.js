@@ -218,6 +218,13 @@ class BpkTextInput extends Component<Props, State> {
       focusedColor,
     );
 
+    const inputTextStyle = [styles.input];
+
+    if (themeAttributes) {
+      inputTextStyle.push({ fontFamily: themeAttributes.textFontFamily });
+      animatedLabelStyle.push({ fontFamily: themeAttributes.textFontFamily });
+    }
+
     const renderExtraInfo = () => {
       if (valid === false && validationMessage) {
         return (
@@ -252,7 +259,7 @@ class BpkTextInput extends Component<Props, State> {
             <TextInput
               editable={editable}
               value={mask ? this.tinymask.mask(value) : value || ''}
-              style={styles.input}
+              style={inputTextStyle}
               onFocus={this.onFocus}
               onBlur={this.onBlur}
               // Ignored because we simply do not understand it

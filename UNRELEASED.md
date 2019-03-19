@@ -2,4 +2,4 @@
 
 **Added:**
 
-- Added theme prop `textInputFocusedColor` to `BpkTextInput`
+- Added theme props `textInputFocusedColor` and `textFontFamily` to `BpkTextInput`
