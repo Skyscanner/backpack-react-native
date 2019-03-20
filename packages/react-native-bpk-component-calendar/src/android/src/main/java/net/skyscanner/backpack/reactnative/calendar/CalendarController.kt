@@ -19,6 +19,7 @@ package net.skyscanner.backpack.reactnative.calendar
 
 import android.content.Context
 import android.view.View
+import net.skyscanner.backpack.calendar.model.CalendarDay
 import net.skyscanner.backpack.calendar.model.CalendarRange
 import net.skyscanner.backpack.calendar.presenter.BpkCalendarController
 import java.util.*
@@ -30,8 +31,8 @@ class CalendarController(
   override var locale: Locale
 ): BpkCalendarController() {
 
-  override var endDate: Calendar = super.endDate
-  override var startDate: Calendar = super.startDate
+  override var endDate: CalendarDay = super.endDate
+  override var startDate: CalendarDay = super.startDate
 
   var onDatesChange: ChangeCallback? = null
 

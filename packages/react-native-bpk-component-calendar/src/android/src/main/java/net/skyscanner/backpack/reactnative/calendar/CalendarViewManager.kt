@@ -43,7 +43,7 @@ class CalendarViewManager : SimpleViewManager<RNCalendarView>() {
   @ReactProp(name = "selectedDates")
   fun setSelectedDates(view: RNCalendarView, dates: ReadableArray) {
     view.selectedDates = (0..(dates.size() - 1)).map {
-      unixToCalendar(dates.getInt(it))
+      unixToCalendarDay(dates.getInt(it))
     }.toTypedArray()
   }
 
@@ -55,14 +55,14 @@ class CalendarViewManager : SimpleViewManager<RNCalendarView>() {
   @ReactProp(name = "minDate")
   fun setMinDate(view: RNCalendarView, minDate: Int?) {
     minDate?.let {
-      view.minDate = unixToCalendar(it)
+      view.minDate = unixToCalendarDay(it)
     }
   }
 
   @ReactProp(name = "maxDate")
   fun setMaxDate(view: RNCalendarView, maxDate: Int?) {
     maxDate?.let {
-      view.maxDate = unixToCalendar(it)
+      view.maxDate = unixToCalendarDay(it)
     }
   }
 
@@ -78,9 +78,7 @@ class CalendarViewManager : SimpleViewManager<RNCalendarView>() {
     }
   }
 
-  private fun unixToCalendar(unixTime: Int): Calendar {
-    return Calendar.getInstance(TIMEZONE).apply {
-      timeInMillis = unixTime * 1000L
-    }
+  private fun unixToCalendarDay(unixTime: Int): CalendarDay {
+    return CalendarDay.of(timeInMillis = unixTime * 1000L)
   }
 }

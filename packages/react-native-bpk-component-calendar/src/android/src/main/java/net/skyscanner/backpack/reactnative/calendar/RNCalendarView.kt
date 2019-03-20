@@ -44,7 +44,7 @@ class RNCalendarView(
       }
     }
 
-  var minDate: Calendar? = null
+  var minDate: CalendarDay? = null
     set(value) {
       if (value != field) {
         field = value
@@ -52,7 +52,7 @@ class RNCalendarView(
       }
     }
 
-  var maxDate: Calendar? = null
+  var maxDate: CalendarDay? = null
     set(value) {
       if (value != field) {
         field = value
@@ -60,7 +60,7 @@ class RNCalendarView(
       }
     }
 
-  var selectedDates: Array<Calendar> = arrayOf()
+  var selectedDates: Array<CalendarDay> = arrayOf()
     set(value) {
       if (!value.contentEquals(field)) {
         field = value
@@ -108,20 +108,13 @@ class RNCalendarView(
     Handler().post{ render() }
   }
 
-  private fun calendarToCalendarDay(date: Calendar): CalendarDay {
-    return CalendarDay(
-      date.get(Calendar.YEAR),
-      date.get(Calendar.MONTH),
-      date.get(Calendar.DAY_OF_MONTH))
-  }
-
-  private fun selectedDaysToRange(selectedDays: Array<Calendar>): CalendarRange {
+  private fun selectedDaysToRange(selectedDays: Array<CalendarDay>): CalendarRange {
     val range = CalendarRange()
     when (selectedDays.size) {
-      1 -> range.start = calendarToCalendarDay(selectedDays[0])
+      1 -> range.start = selectedDays[0]
       2 -> {
-        range.start = calendarToCalendarDay(selectedDays[0])
-        range.end = calendarToCalendarDay(selectedDays[1])
+        range.start = selectedDays[0]
+        range.end = selectedDays[1]
       }
       0 -> Unit
       // TODO: add support for different selection types
