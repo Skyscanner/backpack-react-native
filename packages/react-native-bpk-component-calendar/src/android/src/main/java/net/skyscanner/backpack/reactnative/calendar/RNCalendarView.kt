@@ -23,6 +23,9 @@ import android.widget.FrameLayout
 import net.skyscanner.backpack.calendar.BpkCalendar
 import net.skyscanner.backpack.calendar.model.CalendarDay
 import net.skyscanner.backpack.calendar.model.CalendarRange
+import net.skyscanner.backpack.calendar.model.CalendarSelection
+import net.skyscanner.backpack.calendar.model.SingleDay
+import net.skyscanner.backpack.calendar.presenter.SelectionType
 import kotlin.collections.contentEquals
 import java.util.*
 
@@ -30,7 +33,17 @@ class RNCalendarView(
   context: Context
 ): FrameLayout(context) {
 
+  private var calendar = BpkCalendar(context)
   private var controller: CalendarController? = null
+  private var selection: CalendarSelection? = null
+
+  init {
+    layoutParams = FrameLayout.LayoutParams(
+            FrameLayout.LayoutParams.MATCH_PARENT,
+            FrameLayout.LayoutParams.MATCH_PARENT)
+
+    addView(calendar)
+  }
 
   var locale: String? = null
     set(value) {
@@ -40,7 +53,7 @@ class RNCalendarView(
 
       if (value != field) {
         field = value
-        scheduleReRender()
+        markStale()
       }
     }
 
@@ -48,7 +61,7 @@ class RNCalendarView(
     set(value) {
       if (value != field) {
         field = value
-        scheduleReRender()
+        markStale()
       }
     }
 
@@ -56,72 +69,61 @@ class RNCalendarView(
     set(value) {
       if (value != field) {
         field = value
-        scheduleReRender()
+        markStale()
       }
     }
 
   var selectedDates: Array<CalendarDay> = arrayOf()
-    set(value) {
-      if (!value.contentEquals(field)) {
-        field = value
-        val range = selectedDaysToRange(field)
-        controller?.updateSelection(range)
-        selectedRange = range
-      }
-    }
 
-  private var selectedRange: CalendarRange? = null
+  var selectionType: SelectionType = SelectionType.RANGE
 
   var onDatesChange: ChangeCallback? = null
-    set(value) {
-      field = value
-      controller?.onDatesChange = value
-    }
 
-  init {
-    layoutParams = FrameLayout.LayoutParams(
-      FrameLayout.LayoutParams.MATCH_PARENT,
-      FrameLayout.LayoutParams.MATCH_PARENT)
-  }
-
-  private fun render() {
-    if (childCount > 0) {
-      removeAllViews()
-    }
-
+  fun render() {
     locale ?: throw IllegalStateException("[RNCalendarView] Locale has not been initialized")
 
+    selection = selectedDaysToSelection(selectedDates)
+
+    if (isStale()) {
+      controller = createController()
+      calendar.setController(controller!!)
+      // we set it here to avoid firing the callback when `initiallySelected` dates are provided
+      controller?.onDatesChange = onDatesChange
+    } else {
+      controller?.onDatesChange = onDatesChange
+      controller?.selectionType = selectionType
+    }
+  }
+
+  private fun createController(): CalendarController {
     val currentController = CalendarController(context, Locale.forLanguageTag(locale!!))
-    currentController.onDatesChange = onDatesChange
+    currentController.selectionType = selectionType
     minDate?.let { currentController.startDate = it }
     maxDate?.let { currentController.endDate = it }
-    selectedRange?.let { currentController.updateSelection(it) }
+    selection?.let { currentController.updateSelection(it) }
 
-    val calendar = BpkCalendar(context)
-    calendar.setController(currentController)
-    addView(calendar)
-
-    controller = currentController
+    return currentController
   }
 
-  private fun scheduleReRender() {
-    Handler().post{ render() }
-  }
-
-  private fun selectedDaysToRange(selectedDays: Array<CalendarDay>): CalendarRange {
-    val range = CalendarRange()
-    when (selectedDays.size) {
-      1 -> range.start = selectedDays[0]
-      2 -> {
-        range.start = selectedDays[0]
-        range.end = selectedDays[1]
+  private fun selectedDaysToSelection(selectedDays: Array<CalendarDay>): CalendarSelection {
+    return when (selectedDays.size) {
+      1, 2 -> if (selectionType == SelectionType.RANGE) {
+        val end = if (selectedDays.size == 2) selectedDays[1] else null
+        CalendarRange(selectedDays[0], end)
+      } else {
+        SingleDay(selectedDays[0])
       }
-      0 -> Unit
-      // TODO: add support for different selection types
+      // Empty range when no dates are selected because it resets to controller to no dates selected
+      0 -> CalendarRange()
+      // TODO: add support for multiple selections
       else -> throw IllegalStateException("[RNCalendarView] No more than 2 selectedDates are supported")
     }
-
-    return range
   }
+
+  private fun markStale() {
+    controller = null
+  }
+
+  private fun isStale() = controller == null
 
 }

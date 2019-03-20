@@ -23,7 +23,11 @@ import com.facebook.react.uimanager.ThemedReactContext
 import com.facebook.react.uimanager.UIManagerModule
 import com.facebook.react.uimanager.annotations.ReactProp
 import net.skyscanner.backpack.calendar.model.CalendarDay
+import net.skyscanner.backpack.calendar.model.CalendarRange
+import net.skyscanner.backpack.calendar.model.SingleDay
+import net.skyscanner.backpack.calendar.presenter.SelectionType
 import net.skyscanner.backpack.reactnative.calendar.events.CalendarChangeEvent
+import java.lang.IllegalArgumentException
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -31,7 +35,6 @@ class CalendarViewManager : SimpleViewManager<RNCalendarView>() {
 
   companion object {
     const val VIEW_NAME = "AndroidBPKCalendarView"
-    val TIMEZONE = TimeZone.getTimeZone("UTC")
   }
 
   override fun getName() = VIEW_NAME
@@ -45,6 +48,16 @@ class CalendarViewManager : SimpleViewManager<RNCalendarView>() {
     view.selectedDates = (0..(dates.size() - 1)).map {
       unixToCalendarDay(dates.getInt(it))
     }.toTypedArray()
+  }
+
+  @ReactProp(name = "selectionType")
+  fun setSelectionType(view: RNCalendarView, selectionType: String) {
+    view.selectionType = when (selectionType) {
+      "range" -> SelectionType.RANGE
+      "single" -> SelectionType.SINGLE
+      "multiple" -> SelectionType.RANGE // TODO: support multiple selection
+      else -> throw IllegalArgumentException("Selection type $selectionType is not supported")
+    }
   }
 
   @ReactProp(name = "locale")
@@ -67,15 +80,27 @@ class CalendarViewManager : SimpleViewManager<RNCalendarView>() {
   }
 
   override fun addEventEmitters(reactContext: ThemedReactContext, view: RNCalendarView) {
-    val dispatcher = reactContext!!.getNativeModule(UIManagerModule::class.java).eventDispatcher
+    val dispatcher = reactContext.getNativeModule(UIManagerModule::class.java).eventDispatcher
 
-    view?.onDatesChange = { range ->
+    view.onDatesChange = { selection ->
       val dates = mutableListOf<CalendarDay>()
-      range.start?.let { dates.add(it) }
-      range.end?.let { dates.add(it) }
+      when (selection) {
+        is CalendarRange -> {
+          selection.start?.let { dates.add(it) }
+          selection.end?.let { dates.add(it) }
+        }
+        is SingleDay -> {
+          dates.add(selection.selectedDay)
+        }
+      }
 
-      dispatcher.dispatchEvent(CalendarChangeEvent(view!!.id, dates.toTypedArray()))
+      dispatcher.dispatchEvent(CalendarChangeEvent(view.id, dates.toTypedArray()))
     }
+  }
+
+  override fun onAfterUpdateTransaction(view: RNCalendarView) {
+    super.onAfterUpdateTransaction(view)
+    view.render()
   }
 
   private fun unixToCalendarDay(unixTime: Int): CalendarDay {
