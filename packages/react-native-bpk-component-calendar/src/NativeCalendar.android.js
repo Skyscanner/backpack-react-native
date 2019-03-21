@@ -53,7 +53,7 @@ const BpkCalendar = (props: Props) => {
     ...rest
   } = props;
 
-  // TODO: add support for diferrent selection types
+  // TODO: add support for multiple selection
   let normalizedDates = selectedDates;
   if (normalizedDates.length > 2) {
     normalizedDates = normalizedDates.splice(0, 2);

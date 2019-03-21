@@ -19,19 +19,24 @@ package net.skyscanner.backpack.reactnative.calendar
 
 import android.content.Context
 import android.view.View
+import net.skyscanner.backpack.calendar.model.CalendarDay
 import net.skyscanner.backpack.calendar.model.CalendarRange
+import net.skyscanner.backpack.calendar.model.CalendarSelection
 import net.skyscanner.backpack.calendar.presenter.BpkCalendarController
+import net.skyscanner.backpack.calendar.presenter.SelectionType
 import java.util.*
 
-typealias ChangeCallback = (CalendarRange) -> Unit
+typealias ChangeCallback = (CalendarSelection) -> Unit
 
 class CalendarController(
   private val applicationContext: Context,
   override var locale: Locale
 ): BpkCalendarController() {
 
-  override var endDate: Calendar = super.endDate
-  override var startDate: Calendar = super.startDate
+  override var endDate: CalendarDay = super.endDate
+  override var startDate: CalendarDay = super.startDate
+
+  override var selectionType: SelectionType = SelectionType.RANGE
 
   var onDatesChange: ChangeCallback? = null
 
@@ -42,7 +47,7 @@ class CalendarController(
       return config.layoutDirection == View.LAYOUT_DIRECTION_RTL
     }
 
-  override fun onRangeSelected(range: CalendarRange) {
+  override fun onRangeSelected(range: CalendarSelection) {
     onDatesChange?.invoke(range)
   }
 }
