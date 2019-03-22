@@ -21,6 +21,7 @@ import com.facebook.react.bridge.ReadableArray
 import com.facebook.react.uimanager.SimpleViewManager
 import com.facebook.react.uimanager.ThemedReactContext
 import com.facebook.react.uimanager.UIManagerModule
+import com.facebook.react.uimanager.ViewGroupManager
 import com.facebook.react.uimanager.annotations.ReactProp
 import net.skyscanner.backpack.calendar.model.CalendarDay
 import net.skyscanner.backpack.calendar.model.CalendarRange
@@ -31,11 +32,15 @@ import java.lang.IllegalArgumentException
 import java.text.SimpleDateFormat
 import java.util.*
 
-class CalendarViewManager : SimpleViewManager<RNCalendarView>() {
+class CalendarViewManager : ViewGroupManager<RNCalendarView>() {
 
   companion object {
     const val VIEW_NAME = "AndroidBPKCalendarView"
   }
+
+  // This means we are not relying on RN's css to layout children and doing it ourselves.
+  // see RNCalendarView.requestLayout
+  override fun needsCustomLayoutForChildren() = true
 
   override fun getName() = VIEW_NAME
 
