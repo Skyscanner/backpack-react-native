@@ -84,7 +84,7 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^4.1.1",
+    "@storybook/addon-actions": "^5.0.3",
     "@storybook/addon-links": "^4.1.1",
     "@storybook/react-native": "^4.1.14",
     "babel-jest": "^24.5.0",
