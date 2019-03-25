@@ -1,4 +1,4 @@
 # Unreleased
 
 - react-native-bpk-component-select
-  - `valid` selects now align to behaviour on text inputs with regards to border colour.
+  - `BpkSelect` with `valid={true}` no longer has a green border to match the behaviour of `BpkTextInput` which also doesn't have one. 
