@@ -491,9 +491,6 @@ exports[`iOS BpkSelect should render correctly with "valid" true 1`] = `
           "justifyContent": "space-between",
           "paddingVertical": 4,
         },
-        Object {
-          "borderColor": "rgb(0, 215, 117)",
-        },
       ]
     }
   >

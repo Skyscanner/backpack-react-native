@@ -28,7 +28,6 @@ import {
   colorGray50,
   colorGray100,
   colorRed500,
-  colorGreen500,
   borderSizeSm,
   spacingBase,
   spacingMd,
@@ -45,9 +44,6 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     paddingVertical: spacingSm,
-  },
-  valid: {
-    borderColor: colorGreen500,
   },
   invalid: {
     borderColor: colorRed500,
@@ -147,9 +143,7 @@ const BpkSelect = (props: Props) => {
   }
 
   const selectStyle = [styles.select];
-  if (valid) {
-    selectStyle.push(styles.valid);
-  } else if (valid === false) {
+  if (valid === false) {
     selectStyle.push(styles.invalid);
   }
 
