@@ -2,6 +2,14 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-03-25 - Added support for single date selection for Android calendar
+
+**Added:**
+
+- react-native-bpk-component-calendar: 0.2.0 => 0.3.0
+  - Bumped the Android calendar bridge to `backpack-android:6.1.0`
+  - Added support for single date selection for Android.
+
 # 2019-03-19 - Theming support for `BpkTextInput`
 
 **Added:**
