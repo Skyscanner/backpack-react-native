@@ -19,6 +19,9 @@ package net.skyscanner.backpack.reactnative.calendar
 
 import android.content.Context
 import android.os.Handler
+import android.util.AttributeSet
+import android.view.Choreographer
+import android.view.View
 import android.widget.FrameLayout
 import net.skyscanner.backpack.calendar.BpkCalendar
 import net.skyscanner.backpack.calendar.model.CalendarDay
@@ -26,6 +29,7 @@ import net.skyscanner.backpack.calendar.model.CalendarRange
 import net.skyscanner.backpack.calendar.model.CalendarSelection
 import net.skyscanner.backpack.calendar.model.SingleDay
 import net.skyscanner.backpack.calendar.presenter.SelectionType
+import net.skyscanner.backpack.calendar.view.OnYearChangedListener
 import kotlin.collections.contentEquals
 import java.util.*
 
@@ -33,7 +37,7 @@ class RNCalendarView(
   context: Context
 ): FrameLayout(context) {
 
-  private var calendar = BpkCalendar(context)
+  private var calendar = RNCompatBpkCalendar(context)
   private var controller: CalendarController? = null
   private var selection: CalendarSelection? = null
 
@@ -126,4 +130,31 @@ class RNCalendarView(
 
   private fun isStale() = controller == null
 
+  private val measureAndLayout = Runnable {
+    measure(
+            View.MeasureSpec.makeMeasureSpec(width, View.MeasureSpec.EXACTLY),
+            View.MeasureSpec.makeMeasureSpec(height, View.MeasureSpec.EXACTLY))
+    layout(left, top, right, bottom)
+  }
+
+  override fun requestLayout() {
+    super.requestLayout()
+
+    // The calendar relies on a measure + layout pass happening after ir calls requestLayout()
+    // based on: https://github.com/facebook/react-native/blob/8d5ac8de766b9e435cbfa9bfa6b8a2b75b0e2a19/ReactAndroid/src/main/java/com/facebook/react/views/toolbar/ReactToolbar.java#L175
+    this.post(measureAndLayout)
+  }
+
+
+  private inner class RNCompatBpkCalendar @JvmOverloads constructor(
+          context: Context,
+          attrs: AttributeSet? = null,
+          defStyle: Int = 0
+  ) : BpkCalendar(context, attrs, defStyle), OnYearChangedListener {
+
+    override fun onYearChanged(year: Int) {
+      super.onYearChanged(year)
+      this@RNCalendarView.requestLayout()
+    }
+  }
 }
