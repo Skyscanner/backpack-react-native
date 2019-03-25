@@ -29,7 +29,7 @@ fi
 for f in packages/*; do
   package=`basename $f`
 
-  if [ -d "$f" ] && [ -e "$f/package.json" ]; then
+  if [ "$f" != "packages/react-native-bpk-component-boilerplate" ] && [ -d "$f" ] && [ -e "$f/package.json" ]; then
     npm owner rm $username $package
   fi
 done
