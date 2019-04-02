@@ -81,6 +81,9 @@
     "*.js": [
       "eslint --fix",
       "git add"
+    ],
+    "*.md": [
+      "mdspell -r --en-gb --ignore-acronyms --ignore-numbers --no-suggestions"
     ]
   },
   "devDependencies": {
