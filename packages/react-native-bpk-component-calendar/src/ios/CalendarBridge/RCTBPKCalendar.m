@@ -47,6 +47,7 @@ NS_ASSUME_NONNULL_BEGIN
     }
 
     return self;
+
 }
 
 - (nullable instancetype)initWithCoder:(NSCoder *)aDecoder {
@@ -64,32 +65,68 @@ NS_ASSUME_NONNULL_BEGIN
     self.utcCalendar.timeZone = [[NSTimeZone alloc] initWithName:@"UTC"];
 }
 
-- (void)setMinDate:(NSDate *)minDate {
-    NSDate *localDate = [RCTBPKCalendarDateUtils convertDateToLocal:minDate
+- (void)setRct_minDate:(nullable NSDate *)rct_minDate {
+    // `BPKCalendar` requires `minDate` to be nonnull
+    // but the RN interface supports `null` for the `minDate`
+    // prop thus we have to ensure we have an explicit default
+    // here. This default is aligned with the Android implementation.
+    if (rct_minDate == nil) {
+        NSDate *today = [[NSDate alloc] init];
+        BPKSimpleDate *date = [self simpleDateFromDate:today];
+
+        [super setMinDate:date];
+        return;
+    }
+
+    NSDate *localDate = [RCTBPKCalendarDateUtils convertDateToLocal:rct_minDate
                                                       localCalendar:self.gregorian
                                                         utcCalendar:self.utcCalendar];
-    [super setMinDate:localDate];
+    BPKSimpleDate *simpleDate = [super simpleDateFromDate:localDate];
+    [super setMinDate:simpleDate];
 }
 
-- (void)setMaxDate:(NSDate *)maxDate {
-    NSDate *localDate = [RCTBPKCalendarDateUtils convertDateToLocal:maxDate
+- (nullable NSDate *)rct_minDate {
+    return [self dateFromSimpleDate:self.minDate];
+}
+
+- (void)setRct_maxDate:(nullable NSDate *)rct_maxDate {
+    // `BPKCalendar` requires `maxDate` to be nonnull
+    // but the RN interface supports `null` for the `maxDate`
+    // prop thus we have to ensure we have an explicit default
+    // here. This default is aligned with the Android implementation.
+    if (rct_maxDate == nil) {
+        NSDate *today = [[NSDate alloc] init];
+        NSDate *oneYearFromNow = [self.gregorian dateByAddingUnit:NSCalendarUnitYear value:1 toDate:today options:0];
+        BPKSimpleDate *date = [self simpleDateFromDate:oneYearFromNow];
+
+        [super setMaxDate:date];
+        return;
+    }
+
+    NSDate *localDate = [RCTBPKCalendarDateUtils convertDateToLocal:rct_maxDate
                                                       localCalendar:self.gregorian
                                                         utcCalendar:self.utcCalendar];
-    [super setMaxDate:localDate];
+    BPKSimpleDate *simpleDate = [super simpleDateFromDate:localDate];
+    [super setMaxDate:simpleDate];
 }
 
-- (void)setSelectedDates:(NSArray<NSDate *> *)selectedDates {
-    NSMutableArray *localDates = [[NSMutableArray alloc] initWithCapacity:selectedDates.count];
+- (nullable NSDate *)rct_maxDate {
+    return [self dateFromSimpleDate:self.maxDate];
+}
 
-    for (NSDate *utcDate in selectedDates) {
+- (void)setRct_selectedDates:(NSArray<NSDate *> *)rct_selectedDates {
+    NSMutableArray *simpleDates = [[NSMutableArray alloc] initWithCapacity:rct_selectedDates.count];
+
+    for (NSDate *utcDate in rct_selectedDates) {
         NSDate *localDate = [RCTBPKCalendarDateUtils convertDateToLocal:utcDate
                                                           localCalendar:self.gregorian
                                                             utcCalendar:self.utcCalendar];
-        [localDates addObject:localDate];
+        BPKSimpleDate *simpleDate = [self simpleDateFromDate:localDate];
+        [simpleDates addObject:simpleDate];
     }
 
 
-    [super setSelectedDates:localDates];
+    [super setSelectedDates:simpleDates];
 }
 
 @end

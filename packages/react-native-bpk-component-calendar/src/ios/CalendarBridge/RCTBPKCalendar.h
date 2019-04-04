@@ -23,4 +23,8 @@
 
 @property (nonatomic, copy) RCTBubblingEventBlock onDateSelection;
 @property(nonatomic, strong, readonly) NSCalendar *utcCalendar;
+
+@property(nonatomic, nullable) NSDate *rct_minDate;
+@property(nonatomic, nullable) NSDate *rct_maxDate;
+@property(nonatomic, nonnull) NSArray<NSDate *> *rct_selectedDates;
 @end
