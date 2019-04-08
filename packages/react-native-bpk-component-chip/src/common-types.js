@@ -21,6 +21,9 @@
 import PropTypes from 'prop-types';
 import { type Node, type ElementProps } from 'react';
 import { View, ViewPropTypes } from 'react-native';
+import { type Theme } from 'react-native-bpk-theming';
+
+import { themePropType } from './theming';
 
 type ViewProps = ElementProps<typeof View>;
 type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
@@ -31,6 +34,7 @@ export type Props = {
   onPress: () => mixed,
   label: string,
   style: ViewStyleProp,
+  theme: ?Theme,
 };
 
 export type InnerProps = {
@@ -48,9 +52,11 @@ export const commonPropTypes = {
   onPress: PropTypes.func.isRequired,
   label: PropTypes.string.isRequired,
   style: ViewPropTypes.style,
+  theme: themePropType,
 };
 
 export const commonDefaultProps = {
   disabled: false,
   style: null,
+  theme: null,
 };

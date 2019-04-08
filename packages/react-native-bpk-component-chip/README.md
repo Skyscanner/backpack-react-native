@@ -79,6 +79,11 @@ export default class App extends Component {
 | disabled              | bool                                                                      | false    | false         |
 | selected              | bool                                                                      | false    | false         |
 
+#### Theme Props
+
+* `chipSelectedBackgroundColor`
+* `chipSelectedTextColor`
+
 ### BpkDismissibleChip
 
 | Property              | PropType                                                                  | Required | Default Value |
