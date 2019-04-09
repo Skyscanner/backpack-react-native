@@ -16,38 +16,16 @@
  * limitations under the License.
  */
 
+// If theming is ever expanded to support other types, this should be changed
+// to something akin to BpkButton's theming functions.
 /* @flow */
 
-import React from 'react';
-import PropTypes from 'prop-types';
-import { withTheme } from 'react-native-bpk-theming';
+import { makeThemePropType } from 'react-native-bpk-theming';
 
-import BpkChipWrapper from './BpkChipWrapper';
-import {
-  type Props as CommonProps,
-  commonPropTypes,
-  commonDefaultProps,
-} from './common-types';
+const REQUIRED_THEME_ATTRIBUTES = [
+  'chipSelectedBackgroundColor',
+  'chipSelectedTextColor',
+];
+const themePropType = makeThemePropType(REQUIRED_THEME_ATTRIBUTES);
 
-export type Props = {
-  ...$Exact<CommonProps>,
-  selected: boolean,
-};
-
-const BpkChip = (props: Props) => {
-  const { ...rest } = props;
-
-  return <BpkChipWrapper {...rest} dismissible={false} />;
-};
-
-BpkChip.propTypes = {
-  ...commonPropTypes,
-  selected: PropTypes.bool,
-};
-
-BpkChip.defaultProps = {
-  ...commonDefaultProps,
-  selected: false,
-};
-
-export default withTheme(BpkChip);
+export { REQUIRED_THEME_ATTRIBUTES, themePropType };

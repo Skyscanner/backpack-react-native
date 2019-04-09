@@ -52,6 +52,10 @@ const themeAttributes = {
   buttonSecondaryBorderColor: theme.contentColor,
   buttonLinkTextColor: theme.contentColor,
 
+  // Used in BpkChip.
+  chipSelectedBackgroundColor: theme.contentColor,
+  chipSelectedTextColor: theme.backgroundColor,
+
   // Used in BpkHorizontalNavItem.
   horizontalNavSelectedTextColor: theme.contentColor,
 

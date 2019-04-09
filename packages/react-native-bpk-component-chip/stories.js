@@ -28,8 +28,10 @@ import {
   spacingBase,
   spacingLg,
 } from 'bpk-tokens/tokens/base.react.native';
+import BpkThemeProvider from 'react-native-bpk-theming';
 
 import CenterDecorator from '../../storybook/CenterDecorator';
+import themeAttributes from '../../storybook/themeAttributes';
 
 import BpkChip, { BpkDismissibleChip } from './index';
 
@@ -240,6 +242,23 @@ storiesOf('react-native-bpk-component-chip', module)
         />
       ))}
     </View>
+  ))
+  .add('Themed', () => (
+    <BpkThemeProvider theme={themeAttributes}>
+      <View style={styles.row}>
+        {COUNTRIES.map((country, index) => (
+          <BpkChip
+            key={country}
+            label={country}
+            accessibilityLabel={`Toggle ${country}`}
+            onPress={() => {}}
+            selected={index % 2 === 0}
+            disabled={index % 10 === 0}
+            style={styles.chip}
+          />
+        ))}
+      </View>
+    </BpkThemeProvider>
   ))
   .add('Stateful examples', () => (
     <View>

@@ -430,3 +430,102 @@ exports[`iOS BpkChip should render correctly with custom style 1`] = `
   />
 </View>
 `;
+
+exports[`iOS BpkChip should support theming when selected 1`] = `
+<View
+  accessibilityLabel="Accessibility label"
+  accessibilityTraits={
+    Array [
+      "button",
+      "selected",
+    ]
+  }
+  accessible={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderRadius": 40,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+          "shadowColor": "rgb(37, 32, 51)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
+          },
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        },
+        Object {
+          "backgroundColor": "rgb(0, 178, 214)",
+        },
+        Object {
+          "backgroundColor": "red",
+        },
+      ],
+      null,
+    ]
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "rgb(82, 76, 97)",
+          "fontFamily": "System",
+          "fontSize": 14,
+          "fontWeight": "400",
+          "letterSpacing": 0.154,
+        },
+        Object {},
+        Object {
+          "fontFamily": "System",
+        },
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "includeFontPadding": false,
+          },
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
+          Object {
+            "color": "yellow",
+          },
+        ],
+      ]
+    }
+  >
+    Label
+  </Text>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(37, 32, 51)",
+          "bottom": 0,
+          "flex": 1,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "borderRadius": 40,
+        },
+      ]
+    }
+  />
+</View>
+`;

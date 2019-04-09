@@ -35,8 +35,10 @@ import {
   spacingBase,
 } from 'bpk-tokens/tokens/base.react.native';
 import { shadows } from 'react-native-bpk-styles';
+import { getThemeAttributes, withTheme } from 'react-native-bpk-theming';
 
 import BpkChipInner from './BpkChipInner';
+import { REQUIRED_THEME_ATTRIBUTES } from './theming';
 import {
   type Props as CommonProps,
   commonPropTypes,
@@ -96,6 +98,7 @@ const BpkChipWrapper = (props: Props) => {
     label,
     selected,
     style,
+    theme,
     ...rest
   } = props;
 
@@ -106,6 +109,20 @@ const BpkChipWrapper = (props: Props) => {
   if (selected) {
     innerStyle.push(styles.innerSelected);
     textStyle.push(styles.textSelected);
+
+    const themeAttributes = getThemeAttributes(
+      REQUIRED_THEME_ATTRIBUTES,
+      theme,
+    );
+
+    if (themeAttributes) {
+      innerStyle.push({
+        backgroundColor: themeAttributes.chipSelectedBackgroundColor,
+      });
+      textStyle.push({
+        color: themeAttributes.chipSelectedTextColor,
+      });
+    }
   }
 
   if (disabled) {
@@ -143,4 +160,4 @@ BpkChipWrapper.defaultProps = {
   selected: false,
 };
 
-export default BpkChipWrapper;
+export default withTheme(BpkChipWrapper);

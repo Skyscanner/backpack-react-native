@@ -21,6 +21,7 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
 import renderer from 'react-test-renderer';
+import BpkThemeProvider from 'react-native-bpk-theming';
 
 import BpkChip from './BpkChip';
 
@@ -102,6 +103,28 @@ const commonTests = () => {
             accessibilityLabel="Accessibility label"
             testID="123" // <- Arbitrary prop.
           />,
+        )
+        .toJSON();
+
+      expect(tree).toMatchSnapshot();
+    });
+
+    it('should support theming when selected', () => {
+      const theme = {
+        chipSelectedBackgroundColor: 'red',
+        chipSelectedTextColor: 'yellow',
+        textFontFamily: 'System',
+      };
+      const tree = renderer
+        .create(
+          <BpkThemeProvider theme={theme}>
+            <BpkChip
+              selected
+              label="Label"
+              accessibilityLabel="Accessibility label"
+              onPress={onPress}
+            />
+          </BpkThemeProvider>,
         )
         .toJSON();
 
