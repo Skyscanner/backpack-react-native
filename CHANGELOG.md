@@ -2,6 +2,18 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-04-09 - Theming support for `BpkChip` and improved `BpkSelect` display
+
+**Added**
+- react-native-bpk-component-chip: 3.1.21 => 3.2.0
+  - Added theming support to `BpkChip` when selected. See https://backpack.github.io/components/chip?platform=native#theme-props
+
+**Changed**
+
+- react-native-bpk-component-select: 2.1.22 => 2.1.23
+  - `BpkSelect` with `valid={true}` no longer has a green border to match the behaviour of `BpkTextInput` which also doesn't have one.
+
+
 # 2019-03-25 - Added support for single date selection for Android calendar
 
 **Added:**
