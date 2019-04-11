@@ -2,6 +2,15 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-04-11 - Update price alert icons
+
+**Changed:**
+- react-native-bpk-component-button-link: 4.4.5 => 4.4.6
+- react-native-bpk-component-button: 8.3.6 => 8.3.7
+- react-native-bpk-component-icon: 1.14.6 => 1.14.7
+- react-native-bpk-component-navigation-bar: 5.1.6 => 5.1.7
+  - Updated `alert--active`, `alert--add`, `alert--expired`, `alert--remove`, `price-alerts` icons.
+
 # 2019-04-09 - Theming support for `BpkChip` and improved `BpkSelect` display
 
 **Added**
