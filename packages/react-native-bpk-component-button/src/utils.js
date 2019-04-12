@@ -88,7 +88,7 @@ export const getStyleForElement = (
       );
     }
 
-    if (iconAlignment === 'leading' || iconAlignment === 'centerLeading') {
+    if (iconAlignment === 'leading') {
       styleForElement.push(styles.modifiers.iconLeading[elementType]);
     }
   }
