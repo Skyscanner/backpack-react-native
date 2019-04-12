@@ -147,16 +147,6 @@ const modifiers = {
       marginStart: 0,
     },
   }),
-  textAndIcon: StyleSheet.create({
-    button: {
-      justifyContent: 'space-between',
-    },
-  }),
-  textAndIconLarge: StyleSheet.create({
-    button: {
-      justifyContent: 'space-between',
-    },
-  }),
   iconLeading: StyleSheet.create({
     button: {
       flexDirection: 'row-reverse',

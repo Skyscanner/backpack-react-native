@@ -97,7 +97,7 @@ export default class App extends Component {
 | accessibilityLabel    | string                                                                    | false    | props.title   |
 | disabled              | bool                                                                      | false    | false         |
 | icon                  | oneOf(string, element) Strings must be a [BpkIcon](/components/web/icons) | false    | null          |
-| iconAlignment         | oneOf('leading', 'trailing', 'centerLeading', 'centerTrailing')           | false    | trailing      |
+| iconAlignment         | oneOf('leading', 'trailing')                                              | false    | trailing      |
 | iconOnly (iOS only)   | bool                                                                      | false    | false         |
 | large (iOS only)      | bool                                                                      | false    | false         |
 | theme                 | See [Theme Props](#theme-props) below                                     | false    | null          |
