@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-04-12 - Updated iconAlignment behaviour for buttons
+
+**Breaking:**
+- react-native-bpk-component-button:
+  - Changed behaviour of `iconAlignment` `leading` and `trailing` values to behave as `centerLeading` and `centerTrailing`.
+  - Removed `centerLeading` and `centerTrailing` from `iconAlignment`.
+
 # 2019-04-11 - Update price alert icons
 
 **Changed:**
