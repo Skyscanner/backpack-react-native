@@ -5,7 +5,7 @@
 # 2019-04-12 - Updated iconAlignment behaviour for buttons
 
 **Breaking:**
-- react-native-bpk-component-button:
+- react-native-bpk-component-button: 8.3.7 => 9.0.0
   - Changed behaviour of `iconAlignment` `leading` and `trailing` values to behave as `centerLeading` and `centerTrailing`.
   - Removed `centerLeading` and `centerTrailing` from `iconAlignment`.
 
