@@ -80,15 +80,7 @@ export const getStyleForElement = (
       );
     }
   } else if (title && icon) {
-    if (iconAlignment === 'leading' || iconAlignment === 'trailing') {
-      styleForElement.push(
-        styles.modifiers[isLarge ? 'textAndIconLarge' : 'textAndIcon'][
-          elementType
-        ],
-      );
-    }
-
-    if (iconAlignment === 'leading' || iconAlignment === 'centerLeading') {
+    if (iconAlignment === 'leading') {
       styleForElement.push(styles.modifiers.iconLeading[elementType]);
     }
   }

@@ -38,8 +38,6 @@ export const BUTTON_TYPES = {
 export const ICON_ALIGNMENTS = {
   leading: 'leading',
   trailing: 'trailing',
-  centerLeading: 'centerLeading',
-  centerTrailing: 'centerTrailing',
 };
 
 export type CommonProps = {

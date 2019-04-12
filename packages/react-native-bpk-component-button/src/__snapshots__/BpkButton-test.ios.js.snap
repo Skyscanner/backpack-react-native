@@ -90,257 +90,6 @@ exports[`iOS BpkButton should render correctly 1`] = `
 </View>
 `;
 
-exports[`iOS BpkButton should render correctly with iconAlignment="centerLeading" 1`] = `
-<View
-  accessibilityComponentType="button"
-  accessibilityLabel="Lorem ipsum"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
-  accessible={true}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={null}
->
-  <View
-    colors={
-      Array [
-        "rgb(0, 215, 117)",
-        "rgb(0, 189, 104)",
-      ]
-    }
-    style={
-      Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-          Object {
-            "flexDirection": "row-reverse",
-          },
-        ],
-        Object {},
-      ]
-    }
-  >
-    <Text
-      style={
-        Array [
-          Object {
-            "color": "rgb(82, 76, 97)",
-            "fontFamily": "System",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "letterSpacing": 0.154,
-          },
-          Object {
-            "fontWeight": "600",
-          },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              undefined,
-            ],
-            Object {},
-          ],
-        ]
-      }
-    >
-      Lorem ipsum
-    </Text>
-    <Text
-      allowFontScaling={false}
-      style={
-        Array [
-          Object {
-            "color": "rgb(82, 76, 97)",
-            "fontFamily": "BpkIcon",
-            "fontSize": 24,
-            "includeFontPadding": false,
-          },
-          Object {
-            "fontSize": 16,
-          },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              undefined,
-            ],
-            Object {},
-            Array [
-              Object {
-                "marginStart": 4,
-              },
-              Object {
-                "marginEnd": 4,
-                "marginStart": 0,
-              },
-            ],
-          ],
-        ]
-      }
-    >
-      
-    </Text>
-  </View>
-  <View
-    style={
-      Array [
-        Object {
-          "backgroundColor": "rgb(37, 32, 51)",
-          "bottom": 0,
-          "flex": 1,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        },
-        Object {
-          "borderRadius": 40,
-        },
-      ]
-    }
-  />
-</View>
-`;
-
-exports[`iOS BpkButton should render correctly with iconAlignment="centerTrailing" 1`] = `
-<View
-  accessibilityComponentType="button"
-  accessibilityLabel="Lorem ipsum"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
-  accessible={true}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={null}
->
-  <View
-    colors={
-      Array [
-        "rgb(0, 215, 117)",
-        "rgb(0, 189, 104)",
-      ]
-    }
-    style={
-      Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-        ],
-        Object {},
-      ]
-    }
-  >
-    <Text
-      style={
-        Array [
-          Object {
-            "color": "rgb(82, 76, 97)",
-            "fontFamily": "System",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "letterSpacing": 0.154,
-          },
-          Object {
-            "fontWeight": "600",
-          },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-            Object {},
-          ],
-        ]
-      }
-    >
-      Lorem ipsum
-    </Text>
-    <Text
-      allowFontScaling={false}
-      style={
-        Array [
-          Object {
-            "color": "rgb(82, 76, 97)",
-            "fontFamily": "BpkIcon",
-            "fontSize": 24,
-            "includeFontPadding": false,
-          },
-          Object {
-            "fontSize": 16,
-          },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-            Object {},
-            Array [
-              Object {
-                "marginStart": 4,
-              },
-            ],
-          ],
-        ]
-      }
-    >
-      
-    </Text>
-  </View>
-  <View
-    style={
-      Array [
-        Object {
-          "backgroundColor": "rgb(37, 32, 51)",
-          "bottom": 0,
-          "flex": 1,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        },
-        Object {
-          "borderRadius": 40,
-        },
-      ]
-    }
-  />
-</View>
-`;
-
 exports[`iOS BpkButton should render correctly with iconAlignment="leading" 1`] = `
 <View
   accessibilityComponentType="button"
@@ -378,9 +127,6 @@ exports[`iOS BpkButton should render correctly with iconAlignment="leading" 1`] 
             "paddingVertical": 8,
           },
           Object {
-            "justifyContent": "space-between",
-          },
-          Object {
             "flexDirection": "row-reverse",
           },
         ],
@@ -406,7 +152,6 @@ exports[`iOS BpkButton should render correctly with iconAlignment="leading" 1`] 
               Object {
                 "color": "rgb(255, 255, 255)",
               },
-              undefined,
               undefined,
             ],
             Object {},
@@ -435,14 +180,12 @@ exports[`iOS BpkButton should render correctly with iconAlignment="leading" 1`] 
                 "color": "rgb(255, 255, 255)",
               },
               undefined,
-              undefined,
             ],
             Object {},
             Array [
               Object {
                 "marginStart": 4,
               },
-              undefined,
               Object {
                 "marginEnd": 4,
                 "marginStart": 0,
@@ -513,9 +256,6 @@ exports[`iOS BpkButton should render correctly with iconAlignment="trailing" 1`]
             "paddingHorizontal": 12,
             "paddingVertical": 8,
           },
-          Object {
-            "justifyContent": "space-between",
-          },
         ],
         Object {},
       ]
@@ -539,7 +279,6 @@ exports[`iOS BpkButton should render correctly with iconAlignment="trailing" 1`]
               Object {
                 "color": "rgb(255, 255, 255)",
               },
-              undefined,
             ],
             Object {},
           ],
@@ -566,14 +305,12 @@ exports[`iOS BpkButton should render correctly with iconAlignment="trailing" 1`]
               Object {
                 "color": "rgb(255, 255, 255)",
               },
-              undefined,
             ],
             Object {},
             Array [
               Object {
                 "marginStart": 4,
               },
-              undefined,
             ],
           ],
         ]
@@ -1500,9 +1237,6 @@ exports[`iOS BpkButton should support having an icon as well as a title 1`] = `
             "paddingHorizontal": 12,
             "paddingVertical": 8,
           },
-          Object {
-            "justifyContent": "space-between",
-          },
         ],
         Object {},
       ]
@@ -1526,7 +1260,6 @@ exports[`iOS BpkButton should support having an icon as well as a title 1`] = `
               Object {
                 "color": "rgb(255, 255, 255)",
               },
-              undefined,
             ],
             Object {},
           ],
@@ -1553,14 +1286,12 @@ exports[`iOS BpkButton should support having an icon as well as a title 1`] = `
               Object {
                 "color": "rgb(255, 255, 255)",
               },
-              undefined,
             ],
             Object {},
             Array [
               Object {
                 "marginStart": 4,
               },
-              undefined,
             ],
           ],
         ]
@@ -1816,9 +1547,6 @@ exports[`iOS BpkButton should support the "icon" property 1`] = `
             "paddingHorizontal": 12,
             "paddingVertical": 8,
           },
-          Object {
-            "justifyContent": "space-between",
-          },
         ],
         Object {},
       ]
@@ -1842,7 +1570,6 @@ exports[`iOS BpkButton should support the "icon" property 1`] = `
               Object {
                 "color": "rgb(255, 255, 255)",
               },
-              undefined,
             ],
             Object {},
           ],
@@ -1869,14 +1596,12 @@ exports[`iOS BpkButton should support the "icon" property 1`] = `
               Object {
                 "color": "rgb(255, 255, 255)",
               },
-              undefined,
             ],
             Object {},
             Array [
               Object {
                 "marginStart": 4,
               },
-              undefined,
             ],
           ],
         ]
@@ -2241,9 +1966,6 @@ exports[`iOS should support the "icon" and "large" property 1`] = `
             "paddingHorizontal": 16,
             "paddingVertical": 12,
           },
-          Object {
-            "justifyContent": "space-between",
-          },
         ],
         Object {},
       ]
@@ -2270,7 +1992,6 @@ exports[`iOS should support the "icon" and "large" property 1`] = `
               Object {
                 "lineHeight": 24,
               },
-              undefined,
             ],
             Object {},
           ],
@@ -2297,14 +2018,12 @@ exports[`iOS should support the "icon" and "large" property 1`] = `
               Object {
                 "lineHeight": 24,
               },
-              undefined,
             ],
             Object {},
             Array [
               Object {
                 "marginStart": 4,
               },
-              undefined,
               undefined,
             ],
           ],
