@@ -53,6 +53,7 @@ const IOS_THEME_ATTRIBUTES = [
 
 const statusBarPadding = isIphoneX ? 44 : 20;
 
+// NOTE: this file explicitly does not use the Backpack tokens(for spacing) because it's based on UIKit design tokens not Backpack.
 const styles = StyleSheet.create({
   barOuter: {
     flexDirection: 'column',

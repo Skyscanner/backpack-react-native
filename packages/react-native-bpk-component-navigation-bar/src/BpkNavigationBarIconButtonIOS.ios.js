@@ -42,6 +42,8 @@ export type Props = {
 const styles = StyleSheet.create({
   button: {
     zIndex: 2,
+    height: '100%',
+    justifyContent: 'center',
   },
   icon: {
     lineHeight: 28,

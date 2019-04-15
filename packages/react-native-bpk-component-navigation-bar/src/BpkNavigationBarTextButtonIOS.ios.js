@@ -52,6 +52,8 @@ export type Props = {
 const styles = StyleSheet.create({
   button: {
     zIndex: 2,
+    height: '100%',
+    justifyContent: 'center',
   },
   leading: {
     marginStart: 8, // eslint-disable-line backpack/use-tokens

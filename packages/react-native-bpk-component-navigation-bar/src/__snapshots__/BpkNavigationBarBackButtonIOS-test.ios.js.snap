@@ -15,6 +15,7 @@ exports[`iOS BpkNavigationBarBackButtonIOS should render correctly 1`] = `
     Object {
       "alignItems": "center",
       "flexDirection": "row",
+      "height": "100%",
       "opacity": 1,
       "zIndex": 2,
     }
@@ -28,9 +29,11 @@ exports[`iOS BpkNavigationBarBackButtonIOS should render correctly 1`] = `
     }
     style={
       Array [
-        Object {
-          "marginEnd": 8,
-        },
+        Array [
+          Object {
+            "marginEnd": 16,
+          },
+        ],
         Object {
           "tintColor": "rgb(82, 76, 97)",
         },
@@ -55,6 +58,7 @@ exports[`iOS BpkNavigationBarBackButtonIOS should render correctly with title 1`
     Object {
       "alignItems": "center",
       "flexDirection": "row",
+      "height": "100%",
       "opacity": 1,
       "zIndex": 2,
     }
@@ -68,9 +72,11 @@ exports[`iOS BpkNavigationBarBackButtonIOS should render correctly with title 1`
     }
     style={
       Array [
-        Object {
-          "marginEnd": 8,
-        },
+        Array [
+          Object {
+            "marginEnd": 8,
+          },
+        ],
         Object {
           "tintColor": "rgb(82, 76, 97)",
         },

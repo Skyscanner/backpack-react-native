@@ -52,6 +52,7 @@ exports[`ios - iPhone X  BpkNavigationBar should render correctly 1`] = `
         Object {
           "alignItems": "center",
           "flexDirection": "row",
+          "height": "100%",
           "opacity": 1,
           "zIndex": 2,
         }
@@ -65,9 +66,11 @@ exports[`ios - iPhone X  BpkNavigationBar should render correctly 1`] = `
         }
         style={
           Array [
-            Object {
-              "marginEnd": 8,
-            },
+            Array [
+              Object {
+                "marginEnd": 8,
+              },
+            ],
             Object {
               "tintColor": "rgb(82, 76, 97)",
             },
@@ -206,6 +209,8 @@ exports[`ios - iPhone X  BpkNavigationBar should render correctly with trailing 
       onStartShouldSetResponder={[Function]}
       style={
         Object {
+          "height": "100%",
+          "justifyContent": "center",
           "marginStart": 8,
           "opacity": 1,
           "zIndex": 2,
@@ -302,6 +307,8 @@ exports[`ios - iPhone X  BpkNavigationBar should render correctly with trailing 
       onStartShouldSetResponder={[Function]}
       style={
         Object {
+          "height": "100%",
+          "justifyContent": "center",
           "marginEnd": 8,
           "opacity": 1,
           "zIndex": 2,
