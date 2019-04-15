@@ -2,6 +2,12 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-04-15 - Increase tap area for iOS nav bar buttons
+
+**Fixed:**
+- react-native-bpk-component-navigation-bar:
+  - Increase tap area for iOS navigation bar buttons.
+
 # 2019-04-12 - Updated iconAlignment behaviour for buttons
 
 **Breaking:**
