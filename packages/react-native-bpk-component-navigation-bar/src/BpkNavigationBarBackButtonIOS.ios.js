@@ -35,14 +35,19 @@ export type Props = {
   tintColor: ?string,
 };
 
+// NOTE: this file explicitly does not use the Backpack tokens(for spacing) because it's based on UIKit design tokens not Backpack.
 const styles = StyleSheet.create({
   button: {
     flexDirection: 'row',
     zIndex: 2,
     alignItems: 'center',
+    height: '100%',
   },
   backIcon: {
     marginEnd: 8, // eslint-disable-line backpack/use-tokens
+  },
+  backIconWithoutTitle: {
+    marginEnd: 16, // eslint-disable-line backpack/use-tokens
   },
 });
 
@@ -50,6 +55,7 @@ const BpkNavigationBarBackButtonIOS = (props: Props) => {
   const { title, showTitle, onPress, tintColor } = props;
   const tintColorFinal = tintColor || colorGray700;
   const titleStyle = [{ color: tintColorFinal }];
+  const iconStyle = [showTitle ? styles.backIcon : styles.backIconWithoutTitle];
 
   return (
     <TouchableOpacity
@@ -64,7 +70,7 @@ const BpkNavigationBarBackButtonIOS = (props: Props) => {
       {/* eslint-disable-next-line backpack/use-components */}
       <Image
         source={chevron}
-        style={[styles.backIcon, { tintColor: tintColorFinal }]}
+        style={[iconStyle, { tintColor: tintColorFinal }]}
       />
       {showTitle && (
         <BpkText textStyle="base" style={titleStyle}>

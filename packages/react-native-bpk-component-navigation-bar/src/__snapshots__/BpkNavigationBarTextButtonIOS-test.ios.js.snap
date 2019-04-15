@@ -13,6 +13,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
+      "height": "100%",
+      "justifyContent": "center",
       "marginEnd": 8,
       "opacity": 1,
       "zIndex": 2,
@@ -56,6 +58,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly disabled 1`] 
   onStartShouldSetResponder={[Function]}
   style={
     Object {
+      "height": "100%",
+      "justifyContent": "center",
       "marginEnd": 8,
       "opacity": 1,
       "zIndex": 2,
@@ -99,6 +103,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly emphasize 1`]
   onStartShouldSetResponder={[Function]}
   style={
     Object {
+      "height": "100%",
+      "justifyContent": "center",
       "marginEnd": 8,
       "opacity": 1,
       "zIndex": 2,
@@ -144,6 +150,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly leading confi
   onStartShouldSetResponder={[Function]}
   style={
     Object {
+      "height": "100%",
+      "justifyContent": "center",
       "marginStart": 8,
       "opacity": 1,
       "zIndex": 2,
@@ -187,6 +195,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly with type="pr
   onStartShouldSetResponder={[Function]}
   style={
     Object {
+      "height": "100%",
+      "justifyContent": "center",
       "marginEnd": 8,
       "opacity": 1,
       "zIndex": 2,
@@ -230,6 +240,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly with type="pr
   onStartShouldSetResponder={[Function]}
   style={
     Object {
+      "height": "100%",
+      "justifyContent": "center",
       "marginEnd": 8,
       "opacity": 1,
       "zIndex": 2,
@@ -273,6 +285,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS should respect "disabledTintColor" ov
   onStartShouldSetResponder={[Function]}
   style={
     Object {
+      "height": "100%",
+      "justifyContent": "center",
       "marginEnd": 8,
       "opacity": 1,
       "zIndex": 2,
@@ -316,6 +330,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS should respect "primaryTintColor" ove
   onStartShouldSetResponder={[Function]}
   style={
     Object {
+      "height": "100%",
+      "justifyContent": "center",
       "marginEnd": 8,
       "opacity": 1,
       "zIndex": 2,
@@ -359,6 +375,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS should respect "tintColor" over "prim
   onStartShouldSetResponder={[Function]}
   style={
     Object {
+      "height": "100%",
+      "justifyContent": "center",
       "marginEnd": 8,
       "opacity": 1,
       "zIndex": 2,
@@ -402,6 +420,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS should respect "tintColor" over "type
   onStartShouldSetResponder={[Function]}
   style={
     Object {
+      "height": "100%",
+      "justifyContent": "center",
       "marginEnd": 8,
       "opacity": 1,
       "zIndex": 2,
