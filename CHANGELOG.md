@@ -5,7 +5,7 @@
 # 2019-04-15 - Increase tap area for iOS nav bar buttons
 
 **Fixed:**
-- react-native-bpk-component-navigation-bar:
+- react-native-bpk-component-navigation-bar: 5.1.8 => 5.1.9
   - Increase tap area for iOS navigation bar buttons.
 
 # 2019-04-12 - Updated iconAlignment behaviour for buttons
