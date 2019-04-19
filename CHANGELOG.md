@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-04-19 - Fix semver range used for Backpack iOS dependency in calendar package
+
+**Fixed:**
+
+ - react-native-bpk-component-calendar: 0.3.3 => 0.3.4
+   - Fixed semver range of Backpack pod dependency to allow `8.0.0 <= version < 9.0.0`.
+
 # 2019-04-15 - Increase tap area for iOS nav bar buttons
 
 **Fixed:**
