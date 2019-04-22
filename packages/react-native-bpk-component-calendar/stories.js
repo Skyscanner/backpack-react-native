@@ -56,8 +56,21 @@ const locales = {
   pt_BR: 'pt-br',
 };
 
-const formatDateForDisplay = (date: Date, locale: string) =>
-  date.toLocaleDateString(locale, { timeZone: 'UTC' });
+const padLeft = number => {
+  const withZeros = `0${number}`;
+  return withZeros.substring(withZeros.length - 2);
+};
+
+const formatDateForDisplay = (date: Date) => {
+  // date.toLocaleDateString(locale, { timeZone: 'UTC' });
+  // TODO: the `timeZone` option doesn't seem to be supported
+  // If you set the timezone to Brasília (GMT-3) and run
+  // new Date(Date.UTC(2019, 0, 2)).toLocaleDateString('pt-BR', { timeZone: 'UTC' }));
+  // it returns the first of jan and not the second (non UTC date)
+  const day = padLeft(date.getUTCDate());
+  const month = padLeft(date.getUTCMonth() + 1);
+  return `${day}/${month}/${date.getUTCFullYear()}`;
+};
 
 /* eslint-disable react/no-multi-comp */
 
@@ -142,11 +155,7 @@ class ExampleWithLinkedInputs extends Component<
       <View style={styles.base}>
         <BpkTextInput
           label={range ? 'Start date' : 'Selected date'}
-          value={
-            selectedDates[0]
-              ? formatDateForDisplay(selectedDates[0], locales.en_GB)
-              : ''
-          }
+          value={selectedDates[0] ? formatDateForDisplay(selectedDates[0]) : ''}
           onChangeText={this.onChangeText}
         />
         {range && (
@@ -154,9 +163,7 @@ class ExampleWithLinkedInputs extends Component<
             editable={!!selectedDates[0]}
             label="End date"
             value={
-              selectedDates[1]
-                ? formatDateForDisplay(selectedDates[1], locales.en_GB)
-                : ''
+              selectedDates[1] ? formatDateForDisplay(selectedDates[1]) : ''
             }
             onChangeText={this.onChangeText}
           />

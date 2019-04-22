@@ -21,13 +21,14 @@ import com.facebook.react.bridge.Arguments
 import com.facebook.react.bridge.WritableMap
 import com.facebook.react.uimanager.events.Event
 import com.facebook.react.uimanager.events.RCTEventEmitter
-import net.skyscanner.backpack.calendar.model.CalendarDay
 import net.skyscanner.backpack.reactnative.calendar.CalendarViewManager
-import java.util.*
+import org.threeten.bp.LocalDate
+import org.threeten.bp.LocalDateTime
+import org.threeten.bp.LocalTime
 
 class CalendarChangeEvent(
   id: Int,
-  private val selectedDates: Array<CalendarDay>
+  private val selectedDates: Array<LocalDate>
 ): Event<CalendarChangeEvent>(id) {
   companion object {
     const val EVENT_NAME = "topChange"
@@ -44,7 +45,7 @@ class CalendarChangeEvent(
   private fun serializeEventData(): WritableMap {
     val eventData = Arguments.createMap()
     val parsedDates = selectedDates
-      .map { it.date.time / 1000 }
+      .map(::toUnixTimestamp)
 
     val datesArray = Arguments.createArray()
     parsedDates.forEach {
@@ -53,5 +54,10 @@ class CalendarChangeEvent(
 
     eventData.putArray("selectedDates", datesArray)
     return eventData
+  }
+
+  private fun toUnixTimestamp(date: LocalDate): Long {
+    val ldt = LocalDateTime.of(date, LocalTime.of(0, 0, 0))
+    return ldt.atZone(CalendarViewManager.ZONE_ID_UTC).toEpochSecond()
   }
 }

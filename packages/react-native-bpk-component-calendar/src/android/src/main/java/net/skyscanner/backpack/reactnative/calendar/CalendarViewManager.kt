@@ -18,24 +18,24 @@
 package net.skyscanner.backpack.reactnative.calendar
 
 import com.facebook.react.bridge.ReadableArray
-import com.facebook.react.uimanager.SimpleViewManager
 import com.facebook.react.uimanager.ThemedReactContext
 import com.facebook.react.uimanager.UIManagerModule
 import com.facebook.react.uimanager.ViewGroupManager
 import com.facebook.react.uimanager.annotations.ReactProp
-import net.skyscanner.backpack.calendar.model.CalendarDay
 import net.skyscanner.backpack.calendar.model.CalendarRange
 import net.skyscanner.backpack.calendar.model.SingleDay
 import net.skyscanner.backpack.calendar.presenter.SelectionType
 import net.skyscanner.backpack.reactnative.calendar.events.CalendarChangeEvent
+import org.threeten.bp.Instant
+import org.threeten.bp.LocalDate
+import org.threeten.bp.ZoneId
 import java.lang.IllegalArgumentException
-import java.text.SimpleDateFormat
-import java.util.*
 
 class CalendarViewManager : ViewGroupManager<RNCalendarView>() {
 
   companion object {
     const val VIEW_NAME = "AndroidBPKCalendarView"
+    internal val ZONE_ID_UTC = ZoneId.of("UTC")
   }
 
   // This means we are not relying on RN's css to layout children and doing it ourselves.
@@ -88,7 +88,7 @@ class CalendarViewManager : ViewGroupManager<RNCalendarView>() {
     val dispatcher = reactContext.getNativeModule(UIManagerModule::class.java).eventDispatcher
 
     view.onDatesChange = { selection ->
-      val dates = mutableListOf<CalendarDay>()
+      val dates = mutableListOf<LocalDate>()
       when (selection) {
         is CalendarRange -> {
           selection.start?.let { dates.add(it) }
@@ -108,7 +108,8 @@ class CalendarViewManager : ViewGroupManager<RNCalendarView>() {
     view.render()
   }
 
-  private fun unixToCalendarDay(unixTime: Int): CalendarDay {
-    return CalendarDay.of(timeInMillis = unixTime * 1000L)
+  private fun unixToCalendarDay(unixTime: Int): LocalDate {
+    // TODO: Explore sending a "dummy" date here (01-01-2019) to avoid having to deal with timezones
+    return Instant.ofEpochMilli(unixTime * 1000L).atZone(ZONE_ID_UTC).toLocalDate()
   }
 }
