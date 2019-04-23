@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-04-23 - Bump `backpack-android` to 7.4.0 and address breaking changes
+
+**Fixed:**
+
+- react-native-bpk-component-calendar: 0.3.4 => 0.3.5
+  - bump `backpack-android` to 7.4.0
+
 # 2019-04-19 - Fix semver range used for Backpack iOS dependency in calendar package
 
 **Fixed:**
