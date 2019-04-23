@@ -54,6 +54,12 @@ storiesOf('react-native-bpk-component-star-rating/BpkStarRating', module)
         <BpkText>5 out of 5</BpkText>
         <StarRating rating={5} />
       </View>
+      <BpkThemeProvider theme={themeAttributes}>
+        <View style={styles.container}>
+          <BpkText>Themed Star Rating</BpkText>
+          <StarRating rating={3.5} />
+        </View>
+      </BpkThemeProvider>
     </View>
   ))
   .add('Full Stars', () => (
@@ -95,7 +101,7 @@ storiesOf('react-native-bpk-component-star-rating/BpkStarRating', module)
   .add('Themed', () => (
     <BpkThemeProvider theme={themeAttributes}>
       <View style={styles.container}>
-        <BpkText>Themed</BpkText>
+        <BpkText>Themed Star Rating</BpkText>
         <StarRating rating={3.5} />
       </View>
     </BpkThemeProvider>
@@ -124,7 +130,7 @@ storiesOf('react-native-bpk-component-star-rating/BpkStar', module)
   .add('Themed', () => (
     <BpkThemeProvider theme={themeAttributes}>
       <View style={styles.container}>
-        <BpkText>Half Star</BpkText>
+        <BpkText>Themed Half Star</BpkText>
         <BpkStar type={STAR_TYPES.HALF} />
       </View>
     </BpkThemeProvider>

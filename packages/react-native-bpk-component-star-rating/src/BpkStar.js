@@ -120,4 +120,4 @@ BpkStar.defaultProps = {
   theme: null,
 };
 
-export default withTheme(BpkStar);
+export default (withTheme(BpkStar): typeof BpkStar);

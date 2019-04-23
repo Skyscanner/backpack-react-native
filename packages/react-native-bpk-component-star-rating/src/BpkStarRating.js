@@ -21,9 +21,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StyleSheet, View } from 'react-native';
-import { type Theme, withTheme } from 'react-native-bpk-theming';
 
-import { themePropType } from './theming';
 import { getTypeByRating } from './star-types';
 import BpkStar from './BpkStar';
 
@@ -37,7 +35,6 @@ export type Props = {
   ratingLabel: string | ((rating: number, maxRating: number) => string),
   rating: number,
   maxRating: number,
-  theme: ?Theme,
 };
 
 const BpkStarRating = (props: Props) => {
@@ -71,13 +68,11 @@ BpkStarRating.propTypes = {
     .isRequired,
   rating: PropTypes.number,
   maxRating: PropTypes.number,
-  theme: themePropType,
 };
 
 BpkStarRating.defaultProps = {
   rating: 0,
   maxRating: 5,
-  theme: null,
 };
 
-export default withTheme(BpkStarRating);
+export default BpkStarRating;
