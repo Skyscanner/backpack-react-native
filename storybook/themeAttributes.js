@@ -50,6 +50,12 @@ const themeAttributes = {
   buttonSecondaryBackgroundColor: theme.backgroundColor,
   buttonSecondaryTextColor: theme.contentColor,
   buttonSecondaryBorderColor: theme.contentColor,
+  buttonDestructiveBackgroundColor: theme.backgroundColor,
+  buttonDestructiveTextColor: theme.contentColor,
+  buttonDestructiveBorderColor: theme.contentColor,
+  buttonFeaturedGradientStartColor: theme.brandColors.gradientStart,
+  buttonFeaturedGradientEndColor: theme.brandColors.gradientEnd,
+  buttonFeaturedTextColor: theme.contentColor,
   buttonLinkTextColor: theme.contentColor,
 
   // Used in BpkChip.
