@@ -38,7 +38,7 @@ allprojects {
 }
 
 ext {
-    backpackVersion     = "6.1.0"
+    backpackVersion     = "7.4.0"
     compileSdkVersion   = 28
     targetSdkVersion    = 28
     minSdkVersion       = 21

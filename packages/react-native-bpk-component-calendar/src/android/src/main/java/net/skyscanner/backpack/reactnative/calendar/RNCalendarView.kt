@@ -18,19 +18,16 @@
 package net.skyscanner.backpack.reactnative.calendar
 
 import android.content.Context
-import android.os.Handler
 import android.util.AttributeSet
-import android.view.Choreographer
 import android.view.View
 import android.widget.FrameLayout
 import net.skyscanner.backpack.calendar.BpkCalendar
-import net.skyscanner.backpack.calendar.model.CalendarDay
 import net.skyscanner.backpack.calendar.model.CalendarRange
 import net.skyscanner.backpack.calendar.model.CalendarSelection
 import net.skyscanner.backpack.calendar.model.SingleDay
 import net.skyscanner.backpack.calendar.presenter.SelectionType
 import net.skyscanner.backpack.calendar.view.OnYearChangedListener
-import kotlin.collections.contentEquals
+import org.threeten.bp.LocalDate
 import java.util.*
 
 class RNCalendarView(
@@ -61,7 +58,7 @@ class RNCalendarView(
       }
     }
 
-  var minDate: CalendarDay? = null
+  var minDate: LocalDate? = null
     set(value) {
       if (value != field) {
         field = value
@@ -69,7 +66,7 @@ class RNCalendarView(
       }
     }
 
-  var maxDate: CalendarDay? = null
+  var maxDate: LocalDate? = null
     set(value) {
       if (value != field) {
         field = value
@@ -77,7 +74,7 @@ class RNCalendarView(
       }
     }
 
-  var selectedDates: Array<CalendarDay> = arrayOf()
+  var selectedDates: Array<LocalDate> = arrayOf()
 
   var selectionType: SelectionType = SelectionType.RANGE
 
@@ -109,7 +106,7 @@ class RNCalendarView(
     return currentController
   }
 
-  private fun selectedDaysToSelection(selectedDays: Array<CalendarDay>): CalendarSelection {
+  private fun selectedDaysToSelection(selectedDays: Array<LocalDate>): CalendarSelection {
     return when (selectedDays.size) {
       1, 2 -> if (selectionType == SelectionType.RANGE) {
         val end = if (selectedDays.size == 2) selectedDays[1] else null
