@@ -36,6 +36,16 @@ const REQUIRED_THEME_ATTRIBUTES = {
     styles.themeMappings.container.borderColor.secondary,
     styles.themeMappings.gradient.secondary.startColor,
   ],
+  destructive: [
+    styles.themeMappings.text.color.destructive,
+    styles.themeMappings.container.borderColor.destructive,
+    styles.themeMappings.gradient.destructive.startColor,
+  ],
+  featured: [
+    styles.themeMappings.text.color.featured,
+    styles.themeMappings.gradient.featured.startColor,
+    styles.themeMappings.gradient.featured.endColor,
+  ],
 };
 
 export const THEMEABLE_TYPES: Array<string> = Object.keys(

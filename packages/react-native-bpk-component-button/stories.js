@@ -160,12 +160,16 @@ const allButtonStories = Object.keys(BUTTON_TYPES).map(story =>
 );
 const allThemedButtons = (
   <BpkThemeProvider theme={themeAttributes}>
-    <View>
+    <ScrollView>
       <StoryHeading>Primary</StoryHeading>
       {generateButtonStoryForType(BUTTON_TYPES.primary)}
       <StoryHeading>Secondary</StoryHeading>
       {generateButtonStoryForType(BUTTON_TYPES.secondary)}
-    </View>
+      <StoryHeading>Destructive</StoryHeading>
+      {generateButtonStoryForType(BUTTON_TYPES.destructive)}
+      <StoryHeading>Featured</StoryHeading>
+      {generateButtonStoryForType(BUTTON_TYPES.featured)}
+    </ScrollView>
   </BpkThemeProvider>
 );
 

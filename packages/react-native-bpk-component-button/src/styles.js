@@ -171,11 +171,14 @@ const themeMappings = {
     color: {
       primary: 'buttonPrimaryTextColor',
       secondary: 'buttonSecondaryTextColor',
+      destructive: 'buttonDestructiveTextColor',
+      featured: 'buttonFeaturedTextColor',
     },
   },
   container: {
     borderColor: {
       secondary: 'buttonSecondaryBorderColor',
+      destructive: 'buttonDestructiveBorderColor',
     },
   },
   gradient: {
@@ -186,6 +189,14 @@ const themeMappings = {
     secondary: {
       startColor: 'buttonSecondaryBackgroundColor',
       endColor: 'buttonSecondaryBackgroundColor',
+    },
+    destructive: {
+      startColor: 'buttonDestructiveBackgroundColor',
+      endColor: 'buttonDestructiveBackgroundColor',
+    },
+    featured: {
+      startColor: 'buttonFeaturedGradientStartColor',
+      endColor: 'buttonFeaturedGradientEndColor',
     },
   },
 };
