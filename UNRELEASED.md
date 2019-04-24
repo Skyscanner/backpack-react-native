@@ -2,4 +2,4 @@
 
 **Updated:**
 - react-native-bpk-component-touchable-overlay
-  - Updated to support custom number for the `borderRadius` field to now allow `sm`, `lg`, `pill` or `30`
+    - `borderRadius` prop now accepts numbers in addition to the existing `sm`, `lg` and `pill` values. E.g. `<BpkTouchableOverlay borderRadius={30} ... />`. 
