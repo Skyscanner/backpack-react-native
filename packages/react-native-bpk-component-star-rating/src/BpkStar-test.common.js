@@ -20,6 +20,7 @@
 
 import React from 'react';
 import renderer from 'react-test-renderer';
+import BpkThemeProvider from 'react-native-bpk-theming';
 
 import { STAR_TYPES } from './star-types';
 import BpkStar from './BpkStar';
@@ -29,6 +30,20 @@ const commonTests = () => {
     [STAR_TYPES.EMPTY, STAR_TYPES.FULL, STAR_TYPES.HALF].forEach(state => {
       it(`should render correctly when ${state}`, () => {
         const tree = renderer.create(<BpkStar type={state} />).toJSON();
+        expect(tree).toMatchSnapshot();
+      });
+      it(`should support themeing when ${state}`, () => {
+        const theme = {
+          starColor: 'blue',
+          starFilledColor: 'pink',
+        };
+        const tree = renderer
+          .create(
+            <BpkThemeProvider theme={theme}>
+              <BpkStar type={state} />
+            </BpkThemeProvider>,
+          )
+          .toJSON();
         expect(tree).toMatchSnapshot();
       });
     });
