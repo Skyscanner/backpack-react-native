@@ -191,7 +191,7 @@ exports[`Android BpkStar should render correctly when half 1`] = `
 </View>
 `;
 
-exports[`Android BpkStar should support themeing when empty 1`] = `
+exports[`Android BpkStar should support theming when empty 1`] = `
 <View
   accessible={false}
   style={
@@ -235,7 +235,7 @@ exports[`Android BpkStar should support themeing when empty 1`] = `
 </View>
 `;
 
-exports[`Android BpkStar should support themeing when full 1`] = `
+exports[`Android BpkStar should support theming when full 1`] = `
 <View
   accessible={false}
   style={
@@ -316,7 +316,7 @@ exports[`Android BpkStar should support themeing when full 1`] = `
 </View>
 `;
 
-exports[`Android BpkStar should support themeing when half 1`] = `
+exports[`Android BpkStar should support theming when half 1`] = `
 <View
   accessible={false}
   style={

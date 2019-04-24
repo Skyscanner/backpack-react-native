@@ -32,7 +32,7 @@ const commonTests = () => {
         const tree = renderer.create(<BpkStar type={state} />).toJSON();
         expect(tree).toMatchSnapshot();
       });
-      it(`should support themeing when ${state}`, () => {
+      it(`should support theming when ${state}`, () => {
         const theme = {
           starColor: 'blue',
           starFilledColor: 'pink',

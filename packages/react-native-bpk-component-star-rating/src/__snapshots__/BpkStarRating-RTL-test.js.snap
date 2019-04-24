@@ -198,7 +198,7 @@ exports[`RTL BpkStar should render correctly when half 1`] = `
 </View>
 `;
 
-exports[`RTL BpkStar should support themeing when empty 1`] = `
+exports[`RTL BpkStar should support theming when empty 1`] = `
 <View
   accessible={false}
   style={
@@ -242,7 +242,7 @@ exports[`RTL BpkStar should support themeing when empty 1`] = `
 </View>
 `;
 
-exports[`RTL BpkStar should support themeing when full 1`] = `
+exports[`RTL BpkStar should support theming when full 1`] = `
 <View
   accessible={false}
   style={
@@ -323,7 +323,7 @@ exports[`RTL BpkStar should support themeing when full 1`] = `
 </View>
 `;
 
-exports[`RTL BpkStar should support themeing when half 1`] = `
+exports[`RTL BpkStar should support theming when half 1`] = `
 <View
   accessible={false}
   style={
