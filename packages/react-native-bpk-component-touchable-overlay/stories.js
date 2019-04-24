@@ -66,4 +66,40 @@ storiesOf('react-native-bpk-component-touchable-overlay', module)
     >
       {viewContent}
     </BpkTouchableOverlay>
+  ))
+  .add('Examples', () => (
+    <View>
+      <BpkText>Example with Border Radius sm</BpkText>
+      <BpkTouchableOverlay
+        onPress={onPress}
+        accessibilityLabel="Example touchable overlay"
+        borderRadius="sm"
+      >
+        {viewContent}
+      </BpkTouchableOverlay>
+      <BpkText>Example with Border Radius lg</BpkText>
+      <BpkTouchableOverlay
+        onPress={onPress}
+        accessibilityLabel="Example touchable overlay"
+        borderRadius="lg"
+      >
+        {viewContent}
+      </BpkTouchableOverlay>
+      <BpkText>Example with Border Radius pill</BpkText>
+      <BpkTouchableOverlay
+        onPress={onPress}
+        accessibilityLabel="Example touchable overlay"
+        borderRadius="pill"
+      >
+        {viewContent}
+      </BpkTouchableOverlay>
+      <BpkText>Example with Border Radius 15</BpkText>
+      <BpkTouchableOverlay
+        onPress={onPress}
+        accessibilityLabel="Example touchable overlay"
+        borderRadius={15}
+      >
+        {viewContent}
+      </BpkTouchableOverlay>
+    </View>
   ));
