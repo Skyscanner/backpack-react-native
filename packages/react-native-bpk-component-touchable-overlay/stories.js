@@ -69,7 +69,7 @@ storiesOf('react-native-bpk-component-touchable-overlay', module)
   ))
   .add('All borderRadius values', () => (
     <View>
-      <BpkText>Example with Border Radius sm</BpkText>
+      <BpkText>With borderRadius=&#34;sm&#34;</BpkText>
       <BpkTouchableOverlay
         onPress={onPress}
         accessibilityLabel="Example touchable overlay"
@@ -77,7 +77,7 @@ storiesOf('react-native-bpk-component-touchable-overlay', module)
       >
         {viewContent}
       </BpkTouchableOverlay>
-      <BpkText>Example with Border Radius lg</BpkText>
+      <BpkText>With borderRadius=&#34;lg&#34;</BpkText>
       <BpkTouchableOverlay
         onPress={onPress}
         accessibilityLabel="Example touchable overlay"
@@ -85,7 +85,7 @@ storiesOf('react-native-bpk-component-touchable-overlay', module)
       >
         {viewContent}
       </BpkTouchableOverlay>
-      <BpkText>Example with Border Radius pill</BpkText>
+      <BpkText>With borderRadius=&#34;pill&#34;</BpkText>
       <BpkTouchableOverlay
         onPress={onPress}
         accessibilityLabel="Example touchable overlay"
@@ -93,7 +93,7 @@ storiesOf('react-native-bpk-component-touchable-overlay', module)
       >
         {viewContent}
       </BpkTouchableOverlay>
-      <BpkText>Example with Border Radius 15</BpkText>
+      <BpkText>With borderRadius=&#123;15&#125;</BpkText>
       <BpkTouchableOverlay
         onPress={onPress}
         accessibilityLabel="Example touchable overlay"
