@@ -2,6 +2,16 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-04-24 - Theming support for `BpkButton` and `BpkStarRating`
+
+**Added:**
+
+- react-native-bpk-component-button: 9.0.0 => 9.1.0
+  - Added theming support to `BpkButton` for `featured` and `destructive` buttons. See https://backpack.github.io/components/button?platform=native
+
+- react-native-bpk-component-star-rating: 1.0.76 => 1.1.0
+  - Added theming support to `BpkStarRating` when selected. See https://backpack.github.io/components/star-rating?platform=native#theme-props
+
 # 2019-04-23 - Bump `backpack-android` to 7.4.0 and address breaking changes
 
 **Fixed:**
