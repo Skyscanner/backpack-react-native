@@ -23,8 +23,10 @@ import { View, StyleSheet } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
 import BpkText from 'react-native-bpk-component-text';
+import BpkThemeProvider from 'react-native-bpk-theming';
 
 import CenterDecorator from '../../storybook/CenterDecorator';
+import themeAttributes from '../../storybook/themeAttributes';
 
 import BpkStarRating, { BpkStar, STAR_TYPES } from './index';
 
@@ -89,6 +91,14 @@ storiesOf('react-native-bpk-component-star-rating/BpkStarRating', module)
       <BpkText>3.7 out of 5</BpkText>
       <StarRating rating={3.7} />
     </View>
+  ))
+  .add('Themed', () => (
+    <BpkThemeProvider theme={themeAttributes}>
+      <View style={styles.container}>
+        <BpkText>Themed Star Rating</BpkText>
+        <StarRating rating={3.5} />
+      </View>
+    </BpkThemeProvider>
   ));
 
 storiesOf('react-native-bpk-component-star-rating/BpkStar', module)
@@ -110,4 +120,12 @@ storiesOf('react-native-bpk-component-star-rating/BpkStar', module)
       <BpkText>Empty Star</BpkText>
       <BpkStar type={STAR_TYPES.EMPTY} />
     </View>
+  ))
+  .add('Themed', () => (
+    <BpkThemeProvider theme={themeAttributes}>
+      <View style={styles.container}>
+        <BpkText>Themed Half Star</BpkText>
+        <BpkStar type={STAR_TYPES.HALF} />
+      </View>
+    </BpkThemeProvider>
   ));

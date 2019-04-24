@@ -78,6 +78,10 @@ const themeAttributes = {
   progressFillBackgroundColor: theme.contentColor,
   progressTrackBackgroundColor: theme.contentGray,
 
+  // Used in BpkStarRating
+  starColor: theme.contentGray,
+  starFilledColor: theme.contentColor,
+
   // Used in BpkText
   textFontFamily: Platform.OS === 'ios' ? 'Courier' : 'serif-monospace',
 

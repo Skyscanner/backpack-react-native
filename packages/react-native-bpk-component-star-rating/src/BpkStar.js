@@ -28,7 +28,13 @@ import {
   colorYellow500,
   colorGray100,
 } from 'bpk-tokens/tokens/base.react.native';
+import {
+  getThemeAttributes,
+  withTheme,
+  type Theme,
+} from 'react-native-bpk-theming';
 
+import { REQUIRED_THEME_ATTRIBUTES, themePropType } from './theming';
 import { STAR_TYPES } from './star-types';
 
 const STAR_SIZE = spacingMd + spacingSm;
@@ -61,10 +67,11 @@ const styles = StyleSheet.create({
 
 export type Props = {
   type: $Keys<typeof STAR_TYPES>,
+  theme: ?Theme,
 };
 
 const BpkStar = (props: Props) => {
-  const { type, ...rest } = props;
+  const { type, theme, ...rest } = props;
   const iconType = type === STAR_TYPES.FULL ? icons.star : icons['star-half'];
 
   const commonStarStyles = [styles.star];
@@ -74,6 +81,16 @@ const BpkStar = (props: Props) => {
     styles.foregroundStar,
     styles.filled,
   ];
+
+  const themeAttributes = getThemeAttributes(REQUIRED_THEME_ATTRIBUTES, theme);
+  if (themeAttributes) {
+    commonStarStyles.push({
+      color: themeAttributes.starColor,
+    });
+    foregroundStarStyles.push({
+      color: themeAttributes.starFilledColor,
+    });
+  }
 
   if (I18nManager.isRTL && type === STAR_TYPES.HALF) {
     foregroundStarStyles.push(styles.rightToLeftHalfStar);
@@ -96,6 +113,11 @@ const BpkStar = (props: Props) => {
 
 BpkStar.propTypes = {
   type: PropTypes.oneOf(Object.keys(STAR_TYPES)).isRequired,
+  theme: themePropType,
 };
 
-export default BpkStar;
+BpkStar.defaultProps = {
+  theme: null,
+};
+
+export default (withTheme(BpkStar): typeof BpkStar);
