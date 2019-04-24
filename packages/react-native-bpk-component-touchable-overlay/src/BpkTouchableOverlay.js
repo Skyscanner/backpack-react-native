@@ -64,7 +64,7 @@ type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
 
 export type Props = {
   children: Node,
-  borderRadius: ?('sm' | 'lg' | 'pill'),
+  borderRadius: ?('sm' | 'lg' | 'pill' | number),
   style: ViewStyleProp,
   overlayStyle: ViewStyleProp,
   onPressIn: ?() => mixed,
@@ -85,14 +85,16 @@ const BpkTouchableOverlay = (props: Props) => {
   let overlayRef;
 
   const overlayStyles = [styles.overlay];
-  if (borderRadius === 'sm') {
-    overlayStyles.push(styles.overlayBorderRadiusSm);
-  }
-  if (borderRadius === 'lg') {
-    overlayStyles.push(styles.overlayBorderRadiusLg);
-  }
-  if (borderRadius === 'pill') {
-    overlayStyles.push(styles.overlayBorderRadiusPill);
+  if (borderRadius) {
+    if (borderRadius === 'sm') {
+      overlayStyles.push(styles.overlayBorderRadiusSm);
+    } else if (borderRadius === 'lg') {
+      overlayStyles.push(styles.overlayBorderRadiusLg);
+    } else if (borderRadius === 'pill') {
+      overlayStyles.push(styles.overlayBorderRadiusPill);
+    } else {
+      overlayStyles.push({ borderRadius });
+    }
   }
   if (overlayStyle) {
     overlayStyles.push(overlayStyle);
@@ -137,7 +139,10 @@ const BpkTouchableOverlay = (props: Props) => {
 
 BpkTouchableOverlay.propTypes = {
   children: PropTypes.node.isRequired,
-  borderRadius: PropTypes.oneOf(['sm', 'lg', 'pill']),
+  borderRadius: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.oneOf(['sm', 'lg', 'pill']),
+  ]),
   style: ViewPropTypes.style,
   overlayStyle: ViewPropTypes.style,
   onPressIn: PropTypes.func,
