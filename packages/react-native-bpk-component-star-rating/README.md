@@ -46,3 +46,8 @@ export default class App extends Component {
 | ratingLabel         | oneOfType(string, func)   | true     | -             |
 | rating              | number                    | false    | 0             |
 | maxRating           | number                    | false    | 5             |
+
+## Theme Props
+
+* `starColor`
+* `starFilledColor`

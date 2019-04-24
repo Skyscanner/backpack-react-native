@@ -10,19 +10,19 @@ exports[`iOS BpkStarRating should render correctly 1`] = `
     }
   }
 >
-  <BpkStar
+  <withTheme(BpkStar)
     type="full"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="full"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="full"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="empty"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="empty"
   />
 </View>
@@ -38,34 +38,34 @@ exports[`iOS BpkStarRating should render correctly with custom \`maxRating\` att
     }
   }
 >
-  <BpkStar
+  <withTheme(BpkStar)
     type="full"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="full"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="full"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="empty"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="empty"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="empty"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="empty"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="empty"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="empty"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="empty"
   />
 </View>
@@ -81,34 +81,34 @@ exports[`iOS BpkStarRating should render correctly with ratingLabel passed as a 
     }
   }
 >
-  <BpkStar
+  <withTheme(BpkStar)
     type="full"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="full"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="full"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="empty"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="empty"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="empty"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="empty"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="empty"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="empty"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="empty"
   />
 </View>
@@ -124,19 +124,19 @@ exports[`iOS BpkStarRating should render correctly with stars rounded down 1`] =
     }
   }
 >
-  <BpkStar
+  <withTheme(BpkStar)
     type="full"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="full"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="full"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="empty"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="empty"
   />
 </View>
@@ -152,19 +152,19 @@ exports[`iOS BpkStarRating should render correctly with stars rounded down to ha
     }
   }
 >
-  <BpkStar
+  <withTheme(BpkStar)
     type="full"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="full"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="full"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="half"
   />
-  <BpkStar
+  <withTheme(BpkStar)
     type="empty"
   />
 </View>
