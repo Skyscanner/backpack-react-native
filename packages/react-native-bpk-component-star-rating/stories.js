@@ -54,12 +54,6 @@ storiesOf('react-native-bpk-component-star-rating/BpkStarRating', module)
         <BpkText>5 out of 5</BpkText>
         <StarRating rating={5} />
       </View>
-      <BpkThemeProvider theme={themeAttributes}>
-        <View style={styles.container}>
-          <BpkText>Themed Star Rating</BpkText>
-          <StarRating rating={3.5} />
-        </View>
-      </BpkThemeProvider>
     </View>
   ))
   .add('Full Stars', () => (
