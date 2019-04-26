@@ -32,7 +32,7 @@ android {
 
     versionName getVersionFromJsPackage(project)
   }
-}`
+}
 
 dependencies {
   compileOnly "com.facebook.react:react-native:${_reactNativeVersion}"

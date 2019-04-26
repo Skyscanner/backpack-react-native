@@ -56,3 +56,6 @@ buck-out/
 #Jest
 coverage
 
+# Native bridges script
+.native-release-info.json
+
