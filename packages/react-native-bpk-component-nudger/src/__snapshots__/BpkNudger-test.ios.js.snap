@@ -58,7 +58,6 @@ exports[`iOS BpkNudger should disable theming if the required attribute is omitt
           Array [
             Object {
               "alignItems": "center",
-              "borderRadius": 40,
               "flexDirection": "row",
               "justifyContent": "center",
               "paddingHorizontal": 12,
@@ -73,6 +72,9 @@ exports[`iOS BpkNudger should disable theming if the required attribute is omitt
             Object {
               "paddingHorizontal": 6,
               "paddingVertical": 6,
+            },
+            Object {
+              "borderRadius": 40,
             },
           ],
           Object {},
@@ -206,7 +208,6 @@ exports[`iOS BpkNudger should disable theming if the required attribute is omitt
           Array [
             Object {
               "alignItems": "center",
-              "borderRadius": 40,
               "flexDirection": "row",
               "justifyContent": "center",
               "paddingHorizontal": 12,
@@ -221,6 +222,9 @@ exports[`iOS BpkNudger should disable theming if the required attribute is omitt
             Object {
               "paddingHorizontal": 6,
               "paddingVertical": 6,
+            },
+            Object {
+              "borderRadius": 40,
             },
           ],
           Object {},
@@ -347,7 +351,6 @@ exports[`iOS BpkNudger should render correctly 1`] = `
           Array [
             Object {
               "alignItems": "center",
-              "borderRadius": 40,
               "flexDirection": "row",
               "justifyContent": "center",
               "paddingHorizontal": 12,
@@ -362,6 +365,9 @@ exports[`iOS BpkNudger should render correctly 1`] = `
             Object {
               "paddingHorizontal": 6,
               "paddingVertical": 6,
+            },
+            Object {
+              "borderRadius": 40,
             },
           ],
           Object {},
@@ -495,7 +501,6 @@ exports[`iOS BpkNudger should render correctly 1`] = `
           Array [
             Object {
               "alignItems": "center",
-              "borderRadius": 40,
               "flexDirection": "row",
               "justifyContent": "center",
               "paddingHorizontal": 12,
@@ -510,6 +515,9 @@ exports[`iOS BpkNudger should render correctly 1`] = `
             Object {
               "paddingHorizontal": 6,
               "paddingVertical": 6,
+            },
+            Object {
+              "borderRadius": 40,
             },
           ],
           Object {},
@@ -637,7 +645,6 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
           Array [
             Object {
               "alignItems": "center",
-              "borderRadius": 40,
               "flexDirection": "row",
               "justifyContent": "center",
               "paddingHorizontal": 12,
@@ -653,6 +660,9 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
             Object {
               "paddingHorizontal": 6,
               "paddingVertical": 6,
+            },
+            Object {
+              "borderRadius": 40,
             },
           ],
           Object {},
@@ -790,7 +800,6 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
           Array [
             Object {
               "alignItems": "center",
-              "borderRadius": 40,
               "flexDirection": "row",
               "justifyContent": "center",
               "paddingHorizontal": 12,
@@ -805,6 +814,9 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
             Object {
               "paddingHorizontal": 6,
               "paddingVertical": 6,
+            },
+            Object {
+              "borderRadius": 40,
             },
           ],
           Object {},
@@ -931,7 +943,6 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
           Array [
             Object {
               "alignItems": "center",
-              "borderRadius": 40,
               "flexDirection": "row",
               "justifyContent": "center",
               "paddingHorizontal": 12,
@@ -946,6 +957,9 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
             Object {
               "paddingHorizontal": 6,
               "paddingVertical": 6,
+            },
+            Object {
+              "borderRadius": 40,
             },
           ],
           Object {},
@@ -1080,7 +1094,6 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
           Array [
             Object {
               "alignItems": "center",
-              "borderRadius": 40,
               "flexDirection": "row",
               "justifyContent": "center",
               "paddingHorizontal": 12,
@@ -1096,6 +1109,9 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
             Object {
               "paddingHorizontal": 6,
               "paddingVertical": 6,
+            },
+            Object {
+              "borderRadius": 40,
             },
           ],
           Object {},
@@ -1227,7 +1243,6 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
           Array [
             Object {
               "alignItems": "center",
-              "borderRadius": 40,
               "flexDirection": "row",
               "justifyContent": "center",
               "paddingHorizontal": 12,
@@ -1243,6 +1258,9 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
             Object {
               "paddingHorizontal": 6,
               "paddingVertical": 6,
+            },
+            Object {
+              "borderRadius": 40,
             },
           ],
           Object {},
@@ -1380,7 +1398,6 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
           Array [
             Object {
               "alignItems": "center",
-              "borderRadius": 40,
               "flexDirection": "row",
               "justifyContent": "center",
               "paddingHorizontal": 12,
@@ -1395,6 +1412,9 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
             Object {
               "paddingHorizontal": 6,
               "paddingVertical": 6,
+            },
+            Object {
+              "borderRadius": 40,
             },
           ],
           Object {},
@@ -1521,7 +1541,6 @@ exports[`iOS BpkNudger should support theming 1`] = `
           Array [
             Object {
               "alignItems": "center",
-              "borderRadius": 40,
               "flexDirection": "row",
               "justifyContent": "center",
               "paddingHorizontal": 12,
@@ -1536,6 +1555,9 @@ exports[`iOS BpkNudger should support theming 1`] = `
             Object {
               "paddingHorizontal": 6,
               "paddingVertical": 6,
+            },
+            Object {
+              "borderRadius": 4,
             },
           ],
           Object {},
@@ -1597,7 +1619,7 @@ exports[`iOS BpkNudger should support theming 1`] = `
             "top": 0,
           },
           Object {
-            "borderRadius": 40,
+            "borderRadius": 4,
           },
         ]
       }
@@ -1615,6 +1637,9 @@ exports[`iOS BpkNudger should support theming 1`] = `
         },
         Object {
           "fontWeight": "600",
+        },
+        Object {
+          "fontFamily": "System",
         },
         Object {
           "minWidth": 24,
@@ -1671,7 +1696,6 @@ exports[`iOS BpkNudger should support theming 1`] = `
           Array [
             Object {
               "alignItems": "center",
-              "borderRadius": 40,
               "flexDirection": "row",
               "justifyContent": "center",
               "paddingHorizontal": 12,
@@ -1686,6 +1710,9 @@ exports[`iOS BpkNudger should support theming 1`] = `
             Object {
               "paddingHorizontal": 6,
               "paddingVertical": 6,
+            },
+            Object {
+              "borderRadius": 4,
             },
           ],
           Object {},
@@ -1747,7 +1774,7 @@ exports[`iOS BpkNudger should support theming 1`] = `
             "top": 0,
           },
           Object {
-            "borderRadius": 40,
+            "borderRadius": 4,
           },
         ]
       }

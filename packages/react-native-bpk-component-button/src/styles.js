@@ -29,7 +29,6 @@ import {
   colorPink500,
   colorPink600,
   buttonBorderWidth,
-  borderRadiusPill,
   spacingSm,
   spacingMd,
   spacingBase,
@@ -39,11 +38,9 @@ import { Platform, StyleSheet } from 'react-native';
 
 const base = StyleSheet.create({
   androidContainer: {
-    borderRadius: borderRadiusPill,
     overflow: 'hidden',
   },
   button: {
-    borderRadius: borderRadiusPill,
     paddingVertical: spacingMd,
     paddingHorizontal: spacingBase - spacingSm,
     alignItems: 'center',
@@ -180,6 +177,12 @@ const themeMappings = {
       secondary: 'buttonSecondaryBorderColor',
       destructive: 'buttonDestructiveBorderColor',
     },
+  },
+  borderRadius: {
+    primary: 'buttonPrimaryBorderRadius',
+    secondary: 'buttonSecondaryBorderRadius',
+    destructive: 'buttonDestructiveBorderRadius',
+    featured: 'buttonFeaturedBorderRadius',
   },
   gradient: {
     primary: {

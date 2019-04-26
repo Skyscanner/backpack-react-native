@@ -30,11 +30,13 @@ exports[`iOS BpkButton should render correctly 1`] = `
         Array [
           Object {
             "alignItems": "center",
-            "borderRadius": 40,
             "flexDirection": "row",
             "justifyContent": "center",
             "paddingHorizontal": 12,
             "paddingVertical": 8,
+          },
+          Object {
+            "borderRadius": 40,
           },
         ],
         Object {},
@@ -120,7 +122,6 @@ exports[`iOS BpkButton should render correctly with iconAlignment="leading" 1`] 
         Array [
           Object {
             "alignItems": "center",
-            "borderRadius": 40,
             "flexDirection": "row",
             "justifyContent": "center",
             "paddingHorizontal": 12,
@@ -128,6 +129,9 @@ exports[`iOS BpkButton should render correctly with iconAlignment="leading" 1`] 
           },
           Object {
             "flexDirection": "row-reverse",
+          },
+          Object {
+            "borderRadius": 40,
           },
         ],
         Object {},
@@ -250,11 +254,13 @@ exports[`iOS BpkButton should render correctly with iconAlignment="trailing" 1`]
         Array [
           Object {
             "alignItems": "center",
-            "borderRadius": 40,
             "flexDirection": "row",
             "justifyContent": "center",
             "paddingHorizontal": 12,
             "paddingVertical": 8,
+          },
+          Object {
+            "borderRadius": 40,
           },
         ],
         Object {},
@@ -371,7 +377,6 @@ exports[`iOS BpkButton should render correctly with type="destructive" 1`] = `
         Array [
           Object {
             "alignItems": "center",
-            "borderRadius": 40,
             "flexDirection": "row",
             "justifyContent": "center",
             "paddingHorizontal": 12,
@@ -382,6 +387,9 @@ exports[`iOS BpkButton should render correctly with type="destructive" 1`] = `
             "borderWidth": 2,
             "paddingHorizontal": 10,
             "paddingVertical": 6,
+          },
+          Object {
+            "borderRadius": 40,
           },
         ],
         Object {},
@@ -471,7 +479,6 @@ exports[`iOS BpkButton should render correctly with type="destructive" and disab
         Array [
           Object {
             "alignItems": "center",
-            "borderRadius": 40,
             "flexDirection": "row",
             "justifyContent": "center",
             "paddingHorizontal": 12,
@@ -484,6 +491,9 @@ exports[`iOS BpkButton should render correctly with type="destructive" and disab
             "paddingVertical": 6,
           },
           undefined,
+          Object {
+            "borderRadius": 40,
+          },
         ],
         Object {},
       ]
@@ -574,11 +584,13 @@ exports[`iOS BpkButton should render correctly with type="featured" 1`] = `
         Array [
           Object {
             "alignItems": "center",
-            "borderRadius": 40,
             "flexDirection": "row",
             "justifyContent": "center",
             "paddingHorizontal": 12,
             "paddingVertical": 8,
+          },
+          Object {
+            "borderRadius": 40,
           },
         ],
         Object {},
@@ -665,13 +677,15 @@ exports[`iOS BpkButton should render correctly with type="featured" and disabled
         Array [
           Object {
             "alignItems": "center",
-            "borderRadius": 40,
             "flexDirection": "row",
             "justifyContent": "center",
             "paddingHorizontal": 12,
             "paddingVertical": 8,
           },
           undefined,
+          Object {
+            "borderRadius": 40,
+          },
         ],
         Object {},
       ]
@@ -759,11 +773,13 @@ exports[`iOS BpkButton should render correctly with type="primary" 1`] = `
         Array [
           Object {
             "alignItems": "center",
-            "borderRadius": 40,
             "flexDirection": "row",
             "justifyContent": "center",
             "paddingHorizontal": 12,
             "paddingVertical": 8,
+          },
+          Object {
+            "borderRadius": 40,
           },
         ],
         Object {},
@@ -850,13 +866,15 @@ exports[`iOS BpkButton should render correctly with type="primary" and disabled 
         Array [
           Object {
             "alignItems": "center",
-            "borderRadius": 40,
             "flexDirection": "row",
             "justifyContent": "center",
             "paddingHorizontal": 12,
             "paddingVertical": 8,
           },
           undefined,
+          Object {
+            "borderRadius": 40,
+          },
         ],
         Object {},
       ]
@@ -944,7 +962,6 @@ exports[`iOS BpkButton should render correctly with type="secondary" 1`] = `
         Array [
           Object {
             "alignItems": "center",
-            "borderRadius": 40,
             "flexDirection": "row",
             "justifyContent": "center",
             "paddingHorizontal": 12,
@@ -955,6 +972,9 @@ exports[`iOS BpkButton should render correctly with type="secondary" 1`] = `
             "borderWidth": 2,
             "paddingHorizontal": 10,
             "paddingVertical": 6,
+          },
+          Object {
+            "borderRadius": 40,
           },
         ],
         Object {},
@@ -1044,7 +1064,6 @@ exports[`iOS BpkButton should render correctly with type="secondary" and disable
         Array [
           Object {
             "alignItems": "center",
-            "borderRadius": 40,
             "flexDirection": "row",
             "justifyContent": "center",
             "paddingHorizontal": 12,
@@ -1057,6 +1076,9 @@ exports[`iOS BpkButton should render correctly with type="secondary" and disable
             "paddingVertical": 6,
           },
           undefined,
+          Object {
+            "borderRadius": 40,
+          },
         ],
         Object {},
       ]
@@ -1147,7 +1169,6 @@ exports[`iOS BpkButton should support elements as icons 1`] = `
         Array [
           Object {
             "alignItems": "center",
-            "borderRadius": 40,
             "flexDirection": "row",
             "justifyContent": "center",
             "paddingHorizontal": 12,
@@ -1156,6 +1177,9 @@ exports[`iOS BpkButton should support elements as icons 1`] = `
           Object {
             "paddingHorizontal": 8,
             "paddingVertical": 8,
+          },
+          Object {
+            "borderRadius": 40,
           },
         ],
         Object {},
@@ -1231,11 +1255,13 @@ exports[`iOS BpkButton should support having an icon as well as a title 1`] = `
         Array [
           Object {
             "alignItems": "center",
-            "borderRadius": 40,
             "flexDirection": "row",
             "justifyContent": "center",
             "paddingHorizontal": 12,
             "paddingVertical": 8,
+          },
+          Object {
+            "borderRadius": 40,
           },
         ],
         Object {},
@@ -1356,11 +1382,13 @@ exports[`iOS BpkButton should support overwriting styles 1`] = `
         Array [
           Object {
             "alignItems": "center",
-            "borderRadius": 40,
             "flexDirection": "row",
             "justifyContent": "center",
             "paddingHorizontal": 12,
             "paddingVertical": 8,
+          },
+          Object {
+            "borderRadius": 40,
           },
         ],
         Object {},
@@ -1447,13 +1475,15 @@ exports[`iOS BpkButton should support the "disabled" property 1`] = `
         Array [
           Object {
             "alignItems": "center",
-            "borderRadius": 40,
             "flexDirection": "row",
             "justifyContent": "center",
             "paddingHorizontal": 12,
             "paddingVertical": 8,
           },
           undefined,
+          Object {
+            "borderRadius": 40,
+          },
         ],
         Object {},
       ]
@@ -1541,11 +1571,13 @@ exports[`iOS BpkButton should support the "icon" property 1`] = `
         Array [
           Object {
             "alignItems": "center",
-            "borderRadius": 40,
             "flexDirection": "row",
             "justifyContent": "center",
             "paddingHorizontal": 12,
             "paddingVertical": 8,
+          },
+          Object {
+            "borderRadius": 40,
           },
         ],
         Object {},
@@ -1662,7 +1694,6 @@ exports[`iOS BpkButton should support the "iconOnly" property 1`] = `
         Array [
           Object {
             "alignItems": "center",
-            "borderRadius": 40,
             "flexDirection": "row",
             "justifyContent": "center",
             "paddingHorizontal": 12,
@@ -1671,6 +1702,9 @@ exports[`iOS BpkButton should support the "iconOnly" property 1`] = `
           Object {
             "paddingHorizontal": 8,
             "paddingVertical": 8,
+          },
+          Object {
+            "borderRadius": 40,
           },
         ],
         Object {},
@@ -1765,7 +1799,6 @@ exports[`iOS BpkButton should support the "secondary" property 1`] = `
         Array [
           Object {
             "alignItems": "center",
-            "borderRadius": 40,
             "flexDirection": "row",
             "justifyContent": "center",
             "paddingHorizontal": 12,
@@ -1776,6 +1809,9 @@ exports[`iOS BpkButton should support the "secondary" property 1`] = `
             "borderWidth": 2,
             "paddingHorizontal": 10,
             "paddingVertical": 6,
+          },
+          Object {
+            "borderRadius": 40,
           },
         ],
         Object {},
@@ -1864,11 +1900,13 @@ exports[`iOS BpkButtonThemed should render correctly 1`] = `
         Array [
           Object {
             "alignItems": "center",
-            "borderRadius": 40,
             "flexDirection": "row",
             "justifyContent": "center",
             "paddingHorizontal": 12,
             "paddingVertical": 8,
+          },
+          Object {
+            "borderRadius": 4,
           },
         ],
         Object {},
@@ -1887,6 +1925,9 @@ exports[`iOS BpkButtonThemed should render correctly 1`] = `
           },
           Object {
             "fontWeight": "600",
+          },
+          Object {
+            "fontFamily": "System",
           },
           Array [
             Array [
@@ -1918,7 +1959,7 @@ exports[`iOS BpkButtonThemed should render correctly 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
       ]
     }
@@ -1956,7 +1997,6 @@ exports[`iOS should support the "icon" and "large" property 1`] = `
         Array [
           Object {
             "alignItems": "center",
-            "borderRadius": 40,
             "flexDirection": "row",
             "justifyContent": "center",
             "paddingHorizontal": 12,
@@ -1965,6 +2005,9 @@ exports[`iOS should support the "icon" and "large" property 1`] = `
           Object {
             "paddingHorizontal": 16,
             "paddingVertical": 12,
+          },
+          Object {
+            "borderRadius": 40,
           },
         ],
         Object {},
@@ -2085,7 +2128,6 @@ exports[`iOS should support the "iconOnly" and "large" property 1`] = `
         Array [
           Object {
             "alignItems": "center",
-            "borderRadius": 40,
             "flexDirection": "row",
             "justifyContent": "center",
             "paddingHorizontal": 12,
@@ -2098,6 +2140,9 @@ exports[`iOS should support the "iconOnly" and "large" property 1`] = `
           Object {
             "paddingHorizontal": 12,
             "paddingVertical": 12,
+          },
+          Object {
+            "borderRadius": 40,
           },
         ],
         Object {},
@@ -2193,7 +2238,6 @@ exports[`iOS should support the "large" and secondary property 1`] = `
         Array [
           Object {
             "alignItems": "center",
-            "borderRadius": 40,
             "flexDirection": "row",
             "justifyContent": "center",
             "paddingHorizontal": 12,
@@ -2208,6 +2252,9 @@ exports[`iOS should support the "large" and secondary property 1`] = `
           Object {
             "paddingHorizontal": 14,
             "paddingVertical": 10,
+          },
+          Object {
+            "borderRadius": 40,
           },
         ],
         Object {},
@@ -2299,7 +2346,6 @@ exports[`iOS should support the "large" property 1`] = `
         Array [
           Object {
             "alignItems": "center",
-            "borderRadius": 40,
             "flexDirection": "row",
             "justifyContent": "center",
             "paddingHorizontal": 12,
@@ -2308,6 +2354,9 @@ exports[`iOS should support the "large" property 1`] = `
           Object {
             "paddingHorizontal": 16,
             "paddingVertical": 12,
+          },
+          Object {
+            "borderRadius": 40,
           },
         ],
         Object {},

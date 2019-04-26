@@ -100,6 +100,8 @@ const commonTests = () => {
         buttonSecondaryTextColor: 'red',
         buttonSecondaryBackgroundColor: 'yellow',
         buttonSecondaryBorderColor: 'blue',
+        buttonSecondaryBorderRadius: 4,
+        textFontFamily: 'System',
       };
       const tree = renderer
         .create(
@@ -137,7 +139,7 @@ const commonTests = () => {
         )
         .toJSON();
       expect(tree).toMatchSnapshot();
-      expect(consoleErrorFn.mock.calls.length).toBe(1);
+      expect(consoleErrorFn.mock.calls.length).toBeGreaterThan(0);
     });
   });
 };

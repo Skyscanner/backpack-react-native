@@ -17,10 +17,12 @@ exports[`Android BpkNudger should disable theming if the required attribute is o
       Array [
         Array [
           Object {
-            "borderRadius": 40,
             "overflow": "hidden",
           },
           undefined,
+          Object {
+            "borderRadius": 40,
+          },
         ],
         Object {
           "marginRight": 4,
@@ -53,7 +55,6 @@ exports[`Android BpkNudger should disable theming if the required attribute is o
           Array [
             Object {
               "alignItems": "center",
-              "borderRadius": 40,
               "flexDirection": "row",
               "justifyContent": "center",
               "paddingHorizontal": 12,
@@ -68,6 +69,9 @@ exports[`Android BpkNudger should disable theming if the required attribute is o
             Object {
               "paddingHorizontal": 8,
               "paddingVertical": 6,
+            },
+            Object {
+              "borderRadius": 40,
             },
           ],
           Object {
@@ -145,10 +149,12 @@ exports[`Android BpkNudger should disable theming if the required attribute is o
       Array [
         Array [
           Object {
-            "borderRadius": 40,
             "overflow": "hidden",
           },
           undefined,
+          Object {
+            "borderRadius": 40,
+          },
         ],
         Object {
           "marginLeft": 4,
@@ -181,7 +187,6 @@ exports[`Android BpkNudger should disable theming if the required attribute is o
           Array [
             Object {
               "alignItems": "center",
-              "borderRadius": 40,
               "flexDirection": "row",
               "justifyContent": "center",
               "paddingHorizontal": 12,
@@ -196,6 +201,9 @@ exports[`Android BpkNudger should disable theming if the required attribute is o
             Object {
               "paddingHorizontal": 8,
               "paddingVertical": 6,
+            },
+            Object {
+              "borderRadius": 40,
             },
           ],
           Object {
@@ -266,10 +274,12 @@ exports[`Android BpkNudger should render correctly 1`] = `
       Array [
         Array [
           Object {
-            "borderRadius": 40,
             "overflow": "hidden",
           },
           undefined,
+          Object {
+            "borderRadius": 40,
+          },
         ],
         Object {
           "marginRight": 4,
@@ -302,7 +312,6 @@ exports[`Android BpkNudger should render correctly 1`] = `
           Array [
             Object {
               "alignItems": "center",
-              "borderRadius": 40,
               "flexDirection": "row",
               "justifyContent": "center",
               "paddingHorizontal": 12,
@@ -317,6 +326,9 @@ exports[`Android BpkNudger should render correctly 1`] = `
             Object {
               "paddingHorizontal": 8,
               "paddingVertical": 6,
+            },
+            Object {
+              "borderRadius": 40,
             },
           ],
           Object {
@@ -394,10 +406,12 @@ exports[`Android BpkNudger should render correctly 1`] = `
       Array [
         Array [
           Object {
-            "borderRadius": 40,
             "overflow": "hidden",
           },
           undefined,
+          Object {
+            "borderRadius": 40,
+          },
         ],
         Object {
           "marginLeft": 4,
@@ -430,7 +444,6 @@ exports[`Android BpkNudger should render correctly 1`] = `
           Array [
             Object {
               "alignItems": "center",
-              "borderRadius": 40,
               "flexDirection": "row",
               "justifyContent": "center",
               "paddingHorizontal": 12,
@@ -445,6 +458,9 @@ exports[`Android BpkNudger should render correctly 1`] = `
             Object {
               "paddingHorizontal": 8,
               "paddingVertical": 6,
+            },
+            Object {
+              "borderRadius": 40,
             },
           ],
           Object {
@@ -515,11 +531,13 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
       Array [
         Array [
           Object {
-            "borderRadius": 40,
             "overflow": "hidden",
           },
           undefined,
           undefined,
+          Object {
+            "borderRadius": 40,
+          },
         ],
         Object {
           "marginRight": 4,
@@ -552,7 +570,6 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
           Array [
             Object {
               "alignItems": "center",
-              "borderRadius": 40,
               "flexDirection": "row",
               "justifyContent": "center",
               "paddingHorizontal": 12,
@@ -568,6 +585,9 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
             Object {
               "paddingHorizontal": 8,
               "paddingVertical": 6,
+            },
+            Object {
+              "borderRadius": 40,
             },
           ],
           Object {
@@ -649,10 +669,12 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
       Array [
         Array [
           Object {
-            "borderRadius": 40,
             "overflow": "hidden",
           },
           undefined,
+          Object {
+            "borderRadius": 40,
+          },
         ],
         Object {
           "marginLeft": 4,
@@ -685,7 +707,6 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
           Array [
             Object {
               "alignItems": "center",
-              "borderRadius": 40,
               "flexDirection": "row",
               "justifyContent": "center",
               "paddingHorizontal": 12,
@@ -700,6 +721,9 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
             Object {
               "paddingHorizontal": 8,
               "paddingVertical": 6,
+            },
+            Object {
+              "borderRadius": 40,
             },
           ],
           Object {
@@ -770,10 +794,12 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
       Array [
         Array [
           Object {
-            "borderRadius": 40,
             "overflow": "hidden",
           },
           undefined,
+          Object {
+            "borderRadius": 40,
+          },
         ],
         Object {
           "marginRight": 4,
@@ -806,7 +832,6 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
           Array [
             Object {
               "alignItems": "center",
-              "borderRadius": 40,
               "flexDirection": "row",
               "justifyContent": "center",
               "paddingHorizontal": 12,
@@ -821,6 +846,9 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
             Object {
               "paddingHorizontal": 8,
               "paddingVertical": 6,
+            },
+            Object {
+              "borderRadius": 40,
             },
           ],
           Object {
@@ -898,11 +926,13 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
       Array [
         Array [
           Object {
-            "borderRadius": 40,
             "overflow": "hidden",
           },
           undefined,
           undefined,
+          Object {
+            "borderRadius": 40,
+          },
         ],
         Object {
           "marginLeft": 4,
@@ -935,7 +965,6 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
           Array [
             Object {
               "alignItems": "center",
-              "borderRadius": 40,
               "flexDirection": "row",
               "justifyContent": "center",
               "paddingHorizontal": 12,
@@ -951,6 +980,9 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
             Object {
               "paddingHorizontal": 8,
               "paddingVertical": 6,
+            },
+            Object {
+              "borderRadius": 40,
             },
           ],
           Object {
@@ -1025,11 +1057,13 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
       Array [
         Array [
           Object {
-            "borderRadius": 40,
             "overflow": "hidden",
           },
           undefined,
           undefined,
+          Object {
+            "borderRadius": 40,
+          },
         ],
         Object {
           "marginRight": 4,
@@ -1062,7 +1096,6 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
           Array [
             Object {
               "alignItems": "center",
-              "borderRadius": 40,
               "flexDirection": "row",
               "justifyContent": "center",
               "paddingHorizontal": 12,
@@ -1078,6 +1111,9 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
             Object {
               "paddingHorizontal": 8,
               "paddingVertical": 6,
+            },
+            Object {
+              "borderRadius": 40,
             },
           ],
           Object {
@@ -1159,10 +1195,12 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
       Array [
         Array [
           Object {
-            "borderRadius": 40,
             "overflow": "hidden",
           },
           undefined,
+          Object {
+            "borderRadius": 40,
+          },
         ],
         Object {
           "marginLeft": 4,
@@ -1195,7 +1233,6 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
           Array [
             Object {
               "alignItems": "center",
-              "borderRadius": 40,
               "flexDirection": "row",
               "justifyContent": "center",
               "paddingHorizontal": 12,
@@ -1210,6 +1247,9 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
             Object {
               "paddingHorizontal": 8,
               "paddingVertical": 6,
+            },
+            Object {
+              "borderRadius": 40,
             },
           ],
           Object {
@@ -1280,10 +1320,12 @@ exports[`Android BpkNudger should support theming 1`] = `
       Array [
         Array [
           Object {
-            "borderRadius": 40,
             "overflow": "hidden",
           },
           undefined,
+          Object {
+            "borderRadius": 4,
+          },
         ],
         Object {
           "marginRight": 4,
@@ -1316,7 +1358,6 @@ exports[`Android BpkNudger should support theming 1`] = `
           Array [
             Object {
               "alignItems": "center",
-              "borderRadius": 40,
               "flexDirection": "row",
               "justifyContent": "center",
               "paddingHorizontal": 12,
@@ -1331,6 +1372,9 @@ exports[`Android BpkNudger should support theming 1`] = `
             Object {
               "paddingHorizontal": 8,
               "paddingVertical": 6,
+            },
+            Object {
+              "borderRadius": 4,
             },
           ],
           Object {
@@ -1397,6 +1441,9 @@ exports[`Android BpkNudger should support theming 1`] = `
           "fontFamily": "sans-serif-medium",
         },
         Object {
+          "fontFamily": "System",
+        },
+        Object {
           "minWidth": 24,
           "textAlign": "center",
         },
@@ -1410,10 +1457,12 @@ exports[`Android BpkNudger should support theming 1`] = `
       Array [
         Array [
           Object {
-            "borderRadius": 40,
             "overflow": "hidden",
           },
           undefined,
+          Object {
+            "borderRadius": 4,
+          },
         ],
         Object {
           "marginLeft": 4,
@@ -1446,7 +1495,6 @@ exports[`Android BpkNudger should support theming 1`] = `
           Array [
             Object {
               "alignItems": "center",
-              "borderRadius": 40,
               "flexDirection": "row",
               "justifyContent": "center",
               "paddingHorizontal": 12,
@@ -1461,6 +1509,9 @@ exports[`Android BpkNudger should support theming 1`] = `
             Object {
               "paddingHorizontal": 8,
               "paddingVertical": 6,
+            },
+            Object {
+              "borderRadius": 4,
             },
           ],
           Object {

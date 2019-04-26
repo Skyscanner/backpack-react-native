@@ -34,6 +34,7 @@ import {
   getThemingForElement,
   textStyle,
   iconStyle,
+  getBorderRadius,
 } from './utils';
 import {
   type CommonProps,
@@ -80,6 +81,9 @@ const BpkButton = (props: Props) => {
   const buttonStyle = getStyleForElement('button', props);
   const buttonTheme = getThemingForElement('button', theme, props);
 
+  const borderRadius = getBorderRadius(theme, type);
+  buttonStyle.push({ borderRadius });
+
   if (disabled) {
     accessibilityTraits.push('disabled');
   }
@@ -89,7 +93,7 @@ const BpkButton = (props: Props) => {
       accessibilityComponentType="button"
       accessibilityLabel={accessibilityLabel || title}
       accessibilityTraits={accessibilityTraits}
-      borderRadius="pill"
+      borderRadius={borderRadius}
       disabled={disabled}
       onPress={onPress}
       {...rest}

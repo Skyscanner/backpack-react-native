@@ -84,7 +84,7 @@ describe('utils', () => {
         result instanceof Error ? result.toString() : 'Expected an error';
 
       expect(errorString).toEqual(
-        'Error: Invalid prop `theme` supplied to `BpkButton`. For buttons of type `primary`, the `theme` prop must include `buttonPrimaryTextColor, buttonPrimaryGradientStartColor, buttonPrimaryGradientEndColor`',
+        'Error: Invalid prop `theme` supplied to `BpkButton`. For buttons of type `primary`, the `theme` prop must include `buttonPrimaryTextColor, buttonPrimaryGradientStartColor, buttonPrimaryGradientEndColor, buttonPrimaryBorderRadius`',
       );
     });
 
@@ -97,6 +97,7 @@ describe('utils', () => {
               buttonPrimaryGradientStartColor: 'red',
               buttonPrimaryGradientEndColor: 'green',
               buttonPrimaryTextColor: 'blue',
+              buttonPrimaryBorderRadius: 4,
             },
           },
           'theme',

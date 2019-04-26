@@ -20,7 +20,10 @@
 
 import { StyleSheet, Platform } from 'react-native';
 import difference from 'lodash/difference';
-import { colorWhite } from 'bpk-tokens/tokens/base.react.native';
+import {
+  colorWhite,
+  borderRadiusPill,
+} from 'bpk-tokens/tokens/base.react.native';
 import { type Theme } from 'react-native-bpk-theming';
 
 import styles from './styles';
@@ -30,21 +33,25 @@ const REQUIRED_THEME_ATTRIBUTES = {
     styles.themeMappings.text.color.primary,
     styles.themeMappings.gradient.primary.startColor,
     styles.themeMappings.gradient.primary.endColor,
+    styles.themeMappings.borderRadius.primary,
   ],
   secondary: [
     styles.themeMappings.text.color.secondary,
     styles.themeMappings.container.borderColor.secondary,
     styles.themeMappings.gradient.secondary.startColor,
+    styles.themeMappings.borderRadius.secondary,
   ],
   destructive: [
     styles.themeMappings.text.color.destructive,
     styles.themeMappings.container.borderColor.destructive,
     styles.themeMappings.gradient.destructive.startColor,
+    styles.themeMappings.borderRadius.destructive,
   ],
   featured: [
     styles.themeMappings.text.color.featured,
     styles.themeMappings.gradient.featured.startColor,
     styles.themeMappings.gradient.featured.endColor,
+    styles.themeMappings.borderRadius.featured,
   ],
 };
 
@@ -116,6 +123,13 @@ export const getThemingForElement = (
     });
   }
   return themeForElement;
+};
+
+export const getBorderRadius = (theme: ?Theme, type: string): number => {
+  if (theme && theme[styles.themeMappings.borderRadius[type]] !== null) {
+    return theme[styles.themeMappings.borderRadius[type]];
+  }
+  return borderRadiusPill;
 };
 
 export const getGradientColors = (

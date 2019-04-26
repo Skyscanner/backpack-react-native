@@ -30,6 +30,7 @@ import {
   themeAttributesSupplied,
   getStyleForElement,
   getAndroidBackgroundColour,
+  getBorderRadius,
   textStyle,
   iconStyle,
 } from './utils';
@@ -80,6 +81,10 @@ const BpkButton = (props: Props) => {
   if (disabled) {
     accessibilityTraits.push('disabled');
   }
+
+  const borderRadius = getBorderRadius(theme, type);
+  containerStyle.push({ borderRadius });
+  buttonStyle.push({ borderRadius });
 
   return (
     <View style={[containerStyle, style, backgroundColor]}>

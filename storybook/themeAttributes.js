@@ -58,6 +58,11 @@ const themeAttributes = {
   buttonFeaturedTextColor: theme.backgroundColor,
   buttonLinkTextColor: theme.contentColor,
 
+  buttonPrimaryBorderRadius: 0,
+  buttonSecondaryBorderRadius: 4,
+  buttonDestructiveBorderRadius: 8,
+  buttonFeaturedBorderRadius: 10,
+
   // Used in BpkChip.
   chipSelectedBackgroundColor: theme.contentColor,
   chipSelectedTextColor: theme.backgroundColor,

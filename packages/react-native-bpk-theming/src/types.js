@@ -19,5 +19,5 @@
 /* @flow */
 
 export type Theme = {
-  [string]: string,
+  [string]: string | number,
 };

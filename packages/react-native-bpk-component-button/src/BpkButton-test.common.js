@@ -181,6 +181,8 @@ const commonTests = () => {
         buttonPrimaryTextColor: 'red',
         buttonPrimaryGradientStartColor: 'green',
         buttonPrimaryGradientEndColor: 'blue',
+        buttonPrimaryBorderRadius: 4,
+        textFontFamily: 'System',
       };
       const tree = renderer
         .create(
