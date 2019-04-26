@@ -126,8 +126,13 @@ export const getThemingForElement = (
 };
 
 export const getBorderRadius = (theme: ?Theme, type: string): number => {
-  if (theme && theme[styles.themeMappings.borderRadius[type]] !== null) {
-    return theme[styles.themeMappings.borderRadius[type]];
+  const themeAttributeForType = styles.themeMappings.borderRadius[type];
+  if (
+    theme &&
+    theme[themeAttributeForType] !== null &&
+    !Number.isNaN(theme[themeAttributeForType])
+  ) {
+    return Number(theme[themeAttributeForType]);
   }
   return borderRadiusPill;
 };
@@ -142,8 +147,8 @@ export const getGradientColors = (
     const gradientThemeProps = styles.themeMappings.gradient[type];
 
     gradientColors = [
-      theme[gradientThemeProps.startColor],
-      theme[gradientThemeProps.endColor],
+      theme[gradientThemeProps.startColor].toString(),
+      theme[gradientThemeProps.endColor].toString(),
     ].filter(item => !!item);
   }
 
