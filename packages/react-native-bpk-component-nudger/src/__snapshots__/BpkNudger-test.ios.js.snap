@@ -33,49 +33,33 @@ exports[`iOS BpkNudger should disable theming if the required attribute is omitt
       }
     }
   >
-    <BVLinearGradient
-      colors={
-        Array [
-          4294967295,
-          4294967295,
-        ]
-      }
-      endPoint={
-        Object {
-          "x": 0.5,
-          "y": 1,
-        }
-      }
-      locations={null}
-      startPoint={
-        Object {
-          "x": 0.5,
-          "y": 0,
-        }
-      }
+    <View
       style={
         Array [
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderRadius": 40,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "paddingHorizontal": 12,
-              "paddingVertical": 8,
-            },
-            Object {
-              "borderColor": "rgb(230, 228, 235)",
-              "borderWidth": 2,
-              "paddingHorizontal": 10,
-              "paddingVertical": 6,
-            },
-            Object {
-              "paddingHorizontal": 6,
-              "paddingVertical": 6,
-            },
-          ],
-          Object {},
+          Object {
+            "alignItems": "center",
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingHorizontal": 10,
+            "paddingVertical": 6,
+          },
+          null,
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+          },
+          Object {
+            "borderColor": "rgb(230, 228, 235)",
+          },
+          Object {
+            "borderRadius": 40,
+          },
+          Object {
+            "flexDirection": "row-reverse",
+          },
+          Object {
+            "paddingHorizontal": 6,
+          },
         ]
       }
     >
@@ -93,31 +77,27 @@ exports[`iOS BpkNudger should disable theming if the required attribute is omitt
               "fontSize": 16,
             },
             Array [
-              Array [
-                Object {
-                  "color": "rgb(255, 255, 255)",
-                },
-                Object {
-                  "color": "rgb(0, 178, 214)",
-                },
-                undefined,
-              ],
-              Object {},
-              Array [
-                Object {
-                  "marginStart": 4,
-                },
-                Object {
-                  "marginStart": 0,
-                },
-              ],
+              Object {
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(0, 178, 214)",
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 4,
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 0,
+              },
             ],
           ]
         }
       >
         
       </Text>
-    </BVLinearGradient>
+    </View>
     <View
       style={
         Array [
@@ -181,49 +161,33 @@ exports[`iOS BpkNudger should disable theming if the required attribute is omitt
       }
     }
   >
-    <BVLinearGradient
-      colors={
-        Array [
-          4294967295,
-          4294967295,
-        ]
-      }
-      endPoint={
-        Object {
-          "x": 0.5,
-          "y": 1,
-        }
-      }
-      locations={null}
-      startPoint={
-        Object {
-          "x": 0.5,
-          "y": 0,
-        }
-      }
+    <View
       style={
         Array [
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderRadius": 40,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "paddingHorizontal": 12,
-              "paddingVertical": 8,
-            },
-            Object {
-              "borderColor": "rgb(230, 228, 235)",
-              "borderWidth": 2,
-              "paddingHorizontal": 10,
-              "paddingVertical": 6,
-            },
-            Object {
-              "paddingHorizontal": 6,
-              "paddingVertical": 6,
-            },
-          ],
-          Object {},
+          Object {
+            "alignItems": "center",
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingHorizontal": 10,
+            "paddingVertical": 6,
+          },
+          null,
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+          },
+          Object {
+            "borderColor": "rgb(230, 228, 235)",
+          },
+          Object {
+            "borderRadius": 40,
+          },
+          Object {
+            "flexDirection": "row-reverse",
+          },
+          Object {
+            "paddingHorizontal": 6,
+          },
         ]
       }
     >
@@ -241,31 +205,27 @@ exports[`iOS BpkNudger should disable theming if the required attribute is omitt
               "fontSize": 16,
             },
             Array [
-              Array [
-                Object {
-                  "color": "rgb(255, 255, 255)",
-                },
-                Object {
-                  "color": "rgb(0, 178, 214)",
-                },
-                undefined,
-              ],
-              Object {},
-              Array [
-                Object {
-                  "marginStart": 4,
-                },
-                Object {
-                  "marginStart": 0,
-                },
-              ],
+              Object {
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(0, 178, 214)",
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 4,
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 0,
+              },
             ],
           ]
         }
       >
         
       </Text>
-    </BVLinearGradient>
+    </View>
     <View
       style={
         Array [
@@ -322,49 +282,33 @@ exports[`iOS BpkNudger should render correctly 1`] = `
       }
     }
   >
-    <BVLinearGradient
-      colors={
-        Array [
-          4294967295,
-          4294967295,
-        ]
-      }
-      endPoint={
-        Object {
-          "x": 0.5,
-          "y": 1,
-        }
-      }
-      locations={null}
-      startPoint={
-        Object {
-          "x": 0.5,
-          "y": 0,
-        }
-      }
+    <View
       style={
         Array [
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderRadius": 40,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "paddingHorizontal": 12,
-              "paddingVertical": 8,
-            },
-            Object {
-              "borderColor": "rgb(230, 228, 235)",
-              "borderWidth": 2,
-              "paddingHorizontal": 10,
-              "paddingVertical": 6,
-            },
-            Object {
-              "paddingHorizontal": 6,
-              "paddingVertical": 6,
-            },
-          ],
-          Object {},
+          Object {
+            "alignItems": "center",
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingHorizontal": 10,
+            "paddingVertical": 6,
+          },
+          null,
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+          },
+          Object {
+            "borderColor": "rgb(230, 228, 235)",
+          },
+          Object {
+            "borderRadius": 40,
+          },
+          Object {
+            "flexDirection": "row-reverse",
+          },
+          Object {
+            "paddingHorizontal": 6,
+          },
         ]
       }
     >
@@ -382,31 +326,27 @@ exports[`iOS BpkNudger should render correctly 1`] = `
               "fontSize": 16,
             },
             Array [
-              Array [
-                Object {
-                  "color": "rgb(255, 255, 255)",
-                },
-                Object {
-                  "color": "rgb(0, 178, 214)",
-                },
-                undefined,
-              ],
-              Object {},
-              Array [
-                Object {
-                  "marginStart": 4,
-                },
-                Object {
-                  "marginStart": 0,
-                },
-              ],
+              Object {
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(0, 178, 214)",
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 4,
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 0,
+              },
             ],
           ]
         }
       >
         
       </Text>
-    </BVLinearGradient>
+    </View>
     <View
       style={
         Array [
@@ -470,49 +410,33 @@ exports[`iOS BpkNudger should render correctly 1`] = `
       }
     }
   >
-    <BVLinearGradient
-      colors={
-        Array [
-          4294967295,
-          4294967295,
-        ]
-      }
-      endPoint={
-        Object {
-          "x": 0.5,
-          "y": 1,
-        }
-      }
-      locations={null}
-      startPoint={
-        Object {
-          "x": 0.5,
-          "y": 0,
-        }
-      }
+    <View
       style={
         Array [
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderRadius": 40,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "paddingHorizontal": 12,
-              "paddingVertical": 8,
-            },
-            Object {
-              "borderColor": "rgb(230, 228, 235)",
-              "borderWidth": 2,
-              "paddingHorizontal": 10,
-              "paddingVertical": 6,
-            },
-            Object {
-              "paddingHorizontal": 6,
-              "paddingVertical": 6,
-            },
-          ],
-          Object {},
+          Object {
+            "alignItems": "center",
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingHorizontal": 10,
+            "paddingVertical": 6,
+          },
+          null,
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+          },
+          Object {
+            "borderColor": "rgb(230, 228, 235)",
+          },
+          Object {
+            "borderRadius": 40,
+          },
+          Object {
+            "flexDirection": "row-reverse",
+          },
+          Object {
+            "paddingHorizontal": 6,
+          },
         ]
       }
     >
@@ -530,31 +454,27 @@ exports[`iOS BpkNudger should render correctly 1`] = `
               "fontSize": 16,
             },
             Array [
-              Array [
-                Object {
-                  "color": "rgb(255, 255, 255)",
-                },
-                Object {
-                  "color": "rgb(0, 178, 214)",
-                },
-                undefined,
-              ],
-              Object {},
-              Array [
-                Object {
-                  "marginStart": 4,
-                },
-                Object {
-                  "marginStart": 0,
-                },
-              ],
+              Object {
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(0, 178, 214)",
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 4,
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 0,
+              },
             ],
           ]
         }
       >
         
       </Text>
-    </BVLinearGradient>
+    </View>
     <View
       style={
         Array [
@@ -612,50 +532,33 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
       }
     }
   >
-    <BVLinearGradient
-      colors={
-        Array [
-          4293321963,
-          4293321963,
-        ]
-      }
-      endPoint={
-        Object {
-          "x": 0.5,
-          "y": 1,
-        }
-      }
-      locations={null}
-      startPoint={
-        Object {
-          "x": 0.5,
-          "y": 0,
-        }
-      }
+    <View
       style={
         Array [
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderRadius": 40,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "paddingHorizontal": 12,
-              "paddingVertical": 8,
-            },
-            Object {
-              "borderColor": "rgb(230, 228, 235)",
-              "borderWidth": 2,
-              "paddingHorizontal": 10,
-              "paddingVertical": 6,
-            },
-            undefined,
-            Object {
-              "paddingHorizontal": 6,
-              "paddingVertical": 6,
-            },
-          ],
-          Object {},
+          Object {
+            "alignItems": "center",
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingHorizontal": 10,
+            "paddingVertical": 6,
+          },
+          null,
+          Object {
+            "backgroundColor": "rgb(230, 228, 235)",
+          },
+          Object {
+            "borderColor": "rgb(230, 228, 235)",
+          },
+          Object {
+            "borderRadius": 40,
+          },
+          Object {
+            "flexDirection": "row-reverse",
+          },
+          Object {
+            "paddingHorizontal": 6,
+          },
         ]
       }
     >
@@ -673,35 +576,27 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
               "fontSize": 16,
             },
             Array [
-              Array [
-                Object {
-                  "color": "rgb(255, 255, 255)",
-                },
-                Object {
-                  "color": "rgb(0, 178, 214)",
-                },
-                Object {
-                  "color": "rgb(178, 174, 189)",
-                },
-                undefined,
-              ],
-              Object {},
-              Array [
-                Object {
-                  "marginStart": 4,
-                },
-                undefined,
-                Object {
-                  "marginStart": 0,
-                },
-              ],
+              Object {
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(178, 174, 189)",
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 4,
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 0,
+              },
             ],
           ]
         }
       >
         
       </Text>
-    </BVLinearGradient>
+    </View>
     <View
       style={
         Array [
@@ -765,49 +660,33 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
       }
     }
   >
-    <BVLinearGradient
-      colors={
-        Array [
-          4294967295,
-          4294967295,
-        ]
-      }
-      endPoint={
-        Object {
-          "x": 0.5,
-          "y": 1,
-        }
-      }
-      locations={null}
-      startPoint={
-        Object {
-          "x": 0.5,
-          "y": 0,
-        }
-      }
+    <View
       style={
         Array [
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderRadius": 40,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "paddingHorizontal": 12,
-              "paddingVertical": 8,
-            },
-            Object {
-              "borderColor": "rgb(230, 228, 235)",
-              "borderWidth": 2,
-              "paddingHorizontal": 10,
-              "paddingVertical": 6,
-            },
-            Object {
-              "paddingHorizontal": 6,
-              "paddingVertical": 6,
-            },
-          ],
-          Object {},
+          Object {
+            "alignItems": "center",
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingHorizontal": 10,
+            "paddingVertical": 6,
+          },
+          null,
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+          },
+          Object {
+            "borderColor": "rgb(230, 228, 235)",
+          },
+          Object {
+            "borderRadius": 40,
+          },
+          Object {
+            "flexDirection": "row-reverse",
+          },
+          Object {
+            "paddingHorizontal": 6,
+          },
         ]
       }
     >
@@ -825,31 +704,27 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
               "fontSize": 16,
             },
             Array [
-              Array [
-                Object {
-                  "color": "rgb(255, 255, 255)",
-                },
-                Object {
-                  "color": "rgb(0, 178, 214)",
-                },
-                undefined,
-              ],
-              Object {},
-              Array [
-                Object {
-                  "marginStart": 4,
-                },
-                Object {
-                  "marginStart": 0,
-                },
-              ],
+              Object {
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(0, 178, 214)",
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 4,
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 0,
+              },
             ],
           ]
         }
       >
         
       </Text>
-    </BVLinearGradient>
+    </View>
     <View
       style={
         Array [
@@ -906,49 +781,33 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
       }
     }
   >
-    <BVLinearGradient
-      colors={
-        Array [
-          4294967295,
-          4294967295,
-        ]
-      }
-      endPoint={
-        Object {
-          "x": 0.5,
-          "y": 1,
-        }
-      }
-      locations={null}
-      startPoint={
-        Object {
-          "x": 0.5,
-          "y": 0,
-        }
-      }
+    <View
       style={
         Array [
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderRadius": 40,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "paddingHorizontal": 12,
-              "paddingVertical": 8,
-            },
-            Object {
-              "borderColor": "rgb(230, 228, 235)",
-              "borderWidth": 2,
-              "paddingHorizontal": 10,
-              "paddingVertical": 6,
-            },
-            Object {
-              "paddingHorizontal": 6,
-              "paddingVertical": 6,
-            },
-          ],
-          Object {},
+          Object {
+            "alignItems": "center",
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingHorizontal": 10,
+            "paddingVertical": 6,
+          },
+          null,
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+          },
+          Object {
+            "borderColor": "rgb(230, 228, 235)",
+          },
+          Object {
+            "borderRadius": 40,
+          },
+          Object {
+            "flexDirection": "row-reverse",
+          },
+          Object {
+            "paddingHorizontal": 6,
+          },
         ]
       }
     >
@@ -966,31 +825,27 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
               "fontSize": 16,
             },
             Array [
-              Array [
-                Object {
-                  "color": "rgb(255, 255, 255)",
-                },
-                Object {
-                  "color": "rgb(0, 178, 214)",
-                },
-                undefined,
-              ],
-              Object {},
-              Array [
-                Object {
-                  "marginStart": 4,
-                },
-                Object {
-                  "marginStart": 0,
-                },
-              ],
+              Object {
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(0, 178, 214)",
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 4,
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 0,
+              },
             ],
           ]
         }
       >
         
       </Text>
-    </BVLinearGradient>
+    </View>
     <View
       style={
         Array [
@@ -1055,50 +910,33 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
       }
     }
   >
-    <BVLinearGradient
-      colors={
-        Array [
-          4293321963,
-          4293321963,
-        ]
-      }
-      endPoint={
-        Object {
-          "x": 0.5,
-          "y": 1,
-        }
-      }
-      locations={null}
-      startPoint={
-        Object {
-          "x": 0.5,
-          "y": 0,
-        }
-      }
+    <View
       style={
         Array [
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderRadius": 40,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "paddingHorizontal": 12,
-              "paddingVertical": 8,
-            },
-            Object {
-              "borderColor": "rgb(230, 228, 235)",
-              "borderWidth": 2,
-              "paddingHorizontal": 10,
-              "paddingVertical": 6,
-            },
-            undefined,
-            Object {
-              "paddingHorizontal": 6,
-              "paddingVertical": 6,
-            },
-          ],
-          Object {},
+          Object {
+            "alignItems": "center",
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingHorizontal": 10,
+            "paddingVertical": 6,
+          },
+          null,
+          Object {
+            "backgroundColor": "rgb(230, 228, 235)",
+          },
+          Object {
+            "borderColor": "rgb(230, 228, 235)",
+          },
+          Object {
+            "borderRadius": 40,
+          },
+          Object {
+            "flexDirection": "row-reverse",
+          },
+          Object {
+            "paddingHorizontal": 6,
+          },
         ]
       }
     >
@@ -1116,35 +954,27 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
               "fontSize": 16,
             },
             Array [
-              Array [
-                Object {
-                  "color": "rgb(255, 255, 255)",
-                },
-                Object {
-                  "color": "rgb(0, 178, 214)",
-                },
-                Object {
-                  "color": "rgb(178, 174, 189)",
-                },
-                undefined,
-              ],
-              Object {},
-              Array [
-                Object {
-                  "marginStart": 4,
-                },
-                undefined,
-                Object {
-                  "marginStart": 0,
-                },
-              ],
+              Object {
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(178, 174, 189)",
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 4,
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 0,
+              },
             ],
           ]
         }
       >
         
       </Text>
-    </BVLinearGradient>
+    </View>
     <View
       style={
         Array [
@@ -1202,50 +1032,33 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
       }
     }
   >
-    <BVLinearGradient
-      colors={
-        Array [
-          4293321963,
-          4293321963,
-        ]
-      }
-      endPoint={
-        Object {
-          "x": 0.5,
-          "y": 1,
-        }
-      }
-      locations={null}
-      startPoint={
-        Object {
-          "x": 0.5,
-          "y": 0,
-        }
-      }
+    <View
       style={
         Array [
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderRadius": 40,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "paddingHorizontal": 12,
-              "paddingVertical": 8,
-            },
-            Object {
-              "borderColor": "rgb(230, 228, 235)",
-              "borderWidth": 2,
-              "paddingHorizontal": 10,
-              "paddingVertical": 6,
-            },
-            undefined,
-            Object {
-              "paddingHorizontal": 6,
-              "paddingVertical": 6,
-            },
-          ],
-          Object {},
+          Object {
+            "alignItems": "center",
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingHorizontal": 10,
+            "paddingVertical": 6,
+          },
+          null,
+          Object {
+            "backgroundColor": "rgb(230, 228, 235)",
+          },
+          Object {
+            "borderColor": "rgb(230, 228, 235)",
+          },
+          Object {
+            "borderRadius": 40,
+          },
+          Object {
+            "flexDirection": "row-reverse",
+          },
+          Object {
+            "paddingHorizontal": 6,
+          },
         ]
       }
     >
@@ -1263,35 +1076,27 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
               "fontSize": 16,
             },
             Array [
-              Array [
-                Object {
-                  "color": "rgb(255, 255, 255)",
-                },
-                Object {
-                  "color": "rgb(0, 178, 214)",
-                },
-                Object {
-                  "color": "rgb(178, 174, 189)",
-                },
-                undefined,
-              ],
-              Object {},
-              Array [
-                Object {
-                  "marginStart": 4,
-                },
-                undefined,
-                Object {
-                  "marginStart": 0,
-                },
-              ],
+              Object {
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(178, 174, 189)",
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 4,
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 0,
+              },
             ],
           ]
         }
       >
         
       </Text>
-    </BVLinearGradient>
+    </View>
     <View
       style={
         Array [
@@ -1355,49 +1160,33 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
       }
     }
   >
-    <BVLinearGradient
-      colors={
-        Array [
-          4294967295,
-          4294967295,
-        ]
-      }
-      endPoint={
-        Object {
-          "x": 0.5,
-          "y": 1,
-        }
-      }
-      locations={null}
-      startPoint={
-        Object {
-          "x": 0.5,
-          "y": 0,
-        }
-      }
+    <View
       style={
         Array [
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderRadius": 40,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "paddingHorizontal": 12,
-              "paddingVertical": 8,
-            },
-            Object {
-              "borderColor": "rgb(230, 228, 235)",
-              "borderWidth": 2,
-              "paddingHorizontal": 10,
-              "paddingVertical": 6,
-            },
-            Object {
-              "paddingHorizontal": 6,
-              "paddingVertical": 6,
-            },
-          ],
-          Object {},
+          Object {
+            "alignItems": "center",
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingHorizontal": 10,
+            "paddingVertical": 6,
+          },
+          null,
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+          },
+          Object {
+            "borderColor": "rgb(230, 228, 235)",
+          },
+          Object {
+            "borderRadius": 40,
+          },
+          Object {
+            "flexDirection": "row-reverse",
+          },
+          Object {
+            "paddingHorizontal": 6,
+          },
         ]
       }
     >
@@ -1415,31 +1204,27 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
               "fontSize": 16,
             },
             Array [
-              Array [
-                Object {
-                  "color": "rgb(255, 255, 255)",
-                },
-                Object {
-                  "color": "rgb(0, 178, 214)",
-                },
-                undefined,
-              ],
-              Object {},
-              Array [
-                Object {
-                  "marginStart": 4,
-                },
-                Object {
-                  "marginStart": 0,
-                },
-              ],
+              Object {
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(0, 178, 214)",
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 4,
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 0,
+              },
             ],
           ]
         }
       >
         
       </Text>
-    </BVLinearGradient>
+    </View>
     <View
       style={
         Array [
@@ -1496,49 +1281,33 @@ exports[`iOS BpkNudger should support theming 1`] = `
       }
     }
   >
-    <BVLinearGradient
-      colors={
-        Array [
-          4294967040,
-          4294967040,
-        ]
-      }
-      endPoint={
-        Object {
-          "x": 0.5,
-          "y": 1,
-        }
-      }
-      locations={null}
-      startPoint={
-        Object {
-          "x": 0.5,
-          "y": 0,
-        }
-      }
+    <View
       style={
         Array [
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderRadius": 40,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "paddingHorizontal": 12,
-              "paddingVertical": 8,
-            },
-            Object {
-              "borderColor": "rgb(230, 228, 235)",
-              "borderWidth": 2,
-              "paddingHorizontal": 10,
-              "paddingVertical": 6,
-            },
-            Object {
-              "paddingHorizontal": 6,
-              "paddingVertical": 6,
-            },
-          ],
-          Object {},
+          Object {
+            "alignItems": "center",
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingHorizontal": 10,
+            "paddingVertical": 6,
+          },
+          null,
+          Object {
+            "backgroundColor": "yellow",
+          },
+          Object {
+            "borderColor": "blue",
+          },
+          Object {
+            "borderRadius": 40,
+          },
+          Object {
+            "flexDirection": "row-reverse",
+          },
+          Object {
+            "paddingHorizontal": 6,
+          },
         ]
       }
     >
@@ -1556,33 +1325,27 @@ exports[`iOS BpkNudger should support theming 1`] = `
               "fontSize": 16,
             },
             Array [
-              Array [
-                Object {
-                  "color": "rgb(255, 255, 255)",
-                },
-                Object {
-                  "color": "rgb(0, 178, 214)",
-                },
-                undefined,
-              ],
+              Object {
+                "marginEnd": 4,
+              },
               Object {
                 "color": "red",
               },
-              Array [
-                Object {
-                  "marginStart": 4,
-                },
-                Object {
-                  "marginStart": 0,
-                },
-              ],
+              Object {
+                "marginEnd": 0,
+                "marginStart": 4,
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 0,
+              },
             ],
           ]
         }
       >
         
       </Text>
-    </BVLinearGradient>
+    </View>
     <View
       style={
         Array [
@@ -1646,49 +1409,33 @@ exports[`iOS BpkNudger should support theming 1`] = `
       }
     }
   >
-    <BVLinearGradient
-      colors={
-        Array [
-          4294967040,
-          4294967040,
-        ]
-      }
-      endPoint={
-        Object {
-          "x": 0.5,
-          "y": 1,
-        }
-      }
-      locations={null}
-      startPoint={
-        Object {
-          "x": 0.5,
-          "y": 0,
-        }
-      }
+    <View
       style={
         Array [
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderRadius": 40,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "paddingHorizontal": 12,
-              "paddingVertical": 8,
-            },
-            Object {
-              "borderColor": "rgb(230, 228, 235)",
-              "borderWidth": 2,
-              "paddingHorizontal": 10,
-              "paddingVertical": 6,
-            },
-            Object {
-              "paddingHorizontal": 6,
-              "paddingVertical": 6,
-            },
-          ],
-          Object {},
+          Object {
+            "alignItems": "center",
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingHorizontal": 10,
+            "paddingVertical": 6,
+          },
+          null,
+          Object {
+            "backgroundColor": "yellow",
+          },
+          Object {
+            "borderColor": "blue",
+          },
+          Object {
+            "borderRadius": 40,
+          },
+          Object {
+            "flexDirection": "row-reverse",
+          },
+          Object {
+            "paddingHorizontal": 6,
+          },
         ]
       }
     >
@@ -1706,33 +1453,27 @@ exports[`iOS BpkNudger should support theming 1`] = `
               "fontSize": 16,
             },
             Array [
-              Array [
-                Object {
-                  "color": "rgb(255, 255, 255)",
-                },
-                Object {
-                  "color": "rgb(0, 178, 214)",
-                },
-                undefined,
-              ],
+              Object {
+                "marginEnd": 4,
+              },
               Object {
                 "color": "red",
               },
-              Array [
-                Object {
-                  "marginStart": 4,
-                },
-                Object {
-                  "marginStart": 0,
-                },
-              ],
+              Object {
+                "marginEnd": 0,
+                "marginStart": 4,
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 0,
+              },
             ],
           ]
         }
       >
         
       </Text>
-    </BVLinearGradient>
+    </View>
     <View
       style={
         Array [

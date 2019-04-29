@@ -233,6 +233,14 @@ const BpkButton = (props: Props) => {
     ...rest
   } = props;
 
+  if (!Object.keys(BUTTON_TYPES).includes(type)) {
+    throw new Error(
+      `"${type}" is not a valid button type. Valid types are ${Object.keys(
+        BUTTON_TYPES,
+      ).join(', ')}`,
+    );
+  }
+
   const themeAttributes = getThemeAttributes(
     REQUIRED_THEME_ATTRIBUTES[type],
     theme,
