@@ -27,7 +27,7 @@
  * This scripts works in two phases:
  *
  * 1. Prepare
- * Should be called before the release to validade the environment and store
+ * Should be called before the release to validate the environment and store
  * the list of native packages to be published
  *
  * 2. Publish
