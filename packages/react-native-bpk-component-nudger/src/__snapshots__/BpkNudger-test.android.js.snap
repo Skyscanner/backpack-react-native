@@ -15,18 +15,12 @@ exports[`Android BpkNudger should disable theming if the required attribute is o
   <View
     style={
       Array [
-        Array [
-          Object {
-            "borderRadius": 40,
-            "overflow": "hidden",
-          },
-          undefined,
-        ],
         Object {
-          "marginRight": 4,
+          "borderRadius": 40,
+          "overflow": "hidden",
         },
         Object {
-          "backgroundColor": "rgb(255, 255, 255)",
+          "marginRight": 4,
         },
       ]
     }
@@ -50,28 +44,26 @@ exports[`Android BpkNudger should disable theming if the required attribute is o
       onStartShouldSetResponder={[Function]}
       style={
         Array [
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderRadius": 40,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "paddingHorizontal": 12,
-              "paddingVertical": 8,
-            },
-            Object {
-              "borderColor": "rgb(230, 228, 235)",
-              "borderWidth": 2,
-              "paddingHorizontal": 10,
-              "paddingVertical": 6,
-            },
-            Object {
-              "paddingHorizontal": 8,
-              "paddingVertical": 6,
-            },
-          ],
+          Object {
+            "alignItems": "center",
+            "borderRadius": 40,
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingHorizontal": 10,
+            "paddingVertical": 6,
+          },
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
+          },
+          Object {
+            "borderColor": "rgb(230, 228, 235)",
+          },
+          Object {
+            "flexDirection": "row-reverse",
+          },
+          Object {
+            "paddingHorizontal": 8,
           },
         ]
       }
@@ -90,26 +82,21 @@ exports[`Android BpkNudger should disable theming if the required attribute is o
               "fontSize": 16,
             },
             Array [
-              Array [
-                Object {
-                  "color": "rgb(255, 255, 255)",
-                  "lineHeight": 20,
-                },
-                Object {
-                  "color": "rgb(0, 178, 214)",
-                },
-                undefined,
-              ],
-              Object {},
-              Array [
-                Object {
-                  "lineHeight": 20,
-                  "marginStart": 4,
-                },
-                Object {
-                  "marginStart": 0,
-                },
-              ],
+              Object {
+                "lineHeight": 20,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(0, 178, 214)",
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 4,
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 0,
+              },
             ],
           ]
         }
@@ -143,18 +130,12 @@ exports[`Android BpkNudger should disable theming if the required attribute is o
   <View
     style={
       Array [
-        Array [
-          Object {
-            "borderRadius": 40,
-            "overflow": "hidden",
-          },
-          undefined,
-        ],
         Object {
-          "marginLeft": 4,
+          "borderRadius": 40,
+          "overflow": "hidden",
         },
         Object {
-          "backgroundColor": "rgb(255, 255, 255)",
+          "marginLeft": 4,
         },
       ]
     }
@@ -178,28 +159,26 @@ exports[`Android BpkNudger should disable theming if the required attribute is o
       onStartShouldSetResponder={[Function]}
       style={
         Array [
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderRadius": 40,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "paddingHorizontal": 12,
-              "paddingVertical": 8,
-            },
-            Object {
-              "borderColor": "rgb(230, 228, 235)",
-              "borderWidth": 2,
-              "paddingHorizontal": 10,
-              "paddingVertical": 6,
-            },
-            Object {
-              "paddingHorizontal": 8,
-              "paddingVertical": 6,
-            },
-          ],
+          Object {
+            "alignItems": "center",
+            "borderRadius": 40,
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingHorizontal": 10,
+            "paddingVertical": 6,
+          },
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
+          },
+          Object {
+            "borderColor": "rgb(230, 228, 235)",
+          },
+          Object {
+            "flexDirection": "row-reverse",
+          },
+          Object {
+            "paddingHorizontal": 8,
           },
         ]
       }
@@ -218,26 +197,21 @@ exports[`Android BpkNudger should disable theming if the required attribute is o
               "fontSize": 16,
             },
             Array [
-              Array [
-                Object {
-                  "color": "rgb(255, 255, 255)",
-                  "lineHeight": 20,
-                },
-                Object {
-                  "color": "rgb(0, 178, 214)",
-                },
-                undefined,
-              ],
-              Object {},
-              Array [
-                Object {
-                  "lineHeight": 20,
-                  "marginStart": 4,
-                },
-                Object {
-                  "marginStart": 0,
-                },
-              ],
+              Object {
+                "lineHeight": 20,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(0, 178, 214)",
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 4,
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 0,
+              },
             ],
           ]
         }
@@ -264,18 +238,12 @@ exports[`Android BpkNudger should render correctly 1`] = `
   <View
     style={
       Array [
-        Array [
-          Object {
-            "borderRadius": 40,
-            "overflow": "hidden",
-          },
-          undefined,
-        ],
         Object {
-          "marginRight": 4,
+          "borderRadius": 40,
+          "overflow": "hidden",
         },
         Object {
-          "backgroundColor": "rgb(255, 255, 255)",
+          "marginRight": 4,
         },
       ]
     }
@@ -299,28 +267,26 @@ exports[`Android BpkNudger should render correctly 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Array [
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderRadius": 40,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "paddingHorizontal": 12,
-              "paddingVertical": 8,
-            },
-            Object {
-              "borderColor": "rgb(230, 228, 235)",
-              "borderWidth": 2,
-              "paddingHorizontal": 10,
-              "paddingVertical": 6,
-            },
-            Object {
-              "paddingHorizontal": 8,
-              "paddingVertical": 6,
-            },
-          ],
+          Object {
+            "alignItems": "center",
+            "borderRadius": 40,
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingHorizontal": 10,
+            "paddingVertical": 6,
+          },
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
+          },
+          Object {
+            "borderColor": "rgb(230, 228, 235)",
+          },
+          Object {
+            "flexDirection": "row-reverse",
+          },
+          Object {
+            "paddingHorizontal": 8,
           },
         ]
       }
@@ -339,26 +305,21 @@ exports[`Android BpkNudger should render correctly 1`] = `
               "fontSize": 16,
             },
             Array [
-              Array [
-                Object {
-                  "color": "rgb(255, 255, 255)",
-                  "lineHeight": 20,
-                },
-                Object {
-                  "color": "rgb(0, 178, 214)",
-                },
-                undefined,
-              ],
-              Object {},
-              Array [
-                Object {
-                  "lineHeight": 20,
-                  "marginStart": 4,
-                },
-                Object {
-                  "marginStart": 0,
-                },
-              ],
+              Object {
+                "lineHeight": 20,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(0, 178, 214)",
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 4,
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 0,
+              },
             ],
           ]
         }
@@ -392,18 +353,12 @@ exports[`Android BpkNudger should render correctly 1`] = `
   <View
     style={
       Array [
-        Array [
-          Object {
-            "borderRadius": 40,
-            "overflow": "hidden",
-          },
-          undefined,
-        ],
         Object {
-          "marginLeft": 4,
+          "borderRadius": 40,
+          "overflow": "hidden",
         },
         Object {
-          "backgroundColor": "rgb(255, 255, 255)",
+          "marginLeft": 4,
         },
       ]
     }
@@ -427,28 +382,26 @@ exports[`Android BpkNudger should render correctly 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Array [
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderRadius": 40,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "paddingHorizontal": 12,
-              "paddingVertical": 8,
-            },
-            Object {
-              "borderColor": "rgb(230, 228, 235)",
-              "borderWidth": 2,
-              "paddingHorizontal": 10,
-              "paddingVertical": 6,
-            },
-            Object {
-              "paddingHorizontal": 8,
-              "paddingVertical": 6,
-            },
-          ],
+          Object {
+            "alignItems": "center",
+            "borderRadius": 40,
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingHorizontal": 10,
+            "paddingVertical": 6,
+          },
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
+          },
+          Object {
+            "borderColor": "rgb(230, 228, 235)",
+          },
+          Object {
+            "flexDirection": "row-reverse",
+          },
+          Object {
+            "paddingHorizontal": 8,
           },
         ]
       }
@@ -467,26 +420,21 @@ exports[`Android BpkNudger should render correctly 1`] = `
               "fontSize": 16,
             },
             Array [
-              Array [
-                Object {
-                  "color": "rgb(255, 255, 255)",
-                  "lineHeight": 20,
-                },
-                Object {
-                  "color": "rgb(0, 178, 214)",
-                },
-                undefined,
-              ],
-              Object {},
-              Array [
-                Object {
-                  "lineHeight": 20,
-                  "marginStart": 4,
-                },
-                Object {
-                  "marginStart": 0,
-                },
-              ],
+              Object {
+                "lineHeight": 20,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(0, 178, 214)",
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 4,
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 0,
+              },
             ],
           ]
         }
@@ -513,19 +461,12 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
   <View
     style={
       Array [
-        Array [
-          Object {
-            "borderRadius": 40,
-            "overflow": "hidden",
-          },
-          undefined,
-          undefined,
-        ],
         Object {
-          "marginRight": 4,
+          "borderRadius": 40,
+          "overflow": "hidden",
         },
         Object {
-          "backgroundColor": "rgb(230, 228, 235)",
+          "marginRight": 4,
         },
       ]
     }
@@ -549,29 +490,26 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
       onStartShouldSetResponder={[Function]}
       style={
         Array [
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderRadius": 40,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "paddingHorizontal": 12,
-              "paddingVertical": 8,
-            },
-            Object {
-              "borderColor": "rgb(230, 228, 235)",
-              "borderWidth": 2,
-              "paddingHorizontal": 10,
-              "paddingVertical": 6,
-            },
-            undefined,
-            Object {
-              "paddingHorizontal": 8,
-              "paddingVertical": 6,
-            },
-          ],
+          Object {
+            "alignItems": "center",
+            "borderRadius": 40,
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingHorizontal": 10,
+            "paddingVertical": 6,
+          },
           Object {
             "backgroundColor": "rgb(230, 228, 235)",
+          },
+          Object {
+            "borderColor": "rgb(230, 228, 235)",
+          },
+          Object {
+            "flexDirection": "row-reverse",
+          },
+          Object {
+            "paddingHorizontal": 8,
           },
         ]
       }
@@ -590,30 +528,21 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
               "fontSize": 16,
             },
             Array [
-              Array [
-                Object {
-                  "color": "rgb(255, 255, 255)",
-                  "lineHeight": 20,
-                },
-                Object {
-                  "color": "rgb(0, 178, 214)",
-                },
-                Object {
-                  "color": "rgb(178, 174, 189)",
-                },
-                undefined,
-              ],
-              Object {},
-              Array [
-                Object {
-                  "lineHeight": 20,
-                  "marginStart": 4,
-                },
-                undefined,
-                Object {
-                  "marginStart": 0,
-                },
-              ],
+              Object {
+                "lineHeight": 20,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(178, 174, 189)",
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 4,
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 0,
+              },
             ],
           ]
         }
@@ -647,18 +576,12 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
   <View
     style={
       Array [
-        Array [
-          Object {
-            "borderRadius": 40,
-            "overflow": "hidden",
-          },
-          undefined,
-        ],
         Object {
-          "marginLeft": 4,
+          "borderRadius": 40,
+          "overflow": "hidden",
         },
         Object {
-          "backgroundColor": "rgb(255, 255, 255)",
+          "marginLeft": 4,
         },
       ]
     }
@@ -682,28 +605,26 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
       onStartShouldSetResponder={[Function]}
       style={
         Array [
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderRadius": 40,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "paddingHorizontal": 12,
-              "paddingVertical": 8,
-            },
-            Object {
-              "borderColor": "rgb(230, 228, 235)",
-              "borderWidth": 2,
-              "paddingHorizontal": 10,
-              "paddingVertical": 6,
-            },
-            Object {
-              "paddingHorizontal": 8,
-              "paddingVertical": 6,
-            },
-          ],
+          Object {
+            "alignItems": "center",
+            "borderRadius": 40,
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingHorizontal": 10,
+            "paddingVertical": 6,
+          },
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
+          },
+          Object {
+            "borderColor": "rgb(230, 228, 235)",
+          },
+          Object {
+            "flexDirection": "row-reverse",
+          },
+          Object {
+            "paddingHorizontal": 8,
           },
         ]
       }
@@ -722,26 +643,21 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
               "fontSize": 16,
             },
             Array [
-              Array [
-                Object {
-                  "color": "rgb(255, 255, 255)",
-                  "lineHeight": 20,
-                },
-                Object {
-                  "color": "rgb(0, 178, 214)",
-                },
-                undefined,
-              ],
-              Object {},
-              Array [
-                Object {
-                  "lineHeight": 20,
-                  "marginStart": 4,
-                },
-                Object {
-                  "marginStart": 0,
-                },
-              ],
+              Object {
+                "lineHeight": 20,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(0, 178, 214)",
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 4,
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 0,
+              },
             ],
           ]
         }
@@ -768,18 +684,12 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
   <View
     style={
       Array [
-        Array [
-          Object {
-            "borderRadius": 40,
-            "overflow": "hidden",
-          },
-          undefined,
-        ],
         Object {
-          "marginRight": 4,
+          "borderRadius": 40,
+          "overflow": "hidden",
         },
         Object {
-          "backgroundColor": "rgb(255, 255, 255)",
+          "marginRight": 4,
         },
       ]
     }
@@ -803,28 +713,26 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
       onStartShouldSetResponder={[Function]}
       style={
         Array [
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderRadius": 40,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "paddingHorizontal": 12,
-              "paddingVertical": 8,
-            },
-            Object {
-              "borderColor": "rgb(230, 228, 235)",
-              "borderWidth": 2,
-              "paddingHorizontal": 10,
-              "paddingVertical": 6,
-            },
-            Object {
-              "paddingHorizontal": 8,
-              "paddingVertical": 6,
-            },
-          ],
+          Object {
+            "alignItems": "center",
+            "borderRadius": 40,
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingHorizontal": 10,
+            "paddingVertical": 6,
+          },
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
+          },
+          Object {
+            "borderColor": "rgb(230, 228, 235)",
+          },
+          Object {
+            "flexDirection": "row-reverse",
+          },
+          Object {
+            "paddingHorizontal": 8,
           },
         ]
       }
@@ -843,26 +751,21 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
               "fontSize": 16,
             },
             Array [
-              Array [
-                Object {
-                  "color": "rgb(255, 255, 255)",
-                  "lineHeight": 20,
-                },
-                Object {
-                  "color": "rgb(0, 178, 214)",
-                },
-                undefined,
-              ],
-              Object {},
-              Array [
-                Object {
-                  "lineHeight": 20,
-                  "marginStart": 4,
-                },
-                Object {
-                  "marginStart": 0,
-                },
-              ],
+              Object {
+                "lineHeight": 20,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(0, 178, 214)",
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 4,
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 0,
+              },
             ],
           ]
         }
@@ -896,19 +799,12 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
   <View
     style={
       Array [
-        Array [
-          Object {
-            "borderRadius": 40,
-            "overflow": "hidden",
-          },
-          undefined,
-          undefined,
-        ],
         Object {
-          "marginLeft": 4,
+          "borderRadius": 40,
+          "overflow": "hidden",
         },
         Object {
-          "backgroundColor": "rgb(230, 228, 235)",
+          "marginLeft": 4,
         },
       ]
     }
@@ -932,29 +828,26 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
       onStartShouldSetResponder={[Function]}
       style={
         Array [
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderRadius": 40,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "paddingHorizontal": 12,
-              "paddingVertical": 8,
-            },
-            Object {
-              "borderColor": "rgb(230, 228, 235)",
-              "borderWidth": 2,
-              "paddingHorizontal": 10,
-              "paddingVertical": 6,
-            },
-            undefined,
-            Object {
-              "paddingHorizontal": 8,
-              "paddingVertical": 6,
-            },
-          ],
+          Object {
+            "alignItems": "center",
+            "borderRadius": 40,
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingHorizontal": 10,
+            "paddingVertical": 6,
+          },
           Object {
             "backgroundColor": "rgb(230, 228, 235)",
+          },
+          Object {
+            "borderColor": "rgb(230, 228, 235)",
+          },
+          Object {
+            "flexDirection": "row-reverse",
+          },
+          Object {
+            "paddingHorizontal": 8,
           },
         ]
       }
@@ -973,30 +866,21 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
               "fontSize": 16,
             },
             Array [
-              Array [
-                Object {
-                  "color": "rgb(255, 255, 255)",
-                  "lineHeight": 20,
-                },
-                Object {
-                  "color": "rgb(0, 178, 214)",
-                },
-                Object {
-                  "color": "rgb(178, 174, 189)",
-                },
-                undefined,
-              ],
-              Object {},
-              Array [
-                Object {
-                  "lineHeight": 20,
-                  "marginStart": 4,
-                },
-                undefined,
-                Object {
-                  "marginStart": 0,
-                },
-              ],
+              Object {
+                "lineHeight": 20,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(178, 174, 189)",
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 4,
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 0,
+              },
             ],
           ]
         }
@@ -1023,19 +907,12 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
   <View
     style={
       Array [
-        Array [
-          Object {
-            "borderRadius": 40,
-            "overflow": "hidden",
-          },
-          undefined,
-          undefined,
-        ],
         Object {
-          "marginRight": 4,
+          "borderRadius": 40,
+          "overflow": "hidden",
         },
         Object {
-          "backgroundColor": "rgb(230, 228, 235)",
+          "marginRight": 4,
         },
       ]
     }
@@ -1059,29 +936,26 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
       onStartShouldSetResponder={[Function]}
       style={
         Array [
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderRadius": 40,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "paddingHorizontal": 12,
-              "paddingVertical": 8,
-            },
-            Object {
-              "borderColor": "rgb(230, 228, 235)",
-              "borderWidth": 2,
-              "paddingHorizontal": 10,
-              "paddingVertical": 6,
-            },
-            undefined,
-            Object {
-              "paddingHorizontal": 8,
-              "paddingVertical": 6,
-            },
-          ],
+          Object {
+            "alignItems": "center",
+            "borderRadius": 40,
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingHorizontal": 10,
+            "paddingVertical": 6,
+          },
           Object {
             "backgroundColor": "rgb(230, 228, 235)",
+          },
+          Object {
+            "borderColor": "rgb(230, 228, 235)",
+          },
+          Object {
+            "flexDirection": "row-reverse",
+          },
+          Object {
+            "paddingHorizontal": 8,
           },
         ]
       }
@@ -1100,30 +974,21 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
               "fontSize": 16,
             },
             Array [
-              Array [
-                Object {
-                  "color": "rgb(255, 255, 255)",
-                  "lineHeight": 20,
-                },
-                Object {
-                  "color": "rgb(0, 178, 214)",
-                },
-                Object {
-                  "color": "rgb(178, 174, 189)",
-                },
-                undefined,
-              ],
-              Object {},
-              Array [
-                Object {
-                  "lineHeight": 20,
-                  "marginStart": 4,
-                },
-                undefined,
-                Object {
-                  "marginStart": 0,
-                },
-              ],
+              Object {
+                "lineHeight": 20,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(178, 174, 189)",
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 4,
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 0,
+              },
             ],
           ]
         }
@@ -1157,18 +1022,12 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
   <View
     style={
       Array [
-        Array [
-          Object {
-            "borderRadius": 40,
-            "overflow": "hidden",
-          },
-          undefined,
-        ],
         Object {
-          "marginLeft": 4,
+          "borderRadius": 40,
+          "overflow": "hidden",
         },
         Object {
-          "backgroundColor": "rgb(255, 255, 255)",
+          "marginLeft": 4,
         },
       ]
     }
@@ -1192,28 +1051,26 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
       onStartShouldSetResponder={[Function]}
       style={
         Array [
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderRadius": 40,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "paddingHorizontal": 12,
-              "paddingVertical": 8,
-            },
-            Object {
-              "borderColor": "rgb(230, 228, 235)",
-              "borderWidth": 2,
-              "paddingHorizontal": 10,
-              "paddingVertical": 6,
-            },
-            Object {
-              "paddingHorizontal": 8,
-              "paddingVertical": 6,
-            },
-          ],
+          Object {
+            "alignItems": "center",
+            "borderRadius": 40,
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingHorizontal": 10,
+            "paddingVertical": 6,
+          },
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
+          },
+          Object {
+            "borderColor": "rgb(230, 228, 235)",
+          },
+          Object {
+            "flexDirection": "row-reverse",
+          },
+          Object {
+            "paddingHorizontal": 8,
           },
         ]
       }
@@ -1232,26 +1089,21 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
               "fontSize": 16,
             },
             Array [
-              Array [
-                Object {
-                  "color": "rgb(255, 255, 255)",
-                  "lineHeight": 20,
-                },
-                Object {
-                  "color": "rgb(0, 178, 214)",
-                },
-                undefined,
-              ],
-              Object {},
-              Array [
-                Object {
-                  "lineHeight": 20,
-                  "marginStart": 4,
-                },
-                Object {
-                  "marginStart": 0,
-                },
-              ],
+              Object {
+                "lineHeight": 20,
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(0, 178, 214)",
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 4,
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 0,
+              },
             ],
           ]
         }
@@ -1278,18 +1130,12 @@ exports[`Android BpkNudger should support theming 1`] = `
   <View
     style={
       Array [
-        Array [
-          Object {
-            "borderRadius": 40,
-            "overflow": "hidden",
-          },
-          undefined,
-        ],
         Object {
-          "marginRight": 4,
+          "borderRadius": 40,
+          "overflow": "hidden",
         },
         Object {
-          "backgroundColor": "yellow",
+          "marginRight": 4,
         },
       ]
     }
@@ -1313,28 +1159,26 @@ exports[`Android BpkNudger should support theming 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Array [
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderRadius": 40,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "paddingHorizontal": 12,
-              "paddingVertical": 8,
-            },
-            Object {
-              "borderColor": "rgb(230, 228, 235)",
-              "borderWidth": 2,
-              "paddingHorizontal": 10,
-              "paddingVertical": 6,
-            },
-            Object {
-              "paddingHorizontal": 8,
-              "paddingVertical": 6,
-            },
-          ],
+          Object {
+            "alignItems": "center",
+            "borderRadius": 40,
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingHorizontal": 10,
+            "paddingVertical": 6,
+          },
           Object {
             "backgroundColor": "yellow",
+          },
+          Object {
+            "borderColor": "blue",
+          },
+          Object {
+            "flexDirection": "row-reverse",
+          },
+          Object {
+            "paddingHorizontal": 8,
           },
         ]
       }
@@ -1353,28 +1197,21 @@ exports[`Android BpkNudger should support theming 1`] = `
               "fontSize": 16,
             },
             Array [
-              Array [
-                Object {
-                  "color": "rgb(255, 255, 255)",
-                  "lineHeight": 20,
-                },
-                Object {
-                  "color": "rgb(0, 178, 214)",
-                },
-                undefined,
-              ],
+              Object {
+                "lineHeight": 20,
+                "marginEnd": 4,
+              },
               Object {
                 "color": "red",
               },
-              Array [
-                Object {
-                  "lineHeight": 20,
-                  "marginStart": 4,
-                },
-                Object {
-                  "marginStart": 0,
-                },
-              ],
+              Object {
+                "marginEnd": 0,
+                "marginStart": 4,
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 0,
+              },
             ],
           ]
         }
@@ -1408,18 +1245,12 @@ exports[`Android BpkNudger should support theming 1`] = `
   <View
     style={
       Array [
-        Array [
-          Object {
-            "borderRadius": 40,
-            "overflow": "hidden",
-          },
-          undefined,
-        ],
         Object {
-          "marginLeft": 4,
+          "borderRadius": 40,
+          "overflow": "hidden",
         },
         Object {
-          "backgroundColor": "yellow",
+          "marginLeft": 4,
         },
       ]
     }
@@ -1443,28 +1274,26 @@ exports[`Android BpkNudger should support theming 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Array [
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderRadius": 40,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "paddingHorizontal": 12,
-              "paddingVertical": 8,
-            },
-            Object {
-              "borderColor": "rgb(230, 228, 235)",
-              "borderWidth": 2,
-              "paddingHorizontal": 10,
-              "paddingVertical": 6,
-            },
-            Object {
-              "paddingHorizontal": 8,
-              "paddingVertical": 6,
-            },
-          ],
+          Object {
+            "alignItems": "center",
+            "borderRadius": 40,
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingHorizontal": 10,
+            "paddingVertical": 6,
+          },
           Object {
             "backgroundColor": "yellow",
+          },
+          Object {
+            "borderColor": "blue",
+          },
+          Object {
+            "flexDirection": "row-reverse",
+          },
+          Object {
+            "paddingHorizontal": 8,
           },
         ]
       }
@@ -1483,28 +1312,21 @@ exports[`Android BpkNudger should support theming 1`] = `
               "fontSize": 16,
             },
             Array [
-              Array [
-                Object {
-                  "color": "rgb(255, 255, 255)",
-                  "lineHeight": 20,
-                },
-                Object {
-                  "color": "rgb(0, 178, 214)",
-                },
-                undefined,
-              ],
+              Object {
+                "lineHeight": 20,
+                "marginEnd": 4,
+              },
               Object {
                 "color": "red",
               },
-              Array [
-                Object {
-                  "lineHeight": 20,
-                  "marginStart": 4,
-                },
-                Object {
-                  "marginStart": 0,
-                },
-              ],
+              Object {
+                "marginEnd": 0,
+                "marginStart": 4,
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 0,
+              },
             ],
           ]
         }

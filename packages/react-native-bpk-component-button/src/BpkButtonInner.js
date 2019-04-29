@@ -19,14 +19,15 @@
 /* @flow */
 
 import React, { type Element, Fragment } from 'react';
-import { StyleSheet } from 'react-native';
+import { Platform, StyleSheet } from 'react-native';
 import BpkIcon from 'react-native-bpk-component-icon';
 import BpkText, { WEIGHT_STYLES } from 'react-native-bpk-component-text';
-import { spacingSm } from 'bpk-tokens/tokens/base.react.native';
+import { spacingSm, spacingLg } from 'bpk-tokens/tokens/base.react.native';
 
 const styles = StyleSheet.create({
   icon: {
     marginEnd: spacingSm,
+    ...(Platform.OS === 'android' ? { lineHeight: spacingLg - spacingSm } : {}),
   },
   iconTrailing: {
     marginStart: spacingSm,
@@ -48,10 +49,17 @@ export type Props = {
 };
 
 const BpkButtonInner = (props: Props) => {
-  const { icon, iconOnly, iconTrailing, large, textColor, title } = props;
+  const {
+    icon,
+    iconOnly,
+    iconTrailing,
+    large,
+    textColor: color,
+    title,
+  } = props;
 
-  const iconStyle = [styles.icon, { color: textColor }];
-  const textStyle = { color: textColor };
+  const iconStyle = [styles.icon, { color }];
+  const textStyle = { color };
 
   if (iconTrailing) {
     iconStyle.push(styles.iconTrailing);
@@ -74,7 +82,7 @@ const BpkButtonInner = (props: Props) => {
           weight={WEIGHT_STYLES.emphasized}
           style={textStyle}
         >
-          {title}
+          {Platform.OS === 'android' ? title.toUpperCase() : title}
         </BpkText>
       )}
     </Fragment>

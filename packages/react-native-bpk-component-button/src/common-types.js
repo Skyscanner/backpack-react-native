@@ -18,15 +18,37 @@
 
 /* @flow */
 
-import { type Node, type ElementProps } from 'react';
+import { type Element, type ElementProps } from 'react';
 import PropTypes from 'prop-types';
 import { View, ViewPropTypes } from 'react-native';
-import { type Theme } from 'react-native-bpk-theming';
-
-import { themePropType, iconPropType } from './utils';
+import BpkIcon from 'react-native-bpk-component-icon';
+import { makeThemePropType, type Theme } from 'react-native-bpk-theming';
 
 type ViewProps = ElementProps<typeof View>;
 type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
+
+export const REQUIRED_THEME_ATTRIBUTES = {
+  primary: [
+    'buttonPrimaryTextColor',
+    'buttonPrimaryGradientStartColor',
+    'buttonPrimaryGradientEndColor',
+  ],
+  secondary: [
+    'buttonSecondaryTextColor',
+    'buttonSecondaryBackgroundColor',
+    'buttonSecondaryBorderColor',
+  ],
+  destructive: [
+    'buttonDestructiveTextColor',
+    'buttonDestructiveBackgroundColor',
+    'buttonDestructiveBorderColor',
+  ],
+  featured: [
+    'buttonFeaturedTextColor',
+    'buttonFeaturedGradientStartColor',
+    'buttonFeaturedGradientEndColor',
+  ],
+};
 
 export const BUTTON_TYPES = {
   primary: 'primary',
@@ -40,17 +62,34 @@ export const ICON_ALIGNMENTS = {
   trailing: 'trailing',
 };
 
+export type ButtonType = $Keys<typeof BUTTON_TYPES>;
+
 export type CommonProps = {
-  onPress: (event: SyntheticEvent<>) => mixed,
-  title: string,
-  accessibilityLabel: ?string,
   disabled: boolean,
-  icon: ?Node,
-  style: ViewStyleProp,
-  type: $Keys<typeof BUTTON_TYPES>,
-  theme: ?Theme,
   iconAlignment: $Keys<typeof ICON_ALIGNMENTS>,
   iconOnly: boolean,
+  onPress: (event: SyntheticEvent<>) => mixed,
+  style: ViewStyleProp,
+  title: string,
+  type: ButtonType,
+  accessibilityLabel: ?string,
+  icon: ?(string | Element<typeof BpkIcon>),
+  theme: ?Theme,
+};
+
+const themePropType = (
+  props: Object,
+  propName: string,
+  componentName: string,
+  ...rest: { [string]: any }
+) => {
+  const { type } = props;
+  return makeThemePropType(REQUIRED_THEME_ATTRIBUTES[type])(
+    props,
+    propName,
+    componentName,
+    ...rest,
+  );
 };
 
 export const commonPropTypes = {
@@ -58,21 +97,21 @@ export const commonPropTypes = {
   title: PropTypes.string.isRequired,
   accessibilityLabel: PropTypes.string,
   disabled: PropTypes.bool,
-  icon: iconPropType,
+  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+  iconAlignment: PropTypes.oneOf(Object.keys(ICON_ALIGNMENTS)),
+  iconOnly: PropTypes.bool,
   style: ViewPropTypes.style,
   theme: themePropType,
   type: PropTypes.oneOf(Object.keys(BUTTON_TYPES)),
-  iconAlignment: PropTypes.oneOf(Object.keys(ICON_ALIGNMENTS)),
-  iconOnly: PropTypes.bool,
 };
 
 export const commonDefaultProps = {
   accessibilityLabel: null,
   disabled: false,
   icon: null,
+  iconAlignment: ICON_ALIGNMENTS.trailing,
+  iconOnly: false,
   style: null,
   theme: null,
   type: BUTTON_TYPES.primary,
-  iconAlignment: ICON_ALIGNMENTS.trailing,
-  iconOnly: false,
 };

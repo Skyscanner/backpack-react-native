@@ -19,30 +19,155 @@
 /* @flow */
 
 import React from 'react';
-import { withTheme } from 'react-native-bpk-theming';
 import BpkIcon from 'react-native-bpk-component-icon';
-import BpkText, { WEIGHT_STYLES } from 'react-native-bpk-component-text';
-import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-native-feedback';
-import { Platform, View } from 'react-native';
+import {
+  getThemeAttributes,
+  withTheme,
+  type Theme,
+} from 'react-native-bpk-theming';
+import {
+  colorBlue500,
+  colorGray100,
+  colorGray300,
+  colorGreen500,
+  colorPink500,
+  colorRed500,
+  colorWhite,
+} from 'bpk-tokens/tokens/base.react.native';
 
+import BpkFlatButton from './BpkFlatButton.android';
+import BpkBorderedButton from './BpkBorderedButton.android';
+import BpkButtonInner from './BpkButtonInner';
 import {
-  isTypeThemeable,
-  themeAttributesSupplied,
-  getStyleForElement,
-  getAndroidBackgroundColour,
-  textStyle,
-  iconStyle,
-} from './utils';
-import {
+  type ButtonType,
   type CommonProps,
   commonPropTypes,
   commonDefaultProps,
   BUTTON_TYPES,
   ICON_ALIGNMENTS,
+  REQUIRED_THEME_ATTRIBUTES,
 } from './common-types';
 
-export type Props = {
-  ...$Exact<CommonProps>,
+export type Props = CommonProps;
+
+const backgroundColors = {
+  disabled: colorGray100,
+  [BUTTON_TYPES.primary]: colorGreen500,
+  [BUTTON_TYPES.featured]: colorPink500,
+  [BUTTON_TYPES.secondary]: colorWhite,
+  [BUTTON_TYPES.destructive]: colorWhite,
+};
+
+const borderColors = {
+  disabled: colorGray100,
+  [BUTTON_TYPES.secondary]: colorGray100,
+  [BUTTON_TYPES.destructive]: colorGray100,
+};
+
+const textColors = {
+  [BUTTON_TYPES.primary]: colorWhite,
+  [BUTTON_TYPES.featured]: colorWhite,
+  [BUTTON_TYPES.secondary]: colorBlue500,
+  [BUTTON_TYPES.destructive]: colorRed500,
+  disabled: colorGray300,
+};
+
+const getButtonComponent = (type: ButtonType) => {
+  if (type === BUTTON_TYPES.primary || type === BUTTON_TYPES.featured) {
+    return BpkFlatButton;
+  }
+  return BpkBorderedButton;
+};
+
+const getButtonColors = (
+  type: ButtonType,
+  themeAttributes: ?Theme,
+  disabled: boolean,
+) => {
+  if (type === BUTTON_TYPES.primary) {
+    if (disabled) {
+      return {
+        backgroundColor: backgroundColors.disabled,
+      };
+    }
+    return {
+      backgroundColor: themeAttributes
+        ? themeAttributes.buttonPrimaryGradientStartColor
+        : backgroundColors.primary,
+    };
+  }
+  if (type === BUTTON_TYPES.featured) {
+    if (disabled) {
+      return {
+        backgroundColor: backgroundColors.disabled,
+      };
+    }
+    return {
+      backgroundColor: themeAttributes
+        ? themeAttributes.buttonFeaturedGradientStartColor
+        : backgroundColors.featured,
+    };
+  }
+  if (type === BUTTON_TYPES.secondary) {
+    if (disabled) {
+      return {
+        backgroundColor: backgroundColors.disabled,
+        borderColor: borderColors.disabled,
+      };
+    }
+    return themeAttributes
+      ? {
+          backgroundColor: themeAttributes.buttonSecondaryBackgroundColor,
+          borderColor: themeAttributes.buttonSecondaryBorderColor,
+        }
+      : {
+          backgroundColor: backgroundColors.secondary,
+          borderColor: borderColors.secondary,
+        };
+  }
+  if (disabled) {
+    return {
+      backgroundColor: backgroundColors.disabled,
+      borderColor: borderColors.disabled,
+    };
+  }
+  return themeAttributes
+    ? {
+        backgroundColor: themeAttributes.buttonDestructiveBackgroundColor,
+        borderColor: themeAttributes.buttonDestructiveBorderColor,
+      }
+    : {
+        backgroundColor: backgroundColors.destructive,
+        borderColor: borderColors.destructive,
+      };
+};
+
+const getTextColor = (
+  type: ButtonType,
+  themeAttributes: ?Theme,
+  disabled: boolean,
+) => {
+  if (disabled) {
+    return textColors.disabled;
+  }
+  switch (type) {
+    case BUTTON_TYPES.primary:
+      return themeAttributes
+        ? themeAttributes.buttonPrimaryTextColor
+        : textColors.primary;
+    case BUTTON_TYPES.featured:
+      return themeAttributes
+        ? themeAttributes.buttonFeaturedTextColor
+        : textColors.featured;
+    case BUTTON_TYPES.secondary:
+      return themeAttributes
+        ? themeAttributes.buttonSecondaryTextColor
+        : textColors.secondary;
+    default:
+      return themeAttributes
+        ? themeAttributes.buttonDestructiveTextColor
+        : textColors.destructive;
+  }
 };
 
 const BpkButton = (props: Props) => {
@@ -50,16 +175,15 @@ const BpkButton = (props: Props) => {
     accessibilityLabel,
     disabled,
     icon,
+    iconAlignment,
     iconOnly,
-    onPress,
-    style,
+    theme,
     title,
     type,
-    theme: themeProp,
     ...rest
   } = props;
 
-  if (!Object.values(BUTTON_TYPES).includes(type)) {
+  if (!Object.keys(BUTTON_TYPES).includes(type)) {
     throw new Error(
       `"${type}" is not a valid button type. Valid types are ${Object.keys(
         BUTTON_TYPES,
@@ -67,60 +191,51 @@ const BpkButton = (props: Props) => {
     );
   }
 
-  const shouldApplyTheme =
-    themeProp &&
-    (isTypeThemeable(type) && themeAttributesSupplied(type, themeProp));
-  const theme = shouldApplyTheme ? themeProp : null;
+  const themeAttributes = getThemeAttributes(
+    REQUIRED_THEME_ATTRIBUTES[type],
+    theme,
+  );
+
+  const ButtonComponent = getButtonComponent(type);
+  const buttonColors = getButtonColors(type, themeAttributes, disabled);
+  const textColor = getTextColor(type, themeAttributes, disabled);
 
   const accessibilityTraits = ['button'];
-  const containerStyle = getStyleForElement('androidContainer', props);
-  const buttonStyle = getStyleForElement('button', props);
-  const backgroundColor = getAndroidBackgroundColour(theme, props);
-
   if (disabled) {
     accessibilityTraits.push('disabled');
   }
 
+  // Icons can be passed in as a string or a BpkIcon. This normalises it
+  // so the inner component is always given a BpkIcon.
+  const iconFinal =
+    typeof icon === 'string' ? <BpkIcon icon={icon} small /> : icon;
+
   return (
-    <View style={[containerStyle, style, backgroundColor]}>
-      <BpkTouchableNativeFeedback
-        disabled={disabled}
-        onPress={onPress}
-        type={type}
-        borderlessBackground={Platform.Version !== 28}
-        accessibilityComponentType="button"
-        accessibilityLabel={accessibilityLabel || title}
-        accessibilityTraits={accessibilityTraits}
-        {...rest}
-      >
-        <View style={[buttonStyle, backgroundColor]}>
-          {!iconOnly && (
-            <BpkText
-              textStyle="sm"
-              weight={WEIGHT_STYLES.emphasized}
-              style={textStyle(theme, props)}
-            >
-              {title.toUpperCase()}
-            </BpkText>
-          )}
-          {typeof icon === 'string' ? (
-            <BpkIcon icon={icon} style={iconStyle(theme, props)} small />
-          ) : (
-            icon
-          )}
-        </View>
-      </BpkTouchableNativeFeedback>
-    </View>
+    <ButtonComponent
+      disabled={disabled}
+      title={title}
+      icon={iconFinal}
+      iconOnly={iconOnly}
+      iconTrailing={iconAlignment === ICON_ALIGNMENTS.trailing}
+      accessibilityComponentType="button"
+      accessibilityLabel={accessibilityLabel || title}
+      accessibilityTraits={accessibilityTraits}
+      {...buttonColors}
+      {...rest}
+    >
+      <BpkButtonInner
+        large={false}
+        icon={iconFinal}
+        iconOnly={iconOnly}
+        iconTrailing={iconAlignment === ICON_ALIGNMENTS.trailing}
+        textColor={textColor}
+        title={title}
+      />
+    </ButtonComponent>
   );
 };
 
-BpkButton.propTypes = {
-  ...commonPropTypes,
-};
+BpkButton.propTypes = commonPropTypes;
+BpkButton.defaultProps = commonDefaultProps;
 
-BpkButton.defaultProps = {
-  ...commonDefaultProps,
-};
-
-export { BUTTON_TYPES, ICON_ALIGNMENTS };
 export default (withTheme(BpkButton): typeof BpkButton);

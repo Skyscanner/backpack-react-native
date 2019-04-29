@@ -22,7 +22,8 @@ import BpkThemeProvider from 'react-native-bpk-theming';
 import { spacingSm } from 'bpk-tokens/tokens/base.react.native';
 import BpkText from 'react-native-bpk-component-text';
 
-import BpkButton, { BUTTON_TYPES, ICON_ALIGNMENTS } from './BpkButton';
+import BpkButton from './BpkButton';
+import { BUTTON_TYPES, ICON_ALIGNMENTS } from './common-types';
 
 const onPressFn = jest.fn();
 

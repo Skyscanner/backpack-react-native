@@ -18,7 +18,8 @@
 
 /* @flow */
 
-import BpkButton, { BUTTON_TYPES, ICON_ALIGNMENTS } from './src/BpkButton';
+import BpkButton from './src/BpkButton';
+import { BUTTON_TYPES, ICON_ALIGNMENTS } from './src/common-types';
 
 export type { Props as BpkButtonProps } from './src/BpkButton';
 export { BUTTON_TYPES, ICON_ALIGNMENTS };
