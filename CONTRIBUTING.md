@@ -230,7 +230,9 @@ When a component is released for the first time on npm, remember to add the comp
 
 ### Native Android bridges
 
-Android bridges should be compiled and published into the internal Artifactory, to do so after the JS package has been released, run:
+Android bridges should be compiled and published into the internal Artifactory, this process is done automatically as part of the release.
+
+To publish it manually run:
 
 ```
 cd android

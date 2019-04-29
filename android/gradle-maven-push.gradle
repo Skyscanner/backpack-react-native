@@ -7,6 +7,8 @@ if (localPropsFile.exists()) {
     localProps.load(localPropsFile.newDataInputStream())
 }
 
+def artifactoryURL = "https://artifactory.skyscannertools.net/artifactory/infrastructure-maven"
+
 task sourceJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
     classifier "source"
@@ -51,12 +53,24 @@ afterEvaluate { project ->
 
         repositories {
             maven {
-                url "https://artifactory.skyscannertools.net/artifactory/infrastructure-maven"
+                url "$artifactoryURL"
                 credentials {
                     username "${project.getJFrogUsername()}"
                     password "${project.getJFrogPassword()}"
                 }
             }
         }
+    }
+
+    task checkMavenCredentials(type: Exec) {
+        outputs.upToDateWhen { false }
+        workingDir './'
+        commandLine(['curl',
+                     '--silent',
+                     '--fail',
+                     '-I',
+                     '-u',
+                     "${project.getJFrogUsername()}:${project.getJFrogPassword()}",
+                     "$artifactoryURL"])
     }
 }
