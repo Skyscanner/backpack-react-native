@@ -56,12 +56,12 @@ const ERRORS = {
   invalidEnv: (
     packages,
     cmd,
-  ) => `Your local envirnment is not ready to publish native Android bridges.
+  ) => `Your local environment is not ready to publish native Android bridges.
 As part of this release the following bridges need to be published:
 
 ${JSON.stringify(packages.map(p => p.name))}
 
-Check CONTRIBUTION.md to learn how to configure your local environment.
+Check CONTRIBUTING.md to learn how to configure your local environment.
 
 For more details about this error execute:
   ${yellow(`(cd android && ./gradlew ${cmd})`)}\n`,
