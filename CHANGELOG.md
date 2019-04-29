@@ -2,6 +2,18 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-04-29 - New `borderRadius` prop for touchable overlay
+
+**Updated:**
+
+- react-native-bpk-component-touchable-overlay: 1.1.13 => 1.2.0
+  - `borderRadius` prop now accepts numbers in addition to the existing `sm`, `lg` and `pill` values. E.g. `<BpkTouchableOverlay borderRadius={30} ... />`.
+
+**Fixed:**
+
+- react-native-component-calendar: 0.3.6 => 0.3.7
+  - fixed dependency resolution to follow semver for backpack-android and fail the build if not compatible.
+
 # 2019-04-24 - Theming support for `BpkButton` and `BpkStarRating`
 
 **Added:**
