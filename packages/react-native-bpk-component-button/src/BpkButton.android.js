@@ -61,7 +61,7 @@ const buttonColorsForType = (
     backgroundColor: backgroundColorForType(type, themeAttributes, disabled),
   };
 
-  if (type === BUTTON_TYPES.secondary || type === BUTTON_TYPES.destructive) {
+  if (type === 'secondary' || type === 'destructive') {
     buttonColors.borderColor = borderColorForType(
       type,
       themeAttributes,

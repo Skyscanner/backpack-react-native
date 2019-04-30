@@ -62,7 +62,7 @@ const buttonColorsForType = (
   themeAttributes: ?Theme,
   disabled: boolean,
 ) => {
-  if (type === BUTTON_TYPES.primary || type === BUTTON_TYPES.featured) {
+  if (type === 'primary' || type === 'featured') {
     return {
       gradientStartColor: gradientColorForType(
         'start',

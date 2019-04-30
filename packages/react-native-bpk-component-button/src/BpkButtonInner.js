@@ -73,7 +73,7 @@ const BpkButtonInner = (props: Props) => {
 
   return (
     <Fragment>
-      {icon && <BpkButtonIcon icon={icon} style={iconStyle} small={!large} />}
+      {icon && <BpkButtonIcon icon={icon} style={iconStyle} large={large} />}
       {!iconOnly && (
         <BpkText
           textStyle={large ? 'lg' : 'sm'}

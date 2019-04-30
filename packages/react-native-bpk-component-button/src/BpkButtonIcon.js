@@ -19,21 +19,21 @@
 /* @flow */
 
 import React, { type Element, type ElementProps } from 'react';
-import { View } from 'react-native';
+import { Text } from 'react-native';
 import BpkIcon from 'react-native-bpk-component-icon';
 
-type ViewProps = ElementProps<typeof View>;
-type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
+type TextProps = ElementProps<typeof Text>;
+type TextStyleProp = $PropertyType<TextProps, 'style'>;
 
 type Props = {
   icon: string | Element<typeof BpkIcon>,
   large: boolean,
-  style: ViewStyleProp,
+  style: TextStyleProp,
 };
 
-const BpkButtonIcon = ({ icon, style, ...rest }: Props) => {
+const BpkButtonIcon = ({ icon, large, style }: Props) => {
   if (typeof icon === 'string') {
-    return <BpkIcon icon={icon} style={style} {...rest} />;
+    return <BpkIcon icon={icon} style={style} small={!large} />;
   }
   return React.cloneElement(icon, { style: [icon.props.style, style] });
 };
