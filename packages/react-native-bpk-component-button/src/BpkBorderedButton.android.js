@@ -83,7 +83,7 @@ const BpkBorderedButton = (props: Props) => {
 
   const wrapperStyle = [styles.wrapper, userStyle];
 
-  const buttonStyle = [styles.button, { backgroundColor }, { borderColor }];
+  const buttonStyle = [styles.button, { backgroundColor, borderColor }];
 
   if (iconTrailing) {
     buttonStyle.push(styles.buttonIconTrailing);

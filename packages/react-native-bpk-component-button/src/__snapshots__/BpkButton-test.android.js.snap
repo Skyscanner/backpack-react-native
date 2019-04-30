@@ -38,10 +38,8 @@ exports[`Android API levels Android API<21 should render without ripple 1`] = `
           "paddingVertical": 8,
         },
         Object {
-          "borderRadius": 40,
-        },
-        Object {
           "backgroundColor": "rgb(0, 215, 117)",
+          "borderRadius": 40,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -113,10 +111,8 @@ exports[`Android API levels Android API>=21 should render with ripple 1`] = `
           "paddingVertical": 8,
         },
         Object {
-          "borderRadius": 40,
-        },
-        Object {
           "backgroundColor": "rgb(0, 215, 117)",
+          "borderRadius": 40,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -188,10 +184,8 @@ exports[`Android BpkButton should render correctly 1`] = `
           "paddingVertical": 8,
         },
         Object {
-          "borderRadius": 40,
-        },
-        Object {
           "backgroundColor": "rgb(0, 215, 117)",
+          "borderRadius": 40,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -263,10 +257,8 @@ exports[`Android BpkButton should render correctly with iconAlignment="leading" 
           "paddingVertical": 8,
         },
         Object {
-          "borderRadius": 40,
-        },
-        Object {
           "backgroundColor": "rgb(0, 215, 117)",
+          "borderRadius": 40,
         },
       ]
     }
@@ -361,10 +353,8 @@ exports[`Android BpkButton should render correctly with iconAlignment="trailing"
           "paddingVertical": 8,
         },
         Object {
-          "borderRadius": 40,
-        },
-        Object {
           "backgroundColor": "rgb(0, 215, 117)",
+          "borderRadius": 40,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -469,8 +459,6 @@ exports[`Android BpkButton should render correctly with type="destructive" 1`] =
         },
         Object {
           "backgroundColor": "rgb(255, 255, 255)",
-        },
-        Object {
           "borderColor": "rgb(230, 228, 235)",
         },
         Object {
@@ -546,8 +534,6 @@ exports[`Android BpkButton should render correctly with type="destructive" and d
         },
         Object {
           "backgroundColor": "rgb(230, 228, 235)",
-        },
-        Object {
           "borderColor": "rgb(230, 228, 235)",
         },
         Object {
@@ -620,10 +606,8 @@ exports[`Android BpkButton should render correctly with type="featured" 1`] = `
           "paddingVertical": 8,
         },
         Object {
-          "borderRadius": 40,
-        },
-        Object {
           "backgroundColor": "rgb(250, 72, 138)",
+          "borderRadius": 40,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -695,10 +679,8 @@ exports[`Android BpkButton should render correctly with type="featured" and disa
           "paddingVertical": 8,
         },
         Object {
-          "borderRadius": 40,
-        },
-        Object {
           "backgroundColor": "rgb(230, 228, 235)",
+          "borderRadius": 40,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -770,10 +752,8 @@ exports[`Android BpkButton should render correctly with type="primary" 1`] = `
           "paddingVertical": 8,
         },
         Object {
-          "borderRadius": 40,
-        },
-        Object {
           "backgroundColor": "rgb(0, 215, 117)",
+          "borderRadius": 40,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -845,10 +825,8 @@ exports[`Android BpkButton should render correctly with type="primary" and disab
           "paddingVertical": 8,
         },
         Object {
-          "borderRadius": 40,
-        },
-        Object {
           "backgroundColor": "rgb(230, 228, 235)",
+          "borderRadius": 40,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -923,8 +901,6 @@ exports[`Android BpkButton should render correctly with type="secondary" 1`] = `
         },
         Object {
           "backgroundColor": "rgb(255, 255, 255)",
-        },
-        Object {
           "borderColor": "rgb(230, 228, 235)",
         },
         Object {
@@ -1000,8 +976,6 @@ exports[`Android BpkButton should render correctly with type="secondary" and dis
         },
         Object {
           "backgroundColor": "rgb(230, 228, 235)",
-        },
-        Object {
           "borderColor": "rgb(230, 228, 235)",
         },
         Object {
@@ -1074,10 +1048,8 @@ exports[`Android BpkButton should support elements as icons 1`] = `
           "paddingVertical": 8,
         },
         Object {
-          "borderRadius": 40,
-        },
-        Object {
           "backgroundColor": "rgb(0, 215, 117)",
+          "borderRadius": 40,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1100,20 +1072,23 @@ exports[`Android BpkButton should support elements as icons 1`] = `
           },
           Object {},
           Array [
-            Object {
-              "marginEnd": 4,
-            },
-            Object {
-              "color": "rgb(255, 255, 255)",
-            },
-            Object {
-              "marginEnd": 0,
-              "marginStart": 4,
-            },
-            Object {
-              "marginEnd": 0,
-              "marginStart": 0,
-            },
+            undefined,
+            Array [
+              Object {
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 4,
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 0,
+              },
+            ],
           ],
         ]
       }
@@ -1163,10 +1138,8 @@ exports[`Android BpkButton should support having an icon as well as a title 1`] 
           "paddingVertical": 8,
         },
         Object {
-          "borderRadius": 40,
-        },
-        Object {
           "backgroundColor": "rgb(0, 215, 117)",
+          "borderRadius": 40,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1270,10 +1243,8 @@ exports[`Android BpkButton should support overwriting styles 1`] = `
           "paddingVertical": 8,
         },
         Object {
-          "borderRadius": 40,
-        },
-        Object {
           "backgroundColor": "rgb(0, 215, 117)",
+          "borderRadius": 40,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1345,10 +1316,8 @@ exports[`Android BpkButton should support the "disabled" property 1`] = `
           "paddingVertical": 8,
         },
         Object {
-          "borderRadius": 40,
-        },
-        Object {
           "backgroundColor": "rgb(230, 228, 235)",
+          "borderRadius": 40,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1420,10 +1389,8 @@ exports[`Android BpkButton should support the "icon" property 1`] = `
           "paddingVertical": 8,
         },
         Object {
-          "borderRadius": 40,
-        },
-        Object {
           "backgroundColor": "rgb(0, 215, 117)",
+          "borderRadius": 40,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1525,10 +1492,8 @@ exports[`Android BpkButton should support the "iconOnly" property 1`] = `
           "paddingVertical": 8,
         },
         Object {
-          "borderRadius": 40,
-        },
-        Object {
           "backgroundColor": "rgb(0, 215, 117)",
+          "borderRadius": 40,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1619,8 +1584,6 @@ exports[`Android BpkButton should support the "secondary" property 1`] = `
         },
         Object {
           "backgroundColor": "rgb(255, 255, 255)",
-        },
-        Object {
           "borderColor": "rgb(230, 228, 235)",
         },
         Object {
@@ -1693,10 +1656,8 @@ exports[`Android BpkButtonThemed should render correctly 1`] = `
           "paddingVertical": 8,
         },
         Object {
-          "borderRadius": 40,
-        },
-        Object {
           "backgroundColor": "green",
+          "borderRadius": 40,
         },
         Object {
           "flexDirection": "row-reverse",

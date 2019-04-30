@@ -55,8 +55,6 @@ exports[`Android BpkNudger should disable theming if the required attribute is o
           },
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
-          },
-          Object {
             "borderColor": "rgb(230, 228, 235)",
           },
           Object {
@@ -170,8 +168,6 @@ exports[`Android BpkNudger should disable theming if the required attribute is o
           },
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
-          },
-          Object {
             "borderColor": "rgb(230, 228, 235)",
           },
           Object {
@@ -278,8 +274,6 @@ exports[`Android BpkNudger should render correctly 1`] = `
           },
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
-          },
-          Object {
             "borderColor": "rgb(230, 228, 235)",
           },
           Object {
@@ -393,8 +387,6 @@ exports[`Android BpkNudger should render correctly 1`] = `
           },
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
-          },
-          Object {
             "borderColor": "rgb(230, 228, 235)",
           },
           Object {
@@ -501,8 +493,6 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
           },
           Object {
             "backgroundColor": "rgb(230, 228, 235)",
-          },
-          Object {
             "borderColor": "rgb(230, 228, 235)",
           },
           Object {
@@ -616,8 +606,6 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
           },
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
-          },
-          Object {
             "borderColor": "rgb(230, 228, 235)",
           },
           Object {
@@ -724,8 +712,6 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
           },
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
-          },
-          Object {
             "borderColor": "rgb(230, 228, 235)",
           },
           Object {
@@ -839,8 +825,6 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
           },
           Object {
             "backgroundColor": "rgb(230, 228, 235)",
-          },
-          Object {
             "borderColor": "rgb(230, 228, 235)",
           },
           Object {
@@ -947,8 +931,6 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
           },
           Object {
             "backgroundColor": "rgb(230, 228, 235)",
-          },
-          Object {
             "borderColor": "rgb(230, 228, 235)",
           },
           Object {
@@ -1062,8 +1044,6 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
           },
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
-          },
-          Object {
             "borderColor": "rgb(230, 228, 235)",
           },
           Object {
@@ -1170,8 +1150,6 @@ exports[`Android BpkNudger should support theming 1`] = `
           },
           Object {
             "backgroundColor": "yellow",
-          },
-          Object {
             "borderColor": "blue",
           },
           Object {
@@ -1285,8 +1263,6 @@ exports[`Android BpkNudger should support theming 1`] = `
           },
           Object {
             "backgroundColor": "yellow",
-          },
-          Object {
             "borderColor": "blue",
           },
           Object {

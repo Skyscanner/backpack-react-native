@@ -18,11 +18,13 @@
 
 /* @flow */
 
-import React, { type Element, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import { Platform, StyleSheet } from 'react-native';
-import BpkIcon from 'react-native-bpk-component-icon';
 import BpkText, { WEIGHT_STYLES } from 'react-native-bpk-component-text';
 import { spacingSm, spacingLg } from 'bpk-tokens/tokens/base.react.native';
+
+import BpkButtonIcon from './BpkButtonIcon';
+import { type IconType } from './common-types';
 
 const styles = StyleSheet.create({
   icon: {
@@ -45,7 +47,7 @@ export type Props = {
   large: boolean,
   textColor: string,
   title: string,
-  icon: ?Element<typeof BpkIcon>,
+  icon: ?IconType,
 };
 
 const BpkButtonInner = (props: Props) => {
@@ -69,13 +71,9 @@ const BpkButtonInner = (props: Props) => {
     iconStyle.push(styles.iconOnly);
   }
 
-  const styledIcon = icon
-    ? React.cloneElement(icon, { style: iconStyle })
-    : null;
-
   return (
     <Fragment>
-      {styledIcon}
+      {icon && <BpkButtonIcon icon={icon} style={iconStyle} small={!large} />}
       {!iconOnly && (
         <BpkText
           textStyle={large ? 'lg' : 'sm'}

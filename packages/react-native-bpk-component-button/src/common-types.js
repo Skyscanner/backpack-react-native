@@ -63,6 +63,7 @@ export const ICON_ALIGNMENTS = {
 };
 
 export type ButtonType = $Keys<typeof BUTTON_TYPES>;
+export type IconType = string | Element<typeof BpkIcon>;
 
 export type CommonProps = {
   disabled: boolean,
@@ -73,7 +74,7 @@ export type CommonProps = {
   title: string,
   type: ButtonType,
   accessibilityLabel: ?string,
-  icon: ?(string | Element<typeof BpkIcon>),
+  icon: ?IconType,
   theme: ?Theme,
 };
 

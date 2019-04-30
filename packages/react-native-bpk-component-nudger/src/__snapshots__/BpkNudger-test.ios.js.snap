@@ -47,11 +47,7 @@ exports[`iOS BpkNudger should disable theming if the required attribute is omitt
           null,
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
-          },
-          Object {
             "borderColor": "rgb(230, 228, 235)",
-          },
-          Object {
             "borderRadius": 40,
           },
           Object {
@@ -175,11 +171,7 @@ exports[`iOS BpkNudger should disable theming if the required attribute is omitt
           null,
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
-          },
-          Object {
             "borderColor": "rgb(230, 228, 235)",
-          },
-          Object {
             "borderRadius": 40,
           },
           Object {
@@ -296,11 +288,7 @@ exports[`iOS BpkNudger should render correctly 1`] = `
           null,
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
-          },
-          Object {
             "borderColor": "rgb(230, 228, 235)",
-          },
-          Object {
             "borderRadius": 40,
           },
           Object {
@@ -424,11 +412,7 @@ exports[`iOS BpkNudger should render correctly 1`] = `
           null,
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
-          },
-          Object {
             "borderColor": "rgb(230, 228, 235)",
-          },
-          Object {
             "borderRadius": 40,
           },
           Object {
@@ -546,11 +530,7 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
           null,
           Object {
             "backgroundColor": "rgb(230, 228, 235)",
-          },
-          Object {
             "borderColor": "rgb(230, 228, 235)",
-          },
-          Object {
             "borderRadius": 40,
           },
           Object {
@@ -674,11 +654,7 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
           null,
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
-          },
-          Object {
             "borderColor": "rgb(230, 228, 235)",
-          },
-          Object {
             "borderRadius": 40,
           },
           Object {
@@ -795,11 +771,7 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
           null,
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
-          },
-          Object {
             "borderColor": "rgb(230, 228, 235)",
-          },
-          Object {
             "borderRadius": 40,
           },
           Object {
@@ -924,11 +896,7 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
           null,
           Object {
             "backgroundColor": "rgb(230, 228, 235)",
-          },
-          Object {
             "borderColor": "rgb(230, 228, 235)",
-          },
-          Object {
             "borderRadius": 40,
           },
           Object {
@@ -1046,11 +1014,7 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
           null,
           Object {
             "backgroundColor": "rgb(230, 228, 235)",
-          },
-          Object {
             "borderColor": "rgb(230, 228, 235)",
-          },
-          Object {
             "borderRadius": 40,
           },
           Object {
@@ -1174,11 +1138,7 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
           null,
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
-          },
-          Object {
             "borderColor": "rgb(230, 228, 235)",
-          },
-          Object {
             "borderRadius": 40,
           },
           Object {
@@ -1295,11 +1255,7 @@ exports[`iOS BpkNudger should support theming 1`] = `
           null,
           Object {
             "backgroundColor": "yellow",
-          },
-          Object {
             "borderColor": "blue",
-          },
-          Object {
             "borderRadius": 40,
           },
           Object {
@@ -1423,11 +1379,7 @@ exports[`iOS BpkNudger should support theming 1`] = `
           null,
           Object {
             "backgroundColor": "yellow",
-          },
-          Object {
             "borderColor": "blue",
-          },
-          Object {
             "borderRadius": 40,
           },
           Object {

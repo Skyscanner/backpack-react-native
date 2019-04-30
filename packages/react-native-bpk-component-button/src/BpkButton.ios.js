@@ -20,23 +20,11 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import BpkIcon from 'react-native-bpk-component-icon';
 import {
   getThemeAttributes,
   withTheme,
   type Theme,
 } from 'react-native-bpk-theming';
-import {
-  colorBlue500,
-  colorGray100,
-  colorGray300,
-  colorGreen500,
-  colorGreen600,
-  colorPink500,
-  colorPink600,
-  colorRed500,
-  colorWhite,
-} from 'bpk-tokens/tokens/base.react.native';
 
 import BpkGradientButton from './BpkGradientButton.ios';
 import BpkBorderedButton from './BpkBorderedButton.ios';
@@ -50,143 +38,51 @@ import {
   ICON_ALIGNMENTS,
   REQUIRED_THEME_ATTRIBUTES,
 } from './common-types';
+import {
+  borderColorForType,
+  gradientColorForType,
+  textColorForType,
+  backgroundColorForType,
+} from './color-functions';
 
 export type Props = {
   ...$Exact<CommonProps>,
   large: boolean,
 };
 
-const backgroundColors = {
-  disabled: colorGray100,
-  [BUTTON_TYPES.secondary]: colorWhite,
-  [BUTTON_TYPES.destructive]: colorWhite,
-};
-
-const borderColors = {
-  disabled: colorGray100,
-  [BUTTON_TYPES.secondary]: colorGray100,
-  [BUTTON_TYPES.destructive]: colorGray100,
-};
-
-const gradientColors = {
-  [BUTTON_TYPES.primary]: { start: colorGreen500, end: colorGreen600 },
-  [BUTTON_TYPES.featured]: { start: colorPink500, end: colorPink600 },
-};
-
-const textColors = {
-  [BUTTON_TYPES.primary]: colorWhite,
-  [BUTTON_TYPES.featured]: colorWhite,
-  [BUTTON_TYPES.secondary]: colorBlue500,
-  [BUTTON_TYPES.destructive]: colorRed500,
-  disabled: colorGray300,
-};
-
-const getButtonComponent = (type: ButtonType) => {
+const buttonComponentForType = (type: ButtonType) => {
   if (type === BUTTON_TYPES.primary || type === BUTTON_TYPES.featured) {
     return BpkGradientButton;
   }
   return BpkBorderedButton;
 };
 
-const getButtonColors = (
+const buttonColorsForType = (
   type: ButtonType,
   themeAttributes: ?Theme,
   disabled: boolean,
 ) => {
-  if (type === BUTTON_TYPES.primary) {
-    if (disabled) {
-      return {
-        gradientStartColor: backgroundColors.disabled,
-        gradientEndColor: backgroundColors.disabled,
-      };
-    }
-    return themeAttributes
-      ? {
-          gradientStartColor: themeAttributes.buttonPrimaryGradientStartColor,
-          gradientEndColor: themeAttributes.buttonPrimaryGradientEndColor,
-        }
-      : {
-          gradientStartColor: gradientColors.primary.start,
-          gradientEndColor: gradientColors.primary.end,
-        };
-  }
-  if (type === BUTTON_TYPES.featured) {
-    if (disabled) {
-      return {
-        gradientStartColor: backgroundColors.disabled,
-        gradientEndColor: backgroundColors.disabled,
-      };
-    }
-    return themeAttributes
-      ? {
-          gradientStartColor: themeAttributes.buttonFeaturedGradientStartColor,
-          gradientEndColor: themeAttributes.buttonFeaturedGradientEndColor,
-        }
-      : {
-          gradientStartColor: gradientColors.featured.start,
-          gradientEndColor: gradientColors.featured.end,
-        };
-  }
-  if (type === BUTTON_TYPES.secondary) {
-    if (disabled) {
-      return {
-        backgroundColor: backgroundColors.disabled,
-        borderColor: borderColors.disabled,
-      };
-    }
-    return themeAttributes
-      ? {
-          backgroundColor: themeAttributes.buttonSecondaryBackgroundColor,
-          borderColor: themeAttributes.buttonSecondaryBorderColor,
-        }
-      : {
-          backgroundColor: backgroundColors.secondary,
-          borderColor: borderColors.secondary,
-        };
-  }
-  if (disabled) {
+  if (type === BUTTON_TYPES.primary || type === BUTTON_TYPES.featured) {
     return {
-      backgroundColor: backgroundColors.disabled,
-      borderColor: borderColors.disabled,
+      gradientStartColor: gradientColorForType(
+        'start',
+        type,
+        themeAttributes,
+        disabled,
+      ),
+      gradientEndColor: gradientColorForType(
+        'end',
+        type,
+        themeAttributes,
+        disabled,
+      ),
     };
   }
-  return themeAttributes
-    ? {
-        backgroundColor: themeAttributes.buttonDestructiveBackgroundColor,
-        borderColor: themeAttributes.buttonDestructiveBorderColor,
-      }
-    : {
-        backgroundColor: backgroundColors.destructive,
-        borderColor: borderColors.destructive,
-      };
-};
 
-const getTextColor = (
-  type: ButtonType,
-  themeAttributes: ?Theme,
-  disabled: boolean,
-) => {
-  if (disabled) {
-    return textColors.disabled;
-  }
-  switch (type) {
-    case BUTTON_TYPES.primary:
-      return themeAttributes
-        ? themeAttributes.buttonPrimaryTextColor
-        : textColors.primary;
-    case BUTTON_TYPES.featured:
-      return themeAttributes
-        ? themeAttributes.buttonFeaturedTextColor
-        : textColors.featured;
-    case BUTTON_TYPES.secondary:
-      return themeAttributes
-        ? themeAttributes.buttonSecondaryTextColor
-        : textColors.secondary;
-    default:
-      return themeAttributes
-        ? themeAttributes.buttonDestructiveTextColor
-        : textColors.destructive;
-  }
+  return {
+    backgroundColor: backgroundColorForType(type, themeAttributes, disabled),
+    borderColor: borderColorForType(type, themeAttributes, disabled),
+  };
 };
 
 const BpkButton = (props: Props) => {
@@ -216,40 +112,33 @@ const BpkButton = (props: Props) => {
     theme,
   );
 
-  const ButtonComponent = getButtonComponent(type);
-  const buttonColors = getButtonColors(type, themeAttributes, disabled);
-  const textColor = getTextColor(type, themeAttributes, disabled);
-
   const accessibilityTraits = ['button'];
   if (disabled) {
     accessibilityTraits.push('disabled');
   }
 
-  // Icons can be passed in as a string or a BpkIcon. This normalises it
-  // so the inner component is always given a BpkIcon.
-  const iconFinal =
-    typeof icon === 'string' ? <BpkIcon icon={icon} small={!large} /> : icon;
+  const ButtonComponent = buttonComponentForType(type);
 
   return (
     <ButtonComponent
       disabled={disabled}
       title={title}
-      icon={iconFinal}
+      icon={icon}
       iconOnly={iconOnly}
       large={large}
       iconTrailing={iconAlignment === ICON_ALIGNMENTS.trailing}
       accessibilityComponentType="button"
       accessibilityLabel={accessibilityLabel || title}
       accessibilityTraits={accessibilityTraits}
-      {...buttonColors}
+      {...buttonColorsForType(type, themeAttributes, disabled)}
       {...rest}
     >
       <BpkButtonInner
-        icon={iconFinal}
+        icon={icon}
         iconOnly={iconOnly}
         iconTrailing={iconAlignment === ICON_ALIGNMENTS.trailing}
         large={large}
-        textColor={textColor}
+        textColor={textColorForType(type, themeAttributes, disabled)}
         title={title}
       />
     </ButtonComponent>

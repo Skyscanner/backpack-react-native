@@ -64,7 +64,7 @@ export type Props = {
   icon: ?Element<typeof BpkIcon>,
 };
 
-const BpkGradientButton = (props: Props) => {
+const BpkStandardButton = (props: Props) => {
   const {
     children,
     disabled,
@@ -79,8 +79,7 @@ const BpkGradientButton = (props: Props) => {
   const borderRadius = borderRadiusPill;
 
   const wrapperStyle = [styles.wrapper, userStyle];
-
-  const buttonStyle = [styles.button, { borderRadius }, { backgroundColor }];
+  const buttonStyle = [styles.button, { borderRadius, backgroundColor }];
 
   if (iconTrailing) {
     buttonStyle.push(styles.buttonIconTrailing);
@@ -103,4 +102,4 @@ const BpkGradientButton = (props: Props) => {
   );
 };
 
-export default BpkGradientButton;
+export default BpkStandardButton;

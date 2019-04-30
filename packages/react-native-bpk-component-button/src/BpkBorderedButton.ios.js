@@ -18,9 +18,8 @@
 
 /* @flow */
 
-import React, { type Element, type ElementProps, type Node } from 'react';
+import React, { type ElementProps, type Node } from 'react';
 import { StyleSheet, View } from 'react-native';
-import BpkIcon from 'react-native-bpk-component-icon';
 import BpkTouchableOverlay from 'react-native-bpk-component-touchable-overlay';
 import {
   borderRadiusPill,
@@ -29,6 +28,8 @@ import {
   spacingMd,
   spacingBase,
 } from 'bpk-tokens/tokens/base.react.native';
+
+import { type IconType } from './common-types';
 
 type ViewProps = ElementProps<typeof View>;
 type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
@@ -67,7 +68,7 @@ export type Props = {
   large: boolean,
   style: ViewStyleProp,
   title: string,
-  icon: ?Element<typeof BpkIcon>,
+  icon: ?IconType,
 };
 
 const BpkBorderedButton = (props: Props) => {
@@ -88,9 +89,11 @@ const BpkBorderedButton = (props: Props) => {
   const buttonStyle = [
     styles.button,
     large ? styles.buttonLarge : null,
-    { backgroundColor },
-    { borderColor },
-    { borderRadius },
+    {
+      backgroundColor,
+      borderColor,
+      borderRadius,
+    },
   ];
 
   if (iconTrailing) {

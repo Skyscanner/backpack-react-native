@@ -349,11 +349,7 @@ exports[`iOS BpkButton should render correctly with type="destructive" 1`] = `
         null,
         Object {
           "backgroundColor": "rgb(255, 255, 255)",
-        },
-        Object {
           "borderColor": "rgb(230, 228, 235)",
-        },
-        Object {
           "borderRadius": 40,
         },
         Object {
@@ -439,11 +435,7 @@ exports[`iOS BpkButton should render correctly with type="destructive" and disab
         null,
         Object {
           "backgroundColor": "rgb(230, 228, 235)",
-        },
-        Object {
           "borderColor": "rgb(230, 228, 235)",
-        },
-        Object {
           "borderRadius": 40,
         },
         Object {
@@ -882,11 +874,7 @@ exports[`iOS BpkButton should render correctly with type="secondary" 1`] = `
         null,
         Object {
           "backgroundColor": "rgb(255, 255, 255)",
-        },
-        Object {
           "borderColor": "rgb(230, 228, 235)",
-        },
-        Object {
           "borderRadius": 40,
         },
         Object {
@@ -972,11 +960,7 @@ exports[`iOS BpkButton should render correctly with type="secondary" and disable
         null,
         Object {
           "backgroundColor": "rgb(230, 228, 235)",
-        },
-        Object {
           "borderColor": "rgb(230, 228, 235)",
-        },
-        Object {
           "borderRadius": 40,
         },
         Object {
@@ -1088,20 +1072,23 @@ exports[`iOS BpkButton should support elements as icons 1`] = `
           },
           Object {},
           Array [
-            Object {
-              "marginEnd": 4,
-            },
-            Object {
-              "color": "rgb(255, 255, 255)",
-            },
-            Object {
-              "marginEnd": 0,
-              "marginStart": 4,
-            },
-            Object {
-              "marginEnd": 0,
-              "marginStart": 0,
-            },
+            undefined,
+            Array [
+              Object {
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 4,
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 0,
+              },
+            ],
           ],
         ]
       }
@@ -1684,11 +1671,7 @@ exports[`iOS BpkButton should support the "secondary" property 1`] = `
         null,
         Object {
           "backgroundColor": "rgb(255, 255, 255)",
-        },
-        Object {
           "borderColor": "rgb(230, 228, 235)",
-        },
-        Object {
           "borderRadius": 40,
         },
         Object {
@@ -2086,11 +2069,7 @@ exports[`iOS should support the "large" and secondary property 1`] = `
         },
         Object {
           "backgroundColor": "rgb(255, 255, 255)",
-        },
-        Object {
           "borderColor": "rgb(230, 228, 235)",
-        },
-        Object {
           "borderRadius": 40,
         },
         Object {
