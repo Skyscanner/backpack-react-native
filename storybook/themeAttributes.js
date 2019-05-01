@@ -52,7 +52,7 @@ const themeAttributes = {
   buttonSecondaryBorderColor: theme.contentColor,
   buttonDestructiveBackgroundColor: theme.brandColors.gradientStart,
   buttonDestructiveTextColor: theme.backgroundColor,
-  buttonDestructiveBorderColor: theme.contentColor,
+  buttonDestructiveBorderColor: theme.brandColors.gradientStart,
   buttonFeaturedGradientStartColor: theme.contentColor,
   buttonFeaturedGradientEndColor: theme.brandColors.gradientStart,
   buttonFeaturedTextColor: theme.backgroundColor,

@@ -4,16 +4,11 @@ exports[`Android API levels Android API<21 should render without ripple 1`] = `
 <View
   style={
     Array [
-      Array [
-        Object {
-          "borderRadius": 40,
-          "overflow": "hidden",
-        },
-      ],
-      null,
       Object {
-        "backgroundColor": "rgb(0, 215, 117)",
+        "borderRadius": 40,
+        "overflow": "hidden",
       },
+      null,
     ]
   }
 >
@@ -35,18 +30,19 @@ exports[`Android API levels Android API<21 should render without ripple 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-        ],
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
         Object {
           "backgroundColor": "rgb(0, 215, 117)",
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
         },
       ]
     }
@@ -64,14 +60,9 @@ exports[`Android API levels Android API<21 should render without ripple 1`] = `
           Object {
             "fontFamily": "sans-serif-medium",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
         ]
       }
     >
@@ -85,16 +76,11 @@ exports[`Android API levels Android API>=21 should render with ripple 1`] = `
 <View
   style={
     Array [
-      Array [
-        Object {
-          "borderRadius": 40,
-          "overflow": "hidden",
-        },
-      ],
-      null,
       Object {
-        "backgroundColor": "rgb(0, 215, 117)",
+        "borderRadius": 40,
+        "overflow": "hidden",
       },
+      null,
     ]
   }
 >
@@ -117,18 +103,19 @@ exports[`Android API levels Android API>=21 should render with ripple 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-        ],
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
         Object {
           "backgroundColor": "rgb(0, 215, 117)",
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
         },
       ]
     }
@@ -146,14 +133,9 @@ exports[`Android API levels Android API>=21 should render with ripple 1`] = `
           Object {
             "fontFamily": "sans-serif-medium",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
         ]
       }
     >
@@ -167,16 +149,11 @@ exports[`Android BpkButton should render correctly 1`] = `
 <View
   style={
     Array [
-      Array [
-        Object {
-          "borderRadius": 40,
-          "overflow": "hidden",
-        },
-      ],
-      null,
       Object {
-        "backgroundColor": "rgb(0, 215, 117)",
+        "borderRadius": 40,
+        "overflow": "hidden",
       },
+      null,
     ]
   }
 >
@@ -199,18 +176,19 @@ exports[`Android BpkButton should render correctly 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-        ],
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
         Object {
           "backgroundColor": "rgb(0, 215, 117)",
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
         },
       ]
     }
@@ -228,14 +206,9 @@ exports[`Android BpkButton should render correctly 1`] = `
           Object {
             "fontFamily": "sans-serif-medium",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
         ]
       }
     >
@@ -249,17 +222,11 @@ exports[`Android BpkButton should render correctly with iconAlignment="leading" 
 <View
   style={
     Array [
-      Array [
-        Object {
-          "borderRadius": 40,
-          "overflow": "hidden",
-        },
-        undefined,
-      ],
-      null,
       Object {
-        "backgroundColor": "rgb(0, 215, 117)",
+        "borderRadius": 40,
+        "overflow": "hidden",
       },
+      null,
     ]
   }
 >
@@ -282,52 +249,20 @@ exports[`Android BpkButton should render correctly with iconAlignment="leading" 
     onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-          Object {
-            "flexDirection": "row-reverse",
-          },
-        ],
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
         Object {
           "backgroundColor": "rgb(0, 215, 117)",
+          "borderRadius": 40,
         },
       ]
     }
   >
-    <Text
-      style={
-        Array [
-          Object {
-            "color": "rgb(82, 76, 97)",
-            "fontFamily": "sans-serif",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "letterSpacing": 0,
-          },
-          Object {
-            "fontFamily": "sans-serif-medium",
-          },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              undefined,
-            ],
-            Object {},
-          ],
-        ]
-      }
-    >
-      LOREM IPSUM
-    </Text>
     <Text
       allowFontScaling={false}
       style={
@@ -342,27 +277,38 @@ exports[`Android BpkButton should render correctly with iconAlignment="leading" 
             "fontSize": 16,
           },
           Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              undefined,
-            ],
-            Object {},
-            Array [
-              Object {
-                "marginStart": 4,
-              },
-              Object {
-                "marginEnd": 4,
-                "marginStart": 0,
-              },
-            ],
+            Object {
+              "marginEnd": 4,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
           ],
         ]
       }
     >
       
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
+        ]
+      }
+    >
+      LOREM IPSUM
     </Text>
   </View>
 </View>
@@ -372,16 +318,11 @@ exports[`Android BpkButton should render correctly with iconAlignment="trailing"
 <View
   style={
     Array [
-      Array [
-        Object {
-          "borderRadius": 40,
-          "overflow": "hidden",
-        },
-      ],
-      null,
       Object {
-        "backgroundColor": "rgb(0, 215, 117)",
+        "borderRadius": 40,
+        "overflow": "hidden",
       },
+      null,
     ]
   }
 >
@@ -404,48 +345,23 @@ exports[`Android BpkButton should render correctly with iconAlignment="trailing"
     onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-        ],
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
         Object {
           "backgroundColor": "rgb(0, 215, 117)",
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
         },
       ]
     }
   >
-    <Text
-      style={
-        Array [
-          Object {
-            "color": "rgb(82, 76, 97)",
-            "fontFamily": "sans-serif",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "letterSpacing": 0,
-          },
-          Object {
-            "fontFamily": "sans-serif-medium",
-          },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-            Object {},
-          ],
-        ]
-      }
-    >
-      LOREM IPSUM
-    </Text>
     <Text
       allowFontScaling={false}
       style={
@@ -460,22 +376,42 @@ exports[`Android BpkButton should render correctly with iconAlignment="trailing"
             "fontSize": 16,
           },
           Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-            Object {},
-            Array [
-              Object {
-                "marginStart": 4,
-              },
-            ],
+            Object {
+              "marginEnd": 4,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "marginEnd": 0,
+              "marginStart": 4,
+            },
           ],
         ]
       }
     >
       
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
+        ]
+      }
+    >
+      LOREM IPSUM
     </Text>
   </View>
 </View>
@@ -485,16 +421,11 @@ exports[`Android BpkButton should render correctly with type="destructive" 1`] =
 <View
   style={
     Array [
-      Array [
-        Object {
-          "borderRadius": 40,
-          "overflow": "hidden",
-        },
-      ],
-      null,
       Object {
-        "backgroundColor": "rgb(255, 255, 255)",
+        "borderRadius": 40,
+        "overflow": "hidden",
       },
+      null,
     ]
   }
 >
@@ -517,24 +448,21 @@ exports[`Android BpkButton should render correctly with type="destructive" 1`] =
     onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-          Object {
-            "borderColor": "rgb(230, 228, 235)",
-            "borderWidth": 2,
-            "paddingHorizontal": 10,
-            "paddingVertical": 6,
-          },
-        ],
+        Object {
+          "alignItems": "center",
+          "borderRadius": 40,
+          "borderWidth": 2,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 10,
+          "paddingVertical": 6,
+        },
         Object {
           "backgroundColor": "rgb(255, 255, 255)",
+          "borderColor": "rgb(230, 228, 235)",
+        },
+        Object {
+          "flexDirection": "row-reverse",
         },
       ]
     }
@@ -552,17 +480,9 @@ exports[`Android BpkButton should render correctly with type="destructive" 1`] =
           Object {
             "fontFamily": "sans-serif-medium",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(255, 84, 82)",
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(255, 84, 82)",
+          },
         ]
       }
     >
@@ -576,17 +496,11 @@ exports[`Android BpkButton should render correctly with type="destructive" and d
 <View
   style={
     Array [
-      Array [
-        Object {
-          "borderRadius": 40,
-          "overflow": "hidden",
-        },
-        undefined,
-      ],
-      null,
       Object {
-        "backgroundColor": "rgb(230, 228, 235)",
+        "borderRadius": 40,
+        "overflow": "hidden",
       },
+      null,
     ]
   }
 >
@@ -609,25 +523,21 @@ exports[`Android BpkButton should render correctly with type="destructive" and d
     onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-          Object {
-            "borderColor": "rgb(230, 228, 235)",
-            "borderWidth": 2,
-            "paddingHorizontal": 10,
-            "paddingVertical": 6,
-          },
-          undefined,
-        ],
+        Object {
+          "alignItems": "center",
+          "borderRadius": 40,
+          "borderWidth": 2,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 10,
+          "paddingVertical": 6,
+        },
         Object {
           "backgroundColor": "rgb(230, 228, 235)",
+          "borderColor": "rgb(230, 228, 235)",
+        },
+        Object {
+          "flexDirection": "row-reverse",
         },
       ]
     }
@@ -645,20 +555,9 @@ exports[`Android BpkButton should render correctly with type="destructive" and d
           Object {
             "fontFamily": "sans-serif-medium",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(255, 84, 82)",
-              },
-              Object {
-                "color": "rgb(178, 174, 189)",
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(178, 174, 189)",
+          },
         ]
       }
     >
@@ -672,16 +571,11 @@ exports[`Android BpkButton should render correctly with type="featured" 1`] = `
 <View
   style={
     Array [
-      Array [
-        Object {
-          "borderRadius": 40,
-          "overflow": "hidden",
-        },
-      ],
-      null,
       Object {
-        "backgroundColor": "rgb(250, 72, 138)",
+        "borderRadius": 40,
+        "overflow": "hidden",
       },
+      null,
     ]
   }
 >
@@ -704,18 +598,19 @@ exports[`Android BpkButton should render correctly with type="featured" 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-        ],
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
         Object {
           "backgroundColor": "rgb(250, 72, 138)",
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
         },
       ]
     }
@@ -733,14 +628,9 @@ exports[`Android BpkButton should render correctly with type="featured" 1`] = `
           Object {
             "fontFamily": "sans-serif-medium",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
         ]
       }
     >
@@ -754,17 +644,11 @@ exports[`Android BpkButton should render correctly with type="featured" and disa
 <View
   style={
     Array [
-      Array [
-        Object {
-          "borderRadius": 40,
-          "overflow": "hidden",
-        },
-        undefined,
-      ],
-      null,
       Object {
-        "backgroundColor": "rgb(230, 228, 235)",
+        "borderRadius": 40,
+        "overflow": "hidden",
       },
+      null,
     ]
   }
 >
@@ -787,19 +671,19 @@ exports[`Android BpkButton should render correctly with type="featured" and disa
     onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-          undefined,
-        ],
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
         Object {
           "backgroundColor": "rgb(230, 228, 235)",
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
         },
       ]
     }
@@ -817,17 +701,9 @@ exports[`Android BpkButton should render correctly with type="featured" and disa
           Object {
             "fontFamily": "sans-serif-medium",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(178, 174, 189)",
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(178, 174, 189)",
+          },
         ]
       }
     >
@@ -841,16 +717,11 @@ exports[`Android BpkButton should render correctly with type="primary" 1`] = `
 <View
   style={
     Array [
-      Array [
-        Object {
-          "borderRadius": 40,
-          "overflow": "hidden",
-        },
-      ],
-      null,
       Object {
-        "backgroundColor": "rgb(0, 215, 117)",
+        "borderRadius": 40,
+        "overflow": "hidden",
       },
+      null,
     ]
   }
 >
@@ -873,18 +744,19 @@ exports[`Android BpkButton should render correctly with type="primary" 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-        ],
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
         Object {
           "backgroundColor": "rgb(0, 215, 117)",
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
         },
       ]
     }
@@ -902,14 +774,9 @@ exports[`Android BpkButton should render correctly with type="primary" 1`] = `
           Object {
             "fontFamily": "sans-serif-medium",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
         ]
       }
     >
@@ -923,17 +790,11 @@ exports[`Android BpkButton should render correctly with type="primary" and disab
 <View
   style={
     Array [
-      Array [
-        Object {
-          "borderRadius": 40,
-          "overflow": "hidden",
-        },
-        undefined,
-      ],
-      null,
       Object {
-        "backgroundColor": "rgb(230, 228, 235)",
+        "borderRadius": 40,
+        "overflow": "hidden",
       },
+      null,
     ]
   }
 >
@@ -956,19 +817,19 @@ exports[`Android BpkButton should render correctly with type="primary" and disab
     onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-          undefined,
-        ],
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
         Object {
           "backgroundColor": "rgb(230, 228, 235)",
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
         },
       ]
     }
@@ -986,17 +847,9 @@ exports[`Android BpkButton should render correctly with type="primary" and disab
           Object {
             "fontFamily": "sans-serif-medium",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(178, 174, 189)",
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(178, 174, 189)",
+          },
         ]
       }
     >
@@ -1010,16 +863,11 @@ exports[`Android BpkButton should render correctly with type="secondary" 1`] = `
 <View
   style={
     Array [
-      Array [
-        Object {
-          "borderRadius": 40,
-          "overflow": "hidden",
-        },
-      ],
-      null,
       Object {
-        "backgroundColor": "rgb(255, 255, 255)",
+        "borderRadius": 40,
+        "overflow": "hidden",
       },
+      null,
     ]
   }
 >
@@ -1042,24 +890,21 @@ exports[`Android BpkButton should render correctly with type="secondary" 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-          Object {
-            "borderColor": "rgb(230, 228, 235)",
-            "borderWidth": 2,
-            "paddingHorizontal": 10,
-            "paddingVertical": 6,
-          },
-        ],
+        Object {
+          "alignItems": "center",
+          "borderRadius": 40,
+          "borderWidth": 2,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 10,
+          "paddingVertical": 6,
+        },
         Object {
           "backgroundColor": "rgb(255, 255, 255)",
+          "borderColor": "rgb(230, 228, 235)",
+        },
+        Object {
+          "flexDirection": "row-reverse",
         },
       ]
     }
@@ -1077,17 +922,9 @@ exports[`Android BpkButton should render correctly with type="secondary" 1`] = `
           Object {
             "fontFamily": "sans-serif-medium",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(0, 178, 214)",
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(0, 178, 214)",
+          },
         ]
       }
     >
@@ -1101,17 +938,11 @@ exports[`Android BpkButton should render correctly with type="secondary" and dis
 <View
   style={
     Array [
-      Array [
-        Object {
-          "borderRadius": 40,
-          "overflow": "hidden",
-        },
-        undefined,
-      ],
-      null,
       Object {
-        "backgroundColor": "rgb(230, 228, 235)",
+        "borderRadius": 40,
+        "overflow": "hidden",
       },
+      null,
     ]
   }
 >
@@ -1134,25 +965,21 @@ exports[`Android BpkButton should render correctly with type="secondary" and dis
     onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-          Object {
-            "borderColor": "rgb(230, 228, 235)",
-            "borderWidth": 2,
-            "paddingHorizontal": 10,
-            "paddingVertical": 6,
-          },
-          undefined,
-        ],
+        Object {
+          "alignItems": "center",
+          "borderRadius": 40,
+          "borderWidth": 2,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 10,
+          "paddingVertical": 6,
+        },
         Object {
           "backgroundColor": "rgb(230, 228, 235)",
+          "borderColor": "rgb(230, 228, 235)",
+        },
+        Object {
+          "flexDirection": "row-reverse",
         },
       ]
     }
@@ -1170,20 +997,9 @@ exports[`Android BpkButton should render correctly with type="secondary" and dis
           Object {
             "fontFamily": "sans-serif-medium",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(0, 178, 214)",
-              },
-              Object {
-                "color": "rgb(178, 174, 189)",
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(178, 174, 189)",
+          },
         ]
       }
     >
@@ -1197,17 +1013,11 @@ exports[`Android BpkButton should support elements as icons 1`] = `
 <View
   style={
     Array [
-      Array [
-        Object {
-          "borderRadius": 40,
-          "overflow": "hidden",
-        },
-        undefined,
-      ],
-      null,
       Object {
-        "backgroundColor": "rgb(0, 215, 117)",
+        "borderRadius": 40,
+        "overflow": "hidden",
       },
+      null,
     ]
   }
 >
@@ -1230,22 +1040,22 @@ exports[`Android BpkButton should support elements as icons 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-          Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 8,
-          },
-        ],
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
         Object {
           "backgroundColor": "rgb(0, 215, 117)",
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
+        Object {
+          "paddingHorizontal": 10,
         },
       ]
     }
@@ -1261,6 +1071,25 @@ exports[`Android BpkButton should support elements as icons 1`] = `
             "letterSpacing": -0.2,
           },
           Object {},
+          Array [
+            undefined,
+            Array [
+              Object {
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 4,
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 0,
+              },
+            ],
+          ],
         ]
       }
     >
@@ -1274,16 +1103,11 @@ exports[`Android BpkButton should support having an icon as well as a title 1`] 
 <View
   style={
     Array [
-      Array [
-        Object {
-          "borderRadius": 40,
-          "overflow": "hidden",
-        },
-      ],
-      null,
       Object {
-        "backgroundColor": "rgb(0, 215, 117)",
+        "borderRadius": 40,
+        "overflow": "hidden",
       },
+      null,
     ]
   }
 >
@@ -1306,48 +1130,23 @@ exports[`Android BpkButton should support having an icon as well as a title 1`] 
     onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-        ],
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
         Object {
           "backgroundColor": "rgb(0, 215, 117)",
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
         },
       ]
     }
   >
-    <Text
-      style={
-        Array [
-          Object {
-            "color": "rgb(82, 76, 97)",
-            "fontFamily": "sans-serif",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "letterSpacing": 0,
-          },
-          Object {
-            "fontFamily": "sans-serif-medium",
-          },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-            Object {},
-          ],
-        ]
-      }
-    >
-      LOREM IPSUM
-    </Text>
     <Text
       allowFontScaling={false}
       style={
@@ -1362,22 +1161,42 @@ exports[`Android BpkButton should support having an icon as well as a title 1`] 
             "fontSize": 16,
           },
           Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-            Object {},
-            Array [
-              Object {
-                "marginStart": 4,
-              },
-            ],
+            Object {
+              "marginEnd": 4,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "marginEnd": 0,
+              "marginStart": 4,
+            },
           ],
         ]
       }
     >
       
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
+        ]
+      }
+    >
+      LOREM IPSUM
     </Text>
   </View>
 </View>
@@ -1387,17 +1206,12 @@ exports[`Android BpkButton should support overwriting styles 1`] = `
 <View
   style={
     Array [
-      Array [
-        Object {
-          "borderRadius": 40,
-          "overflow": "hidden",
-        },
-      ],
       Object {
-        "width": 4,
+        "borderRadius": 40,
+        "overflow": "hidden",
       },
       Object {
-        "backgroundColor": "rgb(0, 215, 117)",
+        "width": 4,
       },
     ]
   }
@@ -1421,18 +1235,19 @@ exports[`Android BpkButton should support overwriting styles 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-        ],
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
         Object {
           "backgroundColor": "rgb(0, 215, 117)",
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
         },
       ]
     }
@@ -1450,14 +1265,9 @@ exports[`Android BpkButton should support overwriting styles 1`] = `
           Object {
             "fontFamily": "sans-serif-medium",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
         ]
       }
     >
@@ -1471,17 +1281,11 @@ exports[`Android BpkButton should support the "disabled" property 1`] = `
 <View
   style={
     Array [
-      Array [
-        Object {
-          "borderRadius": 40,
-          "overflow": "hidden",
-        },
-        undefined,
-      ],
-      null,
       Object {
-        "backgroundColor": "rgb(230, 228, 235)",
+        "borderRadius": 40,
+        "overflow": "hidden",
       },
+      null,
     ]
   }
 >
@@ -1504,19 +1308,19 @@ exports[`Android BpkButton should support the "disabled" property 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-          undefined,
-        ],
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
         Object {
           "backgroundColor": "rgb(230, 228, 235)",
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
         },
       ]
     }
@@ -1534,17 +1338,9 @@ exports[`Android BpkButton should support the "disabled" property 1`] = `
           Object {
             "fontFamily": "sans-serif-medium",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(178, 174, 189)",
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(178, 174, 189)",
+          },
         ]
       }
     >
@@ -1558,16 +1354,11 @@ exports[`Android BpkButton should support the "icon" property 1`] = `
 <View
   style={
     Array [
-      Array [
-        Object {
-          "borderRadius": 40,
-          "overflow": "hidden",
-        },
-      ],
-      null,
       Object {
-        "backgroundColor": "rgb(0, 215, 117)",
+        "borderRadius": 40,
+        "overflow": "hidden",
       },
+      null,
     ]
   }
 >
@@ -1590,22 +1381,53 @@ exports[`Android BpkButton should support the "icon" property 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-        ],
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
         Object {
           "backgroundColor": "rgb(0, 215, 117)",
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
         },
       ]
     }
   >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "marginEnd": 4,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "marginEnd": 0,
+              "marginStart": 4,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
     <Text
       style={
         Array [
@@ -1619,49 +1441,13 @@ exports[`Android BpkButton should support the "icon" property 1`] = `
           Object {
             "fontFamily": "sans-serif-medium",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
         ]
       }
     >
       LOREM IPSUM
-    </Text>
-    <Text
-      allowFontScaling={false}
-      style={
-        Array [
-          Object {
-            "color": "rgb(82, 76, 97)",
-            "fontFamily": "BpkIcon",
-            "fontSize": 24,
-            "includeFontPadding": false,
-          },
-          Object {
-            "fontSize": 16,
-          },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-            Object {},
-            Array [
-              Object {
-                "marginStart": 4,
-              },
-            ],
-          ],
-        ]
-      }
-    >
-      
     </Text>
   </View>
 </View>
@@ -1671,17 +1457,11 @@ exports[`Android BpkButton should support the "iconOnly" property 1`] = `
 <View
   style={
     Array [
-      Array [
-        Object {
-          "borderRadius": 40,
-          "overflow": "hidden",
-        },
-        undefined,
-      ],
-      null,
       Object {
-        "backgroundColor": "rgb(0, 215, 117)",
+        "borderRadius": 40,
+        "overflow": "hidden",
       },
+      null,
     ]
   }
 >
@@ -1704,22 +1484,22 @@ exports[`Android BpkButton should support the "iconOnly" property 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-          Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 8,
-          },
-        ],
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
         Object {
           "backgroundColor": "rgb(0, 215, 117)",
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
+        Object {
+          "paddingHorizontal": 10,
         },
       ]
     }
@@ -1738,21 +1518,20 @@ exports[`Android BpkButton should support the "iconOnly" property 1`] = `
             "fontSize": 16,
           },
           Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              undefined,
-            ],
-            Object {},
-            Array [
-              Object {
-                "marginStart": 4,
-              },
-              Object {
-                "marginStart": 0,
-              },
-            ],
+            Object {
+              "marginEnd": 4,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "marginEnd": 0,
+              "marginStart": 4,
+            },
+            Object {
+              "marginEnd": 0,
+              "marginStart": 0,
+            },
           ],
         ]
       }
@@ -1767,16 +1546,11 @@ exports[`Android BpkButton should support the "secondary" property 1`] = `
 <View
   style={
     Array [
-      Array [
-        Object {
-          "borderRadius": 40,
-          "overflow": "hidden",
-        },
-      ],
-      null,
       Object {
-        "backgroundColor": "rgb(255, 255, 255)",
+        "borderRadius": 40,
+        "overflow": "hidden",
       },
+      null,
     ]
   }
 >
@@ -1799,24 +1573,21 @@ exports[`Android BpkButton should support the "secondary" property 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-          Object {
-            "borderColor": "rgb(230, 228, 235)",
-            "borderWidth": 2,
-            "paddingHorizontal": 10,
-            "paddingVertical": 6,
-          },
-        ],
+        Object {
+          "alignItems": "center",
+          "borderRadius": 40,
+          "borderWidth": 2,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 10,
+          "paddingVertical": 6,
+        },
         Object {
           "backgroundColor": "rgb(255, 255, 255)",
+          "borderColor": "rgb(230, 228, 235)",
+        },
+        Object {
+          "flexDirection": "row-reverse",
         },
       ]
     }
@@ -1834,17 +1605,9 @@ exports[`Android BpkButton should support the "secondary" property 1`] = `
           Object {
             "fontFamily": "sans-serif-medium",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(0, 178, 214)",
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(0, 178, 214)",
+          },
         ]
       }
     >
@@ -1858,16 +1621,11 @@ exports[`Android BpkButtonThemed should render correctly 1`] = `
 <View
   style={
     Array [
-      Array [
-        Object {
-          "borderRadius": 40,
-          "overflow": "hidden",
-        },
-      ],
-      null,
       Object {
-        "backgroundColor": "green",
+        "borderRadius": 40,
+        "overflow": "hidden",
       },
+      null,
     ]
   }
 >
@@ -1890,18 +1648,19 @@ exports[`Android BpkButtonThemed should render correctly 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-        ],
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
         Object {
           "backgroundColor": "green",
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
         },
       ]
     }
@@ -1919,16 +1678,9 @@ exports[`Android BpkButtonThemed should render correctly 1`] = `
           Object {
             "fontFamily": "sans-serif-medium",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-            Object {
-              "color": "red",
-            },
-          ],
+          Object {
+            "color": "red",
+          },
         ]
       }
     >

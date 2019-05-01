@@ -27,17 +27,20 @@ exports[`iOS BpkButton should render correctly 1`] = `
     }
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-        ],
-        Object {},
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
+        null,
+        Object {
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
       ]
     }
   >
@@ -54,14 +57,9 @@ exports[`iOS BpkButton should render correctly 1`] = `
           Object {
             "fontWeight": "600",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
         ]
       }
     >
@@ -117,50 +115,20 @@ exports[`iOS BpkButton should render correctly with iconAlignment="leading" 1`] 
     }
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-          Object {
-            "flexDirection": "row-reverse",
-          },
-        ],
-        Object {},
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
+        null,
+        Object {
+          "borderRadius": 40,
+        },
       ]
     }
   >
-    <Text
-      style={
-        Array [
-          Object {
-            "color": "rgb(82, 76, 97)",
-            "fontFamily": "System",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "letterSpacing": 0.154,
-          },
-          Object {
-            "fontWeight": "600",
-          },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              undefined,
-            ],
-            Object {},
-          ],
-        ]
-      }
-    >
-      Lorem ipsum
-    </Text>
     <Text
       allowFontScaling={false}
       style={
@@ -175,27 +143,38 @@ exports[`iOS BpkButton should render correctly with iconAlignment="leading" 1`] 
             "fontSize": 16,
           },
           Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              undefined,
-            ],
-            Object {},
-            Array [
-              Object {
-                "marginStart": 4,
-              },
-              Object {
-                "marginEnd": 4,
-                "marginStart": 0,
-              },
-            ],
+            Object {
+              "marginEnd": 4,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
           ],
         ]
       }
     >
       
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "System",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0.154,
+          },
+          Object {
+            "fontWeight": "600",
+          },
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
+        ]
+      }
+    >
+      Lorem ipsum
     </Text>
   </View>
   <View
@@ -247,46 +226,23 @@ exports[`iOS BpkButton should render correctly with iconAlignment="trailing" 1`]
     }
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-        ],
-        Object {},
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
+        null,
+        Object {
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
       ]
     }
   >
-    <Text
-      style={
-        Array [
-          Object {
-            "color": "rgb(82, 76, 97)",
-            "fontFamily": "System",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "letterSpacing": 0.154,
-          },
-          Object {
-            "fontWeight": "600",
-          },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-            Object {},
-          ],
-        ]
-      }
-    >
-      Lorem ipsum
-    </Text>
     <Text
       allowFontScaling={false}
       style={
@@ -301,22 +257,42 @@ exports[`iOS BpkButton should render correctly with iconAlignment="trailing" 1`]
             "fontSize": 16,
           },
           Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-            Object {},
-            Array [
-              Object {
-                "marginStart": 4,
-              },
-            ],
+            Object {
+              "marginEnd": 4,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "marginEnd": 0,
+              "marginStart": 4,
+            },
           ],
         ]
       }
     >
       
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "System",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0.154,
+          },
+          Object {
+            "fontWeight": "600",
+          },
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
+        ]
+      }
+    >
+      Lorem ipsum
     </Text>
   </View>
   <View
@@ -360,31 +336,25 @@ exports[`iOS BpkButton should render correctly with type="destructive" 1`] = `
   style={null}
 >
   <View
-    colors={
-      Array [
-        "rgb(255, 255, 255)",
-        "rgb(255, 255, 255)",
-      ]
-    }
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-          Object {
-            "borderColor": "rgb(230, 228, 235)",
-            "borderWidth": 2,
-            "paddingHorizontal": 10,
-            "paddingVertical": 6,
-          },
-        ],
-        Object {},
+        Object {
+          "alignItems": "center",
+          "borderWidth": 2,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 10,
+          "paddingVertical": 6,
+        },
+        null,
+        Object {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderColor": "rgb(230, 228, 235)",
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
       ]
     }
   >
@@ -401,17 +371,9 @@ exports[`iOS BpkButton should render correctly with type="destructive" 1`] = `
           Object {
             "fontWeight": "600",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(255, 84, 82)",
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(255, 84, 82)",
+          },
         ]
       }
     >
@@ -460,32 +422,25 @@ exports[`iOS BpkButton should render correctly with type="destructive" and disab
   style={null}
 >
   <View
-    colors={
-      Array [
-        "rgb(230, 228, 235)",
-        "rgb(230, 228, 235)",
-      ]
-    }
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-          Object {
-            "borderColor": "rgb(230, 228, 235)",
-            "borderWidth": 2,
-            "paddingHorizontal": 10,
-            "paddingVertical": 6,
-          },
-          undefined,
-        ],
-        Object {},
+        Object {
+          "alignItems": "center",
+          "borderWidth": 2,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 10,
+          "paddingVertical": 6,
+        },
+        null,
+        Object {
+          "backgroundColor": "rgb(230, 228, 235)",
+          "borderColor": "rgb(230, 228, 235)",
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
       ]
     }
   >
@@ -502,20 +457,9 @@ exports[`iOS BpkButton should render correctly with type="destructive" and disab
           Object {
             "fontWeight": "600",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(255, 84, 82)",
-              },
-              Object {
-                "color": "rgb(178, 174, 189)",
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(178, 174, 189)",
+          },
         ]
       }
     >
@@ -571,17 +515,20 @@ exports[`iOS BpkButton should render correctly with type="featured" 1`] = `
     }
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-        ],
-        Object {},
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
+        null,
+        Object {
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
       ]
     }
   >
@@ -598,14 +545,9 @@ exports[`iOS BpkButton should render correctly with type="featured" 1`] = `
           Object {
             "fontWeight": "600",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
         ]
       }
     >
@@ -662,18 +604,20 @@ exports[`iOS BpkButton should render correctly with type="featured" and disabled
     }
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-          undefined,
-        ],
-        Object {},
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
+        null,
+        Object {
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
       ]
     }
   >
@@ -690,17 +634,9 @@ exports[`iOS BpkButton should render correctly with type="featured" and disabled
           Object {
             "fontWeight": "600",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(178, 174, 189)",
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(178, 174, 189)",
+          },
         ]
       }
     >
@@ -756,17 +692,20 @@ exports[`iOS BpkButton should render correctly with type="primary" 1`] = `
     }
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-        ],
-        Object {},
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
+        null,
+        Object {
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
       ]
     }
   >
@@ -783,14 +722,9 @@ exports[`iOS BpkButton should render correctly with type="primary" 1`] = `
           Object {
             "fontWeight": "600",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
         ]
       }
     >
@@ -847,18 +781,20 @@ exports[`iOS BpkButton should render correctly with type="primary" and disabled 
     }
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-          undefined,
-        ],
-        Object {},
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
+        null,
+        Object {
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
       ]
     }
   >
@@ -875,17 +811,9 @@ exports[`iOS BpkButton should render correctly with type="primary" and disabled 
           Object {
             "fontWeight": "600",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(178, 174, 189)",
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(178, 174, 189)",
+          },
         ]
       }
     >
@@ -933,31 +861,25 @@ exports[`iOS BpkButton should render correctly with type="secondary" 1`] = `
   style={null}
 >
   <View
-    colors={
-      Array [
-        "rgb(255, 255, 255)",
-        "rgb(255, 255, 255)",
-      ]
-    }
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-          Object {
-            "borderColor": "rgb(230, 228, 235)",
-            "borderWidth": 2,
-            "paddingHorizontal": 10,
-            "paddingVertical": 6,
-          },
-        ],
-        Object {},
+        Object {
+          "alignItems": "center",
+          "borderWidth": 2,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 10,
+          "paddingVertical": 6,
+        },
+        null,
+        Object {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderColor": "rgb(230, 228, 235)",
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
       ]
     }
   >
@@ -974,17 +896,9 @@ exports[`iOS BpkButton should render correctly with type="secondary" 1`] = `
           Object {
             "fontWeight": "600",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(0, 178, 214)",
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(0, 178, 214)",
+          },
         ]
       }
     >
@@ -1033,32 +947,25 @@ exports[`iOS BpkButton should render correctly with type="secondary" and disable
   style={null}
 >
   <View
-    colors={
-      Array [
-        "rgb(230, 228, 235)",
-        "rgb(230, 228, 235)",
-      ]
-    }
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-          Object {
-            "borderColor": "rgb(230, 228, 235)",
-            "borderWidth": 2,
-            "paddingHorizontal": 10,
-            "paddingVertical": 6,
-          },
-          undefined,
-        ],
-        Object {},
+        Object {
+          "alignItems": "center",
+          "borderWidth": 2,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 10,
+          "paddingVertical": 6,
+        },
+        null,
+        Object {
+          "backgroundColor": "rgb(230, 228, 235)",
+          "borderColor": "rgb(230, 228, 235)",
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
       ]
     }
   >
@@ -1075,20 +982,9 @@ exports[`iOS BpkButton should render correctly with type="secondary" and disable
           Object {
             "fontWeight": "600",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(0, 178, 214)",
-              },
-              Object {
-                "color": "rgb(178, 174, 189)",
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(178, 174, 189)",
+          },
         ]
       }
     >
@@ -1144,21 +1040,23 @@ exports[`iOS BpkButton should support elements as icons 1`] = `
     }
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-          Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 8,
-          },
-        ],
-        Object {},
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
+        null,
+        Object {
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
+        Object {
+          "paddingHorizontal": 8,
+        },
       ]
     }
   >
@@ -1173,6 +1071,25 @@ exports[`iOS BpkButton should support elements as icons 1`] = `
             "letterSpacing": 0.12,
           },
           Object {},
+          Array [
+            undefined,
+            Array [
+              Object {
+                "marginEnd": 4,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 4,
+              },
+              Object {
+                "marginEnd": 0,
+                "marginStart": 0,
+              },
+            ],
+          ],
         ]
       }
     >
@@ -1228,46 +1145,23 @@ exports[`iOS BpkButton should support having an icon as well as a title 1`] = `
     }
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-        ],
-        Object {},
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
+        null,
+        Object {
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
       ]
     }
   >
-    <Text
-      style={
-        Array [
-          Object {
-            "color": "rgb(82, 76, 97)",
-            "fontFamily": "System",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "letterSpacing": 0.154,
-          },
-          Object {
-            "fontWeight": "600",
-          },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-            Object {},
-          ],
-        ]
-      }
-    >
-      Lorem ipsum
-    </Text>
     <Text
       allowFontScaling={false}
       style={
@@ -1282,22 +1176,42 @@ exports[`iOS BpkButton should support having an icon as well as a title 1`] = `
             "fontSize": 16,
           },
           Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-            Object {},
-            Array [
-              Object {
-                "marginStart": 4,
-              },
-            ],
+            Object {
+              "marginEnd": 4,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "marginEnd": 0,
+              "marginStart": 4,
+            },
           ],
         ]
       }
     >
       
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "System",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0.154,
+          },
+          Object {
+            "fontWeight": "600",
+          },
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
+        ]
+      }
+    >
+      Lorem ipsum
     </Text>
   </View>
   <View
@@ -1353,17 +1267,20 @@ exports[`iOS BpkButton should support overwriting styles 1`] = `
     }
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-        ],
-        Object {},
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
+        null,
+        Object {
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
       ]
     }
   >
@@ -1380,14 +1297,9 @@ exports[`iOS BpkButton should support overwriting styles 1`] = `
           Object {
             "fontWeight": "600",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
         ]
       }
     >
@@ -1444,18 +1356,20 @@ exports[`iOS BpkButton should support the "disabled" property 1`] = `
     }
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-          undefined,
-        ],
-        Object {},
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
+        null,
+        Object {
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
       ]
     }
   >
@@ -1472,17 +1386,9 @@ exports[`iOS BpkButton should support the "disabled" property 1`] = `
           Object {
             "fontWeight": "600",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(178, 174, 189)",
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(178, 174, 189)",
+          },
         ]
       }
     >
@@ -1538,46 +1444,23 @@ exports[`iOS BpkButton should support the "icon" property 1`] = `
     }
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-        ],
-        Object {},
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
+        null,
+        Object {
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
       ]
     }
   >
-    <Text
-      style={
-        Array [
-          Object {
-            "color": "rgb(82, 76, 97)",
-            "fontFamily": "System",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "letterSpacing": 0.154,
-          },
-          Object {
-            "fontWeight": "600",
-          },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-            Object {},
-          ],
-        ]
-      }
-    >
-      Lorem ipsum
-    </Text>
     <Text
       allowFontScaling={false}
       style={
@@ -1592,22 +1475,42 @@ exports[`iOS BpkButton should support the "icon" property 1`] = `
             "fontSize": 16,
           },
           Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-            Object {},
-            Array [
-              Object {
-                "marginStart": 4,
-              },
-            ],
+            Object {
+              "marginEnd": 4,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "marginEnd": 0,
+              "marginStart": 4,
+            },
           ],
         ]
       }
     >
       
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "System",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0.154,
+          },
+          Object {
+            "fontWeight": "600",
+          },
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
+        ]
+      }
+    >
+      Lorem ipsum
     </Text>
   </View>
   <View
@@ -1659,21 +1562,23 @@ exports[`iOS BpkButton should support the "iconOnly" property 1`] = `
     }
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-          Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 8,
-          },
-        ],
-        Object {},
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
+        null,
+        Object {
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
+        Object {
+          "paddingHorizontal": 8,
+        },
       ]
     }
   >
@@ -1691,21 +1596,20 @@ exports[`iOS BpkButton should support the "iconOnly" property 1`] = `
             "fontSize": 16,
           },
           Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              undefined,
-            ],
-            Object {},
-            Array [
-              Object {
-                "marginStart": 4,
-              },
-              Object {
-                "marginStart": 0,
-              },
-            ],
+            Object {
+              "marginEnd": 4,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "marginEnd": 0,
+              "marginStart": 4,
+            },
+            Object {
+              "marginEnd": 0,
+              "marginStart": 0,
+            },
           ],
         ]
       }
@@ -1754,31 +1658,25 @@ exports[`iOS BpkButton should support the "secondary" property 1`] = `
   style={null}
 >
   <View
-    colors={
-      Array [
-        "rgb(255, 255, 255)",
-        "rgb(255, 255, 255)",
-      ]
-    }
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-          Object {
-            "borderColor": "rgb(230, 228, 235)",
-            "borderWidth": 2,
-            "paddingHorizontal": 10,
-            "paddingVertical": 6,
-          },
-        ],
-        Object {},
+        Object {
+          "alignItems": "center",
+          "borderWidth": 2,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 10,
+          "paddingVertical": 6,
+        },
+        null,
+        Object {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderColor": "rgb(230, 228, 235)",
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
       ]
     }
   >
@@ -1795,17 +1693,9 @@ exports[`iOS BpkButton should support the "secondary" property 1`] = `
           Object {
             "fontWeight": "600",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(0, 178, 214)",
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(0, 178, 214)",
+          },
         ]
       }
     >
@@ -1861,17 +1751,20 @@ exports[`iOS BpkButtonThemed should render correctly 1`] = `
     }
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-        ],
-        Object {},
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
+        null,
+        Object {
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
       ]
     }
   >
@@ -1888,16 +1781,9 @@ exports[`iOS BpkButtonThemed should render correctly 1`] = `
           Object {
             "fontWeight": "600",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-            Object {
-              "color": "red",
-            },
-          ],
+          Object {
+            "color": "red",
+          },
         ]
       }
     >
@@ -1953,24 +1839,53 @@ exports[`iOS should support the "icon" and "large" property 1`] = `
     }
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-          Object {
-            "paddingHorizontal": 16,
-            "paddingVertical": 12,
-          },
-        ],
-        Object {},
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
+        Object {
+          "paddingHorizontal": 16,
+          "paddingVertical": 12,
+        },
+        Object {
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
       ]
     }
   >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Array [
+            Object {
+              "marginEnd": 4,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "marginEnd": 0,
+              "marginStart": 4,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
     <Text
       style={
         Array [
@@ -1984,53 +1899,13 @@ exports[`iOS should support the "icon" and "large" property 1`] = `
           Object {
             "fontWeight": "600",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "lineHeight": 24,
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
         ]
       }
     >
       Lorem ipsum
-    </Text>
-    <Text
-      allowFontScaling={false}
-      style={
-        Array [
-          Object {
-            "color": "rgb(82, 76, 97)",
-            "fontFamily": "BpkIcon",
-            "fontSize": 24,
-            "includeFontPadding": false,
-          },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "lineHeight": 24,
-              },
-            ],
-            Object {},
-            Array [
-              Object {
-                "marginStart": 4,
-              },
-              undefined,
-            ],
-          ],
-        ]
-      }
-    >
-      
     </Text>
   </View>
   <View
@@ -2082,25 +1957,26 @@ exports[`iOS should support the "iconOnly" and "large" property 1`] = `
     }
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-          Object {
-            "paddingHorizontal": 16,
-            "paddingVertical": 12,
-          },
-          Object {
-            "paddingHorizontal": 12,
-            "paddingVertical": 12,
-          },
-        ],
-        Object {},
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
+        Object {
+          "paddingHorizontal": 16,
+          "paddingVertical": 12,
+        },
+        Object {
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
+        Object {
+          "paddingHorizontal": 12,
+        },
       ]
     }
   >
@@ -2115,25 +1991,20 @@ exports[`iOS should support the "iconOnly" and "large" property 1`] = `
             "includeFontPadding": false,
           },
           Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "lineHeight": 24,
-              },
-              undefined,
-            ],
-            Object {},
-            Array [
-              Object {
-                "marginStart": 4,
-              },
-              undefined,
-              Object {
-                "marginStart": 0,
-              },
-            ],
+            Object {
+              "marginEnd": 4,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "marginEnd": 0,
+              "marginStart": 4,
+            },
+            Object {
+              "marginEnd": 0,
+              "marginStart": 0,
+            },
           ],
         ]
       }
@@ -2182,35 +2053,28 @@ exports[`iOS should support the "large" and secondary property 1`] = `
   style={null}
 >
   <View
-    colors={
-      Array [
-        "rgb(255, 255, 255)",
-        "rgb(255, 255, 255)",
-      ]
-    }
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-          Object {
-            "borderColor": "rgb(230, 228, 235)",
-            "borderWidth": 2,
-            "paddingHorizontal": 10,
-            "paddingVertical": 6,
-          },
-          Object {
-            "paddingHorizontal": 14,
-            "paddingVertical": 10,
-          },
-        ],
-        Object {},
+        Object {
+          "alignItems": "center",
+          "borderWidth": 2,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 10,
+          "paddingVertical": 6,
+        },
+        Object {
+          "paddingHorizontal": 14,
+          "paddingVertical": 10,
+        },
+        Object {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderColor": "rgb(230, 228, 235)",
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
       ]
     }
   >
@@ -2227,20 +2091,9 @@ exports[`iOS should support the "large" and secondary property 1`] = `
           Object {
             "fontWeight": "600",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(0, 178, 214)",
-              },
-              Object {
-                "lineHeight": 24,
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(0, 178, 214)",
+          },
         ]
       }
     >
@@ -2296,21 +2149,23 @@ exports[`iOS should support the "large" property 1`] = `
     }
     style={
       Array [
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 40,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 12,
-            "paddingVertical": 8,
-          },
-          Object {
-            "paddingHorizontal": 16,
-            "paddingVertical": 12,
-          },
-        ],
-        Object {},
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
+        Object {
+          "paddingHorizontal": 16,
+          "paddingVertical": 12,
+        },
+        Object {
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
       ]
     }
   >
@@ -2327,17 +2182,9 @@ exports[`iOS should support the "large" property 1`] = `
           Object {
             "fontWeight": "600",
           },
-          Array [
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "lineHeight": 24,
-              },
-            ],
-            Object {},
-          ],
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
         ]
       }
     >

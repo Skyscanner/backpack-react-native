@@ -18,9 +18,24 @@
 
 /* @flow */
 
-import BpkButton from './src/BpkButton';
-import { BUTTON_TYPES, ICON_ALIGNMENTS } from './src/common-types';
+import React, { type Element, type ElementProps } from 'react';
+import { Text } from 'react-native';
+import BpkIcon from 'react-native-bpk-component-icon';
 
-export type { Props as BpkButtonProps } from './src/BpkButton';
-export { BUTTON_TYPES, ICON_ALIGNMENTS };
-export default BpkButton;
+type TextProps = ElementProps<typeof Text>;
+type TextStyleProp = $PropertyType<TextProps, 'style'>;
+
+type Props = {
+  icon: string | Element<typeof BpkIcon>,
+  large: boolean,
+  style: TextStyleProp,
+};
+
+const BpkButtonIcon = ({ icon, large, style }: Props) => {
+  if (typeof icon === 'string') {
+    return <BpkIcon icon={icon} style={style} small={!large} />;
+  }
+  return React.cloneElement(icon, { style: [icon.props.style, style] });
+};
+
+export default BpkButtonIcon;

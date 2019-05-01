@@ -19,30 +19,57 @@
 /* @flow */
 
 import React from 'react';
-import { withTheme } from 'react-native-bpk-theming';
-import BpkIcon from 'react-native-bpk-component-icon';
-import BpkText, { WEIGHT_STYLES } from 'react-native-bpk-component-text';
-import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-native-feedback';
-import { Platform, View } from 'react-native';
+import {
+  getThemeAttributes,
+  withTheme,
+  type Theme,
+} from 'react-native-bpk-theming';
 
+import BpkStandardButton from './BpkStandardButton.android';
+import BpkBorderedButton from './BpkBorderedButton.android';
+import BpkButtonInner from './BpkButtonInner';
 import {
-  isTypeThemeable,
-  themeAttributesSupplied,
-  getStyleForElement,
-  getAndroidBackgroundColour,
-  textStyle,
-  iconStyle,
-} from './utils';
-import {
+  type ButtonType,
   type CommonProps,
   commonPropTypes,
   commonDefaultProps,
   BUTTON_TYPES,
   ICON_ALIGNMENTS,
+  REQUIRED_THEME_ATTRIBUTES,
 } from './common-types';
+import {
+  backgroundColorForType,
+  borderColorForType,
+  textColorForType,
+} from './color-functions';
 
-export type Props = {
-  ...$Exact<CommonProps>,
+export type Props = CommonProps;
+
+const buttonComponentForType = (type: ButtonType) => {
+  if (type === BUTTON_TYPES.primary || type === BUTTON_TYPES.featured) {
+    return BpkStandardButton;
+  }
+  return BpkBorderedButton;
+};
+
+const buttonColorsForType = (
+  type: ButtonType,
+  themeAttributes: ?Theme,
+  disabled: boolean,
+) => {
+  const buttonColors: { backgroundColor: string, borderColor?: string } = {
+    backgroundColor: backgroundColorForType(type, themeAttributes, disabled),
+  };
+
+  if (type === 'secondary' || type === 'destructive') {
+    buttonColors.borderColor = borderColorForType(
+      type,
+      themeAttributes,
+      disabled,
+    );
+  }
+
+  return buttonColors;
 };
 
 const BpkButton = (props: Props) => {
@@ -50,16 +77,15 @@ const BpkButton = (props: Props) => {
     accessibilityLabel,
     disabled,
     icon,
+    iconAlignment,
     iconOnly,
-    onPress,
-    style,
+    theme,
     title,
     type,
-    theme: themeProp,
     ...rest
   } = props;
 
-  if (!Object.values(BUTTON_TYPES).includes(type)) {
+  if (!Object.keys(BUTTON_TYPES).includes(type)) {
     throw new Error(
       `"${type}" is not a valid button type. Valid types are ${Object.keys(
         BUTTON_TYPES,
@@ -67,60 +93,46 @@ const BpkButton = (props: Props) => {
     );
   }
 
-  const shouldApplyTheme =
-    themeProp &&
-    (isTypeThemeable(type) && themeAttributesSupplied(type, themeProp));
-  const theme = shouldApplyTheme ? themeProp : null;
+  const themeAttributes = getThemeAttributes(
+    REQUIRED_THEME_ATTRIBUTES[type],
+    theme,
+  );
+
+  const ButtonComponent = buttonComponentForType(type);
+  const buttonColors = buttonColorsForType(type, themeAttributes, disabled);
+  const textColor = textColorForType(type, themeAttributes, disabled);
 
   const accessibilityTraits = ['button'];
-  const containerStyle = getStyleForElement('androidContainer', props);
-  const buttonStyle = getStyleForElement('button', props);
-  const backgroundColor = getAndroidBackgroundColour(theme, props);
-
   if (disabled) {
     accessibilityTraits.push('disabled');
   }
 
   return (
-    <View style={[containerStyle, style, backgroundColor]}>
-      <BpkTouchableNativeFeedback
-        disabled={disabled}
-        onPress={onPress}
-        type={type}
-        borderlessBackground={Platform.Version !== 28}
-        accessibilityComponentType="button"
-        accessibilityLabel={accessibilityLabel || title}
-        accessibilityTraits={accessibilityTraits}
-        {...rest}
-      >
-        <View style={[buttonStyle, backgroundColor]}>
-          {!iconOnly && (
-            <BpkText
-              textStyle="sm"
-              weight={WEIGHT_STYLES.emphasized}
-              style={textStyle(theme, props)}
-            >
-              {title.toUpperCase()}
-            </BpkText>
-          )}
-          {typeof icon === 'string' ? (
-            <BpkIcon icon={icon} style={iconStyle(theme, props)} small />
-          ) : (
-            icon
-          )}
-        </View>
-      </BpkTouchableNativeFeedback>
-    </View>
+    <ButtonComponent
+      disabled={disabled}
+      title={title}
+      icon={icon}
+      iconOnly={iconOnly}
+      iconTrailing={iconAlignment === ICON_ALIGNMENTS.trailing}
+      accessibilityComponentType="button"
+      accessibilityLabel={accessibilityLabel || title}
+      accessibilityTraits={accessibilityTraits}
+      {...buttonColors}
+      {...rest}
+    >
+      <BpkButtonInner
+        large={false}
+        icon={icon}
+        iconOnly={iconOnly}
+        iconTrailing={iconAlignment === ICON_ALIGNMENTS.trailing}
+        textColor={textColor}
+        title={title}
+      />
+    </ButtonComponent>
   );
 };
 
-BpkButton.propTypes = {
-  ...commonPropTypes,
-};
+BpkButton.propTypes = commonPropTypes;
+BpkButton.defaultProps = commonDefaultProps;
 
-BpkButton.defaultProps = {
-  ...commonDefaultProps,
-};
-
-export { BUTTON_TYPES, ICON_ALIGNMENTS };
 export default (withTheme(BpkButton): typeof BpkButton);

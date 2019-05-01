@@ -20,32 +20,69 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withTheme } from 'react-native-bpk-theming';
-import BpkIcon from 'react-native-bpk-component-icon';
-import BpkText, { WEIGHT_STYLES } from 'react-native-bpk-component-text';
-import LinearGradient from 'react-native-linear-gradient';
-import BpkTouchableOverlay from 'react-native-bpk-component-touchable-overlay';
+import {
+  getThemeAttributes,
+  withTheme,
+  type Theme,
+} from 'react-native-bpk-theming';
 
+import BpkGradientButton from './BpkGradientButton.ios';
+import BpkBorderedButton from './BpkBorderedButton.ios';
+import BpkButtonInner from './BpkButtonInner';
 import {
-  isTypeThemeable,
-  themeAttributesSupplied,
-  getStyleForElement,
-  getGradientColors,
-  getThemingForElement,
-  textStyle,
-  iconStyle,
-} from './utils';
-import {
+  type ButtonType,
   type CommonProps,
   commonPropTypes,
   commonDefaultProps,
   BUTTON_TYPES,
   ICON_ALIGNMENTS,
+  REQUIRED_THEME_ATTRIBUTES,
 } from './common-types';
+import {
+  borderColorForType,
+  gradientColorForType,
+  textColorForType,
+  backgroundColorForType,
+} from './color-functions';
 
 export type Props = {
   ...$Exact<CommonProps>,
   large: boolean,
+};
+
+const buttonComponentForType = (type: ButtonType) => {
+  if (type === BUTTON_TYPES.primary || type === BUTTON_TYPES.featured) {
+    return BpkGradientButton;
+  }
+  return BpkBorderedButton;
+};
+
+const buttonColorsForType = (
+  type: ButtonType,
+  themeAttributes: ?Theme,
+  disabled: boolean,
+) => {
+  if (type === 'primary' || type === 'featured') {
+    return {
+      gradientStartColor: gradientColorForType(
+        'start',
+        type,
+        themeAttributes,
+        disabled,
+      ),
+      gradientEndColor: gradientColorForType(
+        'end',
+        type,
+        themeAttributes,
+        disabled,
+      ),
+    };
+  }
+
+  return {
+    backgroundColor: backgroundColorForType(type, themeAttributes, disabled),
+    borderColor: borderColorForType(type, themeAttributes, disabled),
+  };
 };
 
 const BpkButton = (props: Props) => {
@@ -53,16 +90,16 @@ const BpkButton = (props: Props) => {
     accessibilityLabel,
     disabled,
     icon,
+    iconAlignment,
     iconOnly,
     large,
-    onPress,
+    theme,
     title,
     type,
-    theme: themeProp,
     ...rest
   } = props;
 
-  if (!Object.values(BUTTON_TYPES).includes(type)) {
+  if (!Object.keys(BUTTON_TYPES).includes(type)) {
     throw new Error(
       `"${type}" is not a valid button type. Valid types are ${Object.keys(
         BUTTON_TYPES,
@@ -70,50 +107,41 @@ const BpkButton = (props: Props) => {
     );
   }
 
-  const shouldApplyTheme =
-    themeProp &&
-    (isTypeThemeable(type) && themeAttributesSupplied(type, themeProp));
-  const theme = shouldApplyTheme ? themeProp : null;
+  const themeAttributes = getThemeAttributes(
+    REQUIRED_THEME_ATTRIBUTES[type],
+    theme,
+  );
 
   const accessibilityTraits = ['button'];
-  const gradientColors = getGradientColors(theme, props);
-  const buttonStyle = getStyleForElement('button', props);
-  const buttonTheme = getThemingForElement('button', theme, props);
-
   if (disabled) {
     accessibilityTraits.push('disabled');
   }
 
+  const ButtonComponent = buttonComponentForType(type);
+
   return (
-    <BpkTouchableOverlay
+    <ButtonComponent
+      disabled={disabled}
+      title={title}
+      icon={icon}
+      iconOnly={iconOnly}
+      large={large}
+      iconTrailing={iconAlignment === ICON_ALIGNMENTS.trailing}
       accessibilityComponentType="button"
       accessibilityLabel={accessibilityLabel || title}
       accessibilityTraits={accessibilityTraits}
-      borderRadius="pill"
-      disabled={disabled}
-      onPress={onPress}
+      {...buttonColorsForType(type, themeAttributes, disabled)}
       {...rest}
     >
-      <LinearGradient
-        colors={gradientColors}
-        style={[buttonStyle, buttonTheme]}
-      >
-        {!iconOnly && (
-          <BpkText
-            textStyle={large ? 'lg' : 'sm'}
-            weight={WEIGHT_STYLES.emphasized}
-            style={textStyle(theme, props)}
-          >
-            {title}
-          </BpkText>
-        )}
-        {typeof icon === 'string' ? (
-          <BpkIcon icon={icon} style={iconStyle(theme, props)} small={!large} />
-        ) : (
-          icon
-        )}
-      </LinearGradient>
-    </BpkTouchableOverlay>
+      <BpkButtonInner
+        icon={icon}
+        iconOnly={iconOnly}
+        iconTrailing={iconAlignment === ICON_ALIGNMENTS.trailing}
+        large={large}
+        textColor={textColorForType(type, themeAttributes, disabled)}
+        title={title}
+      />
+    </ButtonComponent>
   );
 };
 
@@ -127,5 +155,4 @@ BpkButton.defaultProps = {
   large: false,
 };
 
-export { BUTTON_TYPES, ICON_ALIGNMENTS };
 export default (withTheme(BpkButton): typeof BpkButton);
