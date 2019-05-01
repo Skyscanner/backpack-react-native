@@ -61,7 +61,7 @@ export type Props = {
   iconTrailing: boolean,
   style: ViewStyleProp,
   title: string,
-  icon: ?Element<typeof BpkIcon>,
+  icon: ?(string | Element<typeof BpkIcon>),
 };
 
 const BpkStandardButton = (props: Props) => {

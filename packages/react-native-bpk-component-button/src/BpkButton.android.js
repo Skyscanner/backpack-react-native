@@ -57,7 +57,7 @@ const buttonColorsForType = (
   themeAttributes: ?Theme,
   disabled: boolean,
 ) => {
-  const buttonColors = {
+  const buttonColors: { backgroundColor: string, borderColor?: string } = {
     backgroundColor: backgroundColorForType(type, themeAttributes, disabled),
   };
 
