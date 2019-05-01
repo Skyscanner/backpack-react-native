@@ -44,12 +44,13 @@ dependencies {
       //
       // It's important to note that the gradle documentation suggests the syntax for this should be
       // [1, 2[ (yes with [` at the end), but we publish the compiled version in a maven repository and for
-      // maven the correct syntax is [1, 2]. Given that `]` at the end also works for gradle we are
+      // maven the correct syntax is [1, 2). Given that `)` at the end also works for gradle we are
       // using this syntax instead.
       //
       // see: https://docs.gradle.org/current/userguide/declaring_dependencies.html#sub:declaring_dependency_rich_version
       // see: https://docs.oracle.com/middleware/1212/core/MAVEN/maven_version.htm#MAVEN8855
-      strictly "[7.4.0, 8.0]"
+      // see: http://ant.apache.org/ivy/history/2.1.0/settings/version-matchers.html
+      strictly "[7.4,8.0)"
     }
   }
 }
