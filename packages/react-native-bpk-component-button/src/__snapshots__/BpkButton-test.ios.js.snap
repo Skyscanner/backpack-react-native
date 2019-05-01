@@ -1760,7 +1760,7 @@ exports[`iOS BpkButtonThemed should render correctly 1`] = `
         },
         null,
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1804,7 +1804,7 @@ exports[`iOS BpkButtonThemed should render correctly 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
       ]
     }

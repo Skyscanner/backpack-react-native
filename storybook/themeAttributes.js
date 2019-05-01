@@ -29,33 +29,43 @@ const londonTheme = {
   secondaryColor700: '#00254B',
 };
 
+// Because it's a theme, Backpack tokens shouldn't be used.
+/* eslint-disable backpack/use-tokens */
 const theme = {
   contentColor: londonTheme.secondaryColor500,
   contentGray: londonTheme.secondaryColor300,
   secondaryColor: londonTheme.secondaryColor500,
-  // Because it's a theme, Backpack tokens shouldn't be used.
-  // eslint-disable-next-line backpack/use-tokens
   backgroundColor: '#fff',
   brandColors: {
     gradientStart: londonTheme.primaryColor500,
     gradientEnd: londonTheme.primaryColor600,
   },
+  borderRadius: 8,
 };
+/* eslint-enable backpack/use-tokens */
 
 const themeAttributes = {
   // Used in BpkButton.
   buttonPrimaryGradientStartColor: theme.brandColors.gradientStart,
   buttonPrimaryGradientEndColor: theme.brandColors.gradientEnd,
   buttonPrimaryTextColor: theme.contentColor,
+  buttonPrimaryBorderRadius: theme.borderRadius,
+
   buttonSecondaryBackgroundColor: theme.backgroundColor,
   buttonSecondaryTextColor: theme.contentColor,
   buttonSecondaryBorderColor: theme.contentColor,
+  buttonSecondaryBorderRadius: theme.borderRadius,
+
   buttonDestructiveBackgroundColor: theme.brandColors.gradientStart,
   buttonDestructiveTextColor: theme.backgroundColor,
   buttonDestructiveBorderColor: theme.brandColors.gradientStart,
+  buttonDestructiveBorderRadius: theme.borderRadius,
+
   buttonFeaturedGradientStartColor: theme.contentColor,
   buttonFeaturedGradientEndColor: theme.brandColors.gradientStart,
   buttonFeaturedTextColor: theme.backgroundColor,
+  buttonFeaturedBorderRadius: theme.borderRadius,
+
   buttonLinkTextColor: theme.contentColor,
 
   // Used in BpkChip.

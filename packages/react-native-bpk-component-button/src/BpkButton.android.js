@@ -40,8 +40,9 @@ import {
 import {
   backgroundColorForType,
   borderColorForType,
+  borderRadiusForType,
   textColorForType,
-} from './color-functions';
+} from './theming-functions';
 
 export type Props = CommonProps;
 
@@ -117,6 +118,7 @@ const BpkButton = (props: Props) => {
       accessibilityComponentType="button"
       accessibilityLabel={accessibilityLabel || title}
       accessibilityTraits={accessibilityTraits}
+      borderRadius={borderRadiusForType(type, themeAttributes)}
       {...buttonColors}
       {...rest}
     >

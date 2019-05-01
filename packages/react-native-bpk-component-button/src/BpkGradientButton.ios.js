@@ -23,7 +23,6 @@ import { StyleSheet, View } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import BpkTouchableOverlay from 'react-native-bpk-component-touchable-overlay';
 import {
-  borderRadiusPill,
   spacingSm,
   spacingMd,
   spacingBase,
@@ -58,6 +57,7 @@ const styles = StyleSheet.create({
 });
 
 export type Props = {
+  borderRadius: number,
   children: Node,
   disabled: boolean,
   gradientEndColor: string,
@@ -72,6 +72,7 @@ export type Props = {
 
 const BpkGradientButton = (props: Props) => {
   const {
+    borderRadius,
     children,
     disabled,
     gradientEndColor,
@@ -83,7 +84,6 @@ const BpkGradientButton = (props: Props) => {
     title,
     ...rest
   } = props;
-  const borderRadius = borderRadiusPill;
 
   const buttonStyle = [
     styles.button,

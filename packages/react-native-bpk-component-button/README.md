@@ -110,21 +110,25 @@ export default class App extends Component {
 * `buttonPrimaryTextColor`
 * `buttonPrimaryGradientStartColor`
 * `buttonPrimaryGradientEndColor`
+* `buttonPrimaryBorderRadius`
 
 ### Secondary
 
 * `buttonSecondaryTextColor`
 * `buttonSecondaryBackgroundColor`
 * `buttonSecondaryBorderColor`
+* `buttonSecondaryBorderRadius`
 
 ### Featured
 
 * `buttonFeaturedTextColor`
 * `buttonFeaturedGradientStartColor`
 * `buttonFeaturedGradientEndColor`
+* `buttonFeaturedBorderRadius`
 
 ### Destructive
 
 * `buttonDestructiveTextColor`
 * `buttonDestructiveBackgroundColor`
 * `buttonDestructiveBorderColor`
+* `buttonDestructiveBorderRadius`

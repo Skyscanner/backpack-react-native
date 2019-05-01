@@ -23,7 +23,6 @@ import { Platform, StyleSheet, View } from 'react-native';
 import BpkIcon from 'react-native-bpk-component-icon';
 import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-native-feedback';
 import {
-  borderRadiusPill,
   buttonBorderWidth,
   spacingSm,
   spacingMd,
@@ -35,12 +34,10 @@ type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
 
 const styles = StyleSheet.create({
   wrapper: {
-    borderRadius: borderRadiusPill,
     overflow: 'hidden',
   },
   button: {
     alignItems: 'center',
-    borderRadius: borderRadiusPill,
     borderWidth: buttonBorderWidth,
     flexDirection: 'row',
     justifyContent: 'center',
@@ -58,6 +55,7 @@ const styles = StyleSheet.create({
 export type Props = {
   backgroundColor: string,
   borderColor: string,
+  borderRadius: number,
   children: Node,
   disabled: boolean,
   iconOnly: boolean,
@@ -71,6 +69,7 @@ const BpkBorderedButton = (props: Props) => {
   const {
     backgroundColor,
     borderColor,
+    borderRadius,
     children,
     disabled,
     icon,
@@ -81,9 +80,12 @@ const BpkBorderedButton = (props: Props) => {
     ...rest
   } = props;
 
-  const wrapperStyle = [styles.wrapper, userStyle];
+  const wrapperStyle = [styles.wrapper, { borderRadius }, userStyle];
 
-  const buttonStyle = [styles.button, { backgroundColor, borderColor }];
+  const buttonStyle = [
+    styles.button,
+    { backgroundColor, borderColor, borderRadius },
+  ];
 
   if (iconTrailing) {
     buttonStyle.push(styles.buttonIconTrailing);

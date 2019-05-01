@@ -32,21 +32,25 @@ export const REQUIRED_THEME_ATTRIBUTES = {
     'buttonPrimaryTextColor',
     'buttonPrimaryGradientStartColor',
     'buttonPrimaryGradientEndColor',
+    'buttonPrimaryBorderRadius',
   ],
   secondary: [
     'buttonSecondaryTextColor',
     'buttonSecondaryBackgroundColor',
     'buttonSecondaryBorderColor',
+    'buttonSecondaryBorderRadius',
   ],
   destructive: [
     'buttonDestructiveTextColor',
     'buttonDestructiveBackgroundColor',
     'buttonDestructiveBorderColor',
+    'buttonDestructiveBorderRadius',
   ],
   featured: [
     'buttonFeaturedTextColor',
     'buttonFeaturedGradientStartColor',
     'buttonFeaturedGradientEndColor',
+    'buttonFeaturedBorderRadius',
   ],
 };
 
