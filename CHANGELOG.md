@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-05-01 - Fixed dependency resolution for `react-native-bpk-component-calendar`
+
+**Fixed:**
+
+- react-native-bpk-component-calendar: 0.3.7 => 0.3.8
+  - fixed `backpack-android` version.
+
 # 2019-04-29 - New `borderRadius` prop for touchable overlay
 
 **Updated:**
