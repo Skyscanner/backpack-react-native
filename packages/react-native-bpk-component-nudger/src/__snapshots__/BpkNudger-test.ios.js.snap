@@ -110,6 +110,10 @@ exports[`iOS BpkNudger should render correctly 1`] = `
           Object {
             "borderRadius": 40,
           },
+          Object {
+            "borderColor": "rgb(230, 228, 235)",
+            "borderWidth": 2,
+          },
         ]
       }
     />
@@ -234,6 +238,10 @@ exports[`iOS BpkNudger should render correctly 1`] = `
           Object {
             "borderRadius": 40,
           },
+          Object {
+            "borderColor": "rgb(230, 228, 235)",
+            "borderWidth": 2,
+          },
         ]
       }
     />
@@ -351,6 +359,10 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
           },
           Object {
             "borderRadius": 40,
+          },
+          Object {
+            "borderColor": "rgb(230, 228, 235)",
+            "borderWidth": 2,
           },
         ]
       }
@@ -476,6 +488,10 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
           Object {
             "borderRadius": 40,
           },
+          Object {
+            "borderColor": "rgb(230, 228, 235)",
+            "borderWidth": 2,
+          },
         ]
       }
     />
@@ -592,6 +608,10 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
           },
           Object {
             "borderRadius": 40,
+          },
+          Object {
+            "borderColor": "rgb(230, 228, 235)",
+            "borderWidth": 2,
           },
         ]
       }
@@ -717,6 +737,10 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
           },
           Object {
             "borderRadius": 40,
+          },
+          Object {
+            "borderColor": "rgb(230, 228, 235)",
+            "borderWidth": 2,
           },
         ]
       }
@@ -836,6 +860,10 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
           Object {
             "borderRadius": 40,
           },
+          Object {
+            "borderColor": "rgb(230, 228, 235)",
+            "borderWidth": 2,
+          },
         ]
       }
     />
@@ -959,6 +987,10 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
           },
           Object {
             "borderRadius": 40,
+          },
+          Object {
+            "borderColor": "rgb(230, 228, 235)",
+            "borderWidth": 2,
           },
         ]
       }
