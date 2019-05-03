@@ -34,16 +34,18 @@ import {
 
 import { BUTTON_TYPES, type ButtonType } from './common-types';
 
-const valueOrDefault = (
-  haystack: ?{ [string]: string },
+function valueOrDefault<T>(
+  haystack: ?Theme,
   needle: string,
-  defaultValue: string,
-) => (haystack && haystack[needle]) || defaultValue;
+  defaultValue: T,
+): T {
+  return (haystack && haystack[needle]) || defaultValue;
+}
 
 export const borderRadiusForType = (
   type: ButtonType,
   themeAttributes: ?Theme,
-) => {
+): number => {
   const borderRadiusThemePropsMappedToType = {
     [BUTTON_TYPES.primary]: 'buttonPrimaryBorderRadius',
     [BUTTON_TYPES.featured]: 'buttonFeaturedBorderRadius',
