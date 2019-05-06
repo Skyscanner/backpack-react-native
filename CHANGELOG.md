@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-05-06 - Fix touchable highlight for Android 
+
+**Fixed:**
+
+- react-native-bpk-component-button-link:
+  - Fixed touchable highlight for Android.
+
 # 2019-05-06 - More theming support for buttons
 
 **Added:**
