@@ -2,6 +2,19 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-05-06 - More theming support for buttons
+
+**Added:**
+- react-native-bpk-component-button:
+  - Added support for theming the border radius of buttons. See *Theme props* section of https://backpack.github.io/components/button/?platform=native.
+
+**Changed:**
+
+- react-native-bpk-component-button:
+  - Fixed an issue where theming button borders on `secondary` and `destructive` button types didn't work.
+- react-native-bpk-component-calendar:
+  - bumped `backpack-android` to 8.0
+
 # 2019-05-01 - Fixed dependency resolution for `react-native-bpk-component-calendar`
 
 **Fixed:**
