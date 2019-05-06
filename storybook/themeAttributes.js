@@ -64,7 +64,6 @@ const themeAttributes = {
   buttonFeaturedGradientStartColor: theme.contentColor,
   buttonFeaturedGradientEndColor: theme.brandColors.gradientStart,
   buttonFeaturedTextColor: theme.backgroundColor,
-  buttonFeaturedBorderRadius: theme.borderRadius,
 
   buttonLinkTextColor: theme.contentColor,
 

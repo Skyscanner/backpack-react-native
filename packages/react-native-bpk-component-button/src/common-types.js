@@ -32,26 +32,29 @@ export const REQUIRED_THEME_ATTRIBUTES = {
     'buttonPrimaryTextColor',
     'buttonPrimaryGradientStartColor',
     'buttonPrimaryGradientEndColor',
-    'buttonPrimaryBorderRadius',
   ],
   secondary: [
     'buttonSecondaryTextColor',
     'buttonSecondaryBackgroundColor',
     'buttonSecondaryBorderColor',
-    'buttonSecondaryBorderRadius',
   ],
   destructive: [
     'buttonDestructiveTextColor',
     'buttonDestructiveBackgroundColor',
     'buttonDestructiveBorderColor',
-    'buttonDestructiveBorderRadius',
   ],
   featured: [
     'buttonFeaturedTextColor',
     'buttonFeaturedGradientStartColor',
     'buttonFeaturedGradientEndColor',
-    'buttonFeaturedBorderRadius',
   ],
+};
+
+export const OPTIONAL_THEME_ATTRIBUTES = {
+  primary: ['buttonPrimaryBorderRadius'],
+  secondary: ['buttonSecondaryBorderRadius'],
+  destructive: ['buttonDestructiveBorderRadius'],
+  featured: ['buttonFeaturedBorderRadius'],
 };
 
 export const BUTTON_TYPES = {
