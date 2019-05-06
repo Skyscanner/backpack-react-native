@@ -20,7 +20,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { View, ViewPropTypes } from 'react-native';
+import { View, ViewPropTypes, StyleSheet } from 'react-native';
 import BpkIcon from 'react-native-bpk-component-icon';
 import BpkText, { WEIGHT_STYLES } from 'react-native-bpk-component-text';
 import { getThemeAttributes, withTheme } from 'react-native-bpk-theming';
@@ -33,7 +33,14 @@ import {
   ICON_ALIGNMENTS,
   REQUIRED_THEME_ATTRIBUTES,
 } from './common-types';
-import styles from './styles';
+import commonStyles from './styles';
+
+const styles = StyleSheet.create({
+  wrapper: {
+    borderRadius: 0, // this is required to prevent BpkTouchableNativeFeedback to go out bounds
+    overflow: 'hidden',
+  },
+});
 
 export type Props = {
   ...$Exact<CommonProps>,
@@ -49,7 +56,7 @@ const BpkButtonLink = (props: Props) => {
     icon,
     iconAlignment,
     onPress,
-    style,
+    style: userStyle,
     title,
     borderlessBackground,
     uppercase,
@@ -63,15 +70,15 @@ const BpkButtonLink = (props: Props) => {
     ? { color: themeAttributes.buttonLinkTextColor }
     : null;
 
-  const textStyle = [styles.text];
-  const viewStyle = [styles.view];
-  const iconStyle = [styles.icon];
+  const textStyle = [commonStyles.text];
+  const viewStyle = [commonStyles.view];
+  const iconStyle = [commonStyles.icon];
 
   const accessibilityTraits = ['button'];
 
   if (iconAlignment === ICON_ALIGNMENTS.leading) {
-    viewStyle.push(styles.viewLeading);
-    iconStyle.push(styles.iconLeading);
+    viewStyle.push(commonStyles.viewLeading);
+    iconStyle.push(commonStyles.iconLeading);
   }
 
   if (themeStyle) {
@@ -80,12 +87,12 @@ const BpkButtonLink = (props: Props) => {
   }
 
   if (disabled) {
-    textStyle.push(styles.textDisabled);
+    textStyle.push(commonStyles.textDisabled);
     accessibilityTraits.push('disabled');
   }
 
   return (
-    <View style={style}>
+    <View style={[styles.wrapper, userStyle]}>
       <BpkTouchableNativeFeedback
         accessibilityComponentType="button"
         accessibilityLabel={accessibilityLabel || title}

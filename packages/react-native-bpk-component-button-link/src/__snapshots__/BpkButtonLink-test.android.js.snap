@@ -2,7 +2,15 @@
 
 exports[`Android BpkButtonLink should render correctly 1`] = `
 <View
-  style={null}
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "overflow": "hidden",
+      },
+      null,
+    ]
+  }
 >
   <View
     accessibilityLabel="Lorem ipsum"
@@ -62,7 +70,15 @@ exports[`Android BpkButtonLink should render correctly 1`] = `
 
 exports[`Android BpkButtonLink should render correctly with iconAlignment="leading" 1`] = `
 <View
-  style={null}
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "overflow": "hidden",
+      },
+      null,
+    ]
+  }
 >
   <View
     accessibilityLabel="Lorem ipsum"
@@ -153,7 +169,15 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="leadi
 
 exports[`Android BpkButtonLink should render correctly with iconAlignment="trailing" 1`] = `
 <View
-  style={null}
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "overflow": "hidden",
+      },
+      null,
+    ]
+  }
 >
   <View
     accessibilityLabel="Lorem ipsum"
@@ -237,7 +261,15 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="trail
 
 exports[`Android BpkButtonLink should render correctly with text props provided 1`] = `
 <View
-  style={null}
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "overflow": "hidden",
+      },
+      null,
+    ]
+  }
 >
   <View
     accessibilityLabel="Lorem ipsum"
@@ -298,7 +330,15 @@ exports[`Android BpkButtonLink should render correctly with text props provided 
 
 exports[`Android BpkButtonLink should render correctly with theme prop 1`] = `
 <View
-  style={null}
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "overflow": "hidden",
+      },
+      null,
+    ]
+  }
 >
   <View
     accessibilityLabel="Lorem ipsum"
@@ -361,7 +401,15 @@ exports[`Android BpkButtonLink should render correctly with theme prop 1`] = `
 
 exports[`Android BpkButtonLink should support elements as icons 1`] = `
 <View
-  style={null}
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "overflow": "hidden",
+      },
+      null,
+    ]
+  }
 >
   <View
     accessibilityLabel="Lorem ipsum"
@@ -438,9 +486,15 @@ exports[`Android BpkButtonLink should support elements as icons 1`] = `
 exports[`Android BpkButtonLink should support overwriting styles 1`] = `
 <View
   style={
-    Object {
-      "width": 4,
-    }
+    Array [
+      Object {
+        "borderRadius": 0,
+        "overflow": "hidden",
+      },
+      Object {
+        "width": 4,
+      },
+    ]
   }
 >
   <View
@@ -501,7 +555,15 @@ exports[`Android BpkButtonLink should support overwriting styles 1`] = `
 
 exports[`Android BpkButtonLink should support the "disabled" property 1`] = `
 <View
-  style={null}
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "overflow": "hidden",
+      },
+      null,
+    ]
+  }
 >
   <View
     accessibilityLabel="Lorem ipsum"
@@ -564,7 +626,15 @@ exports[`Android BpkButtonLink should support the "disabled" property 1`] = `
 
 exports[`Android BpkButtonLink should support the "icon" property 1`] = `
 <View
-  style={null}
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "overflow": "hidden",
+      },
+      null,
+    ]
+  }
 >
   <View
     accessibilityLabel="Lorem ipsum"
@@ -648,7 +718,15 @@ exports[`Android BpkButtonLink should support the "icon" property 1`] = `
 
 exports[`Android should support "borderlessBackground" equal to false 1`] = `
 <View
-  style={null}
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "overflow": "hidden",
+      },
+      null,
+    ]
+  }
 >
   <View
     accessibilityLabel="Lorem ipsum"
@@ -708,7 +786,15 @@ exports[`Android should support "borderlessBackground" equal to false 1`] = `
 
 exports[`Android should support "uppercase" equal to false 1`] = `
 <View
-  style={null}
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "overflow": "hidden",
+      },
+      null,
+    ]
+  }
 >
   <View
     accessibilityLabel="Lorem ipsum"
