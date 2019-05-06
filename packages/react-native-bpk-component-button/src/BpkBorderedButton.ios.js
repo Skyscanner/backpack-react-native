@@ -22,7 +22,6 @@ import React, { type ElementProps, type Node } from 'react';
 import { StyleSheet, View } from 'react-native';
 import BpkTouchableOverlay from 'react-native-bpk-component-touchable-overlay';
 import {
-  borderRadiusPill,
   buttonBorderWidth,
   spacingSm,
   spacingMd,
@@ -61,6 +60,7 @@ const styles = StyleSheet.create({
 export type Props = {
   backgroundColor: string,
   borderColor: string,
+  borderRadius: number,
   children: Node,
   disabled: boolean,
   iconOnly: boolean,
@@ -75,6 +75,7 @@ const BpkBorderedButton = (props: Props) => {
   const {
     backgroundColor,
     borderColor,
+    borderRadius,
     children,
     disabled,
     icon,
@@ -84,7 +85,6 @@ const BpkBorderedButton = (props: Props) => {
     title,
     ...rest
   } = props;
-  const borderRadius = borderRadiusPill;
 
   const buttonStyle = [
     styles.button,

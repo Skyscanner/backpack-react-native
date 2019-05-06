@@ -20,6 +20,7 @@
 
 import { type Theme } from 'react-native-bpk-theming';
 import {
+  borderRadiusPill,
   colorBlue500,
   colorGray100,
   colorGray300,
@@ -33,11 +34,31 @@ import {
 
 import { BUTTON_TYPES, type ButtonType } from './common-types';
 
-const valueOrDefault = (
-  haystack: ?{ [string]: string },
+function valueOrDefault<T>(
+  haystack: ?Theme,
   needle: string,
-  defaultValue: string,
-) => (haystack && haystack[needle]) || defaultValue;
+  defaultValue: T,
+): T {
+  return (haystack && haystack[needle]) || defaultValue;
+}
+
+export const borderRadiusForType = (
+  type: ButtonType,
+  themeAttributes: ?Theme,
+): number => {
+  const borderRadiusThemePropsMappedToType = {
+    [BUTTON_TYPES.primary]: 'buttonPrimaryBorderRadius',
+    [BUTTON_TYPES.featured]: 'buttonFeaturedBorderRadius',
+    [BUTTON_TYPES.secondary]: 'buttonSecondaryBorderRadius',
+    [BUTTON_TYPES.destructive]: 'buttonDestructiveBorderRadius',
+  };
+
+  return valueOrDefault(
+    themeAttributes,
+    borderRadiusThemePropsMappedToType[type],
+    borderRadiusPill,
+  );
+};
 
 export const backgroundColorForType = (
   type: ButtonType,

@@ -50,6 +50,13 @@ export const REQUIRED_THEME_ATTRIBUTES = {
   ],
 };
 
+export const OPTIONAL_THEME_ATTRIBUTES = {
+  primary: ['buttonPrimaryBorderRadius'],
+  secondary: ['buttonSecondaryBorderRadius'],
+  destructive: ['buttonDestructiveBorderRadius'],
+  featured: ['buttonFeaturedBorderRadius'],
+};
+
 export const BUTTON_TYPES = {
   primary: 'primary',
   secondary: 'secondary',

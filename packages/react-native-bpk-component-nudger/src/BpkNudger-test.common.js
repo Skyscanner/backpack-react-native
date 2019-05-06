@@ -20,7 +20,6 @@
 
 import React from 'react';
 import renderer from 'react-test-renderer';
-import BpkThemeProvider from 'react-native-bpk-theming';
 
 import BpkNudger from './BpkNudger';
 
@@ -92,52 +91,6 @@ const commonTests = () => {
         )
         .toJSON();
       expect(tree).toMatchSnapshot();
-    });
-
-    it('should support theming', () => {
-      const onPressFn = jest.fn();
-      const theme = {
-        buttonSecondaryTextColor: 'red',
-        buttonSecondaryBackgroundColor: 'yellow',
-        buttonSecondaryBorderColor: 'blue',
-      };
-      const tree = renderer
-        .create(
-          <BpkThemeProvider theme={theme}>
-            <BpkNudger
-              min={1}
-              max={9}
-              value={3}
-              decreaseButtonLabel="Decrease"
-              increaseButtonLabel="Increase"
-              onChange={onPressFn}
-            />
-          </BpkThemeProvider>,
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
-    });
-
-    it('should disable theming if the required attribute is omitted', () => {
-      const consoleErrorFn = jest.fn();
-      jest.spyOn(console, 'error').mockImplementation(consoleErrorFn);
-      const theme = {};
-      const tree = renderer
-        .create(
-          <BpkThemeProvider theme={theme} type="primary">
-            <BpkNudger
-              min={1}
-              max={9}
-              value={3}
-              decreaseButtonLabel="Decrease"
-              increaseButtonLabel="Increase"
-              onChange={() => null}
-            />
-          </BpkThemeProvider>,
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
-      expect(consoleErrorFn.mock.calls.length).toBe(1);
     });
   });
 };
