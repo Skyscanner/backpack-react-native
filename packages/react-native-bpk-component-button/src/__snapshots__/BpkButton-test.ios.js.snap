@@ -396,6 +396,10 @@ exports[`iOS BpkButton should render correctly with type="destructive" 1`] = `
         Object {
           "borderRadius": 40,
         },
+        Object {
+          "borderColor": "rgb(230, 228, 235)",
+          "borderWidth": 2,
+        },
       ]
     }
   />
@@ -481,6 +485,10 @@ exports[`iOS BpkButton should render correctly with type="destructive" and disab
         },
         Object {
           "borderRadius": 40,
+        },
+        Object {
+          "borderColor": "rgb(230, 228, 235)",
+          "borderWidth": 2,
         },
       ]
     }
@@ -921,6 +929,10 @@ exports[`iOS BpkButton should render correctly with type="secondary" 1`] = `
         Object {
           "borderRadius": 40,
         },
+        Object {
+          "borderColor": "rgb(230, 228, 235)",
+          "borderWidth": 2,
+        },
       ]
     }
   />
@@ -1006,6 +1018,10 @@ exports[`iOS BpkButton should render correctly with type="secondary" and disable
         },
         Object {
           "borderRadius": 40,
+        },
+        Object {
+          "borderColor": "rgb(230, 228, 235)",
+          "borderWidth": 2,
         },
       ]
     }
@@ -1718,6 +1734,10 @@ exports[`iOS BpkButton should support the "secondary" property 1`] = `
         Object {
           "borderRadius": 40,
         },
+        Object {
+          "borderColor": "rgb(230, 228, 235)",
+          "borderWidth": 2,
+        },
       ]
     }
   />
@@ -2115,6 +2135,10 @@ exports[`iOS should support the "large" and secondary property 1`] = `
         },
         Object {
           "borderRadius": 40,
+        },
+        Object {
+          "borderColor": "rgb(230, 228, 235)",
+          "borderWidth": 2,
         },
       ]
     }

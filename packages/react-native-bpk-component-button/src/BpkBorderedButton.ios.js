@@ -33,11 +33,13 @@ import { type IconType } from './common-types';
 type ViewProps = ElementProps<typeof View>;
 type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
 
+const BORDER_WIDTH = buttonBorderWidth;
+
 const styles = StyleSheet.create({
   button: {
     alignItems: 'center',
-    borderWidth: buttonBorderWidth,
     flexDirection: 'row',
+    borderWidth: BORDER_WIDTH,
     justifyContent: 'center',
     paddingVertical: spacingMd - buttonBorderWidth,
     paddingHorizontal: spacingBase - spacingSm - buttonBorderWidth,
@@ -108,6 +110,10 @@ const BpkBorderedButton = (props: Props) => {
 
   return (
     <BpkTouchableOverlay
+      overlayStyle={{
+        borderColor,
+        borderWidth: BORDER_WIDTH,
+      }}
       borderRadius={borderRadius}
       disabled={disabled}
       {...rest}
