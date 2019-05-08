@@ -41,7 +41,7 @@ import {
 import {
   backgroundColorForType,
   borderColorForType,
-  borderRadiusForType,
+  borderRadiusForTheme,
   textColorForType,
 } from './theming-functions';
 
@@ -97,7 +97,7 @@ const BpkButton = (props: Props) => {
 
   const themeAttributes = {
     ...getThemeAttributes(REQUIRED_THEME_ATTRIBUTES[type], theme),
-    ...getThemeAttributes(OPTIONAL_THEME_ATTRIBUTES[type], theme),
+    ...getThemeAttributes(OPTIONAL_THEME_ATTRIBUTES, theme),
   };
 
   const ButtonComponent = buttonComponentForType(type);
@@ -119,7 +119,7 @@ const BpkButton = (props: Props) => {
       accessibilityComponentType="button"
       accessibilityLabel={accessibilityLabel || title}
       accessibilityTraits={accessibilityTraits}
-      borderRadius={borderRadiusForType(type, themeAttributes)}
+      borderRadius={borderRadiusForTheme(themeAttributes)}
       {...buttonColors}
       {...rest}
     >
