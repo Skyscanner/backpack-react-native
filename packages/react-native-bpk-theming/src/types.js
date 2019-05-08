@@ -19,7 +19,7 @@
 /* @flow */
 
 export type Theme = {
-  buttonBorderRadius?: Number,
+  buttonBorderRadius?: number,
   buttonPrimaryGradientStartColor?: string,
   buttonPrimaryGradientEndColor?: string,
   buttonPrimaryTextColor?: string,
