@@ -49,23 +49,22 @@ const themeAttributes = {
   buttonPrimaryGradientStartColor: theme.brandColors.gradientStart,
   buttonPrimaryGradientEndColor: theme.brandColors.gradientEnd,
   buttonPrimaryTextColor: theme.contentColor,
-  buttonPrimaryBorderRadius: theme.borderRadius,
 
   buttonSecondaryBackgroundColor: theme.backgroundColor,
   buttonSecondaryTextColor: theme.contentColor,
   buttonSecondaryBorderColor: theme.contentColor,
-  buttonSecondaryBorderRadius: theme.borderRadius,
 
   buttonDestructiveBackgroundColor: theme.brandColors.gradientStart,
   buttonDestructiveTextColor: theme.backgroundColor,
   buttonDestructiveBorderColor: theme.brandColors.gradientStart,
-  buttonDestructiveBorderRadius: theme.borderRadius,
 
   buttonFeaturedGradientStartColor: theme.contentColor,
   buttonFeaturedGradientEndColor: theme.brandColors.gradientStart,
   buttonFeaturedTextColor: theme.backgroundColor,
 
   buttonLinkTextColor: theme.contentColor,
+
+  buttonBorderRadius: theme.borderRadius,
 
   // Used in BpkChip.
   chipSelectedBackgroundColor: theme.contentColor,

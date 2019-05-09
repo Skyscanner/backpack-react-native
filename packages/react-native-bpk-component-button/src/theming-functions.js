@@ -42,23 +42,8 @@ function valueOrDefault<T>(
   return (haystack && haystack[needle]) || defaultValue;
 }
 
-export const borderRadiusForType = (
-  type: ButtonType,
-  themeAttributes: ?Theme,
-): number => {
-  const borderRadiusThemePropsMappedToType = {
-    [BUTTON_TYPES.primary]: 'buttonPrimaryBorderRadius',
-    [BUTTON_TYPES.featured]: 'buttonFeaturedBorderRadius',
-    [BUTTON_TYPES.secondary]: 'buttonSecondaryBorderRadius',
-    [BUTTON_TYPES.destructive]: 'buttonDestructiveBorderRadius',
-  };
-
-  return valueOrDefault(
-    themeAttributes,
-    borderRadiusThemePropsMappedToType[type],
-    borderRadiusPill,
-  );
-};
+export const borderRadiusForTheme = (themeAttributes: ?Theme): number =>
+  valueOrDefault(themeAttributes, 'buttonBorderRadius', borderRadiusPill);
 
 export const backgroundColorForType = (
   type: ButtonType,

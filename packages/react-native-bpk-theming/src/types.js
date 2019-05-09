@@ -19,22 +19,19 @@
 /* @flow */
 
 export type Theme = {
+  buttonBorderRadius?: number,
   buttonPrimaryGradientStartColor?: string,
   buttonPrimaryGradientEndColor?: string,
   buttonPrimaryTextColor?: string,
-  buttonPrimaryBorderRadius?: number,
   buttonSecondaryBackgroundColor?: string,
   buttonSecondaryTextColor?: string,
   buttonSecondaryBorderColor?: string,
-  buttonSecondaryBorderRadius?: number,
   buttonDestructiveBackgroundColor?: string,
   buttonDestructiveTextColor?: string,
   buttonDestructiveBorderColor?: string,
-  buttonDestructiveBorderRadius?: number,
   buttonFeaturedGradientStartColor?: string,
   buttonFeaturedGradientEndColor?: string,
   buttonFeaturedTextColor?: string,
-  buttonFeaturedBorderRadius?: number,
   buttonLinkTextColor?: string,
   chipSelectedBackgroundColor?: string,
   chipSelectedTextColor?: string,

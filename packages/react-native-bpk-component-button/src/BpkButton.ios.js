@@ -41,7 +41,7 @@ import {
 } from './common-types';
 import {
   borderColorForType,
-  borderRadiusForType,
+  borderRadiusForTheme,
   gradientColorForType,
   textColorForType,
   backgroundColorForType,
@@ -111,7 +111,7 @@ const BpkButton = (props: Props) => {
 
   const themeAttributes = {
     ...getThemeAttributes(REQUIRED_THEME_ATTRIBUTES[type], theme),
-    ...getThemeAttributes(OPTIONAL_THEME_ATTRIBUTES[type], theme),
+    ...getThemeAttributes(OPTIONAL_THEME_ATTRIBUTES, theme),
   };
 
   const accessibilityTraits = ['button'];
@@ -132,7 +132,7 @@ const BpkButton = (props: Props) => {
       accessibilityComponentType="button"
       accessibilityLabel={accessibilityLabel || title}
       accessibilityTraits={accessibilityTraits}
-      borderRadius={borderRadiusForType(type, themeAttributes)}
+      borderRadius={borderRadiusForTheme(themeAttributes)}
       {...buttonColorsForType(type, themeAttributes, disabled)}
       {...rest}
     >
