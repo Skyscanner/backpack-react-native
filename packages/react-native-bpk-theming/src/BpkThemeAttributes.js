@@ -24,11 +24,25 @@ import { withTheme } from './BpkThemeProvider';
 
 type Attributes = {
   primaryColor: string,
+  colorGray50: string,
+  colorGray100: string,
+  colorGray300: string,
+  colorGray500: string,
+  colorGray700: string,
+  colorGray900: string,
 };
 
 export type Props = {
   children: Attributes => Node,
-  theme: { primaryColor: string },
+  theme: {
+    primaryColor: string,
+    colorGray50: string,
+    colorGray100: string,
+    colorGray300: string,
+    colorGray500: string,
+    colorGray700: string,
+    colorGray900: string,
+  },
 };
 
 /**
@@ -38,6 +52,12 @@ export type Props = {
  *
  * Supported attributes:
  * + `primaryColor`
+ * + `colorGray50`,
+ * + `colorGray100`,
+ * + `colorGray300`,
+ * + `colorGray500`,
+ * + `colorGray700`,
+ * + `colorGray900`,
  *
  * @example
  * <BpkThemeAttributes>
@@ -52,8 +72,28 @@ const BpkThemeAttributes = (props: Props) => {
   const { theme, children } = props;
   const primaryColor =
     theme && theme.primaryColor != null ? theme.primaryColor : colorBlue500;
+  const colorGray50 =
+    theme && theme.primaryColor != null ? theme.colorGray50 : colorBlue500;
+  const colorGray100 =
+    theme && theme.primaryColor != null ? theme.colorGray100 : colorBlue500;
+  const colorGray300 =
+    theme && theme.primaryColor != null ? theme.colorGray300 : colorBlue500;
+  const colorGray500 =
+    theme && theme.primaryColor != null ? theme.colorGray500 : colorBlue500;
+  const colorGray700 =
+    theme && theme.primaryColor != null ? theme.colorGray700 : colorBlue500;
+  const colorGray900 =
+    theme && theme.primaryColor != null ? theme.colorGray900 : colorBlue500;
 
-  return children({ primaryColor });
+  return children({
+    primaryColor,
+    colorGray50,
+    colorGray100,
+    colorGray300,
+    colorGray500,
+    colorGray700,
+    colorGray900,
+  });
 };
 
 export default withTheme(BpkThemeAttributes);
