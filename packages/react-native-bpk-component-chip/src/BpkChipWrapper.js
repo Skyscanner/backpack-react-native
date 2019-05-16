@@ -38,7 +38,10 @@ import { shadows } from 'react-native-bpk-styles';
 import { getThemeAttributes, withTheme } from 'react-native-bpk-theming';
 
 import BpkChipInner from './BpkChipInner';
-import { REQUIRED_THEME_ATTRIBUTES } from './theming';
+import {
+  REQUIRED_THEME_ATTRIBUTES,
+  OPTIONAL_THEME_ATTRIBUTES,
+} from './theming';
 import {
   type Props as CommonProps,
   commonPropTypes,
@@ -109,13 +112,29 @@ const BpkChipWrapper = (props: Props) => {
   if (selected) {
     innerStyle.push(styles.innerSelected);
     textStyle.push(styles.textSelected);
+  }
 
-    const themeAttributes = getThemeAttributes(
-      REQUIRED_THEME_ATTRIBUTES,
-      theme,
-    );
+  if (disabled) {
+    innerStyle.push(styles.innerDisabled);
+    textStyle.push(styles.textDisabled);
+    iconStyle.push(styles.iconDisabled);
+  }
 
-    if (themeAttributes) {
+  const themeAttributes = {
+    ...getThemeAttributes(REQUIRED_THEME_ATTRIBUTES, theme),
+    ...getThemeAttributes(OPTIONAL_THEME_ATTRIBUTES, theme),
+  };
+
+  if (themeAttributes) {
+    if (themeAttributes.colorGray700 && themeAttributes.colorGray500) {
+      textStyle.push({
+        color: themeAttributes.colorGray700,
+      });
+      iconStyle.push({
+        color: themeAttributes.colorGray500,
+      });
+    }
+    if (selected) {
       innerStyle.push({
         backgroundColor: themeAttributes.chipSelectedBackgroundColor,
       });
@@ -123,12 +142,14 @@ const BpkChipWrapper = (props: Props) => {
         color: themeAttributes.chipSelectedTextColor,
       });
     }
-  }
-
-  if (disabled) {
-    innerStyle.push(styles.innerDisabled);
-    textStyle.push(styles.textDisabled);
-    iconStyle.push(styles.iconDisabled);
+    if (disabled && themeAttributes.colorGray300) {
+      textStyle.push({
+        color: themeAttributes.colorGray300,
+      });
+      iconStyle.push({
+        color: themeAttributes.colorGray300,
+      });
+    }
   }
 
   return (
