@@ -45,6 +45,14 @@ const theme = {
 /* eslint-enable backpack/use-tokens */
 
 const themeAttributes = {
+  // Used for color theming
+  colorGray50: '#F1F3F3',
+  colorGray100: '#DCDFE0',
+  colorGray300: 'pink', // '#B3BABD',
+  colorGray500: 'purple', // '#657176',
+  colorGray700: 'orange', // '#4B5458',
+  colorGray900: '#0B1A22',
+
   // Used in BpkButton.
   buttonPrimaryGradientStartColor: theme.brandColors.gradientStart,
   buttonPrimaryGradientEndColor: theme.brandColors.gradientEnd,
