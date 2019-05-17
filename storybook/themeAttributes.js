@@ -48,9 +48,9 @@ const themeAttributes = {
   // Used for color theming
   colorGray50: '#F1F3F3',
   colorGray100: '#DCDFE0',
-  colorGray300: 'pink', // '#B3BABD',
-  colorGray500: 'purple', // '#657176',
-  colorGray700: 'orange', // '#4B5458',
+  colorGray300: '#B3BABD',
+  colorGray500: '#657176',
+  colorGray700: '#4B5458',
   colorGray900: '#0B1A22',
 
   // Used in BpkButton.
