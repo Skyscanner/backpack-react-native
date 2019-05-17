@@ -2,6 +2,17 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-05-17 - Visual fixes for iOS buttons and theming tweaks
+
+**Fixed:**
+
+- react-native-bpk-component-button:
+  - Aligned iOS secondary and destructive buttons to iOS native buttons.
+  - Tweaked the theming props for border radius. See *Theme props* section of https://backpack.github.io/components/button/?platform=native.
+
+- react-native-bpk-component-calendar:
+  - Remove version range for `backpack-android`.
+
 # 2019-05-06 - Fix touchable highlight for Android 
 
 **Fixed:**
