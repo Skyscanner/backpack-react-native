@@ -18,17 +18,39 @@
 /* @flow */
 
 import { type Node } from 'react';
-import { colorBlue500 } from 'bpk-tokens/tokens/base.react.native';
+import {
+  colorBlue500,
+  colorGray50,
+  colorGray100,
+  colorGray300,
+  colorGray500,
+  colorGray700,
+  colorGray900,
+} from 'bpk-tokens/tokens/base.react.native';
 
 import { withTheme } from './BpkThemeProvider';
 
 type Attributes = {
   primaryColor: string,
+  colorGray50: string,
+  colorGray100: string,
+  colorGray300: string,
+  colorGray500: string,
+  colorGray700: string,
+  colorGray900: string,
 };
 
 export type Props = {
   children: Attributes => Node,
-  theme: { primaryColor: string },
+  theme: {
+    primaryColor: string,
+    colorGray50: string,
+    colorGray100: string,
+    colorGray300: string,
+    colorGray500: string,
+    colorGray700: string,
+    colorGray900: string,
+  },
 };
 
 /**
@@ -38,6 +60,12 @@ export type Props = {
  *
  * Supported attributes:
  * + `primaryColor`
+ * + `colorGray50`,
+ * + `colorGray100`,
+ * + `colorGray300`,
+ * + `colorGray500`,
+ * + `colorGray700`,
+ * + `colorGray900`,
  *
  * @example
  * <BpkThemeAttributes>
@@ -52,8 +80,28 @@ const BpkThemeAttributes = (props: Props) => {
   const { theme, children } = props;
   const primaryColor =
     theme && theme.primaryColor != null ? theme.primaryColor : colorBlue500;
+  const gray50 =
+    theme && theme.colorGray50 != null ? theme.colorGray50 : colorGray50;
+  const gray100 =
+    theme && theme.colorGray100 != null ? theme.colorGray100 : colorGray100;
+  const gray300 =
+    theme && theme.colorGray300 != null ? theme.colorGray300 : colorGray300;
+  const gray500 =
+    theme && theme.colorGray500 != null ? theme.colorGray500 : colorGray500;
+  const gray700 =
+    theme && theme.colorGray700 != null ? theme.colorGray700 : colorGray700;
+  const gray900 =
+    theme && theme.colorGray900 != null ? theme.colorGray900 : colorGray900;
 
-  return children({ primaryColor });
+  return children({
+    primaryColor,
+    colorGray50: gray50,
+    colorGray100: gray100,
+    colorGray300: gray300,
+    colorGray500: gray500,
+    colorGray700: gray700,
+    colorGray900: gray900,
+  });
 };
 
 export default withTheme(BpkThemeAttributes);
