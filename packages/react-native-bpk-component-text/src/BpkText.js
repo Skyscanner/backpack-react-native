@@ -54,7 +54,10 @@ import {
 import { Text, Platform, StyleSheet } from 'react-native';
 import { getThemeAttributes, withTheme } from 'react-native-bpk-theming';
 
-import { REQUIRED_THEME_ATTRIBUTES } from './theming';
+import {
+  REQUIRED_THEME_ATTRIBUTES,
+  OPTIONAL_THEME_ATTRIBUTES,
+} from './theming';
 import { shouldApplyFontWeightFix } from './font-weight-fix';
 import {
   propTypes,
@@ -186,11 +189,19 @@ const BpkText = (props: Props) => {
     getEmphasizeProperties(getWeight(emphasize, weight, textStyle)),
   ];
 
-  const themeAttributes = getThemeAttributes(REQUIRED_THEME_ATTRIBUTES, theme);
+  const themeAttributes = {
+    ...getThemeAttributes(REQUIRED_THEME_ATTRIBUTES, theme),
+    ...getThemeAttributes(OPTIONAL_THEME_ATTRIBUTES, theme),
+  };
   if (themeAttributes) {
     style.push({
       fontFamily: themeAttributes.textFontFamily,
     });
+    if (themeAttributes.colorGray700) {
+      style.push({
+        color: themeAttributes.colorGray700,
+      });
+    }
   }
 
   if (userStyle) {
