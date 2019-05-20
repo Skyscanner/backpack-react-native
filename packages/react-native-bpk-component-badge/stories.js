@@ -27,9 +27,11 @@ import {
   colorGray700,
   spacingSm,
 } from 'bpk-tokens/tokens/base.react.native';
+import BpkThemeProvider from 'react-native-bpk-theming';
 
 import { StorySubheading } from '../../storybook/TextStyles';
 import CenterDecorator from '../../storybook/CenterDecorator';
+import themeAttributes from '../../storybook/themeAttributes';
 
 import BpkBadge, {
   BpkBadgeIcons,
@@ -168,4 +170,11 @@ storiesOf('react-native-bpk-component-badge', module)
     <View>
       {generateBadgeStory(['Advert'], { docked: BADGE_DOCKED_TYPES.end })}
     </View>
+  ))
+  .add('docs:themed', () => (
+    <BpkThemeProvider theme={themeAttributes}>
+      <View>
+        {generateBadgeStory(['Apples', 'Bananas', 'Strawberries', 'Pears'])}
+      </View>
+    </BpkThemeProvider>
   ));

@@ -29,6 +29,7 @@ import {
 import PropTypes from 'prop-types';
 import BpkButtonLink from 'react-native-bpk-component-button-link';
 import { colorGray200, spacingBase } from 'bpk-tokens/tokens/base.react.native';
+import { withTheme } from 'react-native-bpk-theming';
 
 import {
   PICKER_MENU_PROP_TYPE,
@@ -84,10 +85,16 @@ const BpkPickerMenu = (props: Props) => {
     onValueChange,
     onClose,
     doneLabel,
+    theme,
   } = props;
   const pickerItems = React.Children.map(children, child =>
     React.cloneElement(child, { key: child.props.value }),
   );
+
+  const modalHeaderStyle = {
+    borderColor:
+      theme && theme.colorGray200 ? theme.colorGray200 : colorGray200,
+  };
   return (
     <Modal
       supportedOrientations={['portrait', 'landscape']}
@@ -99,7 +106,7 @@ const BpkPickerMenu = (props: Props) => {
         <View style={styles.dismissOverlay} />
       </TouchableWithoutFeedback>
       <View style={styles.modal}>
-        <View style={styles.modalHeader}>
+        <View style={(styles.modalHeader, modalHeaderStyle)}>
           <BpkButtonLink
             title={doneLabel}
             onPress={onClose}
@@ -124,4 +131,4 @@ BpkPickerMenu.propTypes = {
 
 BpkPickerMenu.defaultProps = PICKER_MENU_DEFAULT_PROPS;
 
-export default BpkPickerMenu;
+export default withTheme(BpkPickerMenu);

@@ -50,6 +50,7 @@ export type Props = {
   show: boolean,
   toggleExpandedButtonLabel: ?string,
   bannerStyle: ?any,
+  theme: ?Theme,
 };
 
 export const propTypes = {
@@ -80,4 +81,5 @@ export const defaultProps = {
   show: true,
   toggleExpandedButtonLabel: null,
   bannerStyle: null,
+  theme: null,
 };

@@ -40,7 +40,7 @@
     "prettier": "prettier --config .prettierrc --write \"**/*.js\"",
     "create-component": "node scripts/npm/create-component.js",
     "link": "react-native link",
-    "ios": "npm run install:cocoapods && react-native run-ios --simulator=\"iPhone 8\"",
+    "ios": "npm run install:cocoapods && react-native run-ios --simulator=\"iPhone X\"",
     "android:emulator": "$ANDROID_SDK_ROOT/emulator/emulator -avd bpk-avd",
     "android:emulator:min": "$ANDROID_SDK_ROOT/emulator/emulator -avd bpk-avd-min",
     "android:build": "react-native run-android",

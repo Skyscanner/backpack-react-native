@@ -35,6 +35,9 @@ import {
   spacingMd,
 } from 'bpk-tokens/tokens/base.react.native';
 import { View, ViewPropTypes, StyleSheet } from 'react-native';
+import { withTheme } from 'react-native-bpk-theming';
+
+// import { themePropType } from '../../react-native-bpk-component-chip/src/theming';
 
 const styles = StyleSheet.create({
   viewBase: {
@@ -125,6 +128,7 @@ export type Props = {
   message: ?string,
   type: $Keys<typeof BADGE_TYPES>,
   style: ?(Object | Array<Object>),
+  theme: ?Theme,
 };
 
 const viewStyleMap: { [key: string]: Object | Array<Object> } = {
@@ -148,6 +152,7 @@ const BpkBadge = (props: Props) => {
     message,
     docked,
     type,
+    theme,
     style: userStyle,
   } = props;
 
@@ -167,6 +172,15 @@ const BpkBadge = (props: Props) => {
 
   if (userStyle) {
     viewStyle.push(userStyle);
+  }
+
+  if (theme && theme.colorGray50 && theme.colorGray700) {
+    if (type === 'light') {
+      viewStyle.push({ color: theme.colorGray50 });
+    }
+    if (type !== 'destructive' || type !== 'outline') {
+      textStyle.push({ color: theme.colorGray700 });
+    }
   }
 
   const accessoryViewItemStyle = textStyle.slice(0);
@@ -227,6 +241,7 @@ BpkBadge.defaultProps = {
   message: null,
   style: null,
   type: BADGE_TYPES.warning,
+  theme: null,
 };
 
-export default BpkBadge;
+export default withTheme(BpkBadge);

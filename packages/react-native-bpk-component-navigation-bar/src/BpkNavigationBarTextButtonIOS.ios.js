@@ -27,6 +27,7 @@ import {
   colorGray300,
   colorGray700,
 } from 'bpk-tokens/tokens/base.react.native';
+import { withTheme } from 'react-native-bpk-theming';
 
 export const BUTTON_TYPES = {
   default: 'default',
@@ -41,7 +42,7 @@ export type Props = {
   emphasize: boolean,
   disabled: boolean,
   onPress: ?() => mixed,
-
+  theme: ?Theme,
   // Internal only
   leading: boolean,
   tintColor: ?string,
@@ -63,11 +64,6 @@ const styles = StyleSheet.create({
   },
 });
 
-const tintColors = {
-  [BUTTON_TYPES.default]: colorGray700,
-  [BUTTON_TYPES.primary]: colorBlue500,
-};
-
 const BpkNavigationBarTextButtonIOS = (props: Props) => {
   const {
     title,
@@ -79,7 +75,13 @@ const BpkNavigationBarTextButtonIOS = (props: Props) => {
     tintColor,
     primaryTintColor,
     leading,
+    theme,
   } = props;
+  const tintColors = {
+    [BUTTON_TYPES.default]:
+      theme && theme.colorGray700 ? theme.colorGray700 : colorGray700,
+    [BUTTON_TYPES.primary]: colorBlue500,
+  };
 
   let tintColorFinal = tintColors[type];
   if (type === BUTTON_TYPES.primary && primaryTintColor) {
@@ -91,7 +93,10 @@ const BpkNavigationBarTextButtonIOS = (props: Props) => {
   const accessibilityTraits = ['button'];
   if (disabled) {
     accessibilityTraits.push('disabled');
-    tintColorFinal = disabledTintColor || colorGray300;
+    tintColorFinal =
+      disabledTintColor || (theme && theme.colorGray300)
+        ? theme.colorGray300
+        : colorGray300;
   }
 
   const titleStyle = [{ color: tintColorFinal }];
@@ -140,7 +145,7 @@ BpkNavigationBarTextButtonIOS.defaultProps = {
   disabled: false,
   onPress: null,
   type: BUTTON_TYPES.default,
-
+  theme: null,
   // Internal only
   leading: false,
   tintColor: null,
@@ -148,4 +153,4 @@ BpkNavigationBarTextButtonIOS.defaultProps = {
   primaryTintColor: null,
 };
 
-export default BpkNavigationBarTextButtonIOS;
+export default withTheme(BpkNavigationBarTextButtonIOS);

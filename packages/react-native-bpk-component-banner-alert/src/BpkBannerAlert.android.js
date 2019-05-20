@@ -36,6 +36,7 @@ import BpkIcon, { icons } from 'react-native-bpk-component-icon';
 import BpkButtonLink from 'react-native-bpk-component-button-link';
 import BpkAnimateHeight from 'react-native-bpk-component-animate-height';
 import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-native-feedback';
+import { withTheme } from 'react-native-bpk-theming';
 
 import {
   type Props,
@@ -89,25 +90,6 @@ const STYLES = StyleSheet.create({
   },
 });
 
-const ALERT_TYPE_STYLES = {
-  [ALERT_TYPES.success]: {
-    icon: icons['tick-circle'],
-    iconStyle: STYLES.iconSuccess,
-  },
-  [ALERT_TYPES.warn]: {
-    icon: icons['information-circle'],
-    iconStyle: STYLES.iconWarn,
-  },
-  [ALERT_TYPES.error]: {
-    icon: icons['information-circle'],
-    iconStyle: STYLES.iconError,
-  },
-  [ALERT_TYPES.neutral]: {
-    icon: icons['information-circle'],
-    iconStyle: STYLES.iconNeutral,
-  },
-};
-
 const BpkBannerAlert = (props: Props) => {
   const {
     type,
@@ -123,11 +105,40 @@ const BpkBannerAlert = (props: Props) => {
     animateOnEnter,
     animateOnLeave,
     children,
+    theme,
     ...rest
   } = props;
 
+  const ALERT_TYPE_STYLES = {
+    [ALERT_TYPES.success]: {
+      icon: icons['tick-circle'],
+      iconStyle: STYLES.iconSuccess,
+    },
+    [ALERT_TYPES.warn]: {
+      icon: icons['information-circle'],
+      iconStyle: STYLES.iconWarn,
+    },
+    [ALERT_TYPES.error]: {
+      icon: icons['information-circle'],
+      iconStyle: STYLES.iconError,
+    },
+    [ALERT_TYPES.neutral]: {
+      icon: icons['information-circle'],
+      iconStyle:
+        theme && theme.colorGray500
+          ? { color: theme.colorGray500 }
+          : STYLES.iconNeutral,
+    },
+  };
+
   const expandable = children !== null;
   const { icon, iconStyle } = ALERT_TYPE_STYLES[type] || {};
+
+  const backgroundStyle = [STYLES.background];
+
+  if (theme && theme.colorGray50) {
+    backgroundStyle.push({ backgroundColor: theme.colorGray50 });
+  }
 
   const rowContent = (
     <Fragment>
@@ -159,7 +170,7 @@ const BpkBannerAlert = (props: Props) => {
       show={show}
       {...rest}
     >
-      <View style={[STYLES.background, bannerStyle]}>
+      <View style={[backgroundStyle, bannerStyle]}>
         {expandable ? (
           <BpkTouchableNativeFeedback
             onPress={onToggleExpanded}
@@ -188,4 +199,4 @@ BpkBannerAlert.propTypes = { ...propTypes };
 
 BpkBannerAlert.defaultProps = { ...defaultProps };
 
-export default BpkBannerAlert;
+export default withTheme(BpkBannerAlert);

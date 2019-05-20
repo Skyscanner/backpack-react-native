@@ -23,6 +23,7 @@ import PropTypes from 'prop-types';
 import { I18nManager, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import BpkText from 'react-native-bpk-component-text';
 import { colorGray700 } from 'bpk-tokens/tokens/base.react.native';
+import { withTheme } from 'react-native-bpk-theming';
 
 const chevron = I18nManager.isRTL
   ? require('./chevron-right.png')
@@ -33,6 +34,7 @@ export type Props = {
   showTitle: boolean,
   onPress: ?() => mixed,
   tintColor: ?string,
+  theme: ?Theme,
 };
 
 // NOTE: this file explicitly does not use the Backpack tokens(for spacing) because it's based on UIKit design tokens not Backpack.
@@ -52,8 +54,11 @@ const styles = StyleSheet.create({
 });
 
 const BpkNavigationBarBackButtonIOS = (props: Props) => {
-  const { title, showTitle, onPress, tintColor } = props;
-  const tintColorFinal = tintColor || colorGray700;
+  const { title, showTitle, onPress, tintColor, theme } = props;
+  const tintColorFinal =
+    tintColor || (theme && theme.colorGray700)
+      ? theme.colorGray700
+      : colorGray700;
   const titleStyle = [{ color: tintColorFinal }];
   const iconStyle = [showTitle ? styles.backIcon : styles.backIconWithoutTitle];
 
@@ -93,9 +98,9 @@ BpkNavigationBarBackButtonIOS.propTypes = {
 BpkNavigationBarBackButtonIOS.defaultProps = {
   showTitle: false,
   onPress: null,
-
+  theme: null,
   // Internal only
   tintColor: null,
 };
 
-export default BpkNavigationBarBackButtonIOS;
+export default withTheme(BpkNavigationBarBackButtonIOS);

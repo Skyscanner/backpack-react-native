@@ -22,8 +22,10 @@ import React from 'react';
 import { storiesOf } from '@storybook/react-native';
 import { ScrollView, StyleSheet } from 'react-native';
 import BpkText from 'react-native-bpk-component-text';
+import BpkThemeProvider from 'react-native-bpk-theming';
 
 import CenterDecorator from '../../storybook/CenterDecorator';
+import themeAttributes from '../../storybook/themeAttributes';
 
 import BpkPanel, { withDivider } from './index';
 
@@ -140,4 +142,11 @@ storiesOf('react-native-bpk-component-panel', module)
           );
         })}
     </ScrollView>
+  ))
+  .add('docs:theme-with-divider', () => (
+    <BpkThemeProvider theme={themeAttributes}>
+      <BpkPanelWithDivider stub={stubContent} mainStyle={styles.panelMainStyle}>
+        {mainContent}
+      </BpkPanelWithDivider>
+    </BpkThemeProvider>
   ));

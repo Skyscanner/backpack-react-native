@@ -30,6 +30,7 @@ import {
 } from 'bpk-tokens/tokens/base.react.native';
 import TransitionGroup from '@skyscanner/react-native-transitiongroup';
 import { View, StyleSheet, ViewPropTypes } from 'react-native';
+import { withTheme } from 'react-native-bpk-theming';
 
 import BpkCarouselIndicatorDot, {
   INDICATOR_SIZES,
@@ -96,6 +97,7 @@ export type Props = {
   pageCount: number,
   selectedIndex: number,
   style: ViewStyleProp,
+  theme: ?Theme,
 };
 
 const getIndicatorIndexFromKey = key => parseInt(key.replace(/\D/g, ''), 10);
@@ -122,7 +124,7 @@ const transitionGroupSorter = children =>
     }, {});
 
 const BpkCarouselIndicator = (props: Props) => {
-  const { pageCount, selectedIndex, style, ...rest } = props;
+  const { pageCount, selectedIndex, style, theme, ...rest } = props;
 
   const indicators = new Array(pageCount)
     .fill()
@@ -135,10 +137,15 @@ const BpkCarouselIndicator = (props: Props) => {
     ));
 
   const { begin, end } = getIndicatorSlice(pageCount, selectedIndex);
+  const wrapperStyle = [styles.wrapper];
+
+  if (theme && theme.colorGray900) {
+    wrapperStyle.push({ backgroundColor: setOpacity(theme.colorGray900, 0.3) });
+  }
 
   return (
     <TransitionGroup
-      style={[styles.wrapper, style]}
+      style={[wrapperStyle, style]}
       childrenSortFn={transitionGroupSorter}
       {...rest}
     >
@@ -155,6 +162,7 @@ BpkCarouselIndicator.propTypes = {
 
 BpkCarouselIndicator.defaultProps = {
   style: null,
+  theme: null,
 };
 
-export default BpkCarouselIndicator;
+export default withTheme(BpkCarouselIndicator);

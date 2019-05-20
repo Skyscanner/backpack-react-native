@@ -22,8 +22,10 @@ import React from 'react';
 import { StyleSheet, Animated } from 'react-native';
 import { spacingLg } from 'bpk-tokens/tokens/base.react.native';
 import { storiesOf } from '@storybook/react-native';
+import BpkThemeProvider from 'react-native-bpk-theming';
 
 import CenterDecorator from '../../storybook/CenterDecorator';
+import themeAttributes from '../../storybook/themeAttributes';
 
 import BpkImage, { withLoadingBehaviour } from './index';
 
@@ -91,4 +93,14 @@ storiesOf('react-native-bpk-component-image', module)
       }}
       style={styles.image}
     />
+  ))
+  .add('docs:with theme', () => (
+    <BpkThemeProvider theme={themeAttributes}>
+      <BpkImageWithLoading
+        style={styles.image}
+        source={{
+          uri: 'https://unsplash.com/photos/HEkMWKpynBA/download?force=true',
+        }}
+      />
+    </BpkThemeProvider>
   ));

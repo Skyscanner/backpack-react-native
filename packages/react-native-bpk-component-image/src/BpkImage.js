@@ -28,6 +28,7 @@ import {
 } from 'bpk-tokens/tokens/base.react.native';
 import AnimatedValue from 'react-native/Libraries/Animated/src/nodes/AnimatedValue';
 import BpkSpinner from 'react-native-bpk-component-spinner';
+import { withTheme } from 'react-native-bpk-theming';
 
 type ImageProps = ElementProps<typeof Image>;
 type ViewProps = ElementProps<typeof View>;
@@ -64,6 +65,7 @@ export type Props = {
   loaded: boolean,
   rounded: boolean,
   imageComponent: ComponentType<ImageProps>,
+  theme: ?Theme,
 };
 
 class BpkImage extends Component<Props> {
@@ -95,6 +97,7 @@ class BpkImage extends Component<Props> {
     rounded: true,
     style: null,
     imageComponent: Animated.Image,
+    theme: null,
   };
 
   constructor(props: Props) {
@@ -129,6 +132,7 @@ class BpkImage extends Component<Props> {
       rounded,
       loaded,
       imageComponent: ImageComponent,
+      theme,
       ...rest
     } = this.props;
 
@@ -145,7 +149,11 @@ class BpkImage extends Component<Props> {
         <Animated.View
           style={[
             styles.loadingIndicatorView,
-            { opacity: this.loadingIndicatorOpacity },
+            {
+              opacity: this.loadingIndicatorOpacity,
+              backgroundColor:
+                theme && theme.colorGray300 ? theme.colorGray300 : colorGray300,
+            },
           ]}
         >
           {inView && <BpkSpinner small type="dark" />}
@@ -164,4 +172,4 @@ class BpkImage extends Component<Props> {
   }
 }
 
-export default BpkImage;
+export default withTheme(BpkImage);
