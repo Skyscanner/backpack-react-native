@@ -42,6 +42,10 @@ limitations under the License.
 
 </details>
 
+## How we review Backpack contributions
+
+Please see the [code review guidelines](https://github.com/Skyscanner/backpack/blob/master/CODE_REVIEW_GUIDELINES.md).
+
 ### Decisions
 
 Conventions and squad decisions are kept in the [decisions folder](/decisions). We recommend familiarising yourself with these.
