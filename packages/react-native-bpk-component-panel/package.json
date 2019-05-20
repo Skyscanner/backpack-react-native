@@ -19,6 +19,6 @@
   },
   "devDependencies": {
     "react-native-bpk-component-text": "^4.1.5",
-    "react-native-bpk-theming": "^1.2.0"
+    "react-native-bpk-theming": "^1.1.4"
   }
 }

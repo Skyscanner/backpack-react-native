@@ -160,17 +160,19 @@ exports[`IOS BpkCarousel should render correctly 1`] = `
     pointerEvents="box-none"
     style={
       Array [
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "rgba(37, 32, 51, 0.3)",
-          "borderRadius": 4,
-          "flexDirection": "row",
-          "height": 24,
-          "justifyContent": "center",
-          "paddingHorizontal": 12,
-          "paddingVertical": 8,
-          "width": 72,
-        },
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "rgba(37, 32, 51, 0.3)",
+            "borderRadius": 4,
+            "flexDirection": "row",
+            "height": 24,
+            "justifyContent": "center",
+            "paddingHorizontal": 12,
+            "paddingVertical": 8,
+            "width": 72,
+          },
+        ],
         Object {
           "alignSelf": "center",
           "bottom": 32,
@@ -430,17 +432,19 @@ exports[`IOS BpkCarousel should render correctly with an "accessibilityLabel" fu
     pointerEvents="box-none"
     style={
       Array [
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "rgba(37, 32, 51, 0.3)",
-          "borderRadius": 4,
-          "flexDirection": "row",
-          "height": 24,
-          "justifyContent": "center",
-          "paddingHorizontal": 12,
-          "paddingVertical": 8,
-          "width": 72,
-        },
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "rgba(37, 32, 51, 0.3)",
+            "borderRadius": 4,
+            "flexDirection": "row",
+            "height": 24,
+            "justifyContent": "center",
+            "paddingHorizontal": 12,
+            "paddingVertical": 8,
+            "width": 72,
+          },
+        ],
         Object {
           "alignSelf": "center",
           "bottom": 32,

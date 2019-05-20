@@ -20,6 +20,6 @@
   },
   "devDependencies": {
     "react-native-bpk-component-button": "^9.2.1",
-    "react-native-bpk-theming": "^1.2.0"
+    "react-native-bpk-theming": "^1.1.4"
   }
 }

@@ -93,10 +93,9 @@ const BpkNavigationBarTextButtonIOS = (props: Props) => {
   const accessibilityTraits = ['button'];
   if (disabled) {
     accessibilityTraits.push('disabled');
-    tintColorFinal =
-      disabledTintColor || (theme && theme.colorGray300)
-        ? theme.colorGray300
-        : colorGray300;
+    const gray300 =
+      theme && theme.colorGray300 ? theme.colorGray300 : colorGray300;
+    tintColorFinal = disabledTintColor || gray300;
   }
 
   const titleStyle = [{ color: tintColorFinal }];

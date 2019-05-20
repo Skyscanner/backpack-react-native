@@ -51,11 +51,9 @@ const TitleView = (props: {
   theme: ?Theme,
 }) => {
   const { title, tintColor, style, theme, ...rest } = props;
-
-  const tintColorFinal =
-    tintColor || (theme && theme.colorGray700)
-      ? theme.colorGray700
-      : colorGray700;
+  const gray700 =
+    theme && theme.colorGray700 ? theme.colorGray700 : colorGray700;
+  const tintColorFinal = tintColor || gray700;
 
   const titleValue = typeof title === 'object' ? title.value : title;
   const hasIcon = typeof title === 'object';
