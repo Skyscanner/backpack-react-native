@@ -27,9 +27,6 @@ exports[`iOS BpkPanel should render correctly 1`] = `
           "letterSpacing": 0.12,
         },
         Object {},
-        Object {
-          "fontFamily": undefined,
-        },
       ]
     }
   >
@@ -66,9 +63,6 @@ exports[`iOS BpkPanel should render correctly with arbitrary props 1`] = `
           "letterSpacing": 0.12,
         },
         Object {},
-        Object {
-          "fontFamily": undefined,
-        },
       ]
     }
   >
@@ -107,9 +101,6 @@ exports[`iOS BpkPanel should render correctly with custom style 1`] = `
           "letterSpacing": 0.12,
         },
         Object {},
-        Object {
-          "fontFamily": undefined,
-        },
       ]
     }
   >
@@ -142,9 +133,6 @@ exports[`iOS BpkPanel should render correctly without padding 1`] = `
           "letterSpacing": 0.12,
         },
         Object {},
-        Object {
-          "fontFamily": undefined,
-        },
       ]
     }
   >

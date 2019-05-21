@@ -54,9 +54,6 @@ exports[`Android BpkButtonLink should render correctly 1`] = `
           Object {
             "fontFamily": "sans-serif-medium",
           },
-          Object {
-            "fontFamily": undefined,
-          },
           Array [
             Object {
               "color": "rgb(0, 178, 214)",
@@ -127,9 +124,6 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="leadi
           },
           Object {
             "fontFamily": "sans-serif-medium",
-          },
-          Object {
-            "fontFamily": undefined,
           },
           Array [
             Object {
@@ -227,9 +221,6 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="trail
           Object {
             "fontFamily": "sans-serif-medium",
           },
-          Object {
-            "fontFamily": undefined,
-          },
           Array [
             Object {
               "color": "rgb(0, 178, 214)",
@@ -323,9 +314,6 @@ exports[`Android BpkButtonLink should render correctly with text props provided 
           Object {
             "fontFamily": "sans-serif-medium",
           },
-          Object {
-            "fontFamily": undefined,
-          },
           Array [
             Object {
               "color": "rgb(0, 178, 214)",
@@ -393,9 +381,6 @@ exports[`Android BpkButtonLink should render correctly with theme prop 1`] = `
           },
           Object {
             "fontFamily": "sans-serif-medium",
-          },
-          Object {
-            "fontFamily": undefined,
           },
           Array [
             Object {
@@ -468,9 +453,6 @@ exports[`Android BpkButtonLink should support elements as icons 1`] = `
           Object {
             "fontFamily": "sans-serif-medium",
           },
-          Object {
-            "fontFamily": undefined,
-          },
           Array [
             Object {
               "color": "rgb(0, 178, 214)",
@@ -492,9 +474,6 @@ exports[`Android BpkButtonLink should support elements as icons 1`] = `
             "letterSpacing": -0.2,
           },
           Object {},
-          Object {
-            "fontFamily": undefined,
-          },
         ]
       }
     >
@@ -559,9 +538,6 @@ exports[`Android BpkButtonLink should support overwriting styles 1`] = `
           },
           Object {
             "fontFamily": "sans-serif-medium",
-          },
-          Object {
-            "fontFamily": undefined,
           },
           Array [
             Object {
@@ -630,9 +606,6 @@ exports[`Android BpkButtonLink should support the "disabled" property 1`] = `
           },
           Object {
             "fontFamily": "sans-serif-medium",
-          },
-          Object {
-            "fontFamily": undefined,
           },
           Array [
             Object {
@@ -704,9 +677,6 @@ exports[`Android BpkButtonLink should support the "icon" property 1`] = `
           },
           Object {
             "fontFamily": "sans-serif-medium",
-          },
-          Object {
-            "fontFamily": undefined,
           },
           Array [
             Object {
@@ -800,9 +770,6 @@ exports[`Android should support "borderlessBackground" equal to false 1`] = `
           Object {
             "fontFamily": "sans-serif-medium",
           },
-          Object {
-            "fontFamily": undefined,
-          },
           Array [
             Object {
               "color": "rgb(0, 178, 214)",
@@ -870,9 +837,6 @@ exports[`Android should support "uppercase" equal to false 1`] = `
           },
           Object {
             "fontFamily": "sans-serif-medium",
-          },
-          Object {
-            "fontFamily": undefined,
           },
           Array [
             Object {

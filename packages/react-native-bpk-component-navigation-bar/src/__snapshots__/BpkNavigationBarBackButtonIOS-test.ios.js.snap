@@ -94,9 +94,6 @@ exports[`iOS BpkNavigationBarBackButtonIOS should render correctly with title 1`
           "letterSpacing": 0.12,
         },
         Object {},
-        Object {
-          "fontFamily": undefined,
-        },
         Array [
           Object {
             "color": "rgb(82, 76, 97)",

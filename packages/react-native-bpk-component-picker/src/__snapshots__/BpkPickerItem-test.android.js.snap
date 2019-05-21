@@ -35,9 +35,6 @@ exports[`Android BpkPickerItem should render correctly 1`] = `
           "letterSpacing": -0.2,
         },
         Object {},
-        Object {
-          "fontFamily": undefined,
-        },
         Object {},
       ]
     }
@@ -82,9 +79,6 @@ exports[`Android BpkPickerItem should render correctly with an onPress function 
           "letterSpacing": -0.2,
         },
         Object {},
-        Object {
-          "fontFamily": undefined,
-        },
         Object {},
       ]
     }
@@ -129,9 +123,6 @@ exports[`Android BpkPickerItem should render correctly with the selected prop 1`
           "letterSpacing": -0.2,
         },
         Object {},
-        Object {
-          "fontFamily": undefined,
-        },
         Object {
           "color": "rgb(0, 178, 214)",
         },

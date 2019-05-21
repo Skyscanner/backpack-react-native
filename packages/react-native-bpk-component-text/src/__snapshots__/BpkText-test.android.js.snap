@@ -14,9 +14,6 @@ exports[`Android BpkText should ignore weight prop if deprecated \`emphasize\` p
       Object {
         "fontFamily": "sans-serif-medium",
       },
-      Object {
-        "fontFamily": undefined,
-      },
     ]
   }
 >
@@ -36,9 +33,6 @@ exports[`Android BpkText should render correctly 1`] = `
         "letterSpacing": -0.2,
       },
       Object {},
-      Object {
-        "fontFamily": undefined,
-      },
     ]
   }
 >
@@ -59,9 +53,6 @@ exports[`Android BpkText should render correctly with deprecated \`emphasize\` p
       },
       Object {
         "fontFamily": "sans-serif-medium",
-      },
-      Object {
-        "fontFamily": undefined,
       },
     ]
   }
@@ -84,9 +75,6 @@ exports[`Android BpkText should render correctly with textStyle="base and weight
       Object {
         "fontFamily": "sans-serif-medium",
       },
-      Object {
-        "fontFamily": undefined,
-      },
     ]
   }
 >
@@ -106,9 +94,6 @@ exports[`Android BpkText should render correctly with textStyle="base" 1`] = `
         "letterSpacing": -0.2,
       },
       Object {},
-      Object {
-        "fontFamily": undefined,
-      },
     ]
   }
 >
@@ -130,9 +115,6 @@ exports[`Android BpkText should render correctly with textStyle="caps and weight
       Object {
         "fontFamily": "sans-serif-medium",
       },
-      Object {
-        "fontFamily": undefined,
-      },
     ]
   }
 >
@@ -152,9 +134,6 @@ exports[`Android BpkText should render correctly with textStyle="caps" 1`] = `
         "letterSpacing": 0.4,
       },
       Object {},
-      Object {
-        "fontFamily": undefined,
-      },
     ]
   }
 >
@@ -176,9 +155,6 @@ exports[`Android BpkText should render correctly with textStyle="lg and weight="
       Object {
         "fontFamily": "sans-serif-medium",
       },
-      Object {
-        "fontFamily": undefined,
-      },
     ]
   }
 >
@@ -198,9 +174,6 @@ exports[`Android BpkText should render correctly with textStyle="lg" 1`] = `
         "letterSpacing": -0.4,
       },
       Object {},
-      Object {
-        "fontFamily": undefined,
-      },
     ]
   }
 >
@@ -222,9 +195,6 @@ exports[`Android BpkText should render correctly with textStyle="sm and weight="
       Object {
         "fontFamily": "sans-serif-medium",
       },
-      Object {
-        "fontFamily": undefined,
-      },
     ]
   }
 >
@@ -244,9 +214,6 @@ exports[`Android BpkText should render correctly with textStyle="sm" 1`] = `
         "letterSpacing": 0,
       },
       Object {},
-      Object {
-        "fontFamily": undefined,
-      },
     ]
   }
 >
@@ -267,9 +234,6 @@ exports[`Android BpkText should render correctly with textStyle="xl and weight="
       },
       Object {
         "fontFamily": "sans-serif-medium",
-      },
-      Object {
-        "fontFamily": undefined,
       },
     ]
   }
@@ -292,9 +256,6 @@ exports[`Android BpkText should render correctly with textStyle="xl and weight="
       Object {
         "fontFamily": "sans-serif-black",
       },
-      Object {
-        "fontFamily": undefined,
-      },
     ]
   }
 >
@@ -314,9 +275,6 @@ exports[`Android BpkText should render correctly with textStyle="xl" 1`] = `
         "letterSpacing": -0.6,
       },
       Object {},
-      Object {
-        "fontFamily": undefined,
-      },
     ]
   }
 >
@@ -338,9 +296,6 @@ exports[`Android BpkText should render correctly with textStyle="xs and weight="
       Object {
         "fontFamily": "sans-serif-medium",
       },
-      Object {
-        "fontFamily": undefined,
-      },
     ]
   }
 >
@@ -360,9 +315,6 @@ exports[`Android BpkText should render correctly with textStyle="xs" 1`] = `
         "letterSpacing": 0,
       },
       Object {},
-      Object {
-        "fontFamily": undefined,
-      },
     ]
   }
 >
@@ -383,9 +335,6 @@ exports[`Android BpkText should render correctly with textStyle="xxl and weight=
       },
       Object {
         "fontFamily": "sans-serif-medium",
-      },
-      Object {
-        "fontFamily": undefined,
       },
     ]
   }
@@ -408,9 +357,6 @@ exports[`Android BpkText should render correctly with textStyle="xxl and weight=
       Object {
         "fontFamily": "sans-serif-black",
       },
-      Object {
-        "fontFamily": undefined,
-      },
     ]
   }
 >
@@ -430,9 +376,6 @@ exports[`Android BpkText should render correctly with textStyle="xxl" 1`] = `
         "letterSpacing": -0.8,
       },
       Object {},
-      Object {
-        "fontFamily": undefined,
-      },
     ]
   }
 >
@@ -453,9 +396,6 @@ exports[`Android BpkText should render correctly with textStyle="xxxl and weight
       },
       Object {
         "fontFamily": "sans-serif-medium",
-      },
-      Object {
-        "fontFamily": undefined,
       },
     ]
   }
@@ -478,9 +418,6 @@ exports[`Android BpkText should render correctly with textStyle="xxxl and weight
       Object {
         "fontFamily": "sans-serif-black",
       },
-      Object {
-        "fontFamily": undefined,
-      },
     ]
   }
 >
@@ -500,9 +437,6 @@ exports[`Android BpkText should render correctly with textStyle="xxxl" 1`] = `
         "letterSpacing": -1,
       },
       Object {},
-      Object {
-        "fontFamily": undefined,
-      },
     ]
   }
 >
@@ -522,9 +456,6 @@ exports[`Android BpkText should support overwriting styles 1`] = `
         "letterSpacing": -0.2,
       },
       Object {},
-      Object {
-        "fontFamily": undefined,
-      },
       Object {
         "color": "rgb(255, 84, 82)",
       },

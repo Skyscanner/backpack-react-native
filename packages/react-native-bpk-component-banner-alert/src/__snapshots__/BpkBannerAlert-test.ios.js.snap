@@ -88,9 +88,6 @@ exports[`iOS BpkBannerAlert should accept userland styling 1`] = `
               },
               Object {},
               Object {
-                "fontFamily": undefined,
-              },
-              Object {
                 "flex": 1,
               },
             ]
@@ -170,9 +167,6 @@ exports[`iOS BpkBannerAlert should accept userland styling 1`] = `
                 "letterSpacing": 0.154,
               },
               Object {},
-              Object {
-                "fontFamily": undefined,
-              },
               Object {
                 "flex": 1,
               },
@@ -274,9 +268,6 @@ exports[`iOS BpkBannerAlert should render correctly when not shown 1`] = `
               },
               Object {},
               Object {
-                "fontFamily": undefined,
-              },
-              Object {
                 "flex": 1,
               },
             ]
@@ -356,9 +347,6 @@ exports[`iOS BpkBannerAlert should render correctly when not shown 1`] = `
                 "letterSpacing": 0.154,
               },
               Object {},
-              Object {
-                "fontFamily": undefined,
-              },
               Object {
                 "flex": 1,
               },
@@ -460,9 +448,6 @@ exports[`iOS BpkBannerAlert should render correctly with animateOnEnter 1`] = `
               },
               Object {},
               Object {
-                "fontFamily": undefined,
-              },
-              Object {
                 "flex": 1,
               },
             ]
@@ -542,9 +527,6 @@ exports[`iOS BpkBannerAlert should render correctly with animateOnEnter 1`] = `
                 "letterSpacing": 0.154,
               },
               Object {},
-              Object {
-                "fontFamily": undefined,
-              },
               Object {
                 "flex": 1,
               },
@@ -646,9 +628,6 @@ exports[`iOS BpkBannerAlert should render correctly with animateOnLeave 1`] = `
               },
               Object {},
               Object {
-                "fontFamily": undefined,
-              },
-              Object {
                 "flex": 1,
               },
             ]
@@ -728,9 +707,6 @@ exports[`iOS BpkBannerAlert should render correctly with animateOnLeave 1`] = `
                 "letterSpacing": 0.154,
               },
               Object {},
-              Object {
-                "fontFamily": undefined,
-              },
               Object {
                 "flex": 1,
               },
@@ -841,9 +817,6 @@ exports[`iOS BpkBannerAlert should render correctly with children provided (expa
               },
               Object {},
               Object {
-                "fontFamily": undefined,
-              },
-              Object {
                 "flex": 1,
               },
             ]
@@ -925,9 +898,6 @@ exports[`iOS BpkBannerAlert should render correctly with children provided (expa
                   "letterSpacing": 0.154,
                 },
                 Object {},
-                Object {
-                  "fontFamily": undefined,
-                },
               ]
             }
           >
@@ -958,9 +928,6 @@ exports[`iOS BpkBannerAlert should render correctly with children provided (expa
                   "letterSpacing": 0.154,
                 },
                 Object {},
-                Object {
-                  "fontFamily": undefined,
-                },
               ]
             }
           >
@@ -1049,9 +1016,6 @@ exports[`iOS BpkBannerAlert should render correctly with children provided (expa
               },
               Object {},
               Object {
-                "fontFamily": undefined,
-              },
-              Object {
                 "flex": 1,
               },
             ]
@@ -1133,9 +1097,6 @@ exports[`iOS BpkBannerAlert should render correctly with children provided (expa
                   "letterSpacing": 0.154,
                 },
                 Object {},
-                Object {
-                  "fontFamily": undefined,
-                },
               ]
             }
           >
@@ -1166,9 +1127,6 @@ exports[`iOS BpkBannerAlert should render correctly with children provided (expa
                   "letterSpacing": 0.154,
                 },
                 Object {},
-                Object {
-                  "fontFamily": undefined,
-                },
               ]
             }
           >
@@ -1270,9 +1228,6 @@ exports[`iOS BpkBannerAlert should render correctly with dismissable 1`] = `
                 "letterSpacing": 0.154,
               },
               Object {},
-              Object {
-                "fontFamily": undefined,
-              },
               Object {
                 "flex": 1,
               },
@@ -1410,9 +1365,6 @@ exports[`iOS BpkBannerAlert should render correctly with dismissable 1`] = `
                 "letterSpacing": 0.154,
               },
               Object {},
-              Object {
-                "fontFamily": undefined,
-              },
               Object {
                 "flex": 1,
               },
@@ -1577,9 +1529,6 @@ exports[`iOS BpkBannerAlert should render correctly with expanded 1`] = `
               },
               Object {},
               Object {
-                "fontFamily": undefined,
-              },
-              Object {
                 "flex": 1,
               },
             ]
@@ -1661,9 +1610,6 @@ exports[`iOS BpkBannerAlert should render correctly with expanded 1`] = `
                   "letterSpacing": 0.154,
                 },
                 Object {},
-                Object {
-                  "fontFamily": undefined,
-                },
               ]
             }
           >
@@ -1694,9 +1640,6 @@ exports[`iOS BpkBannerAlert should render correctly with expanded 1`] = `
                   "letterSpacing": 0.154,
                 },
                 Object {},
-                Object {
-                  "fontFamily": undefined,
-                },
               ]
             }
           >
@@ -1785,9 +1728,6 @@ exports[`iOS BpkBannerAlert should render correctly with expanded 1`] = `
               },
               Object {},
               Object {
-                "fontFamily": undefined,
-              },
-              Object {
                 "flex": 1,
               },
             ]
@@ -1869,9 +1809,6 @@ exports[`iOS BpkBannerAlert should render correctly with expanded 1`] = `
                   "letterSpacing": 0.154,
                 },
                 Object {},
-                Object {
-                  "fontFamily": undefined,
-                },
               ]
             }
           >
@@ -1902,9 +1839,6 @@ exports[`iOS BpkBannerAlert should render correctly with expanded 1`] = `
                   "letterSpacing": 0.154,
                 },
                 Object {},
-                Object {
-                  "fontFamily": undefined,
-                },
               ]
             }
           >
@@ -2004,9 +1938,6 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to error 1`]
               },
               Object {},
               Object {
-                "fontFamily": undefined,
-              },
-              Object {
                 "flex": 1,
               },
             ]
@@ -2086,9 +2017,6 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to error 1`]
                 "letterSpacing": 0.154,
               },
               Object {},
-              Object {
-                "fontFamily": undefined,
-              },
               Object {
                 "flex": 1,
               },
@@ -2190,9 +2118,6 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to neutral 1
               },
               Object {},
               Object {
-                "fontFamily": undefined,
-              },
-              Object {
                 "flex": 1,
               },
             ]
@@ -2272,9 +2197,6 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to neutral 1
                 "letterSpacing": 0.154,
               },
               Object {},
-              Object {
-                "fontFamily": undefined,
-              },
               Object {
                 "flex": 1,
               },
@@ -2376,9 +2298,6 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to success 1
               },
               Object {},
               Object {
-                "fontFamily": undefined,
-              },
-              Object {
                 "flex": 1,
               },
             ]
@@ -2458,9 +2377,6 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to success 1
                 "letterSpacing": 0.154,
               },
               Object {},
-              Object {
-                "fontFamily": undefined,
-              },
               Object {
                 "flex": 1,
               },
@@ -2562,9 +2478,6 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to warn 1`] 
               },
               Object {},
               Object {
-                "fontFamily": undefined,
-              },
-              Object {
                 "flex": 1,
               },
             ]
@@ -2644,9 +2557,6 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to warn 1`] 
                 "letterSpacing": 0.154,
               },
               Object {},
-              Object {
-                "fontFamily": undefined,
-              },
               Object {
                 "flex": 1,
               },

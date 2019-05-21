@@ -63,9 +63,6 @@ exports[`Android API levels Android API<21 should render without ripple 1`] = `
             "fontFamily": "sans-serif-medium",
           },
           Object {
-            "fontFamily": undefined,
-          },
-          Object {
             "color": "rgb(255, 255, 255)",
           },
         ]
@@ -141,9 +138,6 @@ exports[`Android API levels Android API>=21 should render with ripple 1`] = `
             "fontFamily": "sans-serif-medium",
           },
           Object {
-            "fontFamily": undefined,
-          },
-          Object {
             "color": "rgb(255, 255, 255)",
           },
         ]
@@ -217,9 +211,6 @@ exports[`Android BpkButton should render correctly 1`] = `
           },
           Object {
             "fontFamily": "sans-serif-medium",
-          },
-          Object {
-            "fontFamily": undefined,
           },
           Object {
             "color": "rgb(255, 255, 255)",
@@ -318,9 +309,6 @@ exports[`Android BpkButton should render correctly with iconAlignment="leading" 
           },
           Object {
             "fontFamily": "sans-serif-medium",
-          },
-          Object {
-            "fontFamily": undefined,
           },
           Object {
             "color": "rgb(255, 255, 255)",
@@ -428,9 +416,6 @@ exports[`Android BpkButton should render correctly with iconAlignment="trailing"
             "fontFamily": "sans-serif-medium",
           },
           Object {
-            "fontFamily": undefined,
-          },
-          Object {
             "color": "rgb(255, 255, 255)",
           },
         ]
@@ -506,9 +491,6 @@ exports[`Android BpkButton should render correctly with type="destructive" 1`] =
           },
           Object {
             "fontFamily": "sans-serif-medium",
-          },
-          Object {
-            "fontFamily": undefined,
           },
           Object {
             "color": "rgb(255, 84, 82)",
@@ -588,9 +570,6 @@ exports[`Android BpkButton should render correctly with type="destructive" and d
             "fontFamily": "sans-serif-medium",
           },
           Object {
-            "fontFamily": undefined,
-          },
-          Object {
             "color": "rgb(178, 174, 189)",
           },
         ]
@@ -664,9 +643,6 @@ exports[`Android BpkButton should render correctly with type="featured" 1`] = `
           },
           Object {
             "fontFamily": "sans-serif-medium",
-          },
-          Object {
-            "fontFamily": undefined,
           },
           Object {
             "color": "rgb(255, 255, 255)",
@@ -744,9 +720,6 @@ exports[`Android BpkButton should render correctly with type="featured" and disa
             "fontFamily": "sans-serif-medium",
           },
           Object {
-            "fontFamily": undefined,
-          },
-          Object {
             "color": "rgb(178, 174, 189)",
           },
         ]
@@ -822,9 +795,6 @@ exports[`Android BpkButton should render correctly with type="primary" 1`] = `
             "fontFamily": "sans-serif-medium",
           },
           Object {
-            "fontFamily": undefined,
-          },
-          Object {
             "color": "rgb(255, 255, 255)",
           },
         ]
@@ -898,9 +868,6 @@ exports[`Android BpkButton should render correctly with type="primary" and disab
           },
           Object {
             "fontFamily": "sans-serif-medium",
-          },
-          Object {
-            "fontFamily": undefined,
           },
           Object {
             "color": "rgb(178, 174, 189)",
@@ -980,9 +947,6 @@ exports[`Android BpkButton should render correctly with type="secondary" 1`] = `
             "fontFamily": "sans-serif-medium",
           },
           Object {
-            "fontFamily": undefined,
-          },
-          Object {
             "color": "rgb(0, 178, 214)",
           },
         ]
@@ -1060,9 +1024,6 @@ exports[`Android BpkButton should render correctly with type="secondary" and dis
             "fontFamily": "sans-serif-medium",
           },
           Object {
-            "fontFamily": undefined,
-          },
-          Object {
             "color": "rgb(178, 174, 189)",
           },
         ]
@@ -1138,9 +1099,6 @@ exports[`Android BpkButton should support elements as icons 1`] = `
             "letterSpacing": -0.2,
           },
           Object {},
-          Object {
-            "fontFamily": undefined,
-          },
           Array [
             undefined,
             Array [
@@ -1263,9 +1221,6 @@ exports[`Android BpkButton should support having an icon as well as a title 1`] 
             "fontFamily": "sans-serif-medium",
           },
           Object {
-            "fontFamily": undefined,
-          },
-          Object {
             "color": "rgb(255, 255, 255)",
           },
         ]
@@ -1343,9 +1298,6 @@ exports[`Android BpkButton should support overwriting styles 1`] = `
             "fontFamily": "sans-serif-medium",
           },
           Object {
-            "fontFamily": undefined,
-          },
-          Object {
             "color": "rgb(255, 255, 255)",
           },
         ]
@@ -1419,9 +1371,6 @@ exports[`Android BpkButton should support the "disabled" property 1`] = `
           },
           Object {
             "fontFamily": "sans-serif-medium",
-          },
-          Object {
-            "fontFamily": undefined,
           },
           Object {
             "color": "rgb(178, 174, 189)",
@@ -1527,9 +1476,6 @@ exports[`Android BpkButton should support the "icon" property 1`] = `
           },
           Object {
             "fontFamily": "sans-serif-medium",
-          },
-          Object {
-            "fontFamily": undefined,
           },
           Object {
             "color": "rgb(255, 255, 255)",
@@ -1700,9 +1646,6 @@ exports[`Android BpkButton should support the "secondary" property 1`] = `
             "fontFamily": "sans-serif-medium",
           },
           Object {
-            "fontFamily": undefined,
-          },
-          Object {
             "color": "rgb(0, 178, 214)",
           },
         ]
@@ -1776,9 +1719,6 @@ exports[`Android BpkButtonThemed should render correctly 1`] = `
           },
           Object {
             "fontFamily": "sans-serif-medium",
-          },
-          Object {
-            "fontFamily": undefined,
           },
           Object {
             "color": "red",

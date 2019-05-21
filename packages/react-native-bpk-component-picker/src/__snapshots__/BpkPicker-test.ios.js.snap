@@ -41,7 +41,15 @@ exports[`iOS BpkPicker should render correctly 1`] = `
     <View
       style={
         Object {
+          "alignItems": "center",
+          "backgroundColor": "#f9f9f9",
           "borderColor": "rgb(204, 201, 212)",
+          "borderTopWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+          "height": 45,
+          "justifyContent": "flex-end",
+          "paddingHorizontal": 16,
         }
       }
     >
@@ -87,9 +95,6 @@ exports[`iOS BpkPicker should render correctly 1`] = `
                 },
                 Object {
                   "fontWeight": "600",
-                },
-                Object {
-                  "fontFamily": undefined,
                 },
                 Object {
                   "color": "#007aff",
@@ -178,7 +183,15 @@ exports[`iOS BpkPicker should render correctly with a selected value 1`] = `
     <View
       style={
         Object {
+          "alignItems": "center",
+          "backgroundColor": "#f9f9f9",
           "borderColor": "rgb(204, 201, 212)",
+          "borderTopWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+          "height": 45,
+          "justifyContent": "flex-end",
+          "paddingHorizontal": 16,
         }
       }
     >
@@ -224,9 +237,6 @@ exports[`iOS BpkPicker should render correctly with a selected value 1`] = `
                 },
                 Object {
                   "fontWeight": "600",
-                },
-                Object {
-                  "fontFamily": undefined,
                 },
                 Object {
                   "color": "#007aff",

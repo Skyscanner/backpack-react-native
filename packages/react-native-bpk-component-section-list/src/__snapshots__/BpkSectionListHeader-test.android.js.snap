@@ -28,9 +28,6 @@ exports[`Android BpkSectionListHeader should render correctly 1`] = `
           "fontFamily": "sans-serif-medium",
         },
         Object {
-          "fontFamily": undefined,
-        },
-        Object {
           "color": "rgb(129, 123, 143)",
         },
       ]

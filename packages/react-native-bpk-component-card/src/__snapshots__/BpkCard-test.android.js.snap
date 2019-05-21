@@ -48,9 +48,6 @@ exports[`Android BpkCard should render correctly 1`] = `
             "letterSpacing": -0.2,
           },
           Object {},
-          Object {
-            "fontFamily": undefined,
-          },
         ]
       }
     >
@@ -111,9 +108,6 @@ exports[`Android BpkCard should render correctly when "cornerStyle=large" 1`] = 
             "letterSpacing": -0.2,
           },
           Object {},
-          Object {
-            "fontFamily": undefined,
-          },
         ]
       }
     >
@@ -172,9 +166,6 @@ exports[`Android BpkCard should render correctly with arbitrary props 1`] = `
             "letterSpacing": -0.2,
           },
           Object {},
-          Object {
-            "fontFamily": undefined,
-          },
         ]
       }
     >
@@ -235,9 +226,6 @@ exports[`Android BpkCard should render correctly with custom inner style 1`] = `
             "letterSpacing": -0.2,
           },
           Object {},
-          Object {
-            "fontFamily": undefined,
-          },
         ]
       }
     >
@@ -298,9 +286,6 @@ exports[`Android BpkCard should render correctly with custom style 1`] = `
             "letterSpacing": -0.2,
           },
           Object {},
-          Object {
-            "fontFamily": undefined,
-          },
         ]
       }
     >
@@ -361,9 +346,6 @@ exports[`Android BpkCard should render correctly with the "focused" state 1`] = 
             "letterSpacing": -0.2,
           },
           Object {},
-          Object {
-            "fontFamily": undefined,
-          },
         ]
       }
     >
@@ -415,9 +397,6 @@ exports[`Android BpkCard should render correctly without padding 1`] = `
             "letterSpacing": -0.2,
           },
           Object {},
-          Object {
-            "fontFamily": undefined,
-          },
         ]
       }
     >

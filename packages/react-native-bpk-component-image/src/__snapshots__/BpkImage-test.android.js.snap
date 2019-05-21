@@ -51,7 +51,7 @@ exports[`Android BpkImage should render correctly when not loaded 1`] = `
   >
     <ActivityIndicator
       animating={true}
-      color={null}
+      color="rgb(82, 76, 97)"
       hidesWhenStopped={true}
       size="small"
     />

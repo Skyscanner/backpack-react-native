@@ -38,9 +38,6 @@ exports[`Android BpkHorizontalNavItem should render correctly 1`] = `
           "letterSpacing": -0.2,
         },
         Object {},
-        Object {
-          "fontFamily": undefined,
-        },
         Array [
           Object {
             "color": "rgb(82, 76, 97)",
@@ -93,9 +90,6 @@ exports[`Android BpkHorizontalNavItem should render correctly with "selected" pr
           "letterSpacing": -0.2,
         },
         Object {},
-        Object {
-          "fontFamily": undefined,
-        },
         Array [
           Object {
             "color": "rgb(82, 76, 97)",
@@ -103,9 +97,6 @@ exports[`Android BpkHorizontalNavItem should render correctly with "selected" pr
           },
           Object {
             "color": "rgb(0, 140, 168)",
-          },
-          Object {
-            "color": undefined,
           },
         ],
       ]
@@ -157,9 +148,6 @@ exports[`Android BpkHorizontalNavItem should render correctly with "small" prop 
           "letterSpacing": 0,
         },
         Object {},
-        Object {
-          "fontFamily": undefined,
-        },
         Array [
           Object {
             "color": "rgb(82, 76, 97)",
@@ -212,9 +200,6 @@ exports[`Android BpkHorizontalNavItem should render correctly with "spaceAround"
           "letterSpacing": -0.2,
         },
         Object {},
-        Object {
-          "fontFamily": undefined,
-        },
         Array [
           Object {
             "color": "rgb(82, 76, 97)",
@@ -267,9 +252,6 @@ exports[`Android BpkHorizontalNavItem should render correctly with arbitrary pro
           "letterSpacing": -0.2,
         },
         Object {},
-        Object {
-          "fontFamily": undefined,
-        },
         Array [
           Object {
             "color": "rgb(82, 76, 97)",
@@ -325,9 +307,6 @@ exports[`Android BpkHorizontalNavItem should render correctly with custom "style
           "letterSpacing": -0.2,
         },
         Object {},
-        Object {
-          "fontFamily": undefined,
-        },
         Array [
           Object {
             "color": "rgb(82, 76, 97)",
@@ -380,9 +359,6 @@ exports[`Android BpkHorizontalNavItem should support theming 1`] = `
           "letterSpacing": -0.2,
         },
         Object {},
-        Object {
-          "fontFamily": undefined,
-        },
         Array [
           Object {
             "color": "rgb(82, 76, 97)",
