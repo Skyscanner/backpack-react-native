@@ -89,6 +89,9 @@ exports[`iOS BpkPicker should render correctly 1`] = `
                   "fontWeight": "600",
                 },
                 Object {
+                  "fontFamily": undefined,
+                },
+                Object {
                   "color": "#007aff",
                   "fontSize": 17,
                 },
@@ -221,6 +224,9 @@ exports[`iOS BpkPicker should render correctly with a selected value 1`] = `
                 },
                 Object {
                   "fontWeight": "600",
+                },
+                Object {
+                  "fontFamily": undefined,
                 },
                 Object {
                   "color": "#007aff",

@@ -55,6 +55,9 @@ exports[`Android BpkChip should render correctly 1`] = `
             "letterSpacing": 0,
           },
           Object {},
+          Object {
+            "fontFamily": undefined,
+          },
           Array [
             Object {
               "color": "rgb(82, 76, 97)",
@@ -128,6 +131,9 @@ exports[`Android BpkChip should render correctly with "disabled" 1`] = `
             "letterSpacing": 0,
           },
           Object {},
+          Object {
+            "fontFamily": undefined,
+          },
           Array [
             Object {
               "color": "rgb(82, 76, 97)",
@@ -207,6 +213,9 @@ exports[`Android BpkChip should render correctly with "selected" 1`] = `
             "letterSpacing": 0,
           },
           Object {},
+          Object {
+            "fontFamily": undefined,
+          },
           Array [
             Object {
               "color": "rgb(82, 76, 97)",
@@ -284,6 +293,9 @@ exports[`Android BpkChip should render correctly with arbitrary props 1`] = `
             "letterSpacing": 0,
           },
           Object {},
+          Object {
+            "fontFamily": undefined,
+          },
           Array [
             Object {
               "color": "rgb(82, 76, 97)",
@@ -356,6 +368,9 @@ exports[`Android BpkChip should render correctly with custom style 1`] = `
             "letterSpacing": 0,
           },
           Object {},
+          Object {
+            "fontFamily": undefined,
+          },
           Array [
             Object {
               "color": "rgb(82, 76, 97)",
@@ -434,6 +449,9 @@ exports[`Android BpkChip should support theming when selected 1`] = `
           Object {},
           Object {
             "fontFamily": "System",
+          },
+          Object {
+            "color": "#4B5458",
           },
           Array [
             Object {

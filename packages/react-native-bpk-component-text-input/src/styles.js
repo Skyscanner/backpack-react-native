@@ -105,14 +105,17 @@ const getLabelColorValue = (
   valid: ?boolean,
   editable: boolean,
   hasAccessoryView: boolean,
+  theme: ?Theme,
 ) => {
   if (!editable) {
-    return colorGray100;
+    return theme && theme.colorGray100 ? theme.colorGray100 : colorGray100;
   }
   if (!value && !hasAccessoryView) {
-    return colorGray300;
+    return theme && theme.colorGray300 ? theme.colorGray300 : colorGray300;
   }
-  return valid === false ? colorRed500 : colorGray500;
+  const gray500 =
+    theme && theme.colorGray500 ? theme.colorGray500 : colorGray500;
+  return valid === false ? colorRed500 : gray500;
 };
 
 const getLabelPosition = (hasAccessoryView: boolean): number =>
@@ -138,13 +141,14 @@ const getLabelStyle = (
     hasAccessoryView: boolean,
   },
   focusedColor: String = colorBlue500,
+  theme: ?Theme,
 ) => {
   const labelTypography = getLabelTypography(hasAccessoryView);
   const animatedStyle = {
     color: animatedColorValue.interpolate({
       inputRange: INPUT_RANGE,
       outputRange: [
-        getLabelColorValue(value, valid, editable, hasAccessoryView),
+        getLabelColorValue(value, valid, editable, hasAccessoryView, theme),
         focusedColor,
       ],
     }),
@@ -176,8 +180,11 @@ const getInputContainerStyle = (
   hasAccessoryView: boolean,
   valid: ?boolean,
   focusedColor: String = colorBlue500,
+  theme: ?Theme,
 ) => {
-  const underlineColorValue = valid === false ? colorRed500 : colorGray100;
+  const gray100 =
+    theme && theme.colorGray100 ? theme.colorGray100 : colorGray100;
+  const underlineColorValue = valid === false ? colorRed500 : gray100;
   const animatedStyle = {
     borderBottomColor: animatedColorValue.interpolate({
       inputRange: INPUT_RANGE,

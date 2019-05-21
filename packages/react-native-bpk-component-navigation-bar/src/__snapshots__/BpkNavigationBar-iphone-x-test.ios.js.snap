@@ -88,6 +88,9 @@ exports[`ios - iPhone X  BpkNavigationBar should render correctly 1`] = `
               "letterSpacing": -0.2,
             },
             Object {},
+            Object {
+              "fontFamily": undefined,
+            },
             Array [
               Object {
                 "color": "rgb(82, 76, 97)",
@@ -141,6 +144,9 @@ exports[`ios - iPhone X  BpkNavigationBar should render correctly 1`] = `
               },
               Object {
                 "fontWeight": "500",
+              },
+              Object {
+                "fontFamily": undefined,
               },
               Array [
                 Object {
@@ -228,6 +234,9 @@ exports[`ios - iPhone X  BpkNavigationBar should render correctly with trailing 
               "letterSpacing": -0.2,
             },
             Object {},
+            Object {
+              "fontFamily": undefined,
+            },
             Array [
               Object {
                 "color": "rgb(82, 76, 97)",
@@ -282,6 +291,9 @@ exports[`ios - iPhone X  BpkNavigationBar should render correctly with trailing 
               Object {
                 "fontWeight": "500",
               },
+              Object {
+                "fontFamily": undefined,
+              },
               Array [
                 Object {
                   "color": "rgb(82, 76, 97)",
@@ -327,6 +339,9 @@ exports[`ios - iPhone X  BpkNavigationBar should render correctly with trailing 
             },
             Object {
               "fontWeight": "500",
+            },
+            Object {
+              "fontFamily": undefined,
             },
             Array [
               Object {

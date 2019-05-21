@@ -122,6 +122,9 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
                   "letterSpacing": -0.2,
                 },
                 Object {},
+                Object {
+                  "fontFamily": undefined,
+                },
                 Array [
                   Object {
                     "flex": 1,
@@ -176,12 +179,14 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
       </View>
       <View
         style={
-          Object {
-            "backgroundColor": "rgb(230, 228, 235)",
-            "flex": 1,
-            "height": 1,
-            "marginHorizontal": 8,
-          }
+          Array [
+            Object {
+              "backgroundColor": "rgb(230, 228, 235)",
+              "flex": 1,
+              "height": 1,
+              "marginHorizontal": 8,
+            },
+          ]
         }
       />
     </View>
@@ -260,6 +265,9 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
                   "letterSpacing": -0.2,
                 },
                 Object {},
+                Object {
+                  "fontFamily": undefined,
+                },
                 Array [
                   Object {
                     "flex": 1,
@@ -314,12 +322,14 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
       </View>
       <View
         style={
-          Object {
-            "backgroundColor": "rgb(230, 228, 235)",
-            "flex": 1,
-            "height": 1,
-            "marginHorizontal": 8,
-          }
+          Array [
+            Object {
+              "backgroundColor": "rgb(230, 228, 235)",
+              "flex": 1,
+              "height": 1,
+              "marginHorizontal": 8,
+            },
+          ]
         }
       />
     </View>
@@ -398,6 +408,9 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
                   "letterSpacing": -0.2,
                 },
                 Object {},
+                Object {
+                  "fontFamily": undefined,
+                },
                 Array [
                   Object {
                     "flex": 1,
@@ -577,6 +590,9 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
                   "letterSpacing": -0.2,
                 },
                 Object {},
+                Object {
+                  "fontFamily": undefined,
+                },
                 Array [
                   Object {
                     "flex": 1,
@@ -637,12 +653,14 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
       </View>
       <View
         style={
-          Object {
-            "backgroundColor": "rgb(230, 228, 235)",
-            "flex": 1,
-            "height": 1,
-            "marginHorizontal": 8,
-          }
+          Array [
+            Object {
+              "backgroundColor": "rgb(230, 228, 235)",
+              "flex": 1,
+              "height": 1,
+              "marginHorizontal": 8,
+            },
+          ]
         }
       />
     </View>
@@ -721,6 +739,9 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
                   "letterSpacing": -0.2,
                 },
                 Object {},
+                Object {
+                  "fontFamily": undefined,
+                },
                 Array [
                   Object {
                     "flex": 1,
@@ -775,12 +796,14 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
       </View>
       <View
         style={
-          Object {
-            "backgroundColor": "rgb(230, 228, 235)",
-            "flex": 1,
-            "height": 1,
-            "marginHorizontal": 8,
-          }
+          Array [
+            Object {
+              "backgroundColor": "rgb(230, 228, 235)",
+              "flex": 1,
+              "height": 1,
+              "marginHorizontal": 8,
+            },
+          ]
         }
       />
     </View>
@@ -859,6 +882,9 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
                   "letterSpacing": -0.2,
                 },
                 Object {},
+                Object {
+                  "fontFamily": undefined,
+                },
                 Array [
                   Object {
                     "flex": 1,

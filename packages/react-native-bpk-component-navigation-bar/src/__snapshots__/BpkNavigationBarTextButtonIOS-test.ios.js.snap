@@ -32,6 +32,9 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly 1`] = `
           "letterSpacing": 0.12,
         },
         Object {},
+        Object {
+          "fontFamily": undefined,
+        },
         Array [
           Object {
             "color": "rgb(82, 76, 97)",
@@ -77,6 +80,9 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly disabled 1`] 
           "letterSpacing": 0.12,
         },
         Object {},
+        Object {
+          "fontFamily": undefined,
+        },
         Array [
           Object {
             "color": "rgb(178, 174, 189)",
@@ -124,6 +130,9 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly emphasize 1`]
         Object {
           "fontWeight": "600",
         },
+        Object {
+          "fontFamily": undefined,
+        },
         Array [
           Object {
             "color": "rgb(82, 76, 97)",
@@ -169,6 +178,9 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly leading confi
           "letterSpacing": 0.12,
         },
         Object {},
+        Object {
+          "fontFamily": undefined,
+        },
         Array [
           Object {
             "color": "rgb(82, 76, 97)",
@@ -214,6 +226,9 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly with type="pr
           "letterSpacing": 0.12,
         },
         Object {},
+        Object {
+          "fontFamily": undefined,
+        },
         Array [
           Object {
             "color": "rgb(0, 178, 214)",
@@ -259,6 +274,9 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly with type="pr
           "letterSpacing": 0.12,
         },
         Object {},
+        Object {
+          "fontFamily": undefined,
+        },
         Array [
           Object {
             "color": "rgb(178, 174, 189)",
@@ -304,6 +322,9 @@ exports[`iOS BpkNavigationBarTextButtonIOS should respect "disabledTintColor" ov
           "letterSpacing": 0.12,
         },
         Object {},
+        Object {
+          "fontFamily": undefined,
+        },
         Array [
           Object {
             "color": "red",
@@ -349,6 +370,9 @@ exports[`iOS BpkNavigationBarTextButtonIOS should respect "primaryTintColor" ove
           "letterSpacing": 0.12,
         },
         Object {},
+        Object {
+          "fontFamily": undefined,
+        },
         Array [
           Object {
             "color": "blue",
@@ -394,6 +418,9 @@ exports[`iOS BpkNavigationBarTextButtonIOS should respect "tintColor" over "prim
           "letterSpacing": 0.12,
         },
         Object {},
+        Object {
+          "fontFamily": undefined,
+        },
         Array [
           Object {
             "color": "red",
@@ -439,6 +466,9 @@ exports[`iOS BpkNavigationBarTextButtonIOS should respect "tintColor" over "type
           "letterSpacing": 0.12,
         },
         Object {},
+        Object {
+          "fontFamily": undefined,
+        },
         Array [
           Object {
             "color": "red",

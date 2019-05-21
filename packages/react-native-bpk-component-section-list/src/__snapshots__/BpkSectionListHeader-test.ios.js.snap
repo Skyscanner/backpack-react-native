@@ -24,6 +24,9 @@ exports[`iOS BpkSectionListHeader should render correctly 1`] = `
           "fontWeight": "600",
         },
         Object {
+          "fontFamily": undefined,
+        },
+        Object {
           "color": "rgb(82, 76, 97)",
         },
       ]

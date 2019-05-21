@@ -51,7 +51,7 @@ exports[`iOS BpkImage should render correctly when not loaded 1`] = `
   >
     <ActivityIndicator
       animating={true}
-      color="rgb(82, 76, 97)"
+      color="#999999"
       hidesWhenStopped={true}
       size="small"
     />

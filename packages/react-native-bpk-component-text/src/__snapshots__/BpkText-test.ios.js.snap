@@ -14,6 +14,9 @@ exports[`iOS BpkText should ignore weight prop if deprecated \`emphasize\` prop 
       Object {
         "fontWeight": "600",
       },
+      Object {
+        "fontFamily": undefined,
+      },
     ]
   }
 >
@@ -33,6 +36,9 @@ exports[`iOS BpkText should render correctly 1`] = `
         "letterSpacing": 0.12,
       },
       Object {},
+      Object {
+        "fontFamily": undefined,
+      },
     ]
   }
 >
@@ -53,6 +59,9 @@ exports[`iOS BpkText should render correctly with deprecated \`emphasize\` prop 
       },
       Object {
         "fontWeight": "600",
+      },
+      Object {
+        "fontFamily": undefined,
       },
     ]
   }
@@ -75,6 +84,9 @@ exports[`iOS BpkText should render correctly with textStyle="base and weight="em
       Object {
         "fontWeight": "600",
       },
+      Object {
+        "fontFamily": undefined,
+      },
     ]
   }
 >
@@ -94,6 +106,9 @@ exports[`iOS BpkText should render correctly with textStyle="base" 1`] = `
         "letterSpacing": 0.12,
       },
       Object {},
+      Object {
+        "fontFamily": undefined,
+      },
     ]
   }
 >
@@ -115,6 +130,9 @@ exports[`iOS BpkText should render correctly with textStyle="caps and weight="em
       Object {
         "fontWeight": "600",
       },
+      Object {
+        "fontFamily": undefined,
+      },
     ]
   }
 >
@@ -134,6 +152,9 @@ exports[`iOS BpkText should render correctly with textStyle="caps" 1`] = `
         "letterSpacing": 0.28,
       },
       Object {},
+      Object {
+        "fontFamily": undefined,
+      },
     ]
   }
 >
@@ -155,6 +176,9 @@ exports[`iOS BpkText should render correctly with textStyle="lg and weight="emph
       Object {
         "fontWeight": "600",
       },
+      Object {
+        "fontFamily": undefined,
+      },
     ]
   }
 >
@@ -174,6 +198,9 @@ exports[`iOS BpkText should render correctly with textStyle="lg" 1`] = `
         "letterSpacing": null,
       },
       Object {},
+      Object {
+        "fontFamily": undefined,
+      },
     ]
   }
 >
@@ -195,6 +222,9 @@ exports[`iOS BpkText should render correctly with textStyle="sm and weight="emph
       Object {
         "fontWeight": "600",
       },
+      Object {
+        "fontFamily": undefined,
+      },
     ]
   }
 >
@@ -214,6 +244,9 @@ exports[`iOS BpkText should render correctly with textStyle="sm" 1`] = `
         "letterSpacing": 0.154,
       },
       Object {},
+      Object {
+        "fontFamily": undefined,
+      },
     ]
   }
 >
@@ -234,6 +267,9 @@ exports[`iOS BpkText should render correctly with textStyle="xl and weight="emph
       },
       Object {
         "fontWeight": "600",
+      },
+      Object {
+        "fontFamily": undefined,
       },
     ]
   }
@@ -256,6 +292,9 @@ exports[`iOS BpkText should render correctly with textStyle="xl and weight="heav
       Object {
         "fontWeight": "800",
       },
+      Object {
+        "fontFamily": undefined,
+      },
     ]
   }
 >
@@ -275,6 +314,9 @@ exports[`iOS BpkText should render correctly with textStyle="xl" 1`] = `
         "letterSpacing": null,
       },
       Object {},
+      Object {
+        "fontFamily": undefined,
+      },
     ]
   }
 >
@@ -296,6 +338,9 @@ exports[`iOS BpkText should render correctly with textStyle="xs and weight="emph
       Object {
         "fontWeight": "600",
       },
+      Object {
+        "fontFamily": undefined,
+      },
     ]
   }
 >
@@ -315,6 +360,9 @@ exports[`iOS BpkText should render correctly with textStyle="xs" 1`] = `
         "letterSpacing": 0,
       },
       Object {},
+      Object {
+        "fontFamily": undefined,
+      },
     ]
   }
 >
@@ -335,6 +383,9 @@ exports[`iOS BpkText should render correctly with textStyle="xxl and weight="emp
       },
       Object {
         "fontWeight": "600",
+      },
+      Object {
+        "fontFamily": undefined,
       },
     ]
   }
@@ -357,6 +408,9 @@ exports[`iOS BpkText should render correctly with textStyle="xxl and weight="hea
       Object {
         "fontWeight": "800",
       },
+      Object {
+        "fontFamily": undefined,
+      },
     ]
   }
 >
@@ -376,6 +430,9 @@ exports[`iOS BpkText should render correctly with textStyle="xxl" 1`] = `
         "letterSpacing": null,
       },
       Object {},
+      Object {
+        "fontFamily": undefined,
+      },
     ]
   }
 >
@@ -396,6 +453,9 @@ exports[`iOS BpkText should render correctly with textStyle="xxxl and weight="em
       },
       Object {
         "fontWeight": "600",
+      },
+      Object {
+        "fontFamily": undefined,
       },
     ]
   }
@@ -418,6 +478,9 @@ exports[`iOS BpkText should render correctly with textStyle="xxxl and weight="he
       Object {
         "fontWeight": "800",
       },
+      Object {
+        "fontFamily": undefined,
+      },
     ]
   }
 >
@@ -437,6 +500,9 @@ exports[`iOS BpkText should render correctly with textStyle="xxxl" 1`] = `
         "letterSpacing": null,
       },
       Object {},
+      Object {
+        "fontFamily": undefined,
+      },
     ]
   }
 >
@@ -456,6 +522,9 @@ exports[`iOS BpkText should support overwriting styles 1`] = `
         "letterSpacing": 0.12,
       },
       Object {},
+      Object {
+        "fontFamily": undefined,
+      },
       Object {
         "color": "rgb(255, 84, 82)",
       },
@@ -479,6 +548,9 @@ exports[`iOS should not apply \`emphasize\` for textStyle="xxl" 1`] = `
       },
       Object {
         "fontWeight": "600",
+      },
+      Object {
+        "fontFamily": undefined,
       },
     ]
   }

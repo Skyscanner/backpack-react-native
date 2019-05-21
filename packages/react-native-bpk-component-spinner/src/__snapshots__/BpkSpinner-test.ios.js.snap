@@ -3,7 +3,7 @@
 exports[`iOS BpkSpinner should disable theming if the required attribute is omitted 1`] = `
 <ActivityIndicator
   animating={true}
-  color="rgb(0, 178, 214)"
+  color="#999999"
   hidesWhenStopped={true}
   size="large"
 />
@@ -12,7 +12,7 @@ exports[`iOS BpkSpinner should disable theming if the required attribute is omit
 exports[`iOS BpkSpinner should render correctly 1`] = `
 <ActivityIndicator
   animating={true}
-  color="rgb(0, 178, 214)"
+  color="#999999"
   hidesWhenStopped={true}
   size="large"
 />
@@ -21,7 +21,7 @@ exports[`iOS BpkSpinner should render correctly 1`] = `
 exports[`iOS BpkSpinner should support the "small" property 1`] = `
 <ActivityIndicator
   animating={true}
-  color="rgb(0, 178, 214)"
+  color="#999999"
   hidesWhenStopped={true}
   size="small"
 />
@@ -39,7 +39,7 @@ exports[`iOS BpkSpinner should support theming 1`] = `
 exports[`iOS BpkSpinner should support type="dark" 1`] = `
 <ActivityIndicator
   animating={true}
-  color="rgb(82, 76, 97)"
+  color="#999999"
   hidesWhenStopped={true}
   size="large"
 />
@@ -57,7 +57,7 @@ exports[`iOS BpkSpinner should support type="light" 1`] = `
 exports[`iOS BpkSpinner should support type="primary" 1`] = `
 <ActivityIndicator
   animating={true}
-  color="rgb(0, 178, 214)"
+  color="#999999"
   hidesWhenStopped={true}
   size="large"
 />

@@ -22,6 +22,9 @@ exports[`BpkTouchableOverlay should render correctly 1`] = `
           "letterSpacing": 0.12,
         },
         Object {},
+        Object {
+          "fontFamily": undefined,
+        },
       ]
     }
   >
@@ -69,6 +72,9 @@ exports[`BpkTouchableOverlay should render correctly with arbitrary props 1`] = 
           "letterSpacing": 0.12,
         },
         Object {},
+        Object {
+          "fontFamily": undefined,
+        },
       ]
     }
   >
@@ -116,6 +122,9 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
           "letterSpacing": 0.12,
         },
         Object {},
+        Object {
+          "fontFamily": undefined,
+        },
       ]
     }
   >
@@ -166,6 +175,9 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
           "letterSpacing": 0.12,
         },
         Object {},
+        Object {
+          "fontFamily": undefined,
+        },
       ]
     }
   >
@@ -216,6 +228,9 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
           "letterSpacing": 0.12,
         },
         Object {},
+        Object {
+          "fontFamily": undefined,
+        },
       ]
     }
   >
@@ -266,6 +281,9 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
           "letterSpacing": 0.12,
         },
         Object {},
+        Object {
+          "fontFamily": undefined,
+        },
       ]
     }
   >
@@ -316,6 +334,9 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
           "letterSpacing": 0.12,
         },
         Object {},
+        Object {
+          "fontFamily": undefined,
+        },
       ]
     }
   >
@@ -366,6 +387,9 @@ exports[`BpkTouchableOverlay should render correctly with custom overlay styles 
           "letterSpacing": 0.12,
         },
         Object {},
+        Object {
+          "fontFamily": undefined,
+        },
       ]
     }
   >
@@ -419,6 +443,9 @@ exports[`BpkTouchableOverlay should render correctly with custom style prop 1`] 
           "letterSpacing": 0.12,
         },
         Object {},
+        Object {
+          "fontFamily": undefined,
+        },
       ]
     }
   >

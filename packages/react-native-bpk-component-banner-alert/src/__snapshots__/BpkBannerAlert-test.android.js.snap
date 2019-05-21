@@ -88,6 +88,9 @@ exports[`Android BpkBannerAlert should accept userland styling 1`] = `
               },
               Object {},
               Object {
+                "fontFamily": undefined,
+              },
+              Object {
                 "flex": 1,
               },
             ]
@@ -167,6 +170,9 @@ exports[`Android BpkBannerAlert should accept userland styling 1`] = `
                 "letterSpacing": 0,
               },
               Object {},
+              Object {
+                "fontFamily": undefined,
+              },
               Object {
                 "flex": 1,
               },
@@ -268,6 +274,9 @@ exports[`Android BpkBannerAlert should render correctly when not shown 1`] = `
               },
               Object {},
               Object {
+                "fontFamily": undefined,
+              },
+              Object {
                 "flex": 1,
               },
             ]
@@ -347,6 +356,9 @@ exports[`Android BpkBannerAlert should render correctly when not shown 1`] = `
                 "letterSpacing": 0,
               },
               Object {},
+              Object {
+                "fontFamily": undefined,
+              },
               Object {
                 "flex": 1,
               },
@@ -448,6 +460,9 @@ exports[`Android BpkBannerAlert should render correctly with animateOnEnter 1`] 
               },
               Object {},
               Object {
+                "fontFamily": undefined,
+              },
+              Object {
                 "flex": 1,
               },
             ]
@@ -527,6 +542,9 @@ exports[`Android BpkBannerAlert should render correctly with animateOnEnter 1`] 
                 "letterSpacing": 0,
               },
               Object {},
+              Object {
+                "fontFamily": undefined,
+              },
               Object {
                 "flex": 1,
               },
@@ -628,6 +646,9 @@ exports[`Android BpkBannerAlert should render correctly with animateOnLeave 1`] 
               },
               Object {},
               Object {
+                "fontFamily": undefined,
+              },
+              Object {
                 "flex": 1,
               },
             ]
@@ -707,6 +728,9 @@ exports[`Android BpkBannerAlert should render correctly with animateOnLeave 1`] 
                 "letterSpacing": 0,
               },
               Object {},
+              Object {
+                "fontFamily": undefined,
+              },
               Object {
                 "flex": 1,
               },
@@ -824,6 +848,9 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
               },
               Object {},
               Object {
+                "fontFamily": undefined,
+              },
+              Object {
                 "flex": 1,
               },
             ]
@@ -889,6 +916,9 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
                   "letterSpacing": 0,
                 },
                 Object {},
+                Object {
+                  "fontFamily": undefined,
+                },
               ]
             }
           >
@@ -919,6 +949,9 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
                   "letterSpacing": 0,
                 },
                 Object {},
+                Object {
+                  "fontFamily": undefined,
+                },
               ]
             }
           >
@@ -1014,6 +1047,9 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
               },
               Object {},
               Object {
+                "fontFamily": undefined,
+              },
+              Object {
                 "flex": 1,
               },
             ]
@@ -1079,6 +1115,9 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
                   "letterSpacing": 0,
                 },
                 Object {},
+                Object {
+                  "fontFamily": undefined,
+                },
               ]
             }
           >
@@ -1109,6 +1148,9 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
                   "letterSpacing": 0,
                 },
                 Object {},
+                Object {
+                  "fontFamily": undefined,
+                },
               ]
             }
           >
@@ -1208,6 +1250,9 @@ exports[`Android BpkBannerAlert should render correctly with dismissable 1`] = `
               },
               Object {},
               Object {
+                "fontFamily": undefined,
+              },
+              Object {
                 "flex": 1,
               },
             ]
@@ -1257,6 +1302,9 @@ exports[`Android BpkBannerAlert should render correctly with dismissable 1`] = `
                   },
                   Object {
                     "fontFamily": "sans-serif-medium",
+                  },
+                  Object {
+                    "fontFamily": undefined,
                   },
                   Array [
                     Object {
@@ -1343,6 +1391,9 @@ exports[`Android BpkBannerAlert should render correctly with dismissable 1`] = `
               },
               Object {},
               Object {
+                "fontFamily": undefined,
+              },
+              Object {
                 "flex": 1,
               },
             ]
@@ -1392,6 +1443,9 @@ exports[`Android BpkBannerAlert should render correctly with dismissable 1`] = `
                   },
                   Object {
                     "fontFamily": "sans-serif-medium",
+                  },
+                  Object {
+                    "fontFamily": undefined,
                   },
                   Array [
                     Object {
@@ -1514,6 +1568,9 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
               },
               Object {},
               Object {
+                "fontFamily": undefined,
+              },
+              Object {
                 "flex": 1,
               },
             ]
@@ -1579,6 +1636,9 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
                   "letterSpacing": 0,
                 },
                 Object {},
+                Object {
+                  "fontFamily": undefined,
+                },
               ]
             }
           >
@@ -1609,6 +1669,9 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
                   "letterSpacing": 0,
                 },
                 Object {},
+                Object {
+                  "fontFamily": undefined,
+                },
               ]
             }
           >
@@ -1704,6 +1767,9 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
               },
               Object {},
               Object {
+                "fontFamily": undefined,
+              },
+              Object {
                 "flex": 1,
               },
             ]
@@ -1769,6 +1835,9 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
                   "letterSpacing": 0,
                 },
                 Object {},
+                Object {
+                  "fontFamily": undefined,
+                },
               ]
             }
           >
@@ -1799,6 +1868,9 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
                   "letterSpacing": 0,
                 },
                 Object {},
+                Object {
+                  "fontFamily": undefined,
+                },
               ]
             }
           >
@@ -1898,6 +1970,9 @@ exports[`Android BpkBannerAlert should render correctly with type equal to error
               },
               Object {},
               Object {
+                "fontFamily": undefined,
+              },
+              Object {
                 "flex": 1,
               },
             ]
@@ -1977,6 +2052,9 @@ exports[`Android BpkBannerAlert should render correctly with type equal to error
                 "letterSpacing": 0,
               },
               Object {},
+              Object {
+                "fontFamily": undefined,
+              },
               Object {
                 "flex": 1,
               },
@@ -2078,6 +2156,9 @@ exports[`Android BpkBannerAlert should render correctly with type equal to neutr
               },
               Object {},
               Object {
+                "fontFamily": undefined,
+              },
+              Object {
                 "flex": 1,
               },
             ]
@@ -2157,6 +2238,9 @@ exports[`Android BpkBannerAlert should render correctly with type equal to neutr
                 "letterSpacing": 0,
               },
               Object {},
+              Object {
+                "fontFamily": undefined,
+              },
               Object {
                 "flex": 1,
               },
@@ -2258,6 +2342,9 @@ exports[`Android BpkBannerAlert should render correctly with type equal to succe
               },
               Object {},
               Object {
+                "fontFamily": undefined,
+              },
+              Object {
                 "flex": 1,
               },
             ]
@@ -2337,6 +2424,9 @@ exports[`Android BpkBannerAlert should render correctly with type equal to succe
                 "letterSpacing": 0,
               },
               Object {},
+              Object {
+                "fontFamily": undefined,
+              },
               Object {
                 "flex": 1,
               },
@@ -2438,6 +2528,9 @@ exports[`Android BpkBannerAlert should render correctly with type equal to warn 
               },
               Object {},
               Object {
+                "fontFamily": undefined,
+              },
+              Object {
                 "flex": 1,
               },
             ]
@@ -2517,6 +2610,9 @@ exports[`Android BpkBannerAlert should render correctly with type equal to warn 
                 "letterSpacing": 0,
               },
               Object {},
+              Object {
+                "fontFamily": undefined,
+              },
               Object {
                 "flex": 1,
               },

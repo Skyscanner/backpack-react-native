@@ -126,6 +126,9 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
                 "fontWeight": "600",
               },
               Object {
+                "fontFamily": undefined,
+              },
+              Object {
                 "color": "rgb(82, 76, 97)",
               },
             ]
@@ -210,6 +213,9 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
                   "letterSpacing": 0.12,
                 },
                 Object {},
+                Object {
+                  "fontFamily": undefined,
+                },
                 Array [
                   Object {
                     "flex": 1,
@@ -292,6 +298,9 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
               },
               Object {
                 "fontWeight": "600",
+              },
+              Object {
+                "fontFamily": undefined,
               },
               Object {
                 "color": "rgb(82, 76, 97)",
@@ -378,6 +387,9 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
                   "letterSpacing": 0.12,
                 },
                 Object {},
+                Object {
+                  "fontFamily": undefined,
+                },
                 Array [
                   Object {
                     "flex": 1,
@@ -460,6 +472,9 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
               },
               Object {
                 "fontWeight": "600",
+              },
+              Object {
+                "fontFamily": undefined,
               },
               Object {
                 "color": "rgb(82, 76, 97)",
@@ -546,6 +561,9 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
                   "letterSpacing": 0.12,
                 },
                 Object {},
+                Object {
+                  "fontFamily": undefined,
+                },
                 Array [
                   Object {
                     "flex": 1,
@@ -733,6 +751,9 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
                 "fontWeight": "600",
               },
               Object {
+                "fontFamily": undefined,
+              },
+              Object {
                 "color": "rgb(82, 76, 97)",
               },
             ]
@@ -817,6 +838,9 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
                   "letterSpacing": 0.12,
                 },
                 Object {},
+                Object {
+                  "fontFamily": undefined,
+                },
                 Array [
                   Object {
                     "flex": 1,
@@ -907,6 +931,9 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
                 "fontWeight": "600",
               },
               Object {
+                "fontFamily": undefined,
+              },
+              Object {
                 "color": "rgb(82, 76, 97)",
               },
             ]
@@ -991,6 +1018,9 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
                   "letterSpacing": 0.12,
                 },
                 Object {},
+                Object {
+                  "fontFamily": undefined,
+                },
                 Array [
                   Object {
                     "flex": 1,
@@ -1073,6 +1103,9 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
               },
               Object {
                 "fontWeight": "600",
+              },
+              Object {
+                "fontFamily": undefined,
               },
               Object {
                 "color": "rgb(82, 76, 97)",
@@ -1159,6 +1192,9 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
                   "letterSpacing": 0.12,
                 },
                 Object {},
+                Object {
+                  "fontFamily": undefined,
+                },
                 Array [
                   Object {
                     "flex": 1,

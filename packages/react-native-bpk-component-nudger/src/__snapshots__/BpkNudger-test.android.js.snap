@@ -119,6 +119,9 @@ exports[`Android BpkNudger should render correctly 1`] = `
           "fontFamily": "sans-serif-medium",
         },
         Object {
+          "fontFamily": undefined,
+        },
+        Object {
           "minWidth": 24,
           "textAlign": "center",
         },
@@ -340,6 +343,9 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
         },
         Object {
           "fontFamily": "sans-serif-medium",
+        },
+        Object {
+          "fontFamily": undefined,
         },
         Object {
           "minWidth": 24,
@@ -565,6 +571,9 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
           "fontFamily": "sans-serif-medium",
         },
         Object {
+          "fontFamily": undefined,
+        },
+        Object {
           "minWidth": 24,
           "textAlign": "center",
         },
@@ -786,6 +795,9 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
         },
         Object {
           "fontFamily": "sans-serif-medium",
+        },
+        Object {
+          "fontFamily": undefined,
         },
         Object {
           "minWidth": 24,

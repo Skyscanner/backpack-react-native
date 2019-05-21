@@ -85,6 +85,9 @@ exports[`ios BpkNavigationBar should render correctly 1`] = `
               "letterSpacing": 0.12,
             },
             Object {},
+            Object {
+              "fontFamily": undefined,
+            },
             Array [
               Object {
                 "color": "rgb(82, 76, 97)",
@@ -138,6 +141,9 @@ exports[`ios BpkNavigationBar should render correctly 1`] = `
               },
               Object {
                 "fontWeight": "600",
+              },
+              Object {
+                "fontFamily": undefined,
               },
               Array [
                 Object {
@@ -244,6 +250,9 @@ exports[`ios BpkNavigationBar should render correctly with a subtitle view 1`] =
               "letterSpacing": 0.12,
             },
             Object {},
+            Object {
+              "fontFamily": undefined,
+            },
             Array [
               Object {
                 "color": "rgb(82, 76, 97)",
@@ -297,6 +306,9 @@ exports[`ios BpkNavigationBar should render correctly with a subtitle view 1`] =
               },
               Object {
                 "fontWeight": "600",
+              },
+              Object {
+                "fontFamily": undefined,
               },
               Array [
                 Object {
@@ -411,6 +423,9 @@ exports[`ios BpkNavigationBar should render correctly with a title view 1`] = `
               "letterSpacing": 0.12,
             },
             Object {},
+            Object {
+              "fontFamily": undefined,
+            },
             Array [
               Object {
                 "color": "rgb(82, 76, 97)",
@@ -537,6 +552,9 @@ exports[`ios BpkNavigationBar should render correctly with an icon in the title 
               "letterSpacing": 0.12,
             },
             Object {},
+            Object {
+              "fontFamily": undefined,
+            },
             Array [
               Object {
                 "color": "rgb(82, 76, 97)",
@@ -616,6 +634,9 @@ exports[`ios BpkNavigationBar should render correctly with an icon in the title 
               },
               Object {
                 "fontWeight": "600",
+              },
+              Object {
+                "fontFamily": undefined,
               },
               Array [
                 Object {
@@ -724,6 +745,9 @@ exports[`ios BpkNavigationBar should render correctly with custom style 1`] = `
               "letterSpacing": 0.12,
             },
             Object {},
+            Object {
+              "fontFamily": undefined,
+            },
             Array [
               Object {
                 "color": "rgb(82, 76, 97)",
@@ -777,6 +801,9 @@ exports[`ios BpkNavigationBar should render correctly with custom style 1`] = `
               },
               Object {
                 "fontWeight": "600",
+              },
+              Object {
+                "fontFamily": undefined,
               },
               Array [
                 Object {
@@ -861,6 +888,9 @@ exports[`ios BpkNavigationBar should render correctly with trailing button 1`] =
               "letterSpacing": 0.12,
             },
             Object {},
+            Object {
+              "fontFamily": undefined,
+            },
             Array [
               Object {
                 "color": "rgb(82, 76, 97)",
@@ -915,6 +945,9 @@ exports[`ios BpkNavigationBar should render correctly with trailing button 1`] =
               Object {
                 "fontWeight": "600",
               },
+              Object {
+                "fontFamily": undefined,
+              },
               Array [
                 Object {
                   "color": "rgb(82, 76, 97)",
@@ -960,6 +993,9 @@ exports[`ios BpkNavigationBar should render correctly with trailing button 1`] =
             },
             Object {
               "fontWeight": "600",
+            },
+            Object {
+              "fontFamily": undefined,
             },
             Array [
               Object {

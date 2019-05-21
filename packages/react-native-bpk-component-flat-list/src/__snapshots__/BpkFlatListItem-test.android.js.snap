@@ -49,10 +49,16 @@ exports[`Android BpkFlatListItem should render correctly 1`] = `
             "letterSpacing": -0.2,
           },
           Object {},
+          Object {
+            "fontFamily": undefined,
+          },
           Array [
             Object {
               "color": "rgb(82, 76, 97)",
               "flex": 1,
+            },
+            Object {
+              "color": "rgb(82, 76, 97)",
             },
           ],
         ]
@@ -151,10 +157,16 @@ exports[`Android BpkFlatListItem should support the "image" property 1`] = `
             "letterSpacing": -0.2,
           },
           Object {},
+          Object {
+            "fontFamily": undefined,
+          },
           Array [
             Object {
               "color": "rgb(82, 76, 97)",
               "flex": 1,
+            },
+            Object {
+              "color": "rgb(82, 76, 97)",
             },
           ],
         ]
@@ -243,13 +255,22 @@ exports[`Android BpkFlatListItem should support the "selected" property 1`] = `
             "letterSpacing": -0.2,
           },
           Object {},
+          Object {
+            "fontFamily": undefined,
+          },
           Array [
             Object {
               "color": "rgb(82, 76, 97)",
               "flex": 1,
             },
             Object {
+              "color": "rgb(82, 76, 97)",
+            },
+            Object {
               "color": "rgb(0, 178, 214)",
+            },
+            Object {
+              "color": undefined,
             },
           ],
         ]
@@ -271,7 +292,7 @@ exports[`Android BpkFlatListItem should support the "selected" property 1`] = `
           "width": 20,
         },
         Object {
-          "borderColor": "rgb(0, 178, 214)",
+          "borderColor": undefined,
         },
       ]
     }
@@ -286,7 +307,7 @@ exports[`Android BpkFlatListItem should support the "selected" property 1`] = `
             "width": 10,
           },
           Object {
-            "backgroundColor": "rgb(0, 178, 214)",
+            "backgroundColor": undefined,
           },
         ]
       }
@@ -351,6 +372,9 @@ exports[`Android should support theming when selected 1`] = `
             Object {
               "color": "rgb(82, 76, 97)",
               "flex": 1,
+            },
+            Object {
+              "color": "rgb(82, 76, 97)",
             },
             Object {
               "color": "rgb(0, 178, 214)",

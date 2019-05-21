@@ -43,6 +43,9 @@ exports[`iOS BpkButtonLink should render correctly 1`] = `
           Object {
             "fontWeight": "600",
           },
+          Object {
+            "fontFamily": undefined,
+          },
           Array [
             Object {
               "color": "rgb(0, 178, 214)",
@@ -102,6 +105,9 @@ exports[`iOS BpkButtonLink should render correctly with iconAlignment="leading" 
           },
           Object {
             "fontWeight": "600",
+          },
+          Object {
+            "fontFamily": undefined,
           },
           Array [
             Object {
@@ -188,6 +194,9 @@ exports[`iOS BpkButtonLink should render correctly with iconAlignment="trailing"
           Object {
             "fontWeight": "600",
           },
+          Object {
+            "fontFamily": undefined,
+          },
           Array [
             Object {
               "color": "rgb(0, 178, 214)",
@@ -270,6 +279,9 @@ exports[`iOS BpkButtonLink should render correctly with text props provided 1`] 
           Object {
             "fontWeight": "600",
           },
+          Object {
+            "fontFamily": undefined,
+          },
           Array [
             Object {
               "color": "rgb(0, 178, 214)",
@@ -326,6 +338,9 @@ exports[`iOS BpkButtonLink should render correctly with theme prop 1`] = `
           },
           Object {
             "fontWeight": "600",
+          },
+          Object {
+            "fontFamily": undefined,
           },
           Array [
             Object {
@@ -387,6 +402,9 @@ exports[`iOS BpkButtonLink should support elements as icons 1`] = `
           Object {
             "fontWeight": "600",
           },
+          Object {
+            "fontFamily": undefined,
+          },
           Array [
             Object {
               "color": "rgb(0, 178, 214)",
@@ -408,6 +426,9 @@ exports[`iOS BpkButtonLink should support elements as icons 1`] = `
             "letterSpacing": 0.12,
           },
           Object {},
+          Object {
+            "fontFamily": undefined,
+          },
         ]
       }
     >
@@ -460,6 +481,9 @@ exports[`iOS BpkButtonLink should support overwriting styles 1`] = `
           },
           Object {
             "fontWeight": "600",
+          },
+          Object {
+            "fontFamily": undefined,
           },
           Array [
             Object {
@@ -517,6 +541,9 @@ exports[`iOS BpkButtonLink should support the "disabled" property 1`] = `
           },
           Object {
             "fontWeight": "600",
+          },
+          Object {
+            "fontFamily": undefined,
           },
           Array [
             Object {
@@ -577,6 +604,9 @@ exports[`iOS BpkButtonLink should support the "icon" property 1`] = `
           },
           Object {
             "fontWeight": "600",
+          },
+          Object {
+            "fontFamily": undefined,
           },
           Array [
             Object {
@@ -662,6 +692,9 @@ exports[`iOS should support the "icon" and "large" property 1`] = `
           Object {
             "fontWeight": "600",
           },
+          Object {
+            "fontFamily": undefined,
+          },
           Array [
             Object {
               "color": "rgb(0, 178, 214)",
@@ -742,6 +775,9 @@ exports[`iOS should support the "large" property 1`] = `
           },
           Object {
             "fontWeight": "600",
+          },
+          Object {
+            "fontFamily": undefined,
           },
           Array [
             Object {

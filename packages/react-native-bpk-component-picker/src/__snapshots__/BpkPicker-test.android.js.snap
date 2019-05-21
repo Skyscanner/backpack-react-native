@@ -126,6 +126,9 @@ exports[`Android BpkPicker should render correctly 1`] = `
                     "letterSpacing": -0.2,
                   },
                   Object {},
+                  Object {
+                    "fontFamily": undefined,
+                  },
                   Object {},
                 ]
               }
@@ -171,6 +174,9 @@ exports[`Android BpkPicker should render correctly 1`] = `
                     "letterSpacing": -0.2,
                   },
                   Object {},
+                  Object {
+                    "fontFamily": undefined,
+                  },
                   Object {},
                 ]
               }
@@ -312,6 +318,9 @@ exports[`Android BpkPicker should render correctly with a selected value 1`] = `
                   },
                   Object {},
                   Object {
+                    "fontFamily": undefined,
+                  },
+                  Object {
                     "color": "rgb(0, 178, 214)",
                   },
                 ]
@@ -358,6 +367,9 @@ exports[`Android BpkPicker should render correctly with a selected value 1`] = `
                     "letterSpacing": -0.2,
                   },
                   Object {},
+                  Object {
+                    "fontFamily": undefined,
+                  },
                   Object {},
                 ]
               }

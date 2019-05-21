@@ -34,6 +34,9 @@ exports[`Android BpkAnimateHeight should render correctly collapsed 1`] = `
             "letterSpacing": -0.2,
           },
           Object {},
+          Object {
+            "fontFamily": undefined,
+          },
         ]
       }
     >
@@ -61,6 +64,9 @@ exports[`Android BpkAnimateHeight should render correctly collapsed 1`] = `
             "letterSpacing": -0.2,
           },
           Object {},
+          Object {
+            "fontFamily": undefined,
+          },
         ]
       }
     >
@@ -104,6 +110,9 @@ exports[`Android BpkAnimateHeight should render correctly expanded 1`] = `
             "letterSpacing": -0.2,
           },
           Object {},
+          Object {
+            "fontFamily": undefined,
+          },
         ]
       }
     >
@@ -131,6 +140,9 @@ exports[`Android BpkAnimateHeight should render correctly expanded 1`] = `
             "letterSpacing": -0.2,
           },
           Object {},
+          Object {
+            "fontFamily": undefined,
+          },
         ]
       }
     >
@@ -174,6 +186,9 @@ exports[`Android BpkAnimateHeight should render correctly with n children 1`] = 
             "letterSpacing": -0.2,
           },
           Object {},
+          Object {
+            "fontFamily": undefined,
+          },
         ]
       }
     >
@@ -190,6 +205,9 @@ exports[`Android BpkAnimateHeight should render correctly with n children 1`] = 
             "letterSpacing": -0.2,
           },
           Object {},
+          Object {
+            "fontFamily": undefined,
+          },
         ]
       }
     >
@@ -217,6 +235,9 @@ exports[`Android BpkAnimateHeight should render correctly with n children 1`] = 
             "letterSpacing": -0.2,
           },
           Object {},
+          Object {
+            "fontFamily": undefined,
+          },
         ]
       }
     >
@@ -233,6 +254,9 @@ exports[`Android BpkAnimateHeight should render correctly with n children 1`] = 
             "letterSpacing": -0.2,
           },
           Object {},
+          Object {
+            "fontFamily": undefined,
+          },
         ]
       }
     >
@@ -277,6 +301,9 @@ exports[`Android BpkAnimateHeight should render correctly with user styling padd
             "letterSpacing": -0.2,
           },
           Object {},
+          Object {
+            "fontFamily": undefined,
+          },
         ]
       }
     >
@@ -304,6 +331,9 @@ exports[`Android BpkAnimateHeight should render correctly with user styling padd
             "letterSpacing": -0.2,
           },
           Object {},
+          Object {
+            "fontFamily": undefined,
+          },
         ]
       }
     >

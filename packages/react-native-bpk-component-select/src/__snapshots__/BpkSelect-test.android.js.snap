@@ -88,12 +88,14 @@ exports[`Android BpkSelect should render correctly with "showImage" and image 1`
     style={
       Array [
         undefined,
-        Object {
-          "backgroundColor": "rgb(243, 242, 245)",
-          "height": 12,
-          "marginEnd": 8,
-          "width": 16,
-        },
+        Array [
+          Object {
+            "backgroundColor": "rgb(243, 242, 245)",
+            "height": 12,
+            "marginEnd": 8,
+            "width": 16,
+          },
+        ],
       ]
     }
   />
@@ -153,12 +155,14 @@ exports[`Android BpkSelect should render correctly with "showImage" and no image
 >
   <View
     style={
-      Object {
-        "backgroundColor": "rgb(243, 242, 245)",
-        "height": 12,
-        "marginEnd": 8,
-        "width": 16,
-      }
+      Array [
+        Object {
+          "backgroundColor": "rgb(243, 242, 245)",
+          "height": 12,
+          "marginEnd": 8,
+          "width": 16,
+        },
+      ]
     }
   />
   <Text
@@ -362,6 +366,9 @@ exports[`Android BpkSelect should render correctly with "valid" false and a vali
         },
         Object {},
         Object {
+          "fontFamily": undefined,
+        },
+        Object {
           "color": "rgb(255, 84, 82)",
           "paddingTop": 4,
         },
@@ -494,6 +501,9 @@ exports[`Android BpkSelect should render correctly with a text label 1`] = `
           "letterSpacing": -0.2,
         },
         Object {},
+        Object {
+          "fontFamily": undefined,
+        },
         Array [
           Object {
             "marginEnd": "auto",
@@ -625,6 +635,9 @@ exports[`Android BpkSelect should render correctly with custom styles 1`] = `
           "letterSpacing": -0.2,
         },
         Object {},
+        Object {
+          "fontFamily": undefined,
+        },
         Array [
           Object {
             "marginEnd": "auto",
@@ -701,13 +714,18 @@ exports[`Android BpkSelect should render correctly with the disabled prop 1`] = 
           "letterSpacing": -0.2,
         },
         Object {},
+        Object {
+          "fontFamily": undefined,
+        },
         Array [
           Object {
             "marginEnd": "auto",
           },
-          Object {
-            "color": "rgb(230, 228, 235)",
-          },
+          Array [
+            Object {
+              "color": "rgb(230, 228, 235)",
+            },
+          ],
         ],
       ]
     }

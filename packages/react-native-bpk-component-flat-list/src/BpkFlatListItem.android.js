@@ -29,7 +29,10 @@ import {
 } from 'bpk-tokens/tokens/base.react.native';
 import { getThemeAttributes, withTheme } from 'react-native-bpk-theming';
 
-import { REQUIRED_THEME_ATTRIBUTES } from './theming';
+import {
+  REQUIRED_THEME_ATTRIBUTES,
+  OPTIONAL_THEME_ATTRIBUTES,
+} from './theming';
 import BpkRadioIcon from './BpkRadioIcon.android';
 import {
   type FlatListItemProps,
@@ -75,14 +78,19 @@ class BpkFlatListItem extends React.PureComponent<FlatListItemProps> {
   render() {
     const { image, title, selected, theme, ...rest } = this.props;
     let tintColorFinal = tintColor;
-
     const textStyles = [styles.text];
+    const themeAttributes = {
+      ...getThemeAttributes(REQUIRED_THEME_ATTRIBUTES, theme),
+      ...getThemeAttributes(OPTIONAL_THEME_ATTRIBUTES, theme),
+    };
+    textStyles.push({
+      color:
+        themeAttributes && themeAttributes.colorGray700
+          ? themeAttributes.colorGray700
+          : colorGray700,
+    });
     if (selected) {
       textStyles.push(styles.textSelected);
-      const themeAttributes = getThemeAttributes(
-        REQUIRED_THEME_ATTRIBUTES,
-        theme,
-      );
       if (themeAttributes) {
         textStyles.push({
           color: themeAttributes.flatListSelectedItemColor,

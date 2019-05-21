@@ -54,6 +54,9 @@ exports[`ios TitleView should render correctly with leading icon 1`] = `
         Object {
           "fontWeight": "600",
         },
+        Object {
+          "fontFamily": undefined,
+        },
         Array [
           Object {
             "color": "rgb(255, 255, 255)",
@@ -98,6 +101,9 @@ exports[`ios TitleView should render correctly with only a title 1`] = `
         Object {
           "fontWeight": "600",
         },
+        Object {
+          "fontFamily": undefined,
+        },
         Array [
           Object {
             "color": "rgb(255, 255, 255)",
@@ -139,6 +145,9 @@ exports[`ios TitleView should render correctly with trailing icon 1`] = `
         },
         Object {
           "fontWeight": "600",
+        },
+        Object {
+          "fontFamily": undefined,
         },
         Array [
           Object {
