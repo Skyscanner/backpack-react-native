@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-05-20 - Grey theming
+
+**Added:**
+
+- react-native-bpk-theming:
+  - Added new theme attributes for `colorGray50`, `colorGray100`, `colorGray300`, `colorGray500`, `colorGray700`, `colorGray900` to `BpkThemeAttributes` to support new gray theming.
+
 # 2019-05-17 - Visual fixes for iOS buttons and theming tweaks
 
 **Fixed:**
@@ -13,7 +20,7 @@
 - react-native-bpk-component-calendar:
   - Remove version range for `backpack-android`.
 
-# 2019-05-06 - Fix touchable highlight for Android 
+# 2019-05-06 - Fix touchable highlight for Android
 
 **Fixed:**
 
