@@ -27,11 +27,6 @@ export const DIALOG_TYPE = {
 
 export type DialogType = $Keys<typeof DIALOG_TYPE>;
 
-type Icon = {
-  id: string,
-  color: string,
-};
-
 export const BUTTON_TYPE = {
   primary: 'primary',
   secondary: 'secondary',
@@ -41,6 +36,11 @@ export const BUTTON_TYPE = {
 };
 
 export type ButtonType = $Keys<typeof BUTTON_TYPE>;
+
+type Icon = {
+  iconId: string,
+  iconColor: string,
+};
 
 type ActionButton = {
   text: string,
@@ -64,7 +64,7 @@ export type CommonProps = {
 };
 
 export type NativeProps = {
-  onPress: ?([ActionButton]) => mixed,
+  onChange: ?([ActionButton]) => mixed,
 };
 
 export const commonPropTypes = {
@@ -72,7 +72,7 @@ export const commonPropTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
   icon: PropTypes.shape({
-    id: PropTypes.string,
+    iconId: PropTypes.string,
     iconColor: PropTypes.string,
   }),
   actions: PropTypes.arrayOf(
@@ -91,7 +91,7 @@ export const commonPropTypes = {
 
 export const nativePropsTypes = {
   ...commonPropTypes,
-  onButtonClicked: PropTypes.func,
+  onClick: PropTypes.func,
 };
 
 export const commonDefaultProps = {

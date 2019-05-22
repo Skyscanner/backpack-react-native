@@ -33,7 +33,7 @@ const dialogDescription =
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et luctus sem, quis pharetra lacus.';
 
 const dialogIcon = {
-  id: 'bpk_tick',
+  iconId: 'bpk_tick',
   iconColor: 'bpkGreen500',
 };
 
@@ -62,6 +62,10 @@ class TriggerComponent extends Component<> {
       dialogIsOpen: false,
     };
   }
+
+  action = () => {
+    this.setState({ dialogIsOpen: true });
+  };
 
   render() {
     return (

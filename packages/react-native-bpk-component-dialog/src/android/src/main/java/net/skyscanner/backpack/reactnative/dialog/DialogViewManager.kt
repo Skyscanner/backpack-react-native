@@ -17,12 +17,15 @@
  */
 package net.skyscanner.backpack.reactnative.dialog
 
+import android.content.res.Resources
 import com.facebook.react.bridge.ReadableArray
+import com.facebook.react.bridge.ReadableMap
 import com.facebook.react.uimanager.ThemedReactContext
 import com.facebook.react.uimanager.UIManagerModule
 import com.facebook.react.uimanager.ViewGroupManager
 import com.facebook.react.uimanager.annotations.ReactProp
 import net.skyscanner.backpack.reactnative.dialog.events.DialogActionEvent
+import net.skyscanner.backpack.dialog.BpkDialog
 import net.skyscanner.backpack.button.BpkButton
 import net.skyscanner.backpack.dialog.BpkDialog.Style
 import java.lang.IllegalArgumentException
@@ -60,32 +63,21 @@ class DialogViewManager : ViewGroupManager<RNDialog>() {
     }
   }
 
-  @ReactProp(name = "iconId")
-  fun setIconId(view: RNDialog, iconId: String?) {
-    iconId?.let {
-      view.iconId = iconId
+  @ReactProp(name = "icon")
+  fun setIcon(view: RNDialog, icon: ReadableMap?) {
+    icon?.let {
+      val resources: Resources = view.context.resources
+      val iconId = resources.getIdentifier(icon.getString("iconId"), "drawable", view.context.packageName)
+      val iconColor = resources.getIdentifier(icon.getString("iconColor"), "color", view.context.packageName)
+      view.icon = BpkDialog.Icon(iconId, iconColor)
     }
   }
 
-  @ReactProp(name = "iconColor")
-  fun setIconColor(view: RNDialog, iconColor: String?) {
-    iconColor?.let {
-      view.iconColor = iconColor
-    }
-  }
-
-  @ReactProp(name = "actionsName")
-  fun setActionsName(view: RNDialog, actionsName: ReadableArray?) {
-    actionsName?.let {
-      view.actionsName = toList(actionsName).toTypedArray()
-    }
-  }
-
-  @ReactProp(name = "actionsType")
-  fun setActionsType(view: RNDialog, actionsType: ReadableArray?) {
-    actionsType?.let {
-      view.actionsType = toList(actionsType).map { type ->
-        when(type) {
+  @ReactProp(name = "actions")
+  fun setActions(view: RNDialog, actions: ReadableArray?) {
+    actions?.let {
+      view.actions = toMapsList(it).map { each ->
+        val buttonType = when(val type = each?.getString("type")) {
           "primary" -> BpkButton.Type.Primary
           "secondary" -> BpkButton.Type.Secondary
           "outline" -> BpkButton.Type.Outline
@@ -93,12 +85,14 @@ class DialogViewManager : ViewGroupManager<RNDialog>() {
           "destructive" -> BpkButton.Type.Destructive
           else -> throw IllegalArgumentException("Action button type $type is not supported")
         }
+        Pair(each.getString("text")!!, buttonType)
       }.toTypedArray()
+
     }
   }
 
   @ReactProp(name = "isOpen")
-  fun setTitle(view: RNDialog, isOpen: Boolean) {
+  fun setIsOpen(view: RNDialog, isOpen: Boolean) {
     view.isOpen = isOpen
   }
 
@@ -120,8 +114,8 @@ class DialogViewManager : ViewGroupManager<RNDialog>() {
     }
   }
 
-  private fun toList(readableArray: ReadableArray): List<String> =
+  private fun toMapsList(readableArray: ReadableArray): List<ReadableMap?> =
     (0 until readableArray.size()).map { i ->
-      readableArray.getString(i)?.let { it } ?: run { "haha" }
+      readableArray.getMap(i)
     }
 }

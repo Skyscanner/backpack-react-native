@@ -25,6 +25,8 @@ import net.skyscanner.backpack.dialog.BpkDialog
 
 typealias  ActionCallback = (Int) -> Unit
 
+typealias Action = Pair<String, BpkButton.Type>
+
 class RNDialog(context: Context): FrameLayout(context) {
 
   private var dialog: BpkDialog = BpkDialog(context)
@@ -35,13 +37,9 @@ class RNDialog(context: Context): FrameLayout(context) {
 
   var description: String = ""
 
-  var iconId: String = ""
+  var icon: BpkDialog.Icon? = null
 
-  var iconColor: String = ""
-
-  var actionsName: Array<String> = arrayOf()
-
-  var actionsType: Array<BpkButton.Type> = arrayOf()
+  var actions: Array<Action> = arrayOf()
 
   var isOpen: Boolean = false
 
@@ -52,26 +50,22 @@ class RNDialog(context: Context): FrameLayout(context) {
   }
 
   fun hide() {
-    dialog.hide()
+    dialog.dismiss()
   }
 
   fun render() {
-    val resources: Resources = context.resources
-    val resIconId = resources.getIdentifier(iconId, "drawable", context.packageName)
-    val resIconColor = resources.getIdentifier(iconColor, "color", context.packageName)
-    val dialogIcon = BpkDialog.Icon(resIconId, resIconColor)
-    val actions = actionsName.zip(actionsType)
+
     dialog = BpkDialog(context, dialogType)
     dialog.title = title
     dialog.description = description
-    dialog.icon = dialogIcon
+    dialog.icon = icon
     actions.forEachIndexed { index, element ->
       dialog.addActionButton(
         BpkButton(context, element.second).apply {
           text = element.first
           setOnClickListener {
             onAction?.invoke(index)
-            dialog.dismiss()
+            hide()
           }
         }
       )

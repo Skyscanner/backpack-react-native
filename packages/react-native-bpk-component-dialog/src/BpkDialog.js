@@ -33,8 +33,7 @@ export type Props = {
 };
 
 const createOnButtonClickHandler = memoize(actions => event => {
-  console.warn('HELLO');
-  if (event.nativeEvent.actionIndex) {
+  if (event.nativeEvent) {
     const index = event.nativeEvent.actionIndex;
     if (actions[index]) {
       actions[index].callback();
@@ -44,8 +43,8 @@ const createOnButtonClickHandler = memoize(actions => event => {
 
 const BpkDialog = (props: Props) => (
   <NativeDialog
+    onChange={createOnButtonClickHandler(props.actions)}
     {...props}
-    onPress={createOnButtonClickHandler(props.actions)}
   />
 );
 
