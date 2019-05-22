@@ -1,0 +1,56 @@
+apply plugin: "com.android.library"
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply from: '../../../../android/gradle-maven-push.gradle'
+
+description='Bridge code for react-native-bpk-component-dialog'
+
+group='net.skyscanner.backpack'
+
+version=getVersionFromJsPackage(project)
+
+def safeExtGet(prop, fallback) {
+  rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
+}
+
+def _reactNativeVersion = safeExtGet("reactNative", "+")
+def _compileSdkVersion = safeExtGet("compileSdkVersion", 28)
+def _targetSdkVersion = safeExtGet("targetSdkVersion", 28)
+def _minSdkVersion = safeExtGet("minSdkVersion", 21)
+def _buildToolsVersion = safeExtGet("buildToolsVersion", "28.0.3")
+
+android {
+  compileSdkVersion _compileSdkVersion
+  buildToolsVersion _buildToolsVersion
+
+  defaultConfig {
+    minSdkVersion _minSdkVersion
+    targetSdkVersion _targetSdkVersion
+
+    versionName getVersionFromJsPackage(project)
+  }
+}
+
+dependencies {
+  compileOnly "com.facebook.react:react-native:${_reactNativeVersion}"
+  implementation("com.github.skyscanner:backpack-android") {
+    version {
+      // We follow semver so anything in between majors should work. It is very important to keep this
+      // information correct in case the host application already has `backpack-android` as a dependency
+      // in a different major version, we want the build to fail in such cases and not a runtime error.
+      //
+      // It's important to note that the gradle documentation suggests the syntax for this should be
+      // [1, 2[ (yes with [` at the end), but we publish the compiled version in a maven repository and for
+      // maven the correct syntax is [1, 2). Given that `)` at the end also works for gradle we are
+      // using this syntax instead.
+      //
+      // see: https://docs.gradle.org/current/userguide/declaring_dependencies.html#sub:declaring_dependency_rich_version
+      // see: https://docs.oracle.com/middleware/1212/core/MAVEN/maven_version.htm#MAVEN8855
+      // see: http://ant.apache.org/ivy/history/2.1.0/settings/version-matchers.html
+      strictly "[7.4,9.0)"
+    }
+  }
+}

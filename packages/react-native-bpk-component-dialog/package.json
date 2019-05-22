@@ -1,0 +1,23 @@
+{
+  "name": "react-native-bpk-component-dialog",
+  "version": "0.3.10",
+  "main": "index.js",
+  "description": "Backpack React Native dialog component.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Skyscanner/backpack.git"
+  },
+  "author": "Backpack Design System <backpack@skyscanner.net>",
+  "license": "Apache-2.0",
+  "peerDependencies": {
+    "react": "^16.8.3",
+    "react-native": ">= 0.59.0"
+  },
+  "dependencies": {
+    "bpk-tokens": "^27.4.7",
+    "prop-types": "^15.5.8"
+  },
+  "devDependencies": {
+    "react-native-bpk-component-button": "^9.2.2"
+  }
+}
