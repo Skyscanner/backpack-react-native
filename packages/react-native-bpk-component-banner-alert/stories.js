@@ -25,8 +25,10 @@ import { storiesOf } from '@storybook/react-native';
 import BpkText from 'react-native-bpk-component-text';
 import BpkButton from 'react-native-bpk-component-button';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
+import BpkThemeProvider from 'react-native-bpk-theming';
 
 import CenterDecorator from '../../storybook/CenterDecorator';
+import themeAttributes from '../../storybook/themeAttributes';
 
 import BpkBannerAlert, {
   ALERT_TYPES,
@@ -377,4 +379,30 @@ storiesOf('react-native-bpk-component-banner-alert', module)
         </BpkBannerAlert>
       </View>
     );
-  });
+  })
+  .add('Themed Banner Alert', () => (
+    <BpkThemeProvider theme={themeAttributes}>
+      <View>
+        <BpkBannerAlert
+          style={styles.bannerAlert}
+          type={ALERT_TYPES.neutral}
+          message="Neutral alert."
+        />
+        <BpkBannerAlert
+          style={styles.bannerAlert}
+          type={ALERT_TYPES.success}
+          message="Successful alert."
+        />
+        <BpkBannerAlert
+          style={styles.bannerAlert}
+          type={ALERT_TYPES.warn}
+          message="Warn alert."
+        />
+        <BpkBannerAlert
+          style={styles.bannerAlert}
+          type={ALERT_TYPES.error}
+          message="Error alert."
+        />
+      </View>
+    </BpkThemeProvider>
+  ));
