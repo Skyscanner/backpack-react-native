@@ -36,7 +36,11 @@ import BpkText from 'react-native-bpk-component-text';
 import BpkTouchableOverlay from 'react-native-bpk-component-touchable-overlay';
 import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-native-feedback';
 
-import { REQUIRED_THEME_ATTRIBUTES, themePropType } from './theming';
+import {
+  REQUIRED_THEME_ATTRIBUTES,
+  OPTIONAL_THEME_ATTRIBUTES,
+  themePropType,
+} from './theming';
 
 type ViewProps = ElementProps<typeof View>;
 type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
@@ -89,17 +93,24 @@ const BpkHorizontalNavItem = (props: Props) => {
   const textSize = small ? 'sm' : 'base';
   const viewStyles = [styles.view];
   const textStyles = [styles.text];
-
+  const themeAttributes = getThemeAttributes(
+    REQUIRED_THEME_ATTRIBUTES,
+    theme,
+    OPTIONAL_THEME_ATTRIBUTES,
+  );
+  if (themeAttributes && themeAttributes.colorGray700) {
+    textStyles.push({ color: themeAttributes.colorGray700 });
+  }
   if (disabled) {
     accessibilityTraits.push('disabled');
     textStyles.push(styles.textDisabled);
+    if (themeAttributes && themeAttributes.colorGray300) {
+      textStyles.push({
+        color: themeAttributes.colorGray300,
+      });
+    }
   } else if (selected) {
     textStyles.push(styles.textSelected);
-    const themeAttributes = getThemeAttributes(
-      REQUIRED_THEME_ATTRIBUTES,
-      theme,
-    );
-
     if (themeAttributes) {
       textStyles.push({
         color: themeAttributes.horizontalNavSelectedTextColor,

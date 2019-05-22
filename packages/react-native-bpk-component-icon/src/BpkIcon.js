@@ -27,6 +27,7 @@ import {
 import { Text, StyleSheet } from 'react-native';
 import React, { type ElementProps } from 'react';
 import iconMappings from 'bpk-svgs/dist/font/iconMapping.json';
+import { withTheme, type Theme } from 'react-native-bpk-theming';
 
 const styles = StyleSheet.create({
   icon: {
@@ -50,14 +51,19 @@ export type Props = {
   icon: string,
   small?: boolean,
   style: TextStyleProp,
+  theme: ?Theme,
 };
 
 const BpkIcon = (props: Props) => {
-  const { icon, small, style, ...rest } = props;
+  const { icon, small, style, theme, ...rest } = props;
 
   const characterCode = iconMappings[icon];
 
   const textStyleFinal = [styles.icon];
+
+  if (theme && theme.colorGray700) {
+    textStyleFinal.push({ color: theme.colorGray700 });
+  }
 
   if (small) {
     textStyleFinal.push(styles.small);
@@ -84,6 +90,7 @@ BpkIcon.propTypes = {
 BpkIcon.defaultProps = {
   small: false,
   style: null,
+  theme: null,
 };
 
 /*
@@ -95,5 +102,5 @@ Object.keys(iconMappings).forEach(name => {
   icons[name] = name;
 });
 
-export default BpkIcon;
+export default withTheme(BpkIcon);
 export { icons };

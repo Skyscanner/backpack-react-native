@@ -31,6 +31,7 @@ import {
   colorGray100,
   borderSizeSm,
 } from 'bpk-tokens/tokens/base.react.native';
+import { withTheme, type Theme } from 'react-native-bpk-theming';
 
 import withAnimatedProps from './withAnimatedProps';
 import BpkHorizontalNavSelectedIndicator from './BpkHorizontalNavSelectedIndicator';
@@ -73,6 +74,7 @@ export type Props = {
   selectedId: string,
   spaceAround: boolean,
   style: ViewStyleProp,
+  theme: ?Theme,
 };
 
 type State = {
@@ -91,6 +93,7 @@ class BpkHorizontalNav extends React.Component<Props, State> {
   static defaultProps = {
     spaceAround: false,
     style: null,
+    theme: null,
   };
 
   constructor() {
@@ -129,10 +132,21 @@ class BpkHorizontalNav extends React.Component<Props, State> {
   childrenPositions = {};
 
   render() {
-    const { children, selectedId, spaceAround, style, ...rest } = this.props;
+    const {
+      children,
+      selectedId,
+      spaceAround,
+      style,
+      theme,
+      ...rest
+    } = this.props;
 
     const navStyle = [styles.nav];
     const innerViewStyle = [styles.inner];
+
+    if (theme && theme.colorGray100) {
+      navStyle.push({ borderBottomColor: theme.colorGray100 });
+    }
 
     if (spaceAround) {
       navStyle.push(styles.navSpaceAround);
@@ -187,4 +201,4 @@ class BpkHorizontalNav extends React.Component<Props, State> {
   }
 }
 
-export default BpkHorizontalNav;
+export default withTheme(BpkHorizontalNav);

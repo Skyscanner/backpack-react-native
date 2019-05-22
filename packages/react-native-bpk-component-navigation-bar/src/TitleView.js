@@ -21,7 +21,8 @@ import React from 'react';
 import { StyleSheet, View, Platform } from 'react-native';
 import BpkText, { WEIGHT_STYLES } from 'react-native-bpk-component-text';
 import BpkIcon, { icons } from 'react-native-bpk-component-icon';
-import { colorGray700, spacingSm } from 'bpk-tokens/tokens/base.react.native';
+import { spacingSm } from 'bpk-tokens/tokens/base.react.native';
+import { withTheme, grayForTheme, type Theme } from 'react-native-bpk-theming';
 
 import { type TitleWithIcon } from './common-types';
 
@@ -47,10 +48,11 @@ const TitleView = (props: {
   title: string | TitleWithIcon,
   tintColor: ?string,
   style: any,
+  theme: ?Theme,
 }) => {
-  const { title, tintColor, style, ...rest } = props;
-
-  const tintColorFinal = tintColor || colorGray700;
+  const { title, tintColor, style, theme, ...rest } = props;
+  const gray700 = grayForTheme(theme, 'colorGray700');
+  const tintColorFinal = tintColor || gray700;
 
   const titleValue = typeof title === 'object' ? title.value : title;
   const hasIcon = typeof title === 'object';
@@ -94,4 +96,4 @@ const TitleView = (props: {
   );
 };
 
-export default TitleView;
+export default withTheme(TitleView);
