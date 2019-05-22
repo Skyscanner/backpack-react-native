@@ -210,9 +210,6 @@ exports[`iOS BpkChip should render correctly with "selected" 1`] = `
         Object {
           "backgroundColor": "rgb(0, 178, 214)",
         },
-        Object {
-          "backgroundColor": undefined,
-        },
       ],
       null,
     ]
@@ -236,9 +233,6 @@ exports[`iOS BpkChip should render correctly with "selected" 1`] = `
           },
           Object {
             "color": "rgb(255, 255, 255)",
-          },
-          Object {
-            "color": undefined,
           },
         ],
       ]

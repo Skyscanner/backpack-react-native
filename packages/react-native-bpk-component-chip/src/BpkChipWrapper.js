@@ -134,7 +134,11 @@ const BpkChipWrapper = (props: Props) => {
         color: themeAttributes.colorGray500,
       });
     }
-    if (selected) {
+    if (
+      selected &&
+      themeAttributes.chipSelectedBackgroundColor &&
+      themeAttributes.chipSelectedTextColor
+    ) {
       innerStyle.push({
         backgroundColor: themeAttributes.chipSelectedBackgroundColor,
       });
