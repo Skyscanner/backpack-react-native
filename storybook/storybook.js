@@ -62,6 +62,7 @@ configure(() => {
   require('../packages/react-native-bpk-component-carousel-indicator/stories');
   require('../packages/react-native-bpk-component-carousel/stories');
   require('../packages/react-native-bpk-component-chip/stories');
+  require('../packages/react-native-bpk-component-dialog/stories');
   require('../packages/react-native-bpk-component-flat-list/stories');
   require('../packages/react-native-bpk-component-horizontal-nav/stories');
   require('../packages/react-native-bpk-component-icon/stories');

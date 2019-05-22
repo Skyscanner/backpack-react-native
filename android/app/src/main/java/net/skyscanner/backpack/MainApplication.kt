@@ -10,6 +10,7 @@ import com.facebook.react.shell.MainReactPackage
 import com.facebook.soloader.SoLoader
 import com.jakewharton.threetenabp.AndroidThreeTen
 import net.skyscanner.backpack.reactnative.calendar.CalendarPackage
+import net.skyscanner.backpack.reactnative.dialog.DialogPackage
 import java.util.Arrays
 
 class MainApplication : Application(), ReactApplication {
@@ -29,7 +30,8 @@ class MainApplication : Application(), ReactApplication {
                     MainReactPackage(),
                     MapsPackage(),
                     LinearGradientPackage(),
-                    CalendarPackage()
+                    CalendarPackage(),
+                    DialogPackage()
             )
         }
     }
