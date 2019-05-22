@@ -42,6 +42,7 @@ const SPINNER_TYPES = {
 type SpinnerType = $Keys<typeof SPINNER_TYPES>;
 
 const REQUIRED_THEME_ATTRIBUTES = ['spinnerPrimaryColor'];
+const OPTIONAL_THEME_ATTRIBUTES = ['colorGray700'];
 
 const getSpinnerColor = (themeAttributes: ?Object, type: SpinnerType) => {
   const colorMappings = {
@@ -50,8 +51,13 @@ const getSpinnerColor = (themeAttributes: ?Object, type: SpinnerType) => {
     [SPINNER_TYPES.dark]: colorGray700,
   };
 
-  if (themeAttributes && type === 'primary') {
-    return themeAttributes.spinnerPrimaryColor;
+  if (themeAttributes) {
+    if (type === 'primary') {
+      return themeAttributes.spinnerPrimaryColor;
+    }
+    if (type === 'dark') {
+      return themeAttributes.colorGray700;
+    }
   }
 
   return colorMappings[type];
@@ -66,7 +72,11 @@ export type Props = {
 const BpkSpinner = (props: Props) => {
   const { small, type, theme, ...rest } = props;
   const spinnerType = type || SPINNER_TYPES.primary;
-  let themeAttributes = getThemeAttributes(REQUIRED_THEME_ATTRIBUTES, theme);
+  const themeAttributes = getThemeAttributes(
+    REQUIRED_THEME_ATTRIBUTES,
+    theme,
+    OPTIONAL_THEME_ATTRIBUTES,
+  );
 
   // Validate type.
   if (!Object.keys(SPINNER_TYPES).includes(spinnerType)) {
@@ -76,13 +86,6 @@ const BpkSpinner = (props: Props) => {
       ).join(', ')}`,
     );
   }
-
-  // Validate that spinner is themeable and correct theming attribute has been
-  // supplied. If not, disable theming.
-  if (themeAttributes && spinnerType !== 'primary') {
-    themeAttributes = null;
-  }
-
   return (
     // eslint-disable-next-line backpack/use-components
     <ActivityIndicator

@@ -33,12 +33,16 @@ import {
 } from 'bpk-tokens/tokens/base.react.native';
 
 const REQUIRED_THEME_ATTRIBUTES = ['switchPrimaryColor'];
+const OPTIONAL_THEME_ATTRIBUTES = ['colorGray100'];
 
 const getColors = (themeAttributes: ?Object, value: ?boolean): Object => {
   const primaryColor = themeAttributes
     ? themeAttributes.switchPrimaryColor
     : colorBlue500;
-  const secondaryColor = colorGray100;
+  const secondaryColor =
+    themeAttributes && themeAttributes.colorGray100
+      ? themeAttributes.colorGray100
+      : colorGray100;
 
   // The color props mean different things based on the platform.
   const colors = Platform.select({
@@ -66,7 +70,11 @@ export type Props = {
 
 const BpkSwitch = (props: Props) => {
   const { value, theme, ...rest } = props;
-  const themeAttributes = getThemeAttributes(REQUIRED_THEME_ATTRIBUTES, theme);
+  const themeAttributes = getThemeAttributes(
+    REQUIRED_THEME_ATTRIBUTES,
+    theme,
+    OPTIONAL_THEME_ATTRIBUTES,
+  );
 
   return (
     <Switch {...getColors(themeAttributes, value)} value={value} {...rest} />

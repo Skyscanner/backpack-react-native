@@ -34,6 +34,7 @@ import {
   lineHeightBase,
   spacingBase,
 } from 'bpk-tokens/tokens/base.react.native';
+import { withTheme } from 'react-native-bpk-theming';
 
 import BpkPickerItem from './BpkPickerItem';
 import {
@@ -69,7 +70,14 @@ const styles = StyleSheet.create({
 });
 
 const BpkPickerMenu = (props: PickerMenuProps) => {
-  const { visible, children, onValueChange, onClose, selectedValue } = props;
+  const {
+    visible,
+    children,
+    onValueChange,
+    onClose,
+    selectedValue,
+    theme,
+  } = props;
 
   // Instead of passing children through, we have to turn them into a data structure
   // in order to pass them to FlatList.
@@ -88,6 +96,13 @@ const BpkPickerMenu = (props: PickerMenuProps) => {
     }
     return { index, label, value, selected };
   });
+
+  const overlayStyle = {
+    backgroundColor:
+      theme && theme.colorGray900
+        ? setOpacity(theme.colorGray900, 0.8)
+        : setOpacity(colorGray900, 0.8),
+  };
 
   const rowsToDisplay =
     pickerItems.length > MAX_ROWS_TO_DISPLAY
@@ -109,7 +124,7 @@ const BpkPickerMenu = (props: PickerMenuProps) => {
       onRequestClose={onClose}
     >
       <TouchableWithoutFeedback onPress={onClose}>
-        <View style={styles.overlay} />
+        <View style={(styles.overlay, overlayStyle)} />
       </TouchableWithoutFeedback>
       <View style={styles.listWrapper}>
         <FlatList
@@ -144,4 +159,4 @@ const BpkPickerMenu = (props: PickerMenuProps) => {
 BpkPickerMenu.propTypes = PICKER_MENU_PROP_TYPE;
 BpkPickerMenu.defaultProps = PICKER_MENU_DEFAULT_PROPS;
 
-export default BpkPickerMenu;
+export default withTheme(BpkPickerMenu);

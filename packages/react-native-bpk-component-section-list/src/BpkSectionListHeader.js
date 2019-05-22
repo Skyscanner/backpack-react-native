@@ -30,6 +30,7 @@ import {
   colorGray500,
   colorGray700,
 } from 'bpk-tokens/tokens/base.react.native';
+import { withTheme, type Theme } from 'react-native-bpk-theming';
 
 const ANDROID_LIST_ITEM_HEIGHT = 48;
 
@@ -58,22 +59,49 @@ const styles = StyleSheet.create({
 
 export type Props = {
   title: string,
+  theme: ?Theme,
 };
 
-const BpkSectionHeader = (props: Props) => (
-  <View style={styles.outer}>
-    <BpkText
-      weight={WEIGHT_STYLES.emphasized}
-      textStyle={Platform.OS === 'android' ? 'sm' : 'base'}
-      style={styles.text}
-    >
-      {props.title}
-    </BpkText>
-  </View>
-);
+const BpkSectionHeader = (props: Props) => {
+  const { title, theme } = props;
+  const outerStyles = [styles.outer];
+  const textStyles = [styles.text];
+  if (theme) {
+    if (Platform.OS === 'ios') {
+      outerStyles.push({
+        backgroundColor: theme.colorGray50 ? theme.colorGray50 : colorGray50,
+      });
+      textStyles.push({
+        color: theme.colorGray700 ? theme.colorGray700 : colorGray700,
+      });
+    } else {
+      outerStyles.push({
+        backgroundColor: theme.colorGray100 ? theme.colorGray100 : colorGray100,
+      });
+      textStyles.push({
+        color: theme.colorGray500 ? theme.colorGray500 : colorGray500,
+      });
+    }
+  }
+  return (
+    <View style={styles.outer}>
+      <BpkText
+        weight={WEIGHT_STYLES.emphasized}
+        textStyle={Platform.OS === 'android' ? 'sm' : 'base'}
+        style={styles.text}
+      >
+        {title}
+      </BpkText>
+    </View>
+  );
+};
 
 BpkSectionHeader.propTypes = {
   title: PropTypes.string.isRequired,
 };
 
-export default BpkSectionHeader;
+BpkSectionHeader.defaultProps = {
+  theme: null,
+};
+
+export default withTheme(BpkSectionHeader);

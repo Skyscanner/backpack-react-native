@@ -19,11 +19,6 @@ exports[`Android BpkPicker should render correctly 1`] = `
     style={
       Object {
         "backgroundColor": "rgba(37, 32, 51, 0.8)",
-        "height": "100%",
-        "left": 0,
-        "position": "absolute",
-        "top": 0,
-        "width": "100%",
       }
     }
   />
@@ -209,11 +204,6 @@ exports[`Android BpkPicker should render correctly with a selected value 1`] = `
     style={
       Object {
         "backgroundColor": "rgba(37, 32, 51, 0.8)",
-        "height": "100%",
-        "left": 0,
-        "position": "absolute",
-        "top": 0,
-        "width": "100%",
       }
     }
   />

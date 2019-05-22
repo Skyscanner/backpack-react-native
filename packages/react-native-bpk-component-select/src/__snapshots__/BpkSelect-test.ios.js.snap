@@ -107,12 +107,14 @@ exports[`iOS BpkSelect should render correctly with "showImage" and image 1`] = 
       style={
         Array [
           undefined,
-          Object {
-            "backgroundColor": "rgb(243, 242, 245)",
-            "height": 12,
-            "marginEnd": 8,
-            "width": 16,
-          },
+          Array [
+            Object {
+              "backgroundColor": "rgb(243, 242, 245)",
+              "height": 12,
+              "marginEnd": 8,
+              "width": 16,
+            },
+          ],
         ]
       }
     />
@@ -190,12 +192,14 @@ exports[`iOS BpkSelect should render correctly with "showImage" and no image 1`]
   >
     <View
       style={
-        Object {
-          "backgroundColor": "rgb(243, 242, 245)",
-          "height": 12,
-          "marginEnd": 8,
-          "width": 16,
-        }
+        Array [
+          Object {
+            "backgroundColor": "rgb(243, 242, 245)",
+            "height": 12,
+            "marginEnd": 8,
+            "width": 16,
+          },
+        ]
       }
     />
     <Text
@@ -873,9 +877,11 @@ exports[`iOS BpkSelect should render correctly with the disabled prop 1`] = `
             Object {
               "marginEnd": "auto",
             },
-            Object {
-              "color": "rgb(230, 228, 235)",
-            },
+            Array [
+              Object {
+                "color": "rgb(230, 228, 235)",
+              },
+            ],
           ],
         ]
       }

@@ -491,6 +491,9 @@ exports[`iOS BpkChip should support theming when selected 1`] = `
         Object {
           "fontFamily": "System",
         },
+        Object {
+          "color": "#4B5458",
+        },
         Array [
           Object {
             "color": "rgb(82, 76, 97)",
