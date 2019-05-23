@@ -26,6 +26,7 @@ import BpkButton from 'react-native-bpk-component-button';
 import CenterDecorator from '../../storybook/CenterDecorator';
 
 import BpkDialog, { DIALOG_TYPE, BUTTON_TYPE } from './index';
+import type { Props } from './index';
 
 const dialogTitle = 'Backpack Dialog';
 
@@ -37,63 +38,138 @@ const dialogIcon = {
   iconColor: 'bpkGreen500',
 };
 
-const generateBpkDialog = (open: boolean, actions) => (
-  <BpkDialog
-    dialogType={DIALOG_TYPE.alert}
-    title={dialogTitle}
-    description={dialogDescription}
-    icon={dialogIcon}
-    actions={actions}
-    scrimAction={{
-      enabled: true,
-      callback: () => {
-        console.warn('Scrim');
-      },
-    }}
-    isOpen={open}
-  />
-);
+const defaultScrimAction = {
+  enabled: true,
+  callback: () => console.warn('Scrim action'),
+};
 
-class TriggerComponent extends Component<> {
+const positiveAction = {
+  text: 'Yes',
+  type: BUTTON_TYPE.primary,
+  callback: () => console.warn('Action: Yes'),
+};
+
+const negativeAction = {
+  text: 'No',
+  type: BUTTON_TYPE.destructive,
+  callback: () => console.warn('Action: No'),
+};
+
+class TriggerDialogComponent extends Component<Props> {
   constructor(props) {
     super(props);
 
     this.state = {
-      dialogIsOpen: false,
+      type: props.type,
+      title: props.title,
+      description: props.description,
+      icon: props.icon,
+      actions: props.actions,
+      scrimAction: props.scrimAction,
+      isOpen: false,
     };
   }
 
-  action = () => {
-    this.setState({ dialogIsOpen: true });
-  };
+  openDialog = () => this.setState({ isOpen: true });
 
   render() {
+    const { type, title, description, icon, isOpen } = this.state;
+
+    let actions = [];
+    if (this.state.actions) {
+      actions = this.state.actions.map(action => ({
+        text: action.text,
+        type: action.type,
+        callback: () => {
+          action.callback();
+          this.setState({ isOpen: false });
+        },
+      }));
+    }
+
+    let scrimAction = null;
+    if (this.state.scrimAction) {
+      scrimAction = {
+        enabled: this.state.scrimAction.enabled,
+        callback: () => {
+          this.state.scrimAction.callback();
+          this.setState({ isOpen: false });
+        },
+      };
+    }
+
     return (
       <View>
-        <BpkButton onPress={this.action} title="Show dialog" />
-        {generateBpkDialog(this.state.dialogIsOpen, [
-          {
-            text: 'Yes',
-            type: BUTTON_TYPE.primary,
-            callback: () => {
-              console.warn('Action: Yes');
-              this.setState({ dialogIsOpen: false });
-            },
-          },
-          {
-            text: 'No',
-            type: BUTTON_TYPE.destructive,
-            callback: () => {
-              console.warn('Action: No');
-              this.setState({ dialogIsOpen: false });
-            },
-          },
-        ])}
+        <BpkButton onPress={this.openDialog} title="Show dialog" />
+        <BpkDialog
+          dialogType={type}
+          title={title}
+          description={description}
+          icon={icon}
+          actions={actions}
+          scrimAction={scrimAction}
+          isOpen={isOpen}
+        />
       </View>
     );
   }
 }
 
+const generateAction = (buttonType: BUTTON_TYPE) => ({
+  text: `${buttonType} action`,
+  type: buttonType,
+  callback: () => console.warn(buttonType),
+});
+
 storiesOf('react-native-bpk-component-dialog', module)
   .addDecorator(CenterDecorator)
-  .add('docs:single', () => <TriggerComponent />);
+  .add('docs:simple', () => (
+    <TriggerDialogComponent
+      type={DIALOG_TYPE.alert}
+      title={dialogTitle}
+      description={dialogDescription}
+      icon={dialogIcon}
+      actions={[positiveAction]}
+    />
+  ))
+  .add('docs:option', () => (
+    <TriggerDialogComponent
+      type={DIALOG_TYPE.alert}
+      title={dialogTitle}
+      description={dialogDescription}
+      icon={dialogIcon}
+      actions={[positiveAction, negativeAction]}
+    />
+  ))
+  .add('docs:only-title', () => (
+    <TriggerDialogComponent
+      type={DIALOG_TYPE.alert}
+      title={dialogTitle}
+      scrimAction={defaultScrimAction}
+    />
+  ))
+  .add('docs:bottom', () => (
+    <TriggerDialogComponent
+      type={DIALOG_TYPE.bottomSheet}
+      title={dialogTitle}
+      description={dialogDescription}
+      icon={dialogIcon}
+      actions={[positiveAction, negativeAction]}
+      scrimAction={defaultScrimAction}
+    />
+  ))
+  .add('docs:all-buttons', () => (
+    <TriggerDialogComponent
+      type={DIALOG_TYPE.bottomSheet}
+      title={dialogTitle}
+      description={dialogDescription}
+      icon={dialogIcon}
+      actions={[
+        generateAction(BUTTON_TYPE.primary),
+        generateAction(BUTTON_TYPE.secondary),
+        generateAction(BUTTON_TYPE.featured),
+        generateAction(BUTTON_TYPE.destructive),
+      ]}
+      scrimAction={defaultScrimAction}
+    />
+  ));

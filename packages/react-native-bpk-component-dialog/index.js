@@ -21,5 +21,6 @@
 import BpkDialog from './src/BpkDialog';
 import { DIALOG_TYPE, BUTTON_TYPE } from './src/common-types';
 
+export type { Props as BpkDialogProps } from './src/BpkDialog';
 export default BpkDialog;
 export { DIALOG_TYPE, BUTTON_TYPE };

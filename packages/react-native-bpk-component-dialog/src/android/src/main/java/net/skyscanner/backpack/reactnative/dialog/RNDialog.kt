@@ -33,9 +33,9 @@ class RNDialog(context: Context): FrameLayout(context) {
 
   var dialogType: BpkDialog.Style = BpkDialog.Style.ALERT
 
-  var title: String = ""
+  var title: String? = null
 
-  var description: String = ""
+  var description: String? = null
 
   var icon: BpkDialog.Icon? = null
 
@@ -45,20 +45,15 @@ class RNDialog(context: Context): FrameLayout(context) {
 
   var onAction: ActionCallback? = null
 
-  fun show() {
-    dialog.show()
-  }
+  fun show() = dialog.show()
 
-  fun hide() {
-    dialog.dismiss()
-  }
+  fun hide() = dialog.dismiss()
 
   fun render() {
-
     dialog = BpkDialog(context, dialogType)
-    dialog.title = title
-    dialog.description = description
-    dialog.icon = icon
+    title?. let { dialog.title = it }
+    description?. let { dialog.description = it }
+    icon?. let { dialog.icon = it }
     actions.forEachIndexed { index, element ->
       dialog.addActionButton(
         BpkButton(context, element.second).apply {

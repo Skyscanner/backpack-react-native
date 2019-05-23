@@ -52,15 +52,13 @@ class DialogViewManager : ViewGroupManager<RNDialog>() {
   }
 
   @ReactProp(name = "title")
-  fun setTitle(view: RNDialog, title: String) {
+  fun setTitle(view: RNDialog, title: String?) {
     view.title = title
   }
 
   @ReactProp(name = "description")
   fun setDescription(view: RNDialog, description: String?) {
-    description?.let {
-      view.description = description
-    }
+    view.description = description
   }
 
   @ReactProp(name = "icon")
@@ -87,7 +85,6 @@ class DialogViewManager : ViewGroupManager<RNDialog>() {
         }
         Pair(each.getString("text")!!, buttonType)
       }.toTypedArray()
-
     }
   }
 

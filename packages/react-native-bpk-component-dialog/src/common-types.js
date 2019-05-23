@@ -30,7 +30,6 @@ export type DialogType = $Keys<typeof DIALOG_TYPE>;
 export const BUTTON_TYPE = {
   primary: 'primary',
   secondary: 'secondary',
-  outline: 'outline',
   featured: 'featured',
   destructive: 'destructive',
 };
@@ -55,12 +54,12 @@ type ScrimAction = {
 
 export type CommonProps = {
   dialogType: DialogType,
-  title: string,
+  title: ?string,
   description: ?string,
   icon: ?Icon,
   actions: [ActionButton],
   scrimAction: ?ScrimAction,
-  isOpen: boolean,
+  isOpen: ?boolean,
 };
 
 export type NativeProps = {

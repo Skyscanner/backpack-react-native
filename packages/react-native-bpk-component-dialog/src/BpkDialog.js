@@ -20,6 +20,7 @@
 
 import React from 'react';
 import memoize from 'lodash/memoize';
+import isNil from 'lodash/isNil';
 
 import {
   commonPropTypes,
@@ -33,7 +34,7 @@ export type Props = {
 };
 
 const createOnButtonClickHandler = memoize(actions => event => {
-  if (event.nativeEvent) {
+  if (!isNil(event.nativeEvent.actionIndex)) {
     const index = event.nativeEvent.actionIndex;
     if (actions[index]) {
       actions[index].callback();
