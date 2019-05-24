@@ -19,6 +19,23 @@ import has from 'lodash/has';
 import isBoolean from 'lodash/isBoolean';
 import isNumber from 'lodash/isNumber';
 import isEmpty from 'lodash/isEmpty';
+import {
+  colorGray50,
+  colorGray100,
+  colorGray300,
+  colorGray500,
+  colorGray700,
+  colorGray900,
+} from 'bpk-tokens/tokens/base.react.native';
+
+const grays = {
+  colorGray50,
+  colorGray100,
+  colorGray300,
+  colorGray500,
+  colorGray700,
+  colorGray900,
+};
 
 export const isValidTheme = (
   requiredAttributes: Array<string>,
@@ -59,6 +76,7 @@ export const makeThemePropType = (requiredAttributes: Array<string>) => (
 export const getThemeAttributes = (
   requiredAttributes: Array<string>,
   theme: ?Object,
+  optionalAttributes?: Array<string>,
 ): ?Object => {
   if (!theme) {
     return null;
@@ -68,10 +86,36 @@ export const getThemeAttributes = (
     return null;
   }
 
-  return requiredAttributes.reduce((result, attribute) => {
-    if (theme) {
-      result[attribute] = theme[attribute]; // eslint-disable-line no-param-reassign
-    }
-    return result;
-  }, {});
+  const filteredRequiredAttributes = requiredAttributes.reduce(
+    (result, attribute) => {
+      if (theme) {
+        result[attribute] = theme[attribute]; // eslint-disable-line no-param-reassign
+      }
+      return result;
+    },
+    {},
+  );
+
+  const filteredOptionalAttributes = optionalAttributes
+    ? optionalAttributes.reduce((result, attribute) => {
+        if (theme) {
+          result[attribute] = theme[attribute]; // eslint-disable-line no-param-reassign
+        }
+        return result;
+      }, {})
+    : null;
+
+  return { ...filteredRequiredAttributes, ...filteredOptionalAttributes };
+};
+
+export const grayForTheme = (theme: ?Object, colorName: string) => {
+  if (theme && theme[colorName]) {
+    return theme[colorName];
+  }
+
+  if (grays[colorName]) {
+    return grays[colorName];
+  }
+
+  return colorGray500;
 };

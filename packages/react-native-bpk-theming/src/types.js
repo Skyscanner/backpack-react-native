@@ -52,4 +52,10 @@ export type Theme = {
   textFontFamily?: string,
   flatListSelectedItemColor?: string,
   textInputFocusedColor?: string,
+  colorGray50?: string,
+  colorGray100?: string,
+  colorGray300?: string,
+  colorGray500?: string,
+  colorGray700?: string,
+  colorGray900?: string,
 };

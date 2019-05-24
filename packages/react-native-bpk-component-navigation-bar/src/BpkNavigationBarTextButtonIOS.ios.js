@@ -22,11 +22,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 import BpkText, { WEIGHT_STYLES } from 'react-native-bpk-component-text';
-import {
-  colorBlue500,
-  colorGray300,
-  colorGray700,
-} from 'bpk-tokens/tokens/base.react.native';
+import { colorBlue500 } from 'bpk-tokens/tokens/base.react.native';
+import { withTheme, grayForTheme, type Theme } from 'react-native-bpk-theming';
 
 export const BUTTON_TYPES = {
   default: 'default',
@@ -41,7 +38,7 @@ export type Props = {
   emphasize: boolean,
   disabled: boolean,
   onPress: ?() => mixed,
-
+  theme: ?Theme,
   // Internal only
   leading: boolean,
   tintColor: ?string,
@@ -63,11 +60,6 @@ const styles = StyleSheet.create({
   },
 });
 
-const tintColors = {
-  [BUTTON_TYPES.default]: colorGray700,
-  [BUTTON_TYPES.primary]: colorBlue500,
-};
-
 const BpkNavigationBarTextButtonIOS = (props: Props) => {
   const {
     title,
@@ -79,7 +71,12 @@ const BpkNavigationBarTextButtonIOS = (props: Props) => {
     tintColor,
     primaryTintColor,
     leading,
+    theme,
   } = props;
+  const tintColors = {
+    [BUTTON_TYPES.default]: grayForTheme(theme, 'colorGray700'),
+    [BUTTON_TYPES.primary]: colorBlue500,
+  };
 
   let tintColorFinal = tintColors[type];
   if (type === BUTTON_TYPES.primary && primaryTintColor) {
@@ -91,7 +88,8 @@ const BpkNavigationBarTextButtonIOS = (props: Props) => {
   const accessibilityTraits = ['button'];
   if (disabled) {
     accessibilityTraits.push('disabled');
-    tintColorFinal = disabledTintColor || colorGray300;
+    const gray300 = grayForTheme(theme, 'colorGray300');
+    tintColorFinal = disabledTintColor || gray300;
   }
 
   const titleStyle = [{ color: tintColorFinal }];
@@ -140,7 +138,7 @@ BpkNavigationBarTextButtonIOS.defaultProps = {
   disabled: false,
   onPress: null,
   type: BUTTON_TYPES.default,
-
+  theme: null,
   // Internal only
   leading: false,
   tintColor: null,
@@ -148,4 +146,4 @@ BpkNavigationBarTextButtonIOS.defaultProps = {
   primaryTintColor: null,
 };
 
-export default BpkNavigationBarTextButtonIOS;
+export default withTheme(BpkNavigationBarTextButtonIOS);

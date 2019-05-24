@@ -22,6 +22,7 @@ import {
   makeThemePropType,
   getThemeAttributes,
   isValidTheme,
+  grayForTheme,
 } from './src/util';
 import BpkThemeAttributes from './src/BpkThemeAttributes';
 
@@ -33,4 +34,5 @@ export {
   isValidTheme,
   makeThemePropType,
   withTheme,
+  grayForTheme,
 };
