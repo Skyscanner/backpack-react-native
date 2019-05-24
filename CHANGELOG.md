@@ -2,6 +2,12 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-05-22 - Bug fix for Chip
+
+**Fixed:**
+ - react-native-bpk-component-chip:
+   - Fixed an issue causing non-themed selected chips to not show background color.
+
 # 2019-05-20 - Grey theming
 
 **Added:**

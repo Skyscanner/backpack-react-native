@@ -2,10 +2,6 @@
 
 > Place your changes below this line.
 
-**Fixed:**
- - react-native-bpk-component-chip:
-   - Fixed an issue causing non-themed selected chips to not show background color.
-
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
