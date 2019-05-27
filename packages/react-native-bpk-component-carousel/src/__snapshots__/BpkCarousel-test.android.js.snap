@@ -172,6 +172,9 @@ exports[`Android BpkCarousel should render correctly 1`] = `
             "paddingVertical": 8,
             "width": 72,
           },
+          Object {
+            "backgroundColor": "rgba(37, 32, 51, 0.3)",
+          },
         ],
         Object {
           "alignSelf": "center",
@@ -443,6 +446,9 @@ exports[`Android BpkCarousel should render correctly with an "accessibilityLabel
             "paddingHorizontal": 12,
             "paddingVertical": 8,
             "width": 72,
+          },
+          Object {
+            "backgroundColor": "rgba(37, 32, 51, 0.3)",
           },
         ],
         Object {

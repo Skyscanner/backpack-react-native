@@ -21,14 +21,13 @@
 import PropTypes from 'prop-types';
 import Dash from '@skyscanner/react-native-dash';
 import {
-  colorGray100,
   spacingSm,
   spacingMd,
   spacingBase,
 } from 'bpk-tokens/tokens/base.react.native';
 import { View, StyleSheet, ViewPropTypes } from 'react-native';
 import React, { type Node, type ElementProps, type ComponentType } from 'react';
-import { withTheme, type Theme } from 'react-native-bpk-theming';
+import { withTheme, grayForTheme, type Theme } from 'react-native-bpk-theming';
 
 const styles = StyleSheet.create({
   cardInner: {
@@ -129,9 +128,7 @@ const withDivider = (CardComponent: ComponentType<any>): ComponentType<any> => {
           dashGap={spacingSm}
           dashLength={spacingSm}
           dashThickness={1}
-          dashColor={
-            theme && theme.colorGray100 ? theme.colorGray100 : colorGray100
-          }
+          dashColor={grayForTheme(theme, 'colorGray100')}
         />
         <View style={stubStyle}>{stub}</View>
       </CardComponent>

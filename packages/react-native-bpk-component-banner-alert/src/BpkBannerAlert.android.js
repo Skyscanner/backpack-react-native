@@ -36,7 +36,7 @@ import BpkIcon, { icons } from 'react-native-bpk-component-icon';
 import BpkButtonLink from 'react-native-bpk-component-button-link';
 import BpkAnimateHeight from 'react-native-bpk-component-animate-height';
 import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-native-feedback';
-import { withTheme } from 'react-native-bpk-theming';
+import { withTheme, grayForTheme } from 'react-native-bpk-theming';
 
 import {
   type Props,
@@ -124,10 +124,7 @@ const BpkBannerAlert = (props: Props) => {
     },
     [ALERT_TYPES.neutral]: {
       icon: icons['information-circle'],
-      iconStyle:
-        theme && theme.colorGray500
-          ? { color: theme.colorGray500 }
-          : STYLES.iconNeutral,
+      iconStyle: { color: grayForTheme(theme, 'colorGray500') },
     },
   };
 
@@ -135,10 +132,9 @@ const BpkBannerAlert = (props: Props) => {
   const { icon, iconStyle } = ALERT_TYPE_STYLES[type] || {};
 
   const backgroundStyle = [STYLES.background];
-
-  if (theme && theme.colorGray50) {
-    backgroundStyle.push({ backgroundColor: theme.colorGray50 });
-  }
+  backgroundStyle.push({
+    backgroundColor: grayForTheme(theme, 'colorGray50'),
+  });
 
   const rowContent = (
     <Fragment>

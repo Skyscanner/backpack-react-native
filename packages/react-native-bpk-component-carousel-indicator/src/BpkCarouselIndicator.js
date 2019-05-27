@@ -30,7 +30,7 @@ import {
 } from 'bpk-tokens/tokens/base.react.native';
 import TransitionGroup from '@skyscanner/react-native-transitiongroup';
 import { View, StyleSheet, ViewPropTypes } from 'react-native';
-import { withTheme, type Theme } from 'react-native-bpk-theming';
+import { withTheme, grayForTheme, type Theme } from 'react-native-bpk-theming';
 
 import BpkCarouselIndicatorDot, {
   INDICATOR_SIZES,
@@ -138,10 +138,9 @@ const BpkCarouselIndicator = (props: Props) => {
 
   const { begin, end } = getIndicatorSlice(pageCount, selectedIndex);
   const wrapperStyle = [styles.wrapper];
-
-  if (theme && theme.colorGray900) {
-    wrapperStyle.push({ backgroundColor: setOpacity(theme.colorGray900, 0.3) });
-  }
+  wrapperStyle.push({
+    backgroundColor: setOpacity(grayForTheme(theme, 'colorGray900'), 0.3),
+  });
 
   return (
     <TransitionGroup

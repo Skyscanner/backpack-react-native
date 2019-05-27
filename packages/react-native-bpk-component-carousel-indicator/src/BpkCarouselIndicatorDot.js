@@ -32,7 +32,7 @@ import {
 } from 'bpk-tokens/tokens/base.react.native';
 import { Animated, StyleSheet } from 'react-native';
 import AnimatedValue from 'react-native/Libraries/Animated/src/nodes/AnimatedValue';
-import { withTheme, type Theme } from 'react-native-bpk-theming';
+import { withTheme, grayForTheme, type Theme } from 'react-native-bpk-theming';
 
 const styles = StyleSheet.create({
   indicator: {
@@ -109,9 +109,9 @@ class BpkCarouselIndicatorDot extends React.PureComponent<Props, {}> {
   render() {
     const { selected, theme } = this.props;
     const indicatorStyle = [styles.indicator];
-    if (theme && theme.colorGray300) {
-      indicatorStyle.push({ backgroundColor: theme.colorGray300 });
-    }
+    indicatorStyle.push({
+      backgroundColor: grayForTheme(theme, 'colorGray300'),
+    });
 
     const style = [
       indicatorStyle,

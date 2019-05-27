@@ -18,6 +18,9 @@ exports[`iOS BpkCarouselIndicator should render correctly 1`] = `
           "paddingVertical": 8,
           "width": 72,
         },
+        Object {
+          "backgroundColor": "rgba(37, 32, 51, 0.3)",
+        },
       ],
       null,
     ]
@@ -98,6 +101,9 @@ exports[`iOS BpkCarouselIndicator should render correctly with a page count > 5 
           "paddingHorizontal": 12,
           "paddingVertical": 8,
           "width": 72,
+        },
+        Object {
+          "backgroundColor": "rgba(37, 32, 51, 0.3)",
         },
       ],
       null,
@@ -180,6 +186,9 @@ exports[`iOS BpkCarouselIndicator should render correctly with a page count equa
           "paddingVertical": 8,
           "width": 72,
         },
+        Object {
+          "backgroundColor": "rgba(37, 32, 51, 0.3)",
+        },
       ],
       null,
     ]
@@ -260,6 +269,9 @@ exports[`iOS BpkCarouselIndicator should render correctly with arbitrary props 1
           "paddingHorizontal": 12,
           "paddingVertical": 8,
           "width": 72,
+        },
+        Object {
+          "backgroundColor": "rgba(37, 32, 51, 0.3)",
         },
       ],
       null,
@@ -342,6 +354,9 @@ exports[`iOS BpkCarouselIndicator should render correctly with custom styles 1`]
           "paddingHorizontal": 12,
           "paddingVertical": 8,
           "width": 72,
+        },
+        Object {
+          "backgroundColor": "rgba(37, 32, 51, 0.3)",
         },
       ],
       Object {
