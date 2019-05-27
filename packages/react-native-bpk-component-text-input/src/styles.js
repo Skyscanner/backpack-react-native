@@ -23,8 +23,6 @@ import AnimatedValue from 'react-native/Libraries/Animated/src/nodes/AnimatedVal
 import {
   borderSizeSm,
   colorBlue500,
-  colorGray100,
-  colorGray300,
   colorGray500,
   colorGray700,
   colorRed500,
