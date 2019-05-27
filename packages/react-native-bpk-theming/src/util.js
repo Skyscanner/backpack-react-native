@@ -86,15 +86,14 @@ export const getThemeAttributes = (
     return null;
   }
 
-  const filteredRequiredAttributes = requiredAttributes.reduce(
-    (result, attribute) => {
-      if (theme) {
-        result[attribute] = theme[attribute]; // eslint-disable-line no-param-reassign
-      }
-      return result;
-    },
-    {},
-  );
+  const filteredRequiredAttributes = requiredAttributes
+    ? requiredAttributes.reduce((result, attribute) => {
+        if (theme) {
+          result[attribute] = theme[attribute]; // eslint-disable-line no-param-reassign
+        }
+        return result;
+      }, {})
+    : null;
 
   const filteredOptionalAttributes = optionalAttributes
     ? optionalAttributes.reduce((result, attribute) => {
