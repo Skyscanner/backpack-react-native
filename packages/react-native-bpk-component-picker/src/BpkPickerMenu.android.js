@@ -96,13 +96,15 @@ const BpkPickerMenu = (props: PickerMenuProps) => {
     }
     return { index, label, value, selected };
   });
-
-  const overlayStyle = {
-    backgroundColor:
-      theme && theme.colorGray900
-        ? setOpacity(theme.colorGray900, 0.8)
-        : setOpacity(colorGray900, 0.8),
-  };
+  const overlayStyles = [styles.overlay];
+  if (theme && theme.colorGray900) {
+    overlayStyles.push({
+      backgroundColor:
+        theme && theme.colorGray900
+          ? setOpacity(theme.colorGray900, 0.8)
+          : setOpacity(colorGray900, 0.8),
+    });
+  }
 
   const rowsToDisplay =
     pickerItems.length > MAX_ROWS_TO_DISPLAY
@@ -124,7 +126,7 @@ const BpkPickerMenu = (props: PickerMenuProps) => {
       onRequestClose={onClose}
     >
       <TouchableWithoutFeedback onPress={onClose}>
-        <View style={(styles.overlay, overlayStyle)} />
+        <View style={overlayStyles} />
       </TouchableWithoutFeedback>
       <View style={styles.listWrapper}>
         <FlatList
