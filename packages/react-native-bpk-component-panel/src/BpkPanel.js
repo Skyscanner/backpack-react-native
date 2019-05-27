@@ -28,7 +28,7 @@ import {
   borderRadiusSm,
 } from 'bpk-tokens/tokens/base.react.native';
 import { StyleSheet, View, ViewPropTypes } from 'react-native';
-import { withTheme, type Theme } from 'react-native-bpk-theming';
+import { withTheme, grayForTheme, type Theme } from 'react-native-bpk-theming';
 
 const styles = StyleSheet.create({
   panel: {
@@ -53,8 +53,8 @@ const BpkPanel = (props: Props) => {
   const { padded, children, style, theme, ...rest } = props;
 
   const panelStyle = [styles.panel];
-  if (theme && theme.colorGray100) {
-    panelStyle.push({ borderColor: theme.colorGray100 });
+  if (theme) {
+    panelStyle.push({ borderColor: grayForTheme(theme, 'colorGray100') });
   }
   if (padded) {
     panelStyle.push(styles.panelPadded);

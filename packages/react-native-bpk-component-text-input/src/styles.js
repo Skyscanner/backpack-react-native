@@ -38,7 +38,7 @@ import {
   textSmFontSize,
   textSmFontWeight,
 } from 'bpk-tokens/tokens/base.react.native';
-import { type Theme } from 'react-native-bpk-theming';
+import { grayForTheme, type Theme } from 'react-native-bpk-theming';
 
 const INPUT_RANGE = [0, 1];
 
@@ -109,13 +109,12 @@ const getLabelColorValue = (
   theme: ?Theme,
 ) => {
   if (!editable) {
-    return theme && theme.colorGray100 ? theme.colorGray100 : colorGray100;
+    return grayForTheme(theme, 'colorGray100');
   }
   if (!value && !hasAccessoryView) {
-    return theme && theme.colorGray300 ? theme.colorGray300 : colorGray300;
+    return grayForTheme(theme, 'colorGray300');
   }
-  const gray500 =
-    theme && theme.colorGray500 ? theme.colorGray500 : colorGray500;
+  const gray500 = grayForTheme(theme, 'colorGray500');
   return valid === false ? colorRed500 : gray500;
 };
 
@@ -183,8 +182,7 @@ const getInputContainerStyle = (
   focusedColor: String = colorBlue500,
   theme: ?Theme,
 ) => {
-  const gray100 =
-    theme && theme.colorGray100 ? theme.colorGray100 : colorGray100;
+  const gray100 = grayForTheme(theme, 'colorGray100');
   const underlineColorValue = valid === false ? colorRed500 : gray100;
   const animatedStyle = {
     borderBottomColor: animatedColorValue.interpolate({

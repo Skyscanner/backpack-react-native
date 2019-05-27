@@ -34,7 +34,7 @@ import {
   lineHeightBase,
   spacingBase,
 } from 'bpk-tokens/tokens/base.react.native';
-import { withTheme } from 'react-native-bpk-theming';
+import { withTheme, grayForTheme } from 'react-native-bpk-theming';
 
 import BpkPickerItem from './BpkPickerItem';
 import {
@@ -97,12 +97,10 @@ const BpkPickerMenu = (props: PickerMenuProps) => {
     return { index, label, value, selected };
   });
   const overlayStyles = [styles.overlay];
-  if (theme && theme.colorGray900) {
+  if (theme) {
+    const gray900 = grayForTheme(theme, 'colorGray900');
     overlayStyles.push({
-      backgroundColor:
-        theme && theme.colorGray900
-          ? setOpacity(theme.colorGray900, 0.8)
-          : setOpacity(colorGray900, 0.8),
+      backgroundColor: setOpacity(gray900, 0.8),
     });
   }
 

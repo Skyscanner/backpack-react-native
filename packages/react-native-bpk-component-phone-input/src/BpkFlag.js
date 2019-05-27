@@ -22,7 +22,7 @@ import React, { type ElementProps } from 'react';
 import PropTypes from 'prop-types';
 import { StyleSheet, View, ViewPropTypes } from 'react-native';
 import { spacingLg, colorGray100 } from 'bpk-tokens/tokens/base.react.native';
-import { withTheme, type Theme } from 'react-native-bpk-theming';
+import { withTheme, grayForTheme, type Theme } from 'react-native-bpk-theming';
 
 import { type Flag } from './common-types';
 
@@ -49,8 +49,8 @@ const BpkFlag = (props: Props) => {
   const { flag, style, width, theme } = props;
   const imageStyle = { width, height: width / ASPECT_RATIO };
   const finalStyle = [styles.flag, imageStyle];
-  if (theme && theme.colorGray100) {
-    finalStyle.push({ borderColor: theme.colorGray100 });
+  if (theme) {
+    finalStyle.push({ borderColor: grayForTheme(theme, 'colorGray100') });
   }
   if (style) {
     finalStyle.push(style);

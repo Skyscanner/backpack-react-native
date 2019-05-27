@@ -22,7 +22,7 @@ import PropTypes from 'prop-types';
 import React, { type ComponentType, type Node } from 'react';
 import { View, StyleSheet, ViewPropTypes } from 'react-native';
 import { colorGray100, spacingBase } from 'bpk-tokens/tokens/base.react.native';
-import { withTheme } from 'react-native-bpk-theming';
+import { withTheme, grayForTheme } from 'react-native-bpk-theming';
 
 import BpkPanel, { type Props as BpkPanelProps } from './BpkPanel';
 
@@ -92,8 +92,10 @@ const withDivider = (PanelComponent: ComponentType<BpkPanelProps>) => {
     const punchlineStyle = [styles.panelPunchline];
     const stubStyle = [styles.panelStub];
 
-    if (theme && theme.colorGray100) {
-      punchlineStyle.push({ backgroundColor: theme.colorGray100 });
+    if (theme) {
+      punchlineStyle.push({
+        backgroundColor: grayForTheme(theme, 'colorGray100'),
+      });
     }
     if (padded) {
       mainStyle.push(styles.panelMainPadded);
