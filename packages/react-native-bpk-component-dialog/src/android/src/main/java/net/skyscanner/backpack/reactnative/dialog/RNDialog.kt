@@ -18,7 +18,6 @@
 package net.skyscanner.backpack.reactnative.dialog
 
 import android.content.Context
-import android.content.res.Resources
 import android.widget.FrameLayout
 import net.skyscanner.backpack.button.BpkButton
 import net.skyscanner.backpack.dialog.BpkDialog
