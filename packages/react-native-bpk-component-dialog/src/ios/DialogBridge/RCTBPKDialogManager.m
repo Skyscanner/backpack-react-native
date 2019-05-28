@@ -20,18 +20,26 @@
 #import <React/RCTBridge.h>
 #import <React/RCTUIManager.h>
 
-
-#import "RCTConvert+RCTBPKDialog.h"
 #import "RCTBPKDialog.h"
-#import "RCTBPKDialogDateUtils.h"
 
+@implementation RCTConvert (RCTBPKDialog)
 
-@interface RCTBPKDialogManager() <RCTDialogHostViewInteractor>
+RCT_ENUM_CONVERTER(BPKDialogControllerStyle, (@{
+    @"alert": @(BPKDialogControllerStyleAlert),
+    @"bottomSheet": @(BPKDialogControllerStyleBottomSheet),
+    }), BPKDialogControllerStyleAlert, integerValue)
+ 
+@end
+
+@interface RCTBPKDialogManager() <RCTDialogInteractor>
 
 @end
 
 
 @implementation RCTBPKDialogManager
+{
+    NSHashTable *_hostDialogs;
+}
 
 RCT_EXPORT_MODULE()
 
@@ -39,102 +47,44 @@ RCT_EXPORT_MODULE()
 {
     RCTBPKDialog *dialog = [[RCTBPKDialog alloc] initWithBridge:self.bridge];
     dialog.delegate = self;
+    if (!_hostDialogs) {
+        _hostDialogs = [NSHashTable weakObjectsHashTable];
+    }
+    [_hostDialogs addObject:dialog];
     return dialog;
 }
 
-- (void)presentBPKDialog:(RCTBPKDialog *)bpkDialog withViewController:(ViewController *)viewController
+- (void)presentBPKDialog:(RCTBPKDialog *)bpkDialog withViewController:(UIViewController *)viewController
 {
-    dispatch_block_t completionBlock = ^{
-        if (bpkDialog.onShow) {
-            bpkDialog.onShow(nil)
-        }
-    };
     if (_presentationBlock) {
-        _presentationBlock([bpkDialog reactViewController], viewController, YES, completionBlock);
+        _presentationBlock([bpkDialog reactViewController], viewController, completionBlock);
     } else {
-        [[bpkDialog reactViewController] presentViewController:viewController animated:YES completion:completionBlock]
+        [[bpkDialog reactViewController] presentViewController:viewController animated:YES completion:nil];
     }
 }
 
-- (void)dismissBPKDialog:(RCTBPKDialog *)bpkDialog withViewController:(ViewController *)viewController
+- (void)dismissBPKDialog:(RCTBPKDialog *)bpkDialog withViewController:(UIViewController *)viewController
 {
-    dispatch_block_t completionBlock = ^{
-        if (bpkDialog.identifier) {
-            bpkDialog.onShow(nil)
-        }
-    };
     if (_dismissalBlock) {
-        _dismissalBlock([bpkDialog reactViewController], viewController, YES, completionBlock);
+        _dismissalBlock([bpkDialog reactViewController], viewController, completionBlock);
     } else {
-        [[bpkDialog reactViewController] dismissViewController:viewController animated:YES completion:completionBlock]
+        [[bpkDialog reactViewController] dismissViewControllerAnimated:YES completion:nil];
     }
 }
 
-RCT_REMAP_VIEW_PROPERTY(minDate, rct_minDate, NSDate)
-RCT_REMAP_VIEW_PROPERTY(maxDate, rct_maxDate, NSDate)
-RCT_EXPORT_VIEW_PROPERTY(selectionType, BPKDialogSelection)
-RCT_EXPORT_VIEW_PROPERTY(locale, NSLocale)
-RCT_REMAP_VIEW_PROPERTY(selectedDates, rct_selectedDates, NSArray<NSDate *> *)
+RCT_EXPORT_VIEW_PROPERTY(dialogType, BPKDialogControllerStyle) // Mapping needed
+RCT_EXPORT_VIEW_PROPERTY(title, NSString)
+RCT_EXPORT_VIEW_PROPERTY(description, NSString)
+//RCT_EXPORT_VIEW_PROPERTY(icon, NSString) // Mapping needed
+//RCT_EXPORT_VIEW_PROPERTY(actions, NSString) // Mappingg needed
+//RCT_EXPORT_VIEW_PROPERTY(scrimAction, NSString) // Mapping needed
+RCT_EXPORT_VIEW_PROPERTY(isOpen, BOOL)
 
-RCT_EXPORT_VIEW_PROPERTY(onDateSelection, RCTBubblingEventBlock)
-
-
-/*
- * When the dialog renders in certain configurations the initial
- * render is incorrect. With this method, called from `componentDidMount`,
- * is called the dialog is forced to re-render to fix the bug.
- */
-RCT_EXPORT_METHOD(forceRender:(nonnull NSNumber *)reactTag) {
-    [self.bridge.uiManager addUIBlock:
-     ^(__unused RCTUIManager *uiManager, NSDictionary<NSNumber *, UIView *> *viewRegistry){
-         UIView *view = viewRegistry[reactTag];
-
-         if ([view isKindOfClass:[BPKDialog class]]) {
-             BPKDialog *dialog = (BPKDialog *)view;
-             NSArray<BPKSimpleDate* > *selectedDates = dialog.selectedDates;
-
-             dialog.selectedDates = @[];
-             [dialog reloadData];
-
-             /*
-              * Force a slight pause before rendering again with the
-              * selected dates.
-              */
-             [[NSOperationQueue currentQueue] addOperationWithBlock:^{
-                 dialog.selectedDates = selectedDates;
-                 [dialog reloadData];
-             }];
-         } else {
-             RCTLogError(@"tried to force render: on non-BPKDialog view %@ "
-                         "with tag #%@", view, reactTag);
-         }
-     }];
-
-}
-
-#pragma mark RCTDialogViewDelegate
-
-/*
- * `RCTBPKDialogManager` acts as the delegate of all of the `RCTBPKDialog` views. This is just one
- * pattern and it's perfectly fine to call `onDateSelection` from the `RCTBPKDialog` directly.
- */
-- (void)dialog:(RCTBPKDialog *)dialog didChangeDateSelection:(NSArray<BPKSimpleDate *> *)dateList {
-    if (!dialog.onDateSelection) {
-        return;
+- (void)invalidate {
+    for (RCTBPKDialog *hostDialog in _hostDialogs) {
+        [hostDialog invalidate];
     }
-
-    NSMutableArray<NSNumber *> * dateArray = [[NSMutableArray alloc] initWithCapacity:dateList.count];
-    for (BPKSimpleDate *date in dateList) {
-        // The React Native interface uses UTC dates regardless of the local time zone
-        // Thus we need to convert the dates to UTC instead of the local time zone here.
-        NSDate* localDate = [dialog dateFromSimpleDate:date];
-        NSDate *dateInUTC = [RCTBPKDialogDateUtils convertDateToUTC:localDate
-                                                        localDialog:dialog.gregorian
-                                                          utcDialog:dialog.utcDialog];
-        [dateArray addObject:@([dateInUTC timeIntervalSince1970])];
-    }
-
-    dialog.onDateSelection(@{@"selectedDates": dateArray});
+    [_hostDialogs removeAllObjects];
 }
 
 @end

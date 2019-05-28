@@ -21,12 +21,13 @@
 #import <React/RCTBridge.h>
 #import <React/RCTUIManager.h>
 #import <Backpack/Dialog.h>
+#import <Backpack/Icon.h>
 
 @implementation RCTBPKDialog
 {
     __weak RCTBridge *_bridge;
     BOOL _isOpen;
-    ViewController _viewController;
+    UIViewController *_viewController;
 }
 
 RCT_NOT_IMPLEMENTED(- (instancetype)initWithFrame:(CGRect)frame)
@@ -36,9 +37,8 @@ RCT_NOT_IMPLEMENTED(- (instancetype)initWithCoder:coder)
 {
     if ((self = [super initWithFrame:CGRectZero])) {
         _bridge = bridge;
-        _viewController = [ViewController new];
+        _viewController = [UIViewController new];
         _viewController.view = [UIView new];
-        __weak typeof(self) weakSelf = self;
     }
 
     return self;
@@ -51,13 +51,27 @@ RCT_NOT_IMPLEMENTED(- (instancetype)initWithCoder:coder)
                                                                      style:self.style
                                                        iconBackgroundColor:self.iconBackgroundColor
                                                                  iconImage:[BPKIcon templateIconNamed:self.iconImage size:BPKIconSizeLarge]];
+    return self;
 }
 
-- (void) presentBPKDialog:(RCTBPKDialog *)BPKDialog withViewController:(ViewController *)viewController
+- (void) presentBPKDialog:(RCTBPKDialog *)BPKDialog withViewController:(UIViewController *)viewController
 {
-    [viewController presentViewController:self.dialogController animated:YES complettion:nil];
+    [viewController presentViewController:self.dialogController animated:YES completion:nil];
+    _isOpen = YES;
 }
 
+- (void)dismissDialogController
+{
+    if (_isOpen) {
+        [_delegate dismissBPKDialog:self withViewController:_viewController];
+        _isOpen = NO;
+    }
+}
 
+- (void)invalidate {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self dismissDialogController];
+    });
+}
 
 @end

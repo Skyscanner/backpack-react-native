@@ -5,7 +5,7 @@
 ## Installation
 
 ```sh
-npm install react-native-bpk-component-calendar --save-dev
+npm install react-native-bpk-component-dialog --save-dev
 ```
 
 Because this package ships with native code, it is also necessary to add some native dependencies to your RN project:

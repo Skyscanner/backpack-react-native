@@ -26,6 +26,7 @@ target 'Backpack Native' do
   # RN Bridging Pods
   pod 'Backpack', '~> 8.0.0'
   pod 'react-native-bpk-component-calendar', path: '../packages/react-native-bpk-component-calendar'
+  pod 'react-native-bpk-component-dialog', path: '../packages/react-native-bpk-component-dialog'
 
   # Third party pods
   pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'

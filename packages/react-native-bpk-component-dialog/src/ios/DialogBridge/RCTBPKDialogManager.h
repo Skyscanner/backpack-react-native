@@ -1,4 +1,4 @@
-w/*
+/*
  * Backpack - Skyscanner's Design System
  *
  * Copyright 2016-2019 Skyscanner Ltd
@@ -18,11 +18,11 @@ w/*
 
 #import <React/RCTViewManager.h>
 
-typedef void (^RCTBPKDialogInteractionBlock)(UIViewController *reactViewController, UIViewController *viewController, dispatch_block_t completionBlock);
+typedef void (^RCTDialogInteractor)(UIViewController *reactViewController, UIViewController *viewController, dispatch_block_t completionBlock);
 
 @interface RCTBPKDialogManager : RCTViewManager <RCTInvalidating>
 
-@property (nonatomic, strong) RCTBPKDialogInteractionBlock presentationBlock;
-@property (nonatomic, strong) RCTBPKDialogInteractionBlock dismissalBlock;
+@property (nonatomic, strong) RCTDialogInteractor presentationBlock;
+@property (nonatomic, strong) RCTDialogInteractor dismissalBlock;
 
 @end

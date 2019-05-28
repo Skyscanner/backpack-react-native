@@ -19,40 +19,39 @@
 #import <UIKit/UIKit.h>
 
 #import <React/RCTInvalidating.h>
-#import <React/RCTModalHostViewManager.h>
 #import <React/RCTView.h>
-
 #import <Backpack/Dialog.h>
+#import <Backpack/Icon.h>
+
+#import "RCTBPKDialogManager.h"
 
 @class RCTBridge;
 
-@protocol RCTDialogHostViewInteractor;
+@protocol RCTDialogInteractor;
 
 @interface RCTBPKDialog : UIView <RCTInvalidating>
 
 @property(nullable, nonatomic) BPKDialogController *dialogController;
 @property(nullable, nonatomic) NSString *title;
 @property(nullable, nonatomic) NSString *message;
+@property(nullable, nonatomic) NSString *iconImage;
+    
+@property(nonatomic) BPKDialogControllerStyle style;
 
-@property(nullable, nonatomic) UIImage *iconImage;
-@property(nullable, nonatomic) UIColor *iconBackgroundColor;
+@property(nullable, nonatomic, strong) UIColor *iconBackgroundColor;
 
 @property(nullable, nonatomic) NSArray<BPKDialogButtonAction *> *actions;
 @property(nullable, nonatomic) BPKDialogScrimAction *scrimAction;
 
-@property(nullable, nonatomic) BOOL *isOpen;
+@property (nullable, nonatomic) id<RCTDialogInteractor> delegate;
 
-@property (nonatomic, weak) id<RCTModalHostViewInteractor> delegate;
-
-- (instancetype)initWithBridge:(RCTBridge *)bridge NS_DESIGNATED_INITIALIZER;
-
-- (instancetype)render;
+- (instancetype _Nullable)initWithBridge:(RCTBridge *_Nonnull)bridge NS_DESIGNATED_INITIALIZER;
 
 @end
 
-@protocol RCTDialogHostViewInteractor <NSObject>
+@protocol RCTDialogInteractor <NSObject>
 
-- (void)presentBPKDialog:(RCTBPKDialog *)bpkDialog withViewController:(ViewController *)viewController;
-- (void)dismissBPKDialog:(RCTBPKDialog *)bpkDialog withViewController:(ViewController *)viewController;
+- (void)presentBPKDialog:(RCTBPKDialog *_Nonnull)bpkDialog withViewController:(UIViewController *_Nonnull)viewController;
+- (void)dismissBPKDialog:(RCTBPKDialog *_Nonnull)bpkDialog withViewController:(UIViewController *_Nonnull)viewController;
 
 @end
