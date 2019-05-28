@@ -60,10 +60,14 @@ const generateAllSpinnerTypes = small => (
 const getThemedButtons = () => (
   <BpkThemeProvider theme={themeAttributes}>
     <View>
-      <StorySubheading>Default</StorySubheading>
+      <StorySubheading>Primary Default</StorySubheading>
       <BpkSpinner />
-      <StorySubheading>Small</StorySubheading>
+      <StorySubheading>Primary Small</StorySubheading>
       <BpkSpinner small />
+      <StorySubheading>Dark Default</StorySubheading>
+      <BpkSpinner type="dark" />
+      <StorySubheading>Dark Small</StorySubheading>
+      <BpkSpinner type="dark" small />
     </View>
   </BpkThemeProvider>
 );

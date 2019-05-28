@@ -27,7 +27,7 @@ import {
 import { Text, StyleSheet } from 'react-native';
 import React, { type ElementProps } from 'react';
 import iconMappings from 'bpk-svgs/dist/font/iconMapping.json';
-import { withTheme, type Theme } from 'react-native-bpk-theming';
+import { withTheme, grayForTheme, type Theme } from 'react-native-bpk-theming';
 
 const styles = StyleSheet.create({
   icon: {
@@ -61,8 +61,8 @@ const BpkIcon = (props: Props) => {
 
   const textStyleFinal = [styles.icon];
 
-  if (theme && theme.colorGray700) {
-    textStyleFinal.push({ color: theme.colorGray700 });
+  if (theme) {
+    textStyleFinal.push({ color: grayForTheme(theme, 'colorGray700') });
   }
 
   if (small) {

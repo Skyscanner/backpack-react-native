@@ -25,7 +25,7 @@ import {
   spacingBase,
   colorGray100,
 } from 'bpk-tokens/tokens/base.react.native';
-import { withTheme, type Theme } from 'react-native-bpk-theming';
+import { withTheme, grayForTheme, type Theme } from 'react-native-bpk-theming';
 
 import {} from './common-types';
 import { themePropType } from './theming';
@@ -55,8 +55,10 @@ const BpkFlatListItemSeparator = (props: Props) => {
 
   const separatorStyle = [styles.separator];
 
-  if (theme && theme.colorGray100) {
-    separatorStyle.push({ backgroundColor: theme.colorGray100 });
+  if (theme) {
+    separatorStyle.push({
+      backgroundColor: grayForTheme(theme, 'colorGray100'),
+    });
   }
   return <View style={separatorStyle} />;
 };

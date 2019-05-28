@@ -24,8 +24,10 @@ import { Image, Modal, StyleSheet, View } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
+import BpkThemeProvider from 'react-native-bpk-theming';
 
 import CenterDecorator from '../../storybook/CenterDecorator';
+import themeAttributes from '../../storybook/themeAttributes';
 
 import { type Id, type Code } from './src/common-types';
 import BpkPhoneNumberInput, {
@@ -222,15 +224,23 @@ class FullyIntegrated extends React.Component<
   }
 }
 
-storiesOf('react-native-bpk-component-phone-input/Integrated', module).add(
-  'Full component example',
-  () => <FullyIntegrated initiallySelectedId="CA" codes={codes} />,
-);
+storiesOf('react-native-bpk-component-phone-input/Integrated', module)
+  .add('Full component example', () => (
+    <FullyIntegrated initiallySelectedId="CA" codes={codes} />
+  ))
+  .add('Full component example with theme', () => (
+    <BpkThemeProvider theme={themeAttributes}>
+      <FullyIntegrated initiallySelectedId="CA" codes={codes} />
+    </BpkThemeProvider>
+  ));
 
-storiesOf(
-  'react-native-bpk-component-phone-input/BpkDialingCodeList',
-  module,
-).add('docs:dialing-code-list', () => <StatefulBpkDialingCodeList />);
+storiesOf('react-native-bpk-component-phone-input/BpkDialingCodeList', module)
+  .add('docs:dialing-code-list', () => <StatefulBpkDialingCodeList />)
+  .add('Dialing code list with theme', () => (
+    <BpkThemeProvider theme={themeAttributes}>
+      <StatefulBpkDialingCodeList />
+    </BpkThemeProvider>
+  ));
 
 storiesOf(
   'react-native-bpk-component-phone-input/BpkDialingCodeListItem',
@@ -268,4 +278,21 @@ storiesOf('react-native-bpk-component-phone-input/BpkPhoneNumberInput', module)
       editable={false}
       onDialingCodePress={action('Dialing code pressed')}
     />
+  ))
+  .add('Phone number input with theme', () => (
+    <BpkThemeProvider theme={themeAttributes}>
+      <StatefulBpkPhoneNumberInput
+        placeholder="4XX XXX XXX"
+        label="Phone number"
+        initialValue=""
+        keyboardType="phone-pad"
+        dialingCode={{ dialingCode: '+61', id: 'au', name: 'Australia' }}
+        renderFlag={() => (
+          <Image // eslint-disable-line backpack/use-components
+            source={{ uri: getFlagUriFromCountryCode('AU') }}
+          />
+        )}
+        onDialingCodePress={action('Dialing code pressed')}
+      />
+    </BpkThemeProvider>
   ));

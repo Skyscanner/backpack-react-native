@@ -23,8 +23,6 @@ import AnimatedValue from 'react-native/Libraries/Animated/src/nodes/AnimatedVal
 import {
   borderSizeSm,
   colorBlue500,
-  colorGray100,
-  colorGray300,
   colorGray500,
   colorGray700,
   colorRed500,
@@ -38,6 +36,7 @@ import {
   textSmFontSize,
   textSmFontWeight,
 } from 'bpk-tokens/tokens/base.react.native';
+import { grayForTheme, type Theme } from 'react-native-bpk-theming';
 
 const INPUT_RANGE = [0, 1];
 
@@ -105,14 +104,16 @@ const getLabelColorValue = (
   valid: ?boolean,
   editable: boolean,
   hasAccessoryView: boolean,
+  theme: ?Theme,
 ) => {
   if (!editable) {
-    return colorGray100;
+    return grayForTheme(theme, 'colorGray100');
   }
   if (!value && !hasAccessoryView) {
-    return colorGray300;
+    return grayForTheme(theme, 'colorGray300');
   }
-  return valid === false ? colorRed500 : colorGray500;
+  const gray500 = grayForTheme(theme, 'colorGray500');
+  return valid === false ? colorRed500 : gray500;
 };
 
 const getLabelPosition = (hasAccessoryView: boolean): number =>
@@ -138,13 +139,14 @@ const getLabelStyle = (
     hasAccessoryView: boolean,
   },
   focusedColor: String = colorBlue500,
+  theme: ?Theme,
 ) => {
   const labelTypography = getLabelTypography(hasAccessoryView);
   const animatedStyle = {
     color: animatedColorValue.interpolate({
       inputRange: INPUT_RANGE,
       outputRange: [
-        getLabelColorValue(value, valid, editable, hasAccessoryView),
+        getLabelColorValue(value, valid, editable, hasAccessoryView, theme),
         focusedColor,
       ],
     }),
@@ -176,8 +178,10 @@ const getInputContainerStyle = (
   hasAccessoryView: boolean,
   valid: ?boolean,
   focusedColor: String = colorBlue500,
+  theme: ?Theme,
 ) => {
-  const underlineColorValue = valid === false ? colorRed500 : colorGray100;
+  const gray100 = grayForTheme(theme, 'colorGray100');
+  const underlineColorValue = valid === false ? colorRed500 : gray100;
   const animatedStyle = {
     borderBottomColor: animatedColorValue.interpolate({
       inputRange: INPUT_RANGE,

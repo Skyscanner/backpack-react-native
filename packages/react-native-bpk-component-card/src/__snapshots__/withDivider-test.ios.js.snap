@@ -1,404 +1,815 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`iOS withDivider should render correctly 1`] = `
-<BpkCard
+<View
+  accessibilityComponentType="button"
   accessibilityLabel="Example Card"
-  cornerStyle="sm"
-  focused={false}
-  innerStyle={
+  accessible={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
     Array [
       Object {
-        "flexDirection": "row",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderRadius": 4,
+        "shadowColor": "rgb(37, 32, 51)",
+        "shadowOffset": Object {
+          "height": 0.5,
+          "width": 0,
+        },
+        "shadowOpacity": 0.15,
+        "shadowRadius": 1.5,
       },
     ]
   }
-  onPress={[MockFunction]}
-  padded={false}
-  style={null}
 >
   <View
     style={
       Array [
         Object {
-          "flex": 1,
+          "backgroundColor": "transparent",
         },
-        Object {
-          "padding": 16,
-        },
+        Array [
+          Object {
+            "flexDirection": "row",
+          },
+        ],
       ]
     }
   >
-    <withTheme(BpkText)>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </withTheme(BpkText)>
+    <View
+      style={
+        Array [
+          Object {
+            "flex": 1,
+          },
+          Object {
+            "padding": 16,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "rgb(82, 76, 97)",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "letterSpacing": 0.12,
+            },
+            Object {},
+          ]
+        }
+      >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      </Text>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={
+        Array [
+          Object {
+            "flexDirection": "column",
+            "marginBottom": 8,
+            "marginTop": 8,
+            "width": 1,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "flex": 1,
+          },
+          Object {
+            "padding": 16,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "rgb(82, 76, 97)",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "letterSpacing": 0.12,
+            },
+            Object {},
+          ]
+        }
+      >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      </Text>
+    </View>
   </View>
-  <_class
-    dashColor="rgb(230, 228, 235)"
-    dashGap={4}
-    dashLength={4}
-    dashThickness={1}
-    style={
-      Array [
-        Object {
-          "flexDirection": "column",
-          "marginBottom": 8,
-          "marginTop": 8,
-          "width": 1,
-        },
-      ]
-    }
-  />
   <View
     style={
       Array [
         Object {
+          "backgroundColor": "rgb(37, 32, 51)",
+          "bottom": 0,
           "flex": 1,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
         },
         Object {
-          "padding": 16,
+          "borderRadius": 4,
         },
       ]
     }
-  >
-    <withTheme(BpkText)>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </withTheme(BpkText)>
-  </View>
-</BpkCard>
+  />
+</View>
 `;
 
 exports[`iOS withDivider should render correctly with "cornerStyle=large" 1`] = `
-<BpkCard
+<View
+  accessibilityComponentType="button"
   accessibilityLabel="Example Card"
-  cornerStyle="lg"
-  focused={false}
-  innerStyle={
+  accessible={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
     Array [
       Object {
-        "flexDirection": "row",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderRadius": 4,
+        "shadowColor": "rgb(37, 32, 51)",
+        "shadowOffset": Object {
+          "height": 0.5,
+          "width": 0,
+        },
+        "shadowOpacity": 0.15,
+        "shadowRadius": 1.5,
+      },
+      Object {
+        "borderRadius": 24,
       },
     ]
   }
-  onPress={[MockFunction]}
-  padded={false}
-  style={null}
 >
   <View
     style={
       Array [
         Object {
-          "flex": 1,
+          "backgroundColor": "transparent",
         },
-        Object {
-          "padding": 16,
-        },
+        Array [
+          Object {
+            "flexDirection": "row",
+          },
+        ],
       ]
     }
   >
-    <withTheme(BpkText)>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </withTheme(BpkText)>
+    <View
+      style={
+        Array [
+          Object {
+            "flex": 1,
+          },
+          Object {
+            "padding": 16,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "rgb(82, 76, 97)",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "letterSpacing": 0.12,
+            },
+            Object {},
+          ]
+        }
+      >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      </Text>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={
+        Array [
+          Object {
+            "flexDirection": "column",
+            "marginBottom": 8,
+            "marginTop": 8,
+            "width": 1,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "flex": 1,
+          },
+          Object {
+            "padding": 16,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "rgb(82, 76, 97)",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "letterSpacing": 0.12,
+            },
+            Object {},
+          ]
+        }
+      >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      </Text>
+    </View>
   </View>
-  <_class
-    dashColor="rgb(230, 228, 235)"
-    dashGap={4}
-    dashLength={4}
-    dashThickness={1}
-    style={
-      Array [
-        Object {
-          "flexDirection": "column",
-          "marginBottom": 8,
-          "marginTop": 8,
-          "width": 1,
-        },
-      ]
-    }
-  />
   <View
     style={
       Array [
         Object {
+          "backgroundColor": "rgb(37, 32, 51)",
+          "bottom": 0,
           "flex": 1,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
         },
         Object {
-          "padding": 16,
+          "borderRadius": 24,
         },
       ]
     }
-  >
-    <withTheme(BpkText)>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </withTheme(BpkText)>
-  </View>
-</BpkCard>
+  />
+</View>
 `;
 
 exports[`iOS withDivider should render correctly with arbitrary props 1`] = `
-<BpkCard
+<View
+  accessibilityComponentType="button"
   accessibilityLabel="Example Card"
-  cornerStyle="sm"
-  focused={false}
-  innerStyle={
+  accessible={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
     Array [
       Object {
-        "flexDirection": "row",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderRadius": 4,
+        "shadowColor": "rgb(37, 32, 51)",
+        "shadowOffset": Object {
+          "height": 0.5,
+          "width": 0,
+        },
+        "shadowOpacity": 0.15,
+        "shadowRadius": 1.5,
       },
     ]
   }
-  onPress={[MockFunction]}
-  padded={false}
-  style={null}
   testID="arbitrary value"
 >
   <View
     style={
       Array [
         Object {
-          "flex": 1,
+          "backgroundColor": "transparent",
         },
-        Object {
-          "padding": 16,
-        },
+        Array [
+          Object {
+            "flexDirection": "row",
+          },
+        ],
       ]
     }
   >
-    <withTheme(BpkText)>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </withTheme(BpkText)>
+    <View
+      style={
+        Array [
+          Object {
+            "flex": 1,
+          },
+          Object {
+            "padding": 16,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "rgb(82, 76, 97)",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "letterSpacing": 0.12,
+            },
+            Object {},
+          ]
+        }
+      >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      </Text>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={
+        Array [
+          Object {
+            "flexDirection": "column",
+            "marginBottom": 8,
+            "marginTop": 8,
+            "width": 1,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "flex": 1,
+          },
+          Object {
+            "padding": 16,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "rgb(82, 76, 97)",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "letterSpacing": 0.12,
+            },
+            Object {},
+          ]
+        }
+      >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      </Text>
+    </View>
   </View>
-  <_class
-    dashColor="rgb(230, 228, 235)"
-    dashGap={4}
-    dashLength={4}
-    dashThickness={1}
-    style={
-      Array [
-        Object {
-          "flexDirection": "column",
-          "marginBottom": 8,
-          "marginTop": 8,
-          "width": 1,
-        },
-      ]
-    }
-  />
   <View
     style={
       Array [
         Object {
+          "backgroundColor": "rgb(37, 32, 51)",
+          "bottom": 0,
           "flex": 1,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
         },
         Object {
-          "padding": 16,
+          "borderRadius": 4,
         },
       ]
     }
-  >
-    <withTheme(BpkText)>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </withTheme(BpkText)>
-  </View>
-</BpkCard>
+  />
+</View>
 `;
 
 exports[`iOS withDivider should render correctly with custom main style 1`] = `
-<BpkCard
+<View
+  accessibilityComponentType="button"
   accessibilityLabel="Example Card"
-  cornerStyle="sm"
-  focused={false}
-  innerStyle={
+  accessible={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
     Array [
       Object {
-        "flexDirection": "row",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderRadius": 4,
+        "shadowColor": "rgb(37, 32, 51)",
+        "shadowOffset": Object {
+          "height": 0.5,
+          "width": 0,
+        },
+        "shadowOpacity": 0.15,
+        "shadowRadius": 1.5,
       },
     ]
   }
-  onPress={[MockFunction]}
-  padded={false}
-  style={null}
 >
   <View
     style={
       Array [
         Object {
-          "flex": 1,
+          "backgroundColor": "transparent",
         },
-        Object {
-          "padding": 16,
-        },
-        Object {
-          "flex": 2,
-        },
+        Array [
+          Object {
+            "flexDirection": "row",
+          },
+        ],
       ]
     }
   >
-    <withTheme(BpkText)>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </withTheme(BpkText)>
+    <View
+      style={
+        Array [
+          Object {
+            "flex": 1,
+          },
+          Object {
+            "padding": 16,
+          },
+          Object {
+            "flex": 2,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "rgb(82, 76, 97)",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "letterSpacing": 0.12,
+            },
+            Object {},
+          ]
+        }
+      >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      </Text>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={
+        Array [
+          Object {
+            "flexDirection": "column",
+            "marginBottom": 8,
+            "marginTop": 8,
+            "width": 1,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "flex": 1,
+          },
+          Object {
+            "padding": 16,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "rgb(82, 76, 97)",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "letterSpacing": 0.12,
+            },
+            Object {},
+          ]
+        }
+      >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      </Text>
+    </View>
   </View>
-  <_class
-    dashColor="rgb(230, 228, 235)"
-    dashGap={4}
-    dashLength={4}
-    dashThickness={1}
-    style={
-      Array [
-        Object {
-          "flexDirection": "column",
-          "marginBottom": 8,
-          "marginTop": 8,
-          "width": 1,
-        },
-      ]
-    }
-  />
   <View
     style={
       Array [
         Object {
+          "backgroundColor": "rgb(37, 32, 51)",
+          "bottom": 0,
           "flex": 1,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
         },
         Object {
-          "padding": 16,
+          "borderRadius": 4,
         },
       ]
     }
-  >
-    <withTheme(BpkText)>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </withTheme(BpkText)>
-  </View>
-</BpkCard>
+  />
+</View>
 `;
 
 exports[`iOS withDivider should render correctly with custom stub style 1`] = `
-<BpkCard
+<View
+  accessibilityComponentType="button"
   accessibilityLabel="Example Card"
-  cornerStyle="sm"
-  focused={false}
-  innerStyle={
+  accessible={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
     Array [
       Object {
-        "flexDirection": "row",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderRadius": 4,
+        "shadowColor": "rgb(37, 32, 51)",
+        "shadowOffset": Object {
+          "height": 0.5,
+          "width": 0,
+        },
+        "shadowOpacity": 0.15,
+        "shadowRadius": 1.5,
       },
     ]
   }
-  onPress={[MockFunction]}
-  padded={false}
-  style={null}
 >
   <View
     style={
       Array [
         Object {
-          "flex": 1,
+          "backgroundColor": "transparent",
         },
-        Object {
-          "padding": 16,
-        },
+        Array [
+          Object {
+            "flexDirection": "row",
+          },
+        ],
       ]
     }
   >
-    <withTheme(BpkText)>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </withTheme(BpkText)>
+    <View
+      style={
+        Array [
+          Object {
+            "flex": 1,
+          },
+          Object {
+            "padding": 16,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "rgb(82, 76, 97)",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "letterSpacing": 0.12,
+            },
+            Object {},
+          ]
+        }
+      >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      </Text>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={
+        Array [
+          Object {
+            "flexDirection": "column",
+            "marginBottom": 8,
+            "marginTop": 8,
+            "width": 1,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "flex": 1,
+          },
+          Object {
+            "padding": 16,
+          },
+          Object {
+            "flex": 3,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "rgb(82, 76, 97)",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "letterSpacing": 0.12,
+            },
+            Object {},
+          ]
+        }
+      >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      </Text>
+    </View>
   </View>
-  <_class
-    dashColor="rgb(230, 228, 235)"
-    dashGap={4}
-    dashLength={4}
-    dashThickness={1}
-    style={
-      Array [
-        Object {
-          "flexDirection": "column",
-          "marginBottom": 8,
-          "marginTop": 8,
-          "width": 1,
-        },
-      ]
-    }
-  />
   <View
     style={
       Array [
         Object {
+          "backgroundColor": "rgb(37, 32, 51)",
+          "bottom": 0,
           "flex": 1,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
         },
         Object {
-          "padding": 16,
-        },
-        Object {
-          "flex": 3,
+          "borderRadius": 4,
         },
       ]
     }
-  >
-    <withTheme(BpkText)>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </withTheme(BpkText)>
-  </View>
-</BpkCard>
+  />
+</View>
 `;
 
 exports[`iOS withDivider should render correctly without padding 1`] = `
-<BpkCard
+<View
+  accessibilityComponentType="button"
   accessibilityLabel="Example Card"
-  cornerStyle="sm"
-  focused={false}
-  innerStyle={
+  accessible={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
     Array [
       Object {
-        "flexDirection": "row",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderRadius": 4,
+        "shadowColor": "rgb(37, 32, 51)",
+        "shadowOffset": Object {
+          "height": 0.5,
+          "width": 0,
+        },
+        "shadowOpacity": 0.15,
+        "shadowRadius": 1.5,
       },
     ]
   }
-  onPress={[MockFunction]}
-  padded={false}
-  style={null}
 >
   <View
     style={
       Array [
         Object {
-          "flex": 1,
+          "backgroundColor": "transparent",
         },
+        Array [
+          Object {
+            "flexDirection": "row",
+          },
+        ],
       ]
     }
   >
-    <withTheme(BpkText)>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </withTheme(BpkText)>
+    <View
+      style={
+        Array [
+          Object {
+            "flex": 1,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "rgb(82, 76, 97)",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "letterSpacing": 0.12,
+            },
+            Object {},
+          ]
+        }
+      >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      </Text>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={
+        Array [
+          Object {
+            "flexDirection": "column",
+            "marginBottom": 8,
+            "marginTop": 8,
+            "width": 1,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "flex": 1,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "rgb(82, 76, 97)",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "letterSpacing": 0.12,
+            },
+            Object {},
+          ]
+        }
+      >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      </Text>
+    </View>
   </View>
-  <_class
-    dashColor="rgb(230, 228, 235)"
-    dashGap={4}
-    dashLength={4}
-    dashThickness={1}
-    style={
-      Array [
-        Object {
-          "flexDirection": "column",
-          "marginBottom": 8,
-          "marginTop": 8,
-          "width": 1,
-        },
-      ]
-    }
-  />
   <View
     style={
       Array [
         Object {
+          "backgroundColor": "rgb(37, 32, 51)",
+          "bottom": 0,
           "flex": 1,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "borderRadius": 4,
         },
       ]
     }
-  >
-    <withTheme(BpkText)>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </withTheme(BpkText)>
-  </View>
-</BpkCard>
+  />
+</View>
 `;

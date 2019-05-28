@@ -88,6 +88,7 @@ const BpkPickerMenu = (props: Props) => {
   const pickerItems = React.Children.map(children, child =>
     React.cloneElement(child, { key: child.props.value }),
   );
+
   return (
     <Modal
       supportedOrientations={['portrait', 'landscape']}

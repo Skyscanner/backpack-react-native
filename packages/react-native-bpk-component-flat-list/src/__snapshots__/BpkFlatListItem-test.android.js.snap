@@ -390,6 +390,9 @@ exports[`Android should support theming when selected 1`] = `
           "width": 20,
         },
         Object {
+          "borderColor": "rgb(230, 228, 235)",
+        },
+        Object {
           "borderColor": "red",
         },
       ]
