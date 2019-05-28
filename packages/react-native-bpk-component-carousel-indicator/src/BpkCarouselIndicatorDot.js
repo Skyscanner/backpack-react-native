@@ -32,6 +32,7 @@ import {
 } from 'bpk-tokens/tokens/base.react.native';
 import { Animated, StyleSheet } from 'react-native';
 import AnimatedValue from 'react-native/Libraries/Animated/src/nodes/AnimatedValue';
+import { withTheme, grayForTheme, type Theme } from 'react-native-bpk-theming';
 
 const styles = StyleSheet.create({
   indicator: {
@@ -61,6 +62,7 @@ const indicatorDimensions = {
 type Props = {
   selected: boolean,
   size: $Keys<typeof INDICATOR_SIZES>,
+  theme: ?Theme,
 };
 
 class BpkCarouselIndicatorDot extends React.PureComponent<Props, {}> {
@@ -74,6 +76,7 @@ class BpkCarouselIndicatorDot extends React.PureComponent<Props, {}> {
   static defaultProps = {
     selected: false,
     size: INDICATOR_SIZES.base,
+    theme: null,
   };
 
   constructor(props: Props) {
@@ -104,9 +107,14 @@ class BpkCarouselIndicatorDot extends React.PureComponent<Props, {}> {
   };
 
   render() {
-    const { selected } = this.props;
+    const { selected, theme } = this.props;
+    const indicatorStyle = [styles.indicator];
+    indicatorStyle.push({
+      backgroundColor: grayForTheme(theme, 'colorGray300'),
+    });
+
     const style = [
-      styles.indicator,
+      indicatorStyle,
       {
         height: this.size,
         width: this.size,
@@ -121,4 +129,4 @@ class BpkCarouselIndicatorDot extends React.PureComponent<Props, {}> {
   }
 }
 
-export default BpkCarouselIndicatorDot;
+export default withTheme(BpkCarouselIndicatorDot);

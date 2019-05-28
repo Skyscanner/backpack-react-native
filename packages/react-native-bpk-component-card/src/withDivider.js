@@ -21,13 +21,13 @@
 import PropTypes from 'prop-types';
 import Dash from '@skyscanner/react-native-dash';
 import {
-  colorGray100,
   spacingSm,
   spacingMd,
   spacingBase,
 } from 'bpk-tokens/tokens/base.react.native';
 import { View, StyleSheet, ViewPropTypes } from 'react-native';
 import React, { type Node, type ElementProps, type ComponentType } from 'react';
+import { withTheme, grayForTheme, type Theme } from 'react-native-bpk-theming';
 
 const styles = StyleSheet.create({
   cardInner: {
@@ -82,6 +82,7 @@ export type Props = {
   vertical: boolean,
   mainStyle: ViewStyleProp,
   stubStyle: ViewStyleProp,
+  theme: ?Theme,
 };
 
 const withDivider = (CardComponent: ComponentType<any>): ComponentType<any> => {
@@ -93,6 +94,7 @@ const withDivider = (CardComponent: ComponentType<any>): ComponentType<any> => {
       vertical,
       mainStyle: userMainStyle,
       stubStyle: userStubStyle,
+      theme,
       ...rest
     } = props;
 
@@ -126,7 +128,7 @@ const withDivider = (CardComponent: ComponentType<any>): ComponentType<any> => {
           dashGap={spacingSm}
           dashLength={spacingSm}
           dashThickness={1}
-          dashColor={colorGray100}
+          dashColor={grayForTheme(theme, 'colorGray100')}
         />
         <View style={stubStyle}>{stub}</View>
       </CardComponent>
@@ -147,9 +149,10 @@ const withDivider = (CardComponent: ComponentType<any>): ComponentType<any> => {
     vertical: false,
     mainStyle: null,
     stubStyle: null,
+    theme: null,
   };
 
-  return WithDivider;
+  return withTheme(WithDivider);
 };
 
 export default withDivider;

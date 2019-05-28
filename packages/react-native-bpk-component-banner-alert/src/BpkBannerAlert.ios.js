@@ -36,6 +36,7 @@ import BpkText from 'react-native-bpk-component-text';
 import BpkIcon, { icons } from 'react-native-bpk-component-icon';
 import BpkAnimateHeight from 'react-native-bpk-component-animate-height';
 import BpkTouchableOverlay from 'react-native-bpk-component-touchable-overlay';
+import { withTheme, grayForTheme } from 'react-native-bpk-theming';
 
 import {
   type Props,
@@ -103,29 +104,6 @@ const STYLES = StyleSheet.create({
   },
 });
 
-const ALERT_TYPE_STYLES = {
-  [ALERT_TYPES.success]: {
-    icon: icons['tick-circle'],
-    borderStyle: STYLES.borderSuccess,
-    iconStyle: STYLES.iconSuccess,
-  },
-  [ALERT_TYPES.warn]: {
-    icon: icons['information-circle'],
-    borderStyle: STYLES.borderWarn,
-    iconStyle: STYLES.iconWarn,
-  },
-  [ALERT_TYPES.error]: {
-    icon: icons['information-circle'],
-    borderStyle: STYLES.borderError,
-    iconStyle: STYLES.iconError,
-  },
-  [ALERT_TYPES.neutral]: {
-    icon: icons['information-circle'],
-    borderStyle: STYLES.borderNeutral,
-    iconStyle: STYLES.iconNeutral,
-  },
-};
-
 const BpkBannerAlert = (props: Props) => {
   const {
     type,
@@ -141,8 +119,32 @@ const BpkBannerAlert = (props: Props) => {
     animateOnLeave,
     children,
     bannerStyle,
+    theme,
     ...rest
   } = props;
+
+  const ALERT_TYPE_STYLES = {
+    [ALERT_TYPES.success]: {
+      icon: icons['tick-circle'],
+      borderStyle: STYLES.borderSuccess,
+      iconStyle: STYLES.iconSuccess,
+    },
+    [ALERT_TYPES.warn]: {
+      icon: icons['information-circle'],
+      borderStyle: STYLES.borderWarn,
+      iconStyle: STYLES.iconWarn,
+    },
+    [ALERT_TYPES.error]: {
+      icon: icons['information-circle'],
+      borderStyle: STYLES.borderError,
+      iconStyle: STYLES.iconError,
+    },
+    [ALERT_TYPES.neutral]: {
+      icon: icons['information-circle'],
+      borderStyle: { borderColor: grayForTheme(theme, 'colorGray300') },
+      iconStyle: { color: grayForTheme(theme, 'colorGray500') },
+    },
+  };
 
   const expandable = children !== null;
   const alertTypeStyles = ALERT_TYPE_STYLES[type] || {};
@@ -217,4 +219,4 @@ BpkBannerAlert.propTypes = { ...propTypes };
 
 BpkBannerAlert.defaultProps = { ...defaultProps };
 
-export default BpkBannerAlert;
+export default withTheme(BpkBannerAlert);
