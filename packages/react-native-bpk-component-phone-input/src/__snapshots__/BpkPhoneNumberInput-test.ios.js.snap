@@ -69,12 +69,14 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
           style={
             Array [
               undefined,
-              Object {
-                "backgroundColor": "rgb(243, 242, 245)",
-                "height": 12,
-                "marginEnd": 8,
-                "width": 16,
-              },
+              Array [
+                Object {
+                  "backgroundColor": "rgb(243, 242, 245)",
+                  "height": 12,
+                  "marginEnd": 8,
+                  "width": 16,
+                },
+              ],
             ]
           }
         />
@@ -253,12 +255,14 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
           style={
             Array [
               undefined,
-              Object {
-                "backgroundColor": "rgb(243, 242, 245)",
-                "height": 12,
-                "marginEnd": 8,
-                "width": 16,
-              },
+              Array [
+                Object {
+                  "backgroundColor": "rgb(243, 242, 245)",
+                  "height": 12,
+                  "marginEnd": 8,
+                  "width": 16,
+                },
+              ],
             ]
           }
         />
@@ -277,9 +281,11 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
                 Object {
                   "marginEnd": "auto",
                 },
-                Object {
-                  "color": "rgb(230, 228, 235)",
-                },
+                Array [
+                  Object {
+                    "color": "rgb(230, 228, 235)",
+                  },
+                ],
               ],
             ]
           }

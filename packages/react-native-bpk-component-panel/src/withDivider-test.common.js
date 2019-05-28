@@ -20,7 +20,7 @@
 
 import React from 'react';
 import { StyleSheet } from 'react-native';
-import ShallowRenderer from 'react-test-renderer/shallow';
+import renderer from 'react-test-renderer';
 import BpkText from 'react-native-bpk-component-text';
 
 import BpkPanel from './BpkPanel';
@@ -29,12 +29,6 @@ import withDivider from './withDivider';
 const BpkPanelWithDivider = withDivider(BpkPanel);
 
 const commonTests = () => {
-  let renderer;
-
-  beforeAll(() => {
-    renderer = new ShallowRenderer();
-  });
-
   describe('withDivider', () => {
     const content = (
       <BpkText>
@@ -45,36 +39,39 @@ const commonTests = () => {
     );
 
     it('should render correctly', () => {
-      renderer.render(
-        <BpkPanelWithDivider stub={content}>{content}</BpkPanelWithDivider>,
-      );
+      const tree = renderer
+        .create(
+          <BpkPanelWithDivider stub={content}>{content}</BpkPanelWithDivider>,
+        )
+        .toJSON();
 
-      const tree = renderer.getRenderOutput();
       expect(tree).toMatchSnapshot();
     });
 
     it('should render correctly without padding', () => {
-      renderer.render(
-        <BpkPanelWithDivider stub={content} padded={false}>
-          {content}
-        </BpkPanelWithDivider>,
-      );
+      const tree = renderer
+        .create(
+          <BpkPanelWithDivider stub={content} padded={false}>
+            {content}
+          </BpkPanelWithDivider>,
+        )
+        .toJSON();
 
-      const tree = renderer.getRenderOutput();
       expect(tree).toMatchSnapshot();
     });
 
     it('should render correctly with arbitrary props', () => {
-      renderer.render(
-        <BpkPanelWithDivider
-          stub={content}
-          testID="arbitrary value" // <-- arbitrary prop
-        >
-          {content}
-        </BpkPanelWithDivider>,
-      );
+      const tree = renderer
+        .create(
+          <BpkPanelWithDivider
+            stub={content}
+            testID="arbitrary value" // <-- arbitrary prop
+          >
+            {content}
+          </BpkPanelWithDivider>,
+        )
+        .toJSON();
 
-      const tree = renderer.getRenderOutput();
       expect(tree).toMatchSnapshot();
     });
 
@@ -85,13 +82,14 @@ const commonTests = () => {
         },
       });
 
-      renderer.render(
-        <BpkPanelWithDivider stub={content} mainStyle={styles.main}>
-          {content}
-        </BpkPanelWithDivider>,
-      );
+      const tree = renderer
+        .create(
+          <BpkPanelWithDivider stub={content} mainStyle={styles.main}>
+            {content}
+          </BpkPanelWithDivider>,
+        )
+        .toJSON();
 
-      const tree = renderer.getRenderOutput();
       expect(tree).toMatchSnapshot();
     });
 
@@ -102,13 +100,14 @@ const commonTests = () => {
         },
       });
 
-      renderer.render(
-        <BpkPanelWithDivider stub={content} stubStyle={styles.stub}>
-          {content}
-        </BpkPanelWithDivider>,
-      );
+      const tree = renderer
+        .create(
+          <BpkPanelWithDivider stub={content} stubStyle={styles.stub}>
+            {content}
+          </BpkPanelWithDivider>,
+        )
+        .toJSON();
 
-      const tree = renderer.getRenderOutput();
       expect(tree).toMatchSnapshot();
     });
   });

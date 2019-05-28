@@ -1,13 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Android withDivider should render correctly 1`] = `
-<BpkPanel
-  padded={false}
+<View
   style={
     Array [
       Object {
-        "flexDirection": "row",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderColor": "rgb(230, 228, 235)",
+        "borderRadius": 4,
+        "borderWidth": 1,
       },
+      Array [
+        Object {
+          "flexDirection": "row",
+        },
+      ],
     ]
   }
 >
@@ -17,15 +24,25 @@ exports[`Android withDivider should render correctly 1`] = `
         Object {
           "flex": 1,
         },
-        Object {
-          "padding": 16,
-        },
       ]
     }
   >
-    <withTheme(BpkText)>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {},
+        ]
+      }
+    >
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </withTheme(BpkText)>
+    </Text>
   </View>
   <View
     style={
@@ -44,27 +61,44 @@ exports[`Android withDivider should render correctly 1`] = `
         Object {
           "flex": 1,
         },
-        Object {
-          "padding": 16,
-        },
       ]
     }
   >
-    <withTheme(BpkText)>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {},
+        ]
+      }
+    >
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </withTheme(BpkText)>
+    </Text>
   </View>
-</BpkPanel>
+</View>
 `;
 
 exports[`Android withDivider should render correctly with arbitrary props 1`] = `
-<BpkPanel
-  padded={false}
+<View
   style={
     Array [
       Object {
-        "flexDirection": "row",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderColor": "rgb(230, 228, 235)",
+        "borderRadius": 4,
+        "borderWidth": 1,
       },
+      Array [
+        Object {
+          "flexDirection": "row",
+        },
+      ],
     ]
   }
   testID="arbitrary value"
@@ -75,15 +109,25 @@ exports[`Android withDivider should render correctly with arbitrary props 1`] = 
         Object {
           "flex": 1,
         },
-        Object {
-          "padding": 16,
-        },
       ]
     }
   >
-    <withTheme(BpkText)>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {},
+        ]
+      }
+    >
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </withTheme(BpkText)>
+    </Text>
   </View>
   <View
     style={
@@ -102,27 +146,44 @@ exports[`Android withDivider should render correctly with arbitrary props 1`] = 
         Object {
           "flex": 1,
         },
-        Object {
-          "padding": 16,
-        },
       ]
     }
   >
-    <withTheme(BpkText)>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {},
+        ]
+      }
+    >
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </withTheme(BpkText)>
+    </Text>
   </View>
-</BpkPanel>
+</View>
 `;
 
 exports[`Android withDivider should render correctly with custom main style 1`] = `
-<BpkPanel
-  padded={false}
+<View
   style={
     Array [
       Object {
-        "flexDirection": "row",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderColor": "rgb(230, 228, 235)",
+        "borderRadius": 4,
+        "borderWidth": 1,
       },
+      Array [
+        Object {
+          "flexDirection": "row",
+        },
+      ],
     ]
   }
 >
@@ -131,9 +192,6 @@ exports[`Android withDivider should render correctly with custom main style 1`] 
       Array [
         Object {
           "flex": 1,
-        },
-        Object {
-          "padding": 16,
         },
         Object {
           "flex": 2,
@@ -141,9 +199,22 @@ exports[`Android withDivider should render correctly with custom main style 1`] 
       ]
     }
   >
-    <withTheme(BpkText)>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {},
+        ]
+      }
+    >
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </withTheme(BpkText)>
+    </Text>
   </View>
   <View
     style={
@@ -162,27 +233,44 @@ exports[`Android withDivider should render correctly with custom main style 1`] 
         Object {
           "flex": 1,
         },
-        Object {
-          "padding": 16,
-        },
       ]
     }
   >
-    <withTheme(BpkText)>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {},
+        ]
+      }
+    >
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </withTheme(BpkText)>
+    </Text>
   </View>
-</BpkPanel>
+</View>
 `;
 
 exports[`Android withDivider should render correctly with custom stub style 1`] = `
-<BpkPanel
-  padded={false}
+<View
   style={
     Array [
       Object {
-        "flexDirection": "row",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderColor": "rgb(230, 228, 235)",
+        "borderRadius": 4,
+        "borderWidth": 1,
       },
+      Array [
+        Object {
+          "flexDirection": "row",
+        },
+      ],
     ]
   }
 >
@@ -192,15 +280,25 @@ exports[`Android withDivider should render correctly with custom stub style 1`] 
         Object {
           "flex": 1,
         },
-        Object {
-          "padding": 16,
-        },
       ]
     }
   >
-    <withTheme(BpkText)>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {},
+        ]
+      }
+    >
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </withTheme(BpkText)>
+    </Text>
   </View>
   <View
     style={
@@ -218,9 +316,6 @@ exports[`Android withDivider should render correctly with custom stub style 1`] 
       Array [
         Object {
           "flex": 1,
-        },
-        Object {
-          "padding": 16,
         },
         Object {
           "flex": 3,
@@ -228,21 +323,41 @@ exports[`Android withDivider should render correctly with custom stub style 1`] 
       ]
     }
   >
-    <withTheme(BpkText)>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {},
+        ]
+      }
+    >
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </withTheme(BpkText)>
+    </Text>
   </View>
-</BpkPanel>
+</View>
 `;
 
 exports[`Android withDivider should render correctly without padding 1`] = `
-<BpkPanel
-  padded={false}
+<View
   style={
     Array [
       Object {
-        "flexDirection": "row",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderColor": "rgb(230, 228, 235)",
+        "borderRadius": 4,
+        "borderWidth": 1,
       },
+      Array [
+        Object {
+          "flexDirection": "row",
+        },
+      ],
     ]
   }
 >
@@ -255,9 +370,22 @@ exports[`Android withDivider should render correctly without padding 1`] = `
       ]
     }
   >
-    <withTheme(BpkText)>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {},
+        ]
+      }
+    >
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </withTheme(BpkText)>
+    </Text>
   </View>
   <View
     style={
@@ -279,9 +407,22 @@ exports[`Android withDivider should render correctly without padding 1`] = `
       ]
     }
   >
-    <withTheme(BpkText)>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {},
+        ]
+      }
+    >
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </withTheme(BpkText)>
+    </Text>
   </View>
-</BpkPanel>
+</View>
 `;
