@@ -20,14 +20,17 @@
 #import <UIKit/UIKit.h>
 #import <React/RCTBridge.h>
 #import <React/RCTUIManager.h>
+#import <React/RCTTouchHandler.h>
 #import <Backpack/Dialog.h>
 #import <Backpack/Icon.h>
+#import <Backpack/Color.h>
+#import <Backpack/Button.h>
 
 @implementation RCTBPKDialog
 {
     __weak RCTBridge *_bridge;
-    BOOL _isOpen;
-    UIViewController *_viewController;
+    BOOL _isPresented;
+    RCTTouchHandler *_touchHandler;
 }
 
 RCT_NOT_IMPLEMENTED(- (instancetype)initWithFrame:(CGRect)frame)
@@ -37,41 +40,61 @@ RCT_NOT_IMPLEMENTED(- (instancetype)initWithCoder:coder)
 {
     if ((self = [super initWithFrame:CGRectZero])) {
         _bridge = bridge;
-        _viewController = [UIViewController new];
-        _viewController.view = [UIView new];
+        _isPresented = NO;
     }
-
     return self;
 }
 
-- (instancetype) render
+- (void)dismiss
 {
-    self.dialogController = [BPKDialogController dialogControllerWithTitle:self.title
-                                                                   message:self.description
-                                                                     style:self.style
-                                                       iconBackgroundColor:self.iconBackgroundColor
-                                                                 iconImage:[BPKIcon templateIconNamed:self.iconImage size:BPKIconSizeLarge]];
-    return self;
+    if (_isPresented) {
+        [_delegate dismissBPKDialog:self withViewController:_dialogController];
+        _isPresented = NO;
+    }
+}
+    
+- (void)didMoveToWindow
+{
+    [super didMoveToWindow];
+    if (!_isPresented && self.window) {
+        [_delegate presentBPKDialog:self];
+        _isPresented = YES;
+    }
 }
 
-- (void) presentBPKDialog:(RCTBPKDialog *)BPKDialog withViewController:(UIViewController *)viewController
+- (void)didMoveToSuperview
 {
-    [viewController presentViewController:self.dialogController animated:YES completion:nil];
-    _isOpen = YES;
-}
-
-- (void)dismissDialogController
-{
-    if (_isOpen) {
-        [_delegate dismissBPKDialog:self withViewController:_viewController];
-        _isOpen = NO;
+    [super didMoveToSuperview];
+    
+    if (_isPresented && !self.superview) {
+        [self dismiss];
     }
 }
 
 - (void)invalidate {
     dispatch_async(dispatch_get_main_queue(), ^{
-        [self dismissDialogController];
+        [self dismiss];
     });
 }
+
+- (void)setIcon:(NSDictionary *)icon
+{
+    _iconImage = icon[@"iconId"];
+    NSString *iconColor = icon[@"iconColor"];
+    _iconBackgroundColor = [BPKColor valueForKey:iconColor];
+}
+
+//- (void)setActions:(NSMutableArray<NSDictionary *> *)reactActions
+//{
+//    _actions = [NSMutableArray array];
+//    for (NSDictionary *reactAction in reactActions) {
+//        BPKButtonStyle style = [RCTBPKDialog map:[reactAction objectForKey:@"style"]];
+//        BPKDialogButtonAction *action = [BPKDialogButtonAction
+//                                         actionWithTitle:[reactAction objectForKey:@"text"]
+//                                                   style:style
+//                                                 handler:nil];
+//        [_actions addObject:action];
+//    }
+//}
 
 @end

@@ -31,6 +31,7 @@
 
 @interface RCTBPKDialog : UIView <RCTInvalidating>
 
+@property(nullable, nonatomic) NSNumber *identifier;
 @property(nullable, nonatomic) BPKDialogController *dialogController;
 @property(nullable, nonatomic) NSString *title;
 @property(nullable, nonatomic) NSString *message;
@@ -40,8 +41,8 @@
 
 @property(nullable, nonatomic, strong) UIColor *iconBackgroundColor;
 
-@property(nullable, nonatomic) NSArray<BPKDialogButtonAction *> *actions;
-@property(nullable, nonatomic) BPKDialogScrimAction *scrimAction;
+@property(nullable, nonatomic) NSMutableArray<NSDictionary *> *actions;
+@property(nullable, nonatomic) BOOL *scrimEnabled;
 
 @property (nullable, nonatomic) id<RCTDialogInteractor> delegate;
 
@@ -51,7 +52,7 @@
 
 @protocol RCTDialogInteractor <NSObject>
 
-- (void)presentBPKDialog:(RCTBPKDialog *_Nonnull)bpkDialog withViewController:(UIViewController *_Nonnull)viewController;
+- (void)presentBPKDialog:(RCTBPKDialog *_Nonnull)bpkDialog;
 - (void)dismissBPKDialog:(RCTBPKDialog *_Nonnull)bpkDialog withViewController:(UIViewController *_Nonnull)viewController;
 
 @end

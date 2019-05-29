@@ -16,11 +16,16 @@
  * limitations under the License.
  */
 
-#import "RCTBPKDialogManager.h"
 #import <React/RCTBridge.h>
 #import <React/RCTUIManager.h>
+#import <Backpack/Color.h>
+#import <Backpack/Icon.h>
+//#import <os/log.h>
 
+#import "RCTBPKDialogManager.h"
 #import "RCTBPKDialog.h"
+#import "RCTBPKDialogEventsManager.h"
+#import "RCTBPKDialogUtils.h"
 
 @implementation RCTConvert (RCTBPKDialog)
 
@@ -28,13 +33,12 @@ RCT_ENUM_CONVERTER(BPKDialogControllerStyle, (@{
     @"alert": @(BPKDialogControllerStyleAlert),
     @"bottomSheet": @(BPKDialogControllerStyleBottomSheet),
     }), BPKDialogControllerStyleAlert, integerValue)
- 
+
 @end
 
 @interface RCTBPKDialogManager() <RCTDialogInteractor>
 
 @end
-
 
 @implementation RCTBPKDialogManager
 {
@@ -54,31 +58,48 @@ RCT_EXPORT_MODULE()
     return dialog;
 }
 
-- (void)presentBPKDialog:(RCTBPKDialog *)bpkDialog withViewController:(UIViewController *)viewController
+- (void)presentBPKDialog:(RCTBPKDialog *)bpkDialog
 {
-    if (_presentationBlock) {
-        _presentationBlock([bpkDialog reactViewController], viewController, completionBlock);
-    } else {
-        [[bpkDialog reactViewController] presentViewController:viewController animated:YES completion:nil];
+    bpkDialog.dialogController = [BPKDialogController dialogControllerWithTitle:bpkDialog.title
+                                                                        message:bpkDialog.message
+                                                                          style:bpkDialog.style
+                                                            iconBackgroundColor:bpkDialog.iconBackgroundColor
+                                                                      iconImage:[BPKIcon templateIconNamed:bpkDialog.iconImage size:BPKIconSizeLarge]];
+    
+    BPKDialogScrimAction *scrimAction = [BPKDialogScrimAction actionWithHandler:^(BOOL didDismiss) {
+        [[self.bridge moduleForClass:[RCTBPKDialogEventsManager class]] bpkDialogScrim:bpkDialog.identifier];
+    } shouldDismiss:YES];
+
+    bpkDialog.dialogController.scrimAction = scrimAction;
+
+    for (NSUInteger i = 0; i < bpkDialog.actions.count; ++i) {
+        NSDictionary *reactAction = [bpkDialog.actions objectAtIndex:i];
+        BPKButtonStyle style = [RCTBPKDialogUtils map:[reactAction objectForKey:@"type"]];
+        BPKDialogButtonAction *action = [BPKDialogButtonAction
+                                         actionWithTitle:[reactAction objectForKey:@"text"]
+                                         style:style
+                                         handler:^(BPKDialogButtonAction *dialogAction) {
+                                             [[self.bridge moduleForClass:[RCTBPKDialogEventsManager class]] bpkDialogAction:bpkDialog.identifier withIndex:[NSNumber numberWithInteger:i]];
+
+                                         }];
+        [bpkDialog.dialogController addButtonAction:action];
     }
+    
+    [[bpkDialog reactViewController] presentViewController:bpkDialog.dialogController animated:YES completion:nil];
 }
 
 - (void)dismissBPKDialog:(RCTBPKDialog *)bpkDialog withViewController:(UIViewController *)viewController
 {
-    if (_dismissalBlock) {
-        _dismissalBlock([bpkDialog reactViewController], viewController, completionBlock);
-    } else {
-        [[bpkDialog reactViewController] dismissViewControllerAnimated:YES completion:nil];
-    }
+    [[bpkDialog reactViewController] dismissViewControllerAnimated:YES completion:nil];
 }
 
-RCT_EXPORT_VIEW_PROPERTY(dialogType, BPKDialogControllerStyle) // Mapping needed
+RCT_REMAP_VIEW_PROPERTY(dialogType, style, BPKDialogControllerStyle)
+RCT_REMAP_VIEW_PROPERTY(description, message, NSString)
 RCT_EXPORT_VIEW_PROPERTY(title, NSString)
-RCT_EXPORT_VIEW_PROPERTY(description, NSString)
-//RCT_EXPORT_VIEW_PROPERTY(icon, NSString) // Mapping needed
-//RCT_EXPORT_VIEW_PROPERTY(actions, NSString) // Mappingg needed
-//RCT_EXPORT_VIEW_PROPERTY(scrimAction, NSString) // Mapping needed
-RCT_EXPORT_VIEW_PROPERTY(isOpen, BOOL)
+RCT_EXPORT_VIEW_PROPERTY(identifier, NSNumber)
+RCT_EXPORT_VIEW_PROPERTY(actions, NSArray<NSDictionary *> *)
+RCT_EXPORT_VIEW_PROPERTY(scrimEnabled, BOOL)
+RCT_EXPORT_VIEW_PROPERTY(icon, NSDictionary)
 
 - (void)invalidate {
     for (RCTBPKDialog *hostDialog in _hostDialogs) {

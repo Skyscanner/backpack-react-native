@@ -18,8 +18,14 @@
 
 /* @flow */
 
-import React from 'react';
-import { requireNativeComponent } from 'react-native';
+import React, { Component } from 'react';
+import {
+  requireNativeComponent,
+  NativeModules,
+  NativeEventEmitter,
+  EmitterSubscription,
+} from 'react-native';
+import isNil from 'lodash/isNil';
 
 import {
   commonPropTypes,
@@ -29,11 +35,80 @@ import {
 
 const RCTBPKDialog = requireNativeComponent('RCTBPKDialog');
 
+let uniqueModalIdentifier = 0;
+
+const BpkDialogEventEmitter = NativeModules.BPKDialogEventsManager
+  ? new NativeEventEmitter(NativeModules.BPKDialogEventsManager)
+  : null;
+
 export type Props = {
   ...$Exact<CommonProps>,
 };
 
-const BpkDialog = (props: Props) => <RCTBPKDialog {...props} />;
+export type State = {
+  ...$Exact<CommonProps>,
+};
+
+class BpkDialog extends Component<Props> {
+  eventSubscription: ?EmitterSubscription;
+
+  identifier: number;
+
+  constructor(props: Props) {
+    super(props);
+    this.identifier = uniqueModalIdentifier;
+    uniqueModalIdentifier += 1;
+  }
+
+  componentDidMount() {
+    if (BpkDialogEventEmitter) {
+      const { actions, scrimAction } = this.props;
+      this.eventSubscription = BpkDialogEventEmitter.addListener(
+        'bpkDialogAction',
+        event => {
+          if (
+            !isNil(event.actionIndex) &&
+            event.identifier === this.identifier
+          ) {
+            actions[event.actionIndex].callback();
+          }
+        },
+      );
+      if (scrimAction) {
+        this.eventSubscription = BpkDialogEventEmitter.addListener(
+          'bpkDialogScrim',
+          event => {
+            if (event.identifier === this.identifier) {
+              console.warn(`SCRIM`);
+              scrimAction.callback();
+            }
+          },
+        );
+      }
+    }
+  }
+
+  componentWillUnmount() {
+    if (this.eventSubscription) {
+      this.eventSubscription.remove();
+    }
+  }
+
+  render() {
+    const { isOpen, scrimAction, ...rest } = this.props;
+
+    if (!isOpen) {
+      return null;
+    }
+    return (
+      <RCTBPKDialog
+        identifier={this.identifier}
+        scrimEnabled={scrimAction ? scrimAction.enabled : false}
+        {...rest}
+      />
+    );
+  }
+}
 
 BpkDialog.propTypes = commonPropTypes;
 BpkDialog.defaultProps = commonDefaultProps;

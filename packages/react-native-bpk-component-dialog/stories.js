@@ -33,9 +33,14 @@ const dialogTitle = 'Backpack Dialog';
 const dialogDescription =
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et luctus sem, quis pharetra lacus.';
 
+// const dialogIcon = {
+//   iconId: 'bpk_tick',
+//   iconColor: 'bpkGreen500',
+// };
+
 const dialogIcon = {
-  iconId: 'bpk_tick',
-  iconColor: 'bpkGreen500',
+  iconId: 'tick',
+  iconColor: 'green500',
 };
 
 const defaultScrimAction = {
