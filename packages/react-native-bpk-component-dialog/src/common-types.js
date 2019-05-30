@@ -41,7 +41,7 @@ type Icon = {
   iconColor: string,
 };
 
-type ActionButton = {
+export type ActionButton = {
   text: string,
   type: ButtonType,
   callback: () => void,
@@ -57,7 +57,7 @@ export type CommonProps = {
   title: ?string,
   description: ?string,
   icon: ?Icon,
-  actions: [ActionButton],
+  actions: Array<ActionButton>,
   scrimAction: ?ScrimAction,
   isOpen: ?boolean,
 };

@@ -23,13 +23,13 @@ import {
   requireNativeComponent,
   NativeModules,
   NativeEventEmitter,
-  EmitterSubscription,
 } from 'react-native';
+import type EmitterSubscription from 'react-native/Libraries/vendor/emitter/EmitterSubscription';
 import isNil from 'lodash/isNil';
 
 import {
   commonPropTypes,
-  commonDefaultProps,
+  // commonDefaultProps,
   type CommonProps,
 } from './common-types';
 
@@ -79,7 +79,6 @@ class BpkDialog extends Component<Props> {
           'bpkDialogScrim',
           event => {
             if (event.identifier === this.identifier) {
-              console.warn(`SCRIM`);
               scrimAction.callback();
             }
           },
@@ -95,7 +94,7 @@ class BpkDialog extends Component<Props> {
   }
 
   render() {
-    const { isOpen, scrimAction, ...rest } = this.props;
+    const { isOpen, scrimAction, icon, ...rest } = this.props;
 
     if (!isOpen) {
       return null;
@@ -103,6 +102,7 @@ class BpkDialog extends Component<Props> {
     return (
       <RCTBPKDialog
         identifier={this.identifier}
+        icon={icon}
         scrimEnabled={scrimAction ? scrimAction.enabled : false}
         {...rest}
       />
@@ -111,6 +111,6 @@ class BpkDialog extends Component<Props> {
 }
 
 BpkDialog.propTypes = commonPropTypes;
-BpkDialog.defaultProps = commonDefaultProps;
+// BpkDialog.defaultProps = commonDefaultProps;
 
 export default BpkDialog;

@@ -84,17 +84,4 @@ RCT_NOT_IMPLEMENTED(- (instancetype)initWithCoder:coder)
     _iconBackgroundColor = [BPKColor valueForKey:iconColor];
 }
 
-//- (void)setActions:(NSMutableArray<NSDictionary *> *)reactActions
-//{
-//    _actions = [NSMutableArray array];
-//    for (NSDictionary *reactAction in reactActions) {
-//        BPKButtonStyle style = [RCTBPKDialog map:[reactAction objectForKey:@"style"]];
-//        BPKDialogButtonAction *action = [BPKDialogButtonAction
-//                                         actionWithTitle:[reactAction objectForKey:@"text"]
-//                                                   style:style
-//                                                 handler:nil];
-//        [_actions addObject:action];
-//    }
-//}
-
 @end

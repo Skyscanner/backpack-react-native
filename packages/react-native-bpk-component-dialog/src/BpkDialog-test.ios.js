@@ -15,14 +15,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* eslint-disable no-console */
 
-/* @flow */
+import commonTests from './BpkDialog-test.common';
 
-import BpkDialog from './src/BpkDialog';
-import { DIALOG_TYPE, BUTTON_TYPE } from './src/common-types';
-import type { DialogType, ButtonType, ActionButton } from './src/common-types';
+const defaultProps = {
+  title: 'BackpackDialog',
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  icon: {
+    iconId: 'tick',
+    iconColor: 'green500',
+  },
+};
 
-export type { Props as BpkDialogProps } from './src/BpkDialog';
-export default BpkDialog;
-export { DIALOG_TYPE, BUTTON_TYPE };
-export type { DialogType, ButtonType, ActionButton };
+describe('iOS', () => {
+  commonTests(defaultProps);
+});

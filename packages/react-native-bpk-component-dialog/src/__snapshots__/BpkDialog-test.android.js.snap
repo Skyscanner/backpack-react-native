@@ -1,0 +1,150 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`iOS BpkDialog should render correctly 1`] = `null`;
+
+exports[`iOS BpkDialog should render correctly open 1`] = `
+<RCTBPKDialog
+  actions={Array []}
+  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  dialogType="alert"
+  icon={
+    Object {
+      "iconColor": "bpkGreen500",
+      "iconId": "bpk_tick",
+    }
+  }
+  identifier={1}
+  onChange={[Function]}
+  scrimEnabled={false}
+  title="BackpackDialog"
+/>
+`;
+
+exports[`iOS BpkDialog should render correctly with all actions 1`] = `
+<RCTBPKDialog
+  actions={
+    Array [
+      Object {
+        "callback": [Function],
+        "text": "Yes",
+        "type": "primary",
+      },
+      Object {
+        "callback": [Function],
+        "text": "No",
+        "type": "destructive",
+      },
+    ]
+  }
+  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  dialogType="alert"
+  icon={
+    Object {
+      "iconColor": "bpkGreen500",
+      "iconId": "bpk_tick",
+    }
+  }
+  identifier={5}
+  onChange={[Function]}
+  scrimEnabled={true}
+  title="BackpackDialog"
+  type="alert"
+/>
+`;
+
+exports[`iOS BpkDialog should render correctly with bottom sheet style 1`] = `
+<RCTBPKDialog
+  actions={Array []}
+  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  dialogType="alert"
+  icon={
+    Object {
+      "iconColor": "bpkGreen500",
+      "iconId": "bpk_tick",
+    }
+  }
+  identifier={6}
+  onChange={[Function]}
+  scrimEnabled={false}
+  title="BackpackDialog"
+  type="bottomSheet"
+/>
+`;
+
+exports[`iOS BpkDialog should render correctly with one actions 1`] = `
+<RCTBPKDialog
+  actions={
+    Array [
+      Object {
+        "callback": [Function],
+        "text": "Yes",
+        "type": "primary",
+      },
+    ]
+  }
+  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  dialogType="alert"
+  icon={
+    Object {
+      "iconColor": "bpkGreen500",
+      "iconId": "bpk_tick",
+    }
+  }
+  identifier={2}
+  onChange={[Function]}
+  scrimEnabled={false}
+  title="BackpackDialog"
+  type="alert"
+/>
+`;
+
+exports[`iOS BpkDialog should render correctly with scrim actions 1`] = `
+<RCTBPKDialog
+  actions={Array []}
+  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  dialogType="alert"
+  icon={
+    Object {
+      "iconColor": "bpkGreen500",
+      "iconId": "bpk_tick",
+    }
+  }
+  identifier={4}
+  onChange={[Function]}
+  scrimEnabled={true}
+  title="BackpackDialog"
+  type="alert"
+/>
+`;
+
+exports[`iOS BpkDialog should render correctly with two actions 1`] = `
+<RCTBPKDialog
+  actions={
+    Array [
+      Object {
+        "callback": [Function],
+        "text": "Yes",
+        "type": "primary",
+      },
+      Object {
+        "callback": [Function],
+        "text": "No",
+        "type": "destructive",
+      },
+    ]
+  }
+  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  dialogType="alert"
+  icon={
+    Object {
+      "iconColor": "bpkGreen500",
+      "iconId": "bpk_tick",
+    }
+  }
+  identifier={3}
+  onChange={[Function]}
+  scrimEnabled={false}
+  title="BackpackDialog"
+  type="alert"
+/>
+`;
