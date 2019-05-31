@@ -34,8 +34,13 @@ const dialogDescription =
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et luctus sem, quis pharetra lacus.';
 
 const dialogIcon = {
-  iconId: 'tick',
-  iconColor: 'green500',
+  iconId: 'bpk_tick',
+  iconColor: 'bpkGreen500',
+};
+
+const destructiveIcon = {
+  iconId: 'bpk_trash',
+  iconColor: 'bpkRed500',
 };
 
 const defaultScrimAction = {
@@ -143,7 +148,7 @@ storiesOf('react-native-bpk-component-dialog', module)
       dialogType={DIALOG_TYPE.alert}
       title={dialogTitle}
       description={dialogDescription}
-      icon={dialogIcon}
+      icon={destructiveIcon}
       actions={simpleAction}
       scrimAction={null}
       isOpen
@@ -154,7 +159,7 @@ storiesOf('react-native-bpk-component-dialog', module)
       dialogType={DIALOG_TYPE.alert}
       title={dialogTitle}
       description={null}
-      icon={null}
+      icon={dialogIcon}
       scrimAction={defaultScrimAction}
       actions={[]}
       isOpen

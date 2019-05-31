@@ -99,10 +99,14 @@ class BpkDialog extends Component<Props> {
     if (!isOpen) {
       return null;
     }
+
     return (
       <RCTBPKDialog
         identifier={this.identifier}
-        icon={icon}
+        icon={{
+          iconId: icon.iconId.replace('bpk_', ''),
+          iconColor: icon.iconColor.replace('bpk', '').toLowerCase(),
+        }}
         scrimEnabled={scrimAction ? scrimAction.enabled : false}
         {...rest}
       />

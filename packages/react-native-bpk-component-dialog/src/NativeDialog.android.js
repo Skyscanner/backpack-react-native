@@ -35,21 +35,7 @@ export type Props = {
   ...$Exact<NativeProps>,
 };
 
-const BpkDialog = (props: Props) => {
-  const { icon, ...rest } = props;
-  const { iconColor, iconId } = icon;
-  return (
-    <AndroidBPKDialogView
-      icon={{
-        iconId: `bpk_${iconId}`,
-        iconColor: `bpk${iconColor.charAt(0).toUpperCase()}${iconColor.slice(
-          1,
-        )}`,
-      }}
-      {...rest}
-    />
-  );
-};
+const BpkDialog = (props: Props) => <AndroidBPKDialogView {...props} />;
 
 BpkDialog.propTypes = nativePropsTypes;
 BpkDialog.defaultProps = commonDefaultProps;

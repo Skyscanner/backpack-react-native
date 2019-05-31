@@ -56,7 +56,7 @@ export type CommonProps = {
   dialogType: DialogType,
   title: ?string,
   description: ?string,
-  icon: ?Icon,
+  icon: Icon,
   actions: Array<ActionButton>,
   scrimAction: ?ScrimAction,
   isOpen: ?boolean,
