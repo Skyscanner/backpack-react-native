@@ -24,7 +24,9 @@ BpkCard
 BpkCarousel
 BpkCarouselItem
 BpkChip
+BpkDialog
 BpkDialingCodeList
+BpkDialogIos
 BpkDismissibleChip
 BpkFieldset
 BpkFlatList
@@ -205,6 +207,7 @@ dateProps
 decreaseButtonLabel
 dialingCode
 dialingCodes
+dialogType
 dismissable
 dismissButtonLabel
 doneLabel
@@ -247,6 +250,7 @@ props.message
 props.title
 ratingLabel
 renderFlag
+scrimAction
 selectedDates
 selectedId
 selectedIndex
@@ -348,6 +352,7 @@ bpk-component-theme-toggle
 bpk-component-ticket
 bpk-component-tile
 bpk-component-tooltip
+bpk-dialog-ios
 bpk-docs
 bpk-mixins
 bpk-react-utils
@@ -369,6 +374,7 @@ react-native-bpk-component-card
 react-native-bpk-component-carousel
 react-native-bpk-component-carousel-indicator
 react-native-bpk-component-chip
+react-native-bpk-component-dialog
 react-native-bpk-component-flat-list
 react-native-bpk-component-horizontal-nav
 react-native-bpk-component-icon
