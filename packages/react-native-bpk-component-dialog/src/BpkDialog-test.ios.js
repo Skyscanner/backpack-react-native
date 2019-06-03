@@ -23,8 +23,8 @@ const defaultProps = {
   title: 'BackpackDialog',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   icon: {
-    iconId: 'tick',
-    iconColor: 'green500',
+    iconId: 'bpk_tick',
+    iconColor: 'bpkGreen500',
   },
 };
 
