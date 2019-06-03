@@ -58,7 +58,7 @@ export type CommonProps = {
   description: ?string,
   icon: Icon,
   actions: Array<ActionButton>,
-  scrimAction: ?ScrimAction,
+  scrimAction: ScrimAction,
   isOpen: ?boolean,
 };
 

@@ -23,8 +23,8 @@ import renderer from 'react-test-renderer';
 import BpkDialog from './BpkDialog';
 import { DIALOG_TYPE, BUTTON_TYPE } from './common-types';
 
-const defaultScrimAction = {
-  enabled: true,
+const disabledScrimAction = {
+  enabled: false,
   callback: () => {},
 };
 
@@ -90,28 +90,13 @@ const commonTests = defaultProps => {
       expect(tree).toMatchSnapshot();
     });
 
-    it('should render correctly with scrim actions', () => {
+    it('should render correctly with disabled scrim actions', () => {
       const tree = renderer
         .create(
           <BpkDialog
             type={DIALOG_TYPE.alert}
             {...defaultProps}
-            scrimAction={defaultScrimAction}
-            isOpen
-          />,
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
-    });
-
-    it('should render correctly with all actions', () => {
-      const tree = renderer
-        .create(
-          <BpkDialog
-            type={DIALOG_TYPE.alert}
-            {...defaultProps}
-            actions={[positiveAction, negativeAction]}
-            scrimAction={defaultScrimAction}
+            scrimAction={disabledScrimAction}
             isOpen
           />,
         )

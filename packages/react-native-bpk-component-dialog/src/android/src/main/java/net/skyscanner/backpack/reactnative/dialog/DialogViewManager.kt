@@ -103,7 +103,7 @@ class DialogViewManager : ViewGroupManager<RNDialog>() {
 
   override fun onAfterUpdateTransaction(view: RNDialog) {
     super.onAfterUpdateTransaction(view)
-    view.render()
+    view.setUpActions()
     if (view.isOpen) {
       view.show()
     } else {

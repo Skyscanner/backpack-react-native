@@ -27,11 +27,7 @@ import {
 import type EmitterSubscription from 'react-native/Libraries/vendor/emitter/EmitterSubscription';
 import isNil from 'lodash/isNil';
 
-import {
-  commonPropTypes,
-  // commonDefaultProps,
-  type CommonProps,
-} from './common-types';
+import { commonPropTypes, type CommonProps } from './common-types';
 
 const RCTBPKDialog = requireNativeComponent('RCTBPKDialog');
 
@@ -104,8 +100,8 @@ class BpkDialog extends Component<Props> {
       <RCTBPKDialog
         identifier={this.identifier}
         icon={{
-          iconId: icon.iconId.replace('bpk_', ''),
-          iconColor: icon.iconColor.replace('bpk', '').toLowerCase(),
+          iconId: icon.iconId,
+          iconColor: icon.iconColor.replace(/bpk/g, '').toLowerCase(),
         }}
         scrimEnabled={scrimAction ? scrimAction.enabled : false}
         {...rest}

@@ -22,6 +22,7 @@ import React, { Component } from 'react';
 import { View } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
 import BpkButton from 'react-native-bpk-component-button';
+import { icons } from 'react-native-bpk-component-icon';
 
 import CenterDecorator from '../../storybook/CenterDecorator';
 
@@ -34,12 +35,12 @@ const dialogDescription =
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et luctus sem, quis pharetra lacus.';
 
 const dialogIcon = {
-  iconId: 'bpk_tick',
+  iconId: icons.tick,
   iconColor: 'bpkGreen500',
 };
 
 const destructiveIcon = {
-  iconId: 'bpk_trash',
+  iconId: icons.trash,
   iconColor: 'bpkRed500',
 };
 
@@ -139,7 +140,7 @@ storiesOf('react-native-bpk-component-dialog', module)
       description={dialogDescription}
       icon={dialogIcon}
       actions={[generateAction(BUTTON_TYPE.primary)]}
-      scrimAction={null}
+      scrimAction={defaultScrimAction}
       isOpen
     />
   ))
@@ -150,7 +151,7 @@ storiesOf('react-native-bpk-component-dialog', module)
       description={dialogDescription}
       icon={destructiveIcon}
       actions={simpleAction}
-      scrimAction={null}
+      scrimAction={defaultScrimAction}
       isOpen
     />
   ))

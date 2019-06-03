@@ -26,6 +26,10 @@ const defaultProps = {
     iconId: 'bpk_tick',
     iconColor: 'bpkGreen500',
   },
+  scrimAction: {
+    enabled: true,
+    callback: () => {},
+  },
 };
 
 describe('iOS', () => {

@@ -26,19 +26,45 @@ typealias  ActionCallback = (Int) -> Unit
 
 typealias Action = Pair<String, BpkButton.Type>
 
+const val SCRIM_CLOSED = -1
+
 class RNDialog(context: Context): FrameLayout(context) {
 
   private var dialog: BpkDialog = BpkDialog(context)
 
+  private var dirty: Boolean = false
+
   var dialogType: BpkDialog.Style = BpkDialog.Style.ALERT
+    set(value) {
+      createBpkDialog()
+      dirty = true
+      field = value
+    }
 
   var title: String? = null
+    set(value) {
+      value?. let { dialog.title = it }
+      field = value
+    }
 
   var description: String? = null
+    set(value) {
+      value?. let { dialog.description = it }
+      field = value
+    }
 
   var icon: BpkDialog.Icon? = null
+    set(value) {
+      value?. let { dialog.icon = it }
+      field = value
+    }
 
   var actions: Array<Action> = arrayOf()
+    set(value) {
+      createBpkDialog()
+      dirty = true
+      field = value
+    }
 
   var isOpen: Boolean = false
 
@@ -48,21 +74,29 @@ class RNDialog(context: Context): FrameLayout(context) {
 
   fun hide() = dialog.dismiss()
 
-  fun render() {
+  private fun createBpkDialog() {
     dialog = BpkDialog(context, dialogType)
     title?. let { dialog.title = it }
     description?. let { dialog.description = it }
     icon?. let { dialog.icon = it }
-    actions.forEachIndexed { index, element ->
-      dialog.addActionButton(
-        BpkButton(context, element.second).apply {
-          text = element.first
-          setOnClickListener {
-            onAction?.invoke(index)
-            hide()
+  }
+
+  fun setUpActions() {
+    if (dirty) {
+      dialog.setOnDismissListener {
+        onAction?.invoke(SCRIM_CLOSED)
+      }
+      actions.forEachIndexed { index, element ->
+        dialog.addActionButton(
+          BpkButton(context, element.second).apply {
+            text = element.first
+            setOnClickListener {
+              onAction?.invoke(index)
+            }
           }
-        }
-      )
+        )
+      }
+      dirty = false
     }
   }
 }

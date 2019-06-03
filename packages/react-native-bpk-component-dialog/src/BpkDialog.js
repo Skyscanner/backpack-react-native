@@ -33,31 +33,28 @@ export type Props = {
   ...$Exact<CommonProps>,
 };
 
-const createOnButtonClickHandler = memoize(actions => event => {
+const SCRIM_CLOSED = -1;
+
+const createOnButtonClickHandler = memoize((actions, dismiss) => event => {
   if (!isNil(event.nativeEvent.actionIndex)) {
     const index = event.nativeEvent.actionIndex;
-    if (actions[index]) {
+    if (index >= 0 && index < actions.length) {
       actions[index].callback();
+    } else if (index === SCRIM_CLOSED) {
+      dismiss.callback();
     }
   }
 });
 
 const BpkDialog = (props: Props) => {
-  const { icon, ...rest } = props;
-
-  if (!icon.iconId.startsWith('bpk_')) {
-    throw Error('Invalid icon id. The icon id should start with "bpk_"');
-  }
-
-  if (!icon.iconColor.startsWith('bpk')) {
+  if (!props.icon.iconColor.startsWith('bpk')) {
     throw Error('Invalid icon color. The icon color should start with "bpk"');
   }
 
   return (
     <NativeDialog
-      icon={icon}
-      onChange={createOnButtonClickHandler(props.actions)}
-      {...rest}
+      onChange={createOnButtonClickHandler(props.actions, props.scrimAction)}
+      {...props}
     />
   );
 };
