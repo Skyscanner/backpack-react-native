@@ -27,7 +27,12 @@ import { icons } from 'react-native-bpk-component-icon';
 import CenterDecorator from '../../storybook/CenterDecorator';
 
 import BpkDialog, { DIALOG_TYPE, BUTTON_TYPE } from './index';
-import type { BpkDialogProps, ButtonType, ActionButton } from './index';
+import type {
+  BpkDialogProps,
+  ButtonType,
+  ActionButton,
+  ScrimAction,
+} from './index';
 
 const dialogTitle = 'Backpack Dialog';
 
@@ -83,18 +88,15 @@ class TriggerDialogComponent extends Component<BpkDialogProps, DialogState> {
       }));
     }
 
-    let scrimAction = null;
-    if (this.state.scrimAction) {
-      scrimAction = {
-        enabled: this.state.scrimAction.enabled,
-        callback: () => {
-          if (this.state.scrimAction) {
-            this.state.scrimAction.callback();
-          }
-          this.setState({ isOpen: false });
-        },
-      };
-    }
+    const scrimAction: ScrimAction = {
+      enabled: this.state.scrimAction.enabled,
+      callback: () => {
+        if (this.state.scrimAction) {
+          this.state.scrimAction.callback();
+        }
+        this.setState({ isOpen: false });
+      },
+    };
 
     return (
       <View>

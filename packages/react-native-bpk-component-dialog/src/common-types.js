@@ -47,7 +47,7 @@ export type ActionButton = {
   callback: () => void,
 };
 
-type ScrimAction = {
+export type ScrimAction = {
   enabled: boolean,
   callback: () => void,
 };

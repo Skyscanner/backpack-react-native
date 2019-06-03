@@ -21,10 +21,7 @@
 #import <React/RCTBridge.h>
 #import <React/RCTUIManager.h>
 #import <React/RCTTouchHandler.h>
-#import <Backpack/Dialog.h>
-#import <Backpack/Icon.h>
 #import <Backpack/Color.h>
-#import <Backpack/Button.h>
 
 @implementation RCTBPKDialog
 {

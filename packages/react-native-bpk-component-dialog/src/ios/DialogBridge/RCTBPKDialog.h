@@ -21,8 +21,6 @@
 #import <React/RCTInvalidating.h>
 #import <React/RCTView.h>
 #import <Backpack/Dialog.h>
-#import <Backpack/Icon.h>
-//#import <Backpack/Color.h>
 
 #import "RCTBPKDialogManager.h"
 
@@ -37,7 +35,7 @@
 @property(nullable, nonatomic) NSString *title;
 @property(nullable, nonatomic) NSString *message;
 @property(nullable, nonatomic) NSString *iconImage;
-    
+
 @property(nonatomic) BPKDialogControllerStyle style;
 
 @property(nullable, nonatomic, strong) UIColor *iconBackgroundColor;

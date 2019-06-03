@@ -20,7 +20,6 @@
 #import <React/RCTUIManager.h>
 #import <Backpack/Color.h>
 #import <Backpack/Icon.h>
-//#import <os/log.h>
 
 #import "RCTBPKDialogManager.h"
 #import "RCTBPKDialog.h"
@@ -68,7 +67,7 @@ RCT_EXPORT_MODULE()
     
     BPKDialogScrimAction *scrimAction = [BPKDialogScrimAction actionWithHandler:^(BOOL didDismiss) {
         [[self.bridge moduleForClass:[RCTBPKDialogEventsManager class]] bpkDialogScrim:bpkDialog.identifier];
-    } shouldDismiss:YES];
+    } shouldDismiss:bpkDialog.scrimEnabled];
 
     bpkDialog.dialogController.scrimAction = scrimAction;
 

@@ -111,6 +111,5 @@ class BpkDialog extends Component<Props> {
 }
 
 BpkDialog.propTypes = commonPropTypes;
-// BpkDialog.defaultProps = commonDefaultProps;
 
 export default BpkDialog;

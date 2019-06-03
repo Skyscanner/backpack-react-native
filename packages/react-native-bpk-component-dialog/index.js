@@ -20,9 +20,14 @@
 
 import BpkDialog from './src/BpkDialog';
 import { DIALOG_TYPE, BUTTON_TYPE } from './src/common-types';
-import type { DialogType, ButtonType, ActionButton } from './src/common-types';
+import type {
+  DialogType,
+  ButtonType,
+  ActionButton,
+  ScrimAction,
+} from './src/common-types';
 
 export type { Props as BpkDialogProps } from './src/BpkDialog';
 export default BpkDialog;
 export { DIALOG_TYPE, BUTTON_TYPE };
-export type { DialogType, ButtonType, ActionButton };
+export type { DialogType, ButtonType, ActionButton, ScrimAction };
