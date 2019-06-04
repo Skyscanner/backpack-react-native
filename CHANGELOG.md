@@ -2,6 +2,12 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-06-04 - New icons
+
+**Added:**
+ - react-native-bpk-component-icon:
+   - Added `trend--steady`, `trend--down`, `trend--will-rise` `family`, `filter`, `world--amer`, `world--apac`, and `world--emea` icons
+
 # 2019-05-22 - Bug fix for Chip
 
 **Fixed:**
