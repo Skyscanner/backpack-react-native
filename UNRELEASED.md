@@ -1,10 +1,6 @@
 # Unreleased
 
 > Place your changes below this line.
-**Added:**
-
-- react-native-bpk-component-icon:
-  - Added new smiley icons face--blank, face--happy, face--sad.
 
 ## How to write a good changelog entry
 

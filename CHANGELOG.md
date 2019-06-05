@@ -2,6 +2,11 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-06-05 - New face icons
+**Added:**
+- react-native-bpk-component-icon: 1.14.10 => 1.15.0
+  - Added new smiley icons face--blank, face--happy, face--sad.
+
 # 2019-06-04 - New icons
 
 **Added:**
