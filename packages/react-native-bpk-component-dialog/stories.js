@@ -61,7 +61,7 @@ const disabledScrimAction = {
 };
 
 type DialogState = {
-  ...BpkDialogProps,
+  ...$Exact<BpkDialogProps>,
   text: string,
 };
 
