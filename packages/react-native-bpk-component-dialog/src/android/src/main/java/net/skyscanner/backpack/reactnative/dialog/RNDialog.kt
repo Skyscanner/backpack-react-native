@@ -66,6 +66,8 @@ class RNDialog(context: Context): FrameLayout(context) {
       field = value
     }
 
+  var scrimEnabled: Boolean = true
+
   var isOpen: Boolean = false
 
   var onAction: ActionCallback? = null
@@ -83,6 +85,7 @@ class RNDialog(context: Context): FrameLayout(context) {
 
   fun setUpActions() {
     if (dirty) {
+      dialog.setCanceledOnTouchOutside(scrimEnabled)
       dialog.setOnDismissListener {
         onAction?.invoke(SCRIM_CLOSED)
       }

@@ -36,7 +36,7 @@ export type Props = {
 };
 
 const BpkDialog = (props: Props) => {
-  const { icon, ...rest } = props;
+  const { icon, scrimAction, ...rest } = props;
 
   return (
     <AndroidBPKDialogView
@@ -44,6 +44,7 @@ const BpkDialog = (props: Props) => {
         iconId: `bpk_${icon.iconId.replace(/-/g, '_')}`,
         iconColor: icon.iconColor,
       }}
+      scrimEnabled={scrimAction.enabled}
       {...rest}
     />
   );

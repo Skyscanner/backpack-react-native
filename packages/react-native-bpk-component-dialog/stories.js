@@ -54,6 +54,11 @@ const defaultScrimAction = {
   callback: () => console.warn('Scrim action'),
 };
 
+const disabledScrimAction = {
+  enabled: false,
+  callback: () => {},
+};
+
 type DialogState = BpkDialogProps;
 
 class TriggerDialogComponent extends Component<BpkDialogProps, DialogState> {
@@ -154,6 +159,17 @@ storiesOf('react-native-bpk-component-dialog', module)
       icon={destructiveIcon}
       actions={simpleAction}
       scrimAction={defaultScrimAction}
+      isOpen
+    />
+  ))
+  .add('docs:no-scrim', () => (
+    <TriggerDialogComponent
+      dialogType={DIALOG_TYPE.alert}
+      title={dialogTitle}
+      description={dialogDescription}
+      icon={destructiveIcon}
+      actions={simpleAction}
+      scrimAction={disabledScrimAction}
       isOpen
     />
   ))

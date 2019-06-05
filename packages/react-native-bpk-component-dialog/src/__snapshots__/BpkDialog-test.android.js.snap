@@ -10,7 +10,7 @@ exports[`iOS BpkDialog should render correctly open 1`] = `
   icon={
     Object {
       "iconColor": "green500",
-      "iconId": "bpk_tick",
+      "iconId": "tick",
     }
   }
   identifier={1}
@@ -28,7 +28,7 @@ exports[`iOS BpkDialog should render correctly with bottom sheet style 1`] = `
   icon={
     Object {
       "iconColor": "green500",
-      "iconId": "bpk_tick",
+      "iconId": "tick",
     }
   }
   identifier={5}
@@ -47,7 +47,7 @@ exports[`iOS BpkDialog should render correctly with disabled scrim actions 1`] =
   icon={
     Object {
       "iconColor": "green500",
-      "iconId": "bpk_tick",
+      "iconId": "tick",
     }
   }
   identifier={4}
@@ -74,7 +74,7 @@ exports[`iOS BpkDialog should render correctly with one actions 1`] = `
   icon={
     Object {
       "iconColor": "green500",
-      "iconId": "bpk_tick",
+      "iconId": "tick",
     }
   }
   identifier={2}
@@ -106,7 +106,7 @@ exports[`iOS BpkDialog should render correctly with two actions 1`] = `
   icon={
     Object {
       "iconColor": "green500",
-      "iconId": "bpk_tick",
+      "iconId": "tick",
     }
   }
   identifier={3}

@@ -88,6 +88,11 @@ class DialogViewManager : ViewGroupManager<RNDialog>() {
     }
   }
 
+  @ReactProp(name = "scrimEnabled")
+  fun setScrimEnabled(view: RNDialog, scrimEnabled: Boolean) {
+    view.scrimEnabled = scrimEnabled
+  }
+
   @ReactProp(name = "isOpen")
   fun setIsOpen(view: RNDialog, isOpen: Boolean) {
     view.isOpen = isOpen

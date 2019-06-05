@@ -17,13 +17,15 @@
  */
 /* eslint-disable no-console */
 
+import { icons } from 'react-native-bpk-component-icon';
+
 import commonTests from './BpkDialog-test.common';
 
 const defaultProps = {
   title: 'BackpackDialog',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   icon: {
-    iconId: 'bpk_tick',
+    iconId: icons.tick,
     iconColor: 'bpkGreen500',
   },
   scrimAction: {
