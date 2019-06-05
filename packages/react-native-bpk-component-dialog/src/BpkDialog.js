@@ -46,18 +46,12 @@ const createOnButtonClickHandler = memoize((actions, dismiss) => event => {
   }
 });
 
-const BpkDialog = (props: Props) => {
-  if (!props.icon.iconColor.startsWith('bpk')) {
-    throw Error('Invalid icon color. The icon color should start with "bpk"');
-  }
-
-  return (
-    <NativeDialog
-      onChange={createOnButtonClickHandler(props.actions, props.scrimAction)}
-      {...props}
-    />
-  );
-};
+const BpkDialog = (props: Props) => (
+  <NativeDialog
+    onChange={createOnButtonClickHandler(props.actions, props.scrimAction)}
+    {...props}
+  />
+);
 
 BpkDialog.propTypes = commonPropTypes;
 BpkDialog.defaultProps = commonDefaultProps;

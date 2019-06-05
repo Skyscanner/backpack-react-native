@@ -15,7 +15,7 @@ exports[`iOS BpkDialog should render correctly open 1`] = `
   }
   identifier={1}
   onChange={[Function]}
-  scrimEnabled={false}
+  scrimEnabled={true}
   title="BackpackDialog"
 />
 `;
@@ -33,7 +33,7 @@ exports[`iOS BpkDialog should render correctly with bottom sheet style 1`] = `
   }
   identifier={5}
   onChange={[Function]}
-  scrimEnabled={false}
+  scrimEnabled={true}
   title="BackpackDialog"
   type="bottomSheet"
 />
@@ -79,7 +79,7 @@ exports[`iOS BpkDialog should render correctly with one actions 1`] = `
   }
   identifier={2}
   onChange={[Function]}
-  scrimEnabled={false}
+  scrimEnabled={true}
   title="BackpackDialog"
   type="alert"
 />
@@ -111,7 +111,7 @@ exports[`iOS BpkDialog should render correctly with two actions 1`] = `
   }
   identifier={3}
   onChange={[Function]}
-  scrimEnabled={false}
+  scrimEnabled={true}
   title="BackpackDialog"
   type="alert"
 />

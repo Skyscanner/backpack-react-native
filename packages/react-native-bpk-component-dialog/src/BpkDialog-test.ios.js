@@ -26,7 +26,11 @@ const defaultProps = {
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   icon: {
     iconId: icons.tick,
-    iconColor: 'bpkGreen500',
+    iconColor: 'green500',
+  },
+  scrimAction: {
+    enabled: true,
+    callback: () => {},
   },
 };
 

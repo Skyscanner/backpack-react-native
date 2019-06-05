@@ -90,7 +90,7 @@ class BpkDialog extends Component<Props> {
   }
 
   render() {
-    const { isOpen, scrimAction, icon, ...rest } = this.props;
+    const { isOpen, scrimAction, ...rest } = this.props;
 
     if (!isOpen) {
       return null;
@@ -99,10 +99,6 @@ class BpkDialog extends Component<Props> {
     return (
       <RCTBPKDialog
         identifier={this.identifier}
-        icon={{
-          iconId: icon.iconId,
-          iconColor: icon.iconColor.replace(/bpk/g, '').toLowerCase(),
-        }}
         scrimEnabled={scrimAction ? scrimAction.enabled : false}
         {...rest}
       />

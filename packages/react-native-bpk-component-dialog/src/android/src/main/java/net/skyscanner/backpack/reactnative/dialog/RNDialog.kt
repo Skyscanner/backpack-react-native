@@ -36,34 +36,34 @@ class RNDialog(context: Context): FrameLayout(context) {
 
   var dialogType: BpkDialog.Style = BpkDialog.Style.ALERT
     set(value) {
+      field = value
       createBpkDialog()
       dirty = true
-      field = value
     }
 
   var title: String? = null
     set(value) {
-      value?. let { dialog.title = it }
       field = value
+      value?. let { dialog.title = it }
     }
 
   var description: String? = null
     set(value) {
-      value?. let { dialog.description = it }
       field = value
+      value?. let { dialog.description = it }
     }
 
   var icon: BpkDialog.Icon? = null
     set(value) {
-      value?. let { dialog.icon = it }
       field = value
+      value?. let { dialog.icon = it }
     }
 
   var actions: Array<Action> = arrayOf()
     set(value) {
+      field = value
       createBpkDialog()
       dirty = true
-      field = value
     }
 
   var scrimEnabled: Boolean = true
@@ -86,7 +86,7 @@ class RNDialog(context: Context): FrameLayout(context) {
   fun setUpActions() {
     if (dirty) {
       dialog.setCanceledOnTouchOutside(scrimEnabled)
-      dialog.setOnDismissListener {
+      dialog.setOnCancelListener {
         onAction?.invoke(SCRIM_CLOSED)
       }
       actions.forEachIndexed { index, element ->

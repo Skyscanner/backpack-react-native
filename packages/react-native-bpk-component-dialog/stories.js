@@ -23,6 +23,7 @@ import { View } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
 import BpkButton from 'react-native-bpk-component-button';
 import { icons } from 'react-native-bpk-component-icon';
+import BpkText from 'react-native-bpk-component-text';
 
 import CenterDecorator from '../../storybook/CenterDecorator';
 
@@ -41,17 +42,17 @@ const dialogDescription =
 
 const dialogIcon = {
   iconId: icons.tick,
-  iconColor: 'bpkGreen500',
+  iconColor: 'green500',
 };
 
 const destructiveIcon = {
   iconId: icons.trash,
-  iconColor: 'bpkRed500',
+  iconColor: 'red500',
 };
 
 const defaultScrimAction = {
   enabled: true,
-  callback: () => console.warn('Scrim action'),
+  callback: () => {},
 };
 
 const disabledScrimAction = {
@@ -59,27 +60,31 @@ const disabledScrimAction = {
   callback: () => {},
 };
 
-type DialogState = BpkDialogProps;
+type DialogState = {
+  ...BpkDialogProps,
+  text: string,
+};
 
 class TriggerDialogComponent extends Component<BpkDialogProps, DialogState> {
   constructor(props) {
     super(props);
 
     this.state = {
-      dialogType: props.type,
+      dialogType: props.dialogType,
       title: props.title,
       description: props.description,
       icon: props.icon,
       actions: props.actions,
       scrimAction: props.scrimAction,
       isOpen: false,
+      text: 'No action',
     };
   }
 
   openDialog = () => this.setState({ isOpen: true });
 
   render() {
-    const { dialogType, title, description, icon, isOpen } = this.state;
+    const { text, dialogType, title, description, icon, isOpen } = this.state;
 
     let actions: Array<ActionButton> = [];
     if (this.state.actions) {
@@ -87,8 +92,10 @@ class TriggerDialogComponent extends Component<BpkDialogProps, DialogState> {
         text: action.text,
         type: action.type,
         callback: () => {
-          action.callback();
-          this.setState({ isOpen: false });
+          this.setState({
+            isOpen: false,
+            text: `Action: ${action.text}`,
+          });
         },
       }));
     }
@@ -96,15 +103,16 @@ class TriggerDialogComponent extends Component<BpkDialogProps, DialogState> {
     const scrimAction: ScrimAction = {
       enabled: this.state.scrimAction.enabled,
       callback: () => {
-        if (this.state.scrimAction) {
-          this.state.scrimAction.callback();
-        }
-        this.setState({ isOpen: false });
+        this.setState({
+          isOpen: false,
+          text: 'Scrim action',
+        });
       },
     };
 
     return (
       <View>
+        <BpkText>{text}</BpkText>
         <BpkButton onPress={this.openDialog} title="Show dialog" />
         <BpkDialog
           dialogType={dialogType}
@@ -123,7 +131,7 @@ class TriggerDialogComponent extends Component<BpkDialogProps, DialogState> {
 const generateAction = (buttonType: ButtonType) => ({
   text: `${buttonType} action`,
   type: buttonType,
-  callback: () => console.warn(buttonType),
+  callback: () => {},
 });
 
 const simpleAction: Array<ActionButton> = [

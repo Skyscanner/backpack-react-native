@@ -42,7 +42,9 @@ const BpkDialog = (props: Props) => {
     <AndroidBPKDialogView
       icon={{
         iconId: `bpk_${icon.iconId.replace(/-/g, '_')}`,
-        iconColor: icon.iconColor,
+        iconColor: `bpk${icon.iconColor
+          .charAt(0)
+          .toUpperCase()}${icon.iconColor.slice(1)}`,
       }}
       scrimEnabled={scrimAction.enabled}
       {...rest}
