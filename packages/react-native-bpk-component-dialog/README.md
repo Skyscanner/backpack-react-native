@@ -90,6 +90,7 @@ Note that the `react-native-bpk-component-dialog` depends on [Backpack](https://
 import React, { Component } from 'react';
 import { View } from 'react-native';
 import BpkButton from 'react-native-bpk-component-button';
+import { icons } from 'react-native-bpk-component-icon';
 import BpkDialog, { DIALOG_TYPE, BUTTON_TYPE } from 'react-native-bpk-component-dialog';
 
 class App extends Component {
@@ -114,6 +115,13 @@ class App extends Component {
       isOpen: false,
     });
   };
+  
+  handleDismissAction = () => {
+    // Do something else
+    this.setState({
+      isOpen: false,
+    });
+  };
 
   render() {
     return (
@@ -124,8 +132,8 @@ class App extends Component {
           title={'Backpack Dialog'}
           description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'}
           icon={{
-            iconId: 'bpk_tick',
-            iconColor: 'bpkGreen500',
+            iconId: icons.tick,
+            iconColor: 'green500'
           }}
           actions={[
             {
@@ -141,7 +149,7 @@ class App extends Component {
           ]}
           scrimAction={{
             enabled: true,
-            callback: this.handleNegativeAction
+            callback: this.handleDismissAction
           }}
           isOpen={this.state.isOpen}
         />
