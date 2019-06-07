@@ -128,6 +128,5 @@
       "react-test-renderer",
       "react-native"
     ]
-  },
-  "dependencies": {}
+  }
 }
