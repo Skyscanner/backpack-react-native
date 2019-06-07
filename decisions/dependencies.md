@@ -4,6 +4,7 @@ The following dependencies aren't actively used by this repo but we need them fo
 
 * `acorn`
 * `util`
+* `corejs`
 
 See https://github.com/Skyscanner/backpack-react-native/pull/146 for a full explanation.
 
