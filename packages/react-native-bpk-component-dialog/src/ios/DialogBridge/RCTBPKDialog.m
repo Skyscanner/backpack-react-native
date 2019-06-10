@@ -23,6 +23,7 @@
 #import <React/RCTTouchHandler.h>
 #import <Backpack/Color.h>
 
+NS_ASSUME_NONNULL_BEGIN
 @implementation RCTBPKDialog
 {
     __weak RCTBridge *_bridge;
@@ -31,10 +32,9 @@
 }
 
 RCT_NOT_IMPLEMENTED(- (instancetype)initWithFrame:(CGRect)frame)
-RCT_NOT_IMPLEMENTED(- (instancetype)initWithCoder:coder)
+RCT_NOT_IMPLEMENTED(- (instancetype _Nullable)initWithCoder:coder)
 
-- (instancetype) initWithBridge:(RCTBridge *)bridge
-{
+- (instancetype) initWithBridge:(RCTBridge *)bridge {
     if ((self = [super initWithFrame:CGRectZero])) {
         _bridge = bridge;
         _isPresented = NO;
@@ -42,25 +42,22 @@ RCT_NOT_IMPLEMENTED(- (instancetype)initWithCoder:coder)
     return self;
 }
 
-- (void)dismiss
-{
+- (void)dismiss {
     if (_isPresented) {
-        [_delegate dismissBPKDialog:self withViewController:_dialogController];
+        [_delegate dismissDialog:self withViewController:_dialogController];
         _isPresented = NO;
     }
 }
     
-- (void)didMoveToWindow
-{
+- (void)didMoveToWindow {
     [super didMoveToWindow];
     if (!_isPresented && self.window) {
-        [_delegate presentBPKDialog:self];
+        [_delegate presentDialog:self];
         _isPresented = YES;
     }
 }
 
-- (void)didMoveToSuperview
-{
+- (void)didMoveToSuperview {
     [super didMoveToSuperview];
     
     if (_isPresented && !self.superview) {
@@ -74,11 +71,11 @@ RCT_NOT_IMPLEMENTED(- (instancetype)initWithCoder:coder)
     });
 }
 
-- (void)setIcon:(NSDictionary *)icon
-{
+- (void)setIcon:(NSDictionary *)icon {
     _iconImage = icon[@"iconId"];
     NSString *iconColor = icon[@"iconColor"];
     _iconBackgroundColor = [BPKColor valueForKey:iconColor];
 }
 
 @end
+NS_ASSUME_NONNULL_END

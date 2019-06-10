@@ -20,10 +20,10 @@
 
 #import "RCTBPKDialogUtils.h"
 
+NS_ASSUME_NONNULL_BEGIN
 @implementation RCTBPKDialogUtils
 
-+ (BPKButtonStyle)map:(NSString *)style
-{
++ (BPKButtonStyle)map:(NSString *)style {
     if ([style isEqual:@"primary"]) {
         return BPKButtonStylePrimary;
     } else if ([style isEqual:@"secondary"]) {
@@ -38,3 +38,4 @@
 }
 
 @end
+NS_ASSUME_NONNULL_END

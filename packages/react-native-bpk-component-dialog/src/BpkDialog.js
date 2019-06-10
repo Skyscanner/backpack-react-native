@@ -19,8 +19,6 @@
 /* @flow */
 
 import React from 'react';
-import memoize from 'lodash/memoize';
-import isNil from 'lodash/isNil';
 
 import {
   commonPropTypes,
@@ -33,25 +31,7 @@ export type Props = {
   ...$Exact<CommonProps>,
 };
 
-const SCRIM_CLOSED = -1;
-
-const createOnButtonClickHandler = memoize((actions, dismiss) => event => {
-  if (!isNil(event.nativeEvent.actionIndex)) {
-    const index = event.nativeEvent.actionIndex;
-    if (index >= 0 && index < actions.length) {
-      actions[index].callback();
-    } else if (index === SCRIM_CLOSED) {
-      dismiss.callback();
-    }
-  }
-});
-
-const BpkDialog = (props: Props) => (
-  <NativeDialog
-    onChange={createOnButtonClickHandler(props.actions, props.scrimAction)}
-    {...props}
-  />
-);
+const BpkDialog = (props: Props) => <NativeDialog {...props} />;
 
 BpkDialog.propTypes = commonPropTypes;
 BpkDialog.defaultProps = commonDefaultProps;

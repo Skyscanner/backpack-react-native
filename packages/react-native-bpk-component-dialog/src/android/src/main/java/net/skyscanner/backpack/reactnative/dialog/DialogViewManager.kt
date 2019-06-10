@@ -101,8 +101,8 @@ class DialogViewManager : ViewGroupManager<RNDialog>() {
   override fun addEventEmitters(reactContext: ThemedReactContext, view: RNDialog) {
     val dispatcher = reactContext.getNativeModule(UIManagerModule::class.java).eventDispatcher
 
-    view.onAction = { pos ->
-      dispatcher.dispatchEvent(DialogActionEvent(view.id, pos))
+    view.onAction = { type, pos ->
+      dispatcher.dispatchEvent(DialogActionEvent(view.id, type, pos))
     }
   }
 

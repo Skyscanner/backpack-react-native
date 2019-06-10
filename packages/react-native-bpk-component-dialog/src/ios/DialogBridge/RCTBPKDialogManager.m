@@ -26,6 +26,7 @@
 #import "RCTBPKDialogEventsManager.h"
 #import "RCTBPKDialogUtils.h"
 
+NS_ASSUME_NONNULL_BEGIN
 @implementation RCTConvert (RCTBPKDialog)
 
 RCT_ENUM_CONVERTER(BPKDialogControllerStyle, (@{
@@ -39,15 +40,13 @@ RCT_ENUM_CONVERTER(BPKDialogControllerStyle, (@{
 
 @end
 
-@implementation RCTBPKDialogManager
-{
+@implementation RCTBPKDialogManager {
     NSHashTable *_hostDialogs;
 }
 
 RCT_EXPORT_MODULE()
 
-- (UIView *)view
-{
+- (UIView *)view {
     RCTBPKDialog *dialog = [[RCTBPKDialog alloc] initWithBridge:self.bridge];
     dialog.delegate = self;
     if (!_hostDialogs) {
@@ -57,8 +56,7 @@ RCT_EXPORT_MODULE()
     return dialog;
 }
 
-- (void)presentBPKDialog:(RCTBPKDialog *)bpkDialog
-{
+- (void)presentDialog:(RCTBPKDialog *)bpkDialog {
     bpkDialog.dialogController = [BPKDialogController dialogControllerWithTitle:bpkDialog.title
                                                                         message:bpkDialog.message
                                                                           style:bpkDialog.style
@@ -66,7 +64,7 @@ RCT_EXPORT_MODULE()
                                                                       iconImage:[BPKIcon templateIconNamed:bpkDialog.iconImage size:BPKIconSizeLarge]];
     
     BPKDialogScrimAction *scrimAction = [BPKDialogScrimAction actionWithHandler:^(BOOL didDismiss) {
-        [[self.bridge moduleForClass:[RCTBPKDialogEventsManager class]] bpkDialogScrim:bpkDialog.identifier];
+        [[self.bridge moduleForClass:[RCTBPKDialogEventsManager class]] didInvokeScrimActionForDialogWithIdentifier:bpkDialog.identifier];
     } shouldDismiss:bpkDialog.scrimEnabled];
 
     bpkDialog.dialogController.scrimAction = scrimAction;
@@ -78,7 +76,8 @@ RCT_EXPORT_MODULE()
                                          actionWithTitle:[reactAction objectForKey:@"text"]
                                          style:style
                                          handler:^(BPKDialogButtonAction *dialogAction) {
-                                             [[self.bridge moduleForClass:[RCTBPKDialogEventsManager class]] bpkDialogAction:bpkDialog.identifier withIndex:[NSNumber numberWithInteger:i]];
+                                             [[self.bridge moduleForClass:[RCTBPKDialogEventsManager class]] didInvokeActionForDialogWithIdentifier:bpkDialog.identifier
+                                                                                                                                        actionIndex:[NSNumber numberWithInteger:i]];
 
                                          }];
         [bpkDialog.dialogController addButtonAction:action];
@@ -87,8 +86,7 @@ RCT_EXPORT_MODULE()
     [[bpkDialog reactViewController] presentViewController:bpkDialog.dialogController animated:YES completion:nil];
 }
 
-- (void)dismissBPKDialog:(RCTBPKDialog *)bpkDialog withViewController:(UIViewController *)viewController
-{
+- (void)dismissDialog:(RCTBPKDialog *)bpkDialog withViewController:(UIViewController *)viewController {
     [[bpkDialog reactViewController] dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -108,3 +106,4 @@ RCT_EXPORT_VIEW_PROPERTY(icon, NSDictionary)
 }
 
 @end
+NS_ASSUME_NONNULL_END

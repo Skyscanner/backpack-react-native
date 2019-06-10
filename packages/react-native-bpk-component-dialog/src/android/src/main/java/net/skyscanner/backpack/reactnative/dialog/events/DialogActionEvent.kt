@@ -24,6 +24,7 @@ import com.facebook.react.uimanager.events.RCTEventEmitter
 
 class DialogActionEvent(
   id: Int,
+  private val actionType: DialogActionType,
   private val pos: Int
 ): Event<DialogActionEvent>(id) {
   companion object {
@@ -40,6 +41,7 @@ class DialogActionEvent(
 
   private fun serializeEventData(): WritableMap {
     val eventData = Arguments.createMap()
+    eventData.putString("actionType", actionType.name)
     eventData.putInt("actionIndex", pos)
     return eventData
   }

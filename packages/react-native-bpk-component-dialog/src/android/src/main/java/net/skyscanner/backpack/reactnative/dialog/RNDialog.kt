@@ -21,12 +21,11 @@ import android.content.Context
 import android.widget.FrameLayout
 import net.skyscanner.backpack.button.BpkButton
 import net.skyscanner.backpack.dialog.BpkDialog
+import net.skyscanner.backpack.reactnative.dialog.events.DialogActionType
 
-typealias  ActionCallback = (Int) -> Unit
+typealias  ActionCallback = (DialogActionType, Int) -> Unit
 
 typealias Action = Pair<String, BpkButton.Type>
-
-const val SCRIM_CLOSED = -1
 
 class RNDialog(context: Context): FrameLayout(context) {
 
@@ -87,14 +86,14 @@ class RNDialog(context: Context): FrameLayout(context) {
     if (dirty) {
       dialog.setCanceledOnTouchOutside(scrimEnabled)
       dialog.setOnCancelListener {
-        onAction?.invoke(SCRIM_CLOSED)
+        onAction?.invoke(DialogActionType.SCRIM_ACTION, 0)
       }
       actions.forEachIndexed { index, element ->
         dialog.addActionButton(
           BpkButton(context, element.second).apply {
             text = element.first
             setOnClickListener {
-              onAction?.invoke(index)
+              onAction?.invoke(DialogActionType.BUTTON_ACTION, index)
             }
           }
         )

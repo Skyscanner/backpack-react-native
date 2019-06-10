@@ -21,10 +21,12 @@
 #import <React/RCTBridgeModule.h>
 #import <React/RCTEventEmitter.h>
 
+NS_ASSUME_NONNULL_BEGIN
 @interface RCTBPKDialogEventsManager : RCTEventEmitter <RCTBridgeModule>
 
-- (void)bpkDialogAction:(NSNumber *)identifier withIndex:(NSNumber *)index;
+- (void)didInvokeActionForDialogWithIdentifier:(NSNumber *)identifier actionIndex:(NSNumber *)index;
 
-- (void)bpkDialogScrim:(NSNumber *)identifier;
+- (void)didInvokeScrimActionForDialogWithIdentifier:(NSNumber *)identifier;
 
 @end
+NS_ASSUME_NONNULL_END

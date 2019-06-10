@@ -62,10 +62,6 @@ export type CommonProps = {
   isOpen: ?boolean,
 };
 
-export type NativeProps = {
-  onChange: ?([ActionButton]) => mixed,
-};
-
 export const commonPropTypes = {
   dialogType: PropTypes.oneOf(Object.keys(DIALOG_TYPE)).isRequired,
   title: PropTypes.string.isRequired,

@@ -26,32 +26,32 @@
 
 @class RCTBridge;
 
+NS_ASSUME_NONNULL_BEGIN
 @protocol RCTDialogInteractor;
 
 @interface RCTBPKDialog : UIView <RCTInvalidating>
 
-@property(nullable, nonatomic) NSNumber *identifier;
-@property(nullable, nonatomic) BPKDialogController *dialogController;
-@property(nullable, nonatomic) NSString *title;
-@property(nullable, nonatomic) NSString *message;
-@property(nullable, nonatomic) NSString *iconImage;
+@property(nonatomic, strong) NSNumber *identifier;
 
+@property(nonatomic) BPKDialogController *dialogController;
+@property(nonatomic) id<RCTDialogInteractor> delegate;
+
+@property(nonatomic, copy) NSString *title;
+@property(nonatomic) NSString *message;
+@property(nonatomic) NSString *iconImage;
 @property(nonatomic) BPKDialogControllerStyle style;
+@property(nonatomic, strong) UIColor *iconBackgroundColor;
+@property(nonatomic) NSMutableArray<NSDictionary *> *actions;
+@property(nonatomic) BOOL *scrimEnabled;
 
-@property(nullable, nonatomic, strong) UIColor *iconBackgroundColor;
-
-@property(nullable, nonatomic) NSMutableArray<NSDictionary *> *actions;
-@property(nullable, nonatomic) BOOL *scrimEnabled;
-
-@property (nullable, nonatomic) id<RCTDialogInteractor> delegate;
-
-- (instancetype _Nullable)initWithBridge:(RCTBridge *_Nonnull)bridge NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithBridge:(RCTBridge *)bridge NS_DESIGNATED_INITIALIZER;
 
 @end
 
 @protocol RCTDialogInteractor <NSObject>
 
-- (void)presentBPKDialog:(RCTBPKDialog *_Nonnull)bpkDialog;
-- (void)dismissBPKDialog:(RCTBPKDialog *_Nonnull)bpkDialog withViewController:(UIViewController *_Nonnull)viewController;
+- (void)presentDialog:(RCTBPKDialog *_Nonnull)bpkDialog;
+- (void)dismissDialog:(RCTBPKDialog *_Nonnull)bpkDialog withViewController:(UIViewController *_Nonnull)viewController;
 
 @end
+NS_ASSUME_NONNULL_END

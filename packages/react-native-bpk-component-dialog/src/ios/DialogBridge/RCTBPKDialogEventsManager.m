@@ -18,23 +18,22 @@
 
 #import "RCTBPKDialogEventsManager.h"
 
+NS_ASSUME_NONNULL_BEGIN
 @implementation RCTBPKDialogEventsManager
 
 RCT_EXPORT_MODULE();
 
-- (NSArray<NSString *> *)supportedEvents
-{
+- (NSArray<NSString *> *)supportedEvents {
     return @[ @"bpkDialogAction", @"bpkDialogScrim" ];
 }
 
-- (void)bpkDialogAction:(NSNumber *)identifier withIndex:(NSNumber *)index
-{
+- (void)didInvokeActionForDialogWithIdentifier:(NSNumber *)identifier actionIndex:(NSNumber *)index {
     [self sendEventWithName:@"bpkDialogAction" body:@{ @"identifier": identifier, @"actionIndex": index }];
 }
 
-- (void)bpkDialogScrim:(NSNumber *)identifier
-{
+- (void)didInvokeScrimActionForDialogWithIdentifier:(NSNumber *)identifier {
     [self sendEventWithName:@"bpkDialogScrim" body:@{ @"identifier": identifier }];
 }
 
 @end
+NS_ASSUME_NONNULL_END
