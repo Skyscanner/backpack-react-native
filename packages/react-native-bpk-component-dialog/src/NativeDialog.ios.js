@@ -48,7 +48,7 @@ export type State = {
 };
 
 class BpkDialog extends Component<Props> {
-  eventSubscriptions: [EmitterSubscription];
+  eventSubscriptions: Array<EmitterSubscription>;
 
   identifier: number;
 
