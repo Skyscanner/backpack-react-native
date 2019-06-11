@@ -23,9 +23,11 @@ import {
   requireNativeComponent,
   NativeModules,
   NativeEventEmitter,
+  processColor,
 } from 'react-native';
 import type EmitterSubscription from 'react-native/Libraries/vendor/emitter/EmitterSubscription';
 import isNil from 'lodash/isNil';
+import { colors } from 'bpk-tokens/tokens/base.react.native';
 
 import { commonPropTypes, type CommonProps } from './common-types';
 
@@ -46,7 +48,7 @@ export type State = {
 };
 
 class BpkDialog extends Component<Props> {
-  eventSubscription: ?EmitterSubscription;
+  eventSubscriptions: [EmitterSubscription];
 
   identifier: number;
 
@@ -54,43 +56,40 @@ class BpkDialog extends Component<Props> {
     super(props);
     this.identifier = uniqueModalIdentifier;
     uniqueModalIdentifier += 1;
+    this.eventSubscriptions = [];
   }
 
   componentDidMount() {
     if (BpkDialogEventEmitter) {
       const { actions, scrimAction } = this.props;
-      this.eventSubscription = BpkDialogEventEmitter.addListener(
-        'bpkDialogAction',
-        event => {
+      this.eventSubscriptions.push(
+        BpkDialogEventEmitter.addListener('bpkDialogAction', event => {
           if (
             !isNil(event.actionIndex) &&
             event.identifier === this.identifier
           ) {
             actions[event.actionIndex].callback();
           }
-        },
+        }),
       );
       if (scrimAction) {
-        this.eventSubscription = BpkDialogEventEmitter.addListener(
-          'bpkDialogScrim',
-          event => {
+        this.eventSubscriptions.push(
+          BpkDialogEventEmitter.addListener('bpkDialogScrim', event => {
             if (event.identifier === this.identifier) {
               scrimAction.callback();
             }
-          },
+          }),
         );
       }
     }
   }
 
   componentWillUnmount() {
-    if (this.eventSubscription) {
-      this.eventSubscription.remove();
-    }
+    this.eventSubscriptions.forEach(subscriber => subscriber.remove());
   }
 
   render() {
-    const { isOpen, scrimAction, ...rest } = this.props;
+    const { isOpen, scrimAction, icon, ...rest } = this.props;
 
     if (!isOpen) {
       return null;
@@ -100,6 +99,8 @@ class BpkDialog extends Component<Props> {
       <RCTBPKDialog
         identifier={this.identifier}
         scrimEnabled={scrimAction ? scrimAction.enabled : false}
+        iconId={icon.iconId}
+        iconColor={processColor(colors[icon.iconColor])}
         {...rest}
       />
     );

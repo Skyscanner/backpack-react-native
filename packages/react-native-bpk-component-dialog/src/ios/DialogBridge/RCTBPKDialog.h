@@ -23,6 +23,7 @@
 #import <Backpack/Dialog.h>
 
 #import "RCTBPKDialogManager.h"
+#import "RCTBPKDialogButtonAction.h"
 
 @class RCTBridge;
 
@@ -38,10 +39,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, copy) NSString *title;
 @property(nonatomic) NSString *message;
-@property(nonatomic) NSString *iconImage;
+@property(nonatomic) NSString *iconId;
 @property(nonatomic) BPKDialogControllerStyle style;
-@property(nonatomic, strong) UIColor *iconBackgroundColor;
-@property(nonatomic) NSMutableArray<NSDictionary *> *actions;
+@property(nonatomic, strong) UIColor *iconColor;
+@property(nonatomic, strong) NSMutableArray<RCTBPKDialogButtonAction *> *actions;
 @property(nonatomic) BOOL *scrimEnabled;
 
 - (instancetype)initWithBridge:(RCTBridge *)bridge NS_DESIGNATED_INITIALIZER;

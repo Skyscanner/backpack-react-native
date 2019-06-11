@@ -15,7 +15,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/* eslint-disable no-console */
 
 import { icons } from 'react-native-bpk-component-icon';
 
@@ -26,7 +25,7 @@ const defaultProps = {
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   icon: {
     iconId: icons.tick,
-    iconColor: 'green500',
+    iconColor: 'colorGreen500',
   },
   scrimAction: {
     enabled: true,

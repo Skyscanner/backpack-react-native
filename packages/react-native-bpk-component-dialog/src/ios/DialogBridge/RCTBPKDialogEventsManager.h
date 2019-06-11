@@ -24,9 +24,9 @@
 NS_ASSUME_NONNULL_BEGIN
 @interface RCTBPKDialogEventsManager : RCTEventEmitter <RCTBridgeModule>
 
-- (void)didInvokeActionForDialogWithIdentifier:(NSNumber *)identifier actionIndex:(NSNumber *)index;
+- (void)didInvokeActionForDialogWithIdentifier:(NSUInteger)identifier actionIndex:(NSUInteger)index;
 
-- (void)didInvokeScrimActionForDialogWithIdentifier:(NSNumber *)identifier;
+- (void)didInvokeScrimActionForDialogWithIdentifier:(NSUInteger)identifier;
 
 @end
 NS_ASSUME_NONNULL_END

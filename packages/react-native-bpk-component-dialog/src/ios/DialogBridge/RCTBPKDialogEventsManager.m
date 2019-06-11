@@ -27,12 +27,12 @@ RCT_EXPORT_MODULE();
     return @[ @"bpkDialogAction", @"bpkDialogScrim" ];
 }
 
-- (void)didInvokeActionForDialogWithIdentifier:(NSNumber *)identifier actionIndex:(NSNumber *)index {
-    [self sendEventWithName:@"bpkDialogAction" body:@{ @"identifier": identifier, @"actionIndex": index }];
+- (void)didInvokeActionForDialogWithIdentifier:(NSUInteger)identifier actionIndex:(NSUInteger)index {
+    [self sendEventWithName:@"bpkDialogAction" body:@{ @"identifier": @(identifier), @"actionIndex": @(index) }];
 }
 
-- (void)didInvokeScrimActionForDialogWithIdentifier:(NSNumber *)identifier {
-    [self sendEventWithName:@"bpkDialogScrim" body:@{ @"identifier": identifier }];
+- (void)didInvokeScrimActionForDialogWithIdentifier:(NSUInteger)identifier {
+    [self sendEventWithName:@"bpkDialogScrim" body:@{ @"identifier": @(identifier) }];
 }
 
 @end

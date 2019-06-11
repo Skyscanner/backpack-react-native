@@ -33,11 +33,11 @@ export type Props = {
   ...$Exact<CommonProps>,
 };
 
-const createActionHandler = (actions, dismiss) => event => {
+const createActionHandler = (actions, scrim) => event => {
   if (event.nativeEvent.actionType === 'BUTTON_ACTION') {
     actions[event.nativeEvent.actionIndex].callback();
   } else if (event.nativeEvent.actionType === 'SCRIM_ACTION') {
-    dismiss.callback();
+    scrim.callback();
   }
 };
 
@@ -48,9 +48,7 @@ const BpkDialog = (props: Props) => {
     <AndroidBPKDialogView
       icon={{
         iconId: `bpk_${icon.iconId.replace(/-/g, '_')}`,
-        iconColor: `bpk${icon.iconColor
-          .charAt(0)
-          .toUpperCase()}${icon.iconColor.slice(1)}`,
+        iconColor: icon.iconColor.replace('color', 'bpk'),
       }}
       onChange={createActionHandler(props.actions, scrimAction)}
       scrimEnabled={scrimAction.enabled}

@@ -25,6 +25,7 @@
 #import "RCTBPKDialog.h"
 #import "RCTBPKDialogEventsManager.h"
 #import "RCTBPKDialogUtils.h"
+#import "RCTBPKDialogButtonAction.h"
 
 NS_ASSUME_NONNULL_BEGIN
 @implementation RCTConvert (RCTBPKDialog)
@@ -56,47 +57,54 @@ RCT_EXPORT_MODULE()
     return dialog;
 }
 
-- (void)presentDialog:(RCTBPKDialog *)bpkDialog {
-    bpkDialog.dialogController = [BPKDialogController dialogControllerWithTitle:bpkDialog.title
-                                                                        message:bpkDialog.message
-                                                                          style:bpkDialog.style
-                                                            iconBackgroundColor:bpkDialog.iconBackgroundColor
-                                                                      iconImage:[BPKIcon templateIconNamed:bpkDialog.iconImage size:BPKIconSizeLarge]];
+- (void)presentDialog:(RCTBPKDialog *)dialog {
+    dialog.dialogController = [BPKDialogController dialogControllerWithTitle:dialog.title
+                                                                        message:dialog.message
+                                                                          style:dialog.style
+                                                            iconBackgroundColor:dialog.iconColor
+                                                                      iconImage:[BPKIcon templateIconNamed:dialog.iconId size:BPKIconSizeLarge]];
     
     BPKDialogScrimAction *scrimAction = [BPKDialogScrimAction actionWithHandler:^(BOOL didDismiss) {
-        [[self.bridge moduleForClass:[RCTBPKDialogEventsManager class]] didInvokeScrimActionForDialogWithIdentifier:bpkDialog.identifier];
-    } shouldDismiss:bpkDialog.scrimEnabled];
+        [[self.bridge moduleForClass:[RCTBPKDialogEventsManager class]] didInvokeScrimActionForDialogWithIdentifier:dialog.identifier.unsignedIntegerValue];
+    } shouldDismiss:dialog.scrimEnabled];
 
-    bpkDialog.dialogController.scrimAction = scrimAction;
+    dialog.dialogController.scrimAction = scrimAction;
 
-    for (NSUInteger i = 0; i < bpkDialog.actions.count; ++i) {
-        NSDictionary *reactAction = [bpkDialog.actions objectAtIndex:i];
-        BPKButtonStyle style = [RCTBPKDialogUtils map:[reactAction objectForKey:@"type"]];
+    for (NSUInteger i = 0; i < dialog.actions.count; ++i) {
+        RCTBPKDialogButtonAction *reactAction = dialog.actions[i];
         BPKDialogButtonAction *action = [BPKDialogButtonAction
-                                         actionWithTitle:[reactAction objectForKey:@"text"]
-                                         style:style
+                                         actionWithTitle:reactAction.title
+                                         style:reactAction.style
                                          handler:^(BPKDialogButtonAction *dialogAction) {
-                                             [[self.bridge moduleForClass:[RCTBPKDialogEventsManager class]] didInvokeActionForDialogWithIdentifier:bpkDialog.identifier
-                                                                                                                                        actionIndex:[NSNumber numberWithInteger:i]];
+                                             [[self.bridge moduleForClass:[RCTBPKDialogEventsManager class]] didInvokeActionForDialogWithIdentifier:dialog.identifier.unsignedIntegerValue
+                                                                                                                                        actionIndex:i];
 
                                          }];
-        [bpkDialog.dialogController addButtonAction:action];
+        [dialog.dialogController addButtonAction:action];
     }
-    
-    [[bpkDialog reactViewController] presentViewController:bpkDialog.dialogController animated:YES completion:nil];
+    if (self.presentationBlock) {
+        self.presentationBlock([dialog reactViewController], dialog.dialogController);
+    } else {
+        [[dialog reactViewController] presentViewController:dialog.dialogController animated:YES completion:nil];
+    }
 }
 
 - (void)dismissDialog:(RCTBPKDialog *)bpkDialog withViewController:(UIViewController *)viewController {
-    [[bpkDialog reactViewController] dismissViewControllerAnimated:YES completion:nil];
+    if (self.dismissalBlock) {
+        self.dismissalBlock([bpkDialog reactViewController], bpkDialog.dialogController);
+    } else {
+        [[bpkDialog reactViewController] dismissViewControllerAnimated:YES completion:nil];
+    }
 }
 
 RCT_REMAP_VIEW_PROPERTY(dialogType, style, BPKDialogControllerStyle)
 RCT_REMAP_VIEW_PROPERTY(description, message, NSString)
 RCT_EXPORT_VIEW_PROPERTY(title, NSString)
 RCT_EXPORT_VIEW_PROPERTY(identifier, NSNumber)
-RCT_EXPORT_VIEW_PROPERTY(actions, NSArray<NSDictionary *> *)
+RCT_EXPORT_VIEW_PROPERTY(actions, NSArray<RCTBPKDialogButtonAction *> *)
 RCT_EXPORT_VIEW_PROPERTY(scrimEnabled, BOOL)
-RCT_EXPORT_VIEW_PROPERTY(icon, NSDictionary)
+RCT_EXPORT_VIEW_PROPERTY(iconId, NSString)
+RCT_EXPORT_VIEW_PROPERTY(iconColor, UIColor *)
 
 - (void)invalidate {
     for (RCTBPKDialog *hostDialog in _hostDialogs) {

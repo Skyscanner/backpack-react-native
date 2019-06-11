@@ -71,11 +71,5 @@ RCT_NOT_IMPLEMENTED(- (instancetype _Nullable)initWithCoder:coder)
     });
 }
 
-- (void)setIcon:(NSDictionary *)icon {
-    _iconImage = icon[@"iconId"];
-    NSString *iconColor = icon[@"iconColor"];
-    _iconBackgroundColor = [BPKColor valueForKey:iconColor];
-}
-
 @end
 NS_ASSUME_NONNULL_END

@@ -19,6 +19,7 @@
 /* @flow */
 
 import React from 'react';
+import { colors } from 'bpk-tokens/tokens/base.react.native';
 
 import {
   commonPropTypes,
@@ -31,7 +32,12 @@ export type Props = {
   ...$Exact<CommonProps>,
 };
 
-const BpkDialog = (props: Props) => <NativeDialog {...props} />;
+const BpkDialog = (props: Props) => {
+  if (!colors[props.icon.iconColor]) {
+    throw new Error('iconColor is not a backpack color from bpk-tokens.');
+  }
+  return <NativeDialog {...props} />;
+};
 
 BpkDialog.propTypes = commonPropTypes;
 BpkDialog.defaultProps = commonDefaultProps;

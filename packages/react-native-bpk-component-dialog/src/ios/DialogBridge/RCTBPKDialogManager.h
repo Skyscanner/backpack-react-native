@@ -19,7 +19,7 @@
 #import <React/RCTViewManager.h>
 
 NS_ASSUME_NONNULL_BEGIN
-typedef void (^RCTDialogInteractor)(UIViewController *reactViewController, UIViewController *viewController, dispatch_block_t completionBlock);
+typedef void (^RCTDialogInteractor)(UIViewController *reactViewController, UIViewController *viewController);
 
 @interface RCTBPKDialogManager : RCTViewManager <RCTInvalidating>
 
