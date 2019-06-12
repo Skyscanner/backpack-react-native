@@ -2,6 +2,12 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-06-12 - Fix for `BpkPanel` where padding was off
+
+**Fixed:**
+- react-native-bpk-component-panel:
+  - Fixed an issue that was causing `padded` to default to `false` when it should have been `true`
+
 # 2019-06-12 - Initial release of Dialog
 
 **Added:**

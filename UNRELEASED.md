@@ -2,10 +2,6 @@
 
 > Place your changes below this line.
 
-**Fixed:**
-- react-native-bpk-component-panel:
-  - Fixed an issue that was causing `padded` to default to `false` when it should have been `true`
-
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
