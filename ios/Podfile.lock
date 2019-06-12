@@ -16,7 +16,7 @@ PODS:
   - react-native-bpk-component-calendar (0.3.14):
     - Backpack (~> 8.0)
     - React
-  - react-native-bpk-component-dialog (0.3.10):
+  - react-native-bpk-component-dialog (0.0.1):
     - Backpack (~> 8.0)
     - React
   - react-native-maps (0.24.2):

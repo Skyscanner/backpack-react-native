@@ -170,7 +170,7 @@ storiesOf('react-native-bpk-component-dialog', module)
       isOpen
     />
   ))
-  .add('docs:no-scrim', () => (
+  .add('docs:no-scrim-action', () => (
     <TriggerDialogComponent
       dialogType={DIALOG_TYPE.alert}
       title={dialogTitle}
