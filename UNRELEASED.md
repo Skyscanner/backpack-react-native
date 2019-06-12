@@ -2,7 +2,7 @@
 
 > Place your changes below this line.
 
-**Patched:**
+**Fixed:**
 - react-native-bpk-component-panel:
   - Patch for panel issue where panels with dividers had `padded` set to `false` by default
 
