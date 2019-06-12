@@ -2,10 +2,6 @@
 
 > Place your changes below this line.
 
-**Added:**
-
-- `react-native-bpk-component-dialog`:
-  - New implementation of the Dialog component in React Native (JS).
 
 ## How to write a good changelog entry
 

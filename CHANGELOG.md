@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-06-12 - Initial release of Dialog
+
+**Added:**
+
+- `react-native-bpk-component-dialog`: 0.1.0
+  - New implementation of the Dialog component in React Native (JS).
+
 # 2019-06-05 - Updated icons
 
 **Updated:**
