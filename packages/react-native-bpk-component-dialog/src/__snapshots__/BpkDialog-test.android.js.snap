@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`iOS BpkDialog should render correctly 1`] = `null`;
+
+exports[`iOS BpkDialog should render correctly open 1`] = `
+<RCTBPKDialog
+  actions={Array []}
+  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  dialogType="alert"
+  iconColor={4278245237}
+  iconId="tick"
+  identifier={1}
+  scrimEnabled={true}
+  title="BackpackDialog"
+/>
+`;
+
+exports[`iOS BpkDialog should render correctly with bottom sheet style 1`] = `
+<RCTBPKDialog
+  actions={Array []}
+  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  dialogType="alert"
+  iconColor={4278245237}
+  iconId="tick"
+  identifier={5}
+  scrimEnabled={true}
+  title="BackpackDialog"
+  type="bottomSheet"
+/>
+`;
+
+exports[`iOS BpkDialog should render correctly with disabled scrim actions 1`] = `
+<RCTBPKDialog
+  actions={Array []}
+  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  dialogType="alert"
+  iconColor={4278245237}
+  iconId="tick"
+  identifier={4}
+  scrimEnabled={false}
+  title="BackpackDialog"
+  type="alert"
+/>
+`;
+
+exports[`iOS BpkDialog should render correctly with one actions 1`] = `
+<RCTBPKDialog
+  actions={
+    Array [
+      Object {
+        "callback": [Function],
+        "text": "Yes",
+        "type": "primary",
+      },
+    ]
+  }
+  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  dialogType="alert"
+  iconColor={4278245237}
+  iconId="tick"
+  identifier={2}
+  scrimEnabled={true}
+  title="BackpackDialog"
+  type="alert"
+/>
+`;
+
+exports[`iOS BpkDialog should render correctly with two actions 1`] = `
+<RCTBPKDialog
+  actions={
+    Array [
+      Object {
+        "callback": [Function],
+        "text": "Yes",
+        "type": "primary",
+      },
+      Object {
+        "callback": [Function],
+        "text": "No",
+        "type": "destructive",
+      },
+    ]
+  }
+  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  dialogType="alert"
+  iconColor={4278245237}
+  iconId="tick"
+  identifier={3}
+  scrimEnabled={true}
+  title="BackpackDialog"
+  type="alert"
+/>
+`;
