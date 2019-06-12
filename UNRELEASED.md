@@ -2,6 +2,9 @@
 
 > Place your changes below this line.
 
+**Fixed:**
+- react-native-bpk-component-panel:
+  - Fixed an issue that was causing `padded` to default to `false` when it should have been `true`
 
 ## How to write a good changelog entry
 

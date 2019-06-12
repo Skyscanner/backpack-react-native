@@ -58,6 +58,9 @@ const styles = StyleSheet.create({
   panelMainStyle: {
     flex: 3,
   },
+  panelStubStyle: {
+    paddingLeft: 16, // eslint-disable-line backpack/use-tokens
+  },
 });
 
 storiesOf('react-native-bpk-component-panel', module)
@@ -95,6 +98,7 @@ storiesOf('react-native-bpk-component-panel', module)
         stub={stubContent}
         style={styles.panelListItem}
         mainStyle={styles.panelMainStyle}
+        stubStyle={styles.panelStubStyle}
       >
         {mainContent}
       </BpkPanelWithDivider>
