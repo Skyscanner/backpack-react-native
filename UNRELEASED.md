@@ -2,6 +2,11 @@
 
 > Place your changes below this line.
 
+**Added:**
+
+- `react-native-bpk-component-dialog`:
+  - New implementation of the Dialog component in React Native (JS).
+
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
@@ -20,17 +25,11 @@ See [`CHANGELOG.md`](CHANGELOG.md) for real-world examples of good changelog ent
   - Replaced `charmeleon` icon with new `charizard` icon. To upgrade, replace your references to `charmeleon` with `charizard`.
   - Upgraded `fire` dependency to `3.0.0`.
 
-- react-native-bpk-component-button:
-  - Aligned iOS secondary and destructive buttons to iOS native buttons.
-  - Tweaked the theming props for border radius. See *Theme props* section of https://backpack.github.io/components/button/?platform=native.
-
 **Added:**
 
 - `bpk-component-infinity-gauntlet`:
   - New `timeStone` prop for controlling time. See &lt;link to docs site&gt;.
 
-- `react-native-bpk-component-dialog`:
-  - New implementation of the Dialog component in React Native (JS).
 
 **Fixed:**
 
