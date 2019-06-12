@@ -10,6 +10,9 @@ exports[`iOS withDivider should render correctly 1`] = `
         "borderRadius": 4,
         "borderWidth": 1,
       },
+      Object {
+        "padding": 16,
+      },
       Array [
         Object {
           "flexDirection": "row",
@@ -93,6 +96,9 @@ exports[`iOS withDivider should render correctly with arbitrary props 1`] = `
         "borderColor": "rgb(230, 228, 235)",
         "borderRadius": 4,
         "borderWidth": 1,
+      },
+      Object {
+        "padding": 16,
       },
       Array [
         Object {
@@ -178,6 +184,9 @@ exports[`iOS withDivider should render correctly with custom main style 1`] = `
         "borderColor": "rgb(230, 228, 235)",
         "borderRadius": 4,
         "borderWidth": 1,
+      },
+      Object {
+        "padding": 16,
       },
       Array [
         Object {
@@ -265,6 +274,9 @@ exports[`iOS withDivider should render correctly with custom stub style 1`] = `
         "borderColor": "rgb(230, 228, 235)",
         "borderRadius": 4,
         "borderWidth": 1,
+      },
+      Object {
+        "padding": 16,
       },
       Array [
         Object {

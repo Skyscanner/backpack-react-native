@@ -118,7 +118,12 @@ const withDivider = (PanelComponent: ComponentType<BpkPanelProps>) => {
     }
 
     return (
-      <PanelComponent padded={false} style={panelStyle} theme={theme} {...rest}>
+      <PanelComponent
+        padded={padded}
+        style={panelStyle}
+        theme={theme}
+        {...rest}
+      >
         <View style={mainStyle}>{children}</View>
         <View style={punchlineStyle} />
         <View style={stubStyle}>{stub}</View>
