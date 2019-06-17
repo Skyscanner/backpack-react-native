@@ -75,7 +75,7 @@ Once you have Ruby, install [Bundler](https://bundler.io) with `gem install bund
 
 Get [Homebrew](https://brew.sh/) if you don't already have it.
 
-Install Watchman with `brew install watchman`, then install Java 8 with `brew tap caskroom/versions && brew cask install java8`.
+Install Watchman with `brew install watchman`, then install Java 8 with `brew cask install adoptopenjdk/openjdk/adoptopenjdk8`.
 
 Get Android Studio with `brew cask install android-studio`. Once installed, open it and a setup wizard will guide you through installing lots of extra things like the Android SDK (choose *Standard* installation). You may be asked for your password during this. You're free to close Android Studio once this is done.
 
@@ -166,7 +166,7 @@ Sketch is the preferred format for non-technical folks. We’d appreciate if you
 
 ### React component
 
-Use `npm run create-component` to create a new skeleton React component. Once this is created, use existing components for code style inspiration.
+Use `npm run create-component` to create a new skeleton React Native component. Once this is created, use existing components for code style inspiration.
 
 ## How to
 
