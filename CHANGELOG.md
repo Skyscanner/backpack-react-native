@@ -2,6 +2,14 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-06-18 - Update iOS pod dependency
+
+**Breaking:**
+
+- `bpk-component-calendar`: 0.3.4 => 1.0.0
+- `bpk-component-dialog`: 0.1.0 => 1.0.0
+  - Upgraded Backpack pod dependency to `10.0.0`.
+
 # 2019-06-12 - Fix for `BpkPanel` where padding was off
 
 **Fixed:**

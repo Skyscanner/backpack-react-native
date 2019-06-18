@@ -1,11 +1,6 @@
 # Unreleased
 
 > Place your changes below this line.
-**Breaking:**
-
-- `bpk-component-calendar`:
-- `bpk-component-dialog`:
-  - Upgraded Backpack pod dependency to `10.0.0`.
 
 ## How to write a good changelog entry
 
