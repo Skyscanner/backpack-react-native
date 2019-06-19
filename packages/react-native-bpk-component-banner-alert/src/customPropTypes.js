@@ -1,5 +1,3 @@
-import { isString } from 'util';
-
 /*
  * Backpack - Skyscanner's Design System
  *
@@ -20,7 +18,11 @@ import { isString } from 'util';
 
 /* @flow */
 
-export const dismissablePropType = (props, propName, componentName) => {
+export const dismissablePropType = (
+  props: { [string]: any },
+  propName: string,
+  componentName: string,
+) => {
   if (props[propName] && props.children !== null) {
     return new Error(
       `Invalid prop \`${propName}\` with value \`${
@@ -32,9 +34,9 @@ export const dismissablePropType = (props, propName, componentName) => {
   return false;
 };
 export const toggleExpandedButtonLabelPropType = (
-  props,
-  propName,
-  componentName,
+  props: { [string]: any },
+  propName: string,
+  componentName: string,
 ) => {
   if (!props[propName] && props.children !== null) {
     return new Error(
@@ -46,8 +48,15 @@ export const toggleExpandedButtonLabelPropType = (
 
   return false;
 };
-export const dismissableLabelPropType = (props, propName, componentName) => {
-  if (props.dismissable && (!props[propName] || !isString(props[propName]))) {
+export const dismissableLabelPropType = (
+  props: { [string]: any },
+  propName: string,
+  componentName: string,
+) => {
+  if (
+    props.dismissable &&
+    (!props[propName] || !typeof props[propName] === 'string')
+  ) {
     return new Error(
       `Invalid prop \`${propName}\` with value \`${
         props[propName]
