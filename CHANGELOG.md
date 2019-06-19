@@ -2,6 +2,12 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-06-19
+
+**Fixed:**
+ - `react-native-bpk-component-banner-alert`: 5.0.34 => 5.0.35
+  - Fixed an issue with using `isString` and replaced with a better solution.
+
 # 2019-06-18 - Update iOS pod dependency
 
 **Breaking:**
