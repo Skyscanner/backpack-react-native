@@ -21,15 +21,17 @@
 import React, { Fragment } from 'react';
 import { Platform, StyleSheet } from 'react-native';
 import BpkText, { WEIGHT_STYLES } from 'react-native-bpk-component-text';
-import { spacingSm, spacingLg } from 'bpk-tokens/tokens/base.react.native';
+import { spacingSm, fontSizeLg } from 'bpk-tokens/tokens/base.react.native';
 
 import BpkButtonIcon from './BpkButtonIcon';
 import { type IconType } from './common-types';
 
 const styles = StyleSheet.create({
+  text: {
+    lineHeight: fontSizeLg,
+  },
   icon: {
     marginEnd: spacingSm,
-    ...(Platform.OS === 'android' ? { lineHeight: spacingLg - spacingSm } : {}),
   },
   iconTrailing: {
     marginStart: spacingSm,
@@ -38,6 +40,7 @@ const styles = StyleSheet.create({
   iconOnly: {
     marginStart: 0,
     marginEnd: 0,
+    ...(Platform.OS === 'android' ? { lineHeight: fontSizeLg } : {}),
   },
 });
 
@@ -61,7 +64,8 @@ const BpkButtonInner = (props: Props) => {
   } = props;
 
   const iconStyle = [styles.icon, { color }];
-  const textStyle = { color };
+  const textStyle =
+    Platform.OS === 'android' ? [styles.text, { color }] : { color };
 
   if (iconTrailing) {
     iconStyle.push(styles.iconTrailing);

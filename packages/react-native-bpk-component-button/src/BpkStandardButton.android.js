@@ -24,6 +24,7 @@ import BpkIcon from 'react-native-bpk-component-icon';
 import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-native-feedback';
 import {
   buttonBorderWidth,
+  elevationSm,
   spacingSm,
   spacingMd,
   spacingBase,
@@ -35,6 +36,7 @@ type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
 const styles = StyleSheet.create({
   wrapper: {
     overflow: 'hidden',
+    elevation: elevationSm,
   },
   button: {
     alignItems: 'center',

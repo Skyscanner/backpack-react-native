@@ -83,7 +83,6 @@ exports[`Android BpkNudger should render correctly 1`] = `
             },
             Array [
               Object {
-                "lineHeight": 20,
                 "marginEnd": 4,
               },
               Object {
@@ -94,6 +93,7 @@ exports[`Android BpkNudger should render correctly 1`] = `
                 "marginStart": 4,
               },
               Object {
+                "lineHeight": 20,
                 "marginEnd": 0,
                 "marginStart": 0,
               },
@@ -198,7 +198,6 @@ exports[`Android BpkNudger should render correctly 1`] = `
             },
             Array [
               Object {
-                "lineHeight": 20,
                 "marginEnd": 4,
               },
               Object {
@@ -209,6 +208,7 @@ exports[`Android BpkNudger should render correctly 1`] = `
                 "marginStart": 4,
               },
               Object {
+                "lineHeight": 20,
                 "marginEnd": 0,
                 "marginStart": 0,
               },
@@ -306,7 +306,6 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
             },
             Array [
               Object {
-                "lineHeight": 20,
                 "marginEnd": 4,
               },
               Object {
@@ -317,6 +316,7 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
                 "marginStart": 4,
               },
               Object {
+                "lineHeight": 20,
                 "marginEnd": 0,
                 "marginStart": 0,
               },
@@ -421,7 +421,6 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
             },
             Array [
               Object {
-                "lineHeight": 20,
                 "marginEnd": 4,
               },
               Object {
@@ -432,6 +431,7 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
                 "marginStart": 4,
               },
               Object {
+                "lineHeight": 20,
                 "marginEnd": 0,
                 "marginStart": 0,
               },
@@ -529,7 +529,6 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
             },
             Array [
               Object {
-                "lineHeight": 20,
                 "marginEnd": 4,
               },
               Object {
@@ -540,6 +539,7 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
                 "marginStart": 4,
               },
               Object {
+                "lineHeight": 20,
                 "marginEnd": 0,
                 "marginStart": 0,
               },
@@ -644,7 +644,6 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
             },
             Array [
               Object {
-                "lineHeight": 20,
                 "marginEnd": 4,
               },
               Object {
@@ -655,6 +654,7 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
                 "marginStart": 4,
               },
               Object {
+                "lineHeight": 20,
                 "marginEnd": 0,
                 "marginStart": 0,
               },
@@ -752,7 +752,6 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
             },
             Array [
               Object {
-                "lineHeight": 20,
                 "marginEnd": 4,
               },
               Object {
@@ -763,6 +762,7 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
                 "marginStart": 4,
               },
               Object {
+                "lineHeight": 20,
                 "marginEnd": 0,
                 "marginStart": 0,
               },
@@ -867,7 +867,6 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
             },
             Array [
               Object {
-                "lineHeight": 20,
                 "marginEnd": 4,
               },
               Object {
@@ -878,6 +877,7 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
                 "marginStart": 4,
               },
               Object {
+                "lineHeight": 20,
                 "marginEnd": 0,
                 "marginStart": 0,
               },
