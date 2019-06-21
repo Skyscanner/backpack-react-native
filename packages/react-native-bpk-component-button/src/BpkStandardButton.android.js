@@ -38,6 +38,9 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
     elevation: elevationSm,
   },
+  wrapperDisabled: {
+    elevation: null,
+  },
   button: {
     alignItems: 'center',
     flexDirection: 'row',
@@ -79,8 +82,16 @@ const BpkStandardButton = (props: Props) => {
     ...rest
   } = props;
 
-  const wrapperStyle = [styles.wrapper, { borderRadius }, userStyle];
+  const wrapperStyle = [styles.wrapper, { borderRadius }];
   const buttonStyle = [styles.button, { borderRadius, backgroundColor }];
+
+  if (disabled) {
+    wrapperStyle.push(styles.wrapperDisabled);
+  }
+
+  if (userStyle) {
+    wrapperStyle.push(userStyle);
+  }
 
   if (iconTrailing) {
     buttonStyle.push(styles.buttonIconTrailing);

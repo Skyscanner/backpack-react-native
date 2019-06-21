@@ -11,7 +11,6 @@ exports[`Android API levels Android API<21 should render without ripple 1`] = `
       Object {
         "borderRadius": 40,
       },
-      null,
     ]
   }
 >
@@ -91,7 +90,6 @@ exports[`Android API levels Android API>=21 should render with ripple 1`] = `
       Object {
         "borderRadius": 40,
       },
-      null,
     ]
   }
 >
@@ -172,7 +170,6 @@ exports[`Android BpkButton should render correctly 1`] = `
       Object {
         "borderRadius": 40,
       },
-      null,
     ]
   }
 >
@@ -253,7 +250,6 @@ exports[`Android BpkButton should render correctly with iconAlignment="leading" 
       Object {
         "borderRadius": 40,
       },
-      null,
     ]
   }
 >
@@ -357,7 +353,6 @@ exports[`Android BpkButton should render correctly with iconAlignment="trailing"
       Object {
         "borderRadius": 40,
       },
-      null,
     ]
   }
 >
@@ -632,7 +627,6 @@ exports[`Android BpkButton should render correctly with type="featured" 1`] = `
       Object {
         "borderRadius": 40,
       },
-      null,
     ]
   }
 >
@@ -713,7 +707,9 @@ exports[`Android BpkButton should render correctly with type="featured" and disa
       Object {
         "borderRadius": 40,
       },
-      null,
+      Object {
+        "elevation": null,
+      },
     ]
   }
 >
@@ -794,7 +790,6 @@ exports[`Android BpkButton should render correctly with type="primary" 1`] = `
       Object {
         "borderRadius": 40,
       },
-      null,
     ]
   }
 >
@@ -875,7 +870,9 @@ exports[`Android BpkButton should render correctly with type="primary" and disab
       Object {
         "borderRadius": 40,
       },
-      null,
+      Object {
+        "elevation": null,
+      },
     ]
   }
 >
@@ -1120,7 +1117,6 @@ exports[`Android BpkButton should support elements as icons 1`] = `
       Object {
         "borderRadius": 40,
       },
-      null,
     ]
   }
 >
@@ -1213,7 +1209,6 @@ exports[`Android BpkButton should support having an icon as well as a title 1`] 
       Object {
         "borderRadius": 40,
       },
-      null,
     ]
   }
 >
@@ -1407,7 +1402,9 @@ exports[`Android BpkButton should support the "disabled" property 1`] = `
       Object {
         "borderRadius": 40,
       },
-      null,
+      Object {
+        "elevation": null,
+      },
     ]
   }
 >
@@ -1488,7 +1485,6 @@ exports[`Android BpkButton should support the "icon" property 1`] = `
       Object {
         "borderRadius": 40,
       },
-      null,
     ]
   }
 >
@@ -1599,7 +1595,6 @@ exports[`Android BpkButton should support the "iconOnly" property 1`] = `
       Object {
         "borderRadius": 40,
       },
-      null,
     ]
   }
 >
@@ -1773,7 +1768,6 @@ exports[`Android BpkButtonThemed should render correctly 1`] = `
       Object {
         "borderRadius": 4,
       },
-      null,
     ]
   }
 >
