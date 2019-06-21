@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     elevation: elevationSm,
   },
   wrapperDisabled: {
-    elevation: null,
+    elevation: 0,
   },
   button: {
     alignItems: 'center',

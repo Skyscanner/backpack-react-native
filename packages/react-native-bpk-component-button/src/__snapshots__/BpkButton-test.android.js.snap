@@ -708,7 +708,7 @@ exports[`Android BpkButton should render correctly with type="featured" and disa
         "borderRadius": 40,
       },
       Object {
-        "elevation": null,
+        "elevation": 0,
       },
     ]
   }
@@ -871,7 +871,7 @@ exports[`Android BpkButton should render correctly with type="primary" and disab
         "borderRadius": 40,
       },
       Object {
-        "elevation": null,
+        "elevation": 0,
       },
     ]
   }
@@ -1403,7 +1403,7 @@ exports[`Android BpkButton should support the "disabled" property 1`] = `
         "borderRadius": 40,
       },
       Object {
-        "elevation": null,
+        "elevation": 0,
       },
     ]
   }
