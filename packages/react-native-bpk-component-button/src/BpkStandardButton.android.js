@@ -24,6 +24,7 @@ import BpkIcon from 'react-native-bpk-component-icon';
 import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-native-feedback';
 import {
   buttonBorderWidth,
+  elevationSm,
   spacingSm,
   spacingMd,
   spacingBase,
@@ -35,6 +36,10 @@ type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
 const styles = StyleSheet.create({
   wrapper: {
     overflow: 'hidden',
+    elevation: elevationSm,
+  },
+  wrapperDisabled: {
+    elevation: 0,
   },
   button: {
     alignItems: 'center',
@@ -77,8 +82,16 @@ const BpkStandardButton = (props: Props) => {
     ...rest
   } = props;
 
-  const wrapperStyle = [styles.wrapper, { borderRadius }, userStyle];
+  const wrapperStyle = [styles.wrapper, { borderRadius }];
   const buttonStyle = [styles.button, { borderRadius, backgroundColor }];
+
+  if (disabled) {
+    wrapperStyle.push(styles.wrapperDisabled);
+  }
+
+  if (userStyle) {
+    wrapperStyle.push(userStyle);
+  }
 
   if (iconTrailing) {
     buttonStyle.push(styles.buttonIconTrailing);

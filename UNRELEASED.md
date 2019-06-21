@@ -2,6 +2,12 @@
 
 > Place your changes below this line.
 
+**Changed:**
+
+- `react-native-bpk-component-button`:
+  - On Android, 'primary' and 'featured' buttons now have built-in elevation to align closer to Material.
+  - Fixed a bug where buttons on Android that didn't contain icons didn't have the correct height. Now all buttons are `36dp` high.
+
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
