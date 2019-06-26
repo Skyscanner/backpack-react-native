@@ -2,6 +2,14 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-06-26 - Update iOS pod dependency
+
+**Fixed:**
+
+- `react-native-bpk-component-calendar`: 1.0.1 => 1.0.2
+- `react-native-bpk-component-dialog`: 1.0.1 => 1.0.2
+  - Upgraded Backpack pod dependecy version from 10.0 to 11.0.
+
 # 2019-06-21
 
 **Changed:**
@@ -20,8 +28,8 @@
 
 **Breaking:**
 
-- `bpk-component-calendar`: 0.3.4 => 1.0.0
-- `bpk-component-dialog`: 0.1.0 => 1.0.0
+- `react-native-bpk-component-calendar`: 0.3.4 => 1.0.0
+- `react-native-bpk-component-dialog`: 0.1.0 => 1.0.0
   - Upgraded Backpack pod dependency to `10.0.0`.
 
 # 2019-06-12 - Fix for `BpkPanel` where padding was off
