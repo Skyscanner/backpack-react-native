@@ -1,6 +1,10 @@
 # Unreleased
 
 > Place your changes below this line.
+**Fixed:**
+
+- `react-native-bpk-component-calendar`:
+  - Increased `Backpack` pod dependecy version from 10.0 to 11.0 in podspec.
 
 ## How to write a good changelog entry
 
