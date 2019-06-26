@@ -102,7 +102,7 @@
     "danger": "^9.0.0",
     "eslint-config-skyscanner-with-prettier": "^0.8.0",
     "eslint-plugin-flowtype": "^3.2.0",
-    "eslint_d": "^7.2.0",
+    "eslint_d": "^8.0.0",
     "flow-bin": "^0.92.0",
     "globby": "^9.1.0",
     "husky": "^2.0.0",
