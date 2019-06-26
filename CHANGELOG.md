@@ -8,7 +8,7 @@
 
 - `react-native-bpk-component-calendar`: 1.0.1 => 1.0.2
 - `react-native-bpk-component-dialog`: 1.0.1 => 1.0.2
-  - Upgraded Backpack pod dependecy version from 10.0 to 11.0.
+  - Upgraded Backpack pod dependency version from 10.0 to 11.0.
 
 # 2019-06-21
 
