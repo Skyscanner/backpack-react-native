@@ -1744,7 +1744,7 @@ exports[`iOS BpkButton should support the "secondary" property 1`] = `
 </View>
 `;
 
-exports[`iOS BpkButtonThemed should not apply border radius when a theme 1`] = `
+exports[`iOS BpkButtonThemed should not apply border radius when a theme is applied 1`] = `
 <View
   accessibilityComponentType="button"
   accessibilityLabel="Lorem ipsum"

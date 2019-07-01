@@ -1757,7 +1757,7 @@ exports[`Android BpkButton should support the "secondary" property 1`] = `
 </View>
 `;
 
-exports[`Android BpkButtonThemed should not apply border radius when a theme 1`] = `
+exports[`Android BpkButtonThemed should not apply border radius when a theme is applied 1`] = `
 <View
   style={
     Array [
