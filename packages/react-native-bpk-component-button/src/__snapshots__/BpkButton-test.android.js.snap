@@ -1757,6 +1757,100 @@ exports[`Android BpkButton should support the "secondary" property 1`] = `
 </View>
 `;
 
+exports[`Android BpkButtonThemed should not apply border radius when a theme 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "elevation": 2,
+        "overflow": "hidden",
+      },
+      Object {
+        "borderRadius": 40,
+      },
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Lorem ipsum"
+    accessible={true}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
+        Object {
+          "backgroundColor": "green",
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
+        Object {
+          "paddingHorizontal": 10,
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "color": "rgb(82, 76, 97)",
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "marginEnd": 4,
+            },
+            Object {
+              "color": "red",
+            },
+            Object {
+              "marginEnd": 0,
+              "marginStart": 4,
+            },
+            Object {
+              "marginEnd": 0,
+              "marginStart": 0,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</View>
+`;
+
 exports[`Android BpkButtonThemed should render correctly 1`] = `
 <View
   style={

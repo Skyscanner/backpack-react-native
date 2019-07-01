@@ -42,8 +42,13 @@ function valueOrDefault<T>(
   return (haystack && haystack[needle]) || defaultValue;
 }
 
-export const borderRadiusForTheme = (themeAttributes: ?Theme): number =>
-  valueOrDefault(themeAttributes, 'buttonBorderRadius', borderRadiusPill);
+export const borderRadiusForTheme = (
+  themeAttributes: ?Theme,
+  iconOnly: boolean,
+): number =>
+  iconOnly
+    ? borderRadiusPill
+    : valueOrDefault(themeAttributes, 'buttonBorderRadius', borderRadiusPill);
 
 export const backgroundColorForType = (
   type: ButtonType,
