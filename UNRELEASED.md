@@ -4,7 +4,7 @@
 
 **Fixed:**
 - react-native-bpk-component-button
-  - `iconOnly` buttons now apply `boarderRadius` theming when applied, to remain pill shaped.
+  - `iconOnly` buttons no longer apply `boarderRadius` from theming. The iconOnly buttons now remain circular regardless of radius.
 
 ## How to write a good changelog entry
 

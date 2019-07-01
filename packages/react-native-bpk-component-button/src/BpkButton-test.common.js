@@ -194,7 +194,7 @@ const commonTests = () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it('should not apply border radius when a theme', () => {
+    it('should not apply border radius when a theme is applied', () => {
       const theme = {
         buttonPrimaryTextColor: 'red',
         buttonPrimaryGradientStartColor: 'green',
