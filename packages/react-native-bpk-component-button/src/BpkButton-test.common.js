@@ -193,6 +193,28 @@ const commonTests = () => {
         .toJSON();
       expect(tree).toMatchSnapshot();
     });
+
+    it('should not apply border radius when a theme is applied', () => {
+      const theme = {
+        buttonPrimaryTextColor: 'red',
+        buttonPrimaryGradientStartColor: 'green',
+        buttonPrimaryGradientEndColor: 'blue',
+        buttonBorderRadius: 4,
+      };
+      const tree = renderer
+        .create(
+          <BpkThemeProvider theme={theme}>
+            <BpkButton
+              iconOnly
+              icon="baggage"
+              title="Lorem ipsum"
+              onPress={onPressFn}
+            />
+          </BpkThemeProvider>,
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
   });
 };
 

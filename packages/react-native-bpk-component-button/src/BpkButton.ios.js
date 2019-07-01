@@ -132,7 +132,7 @@ const BpkButton = (props: Props) => {
       accessibilityComponentType="button"
       accessibilityLabel={accessibilityLabel || title}
       accessibilityTraits={accessibilityTraits}
-      borderRadius={borderRadiusForTheme(themeAttributes)}
+      borderRadius={borderRadiusForTheme(themeAttributes, iconOnly)}
       {...buttonColorsForType(type, themeAttributes, disabled)}
       {...rest}
     >

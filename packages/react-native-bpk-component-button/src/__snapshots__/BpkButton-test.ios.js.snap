@@ -1744,6 +1744,113 @@ exports[`iOS BpkButton should support the "secondary" property 1`] = `
 </View>
 `;
 
+exports[`iOS BpkButtonThemed should not apply border radius when a theme is applied 1`] = `
+<View
+  accessibilityComponentType="button"
+  accessibilityLabel="Lorem ipsum"
+  accessibilityTraits={
+    Array [
+      "button",
+    ]
+  }
+  accessible={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={null}
+>
+  <View
+    colors={
+      Array [
+        "green",
+        "blue",
+      ]
+    }
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 8,
+        },
+        null,
+        Object {
+          "borderRadius": 40,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
+        Object {
+          "paddingHorizontal": 8,
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(82, 76, 97)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "color": "rgb(82, 76, 97)",
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "marginEnd": 4,
+            },
+            Object {
+              "color": "red",
+            },
+            Object {
+              "marginEnd": 0,
+              "marginStart": 4,
+            },
+            Object {
+              "marginEnd": 0,
+              "marginStart": 0,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(37, 32, 51)",
+          "bottom": 0,
+          "flex": 1,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "borderRadius": 40,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
 exports[`iOS BpkButtonThemed should render correctly 1`] = `
 <View
   accessibilityComponentType="button"
