@@ -2,6 +2,12 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-07-02 - `iconOnly` buttons now retain their rounded appearance when a theme is applied
+
+**Fixed:**
+- react-native-bpk-component-button: 9.2.5 => 9.2.6
+  - `iconOnly` buttons no longer apply `borderRadius` from theming and are always circular.
+
 # 2019-06-26 - Update iOS pod dependency
 
 **Fixed:**
