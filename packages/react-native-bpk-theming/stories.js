@@ -20,7 +20,7 @@
 import React, { Component } from 'react';
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react-native';
-import { StyleSheet, View, Picker } from 'react-native';
+import { Text, StyleSheet, View, Picker, Platform } from 'react-native';
 import {
   spacingMd,
   colorWhite,
@@ -60,6 +60,7 @@ type Theme = {
 const generateThemeAttributes = (
   gradientStartColor: string,
   gradientEndColor: string,
+  textFontFamily: ?string,
 ): Theme => ({
   buttonPrimaryTextColor: colorWhite,
   buttonPrimaryGradientStartColor: gradientStartColor,
@@ -74,7 +75,7 @@ const generateThemeAttributes = (
   colorGray500: '#657176',
   colorGray700: '#4B5458',
   colorGray900: '#0B1A22',
-  textFontFamily: fontFamily,
+  textFontFamily: textFontFamily || fontFamily,
 });
 
 const styles = StyleSheet.create({
@@ -84,6 +85,7 @@ const styles = StyleSheet.create({
   solidColorBlock: {
     width: '100%',
     height: spacingMd * 3,
+    fontFamily,
   },
 });
 
@@ -156,6 +158,16 @@ const SolidColorBlockGray900 = () => (
     )}
   </BpkThemeAttributes>
 );
+const BlockOfText = () => (
+  <BpkThemeAttributes>
+    {({ textFontFamily }) => (
+      <View style={styles.solidColorBlock}>
+        {/* eslint-disable-next-line backpack/use-components */}
+        <Text style={{ fontFamily: textFontFamily }}>Backpack</Text>
+      </View>
+    )}
+  </BpkThemeAttributes>
+);
 
 class BpkThemePicker extends Component<{}, State> {
   themes: {| blue: Theme, yellow: Theme, red: Theme |};
@@ -164,7 +176,11 @@ class BpkThemePicker extends Component<{}, State> {
     super();
 
     this.themes = {
-      blue: generateThemeAttributes(colorBlue400, colorBlue500),
+      blue: generateThemeAttributes(
+        colorBlue400,
+        colorBlue500,
+        Platform.OS === 'android' ? 'serif-monospace' : 'Courier',
+      ),
       yellow: generateThemeAttributes(colorYellow400, colorYellow500),
       red: generateThemeAttributes(colorRed400, colorRed500),
     };
@@ -216,6 +232,7 @@ class BpkThemePicker extends Component<{}, State> {
             <SolidColorBlockGray500 />
             <SolidColorBlockGray700 />
             <SolidColorBlockGray900 />
+            <BlockOfText />
           </View>
         </BpkThemeProvider>
       </View>
