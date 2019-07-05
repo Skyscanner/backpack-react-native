@@ -26,6 +26,7 @@ import {
   colorGray500,
   colorGray700,
   colorGray900,
+  fontFamily,
 } from 'bpk-tokens/tokens/base.react.native';
 
 import { withTheme } from './BpkThemeProvider';
@@ -38,6 +39,7 @@ type Attributes = {
   colorGray500: string,
   colorGray700: string,
   colorGray900: string,
+  textFontFamily: string,
 };
 
 export type Props = {
@@ -50,6 +52,7 @@ export type Props = {
     colorGray500: string,
     colorGray700: string,
     colorGray900: string,
+    textFontFamily: string,
   },
 };
 
@@ -66,6 +69,7 @@ export type Props = {
  * + `colorGray500`,
  * + `colorGray700`,
  * + `colorGray900`,
+ * + `textFontFamily`,
  *
  * @example
  * <BpkThemeAttributes>
@@ -92,6 +96,8 @@ const BpkThemeAttributes = (props: Props) => {
     theme && theme.colorGray700 != null ? theme.colorGray700 : colorGray700;
   const gray900 =
     theme && theme.colorGray900 != null ? theme.colorGray900 : colorGray900;
+  const textFontFamily =
+    theme && theme.textFontFamily != null ? theme.textFontFamily : fontFamily;
 
   return children({
     primaryColor,
@@ -101,6 +107,7 @@ const BpkThemeAttributes = (props: Props) => {
     colorGray500: gray500,
     colorGray700: gray700,
     colorGray900: gray900,
+    textFontFamily,
   });
 };
 
