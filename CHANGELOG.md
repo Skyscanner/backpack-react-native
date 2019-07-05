@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-07-05 - Added `textFontFamily` to `BpkThemeAttributes`
+
+**Added:**
+
+- react-native-bpk-theming: 1.2.1 => 1.3.0
+  - Added `textFontFamily` to `BpkThemeAttributes`.
+
 # 2019-07-02 - `iconOnly` buttons now retain their rounded appearance when a theme is applied
 
 **Fixed:**
