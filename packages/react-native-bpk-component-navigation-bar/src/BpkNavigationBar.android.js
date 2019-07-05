@@ -162,6 +162,22 @@ class BpkNavigationBar extends Component<Props, {}> {
 
     let titleView = null;
 
+    if (this.theme) {
+      const {
+        navigationBarTintColor,
+        navigationBarDisabledTintColor,
+        navigationBarBackgroundColor,
+      } = this.theme;
+
+      titleStyle.push({ color: navigationBarTintColor });
+      outerBarStyle.push({
+        backgroundColor: navigationBarBackgroundColor,
+      });
+      tintColor = navigationBarTintColor;
+      disabledTintColor = navigationBarDisabledTintColor;
+      touchableColor = navigationBarTintColor;
+    }
+
     // This if ensures Flow correctly refines the type of
     // title in the body of the if to `'string' | TitleWithIcon
     if (
@@ -192,22 +208,6 @@ class BpkNavigationBar extends Component<Props, {}> {
           })}
         </View>
       );
-    }
-
-    if (this.theme) {
-      const {
-        navigationBarTintColor,
-        navigationBarDisabledTintColor,
-        navigationBarBackgroundColor,
-      } = this.theme;
-
-      titleStyle.push({ color: navigationBarTintColor });
-      outerBarStyle.push({
-        backgroundColor: navigationBarBackgroundColor,
-      });
-      tintColor = navigationBarTintColor;
-      disabledTintColor = navigationBarDisabledTintColor;
-      touchableColor = navigationBarTintColor;
     }
 
     if (hasSubtitleView) {
