@@ -2,6 +2,14 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-07-05 - Fix title tint color in navigation bars on Android
+
+**Fixed:**
+
+- react-native-bpk-component-navigation-bar: 5.1.19 => 5.1.20
+  - Fixed a bug where the `tintColor` was not respected for the title on Android.
+
+
 # 2019-07-05 - Added `textFontFamily` to `BpkThemeAttributes`
 
 **Added:**
