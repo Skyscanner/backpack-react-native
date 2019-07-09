@@ -59,7 +59,7 @@ class BpkDialog extends Component<Props> {
     this.eventSubscriptions = [];
   }
 
-  componentDidMount() {
+  setUpEvents = () => {
     if (BpkDialogEventEmitter) {
       const { actions, scrimAction } = this.props;
       this.eventSubscriptions.push(
@@ -82,6 +82,16 @@ class BpkDialog extends Component<Props> {
         );
       }
     }
+  };
+
+  componentDidMount() {
+    this.setUpEvents();
+  }
+
+  componentDidUpdate() {
+    this.eventSubscriptions.forEach(subscriber => subscriber.remove());
+    this.eventSubscriptions = [];
+    this.setUpEvents();
   }
 
   componentWillUnmount() {
