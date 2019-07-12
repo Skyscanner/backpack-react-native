@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-07-12 - New `flight-landing`, `flight-takeoff` and `aircraft` icons 
+
+**Added:**
+
+- react-native-bpk-component-icon: 1.15.2 => 1.16.0
+  - New `flight-landing`, `flight-takeoff` and `aircraft` icons.
+
 # 2019-07-05 - Fix title tint color in navigation bars on Android
 
 **Fixed:**
