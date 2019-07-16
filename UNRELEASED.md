@@ -31,3 +31,5 @@ See [`CHANGELOG.md`](CHANGELOG.md) for real-world examples of good changelog ent
 - `bpk-component-horcrux`:
   - Fixed issue where `BpkHorcrux` would occasionally possess the living.
 
+- `bpk-component-dialog`:
+  - Fixed issue where `BpkDialog` failed in iOS when updating the actions.
