@@ -26,7 +26,7 @@ import {
   processColor,
 } from 'react-native';
 import type EmitterSubscription from 'react-native/Libraries/vendor/emitter/EmitterSubscription';
-import isNil from 'lodash/isNil';
+import _ from 'lodash';
 import { colors } from 'bpk-tokens/tokens/base.react.native';
 
 import { commonPropTypes, type CommonProps } from './common-types';
@@ -47,6 +47,11 @@ export type State = {
   ...$Exact<CommonProps>,
 };
 
+const isArrayEqual = (a: Array<any>, b: Array<any>) =>
+  _(a)
+    .differenceWith(b, _.isEqual)
+    .isEmpty();
+
 class BpkDialog extends Component<Props> {
   eventSubscriptions: Array<EmitterSubscription>;
 
@@ -59,13 +64,29 @@ class BpkDialog extends Component<Props> {
     this.eventSubscriptions = [];
   }
 
+  componentDidMount() {
+    this.setUpEvents();
+  }
+
+  componentDidUpdate(prevProps: Props) {
+    if (!isArrayEqual(this.props.actions, prevProps.actions)) {
+      this.eventSubscriptions.forEach(subscriber => subscriber.remove());
+      this.eventSubscriptions = [];
+      this.setUpEvents();
+    }
+  }
+
+  componentWillUnmount() {
+    this.eventSubscriptions.forEach(subscriber => subscriber.remove());
+  }
+
   setUpEvents = () => {
     if (BpkDialogEventEmitter) {
       const { actions, scrimAction } = this.props;
       this.eventSubscriptions.push(
         BpkDialogEventEmitter.addListener('bpkDialogAction', event => {
           if (
-            !isNil(event.actionIndex) &&
+            !_.isNil(event.actionIndex) &&
             event.identifier === this.identifier
           ) {
             actions[event.actionIndex].callback();
@@ -83,20 +104,6 @@ class BpkDialog extends Component<Props> {
       }
     }
   };
-
-  componentDidMount() {
-    this.setUpEvents();
-  }
-
-  componentDidUpdate() {
-    this.eventSubscriptions.forEach(subscriber => subscriber.remove());
-    this.eventSubscriptions = [];
-    this.setUpEvents();
-  }
-
-  componentWillUnmount() {
-    this.eventSubscriptions.forEach(subscriber => subscriber.remove());
-  }
 
   render() {
     const { isOpen, scrimAction, icon, ...rest } = this.props;

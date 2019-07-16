@@ -60,12 +60,18 @@ const disabledScrimAction = {
   callback: () => {},
 };
 
-type DialogState = {
+type Props = {
   ...$Exact<BpkDialogProps>,
+  updatesState: boolean,
+};
+
+type State = {
+  ...$Exact<BpkDialogProps>,
+  updatesState: boolean,
   text: string,
 };
 
-class TriggerDialogComponent extends Component<BpkDialogProps, DialogState> {
+class TriggerDialogComponent extends Component<Props, State> {
   constructor(props) {
     super(props);
 
@@ -78,13 +84,24 @@ class TriggerDialogComponent extends Component<BpkDialogProps, DialogState> {
       scrimAction: props.scrimAction,
       isOpen: false,
       text: 'No action',
+      updatesState: props.updatesState,
     };
   }
 
   openDialog = () => this.setState({ isOpen: true });
 
+  updateState = () => this.setState({ actions: this.props.actions.reverse() });
+
   render() {
-    const { text, dialogType, title, description, icon, isOpen } = this.state;
+    const {
+      text,
+      dialogType,
+      title,
+      description,
+      icon,
+      isOpen,
+      updatesState,
+    } = this.state;
 
     let actions: Array<ActionButton> = [];
     if (this.state.actions) {
@@ -92,6 +109,9 @@ class TriggerDialogComponent extends Component<BpkDialogProps, DialogState> {
         text: action.text,
         type: action.type,
         callback: () => {
+          if (updatesState) {
+            this.updateState();
+          }
           this.setState({
             isOpen: false,
             text: `Action: ${action.text}`,
@@ -150,6 +170,7 @@ storiesOf('react-native-bpk-component-dialog', module)
   .addDecorator(CenterDecorator)
   .add('docs:simple', () => (
     <TriggerDialogComponent
+      updatesState={false}
       dialogType={DIALOG_TYPE.alert}
       title={dialogTitle}
       description={dialogDescription}
@@ -161,6 +182,7 @@ storiesOf('react-native-bpk-component-dialog', module)
   ))
   .add('docs:option', () => (
     <TriggerDialogComponent
+      updatesState={false}
       dialogType={DIALOG_TYPE.alert}
       title={dialogTitle}
       description={dialogDescription}
@@ -172,6 +194,7 @@ storiesOf('react-native-bpk-component-dialog', module)
   ))
   .add('docs:no-scrim-action', () => (
     <TriggerDialogComponent
+      updatesState={false}
       dialogType={DIALOG_TYPE.alert}
       title={dialogTitle}
       description={dialogDescription}
@@ -183,6 +206,7 @@ storiesOf('react-native-bpk-component-dialog', module)
   ))
   .add('docs:only-title', () => (
     <TriggerDialogComponent
+      updatesState={false}
       dialogType={DIALOG_TYPE.alert}
       title={dialogTitle}
       description={null}
@@ -194,6 +218,7 @@ storiesOf('react-native-bpk-component-dialog', module)
   ))
   .add('docs:bottom', () => (
     <TriggerDialogComponent
+      updatesState={false}
       dialogType={DIALOG_TYPE.bottomSheet}
       title={dialogTitle}
       description={dialogDescription}
@@ -205,6 +230,19 @@ storiesOf('react-native-bpk-component-dialog', module)
   ))
   .add('docs:all-buttons', () => (
     <TriggerDialogComponent
+      updatesState={false}
+      dialogType={DIALOG_TYPE.bottomSheet}
+      title={dialogTitle}
+      description={dialogDescription}
+      icon={dialogIcon}
+      actions={allActions}
+      scrimAction={defaultScrimAction}
+      isOpen
+    />
+  ))
+  .add('docs:update-dialog', () => (
+    <TriggerDialogComponent
+      updatesState
       dialogType={DIALOG_TYPE.bottomSheet}
       title={dialogTitle}
       description={dialogDescription}
