@@ -2,10 +2,14 @@
 
 > Place your changes below this line.
 
+**Changed:**
+- react-native-bpk-component-icon:
+  - Changed the `trips` icon.
+
 **Fixed:**
 - `react-native-bpk-component-phone-input`:
   - Resolved an issue where the input field was not theming with the full field.
-  
+
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
