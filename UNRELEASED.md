@@ -2,10 +2,6 @@
 
 > Place your changes below this line.
 
-**Changed:**
-- react-native-bpk-component-icon:
-  - Changed the `trips` icon.
-
 **Fixed:**
 - `react-native-bpk-component-phone-input`:
   - Resolved an issue where the input field was not theming with the full field.

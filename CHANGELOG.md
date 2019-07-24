@@ -2,7 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
-# 2019-07-12 - New `flight-landing`, `flight-takeoff` and `aircraft` icons 
+# 2019-07-24 - Replace the `trips` icon
+
+**Changed:**
+- react-native-bpk-component-icon:
+  - Changed the `trips` icon.
+
+# 2019-07-12 - New `flight-landing`, `flight-takeoff` and `aircraft` icons
 
 **Added:**
 
