@@ -4,16 +4,10 @@
 
 # 2019-07-26
 
-**Fixed:**
-- `react-native-bpk-component-phone-input`:
-  - Resolved an issue where the input field was not theming with the full field.
-
-**Breaking:**
-
-- `react-native-bpk-component-dialog`:
+- react-native-bpk-component-calendar: 1.0.6 => 1.0.7
   - Updated `backpack-ios` dependency to `12.0.0`.
 
-- `react-native-bpk-component-calendar`:
+- react-native-bpk-component-dialog: 1.0.7 => 1.0.8
   - Updated `backpack-ios` dependency to `12.0.0`.
 
 # 2019-07-24 - Replace the `trips` icon
