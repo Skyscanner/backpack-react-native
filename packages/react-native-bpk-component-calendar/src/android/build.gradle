@@ -36,5 +36,5 @@ android {
 
 dependencies {
   compileOnly "com.facebook.react:react-native:${_reactNativeVersion}"
-  implementation "com.github.skyscanner:backpack-android:8.0.0"
+  implementation "com.github.skyscanner:backpack-android:bpk-2749-update-androidx-SNAPSHOT"
 }

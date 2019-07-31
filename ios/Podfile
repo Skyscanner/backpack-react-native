@@ -29,7 +29,6 @@ target 'Backpack Native' do
   pod 'react-native-bpk-component-dialog', path: '../packages/react-native-bpk-component-dialog'
 
   # Third party pods
-  pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
   pod 'react-native-maps', path: '../packages/react-native-bpk-component-map/node_modules/react-native-maps'
 
   target 'Backpack Native Tests' do
