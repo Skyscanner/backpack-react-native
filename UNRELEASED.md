@@ -4,7 +4,7 @@
 
 **Fixed**:
 - `react-native-bpk-theming`:
-  - Fixed missing type for `primaryColor` attribute that caused flow errors
+  - Fixed missing type for `primaryColor` attribute that caused Flow errors
 
 ## How to write a good changelog entry
 
