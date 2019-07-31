@@ -2,6 +2,12 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-07-31 - Fix for missing theming attribute
+
+**Fixed**:
+- react-native-bpk-theming: 1.3.0 => 1.3.1
+  - Fixed missing type for `primaryColor` attribute that caused Flow errors.
+
 # 2019-07-26
 
 - react-native-bpk-component-calendar: 1.0.6 => 1.0.7
