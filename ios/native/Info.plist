@@ -42,6 +42,7 @@
 		<string>BpkIcon.ttf</string>
 		<string>BpkIcon.woff</string>
 		<string>BpkIconIOS.ttf</string>
+		<string>BpkIconIOS.woff</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

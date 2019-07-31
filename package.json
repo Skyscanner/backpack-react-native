@@ -69,11 +69,6 @@
       }
     }
   },
-  "rnpm": {
-    "assets": [
-      "./packages/react-native-bpk-component-icon/node_modules/bpk-svgs/dist/font/"
-    ]
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -116,7 +111,7 @@
     "prop-types": "^15.5.10",
     "react": "16.8.3",
     "react-dom": "16.8.3",
-    "react-native": "0.59.0",
+    "react-native": "^0.60.4",
     "react-native-linear-gradient": "^2.5.3",
     "react-test-renderer": "16.8.3",
     "tmp": "^0.1.0",
