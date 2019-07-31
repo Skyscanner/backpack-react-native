@@ -1,7 +1,7 @@
 package net.skyscanner.backpack
 
 import android.app.Application
-//import com.BV.LinearGradient.LinearGradientPackage
+import com.BV.LinearGradient.LinearGradientPackage
 import com.airbnb.android.react.maps.MapsPackage
 import com.facebook.react.ReactApplication
 import com.facebook.react.ReactNativeHost
@@ -29,7 +29,7 @@ class MainApplication : Application(), ReactApplication {
             return Arrays.asList(
                     MainReactPackage(),
                     MapsPackage(),
-//                    LinearGradientPackage(),
+                    LinearGradientPackage(),
                     CalendarPackage(),
                     DialogPackage()
             )

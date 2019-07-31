@@ -1,5 +1,6 @@
 rootProject.name = 'native'
 
+//This is supposed to do the auto linking, but it's not working correctly
 //apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
 
 include ':app'
@@ -11,5 +12,10 @@ project(':react-native-bpk-component-calendar').projectDir = new File(rootProjec
 // react-native-dialog
 include ':react-native-bpk-component-dialog'
 project(':react-native-bpk-component-dialog').projectDir = new File(rootProject.projectDir, '../packages/react-native-bpk-component-dialog/src/android')
+
+// react-native-linear-gradient
+include ':react-native-linear-gradient'
+project(':react-native-linear-gradient').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-linear-gradient/android')
+
 
 

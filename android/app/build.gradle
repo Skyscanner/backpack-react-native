@@ -187,6 +187,7 @@ dependencies {
     // version is 0.23. In any case this is what the app's code base is using, so it is a good idea
     // we do the same
     implementation 'com.airbnb.android:react-native-maps:0.17.1'
+    implementation project(':react-native-linear-gradient')
     implementation project(':react-native-bpk-component-calendar')
     implementation project(':react-native-bpk-component-dialog')
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
