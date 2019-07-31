@@ -45,6 +45,7 @@ export type Theme = {
   navigationBarStatusBarStyle?: string,
   navigationBarShadowColor?: string,
   navigationBarPrimaryColor?: string,
+  primaryColor?: string,
   progressFillBackgroundColor?: string,
   progressTrackBackgroundColor?: string,
   starColor?: string,
