@@ -17,6 +17,13 @@
  */
 
 module.exports = {
+  dependencies: {
+    'react-native-linear-gradient': {
+      platforms: {
+        android: null, // FIXEME: autolinking disabled for Android
+      },
+    },
+  },
   assets: [
     './packages/react-native-bpk-component-icon/node_modules/bpk-svgs/dist/font/',
   ],
