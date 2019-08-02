@@ -43,6 +43,8 @@ esproposal.nullish_coalescing=enable
 module.file_ext=.js
 module.file_ext=.json
 module.file_ext=.ios.js
+module.file_ext=.android.js
+module.file_ext=.native.js
 
 module.system=haste
 module.system.haste.use_name_reducers=true
@@ -52,7 +54,6 @@ module.system.haste.name_reducers='^.*/\([a-zA-Z0-9$_.-]+\.js\(\.flow\)?\)$' -> 
 module.system.haste.name_reducers='^\(.*\)\.js\(\.flow\)?$' -> '\1'
 # strip .ios suffix
 module.system.haste.name_reducers='^\(.*\)\.ios$' -> '\1'
-module.system.haste.name_reducers='^\(.*\)\.android$' -> '\1'
 module.system.haste.name_reducers='^\(.*\)\.native$' -> '\1'
 module.system.haste.paths.blacklist=.*/__tests__/.*
 module.system.haste.paths.blacklist=.*/__mocks__/.*
