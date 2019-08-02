@@ -31,6 +31,7 @@ import {
   colorGray100,
   colorGray50,
 } from 'bpk-tokens/tokens/base.react.native';
+import { setOpacity } from 'bpk-tokens';
 
 const REQUIRED_THEME_ATTRIBUTES = ['switchPrimaryColor'];
 const OPTIONAL_THEME_ATTRIBUTES = ['colorGray100'];
@@ -56,7 +57,7 @@ const getColors = (themeAttributes: ?Object, value: ?boolean): Object => {
       thumbColor: value ? primaryColor : colorGray50,
       trackColor: {
         false: secondaryColor,
-        true: secondaryColor,
+        true: setOpacity(primaryColor, 0.32), // Taken from here https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/color/MaterialColors.java#L42
       },
     },
   });
