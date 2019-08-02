@@ -114,9 +114,9 @@ const BpkButton = (props: Props) => {
     ...getThemeAttributes(OPTIONAL_THEME_ATTRIBUTES, theme),
   };
 
-  const accessibilityTraits = ['button'];
+  const accessibilityStates = [];
   if (disabled) {
-    accessibilityTraits.push('disabled');
+    accessibilityStates.push('disabled');
   }
 
   const ButtonComponent = buttonComponentForType(type);
@@ -129,9 +129,9 @@ const BpkButton = (props: Props) => {
       iconOnly={iconOnly}
       large={large}
       iconTrailing={iconAlignment === ICON_ALIGNMENTS.trailing}
-      accessibilityComponentType="button"
+      accessibilityRole="button"
       accessibilityLabel={accessibilityLabel || title}
-      accessibilityTraits={accessibilityTraits}
+      accessibilityStates={accessibilityStates}
       borderRadius={borderRadiusForTheme(themeAttributes, iconOnly)}
       {...buttonColorsForType(type, themeAttributes, disabled)}
       {...rest}

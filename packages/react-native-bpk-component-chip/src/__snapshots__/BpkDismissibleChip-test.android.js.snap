@@ -15,7 +15,9 @@ exports[`Android BpkDismissibleChip should render correctly 1`] = `
 >
   <View
     accessibilityLabel="Dismiss"
+    accessibilityRole="button"
     accessible={true}
+    clickable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -24,6 +26,7 @@ exports[`Android BpkDismissibleChip should render correctly 1`] = `
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -110,7 +113,9 @@ exports[`Android BpkDismissibleChip should render correctly with "disabled" 1`] 
 >
   <View
     accessibilityLabel="Dismiss"
+    accessibilityRole="button"
     accessible={true}
+    clickable={false}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -119,6 +124,7 @@ exports[`Android BpkDismissibleChip should render correctly with "disabled" 1`] 
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -214,7 +220,9 @@ exports[`Android BpkDismissibleChip should render correctly with arbitrary props
 >
   <View
     accessibilityLabel="Dismiss"
+    accessibilityRole="button"
     accessible={true}
+    clickable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -223,6 +231,7 @@ exports[`Android BpkDismissibleChip should render correctly with arbitrary props
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -312,7 +321,9 @@ exports[`Android BpkDismissibleChip should render correctly with custom style 1`
 >
   <View
     accessibilityLabel="Dismiss"
+    accessibilityRole="button"
     accessible={true}
+    clickable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -321,6 +332,7 @@ exports[`Android BpkDismissibleChip should render correctly with custom style 1`
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}

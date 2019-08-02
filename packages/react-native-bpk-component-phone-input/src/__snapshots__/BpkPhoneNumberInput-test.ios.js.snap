@@ -31,13 +31,11 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
       Phone number
     </Text>
     <View
-      accessibilityComponentType="button"
-      accessibilityTraits={
-        Array [
-          "button",
-        ]
-      }
+      accessibilityRole="button"
+      accessibilityStates={Array []}
       accessible={true}
+      clickable={true}
+      onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}
@@ -216,14 +214,15 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
       Phone number
     </Text>
     <View
-      accessibilityComponentType="button"
-      accessibilityTraits={
+      accessibilityRole="button"
+      accessibilityStates={
         Array [
-          "button",
           "disabled",
         ]
       }
       accessible={true}
+      clickable={true}
+      onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}

@@ -2,7 +2,10 @@
 
 exports[`Android BpkSelect should render correctly 1`] = `
 <View
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -11,6 +14,7 @@ exports[`Android BpkSelect should render correctly 1`] = `
       "type": "RippleAndroid",
     }
   }
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -56,7 +60,10 @@ exports[`Android BpkSelect should render correctly 1`] = `
 
 exports[`Android BpkSelect should render correctly with "showImage" and image 1`] = `
 <View
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -65,6 +72,7 @@ exports[`Android BpkSelect should render correctly with "showImage" and image 1`
       "type": "RippleAndroid",
     }
   }
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -125,7 +133,10 @@ exports[`Android BpkSelect should render correctly with "showImage" and image 1`
 
 exports[`Android BpkSelect should render correctly with "showImage" and no image 1`] = `
 <View
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -134,6 +145,7 @@ exports[`Android BpkSelect should render correctly with "showImage" and no image
       "type": "RippleAndroid",
     }
   }
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -191,7 +203,10 @@ exports[`Android BpkSelect should render correctly with "showImage" and no image
 
 exports[`Android BpkSelect should render correctly with "valid" false 1`] = `
 <View
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -200,6 +215,7 @@ exports[`Android BpkSelect should render correctly with "valid" false 1`] = `
       "type": "RippleAndroid",
     }
   }
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -275,7 +291,10 @@ exports[`Android BpkSelect should render correctly with "valid" false 1`] = `
 exports[`Android BpkSelect should render correctly with "valid" false and a validation message 1`] = `
 <View>
   <View
+    accessibilityRole="button"
+    accessibilityStates={Array []}
     accessible={true}
+    clickable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -284,6 +303,7 @@ exports[`Android BpkSelect should render correctly with "valid" false and a vali
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -379,7 +399,10 @@ exports[`Android BpkSelect should render correctly with "valid" false and a vali
 
 exports[`Android BpkSelect should render correctly with "valid" true 1`] = `
 <View
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -388,6 +411,7 @@ exports[`Android BpkSelect should render correctly with "valid" true 1`] = `
       "type": "RippleAndroid",
     }
   }
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -459,7 +483,10 @@ exports[`Android BpkSelect should render correctly with "valid" true 1`] = `
 
 exports[`Android BpkSelect should render correctly with a text label 1`] = `
 <View
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -468,6 +495,7 @@ exports[`Android BpkSelect should render correctly with a text label 1`] = `
       "type": "RippleAndroid",
     }
   }
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -535,7 +563,10 @@ exports[`Android BpkSelect should render correctly with a text label 1`] = `
 
 exports[`Android BpkSelect should render correctly with an element label 1`] = `
 <View
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -544,6 +575,7 @@ exports[`Android BpkSelect should render correctly with an element label 1`] = `
       "type": "RippleAndroid",
     }
   }
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -590,7 +622,10 @@ exports[`Android BpkSelect should render correctly with an element label 1`] = `
 
 exports[`Android BpkSelect should render correctly with custom styles 1`] = `
 <View
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -599,6 +634,7 @@ exports[`Android BpkSelect should render correctly with custom styles 1`] = `
       "type": "RippleAndroid",
     }
   }
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -666,7 +702,14 @@ exports[`Android BpkSelect should render correctly with custom styles 1`] = `
 
 exports[`Android BpkSelect should render correctly with the disabled prop 1`] = `
 <View
+  accessibilityRole="button"
+  accessibilityStates={
+    Array [
+      "disabled",
+    ]
+  }
   accessible={true}
+  clickable={false}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -675,6 +718,7 @@ exports[`Android BpkSelect should render correctly with the disabled prop 1`] = 
       "type": "RippleAndroid",
     }
   }
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}

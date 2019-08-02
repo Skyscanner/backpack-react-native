@@ -97,7 +97,7 @@ const BpkCard = (props: Props) => {
     <View style={style}>
       <BpkTouchableNativeFeedback
         borderlessBackground={Platform.Version !== 28}
-        accessibilityComponentType="button"
+        accessibilityRole="button"
         {...rest}
       >
         <View style={innerStyle}>{children}</View>

@@ -110,9 +110,8 @@ class BpkFlatListItem extends React.PureComponent<FlatListItemProps> {
 
     return (
       <BpkTouchableOverlay
-        accessibilityComponentType="button"
+        accessibilityRole="button"
         accessibilityLabel={title}
-        accessibilityTraits={['button']}
         style={[styles.outer, style]}
         {...rest}
       >

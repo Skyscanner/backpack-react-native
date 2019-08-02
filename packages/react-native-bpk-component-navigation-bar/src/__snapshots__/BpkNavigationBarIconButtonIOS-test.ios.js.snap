@@ -3,8 +3,12 @@
 exports[`iOS BpkNavigationBarIconButtonIOS should render correctly 1`] = `
 <View
   accessibilityLabel="Edit"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -51,8 +55,16 @@ exports[`iOS BpkNavigationBarIconButtonIOS should render correctly 1`] = `
 exports[`iOS BpkNavigationBarIconButtonIOS should render correctly disabled 1`] = `
 <View
   accessibilityLabel="Close"
+  accessibilityRole="button"
+  accessibilityStates={
+    Array [
+      "disabled",
+    ]
+  }
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -99,8 +111,12 @@ exports[`iOS BpkNavigationBarIconButtonIOS should render correctly disabled 1`] 
 exports[`iOS BpkNavigationBarIconButtonIOS should render correctly leading configuration 1`] = `
 <View
   accessibilityLabel="Close"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -147,8 +163,16 @@ exports[`iOS BpkNavigationBarIconButtonIOS should render correctly leading confi
 exports[`iOS BpkNavigationBarIconButtonIOS should resepect "disabledTintColor" 1`] = `
 <View
   accessibilityLabel="Done"
+  accessibilityRole="button"
+  accessibilityStates={
+    Array [
+      "disabled",
+    ]
+  }
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -195,8 +219,12 @@ exports[`iOS BpkNavigationBarIconButtonIOS should resepect "disabledTintColor" 1
 exports[`iOS BpkNavigationBarIconButtonIOS should resepect "tintColor" 1`] = `
 <View
   accessibilityLabel="Done"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}

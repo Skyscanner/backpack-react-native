@@ -3,6 +3,8 @@
 exports[`BpkTouchableOverlay should render correctly 1`] = `
 <View
   accessible={true}
+  clickable={false}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -49,6 +51,8 @@ exports[`BpkTouchableOverlay should render correctly 1`] = `
 exports[`BpkTouchableOverlay should render correctly with arbitrary props 1`] = `
 <View
   accessible={true}
+  clickable={false}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -96,6 +100,8 @@ exports[`BpkTouchableOverlay should render correctly with arbitrary props 1`] = 
 exports[`BpkTouchableOverlay should render correctly with border radius props set to 30 1`] = `
 <View
   accessible={true}
+  clickable={false}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -146,6 +152,8 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
 exports[`BpkTouchableOverlay should render correctly with border radius props set to 75 1`] = `
 <View
   accessible={true}
+  clickable={false}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -196,6 +204,8 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
 exports[`BpkTouchableOverlay should render correctly with border radius props set to lg 1`] = `
 <View
   accessible={true}
+  clickable={false}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -246,6 +256,8 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
 exports[`BpkTouchableOverlay should render correctly with border radius props set to pill 1`] = `
 <View
   accessible={true}
+  clickable={false}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -296,6 +308,8 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
 exports[`BpkTouchableOverlay should render correctly with border radius props set to sm 1`] = `
 <View
   accessible={true}
+  clickable={false}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -346,6 +360,8 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
 exports[`BpkTouchableOverlay should render correctly with custom overlay styles 1`] = `
 <View
   accessible={true}
+  clickable={false}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -396,6 +412,8 @@ exports[`BpkTouchableOverlay should render correctly with custom overlay styles 
 exports[`BpkTouchableOverlay should render correctly with custom style prop 1`] = `
 <View
   accessible={true}
+  clickable={false}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}

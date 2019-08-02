@@ -3,12 +3,11 @@
 exports[`iOS BpkChip should render correctly 1`] = `
 <View
   accessibilityLabel="Accessibility label"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -86,12 +85,11 @@ exports[`iOS BpkChip should render correctly 1`] = `
 exports[`iOS BpkChip should render correctly with "disabled" 1`] = `
 <View
   accessibilityLabel="Accessibility label"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -175,13 +173,15 @@ exports[`iOS BpkChip should render correctly with "disabled" 1`] = `
 exports[`iOS BpkChip should render correctly with "selected" 1`] = `
 <View
   accessibilityLabel="Accessibility label"
-  accessibilityTraits={
+  accessibilityRole="button"
+  accessibilityStates={
     Array [
-      "button",
       "selected",
     ]
   }
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -265,12 +265,11 @@ exports[`iOS BpkChip should render correctly with "selected" 1`] = `
 exports[`iOS BpkChip should render correctly with arbitrary props 1`] = `
 <View
   accessibilityLabel="Accessibility label"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -349,12 +348,11 @@ exports[`iOS BpkChip should render correctly with arbitrary props 1`] = `
 exports[`iOS BpkChip should render correctly with custom style 1`] = `
 <View
   accessibilityLabel="Accessibility label"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -434,13 +432,15 @@ exports[`iOS BpkChip should render correctly with custom style 1`] = `
 exports[`iOS BpkChip should support theming when selected 1`] = `
 <View
   accessibilityLabel="Accessibility label"
-  accessibilityTraits={
+  accessibilityRole="button"
+  accessibilityStates={
     Array [
-      "button",
       "selected",
     ]
   }
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}

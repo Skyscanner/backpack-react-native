@@ -95,7 +95,7 @@ const BpkCard = (props: Props) => {
 
   return (
     <BpkTouchableOverlay
-      accessibilityComponentType="button"
+      accessibilityRole="button"
       style={style}
       borderRadius={cornerStyle}
       {...rest}

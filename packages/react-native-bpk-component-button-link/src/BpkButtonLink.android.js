@@ -74,8 +74,6 @@ const BpkButtonLink = (props: Props) => {
   const viewStyle = [commonStyles.view];
   const iconStyle = [commonStyles.icon];
 
-  const accessibilityTraits = ['button'];
-
   if (iconAlignment === ICON_ALIGNMENTS.leading) {
     viewStyle.push(commonStyles.viewLeading);
     iconStyle.push(commonStyles.iconLeading);
@@ -86,17 +84,19 @@ const BpkButtonLink = (props: Props) => {
     iconStyle.push(themeStyle);
   }
 
+  const accessibilityStates = [];
+
   if (disabled) {
     textStyle.push(commonStyles.textDisabled);
-    accessibilityTraits.push('disabled');
+    accessibilityStates.push('disabled');
   }
 
   return (
     <View style={[styles.wrapper, userStyle]}>
       <BpkTouchableNativeFeedback
-        accessibilityComponentType="button"
+        accessibilityRole="button"
         accessibilityLabel={accessibilityLabel || title}
-        accessibilityTraits={accessibilityTraits}
+        accessibilityStates={accessibilityStates}
         onPress={onPress}
         disabled={disabled}
         borderlessBackground={borderlessBackground}

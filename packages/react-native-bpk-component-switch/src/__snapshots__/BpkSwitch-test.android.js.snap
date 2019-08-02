@@ -9,6 +9,8 @@ exports[`Android BpkSwitch should disable theming if the required attribute is o
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   thumbTintColor="rgb(0, 178, 214)"
+  trackColorForFalse="rgb(230, 228, 235)"
+  trackColorForTrue="rgb(230, 228, 235)"
   trackTintColor="rgb(230, 228, 235)"
 />
 `;
@@ -22,6 +24,8 @@ exports[`Android BpkSwitch should render correctly 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   thumbTintColor="rgb(243, 242, 245)"
+  trackColorForFalse="rgb(230, 228, 235)"
+  trackColorForTrue="rgb(230, 228, 235)"
   trackTintColor="rgb(230, 228, 235)"
 />
 `;
@@ -35,6 +39,8 @@ exports[`Android BpkSwitch should support the "value" prop 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   thumbTintColor="rgb(0, 178, 214)"
+  trackColorForFalse="rgb(230, 228, 235)"
+  trackColorForTrue="rgb(230, 228, 235)"
   trackTintColor="rgb(230, 228, 235)"
 />
 `;
@@ -48,6 +54,8 @@ exports[`Android BpkSwitch should support theming 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   thumbTintColor="red"
+  trackColorForFalse="rgb(230, 228, 235)"
+  trackColorForTrue="rgb(230, 228, 235)"
   trackTintColor="rgb(230, 228, 235)"
 />
 `;

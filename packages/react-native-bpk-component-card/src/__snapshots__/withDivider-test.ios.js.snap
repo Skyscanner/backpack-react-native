@@ -2,9 +2,11 @@
 
 exports[`iOS withDivider should render correctly 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Example Card"
+  accessibilityRole="button"
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -137,9 +139,11 @@ exports[`iOS withDivider should render correctly 1`] = `
 
 exports[`iOS withDivider should render correctly with "cornerStyle=large" 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Example Card"
+  accessibilityRole="button"
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -275,9 +279,11 @@ exports[`iOS withDivider should render correctly with "cornerStyle=large" 1`] = 
 
 exports[`iOS withDivider should render correctly with arbitrary props 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Example Card"
+  accessibilityRole="button"
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -411,9 +417,11 @@ exports[`iOS withDivider should render correctly with arbitrary props 1`] = `
 
 exports[`iOS withDivider should render correctly with custom main style 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Example Card"
+  accessibilityRole="button"
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -549,9 +557,11 @@ exports[`iOS withDivider should render correctly with custom main style 1`] = `
 
 exports[`iOS withDivider should render correctly with custom stub style 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Example Card"
+  accessibilityRole="button"
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -687,9 +697,11 @@ exports[`iOS withDivider should render correctly with custom stub style 1`] = `
 
 exports[`iOS withDivider should render correctly without padding 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Example Card"
+  accessibilityRole="button"
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}

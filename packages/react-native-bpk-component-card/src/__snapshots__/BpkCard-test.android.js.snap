@@ -14,7 +14,9 @@ exports[`Android BpkCard should render correctly 1`] = `
 >
   <View
     accessibilityLabel="Example Card"
+    accessibilityRole="button"
     accessible={true}
+    clickable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -23,6 +25,7 @@ exports[`Android BpkCard should render correctly 1`] = `
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -74,7 +77,9 @@ exports[`Android BpkCard should render correctly when "cornerStyle=large" 1`] = 
 >
   <View
     accessibilityLabel="Example Card"
+    accessibilityRole="button"
     accessible={true}
+    clickable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -83,6 +88,7 @@ exports[`Android BpkCard should render correctly when "cornerStyle=large" 1`] = 
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -131,7 +137,9 @@ exports[`Android BpkCard should render correctly with arbitrary props 1`] = `
 >
   <View
     accessibilityLabel="Example Card"
+    accessibilityRole="button"
     accessible={true}
+    clickable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -140,6 +148,7 @@ exports[`Android BpkCard should render correctly with arbitrary props 1`] = `
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -189,7 +198,9 @@ exports[`Android BpkCard should render correctly with custom inner style 1`] = `
 >
   <View
     accessibilityLabel="Example Card"
+    accessibilityRole="button"
     accessible={true}
+    clickable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -198,6 +209,7 @@ exports[`Android BpkCard should render correctly with custom inner style 1`] = `
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -252,7 +264,9 @@ exports[`Android BpkCard should render correctly with custom style 1`] = `
 >
   <View
     accessibilityLabel="Example Card"
+    accessibilityRole="button"
     accessible={true}
+    clickable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -261,6 +275,7 @@ exports[`Android BpkCard should render correctly with custom style 1`] = `
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -312,7 +327,9 @@ exports[`Android BpkCard should render correctly with the "focused" state 1`] = 
 >
   <View
     accessibilityLabel="Example Card"
+    accessibilityRole="button"
     accessible={true}
+    clickable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -321,6 +338,7 @@ exports[`Android BpkCard should render correctly with the "focused" state 1`] = 
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -369,7 +387,9 @@ exports[`Android BpkCard should render correctly without padding 1`] = `
 >
   <View
     accessibilityLabel="Example Card"
+    accessibilityRole="button"
     accessible={true}
+    clickable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -378,6 +398,7 @@ exports[`Android BpkCard should render correctly without padding 1`] = `
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}

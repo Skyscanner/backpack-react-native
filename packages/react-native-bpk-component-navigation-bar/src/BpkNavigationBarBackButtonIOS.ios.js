@@ -62,8 +62,7 @@ const BpkNavigationBarBackButtonIOS = (props: Props) => {
   return (
     <TouchableOpacity
       onPress={onPress}
-      accessibilityComponentType="button"
-      accessibilityTraits={['button']}
+      accessibilityRole="button"
       accessibilityLabel={title}
       accessible
       style={styles.button}

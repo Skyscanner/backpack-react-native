@@ -15,7 +15,9 @@ exports[`Android BpkChip should render correctly 1`] = `
 >
   <View
     accessibilityLabel="Accessibility label"
+    accessibilityRole="button"
     accessible={true}
+    clickable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -24,6 +26,7 @@ exports[`Android BpkChip should render correctly 1`] = `
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -85,7 +88,9 @@ exports[`Android BpkChip should render correctly with "disabled" 1`] = `
 >
   <View
     accessibilityLabel="Accessibility label"
+    accessibilityRole="button"
     accessible={true}
+    clickable={false}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -94,6 +99,7 @@ exports[`Android BpkChip should render correctly with "disabled" 1`] = `
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -161,7 +167,9 @@ exports[`Android BpkChip should render correctly with "selected" 1`] = `
 >
   <View
     accessibilityLabel="Accessibility label"
+    accessibilityRole="button"
     accessible={true}
+    clickable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -170,6 +178,7 @@ exports[`Android BpkChip should render correctly with "selected" 1`] = `
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -237,7 +246,9 @@ exports[`Android BpkChip should render correctly with arbitrary props 1`] = `
 >
   <View
     accessibilityLabel="Accessibility label"
+    accessibilityRole="button"
     accessible={true}
+    clickable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -246,6 +257,7 @@ exports[`Android BpkChip should render correctly with arbitrary props 1`] = `
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -310,7 +322,9 @@ exports[`Android BpkChip should render correctly with custom style 1`] = `
 >
   <View
     accessibilityLabel="Accessibility label"
+    accessibilityRole="button"
     accessible={true}
+    clickable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -319,6 +333,7 @@ exports[`Android BpkChip should render correctly with custom style 1`] = `
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -380,7 +395,9 @@ exports[`Android BpkChip should support theming when selected 1`] = `
 >
   <View
     accessibilityLabel="Accessibility label"
+    accessibilityRole="button"
     accessible={true}
+    clickable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -389,6 +406,7 @@ exports[`Android BpkChip should support theming when selected 1`] = `
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}

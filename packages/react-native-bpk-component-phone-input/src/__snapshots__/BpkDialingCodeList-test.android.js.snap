@@ -52,14 +52,11 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
       style={null}
     >
       <View
-        accessibilityComponentType="button"
         accessibilityLabel="0 Zero"
-        accessibilityTraits={
-          Array [
-            "button",
-          ]
-        }
+        accessibilityRole="button"
         accessible={true}
+        clickable={true}
+        onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -192,14 +189,11 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
       style={null}
     >
       <View
-        accessibilityComponentType="button"
         accessibilityLabel="1 One"
-        accessibilityTraits={
-          Array [
-            "button",
-          ]
-        }
+        accessibilityRole="button"
         accessible={true}
+        clickable={true}
+        onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -332,14 +326,11 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
       style={null}
     >
       <View
-        accessibilityComponentType="button"
         accessibilityLabel="2 Two"
-        accessibilityTraits={
-          Array [
-            "button",
-          ]
-        }
+        accessibilityRole="button"
         accessible={true}
+        clickable={true}
+        onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -511,14 +502,11 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
       style={null}
     >
       <View
-        accessibilityComponentType="button"
         accessibilityLabel="0 Zero"
-        accessibilityTraits={
-          Array [
-            "button",
-          ]
-        }
+        accessibilityRole="button"
         accessible={true}
+        clickable={true}
+        onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -657,14 +645,11 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
       style={null}
     >
       <View
-        accessibilityComponentType="button"
         accessibilityLabel="1 One"
-        accessibilityTraits={
-          Array [
-            "button",
-          ]
-        }
+        accessibilityRole="button"
         accessible={true}
+        clickable={true}
+        onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -797,14 +782,11 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
       style={null}
     >
       <View
-        accessibilityComponentType="button"
         accessibilityLabel="2 Two"
-        accessibilityTraits={
-          Array [
-            "button",
-          ]
-        }
+        accessibilityRole="button"
         accessible={true}
+        clickable={true}
+        onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}

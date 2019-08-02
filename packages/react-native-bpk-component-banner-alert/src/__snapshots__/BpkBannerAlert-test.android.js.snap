@@ -788,7 +788,9 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
     >
       <View
         accessibilityLabel="Expand"
+        accessibilityRole="button"
         accessible={true}
+        clickable={true}
         isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
@@ -797,6 +799,7 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
             "type": "RippleAndroid",
           }
         }
+        onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -981,7 +984,9 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
     >
       <View
         accessibilityLabel="Expand"
+        accessibilityRole="button"
         accessible={true}
+        clickable={true}
         isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
@@ -990,6 +995,7 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
             "type": "RippleAndroid",
           }
         }
+        onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -1250,8 +1256,12 @@ exports[`Android BpkBannerAlert should render correctly with dismissable 1`] = `
         </Text>
         <View
           accessibilityLabel="Dismiss"
+          accessibilityRole="button"
+          accessibilityStates={Array []}
           accessible={true}
+          clickable={true}
           isTVSelectable={true}
+          onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -1388,8 +1398,12 @@ exports[`Android BpkBannerAlert should render correctly with dismissable 1`] = `
         </Text>
         <View
           accessibilityLabel="Dismiss"
+          accessibilityRole="button"
+          accessibilityStates={Array []}
           accessible={true}
+          clickable={true}
           isTVSelectable={true}
+          onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -1490,7 +1504,9 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
     >
       <View
         accessibilityLabel="Expand"
+        accessibilityRole="button"
         accessible={true}
+        clickable={true}
         isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
@@ -1499,6 +1515,7 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
             "type": "RippleAndroid",
           }
         }
+        onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -1683,7 +1700,9 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
     >
       <View
         accessibilityLabel="Expand"
+        accessibilityRole="button"
         accessible={true}
+        clickable={true}
         isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
@@ -1692,6 +1711,7 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
             "type": "RippleAndroid",
           }
         }
+        onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}

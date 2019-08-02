@@ -113,7 +113,7 @@
     "react-dom": "16.8.3",
     "react-native": "^0.60.4",
     "react-native-linear-gradient": "^2.5.3",
-    "react-test-renderer": "16.8.3",
+    "react-test-renderer": "^16.8.6",
     "tmp": "^0.1.0",
     "util": "^0.12.0"
   },
@@ -125,9 +125,5 @@
       "react-test-renderer",
       "react-native"
     ]
-  },
-  "dependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/runtime": "^7.5.5"
   }
 }

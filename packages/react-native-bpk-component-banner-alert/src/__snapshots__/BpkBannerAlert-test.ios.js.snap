@@ -760,9 +760,11 @@ exports[`iOS BpkBannerAlert should render correctly with children provided (expa
       }
     >
       <View
-        accessibilityComponentType="button"
         accessibilityLabel="Expand"
+        accessibilityRole="button"
         accessible={true}
+        clickable={true}
+        onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -959,9 +961,11 @@ exports[`iOS BpkBannerAlert should render correctly with children provided (expa
       }
     >
       <View
-        accessibilityComponentType="button"
         accessibilityLabel="Expand"
+        accessibilityRole="button"
         accessible={true}
+        clickable={true}
+        onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -1238,9 +1242,11 @@ exports[`iOS BpkBannerAlert should render correctly with dismissable 1`] = `
         </Text>
       </View>
       <View
-        accessibilityComponentType="button"
         accessibilityLabel="Dismiss"
+        accessibilityRole="button"
         accessible={true}
+        clickable={true}
+        onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -1375,9 +1381,11 @@ exports[`iOS BpkBannerAlert should render correctly with dismissable 1`] = `
         </Text>
       </View>
       <View
-        accessibilityComponentType="button"
         accessibilityLabel="Dismiss"
+        accessibilityRole="button"
         accessible={true}
+        clickable={true}
+        onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -1472,9 +1480,11 @@ exports[`iOS BpkBannerAlert should render correctly with expanded 1`] = `
       }
     >
       <View
-        accessibilityComponentType="button"
         accessibilityLabel="Expand"
+        accessibilityRole="button"
         accessible={true}
+        clickable={true}
+        onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -1671,9 +1681,11 @@ exports[`iOS BpkBannerAlert should render correctly with expanded 1`] = `
       }
     >
       <View
-        accessibilityComponentType="button"
         accessibilityLabel="Expand"
+        accessibilityRole="button"
         accessible={true}
+        clickable={true}
+        onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}

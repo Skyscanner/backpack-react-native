@@ -128,9 +128,9 @@ const BpkSelect = (props: Props) => {
     platformProps.borderlessBackground = false;
   }
 
-  const accessibilityTraits = ['button'];
+  const accessibilityStates = [];
   if (disabled) {
-    accessibilityTraits.push('disabled');
+    accessibilityStates.push('disabled');
   }
   const styledImage = image ? (
     cloneElement(image, {
@@ -164,8 +164,8 @@ const BpkSelect = (props: Props) => {
       disabled={disabled}
       style={style}
       onPress={onPress}
-      accessibilityComponentType="button"
-      accessibilityTraits={accessibilityTraits}
+      accessibilityRole="button"
+      accessibilityStates={accessibilityStates}
       {...platformProps}
     >
       <View style={selectStyle} {...rest}>

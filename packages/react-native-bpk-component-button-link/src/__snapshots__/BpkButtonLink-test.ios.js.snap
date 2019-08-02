@@ -3,8 +3,12 @@
 exports[`iOS BpkButtonLink should render correctly 1`] = `
 <View
   accessibilityLabel="Lorem ipsum"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -60,8 +64,12 @@ exports[`iOS BpkButtonLink should render correctly 1`] = `
 exports[`iOS BpkButtonLink should render correctly with iconAlignment="leading" 1`] = `
 <View
   accessibilityLabel="Lorem ipsum"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -148,8 +156,12 @@ exports[`iOS BpkButtonLink should render correctly with iconAlignment="leading" 
 exports[`iOS BpkButtonLink should render correctly with iconAlignment="trailing" 1`] = `
 <View
   accessibilityLabel="Lorem ipsum"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -229,8 +241,12 @@ exports[`iOS BpkButtonLink should render correctly with iconAlignment="trailing"
 exports[`iOS BpkButtonLink should render correctly with text props provided 1`] = `
 <View
   accessibilityLabel="Lorem ipsum"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -287,8 +303,12 @@ exports[`iOS BpkButtonLink should render correctly with text props provided 1`] 
 exports[`iOS BpkButtonLink should render correctly with theme prop 1`] = `
 <View
   accessibilityLabel="Lorem ipsum"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -347,8 +367,12 @@ exports[`iOS BpkButtonLink should render correctly with theme prop 1`] = `
 exports[`iOS BpkButtonLink should support elements as icons 1`] = `
 <View
   accessibilityLabel="Lorem ipsum"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -420,8 +444,12 @@ exports[`iOS BpkButtonLink should support elements as icons 1`] = `
 exports[`iOS BpkButtonLink should support overwriting styles 1`] = `
 <View
   accessibilityLabel="Lorem ipsum"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -478,8 +506,16 @@ exports[`iOS BpkButtonLink should support overwriting styles 1`] = `
 exports[`iOS BpkButtonLink should support the "disabled" property 1`] = `
 <View
   accessibilityLabel="Lorem ipsum"
+  accessibilityRole="button"
+  accessibilityStates={
+    Array [
+      "disabled",
+    ]
+  }
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -538,8 +574,12 @@ exports[`iOS BpkButtonLink should support the "disabled" property 1`] = `
 exports[`iOS BpkButtonLink should support the "icon" property 1`] = `
 <View
   accessibilityLabel="Lorem ipsum"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -619,8 +659,12 @@ exports[`iOS BpkButtonLink should support the "icon" property 1`] = `
 exports[`iOS should support the "icon" and "large" property 1`] = `
 <View
   accessibilityLabel="Lorem ipsum"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -700,8 +744,12 @@ exports[`iOS should support the "icon" and "large" property 1`] = `
 exports[`iOS should support the "large" property 1`] = `
 <View
   accessibilityLabel="Lorem ipsum"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}

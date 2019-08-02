@@ -2,14 +2,12 @@
 
 exports[`iOS BpkHorizontalNavItem should render correctly 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Nav"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -72,14 +70,12 @@ exports[`iOS BpkHorizontalNavItem should render correctly 1`] = `
 
 exports[`iOS BpkHorizontalNavItem should render correctly with "selected" prop 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Nav"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -145,14 +141,12 @@ exports[`iOS BpkHorizontalNavItem should render correctly with "selected" prop 1
 
 exports[`iOS BpkHorizontalNavItem should render correctly with "small" prop 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Nav"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -218,14 +212,12 @@ exports[`iOS BpkHorizontalNavItem should render correctly with "small" prop 1`] 
 
 exports[`iOS BpkHorizontalNavItem should render correctly with "spaceAround" prop 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Nav"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -288,14 +280,12 @@ exports[`iOS BpkHorizontalNavItem should render correctly with "spaceAround" pro
 
 exports[`iOS BpkHorizontalNavItem should render correctly with arbitrary props 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Nav"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -358,14 +348,12 @@ exports[`iOS BpkHorizontalNavItem should render correctly with arbitrary props 1
 
 exports[`iOS BpkHorizontalNavItem should render correctly with custom "style" prop 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Nav"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -431,14 +419,12 @@ exports[`iOS BpkHorizontalNavItem should render correctly with custom "style" pr
 
 exports[`iOS BpkHorizontalNavItem should support theming 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Nav"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
