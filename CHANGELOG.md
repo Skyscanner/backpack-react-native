@@ -2,6 +2,37 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-08-05 - Bump react-native to `0.60.4`
+
+**Breaking**:
+
+- react-native-bpk-component-alert: 2.0.39 => 3.0.0
+- react-native-bpk-component-animate-height: 2.0.84 => 3.0.0
+- react-native-bpk-component-badge: 2.2.20 => 3.0.0
+- react-native-bpk-component-banner-alert: 5.0.41 => 6.0.0
+- react-native-bpk-component-button-link: 4.4.16 => 5.0.0
+- react-native-bpk-component-button: 9.2.10 => 10.0.0
+- react-native-bpk-component-calendar: 1.0.8 => 2.0.0
+- react-native-bpk-component-card: 1.4.7 => 2.0.0
+- react-native-bpk-component-carousel-indicator: 1.0.72 => 2.0.0
+- react-native-bpk-component-carousel: 1.0.72 => 2.0.0
+- react-native-bpk-component-chip: 3.2.12 => 4.0.0
+- react-native-bpk-component-dialog: 1.0.9 => 2.0.0
+- react-native-bpk-component-flat-list: 3.1.13 => 4.0.0
+- react-native-bpk-component-horizontal-nav: 4.0.27 => 5.0.0
+- react-native-bpk-component-image: 1.1.49 => 2.0.0
+- react-native-bpk-component-navigation-bar: 5.1.23 => 6.0.0
+- react-native-bpk-component-nudger: 2.0.39 => 3.0.0
+- react-native-bpk-component-phone-input: 3.0.38 => 4.0.0
+- react-native-bpk-component-picker: 3.0.42 => 4.0.0
+- react-native-bpk-component-section-list: 3.1.13 => 4.0.0
+- react-native-bpk-component-select: 2.1.34 => 3.0.0
+- react-native-bpk-component-switch: 1.0.90 => 2.0.0
+- react-native-bpk-component-touchable-native-feedback: 1.1.57 => 2.0.0
+- react-native-bpk-component-touchable-overlay: 1.2.6 => 2.0.0
+  - `accessibilityComponentType` and `accessibilityTraits` have been removed.
+
+
 # 2019-07-31 - Fix for missing theming attribute
 
 **Fixed**:
