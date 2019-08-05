@@ -14,7 +14,10 @@ exports[`Android BpkButtonLink should render correctly 1`] = `
 >
   <View
     accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
     accessible={true}
+    clickable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -23,6 +26,7 @@ exports[`Android BpkButtonLink should render correctly 1`] = `
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -82,7 +86,10 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="leadi
 >
   <View
     accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
     accessible={true}
+    clickable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -91,6 +98,7 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="leadi
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -181,7 +189,10 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="trail
 >
   <View
     accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
     accessible={true}
+    clickable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -190,6 +201,7 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="trail
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -273,7 +285,10 @@ exports[`Android BpkButtonLink should render correctly with text props provided 
 >
   <View
     accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
     accessible={true}
+    clickable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -282,6 +297,7 @@ exports[`Android BpkButtonLink should render correctly with text props provided 
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -342,7 +358,10 @@ exports[`Android BpkButtonLink should render correctly with theme prop 1`] = `
 >
   <View
     accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
     accessible={true}
+    clickable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -351,6 +370,7 @@ exports[`Android BpkButtonLink should render correctly with theme prop 1`] = `
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -413,7 +433,10 @@ exports[`Android BpkButtonLink should support elements as icons 1`] = `
 >
   <View
     accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
     accessible={true}
+    clickable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -422,6 +445,7 @@ exports[`Android BpkButtonLink should support elements as icons 1`] = `
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -499,7 +523,10 @@ exports[`Android BpkButtonLink should support overwriting styles 1`] = `
 >
   <View
     accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
     accessible={true}
+    clickable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -508,6 +535,7 @@ exports[`Android BpkButtonLink should support overwriting styles 1`] = `
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -567,7 +595,14 @@ exports[`Android BpkButtonLink should support the "disabled" property 1`] = `
 >
   <View
     accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={
+      Array [
+        "disabled",
+      ]
+    }
     accessible={true}
+    clickable={false}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -576,6 +611,7 @@ exports[`Android BpkButtonLink should support the "disabled" property 1`] = `
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -638,7 +674,10 @@ exports[`Android BpkButtonLink should support the "icon" property 1`] = `
 >
   <View
     accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
     accessible={true}
+    clickable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -647,6 +686,7 @@ exports[`Android BpkButtonLink should support the "icon" property 1`] = `
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -730,7 +770,10 @@ exports[`Android should support "borderlessBackground" equal to false 1`] = `
 >
   <View
     accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
     accessible={true}
+    clickable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -739,6 +782,7 @@ exports[`Android should support "borderlessBackground" equal to false 1`] = `
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -798,7 +842,10 @@ exports[`Android should support "uppercase" equal to false 1`] = `
 >
   <View
     accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
     accessible={true}
+    clickable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -807,6 +854,7 @@ exports[`Android should support "uppercase" equal to false 1`] = `
         "type": "RippleAndroid",
       }
     }
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}

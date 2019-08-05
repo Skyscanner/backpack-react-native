@@ -3,7 +3,10 @@
 exports[`Android BpkHorizontalNavItem should render correctly 1`] = `
 <View
   accessibilityLabel="Nav"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -12,6 +15,7 @@ exports[`Android BpkHorizontalNavItem should render correctly 1`] = `
       "type": "RippleAndroid",
     }
   }
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -55,7 +59,10 @@ exports[`Android BpkHorizontalNavItem should render correctly 1`] = `
 exports[`Android BpkHorizontalNavItem should render correctly with "selected" prop 1`] = `
 <View
   accessibilityLabel="Nav"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={false}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -64,6 +71,7 @@ exports[`Android BpkHorizontalNavItem should render correctly with "selected" pr
       "type": "RippleAndroid",
     }
   }
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -110,7 +118,10 @@ exports[`Android BpkHorizontalNavItem should render correctly with "selected" pr
 exports[`Android BpkHorizontalNavItem should render correctly with "small" prop 1`] = `
 <View
   accessibilityLabel="Nav"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -119,6 +130,7 @@ exports[`Android BpkHorizontalNavItem should render correctly with "small" prop 
       "type": "RippleAndroid",
     }
   }
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -165,7 +177,10 @@ exports[`Android BpkHorizontalNavItem should render correctly with "small" prop 
 exports[`Android BpkHorizontalNavItem should render correctly with "spaceAround" prop 1`] = `
 <View
   accessibilityLabel="Nav"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -174,6 +189,7 @@ exports[`Android BpkHorizontalNavItem should render correctly with "spaceAround"
       "type": "RippleAndroid",
     }
   }
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -217,7 +233,10 @@ exports[`Android BpkHorizontalNavItem should render correctly with "spaceAround"
 exports[`Android BpkHorizontalNavItem should render correctly with arbitrary props 1`] = `
 <View
   accessibilityLabel="Nav"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -226,6 +245,7 @@ exports[`Android BpkHorizontalNavItem should render correctly with arbitrary pro
       "type": "RippleAndroid",
     }
   }
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -269,7 +289,10 @@ exports[`Android BpkHorizontalNavItem should render correctly with arbitrary pro
 exports[`Android BpkHorizontalNavItem should render correctly with custom "style" prop 1`] = `
 <View
   accessibilityLabel="Nav"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -278,6 +301,7 @@ exports[`Android BpkHorizontalNavItem should render correctly with custom "style
       "type": "RippleAndroid",
     }
   }
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -324,7 +348,10 @@ exports[`Android BpkHorizontalNavItem should render correctly with custom "style
 exports[`Android BpkHorizontalNavItem should support theming 1`] = `
 <View
   accessibilityLabel="Nav"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -333,6 +360,7 @@ exports[`Android BpkHorizontalNavItem should support theming 1`] = `
       "type": "RippleAndroid",
     }
   }
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}

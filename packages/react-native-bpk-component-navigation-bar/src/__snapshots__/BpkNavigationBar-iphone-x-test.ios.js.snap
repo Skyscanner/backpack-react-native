@@ -40,8 +40,11 @@ exports[`ios - iPhone X  BpkNavigationBar should render correctly 1`] = `
   >
     <View
       accessibilityLabel="Back"
+      accessibilityRole="button"
       accessible={true}
+      clickable={true}
       isTVSelectable={true}
+      onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}
@@ -199,8 +202,12 @@ exports[`ios - iPhone X  BpkNavigationBar should render correctly with trailing 
   >
     <View
       accessibilityLabel="Cancel"
+      accessibilityRole="button"
+      accessibilityStates={Array []}
       accessible={true}
+      clickable={true}
       isTVSelectable={true}
+      onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}
@@ -297,8 +304,12 @@ exports[`ios - iPhone X  BpkNavigationBar should render correctly with trailing 
     </View>
     <View
       accessibilityLabel="Done"
+      accessibilityRole="button"
+      accessibilityStates={Array []}
       accessible={true}
+      clickable={true}
       isTVSelectable={true}
+      onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}

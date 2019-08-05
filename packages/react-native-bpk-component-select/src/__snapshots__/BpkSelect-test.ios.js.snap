@@ -2,13 +2,11 @@
 
 exports[`iOS BpkSelect should render correctly 1`] = `
 <View
-  accessibilityComponentType="button"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -74,13 +72,11 @@ exports[`iOS BpkSelect should render correctly 1`] = `
 
 exports[`iOS BpkSelect should render correctly with "showImage" and image 1`] = `
 <View
-  accessibilityComponentType="button"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -161,13 +157,11 @@ exports[`iOS BpkSelect should render correctly with "showImage" and image 1`] = 
 
 exports[`iOS BpkSelect should render correctly with "showImage" and no image 1`] = `
 <View
-  accessibilityComponentType="button"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -245,13 +239,11 @@ exports[`iOS BpkSelect should render correctly with "showImage" and no image 1`]
 
 exports[`iOS BpkSelect should render correctly with "valid" false 1`] = `
 <View
-  accessibilityComponentType="button"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -347,13 +339,11 @@ exports[`iOS BpkSelect should render correctly with "valid" false 1`] = `
 exports[`iOS BpkSelect should render correctly with "valid" false and a validation message 1`] = `
 <View>
   <View
-    accessibilityComponentType="button"
-    accessibilityTraits={
-      Array [
-        "button",
-      ]
-    }
+    accessibilityRole="button"
+    accessibilityStates={Array []}
     accessible={true}
+    clickable={true}
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -469,13 +459,11 @@ exports[`iOS BpkSelect should render correctly with "valid" false and a validati
 
 exports[`iOS BpkSelect should render correctly with "valid" true 1`] = `
 <View
-  accessibilityComponentType="button"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -567,13 +555,11 @@ exports[`iOS BpkSelect should render correctly with "valid" true 1`] = `
 
 exports[`iOS BpkSelect should render correctly with a text label 1`] = `
 <View
-  accessibilityComponentType="button"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -661,13 +647,11 @@ exports[`iOS BpkSelect should render correctly with a text label 1`] = `
 
 exports[`iOS BpkSelect should render correctly with an element label 1`] = `
 <View
-  accessibilityComponentType="button"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -734,13 +718,11 @@ exports[`iOS BpkSelect should render correctly with an element label 1`] = `
 
 exports[`iOS BpkSelect should render correctly with custom styles 1`] = `
 <View
-  accessibilityComponentType="button"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -832,14 +814,15 @@ exports[`iOS BpkSelect should render correctly with custom styles 1`] = `
 
 exports[`iOS BpkSelect should render correctly with the disabled prop 1`] = `
 <View
-  accessibilityComponentType="button"
-  accessibilityTraits={
+  accessibilityRole="button"
+  accessibilityStates={
     Array [
-      "button",
       "disabled",
     ]
   }
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}

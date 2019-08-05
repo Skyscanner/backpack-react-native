@@ -46,17 +46,17 @@ export type Props = {
 const BpkPickerItem = (props: Props) => {
   const { value, label, onPress, selected } = props;
 
-  const accessibilityTraits = ['button'];
+  const accessibilityStates = [];
   if (selected) {
-    accessibilityTraits.push('selected');
+    accessibilityStates.push('selected');
   }
 
   return (
     <BpkTouchableNativeFeedback
       onPress={() => onPress && onPress(value)}
-      accessibilityComponentType="button"
+      accessibilityRole="button"
       accessibilityLabel={label}
-      accessibilityTraits={accessibilityTraits}
+      accessibilityStates={accessibilityStates}
       borderlessBackground={false}
     >
       <View style={styles.pickerItem}>

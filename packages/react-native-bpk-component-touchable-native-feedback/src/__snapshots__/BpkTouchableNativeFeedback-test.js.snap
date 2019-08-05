@@ -3,6 +3,7 @@
 exports[`BpkTouchableNativeFeedback should render correctly on API < 21 1`] = `
 <FakeComponent
   accessible={true}
+  clickable={false}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -10,6 +11,7 @@ exports[`BpkTouchableNativeFeedback should render correctly on API < 21 1`] = `
       "type": "ThemeAttrAndroid",
     }
   }
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -22,6 +24,7 @@ exports[`BpkTouchableNativeFeedback should render correctly on API < 21 1`] = `
 exports[`BpkTouchableNativeFeedback should render correctly on API >= 21 1`] = `
 <FakeComponent
   accessible={true}
+  clickable={false}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -30,6 +33,7 @@ exports[`BpkTouchableNativeFeedback should render correctly on API >= 21 1`] = `
       "type": "RippleAndroid",
     }
   }
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -42,6 +46,7 @@ exports[`BpkTouchableNativeFeedback should render correctly on API >= 21 1`] = `
 exports[`BpkTouchableNativeFeedback should render correctly with arbitrary props 1`] = `
 <FakeComponent
   accessible={true}
+  clickable={false}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -50,6 +55,7 @@ exports[`BpkTouchableNativeFeedback should render correctly with arbitrary props
       "type": "RippleAndroid",
     }
   }
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -63,6 +69,7 @@ exports[`BpkTouchableNativeFeedback should render correctly with arbitrary props
 exports[`BpkTouchableNativeFeedback should render correctly with custom style prop 1`] = `
 <FakeComponent
   accessible={true}
+  clickable={false}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -71,6 +78,7 @@ exports[`BpkTouchableNativeFeedback should render correctly with custom style pr
       "type": "RippleAndroid",
     }
   }
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}

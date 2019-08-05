@@ -73,10 +73,10 @@ const BpkNavigationBarIconButtonIOS = (props: Props) => {
     : tintColor || gray700;
   const iconStyle = [styles.icon, { color: tintColorFinal }];
   const buttonStyle = [styles.button];
-  const accessibilityTraits = ['button'];
+  const accessibilityStates = [];
 
   if (disabled) {
-    accessibilityTraits.push('disabled');
+    accessibilityStates.push('disabled');
   }
 
   if (leading) {
@@ -88,8 +88,8 @@ const BpkNavigationBarIconButtonIOS = (props: Props) => {
   return (
     <TouchableOpacity
       onPress={onPress}
-      accessibilityComponentType="button"
-      accessibilityTraits={accessibilityTraits}
+      accessibilityRole="button"
+      accessibilityStates={accessibilityStates}
       accessibilityLabel={title}
       accessible
       style={buttonStyle}

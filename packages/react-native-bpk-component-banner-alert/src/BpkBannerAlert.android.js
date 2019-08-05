@@ -170,7 +170,7 @@ const BpkBannerAlert = (props: Props) => {
         {expandable ? (
           <BpkTouchableNativeFeedback
             onPress={onToggleExpanded}
-            accessibilityComponentType="button"
+            accessibilityRole="button"
             accessibilityLabel={toggleExpandedButtonLabel}
           >
             <View style={STYLES.row}>{rowContent}</View>

@@ -183,7 +183,7 @@ const BpkBannerAlert = (props: Props) => {
         {expandable ? (
           <BpkTouchableOverlay
             onPress={onToggleExpanded}
-            accessibilityComponentType="button"
+            accessibilityRole="button"
             accessibilityLabel={toggleExpandedButtonLabel}
             style={rowStyle}
           >
@@ -194,7 +194,7 @@ const BpkBannerAlert = (props: Props) => {
         )}
         {dismissable && (
           <BpkTouchableOverlay
-            accessibilityComponentType="button"
+            accessibilityRole="button"
             accessibilityLabel={dismissButtonLabel}
             onPress={onDismiss}
             style={STYLES.closeButton}

@@ -14,7 +14,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "preinstall": "npx ensure-node-env",
-    "postinstall": "npm run bootstrap && npm run link",
+    "postinstall": "npm run bootstrap",
     "install:cocoapods": "(cd ios && bundle install && bundle exec pod install)",
     "bootstrap": "lerna bootstrap --no-ci",
     "lerna": "lerna",
@@ -69,11 +69,6 @@
       }
     }
   },
-  "rnpm": {
-    "assets": [
-      "./packages/react-native-bpk-component-icon/node_modules/bpk-svgs/dist/font/"
-    ]
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -103,22 +98,22 @@
     "eslint-config-skyscanner-with-prettier": "^0.8.0",
     "eslint-plugin-flowtype": "^3.2.0",
     "eslint_d": "^8.0.0",
-    "flow-bin": "^0.92.0",
+    "flow-bin": "^0.98.0",
     "globby": "^10.0.0",
     "husky": "^3.0.0",
     "jest": "^24.1.0",
     "lerna": "^3.10.7",
     "lint-staged": "^9.0.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.15",
     "markdown-spellcheck": "^1.3.1",
     "metro-react-native-babel-preset": "^0.55.0",
     "prompt": "^1.0.0",
     "prop-types": "^15.5.10",
-    "react": "16.8.3",
-    "react-dom": "16.8.3",
-    "react-native": "0.59.0",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-native": "0.60.4",
     "react-native-linear-gradient": "^2.5.3",
-    "react-test-renderer": "16.8.3",
+    "react-test-renderer": "16.8.6",
     "tmp": "^0.1.0",
     "util": "^0.12.0"
   },
@@ -130,6 +125,5 @@
       "react-test-renderer",
       "react-native"
     ]
-  },
-  "dependencies": {}
+  }
 }

@@ -31,7 +31,10 @@ exports[`Android BpkPhoneNumberInput should render correctly 1`] = `
       Phone number
     </Text>
     <View
+      accessibilityRole="button"
+      accessibilityStates={Array []}
       accessible={true}
+      clickable={true}
       isTVSelectable={true}
       nativeBackgroundAndroid={
         Object {
@@ -40,6 +43,7 @@ exports[`Android BpkPhoneNumberInput should render correctly 1`] = `
           "type": "RippleAndroid",
         }
       }
+      onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}
@@ -194,7 +198,14 @@ exports[`Android BpkPhoneNumberInput should render correctly with \`editable\` f
       Phone number
     </Text>
     <View
+      accessibilityRole="button"
+      accessibilityStates={
+        Array [
+          "disabled",
+        ]
+      }
       accessible={true}
+      clickable={false}
       isTVSelectable={true}
       nativeBackgroundAndroid={
         Object {
@@ -203,6 +214,7 @@ exports[`Android BpkPhoneNumberInput should render correctly with \`editable\` f
           "type": "RippleAndroid",
         }
       }
+      onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}

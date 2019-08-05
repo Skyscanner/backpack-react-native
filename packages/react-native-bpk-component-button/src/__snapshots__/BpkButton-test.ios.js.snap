@@ -2,14 +2,12 @@
 
 exports[`iOS BpkButton should render correctly 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Lorem ipsum"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -90,14 +88,12 @@ exports[`iOS BpkButton should render correctly 1`] = `
 
 exports[`iOS BpkButton should render correctly with iconAlignment="leading" 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Lorem ipsum"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -201,14 +197,12 @@ exports[`iOS BpkButton should render correctly with iconAlignment="leading" 1`] 
 
 exports[`iOS BpkButton should render correctly with iconAlignment="trailing" 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Lorem ipsum"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -319,14 +313,12 @@ exports[`iOS BpkButton should render correctly with iconAlignment="trailing" 1`]
 
 exports[`iOS BpkButton should render correctly with type="destructive" 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Lorem ipsum"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -408,15 +400,16 @@ exports[`iOS BpkButton should render correctly with type="destructive" 1`] = `
 
 exports[`iOS BpkButton should render correctly with type="destructive" and disabled 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Lorem ipsum"
-  accessibilityTraits={
+  accessibilityRole="button"
+  accessibilityStates={
     Array [
-      "button",
       "disabled",
     ]
   }
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -498,14 +491,12 @@ exports[`iOS BpkButton should render correctly with type="destructive" and disab
 
 exports[`iOS BpkButton should render correctly with type="featured" 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Lorem ipsum"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -586,15 +577,16 @@ exports[`iOS BpkButton should render correctly with type="featured" 1`] = `
 
 exports[`iOS BpkButton should render correctly with type="featured" and disabled 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Lorem ipsum"
-  accessibilityTraits={
+  accessibilityRole="button"
+  accessibilityStates={
     Array [
-      "button",
       "disabled",
     ]
   }
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -675,14 +667,12 @@ exports[`iOS BpkButton should render correctly with type="featured" and disabled
 
 exports[`iOS BpkButton should render correctly with type="primary" 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Lorem ipsum"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -763,15 +753,16 @@ exports[`iOS BpkButton should render correctly with type="primary" 1`] = `
 
 exports[`iOS BpkButton should render correctly with type="primary" and disabled 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Lorem ipsum"
-  accessibilityTraits={
+  accessibilityRole="button"
+  accessibilityStates={
     Array [
-      "button",
       "disabled",
     ]
   }
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -852,14 +843,12 @@ exports[`iOS BpkButton should render correctly with type="primary" and disabled 
 
 exports[`iOS BpkButton should render correctly with type="secondary" 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Lorem ipsum"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -941,15 +930,16 @@ exports[`iOS BpkButton should render correctly with type="secondary" 1`] = `
 
 exports[`iOS BpkButton should render correctly with type="secondary" and disabled 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Lorem ipsum"
-  accessibilityTraits={
+  accessibilityRole="button"
+  accessibilityStates={
     Array [
-      "button",
       "disabled",
     ]
   }
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -1031,14 +1021,12 @@ exports[`iOS BpkButton should render correctly with type="secondary" and disable
 
 exports[`iOS BpkButton should support elements as icons 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Lorem ipsum"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -1136,14 +1124,12 @@ exports[`iOS BpkButton should support elements as icons 1`] = `
 
 exports[`iOS BpkButton should support having an icon as well as a title 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Lorem ipsum"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -1254,14 +1240,12 @@ exports[`iOS BpkButton should support having an icon as well as a title 1`] = `
 
 exports[`iOS BpkButton should support overwriting styles 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Lorem ipsum"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -1346,15 +1330,16 @@ exports[`iOS BpkButton should support overwriting styles 1`] = `
 
 exports[`iOS BpkButton should support the "disabled" property 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Lorem ipsum"
-  accessibilityTraits={
+  accessibilityRole="button"
+  accessibilityStates={
     Array [
-      "button",
       "disabled",
     ]
   }
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -1435,14 +1420,12 @@ exports[`iOS BpkButton should support the "disabled" property 1`] = `
 
 exports[`iOS BpkButton should support the "icon" property 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Lorem ipsum"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -1553,14 +1536,12 @@ exports[`iOS BpkButton should support the "icon" property 1`] = `
 
 exports[`iOS BpkButton should support the "iconOnly" property 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Lorem ipsum"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -1657,14 +1638,12 @@ exports[`iOS BpkButton should support the "iconOnly" property 1`] = `
 
 exports[`iOS BpkButton should support the "secondary" property 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Lorem ipsum"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -1746,14 +1725,12 @@ exports[`iOS BpkButton should support the "secondary" property 1`] = `
 
 exports[`iOS BpkButtonThemed should not apply border radius when a theme is applied 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Lorem ipsum"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -1853,14 +1830,12 @@ exports[`iOS BpkButtonThemed should not apply border radius when a theme is appl
 
 exports[`iOS BpkButtonThemed should render correctly 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Lorem ipsum"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -1941,14 +1916,12 @@ exports[`iOS BpkButtonThemed should render correctly 1`] = `
 
 exports[`iOS should support the "icon" and "large" property 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Lorem ipsum"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -2059,14 +2032,12 @@ exports[`iOS should support the "icon" and "large" property 1`] = `
 
 exports[`iOS should support the "iconOnly" and "large" property 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Lorem ipsum"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -2163,14 +2134,12 @@ exports[`iOS should support the "iconOnly" and "large" property 1`] = `
 
 exports[`iOS should support the "large" and secondary property 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Lorem ipsum"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -2255,14 +2224,12 @@ exports[`iOS should support the "large" and secondary property 1`] = `
 
 exports[`iOS should support the "large" property 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="Lorem ipsum"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}

@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
@@ -22,6 +21,8 @@
 		D66FC4882109D8610063B1A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66FC4872109D8610063B1A6 /* Main.storyboard */; };
 		D66FC4912109DA3C0063B1A6 /* StorybookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FC4902109DA3C0063B1A6 /* StorybookViewController.m */; };
 		E120F32FF8B3695B5E878AC8 /* libPods-Backpack Native Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 967DA828F1B29C9BC73AEB4E /* libPods-Backpack Native Tests.a */; };
+		E04388EA83264464B5585ECA /* BpkIcon.woff in Resources */ = {isa = PBXBuildFile; fileRef = A2D44C89E02549FABA514E31 /* BpkIcon.woff */; };
+		53BE2BC678B94ACB91F10BC7 /* BpkIconIOS.woff in Resources */ = {isa = PBXBuildFile; fileRef = AA66E7B8E3114A04B5A1488D /* BpkIconIOS.woff */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		D66FC4902109DA3C0063B1A6 /* StorybookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = StorybookViewController.m; sourceTree = "<group>"; tabWidth = 4; };
 		EBA91A53EB924F979E7C641D /* BpkIcon.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = BpkIcon.ttf; path = "../packages/react-native-bpk-component-icon/node_modules/bpk-svgs/dist/font/BpkIcon.ttf"; sourceTree = "<group>"; };
 		FBB4289347D8862ADA374625 /* Pods-Backpack Native.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backpack Native.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Backpack Native/Pods-Backpack Native.debug.xcconfig"; sourceTree = "<group>"; };
+		A2D44C89E02549FABA514E31 /* BpkIcon.woff */ = {isa = PBXFileReference; name = "BpkIcon.woff"; path = "../packages/react-native-bpk-component-icon/node_modules/bpk-svgs/dist/font/BpkIcon.woff"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AA66E7B8E3114A04B5A1488D /* BpkIconIOS.woff */ = {isa = PBXFileReference; name = "BpkIconIOS.woff"; path = "../packages/react-native-bpk-component-icon/node_modules/bpk-svgs/dist/font/BpkIconIOS.woff"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +192,8 @@
 			children = (
 				EBA91A53EB924F979E7C641D /* BpkIcon.ttf */,
 				B1636A374E1F45A88C968BB2 /* BpkIconIOS.ttf */,
+				A2D44C89E02549FABA514E31 /* BpkIcon.woff */,
+				AA66E7B8E3114A04B5A1488D /* BpkIconIOS.woff */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -355,6 +360,8 @@
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				265B6764DCEE4FB88CD4FA49 /* BpkIcon.ttf in Resources */,
 				4E936218F43D4459BC11AFDD /* BpkIconIOS.ttf in Resources */,
+				E04388EA83264464B5585ECA /* BpkIcon.woff in Resources */,
+				53BE2BC678B94ACB91F10BC7 /* BpkIconIOS.woff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

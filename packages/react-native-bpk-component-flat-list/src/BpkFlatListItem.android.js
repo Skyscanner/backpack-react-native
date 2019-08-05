@@ -110,9 +110,8 @@ class BpkFlatListItem extends React.PureComponent<FlatListItemProps> {
     return (
       <BpkTouchableNativeFeedback
         borderlessBackground={false}
-        accessibilityComponentType="button"
         accessibilityLabel={title}
-        accessibilityTraits={['button']}
+        accessibilityRole="button"
         {...rest}
       >
         <View style={styles.outer}>

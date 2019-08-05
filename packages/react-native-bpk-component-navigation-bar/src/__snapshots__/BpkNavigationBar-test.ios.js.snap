@@ -37,8 +37,11 @@ exports[`ios BpkNavigationBar should render correctly 1`] = `
   >
     <View
       accessibilityLabel="Back"
+      accessibilityRole="button"
       accessible={true}
+      clickable={true}
       isTVSelectable={true}
+      onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}
@@ -196,8 +199,11 @@ exports[`ios BpkNavigationBar should render correctly with a subtitle view 1`] =
   >
     <View
       accessibilityLabel="Back"
+      accessibilityRole="button"
       accessible={true}
+      clickable={true}
       isTVSelectable={true}
+      onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}
@@ -363,8 +369,11 @@ exports[`ios BpkNavigationBar should render correctly with a title view 1`] = `
   >
     <View
       accessibilityLabel="Back"
+      accessibilityRole="button"
       accessible={true}
+      clickable={true}
       isTVSelectable={true}
+      onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}
@@ -489,8 +498,11 @@ exports[`ios BpkNavigationBar should render correctly with an icon in the title 
   >
     <View
       accessibilityLabel="Back"
+      accessibilityRole="button"
       accessible={true}
+      clickable={true}
       isTVSelectable={true}
+      onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}
@@ -676,8 +688,11 @@ exports[`ios BpkNavigationBar should render correctly with custom style 1`] = `
   >
     <View
       accessibilityLabel="Back"
+      accessibilityRole="button"
       accessible={true}
+      clickable={true}
       isTVSelectable={true}
+      onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}
@@ -832,8 +847,12 @@ exports[`ios BpkNavigationBar should render correctly with trailing button 1`] =
   >
     <View
       accessibilityLabel="Cancel"
+      accessibilityRole="button"
+      accessibilityStates={Array []}
       accessible={true}
+      clickable={true}
       isTVSelectable={true}
+      onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}
@@ -930,8 +949,12 @@ exports[`ios BpkNavigationBar should render correctly with trailing button 1`] =
     </View>
     <View
       accessibilityLabel="Done"
+      accessibilityRole="button"
+      accessibilityStates={Array []}
       accessible={true}
+      clickable={true}
       isTVSelectable={true}
+      onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}

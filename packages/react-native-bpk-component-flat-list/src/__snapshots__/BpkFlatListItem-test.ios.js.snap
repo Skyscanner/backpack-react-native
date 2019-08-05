@@ -2,14 +2,11 @@
 
 exports[`iOS BpkFlatListItem should render correctly 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="List item"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -107,14 +104,11 @@ exports[`iOS BpkFlatListItem should render correctly 1`] = `
 
 exports[`iOS BpkFlatListItem should support the "image" property 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="List item"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -222,14 +216,11 @@ exports[`iOS BpkFlatListItem should support the "image" property 1`] = `
 
 exports[`iOS BpkFlatListItem should support the "selected" property 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="List item"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -333,14 +324,11 @@ exports[`iOS BpkFlatListItem should support the "selected" property 1`] = `
 
 exports[`iOS should support theming when selected 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLabel="List item"
-  accessibilityTraits={
-    Array [
-      "button",
-    ]
-  }
+  accessibilityRole="button"
   accessible={true}
+  clickable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}

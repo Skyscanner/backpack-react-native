@@ -3,7 +3,9 @@
 exports[`Android BpkFlatListItem should render correctly 1`] = `
 <View
   accessibilityLabel="List item"
+  accessibilityRole="button"
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -12,6 +14,7 @@ exports[`Android BpkFlatListItem should render correctly 1`] = `
       "type": "RippleAndroid",
     }
   }
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -98,7 +101,9 @@ exports[`Android BpkFlatListItem should render correctly 1`] = `
 exports[`Android BpkFlatListItem should support the "image" property 1`] = `
 <View
   accessibilityLabel="List item"
+  accessibilityRole="button"
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -107,6 +112,7 @@ exports[`Android BpkFlatListItem should support the "image" property 1`] = `
       "type": "RippleAndroid",
     }
   }
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -203,7 +209,9 @@ exports[`Android BpkFlatListItem should support the "image" property 1`] = `
 exports[`Android BpkFlatListItem should support the "selected" property 1`] = `
 <View
   accessibilityLabel="List item"
+  accessibilityRole="button"
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -212,6 +220,7 @@ exports[`Android BpkFlatListItem should support the "selected" property 1`] = `
       "type": "RippleAndroid",
     }
   }
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -307,7 +316,9 @@ exports[`Android BpkFlatListItem should support the "selected" property 1`] = `
 exports[`Android should support theming when selected 1`] = `
 <View
   accessibilityLabel="List item"
+  accessibilityRole="button"
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -316,6 +327,7 @@ exports[`Android should support theming when selected 1`] = `
       "type": "RippleAndroid",
     }
   }
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}

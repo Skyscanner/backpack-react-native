@@ -3,8 +3,12 @@
 exports[`iOS BpkNavigationBarTextButtonIOS should render correctly 1`] = `
 <View
   accessibilityLabel="Edit"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -48,8 +52,16 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly 1`] = `
 exports[`iOS BpkNavigationBarTextButtonIOS should render correctly disabled 1`] = `
 <View
   accessibilityLabel="Done"
+  accessibilityRole="button"
+  accessibilityStates={
+    Array [
+      "disabled",
+    ]
+  }
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -93,8 +105,12 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly disabled 1`] 
 exports[`iOS BpkNavigationBarTextButtonIOS should render correctly emphasize 1`] = `
 <View
   accessibilityLabel="Done"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -140,8 +156,12 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly emphasize 1`]
 exports[`iOS BpkNavigationBarTextButtonIOS should render correctly leading configuration 1`] = `
 <View
   accessibilityLabel="Cancel"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -185,8 +205,12 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly leading confi
 exports[`iOS BpkNavigationBarTextButtonIOS should render correctly with type="primary" 1`] = `
 <View
   accessibilityLabel="Done"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -230,8 +254,16 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly with type="pr
 exports[`iOS BpkNavigationBarTextButtonIOS should render correctly with type="primary" and disabled 1`] = `
 <View
   accessibilityLabel="Done"
+  accessibilityRole="button"
+  accessibilityStates={
+    Array [
+      "disabled",
+    ]
+  }
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -275,8 +307,16 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly with type="pr
 exports[`iOS BpkNavigationBarTextButtonIOS should respect "disabledTintColor" over "type" 1`] = `
 <View
   accessibilityLabel="Done"
+  accessibilityRole="button"
+  accessibilityStates={
+    Array [
+      "disabled",
+    ]
+  }
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -320,8 +360,12 @@ exports[`iOS BpkNavigationBarTextButtonIOS should respect "disabledTintColor" ov
 exports[`iOS BpkNavigationBarTextButtonIOS should respect "primaryTintColor" over "tintColor" if type="primary" 1`] = `
 <View
   accessibilityLabel="Done"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -365,8 +409,12 @@ exports[`iOS BpkNavigationBarTextButtonIOS should respect "primaryTintColor" ove
 exports[`iOS BpkNavigationBarTextButtonIOS should respect "tintColor" over "primaryTintColor" if type="default" 1`] = `
 <View
   accessibilityLabel="Done"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -410,8 +458,12 @@ exports[`iOS BpkNavigationBarTextButtonIOS should respect "tintColor" over "prim
 exports[`iOS BpkNavigationBarTextButtonIOS should respect "tintColor" over "type" 1`] = `
 <View
   accessibilityLabel="Done"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
   accessible={true}
+  clickable={true}
   isTVSelectable={true}
+  onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}

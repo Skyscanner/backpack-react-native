@@ -62,7 +62,7 @@ const BpkButtonLink = (props: Props) => {
   const textStyle = [styles.text];
   const iconStyle = [styles.icon];
 
-  const accessibilityTraits = ['button'];
+  const accessibilityStates = [];
 
   if (large) {
     viewStyle.push(styles.viewLarge);
@@ -80,14 +80,14 @@ const BpkButtonLink = (props: Props) => {
 
   if (disabled) {
     textStyle.push(styles.textDisabled);
-    accessibilityTraits.push('disabled');
+    accessibilityStates.push('disabled');
   }
 
   return (
     <TouchableOpacity
-      accessibilityComponentType="button"
+      accessibilityRole="button"
       accessibilityLabel={accessibilityLabel || title}
-      accessibilityTraits={accessibilityTraits}
+      accessibilityStates={accessibilityStates}
       onPress={onPress}
       disabled={disabled}
       {...rest}

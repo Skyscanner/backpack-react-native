@@ -89,7 +89,7 @@ const BpkHorizontalNavItem = (props: Props) => {
     ...rest
   } = props;
 
-  const accessibilityTraits = ['button'];
+  const accessibilityStates = [];
   const textSize = small ? 'sm' : 'base';
   const viewStyles = [styles.view];
   const textStyles = [styles.text];
@@ -102,7 +102,7 @@ const BpkHorizontalNavItem = (props: Props) => {
     textStyles.push({ color: themeAttributes.colorGray700 });
   }
   if (disabled) {
-    accessibilityTraits.push('disabled');
+    accessibilityStates.push('disabled');
     textStyles.push(styles.textDisabled);
     if (themeAttributes && themeAttributes.colorGray300) {
       textStyles.push({
@@ -134,9 +134,9 @@ const BpkHorizontalNavItem = (props: Props) => {
   const platformProps = isAndroid ? { borderlessBackground: false } : {};
   return (
     <Touchable
-      accessibilityComponentType="button"
+      accessibilityRole="button"
       accessibilityLabel={accessibilityLabel || title}
-      accessibilityTraits={accessibilityTraits}
+      accessibilityStates={accessibilityStates}
       disabled={disabled || selected}
       {...platformProps}
       {...rest}

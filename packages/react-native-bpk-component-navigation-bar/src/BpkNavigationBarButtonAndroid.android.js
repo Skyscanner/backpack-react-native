@@ -61,18 +61,18 @@ const BpkNavigationBarButton = (props: Props) => {
     ? disabledTintColor || colorBlue300
     : tintColor || colorWhite;
   const iconStyle = [styles.icon, { color: tintColorFinal }];
-  const accessibilityTraits = ['button'];
+  const accessibilityStates = [];
 
   if (disabled) {
-    accessibilityTraits.push('disabled');
+    accessibilityStates.push('disabled');
   }
 
   return (
     <View style={styles.clipView}>
       <BpkTouchableNativeFeedback
         onPress={onPress}
-        accessibilityComponentType="button"
-        accessibilityTraits={accessibilityTraits}
+        accessibilityRole="button"
+        accessibilityStates={accessibilityStates}
         accessibilityLabel={title}
         color={setOpacity(touchableColorFinal, 0.2)}
         disabled={disabled}

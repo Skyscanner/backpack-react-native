@@ -10,6 +10,8 @@ exports[`Android BpkPicker should render correctly 1`] = `
 >
   <View
     accessible={true}
+    clickable={true}
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -101,7 +103,10 @@ exports[`Android BpkPicker should render correctly 1`] = `
         >
           <View
             accessibilityLabel="foo"
+            accessibilityRole="button"
+            accessibilityStates={Array []}
             accessible={true}
+            clickable={true}
             isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
@@ -110,6 +115,7 @@ exports[`Android BpkPicker should render correctly 1`] = `
                 "type": "RippleAndroid",
               }
             }
+            onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -146,7 +152,10 @@ exports[`Android BpkPicker should render correctly 1`] = `
         >
           <View
             accessibilityLabel="bar"
+            accessibilityRole="button"
+            accessibilityStates={Array []}
             accessible={true}
+            clickable={true}
             isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
@@ -155,6 +164,7 @@ exports[`Android BpkPicker should render correctly 1`] = `
                 "type": "RippleAndroid",
               }
             }
+            onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -202,6 +212,8 @@ exports[`Android BpkPicker should render correctly with a selected value 1`] = `
 >
   <View
     accessible={true}
+    clickable={true}
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -293,7 +305,14 @@ exports[`Android BpkPicker should render correctly with a selected value 1`] = `
         >
           <View
             accessibilityLabel="foo"
+            accessibilityRole="button"
+            accessibilityStates={
+              Array [
+                "selected",
+              ]
+            }
             accessible={true}
+            clickable={true}
             isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
@@ -302,6 +321,7 @@ exports[`Android BpkPicker should render correctly with a selected value 1`] = `
                 "type": "RippleAndroid",
               }
             }
+            onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -340,7 +360,10 @@ exports[`Android BpkPicker should render correctly with a selected value 1`] = `
         >
           <View
             accessibilityLabel="bar"
+            accessibilityRole="button"
+            accessibilityStates={Array []}
             accessible={true}
+            clickable={true}
             isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
@@ -349,6 +372,7 @@ exports[`Android BpkPicker should render correctly with a selected value 1`] = `
                 "type": "RippleAndroid",
               }
             }
+            onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}

@@ -39,14 +39,14 @@ import BpkBadge, {
 
 const style = StyleSheet.create({
   container: {
-    flexDirection: 'column',
-    flexWrap: 'wrap',
+    width: '100%',
   },
   badgeWrapper: {
-    alignSelf: 'stretch',
+    display: 'flex',
+    flexDirection: 'column',
     justifyContent: 'space-around',
-    margin: spacingSm,
     paddingBottom: spacingSm,
+    margin: spacingSm,
   },
   center: {
     flexDirection: 'row',

@@ -44,7 +44,7 @@ const BpkChipInner = (props: InnerProps) => {
       <BpkTouchableNativeFeedback
         borderlessBackground={Platform.Version !== 28}
         accessibilityLabel={accessibilityLabel}
-        accessibilityComponentType="button"
+        accessibilityRole="button"
         {...rest}
       >
         <View style={style}>{children}</View>
