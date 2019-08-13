@@ -1,5 +1,5 @@
 PODS:
-  - Backpack (12.0.0):
+  - Backpack (13.0.0):
     - FSCalendar (~> 2.8)
     - TTTAttributedLabel (~> 1.13.4)
   - boost-for-react-native (1.63.0)
@@ -64,10 +64,10 @@ PODS:
     - React-jsi (= 0.60.4)
   - React-jsinspector (0.60.4)
   - react-native-bpk-component-calendar (2.0.0):
-    - Backpack (~> 12.0)
+    - Backpack (~> 13.0)
     - React
   - react-native-bpk-component-dialog (2.0.0):
-    - Backpack (~> 12.0)
+    - Backpack (~> 13.0)
     - React
   - react-native-maps (0.25.0):
     - React
@@ -99,7 +99,7 @@ PODS:
   - yoga (0.60.4.React)
 
 DEPENDENCIES:
-  - Backpack (~> 12.0.0)
+  - Backpack (~> 13.0.0)
   - BVLinearGradient (from `../node_modules/react-native-linear-gradient`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
@@ -189,7 +189,7 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  Backpack: 263a545a47533278646c62c4460ef849b72afa6a
+  Backpack: 67d05809b516eb380b2948aa5d164e67271743db
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BVLinearGradient: b0b70acf63ee888829b7c2ebbf6b50e227396e55
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
@@ -204,8 +204,8 @@ SPEC CHECKSUMS:
   React-jsi: 40f467ff088c811c6630acccb4aea57ea7ccb1b5
   React-jsiexecutor: e4b4717060a0cd8d0270323b5655a68c95432efd
   React-jsinspector: 044105eea064aec81adc5e4d777a8f6589e7d094
-  react-native-bpk-component-calendar: a45743fe657f236fdd04b5d23d6af47ca327bcef
-  react-native-bpk-component-dialog: 4a348349686b44ee49c192e32acea9514655b65a
+  react-native-bpk-component-calendar: 90333cc23988b4f57f90971e57563d1cb476f82b
+  react-native-bpk-component-dialog: 20b0c2d65cafc793b992a169604649bbedd31f22
   react-native-maps: bb480348a3fe1e5a811fed1ba3387b329161c5cc
   React-RCTActionSheet: 08864c609d9f959abf3d51fdd93f8bc6e91f21eb
   React-RCTAnimation: a4547e9fac2627ded3df9d302f5558b475faf819
@@ -220,6 +220,6 @@ SPEC CHECKSUMS:
   TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
   yoga: 88c514f310aff89b94a14c5fbf44b95735af0cb7
 
-PODFILE CHECKSUM: 55c9be280d8f39c28a71f6bddaca51605429d763
+PODFILE CHECKSUM: 9664f088aa76c24b2625738dfba1186ecedee8a0
 
 COCOAPODS: 1.5.3
