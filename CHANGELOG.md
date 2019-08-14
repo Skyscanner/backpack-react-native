@@ -2,6 +2,16 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-08-14 - New swap icon
+
+**Added:**
+- react-native-bpk-component-icon:
+  - New `swap--vertical` icon.
+
+**Breaking:**
+- react-native-bpk-component-icon:
+  - `swap` icon renamed `swap--horizontal`.
+
 # 2019-08-14 - Bump pod dependencies
 
 **Fixed:**
