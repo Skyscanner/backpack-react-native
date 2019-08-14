@@ -1,6 +1,6 @@
 {
   "name": "react-native-bpk-component-dialog",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "main": "index.js",
   "description": "Backpack React Native dialog component.",
   "repository": {
@@ -20,8 +20,8 @@
   "devDependencies": {
     "bpk-tokens": "^27.4.7",
     "lodash": "^4.17.4",
-    "react-native-bpk-component-button": "^10.0.0",
-    "react-native-bpk-component-icon": "^1.16.2",
+    "react-native-bpk-component-button": "^10.0.1",
+    "react-native-bpk-component-icon": "^2.0.0",
     "react-native-bpk-component-text": "^4.1.9"
   }
 }
