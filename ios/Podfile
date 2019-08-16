@@ -28,7 +28,7 @@ target 'Backpack Native' do
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
   # RN Bridging Pods
-  pod 'Backpack', '~> 13.0.0'
+  pod 'Backpack', '~> 14.0.0'
   pod 'react-native-bpk-component-calendar', path: '../packages/react-native-bpk-component-calendar'
   pod 'react-native-bpk-component-dialog', path: '../packages/react-native-bpk-component-dialog'
 
@@ -41,4 +41,3 @@ target 'Backpack Native' do
 
   use_native_modules!
 end
-

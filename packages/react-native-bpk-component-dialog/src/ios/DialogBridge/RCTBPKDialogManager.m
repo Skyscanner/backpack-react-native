@@ -58,11 +58,13 @@ RCT_EXPORT_MODULE()
 }
 
 - (void)presentDialog:(RCTBPKDialog *)dialog {
+    BPKDialogIconDefinition *iconDefinition =
+    [[BPKDialogIconDefinition alloc] initWithIcon:[BPKIcon templateIconNamed:dialog.iconId size:BPKIconSizeLarge]
+                              iconBackgroundColor:dialog.iconColor];
     dialog.dialogController = [BPKDialogController dialogControllerWithTitle:dialog.title
                                                                         message:dialog.message
                                                                           style:dialog.style
-                                                            iconBackgroundColor:dialog.iconColor
-                                                                      iconImage:[BPKIcon templateIconNamed:dialog.iconId size:BPKIconSizeLarge]];
+                                                                 iconDefinition:iconDefinition];
     
     BPKDialogScrimAction *scrimAction = [BPKDialogScrimAction actionWithHandler:^(BOOL didDismiss) {
         [[self.bridge moduleForClass:[RCTBPKDialogEventsManager class]] didInvokeScrimActionForDialogWithIdentifier:dialog.identifier.unsignedIntegerValue];
