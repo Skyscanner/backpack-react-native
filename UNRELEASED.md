@@ -2,13 +2,6 @@
 
 > Place your changes below this line.
 
-# 2019-08-17 - Bump pod dependencies
-
-**Fixed:**
-- react-native-bpk-component-calendar: 2.0.1 => 2.0.2:
-- react-native-bpk-component-dialog: 2.0.1 => 2.0.2:
-- Increased `Backpack` pod dependency version from 13.0 to 14.0 in `podspec`.
-
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).

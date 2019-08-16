@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-08-17 - Bump pod dependencies
+
+**Fixed:**
+- react-native-bpk-component-calendar: 2.0.2 => 2.0.3:
+- react-native-bpk-component-dialog: 2.0.2 => 2.0.3:
+- Increased `Backpack` pod dependency version from 13.0 to 14.0 in `podspec`.
+
 # 2019-08-14 - New swap icon
 
 **Added:**
