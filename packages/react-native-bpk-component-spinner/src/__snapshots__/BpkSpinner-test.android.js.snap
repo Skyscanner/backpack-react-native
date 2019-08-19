@@ -39,7 +39,7 @@ exports[`Android BpkSpinner should support theming 1`] = `
 exports[`Android BpkSpinner should support type="dark" 1`] = `
 <ActivityIndicator
   animating={true}
-  color="rgb(82, 76, 97)"
+  color="rgb(68, 69, 96)"
   hidesWhenStopped={true}
   size="large"
 />

@@ -6,7 +6,7 @@ exports[`Android withDivider should render correctly 1`] = `
     Array [
       Object {
         "backgroundColor": "rgb(255, 255, 255)",
-        "borderColor": "rgb(230, 228, 235)",
+        "borderColor": "rgb(221, 221, 229)",
         "borderRadius": 4,
         "borderWidth": 1,
       },
@@ -34,7 +34,7 @@ exports[`Android withDivider should render correctly 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -51,7 +51,7 @@ exports[`Android withDivider should render correctly 1`] = `
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(230, 228, 235)",
+          "backgroundColor": "rgb(221, 221, 229)",
           "flexDirection": "column",
           "width": 1,
         },
@@ -71,7 +71,7 @@ exports[`Android withDivider should render correctly 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -93,7 +93,7 @@ exports[`Android withDivider should render correctly with arbitrary props 1`] = 
     Array [
       Object {
         "backgroundColor": "rgb(255, 255, 255)",
-        "borderColor": "rgb(230, 228, 235)",
+        "borderColor": "rgb(221, 221, 229)",
         "borderRadius": 4,
         "borderWidth": 1,
       },
@@ -122,7 +122,7 @@ exports[`Android withDivider should render correctly with arbitrary props 1`] = 
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -139,7 +139,7 @@ exports[`Android withDivider should render correctly with arbitrary props 1`] = 
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(230, 228, 235)",
+          "backgroundColor": "rgb(221, 221, 229)",
           "flexDirection": "column",
           "width": 1,
         },
@@ -159,7 +159,7 @@ exports[`Android withDivider should render correctly with arbitrary props 1`] = 
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -181,7 +181,7 @@ exports[`Android withDivider should render correctly with custom main style 1`] 
     Array [
       Object {
         "backgroundColor": "rgb(255, 255, 255)",
-        "borderColor": "rgb(230, 228, 235)",
+        "borderColor": "rgb(221, 221, 229)",
         "borderRadius": 4,
         "borderWidth": 1,
       },
@@ -212,7 +212,7 @@ exports[`Android withDivider should render correctly with custom main style 1`] 
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -229,7 +229,7 @@ exports[`Android withDivider should render correctly with custom main style 1`] 
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(230, 228, 235)",
+          "backgroundColor": "rgb(221, 221, 229)",
           "flexDirection": "column",
           "width": 1,
         },
@@ -249,7 +249,7 @@ exports[`Android withDivider should render correctly with custom main style 1`] 
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -271,7 +271,7 @@ exports[`Android withDivider should render correctly with custom stub style 1`] 
     Array [
       Object {
         "backgroundColor": "rgb(255, 255, 255)",
-        "borderColor": "rgb(230, 228, 235)",
+        "borderColor": "rgb(221, 221, 229)",
         "borderRadius": 4,
         "borderWidth": 1,
       },
@@ -299,7 +299,7 @@ exports[`Android withDivider should render correctly with custom stub style 1`] 
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -316,7 +316,7 @@ exports[`Android withDivider should render correctly with custom stub style 1`] 
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(230, 228, 235)",
+          "backgroundColor": "rgb(221, 221, 229)",
           "flexDirection": "column",
           "width": 1,
         },
@@ -339,7 +339,7 @@ exports[`Android withDivider should render correctly with custom stub style 1`] 
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -361,7 +361,7 @@ exports[`Android withDivider should render correctly without padding 1`] = `
     Array [
       Object {
         "backgroundColor": "rgb(255, 255, 255)",
-        "borderColor": "rgb(230, 228, 235)",
+        "borderColor": "rgb(221, 221, 229)",
         "borderRadius": 4,
         "borderWidth": 1,
       },
@@ -386,7 +386,7 @@ exports[`Android withDivider should render correctly without padding 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -403,7 +403,7 @@ exports[`Android withDivider should render correctly without padding 1`] = `
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(230, 228, 235)",
+          "backgroundColor": "rgb(221, 221, 229)",
           "flexDirection": "column",
           "width": 1,
         },
@@ -423,7 +423,7 @@ exports[`Android withDivider should render correctly without padding 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",

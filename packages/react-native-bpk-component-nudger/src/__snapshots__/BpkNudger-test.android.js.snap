@@ -60,7 +60,7 @@ exports[`Android BpkNudger should render correctly 1`] = `
           },
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
-            "borderColor": "rgb(230, 228, 235)",
+            "borderColor": "rgb(221, 221, 229)",
             "borderRadius": 40,
           },
           Object {
@@ -77,7 +77,7 @@ exports[`Android BpkNudger should render correctly 1`] = `
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "BpkIcon",
               "fontSize": 24,
               "includeFontPadding": false,
@@ -113,7 +113,7 @@ exports[`Android BpkNudger should render correctly 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "sans-serif",
           "fontSize": 20,
           "fontWeight": "400",
@@ -179,7 +179,7 @@ exports[`Android BpkNudger should render correctly 1`] = `
           },
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
-            "borderColor": "rgb(230, 228, 235)",
+            "borderColor": "rgb(221, 221, 229)",
             "borderRadius": 40,
           },
           Object {
@@ -196,7 +196,7 @@ exports[`Android BpkNudger should render correctly 1`] = `
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "BpkIcon",
               "fontSize": 24,
               "includeFontPadding": false,
@@ -294,8 +294,8 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
             "paddingVertical": 6,
           },
           Object {
-            "backgroundColor": "rgb(230, 228, 235)",
-            "borderColor": "rgb(230, 228, 235)",
+            "backgroundColor": "rgb(221, 221, 229)",
+            "borderColor": "rgb(221, 221, 229)",
             "borderRadius": 40,
           },
           Object {
@@ -312,7 +312,7 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "BpkIcon",
               "fontSize": 24,
               "includeFontPadding": false,
@@ -325,7 +325,7 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
                 "marginEnd": 4,
               },
               Object {
-                "color": "rgb(178, 174, 189)",
+                "color": "rgb(178, 178, 191)",
               },
               Object {
                 "marginEnd": 0,
@@ -348,7 +348,7 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "sans-serif",
           "fontSize": 20,
           "fontWeight": "400",
@@ -414,7 +414,7 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
           },
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
-            "borderColor": "rgb(230, 228, 235)",
+            "borderColor": "rgb(221, 221, 229)",
             "borderRadius": 40,
           },
           Object {
@@ -431,7 +431,7 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "BpkIcon",
               "fontSize": 24,
               "includeFontPadding": false,
@@ -526,7 +526,7 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
           },
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
-            "borderColor": "rgb(230, 228, 235)",
+            "borderColor": "rgb(221, 221, 229)",
             "borderRadius": 40,
           },
           Object {
@@ -543,7 +543,7 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "BpkIcon",
               "fontSize": 24,
               "includeFontPadding": false,
@@ -579,7 +579,7 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "sans-serif",
           "fontSize": 20,
           "fontWeight": "400",
@@ -648,8 +648,8 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
             "paddingVertical": 6,
           },
           Object {
-            "backgroundColor": "rgb(230, 228, 235)",
-            "borderColor": "rgb(230, 228, 235)",
+            "backgroundColor": "rgb(221, 221, 229)",
+            "borderColor": "rgb(221, 221, 229)",
             "borderRadius": 40,
           },
           Object {
@@ -666,7 +666,7 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "BpkIcon",
               "fontSize": 24,
               "includeFontPadding": false,
@@ -679,7 +679,7 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
                 "marginEnd": 4,
               },
               Object {
-                "color": "rgb(178, 174, 189)",
+                "color": "rgb(178, 178, 191)",
               },
               Object {
                 "marginEnd": 0,
@@ -764,8 +764,8 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
             "paddingVertical": 6,
           },
           Object {
-            "backgroundColor": "rgb(230, 228, 235)",
-            "borderColor": "rgb(230, 228, 235)",
+            "backgroundColor": "rgb(221, 221, 229)",
+            "borderColor": "rgb(221, 221, 229)",
             "borderRadius": 40,
           },
           Object {
@@ -782,7 +782,7 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "BpkIcon",
               "fontSize": 24,
               "includeFontPadding": false,
@@ -795,7 +795,7 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
                 "marginEnd": 4,
               },
               Object {
-                "color": "rgb(178, 174, 189)",
+                "color": "rgb(178, 178, 191)",
               },
               Object {
                 "marginEnd": 0,
@@ -818,7 +818,7 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "sans-serif",
           "fontSize": 20,
           "fontWeight": "400",
@@ -884,7 +884,7 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
           },
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
-            "borderColor": "rgb(230, 228, 235)",
+            "borderColor": "rgb(221, 221, 229)",
             "borderRadius": 40,
           },
           Object {
@@ -901,7 +901,7 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "BpkIcon",
               "fontSize": 24,
               "includeFontPadding": false,

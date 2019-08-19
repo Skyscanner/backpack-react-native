@@ -45,7 +45,7 @@ exports[`iOS BpkPicker should render correctly 1`] = `
         Object {
           "alignItems": "center",
           "backgroundColor": "#f9f9f9",
-          "borderColor": "rgb(204, 201, 212)",
+          "borderColor": "rgb(205, 205, 215)",
           "borderTopWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -93,7 +93,7 @@ exports[`iOS BpkPicker should render correctly 1`] = `
             style={
               Array [
                 Object {
-                  "color": "rgb(82, 76, 97)",
+                  "color": "rgb(68, 69, 96)",
                   "fontFamily": "System",
                   "fontSize": 14,
                   "fontWeight": "400",
@@ -193,7 +193,7 @@ exports[`iOS BpkPicker should render correctly with a selected value 1`] = `
         Object {
           "alignItems": "center",
           "backgroundColor": "#f9f9f9",
-          "borderColor": "rgb(204, 201, 212)",
+          "borderColor": "rgb(205, 205, 215)",
           "borderTopWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -241,7 +241,7 @@ exports[`iOS BpkPicker should render correctly with a selected value 1`] = `
             style={
               Array [
                 Object {
-                  "color": "rgb(82, 76, 97)",
+                  "color": "rgb(68, 69, 96)",
                   "fontFamily": "System",
                   "fontSize": 14,
                   "fontWeight": "400",

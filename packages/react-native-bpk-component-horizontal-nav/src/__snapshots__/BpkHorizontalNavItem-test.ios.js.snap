@@ -30,7 +30,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -39,7 +39,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly 1`] = `
           Object {},
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "paddingHorizontal": 16,
             },
           ],
@@ -53,7 +53,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly 1`] = `
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(37, 32, 51)",
+          "backgroundColor": "rgb(17, 18, 54)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -98,7 +98,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly with "selected" prop 1
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -107,7 +107,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly with "selected" prop 1
           Object {},
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "paddingHorizontal": 16,
             },
             Object {
@@ -124,7 +124,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly with "selected" prop 1
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(37, 32, 51)",
+          "backgroundColor": "rgb(17, 18, 54)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -172,7 +172,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly with "small" prop 1`] 
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "System",
             "fontSize": 14,
             "fontWeight": "400",
@@ -181,7 +181,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly with "small" prop 1`] 
           Object {},
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "paddingHorizontal": 16,
             },
           ],
@@ -195,7 +195,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly with "small" prop 1`] 
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(37, 32, 51)",
+          "backgroundColor": "rgb(17, 18, 54)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -240,7 +240,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly with "spaceAround" pro
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -249,7 +249,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly with "spaceAround" pro
           Object {},
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "paddingHorizontal": 16,
             },
           ],
@@ -263,7 +263,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly with "spaceAround" pro
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(37, 32, 51)",
+          "backgroundColor": "rgb(17, 18, 54)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -308,7 +308,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly with arbitrary props 1
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -317,7 +317,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly with arbitrary props 1
           Object {},
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "paddingHorizontal": 16,
             },
           ],
@@ -331,7 +331,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly with arbitrary props 1
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(37, 32, 51)",
+          "backgroundColor": "rgb(17, 18, 54)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -379,7 +379,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly with custom "style" pr
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -388,7 +388,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly with custom "style" pr
           Object {},
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "paddingHorizontal": 16,
             },
           ],
@@ -402,7 +402,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly with custom "style" pr
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(37, 32, 51)",
+          "backgroundColor": "rgb(17, 18, 54)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -447,7 +447,7 @@ exports[`iOS BpkHorizontalNavItem should support theming 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -456,7 +456,7 @@ exports[`iOS BpkHorizontalNavItem should support theming 1`] = `
           Object {},
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "paddingHorizontal": 16,
             },
           ],
@@ -470,7 +470,7 @@ exports[`iOS BpkHorizontalNavItem should support theming 1`] = `
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(37, 32, 51)",
+          "backgroundColor": "rgb(17, 18, 54)",
           "bottom": 0,
           "flex": 1,
           "left": 0,

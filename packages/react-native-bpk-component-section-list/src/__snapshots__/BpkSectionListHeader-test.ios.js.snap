@@ -4,7 +4,7 @@ exports[`iOS BpkSectionListHeader should render correctly 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "rgb(243, 242, 245)",
+      "backgroundColor": "rgb(241, 242, 248)",
       "paddingHorizontal": 16,
       "paddingVertical": 4,
     }
@@ -14,7 +14,7 @@ exports[`iOS BpkSectionListHeader should render correctly 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -24,7 +24,7 @@ exports[`iOS BpkSectionListHeader should render correctly 1`] = `
           "fontWeight": "600",
         },
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
         },
       ]
     }

@@ -6,7 +6,7 @@ exports[`RTL InvalidIcon should render correctly 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "BpkIcon",
         "fontSize": 24,
         "includeFontPadding": false,
@@ -36,7 +36,7 @@ exports[`RTL ValidIcon should render correctly 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "BpkIcon",
         "fontSize": 24,
         "includeFontPadding": false,

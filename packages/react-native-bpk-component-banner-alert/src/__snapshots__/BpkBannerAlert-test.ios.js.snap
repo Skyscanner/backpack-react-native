@@ -33,7 +33,7 @@ exports[`iOS BpkBannerAlert should accept userland styling 1`] = `
             "borderWidth": 1,
           },
           Object {
-            "borderColor": "rgb(178, 174, 189)",
+            "borderColor": "rgb(178, 178, 191)",
           },
           null,
         ]
@@ -55,7 +55,7 @@ exports[`iOS BpkBannerAlert should accept userland styling 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -68,7 +68,7 @@ exports[`iOS BpkBannerAlert should accept userland styling 1`] = `
                   "marginEnd": 4,
                 },
                 Object {
-                  "color": "rgb(129, 123, 143)",
+                  "color": "rgb(104, 105, 127)",
                 },
               ],
             ]
@@ -80,7 +80,7 @@ exports[`iOS BpkBannerAlert should accept userland styling 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -113,7 +113,7 @@ exports[`iOS BpkBannerAlert should accept userland styling 1`] = `
             "borderWidth": 1,
           },
           Object {
-            "borderColor": "rgb(178, 174, 189)",
+            "borderColor": "rgb(178, 178, 191)",
           },
           null,
         ]
@@ -135,7 +135,7 @@ exports[`iOS BpkBannerAlert should accept userland styling 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -148,7 +148,7 @@ exports[`iOS BpkBannerAlert should accept userland styling 1`] = `
                   "marginEnd": 4,
                 },
                 Object {
-                  "color": "rgb(129, 123, 143)",
+                  "color": "rgb(104, 105, 127)",
                 },
               ],
             ]
@@ -160,7 +160,7 @@ exports[`iOS BpkBannerAlert should accept userland styling 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -213,7 +213,7 @@ exports[`iOS BpkBannerAlert should render correctly when not shown 1`] = `
             "borderWidth": 1,
           },
           Object {
-            "borderColor": "rgb(178, 174, 189)",
+            "borderColor": "rgb(178, 178, 191)",
           },
           null,
         ]
@@ -235,7 +235,7 @@ exports[`iOS BpkBannerAlert should render correctly when not shown 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -248,7 +248,7 @@ exports[`iOS BpkBannerAlert should render correctly when not shown 1`] = `
                   "marginEnd": 4,
                 },
                 Object {
-                  "color": "rgb(129, 123, 143)",
+                  "color": "rgb(104, 105, 127)",
                 },
               ],
             ]
@@ -260,7 +260,7 @@ exports[`iOS BpkBannerAlert should render correctly when not shown 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -293,7 +293,7 @@ exports[`iOS BpkBannerAlert should render correctly when not shown 1`] = `
             "borderWidth": 1,
           },
           Object {
-            "borderColor": "rgb(178, 174, 189)",
+            "borderColor": "rgb(178, 178, 191)",
           },
           null,
         ]
@@ -315,7 +315,7 @@ exports[`iOS BpkBannerAlert should render correctly when not shown 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -328,7 +328,7 @@ exports[`iOS BpkBannerAlert should render correctly when not shown 1`] = `
                   "marginEnd": 4,
                 },
                 Object {
-                  "color": "rgb(129, 123, 143)",
+                  "color": "rgb(104, 105, 127)",
                 },
               ],
             ]
@@ -340,7 +340,7 @@ exports[`iOS BpkBannerAlert should render correctly when not shown 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -393,7 +393,7 @@ exports[`iOS BpkBannerAlert should render correctly with animateOnEnter 1`] = `
             "borderWidth": 1,
           },
           Object {
-            "borderColor": "rgb(178, 174, 189)",
+            "borderColor": "rgb(178, 178, 191)",
           },
           null,
         ]
@@ -415,7 +415,7 @@ exports[`iOS BpkBannerAlert should render correctly with animateOnEnter 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -428,7 +428,7 @@ exports[`iOS BpkBannerAlert should render correctly with animateOnEnter 1`] = `
                   "marginEnd": 4,
                 },
                 Object {
-                  "color": "rgb(129, 123, 143)",
+                  "color": "rgb(104, 105, 127)",
                 },
               ],
             ]
@@ -440,7 +440,7 @@ exports[`iOS BpkBannerAlert should render correctly with animateOnEnter 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -473,7 +473,7 @@ exports[`iOS BpkBannerAlert should render correctly with animateOnEnter 1`] = `
             "borderWidth": 1,
           },
           Object {
-            "borderColor": "rgb(178, 174, 189)",
+            "borderColor": "rgb(178, 178, 191)",
           },
           null,
         ]
@@ -495,7 +495,7 @@ exports[`iOS BpkBannerAlert should render correctly with animateOnEnter 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -508,7 +508,7 @@ exports[`iOS BpkBannerAlert should render correctly with animateOnEnter 1`] = `
                   "marginEnd": 4,
                 },
                 Object {
-                  "color": "rgb(129, 123, 143)",
+                  "color": "rgb(104, 105, 127)",
                 },
               ],
             ]
@@ -520,7 +520,7 @@ exports[`iOS BpkBannerAlert should render correctly with animateOnEnter 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -573,7 +573,7 @@ exports[`iOS BpkBannerAlert should render correctly with animateOnLeave 1`] = `
             "borderWidth": 1,
           },
           Object {
-            "borderColor": "rgb(178, 174, 189)",
+            "borderColor": "rgb(178, 178, 191)",
           },
           null,
         ]
@@ -595,7 +595,7 @@ exports[`iOS BpkBannerAlert should render correctly with animateOnLeave 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -608,7 +608,7 @@ exports[`iOS BpkBannerAlert should render correctly with animateOnLeave 1`] = `
                   "marginEnd": 4,
                 },
                 Object {
-                  "color": "rgb(129, 123, 143)",
+                  "color": "rgb(104, 105, 127)",
                 },
               ],
             ]
@@ -620,7 +620,7 @@ exports[`iOS BpkBannerAlert should render correctly with animateOnLeave 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -653,7 +653,7 @@ exports[`iOS BpkBannerAlert should render correctly with animateOnLeave 1`] = `
             "borderWidth": 1,
           },
           Object {
-            "borderColor": "rgb(178, 174, 189)",
+            "borderColor": "rgb(178, 178, 191)",
           },
           null,
         ]
@@ -675,7 +675,7 @@ exports[`iOS BpkBannerAlert should render correctly with animateOnLeave 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -688,7 +688,7 @@ exports[`iOS BpkBannerAlert should render correctly with animateOnLeave 1`] = `
                   "marginEnd": 4,
                 },
                 Object {
-                  "color": "rgb(129, 123, 143)",
+                  "color": "rgb(104, 105, 127)",
                 },
               ],
             ]
@@ -700,7 +700,7 @@ exports[`iOS BpkBannerAlert should render correctly with animateOnLeave 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -753,7 +753,7 @@ exports[`iOS BpkBannerAlert should render correctly with children provided (expa
             "borderWidth": 1,
           },
           Object {
-            "borderColor": "rgb(178, 174, 189)",
+            "borderColor": "rgb(178, 178, 191)",
           },
           null,
         ]
@@ -786,7 +786,7 @@ exports[`iOS BpkBannerAlert should render correctly with children provided (expa
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -799,7 +799,7 @@ exports[`iOS BpkBannerAlert should render correctly with children provided (expa
                   "marginEnd": 4,
                 },
                 Object {
-                  "color": "rgb(129, 123, 143)",
+                  "color": "rgb(104, 105, 127)",
                 },
               ],
             ]
@@ -811,7 +811,7 @@ exports[`iOS BpkBannerAlert should render correctly with children provided (expa
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -831,7 +831,7 @@ exports[`iOS BpkBannerAlert should render correctly with children provided (expa
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -851,7 +851,7 @@ exports[`iOS BpkBannerAlert should render correctly with children provided (expa
           style={
             Array [
               Object {
-                "backgroundColor": "rgb(37, 32, 51)",
+                "backgroundColor": "rgb(17, 18, 54)",
                 "bottom": 0,
                 "flex": 1,
                 "left": 0,
@@ -893,7 +893,7 @@ exports[`iOS BpkBannerAlert should render correctly with children provided (expa
             style={
               Array [
                 Object {
-                  "color": "rgb(82, 76, 97)",
+                  "color": "rgb(68, 69, 96)",
                   "fontFamily": "System",
                   "fontSize": 14,
                   "fontWeight": "400",
@@ -923,7 +923,7 @@ exports[`iOS BpkBannerAlert should render correctly with children provided (expa
             style={
               Array [
                 Object {
-                  "color": "rgb(82, 76, 97)",
+                  "color": "rgb(68, 69, 96)",
                   "fontFamily": "System",
                   "fontSize": 14,
                   "fontWeight": "400",
@@ -954,7 +954,7 @@ exports[`iOS BpkBannerAlert should render correctly with children provided (expa
             "borderWidth": 1,
           },
           Object {
-            "borderColor": "rgb(178, 174, 189)",
+            "borderColor": "rgb(178, 178, 191)",
           },
           null,
         ]
@@ -987,7 +987,7 @@ exports[`iOS BpkBannerAlert should render correctly with children provided (expa
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -1000,7 +1000,7 @@ exports[`iOS BpkBannerAlert should render correctly with children provided (expa
                   "marginEnd": 4,
                 },
                 Object {
-                  "color": "rgb(129, 123, 143)",
+                  "color": "rgb(104, 105, 127)",
                 },
               ],
             ]
@@ -1012,7 +1012,7 @@ exports[`iOS BpkBannerAlert should render correctly with children provided (expa
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -1032,7 +1032,7 @@ exports[`iOS BpkBannerAlert should render correctly with children provided (expa
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -1052,7 +1052,7 @@ exports[`iOS BpkBannerAlert should render correctly with children provided (expa
           style={
             Array [
               Object {
-                "backgroundColor": "rgb(37, 32, 51)",
+                "backgroundColor": "rgb(17, 18, 54)",
                 "bottom": 0,
                 "flex": 1,
                 "left": 0,
@@ -1094,7 +1094,7 @@ exports[`iOS BpkBannerAlert should render correctly with children provided (expa
             style={
               Array [
                 Object {
-                  "color": "rgb(82, 76, 97)",
+                  "color": "rgb(68, 69, 96)",
                   "fontFamily": "System",
                   "fontSize": 14,
                   "fontWeight": "400",
@@ -1124,7 +1124,7 @@ exports[`iOS BpkBannerAlert should render correctly with children provided (expa
             style={
               Array [
                 Object {
-                  "color": "rgb(82, 76, 97)",
+                  "color": "rgb(68, 69, 96)",
                   "fontFamily": "System",
                   "fontSize": 14,
                   "fontWeight": "400",
@@ -1175,7 +1175,7 @@ exports[`iOS BpkBannerAlert should render correctly with dismissable 1`] = `
             "borderWidth": 1,
           },
           Object {
-            "borderColor": "rgb(178, 174, 189)",
+            "borderColor": "rgb(178, 178, 191)",
           },
           null,
         ]
@@ -1200,7 +1200,7 @@ exports[`iOS BpkBannerAlert should render correctly with dismissable 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -1213,7 +1213,7 @@ exports[`iOS BpkBannerAlert should render correctly with dismissable 1`] = `
                   "marginEnd": 4,
                 },
                 Object {
-                  "color": "rgb(129, 123, 143)",
+                  "color": "rgb(104, 105, 127)",
                 },
               ],
             ]
@@ -1225,7 +1225,7 @@ exports[`iOS BpkBannerAlert should render correctly with dismissable 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -1267,7 +1267,7 @@ exports[`iOS BpkBannerAlert should render correctly with dismissable 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -1284,7 +1284,7 @@ exports[`iOS BpkBannerAlert should render correctly with dismissable 1`] = `
           style={
             Array [
               Object {
-                "backgroundColor": "rgb(37, 32, 51)",
+                "backgroundColor": "rgb(17, 18, 54)",
                 "bottom": 0,
                 "flex": 1,
                 "left": 0,
@@ -1314,7 +1314,7 @@ exports[`iOS BpkBannerAlert should render correctly with dismissable 1`] = `
             "borderWidth": 1,
           },
           Object {
-            "borderColor": "rgb(178, 174, 189)",
+            "borderColor": "rgb(178, 178, 191)",
           },
           null,
         ]
@@ -1339,7 +1339,7 @@ exports[`iOS BpkBannerAlert should render correctly with dismissable 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -1352,7 +1352,7 @@ exports[`iOS BpkBannerAlert should render correctly with dismissable 1`] = `
                   "marginEnd": 4,
                 },
                 Object {
-                  "color": "rgb(129, 123, 143)",
+                  "color": "rgb(104, 105, 127)",
                 },
               ],
             ]
@@ -1364,7 +1364,7 @@ exports[`iOS BpkBannerAlert should render correctly with dismissable 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -1406,7 +1406,7 @@ exports[`iOS BpkBannerAlert should render correctly with dismissable 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -1423,7 +1423,7 @@ exports[`iOS BpkBannerAlert should render correctly with dismissable 1`] = `
           style={
             Array [
               Object {
-                "backgroundColor": "rgb(37, 32, 51)",
+                "backgroundColor": "rgb(17, 18, 54)",
                 "bottom": 0,
                 "flex": 1,
                 "left": 0,
@@ -1473,7 +1473,7 @@ exports[`iOS BpkBannerAlert should render correctly with expanded 1`] = `
             "borderWidth": 1,
           },
           Object {
-            "borderColor": "rgb(178, 174, 189)",
+            "borderColor": "rgb(178, 178, 191)",
           },
           null,
         ]
@@ -1506,7 +1506,7 @@ exports[`iOS BpkBannerAlert should render correctly with expanded 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -1519,7 +1519,7 @@ exports[`iOS BpkBannerAlert should render correctly with expanded 1`] = `
                   "marginEnd": 4,
                 },
                 Object {
-                  "color": "rgb(129, 123, 143)",
+                  "color": "rgb(104, 105, 127)",
                 },
               ],
             ]
@@ -1531,7 +1531,7 @@ exports[`iOS BpkBannerAlert should render correctly with expanded 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -1551,7 +1551,7 @@ exports[`iOS BpkBannerAlert should render correctly with expanded 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -1571,7 +1571,7 @@ exports[`iOS BpkBannerAlert should render correctly with expanded 1`] = `
           style={
             Array [
               Object {
-                "backgroundColor": "rgb(37, 32, 51)",
+                "backgroundColor": "rgb(17, 18, 54)",
                 "bottom": 0,
                 "flex": 1,
                 "left": 0,
@@ -1613,7 +1613,7 @@ exports[`iOS BpkBannerAlert should render correctly with expanded 1`] = `
             style={
               Array [
                 Object {
-                  "color": "rgb(82, 76, 97)",
+                  "color": "rgb(68, 69, 96)",
                   "fontFamily": "System",
                   "fontSize": 14,
                   "fontWeight": "400",
@@ -1643,7 +1643,7 @@ exports[`iOS BpkBannerAlert should render correctly with expanded 1`] = `
             style={
               Array [
                 Object {
-                  "color": "rgb(82, 76, 97)",
+                  "color": "rgb(68, 69, 96)",
                   "fontFamily": "System",
                   "fontSize": 14,
                   "fontWeight": "400",
@@ -1674,7 +1674,7 @@ exports[`iOS BpkBannerAlert should render correctly with expanded 1`] = `
             "borderWidth": 1,
           },
           Object {
-            "borderColor": "rgb(178, 174, 189)",
+            "borderColor": "rgb(178, 178, 191)",
           },
           null,
         ]
@@ -1707,7 +1707,7 @@ exports[`iOS BpkBannerAlert should render correctly with expanded 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -1720,7 +1720,7 @@ exports[`iOS BpkBannerAlert should render correctly with expanded 1`] = `
                   "marginEnd": 4,
                 },
                 Object {
-                  "color": "rgb(129, 123, 143)",
+                  "color": "rgb(104, 105, 127)",
                 },
               ],
             ]
@@ -1732,7 +1732,7 @@ exports[`iOS BpkBannerAlert should render correctly with expanded 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -1752,7 +1752,7 @@ exports[`iOS BpkBannerAlert should render correctly with expanded 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -1772,7 +1772,7 @@ exports[`iOS BpkBannerAlert should render correctly with expanded 1`] = `
           style={
             Array [
               Object {
-                "backgroundColor": "rgb(37, 32, 51)",
+                "backgroundColor": "rgb(17, 18, 54)",
                 "bottom": 0,
                 "flex": 1,
                 "left": 0,
@@ -1814,7 +1814,7 @@ exports[`iOS BpkBannerAlert should render correctly with expanded 1`] = `
             style={
               Array [
                 Object {
-                  "color": "rgb(82, 76, 97)",
+                  "color": "rgb(68, 69, 96)",
                   "fontFamily": "System",
                   "fontSize": 14,
                   "fontWeight": "400",
@@ -1844,7 +1844,7 @@ exports[`iOS BpkBannerAlert should render correctly with expanded 1`] = `
             style={
               Array [
                 Object {
-                  "color": "rgb(82, 76, 97)",
+                  "color": "rgb(68, 69, 96)",
                   "fontFamily": "System",
                   "fontSize": 14,
                   "fontWeight": "400",
@@ -1917,7 +1917,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to error 1`]
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -1942,7 +1942,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to error 1`]
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -1997,7 +1997,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to error 1`]
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -2022,7 +2022,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to error 1`]
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -2075,7 +2075,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to neutral 1
             "borderWidth": 1,
           },
           Object {
-            "borderColor": "rgb(178, 174, 189)",
+            "borderColor": "rgb(178, 178, 191)",
           },
           null,
         ]
@@ -2097,7 +2097,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to neutral 1
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -2110,7 +2110,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to neutral 1
                   "marginEnd": 4,
                 },
                 Object {
-                  "color": "rgb(129, 123, 143)",
+                  "color": "rgb(104, 105, 127)",
                 },
               ],
             ]
@@ -2122,7 +2122,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to neutral 1
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -2155,7 +2155,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to neutral 1
             "borderWidth": 1,
           },
           Object {
-            "borderColor": "rgb(178, 174, 189)",
+            "borderColor": "rgb(178, 178, 191)",
           },
           null,
         ]
@@ -2177,7 +2177,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to neutral 1
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -2190,7 +2190,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to neutral 1
                   "marginEnd": 4,
                 },
                 Object {
-                  "color": "rgb(129, 123, 143)",
+                  "color": "rgb(104, 105, 127)",
                 },
               ],
             ]
@@ -2202,7 +2202,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to neutral 1
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -2277,7 +2277,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to success 1
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -2302,7 +2302,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to success 1
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -2357,7 +2357,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to success 1
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -2382,7 +2382,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to success 1
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -2457,7 +2457,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to warn 1`] 
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -2482,7 +2482,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to warn 1`] 
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -2537,7 +2537,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to warn 1`] 
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -2562,7 +2562,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to warn 1`] 
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 14,
                 "fontWeight": "400",
