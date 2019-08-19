@@ -9,7 +9,7 @@ exports[`iOS BpkCarouselIndicator should render correctly 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgba(37, 32, 51, 0.3)",
+          "backgroundColor": "rgba(17, 18, 54, 0.3)",
           "borderRadius": 4,
           "flexDirection": "row",
           "height": 24,
@@ -19,7 +19,7 @@ exports[`iOS BpkCarouselIndicator should render correctly 1`] = `
           "width": 72,
         },
         Object {
-          "backgroundColor": "rgba(37, 32, 51, 0.3)",
+          "backgroundColor": "rgba(17, 18, 54, 0.3)",
         },
       ],
       null,
@@ -29,7 +29,7 @@ exports[`iOS BpkCarouselIndicator should render correctly 1`] = `
   <View
     style={
       Object {
-        "backgroundColor": "rgb(178, 174, 189)",
+        "backgroundColor": "rgb(178, 178, 191)",
         "borderRadius": 40,
         "height": 6,
         "marginHorizontal": 2,
@@ -40,7 +40,7 @@ exports[`iOS BpkCarouselIndicator should render correctly 1`] = `
   <View
     style={
       Object {
-        "backgroundColor": "rgb(178, 174, 189)",
+        "backgroundColor": "rgb(178, 178, 191)",
         "borderRadius": 40,
         "height": 6,
         "marginHorizontal": 2,
@@ -62,7 +62,7 @@ exports[`iOS BpkCarouselIndicator should render correctly 1`] = `
   <View
     style={
       Object {
-        "backgroundColor": "rgb(178, 174, 189)",
+        "backgroundColor": "rgb(178, 178, 191)",
         "borderRadius": 40,
         "height": 6,
         "marginHorizontal": 2,
@@ -73,7 +73,7 @@ exports[`iOS BpkCarouselIndicator should render correctly 1`] = `
   <View
     style={
       Object {
-        "backgroundColor": "rgb(178, 174, 189)",
+        "backgroundColor": "rgb(178, 178, 191)",
         "borderRadius": 40,
         "height": 6,
         "marginHorizontal": 2,
@@ -93,7 +93,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with a page count > 5 
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgba(37, 32, 51, 0.3)",
+          "backgroundColor": "rgba(17, 18, 54, 0.3)",
           "borderRadius": 4,
           "flexDirection": "row",
           "height": 24,
@@ -103,7 +103,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with a page count > 5 
           "width": 72,
         },
         Object {
-          "backgroundColor": "rgba(37, 32, 51, 0.3)",
+          "backgroundColor": "rgba(17, 18, 54, 0.3)",
         },
       ],
       null,
@@ -113,7 +113,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with a page count > 5 
   <View
     style={
       Object {
-        "backgroundColor": "rgb(178, 174, 189)",
+        "backgroundColor": "rgb(178, 178, 191)",
         "borderRadius": 40,
         "height": 2,
         "marginHorizontal": 2,
@@ -124,7 +124,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with a page count > 5 
   <View
     style={
       Object {
-        "backgroundColor": "rgb(178, 174, 189)",
+        "backgroundColor": "rgb(178, 178, 191)",
         "borderRadius": 40,
         "height": 4,
         "marginHorizontal": 2,
@@ -146,7 +146,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with a page count > 5 
   <View
     style={
       Object {
-        "backgroundColor": "rgb(178, 174, 189)",
+        "backgroundColor": "rgb(178, 178, 191)",
         "borderRadius": 40,
         "height": 4,
         "marginHorizontal": 2,
@@ -157,7 +157,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with a page count > 5 
   <View
     style={
       Object {
-        "backgroundColor": "rgb(178, 174, 189)",
+        "backgroundColor": "rgb(178, 178, 191)",
         "borderRadius": 40,
         "height": 2,
         "marginHorizontal": 2,
@@ -177,7 +177,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with a page count equa
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgba(37, 32, 51, 0.3)",
+          "backgroundColor": "rgba(17, 18, 54, 0.3)",
           "borderRadius": 4,
           "flexDirection": "row",
           "height": 24,
@@ -187,7 +187,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with a page count equa
           "width": 72,
         },
         Object {
-          "backgroundColor": "rgba(37, 32, 51, 0.3)",
+          "backgroundColor": "rgba(17, 18, 54, 0.3)",
         },
       ],
       null,
@@ -197,7 +197,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with a page count equa
   <View
     style={
       Object {
-        "backgroundColor": "rgb(178, 174, 189)",
+        "backgroundColor": "rgb(178, 178, 191)",
         "borderRadius": 40,
         "height": 2,
         "marginHorizontal": 2,
@@ -208,7 +208,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with a page count equa
   <View
     style={
       Object {
-        "backgroundColor": "rgb(178, 174, 189)",
+        "backgroundColor": "rgb(178, 178, 191)",
         "borderRadius": 40,
         "height": 2,
         "marginHorizontal": 2,
@@ -219,7 +219,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with a page count equa
   <View
     style={
       Object {
-        "backgroundColor": "rgb(178, 174, 189)",
+        "backgroundColor": "rgb(178, 178, 191)",
         "borderRadius": 40,
         "height": 4,
         "marginHorizontal": 2,
@@ -241,7 +241,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with a page count equa
   <View
     style={
       Object {
-        "backgroundColor": "rgb(178, 174, 189)",
+        "backgroundColor": "rgb(178, 178, 191)",
         "borderRadius": 40,
         "height": 4,
         "marginHorizontal": 2,
@@ -261,7 +261,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with arbitrary props 1
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgba(37, 32, 51, 0.3)",
+          "backgroundColor": "rgba(17, 18, 54, 0.3)",
           "borderRadius": 4,
           "flexDirection": "row",
           "height": 24,
@@ -271,7 +271,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with arbitrary props 1
           "width": 72,
         },
         Object {
-          "backgroundColor": "rgba(37, 32, 51, 0.3)",
+          "backgroundColor": "rgba(17, 18, 54, 0.3)",
         },
       ],
       null,
@@ -293,7 +293,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with arbitrary props 1
   <View
     style={
       Object {
-        "backgroundColor": "rgb(178, 174, 189)",
+        "backgroundColor": "rgb(178, 178, 191)",
         "borderRadius": 40,
         "height": 6,
         "marginHorizontal": 2,
@@ -304,7 +304,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with arbitrary props 1
   <View
     style={
       Object {
-        "backgroundColor": "rgb(178, 174, 189)",
+        "backgroundColor": "rgb(178, 178, 191)",
         "borderRadius": 40,
         "height": 6,
         "marginHorizontal": 2,
@@ -315,7 +315,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with arbitrary props 1
   <View
     style={
       Object {
-        "backgroundColor": "rgb(178, 174, 189)",
+        "backgroundColor": "rgb(178, 178, 191)",
         "borderRadius": 40,
         "height": 6,
         "marginHorizontal": 2,
@@ -326,7 +326,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with arbitrary props 1
   <View
     style={
       Object {
-        "backgroundColor": "rgb(178, 174, 189)",
+        "backgroundColor": "rgb(178, 178, 191)",
         "borderRadius": 40,
         "height": 6,
         "marginHorizontal": 2,
@@ -346,7 +346,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with custom styles 1`]
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgba(37, 32, 51, 0.3)",
+          "backgroundColor": "rgba(17, 18, 54, 0.3)",
           "borderRadius": 4,
           "flexDirection": "row",
           "height": 24,
@@ -356,7 +356,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with custom styles 1`]
           "width": 72,
         },
         Object {
-          "backgroundColor": "rgba(37, 32, 51, 0.3)",
+          "backgroundColor": "rgba(17, 18, 54, 0.3)",
         },
       ],
       Object {
@@ -379,7 +379,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with custom styles 1`]
   <View
     style={
       Object {
-        "backgroundColor": "rgb(178, 174, 189)",
+        "backgroundColor": "rgb(178, 178, 191)",
         "borderRadius": 40,
         "height": 6,
         "marginHorizontal": 2,
@@ -390,7 +390,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with custom styles 1`]
   <View
     style={
       Object {
-        "backgroundColor": "rgb(178, 174, 189)",
+        "backgroundColor": "rgb(178, 178, 191)",
         "borderRadius": 40,
         "height": 6,
         "marginHorizontal": 2,
@@ -401,7 +401,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with custom styles 1`]
   <View
     style={
       Object {
-        "backgroundColor": "rgb(178, 174, 189)",
+        "backgroundColor": "rgb(178, 178, 191)",
         "borderRadius": 40,
         "height": 6,
         "marginHorizontal": 2,
@@ -412,7 +412,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with custom styles 1`]
   <View
     style={
       Object {
-        "backgroundColor": "rgb(178, 174, 189)",
+        "backgroundColor": "rgb(178, 178, 191)",
         "borderRadius": 40,
         "height": 6,
         "marginHorizontal": 2,

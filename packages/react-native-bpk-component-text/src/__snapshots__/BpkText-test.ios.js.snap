@@ -5,7 +5,7 @@ exports[`iOS BpkText should ignore weight prop if deprecated \`emphasize\` prop 
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "System",
         "fontSize": 30,
         "fontWeight": "400",
@@ -26,7 +26,7 @@ exports[`iOS BpkText should render correctly 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "System",
         "fontSize": 16,
         "fontWeight": "400",
@@ -45,7 +45,7 @@ exports[`iOS BpkText should render correctly with deprecated \`emphasize\` prop 
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "System",
         "fontSize": 16,
         "fontWeight": "400",
@@ -66,7 +66,7 @@ exports[`iOS BpkText should render correctly with textStyle="base and weight="em
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "System",
         "fontSize": 16,
         "fontWeight": "400",
@@ -87,7 +87,7 @@ exports[`iOS BpkText should render correctly with textStyle="base" 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "System",
         "fontSize": 16,
         "fontWeight": "400",
@@ -106,7 +106,7 @@ exports[`iOS BpkText should render correctly with textStyle="caps and weight="em
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "System",
         "fontSize": 10,
         "fontWeight": "400",
@@ -127,7 +127,7 @@ exports[`iOS BpkText should render correctly with textStyle="caps" 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "System",
         "fontSize": 10,
         "fontWeight": "400",
@@ -146,7 +146,7 @@ exports[`iOS BpkText should render correctly with textStyle="lg and weight="emph
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "System",
         "fontSize": 20,
         "fontWeight": "400",
@@ -167,7 +167,7 @@ exports[`iOS BpkText should render correctly with textStyle="lg" 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "System",
         "fontSize": 20,
         "fontWeight": "400",
@@ -186,7 +186,7 @@ exports[`iOS BpkText should render correctly with textStyle="sm and weight="emph
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "System",
         "fontSize": 14,
         "fontWeight": "400",
@@ -207,7 +207,7 @@ exports[`iOS BpkText should render correctly with textStyle="sm" 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "System",
         "fontSize": 14,
         "fontWeight": "400",
@@ -226,7 +226,7 @@ exports[`iOS BpkText should render correctly with textStyle="xl and weight="emph
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "System",
         "fontSize": 24,
         "fontWeight": "400",
@@ -247,7 +247,7 @@ exports[`iOS BpkText should render correctly with textStyle="xl and weight="heav
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "System",
         "fontSize": 24,
         "fontWeight": "400",
@@ -268,7 +268,7 @@ exports[`iOS BpkText should render correctly with textStyle="xl" 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "System",
         "fontSize": 24,
         "fontWeight": "400",
@@ -287,7 +287,7 @@ exports[`iOS BpkText should render correctly with textStyle="xs and weight="emph
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "System",
         "fontSize": 12,
         "fontWeight": "400",
@@ -308,7 +308,7 @@ exports[`iOS BpkText should render correctly with textStyle="xs" 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "System",
         "fontSize": 12,
         "fontWeight": "400",
@@ -327,7 +327,7 @@ exports[`iOS BpkText should render correctly with textStyle="xxl and weight="emp
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "System",
         "fontSize": 30,
         "fontWeight": "400",
@@ -348,7 +348,7 @@ exports[`iOS BpkText should render correctly with textStyle="xxl and weight="hea
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "System",
         "fontSize": 30,
         "fontWeight": "400",
@@ -369,7 +369,7 @@ exports[`iOS BpkText should render correctly with textStyle="xxl" 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "System",
         "fontSize": 30,
         "fontWeight": "400",
@@ -388,7 +388,7 @@ exports[`iOS BpkText should render correctly with textStyle="xxxl and weight="em
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "System",
         "fontSize": 36,
         "fontWeight": "400",
@@ -409,7 +409,7 @@ exports[`iOS BpkText should render correctly with textStyle="xxxl and weight="he
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "System",
         "fontSize": 36,
         "fontWeight": "400",
@@ -430,7 +430,7 @@ exports[`iOS BpkText should render correctly with textStyle="xxxl" 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "System",
         "fontSize": 36,
         "fontWeight": "400",
@@ -449,7 +449,7 @@ exports[`iOS BpkText should support overwriting styles 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "System",
         "fontSize": 16,
         "fontWeight": "400",
@@ -471,7 +471,7 @@ exports[`iOS should not apply \`emphasize\` for textStyle="xxl" 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "System",
         "fontSize": 30,
         "fontWeight": "400",
@@ -492,7 +492,7 @@ exports[`iOS should render correctly with theming 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "System",
         "fontSize": 16,
         "fontWeight": "400",

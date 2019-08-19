@@ -13,7 +13,7 @@ exports[`iOS BpkSwitch should disable theming if the required attribute is omitt
       "width": 51,
     }
   }
-  tintColor="rgb(230, 228, 235)"
+  tintColor="rgb(221, 221, 229)"
   value={true}
 />
 `;
@@ -31,7 +31,7 @@ exports[`iOS BpkSwitch should render correctly 1`] = `
       "width": 51,
     }
   }
-  tintColor="rgb(230, 228, 235)"
+  tintColor="rgb(221, 221, 229)"
   value={false}
 />
 `;
@@ -49,7 +49,7 @@ exports[`iOS BpkSwitch should support the "value" prop 1`] = `
       "width": 51,
     }
   }
-  tintColor="rgb(230, 228, 235)"
+  tintColor="rgb(221, 221, 229)"
   value={true}
 />
 `;
@@ -67,7 +67,7 @@ exports[`iOS BpkSwitch should support theming 1`] = `
       "width": 51,
     }
   }
-  tintColor="rgb(230, 228, 235)"
+  tintColor="rgb(221, 221, 229)"
   value={true}
 />
 `;

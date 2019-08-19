@@ -5,10 +5,10 @@ exports[`ios BpkNavigationBar should render correctly 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(243, 242, 245)",
+        "backgroundColor": "rgb(241, 242, 248)",
         "flexDirection": "column",
         "paddingHorizontal": 8,
-        "shadowColor": "rgb(230, 228, 235)",
+        "shadowColor": "rgb(221, 221, 229)",
         "shadowOffset": Object {
           "height": 1,
           "width": 0,
@@ -72,7 +72,7 @@ exports[`ios BpkNavigationBar should render correctly 1`] = `
               },
             ],
             Object {
-              "tintColor": "rgb(82, 76, 97)",
+              "tintColor": "rgb(68, 69, 96)",
             },
           ]
         }
@@ -81,7 +81,7 @@ exports[`ios BpkNavigationBar should render correctly 1`] = `
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "System",
               "fontSize": 16,
               "fontWeight": "400",
@@ -90,7 +90,7 @@ exports[`ios BpkNavigationBar should render correctly 1`] = `
             Object {},
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
               },
             ],
           ]
@@ -133,7 +133,7 @@ exports[`ios BpkNavigationBar should render correctly 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 16,
                 "fontWeight": "400",
@@ -144,7 +144,7 @@ exports[`ios BpkNavigationBar should render correctly 1`] = `
               },
               Array [
                 Object {
-                  "color": "rgb(82, 76, 97)",
+                  "color": "rgb(68, 69, 96)",
                 },
                 null,
               ],
@@ -164,10 +164,10 @@ exports[`ios BpkNavigationBar should render correctly with a subtitle view 1`] =
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(243, 242, 245)",
+        "backgroundColor": "rgb(241, 242, 248)",
         "flexDirection": "column",
         "paddingHorizontal": 8,
-        "shadowColor": "rgb(230, 228, 235)",
+        "shadowColor": "rgb(221, 221, 229)",
         "shadowOffset": Object {
           "height": 1,
           "width": 0,
@@ -234,7 +234,7 @@ exports[`ios BpkNavigationBar should render correctly with a subtitle view 1`] =
               },
             ],
             Object {
-              "tintColor": "rgb(82, 76, 97)",
+              "tintColor": "rgb(68, 69, 96)",
             },
           ]
         }
@@ -243,7 +243,7 @@ exports[`ios BpkNavigationBar should render correctly with a subtitle view 1`] =
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "System",
               "fontSize": 16,
               "fontWeight": "400",
@@ -252,7 +252,7 @@ exports[`ios BpkNavigationBar should render correctly with a subtitle view 1`] =
             Object {},
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
               },
             ],
           ]
@@ -295,7 +295,7 @@ exports[`ios BpkNavigationBar should render correctly with a subtitle view 1`] =
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 16,
                 "fontWeight": "400",
@@ -306,7 +306,7 @@ exports[`ios BpkNavigationBar should render correctly with a subtitle view 1`] =
               },
               Array [
                 Object {
-                  "color": "rgb(82, 76, 97)",
+                  "color": "rgb(68, 69, 96)",
                 },
                 null,
               ],
@@ -337,10 +337,10 @@ exports[`ios BpkNavigationBar should render correctly with a title view 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(243, 242, 245)",
+        "backgroundColor": "rgb(241, 242, 248)",
         "flexDirection": "column",
         "paddingHorizontal": 8,
-        "shadowColor": "rgb(230, 228, 235)",
+        "shadowColor": "rgb(221, 221, 229)",
         "shadowOffset": Object {
           "height": 1,
           "width": 0,
@@ -404,7 +404,7 @@ exports[`ios BpkNavigationBar should render correctly with a title view 1`] = `
               },
             ],
             Object {
-              "tintColor": "rgb(82, 76, 97)",
+              "tintColor": "rgb(68, 69, 96)",
             },
           ]
         }
@@ -413,7 +413,7 @@ exports[`ios BpkNavigationBar should render correctly with a title view 1`] = `
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "System",
               "fontSize": 16,
               "fontWeight": "400",
@@ -422,7 +422,7 @@ exports[`ios BpkNavigationBar should render correctly with a title view 1`] = `
             Object {},
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
               },
             ],
           ]
@@ -466,10 +466,10 @@ exports[`ios BpkNavigationBar should render correctly with an icon in the title 
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(243, 242, 245)",
+        "backgroundColor": "rgb(241, 242, 248)",
         "flexDirection": "column",
         "paddingHorizontal": 8,
-        "shadowColor": "rgb(230, 228, 235)",
+        "shadowColor": "rgb(221, 221, 229)",
         "shadowOffset": Object {
           "height": 1,
           "width": 0,
@@ -533,7 +533,7 @@ exports[`ios BpkNavigationBar should render correctly with an icon in the title 
               },
             ],
             Object {
-              "tintColor": "rgb(82, 76, 97)",
+              "tintColor": "rgb(68, 69, 96)",
             },
           ]
         }
@@ -542,7 +542,7 @@ exports[`ios BpkNavigationBar should render correctly with an icon in the title 
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "System",
               "fontSize": 16,
               "fontWeight": "400",
@@ -551,7 +551,7 @@ exports[`ios BpkNavigationBar should render correctly with an icon in the title 
             Object {},
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
               },
             ],
           ]
@@ -592,7 +592,7 @@ exports[`ios BpkNavigationBar should render correctly with an icon in the title 
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -605,7 +605,7 @@ exports[`ios BpkNavigationBar should render correctly with an icon in the title 
                   "marginEnd": 4,
                 },
                 Object {
-                  "color": "rgb(82, 76, 97)",
+                  "color": "rgb(68, 69, 96)",
                 },
               ],
             ]
@@ -620,7 +620,7 @@ exports[`ios BpkNavigationBar should render correctly with an icon in the title 
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 16,
                 "fontWeight": "400",
@@ -631,7 +631,7 @@ exports[`ios BpkNavigationBar should render correctly with an icon in the title 
               },
               Array [
                 Object {
-                  "color": "rgb(82, 76, 97)",
+                  "color": "rgb(68, 69, 96)",
                 },
                 Object {
                   "lineHeight": 24,
@@ -653,10 +653,10 @@ exports[`ios BpkNavigationBar should render correctly with custom style 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(243, 242, 245)",
+        "backgroundColor": "rgb(241, 242, 248)",
         "flexDirection": "column",
         "paddingHorizontal": 8,
-        "shadowColor": "rgb(230, 228, 235)",
+        "shadowColor": "rgb(221, 221, 229)",
         "shadowOffset": Object {
           "height": 1,
           "width": 0,
@@ -723,7 +723,7 @@ exports[`ios BpkNavigationBar should render correctly with custom style 1`] = `
               },
             ],
             Object {
-              "tintColor": "rgb(82, 76, 97)",
+              "tintColor": "rgb(68, 69, 96)",
             },
           ]
         }
@@ -732,7 +732,7 @@ exports[`ios BpkNavigationBar should render correctly with custom style 1`] = `
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "System",
               "fontSize": 16,
               "fontWeight": "400",
@@ -741,7 +741,7 @@ exports[`ios BpkNavigationBar should render correctly with custom style 1`] = `
             Object {},
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
               },
             ],
           ]
@@ -784,7 +784,7 @@ exports[`ios BpkNavigationBar should render correctly with custom style 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 16,
                 "fontWeight": "400",
@@ -795,7 +795,7 @@ exports[`ios BpkNavigationBar should render correctly with custom style 1`] = `
               },
               Array [
                 Object {
-                  "color": "rgb(82, 76, 97)",
+                  "color": "rgb(68, 69, 96)",
                 },
                 null,
               ],
@@ -815,10 +815,10 @@ exports[`ios BpkNavigationBar should render correctly with trailing button 1`] =
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(243, 242, 245)",
+        "backgroundColor": "rgb(241, 242, 248)",
         "flexDirection": "column",
         "paddingHorizontal": 8,
-        "shadowColor": "rgb(230, 228, 235)",
+        "shadowColor": "rgb(221, 221, 229)",
         "shadowOffset": Object {
           "height": 1,
           "width": 0,
@@ -873,7 +873,7 @@ exports[`ios BpkNavigationBar should render correctly with trailing button 1`] =
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "System",
               "fontSize": 16,
               "fontWeight": "400",
@@ -882,7 +882,7 @@ exports[`ios BpkNavigationBar should render correctly with trailing button 1`] =
             Object {},
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
               },
             ],
           ]
@@ -925,7 +925,7 @@ exports[`ios BpkNavigationBar should render correctly with trailing button 1`] =
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 16,
                 "fontWeight": "400",
@@ -936,7 +936,7 @@ exports[`ios BpkNavigationBar should render correctly with trailing button 1`] =
               },
               Array [
                 Object {
-                  "color": "rgb(82, 76, 97)",
+                  "color": "rgb(68, 69, 96)",
                 },
                 null,
               ],
@@ -975,7 +975,7 @@ exports[`ios BpkNavigationBar should render correctly with trailing button 1`] =
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "System",
               "fontSize": 16,
               "fontWeight": "400",
@@ -986,7 +986,7 @@ exports[`ios BpkNavigationBar should render correctly with trailing button 1`] =
             },
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
               },
             ],
           ]

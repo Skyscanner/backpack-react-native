@@ -39,7 +39,7 @@ exports[`iOS BpkImage should render correctly when not loaded 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "backgroundColor": "rgb(178, 174, 189)",
+        "backgroundColor": "rgb(178, 178, 191)",
         "flex": 1,
         "height": "100%",
         "justifyContent": "center",
@@ -51,7 +51,7 @@ exports[`iOS BpkImage should render correctly when not loaded 1`] = `
   >
     <ActivityIndicator
       animating={true}
-      color="rgb(82, 76, 97)"
+      color="rgb(68, 69, 96)"
       hidesWhenStopped={true}
       size="small"
     />
@@ -94,7 +94,7 @@ exports[`iOS BpkImage should render correctly when unloaded and out of view 1`] 
     style={
       Object {
         "alignItems": "center",
-        "backgroundColor": "rgb(178, 174, 189)",
+        "backgroundColor": "rgb(178, 178, 191)",
         "flex": 1,
         "height": "100%",
         "justifyContent": "center",

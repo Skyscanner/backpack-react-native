@@ -5,7 +5,7 @@ exports[`Android BpkSectionListHeader should render correctly 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "borderTopColor": "rgb(230, 228, 235)",
+      "borderTopColor": "rgb(221, 221, 229)",
       "borderTopWidth": 1,
       "flexDirection": "row",
       "height": 48,
@@ -18,7 +18,7 @@ exports[`Android BpkSectionListHeader should render correctly 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "sans-serif",
           "fontSize": 14,
           "fontWeight": "400",
@@ -28,7 +28,7 @@ exports[`Android BpkSectionListHeader should render correctly 1`] = `
           "fontFamily": "sans-serif-medium",
         },
         Object {
-          "color": "rgb(129, 123, 143)",
+          "color": "rgb(104, 105, 127)",
         },
       ]
     }

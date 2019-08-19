@@ -41,7 +41,7 @@ exports[`iOS BpkFlatListItem should render correctly 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -64,7 +64,7 @@ exports[`iOS BpkFlatListItem should render correctly 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -87,7 +87,7 @@ exports[`iOS BpkFlatListItem should render correctly 1`] = `
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(37, 32, 51)",
+          "backgroundColor": "rgb(17, 18, 54)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -153,7 +153,7 @@ exports[`iOS BpkFlatListItem should support the "image" property 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -176,7 +176,7 @@ exports[`iOS BpkFlatListItem should support the "image" property 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -199,7 +199,7 @@ exports[`iOS BpkFlatListItem should support the "image" property 1`] = `
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(37, 32, 51)",
+          "backgroundColor": "rgb(17, 18, 54)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -255,7 +255,7 @@ exports[`iOS BpkFlatListItem should support the "selected" property 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -281,7 +281,7 @@ exports[`iOS BpkFlatListItem should support the "selected" property 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -307,7 +307,7 @@ exports[`iOS BpkFlatListItem should support the "selected" property 1`] = `
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(37, 32, 51)",
+          "backgroundColor": "rgb(17, 18, 54)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -363,7 +363,7 @@ exports[`iOS should support theming when selected 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -395,13 +395,13 @@ exports[`iOS should support theming when selected 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
         },
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
         },
         Object {
           "fontSize": 16,
@@ -427,7 +427,7 @@ exports[`iOS should support theming when selected 1`] = `
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(37, 32, 51)",
+          "backgroundColor": "rgb(17, 18, 54)",
           "bottom": 0,
           "flex": 1,
           "left": 0,

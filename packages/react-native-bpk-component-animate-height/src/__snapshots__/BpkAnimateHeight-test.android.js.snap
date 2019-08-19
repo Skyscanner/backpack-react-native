@@ -27,7 +27,7 @@ exports[`Android BpkAnimateHeight should render correctly collapsed 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -54,7 +54,7 @@ exports[`Android BpkAnimateHeight should render correctly collapsed 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -97,7 +97,7 @@ exports[`Android BpkAnimateHeight should render correctly expanded 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -124,7 +124,7 @@ exports[`Android BpkAnimateHeight should render correctly expanded 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -167,7 +167,7 @@ exports[`Android BpkAnimateHeight should render correctly with n children 1`] = 
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -183,7 +183,7 @@ exports[`Android BpkAnimateHeight should render correctly with n children 1`] = 
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -210,7 +210,7 @@ exports[`Android BpkAnimateHeight should render correctly with n children 1`] = 
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -226,7 +226,7 @@ exports[`Android BpkAnimateHeight should render correctly with n children 1`] = 
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -270,7 +270,7 @@ exports[`Android BpkAnimateHeight should render correctly with user styling padd
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -297,7 +297,7 @@ exports[`Android BpkAnimateHeight should render correctly with user styling padd
       style={
         Array [
           Object {
-            "color": "rgb(82, 76, 97)",
+            "color": "rgb(68, 69, 96)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",

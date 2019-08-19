@@ -5,10 +5,10 @@ exports[`ios - iPhone X  BpkNavigationBar should render correctly 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(243, 242, 245)",
+        "backgroundColor": "rgb(241, 242, 248)",
         "flexDirection": "column",
         "paddingHorizontal": 8,
-        "shadowColor": "rgb(230, 228, 235)",
+        "shadowColor": "rgb(221, 221, 229)",
         "shadowOffset": Object {
           "height": 1,
           "width": 0,
@@ -75,7 +75,7 @@ exports[`ios - iPhone X  BpkNavigationBar should render correctly 1`] = `
               },
             ],
             Object {
-              "tintColor": "rgb(82, 76, 97)",
+              "tintColor": "rgb(68, 69, 96)",
             },
           ]
         }
@@ -84,7 +84,7 @@ exports[`ios - iPhone X  BpkNavigationBar should render correctly 1`] = `
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",
@@ -93,7 +93,7 @@ exports[`ios - iPhone X  BpkNavigationBar should render correctly 1`] = `
             Object {},
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
               },
             ],
           ]
@@ -136,7 +136,7 @@ exports[`ios - iPhone X  BpkNavigationBar should render correctly 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "sans-serif",
                 "fontSize": 16,
                 "fontWeight": "400",
@@ -147,7 +147,7 @@ exports[`ios - iPhone X  BpkNavigationBar should render correctly 1`] = `
               },
               Array [
                 Object {
-                  "color": "rgb(82, 76, 97)",
+                  "color": "rgb(68, 69, 96)",
                 },
                 null,
               ],
@@ -167,10 +167,10 @@ exports[`ios - iPhone X  BpkNavigationBar should render correctly with trailing 
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(243, 242, 245)",
+        "backgroundColor": "rgb(241, 242, 248)",
         "flexDirection": "column",
         "paddingHorizontal": 8,
-        "shadowColor": "rgb(230, 228, 235)",
+        "shadowColor": "rgb(221, 221, 229)",
         "shadowOffset": Object {
           "height": 1,
           "width": 0,
@@ -228,7 +228,7 @@ exports[`ios - iPhone X  BpkNavigationBar should render correctly with trailing 
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",
@@ -237,7 +237,7 @@ exports[`ios - iPhone X  BpkNavigationBar should render correctly with trailing 
             Object {},
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
               },
             ],
           ]
@@ -280,7 +280,7 @@ exports[`ios - iPhone X  BpkNavigationBar should render correctly with trailing 
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "sans-serif",
                 "fontSize": 16,
                 "fontWeight": "400",
@@ -291,7 +291,7 @@ exports[`ios - iPhone X  BpkNavigationBar should render correctly with trailing 
               },
               Array [
                 Object {
-                  "color": "rgb(82, 76, 97)",
+                  "color": "rgb(68, 69, 96)",
                 },
                 null,
               ],
@@ -330,7 +330,7 @@ exports[`ios - iPhone X  BpkNavigationBar should render correctly with trailing 
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",
@@ -341,7 +341,7 @@ exports[`ios - iPhone X  BpkNavigationBar should render correctly with trailing 
             },
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
               },
             ],
           ]

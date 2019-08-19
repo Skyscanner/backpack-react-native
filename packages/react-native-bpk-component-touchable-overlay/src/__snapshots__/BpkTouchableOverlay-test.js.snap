@@ -17,7 +17,7 @@ exports[`BpkTouchableOverlay should render correctly 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -33,7 +33,7 @@ exports[`BpkTouchableOverlay should render correctly 1`] = `
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(37, 32, 51)",
+          "backgroundColor": "rgb(17, 18, 54)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -66,7 +66,7 @@ exports[`BpkTouchableOverlay should render correctly with arbitrary props 1`] = 
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -82,7 +82,7 @@ exports[`BpkTouchableOverlay should render correctly with arbitrary props 1`] = 
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(37, 32, 51)",
+          "backgroundColor": "rgb(17, 18, 54)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -115,7 +115,7 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -131,7 +131,7 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(37, 32, 51)",
+          "backgroundColor": "rgb(17, 18, 54)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -167,7 +167,7 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -183,7 +183,7 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(37, 32, 51)",
+          "backgroundColor": "rgb(17, 18, 54)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -219,7 +219,7 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -235,7 +235,7 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(37, 32, 51)",
+          "backgroundColor": "rgb(17, 18, 54)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -271,7 +271,7 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -287,7 +287,7 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(37, 32, 51)",
+          "backgroundColor": "rgb(17, 18, 54)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -323,7 +323,7 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -339,7 +339,7 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(37, 32, 51)",
+          "backgroundColor": "rgb(17, 18, 54)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -375,7 +375,7 @@ exports[`BpkTouchableOverlay should render correctly with custom overlay styles 
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -391,7 +391,7 @@ exports[`BpkTouchableOverlay should render correctly with custom overlay styles 
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(37, 32, 51)",
+          "backgroundColor": "rgb(17, 18, 54)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -430,7 +430,7 @@ exports[`BpkTouchableOverlay should render correctly with custom style prop 1`] 
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -446,7 +446,7 @@ exports[`BpkTouchableOverlay should render correctly with custom style prop 1`] 
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(37, 32, 51)",
+          "backgroundColor": "rgb(17, 18, 54)",
           "bottom": 0,
           "flex": 1,
           "left": 0,

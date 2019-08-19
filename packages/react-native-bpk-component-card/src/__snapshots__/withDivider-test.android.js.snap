@@ -58,7 +58,7 @@ exports[`Android withDivider should render correctly 1`] = `
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "System",
               "fontSize": 16,
               "fontWeight": "400",
@@ -100,7 +100,7 @@ exports[`Android withDivider should render correctly 1`] = `
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "System",
               "fontSize": 16,
               "fontWeight": "400",
@@ -178,7 +178,7 @@ exports[`Android withDivider should render correctly with "cornerStyle=large" 1`
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "System",
               "fontSize": 16,
               "fontWeight": "400",
@@ -220,7 +220,7 @@ exports[`Android withDivider should render correctly with "cornerStyle=large" 1`
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "System",
               "fontSize": 16,
               "fontWeight": "400",
@@ -296,7 +296,7 @@ exports[`Android withDivider should render correctly with arbitrary props 1`] = 
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "System",
               "fontSize": 16,
               "fontWeight": "400",
@@ -338,7 +338,7 @@ exports[`Android withDivider should render correctly with arbitrary props 1`] = 
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "System",
               "fontSize": 16,
               "fontWeight": "400",
@@ -416,7 +416,7 @@ exports[`Android withDivider should render correctly with custom main style 1`] 
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "System",
               "fontSize": 16,
               "fontWeight": "400",
@@ -458,7 +458,7 @@ exports[`Android withDivider should render correctly with custom main style 1`] 
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "System",
               "fontSize": 16,
               "fontWeight": "400",
@@ -533,7 +533,7 @@ exports[`Android withDivider should render correctly with custom stub style 1`] 
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "System",
               "fontSize": 16,
               "fontWeight": "400",
@@ -578,7 +578,7 @@ exports[`Android withDivider should render correctly with custom stub style 1`] 
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "System",
               "fontSize": 16,
               "fontWeight": "400",
@@ -650,7 +650,7 @@ exports[`Android withDivider should render correctly without padding 1`] = `
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "System",
               "fontSize": 16,
               "fontWeight": "400",
@@ -689,7 +689,7 @@ exports[`Android withDivider should render correctly without padding 1`] = `
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "System",
               "fontSize": 16,
               "fontWeight": "400",

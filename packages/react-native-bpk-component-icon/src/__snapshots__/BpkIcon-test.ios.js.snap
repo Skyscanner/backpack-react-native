@@ -6,7 +6,7 @@ exports[`iOS BpkIcon should apply user props 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "BpkIcon",
         "fontSize": 24,
         "includeFontPadding": false,
@@ -27,7 +27,7 @@ exports[`iOS BpkIcon should render correctly 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "BpkIcon",
         "fontSize": 24,
         "includeFontPadding": false,
@@ -45,7 +45,7 @@ exports[`iOS BpkIcon should render small icon correctly 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(68, 69, 96)",
         "fontFamily": "BpkIcon",
         "fontSize": 24,
         "includeFontPadding": false,

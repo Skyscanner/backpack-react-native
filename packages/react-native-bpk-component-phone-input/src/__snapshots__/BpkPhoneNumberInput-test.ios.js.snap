@@ -18,7 +18,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(129, 123, 143, 1)",
+          "color": "rgba(104, 105, 127, 1)",
           "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "400",
@@ -54,7 +54,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
             Object {
               "alignItems": "center",
               "borderBottomWidth": 1,
-              "borderColor": "rgb(230, 228, 235)",
+              "borderColor": "rgb(221, 221, 229)",
               "flexDirection": "row",
               "justifyContent": "space-between",
               "paddingVertical": 4,
@@ -69,7 +69,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
               undefined,
               Array [
                 Object {
-                  "backgroundColor": "rgb(243, 242, 245)",
+                  "backgroundColor": "rgb(241, 242, 248)",
                   "height": 12,
                   "marginEnd": 8,
                   "width": 16,
@@ -82,7 +82,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 16,
                 "fontWeight": "400",
@@ -105,7 +105,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -126,7 +126,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "rgb(37, 32, 51)",
+              "backgroundColor": "rgb(17, 18, 54)",
               "bottom": 0,
               "flex": 1,
               "left": 0,
@@ -143,7 +143,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(230, 228, 235, 1)",
+          "borderBottomColor": "rgba(221, 221, 229, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -164,7 +164,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -201,7 +201,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(230, 228, 235, 1)",
+          "color": "rgba(221, 221, 229, 1)",
           "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "400",
@@ -241,7 +241,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
             Object {
               "alignItems": "center",
               "borderBottomWidth": 1,
-              "borderColor": "rgb(230, 228, 235)",
+              "borderColor": "rgb(221, 221, 229)",
               "flexDirection": "row",
               "justifyContent": "space-between",
               "paddingVertical": 4,
@@ -256,7 +256,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
               undefined,
               Array [
                 Object {
-                  "backgroundColor": "rgb(243, 242, 245)",
+                  "backgroundColor": "rgb(241, 242, 248)",
                   "height": 12,
                   "marginEnd": 8,
                   "width": 16,
@@ -269,7 +269,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "System",
                 "fontSize": 16,
                 "fontWeight": "400",
@@ -282,7 +282,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
                 },
                 Array [
                   Object {
-                    "color": "rgb(230, 228, 235)",
+                    "color": "rgb(221, 221, 229)",
                   },
                 ],
               ],
@@ -296,7 +296,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
           style={
             Array [
               Object {
-                "color": "rgb(82, 76, 97)",
+                "color": "rgb(68, 69, 96)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -317,7 +317,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
         style={
           Array [
             Object {
-              "backgroundColor": "rgb(37, 32, 51)",
+              "backgroundColor": "rgb(17, 18, 54)",
               "bottom": 0,
               "flex": 1,
               "left": 0,
@@ -334,7 +334,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(230, 228, 235, 1)",
+          "borderBottomColor": "rgba(221, 221, 229, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -355,7 +355,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",

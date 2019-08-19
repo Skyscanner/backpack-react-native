@@ -18,7 +18,7 @@ exports[`Android BpkTextInput should ignore when placeholder is provided, as ele
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(178, 174, 189, 1)",
+          "color": "rgba(178, 178, 191, 1)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -34,7 +34,7 @@ exports[`Android BpkTextInput should ignore when placeholder is provided, as ele
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(230, 228, 235, 1)",
+          "borderBottomColor": "rgba(221, 221, 229, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -53,7 +53,7 @@ exports[`Android BpkTextInput should ignore when placeholder is provided, as ele
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -90,7 +90,7 @@ exports[`Android BpkTextInput should render correctly 1`] = `
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(178, 174, 189, 1)",
+          "color": "rgba(178, 178, 191, 1)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -106,7 +106,7 @@ exports[`Android BpkTextInput should render correctly 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(230, 228, 235, 1)",
+          "borderBottomColor": "rgba(221, 221, 229, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -125,7 +125,7 @@ exports[`Android BpkTextInput should render correctly 1`] = `
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -162,7 +162,7 @@ exports[`Android BpkTextInput should render correctly with \`accessoryView\` 1`]
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(129, 123, 143, 1)",
+          "color": "rgba(104, 105, 127, 1)",
           "fontFamily": "sans-serif",
           "fontSize": 14,
           "fontWeight": "400",
@@ -179,7 +179,7 @@ exports[`Android BpkTextInput should render correctly with \`accessoryView\` 1`]
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(230, 228, 235, 1)",
+          "borderBottomColor": "rgba(221, 221, 229, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -199,7 +199,7 @@ exports[`Android BpkTextInput should render correctly with \`accessoryView\` 1`]
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -236,7 +236,7 @@ exports[`Android BpkTextInput should render correctly with arbitrary props 1`] =
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(178, 174, 189, 1)",
+          "color": "rgba(178, 178, 191, 1)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -252,7 +252,7 @@ exports[`Android BpkTextInput should render correctly with arbitrary props 1`] =
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(230, 228, 235, 1)",
+          "borderBottomColor": "rgba(221, 221, 229, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -271,7 +271,7 @@ exports[`Android BpkTextInput should render correctly with arbitrary props 1`] =
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -313,7 +313,7 @@ exports[`Android BpkTextInput should render correctly with custom style 1`] = `
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(178, 174, 189, 1)",
+          "color": "rgba(178, 178, 191, 1)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -329,7 +329,7 @@ exports[`Android BpkTextInput should render correctly with custom style 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(230, 228, 235, 1)",
+          "borderBottomColor": "rgba(221, 221, 229, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -348,7 +348,7 @@ exports[`Android BpkTextInput should render correctly with custom style 1`] = `
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -385,7 +385,7 @@ exports[`Android BpkTextInput should render correctly with description 1`] = `
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(129, 123, 143, 1)",
+          "color": "rgba(104, 105, 127, 1)",
           "fontFamily": "sans-serif",
           "fontSize": 14,
           "fontWeight": "400",
@@ -401,7 +401,7 @@ exports[`Android BpkTextInput should render correctly with description 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(230, 228, 235, 1)",
+          "borderBottomColor": "rgba(221, 221, 229, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -420,7 +420,7 @@ exports[`Android BpkTextInput should render correctly with description 1`] = `
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -440,7 +440,7 @@ exports[`Android BpkTextInput should render correctly with description 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "sans-serif",
           "fontSize": 12,
           "fontWeight": "400",
@@ -448,7 +448,7 @@ exports[`Android BpkTextInput should render correctly with description 1`] = `
         },
         Object {},
         Object {
-          "color": "rgb(129, 123, 143)",
+          "color": "rgb(104, 105, 127)",
           "paddingTop": 4,
         },
       ]
@@ -512,7 +512,7 @@ exports[`Android BpkTextInput should render correctly with description, valid=fa
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -531,7 +531,7 @@ exports[`Android BpkTextInput should render correctly with description, valid=fa
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "BpkIcon",
               "fontSize": 24,
               "includeFontPadding": false,
@@ -559,7 +559,7 @@ exports[`Android BpkTextInput should render correctly with description, valid=fa
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "sans-serif",
           "fontSize": 12,
           "fontWeight": "400",
@@ -596,7 +596,7 @@ exports[`Android BpkTextInput should render correctly with editable=false 1`] = 
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(230, 228, 235, 1)",
+          "color": "rgba(221, 221, 229, 1)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -612,7 +612,7 @@ exports[`Android BpkTextInput should render correctly with editable=false 1`] = 
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(230, 228, 235, 1)",
+          "borderBottomColor": "rgba(221, 221, 229, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -631,7 +631,7 @@ exports[`Android BpkTextInput should render correctly with editable=false 1`] = 
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -668,7 +668,7 @@ exports[`Android BpkTextInput should render correctly with inputRef set 1`] = `
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(178, 174, 189, 1)",
+          "color": "rgba(178, 178, 191, 1)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -684,7 +684,7 @@ exports[`Android BpkTextInput should render correctly with inputRef set 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(230, 228, 235, 1)",
+          "borderBottomColor": "rgba(221, 221, 229, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -703,7 +703,7 @@ exports[`Android BpkTextInput should render correctly with inputRef set 1`] = `
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -740,7 +740,7 @@ exports[`Android BpkTextInput should render correctly with mask="99/99" 1`] = `
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(129, 123, 143, 1)",
+          "color": "rgba(104, 105, 127, 1)",
           "fontFamily": "sans-serif",
           "fontSize": 14,
           "fontWeight": "400",
@@ -756,7 +756,7 @@ exports[`Android BpkTextInput should render correctly with mask="99/99" 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(230, 228, 235, 1)",
+          "borderBottomColor": "rgba(221, 221, 229, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -775,7 +775,7 @@ exports[`Android BpkTextInput should render correctly with mask="99/99" 1`] = `
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -812,7 +812,7 @@ exports[`Android BpkTextInput should render correctly with mask="9999-9999-9999-
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(129, 123, 143, 1)",
+          "color": "rgba(104, 105, 127, 1)",
           "fontFamily": "sans-serif",
           "fontSize": 14,
           "fontWeight": "400",
@@ -828,7 +828,7 @@ exports[`Android BpkTextInput should render correctly with mask="9999-9999-9999-
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(230, 228, 235, 1)",
+          "borderBottomColor": "rgba(221, 221, 229, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -847,7 +847,7 @@ exports[`Android BpkTextInput should render correctly with mask="9999-9999-9999-
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -884,7 +884,7 @@ exports[`Android BpkTextInput should render correctly with valid 1`] = `
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(178, 174, 189, 1)",
+          "color": "rgba(178, 178, 191, 1)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -900,7 +900,7 @@ exports[`Android BpkTextInput should render correctly with valid 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(230, 228, 235, 1)",
+          "borderBottomColor": "rgba(221, 221, 229, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -919,7 +919,7 @@ exports[`Android BpkTextInput should render correctly with valid 1`] = `
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -938,7 +938,7 @@ exports[`Android BpkTextInput should render correctly with valid 1`] = `
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "BpkIcon",
               "fontSize": 24,
               "includeFontPadding": false,
@@ -983,7 +983,7 @@ exports[`Android BpkTextInput should render correctly with valid false 1`] = `
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(178, 174, 189, 1)",
+          "color": "rgba(178, 178, 191, 1)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -1018,7 +1018,7 @@ exports[`Android BpkTextInput should render correctly with valid false 1`] = `
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -1037,7 +1037,7 @@ exports[`Android BpkTextInput should render correctly with valid false 1`] = `
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "BpkIcon",
               "fontSize": 24,
               "includeFontPadding": false,
@@ -1082,7 +1082,7 @@ exports[`Android BpkTextInput should render correctly with valid false and a val
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(178, 174, 189, 1)",
+          "color": "rgba(178, 178, 191, 1)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -1117,7 +1117,7 @@ exports[`Android BpkTextInput should render correctly with valid false and a val
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -1136,7 +1136,7 @@ exports[`Android BpkTextInput should render correctly with valid false and a val
         style={
           Array [
             Object {
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "fontFamily": "BpkIcon",
               "fontSize": 24,
               "includeFontPadding": false,
@@ -1164,7 +1164,7 @@ exports[`Android BpkTextInput should render correctly with valid false and a val
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "sans-serif",
           "fontSize": 12,
           "fontWeight": "400",
@@ -1201,7 +1201,7 @@ exports[`Android BpkTextInput should render correctly with value 1`] = `
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(129, 123, 143, 1)",
+          "color": "rgba(104, 105, 127, 1)",
           "fontFamily": "sans-serif",
           "fontSize": 14,
           "fontWeight": "400",
@@ -1217,7 +1217,7 @@ exports[`Android BpkTextInput should render correctly with value 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(230, 228, 235, 1)",
+          "borderBottomColor": "rgba(221, 221, 229, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -1236,7 +1236,7 @@ exports[`Android BpkTextInput should render correctly with value 1`] = `
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -1273,7 +1273,7 @@ exports[`Android BpkTextInput should support theming 1`] = `
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(178, 174, 189, 1)",
+          "color": "rgba(178, 178, 191, 1)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -1289,7 +1289,7 @@ exports[`Android BpkTextInput should support theming 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(230, 228, 235, 1)",
+          "borderBottomColor": "rgba(221, 221, 229, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -1308,7 +1308,7 @@ exports[`Android BpkTextInput should support theming 1`] = `
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(82, 76, 97)",
+              "color": "rgb(68, 69, 96)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",

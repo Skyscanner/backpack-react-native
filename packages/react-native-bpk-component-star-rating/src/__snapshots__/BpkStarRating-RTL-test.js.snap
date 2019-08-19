@@ -15,7 +15,7 @@ exports[`RTL BpkStar should render correctly when empty 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -23,7 +23,7 @@ exports[`RTL BpkStar should render correctly when empty 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(230, 228, 235)",
+            "color": "rgb(221, 221, 229)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -56,7 +56,7 @@ exports[`RTL BpkStar should render correctly when full 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -64,7 +64,7 @@ exports[`RTL BpkStar should render correctly when full 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(230, 228, 235)",
+            "color": "rgb(221, 221, 229)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -84,7 +84,7 @@ exports[`RTL BpkStar should render correctly when full 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -92,7 +92,7 @@ exports[`RTL BpkStar should render correctly when full 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(230, 228, 235)",
+            "color": "rgb(221, 221, 229)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -131,7 +131,7 @@ exports[`RTL BpkStar should render correctly when half 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -139,7 +139,7 @@ exports[`RTL BpkStar should render correctly when half 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(230, 228, 235)",
+            "color": "rgb(221, 221, 229)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -159,7 +159,7 @@ exports[`RTL BpkStar should render correctly when half 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -167,7 +167,7 @@ exports[`RTL BpkStar should render correctly when half 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(230, 228, 235)",
+            "color": "rgb(221, 221, 229)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -213,18 +213,18 @@ exports[`RTL BpkStar should support theming when empty 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
         },
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
         },
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(230, 228, 235)",
+            "color": "rgb(221, 221, 229)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -260,18 +260,18 @@ exports[`RTL BpkStar should support theming when full 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
         },
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
         },
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(230, 228, 235)",
+            "color": "rgb(221, 221, 229)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -294,18 +294,18 @@ exports[`RTL BpkStar should support theming when full 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
         },
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
         },
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(230, 228, 235)",
+            "color": "rgb(221, 221, 229)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -347,18 +347,18 @@ exports[`RTL BpkStar should support theming when half 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
         },
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
         },
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(230, 228, 235)",
+            "color": "rgb(221, 221, 229)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -381,18 +381,18 @@ exports[`RTL BpkStar should support theming when half 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
         },
         Object {
-          "color": "rgb(82, 76, 97)",
+          "color": "rgb(68, 69, 96)",
         },
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(230, 228, 235)",
+            "color": "rgb(221, 221, 229)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
