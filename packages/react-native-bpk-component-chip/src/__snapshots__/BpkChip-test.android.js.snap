@@ -51,7 +51,7 @@ exports[`Android BpkChip should render correctly 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -127,7 +127,7 @@ exports[`Android BpkChip should render correctly with "disabled" 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -206,7 +206,7 @@ exports[`Android BpkChip should render correctly with "selected" 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -283,7 +283,7 @@ exports[`Android BpkChip should render correctly with arbitrary props 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -358,7 +358,7 @@ exports[`Android BpkChip should render correctly with custom style 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -437,7 +437,7 @@ exports[`Android BpkChip should support theming when selected 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -446,9 +446,6 @@ exports[`Android BpkChip should support theming when selected 1`] = `
           Object {},
           Object {
             "fontFamily": "System",
-          },
-          Object {
-            "color": "#4B5458",
           },
           Array [
             Object {

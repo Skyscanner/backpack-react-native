@@ -35,7 +35,7 @@ exports[`Android BpkHorizontalNavItem should render correctly 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -44,7 +44,7 @@ exports[`Android BpkHorizontalNavItem should render correctly 1`] = `
         Object {},
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "paddingHorizontal": 16,
           },
         ],
@@ -91,7 +91,7 @@ exports[`Android BpkHorizontalNavItem should render correctly with "selected" pr
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -100,7 +100,7 @@ exports[`Android BpkHorizontalNavItem should render correctly with "selected" pr
         Object {},
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "paddingHorizontal": 16,
           },
           Object {
@@ -153,7 +153,7 @@ exports[`Android BpkHorizontalNavItem should render correctly with "small" prop 
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "sans-serif",
           "fontSize": 14,
           "fontWeight": "400",
@@ -162,7 +162,7 @@ exports[`Android BpkHorizontalNavItem should render correctly with "small" prop 
         Object {},
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "paddingHorizontal": 16,
           },
         ],
@@ -209,7 +209,7 @@ exports[`Android BpkHorizontalNavItem should render correctly with "spaceAround"
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -218,7 +218,7 @@ exports[`Android BpkHorizontalNavItem should render correctly with "spaceAround"
         Object {},
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "paddingHorizontal": 16,
           },
         ],
@@ -265,7 +265,7 @@ exports[`Android BpkHorizontalNavItem should render correctly with arbitrary pro
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -274,7 +274,7 @@ exports[`Android BpkHorizontalNavItem should render correctly with arbitrary pro
         Object {},
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "paddingHorizontal": 16,
           },
         ],
@@ -324,7 +324,7 @@ exports[`Android BpkHorizontalNavItem should render correctly with custom "style
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -333,7 +333,7 @@ exports[`Android BpkHorizontalNavItem should render correctly with custom "style
         Object {},
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "paddingHorizontal": 16,
           },
         ],
@@ -380,7 +380,7 @@ exports[`Android BpkHorizontalNavItem should support theming 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -389,7 +389,7 @@ exports[`Android BpkHorizontalNavItem should support theming 1`] = `
         Object {},
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "paddingHorizontal": 16,
           },
         ],

@@ -83,7 +83,7 @@ exports[`Android BpkBannerAlert should accept userland styling 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(68, 69, 96)",
+                "color": "rgb(17, 18, 54)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -166,7 +166,7 @@ exports[`Android BpkBannerAlert should accept userland styling 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(68, 69, 96)",
+                "color": "rgb(17, 18, 54)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -269,7 +269,7 @@ exports[`Android BpkBannerAlert should render correctly when not shown 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(68, 69, 96)",
+                "color": "rgb(17, 18, 54)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -352,7 +352,7 @@ exports[`Android BpkBannerAlert should render correctly when not shown 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(68, 69, 96)",
+                "color": "rgb(17, 18, 54)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -455,7 +455,7 @@ exports[`Android BpkBannerAlert should render correctly with animateOnEnter 1`] 
           style={
             Array [
               Object {
-                "color": "rgb(68, 69, 96)",
+                "color": "rgb(17, 18, 54)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -538,7 +538,7 @@ exports[`Android BpkBannerAlert should render correctly with animateOnEnter 1`] 
           style={
             Array [
               Object {
-                "color": "rgb(68, 69, 96)",
+                "color": "rgb(17, 18, 54)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -641,7 +641,7 @@ exports[`Android BpkBannerAlert should render correctly with animateOnLeave 1`] 
           style={
             Array [
               Object {
-                "color": "rgb(68, 69, 96)",
+                "color": "rgb(17, 18, 54)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -724,7 +724,7 @@ exports[`Android BpkBannerAlert should render correctly with animateOnLeave 1`] 
           style={
             Array [
               Object {
-                "color": "rgb(68, 69, 96)",
+                "color": "rgb(17, 18, 54)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -846,7 +846,7 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
           style={
             Array [
               Object {
-                "color": "rgb(68, 69, 96)",
+                "color": "rgb(17, 18, 54)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -912,7 +912,7 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
             style={
               Array [
                 Object {
-                  "color": "rgb(68, 69, 96)",
+                  "color": "rgb(17, 18, 54)",
                   "fontFamily": "sans-serif",
                   "fontSize": 14,
                   "fontWeight": "400",
@@ -942,7 +942,7 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
             style={
               Array [
                 Object {
-                  "color": "rgb(68, 69, 96)",
+                  "color": "rgb(17, 18, 54)",
                   "fontFamily": "sans-serif",
                   "fontSize": 14,
                   "fontWeight": "400",
@@ -1042,7 +1042,7 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
           style={
             Array [
               Object {
-                "color": "rgb(68, 69, 96)",
+                "color": "rgb(17, 18, 54)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -1108,7 +1108,7 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
             style={
               Array [
                 Object {
-                  "color": "rgb(68, 69, 96)",
+                  "color": "rgb(17, 18, 54)",
                   "fontFamily": "sans-serif",
                   "fontSize": 14,
                   "fontWeight": "400",
@@ -1138,7 +1138,7 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
             style={
               Array [
                 Object {
-                  "color": "rgb(68, 69, 96)",
+                  "color": "rgb(17, 18, 54)",
                   "fontFamily": "sans-serif",
                   "fontSize": 14,
                   "fontWeight": "400",
@@ -1239,7 +1239,7 @@ exports[`Android BpkBannerAlert should render correctly with dismissable 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(68, 69, 96)",
+                "color": "rgb(17, 18, 54)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -1292,7 +1292,7 @@ exports[`Android BpkBannerAlert should render correctly with dismissable 1`] = `
               style={
                 Array [
                   Object {
-                    "color": "rgb(68, 69, 96)",
+                    "color": "rgb(17, 18, 54)",
                     "fontFamily": "sans-serif",
                     "fontSize": 14,
                     "fontWeight": "400",
@@ -1381,7 +1381,7 @@ exports[`Android BpkBannerAlert should render correctly with dismissable 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(68, 69, 96)",
+                "color": "rgb(17, 18, 54)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -1434,7 +1434,7 @@ exports[`Android BpkBannerAlert should render correctly with dismissable 1`] = `
               style={
                 Array [
                   Object {
-                    "color": "rgb(68, 69, 96)",
+                    "color": "rgb(17, 18, 54)",
                     "fontFamily": "sans-serif",
                     "fontSize": 14,
                     "fontWeight": "400",
@@ -1562,7 +1562,7 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(68, 69, 96)",
+                "color": "rgb(17, 18, 54)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -1628,7 +1628,7 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
             style={
               Array [
                 Object {
-                  "color": "rgb(68, 69, 96)",
+                  "color": "rgb(17, 18, 54)",
                   "fontFamily": "sans-serif",
                   "fontSize": 14,
                   "fontWeight": "400",
@@ -1658,7 +1658,7 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
             style={
               Array [
                 Object {
-                  "color": "rgb(68, 69, 96)",
+                  "color": "rgb(17, 18, 54)",
                   "fontFamily": "sans-serif",
                   "fontSize": 14,
                   "fontWeight": "400",
@@ -1758,7 +1758,7 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(68, 69, 96)",
+                "color": "rgb(17, 18, 54)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -1824,7 +1824,7 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
             style={
               Array [
                 Object {
-                  "color": "rgb(68, 69, 96)",
+                  "color": "rgb(17, 18, 54)",
                   "fontFamily": "sans-serif",
                   "fontSize": 14,
                   "fontWeight": "400",
@@ -1854,7 +1854,7 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
             style={
               Array [
                 Object {
-                  "color": "rgb(68, 69, 96)",
+                  "color": "rgb(17, 18, 54)",
                   "fontFamily": "sans-serif",
                   "fontSize": 14,
                   "fontWeight": "400",
@@ -1955,7 +1955,7 @@ exports[`Android BpkBannerAlert should render correctly with type equal to error
           style={
             Array [
               Object {
-                "color": "rgb(68, 69, 96)",
+                "color": "rgb(17, 18, 54)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -2038,7 +2038,7 @@ exports[`Android BpkBannerAlert should render correctly with type equal to error
           style={
             Array [
               Object {
-                "color": "rgb(68, 69, 96)",
+                "color": "rgb(17, 18, 54)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -2141,7 +2141,7 @@ exports[`Android BpkBannerAlert should render correctly with type equal to neutr
           style={
             Array [
               Object {
-                "color": "rgb(68, 69, 96)",
+                "color": "rgb(17, 18, 54)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -2224,7 +2224,7 @@ exports[`Android BpkBannerAlert should render correctly with type equal to neutr
           style={
             Array [
               Object {
-                "color": "rgb(68, 69, 96)",
+                "color": "rgb(17, 18, 54)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -2327,7 +2327,7 @@ exports[`Android BpkBannerAlert should render correctly with type equal to succe
           style={
             Array [
               Object {
-                "color": "rgb(68, 69, 96)",
+                "color": "rgb(17, 18, 54)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -2410,7 +2410,7 @@ exports[`Android BpkBannerAlert should render correctly with type equal to succe
           style={
             Array [
               Object {
-                "color": "rgb(68, 69, 96)",
+                "color": "rgb(17, 18, 54)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -2513,7 +2513,7 @@ exports[`Android BpkBannerAlert should render correctly with type equal to warn 
           style={
             Array [
               Object {
-                "color": "rgb(68, 69, 96)",
+                "color": "rgb(17, 18, 54)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -2596,7 +2596,7 @@ exports[`Android BpkBannerAlert should render correctly with type equal to warn 
           style={
             Array [
               Object {
-                "color": "rgb(68, 69, 96)",
+                "color": "rgb(17, 18, 54)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",

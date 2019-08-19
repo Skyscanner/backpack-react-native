@@ -41,7 +41,7 @@ exports[`iOS BpkNavigationBarIconButtonIOS should render correctly 1`] = `
             "lineHeight": 28,
           },
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
           },
         ],
       ]
@@ -149,7 +149,7 @@ exports[`iOS BpkNavigationBarIconButtonIOS should render correctly leading confi
             "lineHeight": 28,
           },
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
           },
         ],
       ]

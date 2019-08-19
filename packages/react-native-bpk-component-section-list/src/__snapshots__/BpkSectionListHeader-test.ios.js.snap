@@ -14,7 +14,7 @@ exports[`iOS BpkSectionListHeader should render correctly 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -24,7 +24,7 @@ exports[`iOS BpkSectionListHeader should render correctly 1`] = `
           "fontWeight": "600",
         },
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
         },
       ]
     }

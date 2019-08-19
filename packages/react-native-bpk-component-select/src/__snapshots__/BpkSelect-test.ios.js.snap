@@ -438,7 +438,7 @@ exports[`iOS BpkSelect should render correctly with "valid" false and a validati
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "System",
           "fontSize": 12,
           "fontWeight": "400",
@@ -586,7 +586,7 @@ exports[`iOS BpkSelect should render correctly with a text label 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -753,7 +753,7 @@ exports[`iOS BpkSelect should render correctly with custom styles 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -849,7 +849,7 @@ exports[`iOS BpkSelect should render correctly with the disabled prop 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
