@@ -23,7 +23,7 @@ import PropTypes from 'prop-types';
 import { setOpacity } from 'bpk-tokens';
 import BpkText from 'react-native-bpk-component-text';
 import {
-  colorGray700,
+  colorGray900,
   colorGray50,
   colorYellow500,
   colorRed500,
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
     backgroundColor: setOpacity(colorWhite, 0.2),
   },
   textBase: {
-    color: colorGray700,
+    color: colorGray900,
     includeFontPadding: false,
   },
   textDestructive: {

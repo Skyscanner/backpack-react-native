@@ -1,6 +1,8 @@
 # Unreleased
 
 > Place your changes below this line.
+ - react-native-bpk-component-text:
+   - Updated to use `gray900` instead of `gray700`, in line with our new grays palette
 
 ## How to write a good changelog entry
 

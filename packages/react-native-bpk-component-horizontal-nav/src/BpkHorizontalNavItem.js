@@ -23,7 +23,7 @@ import React, { type ElementProps } from 'react';
 import PropTypes from 'prop-types';
 import {
   colorGray300,
-  colorGray700,
+  colorGray900,
   colorBlue700,
   spacingSm,
   spacingXl,
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     height: spacingXl - borderSizeSm - borderSizeLg,
   },
   text: {
-    color: colorGray700,
+    color: colorGray900,
     paddingHorizontal: spacingBase,
   },
   textDisabled: {
@@ -98,8 +98,8 @@ const BpkHorizontalNavItem = (props: Props) => {
     theme,
     OPTIONAL_THEME_ATTRIBUTES,
   );
-  if (themeAttributes && themeAttributes.colorGray700) {
-    textStyles.push({ color: themeAttributes.colorGray700 });
+  if (themeAttributes && themeAttributes.colorGray900) {
+    textStyles.push({ color: themeAttributes.colorGray900 });
   }
   if (disabled) {
     accessibilityStates.push('disabled');

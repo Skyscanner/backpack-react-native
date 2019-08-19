@@ -28,7 +28,7 @@ import {
   colorGray50,
   colorGray100,
   colorGray500,
-  colorGray700,
+  colorGray900,
 } from 'bpk-tokens/tokens/base.react.native';
 import { withTheme, type Theme } from 'react-native-bpk-theming';
 
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     }),
   },
   text: {
-    color: Platform.OS === 'android' ? colorGray500 : colorGray700,
+    color: Platform.OS === 'android' ? colorGray500 : colorGray900,
   },
 });
 
@@ -72,7 +72,7 @@ const BpkSectionHeader = (props: Props) => {
         backgroundColor: theme.colorGray50 ? theme.colorGray50 : colorGray50,
       });
       textStyles.push({
-        color: theme.colorGray700 ? theme.colorGray700 : colorGray700,
+        color: theme.colorGray900 ? theme.colorGray900 : colorGray900,
       });
     } else {
       outerStyles.push({

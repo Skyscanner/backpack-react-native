@@ -54,8 +54,8 @@ const styles = StyleSheet.create({
 
 const BpkNavigationBarBackButtonIOS = (props: Props) => {
   const { title, showTitle, onPress, tintColor, theme } = props;
-  const gray700 = grayForTheme(theme, 'colorGray700');
-  const tintColorFinal = tintColor || gray700;
+  const gray900 = grayForTheme(theme, 'colorGray900');
+  const tintColorFinal = tintColor || gray900;
   const titleStyle = [{ color: tintColorFinal }];
   const iconStyle = [showTitle ? styles.backIcon : styles.backIconWithoutTitle];
 
