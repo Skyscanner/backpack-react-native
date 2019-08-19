@@ -44,7 +44,7 @@ exports[`Android BpkCard should render correctly 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -107,7 +107,7 @@ exports[`Android BpkCard should render correctly when "cornerStyle=large" 1`] = 
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -168,7 +168,7 @@ exports[`Android BpkCard should render correctly with arbitrary props 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -231,7 +231,7 @@ exports[`Android BpkCard should render correctly with custom inner style 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -294,7 +294,7 @@ exports[`Android BpkCard should render correctly with custom style 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -357,7 +357,7 @@ exports[`Android BpkCard should render correctly with the "focused" state 1`] = 
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -411,7 +411,7 @@ exports[`Android BpkCard should render correctly without padding 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",

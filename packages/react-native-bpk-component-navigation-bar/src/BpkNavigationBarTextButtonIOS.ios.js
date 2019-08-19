@@ -74,7 +74,7 @@ const BpkNavigationBarTextButtonIOS = (props: Props) => {
     theme,
   } = props;
   const tintColors = {
-    [BUTTON_TYPES.default]: grayForTheme(theme, 'colorGray700'),
+    [BUTTON_TYPES.default]: grayForTheme(theme, 'colorGray900'),
     [BUTTON_TYPES.primary]: colorBlue500,
   };
 

@@ -83,7 +83,7 @@ exports[`Android BpkPhoneNumberInput should render correctly 1`] = `
         style={
           Array [
             Object {
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",
@@ -148,7 +148,7 @@ exports[`Android BpkPhoneNumberInput should render correctly 1`] = `
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -254,7 +254,7 @@ exports[`Android BpkPhoneNumberInput should render correctly with \`editable\` f
         style={
           Array [
             Object {
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",
@@ -323,7 +323,7 @@ exports[`Android BpkPhoneNumberInput should render correctly with \`editable\` f
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",

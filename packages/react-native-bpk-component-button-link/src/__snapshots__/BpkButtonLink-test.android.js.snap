@@ -49,7 +49,7 @@ exports[`Android BpkButtonLink should render correctly 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -124,7 +124,7 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="leadi
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -224,7 +224,7 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="trail
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -321,7 +321,7 @@ exports[`Android BpkButtonLink should render correctly with text props provided 
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -393,7 +393,7 @@ exports[`Android BpkButtonLink should render correctly with theme prop 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -468,7 +468,7 @@ exports[`Android BpkButtonLink should support elements as icons 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -491,7 +491,7 @@ exports[`Android BpkButtonLink should support elements as icons 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -558,7 +558,7 @@ exports[`Android BpkButtonLink should support overwriting styles 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -634,7 +634,7 @@ exports[`Android BpkButtonLink should support the "disabled" property 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -709,7 +709,7 @@ exports[`Android BpkButtonLink should support the "icon" property 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -805,7 +805,7 @@ exports[`Android should support "borderlessBackground" equal to false 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -877,7 +877,7 @@ exports[`Android should support "uppercase" equal to false 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",

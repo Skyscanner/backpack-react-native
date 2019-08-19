@@ -46,7 +46,7 @@ exports[`iOS BpkButton should render correctly 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "System",
             "fontSize": 14,
             "fontWeight": "400",
@@ -155,7 +155,7 @@ exports[`iOS BpkButton should render correctly with iconAlignment="leading" 1`] 
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "System",
             "fontSize": 14,
             "fontWeight": "400",
@@ -271,7 +271,7 @@ exports[`iOS BpkButton should render correctly with iconAlignment="trailing" 1`]
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "System",
             "fontSize": 14,
             "fontWeight": "400",
@@ -354,7 +354,7 @@ exports[`iOS BpkButton should render correctly with type="destructive" 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "System",
             "fontSize": 14,
             "fontWeight": "400",
@@ -445,7 +445,7 @@ exports[`iOS BpkButton should render correctly with type="destructive" and disab
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "System",
             "fontSize": 14,
             "fontWeight": "400",
@@ -535,7 +535,7 @@ exports[`iOS BpkButton should render correctly with type="featured" 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "System",
             "fontSize": 14,
             "fontWeight": "400",
@@ -625,7 +625,7 @@ exports[`iOS BpkButton should render correctly with type="featured" and disabled
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "System",
             "fontSize": 14,
             "fontWeight": "400",
@@ -711,7 +711,7 @@ exports[`iOS BpkButton should render correctly with type="primary" 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "System",
             "fontSize": 14,
             "fontWeight": "400",
@@ -801,7 +801,7 @@ exports[`iOS BpkButton should render correctly with type="primary" and disabled 
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "System",
             "fontSize": 14,
             "fontWeight": "400",
@@ -884,7 +884,7 @@ exports[`iOS BpkButton should render correctly with type="secondary" 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "System",
             "fontSize": 14,
             "fontWeight": "400",
@@ -975,7 +975,7 @@ exports[`iOS BpkButton should render correctly with type="secondary" and disable
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "System",
             "fontSize": 14,
             "fontWeight": "400",
@@ -1068,7 +1068,7 @@ exports[`iOS BpkButton should support elements as icons 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -1198,7 +1198,7 @@ exports[`iOS BpkButton should support having an icon as well as a title 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "System",
             "fontSize": 14,
             "fontWeight": "400",
@@ -1288,7 +1288,7 @@ exports[`iOS BpkButton should support overwriting styles 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "System",
             "fontSize": 14,
             "fontWeight": "400",
@@ -1378,7 +1378,7 @@ exports[`iOS BpkButton should support the "disabled" property 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "System",
             "fontSize": 14,
             "fontWeight": "400",
@@ -1494,7 +1494,7 @@ exports[`iOS BpkButton should support the "icon" property 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "System",
             "fontSize": 14,
             "fontWeight": "400",
@@ -1679,7 +1679,7 @@ exports[`iOS BpkButton should support the "secondary" property 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "System",
             "fontSize": 14,
             "fontWeight": "400",
@@ -1874,7 +1874,7 @@ exports[`iOS BpkButtonThemed should render correctly 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "System",
             "fontSize": 14,
             "fontWeight": "400",
@@ -1990,7 +1990,7 @@ exports[`iOS should support the "icon" and "large" property 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "System",
             "fontSize": 20,
             "fontWeight": "400",
@@ -2178,7 +2178,7 @@ exports[`iOS should support the "large" and secondary property 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "System",
             "fontSize": 20,
             "fontWeight": "400",
@@ -2271,7 +2271,7 @@ exports[`iOS should support the "large" property 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "System",
             "fontSize": 20,
             "fontWeight": "400",

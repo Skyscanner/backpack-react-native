@@ -120,7 +120,7 @@ exports[`iOS BpkNudger should render correctly 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "System",
           "fontSize": 20,
           "fontWeight": "400",
@@ -369,7 +369,7 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "System",
           "fontSize": 20,
           "fontWeight": "400",
@@ -614,7 +614,7 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "System",
           "fontSize": 20,
           "fontWeight": "400",
@@ -867,7 +867,7 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "System",
           "fontSize": 20,
           "fontWeight": "400",

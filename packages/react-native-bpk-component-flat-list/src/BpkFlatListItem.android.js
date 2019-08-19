@@ -25,7 +25,7 @@ import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-nat
 import {
   spacingBase,
   colorBlue500,
-  colorGray700,
+  colorGray900,
 } from 'bpk-tokens/tokens/base.react.native';
 import {
   getThemeAttributes,
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   text: {
-    color: colorGray700,
+    color: colorGray900,
     flex: 1,
   },
   textSelected: {
@@ -89,7 +89,7 @@ class BpkFlatListItem extends React.PureComponent<FlatListItemProps> {
       OPTIONAL_THEME_ATTRIBUTES,
     );
     textStyles.push({
-      color: grayForTheme(themeAttributes, 'colorGray700'),
+      color: grayForTheme(themeAttributes, 'colorGray900'),
     });
     if (selected) {
       textStyles.push(styles.textSelected);

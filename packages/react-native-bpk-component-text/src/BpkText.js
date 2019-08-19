@@ -20,7 +20,7 @@
 
 import React from 'react';
 import {
-  colorGray700,
+  colorGray900,
   fontFamily,
   fontFamilyEmphasize,
   fontFamilyHeavy,
@@ -104,7 +104,7 @@ const getStyleByTextStyle = textStyle => {
   } = TEXT_TOKENS;
 
   return {
-    color: colorGray700,
+    color: colorGray900,
     letterSpacing,
     fontFamily,
     fontSize,
@@ -199,9 +199,9 @@ const BpkText = (props: Props) => {
     style.push({
       fontFamily: themeAttributes.textFontFamily,
     });
-    if (themeAttributes.colorGray700) {
+    if (themeAttributes.colorGray900) {
       style.push({
-        color: themeAttributes.colorGray700,
+        color: themeAttributes.colorGray900,
       });
     }
   }

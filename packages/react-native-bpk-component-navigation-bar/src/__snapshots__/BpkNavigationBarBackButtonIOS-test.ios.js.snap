@@ -38,7 +38,7 @@ exports[`iOS BpkNavigationBarBackButtonIOS should render correctly 1`] = `
           },
         ],
         Object {
-          "tintColor": "rgb(68, 69, 96)",
+          "tintColor": "rgb(17, 18, 54)",
         },
       ]
     }
@@ -84,7 +84,7 @@ exports[`iOS BpkNavigationBarBackButtonIOS should render correctly with title 1`
           },
         ],
         Object {
-          "tintColor": "rgb(68, 69, 96)",
+          "tintColor": "rgb(17, 18, 54)",
         },
       ]
     }
@@ -93,7 +93,7 @@ exports[`iOS BpkNavigationBarBackButtonIOS should render correctly with title 1`
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -102,7 +102,7 @@ exports[`iOS BpkNavigationBarBackButtonIOS should render correctly with title 1`
         Object {},
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
           },
         ],
       ]

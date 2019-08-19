@@ -1,6 +1,14 @@
 # Unreleased
 
 > Place your changes below this line.
+ - react-native-bpk-component-badge:
+ - react-native-bpk-component-banner-alert:
+ - react-native-bpk-component-flat-list:
+ - react-native-bpk-component-horizontal-nav:
+ - react-native-bpk-component-navigation-bar:
+ - react-native-bpk-component-section-list:
+ - react-native-bpk-component-text-input:
+   - Updated to use `gray900` instead of `gray700`, in line with our new grays palette
 
 ## How to write a good changelog entry
 

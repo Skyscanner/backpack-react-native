@@ -53,7 +53,7 @@ exports[`RTL BpkTextInput should ignore when placeholder is provided, as element
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -125,7 +125,7 @@ exports[`RTL BpkTextInput should render correctly 1`] = `
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -199,7 +199,7 @@ exports[`RTL BpkTextInput should render correctly with \`accessoryView\` 1`] = `
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -271,7 +271,7 @@ exports[`RTL BpkTextInput should render correctly with arbitrary props 1`] = `
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -348,7 +348,7 @@ exports[`RTL BpkTextInput should render correctly with custom style 1`] = `
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -420,7 +420,7 @@ exports[`RTL BpkTextInput should render correctly with description 1`] = `
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -440,7 +440,7 @@ exports[`RTL BpkTextInput should render correctly with description 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "System",
           "fontSize": 12,
           "fontWeight": "400",
@@ -512,7 +512,7 @@ exports[`RTL BpkTextInput should render correctly with description, valid=false 
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -559,7 +559,7 @@ exports[`RTL BpkTextInput should render correctly with description, valid=false 
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "System",
           "fontSize": 12,
           "fontWeight": "400",
@@ -631,7 +631,7 @@ exports[`RTL BpkTextInput should render correctly with editable=false 1`] = `
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -703,7 +703,7 @@ exports[`RTL BpkTextInput should render correctly with inputRef set 1`] = `
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -775,7 +775,7 @@ exports[`RTL BpkTextInput should render correctly with mask="99/99" 1`] = `
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -847,7 +847,7 @@ exports[`RTL BpkTextInput should render correctly with mask="9999-9999-9999-9999
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -919,7 +919,7 @@ exports[`RTL BpkTextInput should render correctly with valid 1`] = `
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -1018,7 +1018,7 @@ exports[`RTL BpkTextInput should render correctly with valid false 1`] = `
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -1117,7 +1117,7 @@ exports[`RTL BpkTextInput should render correctly with valid false and a validat
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -1164,7 +1164,7 @@ exports[`RTL BpkTextInput should render correctly with valid false and a validat
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "System",
           "fontSize": 12,
           "fontWeight": "400",
@@ -1236,7 +1236,7 @@ exports[`RTL BpkTextInput should render correctly with value 1`] = `
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -1308,7 +1308,7 @@ exports[`RTL BpkTextInput should support theming 1`] = `
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",

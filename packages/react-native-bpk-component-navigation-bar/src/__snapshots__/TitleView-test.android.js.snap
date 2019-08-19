@@ -45,7 +45,7 @@ exports[`android TitleView should render correctly with leading icon 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "sans-serif",
           "fontSize": 20,
           "fontWeight": "400",
@@ -89,7 +89,7 @@ exports[`android TitleView should render correctly with only a title 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "sans-serif",
           "fontSize": 20,
           "fontWeight": "400",
@@ -131,7 +131,7 @@ exports[`android TitleView should render correctly with trailing icon 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "sans-serif",
           "fontSize": 20,
           "fontWeight": "400",

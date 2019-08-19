@@ -67,10 +67,10 @@ const BpkNavigationBarIconButtonIOS = (props: Props) => {
     theme,
   } = props;
   const gray300 = grayForTheme(theme, 'colorGray300');
-  const gray700 = grayForTheme(theme, 'colorGray700');
+  const gray900 = grayForTheme(theme, 'colorGray900');
   const tintColorFinal = disabled
     ? disabledTintColor || gray300
-    : tintColor || gray700;
+    : tintColor || gray900;
   const iconStyle = [styles.icon, { color: tintColorFinal }];
   const buttonStyle = [styles.button];
   const accessibilityStates = [];

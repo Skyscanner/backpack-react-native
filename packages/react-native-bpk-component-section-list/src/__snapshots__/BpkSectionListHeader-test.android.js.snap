@@ -18,7 +18,7 @@ exports[`Android BpkSectionListHeader should render correctly 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "sans-serif",
           "fontSize": 14,
           "fontWeight": "400",

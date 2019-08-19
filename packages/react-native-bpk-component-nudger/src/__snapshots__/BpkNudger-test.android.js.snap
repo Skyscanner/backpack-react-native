@@ -113,7 +113,7 @@ exports[`Android BpkNudger should render correctly 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "sans-serif",
           "fontSize": 20,
           "fontWeight": "400",
@@ -348,7 +348,7 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "sans-serif",
           "fontSize": 20,
           "fontWeight": "400",
@@ -579,7 +579,7 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "sans-serif",
           "fontSize": 20,
           "fontWeight": "400",
@@ -818,7 +818,7 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "sans-serif",
           "fontSize": 20,
           "fontWeight": "400",
