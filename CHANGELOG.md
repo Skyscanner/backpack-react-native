@@ -2,6 +2,18 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-08-20 - Update text gray usage
+
+**Fixed:**
+- react-native-bpk-component-badge: 3.0.2 => 3.0.3
+- react-native-bpk-component-banner-alert: 6.0.2 => 6.0.3
+- react-native-bpk-component-flat-list: 4.0.2 => 4.0.3
+- react-native-bpk-component-horizontal-nav: 5.0.0 => 5.0.1
+- react-native-bpk-component-navigation-bar: 6.0.2 => 6.0.3
+- react-native-bpk-component-section-list: 4.0.2 => 4.0.3
+- react-native-bpk-component-text: 4.1.9 => 4.1.10
+ - Updated to use `gray900` instead of `gray700`, in line with our new grays palette
+
 # 2019-08-17 - Bump pod dependencies
 
 **Fixed:**
