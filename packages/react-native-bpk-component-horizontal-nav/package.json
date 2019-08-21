@@ -14,8 +14,8 @@
     "react-native": ">= 0.59.0"
   },
   "dependencies": {
-    "bpk-tokens": "^27.7.0",
     "prop-types": "^15.5.8",
+    "bpk-tokens": "^27.8.0",
     "react-native-bpk-component-text": "^4.1.10",
     "react-native-bpk-component-touchable-native-feedback": "^2.0.1",
     "react-native-bpk-component-touchable-overlay": "^2.0.1",
