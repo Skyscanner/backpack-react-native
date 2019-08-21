@@ -1,6 +1,6 @@
 {
   "name": "react-native-bpk-component-calendar",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "main": "index.js",
   "description": "Backpack React Native calendar component.",
   "repository": {
@@ -18,8 +18,8 @@
     "prop-types": "^15.5.8"
   },
   "devDependencies": {
-    "react-native-bpk-component-picker": "^4.0.3",
-    "react-native-bpk-component-select": "^3.0.3",
-    "react-native-bpk-component-text-input": "^3.1.14"
+    "react-native-bpk-component-picker": "^4.0.4",
+    "react-native-bpk-component-select": "^3.0.4",
+    "react-native-bpk-component-text-input": "^3.1.15"
   }
 }

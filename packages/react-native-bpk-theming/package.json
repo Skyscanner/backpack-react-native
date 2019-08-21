@@ -1,6 +1,6 @@
 {
   "name": "react-native-bpk-theming",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "main": "index.js",
   "description": "Backpack React Native theming utlities.",
   "repository": {
