@@ -14,8 +14,8 @@
     "react-native": ">= 0.59.0"
   },
   "dependencies": {
-    "prop-types": "^15.5.8"
-    "bpk-tokens": "^27.8.0",
+    "prop-types": "^15.5.8",
+    "bpk-tokens": "^27.8.0"
   },
   "devDependencies": {
     "lodash": "^4.17.4",
