@@ -17,7 +17,7 @@
     "prop-types": "^15.5.8"
   },
   "devDependencies": {
-    "bpk-tokens": "^27.8.0",
+    "bpk-tokens": "^27.7.0",
     "react-native-bpk-component-icon": "^2.0.2",
     "react-native-bpk-component-text": "^4.1.10"
   }

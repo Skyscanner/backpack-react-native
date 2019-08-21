@@ -15,8 +15,8 @@
   },
   "dependencies": {
     "@skyscanner/react-native-transitiongroup": "^1.1.3",
+    "bpk-tokens": "^27.7.0",
     "prop-types": "^15.5.8",
-    "bpk-tokens": "^27.8.0",
     "react-native-bpk-theming": "^1.3.2"
   },
   "devDependencies": {
