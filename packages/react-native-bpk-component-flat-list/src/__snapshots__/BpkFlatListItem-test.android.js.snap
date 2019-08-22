@@ -313,6 +313,27 @@ exports[`Android BpkFlatListItem should support the "selected" property 1`] = `
 </View>
 `;
 
+exports[`Android should pass through titleProps to the title 1`] = `
+Object {
+  "children": "List item with pass through props",
+  "emphasize": null,
+  "numberOfLines": 7,
+  "style": Array [
+    Object {
+      "color": "rgb(17, 18, 54)",
+      "flex": 1,
+    },
+    Object {
+      "color": "rgb(17, 18, 54)",
+    },
+  ],
+  "testID": "ID_for_testing",
+  "textStyle": "base",
+  "theme": null,
+  "weight": "regular",
+}
+`;
+
 exports[`Android should support theming when selected 1`] = `
 <View
   accessibilityLabel="List item"

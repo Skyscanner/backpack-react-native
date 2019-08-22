@@ -23,6 +23,8 @@ See [`CHANGELOG.md`](CHANGELOG.md) for real-world examples of good changelog ent
 
 - react-native-bpk-component-infinity-gauntlet:
   - New `timeStone` prop for controlling time. See &lt;link to docs site&gt;.
+- react-native-bpk-component-flat-list and react-native-bpk-component-flat-list:
+  - New `titleProps` prop for passing props through to the underlying text instance.
 
 
 **Fixed:**

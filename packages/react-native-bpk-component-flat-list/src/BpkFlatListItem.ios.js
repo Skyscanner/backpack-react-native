@@ -79,7 +79,15 @@ class BpkFlatListItem extends React.PureComponent<FlatListItemProps> {
   static defaultProps = LIST_ITEM_DEFAULT_PROPS;
 
   render() {
-    const { image, title, selected, style, theme, ...rest } = this.props;
+    const {
+      image,
+      title,
+      selected,
+      style,
+      theme,
+      titleProps,
+      ...rest
+    } = this.props;
 
     const iconStyles = [styles.tick];
     const textStyles = [styles.text];
@@ -117,7 +125,7 @@ class BpkFlatListItem extends React.PureComponent<FlatListItemProps> {
       >
         <View style={styles.content}>
           {styledImage}
-          <BpkText textStyle="base" style={textStyles}>
+          <BpkText textStyle="base" style={textStyles} {...titleProps}>
             {title}
           </BpkText>
         </View>

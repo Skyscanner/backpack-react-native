@@ -267,6 +267,7 @@ stubStyle
 subtitleView
 textProps
 textStyle
+titleProps
 titleWithIcon
 toggleExpandedButtonLabel
 trailingButton

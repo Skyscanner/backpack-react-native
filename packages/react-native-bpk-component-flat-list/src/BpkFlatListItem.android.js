@@ -80,7 +80,7 @@ class BpkFlatListItem extends React.PureComponent<FlatListItemProps> {
   static defaultProps = LIST_ITEM_DEFAULT_PROPS;
 
   render() {
-    const { image, title, selected, theme, ...rest } = this.props;
+    const { image, title, selected, theme, titleProps, ...rest } = this.props;
     let tintColorFinal = tintColor;
     const textStyles = [styles.text];
     const themeAttributes = getThemeAttributes(
@@ -117,7 +117,7 @@ class BpkFlatListItem extends React.PureComponent<FlatListItemProps> {
         <View style={styles.outer}>
           <View style={styles.content}>
             {styledImage}
-            <BpkText textStyle="base" style={textStyles}>
+            <BpkText textStyle="base" style={textStyles} {...titleProps}>
               {title}
             </BpkText>
           </View>
