@@ -2,6 +2,18 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-08-22
+
+**Fixed:**
+
+- react-native-bpk-component-dialog:
+- react-native-bpk-component-calendar:
+  - Updated `backpack-ios` dependency.
+
+- react-native-bpk-component-flat-list:
+- react-native-bpk-component-section-list:
+  - New `titleProps` prop for passing props through to the underlying text instance.
+
 # 2019-08-20 - Update text gray usage
 
 **Fixed:**
