@@ -63,10 +63,10 @@ PODS:
     - React-cxxreact (= 0.60.4)
     - React-jsi (= 0.60.4)
   - React-jsinspector (0.60.4)
-  - react-native-bpk-component-calendar (2.0.3):
+  - react-native-bpk-component-calendar (2.0.5):
     - Backpack (~> 14.0)
     - React
-  - react-native-bpk-component-dialog (2.0.3):
+  - react-native-bpk-component-dialog (2.0.5):
     - Backpack (~> 14.0)
     - React
   - react-native-maps (0.25.0):

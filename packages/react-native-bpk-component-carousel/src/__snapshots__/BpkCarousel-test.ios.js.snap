@@ -27,11 +27,15 @@ exports[`IOS BpkCarousel should render correctly 1`] = `
           </BpkCarouselItem>,
         ],
         "_firstIndexToProcess": 0,
+        "_hasStableIds": true,
+        "_requiresDataChangeHandling": false,
         "_size": 1,
+        "getStableId": [Function],
         "rowHasChanged": [Function],
       }
     }
     disableRecycling={false}
+    distanceFromWindow={0}
     externalScrollView={
       [MockFunction] {
         "calls": Array [
@@ -69,10 +73,14 @@ exports[`IOS BpkCarousel should render correctly 1`] = `
                   </BpkCarouselItem>,
                 ],
                 "_firstIndexToProcess": 0,
+                "_hasStableIds": true,
+                "_requiresDataChangeHandling": false,
                 "_size": 1,
+                "getStableId": [Function],
                 "rowHasChanged": [Function],
               },
               "disableRecycling": false,
+              "distanceFromWindow": 0,
               "externalScrollView": [MockFunction] {
                 "calls": [Circular],
                 "results": Array [
@@ -89,6 +97,11 @@ exports[`IOS BpkCarousel should render correctly 1`] = `
               "layoutProvider": LayoutProvider {
                 "_getLayoutTypeForIndex": [Function],
                 "_setLayoutForType": [Function],
+                "_tempDim": Object {
+                  "height": 0,
+                  "width": 0,
+                },
+                "shouldRefreshWithAnchoring": true,
               },
               "onEndReachedThreshold": 0,
               "onLayout": [Function],
@@ -121,6 +134,11 @@ exports[`IOS BpkCarousel should render correctly 1`] = `
       LayoutProvider {
         "_getLayoutTypeForIndex": [Function],
         "_setLayoutForType": [Function],
+        "_tempDim": Object {
+          "height": 0,
+          "width": 0,
+        },
+        "shouldRefreshWithAnchoring": true,
       }
     }
     onEndReachedThreshold={0}
@@ -221,11 +239,15 @@ exports[`IOS BpkCarousel should render correctly with an "accessibilityLabel" fu
           </BpkCarouselItem>,
         ],
         "_firstIndexToProcess": 0,
+        "_hasStableIds": true,
+        "_requiresDataChangeHandling": false,
         "_size": 1,
+        "getStableId": [Function],
         "rowHasChanged": [Function],
       }
     }
     disableRecycling={false}
+    distanceFromWindow={0}
     externalScrollView={
       [MockFunction] {
         "calls": Array [
@@ -263,10 +285,14 @@ exports[`IOS BpkCarousel should render correctly with an "accessibilityLabel" fu
                   </BpkCarouselItem>,
                 ],
                 "_firstIndexToProcess": 0,
+                "_hasStableIds": true,
+                "_requiresDataChangeHandling": false,
                 "_size": 1,
+                "getStableId": [Function],
                 "rowHasChanged": [Function],
               },
               "disableRecycling": false,
+              "distanceFromWindow": 0,
               "externalScrollView": [MockFunction] {
                 "calls": [Circular],
                 "results": Array [
@@ -287,6 +313,11 @@ exports[`IOS BpkCarousel should render correctly with an "accessibilityLabel" fu
               "layoutProvider": LayoutProvider {
                 "_getLayoutTypeForIndex": [Function],
                 "_setLayoutForType": [Function],
+                "_tempDim": Object {
+                  "height": 0,
+                  "width": 0,
+                },
+                "shouldRefreshWithAnchoring": true,
               },
               "onEndReachedThreshold": 0,
               "onLayout": [Function],
@@ -336,10 +367,14 @@ exports[`IOS BpkCarousel should render correctly with an "accessibilityLabel" fu
                   </BpkCarouselItem>,
                 ],
                 "_firstIndexToProcess": 0,
+                "_hasStableIds": true,
+                "_requiresDataChangeHandling": false,
                 "_size": 1,
+                "getStableId": [Function],
                 "rowHasChanged": [Function],
               },
               "disableRecycling": false,
+              "distanceFromWindow": 0,
               "externalScrollView": [MockFunction] {
                 "calls": [Circular],
                 "results": Array [
@@ -360,6 +395,11 @@ exports[`IOS BpkCarousel should render correctly with an "accessibilityLabel" fu
               "layoutProvider": LayoutProvider {
                 "_getLayoutTypeForIndex": [Function],
                 "_setLayoutForType": [Function],
+                "_tempDim": Object {
+                  "height": 0,
+                  "width": 0,
+                },
+                "shouldRefreshWithAnchoring": true,
               },
               "onEndReachedThreshold": 0,
               "onLayout": [Function],
@@ -396,6 +436,11 @@ exports[`IOS BpkCarousel should render correctly with an "accessibilityLabel" fu
       LayoutProvider {
         "_getLayoutTypeForIndex": [Function],
         "_setLayoutForType": [Function],
+        "_tempDim": Object {
+          "height": 0,
+          "width": 0,
+        },
+        "shouldRefreshWithAnchoring": true,
       }
     }
     onEndReachedThreshold={0}
@@ -496,11 +541,15 @@ exports[`IOS BpkCarousel should render correctly without indicators 1`] = `
           </BpkCarouselItem>,
         ],
         "_firstIndexToProcess": 0,
+        "_hasStableIds": true,
+        "_requiresDataChangeHandling": false,
         "_size": 1,
+        "getStableId": [Function],
         "rowHasChanged": [Function],
       }
     }
     disableRecycling={false}
+    distanceFromWindow={0}
     externalScrollView={
       [MockFunction] {
         "calls": Array [
@@ -538,10 +587,14 @@ exports[`IOS BpkCarousel should render correctly without indicators 1`] = `
                   </BpkCarouselItem>,
                 ],
                 "_firstIndexToProcess": 0,
+                "_hasStableIds": true,
+                "_requiresDataChangeHandling": false,
                 "_size": 1,
+                "getStableId": [Function],
                 "rowHasChanged": [Function],
               },
               "disableRecycling": false,
+              "distanceFromWindow": 0,
               "externalScrollView": [MockFunction] {
                 "calls": [Circular],
                 "results": Array [
@@ -566,6 +619,11 @@ exports[`IOS BpkCarousel should render correctly without indicators 1`] = `
               "layoutProvider": LayoutProvider {
                 "_getLayoutTypeForIndex": [Function],
                 "_setLayoutForType": [Function],
+                "_tempDim": Object {
+                  "height": 0,
+                  "width": 0,
+                },
+                "shouldRefreshWithAnchoring": true,
               },
               "onEndReachedThreshold": 0,
               "onLayout": [Function],
@@ -615,10 +673,14 @@ exports[`IOS BpkCarousel should render correctly without indicators 1`] = `
                   </BpkCarouselItem>,
                 ],
                 "_firstIndexToProcess": 0,
+                "_hasStableIds": true,
+                "_requiresDataChangeHandling": false,
                 "_size": 1,
+                "getStableId": [Function],
                 "rowHasChanged": [Function],
               },
               "disableRecycling": false,
+              "distanceFromWindow": 0,
               "externalScrollView": [MockFunction] {
                 "calls": [Circular],
                 "results": Array [
@@ -643,6 +705,11 @@ exports[`IOS BpkCarousel should render correctly without indicators 1`] = `
               "layoutProvider": LayoutProvider {
                 "_getLayoutTypeForIndex": [Function],
                 "_setLayoutForType": [Function],
+                "_tempDim": Object {
+                  "height": 0,
+                  "width": 0,
+                },
+                "shouldRefreshWithAnchoring": true,
               },
               "onEndReachedThreshold": 0,
               "onLayout": [Function],
@@ -692,10 +759,14 @@ exports[`IOS BpkCarousel should render correctly without indicators 1`] = `
                   </BpkCarouselItem>,
                 ],
                 "_firstIndexToProcess": 0,
+                "_hasStableIds": true,
+                "_requiresDataChangeHandling": false,
                 "_size": 1,
+                "getStableId": [Function],
                 "rowHasChanged": [Function],
               },
               "disableRecycling": false,
+              "distanceFromWindow": 0,
               "externalScrollView": [MockFunction] {
                 "calls": [Circular],
                 "results": Array [
@@ -720,6 +791,11 @@ exports[`IOS BpkCarousel should render correctly without indicators 1`] = `
               "layoutProvider": LayoutProvider {
                 "_getLayoutTypeForIndex": [Function],
                 "_setLayoutForType": [Function],
+                "_tempDim": Object {
+                  "height": 0,
+                  "width": 0,
+                },
+                "shouldRefreshWithAnchoring": true,
               },
               "onEndReachedThreshold": 0,
               "onLayout": [Function],
@@ -760,6 +836,11 @@ exports[`IOS BpkCarousel should render correctly without indicators 1`] = `
       LayoutProvider {
         "_getLayoutTypeForIndex": [Function],
         "_setLayoutForType": [Function],
+        "_tempDim": Object {
+          "height": 0,
+          "width": 0,
+        },
+        "shouldRefreshWithAnchoring": true,
       }
     }
     onEndReachedThreshold={0}
