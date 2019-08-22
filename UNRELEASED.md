@@ -1,6 +1,15 @@
 # Unreleased
 
 > Place your changes below this line.
+
+- react-native-bpk-component-flat-list:
+- react-native-bpk-component-section-list:
+  - New `titleProps` prop for passing props through to the underlying text instance.
+
+> Place your changes above this line.
+
+###################################################################
+
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
@@ -23,9 +32,6 @@ See [`CHANGELOG.md`](CHANGELOG.md) for real-world examples of good changelog ent
 
 - react-native-bpk-component-infinity-gauntlet:
   - New `timeStone` prop for controlling time. See &lt;link to docs site&gt;.
-- react-native-bpk-component-flat-list and react-native-bpk-component-flat-list:
-  - New `titleProps` prop for passing props through to the underlying text instance.
-
 
 **Fixed:**
 

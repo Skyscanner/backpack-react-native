@@ -87,6 +87,10 @@ Inherits all props from React Native's [FlatList](https://facebook.github.io/rea
 | selected           | bool                                  | false    | false         |
 | titleProps         | object                                | false    | {}            |
 
+#### `titleProps`
+
+`titleProps` is passed down to the `BpkText` used for the title. It accepts anything that React Native's [`Text` component](https://facebook.github.io/react-native/docs/text.html#props) does.
+
 ### BpkFlatListItemSeparator
 
 None.
