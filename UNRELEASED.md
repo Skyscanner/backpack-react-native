@@ -1,6 +1,11 @@
 # Unreleased
 
 > Place your changes below this line.
+**Fixed:**
+
+- react-native-bpk-component-dialog:
+- react-native-bpk-component-calendar:
+  - Updated `backpack-ios` dependency.
 
 - react-native-bpk-component-flat-list:
 - react-native-bpk-component-section-list:

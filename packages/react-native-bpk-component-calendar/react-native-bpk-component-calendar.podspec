@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
   s.source_files  = "src/ios/CalendarBridge/**/*.{h,m}"
 
   s.dependency 'React'
-  s.dependency 'Backpack', '~> 14.0'
+  s.dependency 'Backpack', '~> 15.0'
 end

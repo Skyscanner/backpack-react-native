@@ -1,11 +1,13 @@
 PODS:
-  - Backpack (14.0.1):
+  - Backpack (15.0.0):
+    - FloatingPanel (~> 1.6)
     - FSCalendar (~> 2.8)
     - TTTAttributedLabel (~> 1.13.4)
   - boost-for-react-native (1.63.0)
   - BVLinearGradient (2.5.3):
     - React
   - DoubleConversion (1.1.6)
+  - FloatingPanel (1.6.4)
   - Folly (2018.10.22.00):
     - boost-for-react-native
     - DoubleConversion
@@ -64,10 +66,10 @@ PODS:
     - React-jsi (= 0.60.4)
   - React-jsinspector (0.60.4)
   - react-native-bpk-component-calendar (2.0.5):
-    - Backpack (~> 14.0)
+    - Backpack (~> 15.0)
     - React
   - react-native-bpk-component-dialog (2.0.5):
-    - Backpack (~> 14.0)
+    - Backpack (~> 15.0)
     - React
   - react-native-maps (0.25.0):
     - React
@@ -99,7 +101,7 @@ PODS:
   - yoga (0.60.4.React)
 
 DEPENDENCIES:
-  - Backpack (~> 14.0.0)
+  - Backpack (~> 15.0.0)
   - BVLinearGradient (from `../node_modules/react-native-linear-gradient`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
@@ -131,6 +133,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Backpack
     - boost-for-react-native
+    - FloatingPanel
     - FSCalendar
     - TTTAttributedLabel
 
@@ -189,10 +192,11 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  Backpack: 39b8c5c74b073415394fa084b58dbd2d62d92f16
+  Backpack: b0f8a0fa78dccf4f0a1d2ad9d1f8e341afa37778
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BVLinearGradient: b0b70acf63ee888829b7c2ebbf6b50e227396e55
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
+  FloatingPanel: 062e0500e3b9848e3eb91595367fc6d579e428df
   Folly: 30e7936e1c45c08d884aa59369ed951a8e68cf51
   FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
   glog: 1f3da668190260b06b429bb211bfbee5cd790c28
@@ -204,8 +208,8 @@ SPEC CHECKSUMS:
   React-jsi: 40f467ff088c811c6630acccb4aea57ea7ccb1b5
   React-jsiexecutor: e4b4717060a0cd8d0270323b5655a68c95432efd
   React-jsinspector: 044105eea064aec81adc5e4d777a8f6589e7d094
-  react-native-bpk-component-calendar: 3353f1ab707e97125feb162cd3d7416b4033d32f
-  react-native-bpk-component-dialog: af20c75c4e225ab9b984fa865b0f67a71494e222
+  react-native-bpk-component-calendar: ae7fb26b17a1a5924bd17a57bc435fedd18c68b4
+  react-native-bpk-component-dialog: 9081e363f7152ede14b35615433b7fd2cacfa611
   react-native-maps: bb480348a3fe1e5a811fed1ba3387b329161c5cc
   React-RCTActionSheet: 08864c609d9f959abf3d51fdd93f8bc6e91f21eb
   React-RCTAnimation: a4547e9fac2627ded3df9d302f5558b475faf819
@@ -220,6 +224,6 @@ SPEC CHECKSUMS:
   TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
   yoga: 88c514f310aff89b94a14c5fbf44b95735af0cb7
 
-PODFILE CHECKSUM: 57cdb704a80585eec145617864997f68b5f0ca04
+PODFILE CHECKSUM: 8924948a2ab5e0676d5ac50f5b31b43b0f95c6f5
 
 COCOAPODS: 1.5.3
