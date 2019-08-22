@@ -22,6 +22,7 @@ import PropTypes from 'prop-types';
 import { View, ViewPropTypes } from 'react-native';
 import { type Element, type ElementProps } from 'react';
 import { type Theme } from 'react-native-bpk-theming';
+import { type BpkTextProps } from 'react-native-bpk-component-text';
 
 import { themePropType } from './theming';
 
@@ -37,6 +38,7 @@ export type FlatListItemProps = {
   image: ?FlatListItemImage,
   style: ViewStyleProp,
   theme: ?Theme,
+  titleProps?: $Shape<BpkTextProps>,
 };
 
 export const LIST_ITEM_PROP_TYPES = {

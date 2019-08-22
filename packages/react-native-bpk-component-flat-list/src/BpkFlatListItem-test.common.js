@@ -74,6 +74,27 @@ const commonTests = () => {
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
+
+  it('should pass through titleProps to the title', () => {
+    const titleProps = {
+      numberOfLines: 7,
+      testID: 'ID_for_testing',
+    };
+    const tree = renderer.create(
+      <BpkFlatListItem
+        title="List item with pass through props"
+        onPress={onPressFn}
+        titleProps={titleProps}
+      />,
+    );
+    const bpkText = tree.root.findAll(
+      descendant =>
+        descendant.type.name === 'BpkText' &&
+        descendant.props.testID === 'ID_for_testing',
+    );
+    expect(bpkText.length).toEqual(1);
+    expect(bpkText[0].props).toMatchSnapshot();
+  });
 };
 
 export default commonTests;

@@ -55,6 +55,7 @@ export default class App extends Component {
       title={country.name}
       image={<Image source={require(FLAG_IMAGES[country.id])} />}
       onPress={this.getItemOnPressCallback(country.id)}
+      titleProps={{ weight: 'regular' }}
     />
   );
 
@@ -84,6 +85,7 @@ Inherits all props from React Native's [FlatList](https://facebook.github.io/rea
 | title              | string                                | true     | -             |
 | image              | element                               | false    | null          |
 | selected           | bool                                  | false    | false         |
+| titleProps         | object                                | false    | {}            |
 
 ### BpkFlatListItemSeparator
 

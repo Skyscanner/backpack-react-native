@@ -322,6 +322,23 @@ exports[`iOS BpkFlatListItem should support the "selected" property 1`] = `
 </View>
 `;
 
+exports[`iOS should pass through titleProps to the title 1`] = `
+Object {
+  "children": "List item with pass through props",
+  "emphasize": null,
+  "numberOfLines": 7,
+  "style": Array [
+    Object {
+      "flex": 1,
+    },
+  ],
+  "testID": "ID_for_testing",
+  "textStyle": "base",
+  "theme": null,
+  "weight": "regular",
+}
+`;
+
 exports[`iOS should support theming when selected 1`] = `
 <View
   accessibilityLabel="List item"

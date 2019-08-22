@@ -82,6 +82,7 @@ export default class App extends Component {
       title={airport.name}
       image={<Image source={require(FLAG_IMAGES[section.country])} />}
       onPress={this.getItemOnPressCallback(airportId)}
+      titleProps={{ numberOfLines: 1 }}
     />
   );
 
@@ -114,6 +115,7 @@ Inherits all props from React Native's [SectionList](https://facebook.github.io/
 | title              | string                                | true     | -             |
 | image              | instanceOf(Image)                     | false    | null          |
 | selected           | bool                                  | false    | false         |
+| titleProps         | object                                | false    | {}            |
 
 ### BpkSectionListHeader
 
