@@ -5,36 +5,36 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 target 'Backpack Native' do
   # All these libraries below have been removed from the Xcode project file and now live in the Podfile. Cocoapods handles the linking now. Here you can add more libraries with native modules.
-  pod 'React', :path => '../node_modules/react-native/'
-  pod 'React-Core', :path => '../node_modules/react-native/React'
-  pod 'React-DevSupport', :path => '../node_modules/react-native/React'
-  pod 'React-fishhook', :path => '../node_modules/react-native/Libraries/fishhook'
-  pod 'React-RCTActionSheet', :path => '../node_modules/react-native/Libraries/ActionSheetIOS'
-  pod 'React-RCTAnimation', :path => '../node_modules/react-native/Libraries/NativeAnimation'
-  pod 'React-RCTBlob', :path => '../node_modules/react-native/Libraries/Blob'
-  pod 'React-RCTImage', :path => '../node_modules/react-native/Libraries/Image'
-  pod 'React-RCTLinking', :path => '../node_modules/react-native/Libraries/LinkingIOS'
-  pod 'React-RCTNetwork', :path => '../node_modules/react-native/Libraries/Network'
-  pod 'React-RCTSettings', :path => '../node_modules/react-native/Libraries/Settings'
-  pod 'React-RCTText', :path => '../node_modules/react-native/Libraries/Text'
-  pod 'React-RCTVibration', :path => '../node_modules/react-native/Libraries/Vibration'
-  pod 'React-RCTWebSocket', :path => '../node_modules/react-native/Libraries/WebSocket'
-  pod 'React-cxxreact', :path => '../node_modules/react-native/ReactCommon/cxxreact'
-  pod 'React-jsi', :path => '../node_modules/react-native/ReactCommon/jsi'
-  pod 'React-jsiexecutor', :path => '../node_modules/react-native/ReactCommon/jsiexecutor'
-  pod 'React-jsinspector', :path => '../node_modules/react-native/ReactCommon/jsinspector'
-  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
-  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
-  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
-  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+  pod 'React', :path => '../node_modules/react-native/', :modular_headers => false
+  pod 'React-Core', :path => '../node_modules/react-native/React', :modular_headers => false
+  pod 'React-DevSupport', :path => '../node_modules/react-native/React', :modular_headers => false
+  pod 'React-fishhook', :path => '../node_modules/react-native/Libraries/fishhook', :modular_headers => false
+  pod 'React-RCTActionSheet', :path => '../node_modules/react-native/Libraries/ActionSheetIOS', :modular_headers => false
+  pod 'React-RCTAnimation', :path => '../node_modules/react-native/Libraries/NativeAnimation', :modular_headers => false
+  pod 'React-RCTBlob', :path => '../node_modules/react-native/Libraries/Blob', :modular_headers => false
+  pod 'React-RCTImage', :path => '../node_modules/react-native/Libraries/Image', :modular_headers => false
+  pod 'React-RCTLinking', :path => '../node_modules/react-native/Libraries/LinkingIOS', :modular_headers => false
+  pod 'React-RCTNetwork', :path => '../node_modules/react-native/Libraries/Network', :modular_headers => false
+  pod 'React-RCTSettings', :path => '../node_modules/react-native/Libraries/Settings', :modular_headers => false
+  pod 'React-RCTText', :path => '../node_modules/react-native/Libraries/Text', :modular_headers => false
+  pod 'React-RCTVibration', :path => '../node_modules/react-native/Libraries/Vibration', :modular_headers => false
+  pod 'React-RCTWebSocket', :path => '../node_modules/react-native/Libraries/WebSocket', :modular_headers => false
+  pod 'React-cxxreact', :path => '../node_modules/react-native/ReactCommon/cxxreact', :modular_headers => false
+  pod 'React-jsi', :path => '../node_modules/react-native/ReactCommon/jsi', :modular_headers => false
+  pod 'React-jsiexecutor', :path => '../node_modules/react-native/ReactCommon/jsiexecutor', :modular_headers => false
+  pod 'React-jsinspector', :path => '../node_modules/react-native/ReactCommon/jsinspector', :modular_headers => false
+  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga', :modular_headers => false
+  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec', :modular_headers => false
+  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec', :modular_headers => false
+  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec', :modular_headers => false
 
   # RN Bridging Pods
   pod 'Backpack', '~> 15.0.0'
-  pod 'react-native-bpk-component-calendar', path: '../packages/react-native-bpk-component-calendar'
-  pod 'react-native-bpk-component-dialog', path: '../packages/react-native-bpk-component-dialog'
+  pod 'react-native-bpk-component-calendar', path: '../packages/react-native-bpk-component-calendar', :modular_headers => false
+  pod 'react-native-bpk-component-dialog', path: '../packages/react-native-bpk-component-dialog', :modular_headers => false
 
   # Third party pods
-  pod 'react-native-maps', path: '../packages/react-native-bpk-component-map/node_modules/react-native-maps'
+  pod 'react-native-maps', path: '../packages/react-native-bpk-component-map/node_modules/react-native-maps', :modular_headers => false
 
   target 'Backpack Native Tests' do
     inherit! :search_paths
