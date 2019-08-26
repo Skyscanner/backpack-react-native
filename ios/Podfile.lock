@@ -1,5 +1,5 @@
 PODS:
-  - Backpack (15.0.0):
+  - Backpack (15.0.1):
     - FloatingPanel (~> 1.6)
     - FSCalendar (~> 2.8)
     - TTTAttributedLabel (~> 1.13.4)
@@ -65,10 +65,10 @@ PODS:
     - React-cxxreact (= 0.60.4)
     - React-jsi (= 0.60.4)
   - React-jsinspector (0.60.4)
-  - react-native-bpk-component-calendar (2.0.5):
+  - react-native-bpk-component-calendar (2.0.6):
     - Backpack (~> 15.0)
     - React
-  - react-native-bpk-component-dialog (2.0.5):
+  - react-native-bpk-component-dialog (2.0.6):
     - Backpack (~> 15.0)
     - React
   - react-native-maps (0.25.0):
@@ -192,7 +192,7 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  Backpack: b0f8a0fa78dccf4f0a1d2ad9d1f8e341afa37778
+  Backpack: ec4826469c8b0b4e81fdc0d715e8ddacfac0bb38
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BVLinearGradient: b0b70acf63ee888829b7c2ebbf6b50e227396e55
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
@@ -224,6 +224,6 @@ SPEC CHECKSUMS:
   TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
   yoga: 88c514f310aff89b94a14c5fbf44b95735af0cb7
 
-PODFILE CHECKSUM: 8924948a2ab5e0676d5ac50f5b31b43b0f95c6f5
+PODFILE CHECKSUM: bc0192a15bf68f9c646a7c4dbd2676d2f5e82722
 
 COCOAPODS: 1.5.3
