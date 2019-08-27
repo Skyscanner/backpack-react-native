@@ -46,6 +46,7 @@ import {
   type Props as CommonProps,
   commonPropTypes,
   commonDefaultProps,
+  CHIP_TYPES,
 } from './common-types';
 
 const styles = StyleSheet.create({
@@ -61,8 +62,18 @@ const styles = StyleSheet.create({
       ios: shadows.base(),
     }),
   },
+  innerAlternative: {
+    backgroundColor: 'transparent',
+    borderColor: 'red', // TODO: Use bpk colors - this is currently for testing
+    borderWidth: 1, // TODO: Use tokens
+    paddingVertical: spacingMd - 1, // TODO: Use tokens
+  },
   innerSelected: {
     backgroundColor: colorBlue500,
+  },
+  innerAlternativeSelected: {
+    backgroundColor: colorBlue500,
+    borderColor: 'red', // TODO: Use bpk colors - this is currently for testing
   },
   innerDisabled: {
     backgroundColor: colorWhite,
@@ -101,16 +112,24 @@ const BpkChipWrapper = (props: Props) => {
     label,
     selected,
     style,
+    type,
     theme,
     ...rest
   } = props;
 
-  const innerStyle = [styles.inner];
+  const innerStyle =
+    type === CHIP_TYPES.alternative
+      ? [styles.inner, styles.innerAlternative]
+      : [styles.inner];
   const textStyle = [styles.text];
   const iconStyle = [styles.icon];
 
   if (selected) {
-    innerStyle.push(styles.innerSelected);
+    innerStyle.push(
+      type === CHIP_TYPES.alternative
+        ? styles.innerAlternativeSelected
+        : styles.innerSelected,
+    );
     textStyle.push(styles.textSelected);
   }
 

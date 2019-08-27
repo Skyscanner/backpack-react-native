@@ -38,15 +38,18 @@ import BpkChip, { BpkDismissibleChip } from './index';
 const styles = StyleSheet.create({
   bottomMargin: {
     marginBottom: spacingLg,
+    borderColor: 'red',
   },
   chip: {
     marginEnd: spacingBase,
     marginBottom: spacingBase,
+    borderColor: 'red',
   },
   row: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     marginTop: spacingSm,
+    borderColor: 'red',
   },
 });
 
@@ -223,6 +226,24 @@ storiesOf('react-native-bpk-component-chip', module)
             selected={index % 4 === 0}
             disabled={index % 10 === 0}
             style={styles.chip}
+          />
+        ))}
+      </View>
+    </View>
+  ))
+  .add('docs:alternative', () => (
+    <View style={styles.bottomMargin}>
+      <View style={styles.row}>
+        {COUNTRIES.map((country, index) => (
+          <BpkChip
+            key={country}
+            label={country}
+            accessibilityLabel={`Toggle ${country}`}
+            onPress={() => {}}
+            selected={index % 4 === 0}
+            disabled={index % 10 === 0}
+            style={styles.chip}
+            alternative
           />
         ))}
       </View>

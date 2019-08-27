@@ -28,12 +28,18 @@ import { themePropType } from './theming';
 type ViewProps = ElementProps<typeof View>;
 type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
 
+export const CHIP_TYPES = {
+  base: 'base',
+  alternative: 'alternative',
+};
+
 export type Props = {
   accessibilityLabel: string,
   disabled: boolean,
   onPress: () => mixed,
   label: string,
   style: ViewStyleProp,
+  type: string,
   theme: ?Theme,
 };
 
@@ -43,6 +49,7 @@ export type InnerProps = {
   disabled: boolean,
   selected: boolean,
   style: ViewStyleProp,
+  type: string,
   userStyle: ViewStyleProp,
 };
 
@@ -52,11 +59,13 @@ export const commonPropTypes = {
   onPress: PropTypes.func.isRequired,
   label: PropTypes.string.isRequired,
   style: ViewPropTypes.style,
+  type: PropTypes.string,
   theme: themePropType,
 };
 
 export const commonDefaultProps = {
   disabled: false,
   style: null,
+  type: 'base',
   theme: null,
 };
