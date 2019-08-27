@@ -33,23 +33,27 @@ import BpkThemeProvider from 'react-native-bpk-theming';
 import CenterDecorator from '../../storybook/CenterDecorator';
 import themeAttributes from '../../storybook/themeAttributes';
 
-import BpkChip, { BpkDismissibleChip } from './index';
+import BpkChip, { BpkDismissibleChip, CHIP_TYPES } from './index';
 
 const styles = StyleSheet.create({
   bottomMargin: {
     marginBottom: spacingLg,
-    borderColor: 'red',
   },
   chip: {
     marginEnd: spacingBase,
     marginBottom: spacingBase,
-    borderColor: 'red',
   },
   row: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     marginTop: spacingSm,
-    borderColor: 'red',
+  },
+});
+
+const outlineStyles = StyleSheet.create({
+  row: {
+    // eslint-disable-next-line backpack/use-tokens
+    backgroundColor: '#93a',
   },
 });
 
@@ -231,9 +235,9 @@ storiesOf('react-native-bpk-component-chip', module)
       </View>
     </View>
   ))
-  .add('docs:alternative', () => (
+  .add('docs:outline', () => (
     <View style={styles.bottomMargin}>
-      <View style={styles.row}>
+      <View style={[styles.row, outlineStyles.row]}>
         {COUNTRIES.map((country, index) => (
           <BpkChip
             key={country}
@@ -243,7 +247,7 @@ storiesOf('react-native-bpk-component-chip', module)
             selected={index % 4 === 0}
             disabled={index % 10 === 0}
             style={styles.chip}
-            alternative
+            type={CHIP_TYPES.outline}
           />
         ))}
       </View>

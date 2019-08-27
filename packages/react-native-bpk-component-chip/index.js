@@ -20,10 +20,11 @@
 
 import BpkChip from './src/BpkChip';
 import BpkDismissibleChip from './src/BpkDismissibleChip';
+import { CHIP_TYPES } from './src/common-types';
 
 export type { Props as BpkChipProps } from './src/BpkChip';
 export type {
   Props as BpkDismissibleChipProps,
 } from './src/BpkDismissibleChip';
-export { BpkDismissibleChip };
+export { BpkDismissibleChip, CHIP_TYPES };
 export default BpkChip;

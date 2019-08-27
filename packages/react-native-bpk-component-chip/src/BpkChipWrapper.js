@@ -25,6 +25,7 @@ import BpkIcon from 'react-native-bpk-component-icon';
 import BpkText from 'react-native-bpk-component-text';
 import {
   borderRadiusPill,
+  borderSizeSm,
   colorBlue500,
   colorGray300,
   colorGray500,
@@ -62,18 +63,8 @@ const styles = StyleSheet.create({
       ios: shadows.base(),
     }),
   },
-  innerAlternative: {
-    backgroundColor: 'transparent',
-    borderColor: 'red', // TODO: Use bpk colors - this is currently for testing
-    borderWidth: 1, // TODO: Use tokens
-    paddingVertical: spacingMd - 1, // TODO: Use tokens
-  },
   innerSelected: {
     backgroundColor: colorBlue500,
-  },
-  innerAlternativeSelected: {
-    backgroundColor: colorBlue500,
-    borderColor: 'red', // TODO: Use bpk colors - this is currently for testing
   },
   innerDisabled: {
     backgroundColor: colorWhite,
@@ -96,6 +87,29 @@ const styles = StyleSheet.create({
   iconDisabled: {
     color: colorGray300,
   },
+  innerOutline: {
+    backgroundColor: 'transparent',
+    borderColor: colorGray300,
+    borderWidth: borderSizeSm,
+    paddingVertical: spacingMd - borderSizeSm,
+  },
+  innerOutlineSelected: {
+    backgroundColor: colorBlue500,
+    borderColor: colorGray300,
+  },
+  innerOutlineDisabled: {
+    backgroundColor: 'transparent',
+    borderColor: colorGray700,
+  },
+  textOutline: {
+    color: colorGray300,
+  },
+  textOutlineDisabled: {
+    color: colorGray700,
+  },
+  iconOutlineDisabled: {
+    color: colorGray700,
+  },
 });
 
 type Props = {
@@ -117,19 +131,13 @@ const BpkChipWrapper = (props: Props) => {
     ...rest
   } = props;
 
-  const innerStyle =
-    type === CHIP_TYPES.alternative
-      ? [styles.inner, styles.innerAlternative]
-      : [styles.inner];
+  const userStyle = [style];
+  const innerStyle = [styles.inner];
   const textStyle = [styles.text];
   const iconStyle = [styles.icon];
 
   if (selected) {
-    innerStyle.push(
-      type === CHIP_TYPES.alternative
-        ? styles.innerAlternativeSelected
-        : styles.innerSelected,
-    );
+    innerStyle.push(styles.innerSelected);
     textStyle.push(styles.textSelected);
   }
 
@@ -137,6 +145,21 @@ const BpkChipWrapper = (props: Props) => {
     innerStyle.push(styles.innerDisabled);
     textStyle.push(styles.textDisabled);
     iconStyle.push(styles.iconDisabled);
+  }
+
+  if (type === CHIP_TYPES.outline) {
+    userStyle.push({ elevation: 0 });
+    innerStyle.push(styles.innerOutline);
+    textStyle.push(styles.textOutline);
+
+    if (selected) {
+      innerStyle.push(styles.innerOutlineSelected);
+      textStyle.push(styles.textSelected);
+    }
+    if (disabled) {
+      innerStyle.push(styles.innerOutlineDisabled);
+      textStyle.push(styles.textOutlineDisabled);
+    }
   }
 
   const themeAttributes = {
@@ -181,7 +204,7 @@ const BpkChipWrapper = (props: Props) => {
       disabled={disabled}
       selected={selected}
       style={innerStyle}
-      userStyle={style}
+      userStyle={userStyle}
       {...rest}
     >
       <BpkText textStyle="sm" style={textStyle}>

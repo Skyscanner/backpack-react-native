@@ -29,8 +29,8 @@ type ViewProps = ElementProps<typeof View>;
 type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
 
 export const CHIP_TYPES = {
-  base: 'base',
-  alternative: 'alternative',
+  primary: 'primary',
+  outline: 'outline',
 };
 
 export type Props = {
@@ -66,6 +66,6 @@ export const commonPropTypes = {
 export const commonDefaultProps = {
   disabled: false,
   style: null,
-  type: 'base',
+  type: 'primary',
   theme: null,
 };
