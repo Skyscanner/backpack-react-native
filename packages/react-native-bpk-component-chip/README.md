@@ -95,4 +95,5 @@ export default class App extends Component {
 | label                 | string                                                                    | true     | -             |
 | onPress               | func                                                                      | true     | -             |
 | disabled              | bool                                                                      | false    | false         |
+| type                  | oneOf(CHIP_TYPES)                                                         | false    | primary       |
 
