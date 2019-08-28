@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
   },
   innerOutline: {
     backgroundColor: 'transparent',
-    borderColor: colorGray300,
+    borderColor: colorGray500,
     borderWidth: borderSizeSm,
     paddingVertical: spacingMd - borderSizeSm,
   },
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
     borderColor: colorGray700,
   },
   textOutline: {
-    color: colorGray300,
+    color: colorWhite,
   },
   iconOutline: {
     color: colorGray200,
