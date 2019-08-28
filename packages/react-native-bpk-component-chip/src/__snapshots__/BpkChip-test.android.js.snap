@@ -441,7 +441,7 @@ exports[`Android BpkChip should render outline correctly 1`] = `
         },
         Object {
           "backgroundColor": "transparent",
-          "borderColor": "rgb(178, 178, 191)",
+          "borderColor": "rgb(104, 105, 127)",
           "borderWidth": 1,
           "paddingVertical": 7,
         },
@@ -465,7 +465,7 @@ exports[`Android BpkChip should render outline correctly 1`] = `
               "includeFontPadding": false,
             },
             Object {
-              "color": "rgb(178, 178, 191)",
+              "color": "rgb(255, 255, 255)",
             },
           ],
         ]
