@@ -1,6 +1,14 @@
 # Unreleased
 
 > Place your changes below this line.
+
+**Added:**
+- react-native-bpk-component-chip:
+  - New `outline` chip type for use on dark backgrounds.
+  - New theming props added for new type `chipOutlineSelectedBackgroundColor` and `chipOutlineSelectedTextColor`.
+- react-native-bpk-theming:
+  - Added new chip outline props `chipOutlineSelectedBackgroundColor` and `chipOutlineSelectedTextColor`.
+
 > Place your changes above this line.
 
 ###################################################################

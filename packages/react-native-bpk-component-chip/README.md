@@ -83,6 +83,8 @@ export default class App extends Component {
 
 * `chipSelectedBackgroundColor`
 * `chipSelectedTextColor`
+* `chipOutlineSelectedBackgroundColor`
+* `chipOutlineSelectedTextColor`
 
 ### BpkDismissibleChip
 
