@@ -46,12 +46,14 @@ const theme = {
 
 const themeAttributes = {
   // Used for color theming
-  colorGray50: '#F1F3F3',
-  colorGray100: '#DCDFE0',
-  colorGray300: '#B3BABD',
-  colorGray500: '#657176',
-  colorGray700: '#4B5458',
-  colorGray900: '#0B1A22',
+  colorGray50: '#F1F2F8',
+  colorGray100: '#DDDDE5',
+  colorGray200: '#CDCDD7',
+  colorGray300: '#B2B2BF',
+  colorGray400: '#8F90A0',
+  colorGray500: '#68697F',
+  colorGray700: '#444560',
+  colorGray900: '#111236',
 
   // Used in BpkButton.
   buttonPrimaryGradientStartColor: theme.brandColors.gradientStart,

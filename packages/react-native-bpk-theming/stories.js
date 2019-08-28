@@ -50,7 +50,9 @@ type Theme = {
   primaryColor: string,
   colorGray50: string,
   colorGray100: string,
+  colorGray200: string,
   colorGray300: string,
+  colorGray400: string,
   colorGray500: string,
   colorGray700: string,
   colorGray900: string,
@@ -69,12 +71,14 @@ const generateThemeAttributes = (
   buttonSecondaryBackgroundColor: colorWhite,
   buttonSecondaryBorderColor: gradientEndColor,
   primaryColor: gradientStartColor,
-  colorGray50: '#F1F3F3',
-  colorGray100: '#DCDFE0',
-  colorGray300: '#B3BABD',
-  colorGray500: '#657176',
-  colorGray700: '#4B5458',
-  colorGray900: '#0B1A22',
+  colorGray50: '#F1F2F8',
+  colorGray100: '#DDDDE5',
+  colorGray200: '#CDCDD7',
+  colorGray300: '#B2B2BF',
+  colorGray400: '#8F90A0',
+  colorGray500: '#68697F',
+  colorGray700: '#444560',
+  colorGray900: '#111236',
   textFontFamily: textFontFamily || fontFamily,
 });
 
@@ -122,11 +126,29 @@ const SolidColorBlockGray100 = () => (
     )}
   </BpkThemeAttributes>
 );
+const SolidColorBlockGray200 = () => (
+  <BpkThemeAttributes>
+    {({ colorGray200 }) => (
+      <View
+        style={[styles.solidColorBlock, { backgroundColor: colorGray200 }]}
+      />
+    )}
+  </BpkThemeAttributes>
+);
 const SolidColorBlockGray300 = () => (
   <BpkThemeAttributes>
     {({ colorGray300 }) => (
       <View
         style={[styles.solidColorBlock, { backgroundColor: colorGray300 }]}
+      />
+    )}
+  </BpkThemeAttributes>
+);
+const SolidColorBlockGray400 = () => (
+  <BpkThemeAttributes>
+    {({ colorGray400 }) => (
+      <View
+        style={[styles.solidColorBlock, { backgroundColor: colorGray400 }]}
       />
     )}
   </BpkThemeAttributes>
@@ -228,7 +250,9 @@ class BpkThemePicker extends Component<{}, State> {
             <SolidColorBlockPrimary />
             <SolidColorBlockGray50 />
             <SolidColorBlockGray100 />
+            <SolidColorBlockGray200 />
             <SolidColorBlockGray300 />
+            <SolidColorBlockGray400 />
             <SolidColorBlockGray500 />
             <SolidColorBlockGray700 />
             <SolidColorBlockGray900 />
