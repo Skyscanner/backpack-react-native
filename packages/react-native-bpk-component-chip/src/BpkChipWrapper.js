@@ -93,7 +93,6 @@ const styles = StyleSheet.create({
   },
   innerOutlineSelected: {
     backgroundColor: colorBlue500,
-    borderColor: colorGray300,
   },
   innerOutlineDisabled: {
     backgroundColor: 'transparent',
@@ -137,28 +136,26 @@ const BpkChipWrapper = (props: Props) => {
   const textStyle = [styles.text];
   const iconStyle = [styles.icon];
 
+  if (type === CHIP_TYPES.outline) {
+    userStyle.push({ elevation: 0 });
+    innerStyle.push(styles.innerOutline);
+    textStyle.push(styles.textOutline);
+    iconStyle.push(styles.iconOutline);
+  }
+
   if (selected) {
     innerStyle.push(styles.innerSelected);
     textStyle.push(styles.textSelected);
+    if (type === CHIP_TYPES.outline) {
+      innerStyle.push(styles.innerOutlineSelected);
+    }
   }
 
   if (disabled) {
     innerStyle.push(styles.innerDisabled);
     textStyle.push(styles.textDisabled);
     iconStyle.push(styles.iconDisabled);
-  }
-
-  if (type === CHIP_TYPES.outline) {
-    userStyle.push({ elevation: 0 });
-    innerStyle.push(styles.innerOutline);
-    textStyle.push(styles.textOutline);
-    iconStyle.push(styles.iconOutline);
-
-    if (selected) {
-      innerStyle.push(styles.innerOutlineSelected);
-      textStyle.push(styles.textSelected);
-    }
-    if (disabled) {
+    if (type === CHIP_TYPES.outline) {
       innerStyle.push(styles.innerOutlineDisabled);
       textStyle.push(styles.textOutlineDisabled);
       iconStyle.push(styles.iconOutlineDisabled);
@@ -169,32 +166,34 @@ const BpkChipWrapper = (props: Props) => {
     ...getThemeAttributes(REQUIRED_THEME_ATTRIBUTES, theme),
   };
 
-  if (themeAttributes) {
-    if (selected && !disabled) {
-      if (
-        type === CHIP_TYPES.primary &&
-        themeAttributes.chipSelectedBackgroundColor &&
-        themeAttributes.chipSelectedTextColor
-      ) {
-        innerStyle.push({
-          backgroundColor: themeAttributes.chipSelectedBackgroundColor,
-        });
-        textStyle.push({
-          color: themeAttributes.chipSelectedTextColor,
-        });
-      } else if (
-        type === CHIP_TYPES.outline &&
-        themeAttributes.chipOutlineSelectedBackgroundColor &&
-        themeAttributes.chipOutlineSelectedTextColor
-      ) {
-        innerStyle.push({
-          backgroundColor: themeAttributes.chipOutlineSelectedBackgroundColor,
-        });
-        textStyle.push({
-          color: themeAttributes.chipOutlineSelectedTextColor,
-        });
-      }
-    }
+  const shouldApplyTheme = themeAttributes && selected && !disabled;
+  const shouldApplyPrimaryTheme =
+    shouldApplyTheme &&
+    type === CHIP_TYPES.primary &&
+    themeAttributes.chipSelectedBackgroundColor &&
+    themeAttributes.chipSelectedTextColor;
+
+  const shouldApplyOutlineTheme =
+    shouldApplyTheme &&
+    type === CHIP_TYPES.outline &&
+    themeAttributes.chipOutlineSelectedBackgroundColor &&
+    themeAttributes.chipOutlineSelectedTextColor;
+
+  if (shouldApplyPrimaryTheme) {
+    innerStyle.push({
+      backgroundColor: themeAttributes.chipSelectedBackgroundColor,
+    });
+    textStyle.push({
+      color: themeAttributes.chipSelectedTextColor,
+    });
+  }
+  if (shouldApplyOutlineTheme) {
+    innerStyle.push({
+      backgroundColor: themeAttributes.chipOutlineSelectedBackgroundColor,
+    });
+    textStyle.push({
+      color: themeAttributes.chipOutlineSelectedTextColor,
+    });
   }
 
   return (
