@@ -22,7 +22,9 @@ import {
   colorBlue500,
   colorGray50,
   colorGray100,
+  colorGray200,
   colorGray300,
+  colorGray400,
   colorGray500,
   colorGray700,
   colorGray900,
@@ -35,7 +37,9 @@ type Attributes = {
   primaryColor: string,
   colorGray50: string,
   colorGray100: string,
+  colorGray200: string,
   colorGray300: string,
+  colorGray400: string,
   colorGray500: string,
   colorGray700: string,
   colorGray900: string,
@@ -48,7 +52,9 @@ export type Props = {
     primaryColor: string,
     colorGray50: string,
     colorGray100: string,
+    colorGray200: string,
     colorGray300: string,
+    colorGray400: string,
     colorGray500: string,
     colorGray700: string,
     colorGray900: string,
@@ -65,7 +71,9 @@ export type Props = {
  * + `primaryColor`
  * + `colorGray50`,
  * + `colorGray100`,
+ * + `colorGray200`,
  * + `colorGray300`,
+ * + `colorGray400`,
  * + `colorGray500`,
  * + `colorGray700`,
  * + `colorGray900`,
@@ -88,8 +96,12 @@ const BpkThemeAttributes = (props: Props) => {
     theme && theme.colorGray50 != null ? theme.colorGray50 : colorGray50;
   const gray100 =
     theme && theme.colorGray100 != null ? theme.colorGray100 : colorGray100;
+  const gray200 =
+    theme && theme.colorGray200 != null ? theme.colorGray200 : colorGray200;
   const gray300 =
     theme && theme.colorGray300 != null ? theme.colorGray300 : colorGray300;
+  const gray400 =
+    theme && theme.colorGray400 != null ? theme.colorGray400 : colorGray400;
   const gray500 =
     theme && theme.colorGray500 != null ? theme.colorGray500 : colorGray500;
   const gray700 =
@@ -103,7 +115,9 @@ const BpkThemeAttributes = (props: Props) => {
     primaryColor,
     colorGray50: gray50,
     colorGray100: gray100,
+    colorGray200: gray200,
     colorGray300: gray300,
+    colorGray400: gray400,
     colorGray500: gray500,
     colorGray700: gray700,
     colorGray900: gray900,
