@@ -23,6 +23,7 @@ import { StyleSheet } from 'react-native';
 import renderer from 'react-test-renderer';
 
 import BpkDismissibleChip from './BpkDismissibleChip';
+import { CHIP_TYPES } from './common-types';
 
 const commonTests = () => {
   const onPress = jest.fn();
@@ -35,6 +36,21 @@ const commonTests = () => {
             label="Label"
             accessibilityLabel="Dismiss"
             onPress={onPress}
+          />,
+        )
+        .toJSON();
+
+      expect(tree).toMatchSnapshot();
+    });
+
+    it('should render outline correctly', () => {
+      const tree = renderer
+        .create(
+          <BpkDismissibleChip
+            label="Label"
+            accessibilityLabel="Dismiss"
+            onPress={onPress}
+            type={CHIP_TYPES.outline}
           />,
         )
         .toJSON();

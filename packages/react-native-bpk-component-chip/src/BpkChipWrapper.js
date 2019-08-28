@@ -27,6 +27,7 @@ import {
   borderRadiusPill,
   borderSizeSm,
   colorBlue500,
+  colorGray200,
   colorGray300,
   colorGray500,
   colorGray700,
@@ -39,10 +40,7 @@ import { shadows } from 'react-native-bpk-styles';
 import { getThemeAttributes, withTheme } from 'react-native-bpk-theming';
 
 import BpkChipInner from './BpkChipInner';
-import {
-  REQUIRED_THEME_ATTRIBUTES,
-  OPTIONAL_THEME_ATTRIBUTES,
-} from './theming';
+import { REQUIRED_THEME_ATTRIBUTES } from './theming';
 import {
   type Props as CommonProps,
   commonPropTypes,
@@ -104,6 +102,9 @@ const styles = StyleSheet.create({
   textOutline: {
     color: colorGray300,
   },
+  iconOutline: {
+    color: colorGray200,
+  },
   textOutlineDisabled: {
     color: colorGray700,
   },
@@ -151,6 +152,7 @@ const BpkChipWrapper = (props: Props) => {
     userStyle.push({ elevation: 0 });
     innerStyle.push(styles.innerOutline);
     textStyle.push(styles.textOutline);
+    iconStyle.push(styles.iconOutline);
 
     if (selected) {
       innerStyle.push(styles.innerOutlineSelected);
@@ -159,42 +161,39 @@ const BpkChipWrapper = (props: Props) => {
     if (disabled) {
       innerStyle.push(styles.innerOutlineDisabled);
       textStyle.push(styles.textOutlineDisabled);
+      iconStyle.push(styles.iconOutlineDisabled);
     }
   }
 
   const themeAttributes = {
     ...getThemeAttributes(REQUIRED_THEME_ATTRIBUTES, theme),
-    ...getThemeAttributes(OPTIONAL_THEME_ATTRIBUTES, theme),
   };
 
   if (themeAttributes) {
-    if (themeAttributes.colorGray700 && themeAttributes.colorGray500) {
-      textStyle.push({
-        color: themeAttributes.colorGray700,
-      });
-      iconStyle.push({
-        color: themeAttributes.colorGray500,
-      });
-    }
-    if (
-      selected &&
-      themeAttributes.chipSelectedBackgroundColor &&
-      themeAttributes.chipSelectedTextColor
-    ) {
-      innerStyle.push({
-        backgroundColor: themeAttributes.chipSelectedBackgroundColor,
-      });
-      textStyle.push({
-        color: themeAttributes.chipSelectedTextColor,
-      });
-    }
-    if (disabled && themeAttributes.colorGray300) {
-      textStyle.push({
-        color: themeAttributes.colorGray300,
-      });
-      iconStyle.push({
-        color: themeAttributes.colorGray300,
-      });
+    if (selected && !disabled) {
+      if (
+        type === CHIP_TYPES.primary &&
+        themeAttributes.chipSelectedBackgroundColor &&
+        themeAttributes.chipSelectedTextColor
+      ) {
+        innerStyle.push({
+          backgroundColor: themeAttributes.chipSelectedBackgroundColor,
+        });
+        textStyle.push({
+          color: themeAttributes.chipSelectedTextColor,
+        });
+      } else if (
+        type === CHIP_TYPES.outline &&
+        themeAttributes.chipOutlineSelectedBackgroundColor &&
+        themeAttributes.chipOutlineSelectedTextColor
+      ) {
+        innerStyle.push({
+          backgroundColor: themeAttributes.chipOutlineSelectedBackgroundColor,
+        });
+        textStyle.push({
+          color: themeAttributes.chipOutlineSelectedTextColor,
+        });
+      }
     }
   }
 

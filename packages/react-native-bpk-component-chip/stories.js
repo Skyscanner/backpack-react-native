@@ -19,7 +19,7 @@
 /* @flow */
 
 import React, { Fragment } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, ScrollView } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
 import BpkText from 'react-native-bpk-component-text';
@@ -32,6 +32,7 @@ import BpkThemeProvider from 'react-native-bpk-theming';
 
 import CenterDecorator from '../../storybook/CenterDecorator';
 import themeAttributes from '../../storybook/themeAttributes';
+import { StoryHeading } from '../../storybook/TextStyles';
 
 import BpkChip, { BpkDismissibleChip, CHIP_TYPES } from './index';
 
@@ -53,7 +54,7 @@ const styles = StyleSheet.create({
 const outlineStyles = StyleSheet.create({
   row: {
     // eslint-disable-next-line backpack/use-tokens
-    backgroundColor: '#93a',
+    backgroundColor: '#388E8E',
   },
 });
 
@@ -268,21 +269,55 @@ storiesOf('react-native-bpk-component-chip', module)
       ))}
     </View>
   ))
+  .add('docs:dismissible-outline', () => (
+    <View style={[styles.row, outlineStyles.row]}>
+      {COUNTRIES.map((country, index) => (
+        <BpkDismissibleChip
+          key={country}
+          label={country}
+          accessibilityLabel={`Toggle ${country}`}
+          onPress={() => {}}
+          selected={index % 4 === 0}
+          disabled={index % 10 === 0}
+          style={styles.chip}
+          type={CHIP_TYPES.outline}
+        />
+      ))}
+    </View>
+  ))
   .add('Themed', () => (
     <BpkThemeProvider theme={themeAttributes}>
-      <View style={styles.row}>
-        {COUNTRIES.map((country, index) => (
-          <BpkChip
-            key={country}
-            label={country}
-            accessibilityLabel={`Toggle ${country}`}
-            onPress={() => {}}
-            selected={index % 2 === 0}
-            disabled={index % 10 === 0}
-            style={styles.chip}
-          />
-        ))}
-      </View>
+      <ScrollView>
+        <StoryHeading>Primary Chip</StoryHeading>
+        <View style={styles.row}>
+          {COUNTRIES.map((country, index) => (
+            <BpkChip
+              key={country}
+              label={country}
+              accessibilityLabel={`Toggle ${country}`}
+              onPress={() => {}}
+              selected={index % 2 === 0}
+              disabled={index % 10 === 0}
+              style={styles.chip}
+            />
+          ))}
+        </View>
+        <StoryHeading>Outline Chip</StoryHeading>
+        <View style={[styles.row, outlineStyles.row]}>
+          {COUNTRIES.map((country, index) => (
+            <BpkChip
+              key={country}
+              label={country}
+              accessibilityLabel={`Toggle ${country}`}
+              onPress={() => {}}
+              selected={index % 4 === 0}
+              disabled={index % 10 === 0}
+              style={styles.chip}
+              type={CHIP_TYPES.outline}
+            />
+          ))}
+        </View>
+      </ScrollView>
     </BpkThemeProvider>
   ))
   .add('Stateful examples', () => (
