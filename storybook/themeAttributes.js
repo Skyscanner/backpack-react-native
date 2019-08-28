@@ -79,6 +79,8 @@ const themeAttributes = {
   // Used in BpkChip.
   chipSelectedBackgroundColor: theme.contentColor,
   chipSelectedTextColor: theme.backgroundColor,
+  chipOutlineSelectedBackgroundColor: theme.brandColors.gradientStart,
+  chipOutlineSelectedTextColor: theme.contentColor,
 
   // Used in BpkHorizontalNavItem.
   horizontalNavSelectedTextColor: theme.contentColor,

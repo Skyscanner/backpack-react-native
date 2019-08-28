@@ -35,6 +35,8 @@ export type Theme = {
   buttonLinkTextColor?: string,
   chipSelectedBackgroundColor?: string,
   chipSelectedTextColor?: string,
+  chipOutlineSelectedBackgroundColor?: string,
+  chipOutlineSelectedTextColor?: string,
   horizontalNavSelectedTextColor?: string,
   spinnerPrimaryColor?: string,
   switchPrimaryColor?: string,

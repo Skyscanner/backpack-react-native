@@ -9,7 +9,9 @@ exports[`Android BpkChip should render correctly 1`] = `
         "elevation": 2,
         "overflow": "hidden",
       },
-      null,
+      Array [
+        null,
+      ],
     ]
   }
 >
@@ -82,7 +84,9 @@ exports[`Android BpkChip should render correctly with "disabled" 1`] = `
         "elevation": 2,
         "overflow": "hidden",
       },
-      null,
+      Array [
+        null,
+      ],
     ]
   }
 >
@@ -161,7 +165,9 @@ exports[`Android BpkChip should render correctly with "selected" 1`] = `
         "elevation": 2,
         "overflow": "hidden",
       },
-      null,
+      Array [
+        null,
+      ],
     ]
   }
 >
@@ -240,7 +246,9 @@ exports[`Android BpkChip should render correctly with arbitrary props 1`] = `
         "elevation": 2,
         "overflow": "hidden",
       },
-      null,
+      Array [
+        null,
+      ],
     ]
   }
 >
@@ -314,9 +322,11 @@ exports[`Android BpkChip should render correctly with custom style 1`] = `
         "elevation": 2,
         "overflow": "hidden",
       },
-      Object {
-        "flex": 1,
-      },
+      Array [
+        Object {
+          "flex": 1,
+        },
+      ],
     ]
   }
 >
@@ -380,6 +390,93 @@ exports[`Android BpkChip should render correctly with custom style 1`] = `
 </View>
 `;
 
+exports[`Android BpkChip should render outline correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 40,
+        "elevation": 2,
+        "overflow": "hidden",
+      },
+      Array [
+        null,
+        Object {
+          "elevation": 0,
+        },
+      ],
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Accessibility label"
+    accessibilityRole="button"
+    accessible={true}
+    clickable={true}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderRadius": 40,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+        },
+        Object {
+          "backgroundColor": "transparent",
+          "borderColor": "rgb(178, 178, 191)",
+          "borderWidth": 1,
+          "paddingVertical": 7,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(68, 69, 96)",
+              "includeFontPadding": false,
+            },
+            Object {
+              "color": "rgb(178, 178, 191)",
+            },
+          ],
+        ]
+      }
+    >
+      Label
+    </Text>
+  </View>
+</View>
+`;
+
 exports[`Android BpkChip should support theming when selected 1`] = `
 <View
   style={
@@ -389,7 +486,9 @@ exports[`Android BpkChip should support theming when selected 1`] = `
         "elevation": 2,
         "overflow": "hidden",
       },
-      null,
+      Array [
+        null,
+      ],
     ]
   }
 >
@@ -454,9 +553,6 @@ exports[`Android BpkChip should support theming when selected 1`] = `
             },
             Object {
               "color": "rgb(255, 255, 255)",
-            },
-            Object {
-              "color": "#4B5458",
             },
             Object {
               "color": "yellow",

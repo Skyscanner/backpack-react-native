@@ -24,6 +24,7 @@ import renderer from 'react-test-renderer';
 import BpkThemeProvider from 'react-native-bpk-theming';
 
 import BpkChip from './BpkChip';
+import { CHIP_TYPES } from './common-types';
 
 const commonTests = () => {
   const onPress = jest.fn();
@@ -36,6 +37,21 @@ const commonTests = () => {
             label="Label"
             accessibilityLabel="Accessibility label"
             onPress={onPress}
+          />,
+        )
+        .toJSON();
+
+      expect(tree).toMatchSnapshot();
+    });
+
+    it('should render outline correctly', () => {
+      const tree = renderer
+        .create(
+          <BpkChip
+            label="Label"
+            accessibilityLabel="Accessibility label"
+            onPress={onPress}
+            type={CHIP_TYPES.outline}
           />,
         )
         .toJSON();
@@ -113,6 +129,8 @@ const commonTests = () => {
       const theme = {
         chipSelectedBackgroundColor: 'red',
         chipSelectedTextColor: 'yellow',
+        chipOutlineSelectedBackgroundColor: 'orange',
+        chipOutlineSelectedTextColor: 'blue',
         textFontFamily: 'System',
         colorGray300: '#B3BABD',
         colorGray500: '#657176',

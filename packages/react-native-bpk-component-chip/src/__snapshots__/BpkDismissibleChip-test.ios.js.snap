@@ -34,7 +34,9 @@ exports[`iOS BpkDismissibleChip should render correctly 1`] = `
           "shadowRadius": 1.5,
         },
       ],
-      null,
+      Array [
+        null,
+      ],
     ]
   }
 >
@@ -144,7 +146,9 @@ exports[`iOS BpkDismissibleChip should render correctly with "disabled" 1`] = `
           "backgroundColor": "rgb(255, 255, 255)",
         },
       ],
-      null,
+      Array [
+        null,
+      ],
     ]
   }
 >
@@ -257,7 +261,9 @@ exports[`iOS BpkDismissibleChip should render correctly with arbitrary props 1`]
           "shadowRadius": 1.5,
         },
       ],
-      null,
+      Array [
+        null,
+      ],
     ]
   }
   testID="123"
@@ -365,9 +371,11 @@ exports[`iOS BpkDismissibleChip should render correctly with custom style 1`] = 
           "shadowRadius": 1.5,
         },
       ],
-      Object {
-        "flex": 1,
-      },
+      Array [
+        Object {
+          "flex": 1,
+        },
+      ],
     ]
   }
 >
@@ -411,6 +419,130 @@ exports[`iOS BpkDismissibleChip should render correctly with custom style 1`] = 
             "color": "rgb(104, 105, 127)",
             "includeFontPadding": false,
             "marginStart": 4,
+          },
+        ],
+      ]
+    }
+  >
+    
+  </Text>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(17, 18, 54)",
+          "bottom": 0,
+          "flex": 1,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "borderRadius": 40,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`iOS BpkDismissibleChip should render outline correctly 1`] = `
+<View
+  accessibilityLabel="Dismiss"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  clickable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderRadius": 40,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
+          },
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        },
+        Object {
+          "backgroundColor": "transparent",
+          "borderColor": "rgb(178, 178, 191)",
+          "borderWidth": 1,
+          "paddingVertical": 7,
+        },
+      ],
+      Array [
+        null,
+        Object {
+          "elevation": 0,
+        },
+      ],
+    ]
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "rgb(17, 18, 54)",
+          "fontFamily": "System",
+          "fontSize": 14,
+          "fontWeight": "400",
+          "letterSpacing": 0.154,
+        },
+        Object {},
+        Array [
+          Object {
+            "color": "rgb(68, 69, 96)",
+            "includeFontPadding": false,
+          },
+          Object {
+            "color": "rgb(178, 178, 191)",
+          },
+        ],
+      ]
+    }
+  >
+    Label
+  </Text>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(68, 69, 96)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Object {
+          "fontSize": 16,
+        },
+        Array [
+          Object {
+            "color": "rgb(104, 105, 127)",
+            "includeFontPadding": false,
+            "marginStart": 4,
+          },
+          Object {
+            "color": "rgb(205, 205, 215)",
           },
         ],
       ]

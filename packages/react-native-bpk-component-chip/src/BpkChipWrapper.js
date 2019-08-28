@@ -25,7 +25,9 @@ import BpkIcon from 'react-native-bpk-component-icon';
 import BpkText from 'react-native-bpk-component-text';
 import {
   borderRadiusPill,
+  borderSizeSm,
   colorBlue500,
+  colorGray200,
   colorGray300,
   colorGray500,
   colorGray700,
@@ -38,14 +40,12 @@ import { shadows } from 'react-native-bpk-styles';
 import { getThemeAttributes, withTheme } from 'react-native-bpk-theming';
 
 import BpkChipInner from './BpkChipInner';
-import {
-  REQUIRED_THEME_ATTRIBUTES,
-  OPTIONAL_THEME_ATTRIBUTES,
-} from './theming';
+import { REQUIRED_THEME_ATTRIBUTES } from './theming';
 import {
   type Props as CommonProps,
   commonPropTypes,
   commonDefaultProps,
+  CHIP_TYPES,
 } from './common-types';
 
 const styles = StyleSheet.create({
@@ -85,6 +85,31 @@ const styles = StyleSheet.create({
   iconDisabled: {
     color: colorGray300,
   },
+  innerOutline: {
+    backgroundColor: 'transparent',
+    borderColor: colorGray300,
+    borderWidth: borderSizeSm,
+    paddingVertical: spacingMd - borderSizeSm,
+  },
+  innerOutlineSelected: {
+    backgroundColor: colorBlue500,
+  },
+  innerOutlineDisabled: {
+    backgroundColor: 'transparent',
+    borderColor: colorGray700,
+  },
+  textOutline: {
+    color: colorGray300,
+  },
+  iconOutline: {
+    color: colorGray200,
+  },
+  textOutlineDisabled: {
+    color: colorGray700,
+  },
+  iconOutlineDisabled: {
+    color: colorGray700,
+  },
 });
 
 type Props = {
@@ -101,59 +126,74 @@ const BpkChipWrapper = (props: Props) => {
     label,
     selected,
     style,
+    type,
     theme,
     ...rest
   } = props;
 
+  const userStyle = [style];
   const innerStyle = [styles.inner];
   const textStyle = [styles.text];
   const iconStyle = [styles.icon];
 
+  if (type === CHIP_TYPES.outline) {
+    userStyle.push({ elevation: 0 });
+    innerStyle.push(styles.innerOutline);
+    textStyle.push(styles.textOutline);
+    iconStyle.push(styles.iconOutline);
+  }
+
   if (selected) {
     innerStyle.push(styles.innerSelected);
     textStyle.push(styles.textSelected);
+    if (type === CHIP_TYPES.outline) {
+      innerStyle.push(styles.innerOutlineSelected);
+    }
   }
 
   if (disabled) {
     innerStyle.push(styles.innerDisabled);
     textStyle.push(styles.textDisabled);
     iconStyle.push(styles.iconDisabled);
+    if (type === CHIP_TYPES.outline) {
+      innerStyle.push(styles.innerOutlineDisabled);
+      textStyle.push(styles.textOutlineDisabled);
+      iconStyle.push(styles.iconOutlineDisabled);
+    }
   }
 
   const themeAttributes = {
     ...getThemeAttributes(REQUIRED_THEME_ATTRIBUTES, theme),
-    ...getThemeAttributes(OPTIONAL_THEME_ATTRIBUTES, theme),
   };
 
-  if (themeAttributes) {
-    if (themeAttributes.colorGray700 && themeAttributes.colorGray500) {
-      textStyle.push({
-        color: themeAttributes.colorGray700,
-      });
-      iconStyle.push({
-        color: themeAttributes.colorGray500,
-      });
-    }
-    if (
-      selected &&
-      themeAttributes.chipSelectedBackgroundColor &&
-      themeAttributes.chipSelectedTextColor
-    ) {
-      innerStyle.push({
-        backgroundColor: themeAttributes.chipSelectedBackgroundColor,
-      });
-      textStyle.push({
-        color: themeAttributes.chipSelectedTextColor,
-      });
-    }
-    if (disabled && themeAttributes.colorGray300) {
-      textStyle.push({
-        color: themeAttributes.colorGray300,
-      });
-      iconStyle.push({
-        color: themeAttributes.colorGray300,
-      });
-    }
+  const shouldApplyTheme = themeAttributes && selected && !disabled;
+  const shouldApplyPrimaryTheme =
+    shouldApplyTheme &&
+    type === CHIP_TYPES.primary &&
+    themeAttributes.chipSelectedBackgroundColor &&
+    themeAttributes.chipSelectedTextColor;
+
+  const shouldApplyOutlineTheme =
+    shouldApplyTheme &&
+    type === CHIP_TYPES.outline &&
+    themeAttributes.chipOutlineSelectedBackgroundColor &&
+    themeAttributes.chipOutlineSelectedTextColor;
+
+  if (shouldApplyPrimaryTheme) {
+    innerStyle.push({
+      backgroundColor: themeAttributes.chipSelectedBackgroundColor,
+    });
+    textStyle.push({
+      color: themeAttributes.chipSelectedTextColor,
+    });
+  }
+  if (shouldApplyOutlineTheme) {
+    innerStyle.push({
+      backgroundColor: themeAttributes.chipOutlineSelectedBackgroundColor,
+    });
+    textStyle.push({
+      color: themeAttributes.chipOutlineSelectedTextColor,
+    });
   }
 
   return (
@@ -162,7 +202,7 @@ const BpkChipWrapper = (props: Props) => {
       disabled={disabled}
       selected={selected}
       style={innerStyle}
-      userStyle={style}
+      userStyle={userStyle}
       {...rest}
     >
       <BpkText textStyle="sm" style={textStyle}>
