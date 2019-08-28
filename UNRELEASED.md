@@ -9,6 +9,10 @@
 - react-native-bpk-theming:
   - Added new chip outline props `chipOutlineSelectedBackgroundColor` and `chipOutlineSelectedTextColor`.
 
+**Removed:**
+- react-native-bpk-component-chip:
+  - Removed `OPTIONAL_THEME_ATTRIBUTES`.
+
 > Place your changes above this line.
 
 ###################################################################
