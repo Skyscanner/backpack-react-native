@@ -2,10 +2,6 @@
 
 > Place your changes below this line.
 
-**Fixed:**
-- react-native-bpk-component-chip:
-  - Fixed the colours for font and border color to be lighter
-
 > Place your changes above this line.
 
 ###################################################################
