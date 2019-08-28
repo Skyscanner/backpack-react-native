@@ -78,6 +78,7 @@ export default class App extends Component {
 | label                 | string                                                                    | true     | -             |
 | disabled              | bool                                                                      | false    | false         |
 | selected              | bool                                                                      | false    | false         |
+| type                  | oneOf(CHIP_TYPES)                                                         | false    | primary       |
 
 #### Theme Props
 

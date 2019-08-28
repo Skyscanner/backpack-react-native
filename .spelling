@@ -196,6 +196,7 @@ borderRadius
 borderlessBackground
 centerLeading
 centerTrailing
+CHIP_TYPES
 clearButtonMode
 collapseDelay
 color
