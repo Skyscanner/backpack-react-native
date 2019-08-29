@@ -2,6 +2,14 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-08-29 - Dropped support for iOS 10
+
+**Breaking:**
+
+- react-native-bpk-component-calendar:
+- react-native-bpk-component-dialog:
+  - Dropped support for iOS 10
+
 # 2019-08-28 - New `outline` type for `BpkChip`
 
 **Added:**
