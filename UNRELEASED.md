@@ -2,6 +2,12 @@
 
 > Place your changes below this line.
 
+**Breaking:**
+
+- react-native-bpk-component-calendar:
+- react-native-bpk-component-dialog:
+  - Dropped support for iOS 10
+
 > Place your changes above this line.
 
 ###################################################################

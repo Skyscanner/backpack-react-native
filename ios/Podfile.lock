@@ -1,5 +1,5 @@
 PODS:
-  - Backpack (15.0.1):
+  - Backpack (16.0.0):
     - FloatingPanel (~> 1.6)
     - FSCalendar (~> 2.8)
     - TTTAttributedLabel (~> 1.13.4)
@@ -65,11 +65,11 @@ PODS:
     - React-cxxreact (= 0.60.4)
     - React-jsi (= 0.60.4)
   - React-jsinspector (0.60.4)
-  - react-native-bpk-component-calendar (2.0.6):
-    - Backpack (~> 15.0)
+  - react-native-bpk-component-calendar (2.0.7):
+    - Backpack (~> 16.0)
     - React
-  - react-native-bpk-component-dialog (2.0.6):
-    - Backpack (~> 15.0)
+  - react-native-bpk-component-dialog (2.0.7):
+    - Backpack (~> 16.0)
     - React
   - react-native-maps (0.25.0):
     - React
@@ -101,7 +101,7 @@ PODS:
   - yoga (0.60.4.React)
 
 DEPENDENCIES:
-  - Backpack (~> 15.0.0)
+  - Backpack (~> 16.0.0)
   - BVLinearGradient (from `../node_modules/react-native-linear-gradient`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
@@ -192,7 +192,7 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  Backpack: ec4826469c8b0b4e81fdc0d715e8ddacfac0bb38
+  Backpack: 87dd7c75805c29ec64e2ad54855318508cf61c03
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BVLinearGradient: b0b70acf63ee888829b7c2ebbf6b50e227396e55
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
@@ -208,8 +208,8 @@ SPEC CHECKSUMS:
   React-jsi: 40f467ff088c811c6630acccb4aea57ea7ccb1b5
   React-jsiexecutor: e4b4717060a0cd8d0270323b5655a68c95432efd
   React-jsinspector: 044105eea064aec81adc5e4d777a8f6589e7d094
-  react-native-bpk-component-calendar: ae7fb26b17a1a5924bd17a57bc435fedd18c68b4
-  react-native-bpk-component-dialog: 9081e363f7152ede14b35615433b7fd2cacfa611
+  react-native-bpk-component-calendar: e09bb35ea5c761cbdbdffb5d53a2e44cccf1ec7e
+  react-native-bpk-component-dialog: 97d28d87a62a2fa80d3f787fb0772bb514a6a591
   react-native-maps: bb480348a3fe1e5a811fed1ba3387b329161c5cc
   React-RCTActionSheet: 08864c609d9f959abf3d51fdd93f8bc6e91f21eb
   React-RCTAnimation: a4547e9fac2627ded3df9d302f5558b475faf819
@@ -224,6 +224,6 @@ SPEC CHECKSUMS:
   TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
   yoga: 88c514f310aff89b94a14c5fbf44b95735af0cb7
 
-PODFILE CHECKSUM: bc0192a15bf68f9c646a7c4dbd2676d2f5e82722
+PODFILE CHECKSUM: 58b0dcdea99f187ad2951c0787565ae901d52a01
 
 COCOAPODS: 1.5.3
