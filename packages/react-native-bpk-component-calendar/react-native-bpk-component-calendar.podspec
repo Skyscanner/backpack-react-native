@@ -10,11 +10,11 @@ Pod::Spec.new do |s|
   s.authors      = { "backpack" => "backpacksquad@skyscanner.net" }
   s.homepage     = "https://backpack.github.io/components/calendar?platform=ios"
   s.license      = "MIT"
-  s.platform     = :ios, "10.0"
+  s.platform     = :ios, "11.0"
 
   s.source       = { :git => "https://github.com/Skyscanner/backpack-react-native.git" }
   s.source_files  = "src/ios/CalendarBridge/**/*.{h,m}"
 
   s.dependency 'React'
-  s.dependency 'Backpack', '~> 15.0'
+  s.dependency 'Backpack', '~> 16.0'
 end

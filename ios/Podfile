@@ -1,4 +1,4 @@
-platform :ios, '10.0'
+platform :ios, '11.0'
 use_modular_headers!
 
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
@@ -29,7 +29,7 @@ target 'Backpack Native' do
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec', :modular_headers => false
 
   # RN Bridging Pods
-  pod 'Backpack', '~> 15.0.0'
+  pod 'Backpack', '~> 16.0.0'
   pod 'react-native-bpk-component-calendar', path: '../packages/react-native-bpk-component-calendar', :modular_headers => false
   pod 'react-native-bpk-component-dialog', path: '../packages/react-native-bpk-component-dialog', :modular_headers => false
 
