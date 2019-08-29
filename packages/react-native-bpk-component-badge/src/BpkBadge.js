@@ -23,6 +23,11 @@ import PropTypes from 'prop-types';
 import { setOpacity } from 'bpk-tokens';
 import BpkText from 'react-native-bpk-component-text';
 import {
+  getThemeAttributes,
+  withTheme,
+  type Theme,
+} from 'react-native-bpk-theming';
+import {
   colorGray900,
   colorGray50,
   colorYellow500,
@@ -35,6 +40,8 @@ import {
   spacingMd,
 } from 'bpk-tokens/tokens/base.react.native';
 import { View, ViewPropTypes, StyleSheet } from 'react-native';
+
+import { REQUIRED_THEME_ATTRIBUTES, themePropType } from './theming';
 
 const styles = StyleSheet.create({
   viewBase: {
@@ -125,6 +132,7 @@ export type Props = {
   message: ?string,
   type: $Keys<typeof BADGE_TYPES>,
   style: ?(Object | Array<Object>),
+  theme: ?Theme,
 };
 
 const viewStyleMap: { [key: string]: Object | Array<Object> } = {
@@ -149,6 +157,7 @@ const BpkBadge = (props: Props) => {
     docked,
     type,
     style: userStyle,
+    theme,
   } = props;
 
   const viewStyle = [styles.viewBase, styles.borderBase];
@@ -156,6 +165,19 @@ const BpkBadge = (props: Props) => {
 
   viewStyle.push(viewStyleMap[type]);
   textStyle.push(textStyleMap[type]);
+
+  const themeAttributes = {
+    ...getThemeAttributes(REQUIRED_THEME_ATTRIBUTES, theme),
+  };
+
+  const applyDestructiveTheme =
+    type === BADGE_TYPES.destructive &&
+    themeAttributes.badgeDestructiveBackgroundColor;
+  if (applyDestructiveTheme) {
+    viewStyle.push({
+      backgroundColor: themeAttributes.badgeDestructiveBackgroundColor,
+    });
+  }
 
   if (docked === BADGE_DOCKED_TYPES.start) {
     viewStyle.push(styles.borderLeft);
@@ -218,6 +240,7 @@ BpkBadge.propTypes = {
   message: PropTypes.string,
   style: ViewPropTypes.style,
   type: PropTypes.oneOf(Object.keys(BADGE_TYPES)),
+  theme: themePropType,
 };
 
 BpkBadge.defaultProps = {
@@ -227,6 +250,7 @@ BpkBadge.defaultProps = {
   message: null,
   style: null,
   type: BADGE_TYPES.warning,
+  theme: null,
 };
 
-export default BpkBadge;
+export default (withTheme(BpkBadge): typeof BpkBadge);

@@ -2,6 +2,11 @@
 
 > Place your changes below this line.
 
+**Breaking:**
+
+- react-native-bpk-component-badge:
+  - New required `badgeDestructiveBackgroundColor` theme prop.
+
 > Place your changes above this line.
 
 ###################################################################

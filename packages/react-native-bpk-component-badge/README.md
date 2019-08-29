@@ -71,6 +71,10 @@ export default class App extends Component {
 
 Renders icons suitable to be placed inside a Badge.
 
+#### Theme Props
+
+* `badgeDestructiveBackgroundColor`
+
 ### Props
 
 | Property  | PropType         | Required | Default Value |

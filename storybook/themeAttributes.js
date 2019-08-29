@@ -82,6 +82,9 @@ const themeAttributes = {
   chipOutlineSelectedBackgroundColor: theme.brandColors.gradientStart,
   chipOutlineSelectedTextColor: theme.contentColor,
 
+  // Used in BpkBadge.
+  badgeDestructiveBackgroundColor: 'purple',
+
   // Used in BpkHorizontalNavItem.
   horizontalNavSelectedTextColor: theme.contentColor,
 

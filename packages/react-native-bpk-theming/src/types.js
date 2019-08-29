@@ -19,6 +19,7 @@
 /* @flow */
 
 export type Theme = {
+  badgeDestructiveBackgroundColor?: string,
   buttonBorderRadius?: number,
   buttonPrimaryGradientStartColor?: string,
   buttonPrimaryGradientEndColor?: string,
