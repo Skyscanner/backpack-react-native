@@ -24,5 +24,8 @@
     "react-native-bpk-component-icon": "^2.0.5",
     "react-native-bpk-component-text": "^4.1.13"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "gitHead": "c6a71c2be3ecd0eda4b018312d6a170bf594280b"
 }

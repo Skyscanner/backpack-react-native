@@ -22,5 +22,8 @@
   "devDependencies": {
     "react-native-bpk-component-button": "^10.0.6"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "gitHead": "903982367530e8e96dd7c1f3a42307f71a77dceb"
 }

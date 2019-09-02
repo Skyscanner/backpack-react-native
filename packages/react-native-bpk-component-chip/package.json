@@ -23,5 +23,8 @@
     "react-native-bpk-styles": "^1.1.47",
     "react-native-bpk-theming": "^1.4.1"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "gitHead": "903982367530e8e96dd7c1f3a42307f71a77dceb"
 }
