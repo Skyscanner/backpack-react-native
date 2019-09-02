@@ -125,5 +125,8 @@
       "react-test-renderer",
       "react-native"
     ]
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }

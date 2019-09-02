@@ -27,5 +27,8 @@
     "react-native-bpk-component-touchable-overlay": "^2.0.4",
     "react-native-bpk-theming": "^1.4.1"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "gitHead": "903982367530e8e96dd7c1f3a42307f71a77dceb"
 }
