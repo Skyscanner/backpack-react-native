@@ -83,7 +83,12 @@ const themeAttributes = {
   chipOutlineSelectedTextColor: theme.contentColor,
 
   // Used in BpkBadge.
+  badgeSuccessBackgroundColor: 'blue',
+  badgeWarningBackgroundColor: 'yellow',
   badgeDestructiveBackgroundColor: 'purple',
+  badgeSuccessTextColor: 'white',
+  badgeWarningTextColor: 'blue',
+  badgeDestructiveTextColor: 'black',
 
   // Used in BpkHorizontalNavItem.
   horizontalNavSelectedTextColor: theme.contentColor,

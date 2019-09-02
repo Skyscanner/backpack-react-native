@@ -113,7 +113,12 @@ const commonTests = () => {
 
     it('should support theming', () => {
       const theme = {
+        badgeSuccessBackgroundColor: 'blue',
+        badgeWarningBackgroundColor: 'yellow',
         badgeDestructiveBackgroundColor: 'purple',
+        badgeSuccessTextColor: 'white',
+        badgeWarningTextColor: 'blue',
+        badgeDestructiveTextColor: 'black',
         textFontFamily: Platform.OS === 'ios' ? 'Courier' : 'serif-monospace',
       };
       const tree = renderer
