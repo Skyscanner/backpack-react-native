@@ -111,6 +111,19 @@ const commonTests = () => {
       expect(tree).toMatchSnapshot();
     });
 
+    it('should throw an error is an extraneous docked values is provided', () => {
+      jest.spyOn(console, 'error').mockImplementation(err => {
+        throw err;
+      });
+
+      expect(() => {
+        // Ignoring this false positive flow error.
+        // The test is asserting that our prop type works for non flow users.
+        // $FlowFixMe
+        renderer.create(generateBadgeStory({ docked: 'unknown' }));
+      }).toThrowError();
+    });
+
     it('should support theming', () => {
       const theme = {
         badgeSuccessBackgroundColor: 'blue',
