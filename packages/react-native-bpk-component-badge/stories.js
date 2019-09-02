@@ -27,8 +27,10 @@ import {
   colorGray700,
   spacingSm,
 } from 'bpk-tokens/tokens/base.react.native';
+import BpkThemeProvider from 'react-native-bpk-theming';
 
 import { StorySubheading } from '../../storybook/TextStyles';
+import themeAttributes from '../../storybook/themeAttributes';
 import CenterDecorator from '../../storybook/CenterDecorator';
 
 import BpkBadge, {
@@ -168,4 +170,9 @@ storiesOf('react-native-bpk-component-badge', module)
     <View>
       {generateBadgeStory(['Advert'], { docked: BADGE_DOCKED_TYPES.end })}
     </View>
+  ))
+  .add('Themed', () => (
+    <BpkThemeProvider theme={themeAttributes}>
+      {generateBadgeStory(['Advert'], { docked: BADGE_DOCKED_TYPES.end })}
+    </BpkThemeProvider>
   ));

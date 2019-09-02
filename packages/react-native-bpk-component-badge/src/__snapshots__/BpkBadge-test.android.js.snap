@@ -3597,3 +3597,340 @@ exports[`Android BpkBadge should render correctly with user provided style 1`] =
   </View>
 </View>
 `;
+
+exports[`Android BpkBadge should support theming 1`] = `
+<View>
+  <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 20,
+          "justifyContent": "center",
+          "paddingHorizontal": 8,
+        },
+        Object {
+          "borderBottomLeftRadius": 4,
+          "borderBottomRightRadius": 4,
+          "borderTopLeftRadius": 4,
+          "borderTopRightRadius": 4,
+        },
+        Object {
+          "backgroundColor": "rgb(0, 215, 117)",
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "System",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {},
+          Object {
+            "fontFamily": "serif-monospace",
+          },
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "includeFontPadding": false,
+            },
+            undefined,
+          ],
+        ]
+      }
+    >
+      Badge
+    </Text>
+  </View>
+  <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 20,
+          "justifyContent": "center",
+          "paddingHorizontal": 8,
+        },
+        Object {
+          "borderBottomLeftRadius": 4,
+          "borderBottomRightRadius": 4,
+          "borderTopLeftRadius": 4,
+          "borderTopRightRadius": 4,
+        },
+        Object {
+          "backgroundColor": "rgb(255, 187, 0)",
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "System",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {},
+          Object {
+            "fontFamily": "serif-monospace",
+          },
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "includeFontPadding": false,
+            },
+            undefined,
+          ],
+        ]
+      }
+    >
+      Badge
+    </Text>
+  </View>
+  <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 20,
+          "justifyContent": "center",
+          "paddingHorizontal": 8,
+        },
+        Object {
+          "borderBottomLeftRadius": 4,
+          "borderBottomRightRadius": 4,
+          "borderTopLeftRadius": 4,
+          "borderTopRightRadius": 4,
+        },
+        Object {
+          "backgroundColor": "rgb(255, 84, 82)",
+        },
+        Object {
+          "backgroundColor": "purple",
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "System",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {},
+          Object {
+            "fontFamily": "serif-monospace",
+          },
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "includeFontPadding": false,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      Badge
+    </Text>
+  </View>
+  <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 20,
+          "justifyContent": "center",
+          "paddingHorizontal": 8,
+        },
+        Object {
+          "borderBottomLeftRadius": 4,
+          "borderBottomRightRadius": 4,
+          "borderTopLeftRadius": 4,
+          "borderTopRightRadius": 4,
+        },
+        Object {
+          "backgroundColor": "rgb(241, 242, 248)",
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "System",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {},
+          Object {
+            "fontFamily": "serif-monospace",
+          },
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "includeFontPadding": false,
+            },
+            undefined,
+          ],
+        ]
+      }
+    >
+      Badge
+    </Text>
+  </View>
+  <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 20,
+          "justifyContent": "center",
+          "paddingHorizontal": 8,
+        },
+        Object {
+          "borderBottomLeftRadius": 4,
+          "borderBottomRightRadius": 4,
+          "borderTopLeftRadius": 4,
+          "borderTopRightRadius": 4,
+        },
+        Object {
+          "backgroundColor": "rgb(255, 255, 255)",
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "System",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {},
+          Object {
+            "fontFamily": "serif-monospace",
+          },
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "includeFontPadding": false,
+            },
+            undefined,
+          ],
+        ]
+      }
+    >
+      Badge
+    </Text>
+  </View>
+  <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 20,
+          "justifyContent": "center",
+          "paddingHorizontal": 8,
+        },
+        Object {
+          "borderBottomLeftRadius": 4,
+          "borderBottomRightRadius": 4,
+          "borderTopLeftRadius": 4,
+          "borderTopRightRadius": 4,
+        },
+        Array [
+          Object {
+            "backgroundColor": "rgba(255, 255, 255, 0.2)",
+            "paddingHorizontal": 7,
+          },
+          Object {
+            "borderColor": "rgb(255, 255, 255)",
+            "borderWidth": 1,
+          },
+        ],
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "System",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {},
+          Object {
+            "fontFamily": "serif-monospace",
+          },
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "includeFontPadding": false,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      Badge
+    </Text>
+  </View>
+</View>
+`;

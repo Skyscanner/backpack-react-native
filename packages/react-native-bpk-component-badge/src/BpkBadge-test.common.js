@@ -19,10 +19,11 @@
 /* @flow */
 
 import React from 'react';
-import { View } from 'react-native';
+import { Platform, View } from 'react-native';
 import renderer from 'react-test-renderer';
 import { spacingSm } from 'bpk-tokens/tokens/base.react.native';
 import BpkIcon, { icons } from 'react-native-bpk-component-icon';
+import BpkThemeProvider from 'react-native-bpk-theming';
 
 import BpkBadge, { BADGE_TYPES, BADGE_DOCKED_TYPES } from './BpkBadge';
 import BpkBadgeIcons from './BpkBadgeIcons';
@@ -103,22 +104,24 @@ const commonTests = () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it('should throw an error is an extraneous docked values is provided', () => {
-      jest.spyOn(console, 'error').mockImplementation(err => {
-        throw err;
-      });
-
-      expect(() => {
-        // Ignoring this false positive flow error.
-        // The test is asserting that our prop type works for non flow users.
-        // $FlowFixMe
-        renderer.create(generateBadgeStory({ docked: 'unknown' }));
-      }).toThrowError();
-    });
-
     it('should render correctly with user provided style', () => {
       const tree = renderer
         .create(generateBadgeStory({ style: { margin: spacingSm } }))
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
+    it('should support theming', () => {
+      const theme = {
+        badgeDestructiveBackgroundColor: 'purple',
+        textFontFamily: Platform.OS === 'ios' ? 'Courier' : 'serif-monospace',
+      };
+      const tree = renderer
+        .create(
+          <BpkThemeProvider theme={theme}>
+            {generateBadgeStory({})}
+          </BpkThemeProvider>,
+        )
         .toJSON();
       expect(tree).toMatchSnapshot();
     });
