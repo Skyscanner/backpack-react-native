@@ -3622,6 +3622,9 @@ exports[`iOS BpkBadge should support theming 1`] = `
         Object {
           "backgroundColor": "rgb(0, 215, 117)",
         },
+        Object {
+          "backgroundColor": "blue",
+        },
       ]
     }
   >
@@ -3646,6 +3649,9 @@ exports[`iOS BpkBadge should support theming 1`] = `
               "includeFontPadding": false,
             },
             undefined,
+            Object {
+              "color": "white",
+            },
           ],
         ]
       }
@@ -3675,6 +3681,9 @@ exports[`iOS BpkBadge should support theming 1`] = `
         Object {
           "backgroundColor": "rgb(255, 187, 0)",
         },
+        Object {
+          "backgroundColor": "yellow",
+        },
       ]
     }
   >
@@ -3699,6 +3708,9 @@ exports[`iOS BpkBadge should support theming 1`] = `
               "includeFontPadding": false,
             },
             undefined,
+            Object {
+              "color": "blue",
+            },
           ],
         ]
       }
@@ -3756,6 +3768,9 @@ exports[`iOS BpkBadge should support theming 1`] = `
             },
             Object {
               "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "color": "black",
             },
           ],
         ]

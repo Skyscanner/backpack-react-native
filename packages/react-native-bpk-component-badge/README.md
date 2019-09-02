@@ -73,7 +73,12 @@ Renders icons suitable to be placed inside a Badge.
 
 #### Theme Props
 
+* `badgeSuccessBackgroundColor`
+* `badgeWarningBackgroundColor`
 * `badgeDestructiveBackgroundColor`
+* `badgeSuccessTextColor`
+* `badgeWarningTextColor`
+* `badgeDestructiveTextColor`
 
 ### Props
 

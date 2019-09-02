@@ -170,12 +170,42 @@ const BpkBadge = (props: Props) => {
     ...getThemeAttributes(REQUIRED_THEME_ATTRIBUTES, theme),
   };
 
+  const applySuccessTheme =
+    type === BADGE_TYPES.success &&
+    themeAttributes.badgeSuccessBackgroundColor &&
+    themeAttributes.badgeSuccessTextColor;
+  if (applySuccessTheme) {
+    viewStyle.push({
+      backgroundColor: themeAttributes.badgeSuccessBackgroundColor,
+    });
+    textStyle.push({
+      color: themeAttributes.badgeSuccessTextColor,
+    });
+  }
+
+  const applyWarningTheme =
+    type === BADGE_TYPES.warning &&
+    themeAttributes.badgeWarningBackgroundColor &&
+    themeAttributes.badgeWarningTextColor;
+  if (applyWarningTheme) {
+    viewStyle.push({
+      backgroundColor: themeAttributes.badgeWarningBackgroundColor,
+    });
+    textStyle.push({
+      color: themeAttributes.badgeWarningTextColor,
+    });
+  }
+
   const applyDestructiveTheme =
     type === BADGE_TYPES.destructive &&
-    themeAttributes.badgeDestructiveBackgroundColor;
+    themeAttributes.badgeDestructiveBackgroundColor &&
+    themeAttributes.badgeDestructiveTextColor;
   if (applyDestructiveTheme) {
     viewStyle.push({
       backgroundColor: themeAttributes.badgeDestructiveBackgroundColor,
+    });
+    textStyle.push({
+      color: themeAttributes.badgeDestructiveTextColor,
     });
   }
 
