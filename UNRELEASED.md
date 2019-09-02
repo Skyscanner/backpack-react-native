@@ -2,17 +2,6 @@
 
 > Place your changes below this line.
 
-**Breaking:**
-
-- react-native-bpk-component-badge:
-  - New required theme props.
-    - `badgeSuccessBackgroundColor`
-    - `badgeWarningBackgroundColor`
-    - `badgeDestructiveBackgroundColor`
-    - `badgeSuccessTextColor`
-    - `badgeWarningTextColor`
-    - `badgeDestructiveTextColor`
-
 > Place your changes above this line.
 
 ###################################################################

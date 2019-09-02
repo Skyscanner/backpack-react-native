@@ -2,6 +2,19 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-09-02 - Add badge theming support
+
+**Breaking:**
+
+- react-native-bpk-component-badge: 3.0.5 => 4.0.0:
+  - New required theme props.
+    - `badgeSuccessBackgroundColor`
+    - `badgeWarningBackgroundColor`
+    - `badgeDestructiveBackgroundColor`
+    - `badgeSuccessTextColor`
+    - `badgeWarningTextColor`
+    - `badgeDestructiveTextColor`
+
 # 2019-08-29 - Dropped support for iOS 10
 
 **Breaking:**
