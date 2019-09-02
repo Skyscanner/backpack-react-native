@@ -21,5 +21,6 @@
     "react-native-bpk-component-picker": "^4.0.6",
     "react-native-bpk-component-select": "^3.0.6",
     "react-native-bpk-component-text-input": "^3.1.17"
-  }
+  },
+  "gitHead": "903982367530e8e96dd7c1f3a42307f71a77dceb"
 }
