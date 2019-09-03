@@ -495,7 +495,7 @@ exports[`Android should render correctly with custom font for weight heavy 1`] =
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(17, 18, 54)",
         "fontFamily": "sans-serif",
         "fontSize": 30,
         "fontWeight": "400",
@@ -519,7 +519,7 @@ exports[`Android should render correctly with custom font for weight regular 1`]
   style={
     Array [
       Object {
-        "color": "rgb(82, 76, 97)",
+        "color": "rgb(17, 18, 54)",
         "fontFamily": "sans-serif",
         "fontSize": 30,
         "fontWeight": "400",
