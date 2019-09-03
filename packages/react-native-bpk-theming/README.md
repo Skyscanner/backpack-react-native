@@ -52,3 +52,10 @@ export default class App extends Component {
 | -----------         | --------- | -------- | ------------- |
 | children            | node      | true     | -             |
 | theme               | object    | true     | -             |
+
+## Theme Props
+
+* `textFontFamily`
+
+NOTE: For Android we expect font names to follow a specific name convention for bold and heavy variations. E.g. if you provide a font called `myFont` to the `textFontFamily` 
+theme attribute, we expect to more fonts to be available, those are `myFont_bold` and `myFont_black`.
