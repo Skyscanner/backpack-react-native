@@ -2,9 +2,12 @@
 
 > Place your changes below this line.
 
-> Place your changes above this line.
-
 ###################################################################
+
+**Fixed:**
+
+- `react-native-bpk-component-text`:
+  - Text now will use the correct font variation for bold and heavy when font family is themed.
 
 ## How to write a good changelog entry
 

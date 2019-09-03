@@ -25,6 +25,8 @@ import BpkThemeProvider from 'react-native-bpk-theming';
 import BpkText from './BpkText';
 import commonTests from './BpkText-test.common';
 
+import { WEIGHT_STYLES } from '..';
+
 jest.mock('react-native', () => {
   const reactNative = jest.requireActual('react-native');
   jest
@@ -42,21 +44,23 @@ jest.mock('bpk-tokens/tokens/base.react.native', () =>
 describe('Android', () => {
   commonTests();
 
-  it('should render correctly with theming', () => {
-    const theme = {
-      textFontFamily: 'serif-monospace',
-    };
-    const tree = renderer
-      .create(
-        <BpkThemeProvider theme={theme}>
-          <BpkText>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          </BpkText>
-        </BpkThemeProvider>,
-      )
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+  Object.keys(WEIGHT_STYLES).forEach(weight => {
+    it(`should render correctly with custom font for weight ${weight}`, () => {
+      const theme = {
+        textFontFamily: 'themed_font',
+      };
+      const tree = renderer
+        .create(
+          <BpkThemeProvider theme={theme}>
+            <BpkText weight={weight} textStyle="xxl">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </BpkText>
+          </BpkThemeProvider>,
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
   });
 });
