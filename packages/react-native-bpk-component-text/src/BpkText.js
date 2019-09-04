@@ -124,6 +124,17 @@ const getWeight = (emphasize, weight, textStyle) => {
   return WEIGHT_STYLES.regular;
 };
 
+const expandAndroidThemedFont = (weight, baseFontFamily) => {
+  switch (weight) {
+    case WEIGHT_STYLES.emphasized:
+      return `${baseFontFamily}_bold`;
+    case WEIGHT_STYLES.heavy:
+      return `${baseFontFamily}_black`;
+    default:
+      return baseFontFamily;
+  }
+};
+
 const getEmphasizeProperties = weight => {
   const emphasizeProperties = {};
 
@@ -178,16 +189,14 @@ const BpkText = (props: Props) => {
     children,
     textStyle,
     style: userStyle,
-    weight,
+    weight: userWeight,
     emphasize,
     theme,
     ...rest
   } = props;
 
-  const style = [
-    styles[textStyle],
-    getEmphasizeProperties(getWeight(emphasize, weight, textStyle)),
-  ];
+  const weight = getWeight(emphasize, userWeight, textStyle);
+  const style = [styles[textStyle], getEmphasizeProperties(weight)];
 
   const themeAttributes = getThemeAttributes(
     REQUIRED_THEME_ATTRIBUTES,
@@ -197,7 +206,10 @@ const BpkText = (props: Props) => {
 
   if (themeAttributes) {
     style.push({
-      fontFamily: themeAttributes.textFontFamily,
+      fontFamily:
+        Platform.OS === 'android'
+          ? expandAndroidThemedFont(weight, themeAttributes.textFontFamily)
+          : themeAttributes.textFontFamily,
     });
     if (themeAttributes.colorGray900) {
       style.push({

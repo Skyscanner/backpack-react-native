@@ -466,20 +466,68 @@ exports[`Android BpkText should support overwriting styles 1`] = `
 </Text>
 `;
 
-exports[`Android should render correctly with theming 1`] = `
+exports[`Android should render correctly with custom font for weight emphasized 1`] = `
 <Text
   style={
     Array [
       Object {
         "color": "rgb(17, 18, 54)",
         "fontFamily": "sans-serif",
-        "fontSize": 16,
+        "fontSize": 30,
         "fontWeight": "400",
-        "letterSpacing": -0.2,
+        "letterSpacing": -0.8,
+      },
+      Object {
+        "fontFamily": "sans-serif-medium",
+      },
+      Object {
+        "fontFamily": "themed_font_bold",
+      },
+    ]
+  }
+>
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+</Text>
+`;
+
+exports[`Android should render correctly with custom font for weight heavy 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "rgb(17, 18, 54)",
+        "fontFamily": "sans-serif",
+        "fontSize": 30,
+        "fontWeight": "400",
+        "letterSpacing": -0.8,
+      },
+      Object {
+        "fontFamily": "sans-serif-black",
+      },
+      Object {
+        "fontFamily": "themed_font_black",
+      },
+    ]
+  }
+>
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+</Text>
+`;
+
+exports[`Android should render correctly with custom font for weight regular 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "rgb(17, 18, 54)",
+        "fontFamily": "sans-serif",
+        "fontSize": 30,
+        "fontWeight": "400",
+        "letterSpacing": -0.8,
       },
       Object {},
       Object {
-        "fontFamily": "serif-monospace",
+        "fontFamily": "themed_font",
       },
     ]
   }
