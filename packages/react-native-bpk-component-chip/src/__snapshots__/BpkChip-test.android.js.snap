@@ -9,9 +9,7 @@ exports[`Android BpkChip should render correctly 1`] = `
         "elevation": 2,
         "overflow": "hidden",
       },
-      Array [
-        null,
-      ],
+      Array [],
     ]
   }
 >
@@ -84,9 +82,7 @@ exports[`Android BpkChip should render correctly with "disabled" 1`] = `
         "elevation": 2,
         "overflow": "hidden",
       },
-      Array [
-        null,
-      ],
+      Array [],
     ]
   }
 >
@@ -165,9 +161,7 @@ exports[`Android BpkChip should render correctly with "selected" 1`] = `
         "elevation": 2,
         "overflow": "hidden",
       },
-      Array [
-        null,
-      ],
+      Array [],
     ]
   }
 >
@@ -246,9 +240,7 @@ exports[`Android BpkChip should render correctly with arbitrary props 1`] = `
         "elevation": 2,
         "overflow": "hidden",
       },
-      Array [
-        null,
-      ],
+      Array [],
     ]
   }
 >
@@ -400,7 +392,6 @@ exports[`Android BpkChip should render outline correctly 1`] = `
         "overflow": "hidden",
       },
       Array [
-        null,
         Object {
           "elevation": 0,
         },
@@ -486,9 +477,7 @@ exports[`Android BpkChip should support theming when selected 1`] = `
         "elevation": 2,
         "overflow": "hidden",
       },
-      Array [
-        null,
-      ],
+      Array [],
     ]
   }
 >

@@ -78,7 +78,11 @@ export default class App extends Component {
 | label                 | string                                                                    | true     | -             |
 | disabled              | bool                                                                      | false    | false         |
 | selected              | bool                                                                      | false    | false         |
+| innerChipStyle        | ViewStyle                                                                 | false    | null          |
 | type                  | oneOf(CHIP_TYPES)                                                         | false    | primary       |
+
+**Note that on Android, `style` should be used for positional styling and `innerChipStyle` should be used for other styling.**
+(On iOS, `style` and `innerChipStyle` are applied together so it doesn't matter which you use!)
 
 #### Theme Props
 
@@ -95,5 +99,9 @@ export default class App extends Component {
 | label                 | string                                                                    | true     | -             |
 | onPress               | func                                                                      | true     | -             |
 | disabled              | bool                                                                      | false    | false         |
+| innerChipStyle        | ViewStyle                                                                 | false    | null          |
 | type                  | oneOf(CHIP_TYPES)                                                         | false    | primary       |
+
+**Note that on Android, `style` should be used for positional styling and `innerChipStyle` should be used for other styling.**
+(On iOS, `style` and `innerChipStyle` are applied together so it doesn't matter which you use!)
 
