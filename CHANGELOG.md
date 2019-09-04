@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-09-04 - Fix support for themed fonts on Android
+
+**Fixed:**
+
+- `react-native-bpk-component-text`:
+  - Android text now will use the correct font variation for bold and heavy when font family is themed.
+
 # 2019-09-02 - Add badge theming support
 
 **Breaking:**
