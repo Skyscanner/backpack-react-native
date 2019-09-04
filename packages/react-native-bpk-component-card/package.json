@@ -1,6 +1,6 @@
 {
   "name": "react-native-bpk-component-card",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "main": "index.js",
   "description": "Backpack React Native card component.",
   "repository": {
@@ -17,13 +17,13 @@
     "@skyscanner/react-native-dash": "^0.0.10",
     "bpk-tokens": "^27.8.0",
     "prop-types": "^15.5.8",
-    "react-native-bpk-component-touchable-native-feedback": "^2.0.4",
-    "react-native-bpk-component-touchable-overlay": "^2.0.4",
-    "react-native-bpk-styles": "^1.1.47",
-    "react-native-bpk-theming": "^1.4.1"
+    "react-native-bpk-component-touchable-native-feedback": "^2.0.5",
+    "react-native-bpk-component-touchable-overlay": "^2.0.5",
+    "react-native-bpk-styles": "^1.1.48",
+    "react-native-bpk-theming": "^1.4.2"
   },
   "devDependencies": {
-    "react-native-bpk-component-text": "^4.1.13"
+    "react-native-bpk-component-text": "^4.1.14"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
