@@ -2,6 +2,12 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-09-04 - Enable Android chip user-styling
+
+**Added:**
+ - react-native-bpk-component-chip:
+   - New `innerChipStyle` prop that allows custom inner style to be applied to the android chip component.
+
 # 2019-09-04 - Fix support for themed fonts on Android
 
 **Fixed:**
