@@ -34,9 +34,7 @@ exports[`iOS BpkChip should render correctly 1`] = `
           "shadowRadius": 1.5,
         },
       ],
-      Array [
-        null,
-      ],
+      Array [],
     ]
   }
 >
@@ -121,9 +119,7 @@ exports[`iOS BpkChip should render correctly with "disabled" 1`] = `
           "backgroundColor": "rgb(255, 255, 255)",
         },
       ],
-      Array [
-        null,
-      ],
+      Array [],
     ]
   }
 >
@@ -215,9 +211,7 @@ exports[`iOS BpkChip should render correctly with "selected" 1`] = `
           "backgroundColor": "rgb(0, 178, 214)",
         },
       ],
-      Array [
-        null,
-      ],
+      Array [],
     ]
   }
 >
@@ -302,9 +296,7 @@ exports[`iOS BpkChip should render correctly with arbitrary props 1`] = `
           "shadowRadius": 1.5,
         },
       ],
-      Array [
-        null,
-      ],
+      Array [],
     ]
   }
   testID="123"
@@ -480,7 +472,6 @@ exports[`iOS BpkChip should render outline correctly 1`] = `
         },
       ],
       Array [
-        null,
         Object {
           "elevation": 0,
         },
@@ -579,9 +570,7 @@ exports[`iOS BpkChip should support theming when selected 1`] = `
           "backgroundColor": "red",
         },
       ],
-      Array [
-        null,
-      ],
+      Array [],
     ]
   }
 >

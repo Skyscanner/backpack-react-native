@@ -78,6 +78,10 @@ const commonTests = () => {
         custom: {
           flex: 1,
         },
+        innerCustom: {
+          // eslint-disable-next-line backpack/use-tokens
+          backgroundColor: 'red',
+        },
       });
 
       const tree = renderer
@@ -87,6 +91,7 @@ const commonTests = () => {
             onPress={onPress}
             label="Label"
             style={styles.custom}
+            innerChipStyle={styles.innerCustom}
           />,
         )
         .toJSON();

@@ -39,6 +39,7 @@ export type Props = {
   onPress: () => mixed,
   label: string,
   style: ViewStyleProp,
+  innerChipStyle: ViewStyleProp,
   type: ?$Keys<typeof CHIP_TYPES>,
   theme: ?Theme,
 };
@@ -58,6 +59,7 @@ export const commonPropTypes = {
   onPress: PropTypes.func.isRequired,
   label: PropTypes.string.isRequired,
   style: ViewPropTypes.style,
+  innerChipStyle: ViewPropTypes.style,
   type: PropTypes.oneOf(Object.keys(CHIP_TYPES)),
   theme: themePropType,
 };
@@ -65,6 +67,7 @@ export const commonPropTypes = {
 export const commonDefaultProps = {
   disabled: false,
   style: null,
+  innerChipStyle: null,
   type: CHIP_TYPES.primary,
   theme: null,
 };

@@ -125,6 +125,7 @@ h4
 h5
 h6
 iff
+innerChipStyle
 IntersectionObserver
 JS
 keystore
@@ -149,6 +150,7 @@ Themeability
 themeable
 TTF
 uncompiled
+ViewStyle
 z-index
 
 # a11y terms

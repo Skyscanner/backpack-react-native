@@ -1,6 +1,9 @@
 # Unreleased
 
 > Place your changes below this line.
+**Added:**
+ - react-native-bpk-component-chip:
+   - New `innerChipStyle` prop that allows custom inner style to be applied to the android chip component.
 
 ## How to write a good changelog entry
 

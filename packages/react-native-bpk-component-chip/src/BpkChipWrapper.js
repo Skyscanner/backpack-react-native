@@ -126,12 +126,13 @@ const BpkChipWrapper = (props: Props) => {
     label,
     selected,
     style,
+    innerChipStyle,
     type,
     theme,
     ...rest
   } = props;
 
-  const userStyle = [style];
+  const userStyle = [];
   const innerStyle = [styles.inner];
   const textStyle = [styles.text];
   const iconStyle = [styles.icon];
@@ -194,6 +195,14 @@ const BpkChipWrapper = (props: Props) => {
     textStyle.push({
       color: themeAttributes.chipOutlineSelectedTextColor,
     });
+  }
+
+  if (style) {
+    userStyle.push(style);
+  }
+
+  if (innerChipStyle) {
+    innerStyle.push(innerChipStyle);
   }
 
   return (
