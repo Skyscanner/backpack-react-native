@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-09-10 - Expose flag from phone-input
+
+**Added:**
+
+- react-native-bpk-component-phone-input: 4.0.8 => 4.1.0
+  - Now exposes the `BpkFlag` component.
+
 # 2019-09-04 - Enable Android chip user-styling
 
 **Added:**
