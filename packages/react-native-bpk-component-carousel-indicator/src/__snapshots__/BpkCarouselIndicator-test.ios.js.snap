@@ -6,22 +6,17 @@ exports[`iOS BpkCarouselIndicator should render correctly 1`] = `
   pointerEvents="box-none"
   style={
     Array [
-      Array [
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "rgba(17, 18, 54, 0.3)",
-          "borderRadius": 4,
-          "flexDirection": "row",
-          "height": 24,
-          "justifyContent": "center",
-          "paddingHorizontal": 12,
-          "paddingVertical": 8,
-          "width": 72,
-        },
-        Object {
-          "backgroundColor": "rgba(17, 18, 54, 0.3)",
-        },
-      ],
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgba(17, 18, 54, 0.3)",
+        "borderRadius": 4,
+        "flexDirection": "row",
+        "height": 24,
+        "justifyContent": "center",
+        "paddingHorizontal": 12,
+        "paddingVertical": 8,
+        "width": 72,
+      },
       null,
     ]
   }
@@ -90,22 +85,17 @@ exports[`iOS BpkCarouselIndicator should render correctly with a page count > 5 
   pointerEvents="box-none"
   style={
     Array [
-      Array [
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "rgba(17, 18, 54, 0.3)",
-          "borderRadius": 4,
-          "flexDirection": "row",
-          "height": 24,
-          "justifyContent": "center",
-          "paddingHorizontal": 12,
-          "paddingVertical": 8,
-          "width": 72,
-        },
-        Object {
-          "backgroundColor": "rgba(17, 18, 54, 0.3)",
-        },
-      ],
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgba(17, 18, 54, 0.3)",
+        "borderRadius": 4,
+        "flexDirection": "row",
+        "height": 24,
+        "justifyContent": "center",
+        "paddingHorizontal": 12,
+        "paddingVertical": 8,
+        "width": 72,
+      },
       null,
     ]
   }
@@ -174,22 +164,17 @@ exports[`iOS BpkCarouselIndicator should render correctly with a page count equa
   pointerEvents="box-none"
   style={
     Array [
-      Array [
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "rgba(17, 18, 54, 0.3)",
-          "borderRadius": 4,
-          "flexDirection": "row",
-          "height": 24,
-          "justifyContent": "center",
-          "paddingHorizontal": 12,
-          "paddingVertical": 8,
-          "width": 72,
-        },
-        Object {
-          "backgroundColor": "rgba(17, 18, 54, 0.3)",
-        },
-      ],
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgba(17, 18, 54, 0.3)",
+        "borderRadius": 4,
+        "flexDirection": "row",
+        "height": 24,
+        "justifyContent": "center",
+        "paddingHorizontal": 12,
+        "paddingVertical": 8,
+        "width": 72,
+      },
       null,
     ]
   }
@@ -258,22 +243,17 @@ exports[`iOS BpkCarouselIndicator should render correctly with arbitrary props 1
   pointerEvents="box-none"
   style={
     Array [
-      Array [
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "rgba(17, 18, 54, 0.3)",
-          "borderRadius": 4,
-          "flexDirection": "row",
-          "height": 24,
-          "justifyContent": "center",
-          "paddingHorizontal": 12,
-          "paddingVertical": 8,
-          "width": 72,
-        },
-        Object {
-          "backgroundColor": "rgba(17, 18, 54, 0.3)",
-        },
-      ],
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgba(17, 18, 54, 0.3)",
+        "borderRadius": 4,
+        "flexDirection": "row",
+        "height": 24,
+        "justifyContent": "center",
+        "paddingHorizontal": 12,
+        "paddingVertical": 8,
+        "width": 72,
+      },
       null,
     ]
   }
@@ -343,22 +323,17 @@ exports[`iOS BpkCarouselIndicator should render correctly with custom styles 1`]
   pointerEvents="box-none"
   style={
     Array [
-      Array [
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "rgba(17, 18, 54, 0.3)",
-          "borderRadius": 4,
-          "flexDirection": "row",
-          "height": 24,
-          "justifyContent": "center",
-          "paddingHorizontal": 12,
-          "paddingVertical": 8,
-          "width": 72,
-        },
-        Object {
-          "backgroundColor": "rgba(17, 18, 54, 0.3)",
-        },
-      ],
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgba(17, 18, 54, 0.3)",
+        "borderRadius": 4,
+        "flexDirection": "row",
+        "height": 24,
+        "justifyContent": "center",
+        "paddingHorizontal": 12,
+        "paddingVertical": 8,
+        "width": 72,
+      },
       Object {
         "marginTop": 4,
       },

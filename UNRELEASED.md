@@ -1,6 +1,14 @@
 # Unreleased
 
 > Place your changes below this line.
+
+**Fixed:**
+- react-native-bpk-component-banner-alert
+- react-native-bpk-component-card
+- react-native-bpk-component-carousel
+- react-native-bpk-component-carousel-indicator
+  - Removed the gray theming support from components due to the fixed gray colours.
+
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).

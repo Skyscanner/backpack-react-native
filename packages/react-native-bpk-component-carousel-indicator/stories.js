@@ -33,11 +33,9 @@ import {
   spacingXl,
 } from 'bpk-tokens/tokens/base.react.native';
 import BpkNudger from 'react-native-bpk-component-nudger';
-import BpkThemeProvider from 'react-native-bpk-theming';
 
 import CenterDecorator from '../../storybook/CenterDecorator';
 import { StorySubheading } from '../../storybook/TextStyles';
-import themeAttributes from '../../storybook/themeAttributes';
 
 import BpkCarouselIndicator from './index';
 
@@ -188,31 +186,4 @@ storiesOf('react-native-bpk-component-carousel-indicator', module)
     <View>
       <StatefulBpkCarouselIndicatorExample />
     </View>
-  ))
-  .add('Themed Carousel', () => (
-    <BpkThemeProvider theme={themeAttributes}>
-      <View>
-        {new Array(5).fill().map((_, index) => (
-          <View key={index.toString()} style={styles.storyInstance}>
-            <StorySubheading>
-              {index + 1} page{index === 0 ? '' : 's'}
-            </StorySubheading>
-            <BpkCarouselIndicator pageCount={index + 1} selectedIndex={0} />
-          </View>
-        ))}
-        <View style={styles.storyInstance}>
-          <StorySubheading>
-            More than 5 pages (shown with different selected indexes)
-          </StorySubheading>
-          {new Array(6).fill().map((_, index) => (
-            <BpkCarouselIndicator
-              key={index.toString()}
-              pageCount={6}
-              selectedIndex={index}
-              style={styles.storyInstance}
-            />
-          ))}
-        </View>
-      </View>
-    </BpkThemeProvider>
   ));

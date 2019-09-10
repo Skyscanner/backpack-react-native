@@ -23,10 +23,8 @@ import { ScrollView, StyleSheet } from 'react-native';
 import BpkText from 'react-native-bpk-component-text';
 import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
-import BpkThemeProvider from 'react-native-bpk-theming';
 
 import CenterDecorator from '../../storybook/CenterDecorator';
-import themeAttributes from '../../storybook/themeAttributes';
 
 import BpkCard, { CORNER_STYLES, withDivider } from './index';
 
@@ -219,15 +217,4 @@ storiesOf('react-native-bpk-component-card', module)
           );
         })}
     </ScrollView>
-  ))
-  .add('With divider themed', () => (
-    <BpkThemeProvider theme={themeAttributes}>
-      <BpkCardWithDivider
-        onPress={onPress}
-        stub={stubContent}
-        mainStyle={styles.cardMainStyle}
-      >
-        {mainContent}
-      </BpkCardWithDivider>
-    </BpkThemeProvider>
   ));
