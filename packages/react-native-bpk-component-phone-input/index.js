@@ -20,8 +20,10 @@
 
 import BpkDialingCodeList from './src/BpkDialingCodeList';
 import BpkPhoneNumberInput from './src/BpkPhoneNumberInput';
+import BpkFlag from './src/BpkFlag';
 
 export type { Props as DialingCodeListProps } from './src/BpkDialingCodeList';
 export type { Props as PhoneNumberInputProps } from './src/BpkPhoneNumberInput';
+export type { Props as BpkFlagProps } from './src/BpkFlag';
 
-export { BpkDialingCodeList, BpkPhoneNumberInput };
+export { BpkDialingCodeList, BpkPhoneNumberInput, BpkFlag };

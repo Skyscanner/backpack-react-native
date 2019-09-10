@@ -28,7 +28,7 @@ For `BpkDialingCodeList` a list of objects with this format should be used. Sort
 
 ```js
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { Image } from 'react-native';
 import { BpkDialingCodeList } from 'react-native-bpk-component-phone-input';
 
 const CODES = [
@@ -81,7 +81,7 @@ export default class App extends Component {
 
 ```js
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { Image } from 'react-native';
 import { BpkPhoneNumberInput } from 'react-native-bpk-component-phone-input';
 
 const CODES = [
@@ -117,4 +117,34 @@ Inherits all props from [`BpkTextInput`](https://backpack.github.io/components/n
 | dialingCode                 | {id, dialingCode, name}                                    | true     | -             |
 | onDialingCodePress          | func                                                        | true     | -             |
 | renderFlag                  | func                                                        | true     | -             |
+
+## BpkFlag
+
+### Usage
+
+```js
+import React, { Component } from 'react';
+import { Image } from 'react-native';
+import { BpkFlag } from 'react-native-bpk-component-phone-input';
+
+export default class App extends Component {
+  render() {
+    return (
+      <BpkFlag
+        flag={<Image source={require('/resources/algeria.png')} />}
+      />
+    );
+  }
+}
+```
+
+### Props
+
+Inherits all props from [`View`](https://facebook.github.io/react-native/docs/view.html).
+
+
+| Property      | PropType   | Required | Default Value |
+| ------------- | ---------- | -------- | ------------- |
+| flag          | element    | false    | null          |
+| width         | number     | false    | spacingLg     |
 

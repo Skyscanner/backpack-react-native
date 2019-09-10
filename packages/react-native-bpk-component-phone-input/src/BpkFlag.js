@@ -31,7 +31,7 @@ type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
 
 const ASPECT_RATIO = 3 / 2; // 3:2
 
-type Props = {
+export type Props = {
   width: number,
   flag: ?Flag,
   style: ViewStyleProp,
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
 });
 
 const BpkFlag = (props: Props) => {
-  const { flag, style, width, theme } = props;
+  const { flag, style, width, theme, ...rest } = props;
   const imageStyle = { width, height: width / ASPECT_RATIO };
   const finalStyle = [styles.flag, imageStyle];
   if (theme) {
@@ -60,9 +60,10 @@ const BpkFlag = (props: Props) => {
     React.cloneElement(flag, {
       resizeMode: 'contain',
       style: finalStyle,
+      ...rest,
     })
   ) : (
-    <View style={finalStyle} />
+    <View style={finalStyle} {...rest} />
   );
 
   return styledFlag;
