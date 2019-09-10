@@ -29,6 +29,7 @@ BpkDialingCodeList
 BpkDialogIos
 BpkDismissibleChip
 BpkFieldset
+BpkFlag
 BpkFlatList
 BpkFlatListHeader
 BpkFlatListItem
@@ -143,6 +144,7 @@ popover
 popovers
 portalClassName
 semver
+spacingLg
 stylesheet
 SVGs
 textarea
