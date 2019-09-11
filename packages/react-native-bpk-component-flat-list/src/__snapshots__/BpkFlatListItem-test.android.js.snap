@@ -57,9 +57,6 @@ exports[`Android BpkFlatListItem should render correctly 1`] = `
               "color": "rgb(17, 18, 54)",
               "flex": 1,
             },
-            Object {
-              "color": "rgb(17, 18, 54)",
-            },
           ],
         ]
       }
@@ -165,9 +162,6 @@ exports[`Android BpkFlatListItem should support the "image" property 1`] = `
               "color": "rgb(17, 18, 54)",
               "flex": 1,
             },
-            Object {
-              "color": "rgb(17, 18, 54)",
-            },
           ],
         ]
       }
@@ -264,9 +258,6 @@ exports[`Android BpkFlatListItem should support the "selected" property 1`] = `
               "flex": 1,
             },
             Object {
-              "color": "rgb(17, 18, 54)",
-            },
-            Object {
               "color": "rgb(0, 178, 214)",
             },
           ],
@@ -322,9 +313,6 @@ Object {
     Object {
       "color": "rgb(17, 18, 54)",
       "flex": 1,
-    },
-    Object {
-      "color": "rgb(17, 18, 54)",
     },
   ],
   "testID": "ID_for_testing",
@@ -395,9 +383,6 @@ exports[`Android should support theming when selected 1`] = `
               "flex": 1,
             },
             Object {
-              "color": "rgb(17, 18, 54)",
-            },
-            Object {
               "color": "rgb(0, 178, 214)",
             },
             Object {
@@ -421,9 +406,6 @@ exports[`Android should support theming when selected 1`] = `
           "height": 20,
           "justifyContent": "center",
           "width": 20,
-        },
-        Object {
-          "borderColor": "rgb(221, 221, 229)",
         },
         Object {
           "borderColor": "red",

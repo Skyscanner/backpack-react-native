@@ -16,8 +16,7 @@
   "dependencies": {
     "bpk-svgs": "^7.1.1",
     "bpk-tokens": "^27.8.0",
-    "prop-types": "^15.5.8",
-    "react-native-bpk-theming": "^1.4.2"
+    "prop-types": "^15.5.8"
   },
   "devDependencies": {
     "react-native-bpk-component-text": "^4.1.14"

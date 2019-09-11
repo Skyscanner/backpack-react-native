@@ -25,10 +25,6 @@ import {
   spacingBase,
   colorGray100,
 } from 'bpk-tokens/tokens/base.react.native';
-import { withTheme, grayForTheme, type Theme } from 'react-native-bpk-theming';
-
-import {} from './common-types';
-import { themePropType } from './theming';
 
 const styles = StyleSheet.create({
   separator: {
@@ -46,29 +42,6 @@ const styles = StyleSheet.create({
   },
 });
 
-export type Props = {
-  theme: ?Theme,
-};
+const BpkFlatListItemSeparator = () => <View style={styles.separator} />;
 
-const BpkFlatListItemSeparator = (props: Props) => {
-  const { theme } = props;
-
-  const separatorStyle = [styles.separator];
-
-  if (theme) {
-    separatorStyle.push({
-      backgroundColor: grayForTheme(theme, 'colorGray100'),
-    });
-  }
-  return <View style={separatorStyle} />;
-};
-
-BpkFlatListItemSeparator.propTypes = {
-  theme: themePropType,
-};
-
-BpkFlatListItemSeparator.defaultProps = {
-  theme: null,
-};
-
-export default withTheme(BpkFlatListItemSeparator);
+export default BpkFlatListItemSeparator;

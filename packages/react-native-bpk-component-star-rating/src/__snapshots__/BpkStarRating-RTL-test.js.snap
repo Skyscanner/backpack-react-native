@@ -218,9 +218,6 @@ exports[`RTL BpkStar should support theming when empty 1`] = `
           "fontSize": 24,
           "includeFontPadding": false,
         },
-        Object {
-          "color": "rgb(68, 69, 96)",
-        },
         Array [
           Object {
             "backgroundColor": "transparent",
@@ -265,9 +262,6 @@ exports[`RTL BpkStar should support theming when full 1`] = `
           "fontSize": 24,
           "includeFontPadding": false,
         },
-        Object {
-          "color": "rgb(68, 69, 96)",
-        },
         Array [
           Object {
             "backgroundColor": "transparent",
@@ -298,9 +292,6 @@ exports[`RTL BpkStar should support theming when full 1`] = `
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
-        },
-        Object {
-          "color": "rgb(68, 69, 96)",
         },
         Array [
           Object {
@@ -352,9 +343,6 @@ exports[`RTL BpkStar should support theming when half 1`] = `
           "fontSize": 24,
           "includeFontPadding": false,
         },
-        Object {
-          "color": "rgb(68, 69, 96)",
-        },
         Array [
           Object {
             "backgroundColor": "transparent",
@@ -385,9 +373,6 @@ exports[`RTL BpkStar should support theming when half 1`] = `
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
-        },
-        Object {
-          "color": "rgb(68, 69, 96)",
         },
         Array [
           Object {

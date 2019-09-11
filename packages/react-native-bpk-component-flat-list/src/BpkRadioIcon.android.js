@@ -22,7 +22,6 @@ import { View, StyleSheet } from 'react-native';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { colorGray100 } from 'bpk-tokens/tokens/base.react.native';
-import { withTheme, grayForTheme, type Theme } from 'react-native-bpk-theming';
 
 // Not using a token as this is replicating an Android native UI element.
 const radioSize = 20;
@@ -50,16 +49,12 @@ const styles = StyleSheet.create({
 type Props = {
   selected: boolean,
   tintColor: string,
-  theme: ?Theme,
 };
 
-const BpkRadioIcon = ({ selected, tintColor, theme }: Props) => {
+const BpkRadioIcon = ({ selected, tintColor }: Props) => {
   const outerStyle = [styles.outer];
   const innerStyle = [styles.inner];
 
-  if (theme) {
-    outerStyle.push({ borderColor: grayForTheme(theme, 'colorGray100') });
-  }
   if (selected) {
     outerStyle.push({ borderColor: tintColor });
     innerStyle.push({ backgroundColor: tintColor });
@@ -78,7 +73,6 @@ BpkRadioIcon.propTypes = {
 
 BpkRadioIcon.defaultProps = {
   selected: false,
-  theme: null,
 };
 
-export default withTheme(BpkRadioIcon);
+export default BpkRadioIcon;

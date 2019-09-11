@@ -7,6 +7,11 @@
 - react-native-bpk-component-card
 - react-native-bpk-component-carousel
 - react-native-bpk-component-carousel-indicator
+- react-native-bpk-component-flat-list
+- react-native-bpk-component-horizontal-nav
+- react-native-bpk-component-icon
+- react-native-bpk-component-image
+- react-native-bpk-component-navigation-bar
   - Removed the gray theming support from components due to the fixed gray colours.
 
 ## How to write a good changelog entry

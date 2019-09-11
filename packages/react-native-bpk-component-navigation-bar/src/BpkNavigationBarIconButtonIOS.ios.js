@@ -22,14 +22,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 import BpkIcon, { icons } from 'react-native-bpk-component-icon';
-import { withTheme, grayForTheme, type Theme } from 'react-native-bpk-theming';
+import {
+  colorGray300,
+  colorGray900,
+} from 'bpk-tokens/tokens/base.react.native';
 
 export type Props = {
   title: string,
   icon: $Keys<typeof icons>,
   disabled: boolean,
   onPress: ?() => mixed,
-  theme: ?Theme,
 
   // Internal only
   leading: boolean,
@@ -64,13 +66,10 @@ const BpkNavigationBarIconButtonIOS = (props: Props) => {
     onPress,
     disabledTintColor,
     tintColor,
-    theme,
   } = props;
-  const gray300 = grayForTheme(theme, 'colorGray300');
-  const gray900 = grayForTheme(theme, 'colorGray900');
   const tintColorFinal = disabled
-    ? disabledTintColor || gray300
-    : tintColor || gray900;
+    ? disabledTintColor || colorGray300
+    : tintColor || colorGray900;
   const iconStyle = [styles.icon, { color: tintColorFinal }];
   const buttonStyle = [styles.button];
   const accessibilityStates = [];
@@ -105,7 +104,6 @@ BpkNavigationBarIconButtonIOS.propTypes = {
   icon: PropTypes.oneOf(Object.keys(icons)).isRequired,
   disabled: PropTypes.bool,
   onPress: PropTypes.func,
-
   // Internal only
   leading: PropTypes.bool,
   tintColor: PropTypes.string,
@@ -115,12 +113,10 @@ BpkNavigationBarIconButtonIOS.propTypes = {
 BpkNavigationBarIconButtonIOS.defaultProps = {
   disabled: false,
   onPress: null,
-  theme: null,
-
   // Internal only
   leading: false,
   tintColor: null,
   disabledTintColor: null,
 };
 
-export default withTheme(BpkNavigationBarIconButtonIOS);
+export default BpkNavigationBarIconButtonIOS;
