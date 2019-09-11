@@ -109,7 +109,7 @@ export const getThemeAttributes = (
 
 export const grayForTheme = (theme: ?Object, colorName: string) => {
   console.warn(
-    'This theming utility has been deprecated and marked for removal. Please update usages of this method to use the Backpack gray pallete',
+    'This theming utility has been deprecated and marked for removal. Please update usages of this method to use the Backpack gray palette',
   );
 
   if (grays[colorName]) {
