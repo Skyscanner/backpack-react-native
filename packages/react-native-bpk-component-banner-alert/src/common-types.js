@@ -22,7 +22,6 @@ import { type Node } from 'react';
 import PropTypes from 'prop-types';
 import { ViewPropTypes } from 'react-native';
 import type { PressEvent } from 'react-native/Libraries/Types/CoreEventTypes';
-import { type Theme } from 'react-native-bpk-theming';
 
 import {
   dismissablePropType,
@@ -51,7 +50,6 @@ export type Props = {
   show: boolean,
   toggleExpandedButtonLabel: ?string,
   bannerStyle: ?any,
-  theme: ?Theme,
 };
 
 export const propTypes = {
@@ -82,5 +80,4 @@ export const defaultProps = {
   show: true,
   toggleExpandedButtonLabel: null,
   bannerStyle: null,
-  theme: null,
 };
