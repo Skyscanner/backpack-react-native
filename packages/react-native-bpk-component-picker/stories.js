@@ -28,10 +28,8 @@ import {
   spacingBase,
   spacingMd,
 } from 'bpk-tokens/tokens/base.react.native';
-import BpkThemeProvider from 'react-native-bpk-theming';
 
 import CenterDecorator from '../../storybook/CenterDecorator';
-import themeAttributes from '../../storybook/themeAttributes';
 
 import { type PickerValue } from './src/common-types';
 
@@ -147,11 +145,4 @@ storiesOf('react-native-bpk-component-picker', module)
     <View>
       <StatefulBpkPicker style={styles.picker} />
     </View>
-  ))
-  .add('With theme', () => (
-    <BpkThemeProvider theme={themeAttributes}>
-      <View>
-        <StatefulBpkPicker style={styles.picker} />
-      </View>
-    </BpkThemeProvider>
   ));

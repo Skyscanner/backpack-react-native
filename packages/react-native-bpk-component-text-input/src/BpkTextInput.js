@@ -209,7 +209,6 @@ class BpkTextInput extends Component<Props, State> {
       this.animatedValues.labelPosition,
       { value, valid, editable, hasAccessoryView },
       focusedColor,
-      theme,
     );
 
     const animatedInputStyle = getInputContainerStyle(
@@ -217,7 +216,6 @@ class BpkTextInput extends Component<Props, State> {
       hasAccessoryView,
       valid,
       focusedColor,
-      theme,
     );
 
     const inputTextStyle = [styles.input];

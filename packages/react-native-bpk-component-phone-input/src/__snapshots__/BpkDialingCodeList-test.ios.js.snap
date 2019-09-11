@@ -188,7 +188,7 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
                   "width": 24,
                 },
                 Array [
-                  undefined,
+                  null,
                   Object {
                     "marginRight": 24,
                   },
@@ -353,7 +353,7 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
                   "width": 24,
                 },
                 Array [
-                  undefined,
+                  null,
                   Object {
                     "marginRight": 24,
                   },
@@ -518,7 +518,7 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
                   "width": 24,
                 },
                 Array [
-                  undefined,
+                  null,
                   Object {
                     "marginRight": 24,
                   },
@@ -786,7 +786,7 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
                   "width": 24,
                 },
                 Array [
-                  undefined,
+                  null,
                   Object {
                     "marginRight": 24,
                   },
@@ -957,7 +957,7 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
                   "width": 24,
                 },
                 Array [
-                  undefined,
+                  null,
                   Object {
                     "marginRight": 24,
                   },
@@ -1122,7 +1122,7 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
                   "width": 24,
                 },
                 Array [
-                  undefined,
+                  null,
                   Object {
                     "marginRight": 24,
                   },

@@ -22,7 +22,6 @@ import PropTypes from 'prop-types';
 import React, { type ComponentType, type Node } from 'react';
 import { View, StyleSheet, ViewPropTypes } from 'react-native';
 import { colorGray100, spacingBase } from 'bpk-tokens/tokens/base.react.native';
-import { withTheme, grayForTheme } from 'react-native-bpk-theming';
 
 import BpkPanel, { type Props as BpkPanelProps } from './BpkPanel';
 
@@ -83,7 +82,6 @@ const withDivider = (PanelComponent: ComponentType<BpkPanelProps>) => {
       mainStyle: userMainStyle,
       stubStyle: userStubStyle,
       style,
-      theme,
       ...rest
     } = props;
 
@@ -92,11 +90,6 @@ const withDivider = (PanelComponent: ComponentType<BpkPanelProps>) => {
     const punchlineStyle = [styles.panelPunchline];
     const stubStyle = [styles.panelStub];
 
-    if (theme) {
-      punchlineStyle.push({
-        backgroundColor: grayForTheme(theme, 'colorGray100'),
-      });
-    }
     if (padded) {
       mainStyle.push(styles.panelMainPadded);
       stubStyle.push(styles.panelStubPadded);
@@ -118,12 +111,7 @@ const withDivider = (PanelComponent: ComponentType<BpkPanelProps>) => {
     }
 
     return (
-      <PanelComponent
-        padded={padded}
-        style={panelStyle}
-        theme={theme}
-        {...rest}
-      >
+      <PanelComponent padded={padded} style={panelStyle} {...rest}>
         <View style={mainStyle}>{children}</View>
         <View style={punchlineStyle} />
         <View style={stubStyle}>{stub}</View>
@@ -146,7 +134,7 @@ const withDivider = (PanelComponent: ComponentType<BpkPanelProps>) => {
     stubStyle: null,
   };
 
-  return withTheme(WithDivider);
+  return WithDivider;
 };
 
 export default withDivider;

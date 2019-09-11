@@ -20,8 +20,7 @@
     "react-native-bpk-component-icon": "^2.0.6",
     "react-native-bpk-component-text": "^4.1.14",
     "react-native-bpk-component-touchable-native-feedback": "^2.0.5",
-    "react-native-bpk-component-touchable-overlay": "^2.0.5",
-    "react-native-bpk-theming": "^1.4.2"
+    "react-native-bpk-component-touchable-overlay": "^2.0.5"
   },
   "devDependencies": {
     "react-native-bpk-component-button": "^10.0.7"

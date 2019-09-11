@@ -34,29 +34,24 @@ import {
 import { setOpacity } from 'bpk-tokens';
 
 const REQUIRED_THEME_ATTRIBUTES = ['switchPrimaryColor'];
-const OPTIONAL_THEME_ATTRIBUTES = ['colorGray100'];
 
 const getColors = (themeAttributes: ?Object, value: ?boolean): Object => {
   const primaryColor = themeAttributes
     ? themeAttributes.switchPrimaryColor
     : colorBlue500;
-  const secondaryColor =
-    themeAttributes && themeAttributes.colorGray100
-      ? themeAttributes.colorGray100
-      : colorGray100;
 
   // The color props mean different things based on the platform.
   const colors = Platform.select({
     ios: {
       trackColor: {
-        false: secondaryColor,
+        false: colorGray100,
         true: primaryColor,
       },
     },
     android: {
       thumbColor: value ? primaryColor : colorGray50,
       trackColor: {
-        false: secondaryColor,
+        false: colorGray100,
         true: setOpacity(primaryColor, 0.32), // Taken from here https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/color/MaterialColors.java#L42
       },
     },
@@ -71,11 +66,7 @@ export type Props = {
 
 const BpkSwitch = (props: Props) => {
   const { value, theme, ...rest } = props;
-  const themeAttributes = getThemeAttributes(
-    REQUIRED_THEME_ATTRIBUTES,
-    theme,
-    OPTIONAL_THEME_ATTRIBUTES,
-  );
+  const themeAttributes = getThemeAttributes(REQUIRED_THEME_ATTRIBUTES, theme);
 
   return (
     <Switch {...getColors(themeAttributes, value)} value={value} {...rest} />
