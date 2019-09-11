@@ -1925,9 +1925,6 @@ exports[`Android BpkButtonThemed should not apply border radius when a theme is 
             "includeFontPadding": false,
           },
           Object {
-            "color": "rgb(68, 69, 96)",
-          },
-          Object {
             "fontSize": 16,
           },
           Array [

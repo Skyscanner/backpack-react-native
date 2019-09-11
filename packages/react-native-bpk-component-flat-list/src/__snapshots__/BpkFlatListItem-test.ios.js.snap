@@ -418,9 +418,6 @@ exports[`iOS should support theming when selected 1`] = `
           "includeFontPadding": false,
         },
         Object {
-          "color": "rgb(68, 69, 96)",
-        },
-        Object {
           "fontSize": 16,
         },
         Array [

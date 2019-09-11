@@ -24,8 +24,7 @@
 import { makeThemePropType } from 'react-native-bpk-theming';
 
 const REQUIRED_THEME_ATTRIBUTES = ['horizontalNavSelectedTextColor'];
-const OPTIONAL_THEME_ATTRIBUTES = ['colorGray300', 'colorGray900'];
 
 const themePropType = makeThemePropType(REQUIRED_THEME_ATTRIBUTES);
 
-export { REQUIRED_THEME_ATTRIBUTES, OPTIONAL_THEME_ATTRIBUTES, themePropType };
+export { REQUIRED_THEME_ATTRIBUTES, themePropType };

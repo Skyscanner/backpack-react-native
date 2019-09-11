@@ -3,14 +3,12 @@
 exports[`Android BpkFlatListItemSeparator should render correctly 1`] = `
 <View
   style={
-    Array [
-      Object {
-        "backgroundColor": "rgb(221, 221, 229)",
-        "flex": 1,
-        "height": 1,
-        "marginHorizontal": 8,
-      },
-    ]
+    Object {
+      "backgroundColor": "rgb(221, 221, 229)",
+      "flex": 1,
+      "height": 1,
+      "marginHorizontal": 8,
+    }
   }
 />
 `;

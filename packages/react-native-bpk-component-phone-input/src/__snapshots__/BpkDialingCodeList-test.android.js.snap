@@ -173,14 +173,12 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
       </View>
       <View
         style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(221, 221, 229)",
-              "flex": 1,
-              "height": 1,
-              "marginHorizontal": 8,
-            },
-          ]
+          Object {
+            "backgroundColor": "rgb(221, 221, 229)",
+            "flex": 1,
+            "height": 1,
+            "marginHorizontal": 8,
+          }
         }
       />
     </View>
@@ -310,14 +308,12 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
       </View>
       <View
         style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(221, 221, 229)",
-              "flex": 1,
-              "height": 1,
-              "marginHorizontal": 8,
-            },
-          ]
+          Object {
+            "backgroundColor": "rgb(221, 221, 229)",
+            "flex": 1,
+            "height": 1,
+            "marginHorizontal": 8,
+          }
         }
       />
     </View>
@@ -629,14 +625,12 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
       </View>
       <View
         style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(221, 221, 229)",
-              "flex": 1,
-              "height": 1,
-              "marginHorizontal": 8,
-            },
-          ]
+          Object {
+            "backgroundColor": "rgb(221, 221, 229)",
+            "flex": 1,
+            "height": 1,
+            "marginHorizontal": 8,
+          }
         }
       />
     </View>
@@ -766,14 +760,12 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
       </View>
       <View
         style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(221, 221, 229)",
-              "flex": 1,
-              "height": 1,
-              "marginHorizontal": 8,
-            },
-          ]
+          Object {
+            "backgroundColor": "rgb(221, 221, 229)",
+            "flex": 1,
+            "height": 1,
+            "marginHorizontal": 8,
+          }
         }
       />
     </View>

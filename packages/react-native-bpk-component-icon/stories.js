@@ -28,11 +28,9 @@ import {
   spacingSm,
   spacingBase,
 } from 'bpk-tokens/tokens/base.react.native';
-import BpkThemeProvider from 'react-native-bpk-theming';
 
 import { StorySubheading } from '../../storybook/TextStyles';
 import CenterDecorator from '../../storybook/CenterDecorator';
-import themeAttributes from '../../storybook/themeAttributes';
 
 import BpkIcon, { icons, withRtlSupport } from './index';
 
@@ -133,12 +131,4 @@ storiesOf('react-native-bpk-component-icon', module)
         <RtlIcon style={styles.singleIcon} icon={icons['long-arrow-right']} />
       </View>
     </View>
-  ))
-  .add('docs:themed', () => (
-    <BpkThemeProvider theme={themeAttributes}>
-      <View style={styles.container}>
-        {getSmallIcons()}
-        {getLargeIcons()}
-      </View>
-    </BpkThemeProvider>
   ));
