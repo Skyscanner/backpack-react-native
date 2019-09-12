@@ -42,7 +42,6 @@ const SPINNER_TYPES = {
 type SpinnerType = $Keys<typeof SPINNER_TYPES>;
 
 const REQUIRED_THEME_ATTRIBUTES = ['spinnerPrimaryColor'];
-const OPTIONAL_THEME_ATTRIBUTES = ['colorGray700'];
 
 const getSpinnerColor = (themeAttributes: ?Object, type: SpinnerType) => {
   const colorMappings = {
@@ -54,9 +53,6 @@ const getSpinnerColor = (themeAttributes: ?Object, type: SpinnerType) => {
   if (themeAttributes) {
     if (type === 'primary') {
       return themeAttributes.spinnerPrimaryColor;
-    }
-    if (type === 'dark') {
-      return themeAttributes.colorGray700;
     }
   }
 
@@ -72,11 +68,7 @@ export type Props = {
 const BpkSpinner = (props: Props) => {
   const { small, type, theme, ...rest } = props;
   const spinnerType = type || SPINNER_TYPES.primary;
-  const themeAttributes = getThemeAttributes(
-    REQUIRED_THEME_ATTRIBUTES,
-    theme,
-    OPTIONAL_THEME_ATTRIBUTES,
-  );
+  const themeAttributes = getThemeAttributes(REQUIRED_THEME_ATTRIBUTES, theme);
 
   // Validate type.
   if (!Object.keys(SPINNER_TYPES).includes(spinnerType)) {

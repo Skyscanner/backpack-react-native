@@ -20,7 +20,6 @@
 
 import { type Node } from 'react';
 import PropTypes from 'prop-types';
-import { type Theme } from 'react-native-bpk-theming';
 
 export type PickerValue = ?(string | number);
 
@@ -30,7 +29,6 @@ export type PickerMenuProps = {
   onValueChange: (PickerValue, number) => mixed,
   selectedValue: PickerValue,
   visible: boolean,
-  theme: ?Theme,
 };
 
 export const PICKER_VALUE_PROP_TYPE = PropTypes.oneOfType([
@@ -49,5 +47,4 @@ export const PICKER_MENU_PROP_TYPE = {
 export const PICKER_MENU_DEFAULT_PROPS = {
   visible: false,
   selectedValue: null,
-  theme: null,
 };

@@ -108,9 +108,9 @@ export const getThemeAttributes = (
 };
 
 export const grayForTheme = (theme: ?Object, colorName: string) => {
-  if (theme && theme[colorName]) {
-    return theme[colorName];
-  }
+  console.warn(
+    'This theming utility has been deprecated and marked for removal. Please update usages of this method to use the Backpack gray palette',
+  );
 
   if (grays[colorName]) {
     return grays[colorName];

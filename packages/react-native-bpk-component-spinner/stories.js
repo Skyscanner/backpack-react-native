@@ -64,10 +64,6 @@ const getThemedButtons = () => (
       <BpkSpinner />
       <StorySubheading>Primary Small</StorySubheading>
       <BpkSpinner small />
-      <StorySubheading>Dark Default</StorySubheading>
-      <BpkSpinner type="dark" />
-      <StorySubheading>Dark Small</StorySubheading>
-      <BpkSpinner type="dark" small />
     </View>
   </BpkThemeProvider>
 );

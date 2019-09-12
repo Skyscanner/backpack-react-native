@@ -33,7 +33,6 @@ import {
   spacingMd,
   spacingSm,
 } from 'bpk-tokens/tokens/base.react.native';
-import { withTheme, type Theme } from 'react-native-bpk-theming';
 
 import { ValidIcon, InvalidIcon, SelectIcon } from './BpkSelectIcons';
 
@@ -79,7 +78,6 @@ export type Props = {
   style: ?any,
   valid: ?boolean,
   validationMessage: ?string,
-  theme: ?Theme,
   // Image
   image: ?Element<typeof Image>,
   showImage: boolean,
@@ -95,7 +93,6 @@ const BpkSelect = (props: Props) => {
     validationMessage,
     image,
     showImage,
-    theme,
     ...rest
   } = props;
 
@@ -103,16 +100,6 @@ const BpkSelect = (props: Props) => {
   const selectStyle = [styles.select];
   const selectDisabledStyle = [styles.selectContentDisabled];
   const selectImageStyle = [styles.selectImage];
-
-  if (theme) {
-    if (theme.colorGray100) {
-      selectStyle.push({ borderColor: theme.colorGray100 });
-      selectDisabledStyle.push({ color: theme.colorGray100 });
-    }
-    if (theme.colorGray50) {
-      selectImageStyle.push({ backgroundColor: theme.colorGray50 });
-    }
-  }
 
   if (label && typeof label === 'string') {
     content = (
@@ -207,11 +194,10 @@ BpkSelect.defaultProps = {
   style: null,
   valid: null,
   validationMessage: null,
-  theme: null,
 
   // Image
   image: null,
   showImage: false,
 };
 
-export default withTheme(BpkSelect);
+export default BpkSelect;

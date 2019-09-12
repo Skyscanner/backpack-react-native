@@ -27,7 +27,6 @@ import BpkTextInput, {
   type BpkTextInputProps,
 } from 'react-native-bpk-component-text-input';
 import BpkSelect from 'react-native-bpk-component-select';
-import { withTheme } from 'react-native-bpk-theming';
 
 import { type Code, CODE_PROP_TYPES, type RenderFlag } from './common-types';
 
@@ -101,4 +100,4 @@ BpkPhoneNumberInput.propTypes = { ...propTypes };
 
 BpkPhoneNumberInput.defaultProps = { ...newTextInputDefaultProps };
 
-export default withTheme(BpkPhoneNumberInput);
+export default BpkPhoneNumberInput;

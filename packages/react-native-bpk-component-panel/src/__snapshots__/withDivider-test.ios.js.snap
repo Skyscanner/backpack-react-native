@@ -27,6 +27,9 @@ exports[`iOS withDivider should render correctly 1`] = `
         Object {
           "flex": 1,
         },
+        Object {
+          "padding": 16,
+        },
       ]
     }
   >
@@ -63,6 +66,9 @@ exports[`iOS withDivider should render correctly 1`] = `
       Array [
         Object {
           "flex": 1,
+        },
+        Object {
+          "padding": 16,
         },
       ]
     }
@@ -115,6 +121,9 @@ exports[`iOS withDivider should render correctly with arbitrary props 1`] = `
         Object {
           "flex": 1,
         },
+        Object {
+          "padding": 16,
+        },
       ]
     }
   >
@@ -151,6 +160,9 @@ exports[`iOS withDivider should render correctly with arbitrary props 1`] = `
       Array [
         Object {
           "flex": 1,
+        },
+        Object {
+          "padding": 16,
         },
       ]
     }
@@ -203,6 +215,9 @@ exports[`iOS withDivider should render correctly with custom main style 1`] = `
           "flex": 1,
         },
         Object {
+          "padding": 16,
+        },
+        Object {
           "flex": 2,
         },
       ]
@@ -241,6 +256,9 @@ exports[`iOS withDivider should render correctly with custom main style 1`] = `
       Array [
         Object {
           "flex": 1,
+        },
+        Object {
+          "padding": 16,
         },
       ]
     }
@@ -292,6 +310,9 @@ exports[`iOS withDivider should render correctly with custom stub style 1`] = `
         Object {
           "flex": 1,
         },
+        Object {
+          "padding": 16,
+        },
       ]
     }
   >
@@ -328,6 +349,9 @@ exports[`iOS withDivider should render correctly with custom stub style 1`] = `
       Array [
         Object {
           "flex": 1,
+        },
+        Object {
+          "padding": 16,
         },
         Object {
           "flex": 3,

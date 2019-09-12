@@ -100,7 +100,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
                   "width": 24,
                 },
                 Array [
-                  undefined,
+                  null,
                   Object {
                     "marginRight": 24,
                   },
@@ -235,7 +235,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
                   "width": 24,
                 },
                 Array [
-                  undefined,
+                  null,
                   Object {
                     "marginRight": 24,
                   },
@@ -370,7 +370,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
                   "width": 24,
                 },
                 Array [
-                  undefined,
+                  null,
                   Object {
                     "marginRight": 24,
                   },
@@ -546,7 +546,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
                   "width": 24,
                 },
                 Array [
-                  undefined,
+                  null,
                   Object {
                     "marginRight": 24,
                   },
@@ -687,7 +687,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
                   "width": 24,
                 },
                 Array [
-                  undefined,
+                  null,
                   Object {
                     "marginRight": 24,
                   },
@@ -822,7 +822,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
                   "width": 24,
                 },
                 Array [
-                  undefined,
+                  null,
                   Object {
                     "marginRight": 24,
                   },

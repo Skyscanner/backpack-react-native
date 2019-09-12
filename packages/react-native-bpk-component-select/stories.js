@@ -23,11 +23,9 @@ import { StyleSheet, View } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
-import BpkThemeProvider from 'react-native-bpk-theming';
 
 import CenterDecorator from '../../storybook/CenterDecorator';
 import { StorySubheading } from '../../storybook/TextStyles';
-import themeAttributes from '../../storybook/themeAttributes';
 
 import BpkSelect from './index';
 
@@ -101,36 +99,4 @@ storiesOf('react-native-bpk-component-select', module)
         validationMessage="A value must be selected to continue"
       />
     </View>
-  ))
-  .add('docs:with-theme', () => (
-    <BpkThemeProvider theme={themeAttributes}>
-      <View>
-        <StorySubheading>Normal</StorySubheading>
-        <View style={styles.select}>
-          <BpkSelect onPress={action('Select pressed')} label="Value" />
-        </View>
-
-        <StorySubheading>With image</StorySubheading>
-        <View style={styles.select}>
-          <BpkSelect
-            onPress={action('Select pressed')}
-            label="Value"
-            showImage
-          />
-        </View>
-
-        <StorySubheading>Valid</StorySubheading>
-        <View style={styles.select}>
-          <BpkSelect onPress={action('Select pressed')} label="Value" valid />
-        </View>
-
-        <StorySubheading>Invalid</StorySubheading>
-        <BpkSelect
-          onPress={action('Select pressed')}
-          label="Value"
-          valid={false}
-          validationMessage="A value must be selected to continue"
-        />
-      </View>
-    </BpkThemeProvider>
   ));

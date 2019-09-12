@@ -22,7 +22,6 @@ import React, { type ElementProps } from 'react';
 import PropTypes from 'prop-types';
 import { StyleSheet, View, ViewPropTypes } from 'react-native';
 import { spacingLg, colorGray100 } from 'bpk-tokens/tokens/base.react.native';
-import { withTheme, grayForTheme, type Theme } from 'react-native-bpk-theming';
 
 import { type Flag } from './common-types';
 
@@ -35,7 +34,6 @@ export type Props = {
   width: number,
   flag: ?Flag,
   style: ViewStyleProp,
-  theme: ?Theme,
 };
 
 const styles = StyleSheet.create({
@@ -46,12 +44,10 @@ const styles = StyleSheet.create({
 });
 
 const BpkFlag = (props: Props) => {
-  const { flag, style, width, theme, ...rest } = props;
+  const { flag, style, width, ...rest } = props;
   const imageStyle = { width, height: width / ASPECT_RATIO };
   const finalStyle = [styles.flag, imageStyle];
-  if (theme) {
-    finalStyle.push({ borderColor: grayForTheme(theme, 'colorGray100') });
-  }
+
   if (style) {
     finalStyle.push(style);
   }
@@ -79,7 +75,6 @@ BpkFlag.defaultProps = {
   width: spacingLg,
   flag: null,
   style: null,
-  theme: null,
 };
 
-export default withTheme(BpkFlag);
+export default BpkFlag;
