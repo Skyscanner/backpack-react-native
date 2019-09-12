@@ -2,6 +2,32 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-09-12 - Removed gray theming from components
+
+**Fixed:**
+- react-native-bpk-component-banner-alert: 6.0.7 => 6.0.8
+- react-native-bpk-component-card: 2.0.5 => 2.0.6
+- react-native-bpk-component-carousel-indicator: 2.0.7 => 2.0.8
+- react-native-bpk-component-carousel: 2.0.8 => 2.0.9
+- react-native-bpk-component-flat-list: 4.0.8 => 4.0.9
+- react-native-bpk-component-horizontal-nav: 5.0.5 => 5.0.6
+- react-native-bpk-component-icon: 2.0.6 => 2.0.7
+- react-native-bpk-component-image: 2.0.7 => 2.0.8
+- react-native-bpk-component-navigation-bar: 6.0.7 => 6.0.8
+- react-native-bpk-component-panel: 1.0.57 => 1.0.58
+- react-native-bpk-component-phone-input: 4.1.0 => 4.1.1
+- react-native-bpk-component-picker: 4.0.7 => 4.0.8
+- react-native-bpk-component-section-list: 4.0.8 => 4.0.9
+- react-native-bpk-component-select: 3.0.7 => 3.0.8
+- react-native-bpk-component-spinner: 1.0.95 => 1.0.96
+- react-native-bpk-component-switch: 2.0.5 => 2.0.6
+- react-native-bpk-component-text-input: 3.1.18 => 3.1.19
+- react-native-bpk-component-text: 4.1.14 => 4.1.15
+  - Removed the gray theming support from components due to the fixed gray colours.
+
+- react-native-bpk-theming: 1.4.2 => 1.4.3
+  - Deprecated the `grayForTheme` utility. Please ensure you upgrade as this will be removed in a future release.
+
 # 2019-09-10 - Expose flag from phone-input
 
 **Added:**

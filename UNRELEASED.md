@@ -2,29 +2,6 @@
 
 > Place your changes below this line.
 
-**Fixed:**
-- react-native-bpk-component-banner-alert
-- react-native-bpk-component-card
-- react-native-bpk-component-carousel
-- react-native-bpk-component-carousel-indicator
-- react-native-bpk-component-flat-list
-- react-native-bpk-component-horizontal-nav
-- react-native-bpk-component-icon
-- react-native-bpk-component-image
-- react-native-bpk-component-navigation-bar
-- react-native-bpk-component-panel
-- react-native-bpk-component-phone-input
-- react-native-bpk-component-picker
-- react-native-bpk-component-section-list
-- react-native-bpk-component-select
-- react-native-bpk-component-spinner
-- react-native-bpk-component-switch
-- react-native-bpk-component-text
-- react-native-bpk-component-text-input
-  - Removed the gray theming support from components due to the fixed gray colours.
-
-- react-native-bpk-theming:
-  - Deprecated the `grayForTheme` utility. Please ensure you upgrade as this will be removed in a future release.
 
 ## How to write a good changelog entry
 
