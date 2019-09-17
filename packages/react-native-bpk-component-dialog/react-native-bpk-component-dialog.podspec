@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
   s.source_files  = "src/ios/DialogBridge/**/*.{h,m}"
 
   s.dependency 'React'
-  s.dependency 'Backpack', '~> 16.0'
+  s.dependency 'Backpack', '~> 17.0'
 end
