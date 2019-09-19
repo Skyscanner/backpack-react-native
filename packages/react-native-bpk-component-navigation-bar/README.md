@@ -107,7 +107,6 @@ PropTypes.shape({
 
 **Android:**
 
-+ `navigationBarStatusBarStyle`
 + `navigationBarStatusBarColor`
 
 **iOS:**

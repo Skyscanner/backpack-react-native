@@ -43,7 +43,6 @@ import TitleView from './TitleView';
 
 const ANDROID_THEME_ATTRIBUTES = [
   ...THEME_ATTRIBUTES,
-  'navigationBarStatusBarStyle',
   'navigationBarStatusBarColor',
 ];
 

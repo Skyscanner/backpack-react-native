@@ -1,7 +1,9 @@
 # Unreleased
 
 > Place your changes below this line.
-
+**FIXED:**
+ - react-native-bpk-component-navigation-bar:
+   - Removed deprecated `navigationBarStatusBarStyle` theme attribute.
 
 ## How to write a good changelog entry
 

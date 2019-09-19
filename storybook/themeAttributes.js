@@ -104,7 +104,6 @@ const themeAttributes = {
   navigationBarTintColor: theme.contentColor,
   navigationBarDisabledTintColor: theme.contentGray,
   navigationBarStatusBarColor: theme.brandColors.gradientEnd,
-  navigationBarStatusBarStyle: 'dark-content',
   navigationBarShadowColor: theme.brandColors.gradientEnd,
   navigationBarPrimaryColor: theme.secondaryColor,
 

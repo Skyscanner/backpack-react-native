@@ -45,7 +45,6 @@ export type Theme = {
   navigationBarTintColor?: string,
   navigationBarDisabledTintColor?: string,
   navigationBarStatusBarColor?: string,
-  navigationBarStatusBarStyle?: string,
   navigationBarShadowColor?: string,
   navigationBarPrimaryColor?: string,
   primaryColor?: string,
