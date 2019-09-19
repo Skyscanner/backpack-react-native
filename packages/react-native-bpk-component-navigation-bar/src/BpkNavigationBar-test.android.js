@@ -110,7 +110,6 @@ describe('android', () => {
               navigationBarBackgroundColor: 'white',
               navigationBarTintColor: 'red',
               navigationBarDisabledTintColor: 'red',
-              navigationBarStatusBarStyle: 'light-content',
               navigationBarStatusBarColor: 'transparent',
             }}
           />,

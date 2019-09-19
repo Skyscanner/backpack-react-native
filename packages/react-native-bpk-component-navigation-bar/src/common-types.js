@@ -19,8 +19,6 @@
 import PropTypes from 'prop-types';
 import { type Element } from 'react';
 
-type StatusBarStyle = 'light-content' | 'dark-content';
-
 export type TitleWithIcon = {|
   value: string,
   icon: string,
@@ -40,7 +38,6 @@ export const TITLE_PROPTYPE = PropTypes.oneOfType([
 ]);
 
 export type CommonTheme = {
-  navigationBarStatusBarStyle: StatusBarStyle,
   navigationBarBackgroundColor: string,
   navigationBarTintColor: string,
   navigationBarDisabledTintColor: string,
