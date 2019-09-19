@@ -1,6 +1,6 @@
 {
   "name": "react-native-bpk-component-chip",
-  "version": "4.1.5",
+  "version": "4.1.6",
   "main": "index.js",
   "description": "Backpack React Native chip component.",
   "repository": {
@@ -16,12 +16,12 @@
   "dependencies": {
     "bpk-tokens": "^27.8.0",
     "prop-types": "^15.5.8",
-    "react-native-bpk-component-icon": "^2.0.7",
-    "react-native-bpk-component-text": "^4.1.15",
-    "react-native-bpk-component-touchable-native-feedback": "^2.0.6",
-    "react-native-bpk-component-touchable-overlay": "^2.0.6",
-    "react-native-bpk-styles": "^1.1.49",
-    "react-native-bpk-theming": "^1.4.3"
+    "react-native-bpk-component-icon": "^2.0.8",
+    "react-native-bpk-component-text": "^4.1.16",
+    "react-native-bpk-component-touchable-native-feedback": "^2.0.7",
+    "react-native-bpk-component-touchable-overlay": "^2.0.7",
+    "react-native-bpk-styles": "^1.1.50",
+    "react-native-bpk-theming": "^1.4.4"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"

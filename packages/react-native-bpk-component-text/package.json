@@ -1,6 +1,6 @@
 {
   "name": "react-native-bpk-component-text",
-  "version": "4.1.15",
+  "version": "4.1.16",
   "main": "index.js",
   "description": "Backpack React Native text component.",
   "repository": {
@@ -16,7 +16,7 @@
   "dependencies": {
     "bpk-tokens": "^27.8.0",
     "prop-types": "^15.5.8",
-    "react-native-bpk-theming": "^1.4.3"
+    "react-native-bpk-theming": "^1.4.4"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"

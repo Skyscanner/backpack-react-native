@@ -1,6 +1,6 @@
 {
   "name": "react-native-bpk-component-carousel",
-  "version": "2.0.9",
+  "version": "2.0.10",
   "main": "index.js",
   "description": "Backpack React Native carousel component.",
   "repository": {
@@ -16,12 +16,12 @@
   "dependencies": {
     "bpk-tokens": "^27.8.0",
     "prop-types": "^15.5.8",
-    "react-native-bpk-component-carousel-indicator": "^2.0.8",
+    "react-native-bpk-component-carousel-indicator": "^2.0.9",
     "recyclerlistview": "^2.0.0"
   },
   "devDependencies": {
-    "react-native-bpk-component-image": "^2.0.8",
-    "react-native-bpk-component-text": "^4.1.15"
+    "react-native-bpk-component-image": "^2.0.9",
+    "react-native-bpk-component-text": "^4.1.16"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
