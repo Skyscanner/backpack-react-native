@@ -2,6 +2,12 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-09-19
+
+**FIXED:**
+ - react-native-bpk-component-navigation-bar: 6.0.8 => 6.0.9
+   - Removed deprecated `navigationBarStatusBarStyle` theme attribute.
+
 # 2019-09-12 - Removed gray theming from components
 
 **Fixed:**
