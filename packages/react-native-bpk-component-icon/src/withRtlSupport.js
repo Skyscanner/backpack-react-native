@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
 });
 
 // Based loosely on https://github.com/acdlite/recompose/blob/master/src/packages/recompose/getDisplayName.js
-const getDisplayName = Component => {
+const getDisplayName = (Component: ComponentType<*>) => {
   if (typeof Component === 'string') {
     return Component;
   }
@@ -46,12 +46,10 @@ const getDisplayName = Component => {
   return Component.displayName || Component.name || 'Component';
 };
 
-export type Props = $Exact<BpkIconProps>;
-
 const withRtlSupport = (
-  IconComponent: ComponentType<any>,
-): ComponentType<any> => {
-  const WithRtlSupport = (props: Props) => {
+  IconComponent: ComponentType<BpkIconProps>,
+): ComponentType<BpkIconProps> => {
+  const WithRtlSupport = (props: BpkIconProps) => {
     const { style: userStyle, ...rest } = props;
     const rtlStyle = [styles.rtl];
 
