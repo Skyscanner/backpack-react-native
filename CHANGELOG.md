@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-09-23
+
+**Fixed:**
+
+- react-native-bpk-component-icon:
+  - Fixed PropTypes of `withRtlSupport` HOC
+
 # 2019-09-19
 
 **FIXED:**
