@@ -14,7 +14,7 @@
     "react-native": ">= 0.59.0"
   },
   "dependencies": {
-    "bpk-tokens": "^27.8.0",
+    "bpk-tokens": "^27.11.0",
     "prop-types": "^15.5.8",
     "react-native-bpk-component-carousel-indicator": "^2.0.10",
     "recyclerlistview": "^2.0.0"
