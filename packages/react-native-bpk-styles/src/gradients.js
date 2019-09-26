@@ -19,7 +19,7 @@
 /* @flow */
 
 import {
-  colorBlue500,
+  colorSkyBlue,
   colorPrimaryGradientLight,
 } from 'bpk-tokens/tokens/base.react.native';
 
@@ -82,7 +82,7 @@ export default {
     const { start, end } = startAndEndFromAngle(angle);
 
     return {
-      colors: [colorBlue500, colorPrimaryGradientLight],
+      colors: [colorSkyBlue, colorPrimaryGradientLight],
       start: { x: start[0], y: start[1] },
       end: { x: end[0], y: end[1] },
     };

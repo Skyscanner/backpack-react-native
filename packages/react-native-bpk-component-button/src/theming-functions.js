@@ -21,14 +21,11 @@
 import { type Theme } from 'react-native-bpk-theming';
 import {
   borderRadiusPill,
-  colorBlue500,
+  colorSkyBlue,
   colorGray100,
   colorGray300,
-  colorGreen500,
-  colorGreen600,
-  colorPink500,
-  colorPink600,
-  colorRed500,
+  colorMonteverde,
+  colorPanjin,
   colorWhite,
 } from 'bpk-tokens/tokens/base.react.native';
 
@@ -56,8 +53,8 @@ export const backgroundColorForType = (
   disabled: boolean,
 ) => {
   const backgroundColors = {
-    [BUTTON_TYPES.primary]: colorGreen500,
-    [BUTTON_TYPES.featured]: colorPink500,
+    [BUTTON_TYPES.primary]: colorMonteverde,
+    [BUTTON_TYPES.featured]: colorSkyBlue,
     [BUTTON_TYPES.secondary]: colorWhite,
     [BUTTON_TYPES.destructive]: colorWhite,
   };
@@ -91,8 +88,8 @@ export const gradientColorForType = (
   }
 
   const gradientColors = {
-    [BUTTON_TYPES.primary]: { start: colorGreen500, end: colorGreen600 },
-    [BUTTON_TYPES.featured]: { start: colorPink500, end: colorPink600 },
+    [BUTTON_TYPES.primary]: { start: colorMonteverde, end: colorMonteverde },
+    [BUTTON_TYPES.featured]: { start: colorSkyBlue, end: colorSkyBlue },
   };
 
   const gradientColorThemePropsMappedToType = {
@@ -125,8 +122,8 @@ export const textColorForType = (
   const textColors = {
     [BUTTON_TYPES.primary]: colorWhite,
     [BUTTON_TYPES.featured]: colorWhite,
-    [BUTTON_TYPES.secondary]: colorBlue500,
-    [BUTTON_TYPES.destructive]: colorRed500,
+    [BUTTON_TYPES.secondary]: colorSkyBlue,
+    [BUTTON_TYPES.destructive]: colorPanjin,
   };
 
   const textColorThemePropsMappedToType = {

@@ -22,9 +22,9 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
 import {
-  colorBlue500,
-  colorGreen500,
-  colorYellow500,
+  colorSkyBlue,
+  colorMonteverde,
+  colorErfoud,
   spacingSm,
   spacingBase,
 } from 'bpk-tokens/tokens/base.react.native';
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     marginHorizontal: spacingSm,
   },
   icon: {
-    color: colorBlue500,
+    color: colorSkyBlue,
   },
 });
 
@@ -87,15 +87,15 @@ const getColouredIcons = () => (
     <StorySubheading>In any color</StorySubheading>
     <View style={[styles.singleRow, styles.group]}>
       <BpkIcon
-        style={[styles.singleIcon, { color: colorBlue500 }]}
+        style={[styles.singleIcon, { color: colorSkyBlue }]}
         icon={icons.flight}
       />
       <BpkIcon
-        style={[styles.singleIcon, { color: colorGreen500 }]}
+        style={[styles.singleIcon, { color: colorMonteverde }]}
         icon={icons.cars}
       />
       <BpkIcon
-        style={[styles.singleIcon, { color: colorYellow500 }]}
+        style={[styles.singleIcon, { color: colorErfoud }]}
         icon={icons.hotels}
       />
     </View>

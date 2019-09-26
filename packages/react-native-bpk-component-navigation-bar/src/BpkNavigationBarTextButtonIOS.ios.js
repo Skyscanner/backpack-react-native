@@ -23,7 +23,7 @@ import PropTypes from 'prop-types';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 import BpkText, { WEIGHT_STYLES } from 'react-native-bpk-component-text';
 import {
-  colorBlue500,
+  colorSkyBlue,
   colorGray300,
   colorGray900,
 } from 'bpk-tokens/tokens/base.react.native';
@@ -76,7 +76,7 @@ const BpkNavigationBarTextButtonIOS = (props: Props) => {
   } = props;
   const tintColors = {
     [BUTTON_TYPES.default]: colorGray900,
-    [BUTTON_TYPES.primary]: colorBlue500,
+    [BUTTON_TYPES.primary]: colorSkyBlue,
   };
 
   let tintColorFinal = tintColors[type];

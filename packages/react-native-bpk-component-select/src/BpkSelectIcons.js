@@ -22,8 +22,8 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import BpkIcon, { icons } from 'react-native-bpk-component-icon';
 import {
-  colorRed500,
-  colorGreen500,
+  colorPanjin,
+  colorMonteverde,
   spacingSm,
 } from 'bpk-tokens/tokens/base.react.native';
 
@@ -32,10 +32,10 @@ const styles = StyleSheet.create({
     marginStart: spacingSm,
   },
   valid: {
-    color: colorGreen500,
+    color: colorMonteverde,
   },
   invalid: {
-    color: colorRed500,
+    color: colorPanjin,
   },
 });
 

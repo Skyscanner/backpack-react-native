@@ -26,7 +26,7 @@ import BpkText from 'react-native-bpk-component-text';
 import {
   borderRadiusPill,
   borderSizeSm,
-  colorBlue500,
+  colorSkyBlue,
   colorGray200,
   colorGray300,
   colorGray500,
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     }),
   },
   innerSelected: {
-    backgroundColor: colorBlue500,
+    backgroundColor: colorSkyBlue,
   },
   innerDisabled: {
     backgroundColor: colorWhite,
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
     paddingVertical: spacingMd - borderSizeSm,
   },
   innerOutlineSelected: {
-    backgroundColor: colorBlue500,
+    backgroundColor: colorSkyBlue,
   },
   innerOutlineDisabled: {
     backgroundColor: 'transparent',

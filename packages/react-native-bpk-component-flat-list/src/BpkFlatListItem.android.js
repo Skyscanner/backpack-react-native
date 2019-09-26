@@ -24,7 +24,7 @@ import BpkText from 'react-native-bpk-component-text';
 import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-native-feedback';
 import {
   spacingBase,
-  colorBlue500,
+  colorSkyBlue,
   colorGray900,
 } from 'bpk-tokens/tokens/base.react.native';
 import { getThemeAttributes, withTheme } from 'react-native-bpk-theming';
@@ -39,7 +39,7 @@ import {
 
 const ANDROID_LIST_ITEM_HEIGHT = 48;
 const ANDROID_LIST_ITEM_IMAGE_MARGIN = 32;
-const tintColor = colorBlue500;
+const tintColor = colorSkyBlue;
 
 const styles = StyleSheet.create({
   outer: {

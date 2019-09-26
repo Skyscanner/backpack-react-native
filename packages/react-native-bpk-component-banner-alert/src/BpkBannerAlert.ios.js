@@ -23,11 +23,11 @@ import {
   spacingSm,
   spacingMd,
   spacingXl,
-  colorRed500,
+  colorPanjin,
   colorGray300,
   colorGray500,
-  colorGreen500,
-  colorYellow500,
+  colorMonteverde,
+  colorErfoud,
   borderSizeSm,
   borderRadiusSm,
 } from 'bpk-tokens/tokens/base.react.native';
@@ -51,13 +51,13 @@ const STYLES = StyleSheet.create({
     borderRadius: borderRadiusSm,
   },
   borderSuccess: {
-    borderColor: colorGreen500,
+    borderColor: colorMonteverde,
   },
   borderWarn: {
-    borderColor: colorYellow500,
+    borderColor: colorErfoud,
   },
   borderError: {
-    borderColor: colorRed500,
+    borderColor: colorPanjin,
   },
   borderNeutral: {
     borderColor: colorGray300,
@@ -74,13 +74,13 @@ const STYLES = StyleSheet.create({
     marginEnd: spacingSm,
   },
   iconSuccess: {
-    color: colorGreen500,
+    color: colorMonteverde,
   },
   iconWarn: {
-    color: colorYellow500,
+    color: colorErfoud,
   },
   iconError: {
-    color: colorRed500,
+    color: colorPanjin,
   },
   iconNeutral: {
     color: colorGray500,

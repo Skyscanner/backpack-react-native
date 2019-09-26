@@ -24,12 +24,9 @@ import { Text, StyleSheet, View, Picker, Platform } from 'react-native';
 import {
   spacingMd,
   colorWhite,
-  colorRed400,
-  colorRed500,
-  colorBlue400,
-  colorBlue500,
-  colorYellow400,
-  colorYellow500,
+  colorPanjin,
+  colorSkyBlue,
+  colorErfoud,
   fontFamily,
 } from 'bpk-tokens/tokens/base.react.native';
 
@@ -199,12 +196,12 @@ class BpkThemePicker extends Component<{}, State> {
 
     this.themes = {
       blue: generateThemeAttributes(
-        colorBlue400,
-        colorBlue500,
+        colorSkyBlue,
+        colorSkyBlue,
         Platform.OS === 'android' ? 'serif-monospace' : 'Courier',
       ),
-      yellow: generateThemeAttributes(colorYellow400, colorYellow500),
-      red: generateThemeAttributes(colorRed400, colorRed500),
+      yellow: generateThemeAttributes(colorErfoud, colorErfoud),
+      red: generateThemeAttributes(colorPanjin, colorPanjin),
     };
 
     this.state = {

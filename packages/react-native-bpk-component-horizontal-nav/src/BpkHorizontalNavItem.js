@@ -24,7 +24,7 @@ import PropTypes from 'prop-types';
 import {
   colorGray300,
   colorGray900,
-  colorBlue700,
+  colorSkyBlue,
   spacingSm,
   spacingXl,
   borderSizeSm,
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     color: colorGray300,
   },
   textSelected: {
-    color: colorBlue700,
+    color: colorSkyBlue,
   },
 });
 

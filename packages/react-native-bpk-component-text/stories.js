@@ -20,12 +20,12 @@
 
 import React from 'react';
 import {
-  colorRed500,
-  colorBlue700,
+  colorPanjin,
+  colorSkyBlue,
   colorGray500,
-  colorGreen500,
-  colorYellow500,
-  colorPink500,
+  colorMonteverde,
+  colorErfoud,
+  colorBunol,
 } from 'bpk-tokens/tokens/base.react.native';
 import { View } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
@@ -109,28 +109,28 @@ storiesOf('react-native-bpk-component-text', module)
   ))
   .add('Colours', () => (
     <View>
-      <BpkText textStyle="xxxl" style={{ color: colorBlue700 }}>
+      <BpkText textStyle="xxxl" style={{ color: colorSkyBlue }}>
         {TEXT}
       </BpkText>
-      <BpkText textStyle="xxl" style={{ color: colorRed500 }}>
+      <BpkText textStyle="xxl" style={{ color: colorPanjin }}>
         {TEXT}
       </BpkText>
-      <BpkText textStyle="xl" style={{ color: colorGreen500 }}>
+      <BpkText textStyle="xl" style={{ color: colorMonteverde }}>
         {TEXT}
       </BpkText>
-      <BpkText textStyle="lg" style={{ color: colorYellow500 }}>
+      <BpkText textStyle="lg" style={{ color: colorErfoud }}>
         {TEXT}
       </BpkText>
-      <BpkText textStyle="base" style={{ color: colorPink500 }}>
+      <BpkText textStyle="base" style={{ color: colorBunol }}>
         {TEXT}
       </BpkText>
-      <BpkText textStyle="sm" style={{ color: colorBlue700 }}>
+      <BpkText textStyle="sm" style={{ color: colorSkyBlue }}>
         {TEXT}
       </BpkText>
       <BpkText textStyle="xs" style={{ color: colorGray500 }}>
         {TEXT}
       </BpkText>
-      <BpkText textStyle="caps" style={{ color: colorRed500 }}>
+      <BpkText textStyle="caps" style={{ color: colorPanjin }}>
         {TEXT.toUpperCase()}
       </BpkText>
     </View>

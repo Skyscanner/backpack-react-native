@@ -27,7 +27,7 @@ import BpkText from 'react-native-bpk-component-text';
 import {
   colorGray50,
   colorGray100,
-  colorRed500,
+  colorPanjin,
   borderSizeSm,
   spacingBase,
   spacingMd,
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     paddingVertical: spacingSm,
   },
   invalid: {
-    borderColor: colorRed500,
+    borderColor: colorPanjin,
   },
   selectContent: {
     marginEnd: 'auto',
@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     marginEnd: spacingMd,
   },
   validationMessage: {
-    color: colorRed500,
+    color: colorPanjin,
     paddingTop: spacingSm,
   },
 });

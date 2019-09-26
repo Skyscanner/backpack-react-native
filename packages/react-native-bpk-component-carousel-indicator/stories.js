@@ -23,12 +23,12 @@ import { StyleSheet, View } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
 import {
   borderRadiusSm,
-  colorBlue500,
+  colorSkyBlue,
   colorGray900,
-  colorGreen500,
-  colorPink500,
-  colorRed500,
-  colorYellow500,
+  colorMonteverde,
+  colorBunol,
+  colorPanjin,
+  colorErfoud,
   spacingMd,
   spacingXl,
 } from 'bpk-tokens/tokens/base.react.native';
@@ -72,12 +72,12 @@ const styles = StyleSheet.create({
 });
 
 const pageColors = [
-  colorGreen500,
-  colorPink500,
+  colorMonteverde,
+  colorBunol,
   colorGray900,
-  colorBlue500,
-  colorYellow500,
-  colorRed500,
+  colorSkyBlue,
+  colorErfoud,
+  colorPanjin,
 ];
 
 class StatefulBpkCarouselIndicatorExample extends React.Component<
