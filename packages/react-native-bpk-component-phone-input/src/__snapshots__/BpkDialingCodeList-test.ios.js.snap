@@ -233,7 +233,7 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
               },
               Array [
                 Object {
-                  "color": "rgb(0, 157, 189)",
+                  "color": "rgb(7, 112, 227)",
                   "opacity": 0,
                 },
               ],
@@ -398,7 +398,7 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
               },
               Array [
                 Object {
-                  "color": "rgb(0, 157, 189)",
+                  "color": "rgb(7, 112, 227)",
                   "opacity": 0,
                 },
               ],
@@ -563,7 +563,7 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
               },
               Array [
                 Object {
-                  "color": "rgb(0, 157, 189)",
+                  "color": "rgb(7, 112, 227)",
                   "opacity": 0,
                 },
               ],
@@ -810,7 +810,7 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
                     "flex": 1,
                   },
                   Object {
-                    "color": "rgb(0, 157, 189)",
+                    "color": "rgb(7, 112, 227)",
                   },
                 ],
               ]
@@ -834,7 +834,7 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
               },
               Array [
                 Object {
-                  "color": "rgb(0, 157, 189)",
+                  "color": "rgb(7, 112, 227)",
                   "opacity": 0,
                 },
                 Object {
@@ -1002,7 +1002,7 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
               },
               Array [
                 Object {
-                  "color": "rgb(0, 157, 189)",
+                  "color": "rgb(7, 112, 227)",
                   "opacity": 0,
                 },
               ],
@@ -1167,7 +1167,7 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
               },
               Array [
                 Object {
-                  "color": "rgb(0, 157, 189)",
+                  "color": "rgb(7, 112, 227)",
                   "opacity": 0,
                 },
               ],

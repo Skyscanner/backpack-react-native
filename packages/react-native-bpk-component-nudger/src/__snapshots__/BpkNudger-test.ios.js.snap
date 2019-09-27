@@ -75,7 +75,7 @@ exports[`iOS BpkNudger should render correctly 1`] = `
                 "marginEnd": 4,
               },
               Object {
-                "color": "rgb(0, 178, 214)",
+                "color": "rgb(7, 112, 227)",
               },
               Object {
                 "marginEnd": 0,
@@ -201,7 +201,7 @@ exports[`iOS BpkNudger should render correctly 1`] = `
                 "marginEnd": 4,
               },
               Object {
-                "color": "rgb(0, 178, 214)",
+                "color": "rgb(7, 112, 227)",
               },
               Object {
                 "marginEnd": 0,
@@ -450,7 +450,7 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
                 "marginEnd": 4,
               },
               Object {
-                "color": "rgb(0, 178, 214)",
+                "color": "rgb(7, 112, 227)",
               },
               Object {
                 "marginEnd": 0,
@@ -569,7 +569,7 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
                 "marginEnd": 4,
               },
               Object {
-                "color": "rgb(0, 178, 214)",
+                "color": "rgb(7, 112, 227)",
               },
               Object {
                 "marginEnd": 0,
@@ -948,7 +948,7 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
                 "marginEnd": 4,
               },
               Object {
-                "color": "rgb(0, 178, 214)",
+                "color": "rgb(7, 112, 227)",
               },
               Object {
                 "marginEnd": 0,

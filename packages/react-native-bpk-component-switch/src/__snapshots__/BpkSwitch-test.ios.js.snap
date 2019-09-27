@@ -6,7 +6,7 @@ exports[`iOS BpkSwitch should disable theming if the required attribute is omitt
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  onTintColor="rgb(0, 178, 214)"
+  onTintColor="rgb(7, 112, 227)"
   style={
     Object {
       "height": 31,
@@ -24,7 +24,7 @@ exports[`iOS BpkSwitch should render correctly 1`] = `
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  onTintColor="rgb(0, 178, 214)"
+  onTintColor="rgb(7, 112, 227)"
   style={
     Object {
       "height": 31,
@@ -42,7 +42,7 @@ exports[`iOS BpkSwitch should support the "value" prop 1`] = `
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  onTintColor="rgb(0, 178, 214)"
+  onTintColor="rgb(7, 112, 227)"
   style={
     Object {
       "height": 31,

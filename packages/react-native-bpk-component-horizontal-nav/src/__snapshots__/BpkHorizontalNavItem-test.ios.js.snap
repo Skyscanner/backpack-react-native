@@ -111,7 +111,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly with "selected" prop 1
               "paddingHorizontal": 16,
             },
             Object {
-              "color": "rgb(0, 140, 168)",
+              "color": "rgb(7, 112, 227)",
             },
           ],
         ]

@@ -197,7 +197,7 @@ exports[`Android BpkChip should render correctly with "selected" 1`] = `
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(0, 178, 214)",
+          "backgroundColor": "rgb(7, 112, 227)",
         },
       ]
     }
@@ -513,7 +513,7 @@ exports[`Android BpkChip should support theming when selected 1`] = `
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(0, 178, 214)",
+          "backgroundColor": "rgb(7, 112, 227)",
         },
         Object {
           "backgroundColor": "red",

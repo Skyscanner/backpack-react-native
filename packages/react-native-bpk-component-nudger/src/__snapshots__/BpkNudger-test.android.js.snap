@@ -90,7 +90,7 @@ exports[`Android BpkNudger should render correctly 1`] = `
                 "marginEnd": 4,
               },
               Object {
-                "color": "rgb(0, 178, 214)",
+                "color": "rgb(7, 112, 227)",
               },
               Object {
                 "marginEnd": 0,
@@ -209,7 +209,7 @@ exports[`Android BpkNudger should render correctly 1`] = `
                 "marginEnd": 4,
               },
               Object {
-                "color": "rgb(0, 178, 214)",
+                "color": "rgb(7, 112, 227)",
               },
               Object {
                 "marginEnd": 0,
@@ -444,7 +444,7 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
                 "marginEnd": 4,
               },
               Object {
-                "color": "rgb(0, 178, 214)",
+                "color": "rgb(7, 112, 227)",
               },
               Object {
                 "marginEnd": 0,
@@ -556,7 +556,7 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
                 "marginEnd": 4,
               },
               Object {
-                "color": "rgb(0, 178, 214)",
+                "color": "rgb(7, 112, 227)",
               },
               Object {
                 "marginEnd": 0,
@@ -914,7 +914,7 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
                 "marginEnd": 4,
               },
               Object {
-                "color": "rgb(0, 178, 214)",
+                "color": "rgb(7, 112, 227)",
               },
               Object {
                 "marginEnd": 0,

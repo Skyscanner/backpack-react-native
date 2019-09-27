@@ -106,7 +106,7 @@ exports[`android BpkNavigationBarButton should render correctly disabled 1`] = `
               "padding": 8,
             },
             Object {
-              "color": "rgb(127, 215, 232)",
+              "color": "rgb(109, 159, 235)",
             },
           ],
         ]

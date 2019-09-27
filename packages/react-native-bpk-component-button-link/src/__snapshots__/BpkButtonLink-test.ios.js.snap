@@ -49,7 +49,7 @@ exports[`iOS BpkButtonLink should render correctly 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
             },
           ],
         ]
@@ -113,7 +113,7 @@ exports[`iOS BpkButtonLink should render correctly with iconAlignment="leading" 
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
             },
           ],
         ]
@@ -136,7 +136,7 @@ exports[`iOS BpkButtonLink should render correctly with iconAlignment="leading" 
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
               "marginLeft": 4,
             },
             Object {
@@ -202,7 +202,7 @@ exports[`iOS BpkButtonLink should render correctly with iconAlignment="trailing"
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
             },
           ],
         ]
@@ -225,7 +225,7 @@ exports[`iOS BpkButtonLink should render correctly with iconAlignment="trailing"
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
               "marginLeft": 4,
             },
           ],
@@ -288,7 +288,7 @@ exports[`iOS BpkButtonLink should render correctly with text props provided 1`] 
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
             },
           ],
         ]
@@ -349,7 +349,7 @@ exports[`iOS BpkButtonLink should render correctly with theme prop 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
             },
             Object {
               "color": "red",
@@ -413,7 +413,7 @@ exports[`iOS BpkButtonLink should support elements as icons 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
             },
           ],
         ]
@@ -491,7 +491,7 @@ exports[`iOS BpkButtonLink should support overwriting styles 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
             },
           ],
         ]
@@ -556,7 +556,7 @@ exports[`iOS BpkButtonLink should support the "disabled" property 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
             },
             Object {
               "color": "rgb(178, 178, 191)",
@@ -620,7 +620,7 @@ exports[`iOS BpkButtonLink should support the "icon" property 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
             },
           ],
         ]
@@ -643,7 +643,7 @@ exports[`iOS BpkButtonLink should support the "icon" property 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
               "marginLeft": 4,
             },
           ],
@@ -708,7 +708,7 @@ exports[`iOS should support the "icon" and "large" property 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
             },
           ],
         ]
@@ -728,7 +728,7 @@ exports[`iOS should support the "icon" and "large" property 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
               "marginLeft": 4,
             },
           ],
@@ -793,7 +793,7 @@ exports[`iOS should support the "large" property 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
             },
           ],
         ]

@@ -20,7 +20,7 @@ exports[`iOS withRtlSupport should apply user props next to transform 1`] = `
           ],
         },
         Object {
-          "color": "rgb(0, 178, 214)",
+          "color": "rgb(7, 112, 227)",
         },
       ],
     ]

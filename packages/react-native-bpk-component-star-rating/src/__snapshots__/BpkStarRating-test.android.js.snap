@@ -105,7 +105,7 @@ exports[`Android BpkStar should render correctly when full 1`] = `
             "zIndex": 2,
           },
           Object {
-            "color": "rgb(255, 187, 0)",
+            "color": "rgb(255, 181, 77)",
           },
         ],
       ]
@@ -180,7 +180,7 @@ exports[`Android BpkStar should render correctly when half 1`] = `
             "zIndex": 2,
           },
           Object {
-            "color": "rgb(255, 187, 0)",
+            "color": "rgb(255, 181, 77)",
           },
         ],
       ]
@@ -302,7 +302,7 @@ exports[`Android BpkStar should support theming when full 1`] = `
             "zIndex": 2,
           },
           Object {
-            "color": "rgb(255, 187, 0)",
+            "color": "rgb(255, 181, 77)",
           },
           Object {
             "color": "pink",
@@ -383,7 +383,7 @@ exports[`Android BpkStar should support theming when half 1`] = `
             "zIndex": 2,
           },
           Object {
-            "color": "rgb(255, 187, 0)",
+            "color": "rgb(255, 181, 77)",
           },
           Object {
             "color": "pink",

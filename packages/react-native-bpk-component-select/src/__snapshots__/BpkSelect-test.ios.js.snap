@@ -264,7 +264,7 @@ exports[`iOS BpkSelect should render correctly with "valid" false 1`] = `
           "paddingVertical": 4,
         },
         Object {
-          "borderColor": "rgb(255, 84, 82)",
+          "borderColor": "rgb(209, 67, 91)",
         },
       ]
     }
@@ -287,7 +287,7 @@ exports[`iOS BpkSelect should render correctly with "valid" false 1`] = `
               "marginStart": 4,
             },
             Object {
-              "color": "rgb(255, 84, 82)",
+              "color": "rgb(209, 67, 91)",
             },
           ],
         ]
@@ -364,7 +364,7 @@ exports[`iOS BpkSelect should render correctly with "valid" false and a validati
             "paddingVertical": 4,
           },
           Object {
-            "borderColor": "rgb(255, 84, 82)",
+            "borderColor": "rgb(209, 67, 91)",
           },
         ]
       }
@@ -387,7 +387,7 @@ exports[`iOS BpkSelect should render correctly with "valid" false and a validati
                 "marginStart": 4,
               },
               Object {
-                "color": "rgb(255, 84, 82)",
+                "color": "rgb(209, 67, 91)",
               },
             ],
           ]
@@ -446,7 +446,7 @@ exports[`iOS BpkSelect should render correctly with "valid" false and a validati
         },
         Object {},
         Object {
-          "color": "rgb(255, 84, 82)",
+          "color": "rgb(209, 67, 91)",
           "paddingTop": 4,
         },
       ]
@@ -504,7 +504,7 @@ exports[`iOS BpkSelect should render correctly with "valid" true 1`] = `
               "marginStart": 4,
             },
             Object {
-              "color": "rgb(0, 215, 117)",
+              "color": "rgb(0, 166, 152)",
             },
           ],
         ]

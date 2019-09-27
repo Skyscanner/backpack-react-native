@@ -342,7 +342,7 @@ exports[`Android BpkPicker should render correctly with a selected value 1`] = `
                   },
                   Object {},
                   Object {
-                    "color": "rgb(0, 178, 214)",
+                    "color": "rgb(7, 112, 227)",
                   },
                 ]
               }

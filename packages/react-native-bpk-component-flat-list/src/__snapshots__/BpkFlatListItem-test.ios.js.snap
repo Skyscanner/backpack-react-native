@@ -74,7 +74,7 @@ exports[`iOS BpkFlatListItem should render correctly 1`] = `
         },
         Array [
           Object {
-            "color": "rgb(0, 157, 189)",
+            "color": "rgb(7, 112, 227)",
             "opacity": 0,
           },
         ],
@@ -186,7 +186,7 @@ exports[`iOS BpkFlatListItem should support the "image" property 1`] = `
         },
         Array [
           Object {
-            "color": "rgb(0, 157, 189)",
+            "color": "rgb(7, 112, 227)",
             "opacity": 0,
           },
         ],
@@ -267,7 +267,7 @@ exports[`iOS BpkFlatListItem should support the "selected" property 1`] = `
               "flex": 1,
             },
             Object {
-              "color": "rgb(0, 157, 189)",
+              "color": "rgb(7, 112, 227)",
             },
           ],
         ]
@@ -291,7 +291,7 @@ exports[`iOS BpkFlatListItem should support the "selected" property 1`] = `
         },
         Array [
           Object {
-            "color": "rgb(0, 157, 189)",
+            "color": "rgb(7, 112, 227)",
             "opacity": 0,
           },
           Object {
@@ -395,7 +395,7 @@ exports[`iOS should support theming when selected 1`] = `
               "flex": 1,
             },
             Object {
-              "color": "rgb(0, 157, 189)",
+              "color": "rgb(7, 112, 227)",
             },
             Object {
               "color": "red",
@@ -422,7 +422,7 @@ exports[`iOS should support theming when selected 1`] = `
         },
         Array [
           Object {
-            "color": "rgb(0, 157, 189)",
+            "color": "rgb(7, 112, 227)",
             "opacity": 0,
           },
           Object {
