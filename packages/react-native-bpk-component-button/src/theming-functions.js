@@ -21,6 +21,7 @@
 import { type Theme } from 'react-native-bpk-theming';
 import {
   borderRadiusPill,
+  borderRadiusSm,
   colorSkyBlue,
   colorGray100,
   colorGray300,
@@ -45,7 +46,7 @@ export const borderRadiusForTheme = (
 ): number =>
   iconOnly
     ? borderRadiusPill
-    : valueOrDefault(themeAttributes, 'buttonBorderRadius', borderRadiusPill);
+    : valueOrDefault(themeAttributes, 'buttonBorderRadius', borderRadiusSm);
 
 export const backgroundColorForType = (
   type: ButtonType,
