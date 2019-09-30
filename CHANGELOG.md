@@ -2,6 +2,14 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-09-30
+
+**Fixed:**
+
+- `react-native-bpk-component-calendar`: 3.0.6 => 3.0.7
+- `react-native-bpk-component-dialog`: 3.0.6 => 3.0.7
+  - Upgraded Backpack pod dependency to `18.0.0`.
+
 # 2019-09-23
 
 **Fixed:**
