@@ -8,7 +8,7 @@ PODS:
   - BVLinearGradient (2.5.3):
     - React
   - DoubleConversion (1.1.6)
-  - FloatingPanel (1.6.5)
+  - FloatingPanel (1.6.6)
   - Folly (2018.10.22.00):
     - boost-for-react-native
     - DoubleConversion
@@ -67,10 +67,10 @@ PODS:
     - React-cxxreact (= 0.60.4)
     - React-jsi (= 0.60.4)
   - React-jsinspector (0.60.4)
-  - react-native-bpk-component-calendar (3.0.6):
+  - react-native-bpk-component-calendar (3.0.7):
     - Backpack (~> 18.0)
     - React
-  - react-native-bpk-component-dialog (3.0.6):
+  - react-native-bpk-component-dialog (3.0.7):
     - Backpack (~> 18.0)
     - React
   - react-native-maps (0.25.0):
@@ -199,7 +199,7 @@ SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BVLinearGradient: b0b70acf63ee888829b7c2ebbf6b50e227396e55
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
-  FloatingPanel: f4a89a848e21415e2e2697ee8f61847178445aa7
+  FloatingPanel: 5fe605e073e60395bc4bb416fd513d0fa38a6558
   Folly: 30e7936e1c45c08d884aa59369ed951a8e68cf51
   FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
   glog: 1f3da668190260b06b429bb211bfbee5cd790c28
