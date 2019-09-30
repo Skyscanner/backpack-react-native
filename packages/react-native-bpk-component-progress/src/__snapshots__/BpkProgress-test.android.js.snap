@@ -7,7 +7,7 @@ exports[`Android BpkProgress should not go bellow the min bound 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": undefined,
+        "backgroundColor": "rgb(208, 238, 236)",
         "height": 8,
       },
       Object {
@@ -39,7 +39,7 @@ exports[`Android BpkProgress should not go over the max bound 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": undefined,
+        "backgroundColor": "rgb(208, 238, 236)",
         "height": 8,
       },
       Object {
@@ -71,7 +71,7 @@ exports[`Android BpkProgress should render correctly 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": undefined,
+        "backgroundColor": "rgb(208, 238, 236)",
         "height": 8,
       },
       Object {
@@ -103,7 +103,7 @@ exports[`Android BpkProgress should render correctly with "min" and "max" attrib
   style={
     Array [
       Object {
-        "backgroundColor": undefined,
+        "backgroundColor": "rgb(208, 238, 236)",
         "height": 8,
       },
       Object {
@@ -135,7 +135,7 @@ exports[`Android BpkProgress should render correctly with a "fillStyle" attribut
   style={
     Array [
       Object {
-        "backgroundColor": undefined,
+        "backgroundColor": "rgb(208, 238, 236)",
         "height": 8,
       },
       Object {
@@ -167,7 +167,7 @@ exports[`Android BpkProgress should render correctly with a "style" attribute 1`
   style={
     Array [
       Object {
-        "backgroundColor": undefined,
+        "backgroundColor": "rgb(208, 238, 236)",
         "height": 8,
       },
       Object {
@@ -201,7 +201,7 @@ exports[`Android BpkProgress should render correctly with a "type" attribute 1`]
   style={
     Array [
       Object {
-        "backgroundColor": undefined,
+        "backgroundColor": "rgb(208, 238, 236)",
         "height": 8,
       },
       Object {
@@ -231,7 +231,7 @@ exports[`Android BpkProgress should render correctly with accessibilityLabel pas
   style={
     Array [
       Object {
-        "backgroundColor": undefined,
+        "backgroundColor": "rgb(208, 238, 236)",
         "height": 8,
       },
       Object {
@@ -263,7 +263,7 @@ exports[`Android BpkProgress should support theming 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": undefined,
+        "backgroundColor": "rgb(208, 238, 236)",
         "height": 8,
       },
       Object {

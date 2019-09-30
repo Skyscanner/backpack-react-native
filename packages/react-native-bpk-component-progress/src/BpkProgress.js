@@ -33,7 +33,7 @@ import {
   spacingMd,
   colorGray100,
   colorMonteverde,
-  colorSagano,
+  colorSegano,
   borderRadiusPill,
   spacingXxl,
 } from 'bpk-tokens/tokens/base.react.native';
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
   track: {
     backgroundColor: Platform.select({
       ios: () => colorGray100,
-      android: () => colorSagano,
+      android: () => colorSegano,
     })(),
     height: spacingMd,
   },

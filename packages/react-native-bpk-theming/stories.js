@@ -26,6 +26,7 @@ import {
   colorWhite,
   colorPanjin,
   colorSkyBlue,
+  colorSkyBlueTint01,
   colorErfoud,
   fontFamily,
 } from 'bpk-tokens/tokens/base.react.native';
@@ -197,7 +198,7 @@ class BpkThemePicker extends Component<{}, State> {
     this.themes = {
       blue: generateThemeAttributes(
         colorSkyBlue,
-        colorSkyBlue,
+        Platform.OS === 'ios' ? colorSkyBlueTint01 : colorSkyBlue,
         Platform.OS === 'android' ? 'serif-monospace' : 'Courier',
       ),
       yellow: generateThemeAttributes(colorErfoud, colorErfoud),
