@@ -1,6 +1,6 @@
 {
   "name": "react-native-bpk-component-spinner",
-  "version": "1.0.97",
+  "version": "2.0.0",
   "main": "index.js",
   "description": "Backpack React Native spinner component.",
   "repository": {
@@ -16,7 +16,7 @@
   "dependencies": {
     "bpk-tokens": "^28.0.1",
     "prop-types": "^15.5.8",
-    "react-native-bpk-theming": "^1.4.4"
+    "react-native-bpk-theming": "^1.4.5"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
