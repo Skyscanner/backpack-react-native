@@ -22,7 +22,7 @@ exports[`iOS BpkBadge should render correctly docked to the end 1`] = `
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(0, 215, 117)",
+          "backgroundColor": "rgb(0, 166, 152)",
         },
         Object {
           "borderBottomLeftRadius": 4,
@@ -80,7 +80,7 @@ exports[`iOS BpkBadge should render correctly docked to the end 1`] = `
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(255, 187, 0)",
+          "backgroundColor": "rgb(255, 181, 77)",
         },
         Object {
           "borderBottomLeftRadius": 4,
@@ -138,7 +138,7 @@ exports[`iOS BpkBadge should render correctly docked to the end 1`] = `
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(255, 84, 82)",
+          "backgroundColor": "rgb(209, 67, 91)",
         },
         Object {
           "borderBottomLeftRadius": 4,
@@ -386,7 +386,7 @@ exports[`iOS BpkBadge should render correctly docked to the start 1`] = `
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(0, 215, 117)",
+          "backgroundColor": "rgb(0, 166, 152)",
         },
         Object {
           "borderBottomLeftRadius": 0,
@@ -444,7 +444,7 @@ exports[`iOS BpkBadge should render correctly docked to the start 1`] = `
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(255, 187, 0)",
+          "backgroundColor": "rgb(255, 181, 77)",
         },
         Object {
           "borderBottomLeftRadius": 0,
@@ -502,7 +502,7 @@ exports[`iOS BpkBadge should render correctly docked to the start 1`] = `
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(255, 84, 82)",
+          "backgroundColor": "rgb(209, 67, 91)",
         },
         Object {
           "borderBottomLeftRadius": 0,
@@ -750,7 +750,7 @@ exports[`iOS BpkBadge should render correctly in normal mode 1`] = `
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(0, 215, 117)",
+          "backgroundColor": "rgb(0, 166, 152)",
         },
       ]
     }
@@ -800,7 +800,7 @@ exports[`iOS BpkBadge should render correctly in normal mode 1`] = `
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(255, 187, 0)",
+          "backgroundColor": "rgb(255, 181, 77)",
         },
       ]
     }
@@ -850,7 +850,7 @@ exports[`iOS BpkBadge should render correctly in normal mode 1`] = `
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(255, 84, 82)",
+          "backgroundColor": "rgb(209, 67, 91)",
         },
       ]
     }
@@ -1066,7 +1066,7 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(0, 215, 117)",
+          "backgroundColor": "rgb(0, 166, 152)",
         },
       ]
     }
@@ -1153,7 +1153,7 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(255, 187, 0)",
+          "backgroundColor": "rgb(255, 181, 77)",
         },
       ]
     }
@@ -1240,7 +1240,7 @@ exports[`iOS BpkBadge should render correctly with icon 1`] = `
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(255, 84, 82)",
+          "backgroundColor": "rgb(209, 67, 91)",
         },
       ]
     }
@@ -1608,7 +1608,7 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(0, 215, 117)",
+          "backgroundColor": "rgb(0, 166, 152)",
         },
       ]
     }
@@ -1757,7 +1757,7 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(255, 187, 0)",
+          "backgroundColor": "rgb(255, 181, 77)",
         },
       ]
     }
@@ -1906,7 +1906,7 @@ exports[`iOS BpkBadge should render correctly with multiple icons 1`] = `
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(255, 84, 82)",
+          "backgroundColor": "rgb(209, 67, 91)",
         },
       ]
     }
@@ -2530,7 +2530,7 @@ exports[`iOS BpkBadge should render correctly with multiple icons and no message
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(0, 215, 117)",
+          "backgroundColor": "rgb(0, 166, 152)",
         },
       ]
     }
@@ -2652,7 +2652,7 @@ exports[`iOS BpkBadge should render correctly with multiple icons and no message
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(255, 187, 0)",
+          "backgroundColor": "rgb(255, 181, 77)",
         },
       ]
     }
@@ -2774,7 +2774,7 @@ exports[`iOS BpkBadge should render correctly with multiple icons and no message
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(255, 84, 82)",
+          "backgroundColor": "rgb(209, 67, 91)",
         },
       ]
     }
@@ -3286,7 +3286,7 @@ exports[`iOS BpkBadge should render correctly with user provided style 1`] = `
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(0, 215, 117)",
+          "backgroundColor": "rgb(0, 166, 152)",
         },
         Object {
           "margin": 4,
@@ -3339,7 +3339,7 @@ exports[`iOS BpkBadge should render correctly with user provided style 1`] = `
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(255, 187, 0)",
+          "backgroundColor": "rgb(255, 181, 77)",
         },
         Object {
           "margin": 4,
@@ -3392,7 +3392,7 @@ exports[`iOS BpkBadge should render correctly with user provided style 1`] = `
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(255, 84, 82)",
+          "backgroundColor": "rgb(209, 67, 91)",
         },
         Object {
           "margin": 4,
@@ -3620,7 +3620,7 @@ exports[`iOS BpkBadge should support theming 1`] = `
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(0, 215, 117)",
+          "backgroundColor": "rgb(0, 166, 152)",
         },
         Object {
           "backgroundColor": "blue",
@@ -3679,7 +3679,7 @@ exports[`iOS BpkBadge should support theming 1`] = `
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(255, 187, 0)",
+          "backgroundColor": "rgb(255, 181, 77)",
         },
         Object {
           "backgroundColor": "yellow",
@@ -3738,7 +3738,7 @@ exports[`iOS BpkBadge should support theming 1`] = `
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(255, 84, 82)",
+          "backgroundColor": "rgb(209, 67, 91)",
         },
         Object {
           "backgroundColor": "purple",

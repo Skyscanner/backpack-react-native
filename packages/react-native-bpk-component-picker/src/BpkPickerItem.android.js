@@ -23,7 +23,7 @@ import { StyleSheet, View } from 'react-native';
 import PropTypes from 'prop-types';
 import BpkText from 'react-native-bpk-component-text';
 import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-native-feedback';
-import { colorBlue500, spacingBase } from 'bpk-tokens/tokens/base.react.native';
+import { colorSkyBlue, spacingBase } from 'bpk-tokens/tokens/base.react.native';
 
 import { PICKER_VALUE_PROP_TYPE, type PickerValue } from './common-types';
 
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     padding: spacingBase,
   },
   selected: {
-    color: colorBlue500,
+    color: colorSkyBlue,
   },
 });
 

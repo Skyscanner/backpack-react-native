@@ -1895,7 +1895,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to error 1`]
             "borderWidth": 1,
           },
           Object {
-            "borderColor": "rgb(255, 84, 82)",
+            "borderColor": "rgb(209, 67, 91)",
           },
           null,
         ]
@@ -1930,7 +1930,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to error 1`]
                   "marginEnd": 4,
                 },
                 Object {
-                  "color": "rgb(255, 84, 82)",
+                  "color": "rgb(209, 67, 91)",
                 },
               ],
             ]
@@ -1975,7 +1975,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to error 1`]
             "borderWidth": 1,
           },
           Object {
-            "borderColor": "rgb(255, 84, 82)",
+            "borderColor": "rgb(209, 67, 91)",
           },
           null,
         ]
@@ -2010,7 +2010,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to error 1`]
                   "marginEnd": 4,
                 },
                 Object {
-                  "color": "rgb(255, 84, 82)",
+                  "color": "rgb(209, 67, 91)",
                 },
               ],
             ]
@@ -2255,7 +2255,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to success 1
             "borderWidth": 1,
           },
           Object {
-            "borderColor": "rgb(0, 215, 117)",
+            "borderColor": "rgb(0, 166, 152)",
           },
           null,
         ]
@@ -2290,7 +2290,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to success 1
                   "marginEnd": 4,
                 },
                 Object {
-                  "color": "rgb(0, 215, 117)",
+                  "color": "rgb(0, 166, 152)",
                 },
               ],
             ]
@@ -2335,7 +2335,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to success 1
             "borderWidth": 1,
           },
           Object {
-            "borderColor": "rgb(0, 215, 117)",
+            "borderColor": "rgb(0, 166, 152)",
           },
           null,
         ]
@@ -2370,7 +2370,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to success 1
                   "marginEnd": 4,
                 },
                 Object {
-                  "color": "rgb(0, 215, 117)",
+                  "color": "rgb(0, 166, 152)",
                 },
               ],
             ]
@@ -2435,7 +2435,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to warn 1`] 
             "borderWidth": 1,
           },
           Object {
-            "borderColor": "rgb(255, 187, 0)",
+            "borderColor": "rgb(255, 181, 77)",
           },
           null,
         ]
@@ -2470,7 +2470,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to warn 1`] 
                   "marginEnd": 4,
                 },
                 Object {
-                  "color": "rgb(255, 187, 0)",
+                  "color": "rgb(255, 181, 77)",
                 },
               ],
             ]
@@ -2515,7 +2515,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to warn 1`] 
             "borderWidth": 1,
           },
           Object {
-            "borderColor": "rgb(255, 187, 0)",
+            "borderColor": "rgb(255, 181, 77)",
           },
           null,
         ]
@@ -2550,7 +2550,7 @@ exports[`iOS BpkBannerAlert should render correctly with type equal to warn 1`] 
                   "marginEnd": 4,
                 },
                 Object {
-                  "color": "rgb(255, 187, 0)",
+                  "color": "rgb(255, 181, 77)",
                 },
               ],
             ]

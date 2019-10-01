@@ -19,13 +19,13 @@
 /* @flow */
 
 import {
-  colorBlue500,
+  colorSkyBlue,
   colorPrimaryGradientLight,
 } from 'bpk-tokens/tokens/base.react.native';
 
 import gradients from './gradients';
 
-const colors = [colorBlue500, colorPrimaryGradientLight];
+const colors = [colorSkyBlue, colorPrimaryGradientLight];
 
 describe('gradients', () => {
   describe('primary', () => {

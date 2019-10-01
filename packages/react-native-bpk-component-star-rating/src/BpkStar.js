@@ -25,7 +25,7 @@ import BpkIcon, { icons } from 'react-native-bpk-component-icon';
 import {
   spacingMd,
   spacingSm,
-  colorYellow500,
+  colorErfoud,
   colorGray100,
 } from 'bpk-tokens/tokens/base.react.native';
 import {
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     zIndex: 2,
   },
   filled: {
-    color: colorYellow500,
+    color: colorErfoud,
   },
   rightToLeftHalfStar: {
     transform: [{ scaleX: -1 }],

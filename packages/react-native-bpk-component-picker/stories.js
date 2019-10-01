@@ -24,7 +24,7 @@ import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react-native';
 import BpkButton from 'react-native-bpk-component-button';
 import {
-  colorGreen500,
+  colorMonteverde,
   spacingBase,
   spacingMd,
 } from 'bpk-tokens/tokens/base.react.native';
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   priceText: {
-    color: colorGreen500,
+    color: colorMonteverde,
     paddingRight: spacingMd,
   },
 });

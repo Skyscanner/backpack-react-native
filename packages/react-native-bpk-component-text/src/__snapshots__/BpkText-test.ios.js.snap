@@ -457,7 +457,7 @@ exports[`iOS BpkText should support overwriting styles 1`] = `
       },
       Object {},
       Object {
-        "color": "rgb(255, 84, 82)",
+        "color": "rgb(209, 67, 91)",
       },
     ]
   }

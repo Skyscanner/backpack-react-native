@@ -42,12 +42,12 @@ const dialogDescription =
 
 const dialogIcon = {
   iconId: icons.tick,
-  iconColor: 'colorGreen500',
+  iconColor: 'colorMonteverde',
 };
 
 const destructiveIcon = {
   iconId: icons.trash,
-  iconColor: 'colorRed500',
+  iconColor: 'colorPanjin',
 };
 
 const defaultScrimAction = {

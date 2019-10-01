@@ -145,7 +145,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
               },
               Array [
                 Object {
-                  "color": "rgb(0, 157, 189)",
+                  "color": "rgb(7, 112, 227)",
                   "opacity": 0,
                 },
               ],
@@ -280,7 +280,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
               },
               Array [
                 Object {
-                  "color": "rgb(0, 157, 189)",
+                  "color": "rgb(7, 112, 227)",
                   "opacity": 0,
                 },
               ],
@@ -415,7 +415,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
               },
               Array [
                 Object {
-                  "color": "rgb(0, 157, 189)",
+                  "color": "rgb(7, 112, 227)",
                   "opacity": 0,
                 },
               ],
@@ -570,7 +570,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
                     "flex": 1,
                   },
                   Object {
-                    "color": "rgb(0, 157, 189)",
+                    "color": "rgb(7, 112, 227)",
                   },
                 ],
               ]
@@ -594,7 +594,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
               },
               Array [
                 Object {
-                  "color": "rgb(0, 157, 189)",
+                  "color": "rgb(7, 112, 227)",
                   "opacity": 0,
                 },
                 Object {
@@ -732,7 +732,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
               },
               Array [
                 Object {
-                  "color": "rgb(0, 157, 189)",
+                  "color": "rgb(7, 112, 227)",
                   "opacity": 0,
                 },
               ],
@@ -867,7 +867,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
               },
               Array [
                 Object {
-                  "color": "rgb(0, 157, 189)",
+                  "color": "rgb(7, 112, 227)",
                   "opacity": 0,
                 },
               ],

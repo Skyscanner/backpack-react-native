@@ -20,7 +20,7 @@ exports[`RTL InvalidIcon should render correctly 1`] = `
           "right": 9,
         },
         Object {
-          "color": "rgb(255, 84, 82)",
+          "color": "rgb(209, 67, 91)",
         },
       ],
     ]
@@ -50,7 +50,7 @@ exports[`RTL ValidIcon should render correctly 1`] = `
           "right": 9,
         },
         Object {
-          "color": "rgb(0, 215, 117)",
+          "color": "rgb(0, 166, 152)",
         },
       ],
     ]

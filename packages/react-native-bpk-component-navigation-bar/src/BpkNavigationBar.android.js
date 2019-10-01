@@ -27,8 +27,8 @@ import {
   makeThemePropType,
 } from 'react-native-bpk-theming';
 import {
-  colorBlue300,
-  colorBlue500,
+  colorSkyBlueTint01,
+  colorSkyBlue,
   colorWhite,
 } from 'bpk-tokens/tokens/base.react.native';
 
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     paddingHorizontal: 8, // eslint-disable-line backpack/use-tokens
     width: '100%',
-    backgroundColor: colorBlue500,
+    backgroundColor: colorSkyBlue,
     elevation: 3,
   },
   barOuterWithSubtitle: {
@@ -156,7 +156,7 @@ class BpkNavigationBar extends Component<Props, {}> {
     const outerBarStyle = [styles.barOuter];
     const titleStyle = [styles.titleString];
     let tintColor = colorWhite;
-    let disabledTintColor = colorBlue300;
+    let disabledTintColor = colorSkyBlueTint01;
     let touchableColor = colorWhite;
 
     let titleView = null;

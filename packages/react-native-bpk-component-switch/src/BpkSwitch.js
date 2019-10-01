@@ -27,7 +27,7 @@ import {
   withTheme,
 } from 'react-native-bpk-theming';
 import {
-  colorBlue500,
+  colorSkyBlue,
   colorGray100,
   colorGray50,
 } from 'bpk-tokens/tokens/base.react.native';
@@ -38,7 +38,7 @@ const REQUIRED_THEME_ATTRIBUTES = ['switchPrimaryColor'];
 const getColors = (themeAttributes: ?Object, value: ?boolean): Object => {
   const primaryColor = themeAttributes
     ? themeAttributes.switchPrimaryColor
-    : colorBlue500;
+    : colorSkyBlue;
 
   // The color props mean different things based on the platform.
   const colors = Platform.select({

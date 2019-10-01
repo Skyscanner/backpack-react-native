@@ -5,7 +5,7 @@ exports[`android BpkNavigationBar should render correctly 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(0, 178, 214)",
+        "backgroundColor": "rgb(7, 112, 227)",
         "elevation": 3,
         "flexDirection": "column",
         "paddingHorizontal": 8,
@@ -133,7 +133,7 @@ exports[`android BpkNavigationBar should render correctly with a subtitle view 1
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(0, 178, 214)",
+        "backgroundColor": "rgb(7, 112, 227)",
         "elevation": 3,
         "flexDirection": "column",
         "paddingHorizontal": 8,
@@ -275,7 +275,7 @@ exports[`android BpkNavigationBar should render correctly with a title view 1`] 
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(0, 178, 214)",
+        "backgroundColor": "rgb(7, 112, 227)",
         "elevation": 3,
         "flexDirection": "column",
         "paddingHorizontal": 8,
@@ -384,7 +384,7 @@ exports[`android BpkNavigationBar should render correctly with an icon in the ti
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(0, 178, 214)",
+        "backgroundColor": "rgb(7, 112, 227)",
         "elevation": 3,
         "flexDirection": "column",
         "paddingHorizontal": 8,
@@ -540,7 +540,7 @@ exports[`android BpkNavigationBar should render correctly with custom style 1`] 
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(0, 178, 214)",
+        "backgroundColor": "rgb(7, 112, 227)",
         "elevation": 3,
         "flexDirection": "column",
         "paddingHorizontal": 8,
@@ -671,7 +671,7 @@ exports[`android BpkNavigationBar should render correctly with custom theme 1`] 
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(0, 178, 214)",
+        "backgroundColor": "rgb(7, 112, 227)",
         "elevation": 3,
         "flexDirection": "column",
         "paddingHorizontal": 8,
@@ -802,7 +802,7 @@ exports[`android BpkNavigationBar should render correctly with trailing button 1
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(0, 178, 214)",
+        "backgroundColor": "rgb(7, 112, 227)",
         "elevation": 3,
         "flexDirection": "column",
         "paddingHorizontal": 8,

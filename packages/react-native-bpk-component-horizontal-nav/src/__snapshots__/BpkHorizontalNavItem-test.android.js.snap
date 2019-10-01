@@ -104,7 +104,7 @@ exports[`Android BpkHorizontalNavItem should render correctly with "selected" pr
             "paddingHorizontal": 16,
           },
           Object {
-            "color": "rgb(0, 140, 168)",
+            "color": "rgb(7, 112, 227)",
           },
         ],
       ]

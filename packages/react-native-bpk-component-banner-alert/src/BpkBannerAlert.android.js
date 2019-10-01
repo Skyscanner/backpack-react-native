@@ -23,11 +23,11 @@ import {
   spacingMd,
   spacingBase,
   spacingLg,
-  colorRed500,
+  colorPanjin,
   colorGray50,
   colorGray500,
-  colorGreen500,
-  colorYellow500,
+  colorMonteverde,
+  colorErfoud,
   borderRadiusSm,
 } from 'bpk-tokens/tokens/base.react.native';
 import { StyleSheet, View } from 'react-native';
@@ -63,13 +63,13 @@ const STYLES = StyleSheet.create({
     marginEnd: spacingMd,
   },
   iconSuccess: {
-    color: colorGreen500,
+    color: colorMonteverde,
   },
   iconWarn: {
-    color: colorYellow500,
+    color: colorErfoud,
   },
   iconError: {
-    color: colorRed500,
+    color: colorPanjin,
   },
   iconNeutral: {
     color: colorGray500,

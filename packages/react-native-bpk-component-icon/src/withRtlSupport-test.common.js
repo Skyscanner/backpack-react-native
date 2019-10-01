@@ -20,7 +20,7 @@
 
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { colorBlue500 } from 'bpk-tokens/tokens/base.react.native';
+import { colorSkyBlue } from 'bpk-tokens/tokens/base.react.native';
 
 import BpkIcon, { icons } from './BpkIcon';
 import withRtlSupport from './withRtlSupport';
@@ -49,7 +49,7 @@ const commonTests = () => {
         .create(
           <BpkIconWithRtlSupport
             icon={icons.beer}
-            style={{ color: colorBlue500 }}
+            style={{ color: colorSkyBlue }}
           />,
         )
         .toJSON();

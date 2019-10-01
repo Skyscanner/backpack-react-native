@@ -27,7 +27,7 @@ import {
   spacingMd,
   spacingBase,
   spacingLg,
-  colorBlue600,
+  colorSkyBlue,
 } from 'bpk-tokens/tokens/base.react.native';
 import { getThemeAttributes, withTheme } from 'react-native-bpk-theming';
 
@@ -59,13 +59,13 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   textSelected: {
-    color: colorBlue600,
+    color: colorSkyBlue,
   },
   image: {
     marginRight: spacingLg,
   },
   tick: {
-    color: colorBlue600,
+    color: colorSkyBlue,
     opacity: 0,
   },
   tickVisible: {

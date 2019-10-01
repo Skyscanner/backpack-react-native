@@ -20,7 +20,7 @@
 
 import { StyleSheet } from 'react-native';
 import {
-  colorBlue500,
+  colorSkyBlue,
   colorGray300,
   spacingSm,
   spacingXl,
@@ -40,13 +40,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row-reverse',
   },
   text: {
-    color: colorBlue500,
+    color: colorSkyBlue,
   },
   textDisabled: {
     color: colorGray300,
   },
   icon: {
-    color: colorBlue500,
+    color: colorSkyBlue,
     marginLeft: spacingSm,
   },
   iconLeading: {

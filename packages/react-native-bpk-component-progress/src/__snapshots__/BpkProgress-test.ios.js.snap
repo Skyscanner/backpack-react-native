@@ -22,7 +22,7 @@ exports[`IOS BpkProgress should not go bellow the min bound 1`] = `
   <View
     style={
       Object {
-        "backgroundColor": "rgb(0, 215, 117)",
+        "backgroundColor": "rgb(0, 166, 152)",
         "borderRadius": 40,
         "height": 8,
         "width": 0,
@@ -54,7 +54,7 @@ exports[`IOS BpkProgress should not go over the max bound 1`] = `
   <View
     style={
       Object {
-        "backgroundColor": "rgb(0, 215, 117)",
+        "backgroundColor": "rgb(0, 166, 152)",
         "borderRadius": 40,
         "height": 8,
         "width": 4,
@@ -86,7 +86,7 @@ exports[`IOS BpkProgress should render correctly 1`] = `
   <View
     style={
       Object {
-        "backgroundColor": "rgb(0, 215, 117)",
+        "backgroundColor": "rgb(0, 166, 152)",
         "borderRadius": 40,
         "height": 8,
         "width": 0.4,
@@ -118,7 +118,7 @@ exports[`IOS BpkProgress should render correctly with "min" and "max" attributes
   <View
     style={
       Object {
-        "backgroundColor": "rgb(0, 215, 117)",
+        "backgroundColor": "rgb(0, 166, 152)",
         "borderRadius": 40,
         "height": 8,
         "width": 0.8,
@@ -150,7 +150,7 @@ exports[`IOS BpkProgress should render correctly with a "fillStyle" attribute 1`
   <View
     style={
       Object {
-        "backgroundColor": "rgb(255, 84, 82)",
+        "backgroundColor": "rgb(209, 67, 91)",
         "borderRadius": 40,
         "height": 8,
         "width": 0,
@@ -184,7 +184,7 @@ exports[`IOS BpkProgress should render correctly with a "style" attribute 1`] = 
   <View
     style={
       Object {
-        "backgroundColor": "rgb(0, 215, 117)",
+        "backgroundColor": "rgb(0, 166, 152)",
         "borderRadius": 40,
         "height": 8,
         "width": 0,
@@ -215,7 +215,7 @@ exports[`IOS BpkProgress should render correctly with a "type" attribute 1`] = `
   <View
     style={
       Object {
-        "backgroundColor": "rgb(0, 215, 117)",
+        "backgroundColor": "rgb(0, 166, 152)",
         "height": 8,
         "width": 0,
       }
@@ -246,7 +246,7 @@ exports[`IOS BpkProgress should render correctly with accessibilityLabel passed 
   <View
     style={
       Object {
-        "backgroundColor": "rgb(0, 215, 117)",
+        "backgroundColor": "rgb(0, 166, 152)",
         "borderRadius": 40,
         "height": 8,
         "width": 0,

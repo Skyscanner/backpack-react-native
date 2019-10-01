@@ -20,7 +20,7 @@
 
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { colorBlue500 } from 'bpk-tokens/tokens/base.react.native';
+import { colorSkyBlue } from 'bpk-tokens/tokens/base.react.native';
 
 import BpkIcon, { icons } from './BpkIcon';
 
@@ -40,7 +40,7 @@ const commonTests = () => {
 
     it('should apply user props', () => {
       const tree = renderer
-        .create(<BpkIcon icon={icons.beer} style={{ color: colorBlue500 }} />)
+        .create(<BpkIcon icon={icons.beer} style={{ color: colorSkyBlue }} />)
         .toJSON();
       expect(tree).toMatchSnapshot();
     });

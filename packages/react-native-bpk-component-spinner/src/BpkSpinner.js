@@ -28,7 +28,7 @@ import {
   type Theme,
 } from 'react-native-bpk-theming';
 import {
-  colorBlue500,
+  colorSkyBlue,
   colorWhite,
   colorGray700,
 } from 'bpk-tokens/tokens/base.react.native';
@@ -45,7 +45,7 @@ const REQUIRED_THEME_ATTRIBUTES = ['spinnerPrimaryColor'];
 
 const getSpinnerColor = (themeAttributes: ?Object, type: SpinnerType) => {
   const colorMappings = {
-    [SPINNER_TYPES.primary]: colorBlue500,
+    [SPINNER_TYPES.primary]: colorSkyBlue,
     [SPINNER_TYPES.light]: colorWhite,
     [SPINNER_TYPES.dark]: colorGray700,
   };

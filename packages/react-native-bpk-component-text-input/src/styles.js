@@ -22,12 +22,12 @@ import { StyleSheet, I18nManager } from 'react-native';
 import AnimatedValue from 'react-native/Libraries/Animated/src/nodes/AnimatedValue';
 import {
   borderSizeSm,
-  colorBlue500,
+  colorSkyBlue,
   colorGray100,
   colorGray300,
   colorGray500,
   colorGray900,
-  colorRed500,
+  colorPanjin,
   fontFamily,
   spacingMd,
   spacingSm,
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
     textAlign: I18nManager.isRTL ? 'right' : 'left',
   },
   validationMessage: {
-    color: colorRed500,
+    color: colorPanjin,
     paddingTop: spacingSm,
   },
   description: {
@@ -112,7 +112,7 @@ const getLabelColorValue = (
   if (!value && !hasAccessoryView) {
     return colorGray300;
   }
-  return valid === false ? colorRed500 : colorGray500;
+  return valid === false ? colorPanjin : colorGray500;
 };
 
 const getLabelPosition = (hasAccessoryView: boolean): number =>
@@ -137,7 +137,7 @@ const getLabelStyle = (
     editable: boolean,
     hasAccessoryView: boolean,
   },
-  focusedColor: String = colorBlue500,
+  focusedColor: String = colorSkyBlue,
 ) => {
   const labelTypography = getLabelTypography(hasAccessoryView);
   const animatedStyle = {
@@ -175,9 +175,9 @@ const getInputContainerStyle = (
   animatedColorValue: AnimatedValue,
   hasAccessoryView: boolean,
   valid: ?boolean,
-  focusedColor: String = colorBlue500,
+  focusedColor: String = colorSkyBlue,
 ) => {
-  const underlineColorValue = valid === false ? colorRed500 : colorGray100;
+  const underlineColorValue = valid === false ? colorPanjin : colorGray100;
   const animatedStyle = {
     borderBottomColor: animatedColorValue.interpolate({
       inputRange: INPUT_RANGE,

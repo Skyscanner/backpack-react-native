@@ -3,14 +3,26 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Required for alert styles demo -->
-        <item name="colorAccent">@color/accent</item>
+        <item name="colorAccent">@color/bpkMonteverde</item>
         <!-- To maintain consistency for all API levels-->
         <item name="android:windowBackground">@color/background</item>
-        <item name="colorPrimary">@color/bpkRed600</item>
+        <item name="colorPrimary">@color/bpkSkyBlue</item>
+        <item name="colorPrimaryDark">@color/bpkSkyBlueTint02</item>
+
+        <item name="alertDialogTheme">@style/AppTheme.AlertDialog</item>
+        <item name="android:alertDialogTheme">?alertDialogTheme</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="AppTheme.AlertDialog" parent="Base.Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:buttonBarButtonStyle">@style/AppTheme.AlertDialog.ButtonBar.Button</item>
+        <item name="buttonBarButtonStyle">@style/AppTheme.AlertDialog.ButtonBar.Button</item>
+    </style>
+
+    <style name="AppTheme.AlertDialog.ButtonBar.Button" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/bpkSkyBlue</item>
+    </style>
 </resources>

@@ -23,7 +23,10 @@ import PropTypes from 'prop-types';
 import { StyleSheet, View } from 'react-native';
 import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-native-feedback';
 import BpkIcon, { icons } from 'react-native-bpk-component-icon';
-import { colorWhite, colorBlue300 } from 'bpk-tokens/tokens/base.react.native';
+import {
+  colorWhite,
+  colorSkyBlueTint01,
+} from 'bpk-tokens/tokens/base.react.native';
 import { setOpacity } from 'bpk-tokens';
 
 // NOTE: this file explicitly does not use the Backpack tokens because it's based on Material design tokens not Backpack.
@@ -58,7 +61,7 @@ const BpkNavigationBarButton = (props: Props) => {
   } = props;
   const touchableColorFinal = touchableColor || colorWhite;
   const tintColorFinal = disabled
-    ? disabledTintColor || colorBlue300
+    ? disabledTintColor || colorSkyBlueTint01
     : tintColor || colorWhite;
   const iconStyle = [styles.icon, { color: tintColorFinal }];
   const accessibilityStates = [];

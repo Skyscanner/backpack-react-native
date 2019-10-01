@@ -60,7 +60,7 @@ exports[`Android BpkButtonLink should render correctly 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
             },
           ],
         ]
@@ -135,7 +135,7 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="leadi
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
             },
           ],
         ]
@@ -158,7 +158,7 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="leadi
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
               "marginLeft": 4,
             },
             Object {
@@ -235,7 +235,7 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="trail
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
             },
           ],
         ]
@@ -258,7 +258,7 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="trail
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
               "marginLeft": 4,
             },
           ],
@@ -332,7 +332,7 @@ exports[`Android BpkButtonLink should render correctly with text props provided 
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
             },
           ],
         ]
@@ -404,7 +404,7 @@ exports[`Android BpkButtonLink should render correctly with theme prop 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
             },
             Object {
               "color": "red",
@@ -479,7 +479,7 @@ exports[`Android BpkButtonLink should support elements as icons 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
             },
           ],
         ]
@@ -569,7 +569,7 @@ exports[`Android BpkButtonLink should support overwriting styles 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
             },
           ],
         ]
@@ -645,7 +645,7 @@ exports[`Android BpkButtonLink should support the "disabled" property 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
             },
             Object {
               "color": "rgb(178, 178, 191)",
@@ -720,7 +720,7 @@ exports[`Android BpkButtonLink should support the "icon" property 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
             },
           ],
         ]
@@ -743,7 +743,7 @@ exports[`Android BpkButtonLink should support the "icon" property 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
               "marginLeft": 4,
             },
           ],
@@ -816,7 +816,7 @@ exports[`Android should support "borderlessBackground" equal to false 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
             },
           ],
         ]
@@ -888,7 +888,7 @@ exports[`Android should support "uppercase" equal to false 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(0, 178, 214)",
+              "color": "rgb(7, 112, 227)",
             },
           ],
         ]

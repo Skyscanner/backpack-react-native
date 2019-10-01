@@ -240,7 +240,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly with type="pr
         Object {},
         Array [
           Object {
-            "color": "rgb(0, 178, 214)",
+            "color": "rgb(7, 112, 227)",
           },
         ],
       ]

@@ -7,7 +7,7 @@ exports[`Android BpkProgress should not go bellow the min bound 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(223, 247, 236)",
+        "backgroundColor": "rgb(208, 238, 236)",
         "height": 8,
       },
       Object {
@@ -22,7 +22,7 @@ exports[`Android BpkProgress should not go bellow the min bound 1`] = `
   <View
     style={
       Object {
-        "backgroundColor": "rgb(0, 215, 117)",
+        "backgroundColor": "rgb(0, 166, 152)",
         "borderRadius": 40,
         "height": 8,
         "width": 0,
@@ -39,7 +39,7 @@ exports[`Android BpkProgress should not go over the max bound 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(223, 247, 236)",
+        "backgroundColor": "rgb(208, 238, 236)",
         "height": 8,
       },
       Object {
@@ -54,7 +54,7 @@ exports[`Android BpkProgress should not go over the max bound 1`] = `
   <View
     style={
       Object {
-        "backgroundColor": "rgb(0, 215, 117)",
+        "backgroundColor": "rgb(0, 166, 152)",
         "borderRadius": 40,
         "height": 8,
         "width": 4,
@@ -71,7 +71,7 @@ exports[`Android BpkProgress should render correctly 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(223, 247, 236)",
+        "backgroundColor": "rgb(208, 238, 236)",
         "height": 8,
       },
       Object {
@@ -86,7 +86,7 @@ exports[`Android BpkProgress should render correctly 1`] = `
   <View
     style={
       Object {
-        "backgroundColor": "rgb(0, 215, 117)",
+        "backgroundColor": "rgb(0, 166, 152)",
         "borderRadius": 40,
         "height": 8,
         "width": 0.4,
@@ -103,7 +103,7 @@ exports[`Android BpkProgress should render correctly with "min" and "max" attrib
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(223, 247, 236)",
+        "backgroundColor": "rgb(208, 238, 236)",
         "height": 8,
       },
       Object {
@@ -118,7 +118,7 @@ exports[`Android BpkProgress should render correctly with "min" and "max" attrib
   <View
     style={
       Object {
-        "backgroundColor": "rgb(0, 215, 117)",
+        "backgroundColor": "rgb(0, 166, 152)",
         "borderRadius": 40,
         "height": 8,
         "width": 0.8,
@@ -135,7 +135,7 @@ exports[`Android BpkProgress should render correctly with a "fillStyle" attribut
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(223, 247, 236)",
+        "backgroundColor": "rgb(208, 238, 236)",
         "height": 8,
       },
       Object {
@@ -150,7 +150,7 @@ exports[`Android BpkProgress should render correctly with a "fillStyle" attribut
   <View
     style={
       Object {
-        "backgroundColor": "rgb(255, 84, 82)",
+        "backgroundColor": "rgb(209, 67, 91)",
         "borderRadius": 40,
         "height": 8,
         "width": 0,
@@ -167,7 +167,7 @@ exports[`Android BpkProgress should render correctly with a "style" attribute 1`
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(223, 247, 236)",
+        "backgroundColor": "rgb(208, 238, 236)",
         "height": 8,
       },
       Object {
@@ -184,7 +184,7 @@ exports[`Android BpkProgress should render correctly with a "style" attribute 1`
   <View
     style={
       Object {
-        "backgroundColor": "rgb(0, 215, 117)",
+        "backgroundColor": "rgb(0, 166, 152)",
         "borderRadius": 40,
         "height": 8,
         "width": 0,
@@ -201,7 +201,7 @@ exports[`Android BpkProgress should render correctly with a "type" attribute 1`]
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(223, 247, 236)",
+        "backgroundColor": "rgb(208, 238, 236)",
         "height": 8,
       },
       Object {
@@ -215,7 +215,7 @@ exports[`Android BpkProgress should render correctly with a "type" attribute 1`]
   <View
     style={
       Object {
-        "backgroundColor": "rgb(0, 215, 117)",
+        "backgroundColor": "rgb(0, 166, 152)",
         "height": 8,
         "width": 0,
       }
@@ -231,7 +231,7 @@ exports[`Android BpkProgress should render correctly with accessibilityLabel pas
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(223, 247, 236)",
+        "backgroundColor": "rgb(208, 238, 236)",
         "height": 8,
       },
       Object {
@@ -246,7 +246,7 @@ exports[`Android BpkProgress should render correctly with accessibilityLabel pas
   <View
     style={
       Object {
-        "backgroundColor": "rgb(0, 215, 117)",
+        "backgroundColor": "rgb(0, 166, 152)",
         "borderRadius": 40,
         "height": 8,
         "width": 0,
@@ -263,7 +263,7 @@ exports[`Android BpkProgress should support theming 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(223, 247, 236)",
+        "backgroundColor": "rgb(208, 238, 236)",
         "height": 8,
       },
       Object {

@@ -4,7 +4,7 @@ exports[`iOS BpkHorizontalNavSelectedIndicator should render correctly 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "rgb(0, 140, 168)",
+      "backgroundColor": "rgb(7, 112, 227)",
       "height": 2,
       "transform": Array [
         Object {

@@ -30,9 +30,9 @@ import {
 import {
   colorGray900,
   colorGray50,
-  colorYellow500,
-  colorRed500,
-  colorGreen500,
+  colorErfoud,
+  colorPanjin,
+  colorMonteverde,
   colorWhite,
   borderRadiusSm,
   borderSizeSm,
@@ -52,13 +52,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   viewWarning: {
-    backgroundColor: colorYellow500,
+    backgroundColor: colorErfoud,
   },
   viewSuccess: {
-    backgroundColor: colorGreen500,
+    backgroundColor: colorMonteverde,
   },
   viewDestructive: {
-    backgroundColor: colorRed500,
+    backgroundColor: colorPanjin,
   },
   viewLight: {
     backgroundColor: colorGray50,

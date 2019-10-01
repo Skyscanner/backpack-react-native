@@ -27,7 +27,7 @@ import {
   type Theme,
 } from 'react-native-bpk-theming';
 import {
-  colorBlue700,
+  colorSkyBlue,
   borderSizeLg,
 } from 'bpk-tokens/tokens/base.react.native';
 
@@ -35,7 +35,7 @@ import { REQUIRED_THEME_ATTRIBUTES, themePropType } from './theming';
 
 const styles = StyleSheet.create({
   selectedIndicator: {
-    backgroundColor: colorBlue700,
+    backgroundColor: colorSkyBlue,
     height: borderSizeLg,
   },
 });

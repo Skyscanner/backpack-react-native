@@ -32,8 +32,8 @@ import {
   animmationDurationBase,
   spacingMd,
   colorGray100,
-  colorGreen500,
-  colorGreen50,
+  colorMonteverde,
+  colorSagano,
   borderRadiusPill,
   spacingXxl,
 } from 'bpk-tokens/tokens/base.react.native';
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
   track: {
     backgroundColor: Platform.select({
       ios: () => colorGray100,
-      android: () => colorGreen50,
+      android: () => colorSagano,
     })(),
     height: spacingMd,
   },
@@ -61,14 +61,14 @@ const styles = StyleSheet.create({
     width: spacingXxl * 3,
   },
   defaultFillStyle: {
-    backgroundColor: colorGreen500,
+    backgroundColor: colorMonteverde,
     borderRadius: borderRadiusPill,
   },
   barTrackStyle: {
     width: '100%',
   },
   barFillStyle: {
-    backgroundColor: colorGreen500,
+    backgroundColor: colorMonteverde,
   },
 });
 

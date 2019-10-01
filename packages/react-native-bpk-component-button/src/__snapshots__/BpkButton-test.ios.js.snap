@@ -19,8 +19,8 @@ exports[`iOS BpkButton should render correctly 1`] = `
   <View
     colors={
       Array [
-        "rgb(0, 215, 117)",
-        "rgb(0, 189, 104)",
+        "rgb(0, 166, 152)",
+        "rgb(0, 166, 152)",
       ]
     }
     style={
@@ -34,7 +34,7 @@ exports[`iOS BpkButton should render correctly 1`] = `
         },
         null,
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -78,7 +78,7 @@ exports[`iOS BpkButton should render correctly 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
       ]
     }
@@ -105,8 +105,8 @@ exports[`iOS BpkButton should render correctly with iconAlignment="leading" 1`] 
   <View
     colors={
       Array [
-        "rgb(0, 215, 117)",
-        "rgb(0, 189, 104)",
+        "rgb(0, 166, 152)",
+        "rgb(0, 166, 152)",
       ]
     }
     style={
@@ -120,7 +120,7 @@ exports[`iOS BpkButton should render correctly with iconAlignment="leading" 1`] 
         },
         null,
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
       ]
     }
@@ -187,7 +187,7 @@ exports[`iOS BpkButton should render correctly with iconAlignment="leading" 1`] 
           "top": 0,
         },
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
       ]
     }
@@ -214,8 +214,8 @@ exports[`iOS BpkButton should render correctly with iconAlignment="trailing" 1`]
   <View
     colors={
       Array [
-        "rgb(0, 215, 117)",
-        "rgb(0, 189, 104)",
+        "rgb(0, 166, 152)",
+        "rgb(0, 166, 152)",
       ]
     }
     style={
@@ -229,7 +229,7 @@ exports[`iOS BpkButton should render correctly with iconAlignment="trailing" 1`]
         },
         null,
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -303,7 +303,7 @@ exports[`iOS BpkButton should render correctly with iconAlignment="trailing" 1`]
           "top": 0,
         },
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
       ]
     }
@@ -342,7 +342,7 @@ exports[`iOS BpkButton should render correctly with type="destructive" 1`] = `
         Object {
           "backgroundColor": "rgb(255, 255, 255)",
           "borderColor": "rgb(221, 221, 229)",
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -364,7 +364,7 @@ exports[`iOS BpkButton should render correctly with type="destructive" 1`] = `
             "fontWeight": "600",
           },
           Object {
-            "color": "rgb(255, 84, 82)",
+            "color": "rgb(209, 67, 91)",
           },
         ]
       }
@@ -386,7 +386,7 @@ exports[`iOS BpkButton should render correctly with type="destructive" 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
         Object {
           "borderColor": "rgb(221, 221, 229)",
@@ -433,7 +433,7 @@ exports[`iOS BpkButton should render correctly with type="destructive" and disab
         Object {
           "backgroundColor": "rgb(221, 221, 229)",
           "borderColor": "rgb(221, 221, 229)",
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -477,7 +477,7 @@ exports[`iOS BpkButton should render correctly with type="destructive" and disab
           "top": 0,
         },
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
         Object {
           "borderColor": "rgb(221, 221, 229)",
@@ -508,8 +508,8 @@ exports[`iOS BpkButton should render correctly with type="featured" 1`] = `
   <View
     colors={
       Array [
-        "rgb(250, 72, 138)",
-        "rgb(217, 43, 107)",
+        "rgb(7, 112, 227)",
+        "rgb(7, 112, 227)",
       ]
     }
     style={
@@ -523,7 +523,7 @@ exports[`iOS BpkButton should render correctly with type="featured" 1`] = `
         },
         null,
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -567,7 +567,7 @@ exports[`iOS BpkButton should render correctly with type="featured" 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
       ]
     }
@@ -613,7 +613,7 @@ exports[`iOS BpkButton should render correctly with type="featured" and disabled
         },
         null,
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -657,7 +657,7 @@ exports[`iOS BpkButton should render correctly with type="featured" and disabled
           "top": 0,
         },
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
       ]
     }
@@ -684,8 +684,8 @@ exports[`iOS BpkButton should render correctly with type="primary" 1`] = `
   <View
     colors={
       Array [
-        "rgb(0, 215, 117)",
-        "rgb(0, 189, 104)",
+        "rgb(0, 166, 152)",
+        "rgb(0, 166, 152)",
       ]
     }
     style={
@@ -699,7 +699,7 @@ exports[`iOS BpkButton should render correctly with type="primary" 1`] = `
         },
         null,
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -743,7 +743,7 @@ exports[`iOS BpkButton should render correctly with type="primary" 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
       ]
     }
@@ -789,7 +789,7 @@ exports[`iOS BpkButton should render correctly with type="primary" and disabled 
         },
         null,
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -833,7 +833,7 @@ exports[`iOS BpkButton should render correctly with type="primary" and disabled 
           "top": 0,
         },
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
       ]
     }
@@ -872,7 +872,7 @@ exports[`iOS BpkButton should render correctly with type="secondary" 1`] = `
         Object {
           "backgroundColor": "rgb(255, 255, 255)",
           "borderColor": "rgb(221, 221, 229)",
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -894,7 +894,7 @@ exports[`iOS BpkButton should render correctly with type="secondary" 1`] = `
             "fontWeight": "600",
           },
           Object {
-            "color": "rgb(0, 178, 214)",
+            "color": "rgb(7, 112, 227)",
           },
         ]
       }
@@ -916,7 +916,7 @@ exports[`iOS BpkButton should render correctly with type="secondary" 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
         Object {
           "borderColor": "rgb(221, 221, 229)",
@@ -963,7 +963,7 @@ exports[`iOS BpkButton should render correctly with type="secondary" and disable
         Object {
           "backgroundColor": "rgb(221, 221, 229)",
           "borderColor": "rgb(221, 221, 229)",
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1007,7 +1007,7 @@ exports[`iOS BpkButton should render correctly with type="secondary" and disable
           "top": 0,
         },
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
         Object {
           "borderColor": "rgb(221, 221, 229)",
@@ -1038,8 +1038,8 @@ exports[`iOS BpkButton should support elements as icons 1`] = `
   <View
     colors={
       Array [
-        "rgb(0, 215, 117)",
-        "rgb(0, 189, 104)",
+        "rgb(0, 166, 152)",
+        "rgb(0, 166, 152)",
       ]
     }
     style={
@@ -1141,8 +1141,8 @@ exports[`iOS BpkButton should support having an icon as well as a title 1`] = `
   <View
     colors={
       Array [
-        "rgb(0, 215, 117)",
-        "rgb(0, 189, 104)",
+        "rgb(0, 166, 152)",
+        "rgb(0, 166, 152)",
       ]
     }
     style={
@@ -1156,7 +1156,7 @@ exports[`iOS BpkButton should support having an icon as well as a title 1`] = `
         },
         null,
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1230,7 +1230,7 @@ exports[`iOS BpkButton should support having an icon as well as a title 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
       ]
     }
@@ -1261,8 +1261,8 @@ exports[`iOS BpkButton should support overwriting styles 1`] = `
   <View
     colors={
       Array [
-        "rgb(0, 215, 117)",
-        "rgb(0, 189, 104)",
+        "rgb(0, 166, 152)",
+        "rgb(0, 166, 152)",
       ]
     }
     style={
@@ -1276,7 +1276,7 @@ exports[`iOS BpkButton should support overwriting styles 1`] = `
         },
         null,
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1320,7 +1320,7 @@ exports[`iOS BpkButton should support overwriting styles 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
       ]
     }
@@ -1366,7 +1366,7 @@ exports[`iOS BpkButton should support the "disabled" property 1`] = `
         },
         null,
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1410,7 +1410,7 @@ exports[`iOS BpkButton should support the "disabled" property 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
       ]
     }
@@ -1437,8 +1437,8 @@ exports[`iOS BpkButton should support the "icon" property 1`] = `
   <View
     colors={
       Array [
-        "rgb(0, 215, 117)",
-        "rgb(0, 189, 104)",
+        "rgb(0, 166, 152)",
+        "rgb(0, 166, 152)",
       ]
     }
     style={
@@ -1452,7 +1452,7 @@ exports[`iOS BpkButton should support the "icon" property 1`] = `
         },
         null,
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1526,7 +1526,7 @@ exports[`iOS BpkButton should support the "icon" property 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
       ]
     }
@@ -1553,8 +1553,8 @@ exports[`iOS BpkButton should support the "iconOnly" property 1`] = `
   <View
     colors={
       Array [
-        "rgb(0, 215, 117)",
-        "rgb(0, 189, 104)",
+        "rgb(0, 166, 152)",
+        "rgb(0, 166, 152)",
       ]
     }
     style={
@@ -1667,7 +1667,7 @@ exports[`iOS BpkButton should support the "secondary" property 1`] = `
         Object {
           "backgroundColor": "rgb(255, 255, 255)",
           "borderColor": "rgb(221, 221, 229)",
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1689,7 +1689,7 @@ exports[`iOS BpkButton should support the "secondary" property 1`] = `
             "fontWeight": "600",
           },
           Object {
-            "color": "rgb(0, 178, 214)",
+            "color": "rgb(7, 112, 227)",
           },
         ]
       }
@@ -1711,7 +1711,7 @@ exports[`iOS BpkButton should support the "secondary" property 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
         Object {
           "borderColor": "rgb(221, 221, 229)",
@@ -1930,8 +1930,8 @@ exports[`iOS should support the "icon" and "large" property 1`] = `
   <View
     colors={
       Array [
-        "rgb(0, 215, 117)",
-        "rgb(0, 189, 104)",
+        "rgb(0, 166, 152)",
+        "rgb(0, 166, 152)",
       ]
     }
     style={
@@ -1948,7 +1948,7 @@ exports[`iOS should support the "icon" and "large" property 1`] = `
           "paddingVertical": 12,
         },
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -2019,7 +2019,7 @@ exports[`iOS should support the "icon" and "large" property 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
       ]
     }
@@ -2046,8 +2046,8 @@ exports[`iOS should support the "iconOnly" and "large" property 1`] = `
   <View
     colors={
       Array [
-        "rgb(0, 215, 117)",
-        "rgb(0, 189, 104)",
+        "rgb(0, 166, 152)",
+        "rgb(0, 166, 152)",
       ]
     }
     style={
@@ -2163,7 +2163,7 @@ exports[`iOS should support the "large" and secondary property 1`] = `
         Object {
           "backgroundColor": "rgb(255, 255, 255)",
           "borderColor": "rgb(221, 221, 229)",
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -2185,7 +2185,7 @@ exports[`iOS should support the "large" and secondary property 1`] = `
             "fontWeight": "600",
           },
           Object {
-            "color": "rgb(0, 178, 214)",
+            "color": "rgb(7, 112, 227)",
           },
         ]
       }
@@ -2207,7 +2207,7 @@ exports[`iOS should support the "large" and secondary property 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
         Object {
           "borderColor": "rgb(221, 221, 229)",
@@ -2238,8 +2238,8 @@ exports[`iOS should support the "large" property 1`] = `
   <View
     colors={
       Array [
-        "rgb(0, 215, 117)",
-        "rgb(0, 189, 104)",
+        "rgb(0, 166, 152)",
+        "rgb(0, 166, 152)",
       ]
     }
     style={
@@ -2256,7 +2256,7 @@ exports[`iOS should support the "large" property 1`] = `
           "paddingVertical": 12,
         },
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -2300,7 +2300,7 @@ exports[`iOS should support the "large" property 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 40,
+          "borderRadius": 4,
         },
       ]
     }

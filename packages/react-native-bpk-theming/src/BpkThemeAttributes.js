@@ -19,7 +19,7 @@
 
 import { type Node } from 'react';
 import {
-  colorBlue500,
+  colorSkyBlue,
   colorGray50,
   colorGray100,
   colorGray200,
@@ -91,7 +91,7 @@ export type Props = {
 const BpkThemeAttributes = (props: Props) => {
   const { theme, children } = props;
   const primaryColor =
-    theme && theme.primaryColor != null ? theme.primaryColor : colorBlue500;
+    theme && theme.primaryColor != null ? theme.primaryColor : colorSkyBlue;
   const gray50 =
     theme && theme.colorGray50 != null ? theme.colorGray50 : colorGray50;
   const gray100 =

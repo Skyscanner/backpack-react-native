@@ -208,7 +208,7 @@ exports[`iOS BpkChip should render correctly with "selected" 1`] = `
           "shadowRadius": 1.5,
         },
         Object {
-          "backgroundColor": "rgb(0, 178, 214)",
+          "backgroundColor": "rgb(7, 112, 227)",
         },
       ],
       Array [],
@@ -564,7 +564,7 @@ exports[`iOS BpkChip should support theming when selected 1`] = `
           "shadowRadius": 1.5,
         },
         Object {
-          "backgroundColor": "rgb(0, 178, 214)",
+          "backgroundColor": "rgb(7, 112, 227)",
         },
         Object {
           "backgroundColor": "red",
