@@ -2,6 +2,33 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-10-01
+
+**Breaking:**
+
+- Update to new colours:
+  - react-native-bpk-component-badge: 4.0.4 => 5.0.0
+  - react-native-bpk-component-banner-alert: 6.0.10 => 7.0.0
+  - react-native-bpk-component-button-link: 5.0.10 => 6.0.0
+  - react-native-bpk-component-button: 10.0.10 => 11.0.0
+  - react-native-bpk-component-calendar: 3.0.7 => 4.0.0
+  - react-native-bpk-component-chip: 4.1.7 => 5.0.0
+  - react-native-bpk-component-dialog: 3.0.7 => 4.0.0
+  - react-native-bpk-component-flat-list: 4.0.11 => 5.0.0
+  - react-native-bpk-component-horizontal-nav: 5.0.7 => 6.0.0
+  - react-native-bpk-component-navigation-bar: 6.0.10 => 7.0.0
+  - react-native-bpk-component-nudger: 3.0.10 => 4.0.0
+  - react-native-bpk-component-phone-input: 4.1.3 => 5.0.0
+  - react-native-bpk-component-picker: 4.0.10 => 5.0.0
+  - react-native-bpk-component-progress: 1.0.61 => 2.0.0
+  - react-native-bpk-component-section-list: 4.0.11 => 5.0.0
+  - react-native-bpk-component-select: 3.0.10 => 4.0.0
+  - react-native-bpk-component-spinner: 1.0.97 => 2.0.0
+  - react-native-bpk-component-star-rating: 1.1.19 => 2.0.0
+  - react-native-bpk-component-switch: 2.0.7 => 3.0.0
+  - react-native-bpk-component-text-input: 3.1.21 => 4.0.0
+  - react-native-bpk-styles: 1.1.50 => 2.0.0
+
 # 2019-09-30
 
 **Fixed:**
