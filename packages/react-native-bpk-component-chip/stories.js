@@ -27,6 +27,7 @@ import {
   spacingSm,
   spacingBase,
   spacingLg,
+  colorSkyBlueShade03,
 } from 'bpk-tokens/tokens/base.react.native';
 import BpkThemeProvider from 'react-native-bpk-theming';
 
@@ -53,8 +54,7 @@ const styles = StyleSheet.create({
 
 const outlineStyles = StyleSheet.create({
   row: {
-    // eslint-disable-next-line backpack/use-tokens
-    backgroundColor: '#388E8E',
+    backgroundColor: colorSkyBlueShade03,
   },
 });
 
@@ -237,8 +237,8 @@ storiesOf('react-native-bpk-component-chip', module)
     </View>
   ))
   .add('docs:outline', () => (
-    <View style={styles.bottomMargin}>
-      <View style={[styles.row, outlineStyles.row]}>
+    <View style={[styles.bottomMargin, outlineStyles.row]}>
+      <View style={styles.row}>
         {COUNTRIES.map((country, index) => (
           <BpkChip
             key={country}
