@@ -49,7 +49,7 @@ type TextStyleProp = $PropertyType<TextProps, 'style'>;
 export type Props = {
   icon: string,
   small?: boolean,
-  style: TextStyleProp,
+  style?: TextStyleProp,
 };
 
 const BpkIcon = (props: Props) => {
