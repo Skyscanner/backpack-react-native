@@ -444,7 +444,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Backpack Native/Pods-Backpack Native-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Backpack Native/Pods-Backpack Native-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/Backpack/Icon.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -453,7 +453,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Backpack Native/Pods-Backpack Native-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Backpack Native/Pods-Backpack Native-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B20BA0FEC10E3BCE40A8EEA6 /* [CP] Check Pods Manifest.lock */ = {
