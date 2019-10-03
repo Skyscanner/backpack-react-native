@@ -46,9 +46,7 @@ const getDisplayName = (Component: ComponentType<*>) => {
   return Component.displayName || Component.name || 'Component';
 };
 
-const withRtlSupport = (
-  IconComponent: ComponentType<BpkIconProps>,
-): ComponentType<BpkIconProps> => {
+const withRtlSupport = (IconComponent: typeof BpkIcon): typeof BpkIcon => {
   const WithRtlSupport = (props: BpkIconProps) => {
     const { style: userStyle, ...rest } = props;
     const rtlStyle = [styles.rtl];
@@ -76,6 +74,7 @@ const withRtlSupport = (
     )})`;
   }
 
+  // $FlowFixMe
   return WithRtlSupport;
 };
 
