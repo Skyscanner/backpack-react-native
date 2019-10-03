@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-10-03
+
+**Fixed:**
+
+- react-native-bpk-component-icon: 2.0.10 => 2.0.11
+  - Fixed some flow type issues in `withRtlSupport`.
+
 # 2019-10-01
 
 **Breaking:**
