@@ -75,6 +75,7 @@ import com.android.build.OutputFile
 
 project.ext.react = [ entryFile: "index.android.js" ]
 apply from: "../../node_modules/react-native/react.gradle"
+apply from: "../../packages/react-native-bpk-component-icon/fonts.gradle"
 apply plugin: 'kotlin-android-extensions'
 
 /**
