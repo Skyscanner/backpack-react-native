@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-10-10
+
+**Added:**
+
+- react-native-bpk-component-icon: 2.0.12 => 2.1.0
+  - Added `document` and `printer` icons.
+
 # 2019-10-03
 
 **Fixed:**
