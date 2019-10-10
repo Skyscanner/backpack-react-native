@@ -20,14 +20,14 @@
 import { type Node } from 'react';
 import {
   colorSkyBlue,
-  colorSkyGrayTint07,
-  colorSkyGrayTint06,
-  colorSkyGrayTint05,
-  colorSkyGrayTint04,
-  colorSkyGrayTint03,
-  colorSkyGrayTint02,
-  colorSkyGrayTint01,
   colorSkyGray,
+  colorSkyGrayTint01,
+  colorSkyGrayTint02,
+  colorSkyGrayTint03,
+  colorSkyGrayTint04,
+  colorSkyGrayTint05,
+  colorSkyGrayTint06,
+  colorSkyGrayTint07,
   fontFamily,
 } from 'bpk-tokens/tokens/base.react.native';
 
@@ -36,13 +36,13 @@ import { withTheme } from './BpkThemeProvider';
 type Attributes = {
   primaryColor: string,
   colorGray50: string,
-  colorSkyGrayTint06: string,
-  colorSkyGrayTint05: string,
-  colorSkyGrayTint04: string,
-  colorSkyGrayTint03: string,
-  colorSkyGrayTint02: string,
-  colorSkyGrayTint01: string,
-  colorSkyGray: string,
+  colorGray100: string,
+  colorGray200: string,
+  colorGray300: string,
+  colorGray400: string,
+  colorGray500: string,
+  colorGray700: string,
+  colorGray900: string,
   textFontFamily: string,
 };
 
@@ -51,13 +51,13 @@ export type Props = {
   theme: {
     primaryColor: string,
     colorGray50: string,
-    colorSkyGrayTint06: string,
-    colorSkyGrayTint05: string,
-    colorSkyGrayTint04: string,
-    colorSkyGrayTint03: string,
-    colorSkyGrayTint02: string,
-    colorSkyGrayTint01: string,
-    colorSkyGray: string,
+    colorGray100: string,
+    colorGray200: string,
+    colorGray300: string,
+    colorGray400: string,
+    colorGray500: string,
+    colorGray700: string,
+    colorGray900: string,
     textFontFamily: string,
   },
 };
@@ -70,13 +70,13 @@ export type Props = {
  * Supported attributes:
  * + `primaryColor`
  * + `colorGray50`,
- * + `colorSkyGrayTint06`,
- * + `colorSkyGrayTint05`,
- * + `colorSkyGrayTint04`,
- * + `colorSkyGrayTint03`,
- * + `colorSkyGrayTint02`,
- * + `colorSkyGrayTint01`,
- * + `colorSkyGray`,
+ * + `colorGray100`,
+ * + `colorGray200`,
+ * + `colorGray300`,
+ * + `colorGray400`,
+ * + `colorGray500`,
+ * + `colorGray700`,
+ * + `colorGray900`,
  * + `textFontFamily`,
  *
  * @example
@@ -93,48 +93,46 @@ const BpkThemeAttributes = (props: Props) => {
   const primaryColor =
     theme && theme.primaryColor != null ? theme.primaryColor : colorSkyBlue;
   const gray50 =
-    theme && theme.colorSkyGrayTint07 != null
-      ? theme.colorSkyGrayTint07
-      : colorSkyGrayTint07;
+    theme && theme.colorGray50 != null ? theme.colorGray50 : colorSkyGrayTint07;
   const gray100 =
-    theme && theme.colorSkyGrayTint06 != null
-      ? theme.colorSkyGrayTint06
+    theme && theme.colorGray100 != null
+      ? theme.colorGray100
       : colorSkyGrayTint06;
   const gray200 =
-    theme && theme.colorSkyGrayTint05 != null
-      ? theme.colorSkyGrayTint05
+    theme && theme.colorGray200 != null
+      ? theme.colorGray200
       : colorSkyGrayTint05;
   const gray300 =
-    theme && theme.colorSkyGrayTint04 != null
-      ? theme.colorSkyGrayTint04
+    theme && theme.colorGray300 != null
+      ? theme.colorGray300
       : colorSkyGrayTint04;
   const gray400 =
-    theme && theme.colorSkyGrayTint03 != null
-      ? theme.colorSkyGrayTint03
+    theme && theme.colorGray400 != null
+      ? theme.colorGray400
       : colorSkyGrayTint03;
   const gray500 =
-    theme && theme.colorSkyGrayTint02 != null
-      ? theme.colorSkyGrayTint02
+    theme && theme.colorGray500 != null
+      ? theme.colorGray500
       : colorSkyGrayTint02;
   const gray700 =
-    theme && theme.colorSkyGrayTint01 != null
-      ? theme.colorSkyGrayTint01
+    theme && theme.colorGray700 != null
+      ? theme.colorGray700
       : colorSkyGrayTint01;
   const gray900 =
-    theme && theme.colorSkyGray != null ? theme.colorSkyGray : colorSkyGray;
+    theme && theme.colorGray900 != null ? theme.colorGray900 : colorSkyGray;
   const textFontFamily =
     theme && theme.textFontFamily != null ? theme.textFontFamily : fontFamily;
 
   return children({
     primaryColor,
     colorGray50: gray50,
-    colorSkyGrayTint06: gray100,
-    colorSkyGrayTint05: gray200,
-    colorSkyGrayTint04: gray300,
-    colorSkyGrayTint03: gray400,
-    colorSkyGrayTint02: gray500,
-    colorSkyGrayTint01: gray700,
-    colorSkyGray: gray900,
+    colorGray100: gray100,
+    colorGray200: gray200,
+    colorGray300: gray300,
+    colorGray400: gray400,
+    colorGray500: gray500,
+    colorGray700: gray700,
+    colorGray900: gray900,
     textFontFamily,
   });
 };
