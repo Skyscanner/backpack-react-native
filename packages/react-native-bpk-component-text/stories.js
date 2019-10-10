@@ -22,7 +22,7 @@ import React from 'react';
 import {
   colorPanjin,
   colorSkyBlue,
-  colorGray500,
+  colorSkyGrayTint02,
   colorMonteverde,
   colorErfoud,
   colorBunol,
@@ -127,7 +127,7 @@ storiesOf('react-native-bpk-component-text', module)
       <BpkText textStyle="sm" style={{ color: colorSkyBlue }}>
         {TEXT}
       </BpkText>
-      <BpkText textStyle="xs" style={{ color: colorGray500 }}>
+      <BpkText textStyle="xs" style={{ color: colorSkyGrayTint02 }}>
         {TEXT}
       </BpkText>
       <BpkText textStyle="caps" style={{ color: colorPanjin }}>

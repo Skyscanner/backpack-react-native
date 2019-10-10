@@ -22,7 +22,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react-native';
 import BpkThemeProvider from 'react-native-bpk-theming';
 import { View, ScrollView, StyleSheet } from 'react-native';
-import { colorGray900, spacingBase } from 'bpk-tokens/tokens/base.react.native';
+import { colorSkyGray, spacingBase } from 'bpk-tokens/tokens/base.react.native';
 
 import themeAttributes from '../../storybook/themeAttributes';
 import { StoryHeading, StorySubheading } from '../../storybook/TextStyles';
@@ -32,7 +32,7 @@ import BpkSpinner from './index';
 
 const styles = StyleSheet.create({
   dark: {
-    backgroundColor: colorGray900,
+    backgroundColor: colorSkyGray,
     padding: spacingBase,
   },
   bottomMargin: {

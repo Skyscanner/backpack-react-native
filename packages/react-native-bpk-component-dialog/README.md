@@ -99,7 +99,7 @@ class App extends Component {
 
     this.state = { isOpen: false };
   }
-  
+
   openDialog = () => this.setState({ isOpen: true });
 
   handlePositiveAction = () => {
@@ -108,14 +108,14 @@ class App extends Component {
       isOpen: false,
     });
   };
-  
+
   handleNegativeAction = () => {
     // Do something else
     this.setState({
       isOpen: false,
     });
   };
-  
+
   handleDismissAction = () => {
     // Do something else
     this.setState({
@@ -133,7 +133,7 @@ class App extends Component {
           description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'}
           icon={{
             iconId: icons.tick,
-            iconColor: 'green500'
+            iconColor: 'monteverde'
           }}
           actions={[
             {

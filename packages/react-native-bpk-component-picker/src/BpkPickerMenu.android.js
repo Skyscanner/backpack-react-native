@@ -29,7 +29,7 @@ import {
 import { setOpacity } from 'bpk-tokens';
 import {
   borderRadiusSm,
-  colorGray900,
+  colorSkyGray,
   colorWhite,
   lineHeightBase,
   spacingBase,
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 0,
     width: '100%',
-    backgroundColor: setOpacity(colorGray900, 0.8),
+    backgroundColor: setOpacity(colorSkyGray, 0.8),
   },
   listWrapper: {
     flexDirection: 'row',

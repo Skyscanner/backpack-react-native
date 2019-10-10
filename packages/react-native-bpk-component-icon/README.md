@@ -45,7 +45,7 @@ apply from: "node_modules/react-native-bpk-component-icon/fonts.gradle"
 import { View } from 'react-native';
 import React, { Component } from 'react';
 import BpkIcon, { icons } from 'react-native-bpk-component-icon';
-import { spacingBase, colorBlue500 } from 'bpk-tokens/tokens/base.react.native';
+import { spacingBase, colorSkyBlue } from 'bpk-tokens/tokens/base.react.native';
 
 const styles = StyleSheet.create({
   container: {
@@ -61,12 +61,12 @@ export default class App extends Component {
       <View style={styles.container}>
         <BpkIcon
           icon={icons.beer}
-          style={{ color: colorBlue500 }}
+          style={{ color: colorSkyBlue }}
           small
         />
         <BpkIcon
           icon={icons.beer}
-          style={{ color: colorBlue500 }}
+          style={{ color: colorSkyBlue }}
         />
       </View>
     );
@@ -80,7 +80,7 @@ export default class App extends Component {
 import { View } from 'react-native';
 import React, { Component } from 'react';
 import BpkIcon, { icons, withRtlSupport } from 'react-native-bpk-component-icon';
-import { spacingBase, colorBlue500 } from 'bpk-tokens/tokens/base.react.native';
+import { spacingBase, colorSkyBlue } from 'bpk-tokens/tokens/base.react.native';
 
 const BpkIconwithRtlSupport = withRtlSupport(BpkIcon);
 
@@ -98,7 +98,7 @@ export default class App extends Component {
       <View style={styles.container}>
         <BpkIconwithRtlSupport
           icon={icons.beer}
-          style={{ color: colorBlue500 }}
+          style={{ color: colorSkyBlue }}
         />
       </View>
     );

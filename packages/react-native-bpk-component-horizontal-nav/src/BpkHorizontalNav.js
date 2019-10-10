@@ -28,7 +28,7 @@ import {
 import React, { type Node, type ElementProps } from 'react';
 import PropTypes from 'prop-types';
 import {
-  colorGray100,
+  colorSkyGrayTint06,
   borderSizeSm,
 } from 'bpk-tokens/tokens/base.react.native';
 
@@ -44,7 +44,7 @@ const AnimatedIndicator: typeof BpkHorizontalNavSelectedIndicator = withAnimated
 const styles = StyleSheet.create({
   nav: {
     borderColor: 'transparent',
-    borderBottomColor: colorGray100,
+    borderBottomColor: colorSkyGrayTint06,
     flexDirection: 'column',
     borderBottomWidth: borderSizeSm,
   },

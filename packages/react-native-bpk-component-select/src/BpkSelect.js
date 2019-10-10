@@ -25,8 +25,8 @@ import BpkTouchableOverlay from 'react-native-bpk-component-touchable-overlay';
 import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-native-feedback';
 import BpkText from 'react-native-bpk-component-text';
 import {
-  colorGray50,
-  colorGray100,
+  colorSkyGrayTint07,
+  colorSkyGrayTint06,
   colorPanjin,
   borderSizeSm,
   spacingBase,
@@ -39,7 +39,7 @@ import { ValidIcon, InvalidIcon, SelectIcon } from './BpkSelectIcons';
 const styles = StyleSheet.create({
   select: {
     flexDirection: 'row',
-    borderColor: colorGray100,
+    borderColor: colorSkyGrayTint06,
     borderBottomWidth: borderSizeSm,
     justifyContent: 'space-between',
     alignItems: 'center',
@@ -52,12 +52,12 @@ const styles = StyleSheet.create({
     marginEnd: 'auto',
   },
   selectContentDisabled: {
-    color: colorGray100,
+    color: colorSkyGrayTint06,
   },
   selectImage: {
     width: spacingBase,
     height: spacingSm + spacingMd,
-    backgroundColor: colorGray50,
+    backgroundColor: colorSkyGrayTint07,
     marginEnd: spacingMd,
   },
   validationMessage: {

@@ -22,8 +22,8 @@ import { Platform, StyleSheet, View, ViewPropTypes } from 'react-native';
 import React, { type ElementProps } from 'react';
 import PropTypes from 'prop-types';
 import {
-  colorGray300,
-  colorGray900,
+  colorSkyGrayTint04,
+  colorSkyGray,
   colorSkyBlue,
   spacingSm,
   spacingXl,
@@ -50,11 +50,11 @@ const styles = StyleSheet.create({
     height: spacingXl - borderSizeSm - borderSizeLg,
   },
   text: {
-    color: colorGray900,
+    color: colorSkyGray,
     paddingHorizontal: spacingBase,
   },
   textDisabled: {
-    color: colorGray300,
+    color: colorSkyGrayTint04,
   },
   textSelected: {
     color: colorSkyBlue,

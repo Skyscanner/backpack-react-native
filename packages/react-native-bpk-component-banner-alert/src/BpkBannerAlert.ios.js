@@ -24,8 +24,8 @@ import {
   spacingMd,
   spacingXl,
   colorPanjin,
-  colorGray300,
-  colorGray500,
+  colorSkyGrayTint04,
+  colorSkyGrayTint02,
   colorMonteverde,
   colorErfoud,
   borderSizeSm,
@@ -60,7 +60,7 @@ const STYLES = StyleSheet.create({
     borderColor: colorPanjin,
   },
   borderNeutral: {
-    borderColor: colorGray300,
+    borderColor: colorSkyGrayTint04,
   },
   row: {
     flexDirection: 'row',
@@ -83,7 +83,7 @@ const STYLES = StyleSheet.create({
     color: colorPanjin,
   },
   iconNeutral: {
-    color: colorGray500,
+    color: colorSkyGrayTint02,
   },
   message: {
     flex: 1,

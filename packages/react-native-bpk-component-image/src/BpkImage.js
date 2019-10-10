@@ -24,7 +24,7 @@ import { Animated, StyleSheet, View, ViewPropTypes, Image } from 'react-native';
 import {
   borderRadiusSm,
   animationDurationBase,
-  colorGray300,
+  colorSkyGrayTint04,
 } from 'bpk-tokens/tokens/base.react.native';
 import AnimatedValue from 'react-native/Libraries/Animated/src/nodes/AnimatedValue';
 import BpkSpinner from 'react-native-bpk-component-spinner';
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     flex: 1,
     width: '100%',
     height: '100%',
-    backgroundColor: colorGray300,
+    backgroundColor: colorSkyGrayTint04,
     justifyContent: 'center',
     alignItems: 'center',
     position: 'absolute',

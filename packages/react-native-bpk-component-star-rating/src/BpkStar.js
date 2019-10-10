@@ -26,7 +26,7 @@ import {
   spacingMd,
   spacingSm,
   colorErfoud,
-  colorGray100,
+  colorSkyGrayTint06,
 } from 'bpk-tokens/tokens/base.react.native';
 import {
   getThemeAttributes,
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     right: 0,
     fontSize: STAR_SIZE,
     lineHeight: STAR_SIZE,
-    color: colorGray100,
+    color: colorSkyGrayTint06,
     zIndex: 1,
     backgroundColor: 'transparent',
   },

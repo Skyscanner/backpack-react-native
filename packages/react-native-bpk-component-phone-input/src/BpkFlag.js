@@ -21,7 +21,10 @@
 import React, { type ElementProps } from 'react';
 import PropTypes from 'prop-types';
 import { StyleSheet, View, ViewPropTypes } from 'react-native';
-import { spacingLg, colorGray100 } from 'bpk-tokens/tokens/base.react.native';
+import {
+  spacingLg,
+  colorSkyGrayTint06,
+} from 'bpk-tokens/tokens/base.react.native';
 
 import { type Flag } from './common-types';
 
@@ -38,7 +41,7 @@ export type Props = {
 
 const styles = StyleSheet.create({
   flag: {
-    borderColor: colorGray100,
+    borderColor: colorSkyGrayTint06,
     borderWidth: 1, // eslint-disable-line backpack/use-tokens
   },
 });

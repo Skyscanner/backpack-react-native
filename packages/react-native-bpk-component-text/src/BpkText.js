@@ -20,7 +20,7 @@
 
 import React from 'react';
 import {
-  colorGray900,
+  colorSkyGray,
   fontFamily,
   fontFamilyEmphasize,
   fontFamilyHeavy,
@@ -101,7 +101,7 @@ const getStyleByTextStyle = textStyle => {
   } = TEXT_TOKENS;
 
   return {
-    color: colorGray900,
+    color: colorSkyGray,
     letterSpacing,
     fontFamily,
     fontSize,

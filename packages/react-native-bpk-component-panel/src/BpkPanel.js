@@ -22,7 +22,7 @@ import React, { type Node } from 'react';
 import PropTypes from 'prop-types';
 import {
   colorWhite,
-  colorGray100,
+  colorSkyGrayTint06,
   spacingBase,
   borderSizeSm,
   borderRadiusSm,
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     backgroundColor: colorWhite,
     borderRadius: borderRadiusSm,
     borderWidth: borderSizeSm,
-    borderColor: colorGray100,
+    borderColor: colorSkyGrayTint06,
   },
   panelPadded: {
     padding: spacingBase,

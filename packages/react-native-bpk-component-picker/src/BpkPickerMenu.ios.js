@@ -28,7 +28,10 @@ import {
 } from 'react-native';
 import PropTypes from 'prop-types';
 import BpkButtonLink from 'react-native-bpk-component-button-link';
-import { colorGray200, spacingBase } from 'bpk-tokens/tokens/base.react.native';
+import {
+  colorSkyGrayTint05,
+  spacingBase,
+} from 'bpk-tokens/tokens/base.react.native';
 
 import {
   PICKER_MENU_PROP_TYPE,
@@ -60,7 +63,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: IOS_INPUT_ACCESSORY_VIEW_BACKGROUND_COLOR,
     borderTopWidth: 1, // eslint-disable-line backpack/use-tokens
-    borderColor: colorGray200,
+    borderColor: colorSkyGrayTint05,
     justifyContent: 'flex-end',
     height: IOS_INPUT_ACCESSORY_VIEW_HEIGHT,
     alignItems: 'center',

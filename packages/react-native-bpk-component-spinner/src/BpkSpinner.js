@@ -30,7 +30,7 @@ import {
 import {
   colorSkyBlue,
   colorWhite,
-  colorGray700,
+  colorSkyGrayTint01,
 } from 'bpk-tokens/tokens/base.react.native';
 
 const SPINNER_TYPES = {
@@ -47,7 +47,7 @@ const getSpinnerColor = (themeAttributes: ?Object, type: SpinnerType) => {
   const colorMappings = {
     [SPINNER_TYPES.primary]: colorSkyBlue,
     [SPINNER_TYPES.light]: colorWhite,
-    [SPINNER_TYPES.dark]: colorGray700,
+    [SPINNER_TYPES.dark]: colorSkyGrayTint01,
   };
 
   if (themeAttributes) {

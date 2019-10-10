@@ -23,7 +23,7 @@ import PropTypes from 'prop-types';
 import { setOpacity } from 'bpk-tokens';
 import {
   borderRadiusSm,
-  colorGray900,
+  colorSkyGray,
   spacingSm,
   spacingMd,
   spacingLg,
@@ -41,7 +41,7 @@ type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
 const styles = StyleSheet.create({
   wrapper: {
     alignItems: 'center',
-    backgroundColor: setOpacity(colorGray900, 0.3),
+    backgroundColor: setOpacity(colorSkyGray, 0.3),
     borderRadius: borderRadiusSm,
     flexDirection: 'row',
     height: spacingLg,

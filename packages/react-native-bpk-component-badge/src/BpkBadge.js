@@ -28,8 +28,8 @@ import {
   type Theme,
 } from 'react-native-bpk-theming';
 import {
-  colorGray900,
-  colorGray50,
+  colorSkyGray,
+  colorSkyGrayTint07,
   colorErfoud,
   colorPanjin,
   colorMonteverde,
@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     backgroundColor: colorPanjin,
   },
   viewLight: {
-    backgroundColor: colorGray50,
+    backgroundColor: colorSkyGrayTint07,
   },
   viewInverse: {
     backgroundColor: colorWhite,
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     backgroundColor: setOpacity(colorWhite, 0.2),
   },
   textBase: {
-    color: colorGray900,
+    color: colorSkyGray,
     includeFontPadding: false,
   },
   textDestructive: {

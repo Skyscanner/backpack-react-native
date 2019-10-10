@@ -25,10 +25,10 @@ import BpkText, { WEIGHT_STYLES } from 'react-native-bpk-component-text';
 import {
   spacingSm,
   spacingBase,
-  colorGray50,
-  colorGray100,
-  colorGray500,
-  colorGray900,
+  colorSkyGrayTint07,
+  colorSkyGrayTint06,
+  colorSkyGrayTint02,
+  colorSkyGray,
 } from 'bpk-tokens/tokens/base.react.native';
 
 const ANDROID_LIST_ITEM_HEIGHT = 48;
@@ -38,13 +38,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacingBase,
     ...Platform.select({
       ios: {
-        backgroundColor: colorGray50,
+        backgroundColor: colorSkyGrayTint07,
         paddingVertical: spacingSm,
       },
       android: {
         justifyContent: 'flex-start',
         alignItems: 'center',
-        borderTopColor: colorGray100,
+        borderTopColor: colorSkyGrayTint06,
         borderTopWidth: 1, // eslint-disable-line backpack/use-tokens
         flexDirection: 'row',
         height: ANDROID_LIST_ITEM_HEIGHT,
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     }),
   },
   text: {
-    color: Platform.OS === 'android' ? colorGray500 : colorGray900,
+    color: Platform.OS === 'android' ? colorSkyGrayTint02 : colorSkyGray,
   },
 });
 

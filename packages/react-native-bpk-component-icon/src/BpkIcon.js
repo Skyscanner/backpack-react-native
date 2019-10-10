@@ -22,7 +22,7 @@ import PropTypes from 'prop-types';
 import {
   spacingBase,
   spacingLg,
-  colorGray700,
+  colorSkyGrayTint01,
 } from 'bpk-tokens/tokens/base.react.native';
 import { Text, StyleSheet } from 'react-native';
 import React, { type ElementProps } from 'react';
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     fontFamily: 'BpkIcon',
     fontSize: spacingLg,
     includeFontPadding: false,
-    color: colorGray700,
+    color: colorSkyGrayTint01,
   },
   small: {
     fontSize: spacingBase,

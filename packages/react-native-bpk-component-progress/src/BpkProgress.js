@@ -31,7 +31,7 @@ import {
 import {
   animmationDurationBase,
   spacingMd,
-  colorGray100,
+  colorSkyGrayTint06,
   colorMonteverde,
   colorSagano,
   borderRadiusPill,
@@ -48,7 +48,7 @@ import { REQUIRED_THEME_ATTRIBUTES, themePropType } from './theming';
 const styles = StyleSheet.create({
   track: {
     backgroundColor: Platform.select({
-      ios: () => colorGray100,
+      ios: () => colorSkyGrayTint06,
       android: () => colorSagano,
     })(),
     height: spacingMd,

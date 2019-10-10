@@ -47,13 +47,13 @@ type Theme = {
   buttonSecondaryBorderColor: string,
   primaryColor: string,
   colorGray50: string,
-  colorGray100: string,
-  colorGray200: string,
-  colorGray300: string,
-  colorGray400: string,
-  colorGray500: string,
-  colorGray700: string,
-  colorGray900: string,
+  colorSkyGrayTint06: string,
+  colorSkyGrayTint05: string,
+  colorSkyGrayTint04: string,
+  colorSkyGrayTint03: string,
+  colorSkyGrayTint02: string,
+  colorSkyGrayTint01: string,
+  colorSkyGray: string,
   textFontFamily: string,
 };
 
@@ -70,13 +70,13 @@ const generateThemeAttributes = (
   buttonSecondaryBorderColor: gradientEndColor,
   primaryColor: gradientStartColor,
   colorGray50: '#F1F2F8',
-  colorGray100: '#DDDDE5',
-  colorGray200: '#CDCDD7',
-  colorGray300: '#B2B2BF',
-  colorGray400: '#8F90A0',
-  colorGray500: '#68697F',
-  colorGray700: '#444560',
-  colorGray900: '#111236',
+  colorSkyGrayTint06: '#DDDDE5',
+  colorSkyGrayTint05: '#CDCDD7',
+  colorSkyGrayTint04: '#B2B2BF',
+  colorSkyGrayTint03: '#8F90A0',
+  colorSkyGrayTint02: '#68697F',
+  colorSkyGrayTint01: '#444560',
+  colorSkyGray: '#111236',
   textFontFamily: textFontFamily || fontFamily,
 });
 
@@ -108,72 +108,93 @@ const SolidColorBlockPrimary = () => (
 
 const SolidColorBlockGray50 = () => (
   <BpkThemeAttributes>
-    {({ colorGray50 }) => (
+    {({ colorSkyGrayTint07 }) => (
       <View
-        style={[styles.solidColorBlock, { backgroundColor: colorGray50 }]}
+        style={[
+          styles.solidColorBlock,
+          { backgroundColor: colorSkyGrayTint07 },
+        ]}
       />
     )}
   </BpkThemeAttributes>
 );
 const SolidColorBlockGray100 = () => (
   <BpkThemeAttributes>
-    {({ colorGray100 }) => (
+    {({ colorSkyGrayTint06 }) => (
       <View
-        style={[styles.solidColorBlock, { backgroundColor: colorGray100 }]}
+        style={[
+          styles.solidColorBlock,
+          { backgroundColor: colorSkyGrayTint06 },
+        ]}
       />
     )}
   </BpkThemeAttributes>
 );
 const SolidColorBlockGray200 = () => (
   <BpkThemeAttributes>
-    {({ colorGray200 }) => (
+    {({ colorSkyGrayTint05 }) => (
       <View
-        style={[styles.solidColorBlock, { backgroundColor: colorGray200 }]}
+        style={[
+          styles.solidColorBlock,
+          { backgroundColor: colorSkyGrayTint05 },
+        ]}
       />
     )}
   </BpkThemeAttributes>
 );
 const SolidColorBlockGray300 = () => (
   <BpkThemeAttributes>
-    {({ colorGray300 }) => (
+    {({ colorSkyGrayTint04 }) => (
       <View
-        style={[styles.solidColorBlock, { backgroundColor: colorGray300 }]}
+        style={[
+          styles.solidColorBlock,
+          { backgroundColor: colorSkyGrayTint04 },
+        ]}
       />
     )}
   </BpkThemeAttributes>
 );
 const SolidColorBlockGray400 = () => (
   <BpkThemeAttributes>
-    {({ colorGray400 }) => (
+    {({ colorSkyGrayTint03 }) => (
       <View
-        style={[styles.solidColorBlock, { backgroundColor: colorGray400 }]}
+        style={[
+          styles.solidColorBlock,
+          { backgroundColor: colorSkyGrayTint03 },
+        ]}
       />
     )}
   </BpkThemeAttributes>
 );
 const SolidColorBlockGray500 = () => (
   <BpkThemeAttributes>
-    {({ colorGray500 }) => (
+    {({ colorSkyGrayTint02 }) => (
       <View
-        style={[styles.solidColorBlock, { backgroundColor: colorGray500 }]}
+        style={[
+          styles.solidColorBlock,
+          { backgroundColor: colorSkyGrayTint02 },
+        ]}
       />
     )}
   </BpkThemeAttributes>
 );
 const SolidColorBlockGray700 = () => (
   <BpkThemeAttributes>
-    {({ colorGray700 }) => (
+    {({ colorSkyGrayTint01 }) => (
       <View
-        style={[styles.solidColorBlock, { backgroundColor: colorGray700 }]}
+        style={[
+          styles.solidColorBlock,
+          { backgroundColor: colorSkyGrayTint01 },
+        ]}
       />
     )}
   </BpkThemeAttributes>
 );
 const SolidColorBlockGray900 = () => (
   <BpkThemeAttributes>
-    {({ colorGray900 }) => (
+    {({ colorSkyGray }) => (
       <View
-        style={[styles.solidColorBlock, { backgroundColor: colorGray900 }]}
+        style={[styles.solidColorBlock, { backgroundColor: colorSkyGray }]}
       />
     )}
   </BpkThemeAttributes>
