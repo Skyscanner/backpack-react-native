@@ -23,8 +23,8 @@ import PropTypes from 'prop-types';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 import BpkIcon, { icons } from 'react-native-bpk-component-icon';
 import {
-  colorGray300,
-  colorGray900,
+  colorSkyGrayTint04,
+  colorSkyGray,
 } from 'bpk-tokens/tokens/base.react.native';
 
 export type Props = {
@@ -68,8 +68,8 @@ const BpkNavigationBarIconButtonIOS = (props: Props) => {
     tintColor,
   } = props;
   const tintColorFinal = disabled
-    ? disabledTintColor || colorGray300
-    : tintColor || colorGray900;
+    ? disabledTintColor || colorSkyGrayTint04
+    : tintColor || colorSkyGray;
   const iconStyle = [styles.icon, { color: tintColorFinal }];
   const buttonStyle = [styles.button];
   const accessibilityStates = [];

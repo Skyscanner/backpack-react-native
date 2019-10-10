@@ -132,9 +132,9 @@ const commonTests = () => {
         chipOutlineSelectedBackgroundColor: 'orange',
         chipOutlineSelectedTextColor: 'blue',
         textFontFamily: 'System',
-        colorGray300: '#B3BABD',
-        colorGray500: '#657176',
-        colorGray700: '#4B5458',
+        colorSkyGrayTint04: '#B3BABD',
+        colorSkyGrayTint02: '#657176',
+        colorSkyGrayTint01: '#4B5458',
       };
       const tree = renderer
         .create(

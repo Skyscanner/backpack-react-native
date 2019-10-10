@@ -28,8 +28,8 @@ import {
 } from 'react-native-bpk-theming';
 import {
   colorSkyBlue,
-  colorGray100,
-  colorGray50,
+  colorSkyGrayTint06,
+  colorSkyGrayTint07,
 } from 'bpk-tokens/tokens/base.react.native';
 import { setOpacity } from 'bpk-tokens';
 
@@ -44,14 +44,14 @@ const getColors = (themeAttributes: ?Object, value: ?boolean): Object => {
   const colors = Platform.select({
     ios: {
       trackColor: {
-        false: colorGray100,
+        false: colorSkyGrayTint06,
         true: primaryColor,
       },
     },
     android: {
-      thumbColor: value ? primaryColor : colorGray50,
+      thumbColor: value ? primaryColor : colorSkyGrayTint07,
       trackColor: {
-        false: colorGray100,
+        false: colorSkyGrayTint06,
         true: setOpacity(primaryColor, 0.32), // Taken from here https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/color/MaterialColors.java#L42
       },
     },

@@ -21,7 +21,10 @@
 import PropTypes from 'prop-types';
 import React, { type ComponentType, type Node } from 'react';
 import { View, StyleSheet, ViewPropTypes } from 'react-native';
-import { colorGray100, spacingBase } from 'bpk-tokens/tokens/base.react.native';
+import {
+  colorSkyGrayTint06,
+  spacingBase,
+} from 'bpk-tokens/tokens/base.react.native';
 
 import BpkPanel, { type Props as BpkPanelProps } from './BpkPanel';
 
@@ -45,7 +48,7 @@ const styles = StyleSheet.create({
   panelPunchline: {
     width: 1, // eslint-disable-line backpack/use-tokens
     flexDirection: 'column',
-    backgroundColor: colorGray100,
+    backgroundColor: colorSkyGrayTint06,
   },
   panelPunchlineVertical: {
     width: null,

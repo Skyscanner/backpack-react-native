@@ -24,8 +24,8 @@ import {
   spacingBase,
   spacingLg,
   colorPanjin,
-  colorGray50,
-  colorGray500,
+  colorSkyGrayTint07,
+  colorSkyGrayTint02,
   colorMonteverde,
   colorErfoud,
   borderRadiusSm,
@@ -50,7 +50,7 @@ const STYLES = StyleSheet.create({
     // required for AnimateAndFade to work correctly :/
     minHeight: 1, // eslint-disable-line backpack/use-tokens
     borderRadius: borderRadiusSm,
-    backgroundColor: colorGray50,
+    backgroundColor: colorSkyGrayTint07,
   },
   row: {
     minHeight: spacingBase * 3,
@@ -72,7 +72,7 @@ const STYLES = StyleSheet.create({
     color: colorPanjin,
   },
   iconNeutral: {
-    color: colorGray500,
+    color: colorSkyGrayTint02,
   },
   message: {
     flex: 1,

@@ -21,7 +21,7 @@
 import { StyleSheet } from 'react-native';
 import {
   colorSkyBlue,
-  colorGray300,
+  colorSkyGrayTint04,
   spacingSm,
   spacingXl,
 } from 'bpk-tokens/tokens/base.react.native';
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     color: colorSkyBlue,
   },
   textDisabled: {
-    color: colorGray300,
+    color: colorSkyGrayTint04,
   },
   icon: {
     color: colorSkyBlue,

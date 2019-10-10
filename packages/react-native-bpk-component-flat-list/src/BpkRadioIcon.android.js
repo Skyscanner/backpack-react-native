@@ -21,7 +21,7 @@
 import { View, StyleSheet } from 'react-native';
 import React from 'react';
 import PropTypes from 'prop-types';
-import { colorGray100 } from 'bpk-tokens/tokens/base.react.native';
+import { colorSkyGrayTint06 } from 'bpk-tokens/tokens/base.react.native';
 
 // Not using a token as this is replicating an Android native UI element.
 const radioSize = 20;
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
   outer: {
     borderRadius: radioSize,
     borderWidth,
-    borderColor: colorGray100,
+    borderColor: colorSkyGrayTint06,
     height: radioSize,
     width: radioSize,
     justifyContent: 'center',

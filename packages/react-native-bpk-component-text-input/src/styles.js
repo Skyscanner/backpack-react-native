@@ -23,10 +23,10 @@ import AnimatedValue from 'react-native/Libraries/Animated/src/nodes/AnimatedVal
 import {
   borderSizeSm,
   colorSkyBlue,
-  colorGray100,
-  colorGray300,
-  colorGray500,
-  colorGray900,
+  colorSkyGrayTint06,
+  colorSkyGrayTint04,
+  colorSkyGrayTint02,
+  colorSkyGray,
   colorPanjin,
   fontFamily,
   spacingMd,
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
     minHeight,
     fontSize: textBaseFontSize,
     fontWeight: textBaseFontWeight,
-    color: colorGray900,
+    color: colorSkyGray,
     borderBottomWidth: 0,
     textAlign: I18nManager.isRTL ? 'right' : 'left',
   },
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     paddingTop: spacingSm,
   },
   description: {
-    color: colorGray500,
+    color: colorSkyGrayTint02,
     paddingTop: spacingSm,
   },
 });
@@ -107,12 +107,12 @@ const getLabelColorValue = (
   hasAccessoryView: boolean,
 ) => {
   if (!editable) {
-    return colorGray100;
+    return colorSkyGrayTint06;
   }
   if (!value && !hasAccessoryView) {
-    return colorGray300;
+    return colorSkyGrayTint04;
   }
-  return valid === false ? colorPanjin : colorGray500;
+  return valid === false ? colorPanjin : colorSkyGrayTint02;
 };
 
 const getLabelPosition = (hasAccessoryView: boolean): number =>
@@ -177,7 +177,8 @@ const getInputContainerStyle = (
   valid: ?boolean,
   focusedColor: String = colorSkyBlue,
 ) => {
-  const underlineColorValue = valid === false ? colorPanjin : colorGray100;
+  const underlineColorValue =
+    valid === false ? colorPanjin : colorSkyGrayTint06;
   const animatedStyle = {
     borderBottomColor: animatedColorValue.interpolate({
       inputRange: INPUT_RANGE,

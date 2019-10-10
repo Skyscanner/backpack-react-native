@@ -20,14 +20,14 @@
 import { type Node } from 'react';
 import {
   colorSkyBlue,
-  colorGray50,
-  colorGray100,
-  colorGray200,
-  colorGray300,
-  colorGray400,
-  colorGray500,
-  colorGray700,
-  colorGray900,
+  colorSkyGray,
+  colorSkyGrayTint01,
+  colorSkyGrayTint02,
+  colorSkyGrayTint03,
+  colorSkyGrayTint04,
+  colorSkyGrayTint05,
+  colorSkyGrayTint06,
+  colorSkyGrayTint07,
   fontFamily,
 } from 'bpk-tokens/tokens/base.react.native';
 
@@ -93,21 +93,33 @@ const BpkThemeAttributes = (props: Props) => {
   const primaryColor =
     theme && theme.primaryColor != null ? theme.primaryColor : colorSkyBlue;
   const gray50 =
-    theme && theme.colorGray50 != null ? theme.colorGray50 : colorGray50;
+    theme && theme.colorGray50 != null ? theme.colorGray50 : colorSkyGrayTint07;
   const gray100 =
-    theme && theme.colorGray100 != null ? theme.colorGray100 : colorGray100;
+    theme && theme.colorGray100 != null
+      ? theme.colorGray100
+      : colorSkyGrayTint06;
   const gray200 =
-    theme && theme.colorGray200 != null ? theme.colorGray200 : colorGray200;
+    theme && theme.colorGray200 != null
+      ? theme.colorGray200
+      : colorSkyGrayTint05;
   const gray300 =
-    theme && theme.colorGray300 != null ? theme.colorGray300 : colorGray300;
+    theme && theme.colorGray300 != null
+      ? theme.colorGray300
+      : colorSkyGrayTint04;
   const gray400 =
-    theme && theme.colorGray400 != null ? theme.colorGray400 : colorGray400;
+    theme && theme.colorGray400 != null
+      ? theme.colorGray400
+      : colorSkyGrayTint03;
   const gray500 =
-    theme && theme.colorGray500 != null ? theme.colorGray500 : colorGray500;
+    theme && theme.colorGray500 != null
+      ? theme.colorGray500
+      : colorSkyGrayTint02;
   const gray700 =
-    theme && theme.colorGray700 != null ? theme.colorGray700 : colorGray700;
+    theme && theme.colorGray700 != null
+      ? theme.colorGray700
+      : colorSkyGrayTint01;
   const gray900 =
-    theme && theme.colorGray900 != null ? theme.colorGray900 : colorGray900;
+    theme && theme.colorGray900 != null ? theme.colorGray900 : colorSkyGray;
   const textFontFamily =
     theme && theme.textFontFamily != null ? theme.textFontFamily : fontFamily;
 

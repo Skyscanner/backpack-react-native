@@ -24,8 +24,8 @@ import { StyleSheet, TouchableOpacity } from 'react-native';
 import BpkText, { WEIGHT_STYLES } from 'react-native-bpk-component-text';
 import {
   colorSkyBlue,
-  colorGray300,
-  colorGray900,
+  colorSkyGrayTint04,
+  colorSkyGray,
 } from 'bpk-tokens/tokens/base.react.native';
 
 export const BUTTON_TYPES = {
@@ -75,7 +75,7 @@ const BpkNavigationBarTextButtonIOS = (props: Props) => {
     leading,
   } = props;
   const tintColors = {
-    [BUTTON_TYPES.default]: colorGray900,
+    [BUTTON_TYPES.default]: colorSkyGray,
     [BUTTON_TYPES.primary]: colorSkyBlue,
   };
 
@@ -89,7 +89,7 @@ const BpkNavigationBarTextButtonIOS = (props: Props) => {
   const accessibilityStates = [];
   if (disabled) {
     accessibilityStates.push('disabled');
-    tintColorFinal = disabledTintColor || colorGray300;
+    tintColorFinal = disabledTintColor || colorSkyGrayTint04;
   }
 
   const titleStyle = [{ color: tintColorFinal }];

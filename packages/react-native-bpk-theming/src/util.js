@@ -20,21 +20,21 @@ import isBoolean from 'lodash/isBoolean';
 import isNumber from 'lodash/isNumber';
 import isEmpty from 'lodash/isEmpty';
 import {
-  colorGray50,
-  colorGray100,
-  colorGray300,
-  colorGray500,
-  colorGray700,
-  colorGray900,
+  colorSkyGrayTint07,
+  colorSkyGrayTint06,
+  colorSkyGrayTint04,
+  colorSkyGrayTint02,
+  colorSkyGrayTint01,
+  colorSkyGray,
 } from 'bpk-tokens/tokens/base.react.native';
 
 const grays = {
-  colorGray50,
-  colorGray100,
-  colorGray300,
-  colorGray500,
-  colorGray700,
-  colorGray900,
+  colorSkyGrayTint07,
+  colorSkyGrayTint06,
+  colorSkyGrayTint04,
+  colorSkyGrayTint02,
+  colorSkyGrayTint01,
+  colorSkyGray,
 };
 
 export const isValidTheme = (
@@ -116,5 +116,5 @@ export const grayForTheme = (theme: ?Object, colorName: string) => {
     return grays[colorName];
   }
 
-  return colorGray500;
+  return colorSkyGrayTint02;
 };

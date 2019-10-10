@@ -25,7 +25,7 @@ import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-nat
 import {
   spacingBase,
   colorSkyBlue,
-  colorGray900,
+  colorSkyGray,
 } from 'bpk-tokens/tokens/base.react.native';
 import { getThemeAttributes, withTheme } from 'react-native-bpk-theming';
 
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   text: {
-    color: colorGray900,
+    color: colorSkyGray,
     flex: 1,
   },
   textSelected: {

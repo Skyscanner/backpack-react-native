@@ -31,7 +31,10 @@ import {
   makeThemePropType,
 } from 'react-native-bpk-theming';
 import { StyleSheet, View, ViewPropTypes } from 'react-native';
-import { colorGray50, colorGray100 } from 'bpk-tokens/tokens/base.react.native';
+import {
+  colorSkyGrayTint07,
+  colorSkyGrayTint06,
+} from 'bpk-tokens/tokens/base.react.native';
 
 import {
   type CommonTheme,
@@ -59,8 +62,8 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     paddingHorizontal: 8, // eslint-disable-line backpack/use-tokens
     width: '100%',
-    backgroundColor: colorGray50,
-    shadowColor: colorGray100,
+    backgroundColor: colorSkyGrayTint07,
+    shadowColor: colorSkyGrayTint06,
     shadowOpacity: 1,
     shadowRadius: 0,
     shadowOffset: { width: 0, height: 1 }, // eslint-disable-line backpack/use-tokens

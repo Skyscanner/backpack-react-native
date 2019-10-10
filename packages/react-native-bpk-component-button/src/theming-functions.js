@@ -23,8 +23,8 @@ import {
   borderRadiusPill,
   borderRadiusSm,
   colorSkyBlue,
-  colorGray100,
-  colorGray300,
+  colorSkyGrayTint06,
+  colorSkyGrayTint04,
   colorMonteverde,
   colorPanjin,
   colorWhite,
@@ -68,7 +68,7 @@ export const backgroundColorForType = (
   };
 
   if (disabled) {
-    return colorGray100;
+    return colorSkyGrayTint06;
   }
 
   return valueOrDefault(
@@ -85,7 +85,7 @@ export const gradientColorForType = (
   disabled: boolean,
 ) => {
   if (disabled) {
-    return colorGray100;
+    return colorSkyGrayTint06;
   }
 
   const gradientColors = {
@@ -117,7 +117,7 @@ export const textColorForType = (
   disabled: boolean,
 ) => {
   if (disabled) {
-    return colorGray300;
+    return colorSkyGrayTint04;
   }
 
   const textColors = {
@@ -147,12 +147,12 @@ export const borderColorForType = (
   disabled: boolean,
 ) => {
   if (disabled) {
-    return colorGray100;
+    return colorSkyGrayTint06;
   }
 
   const borderColors = {
-    [BUTTON_TYPES.secondary]: colorGray100,
-    [BUTTON_TYPES.destructive]: colorGray100,
+    [BUTTON_TYPES.secondary]: colorSkyGrayTint06,
+    [BUTTON_TYPES.destructive]: colorSkyGrayTint06,
   };
 
   const borderColorThemePropsMappedToType = {

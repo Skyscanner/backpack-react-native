@@ -24,7 +24,7 @@ import { storiesOf } from '@storybook/react-native';
 import {
   borderRadiusSm,
   colorSkyBlue,
-  colorGray900,
+  colorSkyGray,
   colorMonteverde,
   colorBunol,
   colorPanjin,
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
 const pageColors = [
   colorMonteverde,
   colorBunol,
-  colorGray900,
+  colorSkyGray,
   colorSkyBlue,
   colorErfoud,
   colorPanjin,

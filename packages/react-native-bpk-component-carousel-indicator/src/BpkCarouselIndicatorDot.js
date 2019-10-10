@@ -23,7 +23,7 @@ import PropTypes from 'prop-types';
 import {
   animationDurationSm,
   borderRadiusPill,
-  colorGray300,
+  colorSkyGrayTint04,
   colorWhite,
   spacingSm,
   carouselIndicatorDotSizeSm,
@@ -35,7 +35,7 @@ import AnimatedValue from 'react-native/Libraries/Animated/src/nodes/AnimatedVal
 
 const styles = StyleSheet.create({
   indicator: {
-    backgroundColor: colorGray300,
+    backgroundColor: colorSkyGrayTint04,
     borderRadius: borderRadiusPill,
     marginHorizontal: spacingSm / 2, // eslint-disable-line backpack/use-tokens
   },

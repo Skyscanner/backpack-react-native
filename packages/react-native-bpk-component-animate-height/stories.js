@@ -26,7 +26,7 @@ import BpkText from 'react-native-bpk-component-text';
 import BpkButton from 'react-native-bpk-component-button';
 import {
   spacingBase,
-  colorGray50,
+  colorSkyGrayTint07,
   animationDurationBase,
 } from 'bpk-tokens/tokens/base.react.native';
 
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     padding: spacingBase,
     width: '100%',
-    backgroundColor: colorGray50,
+    backgroundColor: colorSkyGrayTint07,
   },
   container: {
     marginBottom: spacingBase,

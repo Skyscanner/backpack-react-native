@@ -27,10 +27,10 @@ import {
   borderRadiusPill,
   borderSizeSm,
   colorSkyBlue,
-  colorGray200,
-  colorGray300,
-  colorGray500,
-  colorGray700,
+  colorSkyGrayTint05,
+  colorSkyGrayTint04,
+  colorSkyGrayTint02,
+  colorSkyGrayTint01,
   colorWhite,
   spacingSm,
   spacingMd,
@@ -68,26 +68,26 @@ const styles = StyleSheet.create({
     backgroundColor: colorWhite,
   },
   text: {
-    color: colorGray700,
+    color: colorSkyGrayTint01,
     includeFontPadding: false,
   },
   textSelected: {
     color: colorWhite,
   },
   textDisabled: {
-    color: colorGray300,
+    color: colorSkyGrayTint04,
   },
   icon: {
-    color: colorGray500,
+    color: colorSkyGrayTint02,
     includeFontPadding: false,
     marginStart: spacingSm,
   },
   iconDisabled: {
-    color: colorGray300,
+    color: colorSkyGrayTint04,
   },
   innerOutline: {
     backgroundColor: 'transparent',
-    borderColor: colorGray500,
+    borderColor: colorSkyGrayTint02,
     borderWidth: borderSizeSm,
     paddingVertical: spacingMd - borderSizeSm,
   },
@@ -96,19 +96,19 @@ const styles = StyleSheet.create({
   },
   innerOutlineDisabled: {
     backgroundColor: 'transparent',
-    borderColor: colorGray700,
+    borderColor: colorSkyGrayTint01,
   },
   textOutline: {
     color: colorWhite,
   },
   iconOutline: {
-    color: colorGray200,
+    color: colorSkyGrayTint05,
   },
   textOutlineDisabled: {
-    color: colorGray700,
+    color: colorSkyGrayTint01,
   },
   iconOutlineDisabled: {
-    color: colorGray700,
+    color: colorSkyGrayTint01,
   },
 });
 

@@ -23,8 +23,8 @@ import { storiesOf } from '@storybook/react-native';
 import { View, StyleSheet } from 'react-native';
 import BpkIcon, { icons } from 'react-native-bpk-component-icon';
 import {
-  colorGray50,
-  colorGray700,
+  colorSkyGrayTint07,
+  colorSkyGrayTint01,
   spacingSm,
 } from 'bpk-tokens/tokens/base.react.native';
 import BpkThemeProvider from 'react-native-bpk-theming';
@@ -56,21 +56,21 @@ const style = StyleSheet.create({
     alignItems: 'center',
   },
   start: {
-    backgroundColor: colorGray50,
+    backgroundColor: colorSkyGrayTint07,
     alignItems: 'flex-start',
   },
   end: {
-    backgroundColor: colorGray50,
+    backgroundColor: colorSkyGrayTint07,
     alignItems: 'flex-end',
   },
   light: {
-    backgroundColor: colorGray700,
+    backgroundColor: colorSkyGrayTint01,
   },
   outline: {
-    backgroundColor: colorGray700,
+    backgroundColor: colorSkyGrayTint01,
   },
   inverse: {
-    backgroundColor: colorGray700,
+    backgroundColor: colorSkyGrayTint01,
   },
   destructive: {},
   success: {},

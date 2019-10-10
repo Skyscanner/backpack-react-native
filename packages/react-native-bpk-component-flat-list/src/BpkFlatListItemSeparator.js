@@ -23,14 +23,14 @@ import React from 'react';
 import {
   spacingMd,
   spacingBase,
-  colorGray100,
+  colorSkyGrayTint06,
 } from 'bpk-tokens/tokens/base.react.native';
 
 const styles = StyleSheet.create({
   separator: {
     flex: 1,
     height: 1, // eslint-disable-line backpack/use-tokens
-    backgroundColor: colorGray100,
+    backgroundColor: colorSkyGrayTint06,
     ...Platform.select({
       ios: {
         marginLeft: spacingBase,

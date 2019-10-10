@@ -23,8 +23,8 @@ import PropTypes from 'prop-types';
 import { ScrollView, StyleSheet, View } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
 import {
-  colorGray100,
-  colorGray500,
+  colorSkyGrayTint06,
+  colorSkyGrayTint02,
   spacingBase,
 } from 'bpk-tokens/tokens/base.react.native';
 import BpkThemeProvider from 'react-native-bpk-theming';
@@ -40,8 +40,8 @@ const styles = StyleSheet.create({
   },
   accessoryView: {
     flex: 0.3,
-    backgroundColor: colorGray100,
-    borderColor: colorGray500,
+    backgroundColor: colorSkyGrayTint06,
+    borderColor: colorSkyGrayTint02,
     borderWidth: 1, // eslint-disable-line backpack/use-tokens
   },
 });

@@ -19,7 +19,7 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
-import { colorGray300 } from 'bpk-tokens/tokens/base.react.native';
+import { colorSkyGrayTint04 } from 'bpk-tokens/tokens/base.react.native';
 import BpkText from 'react-native-bpk-component-text';
 import BpkImage, {
   withLoadingBehaviour,
@@ -168,7 +168,9 @@ storiesOf('react-native-bpk-component-carousel', module)
   ))
   .add('Multiple elements', () => (
     <BpkCarousel accessibilityLabel={accessibilityLabel} style={styles.view}>
-      <BpkCarouselItem style={[styles.page, { backgroundColor: colorGray300 }]}>
+      <BpkCarouselItem
+        style={[styles.page, { backgroundColor: colorSkyGrayTint04 }]}
+      >
         <BpkText textStyle="xl"> View 1 </BpkText>
       </BpkCarouselItem>
       <BpkCarouselItem>

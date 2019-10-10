@@ -24,7 +24,7 @@ import {
   spacingSm,
   spacingMd,
   spacingBase,
-  colorGray100,
+  colorSkyGrayTint06,
 } from 'bpk-tokens/tokens/base.react.native';
 import { View, StyleSheet, ViewPropTypes } from 'react-native';
 import React, { type Node, type ElementProps, type ComponentType } from 'react';
@@ -126,7 +126,7 @@ const withDivider = (CardComponent: ComponentType<any>): ComponentType<any> => {
           dashGap={spacingSm}
           dashLength={spacingSm}
           dashThickness={1}
-          dashColor={colorGray100}
+          dashColor={colorSkyGrayTint06}
         />
         <View style={stubStyle}>{stub}</View>
       </CardComponent>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="accent">@color/bpkBlue500</color>
+    <color name="accent">@color/bpkSkyBlue</color>
 
     <!--default background on API level 26 onwards -->
     <color name="background">#FAFAFA</color>
