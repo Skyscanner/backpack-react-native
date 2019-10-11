@@ -86,8 +86,7 @@ class BpkRatingShadowNode internal constructor() : LayoutShadowNode(), YogaMeasu
       lastWidth = view.measuredWidth
       lastHeight = view.measuredHeight
     }
-
-    println("BpkRating: Measuring $lastWidth $lastHeight")
+    
     return YogaMeasureOutput.make(lastWidth, lastHeight)
   }
 }
