@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-// import commonTests from './BpkDialog-test.common';
+// import commonTests from './BpkRating-test.common';
 
 describe('iOS', () => {
   test.todo('should native iOS rating');

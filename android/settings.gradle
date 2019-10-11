@@ -13,7 +13,7 @@ project(':react-native-bpk-component-calendar').projectDir = new File(rootProjec
 include ':react-native-bpk-component-dialog'
 project(':react-native-bpk-component-dialog').projectDir = new File(rootProject.projectDir, '../packages/react-native-bpk-component-dialog/src/android')
 
-// react-native-dialog
+// react-native-rating
 include ':react-native-bpk-component-rating'
 project(':react-native-bpk-component-rating').projectDir = new File(rootProject.projectDir, '../packages/react-native-bpk-component-rating/src/android')
 
