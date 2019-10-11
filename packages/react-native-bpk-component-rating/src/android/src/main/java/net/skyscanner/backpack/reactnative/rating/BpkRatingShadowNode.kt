@@ -19,9 +19,7 @@ package net.skyscanner.backpack.reactnative.rating
 
 import android.view.View
 import android.view.ViewGroup
-import com.facebook.react.bridge.ReadableArray
 import com.facebook.react.uimanager.LayoutShadowNode
-import com.facebook.react.uimanager.annotations.ReactProp
 import com.facebook.yoga.YogaMeasureFunction
 import com.facebook.yoga.YogaMeasureMode
 import com.facebook.yoga.YogaMeasureOutput
@@ -86,7 +84,7 @@ class BpkRatingShadowNode internal constructor() : LayoutShadowNode(), YogaMeasu
       lastWidth = view.measuredWidth
       lastHeight = view.measuredHeight
     }
-    
+
     return YogaMeasureOutput.make(lastWidth, lastHeight)
   }
 }
