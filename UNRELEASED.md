@@ -4,7 +4,7 @@
 
 **Added:**
 
-- Added Android bridge for `react-native-bpk-component-rating`.
+- Added new rating component for Android.
 
 ## How to write a good changelog entry
 

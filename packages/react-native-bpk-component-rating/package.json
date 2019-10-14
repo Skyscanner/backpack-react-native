@@ -1,6 +1,7 @@
 {
   "name": "react-native-bpk-component-rating",
   "version": "0.0.1",
+  "private": true,
   "main": "index.js",
   "description": "Backpack React Native rating component.",
   "repository": {
