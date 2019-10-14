@@ -185,6 +185,7 @@ dependencies {
     implementation project(':react-native-linear-gradient')
     implementation project(':react-native-bpk-component-calendar')
     implementation project(':react-native-bpk-component-dialog')
+    implementation project(':react-native-bpk-component-rating')
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
     implementation "androidx.recyclerview:recyclerview:1.0.0"
     implementation "com.google.android.material:material:1.0.0"
