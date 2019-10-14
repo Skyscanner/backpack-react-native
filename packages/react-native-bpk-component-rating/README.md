@@ -42,9 +42,9 @@ ext {
 
 If you haven't or are using the pre compiled version bellow, it will use the values shown above.
 
-#### Pre compiled version
+#### Pre-compiled version
 
-Alternatively, the pre compiled version is available on Skyscanner's internal Artifactory. Make sure you have the `infrastructure-maven` registry configured and are logged in, then add the following dependency to your `build.gradle` file:
+Alternatively, the pre-compiled version is available on Skyscanner's internal Artifactory. Make sure you have the `infrastructure-maven` registry configured and are logged in, then add the following dependency to your `build.gradle` file:
 
 ```groovy
     dependencies {
@@ -57,7 +57,7 @@ Alternatively, the pre compiled version is available on Skyscanner's internal Ar
 
 #### Importing the bridge package
 
-After you have installed the lib, import the `BpkRatingPackage()` in your react application:
+After you have installed the lib, import the `BpkRatingPackage()` in your React application:
 
 ```java
 import net.skyscanner.backpack.reactnative.rating.BpkRatingPackage
@@ -75,7 +75,7 @@ protected List<ReactPackage> getPackages() {
 
 ### iOS
 
-TODO
+This isn't yet implemented for iOS.
 
 ## Usage
 
@@ -114,10 +114,10 @@ const ratings = () => (
 
 | Property           | PropType                                | Required | Default Value |
 | ------------------ | --------------------------------------- | -------- | ------------- |
-| title              | oneOfType(string, arrayOf(string>))     | true     | -             |
-| subtitle           | oneOfType(string, arrayOf(string>))     | true     | -             |
+| title              | oneOfType(string, arrayOf(string))     | true     | -             |
+| subtitle           | oneOfType(string, arrayOf(string))     | true     | -             |
 | value              | object                                  | true     | -             |
-| icon               | oneOfType(string, arrayOf(string>))     | false    | null          |
+| icon               | oneOfType(string, arrayOf(string))     | false    | null          |
 | orientation        | oneOf('horizontal', 'vertical')         | false    | 'horizontal'  |
 | size               | oneOf('icon', 'xs', 'sm', 'base', 'lg') | false    | 'base'        |
 
