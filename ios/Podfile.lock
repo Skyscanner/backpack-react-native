@@ -1,6 +1,6 @@
 PODS:
-  - Backpack (19.0.1):
-    - FloatingPanel (~> 1.6)
+  - Backpack (20.0.0):
+    - FloatingPanel (= 1.6.6)
     - FSCalendar (~> 2.8)
     - MBProgressHUD (~> 0.9.1)
     - TTTAttributedLabel (~> 1.13.4)
@@ -67,11 +67,11 @@ PODS:
     - React-cxxreact (= 0.60.4)
     - React-jsi (= 0.60.4)
   - React-jsinspector (0.60.4)
-  - react-native-bpk-component-calendar (4.0.2):
-    - Backpack (~> 19.0)
+  - react-native-bpk-component-calendar (4.0.3):
+    - Backpack (~> 20.0)
     - React
-  - react-native-bpk-component-dialog (4.0.2):
-    - Backpack (~> 19.0)
+  - react-native-bpk-component-dialog (4.0.3):
+    - Backpack (~> 20.0)
     - React
   - react-native-maps (0.25.0):
     - React
@@ -103,7 +103,7 @@ PODS:
   - yoga (0.60.4.React)
 
 DEPENDENCIES:
-  - Backpack (~> 19.0.1)
+  - Backpack (~> 20.0.0)
   - BVLinearGradient (from `../node_modules/react-native-linear-gradient`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
@@ -195,7 +195,7 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  Backpack: 6b9f6dddac84f0ac1299b9a8792d5cb1ece00a01
+  Backpack: 49605829646d670402e85b0bc2778374bec8b14e
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BVLinearGradient: 0d985ec461359c82bc254f26d11008bdae50d17a
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
@@ -212,8 +212,8 @@ SPEC CHECKSUMS:
   React-jsi: 21d3153b1153fbf6510a92b6b11e33e725cb7432
   React-jsiexecutor: 7549641e48bafae7bfee3f3ea19bf4901639c5de
   React-jsinspector: 73f24a02fa684ed6a2b828ba116874a2191ded88
-  react-native-bpk-component-calendar: 5a1ece2787abebe818ddc16f7c86d970f4295d7a
-  react-native-bpk-component-dialog: 31a34d6a6f1438202eabc93784206a05243f1298
+  react-native-bpk-component-calendar: ffc61c8733ee970d2f2779724a29c04e330cb57a
+  react-native-bpk-component-dialog: 49d2258c9dd39e6223229d4afa4344bf94959f18
   react-native-maps: 190c02ca533fddac5bb49cf17bdece3644612107
   React-RCTActionSheet: 9f71d7ae3e8fb10e08d162cbf14c621349dbfab3
   React-RCTAnimation: 981d8c95b0e30918a9832ccac32af83562a27fae
@@ -228,6 +228,6 @@ SPEC CHECKSUMS:
   TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
   yoga: c2c050f6ae6e222534760cc82f559b89214b67e2
 
-PODFILE CHECKSUM: 691dec0dbf8ffafe16a947071c22e9fae1a6070d
+PODFILE CHECKSUM: dda9d2d714c33ec128704ccda19a769ae1887876
 
 COCOAPODS: 1.8.1
