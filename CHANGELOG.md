@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-10-17
+
+**Added:**
+
+- react-native-bpk-component-rating: 1.0.0
+  - Added new rating component for Android.
+
 # 2019-10-10
 
 **Added:**
