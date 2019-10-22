@@ -32,6 +32,7 @@ exports[`Android BpkHorizontalNavItem should render correctly 1`] = `
   }
 >
   <Text
+    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -88,6 +89,7 @@ exports[`Android BpkHorizontalNavItem should render correctly with "selected" pr
   }
 >
   <Text
+    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -150,6 +152,7 @@ exports[`Android BpkHorizontalNavItem should render correctly with "small" prop 
   }
 >
   <Text
+    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -206,6 +209,7 @@ exports[`Android BpkHorizontalNavItem should render correctly with "spaceAround"
   }
 >
   <Text
+    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -262,6 +266,7 @@ exports[`Android BpkHorizontalNavItem should render correctly with arbitrary pro
   }
 >
   <Text
+    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -321,6 +326,7 @@ exports[`Android BpkHorizontalNavItem should render correctly with custom "style
   }
 >
   <Text
+    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -377,6 +383,7 @@ exports[`Android BpkHorizontalNavItem should support theming 1`] = `
   }
 >
   <Text
+    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {

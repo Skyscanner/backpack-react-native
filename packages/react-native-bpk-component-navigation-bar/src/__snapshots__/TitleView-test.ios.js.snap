@@ -41,6 +41,7 @@ exports[`ios TitleView should render correctly with leading icon 1`] = `
   <Text
     allowFontScaling={false}
     ellipsizeMode="tail"
+    maxFontSizeMultiplier={3.2}
     numberOfLines={1}
     style={
       Array [
@@ -85,6 +86,7 @@ exports[`ios TitleView should render correctly with only a title 1`] = `
   <Text
     allowFontScaling={false}
     ellipsizeMode="tail"
+    maxFontSizeMultiplier={3.2}
     numberOfLines={1}
     style={
       Array [
@@ -127,6 +129,7 @@ exports[`ios TitleView should render correctly with trailing icon 1`] = `
   <Text
     allowFontScaling={false}
     ellipsizeMode="tail"
+    maxFontSizeMultiplier={3.2}
     numberOfLines={1}
     style={
       Array [

@@ -17,6 +17,7 @@ exports[`iOS BpkPanel should render correctly 1`] = `
   }
 >
   <Text
+    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -53,6 +54,7 @@ exports[`iOS BpkPanel should render correctly with arbitrary props 1`] = `
   testID="arbitrary value"
 >
   <Text
+    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -91,6 +93,7 @@ exports[`iOS BpkPanel should render correctly with custom style 1`] = `
   }
 >
   <Text
+    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -123,6 +126,7 @@ exports[`iOS BpkPanel should render correctly without padding 1`] = `
   }
 >
   <Text
+    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {

@@ -54,6 +54,7 @@ exports[`Android API levels Android API<21 should render without ripple 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -138,6 +139,7 @@ exports[`Android API levels Android API>=21 should render with ripple 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -222,6 +224,7 @@ exports[`Android BpkButton should render correctly 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -329,6 +332,7 @@ exports[`Android BpkButton should render correctly with iconAlignment="leading" 
       
     </Text>
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -443,6 +447,7 @@ exports[`Android BpkButton should render correctly with iconAlignment="trailing"
       
     </Text>
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -529,6 +534,7 @@ exports[`Android BpkButton should render correctly with type="destructive" 1`] =
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -619,6 +625,7 @@ exports[`Android BpkButton should render correctly with type="destructive" and d
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -703,6 +710,7 @@ exports[`Android BpkButton should render correctly with type="featured" 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -794,6 +802,7 @@ exports[`Android BpkButton should render correctly with type="featured" and disa
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -878,6 +887,7 @@ exports[`Android BpkButton should render correctly with type="primary" 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -969,6 +979,7 @@ exports[`Android BpkButton should render correctly with type="primary" and disab
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1055,6 +1066,7 @@ exports[`Android BpkButton should render correctly with type="secondary" 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1145,6 +1157,7 @@ exports[`Android BpkButton should render correctly with type="secondary" and dis
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1232,6 +1245,7 @@ exports[`Android BpkButton should support elements as icons 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1355,6 +1369,7 @@ exports[`Android BpkButton should support having an icon as well as a title 1`] 
       
     </Text>
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1442,6 +1457,7 @@ exports[`Android BpkButton should support overwriting styles 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1533,6 +1549,7 @@ exports[`Android BpkButton should support the "disabled" property 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1647,6 +1664,7 @@ exports[`Android BpkButton should support the "icon" property 1`] = `
       
     </Text>
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1828,6 +1846,7 @@ exports[`Android BpkButton should support the "secondary" property 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -2007,6 +2026,7 @@ exports[`Android BpkButtonThemed should render correctly 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {

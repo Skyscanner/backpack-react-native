@@ -14,6 +14,7 @@ exports[`BpkTouchableOverlay should render correctly 1`] = `
   style={null}
 >
   <Text
+    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -63,6 +64,7 @@ exports[`BpkTouchableOverlay should render correctly with arbitrary props 1`] = 
   testID="arbitrary value"
 >
   <Text
+    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -112,6 +114,7 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
   testID="arbitrary value"
 >
   <Text
+    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -164,6 +167,7 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
   testID="arbitrary value"
 >
   <Text
+    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -216,6 +220,7 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
   testID="arbitrary value"
 >
   <Text
+    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -268,6 +273,7 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
   testID="arbitrary value"
 >
   <Text
+    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -320,6 +326,7 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
   testID="arbitrary value"
 >
   <Text
+    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -372,6 +379,7 @@ exports[`BpkTouchableOverlay should render correctly with custom overlay styles 
   testID="arbitrary value"
 >
   <Text
+    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -427,6 +435,7 @@ exports[`BpkTouchableOverlay should render correctly with custom style prop 1`] 
   }
 >
   <Text
+    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {

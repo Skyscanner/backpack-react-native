@@ -99,6 +99,7 @@ exports[`android BpkNavigationBar should render correctly 1`] = `
       <Text
         allowFontScaling={false}
         ellipsizeMode="tail"
+        maxFontSizeMultiplier={3.2}
         numberOfLines={1}
         style={
           Array [
@@ -230,6 +231,7 @@ exports[`android BpkNavigationBar should render correctly with a subtitle view 1
       <Text
         allowFontScaling={false}
         ellipsizeMode="tail"
+        maxFontSizeMultiplier={3.2}
         numberOfLines={1}
         style={
           Array [
@@ -504,6 +506,7 @@ exports[`android BpkNavigationBar should render correctly with an icon in the ti
       <Text
         allowFontScaling={false}
         ellipsizeMode="tail"
+        maxFontSizeMultiplier={3.2}
         numberOfLines={1}
         style={
           Array [
@@ -637,6 +640,7 @@ exports[`android BpkNavigationBar should render correctly with custom style 1`] 
       <Text
         allowFontScaling={false}
         ellipsizeMode="tail"
+        maxFontSizeMultiplier={3.2}
         numberOfLines={1}
         style={
           Array [
@@ -768,6 +772,7 @@ exports[`android BpkNavigationBar should render correctly with custom theme 1`] 
       <Text
         allowFontScaling={false}
         ellipsizeMode="tail"
+        maxFontSizeMultiplier={3.2}
         numberOfLines={1}
         style={
           Array [
@@ -896,6 +901,7 @@ exports[`android BpkNavigationBar should render correctly with trailing button 1
       <Text
         allowFontScaling={false}
         ellipsizeMode="tail"
+        maxFontSizeMultiplier={3.2}
         numberOfLines={1}
         style={
           Array [

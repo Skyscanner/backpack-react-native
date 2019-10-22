@@ -55,6 +55,7 @@ exports[`Android withDivider should render correctly 1`] = `
       }
     >
       <Text
+        maxFontSizeMultiplier={3.2}
         style={
           Array [
             Object {
@@ -97,6 +98,7 @@ exports[`Android withDivider should render correctly 1`] = `
       }
     >
       <Text
+        maxFontSizeMultiplier={3.2}
         style={
           Array [
             Object {
@@ -175,6 +177,7 @@ exports[`Android withDivider should render correctly with "cornerStyle=large" 1`
       }
     >
       <Text
+        maxFontSizeMultiplier={3.2}
         style={
           Array [
             Object {
@@ -217,6 +220,7 @@ exports[`Android withDivider should render correctly with "cornerStyle=large" 1`
       }
     >
       <Text
+        maxFontSizeMultiplier={3.2}
         style={
           Array [
             Object {
@@ -293,6 +297,7 @@ exports[`Android withDivider should render correctly with arbitrary props 1`] = 
       }
     >
       <Text
+        maxFontSizeMultiplier={3.2}
         style={
           Array [
             Object {
@@ -335,6 +340,7 @@ exports[`Android withDivider should render correctly with arbitrary props 1`] = 
       }
     >
       <Text
+        maxFontSizeMultiplier={3.2}
         style={
           Array [
             Object {
@@ -413,6 +419,7 @@ exports[`Android withDivider should render correctly with custom main style 1`] 
       }
     >
       <Text
+        maxFontSizeMultiplier={3.2}
         style={
           Array [
             Object {
@@ -455,6 +462,7 @@ exports[`Android withDivider should render correctly with custom main style 1`] 
       }
     >
       <Text
+        maxFontSizeMultiplier={3.2}
         style={
           Array [
             Object {
@@ -530,6 +538,7 @@ exports[`Android withDivider should render correctly with custom stub style 1`] 
       }
     >
       <Text
+        maxFontSizeMultiplier={3.2}
         style={
           Array [
             Object {
@@ -575,6 +584,7 @@ exports[`Android withDivider should render correctly with custom stub style 1`] 
       }
     >
       <Text
+        maxFontSizeMultiplier={3.2}
         style={
           Array [
             Object {
@@ -647,6 +657,7 @@ exports[`Android withDivider should render correctly without padding 1`] = `
       }
     >
       <Text
+        maxFontSizeMultiplier={3.2}
         style={
           Array [
             Object {
@@ -686,6 +697,7 @@ exports[`Android withDivider should render correctly without padding 1`] = `
       }
     >
       <Text
+        maxFontSizeMultiplier={3.2}
         style={
           Array [
             Object {

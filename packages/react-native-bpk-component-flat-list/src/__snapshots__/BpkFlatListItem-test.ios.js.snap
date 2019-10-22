@@ -38,6 +38,7 @@ exports[`iOS BpkFlatListItem should render correctly 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -150,6 +151,7 @@ exports[`iOS BpkFlatListItem should support the "image" property 1`] = `
       }
     />
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -252,6 +254,7 @@ exports[`iOS BpkFlatListItem should support the "selected" property 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -377,6 +380,7 @@ exports[`iOS should support theming when selected 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {

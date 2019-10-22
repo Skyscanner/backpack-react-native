@@ -43,6 +43,7 @@ exports[`iOS BpkButton should render correctly 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -152,6 +153,7 @@ exports[`iOS BpkButton should render correctly with iconAlignment="leading" 1`] 
       
     </Text>
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -268,6 +270,7 @@ exports[`iOS BpkButton should render correctly with iconAlignment="trailing" 1`]
       
     </Text>
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -351,6 +354,7 @@ exports[`iOS BpkButton should render correctly with type="destructive" 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -442,6 +446,7 @@ exports[`iOS BpkButton should render correctly with type="destructive" and disab
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -532,6 +537,7 @@ exports[`iOS BpkButton should render correctly with type="featured" 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -622,6 +628,7 @@ exports[`iOS BpkButton should render correctly with type="featured" and disabled
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -708,6 +715,7 @@ exports[`iOS BpkButton should render correctly with type="primary" 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -798,6 +806,7 @@ exports[`iOS BpkButton should render correctly with type="primary" and disabled 
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -881,6 +890,7 @@ exports[`iOS BpkButton should render correctly with type="secondary" 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -972,6 +982,7 @@ exports[`iOS BpkButton should render correctly with type="secondary" and disable
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1065,6 +1076,7 @@ exports[`iOS BpkButton should support elements as icons 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1195,6 +1207,7 @@ exports[`iOS BpkButton should support having an icon as well as a title 1`] = `
       
     </Text>
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1285,6 +1298,7 @@ exports[`iOS BpkButton should support overwriting styles 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1375,6 +1389,7 @@ exports[`iOS BpkButton should support the "disabled" property 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1491,6 +1506,7 @@ exports[`iOS BpkButton should support the "icon" property 1`] = `
       
     </Text>
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1676,6 +1692,7 @@ exports[`iOS BpkButton should support the "secondary" property 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1868,6 +1885,7 @@ exports[`iOS BpkButtonThemed should render correctly 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1984,6 +2002,7 @@ exports[`iOS should support the "icon" and "large" property 1`] = `
       
     </Text>
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -2172,6 +2191,7 @@ exports[`iOS should support the "large" and secondary property 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -2265,6 +2285,7 @@ exports[`iOS should support the "large" property 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
