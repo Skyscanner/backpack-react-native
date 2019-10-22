@@ -80,6 +80,7 @@ exports[`Android BpkPhoneNumberInput should render correctly 1`] = `
         }
       />
       <Text
+        maxFontSizeMultiplier={3.2}
         style={
           Array [
             Object {
@@ -251,6 +252,7 @@ exports[`Android BpkPhoneNumberInput should render correctly with \`editable\` f
         }
       />
       <Text
+        maxFontSizeMultiplier={3.2}
         style={
           Array [
             Object {

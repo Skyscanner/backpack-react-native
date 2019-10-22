@@ -437,6 +437,7 @@ exports[`iOS BpkTextInput should render correctly with description 1`] = `
     </View>
   </View>
   <Text
+    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -556,6 +557,7 @@ exports[`iOS BpkTextInput should render correctly with description, valid=false 
     </View>
   </View>
   <Text
+    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -1161,6 +1163,7 @@ exports[`iOS BpkTextInput should render correctly with valid false and a validat
     </View>
   </View>
   <Text
+    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {

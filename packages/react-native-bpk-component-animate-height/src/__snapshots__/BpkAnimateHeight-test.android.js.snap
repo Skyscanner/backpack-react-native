@@ -24,6 +24,7 @@ exports[`Android BpkAnimateHeight should render correctly collapsed 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -51,6 +52,7 @@ exports[`Android BpkAnimateHeight should render correctly collapsed 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -94,6 +96,7 @@ exports[`Android BpkAnimateHeight should render correctly expanded 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -121,6 +124,7 @@ exports[`Android BpkAnimateHeight should render correctly expanded 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -164,6 +168,7 @@ exports[`Android BpkAnimateHeight should render correctly with n children 1`] = 
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -180,6 +185,7 @@ exports[`Android BpkAnimateHeight should render correctly with n children 1`] = 
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
     </Text>
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -207,6 +213,7 @@ exports[`Android BpkAnimateHeight should render correctly with n children 1`] = 
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -223,6 +230,7 @@ exports[`Android BpkAnimateHeight should render correctly with n children 1`] = 
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
     </Text>
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -267,6 +275,7 @@ exports[`Android BpkAnimateHeight should render correctly with user styling padd
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -294,6 +303,7 @@ exports[`Android BpkAnimateHeight should render correctly with user styling padd
     }
   >
     <Text
+      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {

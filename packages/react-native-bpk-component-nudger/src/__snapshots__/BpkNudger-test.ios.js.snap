@@ -117,6 +117,7 @@ exports[`iOS BpkNudger should render correctly 1`] = `
     />
   </View>
   <Text
+    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -366,6 +367,7 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
     />
   </View>
   <Text
+    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -611,6 +613,7 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
     />
   </View>
   <Text
+    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -864,6 +867,7 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
     />
   </View>
   <Text
+    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {

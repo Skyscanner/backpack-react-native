@@ -75,6 +75,7 @@ exports[`Android BpkBannerAlert should accept userland styling 1`] = `
           
         </Text>
         <Text
+          maxFontSizeMultiplier={3.2}
           style={
             Array [
               Object {
@@ -153,6 +154,7 @@ exports[`Android BpkBannerAlert should accept userland styling 1`] = `
           
         </Text>
         <Text
+          maxFontSizeMultiplier={3.2}
           style={
             Array [
               Object {
@@ -251,6 +253,7 @@ exports[`Android BpkBannerAlert should render correctly when not shown 1`] = `
           
         </Text>
         <Text
+          maxFontSizeMultiplier={3.2}
           style={
             Array [
               Object {
@@ -329,6 +332,7 @@ exports[`Android BpkBannerAlert should render correctly when not shown 1`] = `
           
         </Text>
         <Text
+          maxFontSizeMultiplier={3.2}
           style={
             Array [
               Object {
@@ -427,6 +431,7 @@ exports[`Android BpkBannerAlert should render correctly with animateOnEnter 1`] 
           
         </Text>
         <Text
+          maxFontSizeMultiplier={3.2}
           style={
             Array [
               Object {
@@ -505,6 +510,7 @@ exports[`Android BpkBannerAlert should render correctly with animateOnEnter 1`] 
           
         </Text>
         <Text
+          maxFontSizeMultiplier={3.2}
           style={
             Array [
               Object {
@@ -603,6 +609,7 @@ exports[`Android BpkBannerAlert should render correctly with animateOnLeave 1`] 
           
         </Text>
         <Text
+          maxFontSizeMultiplier={3.2}
           style={
             Array [
               Object {
@@ -681,6 +688,7 @@ exports[`Android BpkBannerAlert should render correctly with animateOnLeave 1`] 
           
         </Text>
         <Text
+          maxFontSizeMultiplier={3.2}
           style={
             Array [
               Object {
@@ -798,6 +806,7 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
           
         </Text>
         <Text
+          maxFontSizeMultiplier={3.2}
           style={
             Array [
               Object {
@@ -864,6 +873,7 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
           }
         >
           <Text
+            maxFontSizeMultiplier={3.2}
             style={
               Array [
                 Object {
@@ -894,6 +904,7 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
           }
         >
           <Text
+            maxFontSizeMultiplier={3.2}
             style={
               Array [
                 Object {
@@ -989,6 +1000,7 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
           
         </Text>
         <Text
+          maxFontSizeMultiplier={3.2}
           style={
             Array [
               Object {
@@ -1055,6 +1067,7 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
           }
         >
           <Text
+            maxFontSizeMultiplier={3.2}
             style={
               Array [
                 Object {
@@ -1085,6 +1098,7 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
           }
         >
           <Text
+            maxFontSizeMultiplier={3.2}
             style={
               Array [
                 Object {
@@ -1181,6 +1195,7 @@ exports[`Android BpkBannerAlert should render correctly with dismissable 1`] = `
           
         </Text>
         <Text
+          maxFontSizeMultiplier={3.2}
           style={
             Array [
               Object {
@@ -1233,6 +1248,7 @@ exports[`Android BpkBannerAlert should render correctly with dismissable 1`] = `
             }
           >
             <Text
+              maxFontSizeMultiplier={3.2}
               numberOfLines={1}
               style={
                 Array [
@@ -1318,6 +1334,7 @@ exports[`Android BpkBannerAlert should render correctly with dismissable 1`] = `
           
         </Text>
         <Text
+          maxFontSizeMultiplier={3.2}
           style={
             Array [
               Object {
@@ -1370,6 +1387,7 @@ exports[`Android BpkBannerAlert should render correctly with dismissable 1`] = `
             }
           >
             <Text
+              maxFontSizeMultiplier={3.2}
               numberOfLines={1}
               style={
                 Array [
@@ -1494,6 +1512,7 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
           
         </Text>
         <Text
+          maxFontSizeMultiplier={3.2}
           style={
             Array [
               Object {
@@ -1560,6 +1579,7 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
           }
         >
           <Text
+            maxFontSizeMultiplier={3.2}
             style={
               Array [
                 Object {
@@ -1590,6 +1610,7 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
           }
         >
           <Text
+            maxFontSizeMultiplier={3.2}
             style={
               Array [
                 Object {
@@ -1685,6 +1706,7 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
           
         </Text>
         <Text
+          maxFontSizeMultiplier={3.2}
           style={
             Array [
               Object {
@@ -1751,6 +1773,7 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
           }
         >
           <Text
+            maxFontSizeMultiplier={3.2}
             style={
               Array [
                 Object {
@@ -1781,6 +1804,7 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
           }
         >
           <Text
+            maxFontSizeMultiplier={3.2}
             style={
               Array [
                 Object {
@@ -1877,6 +1901,7 @@ exports[`Android BpkBannerAlert should render correctly with type equal to error
           
         </Text>
         <Text
+          maxFontSizeMultiplier={3.2}
           style={
             Array [
               Object {
@@ -1955,6 +1980,7 @@ exports[`Android BpkBannerAlert should render correctly with type equal to error
           
         </Text>
         <Text
+          maxFontSizeMultiplier={3.2}
           style={
             Array [
               Object {
@@ -2053,6 +2079,7 @@ exports[`Android BpkBannerAlert should render correctly with type equal to neutr
           
         </Text>
         <Text
+          maxFontSizeMultiplier={3.2}
           style={
             Array [
               Object {
@@ -2131,6 +2158,7 @@ exports[`Android BpkBannerAlert should render correctly with type equal to neutr
           
         </Text>
         <Text
+          maxFontSizeMultiplier={3.2}
           style={
             Array [
               Object {
@@ -2229,6 +2257,7 @@ exports[`Android BpkBannerAlert should render correctly with type equal to succe
           
         </Text>
         <Text
+          maxFontSizeMultiplier={3.2}
           style={
             Array [
               Object {
@@ -2307,6 +2336,7 @@ exports[`Android BpkBannerAlert should render correctly with type equal to succe
           
         </Text>
         <Text
+          maxFontSizeMultiplier={3.2}
           style={
             Array [
               Object {
@@ -2405,6 +2435,7 @@ exports[`Android BpkBannerAlert should render correctly with type equal to warn 
           
         </Text>
         <Text
+          maxFontSizeMultiplier={3.2}
           style={
             Array [
               Object {
@@ -2483,6 +2514,7 @@ exports[`Android BpkBannerAlert should render correctly with type equal to warn 
           
         </Text>
         <Text
+          maxFontSizeMultiplier={3.2}
           style={
             Array [
               Object {
