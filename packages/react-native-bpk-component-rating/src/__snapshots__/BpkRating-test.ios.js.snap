@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Android BpkRating should render correctly 1`] = `
+exports[`iOS BpkRating should render correctly 1`] = `
 <View>
-  <AndroidBPKRatingView
+  <RCTBPKRating
     orientation="horizontal"
     size="base"
     subtitle={
@@ -24,11 +24,11 @@ exports[`Android BpkRating should render correctly 1`] = `
 </View>
 `;
 
-exports[`Android BpkRating should render correctly with all props 1`] = `
+exports[`iOS BpkRating should render correctly with all props 1`] = `
 <View
   orientaion="vertical"
 >
-  <AndroidBPKRatingView
+  <RCTBPKRating
     orientation="horizontal"
     size="sm"
     subtitle={
@@ -50,9 +50,9 @@ exports[`Android BpkRating should render correctly with all props 1`] = `
 </View>
 `;
 
-exports[`Android BpkRating should render correctly with strings instead of arrays 1`] = `
+exports[`iOS BpkRating should render correctly with strings instead of arrays 1`] = `
 <View>
-  <AndroidBPKRatingView
+  <RCTBPKRating
     orientation="horizontal"
     size="lg"
     subtitle={
@@ -70,7 +70,7 @@ exports[`Android BpkRating should render correctly with strings instead of array
 </View>
 `;
 
-exports[`Android BpkRating should spread extra properties 1`] = `
+exports[`iOS BpkRating should spread extra properties 1`] = `
 <View
   style={
     Object {
@@ -78,7 +78,7 @@ exports[`Android BpkRating should spread extra properties 1`] = `
     }
   }
 >
-  <AndroidBPKRatingView
+  <RCTBPKRating
     orientation="horizontal"
     size="base"
     subtitle={

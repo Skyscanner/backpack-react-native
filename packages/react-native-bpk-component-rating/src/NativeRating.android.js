@@ -24,12 +24,6 @@ import { type NativeProps } from './common-types';
 
 const AndroidBPKRatingView = requireNativeComponent('AndroidBPKRatingView');
 
-const normalizedIconName = icon => `bpk_${icon.replace(/-/g, '_')}`;
-
-const BpkRating = (props: NativeProps) => {
-  const { icon, ...rest } = props;
-  const normalizedIcon = icon ? icon.map(normalizedIconName) : undefined;
-  return <AndroidBPKRatingView {...rest} icon={normalizedIcon} />;
-};
+const BpkRating = (props: NativeProps) => <AndroidBPKRatingView {...props} />;
 
 export default BpkRating;

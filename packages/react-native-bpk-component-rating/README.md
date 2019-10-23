@@ -75,14 +75,19 @@ protected List<ReactPackage> getPackages() {
 
 ### iOS
 
-This isn't yet implemented for iOS.
+Add a dependency to your Podfile using the path to the NPM package as follows:
+
+```
+  pod 'react-native-bpk-component-rating', path: '../node_modules/react-native-bpk-component-rating'
+```
+
+Note that the `react-native-bpk-component-rating` depends on [Backpack](https://cocoapods.org/pods/Backpack). If your Podfile also depends on this directly, both dependencies must be for compatible semver versions.
 
 ## Usage
 
 ```javascript
 import React from 'react';
 import { View } from 'react-native';
-import { icons } from 'react-native-bpk-component-icon';
 import BpkRating from 'react-native-bpk-component-rating';
 
 const ratings = () => (
@@ -92,13 +97,6 @@ const ratings = () => (
       subtitle={['Low subtitle', 'Medium subtitle', 'High subtitle']}
       value={5}
       orientation="horizontal"
-    />
-    <BpkRating
-      title={['Low title', 'Medium title', 'High title']}
-      subtitle={['Low subtitle', 'Medium subtitle', 'High subtitle']}
-      size="icon"
-      icon={[icons.tick, icons.star, icons.beer]}
-      value={5}
     />
     <BpkRating
       title="One title to rule them all"
@@ -117,9 +115,8 @@ const ratings = () => (
 | title              | oneOfType(string, arrayOf(string))     | true     | -             |
 | subtitle           | oneOfType(string, arrayOf(string))     | true     | -             |
 | value              | object                                  | true     | -             |
-| icon               | oneOfType(string, arrayOf(string))     | false    | null          |
 | orientation        | oneOf('horizontal', 'vertical')         | false    | 'horizontal'  |
-| size               | oneOf('icon', 'xs', 'sm', 'base', 'lg') | false    | 'base'        |
+| size               | oneOf('xs', 'sm', 'base', 'lg') | false    | 'base'        |
 
-* For `title`, `subtitle` and `icon`, a `string` or `array` is supported. When providing an `array`
+* For `title` and`subtitle` a `string` or `array` is supported. When providing an `array`
 you should provide an array with three items, for low, medium and high scores.

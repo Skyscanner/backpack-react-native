@@ -42,8 +42,7 @@ const commonTests = () => {
             subtitle={SUBTITLES}
             value={3}
             orientaion="vertical"
-            size="icon"
-            icon={['loq', 'med', 'high']}
+            size="sm"
           />,
         )
         .toJSON();
@@ -57,8 +56,7 @@ const commonTests = () => {
             title="single"
             subtitle="single sub"
             value={3}
-            icon="single icon"
-            size="icon"
+            size="lg"
           />,
         )
         .toJSON();

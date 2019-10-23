@@ -17,11 +17,13 @@
  */
 
 /* @flow */
-import { defaultProps, type NativeProps } from './common-types';
+import React from 'react';
+import { requireNativeComponent } from 'react-native';
 
-// eslint-disable-next-line
-const BpkRating = (props: NativeProps) => null;
+import { type NativeProps } from './common-types';
 
-BpkRating.defaultProps = { ...defaultProps };
+const RCTBPKRating = requireNativeComponent('RCTBPKRating');
+
+const BpkRating = (props: NativeProps) => <RCTBPKRating {...props} />;
 
 export default BpkRating;
