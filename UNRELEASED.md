@@ -7,6 +7,11 @@
 - react-native-bpk-component-text:
   - Set `maxFontSizeMultiplier` to ensure RN screens still function at large zoom levels. Note that in the future this limitation will be removed, and screens will be expected to respond accordingly.
 
+**Fixed:**
+
+- react-native-bpk-component-calendar:
+  - Upgraded `backpack-ios` dependency to adopt `SimpleDate` refactor.
+
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).

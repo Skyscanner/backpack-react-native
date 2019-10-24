@@ -16,12 +16,13 @@
  * limitations under the License.
  */
 
-#import <React/RCTViewManager.h>
 #import <Backpack/Calendar.h>
+#import <Backpack/SimpleDate.h>
+#import <React/RCTViewManager.h>
 
 @interface RCTBPKCalendar : BPKCalendar
 
-@property (nonatomic, copy) RCTBubblingEventBlock onDateSelection;
+@property(nonatomic, copy) RCTBubblingEventBlock onDateSelection;
 @property(nonatomic, strong, readonly) NSCalendar *utcCalendar;
 
 @property(nonatomic, nullable) NSDate *rct_minDate;

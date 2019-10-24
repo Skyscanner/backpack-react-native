@@ -60,8 +60,6 @@ NS_ASSUME_NONNULL_BEGIN
                  localCalendar:(NSCalendar *)localCalendar
                    utcCalendar:(NSCalendar *)utcCalendar;
 
-
-
 @end
 
 NS_ASSUME_NONNULL_END

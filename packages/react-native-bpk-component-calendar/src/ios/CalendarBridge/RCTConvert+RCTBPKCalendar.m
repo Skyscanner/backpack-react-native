@@ -22,10 +22,11 @@
 @implementation RCTConvert (RCTBPKCalendar)
 
 RCT_ENUM_CONVERTER(BPKCalendarSelection, (@{
-                                            @"single": @(BPKCalendarSelectionSingle),
-                                            @"multiple": @(BPKCalendarSelectionMultiple),
-                                            @"range": @(BPKCalendarSelectionRange)
-                                            }), BPKCalendarSelectionSingle, integerValue)
+                       @"single": @(BPKCalendarSelectionSingle),
+                       @"multiple": @(BPKCalendarSelectionMultiple),
+                       @"range": @(BPKCalendarSelectionRange)
+                   }),
+                   BPKCalendarSelectionSingle, integerValue)
 RCT_ARRAY_CONVERTER(NSDate)
 
 @end

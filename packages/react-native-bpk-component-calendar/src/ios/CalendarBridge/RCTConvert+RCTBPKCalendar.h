@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-#import <CoreLocation/CoreLocation.h>
 #import <Backpack/Calendar.h>
+#import <CoreLocation/CoreLocation.h>
 #import <React/RCTConvert.h>
 
 @interface RCTConvert (RCTBPKCalendar)
