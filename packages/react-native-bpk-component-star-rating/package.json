@@ -1,6 +1,6 @@
 {
   "name": "react-native-bpk-component-star-rating",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Backpack React Native rating star component.",
   "main": "index.js",
   "repository": {
@@ -16,8 +16,8 @@
   "dependencies": {
     "bpk-tokens": "^29.0.2",
     "prop-types": "^15.5.8",
-    "react-native-bpk-component-icon": "^2.1.0",
-    "react-native-bpk-component-text": "^4.1.18",
+    "react-native-bpk-component-icon": "^2.1.1",
+    "react-native-bpk-component-text": "^4.1.19",
     "react-native-bpk-theming": "^1.4.6"
   },
   "publishConfig": {
