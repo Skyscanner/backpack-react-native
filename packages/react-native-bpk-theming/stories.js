@@ -283,10 +283,28 @@ class BpkThemePicker extends Component<{}, State> {
   }
 }
 
+class RefTest extends Component {
+  constructor(props) {
+    super(props);
+
+    this.myRef = React.createRef();
+  }
+
+  render() {
+    console.warn('myRef', this.myRef);
+    return <BpkButton ref={this.myRef} title="Test" />;
+  }
+}
+
 storiesOf('react-native-bpk-theming', module)
   .addDecorator(CenterDecorator)
   .add('Default', () => (
     <View>
       <BpkThemePicker />
+    </View>
+  ))
+  .add('withTheme ref test', () => (
+    <View>
+      <RefTest />
     </View>
   ));
