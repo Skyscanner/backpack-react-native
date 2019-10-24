@@ -20,16 +20,13 @@
 #import <React/RCTBridge.h>
 #import <React/RCTUIManager.h>
 
-
-#import "RCTConvert+RCTBPKCalendar.h"
 #import "RCTBPKCalendar.h"
 #import "RCTBPKCalendarDateUtils.h"
+#import "RCTConvert+RCTBPKCalendar.h"
 
-
-@interface RCTBPKCalendarManager() <BPKCalendarDelegate>
+@interface RCTBPKCalendarManager () <BPKCalendarDelegate>
 
 @end
-
 
 @implementation RCTBPKCalendarManager
 
@@ -50,38 +47,37 @@ RCT_REMAP_VIEW_PROPERTY(selectedDates, rct_selectedDates, NSArray<NSDate *> *)
 
 RCT_EXPORT_VIEW_PROPERTY(onDateSelection, RCTBubblingEventBlock)
 
-
 /*
  * When the calendar renders in certain configurations the initial
  * render is incorrect. With this method, called from `componentDidMount`,
  * is called the calendar is forced to re-render to fix the bug.
  */
-RCT_EXPORT_METHOD(forceRender:(nonnull NSNumber *)reactTag) {
-    [self.bridge.uiManager addUIBlock:
-     ^(__unused RCTUIManager *uiManager, NSDictionary<NSNumber *, UIView *> *viewRegistry){
-         UIView *view = viewRegistry[reactTag];
+RCT_EXPORT_METHOD(forceRender : (nonnull NSNumber *)reactTag) {
+    [self.bridge.uiManager
+        addUIBlock:^(__unused RCTUIManager *uiManager, NSDictionary<NSNumber *, UIView *> *viewRegistry) {
+          UIView *view = viewRegistry[reactTag];
 
-         if ([view isKindOfClass:[BPKCalendar class]]) {
-             BPKCalendar *calendar = (BPKCalendar *)view;
-             NSArray<BPKSimpleDate* > *selectedDates = calendar.selectedDates;
+          if ([view isKindOfClass:[BPKCalendar class]]) {
+              BPKCalendar *calendar = (BPKCalendar *)view;
+              NSArray<BPKSimpleDate *> *selectedDates = calendar.selectedDates;
 
-             calendar.selectedDates = @[];
-             [calendar reloadData];
+              calendar.selectedDates = @[];
+              [calendar reloadData];
 
-             /*
-              * Force a slight pause before rendering again with the
-              * selected dates.
-              */
-             [[NSOperationQueue currentQueue] addOperationWithBlock:^{
-                 calendar.selectedDates = selectedDates;
-                 [calendar reloadData];
-             }];
-         } else {
-             RCTLogError(@"tried to force render: on non-BPKCalendar view %@ "
-                         "with tag #%@", view, reactTag);
-         }
-     }];
-
+              /*
+               * Force a slight pause before rendering again with the
+               * selected dates.
+               */
+              [[NSOperationQueue currentQueue] addOperationWithBlock:^{
+                calendar.selectedDates = selectedDates;
+                [calendar reloadData];
+              }];
+          } else {
+              RCTLogError(@"tried to force render: on non-BPKCalendar view %@ "
+                           "with tag #%@",
+                          view, reactTag);
+          }
+        }];
 }
 
 #pragma mark RCTCalendarViewDelegate
@@ -95,11 +91,11 @@ RCT_EXPORT_METHOD(forceRender:(nonnull NSNumber *)reactTag) {
         return;
     }
 
-    NSMutableArray<NSNumber *> * dateArray = [[NSMutableArray alloc] initWithCapacity:dateList.count];
+    NSMutableArray<NSNumber *> *dateArray = [[NSMutableArray alloc] initWithCapacity:dateList.count];
     for (BPKSimpleDate *date in dateList) {
         // The React Native interface uses UTC dates regardless of the local time zone
         // Thus we need to convert the dates to UTC instead of the local time zone here.
-        NSDate* localDate = [calendar dateFromSimpleDate:date];
+        NSDate *localDate = [date dateWithLocale:calendar.locale];
         NSDate *dateInUTC = [RCTBPKCalendarDateUtils convertDateToUTC:localDate
                                                         localCalendar:calendar.gregorian
                                                           utcCalendar:calendar.utcCalendar];

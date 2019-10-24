@@ -21,11 +21,11 @@
 NS_ASSUME_NONNULL_BEGIN
 @implementation RCTBPKCalendarDateUtils
 
-
 + (NSDate *)convertDateToUTC:(NSDate *)localDate
                localCalendar:(NSCalendar *)localCalendar
                  utcCalendar:(NSCalendar *)utcCalendar {
-    NSDateComponents *dateComponents = [localCalendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay fromDate:localDate];
+    NSDateComponents *dateComponents =
+        [localCalendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay fromDate:localDate];
 
     return [utcCalendar dateFromComponents:dateComponents];
 }
@@ -33,7 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSDate *)convertDateToLocal:(NSDate *)utcDate
                  localCalendar:(NSCalendar *)localCalendar
                    utcCalendar:(NSCalendar *)utcCalendar {
-    NSDateComponents *utcComponents = [utcCalendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay fromDate:utcDate];
+    NSDateComponents *utcComponents =
+        [utcCalendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay fromDate:utcDate];
 
     return [localCalendar dateFromComponents:utcComponents];
 }
