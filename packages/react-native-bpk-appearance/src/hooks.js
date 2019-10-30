@@ -17,22 +17,28 @@
  */
 
 /* @flow */
+import { useContext } from 'react';
 
-import BpkAppearance, {
+import {
+  type ColorSchemeName,
   type BpkAppearancePreferences,
-} from './src/BpkAppearance';
-import { useAppearance, useColorScheme, useDynamicValue } from './src/hooks';
-import BpkAppearanceProvider, {
-  BpkAppearanceProviderContext,
-  type Props as BpkAppearanceProviderProps,
-} from './src/BpkAppearanceProvider';
+} from './BpkAppearance';
+import { BpkAppearanceProviderContext } from './BpkAppearanceProvider';
 
-export default BpkAppearance;
-export {
-  useAppearance,
-  useColorScheme,
-  useDynamicValue,
-  BpkAppearanceProviderContext,
-  BpkAppearanceProvider,
-};
-export type { BpkAppearancePreferences, BpkAppearanceProviderProps };
+// TODO: move this to bpk-tokens?
+export type DynamicValue<T> = { light: T, dark: T };
+
+export function useAppearance(): BpkAppearancePreferences {
+  return useContext(BpkAppearanceProviderContext);
+}
+
+export function useColorScheme(): ColorSchemeName {
+  return useAppearance().colorScheme || 'light';
+}
+
+export function useDynamicValue<T>(value: DynamicValue<T>): T {
+  return value[useColorScheme()];
+}
+
+// TODO;
+// useDynamicStyleSheet

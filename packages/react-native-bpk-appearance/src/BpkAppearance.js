@@ -28,17 +28,10 @@ export type BpkAppearancePreferences = {
 
 export type BpkAppearanceChangeListener = BpkAppearancePreferences => void;
 
-export type BpkAppearance = {
-  get: () => BpkAppearancePreferences,
-  set: (preferences: BpkAppearancePreferences) => void,
-  addChangeListener: (listener: BpkAppearanceChangeListener) => void,
-  removeChangeListener: (listener: BpkAppearanceChangeListener) => void,
-};
-
 let currentPreferences: BpkAppearancePreferences = { colorScheme: initialMode };
 const listeners: Set<BpkAppearanceChangeListener> = new Set([]);
 
-const appearance: BpkAppearance = {
+const appearance = {
   get: () => currentPreferences,
   set: (preferences: BpkAppearancePreferences) => {
     if (currentPreferences.colorScheme !== preferences.colorScheme) {
