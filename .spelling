@@ -9,6 +9,7 @@
 # Backpack components
 
 # Component names
+BpkAppearance
 BpkAutosuggest
 BpkBarChart
 BpkBarchartBar
@@ -24,8 +25,8 @@ BpkCard
 BpkCarousel
 BpkCarouselItem
 BpkChip
-BpkDialog
 BpkDialingCodeList
+BpkDialog
 BpkDialogIos
 BpkDismissibleChip
 BpkFieldset
@@ -368,6 +369,7 @@ bpk-svgs
 bpk-tether
 bpk-theming
 bpk-tokens
+react-native-bpk-appearance
 react-native-bpk-component-alert
 react-native-bpk-component-animate-height
 react-native-bpk-component-badge

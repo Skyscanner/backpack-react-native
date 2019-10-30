@@ -1,0 +1,61 @@
+/*
+ * Backpack - Skyscanner's Design System
+ *
+ * Copyright 2016-2019 Skyscanner Ltd
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/* @flow */
+
+import { initialMode, eventEmitter } from 'react-native-dark-mode';
+
+export type ColorSchemeName = 'light' | 'dark';
+
+export type BpkAppearancePreferences = {
+  colorScheme?: ColorSchemeName,
+};
+
+export type BpkAppearanceChangeListener = BpkAppearancePreferences => void;
+
+export type BpkAppearance = {
+  get: () => BpkAppearancePreferences,
+  set: (preferences: BpkAppearancePreferences) => void,
+  addChangeListener: (listener: BpkAppearanceChangeListener) => void,
+  removeChangeListener: (listener: BpkAppearanceChangeListener) => void,
+};
+
+let currentPreferences: BpkAppearancePreferences = { colorScheme: initialMode };
+const listeners: Set<BpkAppearanceChangeListener> = new Set([]);
+
+const appearance: BpkAppearance = {
+  get: () => currentPreferences,
+  set: (preferences: BpkAppearancePreferences) => {
+    if (currentPreferences.colorScheme !== preferences.colorScheme) {
+      currentPreferences = preferences;
+      listeners.forEach(listener => listener(currentPreferences));
+    }
+  },
+  addChangeListener: (listener: BpkAppearanceChangeListener) => {
+    listeners.add(listener);
+  },
+  removeChangeListener: (listener: BpkAppearanceChangeListener) => {
+    listeners.delete(listener);
+  },
+};
+
+eventEmitter.on('currentModeChanged', newMode => {
+  appearance.set({ ...currentPreferences, colorScheme: newMode });
+});
+
+export default appearance;
