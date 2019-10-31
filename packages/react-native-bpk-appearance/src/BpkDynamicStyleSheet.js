@@ -58,9 +58,11 @@ export type BpkStyleSheetStyle = {|
 |};
 
 export type NamedStyles = { +[key: string]: BpkStyleSheetStyle };
+
+export type BpkDynamicStyleProp<S> = $ObjMap<S, (Object) => any>;
 export type BpkDynamicStyle<S> = {
-  light: $ObjMap<S, (Object) => any>,
-  dark: $ObjMap<S, (Object) => any>,
+  light: BpkDynamicStyleProp<S>,
+  dark: BpkDynamicStyleProp<S>,
 };
 
 const isSemanticColor = (value: any): boolean =>
