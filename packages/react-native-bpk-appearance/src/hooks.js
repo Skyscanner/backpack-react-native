@@ -24,6 +24,7 @@ import {
   type BpkAppearancePreferences,
 } from './BpkAppearance';
 import { BpkAppearanceProviderContext } from './BpkAppearanceProvider';
+import { type BpkDynamicStyle } from './BpkDynamicStyleSheet';
 
 // TODO: move this to bpk-tokens?
 export type DynamicValue<T> = { light: T, dark: T };
@@ -40,5 +41,6 @@ export function useDynamicValue<T>(value: DynamicValue<T>): T {
   return value[useColorScheme()];
 }
 
-// TODO;
-// useDynamicStyleSheet
+export function useDynamicStyleSheet(style: BpkDynamicStyle<*>) {
+  return useDynamicValue(style);
+}

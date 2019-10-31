@@ -20,7 +20,13 @@ import TestRenderer from 'react-test-renderer';
 
 import BpkAppearanceProvider from './BpkAppearanceProvider';
 import BpkAppearance from './BpkAppearance';
-import { useAppearance, useColorScheme, useDynamicValue } from './hooks';
+import BpkDynamicStyleSheet from './BpkDynamicStyleSheet';
+import {
+  useAppearance,
+  useColorScheme,
+  useDynamicValue,
+  useDynamicStyleSheet,
+} from './hooks';
 
 jest.mock('react-native-dark-mode', () => ({
   initialMode: 'light',
@@ -35,6 +41,9 @@ const TestComponent = ({ hook }) => {
 describe('BpkAppearance - hooks', () => {
   afterEach(() => {
     TestComponent.currentValue = null;
+    TestRenderer.act(() => {
+      BpkAppearance.set({ colorScheme: 'light' });
+    });
   });
 
   describe('useAppearance', () => {
@@ -88,6 +97,38 @@ describe('BpkAppearance - hooks', () => {
       });
 
       expect(TestComponent.currentValue).toEqual('d');
+    });
+
+    describe('useDynamicValueStyleSheet', () => {
+      const style = BpkDynamicStyleSheet.create({
+        view: {
+          color: { light: '#fff', dark: '#f0f' },
+        },
+      });
+
+      it('returns the correct value when current color scheme is light', () => {
+        TestRenderer.create(
+          <BpkAppearanceProvider>
+            <TestComponent hook={() => useDynamicStyleSheet(style)} />
+          </BpkAppearanceProvider>,
+        );
+
+        expect(TestComponent.currentValue.view.color).toEqual('#fff');
+      });
+
+      it('returns the correct value when current color scheme is dark', () => {
+        TestRenderer.create(
+          <BpkAppearanceProvider>
+            <TestComponent hook={() => useDynamicStyleSheet(style)} />
+          </BpkAppearanceProvider>,
+        );
+
+        TestRenderer.act(() => {
+          BpkAppearance.set({ colorScheme: 'dark' });
+        });
+
+        expect(TestComponent.currentValue.view.color).toEqual('#f0f');
+      });
     });
   });
 });
