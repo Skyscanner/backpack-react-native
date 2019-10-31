@@ -30,7 +30,7 @@ import {
 } from './BpkDynamicStyleSheet';
 
 // TODO: move this to bpk-tokens?
-export type DynamicValue<T> = { light: T, dark: T };
+export type BpkDynamicValue<T> = { light: T, dark: T };
 
 export function useBpkAppearance(): BpkAppearancePreferences {
   return useContext(BpkAppearanceProviderContext);
@@ -40,7 +40,7 @@ export function useBpkColorScheme(): ColorSchemeName {
   return useBpkAppearance().colorScheme || 'light';
 }
 
-export function useBpkDynamicValue<T>(value: DynamicValue<T>): T {
+export function useBpkDynamicValue<T>(value: BpkDynamicValue<T>): T {
   return value[useBpkColorScheme()];
 }
 

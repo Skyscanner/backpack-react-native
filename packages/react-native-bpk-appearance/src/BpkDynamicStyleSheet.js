@@ -32,15 +32,14 @@ type AllStylesProps = {
   ...$Exact<ViewStyle>,
   ...$Exact<ImageStyle>,
 };
-export type SenanticColor = { light: string, dark: string };
+
+type SenanticColor = { light: string, dark: string };
 type ColorValue<+key: $Keys<AllStylesProps>> =
   | TypeForStyleKey<key>
   | SenanticColor;
 
 export type BpkStyleSheetStyle = {|
-  ...$Exact<TextStyle>,
-  ...$Exact<ViewStyle>,
-  ...$Exact<ImageStyle>,
+  ...$Exact<AllStylesProps>,
   shadowColor?: ColorValue<'shadowColor'>,
   backgroundColor?: ColorValue<'backgroundColor'>,
   borderColor?: ColorValue<'borderColor'>,

@@ -25,7 +25,7 @@ import {
   useBpkAppearance,
   useBpkColorScheme,
   useBpkDynamicValue,
-  type DynamicValue,
+  type BpkDynamicValue,
 } from './src/hooks';
 import BpkAppearanceProvider, {
   BpkAppearanceProviderContext,
@@ -50,5 +50,5 @@ export type {
   BpkAppearanceProviderProps,
   BpkDynamicStyle,
   BpkDynamicStyleProp,
-  DynamicValue,
+  BpkDynamicValue,
 };
