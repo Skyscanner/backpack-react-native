@@ -21,18 +21,34 @@
 import BpkAppearance, {
   type BpkAppearancePreferences,
 } from './src/BpkAppearance';
-import { useAppearance, useColorScheme, useDynamicValue } from './src/hooks';
+import {
+  useBpkAppearance,
+  useBpkColorScheme,
+  useBpkDynamicValue,
+  type DynamicValue,
+} from './src/hooks';
 import BpkAppearanceProvider, {
   BpkAppearanceProviderContext,
   type Props as BpkAppearanceProviderProps,
 } from './src/BpkAppearanceProvider';
+import BpkDynamicStyleSheet, {
+  type BpkDynamicStyle,
+  type BpkDynamicStyleProp,
+} from './src/BpkDynamicStyleSheet';
 
 export default BpkAppearance;
 export {
-  useAppearance,
-  useColorScheme,
-  useDynamicValue,
+  useBpkAppearance,
+  useBpkColorScheme,
+  useBpkDynamicValue,
   BpkAppearanceProviderContext,
   BpkAppearanceProvider,
+  BpkDynamicStyleSheet,
 };
-export type { BpkAppearancePreferences, BpkAppearanceProviderProps };
+export type {
+  BpkAppearancePreferences,
+  BpkAppearanceProviderProps,
+  BpkDynamicStyle,
+  BpkDynamicStyleProp,
+  DynamicValue,
+};

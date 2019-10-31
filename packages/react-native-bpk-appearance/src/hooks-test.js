@@ -22,10 +22,10 @@ import BpkAppearanceProvider from './BpkAppearanceProvider';
 import BpkAppearance from './BpkAppearance';
 import BpkDynamicStyleSheet from './BpkDynamicStyleSheet';
 import {
-  useAppearance,
-  useColorScheme,
-  useDynamicValue,
-  useDynamicStyleSheet,
+  useBpkAppearance,
+  useBpkColorScheme,
+  useBpkDynamicValue,
+  useBpkDynamicStyleSheet,
 } from './hooks';
 
 jest.mock('react-native-dark-mode', () => ({
@@ -50,7 +50,7 @@ describe('BpkAppearance - hooks', () => {
     it('returns the current appearance', () => {
       TestRenderer.create(
         <BpkAppearanceProvider>
-          <TestComponent hook={useAppearance} />
+          <TestComponent hook={useBpkAppearance} />
         </BpkAppearanceProvider>,
       );
 
@@ -62,7 +62,7 @@ describe('BpkAppearance - hooks', () => {
     it('returns the current color scheme', () => {
       TestRenderer.create(
         <BpkAppearanceProvider>
-          <TestComponent hook={useColorScheme} />
+          <TestComponent hook={useBpkColorScheme} />
         </BpkAppearanceProvider>,
       );
 
@@ -75,7 +75,7 @@ describe('BpkAppearance - hooks', () => {
       TestRenderer.create(
         <BpkAppearanceProvider>
           <TestComponent
-            hook={() => useDynamicValue({ light: 'l', dark: 'd' })}
+            hook={() => useBpkDynamicValue({ light: 'l', dark: 'd' })}
           />
         </BpkAppearanceProvider>,
       );
@@ -87,7 +87,7 @@ describe('BpkAppearance - hooks', () => {
       TestRenderer.create(
         <BpkAppearanceProvider>
           <TestComponent
-            hook={() => useDynamicValue({ light: 'l', dark: 'd' })}
+            hook={() => useBpkDynamicValue({ light: 'l', dark: 'd' })}
           />
         </BpkAppearanceProvider>,
       );
@@ -109,7 +109,7 @@ describe('BpkAppearance - hooks', () => {
       it('returns the correct value when current color scheme is light', () => {
         TestRenderer.create(
           <BpkAppearanceProvider>
-            <TestComponent hook={() => useDynamicStyleSheet(style)} />
+            <TestComponent hook={() => useBpkDynamicStyleSheet(style)} />
           </BpkAppearanceProvider>,
         );
 
@@ -119,7 +119,7 @@ describe('BpkAppearance - hooks', () => {
       it('returns the correct value when current color scheme is dark', () => {
         TestRenderer.create(
           <BpkAppearanceProvider>
-            <TestComponent hook={() => useDynamicStyleSheet(style)} />
+            <TestComponent hook={() => useBpkDynamicStyleSheet(style)} />
           </BpkAppearanceProvider>,
         );
 

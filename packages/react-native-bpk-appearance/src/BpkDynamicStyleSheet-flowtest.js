@@ -22,7 +22,7 @@ import React from 'react';
 import { View } from 'react-native';
 
 import BpkDynamicStyleSheet from './BpkDynamicStyleSheet';
-import { useDynamicStyleSheet } from './hooks';
+import { useBpkDynamicStyleSheet } from './hooks';
 
 // TEST: Valid stylesshet definition with all props
 const allStyles = BpkDynamicStyleSheet.create({
@@ -139,7 +139,7 @@ const allColours = BpkDynamicStyleSheet.create({
 (() => <View style={[allStyles.light.view, allColours.light.view]} />)();
 (() => <View style={[allStyles.dark.view, allColours.dark.view]} />)();
 (() => {
-  const currentStyle = useDynamicStyleSheet(allStyles);
+  const currentStyle = useBpkDynamicStyleSheet(allStyles);
   return <View style={currentStyle.view} />;
 })();
 
