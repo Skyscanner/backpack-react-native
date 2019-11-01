@@ -2,6 +2,26 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-11-01
+
+**Added:**
+
+- react-native-bpk-appearance: 1.0.0
+  - New module to provide dark mode support to RN.
+
+**Fixed:**
+
+- react-native-bpk-component-calendar: 4.0.6 => 4.0.7
+  - Fixed an issue which caused a crash when `minDate` and `maxDate` were accessed over the bridge.
+  - Upgraded `backpack-ios` dependency to adopt `SimpleDate` refactor.
+
+# 2019-10-24
+
+**Fixed:**
+
+- react-native-bpk-component-text: 4.1.18 => 4.1.19
+  - Set `maxFontSizeMultiplier` to ensure RN screens still function at large zoom levels. Note that in the future this limitation will be removed, and screens will be expected to respond accordingly.
+
 # 2019-10-17
 
 **Added:**
