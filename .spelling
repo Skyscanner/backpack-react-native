@@ -10,6 +10,7 @@
 
 # Component names
 BpkAppearance
+BpkAppearanceProvider
 BpkAutosuggest
 BpkBarChart
 BpkBarchartBar
@@ -29,6 +30,7 @@ BpkDialingCodeList
 BpkDialog
 BpkDialogIos
 BpkDismissibleChip
+BpkDynamicStyleSheet
 BpkFieldset
 BpkFlag
 BpkFlatList
