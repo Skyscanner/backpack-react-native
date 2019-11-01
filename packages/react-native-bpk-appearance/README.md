@@ -12,6 +12,15 @@ Because this package ships with native code, it is also necessary to add some na
 
 ### Android
 
+Append `|uiMode` to the `android:configChanges` prop of `<activity>` in `AndroidManifest.xml`. Example:
+
+```xml
+<activity
+    android:name=".MainActivity"
+    android:exported="true"
+    android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode">
+```
+
 Add the following configurations to gradle:
 
   1. Define the `react-native-bpk-appearance` project in your `settings.gradle` file:

@@ -21,5 +21,9 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "react-native-bpk-component-button": "^11.0.4",
+    "react-native-bpk-component-text": "^4.1.19"
   }
 }

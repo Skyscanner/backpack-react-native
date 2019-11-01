@@ -17,15 +17,69 @@
  */
 
 /* @flow */
+import React, { useState, type Node } from 'react';
+import { View } from 'react-native';
+import { storiesOf } from '@storybook/react-native';
+import BpkText from 'react-native-bpk-component-text';
+import BpkButton from 'react-native-bpk-component-button';
+import {
+  textPrimaryDarkColor,
+  textPrimaryLightColor,
+  spacingLg,
+} from 'bpk-tokens/tokens/base.react.native';
 
-// import React from 'react';
-// import { storiesOf } from '@storybook/react-native';
+import CenterDecorator from '../../storybook/CenterDecorator';
 
-// import CenterDecorator from '../../storybook/CenterDecorator';
+import BpkAppearance, {
+  BpkDynamicStyleSheet,
+  useBpkDynamicStyleSheet,
+  useBpkColorScheme,
+} from './index';
 
-// TODO
-// import BpkAppearance from './index';
+const style = BpkDynamicStyleSheet.create({
+  view: {
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  text: {
+    color: { light: textPrimaryLightColor, dark: textPrimaryDarkColor },
+    textAlign: 'center',
+    paddingBottom: spacingLg,
+  },
+});
 
-// storiesOf('react-native-bpk-appearance', module)
-//   .addDecorator(CenterDecorator)
-//   .add('default', () => <BpkAppearance />);
+const modes = ['light', 'dark'];
+
+type StoryContainerProps = {
+  children: (style: Object, colorScheme: string) => Node,
+};
+
+const StoryContainer = ({ children }: StoryContainerProps) => {
+  const currentStyle = useBpkDynamicStyleSheet(style);
+  const colorScheme = useBpkColorScheme();
+  const [mode, setMode] = useState(0);
+  const updateMode = () => {
+    const newMode = (mode + 1) % 2;
+    BpkAppearance.set({ colorScheme: modes[newMode] });
+    setMode(newMode);
+  };
+
+  return (
+    <View style={currentStyle.view}>
+      {children(currentStyle, colorScheme)}
+      <BpkButton onPress={updateMode} title="Update mode" />
+    </View>
+  );
+};
+
+storiesOf('react-native-bpk-appearance', module)
+  .addDecorator(CenterDecorator)
+  .add('default', () => (
+    <StoryContainer styleName="text">
+      {(currentStyle, colorScheme) => (
+        <BpkText textStyle="xxl" style={currentStyle.text}>
+          {colorScheme} mode, much wow!
+        </BpkText>
+      )}
+    </StoryContainer>
+  ));
