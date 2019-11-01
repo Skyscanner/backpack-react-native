@@ -73,7 +73,7 @@ PODS:
   - react-native-bpk-component-dialog (4.0.6):
     - Backpack (~> 22.0)
     - React
-  - react-native-maps (0.25.0):
+  - react-native-maps (0.26.1):
     - React
   - React-RCTActionSheet (0.60.4):
     - React-Core (= 0.60.4)
@@ -99,6 +99,8 @@ PODS:
   - React-RCTWebSocket (0.60.4):
     - React-Core (= 0.60.4)
     - React-fishhook (= 0.60.4)
+  - ReactNativeDarkMode (0.2.1-rc.0):
+    - React
   - TTTAttributedLabel (1.13.4)
   - yoga (0.60.4.React)
 
@@ -129,6 +131,7 @@ DEPENDENCIES:
   - React-RCTText (from `../node_modules/react-native/Libraries/Text`)
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-RCTWebSocket (from `../node_modules/react-native/Libraries/WebSocket`)
+  - ReactNativeDarkMode (from `../packages/react-native-bpk-appearance/node_modules/react-native-dark-mode/ReactNativeDarkMode.podspec`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -191,6 +194,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/Vibration"
   React-RCTWebSocket:
     :path: "../node_modules/react-native/Libraries/WebSocket"
+  ReactNativeDarkMode:
+    :path: "../packages/react-native-bpk-appearance/node_modules/react-native-dark-mode/ReactNativeDarkMode.podspec"
   yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -214,7 +219,7 @@ SPEC CHECKSUMS:
   React-jsinspector: 73f24a02fa684ed6a2b828ba116874a2191ded88
   react-native-bpk-component-calendar: f6930691e3a47c0949d41d8559ce077b678ee9e5
   react-native-bpk-component-dialog: 88b6ed9d8047aeeca30d7a0b531959c3b0663727
-  react-native-maps: 190c02ca533fddac5bb49cf17bdece3644612107
+  react-native-maps: 6e499eee4eabf422ba8b6f94e993cc768bf35153
   React-RCTActionSheet: 9f71d7ae3e8fb10e08d162cbf14c621349dbfab3
   React-RCTAnimation: 981d8c95b0e30918a9832ccac32af83562a27fae
   React-RCTBlob: 21e73d1020a302a75fed30dbaee9f15287b80baa
@@ -225,9 +230,10 @@ SPEC CHECKSUMS:
   React-RCTText: e0f224898b13af9aa036ea7cb3d438daa68c1044
   React-RCTVibration: 0bea40cd51bd089bd591a8f74c86e91fdf2666c5
   React-RCTWebSocket: 163873f4cdd5f1058a9483443404fc3801581cb6
+  ReactNativeDarkMode: 3ee0ababebaa4cffa227113d89107e68e57f8937
   TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
   yoga: c2c050f6ae6e222534760cc82f559b89214b67e2
 
-PODFILE CHECKSUM: 557b7a65e435c735884e772db10ab0684db47eb1
+PODFILE CHECKSUM: e5b1d2548626958395fa814fc19c064d2cfa4218
 
 COCOAPODS: 1.8.1

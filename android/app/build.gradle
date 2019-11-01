@@ -183,6 +183,7 @@ dependencies {
     // we do the same
     implementation 'com.airbnb.android:react-native-maps:0.17.1'
     implementation project(':react-native-linear-gradient')
+    implementation project(':react-native-bpk-appearance')
     implementation project(':react-native-bpk-component-calendar')
     implementation project(':react-native-bpk-component-dialog')
     implementation project(':react-native-bpk-component-rating')

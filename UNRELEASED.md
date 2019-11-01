@@ -2,6 +2,11 @@
 
 > Place your changes below this line.
 
+**Added:**
+
+- react-native-bpk-appearance:
+  - New module to provide dark mode support to RN.
+
 **Fixed:**
 
 - react-native-bpk-component-calendar:

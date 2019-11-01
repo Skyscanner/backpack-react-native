@@ -16,9 +16,21 @@
  * limitations under the License.
  */
 
+/* @flow */
+import React, { type Node } from 'react';
 import addon from '@storybook/addons';
-import { I18nManager, YellowBox } from 'react-native';
+import { I18nManager, YellowBox, View } from 'react-native';
 import { getStorybookUI, configure } from '@storybook/react-native';
+// TODO: Update to semantic colour when available
+import {
+  backgroundDarkColor,
+  backgroundLightColor,
+} from 'bpk-tokens/tokens/base.react.native';
+
+import {
+  BpkAppearanceProvider,
+  useBpkDynamicValue,
+} from '../packages/react-native-bpk-appearance';
 
 import { RTL_EVENT, CHANNEL_POLL_INTERVAL } from './constants';
 
@@ -31,6 +43,7 @@ const onChannelAvailable = (...fns) => {
     try {
       const channel = addon.getChannel();
       clearInterval(interval);
+      // $FlowFixMe
       fns.map(fn => fn(channel));
       return true;
     } catch (exe) {
@@ -94,4 +107,19 @@ const StorybookUI = getStorybookUI({ onDeviceUI: true });
 
 onChannelAvailable(enableRtlFromUi, hideWarnings);
 
-export default StorybookUI;
+const BackgroundWrapper = ({ children }: { children: Node }) => {
+  const backgroundColor = useBpkDynamicValue({
+    light: backgroundLightColor,
+    dark: backgroundDarkColor,
+  });
+
+  return <View style={{ backgroundColor, flex: 1 }}>{children}</View>;
+};
+
+export default (props: Object) => (
+  <BpkAppearanceProvider>
+    <BackgroundWrapper>
+      <StorybookUI {...props} />
+    </BackgroundWrapper>
+  </BpkAppearanceProvider>
+);
