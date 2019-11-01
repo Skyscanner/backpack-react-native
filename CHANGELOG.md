@@ -13,7 +13,6 @@
 
 - react-native-bpk-component-calendar: 4.0.6 => 4.0.7
   - Fixed an issue which caused a crash when `minDate` and `maxDate` were accessed over the bridge.
-  - Upgraded `backpack-ios` dependency to adopt `SimpleDate` refactor.
 
 # 2019-10-24
 
