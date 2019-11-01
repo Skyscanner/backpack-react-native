@@ -84,6 +84,7 @@ configure(() => {
   require('../packages/react-native-bpk-component-text/stories');
   require('../packages/react-native-bpk-component-touchable-native-feedback/stories');
   require('../packages/react-native-bpk-component-touchable-overlay/stories');
+  require('../packages/react-native-bpk-appearance/stories');
   require('../packages/react-native-bpk-styles/stories');
   require('../packages/react-native-bpk-theming/stories');
 }, module);
