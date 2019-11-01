@@ -85,7 +85,7 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 - (nullable NSDate *)rct_minDate {
-    return [[BPKSimpleDate alloc] initWithDate:self.minDate withLocale:self.gregorian.locale];
+  return [self.minDate dateWithLocale:self.gregorian.locale];
 }
 
 - (void)setRct_maxDate:(nullable NSDate *)rct_maxDate {
@@ -110,7 +110,7 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 - (nullable NSDate *)rct_maxDate {
-    return [[BPKSimpleDate alloc] initWithDate:self.maxDate withLocale:self.gregorian.locale];
+  return [self.maxDate dateWithLocale:self.gregorian.locale];
 }
 
 - (void)setRct_selectedDates:(NSArray<NSDate *> *)rct_selectedDates {

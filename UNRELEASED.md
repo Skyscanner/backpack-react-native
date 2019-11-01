@@ -4,6 +4,9 @@
 
 **Fixed:**
 
+- react-native-bpk-component-calendar:
+  - Fixed an issue which caused a crash when `minDate` and `maxDate` were accessed over the bridge.
+
 - react-native-bpk-component-text:
   - Set `maxFontSizeMultiplier` to ensure RN screens still function at large zoom levels. Note that in the future this limitation will be removed, and screens will be expected to respond accordingly.
 
