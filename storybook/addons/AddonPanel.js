@@ -16,8 +16,30 @@
  * limitations under the License.
  */
 
-import '@storybook/addon-ondevice-actions/register';
-import './addons/dark-mode';
+/* @flow */
 
-// FIXME: This addom is not working
-// import './addons/rtl';
+import React, { type Node } from 'react';
+import { View } from 'react-native';
+import { spacingMd } from 'bpk-tokens/tokens/base.react.native';
+
+type Props = {
+  children: Node,
+  active: boolean,
+};
+
+const AddonPanel = ({ children, active }: Props) => {
+  if (!active) return null;
+  return (
+    <View
+      style={{
+        display: 'flex',
+        marginTop: spacingMd,
+        alignItems: 'center',
+      }}
+    >
+      {children}
+    </View>
+  );
+};
+
+export default AddonPanel;

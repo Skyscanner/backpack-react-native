@@ -20,12 +20,13 @@
 import React, { type Node } from 'react';
 import './rn-addons';
 import addon from '@storybook/addons';
-import { I18nManager, YellowBox, View } from 'react-native';
+import { I18nManager, YellowBox, View, Platform } from 'react-native';
 import { getStorybookUI, configure } from '@storybook/react-native';
 // TODO: Update to semantic colour when available
 import {
   backgroundDarkColor,
   backgroundLightColor,
+  spacingXl,
 } from 'bpk-tokens/tokens/base.react.native';
 
 import {
@@ -114,7 +115,20 @@ const BackgroundWrapper = ({ children }: { children: Node }) => {
     dark: backgroundDarkColor,
   });
 
-  return <View style={{ backgroundColor, flex: 1 }}>{children}</View>;
+  return (
+    <View
+      style={{
+        backgroundColor,
+        flex: 1,
+        marginTop: Platform.select({
+          ios: spacingXl,
+          android: 0,
+        }),
+      }}
+    >
+      {children}
+    </View>
+  );
 };
 
 export default (props: Object) => (
