@@ -16,6 +16,7 @@
  * limitations under the License.
  */
 
-import '@storybook/addon-actions/register';
-import '@storybook/addon-links/register';
-import './rtl-addon/register';
+import '@storybook/addon-ondevice-actions/register';
+
+// FIXME: This addom is not working
+// import './rtl-addon/register';

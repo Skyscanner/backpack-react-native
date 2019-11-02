@@ -18,6 +18,7 @@
 
 /* @flow */
 import React, { type Node } from 'react';
+import './rn-addons';
 import addon from '@storybook/addons';
 import { I18nManager, YellowBox, View } from 'react-native';
 import { getStorybookUI, configure } from '@storybook/react-native';
