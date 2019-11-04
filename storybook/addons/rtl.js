@@ -18,6 +18,7 @@
 import React from 'react';
 import addons from '@storybook/addons';
 
+import BpkButton from '../../packages/react-native-bpk-component-button';
 import { RTL_EVENT } from '../constants';
 
 class Panel extends React.Component {
@@ -38,11 +39,10 @@ class Panel extends React.Component {
 
   render() {
     return (
-      <div>
-        <button type="button" onClick={this.toggleRtl}>
-          {this.state.rtlEnabled ? 'Disable' : 'Enable'} RTL
-        </button>
-      </div>
+      <BpkButton
+        title={`${this.state.rtlEnabled ? 'Disable' : 'Enable'} RTL`}
+        onPress={this.toggleRtl}
+      />
     );
   }
 }
