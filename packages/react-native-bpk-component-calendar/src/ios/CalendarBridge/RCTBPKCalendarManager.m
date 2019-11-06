@@ -95,7 +95,7 @@ RCT_EXPORT_METHOD(forceRender : (nonnull NSNumber *)reactTag) {
     for (BPKSimpleDate *date in dateList) {
         // The React Native interface uses UTC dates regardless of the local time zone
         // Thus we need to convert the dates to UTC instead of the local time zone here.
-        NSDate *localDate = [date dateWithLocale:calendar.locale];
+        NSDate *localDate = [date dateForCalendar:calendar.gregorian];
         NSDate *dateInUTC = [RCTBPKCalendarDateUtils convertDateToUTC:localDate
                                                         localCalendar:calendar.gregorian
                                                           utcCalendar:calendar.utcCalendar];
