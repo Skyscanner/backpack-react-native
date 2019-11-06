@@ -197,8 +197,8 @@ const publishBridges = packages =>
       const logFileName = tmp.tmpNameSync();
       const logFile = fs.createWriteStream(logFileName);
 
-      const cmd = `-PembedDeps=true :${name}:publish`;
-      return gradleExec([cmd], logFile, logFile).catch(() => {
+      const cmd = ['-PembedDeps=true', `:${name}:publish`];
+      return gradleExec(cmd, logFile, logFile).catch(() => {
         throw new Error(ERRORS.cantPublish(name, cmd, logFileName));
       });
     }),

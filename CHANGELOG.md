@@ -4,11 +4,6 @@
 
 # 2019-11-06
 
-**Added:**
-
-- react-native-bpk-appearance: 1.0.0 => 1.1.0
-  - Added the ability to override the current appearance.
-
 **Fixed:**
 
 - react-native-bpk-component-calendar:
