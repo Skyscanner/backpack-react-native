@@ -61,4 +61,14 @@ describe('BpkAppearanceProvider', () => {
 
     expect(TestComponent.currentAppearance).toEqual({ colorScheme: 'dark' });
   });
+
+  it('should allow current appearance to be overridden', async () => {
+    TestRenderer.create(
+      <BpkAppearanceProvider appearanceOverride={{ colorScheme: 'dark' }}>
+        <TestComponent />
+      </BpkAppearanceProvider>,
+    );
+
+    expect(TestComponent.currentAppearance).toEqual({ colorScheme: 'dark' });
+  });
 });

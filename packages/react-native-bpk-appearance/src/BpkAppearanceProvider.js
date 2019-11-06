@@ -34,9 +34,10 @@ BpkAppearanceProviderContext.displayName = 'BpkAppearanceProviderContext';
 
 export type Props = {
   children: Node,
+  appearanceOverride: $Shape<BpkAppearancePreferences>,
 };
 
-const BpkAppearanceProvider = ({ children }: Props) => {
+const BpkAppearanceProvider = ({ children, appearanceOverride }: Props) => {
   const [currentAppearance, setCurrentAppearance] = useState(
     BpkAppearance.get(),
   );
@@ -53,10 +54,16 @@ const BpkAppearanceProvider = ({ children }: Props) => {
   });
 
   return (
-    <BpkAppearanceProviderContext.Provider value={currentAppearance}>
+    <BpkAppearanceProviderContext.Provider
+      value={{ ...currentAppearance, ...appearanceOverride }}
+    >
       {children}
     </BpkAppearanceProviderContext.Provider>
   );
+};
+
+BpkAppearanceProvider.defaultProps = {
+  appearanceOverride: {},
 };
 
 export default BpkAppearanceProvider;
