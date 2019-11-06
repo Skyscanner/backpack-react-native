@@ -20,7 +20,6 @@
 import React, { type Node, useState } from 'react';
 import { View, StyleSheet, ScrollView } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
-import { icons } from 'react-native-bpk-component-icon';
 import BpkText from 'react-native-bpk-component-text';
 import BpkButton from 'react-native-bpk-component-button';
 import { spacingLg, spacingMd } from 'bpk-tokens/tokens/base.react.native';
@@ -29,11 +28,16 @@ import CenterDecorator from '../../storybook/CenterDecorator';
 
 import BpkRating, { type Props } from './index';
 
-const TITLES = ['Low title', 'Medium title', 'High title'];
+const TITLES = [
+  'Low title',
+  'Medium title with a lot of content',
+  'High title',
+];
 const SUBTITLES = ['Low subtitle', 'Medium subtitle', 'High subtitle'];
 
 const styles = StyleSheet.create({
   rating: {
+    paddingTop: spacingLg,
     paddingBottom: spacingLg,
   },
   edgeCase: {
@@ -122,13 +126,6 @@ storiesOf('react-native-bpk-component-rating', module)
         { value: 9.0, size: 'base', title: 'Base', subtitle: SUBTITLES },
         { value: 9.0, size: 'sm', title: 'Small', subtitle: SUBTITLES },
         { value: 9.0, size: 'xs', title: 'Extra Small', subtitle: SUBTITLES },
-        {
-          value: 9.0,
-          size: 'icon',
-          title: 'Icon',
-          icon: icons.star,
-          subtitle: SUBTITLES,
-        },
       ])}
     </Container>
   ))
@@ -163,27 +160,18 @@ storiesOf('react-native-bpk-component-rating', module)
           subtitle: SUBTITLES,
           orientation: 'vertical',
         },
-        {
-          value: 9.0,
-          size: 'icon',
-          title: 'Icon',
-          icon: icons.star,
-          subtitle: SUBTITLES,
-          orientation: 'vertical',
-        },
       ])}
     </Container>
   ))
   .add('Edge cases - Update props', () => (
     <Container style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
-      <EdgeCaseContainer title="Update size" iterations={5}>
+      <EdgeCaseContainer title="Update size" iterations={4}>
         {iteration => (
           <BpkRating
-            title={['icon', 'xs', 'sm', 'base', 'lg'][iteration]}
+            title={['xs', 'sm', 'base', 'lg'][iteration]}
             subtitle={SUBTITLES}
-            icon={icons.star}
             value={9.0}
-            size={['icon', 'xs', 'sm', 'base', 'lg'][iteration]}
+            size={['xs', 'sm', 'base', 'lg'][iteration]}
           />
         )}
       </EdgeCaseContainer>
@@ -212,17 +200,6 @@ storiesOf('react-native-bpk-component-rating', module)
             title={TITLES}
             subtitle={SUBTITLES}
             value={[3, 6, 9][iteration]}
-          />
-        )}
-      </EdgeCaseContainer>
-      <EdgeCaseContainer title="Update icon" iterations={3}>
-        {iteration => (
-          <BpkRating
-            title={TITLES}
-            subtitle={SUBTITLES}
-            value={[3, 6, 9][iteration]}
-            icon={[icons.star, icons.tick, icons.beer][iteration]}
-            size="icon"
           />
         )}
       </EdgeCaseContainer>

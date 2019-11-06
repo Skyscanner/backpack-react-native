@@ -18,6 +18,7 @@
 
 /* @flow */
 import React from 'react';
+import { View } from 'react-native';
 
 import { defaultProps, propTypes, type Props } from './common-types';
 import NativeRating from './NativeRating';
@@ -26,19 +27,29 @@ const arrify = (maybeArray: Array<string> | string): Array<string> =>
   Array.isArray(maybeArray) ? maybeArray : [maybeArray];
 
 const BpkRating = (props: Props) => {
-  const { title, subtitle, icon, ...rest } = props;
+  const { title, subtitle, value, size, orientation, ...outerProps } = props;
+
+  // These two casts are required beacuse Flow cannot cast
+  // `[string, string, string]` to `Array<string> | string`.
+  // This is safe because a three value tuple is just a form
+  // of array.
+  const titleValue: Array<string> | string = (title: any);
+  const subtitleValue: Array<string> | string = (title: any);
 
   return (
-    <NativeRating
-      title={arrify(title)}
-      subtitle={arrify(subtitle)}
-      icon={icon ? arrify(icon) : null}
-      {...rest}
-    />
+    <View {...outerProps}>
+      <NativeRating
+        title={arrify(titleValue)}
+        subtitle={arrify(subtitleValue)}
+        size={size}
+        value={value}
+        orientation={orientation}
+      />
+    </View>
   );
 };
 
-BpkRating.propTypes = { ...propTypes };
-BpkRating.defaultProps = { ...defaultProps };
+BpkRating.propTypes = propTypes;
+BpkRating.defaultProps = defaultProps;
 
 export default BpkRating;

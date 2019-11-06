@@ -19,10 +19,9 @@
 /* @flow */
 import PropTypes from 'prop-types';
 
-type StringOrArray = string | Array<string>;
+type StringOrArray = string | [string, string, string];
 
 const SIZES = {
-  icon: 'icon',
   xs: 'xs',
   sm: 'sm',
   base: 'base',
@@ -38,16 +37,14 @@ export type Props = {
   title: StringOrArray,
   subtitle: StringOrArray,
   value: number,
-  icon?: ?StringOrArray,
-  size?: $Keys<typeof SIZES>,
-  orientation?: $Keys<typeof ORIENTATION>,
+  size: $Keys<typeof SIZES>,
+  orientation: $Keys<typeof ORIENTATION>,
 };
 
 export type NativeProps = {
   title: Array<string>,
   subtitle: Array<string>,
   value: number,
-  icon: ?Array<string>,
   size: $Keys<typeof SIZES>,
   orientation: $Keys<typeof ORIENTATION>,
 };
@@ -61,13 +58,11 @@ export const propTypes = {
   title: arrayOrStringPropType.isRequired,
   subtitle: arrayOrStringPropType.isRequired,
   value: PropTypes.number.isRequired,
-  icon: arrayOrStringPropType,
   size: PropTypes.oneOf(Object.values(SIZES)),
   orientation: PropTypes.oneOf(Object.values(ORIENTATION)),
 };
 
 export const defaultProps = {
-  icon: null,
   size: SIZES.base,
   orientation: ORIENTATION.horizontal,
 };
