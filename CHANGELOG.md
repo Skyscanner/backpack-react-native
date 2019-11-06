@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-11-06
+
+**Fixed:**
+
+- react-native-bpk-component-calendar:
+  - `backpack-ios` dependency is now ~> 23.0
+
 # 2019-11-01
 
 **Added:**
