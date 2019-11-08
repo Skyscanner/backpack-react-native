@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-11-08
+
+**Fixed:**
+
+- react-native-bpk-appearance
+  - Changed listener logic to register listeners only once.
+
 # 2019-11-06
 
 **Fixed:**
