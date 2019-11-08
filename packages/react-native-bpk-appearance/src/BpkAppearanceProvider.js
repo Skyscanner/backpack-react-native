@@ -51,7 +51,7 @@ const BpkAppearanceProvider = ({ children, appearanceOverride }: Props) => {
     return () => {
       BpkAppearance.removeChangeListener(handler);
     };
-  });
+  }, []);
 
   return (
     <BpkAppearanceProviderContext.Provider

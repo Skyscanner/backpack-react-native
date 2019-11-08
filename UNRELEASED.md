@@ -5,7 +5,7 @@
 **Added:**
 
 - react-native-bpk-appearance
-  - Added the ability to override the current appearance.
+  - Changed listener logic to register listeners only once.
 
 ## How to write a good changelog entry
 
