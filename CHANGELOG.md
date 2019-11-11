@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-11-11
+
+**Fixed:**
+
+- react-native-bpk-component-map: 1.0.34 => 1.0.35
+  - Updated `react-native-maps` to `0.26.1`.
+
 # 2019-11-08
 
 **Fixed:**
