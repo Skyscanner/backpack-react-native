@@ -20,7 +20,7 @@
 
 import React from 'react';
 import {
-  colorSkyGray,
+  textPrimaryColor,
   fontFamily,
   fontFamilyEmphasize,
   fontFamilyHeavy,
@@ -51,8 +51,12 @@ import {
   textXxxlFontSize,
   textXxxlFontWeight,
 } from 'bpk-tokens/tokens/base.react.native';
-import { Text, Platform, StyleSheet } from 'react-native';
+import { Text, Platform } from 'react-native';
 import { getThemeAttributes, withTheme } from 'react-native-bpk-theming';
+import {
+  BpkDynamicStyleSheet,
+  useBpkDynamicStyleSheet,
+} from 'react-native-bpk-appearance';
 
 import { REQUIRED_THEME_ATTRIBUTES } from './theming';
 import { shouldApplyFontWeightFix } from './font-weight-fix';
@@ -101,7 +105,7 @@ const getStyleByTextStyle = textStyle => {
   } = TEXT_TOKENS;
 
   return {
-    color: colorSkyGray,
+    color: textPrimaryColor,
     letterSpacing,
     fontFamily,
     fontSize,
@@ -170,7 +174,7 @@ const getEmphasizeProperties = weight => {
   return emphasizeProperties;
 };
 
-const styles = StyleSheet.create({
+const styles = BpkDynamicStyleSheet.create({
   caps: { ...getStyleByTextStyle('caps') },
   xs: { ...getStyleByTextStyle('xs') },
   sm: { ...getStyleByTextStyle('sm') },
@@ -192,8 +196,10 @@ const BpkText = (props: Props) => {
     ...rest
   } = props;
 
+  const currentStyles = useBpkDynamicStyleSheet(styles);
+
   const weight = getWeight(emphasize, userWeight, textStyle);
-  const style = [styles[textStyle], getEmphasizeProperties(weight)];
+  const style = [currentStyles[textStyle], getEmphasizeProperties(weight)];
 
   const themeAttributes = getThemeAttributes(REQUIRED_THEME_ATTRIBUTES, theme);
 
