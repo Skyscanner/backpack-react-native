@@ -67,16 +67,16 @@ PODS:
     - React-cxxreact (= 0.60.4)
     - React-jsi (= 0.60.4)
   - React-jsinspector (0.60.4)
-  - react-native-bpk-component-calendar (4.0.7):
+  - react-native-bpk-component-calendar (4.0.8):
     - Backpack (~> 23.0)
     - React
-  - react-native-bpk-component-dialog (4.0.6):
+  - react-native-bpk-component-dialog (4.0.7):
     - Backpack (~> 23.0)
     - React
-  - react-native-bpk-component-rating (1.0.2):
+  - react-native-bpk-component-rating (1.0.4):
     - Backpack (~> 23.0)
     - React
-  - react-native-maps (0.25.0):
+  - react-native-maps (0.26.1):
     - React
   - React-RCTActionSheet (0.60.4):
     - React-Core (= 0.60.4)
@@ -223,10 +223,10 @@ SPEC CHECKSUMS:
   React-jsi: 21d3153b1153fbf6510a92b6b11e33e725cb7432
   React-jsiexecutor: 7549641e48bafae7bfee3f3ea19bf4901639c5de
   React-jsinspector: 73f24a02fa684ed6a2b828ba116874a2191ded88
-  react-native-bpk-component-calendar: d8a103e5f5c5b58fab8eef65853698554bc9056a
-  react-native-bpk-component-dialog: cce27e535345b8b38aa186acc54e4626e2313730
-  react-native-bpk-component-rating: ed4aa886998777fbb18242449de799718f51cd5f
-  react-native-maps: 190c02ca533fddac5bb49cf17bdece3644612107
+  react-native-bpk-component-calendar: 827e44e3c905972b17d2896d89bac91050b618ee
+  react-native-bpk-component-dialog: b8f39d9e07ef0a016d41a9f0ca4d1cad858978bd
+  react-native-bpk-component-rating: b846a36e2c18f55be137175935181962653381af
+  react-native-maps: 6e499eee4eabf422ba8b6f94e993cc768bf35153
   React-RCTActionSheet: 9f71d7ae3e8fb10e08d162cbf14c621349dbfab3
   React-RCTAnimation: 981d8c95b0e30918a9832ccac32af83562a27fae
   React-RCTBlob: 21e73d1020a302a75fed30dbaee9f15287b80baa
