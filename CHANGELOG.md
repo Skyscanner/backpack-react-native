@@ -2,6 +2,16 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-11-12
+
+**Added:**
+
+- react-native-bpk-component-rating: 0.0.1
+  - Added component.
+
+- react-native-bpk-component-text: 4.1.19 => 4.2.0
+  - Added dark mode support.
+
 # 2019-11-11
 
 **Fixed:**
