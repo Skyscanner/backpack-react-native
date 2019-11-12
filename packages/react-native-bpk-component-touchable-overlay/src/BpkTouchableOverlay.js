@@ -24,17 +24,17 @@ import {
   borderRadiusSm,
   borderRadiusLg,
   borderRadiusPill,
-  touchableOverlayColor,
+  // TODO: Make touchableOverlayColor a semantic colour, will require a breaking change.
+  textPrimaryColor as touchableOverlayColor,
   touchableOverlayOpacity,
 } from 'bpk-tokens/tokens/base.react.native';
 import {
-  View,
-  ViewPropTypes,
-  TouchableWithoutFeedback,
-  StyleSheet,
-} from 'react-native';
+  BpkDynamicStyleSheet,
+  useBpkDynamicStyleSheet,
+} from 'react-native-bpk-appearance';
+import { View, ViewPropTypes, TouchableWithoutFeedback } from 'react-native';
 
-const styles = StyleSheet.create({
+const dynamicStyles = BpkDynamicStyleSheet.create({
   overlay: {
     flex: 1,
     position: 'absolute',
@@ -82,6 +82,7 @@ const BpkTouchableOverlay = (props: Props) => {
     ...rest
   } = props;
 
+  const styles = useBpkDynamicStyleSheet(dynamicStyles);
   let overlayRef;
 
   const overlayStyles = [styles.overlay];
