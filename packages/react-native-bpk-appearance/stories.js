@@ -20,14 +20,16 @@
 import React, { useState, type Node } from 'react';
 import { View } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
-import BpkText from 'react-native-bpk-component-text';
-import BpkButton from 'react-native-bpk-component-button';
 import {
   textPrimaryDarkColor,
   textPrimaryLightColor,
   spacingLg,
 } from 'bpk-tokens/tokens/base.react.native';
 
+// Import from local packages because adding as dependency causes all sort of cyclic dependencies propblems
+// and this is really only for storybook
+import BpkText from '../react-native-bpk-component-text';
+import BpkButton from '../react-native-bpk-component-button';
 import CenterDecorator from '../../storybook/CenterDecorator';
 
 import BpkAppearance, {
