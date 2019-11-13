@@ -1,0 +1,20 @@
+{
+  "name": "react-native-bpk-test-utils",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "description": "Backpack React Native test utlities.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Skyscanner/backpack.git"
+  },
+  "author": "Backpack Design System <backpack@skyscanner.net>",
+  "license": "Apache-2.0",
+  "peerDependencies": {
+    "react": "^16.8.3",
+    "react-native": ">= 0.59.0"
+  },
+  "dependencies": {
+    "react-native-bpk-appearance": "^1.1.2"
+  }
+}

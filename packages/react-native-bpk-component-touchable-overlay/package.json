@@ -19,7 +19,8 @@
     "react-native-bpk-appearance": "^1.1.2"
   },
   "devDependencies": {
-    "react-native-bpk-component-text": "^4.2.0"
+    "react-native-bpk-component-text": "^4.2.0",
+    "react-native-bpk-test-utils": "^0.0.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"

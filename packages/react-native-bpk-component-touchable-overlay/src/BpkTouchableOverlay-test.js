@@ -15,14 +15,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-/* @flow */
-
 import React from 'react';
 import { StyleSheet } from 'react-native';
 import renderer from 'react-test-renderer';
 import BpkText from 'react-native-bpk-component-text';
 import { colorPanjin } from 'bpk-tokens/tokens/base.react.native';
+import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 
 import BpkTouchableOverlay from './BpkTouchableOverlay';
 
@@ -41,24 +39,20 @@ describe('BpkTouchableOverlay', () => {
     </BpkText>
   );
 
-  it('should render correctly', () => {
-    const tree = renderer
-      .create(<BpkTouchableOverlay>{content}</BpkTouchableOverlay>)
-      .toJSON();
+  describeEachColorScheme(BpkTouchableOverlay, Subject => {
+    it('should render correctly', () => {
+      const tree = renderer.create(<Subject>{content}</Subject>).toJSON();
 
-    expect(tree).toMatchSnapshot();
-  });
+      expect(tree).toMatchSnapshot();
+    });
 
-  it('should render correctly with custom style prop', () => {
-    const tree = renderer
-      .create(
-        <BpkTouchableOverlay style={styles.custom}>
-          {content}
-        </BpkTouchableOverlay>,
-      )
-      .toJSON();
+    it('should render correctly with custom style prop', () => {
+      const tree = renderer
+        .create(<Subject style={styles.custom}>{content}</Subject>)
+        .toJSON();
 
-    expect(tree).toMatchSnapshot();
+      expect(tree).toMatchSnapshot();
+    });
   });
 
   it('should render correctly with arbitrary props', () => {

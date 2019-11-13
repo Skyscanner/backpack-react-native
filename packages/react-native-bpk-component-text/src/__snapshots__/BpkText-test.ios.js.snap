@@ -1,5 +1,91 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`iOS BpkText dark mode should render correctly 1`] = `
+<Text
+  maxFontSizeMultiplier={3.2}
+  style={
+    Array [
+      Object {
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "System",
+        "fontSize": 16,
+        "fontWeight": "400",
+        "letterSpacing": 0.12,
+      },
+      Object {},
+    ]
+  }
+>
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+</Text>
+`;
+
+exports[`iOS BpkText dark mode should support overwriting styles 1`] = `
+<Text
+  maxFontSizeMultiplier={3.2}
+  style={
+    Array [
+      Object {
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "System",
+        "fontSize": 16,
+        "fontWeight": "400",
+        "letterSpacing": 0.12,
+      },
+      Object {},
+      Object {
+        "color": "rgb(209, 67, 91)",
+      },
+    ]
+  }
+>
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+</Text>
+`;
+
+exports[`iOS BpkText light mode should render correctly 1`] = `
+<Text
+  maxFontSizeMultiplier={3.2}
+  style={
+    Array [
+      Object {
+        "color": "rgb(17, 18, 54)",
+        "fontFamily": "System",
+        "fontSize": 16,
+        "fontWeight": "400",
+        "letterSpacing": 0.12,
+      },
+      Object {},
+    ]
+  }
+>
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+</Text>
+`;
+
+exports[`iOS BpkText light mode should support overwriting styles 1`] = `
+<Text
+  maxFontSizeMultiplier={3.2}
+  style={
+    Array [
+      Object {
+        "color": "rgb(17, 18, 54)",
+        "fontFamily": "System",
+        "fontSize": 16,
+        "fontWeight": "400",
+        "letterSpacing": 0.12,
+      },
+      Object {},
+      Object {
+        "color": "rgb(209, 67, 91)",
+      },
+    ]
+  }
+>
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+</Text>
+`;
+
 exports[`iOS BpkText should ignore weight prop if deprecated \`emphasize\` prop is being used 1`] = `
 <Text
   maxFontSizeMultiplier={3.2}
@@ -15,26 +101,6 @@ exports[`iOS BpkText should ignore weight prop if deprecated \`emphasize\` prop 
       Object {
         "fontWeight": "600",
       },
-    ]
-  }
->
-  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-</Text>
-`;
-
-exports[`iOS BpkText should render correctly 1`] = `
-<Text
-  maxFontSizeMultiplier={3.2}
-  style={
-    Array [
-      Object {
-        "color": "rgb(17, 18, 54)",
-        "fontFamily": "System",
-        "fontSize": 16,
-        "fontWeight": "400",
-        "letterSpacing": 0.12,
-      },
-      Object {},
     ]
   }
 >
@@ -459,29 +525,6 @@ exports[`iOS BpkText should render correctly with textStyle="xxxl" 1`] = `
         "letterSpacing": null,
       },
       Object {},
-    ]
-  }
->
-  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-</Text>
-`;
-
-exports[`iOS BpkText should support overwriting styles 1`] = `
-<Text
-  maxFontSizeMultiplier={3.2}
-  style={
-    Array [
-      Object {
-        "color": "rgb(17, 18, 54)",
-        "fontFamily": "System",
-        "fontSize": 16,
-        "fontWeight": "400",
-        "letterSpacing": 0.12,
-      },
-      Object {},
-      Object {
-        "color": "rgb(209, 67, 91)",
-      },
     ]
   }
 >
