@@ -23,23 +23,19 @@ import { View, StyleSheet } from 'react-native';
 import BpkText from 'react-native-bpk-component-text';
 import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
-import { colorWhite } from 'bpk-tokens/tokens/base.react.native';
 
 import CenterDecorator from '../../storybook/CenterDecorator';
 
 import BpkTouchableOverlay from './index';
 
 const styles = StyleSheet.create({
-  text: {
-    backgroundColor: colorWhite,
-  },
   view: {
     padding: 10, // eslint-disable-line backpack/use-tokens
   },
 });
 
 const textContent = (
-  <BpkText style={styles.text}>
+  <BpkText>
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
     ligula eget dolor. Aenean massa.
   </BpkText>
