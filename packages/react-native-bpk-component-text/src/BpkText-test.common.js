@@ -28,15 +28,15 @@ import { TEXT_STYLES, WEIGHT_STYLES } from './common-types';
 
 const commonTests = () => {
   describe('BpkText', () => {
-    describeEachColorScheme(BpkText, Subject => {
+    describeEachColorScheme(BpkText, TextWithColorScheme => {
       it('should render correctly', () => {
         const tree = renderer
           .create(
-            <Subject>
+            <TextWithColorScheme>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            </Subject>,
+            </TextWithColorScheme>,
           )
           .toJSON();
         expect(tree).toMatchSnapshot();
@@ -45,11 +45,11 @@ const commonTests = () => {
       it('should support overwriting styles', () => {
         const tree = renderer
           .create(
-            <Subject style={{ color: colorPanjin }}>
+            <TextWithColorScheme style={{ color: colorPanjin }}>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            </Subject>,
+            </TextWithColorScheme>,
           )
           .toJSON();
         expect(tree).toMatchSnapshot();

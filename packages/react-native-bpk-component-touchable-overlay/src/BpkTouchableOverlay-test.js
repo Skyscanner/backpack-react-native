@@ -39,21 +39,34 @@ describe('BpkTouchableOverlay', () => {
     </BpkText>
   );
 
-  describeEachColorScheme(BpkTouchableOverlay, Subject => {
-    it('should render correctly', () => {
-      const tree = renderer.create(<Subject>{content}</Subject>).toJSON();
+  describeEachColorScheme(
+    BpkTouchableOverlay,
+    TouchableOverlayWithColorScheme => {
+      it('should render correctly', () => {
+        const tree = renderer
+          .create(
+            <TouchableOverlayWithColorScheme>
+              {content}
+            </TouchableOverlayWithColorScheme>,
+          )
+          .toJSON();
 
-      expect(tree).toMatchSnapshot();
-    });
+        expect(tree).toMatchSnapshot();
+      });
 
-    it('should render correctly with custom style prop', () => {
-      const tree = renderer
-        .create(<Subject style={styles.custom}>{content}</Subject>)
-        .toJSON();
+      it('should render correctly with custom style prop', () => {
+        const tree = renderer
+          .create(
+            <TouchableOverlayWithColorScheme style={styles.custom}>
+              {content}
+            </TouchableOverlayWithColorScheme>,
+          )
+          .toJSON();
 
-      expect(tree).toMatchSnapshot();
-    });
-  });
+        expect(tree).toMatchSnapshot();
+      });
+    },
+  );
 
   it('should render correctly with arbitrary props', () => {
     const tree = renderer

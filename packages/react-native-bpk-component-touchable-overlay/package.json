@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "react-native-bpk-component-text": "^4.2.0",
-    "react-native-bpk-test-utils": "^0.0.0"
+    "react-native-bpk-test-utils": "^0.0.1"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
