@@ -21,23 +21,39 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { colorPanjin } from 'bpk-tokens/tokens/base.react.native';
+import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 
 import BpkText from './BpkText';
 import { TEXT_STYLES, WEIGHT_STYLES } from './common-types';
 
 const commonTests = () => {
   describe('BpkText', () => {
-    it('should render correctly', () => {
-      const tree = renderer
-        .create(
-          <BpkText>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          </BpkText>,
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
+    describeEachColorScheme(BpkText, TextWithColorScheme => {
+      it('should render correctly', () => {
+        const tree = renderer
+          .create(
+            <TextWithColorScheme>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </TextWithColorScheme>,
+          )
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
+
+      it('should support overwriting styles', () => {
+        const tree = renderer
+          .create(
+            <TextWithColorScheme style={{ color: colorPanjin }}>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </TextWithColorScheme>,
+          )
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
     });
 
     it('should render correctly with deprecated `emphasize` prop', () => {
@@ -70,19 +86,6 @@ const commonTests = () => {
         .toJSON();
       expect(tree).toMatchSnapshot();
       expect(consoleWarnFn.mock.calls.length).toBe(1);
-    });
-
-    it('should support overwriting styles', () => {
-      const tree = renderer
-        .create(
-          <BpkText style={{ color: colorPanjin }}>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          </BpkText>,
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
     });
 
     TEXT_STYLES.forEach(textStyle => {

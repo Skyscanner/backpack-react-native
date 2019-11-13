@@ -19,6 +19,9 @@
     "react-native-bpk-appearance": "^1.1.2",
     "react-native-bpk-theming": "^1.4.7"
   },
+  "devDependencies": {
+    "react-native-bpk-test-utils": "^0.0.1"
+  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
