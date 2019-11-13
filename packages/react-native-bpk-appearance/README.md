@@ -184,5 +184,8 @@ Extension to react's `StyleSheet` module that provides the ability to use semant
 - `useBpkDynamicValue<T>(value: { light: T, dark: T }) => T`
   Returns the appropriate value for the current color scheme.
 
+- `useBpkDynamicStyle<T>(value: Object) => Object`
+  Map all dynamic props to the their current value.
+
 - `useBpkDynamicStyleSheet(style: { light: Object, dark: Object }) => Object`
   Returns the appropriate style for the current color scheme.

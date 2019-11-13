@@ -26,6 +26,7 @@ import type {
 } from 'react-native/Libraries/StyleSheet/StyleSheet';
 
 import { type ColorSchemeName } from './BpkAppearance';
+import isDynamicValue from './isDynamicValue';
 
 type AllStylesProps = {
   ...$Exact<TextStyle>,
@@ -58,17 +59,11 @@ export type BpkStyleSheetStyle = {|
 
 export type NamedStyles = { +[key: string]: BpkStyleSheetStyle };
 
-export type BpkDynamicStyleProp<S> = $ObjMap<S, (Object) => any>;
+export type BpkDynamicStyleProp<S: Object> = $ObjMap<S, (Object) => any>;
 export type BpkDynamicStyle<S> = {
   light: BpkDynamicStyleProp<S>,
   dark: BpkDynamicStyleProp<S>,
 };
-
-const isSemanticColor = (value: any): boolean =>
-  value != null &&
-  typeof value === 'object' &&
-  value.light != null &&
-  value.dark != null;
 
 function extractSemanticColors(
   styleDef: BpkStyleSheetStyle,
@@ -76,7 +71,7 @@ function extractSemanticColors(
 ) {
   return Object.keys(styleDef).reduce((mapped, key) => {
     const value = styleDef[key];
-    if (isSemanticColor(value)) {
+    if (isDynamicValue(value)) {
       // $FlowFixMe
       mapped[key] = value[variation]; // eslint-disable-line no-param-reassign
     } else {
