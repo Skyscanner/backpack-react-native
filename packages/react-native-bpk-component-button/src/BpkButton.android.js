@@ -24,6 +24,10 @@ import {
   withTheme,
   type Theme,
 } from 'react-native-bpk-theming';
+import {
+  useBpkDynamicStyle,
+  useBpkDynamicValue,
+} from 'react-native-bpk-appearance';
 
 import BpkStandardButton from './BpkStandardButton.android';
 import BpkBorderedButton from './BpkBorderedButton.android';
@@ -59,16 +63,15 @@ const buttonColorsForType = (
   themeAttributes: ?Theme,
   disabled: boolean,
 ) => {
-  const buttonColors: { backgroundColor: string, borderColor?: string } = {
+  const buttonColors = {
     backgroundColor: backgroundColorForType(type, themeAttributes, disabled),
   };
 
   if (type === 'secondary' || type === 'destructive') {
-    buttonColors.borderColor = borderColorForType(
-      type,
-      themeAttributes,
-      disabled,
-    );
+    return {
+      ...buttonColors,
+      borderColor: borderColorForType(type, themeAttributes, disabled),
+    };
   }
 
   return buttonColors;
@@ -101,8 +104,12 @@ const BpkButton = (props: Props) => {
   };
 
   const ButtonComponent = buttonComponentForType(type);
-  const buttonColors = buttonColorsForType(type, themeAttributes, disabled);
-  const textColor = textColorForType(type, themeAttributes, disabled);
+  const buttonColors = useBpkDynamicStyle(
+    buttonColorsForType(type, themeAttributes, disabled),
+  );
+  const textColor = useBpkDynamicValue(
+    textColorForType(type, themeAttributes, disabled),
+  );
 
   const accessibilityStates = [];
   if (disabled) {

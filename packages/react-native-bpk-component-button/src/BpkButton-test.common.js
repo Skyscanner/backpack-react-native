@@ -21,6 +21,7 @@ import renderer from 'react-test-renderer';
 import BpkThemeProvider from 'react-native-bpk-theming';
 import { spacingSm } from 'bpk-tokens/tokens/base.react.native';
 import BpkText from 'react-native-bpk-component-text';
+import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 
 import BpkButton from './BpkButton';
 import { BUTTON_TYPES, ICON_ALIGNMENTS } from './common-types';
@@ -31,24 +32,73 @@ const commonTests = () => {
   jest.mock('Text', () => 'Text');
 
   describe('BpkButton', () => {
-    it('should render correctly', () => {
-      const tree = renderer
-        .create(<BpkButton title="Lorem ipsum" onPress={onPressFn} />)
-        .toJSON();
-      expect(tree).toMatchSnapshot();
-    });
+    describeEachColorScheme(BpkButton, BpkButtonWithColorScheme => {
+      it('should render correctly', () => {
+        const tree = renderer
+          .create(
+            <BpkButtonWithColorScheme
+              title="Lorem ipsum"
+              onPress={onPressFn}
+            />,
+          )
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
 
-    it('should support the "secondary" property', () => {
-      const tree = renderer
-        .create(
-          <BpkButton
-            title="Lorem ipsum"
-            type="secondary"
-            onPress={onPressFn}
-          />,
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
+      it('should support the "disabled" property', () => {
+        const tree = renderer
+          .create(
+            <BpkButtonWithColorScheme
+              disabled
+              title="Lorem ipsum"
+              onPress={onPressFn}
+            />,
+          )
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
+
+      it('should support overwriting styles', () => {
+        const tree = renderer
+          .create(
+            <BpkButtonWithColorScheme
+              title="Lorem ipsum"
+              onPress={onPressFn}
+              style={{ width: spacingSm }}
+            />,
+          )
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
+
+      Object.keys(BUTTON_TYPES).forEach(buttonType => {
+        it(`should render correctly with type="${buttonType}"`, () => {
+          const tree = renderer
+            .create(
+              <BpkButtonWithColorScheme
+                type={buttonType}
+                title="Lorem ipsum"
+                onPress={onPressFn}
+              />,
+            )
+            .toJSON();
+          expect(tree).toMatchSnapshot();
+        });
+
+        it(`should render correctly with type="${buttonType}" and disabled`, () => {
+          const tree = renderer
+            .create(
+              <BpkButtonWithColorScheme
+                disabled
+                type={buttonType}
+                title="Lorem ipsum"
+                onPress={onPressFn}
+              />,
+            )
+            .toJSON();
+          expect(tree).toMatchSnapshot();
+        });
+      });
     });
 
     it('should support the "icon" property', () => {
@@ -75,13 +125,6 @@ const commonTests = () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it('should support the "disabled" property', () => {
-      const tree = renderer
-        .create(<BpkButton disabled title="Lorem ipsum" onPress={onPressFn} />)
-        .toJSON();
-      expect(tree).toMatchSnapshot();
-    });
-
     it('should support having an icon as well as a title', () => {
       const tree = renderer
         .create(
@@ -103,48 +146,6 @@ const commonTests = () => {
         )
         .toJSON();
       expect(tree).toMatchSnapshot();
-    });
-
-    it('should support overwriting styles', () => {
-      const tree = renderer
-        .create(
-          <BpkButton
-            title="Lorem ipsum"
-            onPress={onPressFn}
-            style={{ width: spacingSm }}
-          />,
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
-    });
-
-    Object.keys(BUTTON_TYPES).forEach(buttonType => {
-      it(`should render correctly with type="${buttonType}"`, () => {
-        const tree = renderer
-          .create(
-            <BpkButton
-              type={buttonType}
-              title="Lorem ipsum"
-              onPress={onPressFn}
-            />,
-          )
-          .toJSON();
-        expect(tree).toMatchSnapshot();
-      });
-
-      it(`should render correctly with type="${buttonType}" and disabled`, () => {
-        const tree = renderer
-          .create(
-            <BpkButton
-              disabled
-              type={buttonType}
-              title="Lorem ipsum"
-              onPress={onPressFn}
-            />,
-          )
-          .toJSON();
-        expect(tree).toMatchSnapshot();
-      });
     });
 
     Object.keys(ICON_ALIGNMENTS).forEach(alignmentType => {

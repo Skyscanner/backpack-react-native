@@ -25,6 +25,10 @@ import {
   withTheme,
   type Theme,
 } from 'react-native-bpk-theming';
+import {
+  useBpkDynamicStyle,
+  useBpkDynamicValue,
+} from 'react-native-bpk-appearance';
 
 import BpkGradientButton from './BpkGradientButton.ios';
 import BpkBorderedButton from './BpkBorderedButton.ios';
@@ -121,6 +125,14 @@ const BpkButton = (props: Props) => {
 
   const ButtonComponent = buttonComponentForType(type);
 
+  const buttonColors = useBpkDynamicStyle(
+    buttonColorsForType(type, themeAttributes, disabled),
+  );
+
+  const textColor = useBpkDynamicValue(
+    textColorForType(type, themeAttributes, disabled),
+  );
+
   return (
     <ButtonComponent
       disabled={disabled}
@@ -133,7 +145,7 @@ const BpkButton = (props: Props) => {
       accessibilityLabel={accessibilityLabel || title}
       accessibilityStates={accessibilityStates}
       borderRadius={borderRadiusForTheme(themeAttributes, iconOnly)}
-      {...buttonColorsForType(type, themeAttributes, disabled)}
+      {...buttonColors}
       {...rest}
     >
       <BpkButtonInner
@@ -141,7 +153,7 @@ const BpkButton = (props: Props) => {
         iconOnly={iconOnly}
         iconTrailing={iconAlignment === ICON_ALIGNMENTS.trailing}
         large={large}
-        textColor={textColorForType(type, themeAttributes, disabled)}
+        textColor={textColor}
         title={title}
       />
     </ButtonComponent>

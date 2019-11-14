@@ -4,6 +4,9 @@
 
 **Added:**
 
+- react-native-bpk-component-button:
+  - Added dark mode support.
+
 - react-native-bpk-appearance:
   - Added `useBpkDynamicStyle` hook.
   - Updated `useBpkDynamicValue` to handle invalid values.
