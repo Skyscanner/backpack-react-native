@@ -22,6 +22,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import BpkText from 'react-native-bpk-component-text';
 import { spacingSm } from 'bpk-tokens/tokens/base.react.native';
+import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 
 import { ALERT_TYPES } from './common-types';
 import BpkBannerAlert from './BpkBannerAlert';
@@ -31,33 +32,48 @@ const commonTests = () => {
   jest.useFakeTimers();
 
   describe('BpkBannerAlert', () => {
-    Object.keys(ALERT_TYPES).forEach(alertType => {
-      it(`should render correctly with type equal to ${alertType}`, () => {
+    describeEachColorScheme(BpkBannerAlert, BpkBannerAlertWithColorScheme => {
+      Object.keys(ALERT_TYPES).forEach(alertType => {
+        it(`should render correctly with type equal to ${alertType}`, () => {
+          const tree = renderer
+            .create(
+              <BpkBannerAlertWithColorScheme
+                type={ALERT_TYPES[alertType]}
+                message={`${alertType} alert.`}
+              />,
+            )
+            .toJSON();
+          expect(tree).toMatchSnapshot();
+        });
+      });
+
+      it('should render correctly with dismissable', () => {
         const tree = renderer
           .create(
-            <BpkBannerAlert
-              type={ALERT_TYPES[alertType]}
-              message={`${alertType} alert.`}
+            <BpkBannerAlertWithColorScheme
+              type={ALERT_TYPES.neutral}
+              message="Neutral alert."
+              dismissable
+              dismissButtonLabel="Dismiss"
+              onDismiss={() => null}
             />,
           )
           .toJSON();
         expect(tree).toMatchSnapshot();
       });
-    });
 
-    it('should render correctly with dismissable', () => {
-      const tree = renderer
-        .create(
-          <BpkBannerAlert
-            type={ALERT_TYPES.neutral}
-            message="Neutral alert."
-            dismissable
-            dismissButtonLabel="Dismiss"
-            onDismiss={() => null}
-          />,
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
+      it('should accept userland styling', () => {
+        const tree = renderer
+          .create(
+            <BpkBannerAlertWithColorScheme
+              style={{ width: spacingSm }}
+              type={ALERT_TYPES.neutral}
+              message="Neutral alert."
+            />,
+          )
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
     });
 
     it('should render correctly with children provided (expandable)', () => {
@@ -98,19 +114,6 @@ const commonTests = () => {
               Integer rhoncus varius arcu, a fringilla libero laoreet at.
             </BpkText>
           </BpkBannerAlert>,
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
-    });
-
-    it('should accept userland styling', () => {
-      const tree = renderer
-        .create(
-          <BpkBannerAlert
-            style={{ width: spacingSm }}
-            type={ALERT_TYPES.neutral}
-            message="Neutral alert."
-          />,
         )
         .toJSON();
       expect(tree).toMatchSnapshot();

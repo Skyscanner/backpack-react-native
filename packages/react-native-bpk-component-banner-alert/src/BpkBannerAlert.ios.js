@@ -24,18 +24,22 @@ import {
   spacingMd,
   spacingXl,
   colorPanjin,
-  colorSkyGrayTint04,
-  colorSkyGrayTint02,
+  textTertiaryColor,
+  textSecondaryColor,
   colorMonteverde,
   colorErfoud,
   borderSizeSm,
   borderRadiusSm,
 } from 'bpk-tokens/tokens/base.react.native';
-import { StyleSheet, View } from 'react-native';
+import { View } from 'react-native';
 import BpkText from 'react-native-bpk-component-text';
 import BpkIcon, { icons } from 'react-native-bpk-component-icon';
 import BpkAnimateHeight from 'react-native-bpk-component-animate-height';
 import BpkTouchableOverlay from 'react-native-bpk-component-touchable-overlay';
+import {
+  BpkDynamicStyleSheet,
+  useBpkDynamicStyleSheet,
+} from 'react-native-bpk-appearance';
 
 import {
   type Props,
@@ -45,7 +49,7 @@ import {
 } from './common-types';
 import AnimateAndFade from './AnimateAndFade';
 
-const STYLES = StyleSheet.create({
+const dynamicStyles = BpkDynamicStyleSheet.create({
   border: {
     borderWidth: borderSizeSm,
     borderRadius: borderRadiusSm,
@@ -60,7 +64,7 @@ const STYLES = StyleSheet.create({
     borderColor: colorPanjin,
   },
   borderNeutral: {
-    borderColor: colorSkyGrayTint04,
+    borderColor: textTertiaryColor,
   },
   row: {
     flexDirection: 'row',
@@ -83,7 +87,7 @@ const STYLES = StyleSheet.create({
     color: colorPanjin,
   },
   iconNeutral: {
-    color: colorSkyGrayTint02,
+    color: textSecondaryColor,
   },
   message: {
     flex: 1,
@@ -103,27 +107,35 @@ const STYLES = StyleSheet.create({
   },
 });
 
-const ALERT_TYPE_STYLES = {
-  [ALERT_TYPES.success]: {
-    icon: icons['tick-circle'],
-    borderStyle: STYLES.borderSuccess,
-    iconStyle: STYLES.iconSuccess,
-  },
-  [ALERT_TYPES.warn]: {
-    icon: icons['information-circle'],
-    borderStyle: STYLES.borderWarn,
-    iconStyle: STYLES.iconWarn,
-  },
-  [ALERT_TYPES.error]: {
-    icon: icons['information-circle'],
-    borderStyle: STYLES.borderError,
-    iconStyle: STYLES.iconError,
-  },
-  [ALERT_TYPES.neutral]: {
-    icon: icons['information-circle'],
-    borderStyle: STYLES.borderNeutral,
-    iconStyle: STYLES.iconNeutral,
-  },
+const getAlertTypeStyle = (type: $Keys<typeof ALERT_TYPES>, styles) => {
+  switch (type) {
+    case ALERT_TYPES.success:
+      return {
+        icon: icons['tick-circle'],
+        borderStyle: styles.borderSuccess,
+        iconStyle: styles.iconSuccess,
+      };
+    case ALERT_TYPES.warn:
+      return {
+        icon: icons['information-circle'],
+        borderStyle: styles.borderWarn,
+        iconStyle: styles.iconWarn,
+      };
+    case ALERT_TYPES.error:
+      return {
+        icon: icons['information-circle'],
+        borderStyle: styles.borderError,
+        iconStyle: styles.iconError,
+      };
+    case ALERT_TYPES.neutral:
+      return {
+        icon: icons['information-circle'],
+        borderStyle: styles.borderNeutral,
+        iconStyle: styles.iconNeutral,
+      };
+    default:
+      return {};
+  }
 };
 
 const BpkBannerAlert = (props: Props) => {
@@ -144,25 +156,26 @@ const BpkBannerAlert = (props: Props) => {
     ...rest
   } = props;
 
+  const styles = useBpkDynamicStyleSheet(dynamicStyles);
   const expandable = children !== null;
-  const alertTypeStyles = ALERT_TYPE_STYLES[type] || {};
+  const alertTypeStyles = getAlertTypeStyle(type, styles);
   const { icon, borderStyle, iconStyle } = alertTypeStyles;
 
-  const rowStyle = [STYLES.row];
+  const rowStyle = [styles.row];
 
   if (dismissable) {
-    rowStyle.push(STYLES.rowCloseButtonTapAreaOffset);
+    rowStyle.push(styles.rowCloseButtonTapAreaOffset);
   }
 
   const rowContent = (
     <Fragment>
-      <BpkIcon style={[STYLES.icon, iconStyle]} icon={icon} small />
-      <BpkText textStyle="sm" style={STYLES.message}>
+      <BpkIcon style={[styles.icon, iconStyle]} icon={icon} small />
+      <BpkText textStyle="sm" style={styles.message}>
         {message}
       </BpkText>
       {expandable && (
         <BpkIcon
-          style={STYLES.expandIcon}
+          style={styles.expandIcon}
           icon={expanded ? icons['chevron-up'] : icons['chevron-down']}
           small
         />
@@ -177,7 +190,7 @@ const BpkBannerAlert = (props: Props) => {
       animateOnLeave={dismissable || animateOnLeave}
       show={show}
     >
-      <View style={[STYLES.border, borderStyle, bannerStyle]}>
+      <View style={[styles.border, borderStyle, bannerStyle]}>
         {expandable ? (
           <BpkTouchableOverlay
             onPress={onToggleExpanded}
@@ -195,7 +208,7 @@ const BpkBannerAlert = (props: Props) => {
             accessibilityRole="button"
             accessibilityLabel={dismissButtonLabel}
             onPress={onDismiss}
-            style={STYLES.closeButton}
+            style={styles.closeButton}
           >
             <BpkIcon icon="close" small />
           </BpkTouchableOverlay>
@@ -203,7 +216,7 @@ const BpkBannerAlert = (props: Props) => {
         {expandable && (
           <BpkAnimateHeight
             expanded={expanded}
-            innerStyle={STYLES.expandableContent}
+            innerStyle={styles.expandableContent}
           >
             {props.children}
           </BpkAnimateHeight>
