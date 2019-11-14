@@ -598,7 +598,7 @@ exports[`ios BpkNavigationBar should render correctly with an icon in the title 
           style={
             Array [
               Object {
-                "color": "rgb(68, 69, 96)",
+                "color": "rgb(17, 18, 54)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,

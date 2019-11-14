@@ -66,7 +66,7 @@ exports[`iOS BpkDismissibleChip should render correctly 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -180,7 +180,7 @@ exports[`iOS BpkDismissibleChip should render correctly with "disabled" 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -292,7 +292,7 @@ exports[`iOS BpkDismissibleChip should render correctly with arbitrary props 1`]
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -407,7 +407,7 @@ exports[`iOS BpkDismissibleChip should render correctly with custom style 1`] = 
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -528,7 +528,7 @@ exports[`iOS BpkDismissibleChip should render outline correctly 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,

@@ -4,6 +4,18 @@
 
 **Added:**
 
+- react-native-bpk-component-icon
+- react-native-bpk-component-select
+- react-native-bpk-component-badge
+- react-native-bpk-component-chip
+- react-native-bpk-component-phone-input
+- react-native-bpk-component-navigation-bar
+- react-native-bpk-component-banner-alert
+  - Update default icon color from `colorSkyGrayTint01` to `colorSkyGray`.
+
+- react-native-bpk-component-icon:
+  - Added dark mode support.
+
 - react-native-bpk-component-button:
   - Added dark mode support.
 

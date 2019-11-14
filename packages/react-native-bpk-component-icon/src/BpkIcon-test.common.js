@@ -21,26 +21,36 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { colorSkyBlue } from 'bpk-tokens/tokens/base.react.native';
+import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 
 import BpkIcon, { icons } from './BpkIcon';
 
 const commonTests = () => {
   describe('BpkIcon', () => {
-    it('should render correctly', () => {
-      const tree = renderer.create(<BpkIcon icon={icons.beer} />).toJSON();
-      expect(tree).toMatchSnapshot();
+    describeEachColorScheme(BpkIcon, BpkIconWithColorScheme => {
+      it('should render correctly', () => {
+        const tree = renderer
+          .create(<BpkIconWithColorScheme icon={icons.beer} />)
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
+
+      it('should apply user props', () => {
+        const tree = renderer
+          .create(
+            <BpkIconWithColorScheme
+              icon={icons.beer}
+              style={{ color: colorSkyBlue }}
+            />,
+          )
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
     });
 
     it('should render small icon correctly', () => {
       const tree = renderer
         .create(<BpkIcon icon={icons.beer} small />)
-        .toJSON();
-      expect(tree).toMatchSnapshot();
-    });
-
-    it('should apply user props', () => {
-      const tree = renderer
-        .create(<BpkIcon icon={icons.beer} style={{ color: colorSkyBlue }} />)
         .toJSON();
       expect(tree).toMatchSnapshot();
     });
