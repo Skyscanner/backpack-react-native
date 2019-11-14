@@ -1,6 +1,6 @@
 {
   "name": "react-native-bpk-test-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "main": "index.js",
   "description": "Backpack React Native test utlities.",
@@ -15,6 +15,6 @@
     "react-native": ">= 0.59.0"
   },
   "dependencies": {
-    "react-native-bpk-appearance": "^1.1.2"
+    "react-native-bpk-appearance": "^1.2.0"
   }
 }
