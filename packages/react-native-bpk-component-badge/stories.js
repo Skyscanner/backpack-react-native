@@ -20,7 +20,7 @@
 
 import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react-native';
-import { View, StyleSheet } from 'react-native';
+import { View } from 'react-native';
 import BpkIcon, { icons } from 'react-native-bpk-component-icon';
 import {
   colorSkyGrayTint07,
@@ -28,6 +28,10 @@ import {
   spacingSm,
 } from 'bpk-tokens/tokens/base.react.native';
 import BpkThemeProvider from 'react-native-bpk-theming';
+import {
+  BpkDynamicStyleSheet,
+  useBpkDynamicStyleSheet,
+} from 'react-native-bpk-appearance';
 
 import { StorySubheading } from '../../storybook/TextStyles';
 import themeAttributes from '../../storybook/themeAttributes';
@@ -39,7 +43,7 @@ import BpkBadge, {
   BADGE_DOCKED_TYPES,
 } from './index';
 
-const style = StyleSheet.create({
+const dynamicStyles = BpkDynamicStyleSheet.create({
   container: {
     width: '100%',
   },
@@ -56,11 +60,11 @@ const style = StyleSheet.create({
     alignItems: 'center',
   },
   start: {
-    backgroundColor: colorSkyGrayTint07,
+    backgroundColor: { light: colorSkyGrayTint07, dark: colorSkyGrayTint01 },
     alignItems: 'flex-start',
   },
   end: {
-    backgroundColor: colorSkyGrayTint07,
+    backgroundColor: { light: colorSkyGrayTint07, dark: colorSkyGrayTint01 },
     alignItems: 'flex-end',
   },
   light: {
@@ -84,13 +88,17 @@ const iconSets = {
   multiple: [<BpkIcon icon={icons.flight} />, <BpkIcon icon={icons.hotels} />],
 };
 
-const generateBadgeStory = (
+const BadgeStory = ({
+  contents,
+  config,
+}: {
   contents: Array<string>,
   config: {
     docked?: $Keys<typeof BADGE_DOCKED_TYPES>,
     icons?: string,
-  } = {},
-) => {
+  },
+}) => {
+  const style = useBpkDynamicStyleSheet(dynamicStyles);
   const badgeWrapperStyle = [style.badgeWrapper];
   if (config.docked) {
     badgeWrapperStyle.push(style[config.docked]);
@@ -140,39 +148,48 @@ const generateBadgeStory = (
   return <View style={style.container}>{badges}</View>;
 };
 
+BadgeStory.defaultProps = {
+  config: {},
+};
+
 storiesOf('react-native-bpk-component-badge', module)
   .addDecorator(CenterDecorator)
   .add('docs:default', () => (
-    <View>
-      {generateBadgeStory(['Apples', 'Bananas', 'Strawberries', 'Pears'])}
-    </View>
+    <BadgeStory contents={['Apples', 'Bananas', 'Strawberries', 'Pears']} />
   ))
   .add('docs:with-icon', () => (
-    <View>
-      {generateBadgeStory(['Apples', 'Bananas', 'Strawberries'], {
+    <BadgeStory
+      contents={['Apples', 'Bananas', 'Strawberries']}
+      config={{
         icons: 'single',
-      })}
-    </View>
+      }}
+    />
   ))
   .add('docs:with-multiple-icons', () => (
-    <View>
-      {generateBadgeStory(['4% off'], {
+    <BadgeStory
+      contents={['4% off']}
+      config={{
         icons: 'multiple',
-      })}
-    </View>
+      }}
+    />
   ))
   .add('docs:docked-start', () => (
-    <View>
-      {generateBadgeStory(['Advert'], { docked: BADGE_DOCKED_TYPES.start })}
-    </View>
+    <BadgeStory
+      contents={['Advert']}
+      config={{ docked: BADGE_DOCKED_TYPES.start }}
+    />
   ))
   .add('docs:docked-end', () => (
-    <View>
-      {generateBadgeStory(['Advert'], { docked: BADGE_DOCKED_TYPES.end })}
-    </View>
+    <BadgeStory
+      contents={['Advert']}
+      config={{ docked: BADGE_DOCKED_TYPES.end }}
+    />
   ))
   .add('Themed', () => (
     <BpkThemeProvider theme={themeAttributes}>
-      {generateBadgeStory(['Advert'], { docked: BADGE_DOCKED_TYPES.end })}
+      <BadgeStory
+        contents={['Advert']}
+        config={{ docked: BADGE_DOCKED_TYPES.end }}
+      />
     </BpkThemeProvider>
   ));
