@@ -22,15 +22,34 @@ import { type Theme } from 'react-native-bpk-theming';
 import {
   borderRadiusPill,
   borderRadiusSm,
+  primaryColor,
   colorSkyBlue,
   colorSkyGrayTint06,
   colorSkyGrayTint04,
+  colorSkyGrayTint02,
+  colorBlackTint03,
+  colorBlackTint02,
   colorMonteverde,
   colorPanjin,
   colorWhite,
 } from 'bpk-tokens/tokens/base.react.native';
 
 import { BUTTON_TYPES, type ButtonType } from './common-types';
+
+const disabledBackgroundColor = {
+  light: colorSkyGrayTint06,
+  dark: colorBlackTint02,
+};
+
+const borderedButtonBackgroundColor = {
+  light: colorWhite,
+  dark: colorBlackTint02,
+};
+
+const borderedButtonBorderColor = {
+  light: colorSkyGrayTint06,
+  dark: colorSkyGrayTint02,
+};
 
 function valueOrDefault<T>(
   haystack: ?Theme,
@@ -53,11 +72,15 @@ export const backgroundColorForType = (
   themeAttributes: ?Theme,
   disabled: boolean,
 ) => {
+  if (disabled) {
+    return disabledBackgroundColor;
+  }
+
   const backgroundColors = {
     [BUTTON_TYPES.primary]: colorMonteverde,
     [BUTTON_TYPES.featured]: colorSkyBlue,
-    [BUTTON_TYPES.secondary]: colorWhite,
-    [BUTTON_TYPES.destructive]: colorWhite,
+    [BUTTON_TYPES.secondary]: borderedButtonBackgroundColor,
+    [BUTTON_TYPES.destructive]: borderedButtonBackgroundColor,
   };
 
   const backgroundColorThemePropsMappedToType = {
@@ -66,10 +89,6 @@ export const backgroundColorForType = (
     [BUTTON_TYPES.secondary]: 'buttonSecondaryBackgroundColor',
     [BUTTON_TYPES.destructive]: 'buttonDestructiveBackgroundColor',
   };
-
-  if (disabled) {
-    return colorSkyGrayTint06;
-  }
 
   return valueOrDefault(
     themeAttributes,
@@ -85,7 +104,7 @@ export const gradientColorForType = (
   disabled: boolean,
 ) => {
   if (disabled) {
-    return colorSkyGrayTint06;
+    return disabledBackgroundColor;
   }
 
   const gradientColors = {
@@ -117,13 +136,13 @@ export const textColorForType = (
   disabled: boolean,
 ) => {
   if (disabled) {
-    return colorSkyGrayTint04;
+    return { light: colorSkyGrayTint04, dark: colorBlackTint03 };
   }
 
   const textColors = {
     [BUTTON_TYPES.primary]: colorWhite,
     [BUTTON_TYPES.featured]: colorWhite,
-    [BUTTON_TYPES.secondary]: colorSkyBlue,
+    [BUTTON_TYPES.secondary]: primaryColor,
     [BUTTON_TYPES.destructive]: colorPanjin,
   };
 
@@ -147,12 +166,12 @@ export const borderColorForType = (
   disabled: boolean,
 ) => {
   if (disabled) {
-    return colorSkyGrayTint06;
+    return disabledBackgroundColor;
   }
 
   const borderColors = {
-    [BUTTON_TYPES.secondary]: colorSkyGrayTint06,
-    [BUTTON_TYPES.destructive]: colorSkyGrayTint06,
+    [BUTTON_TYPES.secondary]: borderedButtonBorderColor,
+    [BUTTON_TYPES.destructive]: borderedButtonBorderColor,
   };
 
   const borderColorThemePropsMappedToType = {
