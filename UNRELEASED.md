@@ -4,6 +4,10 @@
 
 **Added:**
 
+- react-native-bpk-appearance:
+  - Added `useBpkDynamicStyle` hook.
+  - Updated `useBpkDynamicValue` to handle invalid values.
+
 - react-native-bpk-component-touchable-overlay:
   - Added dark mode support.
 

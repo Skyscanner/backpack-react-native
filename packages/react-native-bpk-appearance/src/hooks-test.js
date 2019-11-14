@@ -26,6 +26,7 @@ import {
   useBpkColorScheme,
   useBpkDynamicValue,
   useBpkDynamicStyleSheet,
+  useBpkDynamicStyle,
 } from './hooks';
 
 jest.mock('react-native-dark-mode', () => ({
@@ -99,36 +100,96 @@ describe('BpkAppearance - hooks', () => {
       expect(TestComponent.currentValue).toEqual('d');
     });
 
-    describe('useDynamicValueStyleSheet', () => {
-      const style = BpkDynamicStyleSheet.create({
-        view: {
-          color: { light: '#fff', dark: '#f0f' },
-        },
+    it('returns the provided argument when it is not a valid dynamic color', () => {
+      TestRenderer.create(
+        <BpkAppearanceProvider>
+          <TestComponent hook={() => useBpkDynamicValue({ light: 'l' })} />
+        </BpkAppearanceProvider>,
+      );
+
+      expect(TestComponent.currentValue).toEqual({ light: 'l' });
+
+      TestRenderer.create(
+        <BpkAppearanceProvider>
+          <TestComponent hook={() => useBpkDynamicValue(1)} />
+        </BpkAppearanceProvider>,
+      );
+
+      expect(TestComponent.currentValue).toEqual(1);
+    });
+  });
+
+  describe('useDynamicStyle', () => {
+    it('returns the correct value when current color scheme is light', () => {
+      TestRenderer.create(
+        <BpkAppearanceProvider>
+          <TestComponent
+            hook={() =>
+              useBpkDynamicStyle({
+                color: { light: 'l', dark: 'd' },
+                flex: 1,
+              })
+            }
+          />
+        </BpkAppearanceProvider>,
+      );
+
+      // eslint-disable-next-line
+      expect(TestComponent.currentValue).toEqual({ color: 'l', flex: 1 });
+    });
+
+    it('returns the correct value when current color scheme is dark', () => {
+      TestRenderer.create(
+        <BpkAppearanceProvider>
+          <TestComponent
+            hook={() =>
+              useBpkDynamicStyle({
+                color: { light: 'l', dark: 'd' },
+                flex: 1,
+              })
+            }
+          />
+        </BpkAppearanceProvider>,
+      );
+
+      TestRenderer.act(() => {
+        BpkAppearance.set({ colorScheme: 'dark' });
       });
 
-      it('returns the correct value when current color scheme is light', () => {
-        TestRenderer.create(
-          <BpkAppearanceProvider>
-            <TestComponent hook={() => useBpkDynamicStyleSheet(style)} />
-          </BpkAppearanceProvider>,
-        );
+      // eslint-disable-next-line
+      expect(TestComponent.currentValue).toEqual({ color: 'd', flex: 1 });
+    });
+  });
 
-        expect(TestComponent.currentValue.view.color).toEqual('#fff');
+  describe('useDynamicValueStyleSheet', () => {
+    const style = BpkDynamicStyleSheet.create({
+      view: {
+        color: { light: '#fff', dark: '#f0f' },
+      },
+    });
+
+    it('returns the correct value when current color scheme is light', () => {
+      TestRenderer.create(
+        <BpkAppearanceProvider>
+          <TestComponent hook={() => useBpkDynamicStyleSheet(style)} />
+        </BpkAppearanceProvider>,
+      );
+
+      expect(TestComponent.currentValue.view.color).toEqual('#fff');
+    });
+
+    it('returns the correct value when current color scheme is dark', () => {
+      TestRenderer.create(
+        <BpkAppearanceProvider>
+          <TestComponent hook={() => useBpkDynamicStyleSheet(style)} />
+        </BpkAppearanceProvider>,
+      );
+
+      TestRenderer.act(() => {
+        BpkAppearance.set({ colorScheme: 'dark' });
       });
 
-      it('returns the correct value when current color scheme is dark', () => {
-        TestRenderer.create(
-          <BpkAppearanceProvider>
-            <TestComponent hook={() => useBpkDynamicStyleSheet(style)} />
-          </BpkAppearanceProvider>,
-        );
-
-        TestRenderer.act(() => {
-          BpkAppearance.set({ colorScheme: 'dark' });
-        });
-
-        expect(TestComponent.currentValue.view.color).toEqual('#f0f');
-      });
+      expect(TestComponent.currentValue.view.color).toEqual('#f0f');
     });
   });
 });
