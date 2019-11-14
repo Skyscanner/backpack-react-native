@@ -2,6 +2,35 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-11-14
+
+**Fixed:**
+
+- react-native-bpk-component-select
+- react-native-bpk-component-badge
+- react-native-bpk-component-chip
+- react-native-bpk-component-phone-input
+- react-native-bpk-component-navigation-bar
+  - Update default icon color from `colorSkyGrayTint01` to `colorSkyGray`.
+
+**Added:**
+
+- react-native-bpk-component-banner-alert
+  - Added dark mode support.
+
+- react-native-bpk-component-icon:
+  - Added dark mode support.
+
+- react-native-bpk-component-button:
+  - Added dark mode support.
+
+- react-native-bpk-appearance:
+  - Added `useBpkDynamicStyle` hook.
+  - Updated `useBpkDynamicValue` to handle invalid values.
+
+- react-native-bpk-component-touchable-overlay:
+  - Added dark mode support.
+
 # 2019-11-12
 
 **Added:**
