@@ -2014,7 +2014,7 @@ exports[`iOS BpkButton should render correctly with iconAlignment="leading" 1`] 
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -2127,7 +2127,7 @@ exports[`iOS BpkButton should render correctly with iconAlignment="trailing" 1`]
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -2348,7 +2348,7 @@ exports[`iOS BpkButton should support having an icon as well as a title 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -2465,7 +2465,7 @@ exports[`iOS BpkButton should support the "icon" property 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -2585,7 +2585,7 @@ exports[`iOS BpkButton should support the "iconOnly" property 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -2687,7 +2687,7 @@ exports[`iOS BpkButtonThemed should not apply border radius when a theme is appl
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -2876,7 +2876,7 @@ exports[`iOS should support the "icon" and "large" property 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -2996,7 +2996,7 @@ exports[`iOS should support the "iconOnly" and "large" property 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,

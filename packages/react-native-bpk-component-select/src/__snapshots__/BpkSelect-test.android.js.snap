@@ -39,7 +39,7 @@ exports[`Android BpkSelect should render correctly 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -112,7 +112,7 @@ exports[`Android BpkSelect should render correctly with "showImage" and image 1`
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -182,7 +182,7 @@ exports[`Android BpkSelect should render correctly with "showImage" and no image
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -243,7 +243,7 @@ exports[`Android BpkSelect should render correctly with "valid" false 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -269,7 +269,7 @@ exports[`Android BpkSelect should render correctly with "valid" false 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -331,7 +331,7 @@ exports[`Android BpkSelect should render correctly with "valid" false and a vali
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -357,7 +357,7 @@ exports[`Android BpkSelect should render correctly with "valid" false and a vali
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -437,7 +437,7 @@ exports[`Android BpkSelect should render correctly with "valid" true 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -463,7 +463,7 @@ exports[`Android BpkSelect should render correctly with "valid" true 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -544,7 +544,7 @@ exports[`Android BpkSelect should render correctly with a text label 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -603,7 +603,7 @@ exports[`Android BpkSelect should render correctly with an element label 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -684,7 +684,7 @@ exports[`Android BpkSelect should render correctly with custom styles 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -773,7 +773,7 @@ exports[`Android BpkSelect should render correctly with the disabled prop 1`] = 
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,

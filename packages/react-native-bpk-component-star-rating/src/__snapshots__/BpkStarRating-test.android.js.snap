@@ -15,7 +15,7 @@ exports[`Android BpkStar should render correctly when empty 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -56,7 +56,7 @@ exports[`Android BpkStar should render correctly when full 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -84,7 +84,7 @@ exports[`Android BpkStar should render correctly when full 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -131,7 +131,7 @@ exports[`Android BpkStar should render correctly when half 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -159,7 +159,7 @@ exports[`Android BpkStar should render correctly when half 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -206,7 +206,7 @@ exports[`Android BpkStar should support theming when empty 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -250,7 +250,7 @@ exports[`Android BpkStar should support theming when full 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -281,7 +281,7 @@ exports[`Android BpkStar should support theming when full 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -331,7 +331,7 @@ exports[`Android BpkStar should support theming when half 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -362,7 +362,7 @@ exports[`Android BpkStar should support theming when half 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(68, 69, 96)",
+          "color": "rgb(17, 18, 54)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,

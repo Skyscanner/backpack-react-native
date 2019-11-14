@@ -532,7 +532,7 @@ exports[`iOS BpkTextInput should render correctly with description, valid=false 
         style={
           Array [
             Object {
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "fontFamily": "BpkIcon",
               "fontSize": 24,
               "includeFontPadding": false,
@@ -940,7 +940,7 @@ exports[`iOS BpkTextInput should render correctly with valid 1`] = `
         style={
           Array [
             Object {
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "fontFamily": "BpkIcon",
               "fontSize": 24,
               "includeFontPadding": false,
@@ -1039,7 +1039,7 @@ exports[`iOS BpkTextInput should render correctly with valid false 1`] = `
         style={
           Array [
             Object {
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "fontFamily": "BpkIcon",
               "fontSize": 24,
               "includeFontPadding": false,
@@ -1138,7 +1138,7 @@ exports[`iOS BpkTextInput should render correctly with valid false and a validat
         style={
           Array [
             Object {
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "fontFamily": "BpkIcon",
               "fontSize": 24,
               "includeFontPadding": false,

@@ -35,7 +35,7 @@ exports[`android BpkNavigationBarButton should render correctly back icon 1`] = 
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -96,7 +96,7 @@ exports[`android BpkNavigationBarButton should render correctly disabled 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -153,7 +153,7 @@ exports[`android BpkNavigationBarButton should render correctly with close icon 
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -210,7 +210,7 @@ exports[`android BpkNavigationBarButton should render correctly with tick icon 1
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -271,7 +271,7 @@ exports[`android BpkNavigationBarButton should respect "disabledTintColor" 1`] =
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -328,7 +328,7 @@ exports[`android BpkNavigationBarButton should respect "tintColor" 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -385,7 +385,7 @@ exports[`android BpkNavigationBarButton should respect "touchableColor" 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(68, 69, 96)",
+            "color": "rgb(17, 18, 54)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,

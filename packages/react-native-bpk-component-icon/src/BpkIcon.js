@@ -22,18 +22,22 @@ import PropTypes from 'prop-types';
 import {
   spacingBase,
   spacingLg,
-  colorSkyGrayTint01,
+  textPrimaryColor,
 } from 'bpk-tokens/tokens/base.react.native';
-import { Text, StyleSheet } from 'react-native';
+import { Text } from 'react-native';
 import React, { type ElementProps } from 'react';
 import iconMappings from 'bpk-svgs/dist/font/iconMapping.json';
+import {
+  BpkDynamicStyleSheet,
+  useBpkDynamicStyleSheet,
+} from 'react-native-bpk-appearance';
 
-const styles = StyleSheet.create({
+const dynamicStyles = BpkDynamicStyleSheet.create({
   icon: {
     fontFamily: 'BpkIcon',
     fontSize: spacingLg,
     includeFontPadding: false,
-    color: colorSkyGrayTint01,
+    color: textPrimaryColor,
   },
   small: {
     fontSize: spacingBase,
@@ -57,6 +61,7 @@ const BpkIcon = (props: Props) => {
 
   const characterCode = iconMappings[icon];
 
+  const styles = useBpkDynamicStyleSheet(dynamicStyles);
   const textStyleFinal = [styles.icon];
 
   if (small) {
