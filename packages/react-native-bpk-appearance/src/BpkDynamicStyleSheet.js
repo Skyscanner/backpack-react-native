@@ -57,7 +57,7 @@ export type BpkStyleSheetStyle = {|
   tintColor?: ColorValue<'tintColor'>,
 |};
 
-export type NamedStyles = { +[key: string]: BpkStyleSheetStyle };
+export type BpkNamedStyles = { +[key: string]: BpkStyleSheetStyle };
 
 export type BpkDynamicStyleProp<S: Object> = $ObjMap<S, (Object) => any>;
 export type BpkDynamicStyle<S> = {
@@ -81,7 +81,7 @@ function extractSemanticColors(
   }, {});
 }
 
-function extractStyleForVariation<+S: NamedStyles>(
+function extractStyleForVariation<+S: BpkNamedStyles>(
   style: S,
   variation: ColorSchemeName,
 ) {
@@ -102,7 +102,7 @@ function memo<T>(compute: () => T): () => T {
   };
 }
 
-function create<+S: NamedStyles>(obj: S): BpkDynamicStyle<S> {
+function create<+S: BpkNamedStyles>(obj: S): BpkDynamicStyle<S> {
   const lazyLight = memo(() =>
     StyleSheet.create(extractStyleForVariation(obj, 'light')),
   );

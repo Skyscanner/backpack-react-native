@@ -18,15 +18,19 @@
 
 /* @flow */
 
-import { StyleSheet } from 'react-native';
 import {
-  colorSkyBlue,
+  primaryColor,
   colorSkyGrayTint04,
+  colorBlackTint03,
   spacingSm,
   spacingXl,
 } from 'bpk-tokens/tokens/base.react.native';
+import {
+  BpkDynamicStyleSheet,
+  useBpkDynamicStyleSheet,
+} from 'react-native-bpk-appearance';
 
-const styles = StyleSheet.create({
+const styles = BpkDynamicStyleSheet.create({
   view: {
     minHeight: spacingXl,
     flexDirection: 'row',
@@ -40,13 +44,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row-reverse',
   },
   text: {
-    color: colorSkyBlue,
+    color: primaryColor,
   },
   textDisabled: {
-    color: colorSkyGrayTint04,
+    color: { light: colorSkyGrayTint04, dark: colorBlackTint03 },
   },
   icon: {
-    color: colorSkyBlue,
+    color: primaryColor,
     marginLeft: spacingSm,
   },
   iconLeading: {
@@ -55,4 +59,6 @@ const styles = StyleSheet.create({
   },
 });
 
-export default styles;
+const useStyles = () => useBpkDynamicStyleSheet(styles);
+
+export default useStyles;

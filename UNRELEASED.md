@@ -2,6 +2,14 @@
 
 > Place your changes below this line.
 
+**Added:**
+
+- react-native-bpk-component-button-link:
+  - Added dark mode support.
+
+- react-native-bpk-appearance:
+  - `BpkNamedStyles` type is now being exported.
+
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
