@@ -20,23 +20,35 @@
 
 import PropTypes from 'prop-types';
 import {
-  colorWhite,
+  backgroundTertiaryColor,
+  backgroundSecondaryColor,
   borderRadiusSm,
   borderRadiusLg,
   spacingBase,
+  colorWhite,
 } from 'bpk-tokens/tokens/base.react.native';
 import { shadows } from 'react-native-bpk-styles';
 import React, { type Node, type ElementProps } from 'react';
-import { StyleSheet, View, ViewPropTypes } from 'react-native';
+import { View, ViewPropTypes } from 'react-native';
 import BpkTouchableOverlay from 'react-native-bpk-component-touchable-overlay';
+import {
+  BpkDynamicStyleSheet,
+  useBpkDynamicStyleSheet,
+} from 'react-native-bpk-appearance';
 
 import CORNER_STYLES, { defaultCornerStyle } from './BpkCardCornerStyles';
 
-const styles = StyleSheet.create({
+const dynamicStyles = BpkDynamicStyleSheet.create({
   card: {
-    backgroundColor: colorWhite,
-    borderRadius: borderRadiusSm,
-    ...shadows.base(),
+    light: {
+      backgroundColor: colorWhite,
+      borderRadius: borderRadiusSm,
+      ...shadows.base(),
+    },
+    dark: {
+      backgroundColor: backgroundSecondaryColor,
+      borderRadius: borderRadiusSm,
+    },
   },
   cardCornerStyleLarge: {
     borderRadius: borderRadiusLg,
@@ -44,7 +56,10 @@ const styles = StyleSheet.create({
   cardPadded: {
     padding: spacingBase,
   },
-  cardFocused: shadows.large(),
+  cardFocused: {
+    light: { ...shadows.large() },
+    dark: { backgroundColor: backgroundTertiaryColor },
+  },
   cardInner: {
     backgroundColor: 'transparent', // otherwise this view's corners would bleed outwith the outer container
   },
@@ -74,6 +89,7 @@ const BpkCard = (props: Props) => {
     ...rest
   } = props;
 
+  const styles = useBpkDynamicStyleSheet(dynamicStyles);
   const style = [styles.card];
   const innerStyle = [styles.cardInner];
 

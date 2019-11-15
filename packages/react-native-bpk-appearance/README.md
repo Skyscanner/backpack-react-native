@@ -127,8 +127,17 @@ import {
 const style = BpkDynamicStyleSheet.create({
   view: {
     backgroundColor: { light: backgroundLightColor, dark: backgroundDarkColor }
-  }
-})
+  },
+  image: {
+    light: {
+      borderWidth: 1,
+      borderColor: '#d6d7da',
+    },
+    dark: {
+      backgroundColor: 'rgb(205, 205, 215)'
+    },
+  },
+});
 
 const UserProfile = () => {
   const currentStyle = useBpkDynamicStyleSheet(style);
@@ -136,7 +145,7 @@ const UserProfile = () => {
 
   return (
     <View style={currentStyle.view}>
-      <BpkImage source={{ uri: image }} alt="user profile">
+      <BpkImage style={currentStyle.image} source={{ uri: image }} alt="user profile">
     </View>
   );
 };
