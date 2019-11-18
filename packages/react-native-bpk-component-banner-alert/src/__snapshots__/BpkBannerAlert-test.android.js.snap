@@ -322,7 +322,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with dismissab
                   },
                   Array [
                     Object {
-                      "color": "rgb(7, 112, 227)",
+                      "color": "rgb(109, 159, 235)",
                     },
                   ],
                 ]
@@ -461,7 +461,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with dismissab
                   },
                   Array [
                     Object {
-                      "color": "rgb(7, 112, 227)",
+                      "color": "rgb(109, 159, 235)",
                     },
                   ],
                 ]

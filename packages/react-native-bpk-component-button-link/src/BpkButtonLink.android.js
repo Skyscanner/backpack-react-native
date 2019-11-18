@@ -33,7 +33,7 @@ import {
   ICON_ALIGNMENTS,
   REQUIRED_THEME_ATTRIBUTES,
 } from './common-types';
-import commonStyles from './styles';
+import useStyles from './styles';
 
 const styles = StyleSheet.create({
   wrapper: {
@@ -70,6 +70,7 @@ const BpkButtonLink = (props: Props) => {
     ? { color: themeAttributes.buttonLinkTextColor }
     : null;
 
+  const commonStyles = useStyles();
   const textStyle = [commonStyles.text];
   const viewStyle = [commonStyles.view];
   const iconStyle = [commonStyles.icon];

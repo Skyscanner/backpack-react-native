@@ -23,48 +23,75 @@ import renderer from 'react-test-renderer';
 import BpkText from 'react-native-bpk-component-text';
 import BpkThemeProvider from 'react-native-bpk-theming';
 import { spacingSm } from 'bpk-tokens/tokens/base.react.native';
+import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 
 import BpkButtonLink from './BpkButtonLink';
 import { ICON_ALIGNMENTS } from './common-types';
 
 const commonTests = () => {
   describe('BpkButtonLink', () => {
-    it('should render correctly', () => {
-      const onPressFn = jest.fn();
+    describeEachColorScheme(BpkButtonLink, BpkButtonLinkWithColorScheme => {
+      it('should render correctly', () => {
+        const onPressFn = jest.fn();
 
-      const tree = renderer
-        .create(<BpkButtonLink title="Lorem ipsum" onPress={onPressFn} />)
-        .toJSON();
+        const tree = renderer
+          .create(
+            <BpkButtonLinkWithColorScheme
+              title="Lorem ipsum"
+              onPress={onPressFn}
+            />,
+          )
+          .toJSON();
 
-      expect(tree).toMatchSnapshot();
-    });
+        expect(tree).toMatchSnapshot();
+      });
 
-    it('should support the "disabled" property', () => {
-      const onPressFn = jest.fn();
+      it('should support the "disabled" property', () => {
+        const onPressFn = jest.fn();
 
-      const tree = renderer
-        .create(
-          <BpkButtonLink disabled title="Lorem ipsum" onPress={onPressFn} />,
-        )
-        .toJSON();
+        const tree = renderer
+          .create(
+            <BpkButtonLinkWithColorScheme
+              disabled
+              title="Lorem ipsum"
+              onPress={onPressFn}
+            />,
+          )
+          .toJSON();
 
-      expect(tree).toMatchSnapshot();
-    });
+        expect(tree).toMatchSnapshot();
+      });
 
-    it('should support the "icon" property', () => {
-      const onPressFn = jest.fn();
+      it('should support the "icon" property', () => {
+        const onPressFn = jest.fn();
 
-      const tree = renderer
-        .create(
-          <BpkButtonLink
-            icon="baggage"
-            title="Lorem ipsum"
-            onPress={onPressFn}
-          />,
-        )
-        .toJSON();
+        const tree = renderer
+          .create(
+            <BpkButtonLinkWithColorScheme
+              icon="baggage"
+              title="Lorem ipsum"
+              onPress={onPressFn}
+            />,
+          )
+          .toJSON();
 
-      expect(tree).toMatchSnapshot();
+        expect(tree).toMatchSnapshot();
+      });
+
+      it('should support overwriting styles', () => {
+        const onPressFn = jest.fn();
+
+        const tree = renderer
+          .create(
+            <BpkButtonLinkWithColorScheme
+              title="Lorem ipsum"
+              onPress={onPressFn}
+              style={{ width: spacingSm }}
+            />,
+          )
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
     });
 
     it('should support elements as icons', () => {
@@ -81,21 +108,6 @@ const commonTests = () => {
         )
         .toJSON();
 
-      expect(tree).toMatchSnapshot();
-    });
-
-    it('should support overwriting styles', () => {
-      const onPressFn = jest.fn();
-
-      const tree = renderer
-        .create(
-          <BpkButtonLink
-            title="Lorem ipsum"
-            onPress={onPressFn}
-            style={{ width: spacingSm }}
-          />,
-        )
-        .toJSON();
       expect(tree).toMatchSnapshot();
     });
 

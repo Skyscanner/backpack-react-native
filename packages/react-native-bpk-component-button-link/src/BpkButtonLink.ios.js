@@ -24,6 +24,7 @@ import { getThemeAttributes, withTheme } from 'react-native-bpk-theming';
 import { View, TouchableOpacity } from 'react-native';
 import BpkIcon from 'react-native-bpk-component-icon';
 import BpkText, { WEIGHT_STYLES } from 'react-native-bpk-component-text';
+import { useBpkDynamicValue } from 'react-native-bpk-appearance';
 
 import {
   type CommonProps,
@@ -32,7 +33,7 @@ import {
   ICON_ALIGNMENTS,
   REQUIRED_THEME_ATTRIBUTES,
 } from './common-types';
-import styles from './styles';
+import useStyles from './styles';
 
 export type Props = {
   ...$Exact<CommonProps>,
@@ -58,6 +59,7 @@ const BpkButtonLink = (props: Props) => {
     ? { color: themeAttributes.buttonLinkTextColor }
     : null;
 
+  const styles = useStyles();
   const viewStyle = [styles.view];
   const textStyle = [styles.text];
   const iconStyle = [styles.icon];
@@ -83,11 +85,14 @@ const BpkButtonLink = (props: Props) => {
     accessibilityStates.push('disabled');
   }
 
+  const activeOpacity = useBpkDynamicValue({ light: 0.2, dark: 0.6 });
+
   return (
     <TouchableOpacity
       accessibilityRole="button"
       accessibilityLabel={accessibilityLabel || title}
       accessibilityStates={accessibilityStates}
+      activeOpacity={activeOpacity}
       onPress={onPress}
       disabled={disabled}
       {...rest}

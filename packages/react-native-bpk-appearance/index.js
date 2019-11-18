@@ -36,6 +36,7 @@ import BpkAppearanceProvider, {
 import BpkDynamicStyleSheet, {
   type BpkDynamicStyle,
   type BpkDynamicStyleProp,
+  type BpkNamedStyles,
 } from './src/BpkDynamicStyleSheet';
 
 export default BpkAppearance;
@@ -55,4 +56,5 @@ export type {
   BpkDynamicStyle,
   BpkDynamicStyleProp,
   BpkDynamicValue,
+  BpkNamedStyles,
 };
