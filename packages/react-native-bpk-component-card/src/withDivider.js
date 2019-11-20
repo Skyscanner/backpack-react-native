@@ -24,10 +24,11 @@ import {
   spacingSm,
   spacingMd,
   spacingBase,
-  colorSkyGrayTint06,
+  lineColor,
 } from 'bpk-tokens/tokens/base.react.native';
 import { View, StyleSheet, ViewPropTypes } from 'react-native';
 import React, { type Node, type ElementProps, type ComponentType } from 'react';
+import { useBpkDynamicValue } from 'react-native-bpk-appearance';
 
 const styles = StyleSheet.create({
   cardInner: {
@@ -118,6 +119,8 @@ const withDivider = (CardComponent: ComponentType<any>): ComponentType<any> => {
       stubStyle.push(userStubStyle);
     }
 
+    const dashColor = useBpkDynamicValue(lineColor);
+
     return (
       <CardComponent padded={false} innerStyle={innerStyle} {...rest}>
         <View style={mainStyle}>{children}</View>
@@ -126,7 +129,7 @@ const withDivider = (CardComponent: ComponentType<any>): ComponentType<any> => {
           dashGap={spacingSm}
           dashLength={spacingSm}
           dashThickness={1}
-          dashColor={colorSkyGrayTint06}
+          dashColor={dashColor}
         />
         <View style={stubStyle}>{stub}</View>
       </CardComponent>
