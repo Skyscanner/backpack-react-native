@@ -21,16 +21,18 @@
 import {
   I18nManager,
   ScrollView,
-  StyleSheet,
   View,
   ViewPropTypes,
 } from 'react-native';
-import React, { type Node, type ElementProps } from 'react';
+import React, { type Node, type ElementProps, type Config } from 'react';
 import PropTypes from 'prop-types';
+import { lineColor, borderSizeSm } from 'bpk-tokens/tokens/base.react.native';
 import {
-  colorSkyGrayTint06,
-  borderSizeSm,
-} from 'bpk-tokens/tokens/base.react.native';
+  withBpkAppearance,
+  unpackBpkDynamicValue,
+  BpkDynamicStyleSheet,
+  type WithBpkAppearanceInjectedProps,
+} from 'react-native-bpk-appearance';
 
 import withAnimatedProps from './withAnimatedProps';
 import BpkHorizontalNavSelectedIndicator from './BpkHorizontalNavSelectedIndicator';
@@ -41,10 +43,10 @@ const AnimatedIndicator: typeof BpkHorizontalNavSelectedIndicator = withAnimated
   ['xOffset', 'width'],
 );
 
-const styles = StyleSheet.create({
+const dynamicStyles = BpkDynamicStyleSheet.create({
   nav: {
     borderColor: 'transparent',
-    borderBottomColor: colorSkyGrayTint06,
+    borderBottomColor: lineColor,
     flexDirection: 'column',
     borderBottomWidth: borderSizeSm,
   },
@@ -80,7 +82,15 @@ type State = {
   indicatorWidth: ?number,
 };
 
-class BpkHorizontalNav extends React.Component<Props, State> {
+const defaultProps = {
+  spaceAround: false,
+  style: null,
+}
+
+class BpkHorizontalNav extends React.Component<
+  { ...Props, ...WithBpkAppearanceInjectedProps },
+  State,
+> {
   static propTypes = {
     children: PropTypes.node.isRequired,
     selectedId: PropTypes.string.isRequired,
@@ -88,10 +98,7 @@ class BpkHorizontalNav extends React.Component<Props, State> {
     style: ViewPropTypes.style,
   };
 
-  static defaultProps = {
-    spaceAround: false,
-    style: null,
-  };
+  static defaultProps = defaultProps;
 
   constructor() {
     super();
@@ -102,7 +109,7 @@ class BpkHorizontalNav extends React.Component<Props, State> {
     };
   }
 
-  componentWillReceiveProps(nextProps: Props) {
+  componentWillReceiveProps(nextProps) {
     if (nextProps.selectedId && this.childrenPositions[nextProps.selectedId]) {
       const nextLayoutProps = this.childrenPositions[nextProps.selectedId];
 
@@ -129,8 +136,16 @@ class BpkHorizontalNav extends React.Component<Props, State> {
   childrenPositions = {};
 
   render() {
-    const { children, selectedId, spaceAround, style, ...rest } = this.props;
+    const {
+      children,
+      selectedId,
+      spaceAround,
+      style,
+      bpkAppearance,
+      ...rest
+    } = this.props;
 
+    const styles = unpackBpkDynamicValue(dynamicStyles, bpkAppearance);
     const navStyle = [styles.nav];
     const innerViewStyle = [styles.inner];
 
@@ -187,4 +202,4 @@ class BpkHorizontalNav extends React.Component<Props, State> {
   }
 }
 
-export default BpkHorizontalNav;
+export default withBpkAppearance<Config<Props, typeof defaultProps>>(BpkHorizontalNav); // eslint-disable-line prettier/prettier
