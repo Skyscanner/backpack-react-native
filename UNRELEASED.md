@@ -10,6 +10,7 @@
 - react-native-bpk-appearance:
   - Allow top level dynamic values to be provided to `BpkDynamicStyleSheet`.
   - `BpkStyleSheetNamedStyles` type is now being exported.
+  - Added `withBpkAppearance` HOC, `unpackBpkDynamicValue` and `unpackBpkDynamicStyle` methods.
 
 - react-native-bpk-component-card:
   - Added dark mode support.
