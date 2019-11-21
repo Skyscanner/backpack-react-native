@@ -148,3 +148,5 @@ export const defaultProps = {
   theme: null,
   weight: WEIGHT_STYLES.regular,
 };
+
+export type DefaultProps = typeof defaultProps;

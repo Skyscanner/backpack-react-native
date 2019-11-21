@@ -15,6 +15,9 @@
 - react-native-bpk-component-card:
   - Added dark mode support.
 
+- react-native-bpk-component-flat-list:
+  - Added dark mode support.
+
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
