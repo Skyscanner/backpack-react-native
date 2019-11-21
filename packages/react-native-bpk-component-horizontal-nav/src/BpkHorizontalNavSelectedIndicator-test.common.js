@@ -21,17 +21,23 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import BpkThemeProvider from 'react-native-bpk-theming';
+import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 
 import BpkHorizontalNavSelectedIndicator from './BpkHorizontalNavSelectedIndicator';
 
 const commonTests = () => {
   describe('BpkHorizontalNavSelectedIndicator', () => {
-    it('should render correctly', () => {
-      const tree = renderer
-        .create(<BpkHorizontalNavSelectedIndicator xOffset={0} width={100} />)
-        .toJSON();
-      expect(tree).toMatchSnapshot();
-    });
+    describeEachColorScheme(
+      BpkHorizontalNavSelectedIndicator,
+      WithColorScheme => {
+        it('should render correctly', () => {
+          const tree = renderer
+            .create(<WithColorScheme xOffset={0} width={100} />)
+            .toJSON();
+          expect(tree).toMatchSnapshot();
+        });
+      },
+    );
 
     it('should support theming', () => {
       const theme = {

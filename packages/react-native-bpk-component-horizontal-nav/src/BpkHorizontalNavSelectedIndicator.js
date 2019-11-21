@@ -19,7 +19,7 @@
 /* @flow */
 
 import React from 'react';
-import { Animated, StyleSheet } from 'react-native';
+import { Animated } from 'react-native';
 import PropTypes from 'prop-types';
 import {
   getThemeAttributes,
@@ -27,15 +27,19 @@ import {
   type Theme,
 } from 'react-native-bpk-theming';
 import {
-  colorSkyBlue,
+  primaryColor,
   borderSizeLg,
 } from 'bpk-tokens/tokens/base.react.native';
+import {
+  BpkDynamicStyleSheet,
+  useBpkDynamicStyleSheet,
+} from 'react-native-bpk-appearance';
 
 import { REQUIRED_THEME_ATTRIBUTES, themePropType } from './theming';
 
-const styles = StyleSheet.create({
+const dynamicStyles = BpkDynamicStyleSheet.create({
   selectedIndicator: {
-    backgroundColor: colorSkyBlue,
+    backgroundColor: primaryColor,
     height: borderSizeLg,
   },
 });
@@ -48,6 +52,8 @@ export type Props = {
 
 const BpkHorizontalNavSelectedIndicator = (props: Props) => {
   const { xOffset, width, theme } = props;
+
+  const styles = useBpkDynamicStyleSheet(dynamicStyles);
   const style = [styles.selectedIndicator];
 
   const themeAttributes = getThemeAttributes(REQUIRED_THEME_ATTRIBUTES, theme);

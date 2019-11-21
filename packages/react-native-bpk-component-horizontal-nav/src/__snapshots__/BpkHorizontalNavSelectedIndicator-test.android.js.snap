@@ -1,6 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Android BpkHorizontalNavSelectedIndicator should render correctly 1`] = `
+exports[`Android BpkHorizontalNavSelectedIndicator dark mode should render correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "rgb(109, 159, 235)",
+      "height": 2,
+      "transform": Array [
+        Object {
+          "translateX": 0,
+        },
+      ],
+      "width": 100,
+    }
+  }
+/>
+`;
+
+exports[`Android BpkHorizontalNavSelectedIndicator light mode should render correctly 1`] = `
 <View
   style={
     Object {
