@@ -284,6 +284,19 @@ uppercase
 validationMessage
 withOpenEvents
 withRtlSupport
+useBpkAppearance
+useBpkColorScheme
+useBpkDynamicValue
+useBpkDynamicStyle
+useBpkDynamicStyleSheet
+withBpkAppearance
+isBpkDynamicValue
+unpackBpkDynamicValue
+unpackBpkDynamicStyle
+BpkAppearancePreferences
+ColorSchemeName
+BpkDynamicStyle
+BpkDynamicStyleProp
 
 # Sizes
 xs

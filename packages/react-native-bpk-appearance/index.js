@@ -38,6 +38,13 @@ import BpkDynamicStyleSheet, {
   type BpkStyleSheetNamedStyles,
 } from './src/BpkDynamicStyleSheet';
 import type { BpkDynamicValue } from './src/common-types';
+import withBpkAppearance, {
+  type InjectedProps as WithBpkAppearanceInjectedProps,
+} from './src/withBpkAppearance';
+import {
+  unpackBpkDynamicValue,
+  unpackBpkDynamicStyle,
+} from './src/dynamic-value';
 
 export default BpkAppearance;
 export {
@@ -46,9 +53,12 @@ export {
   useBpkDynamicValue,
   useBpkDynamicStyleSheet,
   useBpkDynamicStyle,
+  unpackBpkDynamicValue,
+  unpackBpkDynamicStyle,
   BpkAppearanceProviderContext,
   BpkAppearanceProvider,
   BpkDynamicStyleSheet,
+  withBpkAppearance,
 };
 export type {
   BpkAppearancePreferences,
@@ -57,4 +67,5 @@ export type {
   BpkDynamicStyleProp,
   BpkDynamicValue,
   BpkStyleSheetNamedStyles,
+  WithBpkAppearanceInjectedProps,
 };

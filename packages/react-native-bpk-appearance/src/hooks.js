@@ -28,7 +28,7 @@ import type {
   BpkDynamicStyleProp,
 } from './BpkDynamicStyleSheet';
 import { BpkAppearanceProviderContext } from './BpkAppearanceProvider';
-import isDynamicValue from './isDynamicValue';
+import { unpackBpkDynamicValue, unpackBpkDynamicStyle } from './dynamic-value';
 import type { UnpackedBpkDynamicValue } from './common-types';
 
 /**
@@ -54,18 +54,14 @@ export function useBpkColorScheme(): ColorSchemeName {
  * current color scheme as provided by the nearest [BpkAppearanceProvider]
  *
  * @example
- * ```javascript
  * const color = useBpkDynamicValue({ light: 'black', dark: 'white' })
- * ```
+ *
  * @param {Object} value a dynamic value.
  * @returns {mixed} the value for the current color scheme.
  *                  If `value` is not a valid dynamic value it will be returned back
  */
 export function useBpkDynamicValue<T>(value: T): UnpackedBpkDynamicValue<T> {
-  if (isDynamicValue(value)) {
-    return value[useBpkColorScheme()];
-  }
-  return value;
+  return unpackBpkDynamicValue(value, useBpkAppearance());
 }
 
 /**
@@ -73,39 +69,31 @@ export function useBpkDynamicValue<T>(value: T): UnpackedBpkDynamicValue<T> {
  * based on the current color scheme as provided by the nearest [BpkAppearanceProvider]
  *
  * @example
- * ```javascript
  * const color = useBpkDynamicStyle({
  *  color: { light: 'black', dark: 'white' },
  *  flex: 1,
  * });
- * ```
+ *
  * @param {Object} style the style object
- * @returns {Object} object with mapped propertis for the current color scheme
+ * @returns {Object} object with mapped properties for the current color scheme
  */
 export function useBpkDynamicStyle<T: {}>(
   style: T,
 ): $ObjMap<T, <X>(item: X) => UnpackedBpkDynamicValue<X>> {
-  return Object.keys(style).reduce((mapped, propName) => {
-    const prop = style[propName];
-    if (isDynamicValue(prop)) {
-      return { ...mapped, [propName]: useBpkDynamicValue(prop) };
-    }
-    return { ...mapped, [propName]: prop };
-  }, {});
+  return unpackBpkDynamicStyle(style, useBpkAppearance());
 }
 
 /**
- * Takes in a 'BpkDynamicStyleSheet` and returns the correct value for
+ * Takes in a `BpkDynamicStyleSheet` and returns the correct value for
  * the current color scheme as provided by the nearest [BpkAppearanceProvider]
  *
  * @example
- * ```javascript
  * const dynamicStyles = BpkDynamicStyleSheet.create({
  *  color: { light: 'black', dark: 'white' },
  *  flex: 1,
  * })
  * const styles = useBpkDynamicStyleSheet(dynamicStyles);
- * ```
+ *
  * @param {BpkDynamicStyle} style the dynamic stylesheet
  * @returns {BpkDynamicStyleProp} the current stylesheet
  */

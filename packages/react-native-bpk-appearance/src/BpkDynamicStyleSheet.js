@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/** @module BpkDynamicStyleSheet */
+
 /* @flow */
 import { StyleSheet } from 'react-native';
 import type {
@@ -26,7 +28,7 @@ import type {
 } from 'react-native/Libraries/StyleSheet/StyleSheet';
 
 import { type ColorSchemeName } from './BpkAppearance';
-import isDynamicValue from './isDynamicValue';
+import { isBpkDynamicValue } from './dynamic-value';
 import type { BpkDynamicValue } from './common-types';
 
 type ReactStylesProps = {
@@ -71,7 +73,7 @@ function unpackValue<T>(
   value: T | BpkDynamicValue<T>,
   variation: ColorSchemeName,
 ): T {
-  if (isDynamicValue(value)) {
+  if (isBpkDynamicValue(value)) {
     return value[variation];
   }
   return value;
@@ -114,7 +116,7 @@ function memo<T>(compute: () => T): () => T {
  * Creates a new dynamic stylesheet that transforms all `BpkDynamicValues` into
  * a plain `StyleSheet` for each color scheme.
  *
- * This should generally be used in conjuction with `useBpkDynamicStyleSheet` hook.
+ * This should generally be used in conjunction with `useBpkDynamicStyleSheet` hook.
  *
  * @example
  * BpkDynamicStyleSheet.create({
