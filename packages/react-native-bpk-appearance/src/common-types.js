@@ -16,10 +16,21 @@
  * limitations under the License.
  */
 
+/* eslint-disable flowtype/generic-spacing */
 /* @flow */
 
-const isDynamicValue = (value: any): boolean %checks =>
-  // %checks doesn't work unless we use double negation https://github.com/facebook/flow/issues/8194
-  value != null && typeof value === 'object' && !!value.light && !!value.dark;
+export type BpkDynamicValue<T> = { light: T, dark: T };
 
-export default isDynamicValue;
+// prettier does't handle this well
+// prettier-ignore
+export type UnpackedBpkDynamicValue<X> = $Call<
+  & ((BpkDynamicValue<string>) => string)
+  & ((BpkDynamicValue<number>) => number)
+  & ((BpkDynamicValue<boolean>) => boolean)
+  & ((BpkDynamicValue<Array<string>>) => Array<string>)
+  & ((BpkDynamicValue<Array<number>>) => Array<number>)
+  & ((BpkDynamicValue<Array<boolean>>) => Array<boolean>)
+  & ((BpkDynamicValue<*>) => any)
+  & ((*) => X),
+  X
+>;

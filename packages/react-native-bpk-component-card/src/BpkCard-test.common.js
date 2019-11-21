@@ -22,6 +22,7 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import renderer from 'react-test-renderer';
 import BpkText from 'react-native-bpk-component-text';
+import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 
 import BpkCard from './BpkCard';
 import CORNER_STYLES from './BpkCardCornerStyles';
@@ -38,16 +39,37 @@ const commonTests = () => {
       </BpkText>
     );
 
-    it('should render correctly', () => {
-      const tree = renderer
-        .create(
-          <BpkCard onPress={onPress} accessibilityLabel="Example Card">
-            {content}
-          </BpkCard>,
-        )
-        .toJSON();
+    describeEachColorScheme(BpkCard, BpkCardWithColorScheme => {
+      it('should render correctly', () => {
+        const tree = renderer
+          .create(
+            <BpkCardWithColorScheme
+              onPress={onPress}
+              accessibilityLabel="Example Card"
+            >
+              {content}
+            </BpkCardWithColorScheme>,
+          )
+          .toJSON();
 
-      expect(tree).toMatchSnapshot();
+        expect(tree).toMatchSnapshot();
+      });
+
+      it('should render correctly with the "focused" state', () => {
+        const tree = renderer
+          .create(
+            <BpkCardWithColorScheme
+              onPress={onPress}
+              focused
+              accessibilityLabel="Example Card"
+            >
+              {content}
+            </BpkCardWithColorScheme>,
+          )
+          .toJSON();
+
+        expect(tree).toMatchSnapshot();
+      });
     });
 
     it('should render correctly without padding', () => {
@@ -58,18 +80,6 @@ const commonTests = () => {
             padded={false}
             accessibilityLabel="Example Card"
           >
-            {content}
-          </BpkCard>,
-        )
-        .toJSON();
-
-      expect(tree).toMatchSnapshot();
-    });
-
-    it('should render correctly with the "focused" state', () => {
-      const tree = renderer
-        .create(
-          <BpkCard onPress={onPress} focused accessibilityLabel="Example Card">
             {content}
           </BpkCard>,
         )

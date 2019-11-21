@@ -136,13 +136,28 @@ const allColours = BpkDynamicStyleSheet.create({
   },
 });
 
+const allDynamic = BpkDynamicStyleSheet.create({
+  view: {
+    light: {
+      backgroundColor: 'black',
+      borderColor: 'white',
+    },
+    dark: {
+      backgroundColor: 'white',
+    },
+  },
+});
+
 (() => <View style={[allStyles.light.view, allColours.light.view]} />)();
 (() => <View style={[allStyles.dark.view, allColours.dark.view]} />)();
 (() => {
   const currentStyle = useBpkDynamicStyleSheet(allStyles);
   return <View style={currentStyle.view} />;
 })();
-
+(() => {
+  const currentStyle = useBpkDynamicStyleSheet(allDynamic);
+  return <View style={currentStyle.view} />;
+})();
 // TODO: Fix all flow warnings so we can uncomment this and add $FlowExpectedError to tests bellow and
 // fail the build in case types are wrong
 

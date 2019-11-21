@@ -15,14 +15,16 @@
   },
   "dependencies": {
     "@skyscanner/react-native-dash": "^0.0.10",
-    "bpk-tokens": "^29.3.0",
+    "bpk-tokens": "^29.4.0",
     "prop-types": "^15.5.8",
+    "react-native-bpk-appearance": "^1.2.0",
     "react-native-bpk-component-touchable-native-feedback": "^2.0.13",
     "react-native-bpk-component-touchable-overlay": "^2.1.0",
     "react-native-bpk-styles": "^2.0.4"
   },
   "devDependencies": {
-    "react-native-bpk-component-text": "^4.2.1"
+    "react-native-bpk-component-text": "^4.2.1",
+    "react-native-bpk-test-utils": "^0.0.2"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"

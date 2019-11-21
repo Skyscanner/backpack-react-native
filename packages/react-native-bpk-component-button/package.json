@@ -15,7 +15,7 @@
     "react-native-linear-gradient": "react-native-community/react-native-linear-gradient"
   },
   "dependencies": {
-    "bpk-tokens": "^29.3.0",
+    "bpk-tokens": "^29.4.0",
     "lodash": "^4.17.4",
     "prop-types": "^15.5.8",
     "react-native-bpk-appearance": "^1.2.0",

@@ -27,37 +27,39 @@ import type {
 
 import { type ColorSchemeName } from './BpkAppearance';
 import isDynamicValue from './isDynamicValue';
+import type { BpkDynamicValue } from './common-types';
 
-type AllStylesProps = {
+type ReactStylesProps = {
   ...$Exact<TextStyle>,
   ...$Exact<ViewStyle>,
   ...$Exact<ImageStyle>,
 };
 
-type SenanticColor = { light: string, dark: string };
-type ColorValue<+key: $Keys<AllStylesProps>> =
+type BpkStyleSheetColorValue<+key: $Keys<ReactStylesProps>> =
   | TypeForStyleKey<key>
-  | SenanticColor;
+  | BpkDynamicValue<string>;
 
 export type BpkStyleSheetStyle = {|
-  ...$Exact<AllStylesProps>,
-  shadowColor?: ColorValue<'shadowColor'>,
-  backgroundColor?: ColorValue<'backgroundColor'>,
-  borderColor?: ColorValue<'borderColor'>,
-  borderBottomColor?: ColorValue<'borderBottomColor'>,
-  borderEndColor?: ColorValue<'borderEndColor'>,
-  borderLeftColor?: ColorValue<'borderLeftColor'>,
-  borderRightColor?: ColorValue<'borderRightColor'>,
-  borderStartColor?: ColorValue<'borderStartColor'>,
-  borderTopColor?: ColorValue<'borderTopColor'>,
-  color?: ColorValue<'color'>,
-  textShadowColor?: ColorValue<'textShadowColor'>,
-  textDecorationColor?: ColorValue<'textDecorationColor'>,
-  overlayColor?: ColorValue<'overlayColor'>,
-  tintColor?: ColorValue<'tintColor'>,
+  ...$Exact<ReactStylesProps>,
+  shadowColor?: BpkStyleSheetColorValue<'shadowColor'>,
+  backgroundColor?: BpkStyleSheetColorValue<'backgroundColor'>,
+  borderColor?: BpkStyleSheetColorValue<'borderColor'>,
+  borderBottomColor?: BpkStyleSheetColorValue<'borderBottomColor'>,
+  borderEndColor?: BpkStyleSheetColorValue<'borderEndColor'>,
+  borderLeftColor?: BpkStyleSheetColorValue<'borderLeftColor'>,
+  borderRightColor?: BpkStyleSheetColorValue<'borderRightColor'>,
+  borderStartColor?: BpkStyleSheetColorValue<'borderStartColor'>,
+  borderTopColor?: BpkStyleSheetColorValue<'borderTopColor'>,
+  color?: BpkStyleSheetColorValue<'color'>,
+  textShadowColor?: BpkStyleSheetColorValue<'textShadowColor'>,
+  textDecorationColor?: BpkStyleSheetColorValue<'textDecorationColor'>,
+  overlayColor?: BpkStyleSheetColorValue<'overlayColor'>,
+  tintColor?: BpkStyleSheetColorValue<'tintColor'>,
 |};
 
-export type BpkNamedStyles = { +[key: string]: BpkStyleSheetStyle };
+export type BpkStyleSheetNamedStyles = {
+  +[key: string]: BpkStyleSheetStyle | BpkDynamicValue<BpkStyleSheetStyle>,
+};
 
 export type BpkDynamicStyleProp<S: Object> = $ObjMap<S, (Object) => any>;
 export type BpkDynamicStyle<S> = {
@@ -65,29 +67,35 @@ export type BpkDynamicStyle<S> = {
   dark: BpkDynamicStyleProp<S>,
 };
 
+function unpackValue<T>(
+  value: T | BpkDynamicValue<T>,
+  variation: ColorSchemeName,
+): T {
+  if (isDynamicValue(value)) {
+    return value[variation];
+  }
+  return value;
+}
+
 function extractSemanticColors(
   styleDef: BpkStyleSheetStyle,
   variation: ColorSchemeName,
 ) {
   return Object.keys(styleDef).reduce((mapped, key) => {
-    const value = styleDef[key];
-    if (isDynamicValue(value)) {
-      // $FlowFixMe
-      mapped[key] = value[variation]; // eslint-disable-line no-param-reassign
-    } else {
-      mapped[key] = value; // eslint-disable-line no-param-reassign
-    }
+    mapped[key] = unpackValue(styleDef[key], variation); // eslint-disable-line no-param-reassign
     return mapped;
   }, {});
 }
 
-function extractStyleForVariation<+S: BpkNamedStyles>(
+function extractStyleForVariation<+S: BpkStyleSheetNamedStyles>(
   style: S,
   variation: ColorSchemeName,
 ) {
   return Object.keys(style).reduce((mapped, topLevelKey) => {
     const styleDef = style[topLevelKey];
-    mapped[topLevelKey] = extractSemanticColors(styleDef, variation); // eslint-disable-line no-param-reassign
+    // $FlowFixMe
+    const unpacked = unpackValue(styleDef, variation);
+    mapped[topLevelKey] = extractSemanticColors(unpacked, variation); // eslint-disable-line no-param-reassign
     return mapped;
   }, {});
 }
@@ -102,7 +110,36 @@ function memo<T>(compute: () => T): () => T {
   };
 }
 
-function create<+S: BpkNamedStyles>(obj: S): BpkDynamicStyle<S> {
+/**
+ * Creates a new dynamic stylesheet that transforms all `BpkDynamicValues` into
+ * a plain `StyleSheet` for each color scheme.
+ *
+ * This should generally be used in conjuction with `useBpkDynamicStyleSheet` hook.
+ *
+ * @example
+ * BpkDynamicStyleSheet.create({
+ *   view: {
+ *     shadowColor: { light: '#fff', dark: '#ff0' },
+ *   }
+ * });
+ *
+ * @example
+ * BpkDynamicStyleSheet.create({
+ *   view: {
+ *     light: {
+ *       borderWidth: 1,
+ *       borderColor: '#d6d7da',
+ *     },
+ *     dark: {
+ *       backgroundColor: 'rgb(205, 205, 215)'
+ *     },
+ *   }
+ * });
+ *
+ * @param {Object} obj a style containing dynamic values
+ * @returns {BpkDynamicStyle} an object containing a plain stylesheet for each color scheme.
+ */
+function create<+S: BpkStyleSheetNamedStyles>(obj: S): BpkDynamicStyle<S> {
   const lazyLight = memo(() =>
     StyleSheet.create(extractStyleForVariation(obj, 'light')),
   );

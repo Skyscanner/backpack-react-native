@@ -16,6 +16,7 @@
  * limitations under the License.
  */
 
+/* eslint-disable backpack/use-tokens */
 import BpkDynamicStyleSheet from './BpkDynamicStyleSheet';
 
 const style = {
@@ -35,21 +36,64 @@ const style = {
   tintColor: { light: '#fff', dark: '#f0f' },
 };
 
+const simpleStyle = {
+  shadowColor: '#fff',
+  backgroundColor: '#fff',
+  borderColor: '#fff',
+  borderBottomColor: '#fff',
+  borderEndColor: '#fff',
+  borderLeftColor: '#fff',
+  borderRightColor: '#fff',
+  borderStartColor: '#fff',
+  borderTopColor: '#fff',
+  color: '#fff',
+  textShadowColor: '#fff',
+  textDecorationColor: '#fff',
+  overlayColor: '#fff',
+  tintColor: '#fff',
+};
+
 const colorProps = Object.keys(style);
 
 describe('BpkDynamicStyleSheet', () => {
   const subject = BpkDynamicStyleSheet.create({
+    simpleStyle: {
+      ...simpleStyle,
+    },
     view: {
       ...style,
       fontFamily: 'arial',
       resizeMode: 'contain',
       flex: 1,
     },
+    topLevel: {
+      light: {
+        ...style,
+        resizeMode: 'contain',
+      },
+      dark: {
+        ...style,
+        resizeMode: 'stretch',
+      },
+    },
+    topLevelSimple: {
+      light: {
+        ...simpleStyle,
+      },
+      dark: {
+        ...simpleStyle,
+      },
+    },
   });
 
   it.each(colorProps)('parses semantic colors for `%s` prop', colorProp => {
     expect(subject.light.view[colorProp]).toBe('#fff');
     expect(subject.dark.view[colorProp]).toBe('#f0f');
+  });
+
+  it.each(colorProps)('parses simple colors for `%s` prop', colorProp => {
+    expect(subject.light.simpleStyle[colorProp]).toBe('#fff');
+    expect(subject.dark.simpleStyle[colorProp]).toBe('#fff');
   });
 
   it('parses extra props', () => {
@@ -60,5 +104,22 @@ describe('BpkDynamicStyleSheet', () => {
     expect(subject.dark.view.fontFamily).toBe('arial');
     expect(subject.dark.view.resizeMode).toBe('contain');
     expect(subject.dark.view.flex).toBe(1);
+  });
+
+  describe('top level dynamic style', () => {
+    it('parses correctly', () => {
+      expect(subject.light.topLevel.resizeMode).toBe('contain');
+      expect(subject.dark.topLevel.resizeMode).toBe('stretch');
+    });
+
+    it.each(colorProps)('parses semantic colors for `%s` prop', colorProp => {
+      expect(subject.light.topLevel[colorProp]).toBe('#fff');
+      expect(subject.dark.topLevel[colorProp]).toBe('#f0f');
+    });
+
+    it.each(colorProps)('parses simple colors for `%s` prop', colorProp => {
+      expect(subject.light.topLevelSimple[colorProp]).toBe('#fff');
+      expect(subject.dark.topLevelSimple[colorProp]).toBe('#fff');
+    });
   });
 });

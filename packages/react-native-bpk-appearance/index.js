@@ -27,7 +27,6 @@ import {
   useBpkDynamicValue,
   useBpkDynamicStyleSheet,
   useBpkDynamicStyle,
-  type BpkDynamicValue,
 } from './src/hooks';
 import BpkAppearanceProvider, {
   BpkAppearanceProviderContext,
@@ -36,8 +35,9 @@ import BpkAppearanceProvider, {
 import BpkDynamicStyleSheet, {
   type BpkDynamicStyle,
   type BpkDynamicStyleProp,
-  type BpkNamedStyles,
+  type BpkStyleSheetNamedStyles,
 } from './src/BpkDynamicStyleSheet';
+import type { BpkDynamicValue } from './src/common-types';
 
 export default BpkAppearance;
 export {
@@ -56,5 +56,5 @@ export type {
   BpkDynamicStyle,
   BpkDynamicStyleProp,
   BpkDynamicValue,
-  BpkNamedStyles,
+  BpkStyleSheetNamedStyles,
 };

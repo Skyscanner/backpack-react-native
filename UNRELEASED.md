@@ -8,7 +8,11 @@
   - Added dark mode support.
 
 - react-native-bpk-appearance:
-  - `BpkNamedStyles` type is now being exported.
+  - Allow top level dynamic values to be provided to `BpkDynamicStyleSheet`.
+  - `BpkStyleSheetNamedStyles` type is now being exported.
+
+- react-native-bpk-component-card:
+  - Added dark mode support.
 
 ## How to write a good changelog entry
 

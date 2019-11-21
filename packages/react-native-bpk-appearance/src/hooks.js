@@ -16,7 +16,6 @@
  * limitations under the License.
  */
 
-/* eslint-disable flowtype/generic-spacing */
 /* @flow */
 import { useContext } from 'react';
 
@@ -24,28 +23,13 @@ import {
   type ColorSchemeName,
   type BpkAppearancePreferences,
 } from './BpkAppearance';
-import { BpkAppearanceProviderContext } from './BpkAppearanceProvider';
-import {
-  type BpkDynamicStyle,
-  type BpkDynamicStyleProp,
+import type {
+  BpkDynamicStyle,
+  BpkDynamicStyleProp,
 } from './BpkDynamicStyleSheet';
+import { BpkAppearanceProviderContext } from './BpkAppearanceProvider';
 import isDynamicValue from './isDynamicValue';
-
-export type BpkDynamicValue<T> = { light: T, dark: T };
-
-// prettier does't handle this well
-// prettier-ignore
-type UnpackedDynamicValue<X> = $Call<
-  & ((BpkDynamicValue<string>) => string)
-  & ((BpkDynamicValue<number>) => number)
-  & ((BpkDynamicValue<boolean>) => boolean)
-  & ((BpkDynamicValue<Array<string>>) => Array<string>)
-  & ((BpkDynamicValue<Array<number>>) => Array<number>)
-  & ((BpkDynamicValue<Array<boolean>>) => Array<boolean>)
-  & ((BpkDynamicValue<*>) => any)
-  & ((*) => X),
-  X
->;
+import type { UnpackedBpkDynamicValue } from './common-types';
 
 /**
  * Fetch the current appearance as provided by the nearest [BpkAppearanceProvider]
@@ -77,7 +61,7 @@ export function useBpkColorScheme(): ColorSchemeName {
  * @returns {mixed} the value for the current color scheme.
  *                  If `value` is not a valid dynamic value it will be returned back
  */
-export function useBpkDynamicValue<T>(value: T): UnpackedDynamicValue<T> {
+export function useBpkDynamicValue<T>(value: T): UnpackedBpkDynamicValue<T> {
   if (isDynamicValue(value)) {
     return value[useBpkColorScheme()];
   }
@@ -100,7 +84,7 @@ export function useBpkDynamicValue<T>(value: T): UnpackedDynamicValue<T> {
  */
 export function useBpkDynamicStyle<T: {}>(
   style: T,
-): $ObjMap<T, <X>(item: X) => UnpackedDynamicValue<X>> {
+): $ObjMap<T, <X>(item: X) => UnpackedBpkDynamicValue<X>> {
   return Object.keys(style).reduce((mapped, propName) => {
     const prop = style[propName];
     if (isDynamicValue(prop)) {
