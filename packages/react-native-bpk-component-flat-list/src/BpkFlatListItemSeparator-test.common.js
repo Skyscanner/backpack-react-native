@@ -20,15 +20,18 @@
 
 import React from 'react';
 import renderer from 'react-test-renderer';
+import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 
 import BpkFlatListItemSeparator from './BpkFlatListItemSeparator';
 
 const commonTests = () => {
   jest.mock('Image', () => 'Image');
   describe('BpkFlatListItemSeparator', () => {
-    it('should render correctly', () => {
-      const tree = renderer.create(<BpkFlatListItemSeparator />).toJSON();
-      expect(tree).toMatchSnapshot();
+    describeEachColorScheme(BpkFlatListItemSeparator, WithColorScheme => {
+      it('should render correctly', () => {
+        const tree = renderer.create(<WithColorScheme />).toJSON();
+        expect(tree).toMatchSnapshot();
+      });
     });
   });
 };

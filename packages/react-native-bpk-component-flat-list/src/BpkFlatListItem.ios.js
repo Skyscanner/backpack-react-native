@@ -18,8 +18,8 @@
 
 /* @flow */
 
-import { View, StyleSheet } from 'react-native';
-import React from 'react';
+import { View } from 'react-native';
+import React, { type Config } from 'react';
 import BpkText from 'react-native-bpk-component-text';
 import BpkTouchableOverlay from 'react-native-bpk-component-touchable-overlay';
 import BpkIcon, { icons } from 'react-native-bpk-component-icon';
@@ -27,9 +27,15 @@ import {
   spacingMd,
   spacingBase,
   spacingLg,
-  colorSkyBlue,
+  primaryColor,
 } from 'bpk-tokens/tokens/base.react.native';
 import { getThemeAttributes, withTheme } from 'react-native-bpk-theming';
+import {
+  BpkDynamicStyleSheet,
+  withBpkAppearance,
+  unpackBpkDynamicValue,
+  type WithBpkAppearanceInjectedProps,
+} from 'react-native-bpk-appearance';
 
 import { REQUIRED_THEME_ATTRIBUTES } from './theming';
 import {
@@ -40,7 +46,7 @@ import {
 
 const IOS_CELL_HEIGHT = 44;
 
-const styles = StyleSheet.create({
+const dynamicStyles = BpkDynamicStyleSheet.create({
   outer: {
     flex: 1,
     flexDirection: 'row',
@@ -59,13 +65,13 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   textSelected: {
-    color: colorSkyBlue,
+    color: primaryColor,
   },
   image: {
     marginRight: spacingLg,
   },
   tick: {
-    color: colorSkyBlue,
+    color: primaryColor,
     opacity: 0,
   },
   tickVisible: {
@@ -73,7 +79,10 @@ const styles = StyleSheet.create({
   },
 });
 
-class BpkFlatListItem extends React.PureComponent<FlatListItemProps> {
+class BpkFlatListItem extends React.PureComponent<{
+  ...FlatListItemProps,
+  ...WithBpkAppearanceInjectedProps,
+}> {
   static propTypes = LIST_ITEM_PROP_TYPES;
 
   static defaultProps = LIST_ITEM_DEFAULT_PROPS;
@@ -86,9 +95,11 @@ class BpkFlatListItem extends React.PureComponent<FlatListItemProps> {
       style,
       theme,
       titleProps,
+      bpkAppearance,
       ...rest
     } = this.props;
 
+    const styles = unpackBpkDynamicValue(dynamicStyles, bpkAppearance);
     const iconStyles = [styles.tick];
     const textStyles = [styles.text];
 
@@ -137,4 +148,6 @@ class BpkFlatListItem extends React.PureComponent<FlatListItemProps> {
 
 BpkFlatListItem.defaultProps = LIST_ITEM_DEFAULT_PROPS;
 
-export default withTheme(BpkFlatListItem);
+const WithTheme = withTheme(BpkFlatListItem);
+type FlatListConfig = Config<FlatListItemProps, typeof LIST_ITEM_DEFAULT_PROPS>;
+export default withBpkAppearance<FlatListConfig>(WithTheme); // eslint-disable-line prettier/prettier

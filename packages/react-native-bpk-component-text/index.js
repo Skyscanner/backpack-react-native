@@ -19,8 +19,13 @@
 /* @flow */
 
 import BpkText from './src/BpkText';
-import { TEXT_STYLES, WEIGHT_STYLES } from './src/common-types';
+import {
+  TEXT_STYLES,
+  WEIGHT_STYLES,
+  type DefaultProps as BpkTextDefaultProps,
+  type Props as BpkTextProps,
+} from './src/common-types';
 
-export type { Props as BpkTextProps } from './src/common-types';
+export type { BpkTextProps, BpkTextDefaultProps };
 export default BpkText;
 export { TEXT_STYLES, WEIGHT_STYLES };

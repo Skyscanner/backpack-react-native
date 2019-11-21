@@ -22,6 +22,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { Image } from 'react-native';
 import BpkThemeProvider from 'react-native-bpk-theming';
+import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 
 import BpkFlatListItem from './BpkFlatListItem';
 
@@ -30,20 +31,31 @@ const onPressFn = jest.fn();
 const commonTests = () => {
   jest.mock('Image', () => 'Image');
   describe('BpkFlatListItem', () => {
-    it('should render correctly', () => {
-      const tree = renderer
-        .create(<BpkFlatListItem title="List item" onPress={onPressFn} />)
-        .toJSON();
-      expect(tree).toMatchSnapshot();
-    });
+    describeEachColorScheme(BpkFlatListItem, BpkFlatListItemWithColorScheme => {
+      it('should render correctly', () => {
+        const tree = renderer
+          .create(
+            <BpkFlatListItemWithColorScheme
+              title="List item"
+              onPress={onPressFn}
+            />,
+          )
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
 
-    it('should support the "selected" property', () => {
-      const tree = renderer
-        .create(
-          <BpkFlatListItem title="List item" onPress={onPressFn} selected />,
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
+      it('should support the "selected" property', () => {
+        const tree = renderer
+          .create(
+            <BpkFlatListItemWithColorScheme
+              title="List item"
+              onPress={onPressFn}
+              selected
+            />,
+          )
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
     });
 
     it('should support the "image" property', () => {

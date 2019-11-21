@@ -18,19 +18,23 @@
 
 /* @flow */
 
-import { Platform, StyleSheet, View } from 'react-native';
+import { Platform, View } from 'react-native';
 import React from 'react';
 import {
   spacingMd,
   spacingBase,
-  colorSkyGrayTint06,
+  lineColor,
 } from 'bpk-tokens/tokens/base.react.native';
+import {
+  BpkDynamicStyleSheet,
+  useBpkDynamicStyleSheet,
+} from 'react-native-bpk-appearance';
 
-const styles = StyleSheet.create({
+const dynamicStyles = BpkDynamicStyleSheet.create({
   separator: {
     flex: 1,
     height: 1, // eslint-disable-line backpack/use-tokens
-    backgroundColor: colorSkyGrayTint06,
+    backgroundColor: lineColor,
     ...Platform.select({
       ios: {
         marginLeft: spacingBase,
@@ -42,6 +46,9 @@ const styles = StyleSheet.create({
   },
 });
 
-const BpkFlatListItemSeparator = () => <View style={styles.separator} />;
+const BpkFlatListItemSeparator = () => {
+  const styles = useBpkDynamicStyleSheet(dynamicStyles);
+  return <View style={styles.separator} />;
+};
 
 export default BpkFlatListItemSeparator;
