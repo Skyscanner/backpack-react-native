@@ -175,7 +175,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "rgb(221, 221, 229)",
+            "backgroundColor": "rgb(205, 205, 215)",
             "flex": 1,
             "height": 1,
             "marginHorizontal": 8,
@@ -311,7 +311,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "rgb(221, 221, 229)",
+            "backgroundColor": "rgb(205, 205, 215)",
             "flex": 1,
             "height": 1,
             "marginHorizontal": 8,
@@ -630,7 +630,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
       <View
         style={
           Object {
-            "backgroundColor": "rgb(221, 221, 229)",
+            "backgroundColor": "rgb(205, 205, 215)",
             "flex": 1,
             "height": 1,
             "marginHorizontal": 8,
@@ -766,7 +766,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
       <View
         style={
           Object {
-            "backgroundColor": "rgb(221, 221, 229)",
+            "backgroundColor": "rgb(205, 205, 215)",
             "flex": 1,
             "height": 1,
             "marginHorizontal": 8,
