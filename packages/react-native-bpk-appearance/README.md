@@ -310,7 +310,7 @@ import { type WithBpkAppearanceInjectedProps, withBpkAppearance } from 'react-na
 
 class MyComponent extends Component<{ ...Props, ...WithBpkAppearanceInjectedProps }> {
  render() {
-   const { bpkApperance, ...rest } = this.props;
+   const { bpkAppearance, ...rest } = this.props;
    ....
  }
 }
