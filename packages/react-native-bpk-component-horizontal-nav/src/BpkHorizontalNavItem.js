@@ -18,13 +18,13 @@
 
 /* @flow */
 
-import { Platform, StyleSheet, View, ViewPropTypes } from 'react-native';
+import { Platform, View, ViewPropTypes } from 'react-native';
 import React, { type ElementProps } from 'react';
 import PropTypes from 'prop-types';
 import {
   colorSkyGrayTint04,
-  colorSkyGray,
-  colorSkyBlue,
+  colorBlackTint03,
+  primaryColor,
   spacingSm,
   spacingXl,
   borderSizeSm,
@@ -35,13 +35,17 @@ import { getThemeAttributes, withTheme } from 'react-native-bpk-theming';
 import BpkText from 'react-native-bpk-component-text';
 import BpkTouchableOverlay from 'react-native-bpk-component-touchable-overlay';
 import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-native-feedback';
+import {
+  BpkDynamicStyleSheet,
+  useBpkDynamicStyleSheet,
+} from 'react-native-bpk-appearance';
 
 import { REQUIRED_THEME_ATTRIBUTES, themePropType } from './theming';
 
 type ViewProps = ElementProps<typeof View>;
 type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
 
-const styles = StyleSheet.create({
+const dynamicStyles = BpkDynamicStyleSheet.create({
   view: {
     height: spacingXl + spacingSm - borderSizeSm - borderSizeLg,
     justifyContent: 'center',
@@ -50,14 +54,13 @@ const styles = StyleSheet.create({
     height: spacingXl - borderSizeSm - borderSizeLg,
   },
   text: {
-    color: colorSkyGray,
     paddingHorizontal: spacingBase,
   },
   textDisabled: {
-    color: colorSkyGrayTint04,
+    color: { light: colorSkyGrayTint04, dark: colorBlackTint03 },
   },
   textSelected: {
-    color: colorSkyBlue,
+    color: primaryColor,
   },
 });
 
@@ -85,6 +88,7 @@ const BpkHorizontalNavItem = (props: Props) => {
     ...rest
   } = props;
 
+  const styles = useBpkDynamicStyleSheet(dynamicStyles);
   const accessibilityStates = [];
   const textSize = small ? 'sm' : 'base';
   const viewStyles = [styles.view];

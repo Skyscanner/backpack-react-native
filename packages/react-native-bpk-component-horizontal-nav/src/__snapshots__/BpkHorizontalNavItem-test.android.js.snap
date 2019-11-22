@@ -1,6 +1,184 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Android BpkHorizontalNavItem should render correctly 1`] = `
+exports[`Android BpkHorizontalNavItem dark mode should render correctly 1`] = `
+<View
+  accessibilityLabel="Nav"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  clickable={true}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Object {
+        "height": 33,
+        "justifyContent": "center",
+      },
+    ]
+  }
+>
+  <Text
+    maxFontSizeMultiplier={3.2}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "sans-serif",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": -0.2,
+        },
+        Object {},
+        Array [
+          Object {
+            "paddingHorizontal": 16,
+          },
+        ],
+      ]
+    }
+  >
+    NAV
+  </Text>
+</View>
+`;
+
+exports[`Android BpkHorizontalNavItem dark mode should render correctly with "disabled" prop 1`] = `
+<View
+  accessibilityLabel="Nav"
+  accessibilityRole="button"
+  accessibilityStates={
+    Array [
+      "disabled",
+    ]
+  }
+  accessible={true}
+  clickable={false}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Object {
+        "height": 33,
+        "justifyContent": "center",
+      },
+    ]
+  }
+>
+  <Text
+    maxFontSizeMultiplier={3.2}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "sans-serif",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": -0.2,
+        },
+        Object {},
+        Array [
+          Object {
+            "paddingHorizontal": 16,
+          },
+          Object {
+            "color": "rgb(99, 99, 102)",
+          },
+        ],
+      ]
+    }
+  >
+    NAV
+  </Text>
+</View>
+`;
+
+exports[`Android BpkHorizontalNavItem dark mode should render correctly with "selected" prop 1`] = `
+<View
+  accessibilityLabel="Nav"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  clickable={false}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Object {
+        "height": 33,
+        "justifyContent": "center",
+      },
+    ]
+  }
+>
+  <Text
+    maxFontSizeMultiplier={3.2}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "sans-serif",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": -0.2,
+        },
+        Object {},
+        Array [
+          Object {
+            "paddingHorizontal": 16,
+          },
+          Object {
+            "color": "rgb(109, 159, 235)",
+          },
+        ],
+      ]
+    }
+  >
+    NAV
+  </Text>
+</View>
+`;
+
+exports[`Android BpkHorizontalNavItem light mode should render correctly 1`] = `
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
@@ -45,7 +223,6 @@ exports[`Android BpkHorizontalNavItem should render correctly 1`] = `
         Object {},
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
             "paddingHorizontal": 16,
           },
         ],
@@ -57,7 +234,70 @@ exports[`Android BpkHorizontalNavItem should render correctly 1`] = `
 </View>
 `;
 
-exports[`Android BpkHorizontalNavItem should render correctly with "selected" prop 1`] = `
+exports[`Android BpkHorizontalNavItem light mode should render correctly with "disabled" prop 1`] = `
+<View
+  accessibilityLabel="Nav"
+  accessibilityRole="button"
+  accessibilityStates={
+    Array [
+      "disabled",
+    ]
+  }
+  accessible={true}
+  clickable={false}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Object {
+        "height": 33,
+        "justifyContent": "center",
+      },
+    ]
+  }
+>
+  <Text
+    maxFontSizeMultiplier={3.2}
+    style={
+      Array [
+        Object {
+          "color": "rgb(17, 18, 54)",
+          "fontFamily": "sans-serif",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": -0.2,
+        },
+        Object {},
+        Array [
+          Object {
+            "paddingHorizontal": 16,
+          },
+          Object {
+            "color": "rgb(178, 178, 191)",
+          },
+        ],
+      ]
+    }
+  >
+    NAV
+  </Text>
+</View>
+`;
+
+exports[`Android BpkHorizontalNavItem light mode should render correctly with "selected" prop 1`] = `
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
@@ -102,7 +342,6 @@ exports[`Android BpkHorizontalNavItem should render correctly with "selected" pr
         Object {},
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
             "paddingHorizontal": 16,
           },
           Object {
@@ -165,7 +404,6 @@ exports[`Android BpkHorizontalNavItem should render correctly with "small" prop 
         Object {},
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
             "paddingHorizontal": 16,
           },
         ],
@@ -222,7 +460,6 @@ exports[`Android BpkHorizontalNavItem should render correctly with "spaceAround"
         Object {},
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
             "paddingHorizontal": 16,
           },
         ],
@@ -279,7 +516,6 @@ exports[`Android BpkHorizontalNavItem should render correctly with arbitrary pro
         Object {},
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
             "paddingHorizontal": 16,
           },
         ],
@@ -339,7 +575,6 @@ exports[`Android BpkHorizontalNavItem should render correctly with custom "style
         Object {},
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
             "paddingHorizontal": 16,
           },
         ],
@@ -396,7 +631,6 @@ exports[`Android BpkHorizontalNavItem should support theming 1`] = `
         Object {},
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
             "paddingHorizontal": 16,
           },
         ],

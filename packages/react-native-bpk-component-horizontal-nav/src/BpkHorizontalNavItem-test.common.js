@@ -22,32 +22,46 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import BpkThemeProvider from 'react-native-bpk-theming';
 import { spacingSm } from 'bpk-tokens/tokens/base.react.native';
+import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 
 import BpkHorizontalNavItem from './BpkHorizontalNavItem';
 
 const commonTests = () => {
   const onPressFn = jest.fn();
   describe('BpkHorizontalNavItem', () => {
-    it('should render correctly', () => {
-      const tree = renderer
-        .create(
-          <BpkHorizontalNavItem id="0" title="Nav" onPress={onPressFn}>
-            My nav content.
-          </BpkHorizontalNavItem>,
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
-    });
+    describeEachColorScheme(BpkHorizontalNavItem, WithColorScheme => {
+      it('should render correctly', () => {
+        const tree = renderer
+          .create(
+            <WithColorScheme id="0" title="Nav" onPress={onPressFn}>
+              My nav content.
+            </WithColorScheme>,
+          )
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
 
-    it('should render correctly with "selected" prop', () => {
-      const tree = renderer
-        .create(
-          <BpkHorizontalNavItem id="0" title="Nav" onPress={onPressFn} selected>
-            My nav content.
-          </BpkHorizontalNavItem>,
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
+      it('should render correctly with "selected" prop', () => {
+        const tree = renderer
+          .create(
+            <WithColorScheme id="0" title="Nav" onPress={onPressFn} selected>
+              My nav content.
+            </WithColorScheme>,
+          )
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
+
+      it('should render correctly with "disabled" prop', () => {
+        const tree = renderer
+          .create(
+            <WithColorScheme id="0" title="Nav" onPress={onPressFn} disabled>
+              My nav content.
+            </WithColorScheme>,
+          )
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
     });
 
     it('should render correctly with "spaceAround" prop', () => {

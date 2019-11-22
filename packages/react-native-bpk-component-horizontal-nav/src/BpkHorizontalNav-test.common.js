@@ -22,6 +22,7 @@ import React from 'react';
 import { Text } from 'react-native';
 import renderer from 'react-test-renderer';
 import { spacingSm } from 'bpk-tokens/tokens/base.react.native';
+import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 
 import BpkHorizontalNav from './BpkHorizontalNav';
 
@@ -36,13 +37,15 @@ MyNavItem.defaultProps = { selected: false };
 
 const commonTests = () => {
   describe('BpkHorizontalNav', () => {
-    it('should render correctly', () => {
-      const tree = renderer
-        .create(
-          <BpkHorizontalNav selectedId="0">My nav content.</BpkHorizontalNav>,
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
+    describeEachColorScheme(BpkHorizontalNav, WithColorScheme => {
+      it('should render correctly', () => {
+        const tree = renderer
+          .create(
+            <WithColorScheme selectedId="0">My nav content.</WithColorScheme>,
+          )
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
     });
 
     it('should render correctly with the "selected" prop', () => {

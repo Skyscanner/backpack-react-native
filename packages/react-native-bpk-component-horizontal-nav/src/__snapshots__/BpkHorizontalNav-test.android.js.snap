@@ -1,12 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Android BpkHorizontalNav should render correctly 1`] = `
+exports[`Android BpkHorizontalNav dark mode should render correctly 1`] = `
 <RCTScrollView
   alwaysBounceHorizontal={false}
   contentContainerStyle={
     Array [
       Object {
-        "borderBottomColor": "rgb(221, 221, 229)",
+        "borderBottomColor": "rgb(68, 69, 96)",
+        "borderBottomWidth": 1,
+        "borderColor": "transparent",
+        "flexDirection": "column",
+      },
+    ]
+  }
+  horizontal={true}
+  showsHorizontalScrollIndicator={false}
+>
+  <View>
+    <View
+      style={
+        Array [
+          Object {
+            "flexDirection": "row",
+          },
+        ]
+      }
+    />
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Android BpkHorizontalNav light mode should render correctly 1`] = `
+<RCTScrollView
+  alwaysBounceHorizontal={false}
+  contentContainerStyle={
+    Array [
+      Object {
+        "borderBottomColor": "rgb(205, 205, 215)",
         "borderBottomWidth": 1,
         "borderColor": "transparent",
         "flexDirection": "column",
@@ -36,7 +66,7 @@ exports[`Android BpkHorizontalNav should render correctly with arbitrary props 1
   contentContainerStyle={
     Array [
       Object {
-        "borderBottomColor": "rgb(221, 221, 229)",
+        "borderBottomColor": "rgb(205, 205, 215)",
         "borderBottomWidth": 1,
         "borderColor": "transparent",
         "flexDirection": "column",
@@ -67,7 +97,7 @@ exports[`Android BpkHorizontalNav should render correctly with custom "style" pr
   contentContainerStyle={
     Array [
       Object {
-        "borderBottomColor": "rgb(221, 221, 229)",
+        "borderBottomColor": "rgb(205, 205, 215)",
         "borderBottomWidth": 1,
         "borderColor": "transparent",
         "flexDirection": "column",
@@ -100,7 +130,7 @@ exports[`Android BpkHorizontalNav should render correctly with the "selected" pr
   contentContainerStyle={
     Array [
       Object {
-        "borderBottomColor": "rgb(221, 221, 229)",
+        "borderBottomColor": "rgb(205, 205, 215)",
         "borderBottomWidth": 1,
         "borderColor": "transparent",
         "flexDirection": "column",
