@@ -63,9 +63,8 @@ ext {
     buildToolsVersion   = "29.0.2"
     androidx            = '1.0.2'
     appcompat           = '1.0.2'
-    googlePlayServicesVersion = "15.0.1"
     supportLibVersion = "27.1.1"
-    googlePlayServicesVersion = "15.0.1"
+    playServicesVersion = "xxx"
     androidMapsUtilsVersion = "0.5+"
 }
 
