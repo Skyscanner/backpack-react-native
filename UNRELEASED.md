@@ -4,9 +4,6 @@
 
 **Added:**
 
-- react-native-bpk-component-text:
-  - Disabled font scaling for react native bpkText.
-
 - react-native-bpk-component-button-link:
   - Added dark mode support.
 
@@ -54,3 +51,6 @@ See [`CHANGELOG.md`](CHANGELOG.md) for real-world examples of good changelog ent
 
 - react-native-bpk-component-horcrux:
   - Fixed issue where `BpkHorcrux` would occasionally possess the living.
+
+- react-native-bpk-component-text:
+  - Disabled font scaling for react native bpkText.
