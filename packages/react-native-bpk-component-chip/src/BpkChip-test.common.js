@@ -22,6 +22,7 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import renderer from 'react-test-renderer';
 import BpkThemeProvider from 'react-native-bpk-theming';
+import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 
 import BpkChip from './BpkChip';
 import { CHIP_TYPES } from './common-types';
@@ -30,63 +31,65 @@ const commonTests = () => {
   const onPress = jest.fn();
 
   describe('BpkChip', () => {
-    it('should render correctly', () => {
-      const tree = renderer
-        .create(
-          <BpkChip
-            label="Label"
-            accessibilityLabel="Accessibility label"
-            onPress={onPress}
-          />,
-        )
-        .toJSON();
+    describeEachColorScheme(BpkChip, WithColorScheme => {
+      it('should render correctly', () => {
+        const tree = renderer
+          .create(
+            <WithColorScheme
+              label="Label"
+              accessibilityLabel="Accessibility label"
+              onPress={onPress}
+            />,
+          )
+          .toJSON();
 
-      expect(tree).toMatchSnapshot();
-    });
+        expect(tree).toMatchSnapshot();
+      });
 
-    it('should render outline correctly', () => {
-      const tree = renderer
-        .create(
-          <BpkChip
-            label="Label"
-            accessibilityLabel="Accessibility label"
-            onPress={onPress}
-            type={CHIP_TYPES.outline}
-          />,
-        )
-        .toJSON();
+      it('should render outline correctly', () => {
+        const tree = renderer
+          .create(
+            <WithColorScheme
+              label="Label"
+              accessibilityLabel="Accessibility label"
+              onPress={onPress}
+              type={CHIP_TYPES.outline}
+            />,
+          )
+          .toJSON();
 
-      expect(tree).toMatchSnapshot();
-    });
+        expect(tree).toMatchSnapshot();
+      });
 
-    it('should render correctly with "selected"', () => {
-      const tree = renderer
-        .create(
-          <BpkChip
-            selected
-            label="Label"
-            accessibilityLabel="Accessibility label"
-            onPress={onPress}
-          />,
-        )
-        .toJSON();
+      it('should render correctly with "selected"', () => {
+        const tree = renderer
+          .create(
+            <WithColorScheme
+              selected
+              label="Label"
+              accessibilityLabel="Accessibility label"
+              onPress={onPress}
+            />,
+          )
+          .toJSON();
 
-      expect(tree).toMatchSnapshot();
-    });
+        expect(tree).toMatchSnapshot();
+      });
 
-    it('should render correctly with "disabled"', () => {
-      const tree = renderer
-        .create(
-          <BpkChip
-            disabled
-            label="Label"
-            accessibilityLabel="Accessibility label"
-            onPress={onPress}
-          />,
-        )
-        .toJSON();
+      it('should render correctly with "disabled"', () => {
+        const tree = renderer
+          .create(
+            <WithColorScheme
+              disabled
+              label="Label"
+              accessibilityLabel="Accessibility label"
+              onPress={onPress}
+            />,
+          )
+          .toJSON();
 
-      expect(tree).toMatchSnapshot();
+        expect(tree).toMatchSnapshot();
+      });
     });
 
     it('should render correctly with custom style', () => {

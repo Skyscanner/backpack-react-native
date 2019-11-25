@@ -19,14 +19,18 @@
 /* @flow */
 
 import React from 'react';
-import { StyleSheet, Platform } from 'react-native';
+import { Platform } from 'react-native';
 import PropTypes from 'prop-types';
 import BpkIcon from 'react-native-bpk-component-icon';
 import BpkText from 'react-native-bpk-component-text';
 import {
   borderRadiusPill,
   borderSizeSm,
+  backgroundTertiaryColor,
+  textPrimaryColor,
+  lineDarkColor,
   colorSkyBlue,
+  colorBlackTint03,
   colorSkyGrayTint05,
   colorSkyGrayTint04,
   colorSkyGrayTint02,
@@ -38,6 +42,10 @@ import {
 } from 'bpk-tokens/tokens/base.react.native';
 import { shadows } from 'react-native-bpk-styles';
 import { getThemeAttributes, withTheme } from 'react-native-bpk-theming';
+import {
+  BpkDynamicStyleSheet,
+  useBpkDynamicStyleSheet,
+} from 'react-native-bpk-appearance';
 
 import BpkChipInner from './BpkChipInner';
 import { REQUIRED_THEME_ATTRIBUTES } from './theming';
@@ -48,10 +56,12 @@ import {
   CHIP_TYPES,
 } from './common-types';
 
-const styles = StyleSheet.create({
+const disabledTextColor = { light: colorSkyGrayTint04, dark: colorBlackTint03 };
+
+const dynamicStyles = BpkDynamicStyleSheet.create({
   inner: {
     alignItems: 'center',
-    backgroundColor: colorWhite,
+    backgroundColor: backgroundTertiaryColor,
     borderRadius: borderRadiusPill,
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -65,29 +75,29 @@ const styles = StyleSheet.create({
     backgroundColor: colorSkyBlue,
   },
   innerDisabled: {
-    backgroundColor: colorWhite,
+    backgroundColor: backgroundTertiaryColor,
   },
   text: {
-    color: colorSkyGrayTint01,
+    color: textPrimaryColor,
     includeFontPadding: false,
   },
   textSelected: {
     color: colorWhite,
   },
   textDisabled: {
-    color: colorSkyGrayTint04,
+    color: disabledTextColor,
   },
   icon: {
-    color: colorSkyGrayTint02,
+    color: { light: colorSkyGrayTint02, dark: colorSkyGrayTint05 },
     includeFontPadding: false,
     marginStart: spacingSm,
   },
   iconDisabled: {
-    color: colorSkyGrayTint04,
+    color: disabledTextColor,
   },
   innerOutline: {
     backgroundColor: 'transparent',
-    borderColor: colorSkyGrayTint02,
+    borderColor: lineDarkColor,
     borderWidth: borderSizeSm,
     paddingVertical: spacingMd - borderSizeSm,
   },
@@ -105,10 +115,10 @@ const styles = StyleSheet.create({
     color: colorSkyGrayTint05,
   },
   textOutlineDisabled: {
-    color: colorSkyGrayTint01,
+    color: colorBlackTint03,
   },
   iconOutlineDisabled: {
-    color: colorSkyGrayTint01,
+    color: colorBlackTint03,
   },
 });
 
@@ -132,6 +142,7 @@ const BpkChipWrapper = (props: Props) => {
     ...rest
   } = props;
 
+  const styles = useBpkDynamicStyleSheet(dynamicStyles);
   const userStyle = [];
   const innerStyle = [styles.inner];
   const textStyle = [styles.text];

@@ -24,10 +24,9 @@ import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
 import BpkText from 'react-native-bpk-component-text';
 import {
-  spacingSm,
   spacingBase,
   spacingLg,
-  colorSkyBlueShade03,
+  backgroundDarkColor,
 } from 'bpk-tokens/tokens/base.react.native';
 import BpkThemeProvider from 'react-native-bpk-theming';
 
@@ -48,13 +47,15 @@ const styles = StyleSheet.create({
   row: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    marginTop: spacingSm,
+    paddingTop: spacingBase,
   },
 });
 
 const outlineStyles = StyleSheet.create({
   row: {
-    backgroundColor: colorSkyBlueShade03,
+    backgroundColor: backgroundDarkColor,
+    marginHorizontal: -spacingBase,
+    paddingHorizontal: spacingBase,
   },
 });
 

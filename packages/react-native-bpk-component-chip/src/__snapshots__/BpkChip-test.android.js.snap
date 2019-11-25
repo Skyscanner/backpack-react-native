@@ -1,6 +1,327 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Android BpkChip should render correctly 1`] = `
+exports[`Android BpkChip dark mode should render correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 40,
+        "elevation": 2,
+        "overflow": "hidden",
+      },
+      Array [],
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Accessibility label"
+    accessibilityRole="button"
+    accessible={true}
+    clickable={true}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "rgb(44, 44, 46)",
+          "borderRadius": 40,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+        },
+      ]
+    }
+  >
+    <Text
+      maxFontSizeMultiplier={3.2}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+              "includeFontPadding": false,
+            },
+          ],
+        ]
+      }
+    >
+      Label
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Android BpkChip dark mode should render correctly with "disabled" 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 40,
+        "elevation": 2,
+        "overflow": "hidden",
+      },
+      Array [],
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Accessibility label"
+    accessibilityRole="button"
+    accessible={true}
+    clickable={false}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "rgb(44, 44, 46)",
+          "borderRadius": 40,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+        },
+        Object {
+          "backgroundColor": "rgb(44, 44, 46)",
+        },
+      ]
+    }
+  >
+    <Text
+      maxFontSizeMultiplier={3.2}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+              "includeFontPadding": false,
+            },
+            Object {
+              "color": "rgb(99, 99, 102)",
+            },
+          ],
+        ]
+      }
+    >
+      Label
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Android BpkChip dark mode should render correctly with "selected" 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 40,
+        "elevation": 2,
+        "overflow": "hidden",
+      },
+      Array [],
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Accessibility label"
+    accessibilityRole="button"
+    accessible={true}
+    clickable={true}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "rgb(44, 44, 46)",
+          "borderRadius": 40,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+        },
+        Object {
+          "backgroundColor": "rgb(7, 112, 227)",
+        },
+      ]
+    }
+  >
+    <Text
+      maxFontSizeMultiplier={3.2}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+              "includeFontPadding": false,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      Label
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Android BpkChip dark mode should render outline correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 40,
+        "elevation": 2,
+        "overflow": "hidden",
+      },
+      Array [
+        Object {
+          "elevation": 0,
+        },
+      ],
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Accessibility label"
+    accessibilityRole="button"
+    accessible={true}
+    clickable={true}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "rgb(44, 44, 46)",
+          "borderRadius": 40,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+        },
+        Object {
+          "backgroundColor": "transparent",
+          "borderColor": "rgb(68, 69, 96)",
+          "borderWidth": 1,
+          "paddingVertical": 7,
+        },
+      ]
+    }
+  >
+    <Text
+      maxFontSizeMultiplier={3.2}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+              "includeFontPadding": false,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      Label
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Android BpkChip light mode should render correctly 1`] = `
 <View
   style={
     Array [
@@ -61,7 +382,7 @@ exports[`Android BpkChip should render correctly 1`] = `
           Object {},
           Array [
             Object {
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "includeFontPadding": false,
             },
           ],
@@ -74,7 +395,7 @@ exports[`Android BpkChip should render correctly 1`] = `
 </View>
 `;
 
-exports[`Android BpkChip should render correctly with "disabled" 1`] = `
+exports[`Android BpkChip light mode should render correctly with "disabled" 1`] = `
 <View
   style={
     Array [
@@ -138,7 +459,7 @@ exports[`Android BpkChip should render correctly with "disabled" 1`] = `
           Object {},
           Array [
             Object {
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "includeFontPadding": false,
             },
             Object {
@@ -154,7 +475,7 @@ exports[`Android BpkChip should render correctly with "disabled" 1`] = `
 </View>
 `;
 
-exports[`Android BpkChip should render correctly with "selected" 1`] = `
+exports[`Android BpkChip light mode should render correctly with "selected" 1`] = `
 <View
   style={
     Array [
@@ -218,7 +539,94 @@ exports[`Android BpkChip should render correctly with "selected" 1`] = `
           Object {},
           Array [
             Object {
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
+              "includeFontPadding": false,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      Label
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Android BpkChip light mode should render outline correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 40,
+        "elevation": 2,
+        "overflow": "hidden",
+      },
+      Array [
+        Object {
+          "elevation": 0,
+        },
+      ],
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Accessibility label"
+    accessibilityRole="button"
+    accessible={true}
+    clickable={true}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderRadius": 40,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+        },
+        Object {
+          "backgroundColor": "transparent",
+          "borderColor": "rgb(68, 69, 96)",
+          "borderWidth": 1,
+          "paddingVertical": 7,
+        },
+      ]
+    }
+  >
+    <Text
+      maxFontSizeMultiplier={3.2}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
               "includeFontPadding": false,
             },
             Object {
@@ -296,7 +704,7 @@ exports[`Android BpkChip should render correctly with arbitrary props 1`] = `
           Object {},
           Array [
             Object {
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "includeFontPadding": false,
             },
           ],
@@ -374,95 +782,8 @@ exports[`Android BpkChip should render correctly with custom style 1`] = `
           Object {},
           Array [
             Object {
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "includeFontPadding": false,
-            },
-          ],
-        ]
-      }
-    >
-      Label
-    </Text>
-  </View>
-</View>
-`;
-
-exports[`Android BpkChip should render outline correctly 1`] = `
-<View
-  style={
-    Array [
-      Object {
-        "borderRadius": 40,
-        "elevation": 2,
-        "overflow": "hidden",
-      },
-      Array [
-        Object {
-          "elevation": 0,
-        },
-      ],
-    ]
-  }
->
-  <View
-    accessibilityLabel="Accessibility label"
-    accessibilityRole="button"
-    accessible={true}
-    clickable={true}
-    isTVSelectable={true}
-    nativeBackgroundAndroid={
-      Object {
-        "borderless": true,
-        "color": null,
-        "type": "RippleAndroid",
-      }
-    }
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "rgb(255, 255, 255)",
-          "borderRadius": 40,
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-          "paddingHorizontal": 16,
-          "paddingVertical": 8,
-        },
-        Object {
-          "backgroundColor": "transparent",
-          "borderColor": "rgb(104, 105, 127)",
-          "borderWidth": 1,
-          "paddingVertical": 7,
-        },
-      ]
-    }
-  >
-    <Text
-      maxFontSizeMultiplier={3.2}
-      style={
-        Array [
-          Object {
-            "color": "rgb(17, 18, 54)",
-            "fontFamily": "sans-serif",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "letterSpacing": 0,
-          },
-          Object {},
-          Array [
-            Object {
-              "color": "rgb(68, 69, 96)",
-              "includeFontPadding": false,
-            },
-            Object {
-              "color": "rgb(255, 255, 255)",
             },
           ],
         ]
@@ -544,7 +865,7 @@ exports[`Android BpkChip should support theming when selected 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(68, 69, 96)",
+              "color": "rgb(17, 18, 54)",
               "includeFontPadding": false,
             },
             Object {

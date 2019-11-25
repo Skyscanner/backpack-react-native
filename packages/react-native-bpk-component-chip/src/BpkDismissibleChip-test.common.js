@@ -21,6 +21,7 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
 import renderer from 'react-test-renderer';
+import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 
 import BpkDismissibleChip from './BpkDismissibleChip';
 import { CHIP_TYPES } from './common-types';
@@ -29,48 +30,50 @@ const commonTests = () => {
   const onPress = jest.fn();
 
   describe('BpkDismissibleChip', () => {
-    it('should render correctly', () => {
-      const tree = renderer
-        .create(
-          <BpkDismissibleChip
-            label="Label"
-            accessibilityLabel="Dismiss"
-            onPress={onPress}
-          />,
-        )
-        .toJSON();
+    describeEachColorScheme(BpkDismissibleChip, WithColorScheme => {
+      it('should render correctly', () => {
+        const tree = renderer
+          .create(
+            <WithColorScheme
+              label="Label"
+              accessibilityLabel="Dismiss"
+              onPress={onPress}
+            />,
+          )
+          .toJSON();
 
-      expect(tree).toMatchSnapshot();
-    });
+        expect(tree).toMatchSnapshot();
+      });
 
-    it('should render outline correctly', () => {
-      const tree = renderer
-        .create(
-          <BpkDismissibleChip
-            label="Label"
-            accessibilityLabel="Dismiss"
-            onPress={onPress}
-            type={CHIP_TYPES.outline}
-          />,
-        )
-        .toJSON();
+      it('should render outline correctly', () => {
+        const tree = renderer
+          .create(
+            <WithColorScheme
+              label="Label"
+              accessibilityLabel="Dismiss"
+              onPress={onPress}
+              type={CHIP_TYPES.outline}
+            />,
+          )
+          .toJSON();
 
-      expect(tree).toMatchSnapshot();
-    });
+        expect(tree).toMatchSnapshot();
+      });
 
-    it('should render correctly with "disabled"', () => {
-      const tree = renderer
-        .create(
-          <BpkDismissibleChip
-            disabled
-            label="Label"
-            accessibilityLabel="Dismiss"
-            onPress={onPress}
-          />,
-        )
-        .toJSON();
+      it('should render correctly with "disabled"', () => {
+        const tree = renderer
+          .create(
+            <WithColorScheme
+              disabled
+              label="Label"
+              accessibilityLabel="Dismiss"
+              onPress={onPress}
+            />,
+          )
+          .toJSON();
 
-      expect(tree).toMatchSnapshot();
+        expect(tree).toMatchSnapshot();
+      });
     });
 
     it('should render correctly with custom style', () => {
