@@ -22,6 +22,7 @@ import PropTypes from 'prop-types';
 import React, {
   Component,
   isValidElement,
+  type Config,
   type Element,
   type ElementProps,
 } from 'react';
@@ -30,11 +31,18 @@ import {
   getThemeAttributes,
   makeThemePropType,
 } from 'react-native-bpk-theming';
-import { StyleSheet, View, ViewPropTypes } from 'react-native';
+import { View, ViewPropTypes } from 'react-native';
 import {
-  colorSkyGrayTint07,
+  backgroundSecondaryColor,
+  colorBlackTint02,
   colorSkyGrayTint06,
 } from 'bpk-tokens/tokens/base.react.native';
+import {
+  BpkDynamicStyleSheet,
+  withBpkAppearance,
+  unpackBpkDynamicValue,
+  type WithBpkAppearanceInjectedProps,
+} from 'react-native-bpk-appearance';
 
 import {
   type CommonTheme,
@@ -57,13 +65,13 @@ const IOS_THEME_ATTRIBUTES = [
 const statusBarPadding = isIphoneX ? 44 : 20;
 
 // NOTE: this file explicitly does not use the Backpack tokens(for spacing) because it's based on UIKit design tokens not Backpack.
-const styles = StyleSheet.create({
+const dynamicStyles = BpkDynamicStyleSheet.create({
   barOuter: {
     flexDirection: 'column',
     paddingHorizontal: 8, // eslint-disable-line backpack/use-tokens
     width: '100%',
-    backgroundColor: colorSkyGrayTint07,
-    shadowColor: colorSkyGrayTint06,
+    backgroundColor: backgroundSecondaryColor,
+    shadowColor: { light: colorSkyGrayTint06, dark: colorBlackTint02 },
     shadowOpacity: 1,
     shadowRadius: 0,
     shadowOffset: { width: 0, height: 1 }, // eslint-disable-line backpack/use-tokens
@@ -120,7 +128,9 @@ export type Props = {
   style: ViewStyleProp,
 };
 
-class BpkNavigationBar extends Component<Props, {}> {
+type EnhancedProps = { ...Props, ...WithBpkAppearanceInjectedProps };
+
+class BpkNavigationBar extends Component<EnhancedProps, {}> {
   theme: ?IOSTheme;
 
   static propTypes = {
@@ -141,7 +151,7 @@ class BpkNavigationBar extends Component<Props, {}> {
     style: null,
   };
 
-  constructor(props: Props) {
+  constructor(props: EnhancedProps) {
     super(props);
     this.theme = getThemeAttributes(
       IOS_THEME_ATTRIBUTES,
@@ -163,8 +173,10 @@ class BpkNavigationBar extends Component<Props, {}> {
       trailingButton,
       subtitleView,
       style,
+      bpkAppearance,
     } = this.props;
     const hasSubtitleView = subtitleView !== null;
+    const styles = unpackBpkDynamicValue(dynamicStyles, bpkAppearance);
     const titleStyle = [styles.title];
     const outerBarStyle = [styles.barOuter];
     const innerBarStyle = [styles.barInner, isIphoneX && styles.iPhoneXBar];
@@ -256,4 +268,6 @@ class BpkNavigationBar extends Component<Props, {}> {
   }
 }
 
-export default (withTheme(BpkNavigationBar): typeof BpkNavigationBar);
+const WithTheme = withTheme(BpkNavigationBar);
+type BpkNavigationBarConfig = Config<Props, typeof BpkNavigationBar.defaultProps>; // eslint-disable-line prettier/prettier
+export default withBpkAppearance<BpkNavigationBarConfig>(WithTheme); // eslint-disable-line prettier/prettier

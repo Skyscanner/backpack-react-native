@@ -30,6 +30,9 @@
 - react-native-bpk-component-chip:
   - Added dark mode support.
 
+- react-native-bpk-component-navigation-bar:
+ - Added dark mode support.
+
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
