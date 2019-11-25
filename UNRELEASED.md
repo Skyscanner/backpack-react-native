@@ -53,4 +53,4 @@ See [`CHANGELOG.md`](CHANGELOG.md) for real-world examples of good changelog ent
   - Fixed issue where `BpkHorcrux` would occasionally possess the living.
 
 - react-native-bpk-component-text:
-  - Disabled font scaling for react native in react-native-bpk-component-text.
+  - Disabled font scaling for REACT NATIVE in react-native-bpk-component-text.
