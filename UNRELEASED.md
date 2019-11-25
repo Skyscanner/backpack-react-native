@@ -2,6 +2,12 @@
 
 > Place your changes below this line.
 
+
+**Fixed**
+
+- react-native-bpk-component-text:
+  - Disabled font scaling for REACT NATIVE in react-native-bpk-component-text.
+
 **Added:**
 
 - react-native-bpk-component-button-link:
@@ -52,5 +58,3 @@ See [`CHANGELOG.md`](CHANGELOG.md) for real-world examples of good changelog ent
 - react-native-bpk-component-horcrux:
   - Fixed issue where `BpkHorcrux` would occasionally possess the living.
 
-- react-native-bpk-component-text:
-  - Disabled font scaling for REACT NATIVE in react-native-bpk-component-text.
