@@ -4,6 +4,9 @@
 
 **Added:**
 
+- react-native-bpk-component-text:
+  - Disabled font scaling for react native bpkText.
+
 - react-native-bpk-component-button-link:
   - Added dark mode support.
 
