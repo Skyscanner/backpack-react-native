@@ -18,47 +18,56 @@
 
 import React from 'react';
 import renderer from 'react-test-renderer';
+import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 
 import TitleView from './TitleView';
 
 const commonTests = () => {
   describe('TitleView', () => {
-    it('should render correctly with only a title', () => {
-      const tree = renderer
-        .create(<TitleView title="Backpack" tintColor="rgb(255, 255, 255)" />)
-        .toJSON();
+    describeEachColorScheme(TitleView, WithColorScheme => {
+      it('should render correctly with only a title', () => {
+        const tree = renderer
+          .create(
+            <WithColorScheme title="Backpack" tintColor="rgb(255, 255, 255)" />,
+          )
+          .toJSON();
 
-      expect(tree).toMatchSnapshot();
-    });
+        expect(tree).toMatchSnapshot();
+      });
 
-    it('should render correctly with leading icon', () => {
-      const tree = renderer
-        .create(
-          <TitleView
-            title={{ value: 'Checkout', icon: 'lock', iconPosition: 'leading' }}
-            tintColor="rgb(255, 255, 255)"
-          />,
-        )
-        .toJSON();
+      it('should render correctly with leading icon', () => {
+        const tree = renderer
+          .create(
+            <WithColorScheme
+              title={{
+                value: 'Checkout',
+                icon: 'lock',
+                iconPosition: 'leading',
+              }}
+              tintColor="rgb(255, 255, 255)"
+            />,
+          )
+          .toJSON();
 
-      expect(tree).toMatchSnapshot();
-    });
+        expect(tree).toMatchSnapshot();
+      });
 
-    it('should render correctly with trailing icon', () => {
-      const tree = renderer
-        .create(
-          <TitleView
-            title={{
-              value: 'Checkout',
-              icon: 'lock',
-              iconPosition: 'trailing',
-            }}
-            tintColor="rgb(255, 255, 255)"
-          />,
-        )
-        .toJSON();
+      it('should render correctly with trailing icon', () => {
+        const tree = renderer
+          .create(
+            <WithColorScheme
+              title={{
+                value: 'Checkout',
+                icon: 'lock',
+                iconPosition: 'trailing',
+              }}
+              tintColor="rgb(255, 255, 255)"
+            />,
+          )
+          .toJSON();
 
-      expect(tree).toMatchSnapshot();
+        expect(tree).toMatchSnapshot();
+      });
     });
   });
 };

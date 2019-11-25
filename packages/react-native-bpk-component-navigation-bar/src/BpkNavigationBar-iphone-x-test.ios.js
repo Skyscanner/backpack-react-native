@@ -20,6 +20,7 @@
 
 import React from 'react';
 import renderer from 'react-test-renderer';
+import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 
 import BpkNavigationBar from './BpkNavigationBar.ios';
 import BpkNavigationBarBackButtonIOS from './BpkNavigationBarBackButtonIOS.ios';
@@ -46,46 +47,48 @@ jest.mock('bpk-tokens/tokens/base.react.native', () =>
 
 describe('ios - iPhone X ', () => {
   describe('BpkNavigationBar', () => {
-    it('should render correctly', () => {
-      const tree = renderer
-        .create(
-          <BpkNavigationBar
-            title="Backpack"
-            leadingButton={
-              <BpkNavigationBarBackButtonIOS
-                title="Back"
-                showTitle
-                onPress={jest.fn()}
-              />
-            }
-          />,
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
-    });
+    describeEachColorScheme(BpkNavigationBar, WithColorScheme => {
+      it('should render correctly', () => {
+        const tree = renderer
+          .create(
+            <WithColorScheme
+              title="Backpack"
+              leadingButton={
+                <BpkNavigationBarBackButtonIOS
+                  title="Back"
+                  showTitle
+                  onPress={jest.fn()}
+                />
+              }
+            />,
+          )
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
 
-    it('should render correctly with trailing button', () => {
-      const tree = renderer
-        .create(
-          <BpkNavigationBar
-            title="Backpack"
-            leadingButton={
-              <BpkNavigationBarTextButtonIOS
-                title="Cancel"
-                onPress={jest.fn()}
-              />
-            }
-            trailingButton={
-              <BpkNavigationBarTextButtonIOS
-                title="Done"
-                emphasize
-                onPress={jest.fn()}
-              />
-            }
-          />,
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
+      it('should render correctly with trailing button', () => {
+        const tree = renderer
+          .create(
+            <WithColorScheme
+              title="Backpack"
+              leadingButton={
+                <BpkNavigationBarTextButtonIOS
+                  title="Cancel"
+                  onPress={jest.fn()}
+                />
+              }
+              trailingButton={
+                <BpkNavigationBarTextButtonIOS
+                  title="Done"
+                  emphasize
+                  onPress={jest.fn()}
+                />
+              }
+            />,
+          )
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
     });
   });
 });
