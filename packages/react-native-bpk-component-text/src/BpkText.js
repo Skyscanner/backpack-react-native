@@ -218,7 +218,7 @@ const BpkText = (props: Props) => {
 
   return (
     // eslint-disable-next-line backpack/use-components
-    <Text style={style} maxFontSizeMultiplier={3.2} {...rest}>
+    <Text allowFontScaing={false} style={style} maxFontSizeMultiplier={3.2} {...rest}>
       {children}
     </Text>
   );
