@@ -48,6 +48,7 @@ exports[`Android BpkDismissibleChip dark mode should render correctly 1`] = `
     }
   >
     <Text
+      allowFontScaling={false}
       maxFontSizeMultiplier={3.2}
       style={
         Array [
@@ -150,6 +151,7 @@ exports[`Android BpkDismissibleChip dark mode should render correctly with "disa
     }
   >
     <Text
+      allowFontScaling={false}
       maxFontSizeMultiplier={3.2}
       style={
         Array [
@@ -265,6 +267,7 @@ exports[`Android BpkDismissibleChip dark mode should render outline correctly 1`
     }
   >
     <Text
+      allowFontScaling={false}
       maxFontSizeMultiplier={3.2}
       style={
         Array [
@@ -370,6 +373,7 @@ exports[`Android BpkDismissibleChip light mode should render correctly 1`] = `
     }
   >
     <Text
+      allowFontScaling={false}
       maxFontSizeMultiplier={3.2}
       style={
         Array [
@@ -472,6 +476,7 @@ exports[`Android BpkDismissibleChip light mode should render correctly with "dis
     }
   >
     <Text
+      allowFontScaling={false}
       maxFontSizeMultiplier={3.2}
       style={
         Array [
@@ -587,6 +592,7 @@ exports[`Android BpkDismissibleChip light mode should render outline correctly 1
     }
   >
     <Text
+      allowFontScaling={false}
       maxFontSizeMultiplier={3.2}
       style={
         Array [
@@ -693,6 +699,7 @@ exports[`Android BpkDismissibleChip should render correctly with arbitrary props
     testID="123"
   >
     <Text
+      allowFontScaling={false}
       maxFontSizeMultiplier={3.2}
       style={
         Array [
@@ -799,6 +806,7 @@ exports[`Android BpkDismissibleChip should render correctly with custom style 1`
     }
   >
     <Text
+      allowFontScaling={false}
       maxFontSizeMultiplier={3.2}
       style={
         Array [

@@ -78,6 +78,7 @@ exports[`ios BpkNavigationBar should render correctly 1`] = `
         }
       />
       <Text
+        allowFontScaling={false}
         maxFontSizeMultiplier={3.2}
         style={
           Array [
@@ -242,6 +243,7 @@ exports[`ios BpkNavigationBar should render correctly with a subtitle view 1`] =
         }
       />
       <Text
+        allowFontScaling={false}
         maxFontSizeMultiplier={3.2}
         style={
           Array [
@@ -414,6 +416,7 @@ exports[`ios BpkNavigationBar should render correctly with a title view 1`] = `
         }
       />
       <Text
+        allowFontScaling={false}
         maxFontSizeMultiplier={3.2}
         style={
           Array [
@@ -544,6 +547,7 @@ exports[`ios BpkNavigationBar should render correctly with an icon in the title 
         }
       />
       <Text
+        allowFontScaling={false}
         maxFontSizeMultiplier={3.2}
         style={
           Array [
@@ -736,6 +740,7 @@ exports[`ios BpkNavigationBar should render correctly with custom style 1`] = `
         }
       />
       <Text
+        allowFontScaling={false}
         maxFontSizeMultiplier={3.2}
         style={
           Array [
@@ -879,6 +884,7 @@ exports[`ios BpkNavigationBar should render correctly with trailing button 1`] =
       }
     >
       <Text
+        allowFontScaling={false}
         maxFontSizeMultiplier={3.2}
         style={
           Array [
@@ -983,6 +989,7 @@ exports[`ios BpkNavigationBar should render correctly with trailing button 1`] =
       }
     >
       <Text
+        allowFontScaling={false}
         maxFontSizeMultiplier={3.2}
         style={
           Array [
