@@ -34,7 +34,6 @@ import {
 import { View, ViewPropTypes } from 'react-native';
 import {
   backgroundSecondaryColor,
-  colorBlackTint02,
   colorSkyGrayTint06,
 } from 'bpk-tokens/tokens/base.react.native';
 import {
@@ -71,7 +70,7 @@ const dynamicStyles = BpkDynamicStyleSheet.create({
     paddingHorizontal: 8, // eslint-disable-line backpack/use-tokens
     width: '100%',
     backgroundColor: backgroundSecondaryColor,
-    shadowColor: { light: colorSkyGrayTint06, dark: colorBlackTint02 },
+    shadowColor: { light: colorSkyGrayTint06, dark: null },
     shadowOpacity: 1,
     shadowRadius: 0,
     shadowOffset: { width: 0, height: 1 }, // eslint-disable-line backpack/use-tokens

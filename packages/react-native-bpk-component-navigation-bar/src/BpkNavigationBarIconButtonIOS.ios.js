@@ -68,9 +68,10 @@ const BpkNavigationBarIconButtonIOS = (props: Props) => {
     disabledTintColor,
     tintColor,
   } = props;
+  const defaultTintColor = useBpkDynamicValue(textPrimaryColor);
   const tintColorFinal = disabled
     ? disabledTintColor || colorSkyGrayTint04
-    : tintColor || useBpkDynamicValue(textPrimaryColor);
+    : tintColor || defaultTintColor;
   const iconStyle = [styles.icon, { color: tintColorFinal }];
   const buttonStyle = [styles.button];
   const accessibilityStates = [];

@@ -88,15 +88,15 @@ const BpkNavigationBarTextButtonIOS = (props: Props) => {
     tintColorFinal = tintColor;
   }
 
+  const defaultTintColor = useBpkDynamicValue({
+    light: colorSkyGrayTint04,
+    dark: colorBlackTint03,
+  });
+
   const accessibilityStates = [];
   if (disabled) {
     accessibilityStates.push('disabled');
-    tintColorFinal =
-      disabledTintColor ||
-      useBpkDynamicValue({
-        light: colorSkyGrayTint04,
-        dark: colorBlackTint03,
-      });
+    tintColorFinal = disabledTintColor || defaultTintColor;
   }
 
   const titleStyle = [{ color: tintColorFinal }];
