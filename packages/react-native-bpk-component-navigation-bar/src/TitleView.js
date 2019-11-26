@@ -21,7 +21,11 @@ import React from 'react';
 import { StyleSheet, View, Platform } from 'react-native';
 import BpkText, { WEIGHT_STYLES } from 'react-native-bpk-component-text';
 import BpkIcon, { icons } from 'react-native-bpk-component-icon';
-import { colorSkyGray, spacingSm } from 'bpk-tokens/tokens/base.react.native';
+import {
+  textPrimaryColor,
+  spacingSm,
+} from 'bpk-tokens/tokens/base.react.native';
+import { useBpkDynamicValue } from 'react-native-bpk-appearance';
 
 import { type TitleWithIcon } from './common-types';
 
@@ -51,8 +55,7 @@ export type Props = {
 
 const TitleView = (props: Props) => {
   const { title, tintColor, style, ...rest } = props;
-  const tintColorFinal = tintColor || colorSkyGray;
-
+  const tintColorFinal = tintColor || useBpkDynamicValue(textPrimaryColor);
   const titleValue = typeof title === 'object' ? title.value : title;
   const hasIcon = typeof title === 'object';
   let isLeading = false;

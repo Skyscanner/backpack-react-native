@@ -1,6 +1,191 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ios TitleView should render correctly with leading icon 1`] = `
+exports[`ios TitleView dark mode should render correctly with leading icon 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+      undefined,
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Object {
+          "fontSize": 16,
+        },
+        Array [
+          Object {
+            "marginEnd": 4,
+          },
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
+        ],
+      ]
+    }
+  >
+    
+  </Text>
+  <Text
+    allowFontScaling={false}
+    ellipsizeMode="tail"
+    maxFontSizeMultiplier={3.2}
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.12,
+        },
+        Object {
+          "fontWeight": "600",
+        },
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
+          Object {
+            "lineHeight": 24,
+          },
+        ],
+      ]
+    }
+  >
+    Checkout
+  </Text>
+</View>
+`;
+
+exports[`ios TitleView dark mode should render correctly with only a title 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+      undefined,
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    ellipsizeMode="tail"
+    maxFontSizeMultiplier={3.2}
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.12,
+        },
+        Object {
+          "fontWeight": "600",
+        },
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
+          null,
+        ],
+      ]
+    }
+  >
+    Backpack
+  </Text>
+</View>
+`;
+
+exports[`ios TitleView dark mode should render correctly with trailing icon 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+      undefined,
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    ellipsizeMode="tail"
+    maxFontSizeMultiplier={3.2}
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.12,
+        },
+        Object {
+          "fontWeight": "600",
+        },
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
+          Object {
+            "lineHeight": 24,
+          },
+        ],
+      ]
+    }
+  >
+    Checkout
+  </Text>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Object {
+          "fontSize": 16,
+        },
+        Array [
+          Object {
+            "marginStart": 4,
+          },
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
+        ],
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
+
+exports[`ios TitleView light mode should render correctly with leading icon 1`] = `
 <View
   style={
     Array [
@@ -71,7 +256,7 @@ exports[`ios TitleView should render correctly with leading icon 1`] = `
 </View>
 `;
 
-exports[`ios TitleView should render correctly with only a title 1`] = `
+exports[`ios TitleView light mode should render correctly with only a title 1`] = `
 <View
   style={
     Array [
@@ -114,7 +299,7 @@ exports[`ios TitleView should render correctly with only a title 1`] = `
 </View>
 `;
 
-exports[`ios TitleView should render correctly with trailing icon 1`] = `
+exports[`ios TitleView light mode should render correctly with trailing icon 1`] = `
 <View
   style={
     Array [

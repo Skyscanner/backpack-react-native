@@ -22,7 +22,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { I18nManager, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import BpkText from 'react-native-bpk-component-text';
-import { colorSkyGray } from 'bpk-tokens/tokens/base.react.native';
+import { textPrimaryColor } from 'bpk-tokens/tokens/base.react.native';
+import { useBpkDynamicValue } from 'react-native-bpk-appearance';
 
 const chevron = I18nManager.isRTL
   ? require('./chevron-right.png')
@@ -53,7 +54,8 @@ const styles = StyleSheet.create({
 
 const BpkNavigationBarBackButtonIOS = (props: Props) => {
   const { title, showTitle, onPress, tintColor } = props;
-  const tintColorFinal = tintColor || colorSkyGray;
+  const defaultTintColor = useBpkDynamicValue(textPrimaryColor);
+  const tintColorFinal = tintColor || defaultTintColor;
   const titleStyle = [{ color: tintColorFinal }];
   const iconStyle = [showTitle ? styles.backIcon : styles.backIconWithoutTitle];
 

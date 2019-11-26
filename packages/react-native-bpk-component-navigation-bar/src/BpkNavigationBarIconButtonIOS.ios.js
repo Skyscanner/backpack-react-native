@@ -24,8 +24,9 @@ import { StyleSheet, TouchableOpacity } from 'react-native';
 import BpkIcon, { icons } from 'react-native-bpk-component-icon';
 import {
   colorSkyGrayTint04,
-  colorSkyGray,
+  textPrimaryColor,
 } from 'bpk-tokens/tokens/base.react.native';
+import { useBpkDynamicValue } from 'react-native-bpk-appearance';
 
 export type Props = {
   title: string,
@@ -67,9 +68,10 @@ const BpkNavigationBarIconButtonIOS = (props: Props) => {
     disabledTintColor,
     tintColor,
   } = props;
+  const defaultTintColor = useBpkDynamicValue(textPrimaryColor);
   const tintColorFinal = disabled
     ? disabledTintColor || colorSkyGrayTint04
-    : tintColor || colorSkyGray;
+    : tintColor || defaultTintColor;
   const iconStyle = [styles.icon, { color: tintColorFinal }];
   const buttonStyle = [styles.button];
   const accessibilityStates = [];
