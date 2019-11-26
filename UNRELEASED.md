@@ -31,7 +31,7 @@
   - Added dark mode support.
 
 - react-native-bpk-component-navigation-bar:
- - Added dark mode support.
+    - Added dark mode support.
 
 ## How to write a good changelog entry
 
