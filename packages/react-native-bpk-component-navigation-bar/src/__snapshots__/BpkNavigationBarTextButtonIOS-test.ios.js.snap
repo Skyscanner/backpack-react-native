@@ -26,6 +26,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly 1`]
   }
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [
@@ -80,6 +81,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly dis
   }
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [
@@ -130,6 +132,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly emp
   }
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [
@@ -182,6 +185,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly lea
   }
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [
@@ -232,6 +236,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly wit
   }
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [
@@ -286,6 +291,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly wit
   }
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [
@@ -340,6 +346,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should respect "disabledTin
   }
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [
@@ -390,6 +397,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should respect "primaryTint
   }
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [
@@ -440,6 +448,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should respect "tintColor" 
   }
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [
@@ -490,6 +499,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should respect "tintColor" 
   }
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [

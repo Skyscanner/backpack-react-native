@@ -8,7 +8,7 @@ exports[`ios - iPhone X  BpkNavigationBar dark mode should render correctly 1`] 
         "backgroundColor": "rgb(29, 27, 32)",
         "flexDirection": "column",
         "paddingHorizontal": 8,
-        "shadowColor": "rgb(44, 44, 46)",
+        "shadowColor": null,
         "shadowOffset": Object {
           "height": 1,
           "width": 0,
@@ -81,6 +81,7 @@ exports[`ios - iPhone X  BpkNavigationBar dark mode should render correctly 1`] 
         }
       />
       <Text
+        allowFontScaling={false}
         maxFontSizeMultiplier={3.2}
         style={
           Array [
@@ -172,7 +173,7 @@ exports[`ios - iPhone X  BpkNavigationBar dark mode should render correctly with
         "backgroundColor": "rgb(29, 27, 32)",
         "flexDirection": "column",
         "paddingHorizontal": 8,
-        "shadowColor": "rgb(44, 44, 46)",
+        "shadowColor": null,
         "shadowOffset": Object {
           "height": 1,
           "width": 0,
@@ -227,6 +228,7 @@ exports[`ios - iPhone X  BpkNavigationBar dark mode should render correctly with
       }
     >
       <Text
+        allowFontScaling={false}
         maxFontSizeMultiplier={3.2}
         style={
           Array [
@@ -331,6 +333,7 @@ exports[`ios - iPhone X  BpkNavigationBar dark mode should render correctly with
       }
     >
       <Text
+        allowFontScaling={false}
         maxFontSizeMultiplier={3.2}
         style={
           Array [

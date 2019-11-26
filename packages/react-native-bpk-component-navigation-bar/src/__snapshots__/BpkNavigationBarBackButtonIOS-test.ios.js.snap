@@ -90,6 +90,7 @@ exports[`iOS BpkNavigationBarBackButtonIOS dark mode should render correctly wit
     }
   />
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [
