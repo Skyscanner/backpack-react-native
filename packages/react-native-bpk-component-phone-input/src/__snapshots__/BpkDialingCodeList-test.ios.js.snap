@@ -113,6 +113,7 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
         }
       >
         <Text
+          allowFontScaling={false}
           maxFontSizeMultiplier={3.2}
           style={
             Array [
@@ -198,6 +199,7 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
             }
           />
           <Text
+            allowFontScaling={false}
             maxFontSizeMultiplier={3.2}
             style={
               Array [
@@ -280,6 +282,7 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
         }
       >
         <Text
+          allowFontScaling={false}
           maxFontSizeMultiplier={3.2}
           style={
             Array [
@@ -365,6 +368,7 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
             }
           />
           <Text
+            allowFontScaling={false}
             maxFontSizeMultiplier={3.2}
             style={
               Array [
@@ -447,6 +451,7 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
         }
       >
         <Text
+          allowFontScaling={false}
           maxFontSizeMultiplier={3.2}
           style={
             Array [
@@ -532,6 +537,7 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
             }
           />
           <Text
+            allowFontScaling={false}
             maxFontSizeMultiplier={3.2}
             style={
               Array [
@@ -717,6 +723,7 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
         }
       >
         <Text
+          allowFontScaling={false}
           maxFontSizeMultiplier={3.2}
           style={
             Array [
@@ -802,6 +809,7 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
             }
           />
           <Text
+            allowFontScaling={false}
             maxFontSizeMultiplier={3.2}
             style={
               Array [
@@ -890,6 +898,7 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
         }
       >
         <Text
+          allowFontScaling={false}
           maxFontSizeMultiplier={3.2}
           style={
             Array [
@@ -975,6 +984,7 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
             }
           />
           <Text
+            allowFontScaling={false}
             maxFontSizeMultiplier={3.2}
             style={
               Array [
@@ -1057,6 +1067,7 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
         }
       >
         <Text
+          allowFontScaling={false}
           maxFontSizeMultiplier={3.2}
           style={
             Array [
@@ -1142,6 +1153,7 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
             }
           />
           <Text
+            allowFontScaling={false}
             maxFontSizeMultiplier={3.2}
             style={
               Array [

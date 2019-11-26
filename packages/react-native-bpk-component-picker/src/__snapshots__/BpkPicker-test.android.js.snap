@@ -127,6 +127,7 @@ exports[`Android BpkPicker should render correctly 1`] = `
             }
           >
             <Text
+              allowFontScaling={false}
               maxFontSizeMultiplier={3.2}
               style={
                 Array [
@@ -177,6 +178,7 @@ exports[`Android BpkPicker should render correctly 1`] = `
             }
           >
             <Text
+              allowFontScaling={false}
               maxFontSizeMultiplier={3.2}
               style={
                 Array [
@@ -333,6 +335,7 @@ exports[`Android BpkPicker should render correctly with a selected value 1`] = `
             }
           >
             <Text
+              allowFontScaling={false}
               maxFontSizeMultiplier={3.2}
               style={
                 Array [
@@ -385,6 +388,7 @@ exports[`Android BpkPicker should render correctly with a selected value 1`] = `
             }
           >
             <Text
+              allowFontScaling={false}
               maxFontSizeMultiplier={3.2}
               style={
                 Array [

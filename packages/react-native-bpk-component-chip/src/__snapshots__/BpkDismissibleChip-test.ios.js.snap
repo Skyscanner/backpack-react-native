@@ -39,6 +39,7 @@ exports[`iOS BpkDismissibleChip dark mode should render correctly 1`] = `
   }
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [
@@ -150,6 +151,7 @@ exports[`iOS BpkDismissibleChip dark mode should render correctly with "disabled
   }
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [
@@ -274,6 +276,7 @@ exports[`iOS BpkDismissibleChip dark mode should render outline correctly 1`] = 
   }
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [
@@ -388,6 +391,7 @@ exports[`iOS BpkDismissibleChip light mode should render correctly 1`] = `
   }
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [
@@ -499,6 +503,7 @@ exports[`iOS BpkDismissibleChip light mode should render correctly with "disable
   }
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [
@@ -623,6 +628,7 @@ exports[`iOS BpkDismissibleChip light mode should render outline correctly 1`] =
   }
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [
@@ -738,6 +744,7 @@ exports[`iOS BpkDismissibleChip should render correctly with arbitrary props 1`]
   testID="123"
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [
@@ -853,6 +860,7 @@ exports[`iOS BpkDismissibleChip should render correctly with custom style 1`] = 
   }
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [

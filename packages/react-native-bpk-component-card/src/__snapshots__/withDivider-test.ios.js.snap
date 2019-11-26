@@ -56,6 +56,7 @@ exports[`iOS withDivider should render correctly 1`] = `
       }
     >
       <Text
+        allowFontScaling={false}
         maxFontSizeMultiplier={3.2}
         style={
           Array [
@@ -99,6 +100,7 @@ exports[`iOS withDivider should render correctly 1`] = `
       }
     >
       <Text
+        allowFontScaling={false}
         maxFontSizeMultiplier={3.2}
         style={
           Array [
@@ -198,6 +200,7 @@ exports[`iOS withDivider should render correctly with "cornerStyle=large" 1`] = 
       }
     >
       <Text
+        allowFontScaling={false}
         maxFontSizeMultiplier={3.2}
         style={
           Array [
@@ -241,6 +244,7 @@ exports[`iOS withDivider should render correctly with "cornerStyle=large" 1`] = 
       }
     >
       <Text
+        allowFontScaling={false}
         maxFontSizeMultiplier={3.2}
         style={
           Array [
@@ -338,6 +342,7 @@ exports[`iOS withDivider should render correctly with arbitrary props 1`] = `
       }
     >
       <Text
+        allowFontScaling={false}
         maxFontSizeMultiplier={3.2}
         style={
           Array [
@@ -381,6 +386,7 @@ exports[`iOS withDivider should render correctly with arbitrary props 1`] = `
       }
     >
       <Text
+        allowFontScaling={false}
         maxFontSizeMultiplier={3.2}
         style={
           Array [
@@ -480,6 +486,7 @@ exports[`iOS withDivider should render correctly with custom main style 1`] = `
       }
     >
       <Text
+        allowFontScaling={false}
         maxFontSizeMultiplier={3.2}
         style={
           Array [
@@ -523,6 +530,7 @@ exports[`iOS withDivider should render correctly with custom main style 1`] = `
       }
     >
       <Text
+        allowFontScaling={false}
         maxFontSizeMultiplier={3.2}
         style={
           Array [
@@ -619,6 +627,7 @@ exports[`iOS withDivider should render correctly with custom stub style 1`] = `
       }
     >
       <Text
+        allowFontScaling={false}
         maxFontSizeMultiplier={3.2}
         style={
           Array [
@@ -665,6 +674,7 @@ exports[`iOS withDivider should render correctly with custom stub style 1`] = `
       }
     >
       <Text
+        allowFontScaling={false}
         maxFontSizeMultiplier={3.2}
         style={
           Array [
@@ -758,6 +768,7 @@ exports[`iOS withDivider should render correctly without padding 1`] = `
       }
     >
       <Text
+        allowFontScaling={false}
         maxFontSizeMultiplier={3.2}
         style={
           Array [
@@ -798,6 +809,7 @@ exports[`iOS withDivider should render correctly without padding 1`] = `
       }
     >
       <Text
+        allowFontScaling={false}
         maxFontSizeMultiplier={3.2}
         style={
           Array [

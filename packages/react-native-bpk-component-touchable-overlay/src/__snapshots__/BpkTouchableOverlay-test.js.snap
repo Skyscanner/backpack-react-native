@@ -14,6 +14,7 @@ exports[`BpkTouchableOverlay dark mode should render correctly 1`] = `
   style={null}
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [
@@ -67,6 +68,7 @@ exports[`BpkTouchableOverlay dark mode should render correctly with custom style
   }
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [
@@ -116,6 +118,7 @@ exports[`BpkTouchableOverlay light mode should render correctly 1`] = `
   style={null}
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [
@@ -169,6 +172,7 @@ exports[`BpkTouchableOverlay light mode should render correctly with custom styl
   }
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [
@@ -219,6 +223,7 @@ exports[`BpkTouchableOverlay should render correctly with arbitrary props 1`] = 
   testID="arbitrary value"
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [
@@ -269,6 +274,7 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
   testID="arbitrary value"
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [
@@ -322,6 +328,7 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
   testID="arbitrary value"
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [
@@ -375,6 +382,7 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
   testID="arbitrary value"
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [
@@ -428,6 +436,7 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
   testID="arbitrary value"
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [
@@ -481,6 +490,7 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
   testID="arbitrary value"
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [
@@ -534,6 +544,7 @@ exports[`BpkTouchableOverlay should render correctly with custom overlay styles 
   testID="arbitrary value"
 >
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={3.2}
     style={
       Array [
