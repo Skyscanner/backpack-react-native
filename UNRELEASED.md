@@ -2,37 +2,6 @@
 
 > Place your changes below this line.
 
-
-**Fixed**
-
-- react-native-bpk-component-text:
-  - Disabled font scaling for REACT NATIVE in react-native-bpk-component-text.
-
-**Added:**
-
-- react-native-bpk-component-button-link:
-  - Added dark mode support.
-
-- react-native-bpk-appearance:
-  - Allow top level dynamic values to be provided to `BpkDynamicStyleSheet`.
-  - `BpkStyleSheetNamedStyles` type is now being exported.
-  - Added `withBpkAppearance` HOC, `unpackBpkDynamicValue` and `unpackBpkDynamicStyle` methods.
-
-- react-native-bpk-component-card:
-  - Added dark mode support.
-
-- react-native-bpk-component-flat-list:
-  - Added dark mode support.
-
-- react-native-bpk-component-horizontal-nav:
-  - Added dark mode support.
-
-- react-native-bpk-component-chip:
-  - Added dark mode support.
-
-  - react-native-bpk-component-navigation-bar:
-    - Added dark mode support.
-
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
