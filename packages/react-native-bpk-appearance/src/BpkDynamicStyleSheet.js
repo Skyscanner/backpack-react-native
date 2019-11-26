@@ -24,39 +24,31 @@ import type {
   ViewStyle,
   TextStyle,
   ImageStyle,
-  TypeForStyleKey,
 } from 'react-native/Libraries/StyleSheet/StyleSheet';
 
 import { type ColorSchemeName } from './BpkAppearance';
 import { isBpkDynamicValue } from './dynamic-value';
-import type { BpkDynamicValue } from './common-types';
+import type {
+  BpkDynamicValue,
+  BpkDynamicStyleSheetTypeEnhancer,
+} from './common-types';
 
-type ReactStylesProps = {
+type ReactStylesProps = {|
   ...$Exact<TextStyle>,
   ...$Exact<ViewStyle>,
   ...$Exact<ImageStyle>,
-};
+|};
 
-type BpkStyleSheetColorValue<+key: $Keys<ReactStylesProps>> =
-  | TypeForStyleKey<key>
-  | BpkDynamicValue<string>;
+// eslint-disable-next-line
+type EnhancedReactStylesProps = $Exact<
+  $Call<BpkDynamicStyleSheetTypeEnhancer, ReactStylesProps>,
+>;
 
 export type BpkStyleSheetStyle = {|
-  ...$Exact<ReactStylesProps>,
-  shadowColor?: BpkStyleSheetColorValue<'shadowColor'>,
-  backgroundColor?: BpkStyleSheetColorValue<'backgroundColor'>,
-  borderColor?: BpkStyleSheetColorValue<'borderColor'>,
-  borderBottomColor?: BpkStyleSheetColorValue<'borderBottomColor'>,
-  borderEndColor?: BpkStyleSheetColorValue<'borderEndColor'>,
-  borderLeftColor?: BpkStyleSheetColorValue<'borderLeftColor'>,
-  borderRightColor?: BpkStyleSheetColorValue<'borderRightColor'>,
-  borderStartColor?: BpkStyleSheetColorValue<'borderStartColor'>,
-  borderTopColor?: BpkStyleSheetColorValue<'borderTopColor'>,
-  color?: BpkStyleSheetColorValue<'color'>,
-  textShadowColor?: BpkStyleSheetColorValue<'textShadowColor'>,
-  textDecorationColor?: BpkStyleSheetColorValue<'textDecorationColor'>,
-  overlayColor?: BpkStyleSheetColorValue<'overlayColor'>,
-  tintColor?: BpkStyleSheetColorValue<'tintColor'>,
+  ...EnhancedReactStylesProps,
+  // This is to ensure if we are missing any props in `EnhancedReactStylesProps` we
+  // still keep them in the resulting style, although in this case without dynamic support
+  ...$Diff<ReactStylesProps, EnhancedReactStylesProps>,
 |};
 
 export type BpkStyleSheetNamedStyles = {
@@ -76,10 +68,11 @@ function unpackValue<T>(
   if (isBpkDynamicValue(value)) {
     return value[variation];
   }
-  return value;
+  // $FlowFixMe
+  return (value: T);
 }
 
-function extractSemanticColors(
+function extractDynamicValues(
   styleDef: BpkStyleSheetStyle,
   variation: ColorSchemeName,
 ) {
@@ -97,7 +90,7 @@ function extractStyleForVariation<+S: BpkStyleSheetNamedStyles>(
     const styleDef = style[topLevelKey];
     // $FlowFixMe
     const unpacked = unpackValue(styleDef, variation);
-    mapped[topLevelKey] = extractSemanticColors(unpacked, variation); // eslint-disable-line no-param-reassign
+    mapped[topLevelKey] = extractDynamicValues(unpacked, variation); // eslint-disable-line no-param-reassign
     return mapped;
   }, {});
 }

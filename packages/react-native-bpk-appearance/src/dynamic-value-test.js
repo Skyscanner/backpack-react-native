@@ -29,6 +29,7 @@ describe('BpkAppearance - dynamic-value', () => {
   describe('isBpkDynamicValue', () => {
     it('returns true for an object with light and dark props', () => {
       expect(isBpkDynamicValue({ light: 'a', dark: 'a' })).toBe(true);
+      expect(isBpkDynamicValue({ light: false, dark: 0 })).toBe(true);
     });
 
     it('returns false for an object without light or dark props', () => {
