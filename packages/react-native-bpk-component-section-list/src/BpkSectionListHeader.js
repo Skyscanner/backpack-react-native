@@ -18,27 +18,35 @@
 
 /* @flow */
 
-import { Platform, StyleSheet, View } from 'react-native';
+import { Platform, View } from 'react-native';
 import React from 'react';
 import PropTypes from 'prop-types';
 import BpkText, { WEIGHT_STYLES } from 'react-native-bpk-component-text';
 import {
   spacingSm,
   spacingBase,
+  backgroundTertiaryDarkColor,
   colorSkyGrayTint07,
   colorSkyGrayTint06,
-  colorSkyGrayTint02,
-  colorSkyGray,
+  textPrimaryColor,
+  textSecondaryColor,
 } from 'bpk-tokens/tokens/base.react.native';
+import {
+  BpkDynamicStyleSheet,
+  useBpkDynamicStyleSheet,
+} from 'react-native-bpk-appearance';
 
 const ANDROID_LIST_ITEM_HEIGHT = 48;
 
-const styles = StyleSheet.create({
+const dynamicStyles = BpkDynamicStyleSheet.create({
   outer: {
     paddingHorizontal: spacingBase,
     ...Platform.select({
       ios: {
-        backgroundColor: colorSkyGrayTint07,
+        backgroundColor: {
+          light: colorSkyGrayTint07,
+          dark: backgroundTertiaryDarkColor,
+        },
         paddingVertical: spacingSm,
       },
       android: {
@@ -52,7 +60,7 @@ const styles = StyleSheet.create({
     }),
   },
   text: {
-    color: Platform.OS === 'android' ? colorSkyGrayTint02 : colorSkyGray,
+    color: Platform.OS === 'android' ? textSecondaryColor : textPrimaryColor,
   },
 });
 
@@ -62,6 +70,7 @@ export type Props = {
 
 const BpkSectionHeader = (props: Props) => {
   const { title } = props;
+  const styles = useBpkDynamicStyleSheet(dynamicStyles);
 
   return (
     <View style={styles.outer}>
