@@ -19,7 +19,7 @@
 /* @flow */
 
 import PropTypes from 'prop-types';
-import React, { Component, type Node } from 'react';
+import React, { Component, type Node, type Config } from 'react';
 import { Animated, TextInput, View, ViewPropTypes } from 'react-native';
 import BpkText from 'react-native-bpk-component-text';
 import {
@@ -30,9 +30,18 @@ import {
 import AnimatedValue from 'react-native/Libraries/Animated/src/nodes/AnimatedValue';
 import { animationDurationSm } from 'bpk-tokens/tokens/base.react.native';
 import TinyMask from 'tinymask';
+import {
+  withBpkAppearance,
+  type WithBpkAppearanceInjectedProps,
+} from 'react-native-bpk-appearance';
 
 import { ValidIcon, InvalidIcon } from './BpkTextInputIcons';
-import { getLabelStyle, getInputContainerStyle, styles } from './styles';
+import {
+  getLabelStyle,
+  getInputContainerStyle,
+  getPlaceholderColor,
+  getStyles,
+} from './styles';
 import { REQUIRED_THEME_ATTRIBUTES, themePropType } from './theming';
 
 export type Props = {
@@ -92,7 +101,9 @@ type State = {
   isFocused: boolean,
 };
 
-class BpkTextInput extends Component<Props, State> {
+type EnhancedProps = Props & WithBpkAppearanceInjectedProps;
+
+class BpkTextInput extends Component<EnhancedProps, State> {
   animatedValues: { color: AnimatedValue, labelPosition: AnimatedValue };
 
   tinymask: TinyMask;
@@ -101,7 +112,7 @@ class BpkTextInput extends Component<Props, State> {
 
   static defaultProps = { ...defaultProps };
 
-  constructor(props: Props) {
+  constructor(props: EnhancedProps) {
     super(props);
 
     this.state = {
@@ -184,10 +195,13 @@ class BpkTextInput extends Component<Props, State> {
       onBlur,
       accessoryView,
       theme,
+      bpkAppearance,
       ...rest
     } = this.props;
+    const styles = getStyles(bpkAppearance);
     const hasAccessoryView = accessoryView !== null;
     const placeholerValue = this.getPlaceholderValue();
+    const placeholderColor = getPlaceholderColor(bpkAppearance);
 
     const validityIcon = valid ? (
       <ValidIcon />
@@ -209,6 +223,7 @@ class BpkTextInput extends Component<Props, State> {
       this.animatedValues.labelPosition,
       { value, valid, editable, hasAccessoryView },
       focusedColor,
+      bpkAppearance,
     );
 
     const animatedInputStyle = getInputContainerStyle(
@@ -216,6 +231,7 @@ class BpkTextInput extends Component<Props, State> {
       hasAccessoryView,
       valid,
       focusedColor,
+      bpkAppearance,
     );
 
     const inputTextStyle = [styles.input];
@@ -268,6 +284,7 @@ class BpkTextInput extends Component<Props, State> {
               underlineColorAndroid="transparent"
               {...rest}
               placeholder={placeholerValue}
+              placeholderTextColor={placeholderColor}
             />
             {!isFocused && validityIcon}
           </Animated.View>
@@ -278,4 +295,6 @@ class BpkTextInput extends Component<Props, State> {
   }
 }
 
-export default withTheme(BpkTextInput);
+const WithTheme = withTheme(BpkTextInput);
+type BpkTextConfig = Config<Props, typeof defaultProps>;
+export default withBpkAppearance<BpkTextConfig>(WithTheme); // eslint-disable-line prettier/prettier
