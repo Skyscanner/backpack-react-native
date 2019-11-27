@@ -179,7 +179,7 @@ const defaultProps = {
   user: { guest: true }
 };
 
-class UserProfile extends Component<{ ...Props, ...WithBpkAppearanceInjectedProps}> {
+class UserProfile extends Component<Props & WithBpkAppearanceInjectedProps> {
   render() {
     const { bpkAppearance, user } = this.props;
     const currentStyle = unpackBpkDynamicValue(style, bpkAppearance);
@@ -356,7 +356,7 @@ NOTE: If you are using a functional component use one of the provided hooks inst
 import React, { type Config } from 'react';
 import { type WithBpkAppearanceInjectedProps, withBpkAppearance } from 'react-native-bpk-appearance';
 
-class MyComponent extends Component<{ ...Props, ...WithBpkAppearanceInjectedProps }> {
+class MyComponent extends Component<Props & WithBpkAppearanceInjectedProps> {
  render() {
    const { bpkAppearance, ...rest } = this.props;
    ....

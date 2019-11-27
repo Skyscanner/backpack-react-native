@@ -2,6 +2,11 @@
 
 > Place your changes below this line.
 
+**Fixed:**
+
+- react-native-bpk-appearance:
+  - Fix `withBpkAppearance` type definition.
+
 **Added:**
 
 - react-native-bpk-component-panel:
