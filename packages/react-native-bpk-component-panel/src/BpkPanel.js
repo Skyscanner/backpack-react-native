@@ -38,7 +38,7 @@ const dynamicStyles = BpkDynamicStyleSheet.create({
   panel: {
     backgroundColor: { light: colorWhite, dark: backgroundSecondaryDarkColor },
     borderRadius: borderRadiusSm,
-    borderWidth: { light: borderSizeSm, dark: borderSizeSm },
+    borderWidth: { light: borderSizeSm, dark: 0 },
     borderColor: { light: colorSkyGrayTint06, dark: null },
   },
   panelPadded: {

@@ -8,7 +8,7 @@ exports[`Android withDivider dark mode should render correctly 1`] = `
         "backgroundColor": "rgb(29, 27, 32)",
         "borderColor": null,
         "borderRadius": 4,
-        "borderWidth": 1,
+        "borderWidth": 0,
       },
       Object {
         "padding": 16,
