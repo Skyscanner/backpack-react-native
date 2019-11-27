@@ -11,6 +11,9 @@
 - react-native-bpk-component-picker:
   - Changed the overlay/scrim colour on Android to match the underlying platform instead of using a colour token from Backpack.
 
+- react-native-bpk-component-switch:
+  - Fixed the 'off' colour on iOS to use `skyGreyTint06`.
+
 **Added:**
 
 - react-native-bpk-component-progress:
@@ -29,6 +32,9 @@
   - Added dark mode support.
 
 - react-native-bpk-component-select:
+  - Added dark mode support.
+
+- react-native-bpk-component-switch:
   - Added dark mode support.
 
 ## How to write a good changelog entry
