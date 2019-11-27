@@ -20,17 +20,20 @@
 
 import React from 'react';
 import renderer from 'react-test-renderer';
+import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 
 import BpkSectionListHeader from './BpkSectionListHeader';
 
 const commonTests = () => {
   jest.mock('Image', () => 'Image');
   describe('BpkSectionListHeader', () => {
-    it('should render correctly', () => {
-      const tree = renderer
-        .create(<BpkSectionListHeader title="Section header" />)
-        .toJSON();
-      expect(tree).toMatchSnapshot();
+    describeEachColorScheme(BpkSectionListHeader, WithColorScheme => {
+      it('should render correctly', () => {
+        const tree = renderer
+          .create(<WithColorScheme title="Section header" />)
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
     });
   });
 };
