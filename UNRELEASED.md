@@ -3,13 +3,14 @@
 > Place your changes below this line.
 
 
-<<<<<<< HEAD
 **Fixed**
+
+
+- react-native-bpk-component-text:
+  - Disabled font multiplier REACT NATIVE components in react-native-bpk-component-text
 
 - react-native-bpk-component-text:
   - Disabled font scaling for REACT NATIVE in react-native-bpk-component-text
-=======
-**Fixed:**
 
 - react-native-bpk-appearance:
   - Fix `withBpkAppearance` type definition.
@@ -19,7 +20,6 @@
 
 - react-native-bpk-component-switch:
   - Fixed the 'off' colour on iOS to use `skyGreyTint06`.
->>>>>>> upstream/master
 
 **Added:**
 
