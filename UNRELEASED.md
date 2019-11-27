@@ -2,10 +2,14 @@
 
 > Place your changes below this line.
 
+
 **Fixed:**
 
 - react-native-bpk-appearance:
   - Fix `withBpkAppearance` type definition.
+
+- react-native-bpk-component-picker:
+  - Changed the overlay/scrim colour on Android to match the underlying platform instead of using a colour token from Backpack.
 
 **Added:**
 
