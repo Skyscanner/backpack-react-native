@@ -110,7 +110,6 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
           />
           <Text
             allowFontScaling={false}
-            maxFontSizeMultiplier={3.2}
             style={
               Array [
                 Object {
@@ -247,7 +246,6 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
           />
           <Text
             allowFontScaling={false}
-            maxFontSizeMultiplier={3.2}
             style={
               Array [
                 Object {
@@ -384,7 +382,6 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
           />
           <Text
             allowFontScaling={false}
-            maxFontSizeMultiplier={3.2}
             style={
               Array [
                 Object {
@@ -562,7 +559,6 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
           />
           <Text
             allowFontScaling={false}
-            maxFontSizeMultiplier={3.2}
             style={
               Array [
                 Object {
@@ -705,7 +701,6 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
           />
           <Text
             allowFontScaling={false}
-            maxFontSizeMultiplier={3.2}
             style={
               Array [
                 Object {
@@ -842,7 +837,6 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
           />
           <Text
             allowFontScaling={false}
-            maxFontSizeMultiplier={3.2}
             style={
               Array [
                 Object {

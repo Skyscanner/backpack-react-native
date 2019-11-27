@@ -33,7 +33,6 @@ exports[`Android BpkHorizontalNavItem dark mode should render correctly 1`] = `
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -94,7 +93,6 @@ exports[`Android BpkHorizontalNavItem dark mode should render correctly with "di
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -154,7 +152,6 @@ exports[`Android BpkHorizontalNavItem dark mode should render correctly with "se
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -214,7 +211,6 @@ exports[`Android BpkHorizontalNavItem light mode should render correctly 1`] = `
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -275,7 +271,6 @@ exports[`Android BpkHorizontalNavItem light mode should render correctly with "d
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -335,7 +330,6 @@ exports[`Android BpkHorizontalNavItem light mode should render correctly with "s
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -398,7 +392,6 @@ exports[`Android BpkHorizontalNavItem should render correctly with "small" prop 
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -455,7 +448,6 @@ exports[`Android BpkHorizontalNavItem should render correctly with "spaceAround"
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -512,7 +504,6 @@ exports[`Android BpkHorizontalNavItem should render correctly with arbitrary pro
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -572,7 +563,6 @@ exports[`Android BpkHorizontalNavItem should render correctly with custom "style
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -629,7 +619,6 @@ exports[`Android BpkHorizontalNavItem should support theming 1`] = `
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {

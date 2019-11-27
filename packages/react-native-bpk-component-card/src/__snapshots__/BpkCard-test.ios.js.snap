@@ -36,7 +36,6 @@ exports[`iOS BpkCard dark mode should render correctly 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -114,7 +113,6 @@ exports[`iOS BpkCard dark mode should render correctly with the "focused" state 
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -196,7 +194,6 @@ exports[`iOS BpkCard light mode should render correctly 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -287,7 +284,6 @@ exports[`iOS BpkCard light mode should render correctly with the "focused" state
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -372,7 +368,6 @@ exports[`iOS BpkCard should render correctly when "cornerStyle=large" 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -455,7 +450,6 @@ exports[`iOS BpkCard should render correctly with arbitrary props 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -540,7 +534,6 @@ exports[`iOS BpkCard should render correctly with custom inner style 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -625,7 +618,6 @@ exports[`iOS BpkCard should render correctly with custom style 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -704,7 +696,6 @@ exports[`iOS BpkCard should render correctly without padding 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {

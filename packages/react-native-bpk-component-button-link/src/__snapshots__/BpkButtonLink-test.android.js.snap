@@ -46,7 +46,6 @@ exports[`Android BpkButtonLink dark mode should render correctly 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
@@ -122,7 +121,6 @@ exports[`Android BpkButtonLink dark mode should support overwriting styles 1`] =
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
@@ -200,7 +198,6 @@ exports[`Android BpkButtonLink dark mode should support the "disabled" property 
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
@@ -277,7 +274,6 @@ exports[`Android BpkButtonLink dark mode should support the "icon" property 1`] 
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
@@ -375,7 +371,6 @@ exports[`Android BpkButtonLink light mode should render correctly 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
@@ -451,7 +446,6 @@ exports[`Android BpkButtonLink light mode should support overwriting styles 1`] 
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
@@ -529,7 +523,6 @@ exports[`Android BpkButtonLink light mode should support the "disabled" property
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
@@ -606,7 +599,6 @@ exports[`Android BpkButtonLink light mode should support the "icon" property 1`]
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
@@ -707,7 +699,6 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="leadi
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
@@ -809,7 +800,6 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="trail
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
@@ -907,7 +897,6 @@ exports[`Android BpkButtonLink should render correctly with text props provided 
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
@@ -981,7 +970,6 @@ exports[`Android BpkButtonLink should render correctly with theme prop 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
@@ -1058,7 +1046,6 @@ exports[`Android BpkButtonLink should support elements as icons 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
@@ -1084,7 +1071,6 @@ exports[`Android BpkButtonLink should support elements as icons 1`] = `
     </Text>
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1150,7 +1136,6 @@ exports[`Android should support "borderlessBackground" equal to false 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
@@ -1224,7 +1209,6 @@ exports[`Android should support "uppercase" equal to false 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [

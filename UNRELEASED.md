@@ -6,7 +6,7 @@
 **Fixed**
 
 - react-native-bpk-component-text:
-  - Disabled font scaling for REACT NATIVE in react-native-bpk-component-text.
+  - Disabled font scaling for REACT NATIVE in react-native-bpk-component-text
 
 **Added:**
 

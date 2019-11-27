@@ -44,7 +44,6 @@ exports[`iOS BpkButton dark mode should render correctly 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -129,7 +128,6 @@ exports[`iOS BpkButton dark mode should render correctly with type="destructive"
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -222,7 +220,6 @@ exports[`iOS BpkButton dark mode should render correctly with type="destructive"
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -314,7 +311,6 @@ exports[`iOS BpkButton dark mode should render correctly with type="featured" 1`
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -406,7 +402,6 @@ exports[`iOS BpkButton dark mode should render correctly with type="featured" an
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -494,7 +489,6 @@ exports[`iOS BpkButton dark mode should render correctly with type="primary" 1`]
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -586,7 +580,6 @@ exports[`iOS BpkButton dark mode should render correctly with type="primary" and
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -671,7 +664,6 @@ exports[`iOS BpkButton dark mode should render correctly with type="secondary" 1
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -764,7 +756,6 @@ exports[`iOS BpkButton dark mode should render correctly with type="secondary" a
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -860,7 +851,6 @@ exports[`iOS BpkButton dark mode should support overwriting styles 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -952,7 +942,6 @@ exports[`iOS BpkButton dark mode should support the "disabled" property 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1040,7 +1029,6 @@ exports[`iOS BpkButton light mode should render correctly 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1125,7 +1113,6 @@ exports[`iOS BpkButton light mode should render correctly with type="destructive
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1218,7 +1205,6 @@ exports[`iOS BpkButton light mode should render correctly with type="destructive
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1310,7 +1296,6 @@ exports[`iOS BpkButton light mode should render correctly with type="featured" 1
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1402,7 +1387,6 @@ exports[`iOS BpkButton light mode should render correctly with type="featured" a
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1490,7 +1474,6 @@ exports[`iOS BpkButton light mode should render correctly with type="primary" 1`
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1582,7 +1565,6 @@ exports[`iOS BpkButton light mode should render correctly with type="primary" an
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1667,7 +1649,6 @@ exports[`iOS BpkButton light mode should render correctly with type="secondary" 
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1760,7 +1741,6 @@ exports[`iOS BpkButton light mode should render correctly with type="secondary" 
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1856,7 +1836,6 @@ exports[`iOS BpkButton light mode should support overwriting styles 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1948,7 +1927,6 @@ exports[`iOS BpkButton light mode should support the "disabled" property 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -2059,7 +2037,6 @@ exports[`iOS BpkButton should render correctly with iconAlignment="leading" 1`] 
     </Text>
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -2177,7 +2154,6 @@ exports[`iOS BpkButton should render correctly with iconAlignment="trailing" 1`]
     </Text>
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -2268,7 +2244,6 @@ exports[`iOS BpkButton should support elements as icons 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -2400,7 +2375,6 @@ exports[`iOS BpkButton should support having an icon as well as a title 1`] = `
     </Text>
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -2518,7 +2492,6 @@ exports[`iOS BpkButton should support the "icon" property 1`] = `
     </Text>
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -2810,7 +2783,6 @@ exports[`iOS BpkButtonThemed should render correctly 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -2928,7 +2900,6 @@ exports[`iOS should support the "icon" and "large" property 1`] = `
     </Text>
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -3118,7 +3089,6 @@ exports[`iOS should support the "large" and secondary property 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -3213,7 +3183,6 @@ exports[`iOS should support the "large" property 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {

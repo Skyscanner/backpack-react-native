@@ -18,7 +18,6 @@ exports[`Android BpkPanel should render correctly 1`] = `
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -56,7 +55,6 @@ exports[`Android BpkPanel should render correctly with arbitrary props 1`] = `
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -96,7 +94,6 @@ exports[`Android BpkPanel should render correctly with custom style 1`] = `
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -130,7 +127,6 @@ exports[`Android BpkPanel should render correctly without padding 1`] = `
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {

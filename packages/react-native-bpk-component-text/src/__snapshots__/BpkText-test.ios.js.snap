@@ -3,7 +3,6 @@
 exports[`iOS BpkText dark mode should render correctly 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -24,7 +23,6 @@ exports[`iOS BpkText dark mode should render correctly 1`] = `
 exports[`iOS BpkText dark mode should support overwriting styles 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -48,7 +46,6 @@ exports[`iOS BpkText dark mode should support overwriting styles 1`] = `
 exports[`iOS BpkText light mode should render correctly 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -69,7 +66,6 @@ exports[`iOS BpkText light mode should render correctly 1`] = `
 exports[`iOS BpkText light mode should support overwriting styles 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -93,7 +89,6 @@ exports[`iOS BpkText light mode should support overwriting styles 1`] = `
 exports[`iOS BpkText should ignore weight prop if deprecated \`emphasize\` prop is being used 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -116,7 +111,6 @@ exports[`iOS BpkText should ignore weight prop if deprecated \`emphasize\` prop 
 exports[`iOS BpkText should render correctly with deprecated \`emphasize\` prop 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -139,7 +133,6 @@ exports[`iOS BpkText should render correctly with deprecated \`emphasize\` prop 
 exports[`iOS BpkText should render correctly with textStyle="base and weight="emphasized" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -162,7 +155,6 @@ exports[`iOS BpkText should render correctly with textStyle="base and weight="em
 exports[`iOS BpkText should render correctly with textStyle="base" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -183,7 +175,6 @@ exports[`iOS BpkText should render correctly with textStyle="base" 1`] = `
 exports[`iOS BpkText should render correctly with textStyle="caps and weight="emphasized" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -206,7 +197,6 @@ exports[`iOS BpkText should render correctly with textStyle="caps and weight="em
 exports[`iOS BpkText should render correctly with textStyle="caps" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -227,7 +217,6 @@ exports[`iOS BpkText should render correctly with textStyle="caps" 1`] = `
 exports[`iOS BpkText should render correctly with textStyle="lg and weight="emphasized" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -250,7 +239,6 @@ exports[`iOS BpkText should render correctly with textStyle="lg and weight="emph
 exports[`iOS BpkText should render correctly with textStyle="lg" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -271,7 +259,6 @@ exports[`iOS BpkText should render correctly with textStyle="lg" 1`] = `
 exports[`iOS BpkText should render correctly with textStyle="sm and weight="emphasized" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -294,7 +281,6 @@ exports[`iOS BpkText should render correctly with textStyle="sm and weight="emph
 exports[`iOS BpkText should render correctly with textStyle="sm" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -315,7 +301,6 @@ exports[`iOS BpkText should render correctly with textStyle="sm" 1`] = `
 exports[`iOS BpkText should render correctly with textStyle="xl and weight="emphasized" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -338,7 +323,6 @@ exports[`iOS BpkText should render correctly with textStyle="xl and weight="emph
 exports[`iOS BpkText should render correctly with textStyle="xl and weight="heavy" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -361,7 +345,6 @@ exports[`iOS BpkText should render correctly with textStyle="xl and weight="heav
 exports[`iOS BpkText should render correctly with textStyle="xl" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -382,7 +365,6 @@ exports[`iOS BpkText should render correctly with textStyle="xl" 1`] = `
 exports[`iOS BpkText should render correctly with textStyle="xs and weight="emphasized" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -405,7 +387,6 @@ exports[`iOS BpkText should render correctly with textStyle="xs and weight="emph
 exports[`iOS BpkText should render correctly with textStyle="xs" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -426,7 +407,6 @@ exports[`iOS BpkText should render correctly with textStyle="xs" 1`] = `
 exports[`iOS BpkText should render correctly with textStyle="xxl and weight="emphasized" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -449,7 +429,6 @@ exports[`iOS BpkText should render correctly with textStyle="xxl and weight="emp
 exports[`iOS BpkText should render correctly with textStyle="xxl and weight="heavy" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -472,7 +451,6 @@ exports[`iOS BpkText should render correctly with textStyle="xxl and weight="hea
 exports[`iOS BpkText should render correctly with textStyle="xxl" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -493,7 +471,6 @@ exports[`iOS BpkText should render correctly with textStyle="xxl" 1`] = `
 exports[`iOS BpkText should render correctly with textStyle="xxxl and weight="emphasized" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -516,7 +493,6 @@ exports[`iOS BpkText should render correctly with textStyle="xxxl and weight="em
 exports[`iOS BpkText should render correctly with textStyle="xxxl and weight="heavy" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -539,7 +515,6 @@ exports[`iOS BpkText should render correctly with textStyle="xxxl and weight="he
 exports[`iOS BpkText should render correctly with textStyle="xxxl" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -560,7 +535,6 @@ exports[`iOS BpkText should render correctly with textStyle="xxxl" 1`] = `
 exports[`iOS should not apply \`emphasize\` for textStyle="xxl" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -583,7 +557,6 @@ exports[`iOS should not apply \`emphasize\` for textStyle="xxl" 1`] = `
 exports[`iOS should render correctly with theming 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {

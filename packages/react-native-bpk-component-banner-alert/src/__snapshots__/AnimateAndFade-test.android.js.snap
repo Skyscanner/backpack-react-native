@@ -26,7 +26,6 @@ exports[`Android AnimateAndFade should render correctly 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -52,7 +51,6 @@ exports[`Android AnimateAndFade should render correctly 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -98,7 +96,6 @@ exports[`Android AnimateAndFade should render correctly when show is false 1`] =
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -124,7 +121,6 @@ exports[`Android AnimateAndFade should render correctly when show is false 1`] =
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -170,7 +166,6 @@ exports[`Android AnimateAndFade should render correctly with animateOnEnter 1`] 
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -196,7 +191,6 @@ exports[`Android AnimateAndFade should render correctly with animateOnEnter 1`] 
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -242,7 +236,6 @@ exports[`Android AnimateAndFade should render correctly with animateOnLeave 1`] 
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -268,7 +261,6 @@ exports[`Android AnimateAndFade should render correctly with animateOnLeave 1`] 
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {

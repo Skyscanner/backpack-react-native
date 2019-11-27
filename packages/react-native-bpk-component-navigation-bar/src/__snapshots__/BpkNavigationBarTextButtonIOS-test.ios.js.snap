@@ -27,7 +27,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly 1`] = `
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -82,7 +81,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly disabled 1`] 
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -133,7 +131,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly emphasize 1`]
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -186,7 +183,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly leading confi
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -237,7 +233,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly with type="pr
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -292,7 +287,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly with type="pr
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -347,7 +341,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS should respect "disabledTintColor" ov
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -398,7 +391,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS should respect "primaryTintColor" ove
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -449,7 +441,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS should respect "tintColor" over "prim
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -500,7 +491,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS should respect "tintColor" over "type
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {

@@ -43,7 +43,6 @@ exports[`Android BpkFlatListItem dark mode should render correctly 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -140,7 +139,6 @@ exports[`Android BpkFlatListItem dark mode should support the "selected" propert
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -246,7 +244,6 @@ exports[`Android BpkFlatListItem light mode should render correctly 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -343,7 +340,6 @@ exports[`Android BpkFlatListItem light mode should support the "selected" proper
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -459,7 +455,6 @@ exports[`Android BpkFlatListItem should support the "image" property 1`] = `
     />
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -574,7 +569,6 @@ exports[`Android should support theming when selected 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {

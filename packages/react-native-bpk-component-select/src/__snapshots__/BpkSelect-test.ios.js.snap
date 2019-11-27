@@ -436,7 +436,6 @@ exports[`iOS BpkSelect should render correctly with "valid" false and a validati
   </View>
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -586,7 +585,6 @@ exports[`iOS BpkSelect should render correctly with a text label 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -755,7 +753,6 @@ exports[`iOS BpkSelect should render correctly with custom styles 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -853,7 +850,6 @@ exports[`iOS BpkSelect should render correctly with the disabled prop 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
