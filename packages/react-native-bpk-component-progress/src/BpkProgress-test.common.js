@@ -23,6 +23,7 @@ import { StyleSheet } from 'react-native';
 import renderer from 'react-test-renderer';
 import BpkThemeProvider from 'react-native-bpk-theming';
 import { spacingSm, colorPanjin } from 'bpk-tokens/tokens/base.react.native';
+import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 
 import BpkProgress from './BpkProgress';
 
@@ -46,145 +47,147 @@ const accessibilityLabel = (min, max, value) => `${min} - ${value}% - ${max}`;
 
 const commonTests = () => {
   describe('BpkProgress', () => {
-    it('should render correctly', () => {
-      const tree = renderWithLayout(
-        <BpkProgress
-          min={0}
-          max={100}
-          value={10}
-          accessibilityLabel={accessibilityLabel}
-        />,
-        {
-          width: spacingSm,
-        },
-      ).toJSON();
-      expect(tree).toMatchSnapshot();
-    });
-
-    it('should render correctly with "min" and "max" attributes', () => {
-      const tree = renderWithLayout(
-        <BpkProgress
-          min={0}
-          max={1}
-          value={0.2}
-          accessibilityLabel={accessibilityLabel}
-        />,
-        { width: spacingSm },
-      ).toJSON();
-      expect(tree).toMatchSnapshot();
-    });
-
-    it('should render correctly with a "type" attribute', () => {
-      const tree = renderer
-        .create(
-          <BpkProgress
+    describeEachColorScheme(BpkProgress, WithColorScheme => {
+      it('should render correctly', () => {
+        const tree = renderWithLayout(
+          <WithColorScheme
             min={0}
             max={100}
             value={10}
-            type="bar"
             accessibilityLabel={accessibilityLabel}
           />,
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
-    });
-
-    it('should render correctly with a "style" attribute', () => {
-      const styles = StyleSheet.create({ container: { width: '80%' } });
-      const tree = renderer
-        .create(
-          <BpkProgress
-            min={0}
-            max={100}
-            value={10}
-            style={styles.container}
-            accessibilityLabel={accessibilityLabel}
-          />,
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
-    });
-
-    it('should render correctly with a "fillStyle" attribute', () => {
-      const styles = StyleSheet.create({
-        fill: { backgroundColor: colorPanjin },
+          {
+            width: spacingSm,
+          },
+        ).toJSON();
+        expect(tree).toMatchSnapshot();
       });
-      const tree = renderer
-        .create(
-          <BpkProgress
+
+      it('should render correctly with "min" and "max" attributes', () => {
+        const tree = renderWithLayout(
+          <WithColorScheme
             min={0}
-            max={100}
-            value={10}
-            fillStyle={styles.fill}
+            max={1}
+            value={0.2}
             accessibilityLabel={accessibilityLabel}
           />,
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
-    });
+          { width: spacingSm },
+        ).toJSON();
+        expect(tree).toMatchSnapshot();
+      });
 
-    it('should not go over the max bound', () => {
-      const tree = renderWithLayout(
-        <BpkProgress
-          min={0}
-          max={1}
-          value={2}
-          accessibilityLabel={accessibilityLabel}
-        />,
-        {
-          width: spacingSm,
-        },
-      ).toJSON();
-      expect(tree).toMatchSnapshot();
-    });
-
-    it('should not go bellow the min bound', () => {
-      const tree = renderWithLayout(
-        <BpkProgress
-          min={1}
-          max={2}
-          value={-1}
-          accessibilityLabel={accessibilityLabel}
-        />,
-        {
-          width: spacingSm,
-        },
-      ).toJSON();
-      expect(tree).toMatchSnapshot();
-    });
-
-    it('should support theming', () => {
-      const theme = {
-        progressFillBackgroundColor: 'blue',
-        progressTrackBackgroundColor: 'black',
-      };
-      const tree = renderer
-        .create(
-          <BpkThemeProvider theme={theme}>
-            <BpkProgress
+      it('should render correctly with a "type" attribute', () => {
+        const tree = renderer
+          .create(
+            <WithColorScheme
               min={0}
               max={100}
               value={10}
+              type="bar"
               accessibilityLabel={accessibilityLabel}
-            />
-          </BpkThemeProvider>,
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
-    });
+            />,
+          )
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
 
-    it('should render correctly with accessibilityLabel passed as a string', () => {
-      const tree = renderer
-        .create(
-          <BpkProgress
+      it('should render correctly with a "style" attribute', () => {
+        const styles = StyleSheet.create({ container: { width: '80%' } });
+        const tree = renderer
+          .create(
+            <WithColorScheme
+              min={0}
+              max={100}
+              value={10}
+              style={styles.container}
+              accessibilityLabel={accessibilityLabel}
+            />,
+          )
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
+
+      it('should render correctly with a "fillStyle" attribute', () => {
+        const styles = StyleSheet.create({
+          fill: { backgroundColor: colorPanjin },
+        });
+        const tree = renderer
+          .create(
+            <WithColorScheme
+              min={0}
+              max={100}
+              value={10}
+              fillStyle={styles.fill}
+              accessibilityLabel={accessibilityLabel}
+            />,
+          )
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
+
+      it('should not go over the max bound', () => {
+        const tree = renderWithLayout(
+          <WithColorScheme
             min={0}
-            max={100}
-            value={10}
-            accessibilityLabel="Progress bar"
+            max={1}
+            value={2}
+            accessibilityLabel={accessibilityLabel}
           />,
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
+          {
+            width: spacingSm,
+          },
+        ).toJSON();
+        expect(tree).toMatchSnapshot();
+      });
+
+      it('should not go bellow the min bound', () => {
+        const tree = renderWithLayout(
+          <WithColorScheme
+            min={1}
+            max={2}
+            value={-1}
+            accessibilityLabel={accessibilityLabel}
+          />,
+          {
+            width: spacingSm,
+          },
+        ).toJSON();
+        expect(tree).toMatchSnapshot();
+      });
+
+      it('should support theming', () => {
+        const theme = {
+          progressFillBackgroundColor: 'blue',
+          progressTrackBackgroundColor: 'black',
+        };
+        const tree = renderer
+          .create(
+            <BpkThemeProvider theme={theme}>
+              <WithColorScheme
+                min={0}
+                max={100}
+                value={10}
+                accessibilityLabel={accessibilityLabel}
+              />
+            </BpkThemeProvider>,
+          )
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
+
+      it('should render correctly with accessibilityLabel passed as a string', () => {
+        const tree = renderer
+          .create(
+            <WithColorScheme
+              min={0}
+              max={100}
+              value={10}
+              accessibilityLabel="Progress bar"
+            />,
+          )
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
     });
   });
 };

@@ -18,20 +18,14 @@
 
 /* @flow */
 
-import React, { Component, type ElementProps } from 'react';
+import React, { Component, type ElementProps, type Config } from 'react';
 import PropTypes from 'prop-types';
-import {
-  StyleSheet,
-  View,
-  Animated,
-  Easing,
-  Platform,
-  ViewPropTypes,
-} from 'react-native';
+import { View, Animated, Easing, Platform, ViewPropTypes } from 'react-native';
 import {
   animmationDurationBase,
   spacingMd,
   colorSkyGrayTint06,
+  colorBlackTint02,
   colorMonteverde,
   colorSagano,
   borderRadiusPill,
@@ -42,13 +36,19 @@ import {
   withTheme,
   type Theme,
 } from 'react-native-bpk-theming';
+import {
+  BpkDynamicStyleSheet,
+  type WithBpkAppearanceInjectedProps,
+  unpackBpkDynamicValue,
+  withBpkAppearance,
+} from 'react-native-bpk-appearance';
 
 import { REQUIRED_THEME_ATTRIBUTES, themePropType } from './theming';
 
-const styles = StyleSheet.create({
+const dynamicStyles = BpkDynamicStyleSheet.create({
   track: {
     backgroundColor: Platform.select({
-      ios: () => colorSkyGrayTint06,
+      ios: () => ({ light: colorSkyGrayTint06, dark: colorBlackTint02 }),
       android: () => colorSagano,
     })(),
     height: spacingMd,
@@ -91,35 +91,42 @@ export type Props = {
   accessibilityLabel: string | ((number, number, number) => string),
 };
 
+type EnhancedProps = Props & WithBpkAppearanceInjectedProps;
+
 type State = {
   width: number,
 };
 
-class BpkProgress extends Component<Props, State> {
+const propTypes = {
+  max: PropTypes.number.isRequired,
+  min: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired,
+  type: PropTypes.oneOf(Object.keys(BAR_TYPES)),
+  style: ViewPropTypes.style,
+  fillStyle: ViewPropTypes.style,
+  theme: themePropType,
+  accessibilityLabel: PropTypes.oneOfType([PropTypes.string, PropTypes.func])
+    .isRequired,
+};
+
+const defaultProps = {
+  type: BAR_TYPES.default,
+  style: null,
+  fillStyle: null,
+  theme: null,
+};
+
+class BpkProgress extends Component<EnhancedProps, State> {
   progressAnimation: Animated.Value;
 
-  static propTypes = {
-    max: PropTypes.number.isRequired,
-    min: PropTypes.number.isRequired,
-    value: PropTypes.number.isRequired,
-    type: PropTypes.oneOf(Object.keys(BAR_TYPES)),
-    style: ViewPropTypes.style,
-    fillStyle: ViewPropTypes.style,
-    theme: themePropType,
-    accessibilityLabel: PropTypes.oneOfType([PropTypes.string, PropTypes.func])
-      .isRequired,
-  };
+  static propTypes = { ...propTypes };
 
-  static defaultProps = {
-    type: BAR_TYPES.default,
-    style: null,
-    fillStyle: null,
-    theme: null,
-  };
+  static defaultProps = { ...defaultProps };
 
-  constructor(props: Props) {
+  constructor(props: EnhancedProps) {
     super(props);
     this.progressAnimation = new Animated.Value(this.getWithinBoundsProgress());
+
     this.state = {
       width: 0,
     };
@@ -151,8 +158,10 @@ class BpkProgress extends Component<Props, State> {
       style,
       fillStyle,
       theme,
+      bpkAppearance,
       accessibilityLabel,
     } = this.props;
+    const styles = unpackBpkDynamicValue(dynamicStyles, bpkAppearance);
     const { width } = this.state;
     const [baseTrackStyle, baseFillStyle] = ['TrackStyle', 'FillStyle'].map(
       stylePart => styles[`${type}${stylePart}`],
@@ -202,4 +211,6 @@ class BpkProgress extends Component<Props, State> {
   }
 }
 
-export default (withTheme(BpkProgress): typeof BpkProgress);
+const WithTheme = withTheme(BpkProgress);
+type BpkProgressConfig = Config<Props, typeof defaultProps>;
+export default withBpkAppearance<BpkProgressConfig>(WithTheme); // eslint-disable-line prettier/prettier

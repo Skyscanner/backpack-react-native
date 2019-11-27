@@ -13,6 +13,9 @@
 
 **Added:**
 
+- react-native-bpk-component-progress:
+  - Added dark mode support.
+
 - react-native-bpk-component-panel:
   - Added dark mode support.
 
