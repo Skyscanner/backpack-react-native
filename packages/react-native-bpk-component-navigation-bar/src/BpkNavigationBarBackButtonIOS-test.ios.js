@@ -20,31 +20,28 @@
 
 import React from 'react';
 import renderer from 'react-test-renderer';
+import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 
 import BpkNavigationBarBackButtonIOS from './BpkNavigationBarBackButtonIOS.ios';
 
 describe('iOS', () => {
   describe('BpkNavigationBarBackButtonIOS', () => {
-    it('should render correctly', () => {
-      const tree = renderer
-        .create(
-          <BpkNavigationBarBackButtonIOS title="Back" onPress={jest.fn()} />,
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
-    });
+    describeEachColorScheme(BpkNavigationBarBackButtonIOS, WithColorScheme => {
+      it('should render correctly', () => {
+        const tree = renderer
+          .create(<WithColorScheme title="Back" onPress={jest.fn()} />)
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
 
-    it('should render correctly with title', () => {
-      const tree = renderer
-        .create(
-          <BpkNavigationBarBackButtonIOS
-            title="Back"
-            showTitle
-            onPress={jest.fn()}
-          />,
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
+      it('should render correctly with title', () => {
+        const tree = renderer
+          .create(
+            <WithColorScheme title="Back" showTitle onPress={jest.fn()} />,
+          )
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
     });
   });
 });

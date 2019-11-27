@@ -38,11 +38,13 @@ const allStyles = BpkDynamicStyleSheet.create({
     borderBottomRightRadius: 0,
     borderBottomWidth: 0,
     borderColor: '#fff',
+    borderEndColor: '#fff',
     borderLeftColor: '#fff',
     borderLeftWidth: 0,
     borderRadius: 1,
     borderRightColor: '#fff',
     borderRightWidth: 0,
+    borderStartColor: '#fff',
     borderStyle: 'solid',
     borderTopColor: '#fff',
     borderTopLeftRadius: 0,
@@ -116,23 +118,98 @@ const allStyles = BpkDynamicStyleSheet.create({
   },
 });
 
-// TEST: Valid stylesshet definition using semantic colors for all color props
-const allColours = BpkDynamicStyleSheet.create({
+// TEST: Valid stylesshet definition using dynamic values for all props
+const allPropsDynamic = BpkDynamicStyleSheet.create({
   view: {
-    shadowColor: { light: 'l', dark: 'd' },
-    backgroundColor: { light: 'l', dark: 'd' },
-    borderColor: { light: 'l', dark: 'd' },
-    borderBottomColor: { light: 'l', dark: 'd' },
-    borderEndColor: { light: 'l', dark: 'd' },
-    borderLeftColor: { light: 'l', dark: 'd' },
-    borderRightColor: { light: 'l', dark: 'd' },
-    borderStartColor: { light: 'l', dark: 'd' },
-    borderTopColor: { light: 'l', dark: 'd' },
-    color: { light: 'l', dark: 'd' },
-    textShadowColor: { light: 'l', dark: 'd' },
-    textDecorationColor: { light: 'l', dark: 'd' },
-    overlayColor: { light: 'l', dark: 'd' },
-    tintColor: { light: 'l', dark: 'd' },
+    backgroundColor: { light: '#fff', dark: '#f0f' },
+    borderBottomColor: { light: '#fff', dark: '#f0f' },
+    borderBottomLeftRadius: { light: 1, dark: 0 },
+    borderBottomRightRadius: { light: 1, dark: 0 },
+    borderBottomWidth: { light: 1, dark: 0 },
+    borderColor: { light: '#fff', dark: '#f0f' },
+    borderEndColor: { light: '#fff', dark: '#f0f' },
+    borderLeftColor: { light: '#fff', dark: '#f0f' },
+    borderLeftWidth: { light: 1, dark: 0 },
+    borderRadius: { light: 1, dark: 0 },
+    borderRightColor: { light: '#fff', dark: '#f0f' },
+    borderRightWidth: { light: 1, dark: 0 },
+    borderStartColor: { light: '#fff', dark: '#f0f' },
+    borderStyle: { light: 'dotted', dark: 'solid' },
+    borderTopColor: { light: '#fff', dark: '#f0f' },
+    borderTopLeftRadius: { light: 1, dark: 0 },
+    borderTopRightRadius: { light: 1, dark: 0 },
+    borderTopWidth: { light: 1, dark: 0 },
+    borderWidth: { light: 1, dark: 0 },
+    bottom: { light: 1, dark: 0 },
+    color: { light: '#fff', dark: '#f0f' },
+    direction: { light: 'rtl', dark: 'rtl' },
+    display: { light: 'flex', dark: 'flex' },
+    elevation: { light: 1, dark: 0 },
+    flex: { light: 1, dark: 0 },
+    flexBasis: { light: 1, dark: 0 },
+    flexDirection: { light: 'row', dark: 'column' },
+    flexGrow: { light: 1, dark: 0 },
+    flexShrink: { light: 1, dark: 0 },
+    flexWrap: { light: 'wrap', dark: 'nowrap' },
+    fontFamily: { light: 'aria', dark: 'roboto' },
+    fontSize: { light: 14, dark: 16 },
+    fontStyle: { light: 'italic', dark: 'italic' },
+    fontVariant: { light: ['small-caps'], dark: ['small-caps'] },
+    fontWeight: { light: 'bold', dark: 'normal' },
+    height: { light: 10, dark: 20 },
+    includeFontPadding: { light: false, dark: true },
+    justifyContent: { light: 'flex-start', dark: 'flex-end' },
+    left: { light: 1, dark: 0 },
+    letterSpacing: { light: 1, dark: 0 },
+    lineHeight: { light: 1, dark: 0 },
+    margin: { light: 1, dark: 0 },
+    marginBottom: { light: 1, dark: 0 },
+    marginHorizontal: { light: 1, dark: 0 },
+    marginLeft: { light: 1, dark: 0 },
+    marginRight: { light: 1, dark: 0 },
+    marginTop: { light: 1, dark: 0 },
+    marginVertical: { light: 1, dark: 0 },
+    maxHeight: { light: 1, dark: 0 },
+    maxWidth: { light: 1, dark: 0 },
+    minHeight: { light: 1, dark: 0 },
+    minWidth: { light: 1, dark: 0 },
+    opacity: { light: 1, dark: 0 },
+    overflow: { light: 'hidden', dark: 'visible' },
+    overlayColor: { light: '#fff', dark: '#f0f' },
+    padding: { light: 1, dark: 0 },
+    paddingBottom: { light: 1, dark: 0 },
+    paddingHorizontal: { light: 1, dark: 0 },
+    paddingLeft: { light: 1, dark: 0 },
+    paddingRight: { light: 1, dark: 0 },
+    paddingTop: { light: 1, dark: 0 },
+    paddingVertical: { light: 1, dark: 0 },
+    position: { light: 'relative', dark: 'absolute' },
+    resizeMode: { light: 'contain', dark: 'cover' },
+    right: { light: 1, dark: 0 },
+    shadowColor: { light: '#fff', dark: '#f0f' },
+    shadowOffset: {
+      light: { width: 0, height: 0 },
+      dark: { width: 1, height: 2 },
+    },
+    shadowOpacity: { light: 1, dark: 0 },
+    shadowRadius: { light: 1, dark: 0 },
+    textAlign: { light: 'center', dark: 'left' },
+    textAlignVertical: { light: 'center', dark: 'top' },
+    textDecorationColor: { light: '#fff', dark: '#f0f' },
+    textDecorationLine: { light: 'none', dark: 'none' },
+    textDecorationStyle: { light: 'solid', dark: 'solid' },
+    textShadowColor: { light: '#fff', dark: '#f0f' },
+    textShadowOffset: {
+      light: { width: 0, height: 0 },
+      dark: { width: 1, height: 2 },
+    },
+    textShadowRadius: { light: 1, dark: 0 },
+    tintColor: { light: '#fff', dark: '#f0f' },
+    top: { light: 1, dark: 0 },
+    transform: { light: [{ rotateX: '45deg' }], dark: [{ rotateX: '45deg' }] },
+    width: { light: 1, dark: 0 },
+    writingDirection: { light: 'rtl', dark: 'ltr' },
+    zIndex: { light: 100, dark: 0 },
   },
 });
 
@@ -148,8 +225,8 @@ const allDynamic = BpkDynamicStyleSheet.create({
   },
 });
 
-(() => <View style={[allStyles.light.view, allColours.light.view]} />)();
-(() => <View style={[allStyles.dark.view, allColours.dark.view]} />)();
+(() => <View style={[allStyles.light.view, allPropsDynamic.light.view]} />)();
+(() => <View style={[allStyles.dark.view, allPropsDynamic.dark.view]} />)();
 (() => {
   const currentStyle = useBpkDynamicStyleSheet(allStyles);
   return <View style={currentStyle.view} />;
@@ -196,6 +273,6 @@ const allDynamic = BpkDynamicStyleSheet.create({
 // (Uncoment to check)
 // BpkDynamicStyleSheet.create({
 //   view: {
-//     invalid: null
+//     invalid: null,
 //   },
 // });

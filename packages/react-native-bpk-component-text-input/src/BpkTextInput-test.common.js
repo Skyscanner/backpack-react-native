@@ -23,173 +23,176 @@ import TestRenderer from 'react-test-renderer';
 import { StyleSheet, View } from 'react-native';
 import BpkThemeProvider from 'react-native-bpk-theming';
 import { spacingSm } from 'bpk-tokens/tokens/base.react.native';
+import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 
 import BpkTextInput from './BpkTextInput';
 
 const commonTests = () => {
   describe('BpkTextInput', () => {
-    it('should render correctly', () => {
-      const testRenderer = TestRenderer.create(
-        <BpkTextInput label="Name" value="" />,
-      );
+    describeEachColorScheme(BpkTextInput, WithColorScheme => {
+      it('should render correctly', () => {
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme label="Name" value="" />,
+        );
 
-      expect(testRenderer.toJSON()).toMatchSnapshot();
-    });
-
-    it('should render correctly with arbitrary props', () => {
-      const testRenderer = TestRenderer.create(
-        <BpkTextInput label="Name" value="" testId="arbitrary" />,
-      );
-
-      expect(testRenderer.toJSON()).toMatchSnapshot();
-    });
-
-    it('should render correctly with custom style', () => {
-      const styles = StyleSheet.create({
-        custom: {
-          marginLeft: spacingSm,
-        },
+        expect(testRenderer.toJSON()).toMatchSnapshot();
       });
 
-      const testRenderer = TestRenderer.create(
-        <BpkTextInput label="Name" value="" style={styles.custom} />,
-      );
+      it('should render correctly with arbitrary props', () => {
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme label="Name" value="" testId="arbitrary" />,
+        );
 
-      expect(testRenderer.toJSON()).toMatchSnapshot();
-    });
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
 
-    it('should render correctly with value', () => {
-      const testRenderer = TestRenderer.create(
-        <BpkTextInput label="Name" value="Joe" />,
-      );
+      it('should render correctly with custom style', () => {
+        const styles = StyleSheet.create({
+          custom: {
+            marginLeft: spacingSm,
+          },
+        });
 
-      expect(testRenderer.toJSON()).toMatchSnapshot();
-    });
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme label="Name" value="" style={styles.custom} />,
+        );
 
-    it('should render correctly with description', () => {
-      const testRenderer = TestRenderer.create(
-        <BpkTextInput
-          label="Name"
-          description="Who loves orange soda?"
-          value="Kel loves orange soda"
-        />,
-      );
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
 
-      expect(testRenderer.toJSON()).toMatchSnapshot();
-    });
+      it('should render correctly with value', () => {
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme label="Name" value="Joe" />,
+        );
 
-    it('should render correctly with description, valid=false and a validationMessage', () => {
-      const testRenderer = TestRenderer.create(
-        <BpkTextInput
-          label="Name"
-          description="Who loves orange soda?"
-          value="Somebody other than Kel loves orange soda"
-          valid={false}
-          validationMessage="Nope"
-        />,
-      );
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
 
-      expect(testRenderer.toJSON()).toMatchSnapshot();
-    });
+      it('should render correctly with description', () => {
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme
+            label="Name"
+            description="Who loves orange soda?"
+            value="Kel loves orange soda"
+          />,
+        );
 
-    it('should render correctly with valid', () => {
-      const testRenderer = TestRenderer.create(
-        <BpkTextInput label="Name" value="" valid />,
-      );
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
 
-      expect(testRenderer.toJSON()).toMatchSnapshot();
-    });
+      it('should render correctly with description, valid=false and a validationMessage', () => {
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme
+            label="Name"
+            description="Who loves orange soda?"
+            value="Somebody other than Kel loves orange soda"
+            valid={false}
+            validationMessage="Nope"
+          />,
+        );
 
-    it('should render correctly with valid false', () => {
-      const testRenderer = TestRenderer.create(
-        <BpkTextInput label="Name" value="" valid={false} />,
-      );
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
 
-      expect(testRenderer.toJSON()).toMatchSnapshot();
-    });
+      it('should render correctly with valid', () => {
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme label="Name" value="" valid />,
+        );
 
-    it('should render correctly with valid false and a validation message', () => {
-      const testRenderer = TestRenderer.create(
-        <BpkTextInput
-          label="Name"
-          value=""
-          valid={false}
-          validationMessage="Nope"
-        />,
-      );
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
 
-      expect(testRenderer.toJSON()).toMatchSnapshot();
-    });
+      it('should render correctly with valid false', () => {
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme label="Name" value="" valid={false} />,
+        );
 
-    it('should render correctly with editable=false', () => {
-      const testRenderer = TestRenderer.create(
-        <BpkTextInput label="Name" value="" editable={false} />,
-      );
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
 
-      expect(testRenderer.toJSON()).toMatchSnapshot();
-    });
+      it('should render correctly with valid false and a validation message', () => {
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme
+            label="Name"
+            value=""
+            valid={false}
+            validationMessage="Nope"
+          />,
+        );
 
-    it('should render correctly with inputRef set', () => {
-      let inputRef = null; // eslint-disable-line no-unused-vars
-      const testRenderer = TestRenderer.create(
-        <BpkTextInput
-          label="Name"
-          value=""
-          inputRef={ref => {
-            inputRef = ref;
-          }}
-        />,
-      );
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
 
-      expect(testRenderer.toJSON()).toMatchSnapshot();
-    });
+      it('should render correctly with editable=false', () => {
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme label="Name" value="" editable={false} />,
+        );
 
-    it('should ignore when placeholder is provided, as element is not focused', () => {
-      const testRenderer = TestRenderer.create(
-        <BpkTextInput label="Name" value="" placeholder="Placeholder" />,
-      );
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
 
-      expect(testRenderer.toJSON()).toMatchSnapshot();
-    });
+      it('should render correctly with inputRef set', () => {
+        let inputRef = null; // eslint-disable-line no-unused-vars
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme
+            label="Name"
+            value=""
+            inputRef={ref => {
+              inputRef = ref;
+            }}
+          />,
+        );
 
-    it('should render correctly with `accessoryView`', () => {
-      const testRenderer = TestRenderer.create(
-        <BpkTextInput label="Name" value="" accessoryView={<View />} />,
-      );
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
 
-      expect(testRenderer.toJSON()).toMatchSnapshot();
-    });
+      it('should ignore when placeholder is provided, as element is not focused', () => {
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme label="Name" value="" placeholder="Placeholder" />,
+        );
 
-    it('should render correctly with mask="99/99"', () => {
-      const testRenderer = TestRenderer.create(
-        <BpkTextInput label="Name" value="1234" mask="99/99" />,
-      );
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
 
-      expect(testRenderer.toJSON()).toMatchSnapshot();
-    });
+      it('should render correctly with `accessoryView`', () => {
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme label="Name" value="" accessoryView={<View />} />,
+        );
 
-    it('should render correctly with mask="9999-9999-9999-9999"', () => {
-      const testRenderer = TestRenderer.create(
-        <BpkTextInput
-          label="Name"
-          value="1234123412341234"
-          mask="9999-9999-9999-9999"
-        />,
-      );
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
 
-      expect(testRenderer.toJSON()).toMatchSnapshot();
-    });
+      it('should render correctly with mask="99/99"', () => {
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme label="Name" value="1234" mask="99/99" />,
+        );
 
-    it('should support theming', () => {
-      const theme = {
-        textInputFocusedColor: 'green',
-      };
-      const testRenderer = TestRenderer.create(
-        <BpkThemeProvider theme={theme}>
-          <BpkTextInput label="Name" value="" />
-        </BpkThemeProvider>,
-      );
-      expect(testRenderer.toJSON()).toMatchSnapshot();
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
+
+      it('should render correctly with mask="9999-9999-9999-9999"', () => {
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme
+            label="Name"
+            value="1234123412341234"
+            mask="9999-9999-9999-9999"
+          />,
+        );
+
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
+
+      it('should support theming', () => {
+        const theme = {
+          textInputFocusedColor: 'green',
+        };
+        const testRenderer = TestRenderer.create(
+          <BpkThemeProvider theme={theme}>
+            <WithColorScheme label="Name" value="" />
+          </BpkThemeProvider>,
+        );
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
     });
   });
 };

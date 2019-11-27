@@ -2,6 +2,39 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-11-26
+
+**Fixed**
+
+- react-native-bpk-component-text: 4.2.1 => 4.2.2
+  - Font scaling is now disabled by default.
+
+**Added:**
+
+- react-native-bpk-appearance: 1.2.0 => 1.3.0
+  - Allow top level dynamic values to be provided to `BpkDynamicStyleSheet`.
+  - `BpkStyleSheetNamedStyles` type is now being exported.
+  - Added `withBpkAppearance` HOC, `unpackBpkDynamicValue` and `unpackBpkDynamicStyle` methods.
+  - Added support for dynamic values in all `BpkDynamicStyleSheet` props.
+
+- react-native-bpk-component-button-link: 6.0.6 => 6.1.0
+  - Added dark mode support.
+
+- react-native-bpk-component-card: 2.0.14 => 2.1.0
+  - Added dark mode support.
+
+- react-native-bpk-component-flat-list: 5.0.6 => 5.1.0
+  - Added dark mode support.
+
+- react-native-bpk-component-horizontal-nav: 6.0.6 => 6.1.0
+  - Added dark mode support.
+
+- react-native-bpk-component-chip: 5.0.6 => 5.1.0
+  - Added dark mode support.
+
+- react-native-bpk-component-navigation-bar: 7.0.6 => 7.1.0
+  - Added dark mode support.
+
 # 2019-11-14
 
 **Fixed:**

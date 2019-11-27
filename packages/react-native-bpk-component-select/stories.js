@@ -51,7 +51,12 @@ storiesOf('react-native-bpk-component-select', module)
 
       <StorySubheading>Valid</StorySubheading>
       <View style={styles.select}>
-        <BpkSelect onPress={action('Select pressed')} label="Value" valid />
+        <BpkSelect onPress={action('Select pressed')} label="Value" />
+      </View>
+
+      <StorySubheading>Disabled</StorySubheading>
+      <View style={styles.select}>
+        <BpkSelect onPress={action('Select pressed')} label="Value" disabled />
       </View>
 
       <StorySubheading>Invalid</StorySubheading>

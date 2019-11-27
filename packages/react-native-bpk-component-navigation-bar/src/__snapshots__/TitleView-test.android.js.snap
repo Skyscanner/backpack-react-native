@@ -1,6 +1,188 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`android TitleView should render correctly with leading icon 1`] = `
+exports[`android TitleView dark mode should render correctly with leading icon 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+      undefined,
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Object {
+          "fontSize": 16,
+        },
+        Array [
+          Object {
+            "marginEnd": 4,
+          },
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
+        ],
+      ]
+    }
+  >
+    
+  </Text>
+  <Text
+    allowFontScaling={false}
+    ellipsizeMode="tail"
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "sans-serif",
+          "fontSize": 20,
+          "fontWeight": "400",
+          "letterSpacing": -0.4,
+        },
+        Object {
+          "fontFamily": "sans-serif-medium",
+        },
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
+          Object {
+            "lineHeight": 24,
+          },
+        ],
+      ]
+    }
+  >
+    Checkout
+  </Text>
+</View>
+`;
+
+exports[`android TitleView dark mode should render correctly with only a title 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+      undefined,
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    ellipsizeMode="tail"
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "sans-serif",
+          "fontSize": 20,
+          "fontWeight": "400",
+          "letterSpacing": -0.4,
+        },
+        Object {
+          "fontFamily": "sans-serif-medium",
+        },
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
+          null,
+        ],
+      ]
+    }
+  >
+    Backpack
+  </Text>
+</View>
+`;
+
+exports[`android TitleView dark mode should render correctly with trailing icon 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+      undefined,
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    ellipsizeMode="tail"
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "sans-serif",
+          "fontSize": 20,
+          "fontWeight": "400",
+          "letterSpacing": -0.4,
+        },
+        Object {
+          "fontFamily": "sans-serif-medium",
+        },
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
+          Object {
+            "lineHeight": 24,
+          },
+        ],
+      ]
+    }
+  >
+    Checkout
+  </Text>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Object {
+          "fontSize": 16,
+        },
+        Array [
+          Object {
+            "marginStart": 4,
+          },
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
+        ],
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
+
+exports[`android TitleView light mode should render correctly with leading icon 1`] = `
 <View
   style={
     Array [
@@ -70,7 +252,7 @@ exports[`android TitleView should render correctly with leading icon 1`] = `
 </View>
 `;
 
-exports[`android TitleView should render correctly with only a title 1`] = `
+exports[`android TitleView light mode should render correctly with only a title 1`] = `
 <View
   style={
     Array [
@@ -112,7 +294,7 @@ exports[`android TitleView should render correctly with only a title 1`] = `
 </View>
 `;
 
-exports[`android TitleView should render correctly with trailing icon 1`] = `
+exports[`android TitleView light mode should render correctly with trailing icon 1`] = `
 <View
   style={
     Array [

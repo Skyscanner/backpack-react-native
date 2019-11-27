@@ -20,28 +20,32 @@
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { ScrollView, StyleSheet, View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
 import {
-  colorSkyGrayTint06,
-  colorSkyGrayTint02,
+  lineColor,
+  backgroundSecondaryColor,
   spacingBase,
 } from 'bpk-tokens/tokens/base.react.native';
 import BpkThemeProvider from 'react-native-bpk-theming';
+import {
+  BpkDynamicStyleSheet,
+  useBpkDynamicStyleSheet,
+} from 'react-native-bpk-appearance';
 
 import CenterDecorator from '../../storybook/CenterDecorator';
 import themeAttributes from '../../storybook/themeAttributes';
 
 import BpkTextInput from './index';
 
-const styles = StyleSheet.create({
+const dynamicStyles = BpkDynamicStyleSheet.create({
   input: {
     marginBottom: spacingBase,
   },
   accessoryView: {
     flex: 0.3,
-    backgroundColor: colorSkyGrayTint06,
-    borderColor: colorSkyGrayTint02,
+    backgroundColor: backgroundSecondaryColor,
+    borderColor: lineColor,
     borderWidth: 1, // eslint-disable-line backpack/use-tokens
   },
 });
@@ -79,103 +83,9 @@ class StatefulBpkTextInput extends Component<
 
 storiesOf('react-native-bpk-component-text-input', module)
   .addDecorator(CenterDecorator)
-  .add('docs:text-inputs', () => (
-    <ScrollView>
-      <StatefulBpkTextInput
-        label="Input"
-        initialValue=""
-        style={styles.input}
-        placeholder="3 letter airport code"
-      />
-      <StatefulBpkTextInput
-        label="Input with value and description"
-        initialValue="Edinburgh"
-        description="Enter your destination."
-        style={styles.input}
-      />
-      <StatefulBpkTextInput
-        label="Input with multiline value"
-        initialValue="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor." // eslint-disable-line max-len
-        multiline
-        style={styles.input}
-        autoGrow
-      />
-      <StatefulBpkTextInput
-        label="Valid input"
-        initialValue="Edinburgh"
-        valid
-        style={styles.input}
-      />
-      <StatefulBpkTextInput
-        label="Invalid input"
-        initialValue="Edinbvrgh"
-        valid={false}
-        validationMessage="'Edinbvrgh' is not a valid city."
-        style={styles.input}
-      />
-      <StatefulBpkTextInput
-        label="Non-editable input"
-        initialValue=""
-        editable={false}
-        style={styles.input}
-      />
-      <StatefulBpkTextInput
-        label="Password"
-        initialValue="letmein"
-        secureTextEntry
-        style={styles.input}
-      />
-      <StatefulBpkTextInput
-        label="Phone number"
-        initialValue="+441234567890"
-        keyboardType="phone-pad"
-        style={styles.input}
-      />
-      <StatefulBpkTextInput
-        label="Input with date mask"
-        initialValue=""
-        mask="99/99"
-        maxLength={5}
-        style={styles.input}
-      />
-      <StatefulBpkTextInput
-        label="Input with card number mask"
-        initialValue=""
-        mask="9999-9999-9999-9999"
-        maxLength={19}
-        style={styles.input}
-      />
-    </ScrollView>
-  ))
-  .add('docs:text-inputs-with-accessory-view', () => (
-    <ScrollView>
-      <StatefulBpkTextInput
-        label="Phone number"
-        initialValue="+441234567890"
-        keyboardType="phone-pad"
-        style={styles.input}
-        accessoryView={<View style={styles.accessoryView} />}
-      />
-      <StatefulBpkTextInput
-        label="Phone number"
-        initialValue=""
-        keyboardType="phone-pad"
-        style={styles.input}
-        placeholder="E.g. 1234567890"
-        accessoryView={<View style={styles.accessoryView} />}
-      />
-      <StatefulBpkTextInput
-        label="Invalid input"
-        initialValue="ashdk"
-        valid={false}
-        validationMessage="Invalid phone number."
-        style={styles.input}
-        accessoryView={<View style={styles.accessoryView} />}
-      />
-    </ScrollView>
-  ))
-  .add('Themed', () => (
-    <BpkThemeProvider theme={themeAttributes}>
+  .add('docs:text-inputs', () => {
+    const styles = useBpkDynamicStyleSheet(dynamicStyles);
+    return (
       <ScrollView>
         <StatefulBpkTextInput
           label="Input"
@@ -184,12 +94,115 @@ storiesOf('react-native-bpk-component-text-input', module)
           placeholder="3 letter airport code"
         />
         <StatefulBpkTextInput
+          label="Input with value and description"
+          initialValue="Edinburgh"
+          description="Enter your destination."
+          style={styles.input}
+        />
+        <StatefulBpkTextInput
+          label="Input with multiline value"
+          initialValue="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor." // eslint-disable-line max-len
+          multiline
+          style={styles.input}
+          autoGrow
+        />
+        <StatefulBpkTextInput
+          label="Valid input"
+          initialValue="Edinburgh"
+          valid
+          style={styles.input}
+        />
+        <StatefulBpkTextInput
           label="Invalid input"
           initialValue="Edinbvrgh"
           valid={false}
           validationMessage="'Edinbvrgh' is not a valid city."
           style={styles.input}
         />
+        <StatefulBpkTextInput
+          label="Non-editable input"
+          initialValue=""
+          editable={false}
+          style={styles.input}
+        />
+        <StatefulBpkTextInput
+          label="Password"
+          initialValue="letmein"
+          secureTextEntry
+          style={styles.input}
+        />
+        <StatefulBpkTextInput
+          label="Phone number"
+          initialValue="+441234567890"
+          keyboardType="phone-pad"
+          style={styles.input}
+        />
+        <StatefulBpkTextInput
+          label="Input with date mask"
+          initialValue=""
+          mask="99/99"
+          maxLength={5}
+          style={styles.input}
+        />
+        <StatefulBpkTextInput
+          label="Input with card number mask"
+          initialValue=""
+          mask="9999-9999-9999-9999"
+          maxLength={19}
+          style={styles.input}
+        />
       </ScrollView>
-    </BpkThemeProvider>
-  ));
+    );
+  })
+  .add('docs:text-inputs-with-accessory-view', () => {
+    const styles = useBpkDynamicStyleSheet(dynamicStyles);
+    return (
+      <ScrollView>
+        <StatefulBpkTextInput
+          label="Phone number"
+          initialValue="+441234567890"
+          keyboardType="phone-pad"
+          style={styles.input}
+          accessoryView={<View style={styles.accessoryView} />}
+        />
+        <StatefulBpkTextInput
+          label="Phone number"
+          initialValue=""
+          keyboardType="phone-pad"
+          style={styles.input}
+          placeholder="E.g. 1234567890"
+          accessoryView={<View style={styles.accessoryView} />}
+        />
+        <StatefulBpkTextInput
+          label="Invalid input"
+          initialValue="ashdk"
+          valid={false}
+          validationMessage="Invalid phone number."
+          style={styles.input}
+          accessoryView={<View style={styles.accessoryView} />}
+        />
+      </ScrollView>
+    );
+  })
+  .add('Themed', () => {
+    const styles = useBpkDynamicStyleSheet(dynamicStyles);
+    return (
+      <BpkThemeProvider theme={themeAttributes}>
+        <ScrollView>
+          <StatefulBpkTextInput
+            label="Input"
+            initialValue=""
+            style={styles.input}
+            placeholder="3 letter airport code"
+          />
+          <StatefulBpkTextInput
+            label="Invalid input"
+            initialValue="Edinbvrgh"
+            valid={false}
+            validationMessage="'Edinbvrgh' is not a valid city."
+            style={styles.input}
+          />
+        </ScrollView>
+      </BpkThemeProvider>
+    );
+  });

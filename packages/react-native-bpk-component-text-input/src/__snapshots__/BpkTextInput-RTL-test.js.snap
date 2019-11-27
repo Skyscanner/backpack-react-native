@@ -1,6 +1,1352 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RTL BpkTextInput should ignore when placeholder is provided, as element is not focused 1`] = `
+exports[`RTL BpkTextInput dark mode should ignore when placeholder is provided, as element is not focused 1`] = `
+<View
+  style={null}
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "paddingTop": 17,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Object {
+          "color": "rgba(178, 178, 191, 1)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "lineHeight": 19,
+          "position": "absolute",
+          "top": 20,
+        }
+      }
+    >
+      Name
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        clearButtonMode="while-editing"
+        editable={true}
+        onBlur={[Function]}
+        onFocus={[Function]}
+        placeholder={null}
+        placeholderTextColor="rgb(178, 178, 191)"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(255, 255, 255)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
+        }
+        underlineColorAndroid="transparent"
+        value=""
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`RTL BpkTextInput dark mode should render correctly 1`] = `
+<View
+  style={null}
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "paddingTop": 17,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Object {
+          "color": "rgba(178, 178, 191, 1)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "lineHeight": 19,
+          "position": "absolute",
+          "top": 20,
+        }
+      }
+    >
+      Name
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        clearButtonMode="while-editing"
+        editable={true}
+        onBlur={[Function]}
+        onFocus={[Function]}
+        placeholder={null}
+        placeholderTextColor="rgb(178, 178, 191)"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(255, 255, 255)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
+        }
+        underlineColorAndroid="transparent"
+        value=""
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`RTL BpkTextInput dark mode should render correctly with \`accessoryView\` 1`] = `
+<View
+  style={null}
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "paddingTop": 17,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Object {
+          "color": "rgba(143, 144, 160, 1)",
+          "fontFamily": "System",
+          "fontSize": 14,
+          "fontWeight": "400",
+          "lineHeight": 17,
+          "position": "absolute",
+          "top": 0,
+        }
+      }
+    >
+      Name
+    </Text>
+    <View />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+          "marginStart": 4,
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        clearButtonMode="while-editing"
+        editable={true}
+        onBlur={[Function]}
+        onFocus={[Function]}
+        placeholder={null}
+        placeholderTextColor="rgb(178, 178, 191)"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(255, 255, 255)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
+        }
+        underlineColorAndroid="transparent"
+        value=""
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`RTL BpkTextInput dark mode should render correctly with arbitrary props 1`] = `
+<View
+  style={null}
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "paddingTop": 17,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Object {
+          "color": "rgba(178, 178, 191, 1)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "lineHeight": 19,
+          "position": "absolute",
+          "top": 20,
+        }
+      }
+    >
+      Name
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        clearButtonMode="while-editing"
+        editable={true}
+        onBlur={[Function]}
+        onFocus={[Function]}
+        placeholder={null}
+        placeholderTextColor="rgb(178, 178, 191)"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(255, 255, 255)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
+        }
+        testId="arbitrary"
+        underlineColorAndroid="transparent"
+        value=""
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`RTL BpkTextInput dark mode should render correctly with custom style 1`] = `
+<View
+  style={
+    Object {
+      "marginLeft": 4,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "paddingTop": 17,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Object {
+          "color": "rgba(178, 178, 191, 1)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "lineHeight": 19,
+          "position": "absolute",
+          "top": 20,
+        }
+      }
+    >
+      Name
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        clearButtonMode="while-editing"
+        editable={true}
+        onBlur={[Function]}
+        onFocus={[Function]}
+        placeholder={null}
+        placeholderTextColor="rgb(178, 178, 191)"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(255, 255, 255)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
+        }
+        underlineColorAndroid="transparent"
+        value=""
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`RTL BpkTextInput dark mode should render correctly with description 1`] = `
+<View
+  style={null}
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "paddingTop": 17,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Object {
+          "color": "rgba(143, 144, 160, 1)",
+          "fontFamily": "System",
+          "fontSize": 14,
+          "fontWeight": "400",
+          "lineHeight": 17,
+          "position": "absolute",
+          "top": 0,
+        }
+      }
+    >
+      Name
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        clearButtonMode="while-editing"
+        editable={true}
+        onBlur={[Function]}
+        onFocus={[Function]}
+        placeholder={null}
+        placeholderTextColor="rgb(178, 178, 191)"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(255, 255, 255)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
+        }
+        underlineColorAndroid="transparent"
+        value="Kel loves orange soda"
+      />
+    </View>
+  </View>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "System",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 0,
+        },
+        Object {},
+        Object {
+          "color": "rgb(143, 144, 160)",
+          "paddingTop": 4,
+        },
+      ]
+    }
+  >
+    Who loves orange soda?
+  </Text>
+</View>
+`;
+
+exports[`RTL BpkTextInput dark mode should render correctly with description, valid=false and a validationMessage 1`] = `
+<View
+  style={null}
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "paddingTop": 17,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Object {
+          "color": "rgba(209, 67, 91, 1)",
+          "fontFamily": "System",
+          "fontSize": 14,
+          "fontWeight": "400",
+          "lineHeight": 17,
+          "position": "absolute",
+          "top": 0,
+        }
+      }
+    >
+      Name
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomColor": "rgba(209, 67, 91, 1)",
+          "borderBottomWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        clearButtonMode="while-editing"
+        editable={true}
+        onBlur={[Function]}
+        onFocus={[Function]}
+        placeholder={null}
+        placeholderTextColor="rgb(178, 178, 191)"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(255, 255, 255)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
+        }
+        underlineColorAndroid="transparent"
+        value="Somebody other than Kel loves orange soda"
+      />
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "BpkIcon",
+              "fontSize": 24,
+              "includeFontPadding": false,
+            },
+            Object {
+              "fontSize": 16,
+            },
+            Array [
+              Object {
+                "position": "absolute",
+                "right": 9,
+              },
+              Object {
+                "color": "rgb(209, 67, 91)",
+              },
+            ],
+          ]
+        }
+      >
+        
+      </Text>
+    </View>
+  </View>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "System",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 0,
+        },
+        Object {},
+        Object {
+          "color": "rgb(209, 67, 91)",
+          "paddingTop": 4,
+        },
+      ]
+    }
+  >
+    Nope
+  </Text>
+</View>
+`;
+
+exports[`RTL BpkTextInput dark mode should render correctly with editable=false 1`] = `
+<View
+  style={null}
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "paddingTop": 17,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Object {
+          "color": "rgba(99, 99, 102, 1)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "lineHeight": 19,
+          "position": "absolute",
+          "top": 20,
+        }
+      }
+    >
+      Name
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        clearButtonMode="while-editing"
+        editable={false}
+        onBlur={[Function]}
+        onFocus={[Function]}
+        placeholder={null}
+        placeholderTextColor="rgb(178, 178, 191)"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(255, 255, 255)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
+        }
+        underlineColorAndroid="transparent"
+        value=""
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`RTL BpkTextInput dark mode should render correctly with inputRef set 1`] = `
+<View
+  style={null}
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "paddingTop": 17,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Object {
+          "color": "rgba(178, 178, 191, 1)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "lineHeight": 19,
+          "position": "absolute",
+          "top": 20,
+        }
+      }
+    >
+      Name
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        clearButtonMode="while-editing"
+        editable={true}
+        onBlur={[Function]}
+        onFocus={[Function]}
+        placeholder={null}
+        placeholderTextColor="rgb(178, 178, 191)"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(255, 255, 255)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
+        }
+        underlineColorAndroid="transparent"
+        value=""
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`RTL BpkTextInput dark mode should render correctly with mask="99/99" 1`] = `
+<View
+  style={null}
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "paddingTop": 17,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Object {
+          "color": "rgba(143, 144, 160, 1)",
+          "fontFamily": "System",
+          "fontSize": 14,
+          "fontWeight": "400",
+          "lineHeight": 17,
+          "position": "absolute",
+          "top": 0,
+        }
+      }
+    >
+      Name
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        clearButtonMode="while-editing"
+        editable={true}
+        onBlur={[Function]}
+        onFocus={[Function]}
+        placeholder={null}
+        placeholderTextColor="rgb(178, 178, 191)"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(255, 255, 255)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
+        }
+        underlineColorAndroid="transparent"
+        value="12/34"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`RTL BpkTextInput dark mode should render correctly with mask="9999-9999-9999-9999" 1`] = `
+<View
+  style={null}
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "paddingTop": 17,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Object {
+          "color": "rgba(143, 144, 160, 1)",
+          "fontFamily": "System",
+          "fontSize": 14,
+          "fontWeight": "400",
+          "lineHeight": 17,
+          "position": "absolute",
+          "top": 0,
+        }
+      }
+    >
+      Name
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        clearButtonMode="while-editing"
+        editable={true}
+        onBlur={[Function]}
+        onFocus={[Function]}
+        placeholder={null}
+        placeholderTextColor="rgb(178, 178, 191)"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(255, 255, 255)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
+        }
+        underlineColorAndroid="transparent"
+        value="1234-1234-1234-1234"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`RTL BpkTextInput dark mode should render correctly with valid 1`] = `
+<View
+  style={null}
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "paddingTop": 17,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Object {
+          "color": "rgba(178, 178, 191, 1)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "lineHeight": 19,
+          "position": "absolute",
+          "top": 20,
+        }
+      }
+    >
+      Name
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        clearButtonMode="while-editing"
+        editable={true}
+        onBlur={[Function]}
+        onFocus={[Function]}
+        placeholder={null}
+        placeholderTextColor="rgb(178, 178, 191)"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(255, 255, 255)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
+        }
+        underlineColorAndroid="transparent"
+        value=""
+      />
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "BpkIcon",
+              "fontSize": 24,
+              "includeFontPadding": false,
+            },
+            Object {
+              "fontSize": 16,
+            },
+            Array [
+              Object {
+                "position": "absolute",
+                "right": 9,
+              },
+              Object {
+                "color": "rgb(0, 166, 152)",
+              },
+            ],
+          ]
+        }
+      >
+        
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`RTL BpkTextInput dark mode should render correctly with valid false 1`] = `
+<View
+  style={null}
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "paddingTop": 17,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Object {
+          "color": "rgba(178, 178, 191, 1)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "lineHeight": 19,
+          "position": "absolute",
+          "top": 20,
+        }
+      }
+    >
+      Name
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomColor": "rgba(209, 67, 91, 1)",
+          "borderBottomWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        clearButtonMode="while-editing"
+        editable={true}
+        onBlur={[Function]}
+        onFocus={[Function]}
+        placeholder={null}
+        placeholderTextColor="rgb(178, 178, 191)"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(255, 255, 255)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
+        }
+        underlineColorAndroid="transparent"
+        value=""
+      />
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "BpkIcon",
+              "fontSize": 24,
+              "includeFontPadding": false,
+            },
+            Object {
+              "fontSize": 16,
+            },
+            Array [
+              Object {
+                "position": "absolute",
+                "right": 9,
+              },
+              Object {
+                "color": "rgb(209, 67, 91)",
+              },
+            ],
+          ]
+        }
+      >
+        
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`RTL BpkTextInput dark mode should render correctly with valid false and a validation message 1`] = `
+<View
+  style={null}
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "paddingTop": 17,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Object {
+          "color": "rgba(178, 178, 191, 1)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "lineHeight": 19,
+          "position": "absolute",
+          "top": 20,
+        }
+      }
+    >
+      Name
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomColor": "rgba(209, 67, 91, 1)",
+          "borderBottomWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        clearButtonMode="while-editing"
+        editable={true}
+        onBlur={[Function]}
+        onFocus={[Function]}
+        placeholder={null}
+        placeholderTextColor="rgb(178, 178, 191)"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(255, 255, 255)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
+        }
+        underlineColorAndroid="transparent"
+        value=""
+      />
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "BpkIcon",
+              "fontSize": 24,
+              "includeFontPadding": false,
+            },
+            Object {
+              "fontSize": 16,
+            },
+            Array [
+              Object {
+                "position": "absolute",
+                "right": 9,
+              },
+              Object {
+                "color": "rgb(209, 67, 91)",
+              },
+            ],
+          ]
+        }
+      >
+        
+      </Text>
+    </View>
+  </View>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "System",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 0,
+        },
+        Object {},
+        Object {
+          "color": "rgb(209, 67, 91)",
+          "paddingTop": 4,
+        },
+      ]
+    }
+  >
+    Nope
+  </Text>
+</View>
+`;
+
+exports[`RTL BpkTextInput dark mode should render correctly with value 1`] = `
+<View
+  style={null}
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "paddingTop": 17,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Object {
+          "color": "rgba(143, 144, 160, 1)",
+          "fontFamily": "System",
+          "fontSize": 14,
+          "fontWeight": "400",
+          "lineHeight": 17,
+          "position": "absolute",
+          "top": 0,
+        }
+      }
+    >
+      Name
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        clearButtonMode="while-editing"
+        editable={true}
+        onBlur={[Function]}
+        onFocus={[Function]}
+        placeholder={null}
+        placeholderTextColor="rgb(178, 178, 191)"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(255, 255, 255)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
+        }
+        underlineColorAndroid="transparent"
+        value="Joe"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`RTL BpkTextInput dark mode should support theming 1`] = `
+<View
+  style={null}
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "paddingTop": 17,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Object {
+          "color": "rgba(178, 178, 191, 1)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "lineHeight": 19,
+          "position": "absolute",
+          "top": 20,
+        }
+      }
+    >
+      Name
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        clearButtonMode="while-editing"
+        editable={true}
+        onBlur={[Function]}
+        onFocus={[Function]}
+        placeholder={null}
+        placeholderTextColor="rgb(178, 178, 191)"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(255, 255, 255)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+          ]
+        }
+        underlineColorAndroid="transparent"
+        value=""
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`RTL BpkTextInput light mode should ignore when placeholder is provided, as element is not focused 1`] = `
 <View
   style={null}
 >
@@ -48,6 +1394,7 @@ exports[`RTL BpkTextInput should ignore when placeholder is provided, as element
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        placeholderTextColor="rgb(205, 205, 215)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -72,7 +1419,7 @@ exports[`RTL BpkTextInput should ignore when placeholder is provided, as element
 </View>
 `;
 
-exports[`RTL BpkTextInput should render correctly 1`] = `
+exports[`RTL BpkTextInput light mode should render correctly 1`] = `
 <View
   style={null}
 >
@@ -120,6 +1467,7 @@ exports[`RTL BpkTextInput should render correctly 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        placeholderTextColor="rgb(205, 205, 215)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -144,7 +1492,7 @@ exports[`RTL BpkTextInput should render correctly 1`] = `
 </View>
 `;
 
-exports[`RTL BpkTextInput should render correctly with \`accessoryView\` 1`] = `
+exports[`RTL BpkTextInput light mode should render correctly with \`accessoryView\` 1`] = `
 <View
   style={null}
 >
@@ -194,6 +1542,7 @@ exports[`RTL BpkTextInput should render correctly with \`accessoryView\` 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        placeholderTextColor="rgb(205, 205, 215)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -218,7 +1567,7 @@ exports[`RTL BpkTextInput should render correctly with \`accessoryView\` 1`] = `
 </View>
 `;
 
-exports[`RTL BpkTextInput should render correctly with arbitrary props 1`] = `
+exports[`RTL BpkTextInput light mode should render correctly with arbitrary props 1`] = `
 <View
   style={null}
 >
@@ -266,6 +1615,7 @@ exports[`RTL BpkTextInput should render correctly with arbitrary props 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        placeholderTextColor="rgb(205, 205, 215)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -291,7 +1641,7 @@ exports[`RTL BpkTextInput should render correctly with arbitrary props 1`] = `
 </View>
 `;
 
-exports[`RTL BpkTextInput should render correctly with custom style 1`] = `
+exports[`RTL BpkTextInput light mode should render correctly with custom style 1`] = `
 <View
   style={
     Object {
@@ -343,6 +1693,7 @@ exports[`RTL BpkTextInput should render correctly with custom style 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        placeholderTextColor="rgb(205, 205, 215)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -367,7 +1718,7 @@ exports[`RTL BpkTextInput should render correctly with custom style 1`] = `
 </View>
 `;
 
-exports[`RTL BpkTextInput should render correctly with description 1`] = `
+exports[`RTL BpkTextInput light mode should render correctly with description 1`] = `
 <View
   style={null}
 >
@@ -415,6 +1766,7 @@ exports[`RTL BpkTextInput should render correctly with description 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        placeholderTextColor="rgb(205, 205, 215)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -460,7 +1812,7 @@ exports[`RTL BpkTextInput should render correctly with description 1`] = `
 </View>
 `;
 
-exports[`RTL BpkTextInput should render correctly with description, valid=false and a validationMessage 1`] = `
+exports[`RTL BpkTextInput light mode should render correctly with description, valid=false and a validationMessage 1`] = `
 <View
   style={null}
 >
@@ -508,6 +1860,7 @@ exports[`RTL BpkTextInput should render correctly with description, valid=false 
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        placeholderTextColor="rgb(205, 205, 215)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -580,7 +1933,7 @@ exports[`RTL BpkTextInput should render correctly with description, valid=false 
 </View>
 `;
 
-exports[`RTL BpkTextInput should render correctly with editable=false 1`] = `
+exports[`RTL BpkTextInput light mode should render correctly with editable=false 1`] = `
 <View
   style={null}
 >
@@ -628,6 +1981,7 @@ exports[`RTL BpkTextInput should render correctly with editable=false 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        placeholderTextColor="rgb(205, 205, 215)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -652,7 +2006,7 @@ exports[`RTL BpkTextInput should render correctly with editable=false 1`] = `
 </View>
 `;
 
-exports[`RTL BpkTextInput should render correctly with inputRef set 1`] = `
+exports[`RTL BpkTextInput light mode should render correctly with inputRef set 1`] = `
 <View
   style={null}
 >
@@ -700,6 +2054,7 @@ exports[`RTL BpkTextInput should render correctly with inputRef set 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        placeholderTextColor="rgb(205, 205, 215)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -724,7 +2079,7 @@ exports[`RTL BpkTextInput should render correctly with inputRef set 1`] = `
 </View>
 `;
 
-exports[`RTL BpkTextInput should render correctly with mask="99/99" 1`] = `
+exports[`RTL BpkTextInput light mode should render correctly with mask="99/99" 1`] = `
 <View
   style={null}
 >
@@ -772,6 +2127,7 @@ exports[`RTL BpkTextInput should render correctly with mask="99/99" 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        placeholderTextColor="rgb(205, 205, 215)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -796,7 +2152,7 @@ exports[`RTL BpkTextInput should render correctly with mask="99/99" 1`] = `
 </View>
 `;
 
-exports[`RTL BpkTextInput should render correctly with mask="9999-9999-9999-9999" 1`] = `
+exports[`RTL BpkTextInput light mode should render correctly with mask="9999-9999-9999-9999" 1`] = `
 <View
   style={null}
 >
@@ -844,6 +2200,7 @@ exports[`RTL BpkTextInput should render correctly with mask="9999-9999-9999-9999
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        placeholderTextColor="rgb(205, 205, 215)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -868,7 +2225,7 @@ exports[`RTL BpkTextInput should render correctly with mask="9999-9999-9999-9999
 </View>
 `;
 
-exports[`RTL BpkTextInput should render correctly with valid 1`] = `
+exports[`RTL BpkTextInput light mode should render correctly with valid 1`] = `
 <View
   style={null}
 >
@@ -916,6 +2273,7 @@ exports[`RTL BpkTextInput should render correctly with valid 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        placeholderTextColor="rgb(205, 205, 215)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -967,7 +2325,7 @@ exports[`RTL BpkTextInput should render correctly with valid 1`] = `
 </View>
 `;
 
-exports[`RTL BpkTextInput should render correctly with valid false 1`] = `
+exports[`RTL BpkTextInput light mode should render correctly with valid false 1`] = `
 <View
   style={null}
 >
@@ -1015,6 +2373,7 @@ exports[`RTL BpkTextInput should render correctly with valid false 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        placeholderTextColor="rgb(205, 205, 215)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -1066,7 +2425,7 @@ exports[`RTL BpkTextInput should render correctly with valid false 1`] = `
 </View>
 `;
 
-exports[`RTL BpkTextInput should render correctly with valid false and a validation message 1`] = `
+exports[`RTL BpkTextInput light mode should render correctly with valid false and a validation message 1`] = `
 <View
   style={null}
 >
@@ -1114,6 +2473,7 @@ exports[`RTL BpkTextInput should render correctly with valid false and a validat
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        placeholderTextColor="rgb(205, 205, 215)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -1186,7 +2546,7 @@ exports[`RTL BpkTextInput should render correctly with valid false and a validat
 </View>
 `;
 
-exports[`RTL BpkTextInput should render correctly with value 1`] = `
+exports[`RTL BpkTextInput light mode should render correctly with value 1`] = `
 <View
   style={null}
 >
@@ -1234,6 +2594,7 @@ exports[`RTL BpkTextInput should render correctly with value 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        placeholderTextColor="rgb(205, 205, 215)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -1258,7 +2619,7 @@ exports[`RTL BpkTextInput should render correctly with value 1`] = `
 </View>
 `;
 
-exports[`RTL BpkTextInput should support theming 1`] = `
+exports[`RTL BpkTextInput light mode should support theming 1`] = `
 <View
   style={null}
 >
@@ -1306,6 +2667,7 @@ exports[`RTL BpkTextInput should support theming 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        placeholderTextColor="rgb(205, 205, 215)"
         rejectResponderTermination={true}
         style={
           Array [

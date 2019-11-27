@@ -19,27 +19,33 @@
 /* @flow */
 
 import React, { cloneElement, type Element } from 'react';
-import { Platform, StyleSheet, View, ViewPropTypes, Image } from 'react-native';
+import { Platform, View, ViewPropTypes, Image } from 'react-native';
 import PropTypes from 'prop-types';
 import BpkTouchableOverlay from 'react-native-bpk-component-touchable-overlay';
 import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-native-feedback';
 import BpkText from 'react-native-bpk-component-text';
 import {
-  colorSkyGrayTint07,
   colorSkyGrayTint06,
+  colorBlackTint03,
   colorPanjin,
   borderSizeSm,
   spacingBase,
   spacingMd,
   spacingSm,
+  lineDarkColor,
+  backgroundSecondaryColor,
 } from 'bpk-tokens/tokens/base.react.native';
+import {
+  BpkDynamicStyleSheet,
+  useBpkDynamicStyleSheet,
+} from 'react-native-bpk-appearance';
 
 import { ValidIcon, InvalidIcon, SelectIcon } from './BpkSelectIcons';
 
-const styles = StyleSheet.create({
+const dynamicStyles = BpkDynamicStyleSheet.create({
   select: {
     flexDirection: 'row',
-    borderColor: colorSkyGrayTint06,
+    borderColor: { light: colorSkyGrayTint06, dark: lineDarkColor },
     borderBottomWidth: borderSizeSm,
     justifyContent: 'space-between',
     alignItems: 'center',
@@ -52,12 +58,12 @@ const styles = StyleSheet.create({
     marginEnd: 'auto',
   },
   selectContentDisabled: {
-    color: colorSkyGrayTint06,
+    color: { light: colorSkyGrayTint06, dark: colorBlackTint03 },
   },
   selectImage: {
     width: spacingBase,
     height: spacingSm + spacingMd,
-    backgroundColor: colorSkyGrayTint07,
+    backgroundColor: backgroundSecondaryColor,
     marginEnd: spacingMd,
   },
   validationMessage: {
@@ -96,6 +102,7 @@ const BpkSelect = (props: Props) => {
     ...rest
   } = props;
 
+  const styles = useBpkDynamicStyleSheet(dynamicStyles);
   let content = null;
   const selectStyle = [styles.select];
   const selectDisabledStyle = [styles.selectContentDisabled];
@@ -159,7 +166,7 @@ const BpkSelect = (props: Props) => {
         {showImage && styledImage}
         {content || label}
         {validityIcon}
-        <SelectIcon />
+        <SelectIcon disabled={disabled} />
       </View>
     </TouchablePlatformComponent>
   );

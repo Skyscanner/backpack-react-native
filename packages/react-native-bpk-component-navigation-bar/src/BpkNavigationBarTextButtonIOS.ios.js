@@ -23,10 +23,12 @@ import PropTypes from 'prop-types';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 import BpkText, { WEIGHT_STYLES } from 'react-native-bpk-component-text';
 import {
-  colorSkyBlue,
+  colorBlackTint03,
   colorSkyGrayTint04,
-  colorSkyGray,
+  textPrimaryColor,
+  primaryColor,
 } from 'bpk-tokens/tokens/base.react.native';
+import { useBpkDynamicValue } from 'react-native-bpk-appearance';
 
 export const BUTTON_TYPES = {
   default: 'default',
@@ -75,8 +77,8 @@ const BpkNavigationBarTextButtonIOS = (props: Props) => {
     leading,
   } = props;
   const tintColors = {
-    [BUTTON_TYPES.default]: colorSkyGray,
-    [BUTTON_TYPES.primary]: colorSkyBlue,
+    [BUTTON_TYPES.default]: useBpkDynamicValue(textPrimaryColor),
+    [BUTTON_TYPES.primary]: useBpkDynamicValue(primaryColor),
   };
 
   let tintColorFinal = tintColors[type];
@@ -86,10 +88,15 @@ const BpkNavigationBarTextButtonIOS = (props: Props) => {
     tintColorFinal = tintColor;
   }
 
+  const defaultTintColor = useBpkDynamicValue({
+    light: colorSkyGrayTint04,
+    dark: colorBlackTint03,
+  });
+
   const accessibilityStates = [];
   if (disabled) {
     accessibilityStates.push('disabled');
-    tintColorFinal = disabledTintColor || colorSkyGrayTint04;
+    tintColorFinal = disabledTintColor || defaultTintColor;
   }
 
   const titleStyle = [{ color: tintColorFinal }];

@@ -29,7 +29,10 @@ import { type UnpackedBpkDynamicValue } from './common-types';
  */
 const isBpkDynamicValue = (value: any): boolean %checks =>
   // %checks doesn't work unless we use double negation https://github.com/facebook/flow/issues/8194
-  value != null && typeof value === 'object' && !!value.light && !!value.dark;
+  value != null &&
+  typeof value === 'object' &&
+  Object.prototype.hasOwnProperty.call(value, 'light') &&
+  Object.prototype.hasOwnProperty.call(value, 'dark');
 
 /**
  * Takes in a `BpkDynamicValue` and returns the correct value for provided appearance.

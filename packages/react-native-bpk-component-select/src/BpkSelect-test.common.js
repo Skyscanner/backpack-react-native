@@ -22,6 +22,7 @@ import React from 'react';
 import { View } from 'react-native';
 import TestRenderer from 'react-test-renderer';
 import { spacingSm } from 'bpk-tokens/tokens/base.react.native';
+import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 
 import BpkSelect from './BpkSelect';
 
@@ -30,77 +31,85 @@ const FakeImage = 'Image';
 const commonTests = () => {
   describe('BpkSelect', () => {
     const emptyFn = () => null;
-    it('should render correctly', () => {
-      const testRenderer = TestRenderer.create(<BpkSelect onPress={emptyFn} />);
-      expect(testRenderer.toJSON()).toMatchSnapshot();
-    });
+    describeEachColorScheme(BpkSelect, WithColorScheme => {
+      it('should render correctly', () => {
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme onPress={emptyFn} />,
+        );
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
 
-    it('should render correctly with a text label', () => {
-      const testRenderer = TestRenderer.create(
-        <BpkSelect label="label" onPress={emptyFn} />,
-      );
-      expect(testRenderer.toJSON()).toMatchSnapshot();
-    });
+      it('should render correctly with a text label', () => {
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme label="label" onPress={emptyFn} />,
+        );
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
 
-    it('should render correctly with an element label', () => {
-      const testRenderer = TestRenderer.create(
-        <BpkSelect label={<View />} onPress={emptyFn} />,
-      );
-      expect(testRenderer.toJSON()).toMatchSnapshot();
-    });
+      it('should render correctly with an element label', () => {
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme label={<View />} onPress={emptyFn} />,
+        );
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
 
-    it('should render correctly with the disabled prop', () => {
-      const testRenderer = TestRenderer.create(
-        <BpkSelect disabled label="label" onPress={emptyFn} />,
-      );
-      expect(testRenderer.toJSON()).toMatchSnapshot();
-    });
+      it('should render correctly with the disabled prop', () => {
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme disabled label="label" onPress={emptyFn} />,
+        );
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
 
-    it('should render correctly with custom styles', () => {
-      const testRenderer = TestRenderer.create(
-        <BpkSelect
-          label="label"
-          onPress={emptyFn}
-          style={{ marginTop: spacingSm }}
-        />,
-      );
-      expect(testRenderer.toJSON()).toMatchSnapshot();
-    });
+      it('should render correctly with custom styles', () => {
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme
+            label="label"
+            onPress={emptyFn}
+            style={{ marginTop: spacingSm }}
+          />,
+        );
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
 
-    it('should render correctly with "showImage" and no image', () => {
-      const testRenderer = TestRenderer.create(
-        <BpkSelect onPress={emptyFn} showImage />,
-      );
-      expect(testRenderer.toJSON()).toMatchSnapshot();
-    });
+      it('should render correctly with "showImage" and no image', () => {
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme onPress={emptyFn} showImage />,
+        );
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
 
-    it('should render correctly with "showImage" and image', () => {
-      const testRenderer = TestRenderer.create(
-        // $FlowFixMe, imageComponent shouldnt be a string however react test renderer conveniently treats strings as custom components
-        <BpkSelect onPress={emptyFn} showImage image={<FakeImage />} />,
-      );
-      expect(testRenderer.toJSON()).toMatchSnapshot();
-    });
+      it('should render correctly with "showImage" and image', () => {
+        const testRenderer = TestRenderer.create(
+          // $FlowFixMe, imageComponent shouldnt be a string however react test renderer conveniently treats strings as custom components
+          <WithColorScheme onPress={emptyFn} showImage image={<FakeImage />} />,
+        );
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
 
-    it('should render correctly with "valid" true', () => {
-      const testRenderer = TestRenderer.create(
-        <BpkSelect onPress={emptyFn} valid />,
-      );
-      expect(testRenderer.toJSON()).toMatchSnapshot();
-    });
+      it('should render correctly with "valid" true', () => {
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme onPress={emptyFn} valid />,
+        );
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
 
-    it('should render correctly with "valid" false', () => {
-      const testRenderer = TestRenderer.create(
-        <BpkSelect onPress={emptyFn} valid={false} />,
-      );
-      expect(testRenderer.toJSON()).toMatchSnapshot();
-    });
+      it('should render correctly with "valid" false', () => {
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme onPress={emptyFn} valid={false} />,
+        );
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
 
-    it('should render correctly with "valid" false and a validation message', () => {
-      const testRenderer = TestRenderer.create(
-        <BpkSelect onPress={emptyFn} valid={false} validationMessage="Nope" />,
-      );
-      expect(testRenderer.toJSON()).toMatchSnapshot();
+      it('should render correctly with "valid" false and a validation message', () => {
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme
+            onPress={emptyFn}
+            valid={false}
+            validationMessage="Nope"
+          />,
+        );
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
     });
   });
 };

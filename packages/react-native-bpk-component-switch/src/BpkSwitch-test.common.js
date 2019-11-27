@@ -21,48 +21,52 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import BpkThemeProvider from 'react-native-bpk-theming';
+import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 
 import BpkSwitch from './BpkSwitch';
 
 const commonTests = () => {
   describe('BpkSwitch', () => {
-    // Currently necessary because of https://github.com/facebook/react-native/issues/16247
-    jest.spyOn(console, 'error').mockImplementation(() => jest.fn());
-    it('should render correctly', () => {
-      const tree = renderer.create(<BpkSwitch />).toJSON();
-      expect(tree).toMatchSnapshot();
-    });
+    describeEachColorScheme(BpkSwitch, WithColorScheme => {
+      // Currently necessary because of https://github.com/facebook/react-native/issues/16247
+      jest.spyOn(console, 'error').mockImplementation(() => jest.fn());
+      it('should render correctly', () => {
+        const tree = renderer.create(<WithColorScheme />).toJSON();
+        expect(tree).toMatchSnapshot();
+      });
 
-    it('should support the "value" prop', () => {
-      const tree = renderer.create(<BpkSwitch value />).toJSON();
-      expect(tree).toMatchSnapshot();
-    });
+      it('should support the "value" prop', () => {
+        const tree = renderer.create(<WithColorScheme value />).toJSON();
+        expect(tree).toMatchSnapshot();
+      });
 
-    it('should support theming', () => {
-      const theme = {
-        switchPrimaryColor: 'red',
-      };
-      const tree = renderer
-        .create(
-          <BpkThemeProvider theme={theme}>
-            <BpkSwitch value />
-          </BpkThemeProvider>,
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
-    });
+      it('should support theming', () => {
+        const theme = {
+          switchPrimaryColor: 'red',
+        };
+        const tree = renderer
+          .create(
+            <BpkThemeProvider theme={theme}>
+              <WithColorScheme value />
+            </BpkThemeProvider>,
+          )
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
 
-    it('should disable theming if the required attribute is omitted', () => {
-      const theme = {};
-      const tree = renderer
-        .create(
-          <BpkThemeProvider theme={theme}>
-            <BpkSwitch value />
-          </BpkThemeProvider>,
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
+      it('should disable theming if the required attribute is omitted', () => {
+        const theme = {};
+        const tree = renderer
+          .create(
+            <BpkThemeProvider theme={theme}>
+              <WithColorScheme value />
+            </BpkThemeProvider>,
+          )
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
     });
   });
 };
+
 export default commonTests;

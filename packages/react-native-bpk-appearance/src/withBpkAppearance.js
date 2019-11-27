@@ -38,7 +38,7 @@ const getDisplayName = Component =>
  * import React, { type Config } from 'react';
  * import { type WithBpkAppearanceInjectedProps, withBpkAppearance } from 'react-native-bpk-appearance';
  *
- * class MyComponent extends Component<{ ...Props, ...WithBpkAppearanceInjectedProps }> {
+ * class MyComponent extends Component<Props & WithBpkAppearanceInjectedProps> {
  *  render() {
  *    const { bpkAppearance, ...rest } = this.props;
  *    ....
@@ -51,7 +51,7 @@ const getDisplayName = Component =>
  * @returns {Component} the wrapped component with an extra `bpkAppearance` prop.
  */
 const withBpkAppearance = <Config>(
-  Component: AbstractComponent<{ ...Config, ...InjectedProps }>,
+  Component: AbstractComponent<{| ...$Exact<Config>, ...InjectedProps |}>,
 ): AbstractComponent<Config> => {
   // eslint-disable-next-line prettier/prettier
   const WithBpkAppearance = React.forwardRef((props, ref) => {

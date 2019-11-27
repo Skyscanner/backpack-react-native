@@ -20,7 +20,7 @@ exports[`Android BpkPicker should render correctly 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "backgroundColor": "rgba(17, 18, 54, 0.8)",
+        "backgroundColor": "rgba(0, 0, 0, 0.6)",
         "height": "100%",
         "left": 0,
         "position": "absolute",
@@ -222,7 +222,7 @@ exports[`Android BpkPicker should render correctly with a selected value 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "backgroundColor": "rgba(17, 18, 54, 0.8)",
+        "backgroundColor": "rgba(0, 0, 0, 0.6)",
         "height": "100%",
         "left": 0,
         "position": "absolute",

@@ -1,6 +1,520 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`iOS BpkNavigationBarTextButtonIOS should render correctly 1`] = `
+exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly 1`] = `
+<View
+  accessibilityLabel="Edit"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  clickable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "height": "100%",
+      "justifyContent": "center",
+      "marginEnd": 8,
+      "opacity": 1,
+      "zIndex": 2,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.12,
+        },
+        Object {},
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
+        ],
+      ]
+    }
+  >
+    Edit
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly disabled 1`] = `
+<View
+  accessibilityLabel="Done"
+  accessibilityRole="button"
+  accessibilityStates={
+    Array [
+      "disabled",
+    ]
+  }
+  accessible={true}
+  clickable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "height": "100%",
+      "justifyContent": "center",
+      "marginEnd": 8,
+      "opacity": 1,
+      "zIndex": 2,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.12,
+        },
+        Object {},
+        Array [
+          Object {
+            "color": "rgb(99, 99, 102)",
+          },
+        ],
+      ]
+    }
+  >
+    Done
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly emphasize 1`] = `
+<View
+  accessibilityLabel="Done"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  clickable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "height": "100%",
+      "justifyContent": "center",
+      "marginEnd": 8,
+      "opacity": 1,
+      "zIndex": 2,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.12,
+        },
+        Object {
+          "fontWeight": "600",
+        },
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
+        ],
+      ]
+    }
+  >
+    Done
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly leading configuration 1`] = `
+<View
+  accessibilityLabel="Cancel"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  clickable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "height": "100%",
+      "justifyContent": "center",
+      "marginStart": 8,
+      "opacity": 1,
+      "zIndex": 2,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.12,
+        },
+        Object {},
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
+        ],
+      ]
+    }
+  >
+    Cancel
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly with type="primary" 1`] = `
+<View
+  accessibilityLabel="Done"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  clickable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "height": "100%",
+      "justifyContent": "center",
+      "marginEnd": 8,
+      "opacity": 1,
+      "zIndex": 2,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.12,
+        },
+        Object {},
+        Array [
+          Object {
+            "color": "rgb(109, 159, 235)",
+          },
+        ],
+      ]
+    }
+  >
+    Done
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly with type="primary" and disabled 1`] = `
+<View
+  accessibilityLabel="Done"
+  accessibilityRole="button"
+  accessibilityStates={
+    Array [
+      "disabled",
+    ]
+  }
+  accessible={true}
+  clickable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "height": "100%",
+      "justifyContent": "center",
+      "marginEnd": 8,
+      "opacity": 1,
+      "zIndex": 2,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.12,
+        },
+        Object {},
+        Array [
+          Object {
+            "color": "rgb(99, 99, 102)",
+          },
+        ],
+      ]
+    }
+  >
+    Done
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkNavigationBarTextButtonIOS dark mode should respect "disabledTintColor" over "type" 1`] = `
+<View
+  accessibilityLabel="Done"
+  accessibilityRole="button"
+  accessibilityStates={
+    Array [
+      "disabled",
+    ]
+  }
+  accessible={true}
+  clickable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "height": "100%",
+      "justifyContent": "center",
+      "marginEnd": 8,
+      "opacity": 1,
+      "zIndex": 2,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.12,
+        },
+        Object {},
+        Array [
+          Object {
+            "color": "red",
+          },
+        ],
+      ]
+    }
+  >
+    Done
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkNavigationBarTextButtonIOS dark mode should respect "primaryTintColor" over "tintColor" if type="primary" 1`] = `
+<View
+  accessibilityLabel="Done"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  clickable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "height": "100%",
+      "justifyContent": "center",
+      "marginEnd": 8,
+      "opacity": 1,
+      "zIndex": 2,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.12,
+        },
+        Object {},
+        Array [
+          Object {
+            "color": "blue",
+          },
+        ],
+      ]
+    }
+  >
+    Done
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkNavigationBarTextButtonIOS dark mode should respect "tintColor" over "primaryTintColor" if type="default" 1`] = `
+<View
+  accessibilityLabel="Done"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  clickable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "height": "100%",
+      "justifyContent": "center",
+      "marginEnd": 8,
+      "opacity": 1,
+      "zIndex": 2,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.12,
+        },
+        Object {},
+        Array [
+          Object {
+            "color": "red",
+          },
+        ],
+      ]
+    }
+  >
+    Done
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkNavigationBarTextButtonIOS dark mode should respect "tintColor" over "type" 1`] = `
+<View
+  accessibilityLabel="Done"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  clickable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "height": "100%",
+      "justifyContent": "center",
+      "marginEnd": 8,
+      "opacity": 1,
+      "zIndex": 2,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.12,
+        },
+        Object {},
+        Array [
+          Object {
+            "color": "red",
+          },
+        ],
+      ]
+    }
+  >
+    Done
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly 1`] = `
 <View
   accessibilityLabel="Edit"
   accessibilityRole="button"
@@ -50,7 +564,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly 1`] = `
 </View>
 `;
 
-exports[`iOS BpkNavigationBarTextButtonIOS should render correctly disabled 1`] = `
+exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly disabled 1`] = `
 <View
   accessibilityLabel="Done"
   accessibilityRole="button"
@@ -104,7 +618,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly disabled 1`] 
 </View>
 `;
 
-exports[`iOS BpkNavigationBarTextButtonIOS should render correctly emphasize 1`] = `
+exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly emphasize 1`] = `
 <View
   accessibilityLabel="Done"
   accessibilityRole="button"
@@ -156,7 +670,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly emphasize 1`]
 </View>
 `;
 
-exports[`iOS BpkNavigationBarTextButtonIOS should render correctly leading configuration 1`] = `
+exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly leading configuration 1`] = `
 <View
   accessibilityLabel="Cancel"
   accessibilityRole="button"
@@ -206,7 +720,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly leading confi
 </View>
 `;
 
-exports[`iOS BpkNavigationBarTextButtonIOS should render correctly with type="primary" 1`] = `
+exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly with type="primary" 1`] = `
 <View
   accessibilityLabel="Done"
   accessibilityRole="button"
@@ -256,7 +770,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly with type="pr
 </View>
 `;
 
-exports[`iOS BpkNavigationBarTextButtonIOS should render correctly with type="primary" and disabled 1`] = `
+exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly with type="primary" and disabled 1`] = `
 <View
   accessibilityLabel="Done"
   accessibilityRole="button"
@@ -310,7 +824,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS should render correctly with type="pr
 </View>
 `;
 
-exports[`iOS BpkNavigationBarTextButtonIOS should respect "disabledTintColor" over "type" 1`] = `
+exports[`iOS BpkNavigationBarTextButtonIOS light mode should respect "disabledTintColor" over "type" 1`] = `
 <View
   accessibilityLabel="Done"
   accessibilityRole="button"
@@ -364,7 +878,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS should respect "disabledTintColor" ov
 </View>
 `;
 
-exports[`iOS BpkNavigationBarTextButtonIOS should respect "primaryTintColor" over "tintColor" if type="primary" 1`] = `
+exports[`iOS BpkNavigationBarTextButtonIOS light mode should respect "primaryTintColor" over "tintColor" if type="primary" 1`] = `
 <View
   accessibilityLabel="Done"
   accessibilityRole="button"
@@ -414,7 +928,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS should respect "primaryTintColor" ove
 </View>
 `;
 
-exports[`iOS BpkNavigationBarTextButtonIOS should respect "tintColor" over "primaryTintColor" if type="default" 1`] = `
+exports[`iOS BpkNavigationBarTextButtonIOS light mode should respect "tintColor" over "primaryTintColor" if type="default" 1`] = `
 <View
   accessibilityLabel="Done"
   accessibilityRole="button"
@@ -464,7 +978,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS should respect "tintColor" over "prim
 </View>
 `;
 
-exports[`iOS BpkNavigationBarTextButtonIOS should respect "tintColor" over "type" 1`] = `
+exports[`iOS BpkNavigationBarTextButtonIOS light mode should respect "tintColor" over "type" 1`] = `
 <View
   accessibilityLabel="Done"
   accessibilityRole="button"

@@ -26,12 +26,12 @@ export default (() => {
 
   const { width, height } = DeviceInfo.Dimensions.window;
 
-  // iPhone X and XS
+  // iPhone X, iPhone XS, iPhone 11 Pro
   if (width === 375 && height === 812) {
     return true;
   }
 
-  // iPhone XS Max and XR
+  // iPhone XS Max, iPhone XR, iPhone 11, iPhone 11 Pro Max
   if (width === 414 && height === 896) {
     return true;
   }

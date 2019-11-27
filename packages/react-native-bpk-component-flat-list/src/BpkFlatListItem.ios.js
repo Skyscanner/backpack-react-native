@@ -79,10 +79,9 @@ const dynamicStyles = BpkDynamicStyleSheet.create({
   },
 });
 
-class BpkFlatListItem extends React.PureComponent<{
-  ...FlatListItemProps,
-  ...WithBpkAppearanceInjectedProps,
-}> {
+class BpkFlatListItem extends React.PureComponent<
+  FlatListItemProps & WithBpkAppearanceInjectedProps,
+> {
   static propTypes = LIST_ITEM_PROP_TYPES;
 
   static defaultProps = LIST_ITEM_DEFAULT_PROPS;

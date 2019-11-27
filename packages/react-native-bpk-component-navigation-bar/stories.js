@@ -140,7 +140,7 @@ storiesOf('react-native-bpk-component-navigation-bar', module)
       leadingButton={backButton()}
       title="Backpack"
       subtitleView={
-        <BpkCard onPress={action('Card pressed')}>
+        <BpkCard onPress={action('Card pressed')} focused>
           <BpkText>Hello</BpkText>
         </BpkCard>
       }

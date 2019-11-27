@@ -1,6 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`iOS BpkPanel should render correctly 1`] = `
+exports[`iOS BpkPanel dark mode should render correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "rgb(29, 27, 32)",
+        "borderColor": null,
+        "borderRadius": 4,
+        "borderWidth": 0,
+      },
+      Object {
+        "padding": 16,
+      },
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.12,
+        },
+        Object {},
+      ]
+    }
+  >
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkPanel light mode should render correctly 1`] = `
 <View
   style={
     Array [

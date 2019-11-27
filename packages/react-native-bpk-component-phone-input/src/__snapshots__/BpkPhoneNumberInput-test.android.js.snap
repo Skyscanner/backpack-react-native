@@ -115,9 +115,12 @@ exports[`Android BpkPhoneNumberInput should render correctly 1`] = `
             Object {
               "fontSize": 16,
             },
-            Object {
-              "marginStart": 4,
-            },
+            Array [
+              Object {
+                "marginStart": 4,
+              },
+              null,
+            ],
           ]
         }
       >
@@ -144,6 +147,7 @@ exports[`Android BpkPhoneNumberInput should render correctly 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        placeholderTextColor="rgb(205, 205, 215)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -291,9 +295,14 @@ exports[`Android BpkPhoneNumberInput should render correctly with \`editable\` f
             Object {
               "fontSize": 16,
             },
-            Object {
-              "marginStart": 4,
-            },
+            Array [
+              Object {
+                "marginStart": 4,
+              },
+              Object {
+                "color": "rgb(221, 221, 229)",
+              },
+            ],
           ]
         }
       >
@@ -320,6 +329,7 @@ exports[`Android BpkPhoneNumberInput should render correctly with \`editable\` f
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        placeholderTextColor="rgb(205, 205, 215)"
         rejectResponderTermination={true}
         style={
           Array [

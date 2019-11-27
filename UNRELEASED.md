@@ -3,31 +3,45 @@
 > Place your changes below this line.
 
 
+<<<<<<< HEAD
 **Fixed**
 
 - react-native-bpk-component-text:
   - Disabled font scaling for REACT NATIVE in react-native-bpk-component-text
+=======
+**Fixed:**
+
+- react-native-bpk-appearance:
+  - Fix `withBpkAppearance` type definition.
+
+- react-native-bpk-component-picker:
+  - Changed the overlay/scrim colour on Android to match the underlying platform instead of using a colour token from Backpack.
+
+- react-native-bpk-component-switch:
+  - Fixed the 'off' colour on iOS to use `skyGreyTint06`.
+>>>>>>> upstream/master
 
 **Added:**
 
-- react-native-bpk-component-button-link:
+- react-native-bpk-component-progress:
   - Added dark mode support.
 
-- react-native-bpk-appearance:
-  - Allow top level dynamic values to be provided to `BpkDynamicStyleSheet`.
-  - `BpkStyleSheetNamedStyles` type is now being exported.
-  - Added `withBpkAppearance` HOC, `unpackBpkDynamicValue` and `unpackBpkDynamicStyle` methods.
-
-- react-native-bpk-component-card:
+- react-native-bpk-component-panel:
   - Added dark mode support.
 
-- react-native-bpk-component-flat-list:
+- react-native-bpk-component-spinner:
   - Added dark mode support.
 
-- react-native-bpk-component-horizontal-nav:
+- react-native-bpk-component-section-list:
   - Added dark mode support.
 
-- react-native-bpk-component-chip:
+- react-native-bpk-component-text-input:
+  - Added dark mode support.
+
+- react-native-bpk-component-select:
+  - Added dark mode support.
+
+- react-native-bpk-component-switch:
   - Added dark mode support.
 
 ## How to write a good changelog entry

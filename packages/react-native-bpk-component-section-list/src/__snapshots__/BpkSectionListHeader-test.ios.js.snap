@@ -1,6 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`iOS BpkSectionListHeader should render correctly 1`] = `
+exports[`iOS BpkSectionListHeader dark mode should render correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "rgb(44, 44, 46)",
+      "paddingHorizontal": 16,
+      "paddingVertical": 4,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.12,
+        },
+        Object {
+          "fontWeight": "600",
+        },
+        Object {
+          "color": "rgb(255, 255, 255)",
+        },
+      ]
+    }
+  >
+    Section header
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkSectionListHeader light mode should render correctly 1`] = `
 <View
   style={
     Object {
