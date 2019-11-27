@@ -29,7 +29,6 @@ import {
 import { setOpacity } from 'bpk-tokens';
 import {
   borderRadiusSm,
-  colorSkyGray,
   colorWhite,
   lineHeightBase,
   spacingBase,
@@ -44,6 +43,10 @@ import {
 
 const MAX_ROWS_TO_DISPLAY = 6;
 
+// To match the platform standard we mirror Android instead of using a
+// Backpack colour.
+const ANDROID_OVERLAY_COLOR = setOpacity('black', 0.6);
+
 const styles = StyleSheet.create({
   overlay: {
     left: 0,
@@ -51,7 +54,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 0,
     width: '100%',
-    backgroundColor: setOpacity(colorSkyGray, 0.8),
+    backgroundColor: ANDROID_OVERLAY_COLOR,
   },
   listWrapper: {
     flexDirection: 'row',
