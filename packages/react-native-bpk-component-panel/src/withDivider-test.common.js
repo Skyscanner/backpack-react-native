@@ -22,6 +22,7 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import renderer from 'react-test-renderer';
 import BpkText from 'react-native-bpk-component-text';
+import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 
 import BpkPanel from './BpkPanel';
 import withDivider from './withDivider';
@@ -38,14 +39,14 @@ const commonTests = () => {
       </BpkText>
     );
 
-    it('should render correctly', () => {
-      const tree = renderer
-        .create(
-          <BpkPanelWithDivider stub={content}>{content}</BpkPanelWithDivider>,
-        )
-        .toJSON();
+    describeEachColorScheme(BpkPanelWithDivider, WithColorScheme => {
+      it('should render correctly', () => {
+        const tree = renderer
+          .create(<WithColorScheme stub={content}>{content}</WithColorScheme>)
+          .toJSON();
 
-      expect(tree).toMatchSnapshot();
+        expect(tree).toMatchSnapshot();
+      });
     });
 
     it('should render correctly without padding', () => {
