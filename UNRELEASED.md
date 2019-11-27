@@ -1,6 +1,9 @@
 # Unreleased
 
 > Place your changes below this line.
+**Fixed:**
+ - react-native-bpk-component-spinner:
+   - Fix appearance of the primary spinner in dark mode.
 
 ## How to write a good changelog entry
 

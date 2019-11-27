@@ -21,64 +21,71 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import BpkThemeProvider from 'react-native-bpk-theming';
+import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 
 import BpkSpinner, { SPINNER_TYPES } from './BpkSpinner';
 
 const commonTests = () => {
   describe('BpkSpinner', () => {
-    it('should render correctly', () => {
-      const tree = renderer.create(<BpkSpinner />).toJSON();
-      expect(tree).toMatchSnapshot();
-    });
+    describeEachColorScheme(BpkSpinner, BpkSpinnerWithColorScheme => {
+      it('should render correctly', () => {
+        const tree = renderer.create(<BpkSpinnerWithColorScheme />).toJSON();
+        expect(tree).toMatchSnapshot();
+      });
 
-    it('should support the "small" property', () => {
-      const tree = renderer.create(<BpkSpinner small />).toJSON();
-      expect(tree).toMatchSnapshot();
-    });
-
-    Object.keys(SPINNER_TYPES).forEach(spinnerType => {
-      it(`should support type="${spinnerType}"`, () => {
+      it('should support the "small" property', () => {
         const tree = renderer
-          .create(<BpkSpinner type={spinnerType} />)
+          .create(<BpkSpinnerWithColorScheme small />)
           .toJSON();
         expect(tree).toMatchSnapshot();
       });
-    });
 
-    it('should throw an error for invalid spinner type', () => {
-      jest.spyOn(console, 'error').mockImplementation(() => jest.fn());
-      // Ignoring this false positive flow error.
-      // The test is asserting that our prop type works for non flow users.
-      // $FlowFixMe
-      expect(() => renderer.create(<BpkSpinner type="silly" />)).toThrow(
-        '"silly" is not a valid spinner type. Valid types are primary, light, dark',
-      );
-    });
+      Object.keys(SPINNER_TYPES).forEach(spinnerType => {
+        it(`should support type="${spinnerType}"`, () => {
+          const tree = renderer
+            .create(<BpkSpinnerWithColorScheme type={spinnerType} />)
+            .toJSON();
+          expect(tree).toMatchSnapshot();
+        });
+      });
 
-    it('should support theming', () => {
-      const theme = {
-        spinnerPrimaryColor: 'red',
-      };
-      const tree = renderer
-        .create(
-          <BpkThemeProvider theme={theme}>
-            <BpkSpinner type="primary" />
-          </BpkThemeProvider>,
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
-    });
+      it('should throw an error for invalid spinner type', () => {
+        jest.spyOn(console, 'error').mockImplementation(() => jest.fn());
+        // Ignoring this false positive flow error.
+        // The test is asserting that our prop type works for non flow users.
+        // $FlowFixMe
+        expect(() =>
+          renderer.create(<BpkSpinnerWithColorScheme type="silly" />),
+        ).toThrow(
+          '"silly" is not a valid spinner type. Valid types are primary, light, dark',
+        );
+      });
 
-    it('should disable theming if the required attribute is omitted', () => {
-      const theme = {};
-      const tree = renderer
-        .create(
-          <BpkThemeProvider theme={theme}>
-            <BpkSpinner />
-          </BpkThemeProvider>,
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
+      it('should support theming', () => {
+        const theme = {
+          spinnerPrimaryColor: 'red',
+        };
+        const tree = renderer
+          .create(
+            <BpkThemeProvider theme={theme}>
+              <BpkSpinnerWithColorScheme type="primary" />
+            </BpkThemeProvider>,
+          )
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
+
+      it('should disable theming if the required attribute is omitted', () => {
+        const theme = {};
+        const tree = renderer
+          .create(
+            <BpkThemeProvider theme={theme}>
+              <BpkSpinnerWithColorScheme />
+            </BpkThemeProvider>,
+          )
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
     });
   });
 };
