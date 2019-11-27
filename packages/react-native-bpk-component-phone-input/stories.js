@@ -18,12 +18,16 @@
 
 /* @flow */
 
-import React, { Component } from 'react';
+import React, { Component, useState, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import { Image, Modal, StyleSheet, View } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
-import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
+import {
+  spacingBase,
+  backgroundColor,
+} from 'bpk-tokens/tokens/base.react.native';
+import { useBpkDynamicValue } from 'react-native-bpk-appearance';
 
 import CenterDecorator from '../../storybook/CenterDecorator';
 
@@ -149,78 +153,72 @@ class StatefulBpkDialingCodeList extends React.Component<
   }
 }
 
+type FullyIntegratedProps = {
+  initiallySelectedId: Id,
+  codes: Array<Code>,
+};
+
 // eslint-disable-next-line react/no-multi-comp
-class FullyIntegrated extends React.Component<
-  { initiallySelectedId: Id, codes: Array<Code> },
-  { pickerOpen: boolean, selectedId: ?Id, phoneNumber: string },
-> {
-  constructor(props) {
-    super(props);
-    this.state = {
-      selectedId: props.initiallySelectedId,
-      pickerOpen: false,
-      phoneNumber: '',
-    };
-  }
+const FullyIntegrated = (props: FullyIntegratedProps) => {
+  const [selectedId, setSelectedId] = useState(props.initiallySelectedId);
+  const [pickerOpen, setPickerOpen] = useState(false);
+  const [phoneNumber, setPhoneNumber] = useState('');
 
-  onPhoneNumberChange = (value: string) => {
-    this.setState(() => ({ phoneNumber: value }));
-  };
+  const onPhoneNumberChange = useCallback((value: string) => {
+    setPhoneNumber(value);
+  }, []);
 
-  onItemPicked = (item: Code) => {
-    this.setState(() => ({
-      selectedId: item.id,
-      pickerOpen: false,
-    }));
-  };
+  const onItemPicked = useCallback((item: Code) => {
+    setPickerOpen(false);
+    setSelectedId(item.id);
+  }, []);
 
-  openPicker = () => {
-    this.setState(() => ({
-      pickerOpen: true,
-    }));
-  };
+  const openPicker = useCallback(() => {
+    setPickerOpen(true);
+  }, []);
 
-  closePicker = () => {
-    this.setState(() => ({
-      pickerOpen: false,
-    }));
-  };
+  const closePicker = useCallback(() => {
+    setPickerOpen(false);
+  }, []);
 
-  renderFlag = item => (
-    // eslint-disable-next-line backpack/use-components
-    <Image source={{ uri: getFlagUriFromCountryCode(item.id) }} />
+  const renderFlag = useCallback(
+    item => (
+      // eslint-disable-next-line backpack/use-components
+      <Image source={{ uri: getFlagUriFromCountryCode(item.id) }} />
+    ),
+    [],
   );
 
-  render() {
-    return (
-      <View style={styles.fullOuter}>
-        <Modal
-          visible={this.state.pickerOpen}
-          animationType="slide"
-          onRequestClose={this.closePicker}
-        >
+  const modalBackground = useBpkDynamicValue(backgroundColor);
+
+  return (
+    <View style={styles.fullOuter}>
+      <Modal
+        visible={pickerOpen}
+        animationType="slide"
+        onRequestClose={closePicker}
+      >
+        <View style={{ backgroundColor: modalBackground }}>
           <BpkDialingCodeList
-            dialingCodes={this.props.codes}
-            onItemPress={this.onItemPicked}
-            renderFlag={this.renderFlag}
-            selectedId={this.state.selectedId}
+            dialingCodes={props.codes}
+            onItemPress={onItemPicked}
+            renderFlag={renderFlag}
+            selectedId={selectedId}
           />
-        </Modal>
-        <BpkPhoneNumberInput
-          label="Phone number"
-          value={this.state.phoneNumber}
-          onDialingCodePress={this.openPicker}
-          // $FlowFixMe, because this is a story :/
-          dialingCode={this.props.codes.find(
-            code => code.id === this.state.selectedId,
-          )}
-          renderFlag={this.renderFlag}
-          onChangeText={this.onPhoneNumberChange}
-        />
-      </View>
-    );
-  }
-}
+        </View>
+      </Modal>
+      <BpkPhoneNumberInput
+        label="Phone number"
+        value={phoneNumber}
+        onDialingCodePress={openPicker}
+        // $FlowFixMe, because this is a story :/
+        dialingCode={props.codes.find(code => code.id === selectedId)}
+        renderFlag={renderFlag}
+        onChangeText={onPhoneNumberChange}
+      />
+    </View>
+  );
+};
 
 storiesOf('react-native-bpk-component-phone-input/Integrated', module).add(
   'Full component example',
