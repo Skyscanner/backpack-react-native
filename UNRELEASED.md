@@ -5,7 +5,6 @@
 
 **Fixed**
 
-
 - react-native-bpk-component-text:
   - Disabled font multiplier REACT NATIVE components in react-native-bpk-component-text
 
