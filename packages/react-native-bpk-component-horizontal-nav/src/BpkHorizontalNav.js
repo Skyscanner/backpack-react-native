@@ -18,12 +18,7 @@
 
 /* @flow */
 
-import {
-  I18nManager,
-  ScrollView,
-  View,
-  ViewPropTypes,
-} from 'react-native';
+import { I18nManager, ScrollView, View, ViewPropTypes } from 'react-native';
 import React, { type Node, type ElementProps, type Config } from 'react';
 import PropTypes from 'prop-types';
 import { lineColor, borderSizeSm } from 'bpk-tokens/tokens/base.react.native';
@@ -85,10 +80,10 @@ type State = {
 const defaultProps = {
   spaceAround: false,
   style: null,
-}
+};
 
 class BpkHorizontalNav extends React.Component<
-  { ...Props, ...WithBpkAppearanceInjectedProps },
+  Props & WithBpkAppearanceInjectedProps,
   State,
 > {
   static propTypes = {
@@ -202,4 +197,5 @@ class BpkHorizontalNav extends React.Component<
   }
 }
 
-export default withBpkAppearance<Config<Props, typeof defaultProps>>(BpkHorizontalNav); // eslint-disable-line prettier/prettier
+type PropsConfig = Config<Props, typeof defaultProps>;
+export default withBpkAppearance<PropsConfig>(BpkHorizontalNav); // eslint-disable-line prettier/prettier

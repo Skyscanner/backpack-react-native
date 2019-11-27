@@ -127,7 +127,7 @@ export type Props = {
   style: ViewStyleProp,
 };
 
-type EnhancedProps = { ...Props, ...WithBpkAppearanceInjectedProps };
+type EnhancedProps = Props & WithBpkAppearanceInjectedProps;
 
 class BpkNavigationBar extends Component<EnhancedProps, {}> {
   theme: ?IOSTheme;
