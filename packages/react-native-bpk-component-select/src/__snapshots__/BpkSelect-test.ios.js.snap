@@ -1,6 +1,958 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`iOS BpkSelect should render correctly 1`] = `
+exports[`iOS BpkSelect dark mode should render correctly 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  clickable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={null}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(68, 69, 96)",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingVertical": 4,
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            null,
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "bottom": 0,
+          "flex": 1,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`iOS BpkSelect dark mode should render correctly with "showImage" and image 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  clickable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={null}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(68, 69, 96)",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingVertical": 4,
+        },
+      ]
+    }
+  >
+    <Image
+      style={
+        Array [
+          undefined,
+          Array [
+            Object {
+              "backgroundColor": "rgb(29, 27, 32)",
+              "height": 12,
+              "marginEnd": 8,
+              "width": 16,
+            },
+          ],
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            null,
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "bottom": 0,
+          "flex": 1,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`iOS BpkSelect dark mode should render correctly with "showImage" and no image 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  clickable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={null}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(68, 69, 96)",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingVertical": 4,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(29, 27, 32)",
+            "height": 12,
+            "marginEnd": 8,
+            "width": 16,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            null,
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "bottom": 0,
+          "flex": 1,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`iOS BpkSelect dark mode should render correctly with "valid" false 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  clickable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={null}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(68, 69, 96)",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingVertical": 4,
+        },
+        Object {
+          "borderColor": "rgb(209, 67, 91)",
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            Object {
+              "color": "rgb(209, 67, 91)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            null,
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "bottom": 0,
+          "flex": 1,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`iOS BpkSelect dark mode should render correctly with "valid" false and a validation message 1`] = `
+<View>
+  <View
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    clickable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={null}
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "rgb(68, 69, 96)",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingVertical": 4,
+          },
+          Object {
+            "borderColor": "rgb(209, 67, 91)",
+          },
+        ]
+      }
+    >
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "BpkIcon",
+              "fontSize": 24,
+              "includeFontPadding": false,
+            },
+            Object {
+              "fontSize": 16,
+            },
+            Array [
+              Object {
+                "marginStart": 4,
+              },
+              Object {
+                "color": "rgb(209, 67, 91)",
+              },
+            ],
+          ]
+        }
+      >
+        
+      </Text>
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "BpkIcon",
+              "fontSize": 24,
+              "includeFontPadding": false,
+            },
+            Object {
+              "fontSize": 16,
+            },
+            Array [
+              Object {
+                "marginStart": 4,
+              },
+              null,
+            ],
+          ]
+        }
+      >
+        
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
+      }
+    />
+  </View>
+  <Text
+    allowFontScaling={false}
+    maxFontSizeMultiplier={3.2}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "System",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 0,
+        },
+        Object {},
+        Object {
+          "color": "rgb(209, 67, 91)",
+          "paddingTop": 4,
+        },
+      ]
+    }
+  >
+    Nope
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkSelect dark mode should render correctly with "valid" true 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  clickable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={null}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(68, 69, 96)",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingVertical": 4,
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            Object {
+              "color": "rgb(0, 166, 152)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            null,
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "bottom": 0,
+          "flex": 1,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`iOS BpkSelect dark mode should render correctly with a text label 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  clickable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={null}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(68, 69, 96)",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingVertical": 4,
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      maxFontSizeMultiplier={3.2}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {},
+          Array [
+            Object {
+              "marginEnd": "auto",
+            },
+            false,
+          ],
+        ]
+      }
+    >
+      label
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            null,
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "bottom": 0,
+          "flex": 1,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`iOS BpkSelect dark mode should render correctly with an element label 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  clickable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={null}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(68, 69, 96)",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingVertical": 4,
+        },
+      ]
+    }
+  >
+    <View />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            null,
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "bottom": 0,
+          "flex": 1,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`iOS BpkSelect dark mode should render correctly with custom styles 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  clickable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "marginTop": 4,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(68, 69, 96)",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingVertical": 4,
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      maxFontSizeMultiplier={3.2}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {},
+          Array [
+            Object {
+              "marginEnd": "auto",
+            },
+            false,
+          ],
+        ]
+      }
+    >
+      label
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            null,
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "bottom": 0,
+          "flex": 1,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`iOS BpkSelect dark mode should render correctly with the disabled prop 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityStates={
+    Array [
+      "disabled",
+    ]
+  }
+  accessible={true}
+  clickable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={null}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(68, 69, 96)",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingVertical": 4,
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      maxFontSizeMultiplier={3.2}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {},
+          Array [
+            Object {
+              "marginEnd": "auto",
+            },
+            Array [
+              Object {
+                "color": "rgb(99, 99, 102)",
+              },
+            ],
+          ],
+        ]
+      }
+    >
+      label
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            Object {
+              "color": "rgb(99, 99, 102)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "bottom": 0,
+          "flex": 1,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`iOS BpkSelect light mode should render correctly 1`] = `
 <View
   accessibilityRole="button"
   accessibilityStates={Array []}
@@ -42,9 +994,12 @@ exports[`iOS BpkSelect should render correctly 1`] = `
           Object {
             "fontSize": 16,
           },
-          Object {
-            "marginStart": 4,
-          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            null,
+          ],
         ]
       }
     >
@@ -70,7 +1025,7 @@ exports[`iOS BpkSelect should render correctly 1`] = `
 </View>
 `;
 
-exports[`iOS BpkSelect should render correctly with "showImage" and image 1`] = `
+exports[`iOS BpkSelect light mode should render correctly with "showImage" and image 1`] = `
 <View
   accessibilityRole="button"
   accessibilityStates={Array []}
@@ -127,9 +1082,12 @@ exports[`iOS BpkSelect should render correctly with "showImage" and image 1`] = 
           Object {
             "fontSize": 16,
           },
-          Object {
-            "marginStart": 4,
-          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            null,
+          ],
         ]
       }
     >
@@ -155,7 +1113,7 @@ exports[`iOS BpkSelect should render correctly with "showImage" and image 1`] = 
 </View>
 `;
 
-exports[`iOS BpkSelect should render correctly with "showImage" and no image 1`] = `
+exports[`iOS BpkSelect light mode should render correctly with "showImage" and no image 1`] = `
 <View
   accessibilityRole="button"
   accessibilityStates={Array []}
@@ -209,9 +1167,12 @@ exports[`iOS BpkSelect should render correctly with "showImage" and no image 1`]
           Object {
             "fontSize": 16,
           },
-          Object {
-            "marginStart": 4,
-          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            null,
+          ],
         ]
       }
     >
@@ -237,7 +1198,7 @@ exports[`iOS BpkSelect should render correctly with "showImage" and no image 1`]
 </View>
 `;
 
-exports[`iOS BpkSelect should render correctly with "valid" false 1`] = `
+exports[`iOS BpkSelect light mode should render correctly with "valid" false 1`] = `
 <View
   accessibilityRole="button"
   accessibilityStates={Array []}
@@ -308,9 +1269,12 @@ exports[`iOS BpkSelect should render correctly with "valid" false 1`] = `
           Object {
             "fontSize": 16,
           },
-          Object {
-            "marginStart": 4,
-          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            null,
+          ],
         ]
       }
     >
@@ -336,7 +1300,7 @@ exports[`iOS BpkSelect should render correctly with "valid" false 1`] = `
 </View>
 `;
 
-exports[`iOS BpkSelect should render correctly with "valid" false and a validation message 1`] = `
+exports[`iOS BpkSelect light mode should render correctly with "valid" false and a validation message 1`] = `
 <View>
   <View
     accessibilityRole="button"
@@ -408,9 +1372,12 @@ exports[`iOS BpkSelect should render correctly with "valid" false and a validati
             Object {
               "fontSize": 16,
             },
-            Object {
-              "marginStart": 4,
-            },
+            Array [
+              Object {
+                "marginStart": 4,
+              },
+              null,
+            ],
           ]
         }
       >
@@ -459,7 +1426,7 @@ exports[`iOS BpkSelect should render correctly with "valid" false and a validati
 </View>
 `;
 
-exports[`iOS BpkSelect should render correctly with "valid" true 1`] = `
+exports[`iOS BpkSelect light mode should render correctly with "valid" true 1`] = `
 <View
   accessibilityRole="button"
   accessibilityStates={Array []}
@@ -527,9 +1494,12 @@ exports[`iOS BpkSelect should render correctly with "valid" true 1`] = `
           Object {
             "fontSize": 16,
           },
-          Object {
-            "marginStart": 4,
-          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            null,
+          ],
         ]
       }
     >
@@ -555,7 +1525,7 @@ exports[`iOS BpkSelect should render correctly with "valid" true 1`] = `
 </View>
 `;
 
-exports[`iOS BpkSelect should render correctly with a text label 1`] = `
+exports[`iOS BpkSelect light mode should render correctly with a text label 1`] = `
 <View
   accessibilityRole="button"
   accessibilityStates={Array []}
@@ -621,9 +1591,12 @@ exports[`iOS BpkSelect should render correctly with a text label 1`] = `
           Object {
             "fontSize": 16,
           },
-          Object {
-            "marginStart": 4,
-          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            null,
+          ],
         ]
       }
     >
@@ -649,7 +1622,7 @@ exports[`iOS BpkSelect should render correctly with a text label 1`] = `
 </View>
 `;
 
-exports[`iOS BpkSelect should render correctly with an element label 1`] = `
+exports[`iOS BpkSelect light mode should render correctly with an element label 1`] = `
 <View
   accessibilityRole="button"
   accessibilityStates={Array []}
@@ -692,9 +1665,12 @@ exports[`iOS BpkSelect should render correctly with an element label 1`] = `
           Object {
             "fontSize": 16,
           },
-          Object {
-            "marginStart": 4,
-          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            null,
+          ],
         ]
       }
     >
@@ -720,7 +1696,7 @@ exports[`iOS BpkSelect should render correctly with an element label 1`] = `
 </View>
 `;
 
-exports[`iOS BpkSelect should render correctly with custom styles 1`] = `
+exports[`iOS BpkSelect light mode should render correctly with custom styles 1`] = `
 <View
   accessibilityRole="button"
   accessibilityStates={Array []}
@@ -790,9 +1766,12 @@ exports[`iOS BpkSelect should render correctly with custom styles 1`] = `
           Object {
             "fontSize": 16,
           },
-          Object {
-            "marginStart": 4,
-          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            null,
+          ],
         ]
       }
     >
@@ -818,7 +1797,7 @@ exports[`iOS BpkSelect should render correctly with custom styles 1`] = `
 </View>
 `;
 
-exports[`iOS BpkSelect should render correctly with the disabled prop 1`] = `
+exports[`iOS BpkSelect light mode should render correctly with the disabled prop 1`] = `
 <View
   accessibilityRole="button"
   accessibilityStates={
@@ -892,9 +1871,14 @@ exports[`iOS BpkSelect should render correctly with the disabled prop 1`] = `
           Object {
             "fontSize": 16,
           },
-          Object {
-            "marginStart": 4,
-          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            Object {
+              "color": "rgb(221, 221, 229)",
+            },
+          ],
         ]
       }
     >

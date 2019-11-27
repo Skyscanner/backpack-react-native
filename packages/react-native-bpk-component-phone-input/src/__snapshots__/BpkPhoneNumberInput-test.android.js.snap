@@ -116,9 +116,12 @@ exports[`Android BpkPhoneNumberInput should render correctly 1`] = `
             Object {
               "fontSize": 16,
             },
-            Object {
-              "marginStart": 4,
-            },
+            Array [
+              Object {
+                "marginStart": 4,
+              },
+              null,
+            ],
           ]
         }
       >
@@ -294,9 +297,14 @@ exports[`Android BpkPhoneNumberInput should render correctly with \`editable\` f
             Object {
               "fontSize": 16,
             },
-            Object {
-              "marginStart": 4,
-            },
+            Array [
+              Object {
+                "marginStart": 4,
+              },
+              Object {
+                "color": "rgb(221, 221, 229)",
+              },
+            ],
           ]
         }
       >

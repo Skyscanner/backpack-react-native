@@ -19,15 +19,20 @@
 /* @flow */
 
 import React from 'react';
-import { StyleSheet } from 'react-native';
 import BpkIcon, { icons } from 'react-native-bpk-component-icon';
 import {
   colorPanjin,
   colorMonteverde,
   spacingSm,
+  colorSkyGrayTint06,
+  colorBlackTint03,
 } from 'bpk-tokens/tokens/base.react.native';
+import {
+  BpkDynamicStyleSheet,
+  useBpkDynamicStyleSheet,
+} from 'react-native-bpk-appearance';
 
-const styles = StyleSheet.create({
+const dynamicStyles = BpkDynamicStyleSheet.create({
   icon: {
     marginStart: spacingSm,
   },
@@ -37,22 +42,46 @@ const styles = StyleSheet.create({
   invalid: {
     color: colorPanjin,
   },
+  iconDisabled: {
+    color: { light: colorSkyGrayTint06, dark: colorBlackTint03 },
+  },
 });
 
-const ValidIcon = () => (
-  <BpkIcon icon={icons.tick} small style={[styles.icon, styles.valid]} />
-);
+const ValidIcon = () => {
+  const styles = useBpkDynamicStyleSheet(dynamicStyles);
+  return (
+    <BpkIcon icon={icons.tick} small style={[styles.icon, styles.valid]} />
+  );
+};
 
-const InvalidIcon = () => (
-  <BpkIcon
-    icon={icons['exclamation-circle']}
-    small
-    style={[styles.icon, styles.invalid]}
-  />
-);
+const InvalidIcon = () => {
+  const styles = useBpkDynamicStyleSheet(dynamicStyles);
+  return (
+    <BpkIcon
+      icon={icons['exclamation-circle']}
+      small
+      style={[styles.icon, styles.invalid]}
+    />
+  );
+};
 
-const SelectIcon = () => (
-  <BpkIcon style={styles.icon} icon={icons['arrow-down']} small />
-);
+type SelectIconProps = {
+  disabled: boolean,
+};
+
+const SelectIcon = ({ disabled }: SelectIconProps) => {
+  const styles = useBpkDynamicStyleSheet(dynamicStyles);
+  return (
+    <BpkIcon
+      style={[styles.icon, disabled ? styles.iconDisabled : null]}
+      icon={icons['arrow-down']}
+      small
+    />
+  );
+};
+
+SelectIcon.defaultProps = {
+  disabled: false,
+};
 
 export { ValidIcon, InvalidIcon, SelectIcon };
