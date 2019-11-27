@@ -145,6 +145,7 @@ exports[`Android BpkPhoneNumberInput should render correctly 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        placeholderTextColor="rgb(205, 205, 215)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -322,6 +323,7 @@ exports[`Android BpkPhoneNumberInput should render correctly with \`editable\` f
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
+        placeholderTextColor="rgb(205, 205, 215)"
         rejectResponderTermination={true}
         style={
           Array [

@@ -22,11 +22,14 @@ import { StyleSheet, I18nManager } from 'react-native';
 import AnimatedValue from 'react-native/Libraries/Animated/src/nodes/AnimatedValue';
 import {
   borderSizeSm,
-  colorSkyBlue,
+  primaryColor,
+  lineDarkColor,
+  colorBlackTint03,
   colorSkyGrayTint06,
+  colorSkyGrayTint05,
   colorSkyGrayTint04,
-  colorSkyGrayTint02,
-  colorSkyGray,
+  textSecondaryColor,
+  textPrimaryColor,
   colorPanjin,
   fontFamily,
   spacingMd,
@@ -38,6 +41,21 @@ import {
   textSmFontSize,
   textSmFontWeight,
 } from 'bpk-tokens/tokens/base.react.native';
+import {
+  BpkDynamicStyleSheet,
+  unpackBpkDynamicValue,
+  type BpkAppearancePreferences,
+  type BpkDynamicStyleProp,
+  type BpkDynamicValue,
+} from 'react-native-bpk-appearance';
+
+const disabledColor = { light: colorSkyGrayTint06, dark: colorBlackTint03 };
+const notFocusedColor = colorSkyGrayTint04;
+const underlineColor = { light: colorSkyGrayTint06, dark: lineDarkColor };
+const placeholderColor = {
+  light: colorSkyGrayTint05,
+  dark: colorSkyGrayTint04,
+};
 
 const INPUT_RANGE = [0, 1];
 
@@ -57,7 +75,7 @@ const SMALL_LABEL_TYPOGRAPHY: LabelTypography = {
 // To increase the vertical spacing a bit.
 const minHeight = lineHeightBase + spacingMd;
 
-const styles = StyleSheet.create({
+const styles = BpkDynamicStyleSheet.create({
   rowContainer: {
     flexDirection: 'row',
     paddingTop: lineHeightSm,
@@ -69,7 +87,7 @@ const styles = StyleSheet.create({
     minHeight,
     fontSize: textBaseFontSize,
     fontWeight: textBaseFontWeight,
-    color: colorSkyGray,
+    color: textPrimaryColor,
     borderBottomWidth: 0,
     textAlign: I18nManager.isRTL ? 'right' : 'left',
   },
@@ -78,10 +96,15 @@ const styles = StyleSheet.create({
     paddingTop: spacingSm,
   },
   description: {
-    color: colorSkyGrayTint02,
+    color: textSecondaryColor,
     paddingTop: spacingSm,
   },
 });
+
+const getStyles = (
+  bpkAppearance: BpkAppearancePreferences,
+  // $FlowFixMe
+): BpkDynamicStyleProp<any> => unpackBpkDynamicValue(styles, bpkAppearance);
 
 // Created in a separate StyleSheet as they are not exported.
 const animatedStyles = StyleSheet.create({
@@ -105,14 +128,17 @@ const getLabelColorValue = (
   valid: ?boolean,
   editable: boolean,
   hasAccessoryView: boolean,
+  bpkAppearance: BpkAppearancePreferences,
 ) => {
   if (!editable) {
-    return colorSkyGrayTint06;
+    return unpackBpkDynamicValue(disabledColor, bpkAppearance);
   }
   if (!value && !hasAccessoryView) {
-    return colorSkyGrayTint04;
+    return unpackBpkDynamicValue(notFocusedColor, bpkAppearance);
   }
-  return valid === false ? colorPanjin : colorSkyGrayTint02;
+  return valid === false
+    ? colorPanjin
+    : unpackBpkDynamicValue(textSecondaryColor, bpkAppearance);
 };
 
 const getLabelPosition = (hasAccessoryView: boolean): number =>
@@ -137,15 +163,22 @@ const getLabelStyle = (
     editable: boolean,
     hasAccessoryView: boolean,
   },
-  focusedColor: String = colorSkyBlue,
+  focusedColor: string | BpkDynamicValue<string> = primaryColor,
+  bpkAppearance: BpkAppearancePreferences,
 ) => {
   const labelTypography = getLabelTypography(hasAccessoryView);
   const animatedStyle = {
     color: animatedColorValue.interpolate({
       inputRange: INPUT_RANGE,
       outputRange: [
-        getLabelColorValue(value, valid, editable, hasAccessoryView),
-        focusedColor,
+        getLabelColorValue(
+          value,
+          valid,
+          editable,
+          hasAccessoryView,
+          bpkAppearance,
+        ),
+        unpackBpkDynamicValue(focusedColor, bpkAppearance),
       ],
     }),
     top: animatedLabelValue.interpolate({
@@ -175,14 +208,21 @@ const getInputContainerStyle = (
   animatedColorValue: AnimatedValue,
   hasAccessoryView: boolean,
   valid: ?boolean,
-  focusedColor: String = colorSkyBlue,
+  focusedColor: string | BpkDynamicValue<string> = primaryColor,
+  bpkAppearance: BpkAppearancePreferences,
 ) => {
   const underlineColorValue =
-    valid === false ? colorPanjin : colorSkyGrayTint06;
+    valid === false
+      ? colorPanjin
+      : unpackBpkDynamicValue(underlineColor, bpkAppearance);
+
   const animatedStyle = {
     borderBottomColor: animatedColorValue.interpolate({
       inputRange: INPUT_RANGE,
-      outputRange: [underlineColorValue, focusedColor],
+      outputRange: [
+        underlineColorValue,
+        unpackBpkDynamicValue(focusedColor, bpkAppearance),
+      ],
     }),
   };
   const result = [animatedStyles.inputContainer, animatedStyle];
@@ -193,4 +233,15 @@ const getInputContainerStyle = (
   return result;
 };
 
-export { getLabelStyle, getInputContainerStyle, styles };
+const getPlaceholderColor = (bpkAppearance: BpkAppearancePreferences) =>
+  unpackBpkDynamicValue<typeof textSecondaryColor>(
+    placeholderColor,
+    bpkAppearance,
+  ); // eslint-disable-line prettier/prettier
+
+export {
+  getLabelStyle,
+  getInputContainerStyle,
+  getPlaceholderColor,
+  getStyles,
+};
