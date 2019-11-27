@@ -27,6 +27,7 @@ import {
   withTheme,
   type Theme,
 } from 'react-native-bpk-theming';
+import { useBpkDynamicValue } from 'react-native-bpk-appearance';
 import {
   colorSkyBlue,
   colorWhite,
@@ -45,7 +46,10 @@ const REQUIRED_THEME_ATTRIBUTES = ['spinnerPrimaryColor'];
 
 const getSpinnerColor = (themeAttributes: ?Object, type: SpinnerType) => {
   const colorMappings = {
-    [SPINNER_TYPES.primary]: colorSkyBlue,
+    [SPINNER_TYPES.primary]: useBpkDynamicValue({
+      light: colorSkyBlue,
+      dark: colorWhite,
+    }),
     [SPINNER_TYPES.light]: colorWhite,
     [SPINNER_TYPES.dark]: colorSkyGrayTint01,
   };
