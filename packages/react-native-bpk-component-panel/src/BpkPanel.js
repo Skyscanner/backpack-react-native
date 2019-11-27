@@ -21,20 +21,25 @@
 import React, { type Node } from 'react';
 import PropTypes from 'prop-types';
 import {
+  backgroundSecondaryDarkColor,
   colorWhite,
   colorSkyGrayTint06,
   spacingBase,
   borderSizeSm,
   borderRadiusSm,
 } from 'bpk-tokens/tokens/base.react.native';
-import { StyleSheet, View, ViewPropTypes } from 'react-native';
+import { View, ViewPropTypes } from 'react-native';
+import {
+  BpkDynamicStyleSheet,
+  useBpkDynamicStyleSheet,
+} from 'react-native-bpk-appearance';
 
-const styles = StyleSheet.create({
+const dynamicStyles = BpkDynamicStyleSheet.create({
   panel: {
-    backgroundColor: colorWhite,
+    backgroundColor: { light: colorWhite, dark: backgroundSecondaryDarkColor },
     borderRadius: borderRadiusSm,
-    borderWidth: borderSizeSm,
-    borderColor: colorSkyGrayTint06,
+    borderWidth: { light: borderSizeSm, dark: borderSizeSm },
+    borderColor: { light: colorSkyGrayTint06, dark: null },
   },
   panelPadded: {
     padding: spacingBase,
@@ -50,6 +55,7 @@ export type Props = {
 const BpkPanel = (props: Props) => {
   const { padded, children, style, ...rest } = props;
 
+  const styles = useBpkDynamicStyleSheet(dynamicStyles);
   const panelStyle = [styles.panel];
 
   if (padded) {

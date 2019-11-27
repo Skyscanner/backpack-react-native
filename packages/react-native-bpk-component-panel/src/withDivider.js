@@ -20,15 +20,20 @@
 
 import PropTypes from 'prop-types';
 import React, { type ComponentType, type Node } from 'react';
-import { View, StyleSheet, ViewPropTypes } from 'react-native';
+import { View, ViewPropTypes } from 'react-native';
 import {
   colorSkyGrayTint06,
+  lineDarkColor,
   spacingBase,
 } from 'bpk-tokens/tokens/base.react.native';
+import {
+  BpkDynamicStyleSheet,
+  useBpkDynamicStyleSheet,
+} from 'react-native-bpk-appearance';
 
 import BpkPanel, { type Props as BpkPanelProps } from './BpkPanel';
 
-const styles = StyleSheet.create({
+const dynamicStyles = BpkDynamicStyleSheet.create({
   panel: {
     flexDirection: 'row',
   },
@@ -43,12 +48,15 @@ const styles = StyleSheet.create({
     flex: null,
   },
   panelMainPadded: {
-    padding: spacingBase,
+    paddingRight: spacingBase,
+  },
+  panelMainPaddedVertical: {
+    paddingBottom: spacingBase,
   },
   panelPunchline: {
     width: 1, // eslint-disable-line backpack/use-tokens
     flexDirection: 'column',
-    backgroundColor: colorSkyGrayTint06,
+    backgroundColor: { light: colorSkyGrayTint06, dark: lineDarkColor },
   },
   panelPunchlineVertical: {
     width: null,
@@ -63,7 +71,10 @@ const styles = StyleSheet.create({
     flex: null,
   },
   panelStubPadded: {
-    padding: spacingBase,
+    paddingLeft: spacingBase,
+  },
+  panelStubPaddedVertical: {
+    paddingTop: spacingBase,
   },
 });
 
@@ -88,14 +99,19 @@ const withDivider = (PanelComponent: ComponentType<BpkPanelProps>) => {
       ...rest
     } = props;
 
+    const styles = useBpkDynamicStyleSheet(dynamicStyles);
     const panelStyle = [styles.panel];
     const mainStyle = [styles.panelMain];
     const punchlineStyle = [styles.panelPunchline];
     const stubStyle = [styles.panelStub];
 
     if (padded) {
-      mainStyle.push(styles.panelMainPadded);
-      stubStyle.push(styles.panelStubPadded);
+      mainStyle.push(
+        vertical ? styles.panelMainPaddedVertical : styles.panelMainPadded,
+      );
+      stubStyle.push(
+        vertical ? styles.panelStubPaddedVertical : styles.panelStubPadded,
+      );
     }
     if (vertical) {
       panelStyle.push(styles.panelVertical);

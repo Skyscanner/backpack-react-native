@@ -1,6 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Android BpkPanel should render correctly 1`] = `
+exports[`Android BpkPanel dark mode should render correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "rgb(29, 27, 32)",
+        "borderColor": null,
+        "borderRadius": 4,
+        "borderWidth": 1,
+      },
+      Object {
+        "padding": 16,
+      },
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    maxFontSizeMultiplier={3.2}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "sans-serif",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": -0.2,
+        },
+        Object {},
+      ]
+    }
+  >
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  </Text>
+</View>
+`;
+
+exports[`Android BpkPanel light mode should render correctly 1`] = `
 <View
   style={
     Array [
