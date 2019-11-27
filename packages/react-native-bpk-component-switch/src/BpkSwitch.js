@@ -28,14 +28,16 @@ import {
 } from 'react-native-bpk-theming';
 import {
   colorSkyBlue,
+  colorBlackTint01,
   colorSkyGrayTint06,
   colorSkyGrayTint07,
 } from 'bpk-tokens/tokens/base.react.native';
+import { useBpkDynamicValue } from 'react-native-bpk-appearance';
 import { setOpacity } from 'bpk-tokens';
 
 const REQUIRED_THEME_ATTRIBUTES = ['switchPrimaryColor'];
 
-const getColors = (themeAttributes: ?Object, value: ?boolean): Object => {
+const useColors = (themeAttributes: ?Object, value: ?boolean): Object => {
   const primaryColor = themeAttributes
     ? themeAttributes.switchPrimaryColor
     : colorSkyBlue;
@@ -43,8 +45,11 @@ const getColors = (themeAttributes: ?Object, value: ?boolean): Object => {
   // The color props mean different things based on the platform.
   const colors = Platform.select({
     ios: {
+      ios_backgroundColor: useBpkDynamicValue({
+        light: colorSkyGrayTint06,
+        dark: colorBlackTint01,
+      }),
       trackColor: {
-        false: colorSkyGrayTint06,
         true: primaryColor,
       },
     },
@@ -69,7 +74,7 @@ const BpkSwitch = (props: Props) => {
   const themeAttributes = getThemeAttributes(REQUIRED_THEME_ATTRIBUTES, theme);
 
   return (
-    <Switch {...getColors(themeAttributes, value)} value={value} {...rest} />
+    <Switch {...useColors(themeAttributes, value)} value={value} {...rest} />
   );
 };
 

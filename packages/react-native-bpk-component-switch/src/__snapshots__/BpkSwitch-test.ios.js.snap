@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`iOS BpkSwitch should disable theming if the required attribute is omitted 1`] = `
+exports[`iOS BpkSwitch dark mode should disable theming if the required attribute is omitted 1`] = `
 <RCTSwitch
   accessibilityRole="button"
   onChange={[Function]}
@@ -8,17 +8,22 @@ exports[`iOS BpkSwitch should disable theming if the required attribute is omitt
   onStartShouldSetResponder={[Function]}
   onTintColor="rgb(7, 112, 227)"
   style={
-    Object {
-      "height": 31,
-      "width": 51,
-    }
+    Array [
+      Object {
+        "height": 31,
+        "width": 51,
+      },
+      Object {
+        "backgroundColor": "rgb(29, 27, 32)",
+        "borderRadius": 16,
+      },
+    ]
   }
-  tintColor="rgb(221, 221, 229)"
   value={true}
 />
 `;
 
-exports[`iOS BpkSwitch should render correctly 1`] = `
+exports[`iOS BpkSwitch dark mode should render correctly 1`] = `
 <RCTSwitch
   accessibilityRole="button"
   onChange={[Function]}
@@ -26,17 +31,22 @@ exports[`iOS BpkSwitch should render correctly 1`] = `
   onStartShouldSetResponder={[Function]}
   onTintColor="rgb(7, 112, 227)"
   style={
-    Object {
-      "height": 31,
-      "width": 51,
-    }
+    Array [
+      Object {
+        "height": 31,
+        "width": 51,
+      },
+      Object {
+        "backgroundColor": "rgb(29, 27, 32)",
+        "borderRadius": 16,
+      },
+    ]
   }
-  tintColor="rgb(221, 221, 229)"
   value={false}
 />
 `;
 
-exports[`iOS BpkSwitch should support the "value" prop 1`] = `
+exports[`iOS BpkSwitch dark mode should support the "value" prop 1`] = `
 <RCTSwitch
   accessibilityRole="button"
   onChange={[Function]}
@@ -44,17 +54,22 @@ exports[`iOS BpkSwitch should support the "value" prop 1`] = `
   onStartShouldSetResponder={[Function]}
   onTintColor="rgb(7, 112, 227)"
   style={
-    Object {
-      "height": 31,
-      "width": 51,
-    }
+    Array [
+      Object {
+        "height": 31,
+        "width": 51,
+      },
+      Object {
+        "backgroundColor": "rgb(29, 27, 32)",
+        "borderRadius": 16,
+      },
+    ]
   }
-  tintColor="rgb(221, 221, 229)"
   value={true}
 />
 `;
 
-exports[`iOS BpkSwitch should support theming 1`] = `
+exports[`iOS BpkSwitch dark mode should support theming 1`] = `
 <RCTSwitch
   accessibilityRole="button"
   onChange={[Function]}
@@ -62,12 +77,109 @@ exports[`iOS BpkSwitch should support theming 1`] = `
   onStartShouldSetResponder={[Function]}
   onTintColor="red"
   style={
-    Object {
-      "height": 31,
-      "width": 51,
-    }
+    Array [
+      Object {
+        "height": 31,
+        "width": 51,
+      },
+      Object {
+        "backgroundColor": "rgb(29, 27, 32)",
+        "borderRadius": 16,
+      },
+    ]
   }
-  tintColor="rgb(221, 221, 229)"
+  value={true}
+/>
+`;
+
+exports[`iOS BpkSwitch light mode should disable theming if the required attribute is omitted 1`] = `
+<RCTSwitch
+  accessibilityRole="button"
+  onChange={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  onTintColor="rgb(7, 112, 227)"
+  style={
+    Array [
+      Object {
+        "height": 31,
+        "width": 51,
+      },
+      Object {
+        "backgroundColor": "rgb(221, 221, 229)",
+        "borderRadius": 16,
+      },
+    ]
+  }
+  value={true}
+/>
+`;
+
+exports[`iOS BpkSwitch light mode should render correctly 1`] = `
+<RCTSwitch
+  accessibilityRole="button"
+  onChange={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  onTintColor="rgb(7, 112, 227)"
+  style={
+    Array [
+      Object {
+        "height": 31,
+        "width": 51,
+      },
+      Object {
+        "backgroundColor": "rgb(221, 221, 229)",
+        "borderRadius": 16,
+      },
+    ]
+  }
+  value={false}
+/>
+`;
+
+exports[`iOS BpkSwitch light mode should support the "value" prop 1`] = `
+<RCTSwitch
+  accessibilityRole="button"
+  onChange={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  onTintColor="rgb(7, 112, 227)"
+  style={
+    Array [
+      Object {
+        "height": 31,
+        "width": 51,
+      },
+      Object {
+        "backgroundColor": "rgb(221, 221, 229)",
+        "borderRadius": 16,
+      },
+    ]
+  }
+  value={true}
+/>
+`;
+
+exports[`iOS BpkSwitch light mode should support theming 1`] = `
+<RCTSwitch
+  accessibilityRole="button"
+  onChange={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  onTintColor="red"
+  style={
+    Array [
+      Object {
+        "height": 31,
+        "width": 51,
+      },
+      Object {
+        "backgroundColor": "rgb(221, 221, 229)",
+        "borderRadius": 16,
+      },
+    ]
+  }
   value={true}
 />
 `;
