@@ -6,6 +6,14 @@
 
 - react-native-bpk-component-star-rating:
   - Added dark mode support.
+  
+**Fixed:**
+
+- react-native-bpk-theming
+  - `getThemeAttributes` now always returns optional props if they are present in the theme.
+
+- react-native-bpk-component-text-input
+  - `textFontFamily` theme prop is now optional.
 
 ## How to write a good changelog entry
 

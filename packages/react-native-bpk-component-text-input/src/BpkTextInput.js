@@ -42,7 +42,11 @@ import {
   getPlaceholderColor,
   getStyles,
 } from './styles';
-import { REQUIRED_THEME_ATTRIBUTES, themePropType } from './theming';
+import {
+  REQUIRED_THEME_ATTRIBUTES,
+  OPTIONAL_THEME_ATTRIBUTES,
+  themePropType,
+} from './theming';
 
 export type Props = {
   label: string,
@@ -212,6 +216,7 @@ class BpkTextInput extends Component<EnhancedProps, State> {
     const themeAttributes = getThemeAttributes(
       REQUIRED_THEME_ATTRIBUTES,
       theme,
+      OPTIONAL_THEME_ATTRIBUTES,
     );
 
     const focusedColor = themeAttributes
@@ -236,7 +241,7 @@ class BpkTextInput extends Component<EnhancedProps, State> {
 
     const inputTextStyle = [styles.input];
 
-    if (themeAttributes) {
+    if (themeAttributes && themeAttributes.textFontFamily) {
       inputTextStyle.push({ fontFamily: themeAttributes.textFontFamily });
       animatedLabelStyle.push({ fontFamily: themeAttributes.textFontFamily });
     }

@@ -193,6 +193,18 @@ const commonTests = () => {
         );
         expect(testRenderer.toJSON()).toMatchSnapshot();
       });
+
+      it('should support font theming', () => {
+        const theme = {
+          textFontFamily: 'relative',
+        };
+        const testRenderer = TestRenderer.create(
+          <BpkThemeProvider theme={theme}>
+            <WithColorScheme label="Name" value="" />
+          </BpkThemeProvider>,
+        );
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
     });
   });
 };

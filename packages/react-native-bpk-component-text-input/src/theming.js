@@ -20,8 +20,12 @@
 
 import { makeThemePropType } from 'react-native-bpk-theming';
 
-const REQUIRED_THEME_ATTRIBUTES = ['textFontFamily', 'textInputFocusedColor'];
+const REQUIRED_THEME_ATTRIBUTES = ['textInputFocusedColor'];
+const OPTIONAL_THEME_ATTRIBUTES = ['textFontFamily'];
 
-const themePropType = makeThemePropType(REQUIRED_THEME_ATTRIBUTES);
+const themePropType = makeThemePropType(
+  REQUIRED_THEME_ATTRIBUTES,
+  OPTIONAL_THEME_ATTRIBUTES,
+);
 
-export { REQUIRED_THEME_ATTRIBUTES, themePropType };
+export { REQUIRED_THEME_ATTRIBUTES, OPTIONAL_THEME_ATTRIBUTES, themePropType };

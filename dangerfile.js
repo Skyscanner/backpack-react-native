@@ -108,13 +108,13 @@ const androidSnapshotsWithIosTokens = fileChanges.filter(filePath => {
 
   const fileContent = fs.readFileSync(filePath).toString();
 
-  return fileContent.includes(`"fontFamily": ${iosProps.FONT_FAMILY.VALUE},`);
+  return fileContent.includes(`"fontFamily": ${iosProps.FONT_FAMILY.value},`);
 });
 
 if (androidSnapshotsWithIosTokens.length > 0) {
   // eslint-disable-next-line max-len
   fail(
-    `iOS tokens have been found in the following Android snapshots:\n  - ${androidSnapshotsWithIosTokens.join(
+    `iOS "fontFamily" tokens have been found in the following Android snapshots:\n  - ${androidSnapshotsWithIosTokens.join(
       '\n  - ',
     )}`,
   );

@@ -51,17 +51,54 @@ export const isValidTheme = (
     true,
   );
 
-export const makeThemePropType = (requiredAttributes: Array<string>) => (
+const filterOutOptionalProps = (
+  requiredAttributes: Array<string>,
+  theme: Object,
+  optionalAttributes?: Array<string>,
+) => {
+  if (!optionalAttributes || optionalAttributes.length === 0) {
+    return theme;
+  }
+
+  const filteredOut = Object.keys(theme).reduce((requiredTheme, key) => {
+    if (optionalAttributes && optionalAttributes.indexOf(key) >= 0) {
+      return requiredTheme;
+    }
+    return { ...requiredTheme, [key]: theme[key] };
+  }, {});
+
+  if (Object.keys(filteredOut).length === 0) {
+    return null;
+  }
+
+  return filteredOut;
+};
+
+export const makeThemePropType = (
+  requiredAttributes: Array<string>,
+  optionalAttributes?: Array<string>,
+) => (
   props: Object,
   propName: string,
   componentName: string,
 ): Error | boolean => {
   const { theme } = props;
+
   if (!theme) {
     return false;
   }
 
-  const validTheme = isValidTheme(requiredAttributes, theme);
+  const requiredTheme = filterOutOptionalProps(
+    requiredAttributes,
+    theme,
+    optionalAttributes,
+  );
+
+  if (!requiredTheme) {
+    return false;
+  }
+
+  const validTheme = isValidTheme(requiredAttributes, requiredTheme);
 
   if (!validTheme) {
     return new Error(
@@ -82,18 +119,22 @@ export const getThemeAttributes = (
     return null;
   }
 
-  if (theme && !isValidTheme(requiredAttributes, theme)) {
+  const hasAllRequiredAttributes = isValidTheme(requiredAttributes, theme);
+  const hasOptionalAttributes =
+    optionalAttributes && optionalAttributes.length > 0;
+
+  if (!hasAllRequiredAttributes && !hasOptionalAttributes) {
     return null;
   }
 
-  const filteredRequiredAttributes = requiredAttributes
+  const filteredRequiredAttributes = hasAllRequiredAttributes
     ? requiredAttributes.reduce((result, attribute) => {
         if (theme) {
           result[attribute] = theme[attribute]; // eslint-disable-line no-param-reassign
         }
         return result;
       }, {})
-    : null;
+    : {};
 
   const filteredOptionalAttributes = optionalAttributes
     ? optionalAttributes.reduce((result, attribute) => {
@@ -102,9 +143,18 @@ export const getThemeAttributes = (
         }
         return result;
       }, {})
-    : null;
+    : {};
 
-  return { ...filteredRequiredAttributes, ...filteredOptionalAttributes };
+  const allThemeAttributes = {
+    ...filteredRequiredAttributes,
+    ...filteredOptionalAttributes,
+  };
+
+  if (Object.keys(allThemeAttributes).length === 0) {
+    return null;
+  }
+
+  return allThemeAttributes;
 };
 
 export const grayForTheme = (theme: ?Object, colorName: string) => {
