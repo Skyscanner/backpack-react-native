@@ -2,6 +2,46 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-11-28 - Dark mode support
+
+**Fixed**
+
+- react-native-bpk-component-text: 4.2.2 => 4.2.3
+  - Disabled font multiplier REACT NATIVE components in react-native-bpk-component-text
+  - Disabled font scaling for REACT NATIVE in react-native-bpk-component-text
+
+- react-native-bpk-appearance: 1.3.0 => 1.3.1
+  - Fix `withBpkAppearance` type definition.
+
+- react-native-bpk-component-picker: 5.0.7 => 5.0.8
+  - Changed the overlay/scrim colour on Android to match the underlying platform instead of using a colour token from Backpack.
+
+- react-native-bpk-component-switch: 3.0.5 => 3.1.0
+  - Fixed the 'off' colour on iOS to use `skyGreyTint06`.
+
+**Added:**
+
+- react-native-bpk-component-progress: 2.0.5 => 2.1.0
+  - Added dark mode support.
+
+- react-native-bpk-component-panel: 1.0.65 => 1.1.0
+  - Added dark mode support.
+
+- react-native-bpk-component-spinner: 2.0.5 => 2.1.0
+  - Added dark mode support.
+
+- react-native-bpk-component-section-list: 5.0.7 => 5.1.0
+  - Added dark mode support.
+
+- react-native-bpk-component-text-input: 4.0.7 => 4.1.0
+  - Added dark mode support.
+
+- react-native-bpk-component-select: 4.0.7 => 4.1.0
+  - Added dark mode support.
+
+- react-native-bpk-component-switch: 3.0.5 => 3.1.0
+  - Added dark mode support.
+
 # 2019-11-26
 
 **Fixed**

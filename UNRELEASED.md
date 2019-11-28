@@ -2,47 +2,6 @@
 
 > Place your changes below this line.
 
-
-**Fixed**
-
-- react-native-bpk-component-text:
-  - Disabled font multiplier REACT NATIVE components in react-native-bpk-component-text
-
-- react-native-bpk-component-text:
-  - Disabled font scaling for REACT NATIVE in react-native-bpk-component-text
-
-- react-native-bpk-appearance:
-  - Fix `withBpkAppearance` type definition.
-
-- react-native-bpk-component-picker:
-  - Changed the overlay/scrim colour on Android to match the underlying platform instead of using a colour token from Backpack.
-
-- react-native-bpk-component-switch:
-  - Fixed the 'off' colour on iOS to use `skyGreyTint06`.
-
-**Added:**
-
-- react-native-bpk-component-progress:
-  - Added dark mode support.
-
-- react-native-bpk-component-panel:
-  - Added dark mode support.
-
-- react-native-bpk-component-spinner:
-  - Added dark mode support.
-
-- react-native-bpk-component-section-list:
-  - Added dark mode support.
-
-- react-native-bpk-component-text-input:
-  - Added dark mode support.
-
-- react-native-bpk-component-select:
-  - Added dark mode support.
-
-- react-native-bpk-component-switch:
-  - Added dark mode support.
-
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
