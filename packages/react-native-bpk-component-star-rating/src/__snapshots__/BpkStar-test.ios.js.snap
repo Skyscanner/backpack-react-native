@@ -1,6 +1,403 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`iOS BpkStar should render correctly when empty 1`] = `
+exports[`iOS BpkStar dark mode should render correctly when empty 1`] = `
+<View
+  accessible={false}
+  style={
+    Object {
+      "height": 12,
+      "width": 12,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "color": "rgb(44, 44, 46)",
+            "fontSize": 12,
+            "left": 0,
+            "lineHeight": 12,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "zIndex": 1,
+          },
+        ],
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkStar dark mode should render correctly when full 1`] = `
+<View
+  accessible={false}
+  style={
+    Object {
+      "height": 12,
+      "width": 12,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "color": "rgb(44, 44, 46)",
+            "fontSize": 12,
+            "left": 0,
+            "lineHeight": 12,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "zIndex": 1,
+          },
+        ],
+      ]
+    }
+  >
+    
+  </Text>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "color": "rgb(44, 44, 46)",
+            "fontSize": 12,
+            "left": 0,
+            "lineHeight": 12,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "zIndex": 1,
+          },
+          Object {
+            "zIndex": 2,
+          },
+          Object {
+            "color": "rgb(255, 181, 77)",
+          },
+        ],
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkStar dark mode should render correctly when half 1`] = `
+<View
+  accessible={false}
+  style={
+    Object {
+      "height": 12,
+      "width": 12,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "color": "rgb(44, 44, 46)",
+            "fontSize": 12,
+            "left": 0,
+            "lineHeight": 12,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "zIndex": 1,
+          },
+        ],
+      ]
+    }
+  >
+    
+  </Text>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "color": "rgb(44, 44, 46)",
+            "fontSize": 12,
+            "left": 0,
+            "lineHeight": 12,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "zIndex": 1,
+          },
+          Object {
+            "zIndex": 2,
+          },
+          Object {
+            "color": "rgb(255, 181, 77)",
+          },
+        ],
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkStar dark mode should support theming when empty 1`] = `
+<View
+  accessible={false}
+  style={
+    Object {
+      "height": 12,
+      "width": 12,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "color": "rgb(44, 44, 46)",
+            "fontSize": 12,
+            "left": 0,
+            "lineHeight": 12,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "zIndex": 1,
+          },
+          Object {
+            "color": "blue",
+          },
+        ],
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkStar dark mode should support theming when full 1`] = `
+<View
+  accessible={false}
+  style={
+    Object {
+      "height": 12,
+      "width": 12,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "color": "rgb(44, 44, 46)",
+            "fontSize": 12,
+            "left": 0,
+            "lineHeight": 12,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "zIndex": 1,
+          },
+          Object {
+            "color": "blue",
+          },
+        ],
+      ]
+    }
+  >
+    
+  </Text>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "color": "rgb(44, 44, 46)",
+            "fontSize": 12,
+            "left": 0,
+            "lineHeight": 12,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "zIndex": 1,
+          },
+          Object {
+            "zIndex": 2,
+          },
+          Object {
+            "color": "rgb(255, 181, 77)",
+          },
+          Object {
+            "color": "pink",
+          },
+        ],
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkStar dark mode should support theming when half 1`] = `
+<View
+  accessible={false}
+  style={
+    Object {
+      "height": 12,
+      "width": 12,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "color": "rgb(44, 44, 46)",
+            "fontSize": 12,
+            "left": 0,
+            "lineHeight": 12,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "zIndex": 1,
+          },
+          Object {
+            "color": "blue",
+          },
+        ],
+      ]
+    }
+  >
+    
+  </Text>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "color": "rgb(44, 44, 46)",
+            "fontSize": 12,
+            "left": 0,
+            "lineHeight": 12,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "zIndex": 1,
+          },
+          Object {
+            "zIndex": 2,
+          },
+          Object {
+            "color": "rgb(255, 181, 77)",
+          },
+          Object {
+            "color": "pink",
+          },
+        ],
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkStar light mode should render correctly when empty 1`] = `
 <View
   accessible={false}
   style={
@@ -41,7 +438,7 @@ exports[`iOS BpkStar should render correctly when empty 1`] = `
 </View>
 `;
 
-exports[`iOS BpkStar should render correctly when full 1`] = `
+exports[`iOS BpkStar light mode should render correctly when full 1`] = `
 <View
   accessible={false}
   style={
@@ -116,7 +513,7 @@ exports[`iOS BpkStar should render correctly when full 1`] = `
 </View>
 `;
 
-exports[`iOS BpkStar should render correctly when half 1`] = `
+exports[`iOS BpkStar light mode should render correctly when half 1`] = `
 <View
   accessible={false}
   style={
@@ -191,7 +588,7 @@ exports[`iOS BpkStar should render correctly when half 1`] = `
 </View>
 `;
 
-exports[`iOS BpkStar should support theming when empty 1`] = `
+exports[`iOS BpkStar light mode should support theming when empty 1`] = `
 <View
   accessible={false}
   style={
@@ -235,7 +632,7 @@ exports[`iOS BpkStar should support theming when empty 1`] = `
 </View>
 `;
 
-exports[`iOS BpkStar should support theming when full 1`] = `
+exports[`iOS BpkStar light mode should support theming when full 1`] = `
 <View
   accessible={false}
   style={
@@ -316,7 +713,7 @@ exports[`iOS BpkStar should support theming when full 1`] = `
 </View>
 `;
 
-exports[`iOS BpkStar should support theming when half 1`] = `
+exports[`iOS BpkStar light mode should support theming when half 1`] = `
 <View
   accessible={false}
   style={
