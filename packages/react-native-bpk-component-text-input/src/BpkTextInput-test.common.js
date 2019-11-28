@@ -196,7 +196,7 @@ const commonTests = () => {
 
       it('should support font theming', () => {
         const theme = {
-          textFontFamily: 'roboto',
+          textFontFamily: 'relative',
         };
         const testRenderer = TestRenderer.create(
           <BpkThemeProvider theme={theme}>

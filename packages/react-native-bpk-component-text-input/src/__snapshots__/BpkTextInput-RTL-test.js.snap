@@ -1292,7 +1292,7 @@ exports[`RTL BpkTextInput dark mode should support font theming 1`] = `
       style={
         Object {
           "color": "rgba(178, 178, 191, 1)",
-          "fontFamily": "roboto",
+          "fontFamily": "relative",
           "fontSize": 16,
           "fontWeight": "400",
           "lineHeight": 19,
@@ -1337,7 +1337,7 @@ exports[`RTL BpkTextInput dark mode should support font theming 1`] = `
               "textAlign": "right",
             },
             Object {
-              "fontFamily": "roboto",
+              "fontFamily": "relative",
             },
           ]
         }
@@ -2717,7 +2717,7 @@ exports[`RTL BpkTextInput light mode should support font theming 1`] = `
       style={
         Object {
           "color": "rgba(178, 178, 191, 1)",
-          "fontFamily": "roboto",
+          "fontFamily": "relative",
           "fontSize": 16,
           "fontWeight": "400",
           "lineHeight": 19,
@@ -2762,7 +2762,7 @@ exports[`RTL BpkTextInput light mode should support font theming 1`] = `
               "textAlign": "right",
             },
             Object {
-              "fontFamily": "roboto",
+              "fontFamily": "relative",
             },
           ]
         }
