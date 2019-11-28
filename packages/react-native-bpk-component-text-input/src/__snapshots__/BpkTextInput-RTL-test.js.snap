@@ -1273,7 +1273,7 @@ exports[`RTL BpkTextInput dark mode should render correctly with value 1`] = `
 </View>
 `;
 
-exports[`RTL BpkTextInput dark mode should support theming 1`] = `
+exports[`RTL BpkTextInput dark mode should support font theming 1`] = `
 <View
   style={null}
 >
@@ -1292,7 +1292,7 @@ exports[`RTL BpkTextInput dark mode should support theming 1`] = `
       style={
         Object {
           "color": "rgba(178, 178, 191, 1)",
-          "fontFamily": "System",
+          "fontFamily": "roboto",
           "fontSize": 16,
           "fontWeight": "400",
           "lineHeight": 19,
@@ -1335,6 +1335,85 @@ exports[`RTL BpkTextInput dark mode should support theming 1`] = `
               "paddingHorizontal": 0,
               "paddingVertical": 4,
               "textAlign": "right",
+            },
+            Object {
+              "fontFamily": "roboto",
+            },
+          ]
+        }
+        underlineColorAndroid="transparent"
+        value=""
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`RTL BpkTextInput dark mode should support theming 1`] = `
+<View
+  style={null}
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "paddingTop": 17,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Object {
+          "color": "rgba(178, 178, 191, 1)",
+          "fontFamily": undefined,
+          "fontSize": 16,
+          "fontWeight": "400",
+          "lineHeight": 19,
+          "position": "absolute",
+          "top": 20,
+        }
+      }
+    >
+      Name
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        clearButtonMode="while-editing"
+        editable={true}
+        onBlur={[Function]}
+        onFocus={[Function]}
+        placeholder={null}
+        placeholderTextColor="rgb(178, 178, 191)"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(255, 255, 255)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+            Object {
+              "fontFamily": undefined,
             },
           ]
         }
@@ -2619,7 +2698,7 @@ exports[`RTL BpkTextInput light mode should render correctly with value 1`] = `
 </View>
 `;
 
-exports[`RTL BpkTextInput light mode should support theming 1`] = `
+exports[`RTL BpkTextInput light mode should support font theming 1`] = `
 <View
   style={null}
 >
@@ -2638,7 +2717,7 @@ exports[`RTL BpkTextInput light mode should support theming 1`] = `
       style={
         Object {
           "color": "rgba(178, 178, 191, 1)",
-          "fontFamily": "System",
+          "fontFamily": "roboto",
           "fontSize": 16,
           "fontWeight": "400",
           "lineHeight": 19,
@@ -2681,6 +2760,85 @@ exports[`RTL BpkTextInput light mode should support theming 1`] = `
               "paddingHorizontal": 0,
               "paddingVertical": 4,
               "textAlign": "right",
+            },
+            Object {
+              "fontFamily": "roboto",
+            },
+          ]
+        }
+        underlineColorAndroid="transparent"
+        value=""
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`RTL BpkTextInput light mode should support theming 1`] = `
+<View
+  style={null}
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "paddingTop": 17,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Object {
+          "color": "rgba(178, 178, 191, 1)",
+          "fontFamily": undefined,
+          "fontSize": 16,
+          "fontWeight": "400",
+          "lineHeight": 19,
+          "position": "absolute",
+          "top": 20,
+        }
+      }
+    >
+      Name
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomColor": "rgba(221, 221, 229, 1)",
+          "borderBottomWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        clearButtonMode="while-editing"
+        editable={true}
+        onBlur={[Function]}
+        onFocus={[Function]}
+        placeholder={null}
+        placeholderTextColor="rgb(205, 205, 215)"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "borderBottomWidth": 0,
+              "color": "rgb(17, 18, 54)",
+              "flex": 1,
+              "fontSize": 16,
+              "fontWeight": "400",
+              "minHeight": 27,
+              "paddingHorizontal": 0,
+              "paddingVertical": 4,
+              "textAlign": "right",
+            },
+            Object {
+              "fontFamily": undefined,
             },
           ]
         }

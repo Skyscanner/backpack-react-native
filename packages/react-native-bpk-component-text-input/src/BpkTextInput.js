@@ -42,7 +42,11 @@ import {
   getPlaceholderColor,
   getStyles,
 } from './styles';
-import { REQUIRED_THEME_ATTRIBUTES, themePropType } from './theming';
+import {
+  REQUIRED_THEME_ATTRIBUTES,
+  OPTIONAL_THEME_ATTRIBUTES,
+  themePropType,
+} from './theming';
 
 export type Props = {
   label: string,
@@ -212,6 +216,7 @@ class BpkTextInput extends Component<EnhancedProps, State> {
     const themeAttributes = getThemeAttributes(
       REQUIRED_THEME_ATTRIBUTES,
       theme,
+      OPTIONAL_THEME_ATTRIBUTES,
     );
 
     const focusedColor = themeAttributes

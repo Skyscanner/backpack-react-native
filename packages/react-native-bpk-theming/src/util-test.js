@@ -17,6 +17,7 @@
  */
 /* @flow */
 import { colorPanjin } from 'bpk-tokens/tokens/base.react.native';
+import { omit } from 'lodash';
 
 import { isValidTheme, makeThemePropType, getThemeAttributes } from './util';
 
@@ -25,6 +26,8 @@ const REQUIRED_ATTRIBUTES: Array<string> = [
   'themeAttributeB',
   'themeAttributeC',
 ];
+
+const OPTIONAL_ATTRIBUTES = ['fontFamily'];
 
 const VALID_THEME = {
   themeAttributeA: 'red',
@@ -86,6 +89,46 @@ describe('makeThemePropType', () => {
       ),
     );
   });
+
+  describe('when optional props are provided', () => {
+    beforeEach(() => {
+      propType = makeThemePropType(REQUIRED_ATTRIBUTES, OPTIONAL_ATTRIBUTES);
+    });
+
+    it('should not fail when the theme is valid', () => {
+      expect(
+        propType(
+          { style: { color: colorPanjin }, theme: VALID_THEME },
+          'theme',
+          'TestComponent',
+        ),
+      ).toBeFalsy();
+    });
+
+    it('should not fail when only optional props are provided', () => {
+      expect(
+        propType(
+          { style: { color: colorPanjin }, theme: { fontFamily: 'roboto' } },
+          'theme',
+          'TestComponent',
+        ),
+      ).toBeFalsy();
+    });
+
+    it('should fail when random props are provided', () => {
+      expect(
+        propType(
+          { style: { color: colorPanjin }, theme: { ramdom: '1' } },
+          'theme',
+          'TestComponent',
+        ),
+      ).toEqual(
+        new Error(
+          'Invalid prop `theme` supplied to `TestComponent`. When supplying `theme` all the required theming attributes(`themeAttributeA, themeAttributeB, themeAttributeC`) must be supplied.',
+        ),
+      );
+    });
+  });
 });
 
 describe('getThemeAttributes', () => {
@@ -105,5 +148,47 @@ describe('getThemeAttributes', () => {
 
   it('should return `null` if the theme is null', () => {
     expect(getThemeAttributes(REQUIRED_ATTRIBUTES, null)).toBeNull();
+  });
+
+  it('should return `null` if the theme attributes is empty', () => {
+    expect(getThemeAttributes([], VALID_THEME)).toBeNull();
+  });
+
+  describe('when optional attributes are defined', () => {
+    const VALID_THEME_WITH_OPTIONAL_PROPS = {
+      ...VALID_THEME,
+      fontFamily: 'roboto',
+    };
+    const INVALID_THEME_WITH_OPTIONAL_PROPS = {
+      ...INVALID_THEME,
+      fontFamily: 'roboto',
+    };
+
+    it('should return all props when theme is valid', () => {
+      expect(
+        getThemeAttributes(
+          REQUIRED_ATTRIBUTES,
+          VALID_THEME_WITH_OPTIONAL_PROPS,
+          OPTIONAL_ATTRIBUTES,
+        ),
+      ).toEqual({
+        ...omit(VALID_THEME, 'nonRequiredAttribute'),
+        fontFamily: 'roboto',
+      });
+    });
+
+    it('should return only optional props theme is invalid', () => {
+      expect(
+        getThemeAttributes(
+          REQUIRED_ATTRIBUTES,
+          INVALID_THEME_WITH_OPTIONAL_PROPS,
+          OPTIONAL_ATTRIBUTES,
+        ),
+      ).toEqual({ fontFamily: 'roboto' });
+    });
+
+    it('should return `null` if the optional attributes are empty', () => {
+      expect(getThemeAttributes([], VALID_THEME, [])).toBeNull();
+    });
   });
 });
