@@ -241,7 +241,7 @@ class BpkTextInput extends Component<EnhancedProps, State> {
 
     const inputTextStyle = [styles.input];
 
-    if (themeAttributes) {
+    if (themeAttributes && themeAttributes.textFontFamily) {
       inputTextStyle.push({ fontFamily: themeAttributes.textFontFamily });
       animatedLabelStyle.push({ fontFamily: themeAttributes.textFontFamily });
     }
