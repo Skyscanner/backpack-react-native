@@ -27,7 +27,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly 1`]
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -82,7 +81,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly dis
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -133,7 +131,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly emp
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -186,7 +183,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly lea
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -237,7 +233,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly wit
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -292,7 +287,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly wit
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -347,7 +341,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should respect "disabledTin
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -398,7 +391,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should respect "primaryTint
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -449,7 +441,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should respect "tintColor" 
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -500,7 +491,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should respect "tintColor" 
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -551,7 +541,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly 1`
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -606,7 +595,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly di
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -657,7 +645,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly em
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -710,7 +697,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly le
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -761,7 +747,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly wi
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -816,7 +801,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly wi
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -871,7 +855,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should respect "disabledTi
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -922,7 +905,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should respect "primaryTin
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -973,7 +955,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should respect "tintColor"
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -1024,7 +1005,6 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should respect "tintColor"
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {

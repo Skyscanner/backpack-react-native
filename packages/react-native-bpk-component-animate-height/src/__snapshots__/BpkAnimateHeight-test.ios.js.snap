@@ -25,7 +25,6 @@ exports[`iOS BpkAnimateHeight should render correctly collapsed 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -54,7 +53,6 @@ exports[`iOS BpkAnimateHeight should render correctly collapsed 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -99,7 +97,6 @@ exports[`iOS BpkAnimateHeight should render correctly expanded 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -128,7 +125,6 @@ exports[`iOS BpkAnimateHeight should render correctly expanded 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -173,7 +169,6 @@ exports[`iOS BpkAnimateHeight should render correctly with n children 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -191,7 +186,6 @@ exports[`iOS BpkAnimateHeight should render correctly with n children 1`] = `
     </Text>
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -220,7 +214,6 @@ exports[`iOS BpkAnimateHeight should render correctly with n children 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -238,7 +231,6 @@ exports[`iOS BpkAnimateHeight should render correctly with n children 1`] = `
     </Text>
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -284,7 +276,6 @@ exports[`iOS BpkAnimateHeight should render correctly with user styling padding 
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -313,7 +304,6 @@ exports[`iOS BpkAnimateHeight should render correctly with user styling padding 
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {

@@ -391,7 +391,6 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
   </View>
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -537,7 +536,6 @@ exports[`Android BpkSelect dark mode should render correctly with a text label 1
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -684,7 +682,6 @@ exports[`Android BpkSelect dark mode should render correctly with custom styles 
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -773,7 +770,6 @@ exports[`Android BpkSelect dark mode should render correctly with the disabled p
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -1219,7 +1215,6 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
   </View>
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -1365,7 +1360,6 @@ exports[`Android BpkSelect light mode should render correctly with a text label 
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -1512,7 +1506,6 @@ exports[`Android BpkSelect light mode should render correctly with custom styles
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -1601,7 +1594,6 @@ exports[`Android BpkSelect light mode should render correctly with the disabled 
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {

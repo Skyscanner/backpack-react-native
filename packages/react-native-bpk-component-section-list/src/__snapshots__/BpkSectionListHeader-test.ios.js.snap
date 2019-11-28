@@ -12,7 +12,6 @@ exports[`iOS BpkSectionListHeader dark mode should render correctly 1`] = `
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -48,7 +47,6 @@ exports[`iOS BpkSectionListHeader light mode should render correctly 1`] = `
 >
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {

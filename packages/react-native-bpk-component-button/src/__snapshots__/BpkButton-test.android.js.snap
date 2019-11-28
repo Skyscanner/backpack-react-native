@@ -55,7 +55,6 @@ exports[`Android API levels Android API<21 should render without ripple 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -141,7 +140,6 @@ exports[`Android API levels Android API>=21 should render with ripple 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -227,7 +225,6 @@ exports[`Android BpkButton dark mode should render correctly 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -315,7 +312,6 @@ exports[`Android BpkButton dark mode should render correctly with type="destruct
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -407,7 +403,6 @@ exports[`Android BpkButton dark mode should render correctly with type="destruct
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -493,7 +488,6 @@ exports[`Android BpkButton dark mode should render correctly with type="featured
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -586,7 +580,6 @@ exports[`Android BpkButton dark mode should render correctly with type="featured
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -672,7 +665,6 @@ exports[`Android BpkButton dark mode should render correctly with type="primary"
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -765,7 +757,6 @@ exports[`Android BpkButton dark mode should render correctly with type="primary"
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -853,7 +844,6 @@ exports[`Android BpkButton dark mode should render correctly with type="secondar
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -945,7 +935,6 @@ exports[`Android BpkButton dark mode should render correctly with type="secondar
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1034,7 +1023,6 @@ exports[`Android BpkButton dark mode should support overwriting styles 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1127,7 +1115,6 @@ exports[`Android BpkButton dark mode should support the "disabled" property 1`] 
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1213,7 +1200,6 @@ exports[`Android BpkButton light mode should render correctly 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1301,7 +1287,6 @@ exports[`Android BpkButton light mode should render correctly with type="destruc
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1393,7 +1378,6 @@ exports[`Android BpkButton light mode should render correctly with type="destruc
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1479,7 +1463,6 @@ exports[`Android BpkButton light mode should render correctly with type="feature
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1572,7 +1555,6 @@ exports[`Android BpkButton light mode should render correctly with type="feature
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1658,7 +1640,6 @@ exports[`Android BpkButton light mode should render correctly with type="primary
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1751,7 +1732,6 @@ exports[`Android BpkButton light mode should render correctly with type="primary
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1839,7 +1819,6 @@ exports[`Android BpkButton light mode should render correctly with type="seconda
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -1931,7 +1910,6 @@ exports[`Android BpkButton light mode should render correctly with type="seconda
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -2020,7 +1998,6 @@ exports[`Android BpkButton light mode should support overwriting styles 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -2113,7 +2090,6 @@ exports[`Android BpkButton light mode should support the "disabled" property 1`]
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -2222,7 +2198,6 @@ exports[`Android BpkButton should render correctly with iconAlignment="leading" 
     </Text>
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -2338,7 +2313,6 @@ exports[`Android BpkButton should render correctly with iconAlignment="trailing"
     </Text>
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -2427,7 +2401,6 @@ exports[`Android BpkButton should support elements as icons 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -2552,7 +2525,6 @@ exports[`Android BpkButton should support having an icon as well as a title 1`] 
     </Text>
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -2668,7 +2640,6 @@ exports[`Android BpkButton should support the "icon" property 1`] = `
     </Text>
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -2944,7 +2915,6 @@ exports[`Android BpkButtonThemed should render correctly 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {

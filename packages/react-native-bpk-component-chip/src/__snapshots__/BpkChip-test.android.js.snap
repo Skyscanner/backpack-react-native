@@ -49,7 +49,6 @@ exports[`Android BpkChip dark mode should render correctly 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -127,7 +126,6 @@ exports[`Android BpkChip dark mode should render correctly with "disabled" 1`] =
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -208,7 +206,6 @@ exports[`Android BpkChip dark mode should render correctly with "selected" 1`] =
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -296,7 +293,6 @@ exports[`Android BpkChip dark mode should render outline correctly 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -374,7 +370,6 @@ exports[`Android BpkChip light mode should render correctly 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -452,7 +447,6 @@ exports[`Android BpkChip light mode should render correctly with "disabled" 1`] 
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -533,7 +527,6 @@ exports[`Android BpkChip light mode should render correctly with "selected" 1`] 
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -621,7 +614,6 @@ exports[`Android BpkChip light mode should render outline correctly 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -700,7 +692,6 @@ exports[`Android BpkChip should render correctly with arbitrary props 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -779,7 +770,6 @@ exports[`Android BpkChip should render correctly with custom style 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -860,7 +850,6 @@ exports[`Android BpkChip should support theming when selected 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {

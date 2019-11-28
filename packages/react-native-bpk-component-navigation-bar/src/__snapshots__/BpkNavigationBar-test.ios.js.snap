@@ -79,7 +79,6 @@ exports[`ios BpkNavigationBar dark mode should render correctly 1`] = `
       />
       <Text
         allowFontScaling={false}
-        maxFontSizeMultiplier={3.2}
         style={
           Array [
             Object {
@@ -131,7 +130,6 @@ exports[`ios BpkNavigationBar dark mode should render correctly 1`] = `
         <Text
           allowFontScaling={false}
           ellipsizeMode="tail"
-          maxFontSizeMultiplier={3.2}
           numberOfLines={1}
           style={
             Array [
@@ -244,7 +242,6 @@ exports[`ios BpkNavigationBar dark mode should render correctly with a subtitle 
       />
       <Text
         allowFontScaling={false}
-        maxFontSizeMultiplier={3.2}
         style={
           Array [
             Object {
@@ -296,7 +293,6 @@ exports[`ios BpkNavigationBar dark mode should render correctly with a subtitle 
         <Text
           allowFontScaling={false}
           ellipsizeMode="tail"
-          maxFontSizeMultiplier={3.2}
           numberOfLines={1}
           style={
             Array [
@@ -417,7 +413,6 @@ exports[`ios BpkNavigationBar dark mode should render correctly with a title vie
       />
       <Text
         allowFontScaling={false}
-        maxFontSizeMultiplier={3.2}
         style={
           Array [
             Object {
@@ -548,7 +543,6 @@ exports[`ios BpkNavigationBar dark mode should render correctly with an icon in 
       />
       <Text
         allowFontScaling={false}
-        maxFontSizeMultiplier={3.2}
         style={
           Array [
             Object {
@@ -626,7 +620,6 @@ exports[`ios BpkNavigationBar dark mode should render correctly with an icon in 
         <Text
           allowFontScaling={false}
           ellipsizeMode="tail"
-          maxFontSizeMultiplier={3.2}
           numberOfLines={1}
           style={
             Array [
@@ -741,7 +734,6 @@ exports[`ios BpkNavigationBar dark mode should render correctly with custom styl
       />
       <Text
         allowFontScaling={false}
-        maxFontSizeMultiplier={3.2}
         style={
           Array [
             Object {
@@ -793,7 +785,6 @@ exports[`ios BpkNavigationBar dark mode should render correctly with custom styl
         <Text
           allowFontScaling={false}
           ellipsizeMode="tail"
-          maxFontSizeMultiplier={3.2}
           numberOfLines={1}
           style={
             Array [
@@ -885,7 +876,6 @@ exports[`ios BpkNavigationBar dark mode should render correctly with trailing bu
     >
       <Text
         allowFontScaling={false}
-        maxFontSizeMultiplier={3.2}
         style={
           Array [
             Object {
@@ -937,7 +927,6 @@ exports[`ios BpkNavigationBar dark mode should render correctly with trailing bu
         <Text
           allowFontScaling={false}
           ellipsizeMode="tail"
-          maxFontSizeMultiplier={3.2}
           numberOfLines={1}
           style={
             Array [
@@ -990,7 +979,6 @@ exports[`ios BpkNavigationBar dark mode should render correctly with trailing bu
     >
       <Text
         allowFontScaling={false}
-        maxFontSizeMultiplier={3.2}
         style={
           Array [
             Object {
@@ -1097,7 +1085,6 @@ exports[`ios BpkNavigationBar light mode should render correctly 1`] = `
       />
       <Text
         allowFontScaling={false}
-        maxFontSizeMultiplier={3.2}
         style={
           Array [
             Object {
@@ -1149,7 +1136,6 @@ exports[`ios BpkNavigationBar light mode should render correctly 1`] = `
         <Text
           allowFontScaling={false}
           ellipsizeMode="tail"
-          maxFontSizeMultiplier={3.2}
           numberOfLines={1}
           style={
             Array [
@@ -1262,7 +1248,6 @@ exports[`ios BpkNavigationBar light mode should render correctly with a subtitle
       />
       <Text
         allowFontScaling={false}
-        maxFontSizeMultiplier={3.2}
         style={
           Array [
             Object {
@@ -1314,7 +1299,6 @@ exports[`ios BpkNavigationBar light mode should render correctly with a subtitle
         <Text
           allowFontScaling={false}
           ellipsizeMode="tail"
-          maxFontSizeMultiplier={3.2}
           numberOfLines={1}
           style={
             Array [
@@ -1435,7 +1419,6 @@ exports[`ios BpkNavigationBar light mode should render correctly with a title vi
       />
       <Text
         allowFontScaling={false}
-        maxFontSizeMultiplier={3.2}
         style={
           Array [
             Object {
@@ -1566,7 +1549,6 @@ exports[`ios BpkNavigationBar light mode should render correctly with an icon in
       />
       <Text
         allowFontScaling={false}
-        maxFontSizeMultiplier={3.2}
         style={
           Array [
             Object {
@@ -1644,7 +1626,6 @@ exports[`ios BpkNavigationBar light mode should render correctly with an icon in
         <Text
           allowFontScaling={false}
           ellipsizeMode="tail"
-          maxFontSizeMultiplier={3.2}
           numberOfLines={1}
           style={
             Array [
@@ -1759,7 +1740,6 @@ exports[`ios BpkNavigationBar light mode should render correctly with custom sty
       />
       <Text
         allowFontScaling={false}
-        maxFontSizeMultiplier={3.2}
         style={
           Array [
             Object {
@@ -1811,7 +1791,6 @@ exports[`ios BpkNavigationBar light mode should render correctly with custom sty
         <Text
           allowFontScaling={false}
           ellipsizeMode="tail"
-          maxFontSizeMultiplier={3.2}
           numberOfLines={1}
           style={
             Array [
@@ -1903,7 +1882,6 @@ exports[`ios BpkNavigationBar light mode should render correctly with trailing b
     >
       <Text
         allowFontScaling={false}
-        maxFontSizeMultiplier={3.2}
         style={
           Array [
             Object {
@@ -1955,7 +1933,6 @@ exports[`ios BpkNavigationBar light mode should render correctly with trailing b
         <Text
           allowFontScaling={false}
           ellipsizeMode="tail"
-          maxFontSizeMultiplier={3.2}
           numberOfLines={1}
           style={
             Array [
@@ -2008,7 +1985,6 @@ exports[`ios BpkNavigationBar light mode should render correctly with trailing b
     >
       <Text
         allowFontScaling={false}
-        maxFontSizeMultiplier={3.2}
         style={
           Array [
             Object {

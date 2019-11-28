@@ -80,7 +80,6 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
         />
         <Text
           allowFontScaling={false}
-          maxFontSizeMultiplier={3.2}
           style={
             Array [
               Object {
@@ -273,7 +272,6 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
         />
         <Text
           allowFontScaling={false}
-          maxFontSizeMultiplier={3.2}
           style={
             Array [
               Object {

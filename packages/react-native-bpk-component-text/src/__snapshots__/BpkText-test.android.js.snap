@@ -3,7 +3,6 @@
 exports[`Android BpkText dark mode should render correctly 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -24,7 +23,6 @@ exports[`Android BpkText dark mode should render correctly 1`] = `
 exports[`Android BpkText dark mode should support overwriting styles 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -48,7 +46,6 @@ exports[`Android BpkText dark mode should support overwriting styles 1`] = `
 exports[`Android BpkText light mode should render correctly 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -69,7 +66,6 @@ exports[`Android BpkText light mode should render correctly 1`] = `
 exports[`Android BpkText light mode should support overwriting styles 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -93,7 +89,6 @@ exports[`Android BpkText light mode should support overwriting styles 1`] = `
 exports[`Android BpkText should ignore weight prop if deprecated \`emphasize\` prop is being used 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -116,7 +111,6 @@ exports[`Android BpkText should ignore weight prop if deprecated \`emphasize\` p
 exports[`Android BpkText should render correctly with deprecated \`emphasize\` prop 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -139,7 +133,6 @@ exports[`Android BpkText should render correctly with deprecated \`emphasize\` p
 exports[`Android BpkText should render correctly with textStyle="base and weight="emphasized" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -162,7 +155,6 @@ exports[`Android BpkText should render correctly with textStyle="base and weight
 exports[`Android BpkText should render correctly with textStyle="base" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -183,7 +175,6 @@ exports[`Android BpkText should render correctly with textStyle="base" 1`] = `
 exports[`Android BpkText should render correctly with textStyle="caps and weight="emphasized" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -206,7 +197,6 @@ exports[`Android BpkText should render correctly with textStyle="caps and weight
 exports[`Android BpkText should render correctly with textStyle="caps" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -227,7 +217,6 @@ exports[`Android BpkText should render correctly with textStyle="caps" 1`] = `
 exports[`Android BpkText should render correctly with textStyle="lg and weight="emphasized" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -250,7 +239,6 @@ exports[`Android BpkText should render correctly with textStyle="lg and weight="
 exports[`Android BpkText should render correctly with textStyle="lg" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -271,7 +259,6 @@ exports[`Android BpkText should render correctly with textStyle="lg" 1`] = `
 exports[`Android BpkText should render correctly with textStyle="sm and weight="emphasized" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -294,7 +281,6 @@ exports[`Android BpkText should render correctly with textStyle="sm and weight="
 exports[`Android BpkText should render correctly with textStyle="sm" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -315,7 +301,6 @@ exports[`Android BpkText should render correctly with textStyle="sm" 1`] = `
 exports[`Android BpkText should render correctly with textStyle="xl and weight="emphasized" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -338,7 +323,6 @@ exports[`Android BpkText should render correctly with textStyle="xl and weight="
 exports[`Android BpkText should render correctly with textStyle="xl and weight="heavy" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -361,7 +345,6 @@ exports[`Android BpkText should render correctly with textStyle="xl and weight="
 exports[`Android BpkText should render correctly with textStyle="xl" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -382,7 +365,6 @@ exports[`Android BpkText should render correctly with textStyle="xl" 1`] = `
 exports[`Android BpkText should render correctly with textStyle="xs and weight="emphasized" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -405,7 +387,6 @@ exports[`Android BpkText should render correctly with textStyle="xs and weight="
 exports[`Android BpkText should render correctly with textStyle="xs" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -426,7 +407,6 @@ exports[`Android BpkText should render correctly with textStyle="xs" 1`] = `
 exports[`Android BpkText should render correctly with textStyle="xxl and weight="emphasized" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -449,7 +429,6 @@ exports[`Android BpkText should render correctly with textStyle="xxl and weight=
 exports[`Android BpkText should render correctly with textStyle="xxl and weight="heavy" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -472,7 +451,6 @@ exports[`Android BpkText should render correctly with textStyle="xxl and weight=
 exports[`Android BpkText should render correctly with textStyle="xxl" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -493,7 +471,6 @@ exports[`Android BpkText should render correctly with textStyle="xxl" 1`] = `
 exports[`Android BpkText should render correctly with textStyle="xxxl and weight="emphasized" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -516,7 +493,6 @@ exports[`Android BpkText should render correctly with textStyle="xxxl and weight
 exports[`Android BpkText should render correctly with textStyle="xxxl and weight="heavy" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -539,7 +515,6 @@ exports[`Android BpkText should render correctly with textStyle="xxxl and weight
 exports[`Android BpkText should render correctly with textStyle="xxxl" 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -560,7 +535,6 @@ exports[`Android BpkText should render correctly with textStyle="xxxl" 1`] = `
 exports[`Android should render correctly with custom font for weight emphasized 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -586,7 +560,6 @@ exports[`Android should render correctly with custom font for weight emphasized 
 exports[`Android should render correctly with custom font for weight heavy 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {
@@ -612,7 +585,6 @@ exports[`Android should render correctly with custom font for weight heavy 1`] =
 exports[`Android should render correctly with custom font for weight regular 1`] = `
 <Text
   allowFontScaling={false}
-  maxFontSizeMultiplier={3.2}
   style={
     Array [
       Object {

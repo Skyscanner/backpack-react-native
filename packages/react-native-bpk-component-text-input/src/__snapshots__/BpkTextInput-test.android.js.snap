@@ -444,7 +444,6 @@ exports[`Android BpkTextInput dark mode should render correctly with description
   </View>
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -566,7 +565,6 @@ exports[`Android BpkTextInput dark mode should render correctly with description
   </View>
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -1180,7 +1178,6 @@ exports[`Android BpkTextInput dark mode should render correctly with valid false
   </View>
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -1793,7 +1790,6 @@ exports[`Android BpkTextInput light mode should render correctly with descriptio
   </View>
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -1915,7 +1911,6 @@ exports[`Android BpkTextInput light mode should render correctly with descriptio
   </View>
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {
@@ -2529,7 +2524,6 @@ exports[`Android BpkTextInput light mode should render correctly with valid fals
   </View>
   <Text
     allowFontScaling={false}
-    maxFontSizeMultiplier={3.2}
     style={
       Array [
         Object {

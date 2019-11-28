@@ -35,7 +35,6 @@ exports[`iOS BpkButtonLink dark mode should render correctly 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
@@ -99,7 +98,6 @@ exports[`iOS BpkButtonLink dark mode should support overwriting styles 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
@@ -166,7 +164,6 @@ exports[`iOS BpkButtonLink dark mode should support the "disabled" property 1`] 
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
@@ -232,7 +229,6 @@ exports[`iOS BpkButtonLink dark mode should support the "icon" property 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
@@ -319,7 +315,6 @@ exports[`iOS BpkButtonLink light mode should render correctly 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
@@ -383,7 +378,6 @@ exports[`iOS BpkButtonLink light mode should support overwriting styles 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
@@ -450,7 +444,6 @@ exports[`iOS BpkButtonLink light mode should support the "disabled" property 1`]
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
@@ -516,7 +509,6 @@ exports[`iOS BpkButtonLink light mode should support the "icon" property 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
@@ -606,7 +598,6 @@ exports[`iOS BpkButtonLink should render correctly with iconAlignment="leading" 
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
@@ -697,7 +688,6 @@ exports[`iOS BpkButtonLink should render correctly with iconAlignment="trailing"
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
@@ -784,7 +774,6 @@ exports[`iOS BpkButtonLink should render correctly with text props provided 1`] 
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
@@ -847,7 +836,6 @@ exports[`iOS BpkButtonLink should render correctly with theme prop 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
@@ -913,7 +901,6 @@ exports[`iOS BpkButtonLink should support elements as icons 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
@@ -939,7 +926,6 @@ exports[`iOS BpkButtonLink should support elements as icons 1`] = `
     </Text>
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       style={
         Array [
           Object {
@@ -997,7 +983,6 @@ exports[`iOS should support the "icon" and "large" property 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
@@ -1084,7 +1069,6 @@ exports[`iOS should support the "large" property 1`] = `
   >
     <Text
       allowFontScaling={false}
-      maxFontSizeMultiplier={3.2}
       numberOfLines={1}
       style={
         Array [
