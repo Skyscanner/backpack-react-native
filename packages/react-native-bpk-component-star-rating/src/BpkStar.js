@@ -20,25 +20,30 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { I18nManager, StyleSheet, View } from 'react-native';
+import { I18nManager, View } from 'react-native';
 import BpkIcon, { icons } from 'react-native-bpk-component-icon';
 import {
   spacingMd,
   spacingSm,
   colorErfoud,
   colorSkyGrayTint06,
+  colorBlackTint02,
 } from 'bpk-tokens/tokens/base.react.native';
 import {
   getThemeAttributes,
   withTheme,
   type Theme,
 } from 'react-native-bpk-theming';
+import {
+  BpkDynamicStyleSheet,
+  useBpkDynamicStyleSheet,
+} from 'react-native-bpk-appearance';
 
 import { REQUIRED_THEME_ATTRIBUTES, themePropType } from './theming';
 import { STAR_TYPES } from './star-types';
 
 const STAR_SIZE = spacingMd + spacingSm;
-const styles = StyleSheet.create({
+const dynamicStyles = BpkDynamicStyleSheet.create({
   container: {
     width: STAR_SIZE,
     height: STAR_SIZE,
@@ -50,7 +55,7 @@ const styles = StyleSheet.create({
     right: 0,
     fontSize: STAR_SIZE,
     lineHeight: STAR_SIZE,
-    color: colorSkyGrayTint06,
+    color: { light: colorSkyGrayTint06, dark: colorBlackTint02 },
     zIndex: 1,
     backgroundColor: 'transparent',
   },
@@ -74,6 +79,7 @@ const BpkStar = (props: Props) => {
   const { type, theme, ...rest } = props;
   const iconType = type === STAR_TYPES.FULL ? icons.star : icons['star-half'];
 
+  const styles = useBpkDynamicStyleSheet(dynamicStyles);
   const commonStarStyles = [styles.star];
 
   const foregroundStarStyles = [
