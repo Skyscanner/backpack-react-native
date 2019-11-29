@@ -134,7 +134,7 @@ const BpkImage = (props: Props) => {
   }
 
   /* eslint-disable prettier/prettier */
-  const spinnerType = useBpkDynamicValue<DynamicSpinnerType>({ 
+  const spinnerType = useBpkDynamicValue<DynamicSpinnerType>({
     light: 'dark',
     dark: 'light',
   });

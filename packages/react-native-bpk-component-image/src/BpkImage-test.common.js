@@ -35,6 +35,8 @@ const requiredProps = {
   },
 };
 
+jest.useFakeTimers();
+
 const commonTests = () => {
   describe('BpkImage', () => {
     describeEachColorScheme(BpkImage, WithColorScheme => {
