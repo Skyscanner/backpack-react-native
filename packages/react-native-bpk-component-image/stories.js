@@ -60,7 +60,7 @@ storiesOf('react-native-bpk-component-image', module)
     <BpkImageWithLoading
       style={styles.image}
       source={{
-        uri: 'https://unsplash.com/photos/HEkMWKpynBA/download?force=true',
+        uri: 'https://unsplash.com/photos/7Xl0a6KCDyM/download?force=true',
       }}
     />
   ))

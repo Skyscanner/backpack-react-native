@@ -6,7 +6,10 @@
 
 - react-native-bpk-component-star-rating:
   - Added dark mode support.
-  
+
+- react-native-bpk-component-image:
+  - Added dark mode support.
+
 **Fixed:**
 
 - react-native-bpk-theming
