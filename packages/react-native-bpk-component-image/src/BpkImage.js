@@ -18,22 +18,34 @@
 
 /* @flow */
 
-import React, { Component, type ComponentType, type ElementProps } from 'react';
+import React, {
+  useEffect,
+  useRef,
+  type ComponentType,
+  type ElementProps,
+} from 'react';
 import PropTypes from 'prop-types';
-import { Animated, StyleSheet, View, ViewPropTypes, Image } from 'react-native';
+import { Animated, View, ViewPropTypes, Image } from 'react-native';
 import {
   borderRadiusSm,
   animationDurationBase,
   colorSkyGrayTint04,
+  backgroundTertiaryDarkColor,
 } from 'bpk-tokens/tokens/base.react.native';
-import AnimatedValue from 'react-native/Libraries/Animated/src/nodes/AnimatedValue';
-import BpkSpinner from 'react-native-bpk-component-spinner';
+import BpkSpinner, { SPINNER_TYPES } from 'react-native-bpk-component-spinner';
+import {
+  BpkDynamicStyleSheet,
+  useBpkDynamicStyleSheet,
+  useBpkDynamicValue,
+  type BpkDynamicValue,
+} from 'react-native-bpk-appearance';
 
 type ImageProps = ElementProps<typeof Image>;
 type ViewProps = ElementProps<typeof View>;
 type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
+type DynamicSpinnerType = BpkDynamicValue<$Keys<typeof SPINNER_TYPES>>;
 
-const styles = StyleSheet.create({
+const dynamicStyles = BpkDynamicStyleSheet.create({
   outer: {
     width: '100%',
     height: '100%',
@@ -50,7 +62,10 @@ const styles = StyleSheet.create({
     flex: 1,
     width: '100%',
     height: '100%',
-    backgroundColor: colorSkyGrayTint04,
+    backgroundColor: {
+      light: colorSkyGrayTint04,
+      dark: backgroundTertiaryDarkColor,
+    },
     justifyContent: 'center',
     alignItems: 'center',
     position: 'absolute',
@@ -66,102 +81,110 @@ export type Props = {
   imageComponent: ComponentType<ImageProps>,
 };
 
-class BpkImage extends Component<Props> {
-  showLoadingIndicator: boolean;
+const useLoadingAnimation = (loaded: boolean) => {
+  const showLoadingIndicator = useRef(!loaded);
+  const imageOpacity = useRef(new Animated.Value(loaded ? 1 : 0)).current;
+  const loadingIndicatorOpacity = useRef(new Animated.Value(loaded ? 0 : 1))
+    .current;
 
-  imageOpacity: AnimatedValue;
-
-  loadingIndicatorOpacity: AnimatedValue;
-
-  static propTypes = {
-    // see: https://github.com/facebook/react-native/blob/master/Libraries/Image/ImageSourcePropType.js#L82
-    source: PropTypes.oneOfType([
-      PropTypes.object,
-      PropTypes.number,
-      PropTypes.arrayOf(PropTypes.object),
-    ]).isRequired,
-    inView: PropTypes.bool,
-    loaded: PropTypes.bool,
-    onLoad: PropTypes.func,
-    rounded: PropTypes.bool,
-    style: ViewPropTypes.style,
-    imageComponent: PropTypes.func,
-  };
-
-  static defaultProps = {
-    inView: true,
-    loaded: true,
-    onLoad: null,
-    rounded: true,
-    style: null,
-    imageComponent: Animated.Image,
-  };
-
-  constructor(props: Props) {
-    super(props);
-
-    this.showLoadingIndicator = !props.loaded;
-    this.imageOpacity = new Animated.Value(props.loaded ? 1 : 0);
-    this.loadingIndicatorOpacity = new Animated.Value(props.loaded ? 0 : 1);
-  }
-
-  componentDidUpdate = (prevProps: Props) => {
-    if (!prevProps.loaded && this.props.loaded) {
+  useEffect(() => {
+    if (loaded) {
       Animated.sequence([
-        Animated.timing(this.imageOpacity, {
+        Animated.timing(imageOpacity, {
           toValue: 1,
           duration: animationDurationBase,
         }),
-        Animated.timing(this.loadingIndicatorOpacity, {
+        Animated.timing(loadingIndicatorOpacity, {
           toValue: 0,
           duration: animationDurationBase,
         }),
       ]).start(() => {
-        this.showLoadingIndicator = false;
+        showLoadingIndicator.current = false;
       });
     }
-  };
+  }, [loaded]);
 
-  render() {
-    const {
-      style: userStyle,
-      inView,
-      rounded,
-      loaded,
-      imageComponent: ImageComponent,
-      ...rest
-    } = this.props;
+  return [showLoadingIndicator.current, imageOpacity, loadingIndicatorOpacity];
+};
 
-    const outerStyle = [styles.outer];
-    if (rounded) {
-      outerStyle.push(styles.outerWithBorderRadius);
-    }
-    if (userStyle) {
-      outerStyle.push(userStyle);
-    }
+const BpkImage = (props: Props) => {
+  const {
+    style: userStyle,
+    inView,
+    rounded,
+    loaded,
+    imageComponent: ImageComponent,
+    onLoad,
+    ...rest
+  } = props;
 
-    return this.showLoadingIndicator ? (
-      <View style={outerStyle}>
-        <Animated.View
-          style={[
-            styles.loadingIndicatorView,
-            { opacity: this.loadingIndicatorOpacity },
-          ]}
-        >
-          {inView && <BpkSpinner small type="dark" />}
-        </Animated.View>
-        {inView && (
-          <ImageComponent
-            onLoad={this.props.onLoad}
-            style={[styles.image, { opacity: this.imageOpacity }]}
-            {...rest}
-          />
-        )}
-      </View>
-    ) : (
-      <ImageComponent onLoad={this.props.onLoad} style={outerStyle} {...rest} />
-    );
+  const [
+    showLoadingIndicator,
+    imageOpacity,
+    loadingIndicatorOpacity,
+  ] = useLoadingAnimation(loaded);
+
+  const styles = useBpkDynamicStyleSheet(dynamicStyles);
+  const outerStyle = [styles.outer];
+  if (rounded) {
+    outerStyle.push(styles.outerWithBorderRadius);
   }
-}
+  if (userStyle) {
+    outerStyle.push(userStyle);
+  }
+
+  /* eslint-disable prettier/prettier */
+  const spinnerType = useBpkDynamicValue<DynamicSpinnerType>({ 
+    light: 'dark',
+    dark: 'light',
+  });
+  /* eslint-enable prettier/prettier */
+
+  return showLoadingIndicator ? (
+    <View style={outerStyle}>
+      <Animated.View
+        style={[
+          styles.loadingIndicatorView,
+          { opacity: loadingIndicatorOpacity },
+        ]}
+      >
+        {inView && <BpkSpinner small type={spinnerType} />}
+      </Animated.View>
+      {inView && (
+        <ImageComponent
+          onLoad={onLoad}
+          style={[styles.image, { opacity: imageOpacity }]}
+          {...rest}
+        />
+      )}
+    </View>
+  ) : (
+    <ImageComponent onLoad={onLoad} style={outerStyle} {...rest} />
+  );
+};
+
+BpkImage.propTypes = {
+  // see: https://github.com/facebook/react-native/blob/master/Libraries/Image/ImageSourcePropType.js#L82
+  source: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.number,
+    PropTypes.arrayOf(PropTypes.object),
+  ]).isRequired,
+  inView: PropTypes.bool,
+  loaded: PropTypes.bool,
+  onLoad: PropTypes.func,
+  rounded: PropTypes.bool,
+  style: ViewPropTypes.style,
+  imageComponent: PropTypes.func,
+};
+
+BpkImage.defaultProps = {
+  inView: true,
+  loaded: true,
+  onLoad: null,
+  rounded: true,
+  style: null,
+  imageComponent: Animated.Image,
+};
 
 export default BpkImage;

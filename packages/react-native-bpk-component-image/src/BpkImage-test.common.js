@@ -21,6 +21,7 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
 import renderer from 'react-test-renderer';
+import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 
 import BpkImage from './BpkImage';
 
@@ -36,63 +37,75 @@ const requiredProps = {
 
 const commonTests = () => {
   describe('BpkImage', () => {
-    it('should render correctly', () => {
-      const tree = renderer.create(<BpkImage {...requiredProps} />).toJSON();
-      expect(tree).toMatchSnapshot();
-    });
-
-    it('should render correctly with custom style', () => {
-      const styles = StyleSheet.create({
-        custom: {
-          flex: 1,
-        },
+    describeEachColorScheme(BpkImage, WithColorScheme => {
+      it('should render correctly', () => {
+        const tree = renderer
+          .create(<WithColorScheme {...requiredProps} />)
+          .toJSON();
+        expect(tree).toMatchSnapshot();
       });
 
-      const tree = renderer
-        .create(<BpkImage style={styles.custom} {...requiredProps} />)
-        .toJSON();
-      expect(tree).toMatchSnapshot();
-    });
+      it('should render correctly with custom style', () => {
+        const styles = StyleSheet.create({
+          custom: {
+            flex: 1,
+          },
+        });
 
-    it('should render correctly with arbitrary props', () => {
-      const tree = renderer
-        .create(<BpkImage testID="123" {...requiredProps} />)
-        .toJSON();
+        const tree = renderer
+          .create(<WithColorScheme style={styles.custom} {...requiredProps} />)
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
 
-      expect(tree).toMatchSnapshot();
-    });
+      it('should render correctly with arbitrary props', () => {
+        const tree = renderer
+          .create(<WithColorScheme testID="123" {...requiredProps} />)
+          .toJSON();
 
-    it('should render correctly when not loaded', () => {
-      const tree = renderer
-        .create(<BpkImage loaded={false} {...requiredProps} />)
-        .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
 
-      expect(tree).toMatchSnapshot();
-    });
+      it('should render correctly when not loaded', () => {
+        const tree = renderer
+          .create(<WithColorScheme loaded={false} {...requiredProps} />)
+          .toJSON();
 
-    it('should render correctly without border radius', () => {
-      const tree = renderer
-        .create(<BpkImage rounded={false} {...requiredProps} />)
-        .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
 
-      expect(tree).toMatchSnapshot();
-    });
+      it('should render correctly without border radius', () => {
+        const tree = renderer
+          .create(<WithColorScheme rounded={false} {...requiredProps} />)
+          .toJSON();
 
-    it('should render correctly when unloaded and out of view', () => {
-      const tree = renderer
-        .create(<BpkImage inView={false} loaded={false} {...requiredProps} />)
-        .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
 
-      expect(tree).toMatchSnapshot();
-    });
+      it('should render correctly when unloaded and out of view', () => {
+        const tree = renderer
+          .create(
+            <WithColorScheme
+              inView={false}
+              loaded={false}
+              {...requiredProps}
+            />,
+          )
+          .toJSON();
 
-    it('should render correctly with a custom image component', () => {
-      const tree = renderer
-        // $FlowFixMe, imageComponent shouldnt be a string however react test renderer conveniently treats strings as custom components
-        .create(<BpkImage imageComponent={CustomImage} {...requiredProps} />)
-        .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
 
-      expect(tree).toMatchSnapshot();
+      it('should render correctly with a custom image component', () => {
+        const tree = renderer
+          // $FlowFixMe, imageComponent shouldnt be a string however react test renderer conveniently treats strings as custom components
+          .create(
+            <WithColorScheme imageComponent={CustomImage} {...requiredProps} />,
+          )
+          .toJSON();
+
+        expect(tree).toMatchSnapshot();
+      });
     });
   });
 };
