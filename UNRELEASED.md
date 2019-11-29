@@ -2,22 +2,6 @@
 
 > Place your changes below this line.
 
-**Added:**
-
-- react-native-bpk-component-star-rating:
-  - Added dark mode support.
-
-- react-native-bpk-component-image:
-  - Added dark mode support.
-
-**Fixed:**
-
-- react-native-bpk-theming
-  - `getThemeAttributes` now always returns optional props if they are present in the theme.
-
-- react-native-bpk-component-text-input
-  - `textFontFamily` theme prop is now optional.
-
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).

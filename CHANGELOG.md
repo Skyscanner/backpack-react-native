@@ -2,6 +2,24 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-11-29 - Dark mode support and text input fix
+
+**Added:**
+
+- react-native-bpk-component-star-rating:
+  - Added dark mode support.
+
+- react-native-bpk-component-image:
+  - Added dark mode support.
+
+**Fixed:**
+
+- react-native-bpk-theming
+  - `getThemeAttributes` now always returns optional props if they are present in the theme.
+
+- react-native-bpk-component-text-input
+  - `textFontFamily` theme prop is now optional and always applied if defined.
+
 # 2019-11-28 - Dark mode support
 
 **Fixed**
