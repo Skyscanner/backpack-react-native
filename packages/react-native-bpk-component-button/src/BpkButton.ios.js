@@ -41,7 +41,6 @@ import {
   BUTTON_TYPES,
   ICON_ALIGNMENTS,
   REQUIRED_THEME_ATTRIBUTES,
-  OPTIONAL_THEME_ATTRIBUTES,
 } from './common-types';
 import {
   borderColorForType,
@@ -113,10 +112,10 @@ const BpkButton = (props: Props) => {
     );
   }
 
-  const themeAttributes = {
-    ...getThemeAttributes(REQUIRED_THEME_ATTRIBUTES[type], theme),
-    ...getThemeAttributes(OPTIONAL_THEME_ATTRIBUTES, theme),
-  };
+  const themeAttributes = getThemeAttributes(
+    REQUIRED_THEME_ATTRIBUTES[type],
+    theme,
+  );
 
   const accessibilityStates = [];
   if (disabled) {

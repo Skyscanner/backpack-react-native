@@ -183,7 +183,6 @@ const commonTests = () => {
         buttonPrimaryTextColor: 'red',
         buttonPrimaryGradientStartColor: 'green',
         buttonPrimaryGradientEndColor: 'blue',
-        buttonBorderRadius: 4,
       };
       const tree = renderer
         .create(
@@ -200,7 +199,6 @@ const commonTests = () => {
         buttonPrimaryTextColor: 'red',
         buttonPrimaryGradientStartColor: 'green',
         buttonPrimaryGradientEndColor: 'blue',
-        buttonBorderRadius: 4,
       };
       const tree = renderer
         .create(
