@@ -2,6 +2,34 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-12-04 - react-native-bpk-appearance is now a peer dependency
+
+**Fixed:**
+
+- react-native-bpk-component-icon
+- react-native-bpk-component-touchable-overlay
+- react-native-bpk-component-section-list
+- react-native-bpk-component-select
+- react-native-bpk-component-text
+- react-native-bpk-component-horizontal-nav
+- react-native-bpk-component-text-input
+- react-native-bpk-component-badge
+- react-native-bpk-component-button
+- react-native-bpk-component-flat-list
+- react-native-bpk-component-spinner
+- react-native-bpk-component-switch
+- react-native-bpk-component-chip
+- react-native-bpk-component-button-link
+- react-native-bpk-component-star-rating
+- react-native-bpk-component-progress
+- react-native-bpk-component-phone-input
+- react-native-bpk-component-navigation-bar
+- react-native-bpk-component-image
+- react-native-bpk-component-banner-alert
+- react-native-bpk-component-panel
+- react-native-bpk-component-card
+  - react-native-bpk-appearance is now a peer dependency
+
 # 2019-11-29 - Dark mode support and text input fix
 
 **Added:**
