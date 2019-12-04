@@ -74,6 +74,7 @@ const STYLES = StyleSheet.create({
   iconNeutral: {
     color: colorSkyGrayTint02,
   },
+  // This is added to make the message text RTL friendly
   messageContainer: {
     flex: 1,
   },

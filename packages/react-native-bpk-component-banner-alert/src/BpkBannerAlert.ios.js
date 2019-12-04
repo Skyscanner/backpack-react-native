@@ -89,6 +89,7 @@ const dynamicStyles = BpkDynamicStyleSheet.create({
   iconNeutral: {
     color: textSecondaryColor,
   },
+  // This is added to make the message text RTL friendly
   messageContainer: {
     flex: 1,
   },
