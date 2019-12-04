@@ -193,7 +193,7 @@ exports[`Android BpkButton dark mode should render correctly 1`] = `
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": null,
+        "color": -9934465,
         "type": "RippleAndroid",
       }
     }
@@ -278,7 +278,7 @@ exports[`Android BpkButton dark mode should render correctly with type="destruct
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": null,
+        "color": -9934465,
         "type": "RippleAndroid",
       }
     }
@@ -369,7 +369,7 @@ exports[`Android BpkButton dark mode should render correctly with type="destruct
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": null,
+        "color": -9934465,
         "type": "RippleAndroid",
       }
     }
@@ -456,7 +456,7 @@ exports[`Android BpkButton dark mode should render correctly with type="featured
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": null,
+        "color": -9934465,
         "type": "RippleAndroid",
       }
     }
@@ -548,7 +548,7 @@ exports[`Android BpkButton dark mode should render correctly with type="featured
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": null,
+        "color": -9934465,
         "type": "RippleAndroid",
       }
     }
@@ -633,7 +633,7 @@ exports[`Android BpkButton dark mode should render correctly with type="primary"
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": null,
+        "color": -9934465,
         "type": "RippleAndroid",
       }
     }
@@ -725,7 +725,7 @@ exports[`Android BpkButton dark mode should render correctly with type="primary"
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": null,
+        "color": -9934465,
         "type": "RippleAndroid",
       }
     }
@@ -810,7 +810,7 @@ exports[`Android BpkButton dark mode should render correctly with type="secondar
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": null,
+        "color": -9934465,
         "type": "RippleAndroid",
       }
     }
@@ -901,7 +901,7 @@ exports[`Android BpkButton dark mode should render correctly with type="secondar
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": null,
+        "color": -9934465,
         "type": "RippleAndroid",
       }
     }
@@ -991,7 +991,7 @@ exports[`Android BpkButton dark mode should support overwriting styles 1`] = `
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": null,
+        "color": -9934465,
         "type": "RippleAndroid",
       }
     }
@@ -1083,7 +1083,7 @@ exports[`Android BpkButton dark mode should support the "disabled" property 1`] 
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": null,
+        "color": -9934465,
         "type": "RippleAndroid",
       }
     }
