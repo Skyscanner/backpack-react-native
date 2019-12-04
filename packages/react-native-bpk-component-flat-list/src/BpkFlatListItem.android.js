@@ -19,7 +19,7 @@
 /* @flow */
 
 import { View } from 'react-native';
-import React from 'react';
+import React, { type Config } from 'react';
 import BpkText from 'react-native-bpk-component-text';
 import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-native-feedback';
 import { spacingBase, primaryColor } from 'bpk-tokens/tokens/base.react.native';
