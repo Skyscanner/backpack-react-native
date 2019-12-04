@@ -2,13 +2,16 @@
 
 > Place your changes below this line.
 
+**Fixed:**
+ - react-native-bpk-component-banner-alert:
+   - Fixed RTL alignment.
+
 **Added:**
+ - react-native-touchable-native-feedback:
+   - Added dark mode support.
 
-- react-native-touchable-native-feedback:
-  - Added dark mode support.
-
-- react-native-bpk-component-switch:
-  - Added dark mode support.
+ - react-native-bpk-component-switch:
+   - Added dark mode support.
 
 ## How to write a good changelog entry
 
