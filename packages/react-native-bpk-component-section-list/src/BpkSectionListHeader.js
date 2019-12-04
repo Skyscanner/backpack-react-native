@@ -28,6 +28,7 @@ import {
   backgroundTertiaryDarkColor,
   colorSkyGrayTint07,
   colorSkyGrayTint06,
+  lineDarkColor,
   textPrimaryColor,
   textSecondaryColor,
 } from 'bpk-tokens/tokens/base.react.native';
@@ -52,7 +53,7 @@ const dynamicStyles = BpkDynamicStyleSheet.create({
       android: {
         justifyContent: 'flex-start',
         alignItems: 'center',
-        borderTopColor: colorSkyGrayTint06,
+        borderTopColor: { light: colorSkyGrayTint06, dark: lineDarkColor },
         borderTopWidth: 1, // eslint-disable-line backpack/use-tokens
         flexDirection: 'row',
         height: ANDROID_LIST_ITEM_HEIGHT,
