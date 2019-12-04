@@ -26,6 +26,11 @@ import {
   View,
   ViewPropTypes,
 } from 'react-native';
+import {
+  useBpkDynamicValue,
+  type BpkDynamicValue,
+} from 'react-native-bpk-appearance';
+import { colorSkyGrayTint02 } from 'bpk-tokens/tokens/base.react.native';
 
 type ViewProps = ElementProps<typeof View>;
 type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
@@ -33,16 +38,20 @@ type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
 export type Props = {
   children: Node,
   borderlessBackground: boolean,
-  color: ?string,
+  color: ?string | ?BpkDynamicValue<string>,
   style: ViewStyleProp,
 };
 
 const BpkTouchableNativeFeedback = (props: Props) => {
   const { children, style, borderlessBackground, color, ...rest } = props;
+  const rippleColor =
+    color != null
+      ? useBpkDynamicValue(color)
+      : useBpkDynamicValue({ light: null, dark: colorSkyGrayTint02 });
   const preLollipop = Platform.Version < 21;
   const background = preLollipop
     ? TouchableNativeFeedback.SelectableBackground()
-    : TouchableNativeFeedback.Ripple(color, borderlessBackground);
+    : TouchableNativeFeedback.Ripple(rippleColor, borderlessBackground);
 
   return (
     // eslint-disable-next-line backpack/use-components
@@ -55,7 +64,13 @@ const BpkTouchableNativeFeedback = (props: Props) => {
 BpkTouchableNativeFeedback.propTypes = {
   children: PropTypes.element.isRequired,
   borderlessBackground: PropTypes.bool,
-  color: PropTypes.string,
+  color: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.shape({
+      light: PropTypes.string,
+      dark: PropTypes.string,
+    }),
+  ]),
   style: ViewPropTypes.style,
 };
 

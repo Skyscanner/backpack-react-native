@@ -10,7 +10,7 @@ exports[`Android BpkFlatListItem dark mode should render correctly 1`] = `
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": null,
+      "color": -9934465,
       "type": "RippleAndroid",
     }
   }
@@ -106,7 +106,7 @@ exports[`Android BpkFlatListItem dark mode should support the "selected" propert
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": null,
+      "color": -9934465,
       "type": "RippleAndroid",
     }
   }

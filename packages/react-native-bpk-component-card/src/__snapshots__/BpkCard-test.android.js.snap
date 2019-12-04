@@ -21,7 +21,7 @@ exports[`Android BpkCard dark mode should render correctly 1`] = `
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": null,
+        "color": -9934465,
         "type": "RippleAndroid",
       }
     }
@@ -85,7 +85,7 @@ exports[`Android BpkCard dark mode should render correctly with the "focused" st
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": null,
+        "color": -9934465,
         "type": "RippleAndroid",
       }
     }
