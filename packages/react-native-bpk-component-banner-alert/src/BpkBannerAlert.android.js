@@ -74,8 +74,11 @@ const STYLES = StyleSheet.create({
   iconNeutral: {
     color: colorSkyGrayTint02,
   },
-  message: {
+  messageContainer: {
     flex: 1,
+  },
+  message: {
+    alignSelf: 'flex-start',
   },
   closeButton: {
     marginStart: spacingMd,
@@ -132,9 +135,11 @@ const BpkBannerAlert = (props: Props) => {
   const rowContent = (
     <Fragment>
       <BpkIcon style={[STYLES.icon, iconStyle]} icon={icon} small />
-      <BpkText style={STYLES.message} textStyle="sm">
-        {message}
-      </BpkText>
+      <View style={STYLES.messageContainer}>
+        <BpkText style={STYLES.message} textStyle="sm">
+          {message}
+        </BpkText>
+      </View>
       {expandable && (
         <BpkIcon
           style={STYLES.expandIcon}

@@ -89,8 +89,11 @@ const dynamicStyles = BpkDynamicStyleSheet.create({
   iconNeutral: {
     color: textSecondaryColor,
   },
-  message: {
+  messageContainer: {
     flex: 1,
+  },
+  message: {
+    alignSelf: 'flex-start',
   },
   closeButton: {
     position: 'absolute',
@@ -170,9 +173,11 @@ const BpkBannerAlert = (props: Props) => {
   const rowContent = (
     <Fragment>
       <BpkIcon style={[styles.icon, iconStyle]} icon={icon} small />
-      <BpkText textStyle="sm" style={styles.message}>
-        {message}
-      </BpkText>
+      <View style={styles.messageContainer}>
+        <BpkText textStyle="sm" style={styles.message}>
+          {message}
+        </BpkText>
+      </View>
       {expandable && (
         <BpkIcon
           style={styles.expandIcon}
