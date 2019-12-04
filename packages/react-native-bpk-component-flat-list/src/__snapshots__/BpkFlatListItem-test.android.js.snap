@@ -580,7 +580,7 @@ exports[`Android should support theming when selected 1`] = `
           },
           Object {},
           Object {
-            "fontFamily": "System",
+            "fontFamily": "relative",
           },
           Array [
             Object {

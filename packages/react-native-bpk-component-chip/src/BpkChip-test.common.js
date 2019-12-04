@@ -134,7 +134,7 @@ const commonTests = () => {
         chipSelectedTextColor: 'yellow',
         chipOutlineSelectedBackgroundColor: 'orange',
         chipOutlineSelectedTextColor: 'blue',
-        textFontFamily: 'System',
+        textFontFamily: 'relative',
         colorSkyGrayTint04: '#B3BABD',
         colorSkyGrayTint02: '#657176',
         colorSkyGrayTint01: '#4B5458',

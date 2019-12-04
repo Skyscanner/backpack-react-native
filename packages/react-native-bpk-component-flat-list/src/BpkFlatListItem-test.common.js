@@ -75,7 +75,7 @@ const commonTests = () => {
   it('should support theming when selected', () => {
     const theme = {
       flatListSelectedItemColor: 'red',
-      textFontFamily: 'System',
+      textFontFamily: 'relative',
     };
     const tree = renderer
       .create(
