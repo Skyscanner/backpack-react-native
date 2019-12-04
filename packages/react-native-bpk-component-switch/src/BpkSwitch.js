@@ -29,6 +29,8 @@ import {
 import {
   colorSkyBlue,
   colorBlackTint01,
+  colorBlackTint02,
+  colorBlackTint03,
   colorSkyGrayTint06,
   colorSkyGrayTint07,
 } from 'bpk-tokens/tokens/base.react.native';
@@ -54,10 +56,24 @@ const useColors = (themeAttributes: ?Object, value: ?boolean): Object => {
       },
     },
     android: {
-      thumbColor: value ? primaryColor : colorSkyGrayTint07,
+      thumbColor: value
+        ? primaryColor
+        : useBpkDynamicValue({
+            light: colorSkyGrayTint07,
+            dark: colorBlackTint03,
+          }),
       trackColor: {
-        false: colorSkyGrayTint06,
-        true: setOpacity(primaryColor, 0.32), // Taken from here https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/color/MaterialColors.java#L42
+        false: useBpkDynamicValue({
+          light: colorSkyGrayTint06,
+          dark: colorBlackTint02,
+        }),
+        true: setOpacity(
+          primaryColor,
+          useBpkDynamicValue({
+            light: 0.32, // Taken from here https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/color/MaterialColors.java#L42
+            dark: 0.5,
+          }),
+        ),
       },
     },
   });
