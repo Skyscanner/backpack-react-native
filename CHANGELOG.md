@@ -2,6 +2,21 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-12-04 - Fixed RTL for banner alert.
+
+**Fixed:**
+
+- react-native-bpk-component-banner-alert:
+  - Fixed RTL alignment.
+
+**Added:**
+
+- react-native-touchable-native-feedback:
+  - Added dark mode support.
+
+- react-native-bpk-component-switch:
+  - Added dark mode support.
+
 # 2019-12-04 - react-native-bpk-appearance is now a peer dependency
 
 **Fixed:**
