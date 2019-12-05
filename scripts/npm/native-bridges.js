@@ -136,6 +136,7 @@ const getStaleAndroidBridges = () => {
           'Lerna changed returned no changes, there is nothing to release!',
         );
       }
+      return changed;
     })
     .then(pkgs =>
       filterPromise(pkgs, pkg =>
