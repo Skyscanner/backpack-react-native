@@ -1,6 +1,6 @@
 {
   "name": "react-native-bpk-component-card",
-  "version": "2.1.4",
+  "version": "2.2.0",
   "main": "index.js",
   "description": "Backpack React Native card component.",
   "repository": {
@@ -18,7 +18,7 @@
     "@skyscanner/react-native-dash": "^0.0.10",
     "bpk-tokens": "^29.4.0",
     "prop-types": "^15.5.8",
-    "react-native-bpk-component-touchable-native-feedback": "^2.0.18",
+    "react-native-bpk-component-touchable-native-feedback": "^2.0.19",
     "react-native-bpk-component-touchable-overlay": "^2.1.4",
     "react-native-bpk-styles": "^2.0.8"
   },
