@@ -6,6 +6,10 @@
 - react-native-bpk-component-phone-input
   - On android the phone input now uses BpkSectionList instead of BpkFlatList. This means that it is split into sections by the first character of each country (aligned with the iOS implementation).
 
+**Added:**
+- react-native-bpk-component-phone-input
+  - Add support for suggested country codes at the top of the picker.
+
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).

@@ -22,6 +22,8 @@ All keys are required and should have non-null/empty values.
 
 For `BpkDialingCodeList` a list of objects with this format should be used. Sorting should be done beforehand as the component does not perform any sorting itself.
 
+Optionally, you may supply a list of suggested ids which are your best guess at the user's country code. These codes will be shown at the top of the list under a custom title.
+
 ## BpkDialingCodeList
 
 ### Usage
@@ -51,6 +53,11 @@ const FLAG_IMAGES = {
   'GB': '/resources/uk.png',
 };
 
+const SUGGESTED = {
+  ids: ['IT', 'GB'],  // The IDs must match the ones from dialingCodes
+  title: 'Suggested', // The title shown above the suggested codes
+};
+
 export default class App extends Component {
   render() {
     return (
@@ -59,6 +66,7 @@ export default class App extends Component {
         selectedId="CD"
         onItemPress={code => console.log(code.id)}
         renderFlag={code => <Image source={require(FLAG_IMAGES[code.id])} />}
+        suggested={SUGGESTED}
       />
     );
   }
@@ -74,6 +82,7 @@ export default class App extends Component {
 | onItemPress                 | func                                                        | true     | -             |
 | renderFlag                  | func                                                        | true     | -             |
 | selectedId                  | string                                                      | false    | null          |
+| suggested (iOS only)        | { ids, title }                                              | false    | null          |
 
 ## BpkPhoneNumberInput
 

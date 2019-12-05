@@ -18,8 +18,56 @@
 
 /* @flow */
 
+import React from 'react';
+import renderer from 'react-test-renderer';
+import BpkSectionList from 'react-native-bpk-component-section-list';
+
+import BpkDialingCodeList from './BpkDialingCodeList';
 import commonTests from './BpkDialingCodeList-test.common';
+
+const CODES = [
+  {
+    id: '0',
+    dialingCode: '0',
+    name: 'Zero',
+  },
+  {
+    id: '1',
+    dialingCode: '1',
+    name: 'One',
+  },
+  {
+    id: '2',
+    dialingCode: '2',
+    name: 'Two',
+  },
+  {
+    id: '3',
+    dialingCode: '3',
+    name: 'Three',
+  },
+];
+
+const SUGGESTED = {
+  ids: ['1', '3'],
+  title: 'Suggested for you',
+};
 
 describe('iOS', () => {
   commonTests();
+
+  // This test can be moved to commonTests() once the feature has been implemented on android
+  it('should render correctly with suggested IDs', () => {
+    const tree = renderer.create(
+      <BpkDialingCodeList
+        dialingCodes={CODES}
+        onItemPress={jest.fn()}
+        renderFlag={() => null}
+        suggested={SUGGESTED}
+      />,
+    );
+    const { props } = tree.root.findByType(BpkSectionList);
+
+    expect(props.sections).toMatchSnapshot();
+  });
 });
