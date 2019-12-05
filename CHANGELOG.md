@@ -2,12 +2,28 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
-# 2019-12-04 - Fixed RTL for banner alert.
+# 2019-12-05 - Fixed RTL for banner alert and improve Android dark mode support
 
-**Fixed:**
+**Fixed:**	
 
 - react-native-bpk-component-banner-alert:
   - Fixed RTL alignment.
+
+**Added:**
+
+- react-native-bpk-component-flat-list:
+  - Added dark mode support.
+
+- react-native-bpk-component-section-list:
+  - Added dark mode support.
+
+- react-native-bpk-component-banner-alert:
+  - Added dark mode support.
+
+- react-native-bpk-component-card:
+  - Added dark mode support.
+
+# 2019-12-04 - Improve Android dark mode support
 
 **Added:**
 
