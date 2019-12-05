@@ -2,6 +2,10 @@
 
 > Place your changes below this line.
 
+**Fixed:**	
+ - react-native-bpk-component-banner-alert:	
+   - Fixed RTL alignment.
+
 **Added:**
 
 - react-native-bpk-component-flat-list:
