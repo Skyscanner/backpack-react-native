@@ -95,6 +95,7 @@ const dynamicStyles = BpkDynamicStyleSheet.create({
   },
   message: {
     alignSelf: 'flex-start',
+    textAlign: 'left',
   },
   closeButton: {
     position: 'absolute',
