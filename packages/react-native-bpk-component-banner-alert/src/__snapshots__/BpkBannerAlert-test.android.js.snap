@@ -95,6 +95,7 @@ exports[`Android BpkBannerAlert dark mode should accept userland styling 1`] = `
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -182,6 +183,7 @@ exports[`Android BpkBannerAlert dark mode should accept userland styling 1`] = `
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -289,6 +291,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with dismissab
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -436,6 +439,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with dismissab
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -603,6 +607,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -690,6 +695,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -797,6 +803,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -884,6 +891,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -991,6 +999,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -1078,6 +1087,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -1185,6 +1195,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -1272,6 +1283,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -1380,6 +1392,7 @@ exports[`Android BpkBannerAlert light mode should accept userland styling 1`] = 
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -1467,6 +1480,7 @@ exports[`Android BpkBannerAlert light mode should accept userland styling 1`] = 
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -1574,6 +1588,7 @@ exports[`Android BpkBannerAlert light mode should render correctly with dismissa
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -1721,6 +1736,7 @@ exports[`Android BpkBannerAlert light mode should render correctly with dismissa
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -1888,6 +1904,7 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -1975,6 +1992,7 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -2082,6 +2100,7 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -2169,6 +2188,7 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -2276,6 +2296,7 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -2363,6 +2384,7 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -2470,6 +2492,7 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -2557,6 +2580,7 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -2664,6 +2688,7 @@ exports[`Android BpkBannerAlert should render correctly when not shown 1`] = `
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -2751,6 +2776,7 @@ exports[`Android BpkBannerAlert should render correctly when not shown 1`] = `
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -2858,6 +2884,7 @@ exports[`Android BpkBannerAlert should render correctly with animateOnEnter 1`] 
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -2945,6 +2972,7 @@ exports[`Android BpkBannerAlert should render correctly with animateOnEnter 1`] 
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -3052,6 +3080,7 @@ exports[`Android BpkBannerAlert should render correctly with animateOnLeave 1`] 
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -3139,6 +3168,7 @@ exports[`Android BpkBannerAlert should render correctly with animateOnLeave 1`] 
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -3265,6 +3295,7 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -3467,6 +3498,7 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -3689,6 +3721,7 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
@@ -3891,6 +3924,7 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
                 Object {},
                 Object {
                   "alignSelf": "flex-start",
+                  "textAlign": "left",
                 },
               ]
             }
