@@ -19,20 +19,24 @@
 /* @flow */
 
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { View } from 'react-native';
 import PropTypes from 'prop-types';
 import BpkText from 'react-native-bpk-component-text';
 import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-native-feedback';
-import { colorSkyBlue, spacingBase } from 'bpk-tokens/tokens/base.react.native';
+import { primaryColor, spacingBase } from 'bpk-tokens/tokens/base.react.native';
+import {
+  BpkDynamicStyleSheet,
+  useBpkDynamicStyleSheet,
+} from 'react-native-bpk-appearance';
 
 import { PICKER_VALUE_PROP_TYPE, type PickerValue } from './common-types';
 
-const styles = StyleSheet.create({
+const dynamicStyles = BpkDynamicStyleSheet.create({
   pickerItem: {
     padding: spacingBase,
   },
   selected: {
-    color: colorSkyBlue,
+    color: primaryColor,
   },
 });
 
@@ -45,6 +49,7 @@ export type Props = {
 
 const BpkPickerItem = (props: Props) => {
   const { value, label, onPress, selected } = props;
+  const styles = useBpkDynamicStyleSheet(dynamicStyles);
 
   const accessibilityStates = [];
   if (selected) {
