@@ -24,7 +24,6 @@ import { storiesOf } from '@storybook/react-native';
 import BpkTextInput from 'react-native-bpk-component-text-input';
 import BpkPicker, { BpkPickerItem } from 'react-native-bpk-component-picker';
 import BpkSelect from 'react-native-bpk-component-select';
-import { colorWhite } from 'bpk-tokens/tokens/base.react.native';
 
 import CenterDecorator from '../../storybook/CenterDecorator';
 
@@ -38,13 +37,11 @@ const styles = StyleSheet.create({
     display: 'flex',
     maxHeight: '100%',
     height: '100%',
-    backgroundColor: colorWhite,
   },
   calendar: {
     flexGrow: 1,
   },
   calendarOnly: {
-    backgroundColor: colorWhite,
     maxHeight: '100%',
     height: '100%',
     width: '100%',
