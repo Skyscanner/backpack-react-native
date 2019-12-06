@@ -21,30 +21,17 @@
 import React, { Component, type Node } from 'react';
 import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react-native';
-import { StyleSheet, View } from 'react-native';
+import { View } from 'react-native';
 import BpkText from 'react-native-bpk-component-text';
 import BpkButton from 'react-native-bpk-component-button';
 import {
   spacingBase,
-  colorSkyGrayTint07,
   animationDurationBase,
 } from 'bpk-tokens/tokens/base.react.native';
 
-import BpkAnimateHeight from './index';
+import CenterDecorator from '../../storybook/CenterDecorator';
 
-const styles = StyleSheet.create({
-  centered: {
-    flex: 1,
-    flexDirection: 'column',
-    justifyContent: 'center',
-    padding: spacingBase,
-    width: '100%',
-    backgroundColor: colorSkyGrayTint07,
-  },
-  container: {
-    marginBottom: spacingBase,
-  },
-});
+import BpkAnimateHeight from './index';
 
 const animateHeightContent = (
   <BpkText>
@@ -117,7 +104,7 @@ class AnimateHeightDemo extends Component<Props, { expanded: boolean }> {
 }
 
 storiesOf('react-native-bpk-component-animate-height', module)
-  .addDecorator(getStory => <View style={styles.centered}>{getStory()}</View>)
+  .addDecorator(CenterDecorator)
   .add('Default', () => (
     <AnimateHeightDemo>{animateHeightContent}</AnimateHeightDemo>
   ))
