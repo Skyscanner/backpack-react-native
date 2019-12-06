@@ -2,6 +2,21 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-12-06 - Fix `emphasize` font for iOS and more dark mode support
+
+**Added:**
+
+- react-native-bpk-component-picker:
+  - Added dark mode support (iOS and Android).
+
+**Fixed:**
+
+- react-native-bpk-component-text:
+  - On iOS, `emphasize` font weight is now 700 to match other platforms.
+
+- react-native-bpk-component-button:
+  - Removed `buttonBorderRadius` optional theming attribute.
+
 # 2019-12-05 - Fixed RTL for banner alert and improve Android dark mode support
 
 **Fixed:**	

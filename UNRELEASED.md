@@ -2,21 +2,6 @@
 
 > Place your changes below this line.
 
-**Changed:**
-
-- react-native-bpk-component-button:
-  - Removed `buttonBorderRadius` optional theming attribute.
-
-**Added:**
-
-- react-native-bpk-component-picker:
-  - Added dark mode support (iOS and Android).
-
-**Fixed:**
-
-- react-native-bpk-component-text:
-  - On iOS, `emphasize` font weight is now 700 to match other platforms.
-
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
