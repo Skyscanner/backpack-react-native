@@ -20,6 +20,7 @@
 
 import React from 'react';
 import TestRenderer from 'react-test-renderer';
+import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 
 import BpkPicker from './BpkPicker';
 import BpkPickerItem from './BpkPickerItem';
@@ -28,29 +29,35 @@ const commonTests = () => {
   describe('BpkPicker', () => {
     const emptyFn = () => null;
 
-    it('should render correctly', () => {
-      const testRenderer = TestRenderer.create(
-        <BpkPicker onValueChange={emptyFn} onClose={emptyFn} doneLabel="Done">
-          <BpkPickerItem label="foo" value="foo" />
-          <BpkPickerItem label="bar" value="bar" />
-        </BpkPicker>,
-      );
-      expect(testRenderer.toJSON()).toMatchSnapshot();
-    });
+    describeEachColorScheme(BpkPicker, WithColorScheme => {
+      it('should render correctly', () => {
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme
+            onValueChange={emptyFn}
+            onClose={emptyFn}
+            doneLabel="Done"
+          >
+            <BpkPickerItem label="foo" value="foo" />
+            <BpkPickerItem label="bar" value="bar" />
+          </WithColorScheme>,
+        );
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
 
-    it('should render correctly with a selected value', () => {
-      const testRenderer = TestRenderer.create(
-        <BpkPicker
-          onValueChange={emptyFn}
-          onClose={emptyFn}
-          doneLabel="Done"
-          selectedValue="foo"
-        >
-          <BpkPickerItem label="foo" value="foo" />
-          <BpkPickerItem label="bar" value="bar" />
-        </BpkPicker>,
-      );
-      expect(testRenderer.toJSON()).toMatchSnapshot();
+      it('should render correctly with a selected value', () => {
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme
+            onValueChange={emptyFn}
+            onClose={emptyFn}
+            doneLabel="Done"
+            selectedValue="foo"
+          >
+            <BpkPickerItem label="foo" value="foo" />
+            <BpkPickerItem label="bar" value="bar" />
+          </WithColorScheme>,
+        );
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
     });
   });
 };

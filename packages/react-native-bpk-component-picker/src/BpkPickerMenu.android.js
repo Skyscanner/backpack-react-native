@@ -19,20 +19,19 @@
 /* @flow */
 
 import React from 'react';
-import {
-  FlatList,
-  Modal,
-  StyleSheet,
-  TouchableWithoutFeedback,
-  View,
-} from 'react-native';
+import { FlatList, Modal, TouchableWithoutFeedback, View } from 'react-native';
 import { setOpacity } from 'bpk-tokens';
 import {
   borderRadiusSm,
   colorWhite,
+  backgroundTertiaryDarkColor,
   lineHeightBase,
   spacingBase,
 } from 'bpk-tokens/tokens/base.react.native';
+import {
+  BpkDynamicStyleSheet,
+  useBpkDynamicStyleSheet,
+} from 'react-native-bpk-appearance';
 
 import BpkPickerItem from './BpkPickerItem';
 import {
@@ -47,7 +46,7 @@ const MAX_ROWS_TO_DISPLAY = 6;
 // Backpack colour.
 const ANDROID_OVERLAY_COLOR = setOpacity('black', 0.6);
 
-const styles = StyleSheet.create({
+const dynamicStyles = BpkDynamicStyleSheet.create({
   overlay: {
     left: 0,
     height: '100%',
@@ -65,9 +64,9 @@ const styles = StyleSheet.create({
     height: '100%',
   },
   list: {
-    backgroundColor: colorWhite,
+    backgroundColor: { light: colorWhite, dark: backgroundTertiaryDarkColor },
     borderRadius: borderRadiusSm,
-    elevation: 5,
+    elevation: { light: 5, dark: 0 },
   },
 });
 
@@ -99,6 +98,7 @@ const BpkPickerMenu = (props: PickerMenuProps) => {
   const heightOfOneItem = spacingBase * 2 + lineHeightBase;
   const maxListHeight = heightOfOneItem * rowsToDisplay;
 
+  const styles = useBpkDynamicStyleSheet(dynamicStyles);
   const listStyle = [styles.list];
   listStyle.push({
     maxHeight: maxListHeight,

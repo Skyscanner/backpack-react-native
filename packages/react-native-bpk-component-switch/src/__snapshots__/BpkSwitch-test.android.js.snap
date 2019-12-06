@@ -9,9 +9,9 @@ exports[`Android BpkSwitch dark mode should disable theming if the required attr
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   thumbTintColor="rgb(7, 112, 227)"
-  trackColorForFalse="rgb(221, 221, 229)"
-  trackColorForTrue="rgba(7, 112, 227, 0.32)"
-  trackTintColor="rgba(7, 112, 227, 0.32)"
+  trackColorForFalse="rgb(44, 44, 46)"
+  trackColorForTrue="rgba(7, 112, 227, 0.5)"
+  trackTintColor="rgba(7, 112, 227, 0.5)"
 />
 `;
 
@@ -23,10 +23,10 @@ exports[`Android BpkSwitch dark mode should render correctly 1`] = `
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  thumbTintColor="rgb(241, 242, 248)"
-  trackColorForFalse="rgb(221, 221, 229)"
-  trackColorForTrue="rgba(7, 112, 227, 0.32)"
-  trackTintColor="rgb(221, 221, 229)"
+  thumbTintColor="rgb(99, 99, 102)"
+  trackColorForFalse="rgb(44, 44, 46)"
+  trackColorForTrue="rgba(7, 112, 227, 0.5)"
+  trackTintColor="rgb(44, 44, 46)"
 />
 `;
 
@@ -39,9 +39,9 @@ exports[`Android BpkSwitch dark mode should support the "value" prop 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   thumbTintColor="rgb(7, 112, 227)"
-  trackColorForFalse="rgb(221, 221, 229)"
-  trackColorForTrue="rgba(7, 112, 227, 0.32)"
-  trackTintColor="rgba(7, 112, 227, 0.32)"
+  trackColorForFalse="rgb(44, 44, 46)"
+  trackColorForTrue="rgba(7, 112, 227, 0.5)"
+  trackTintColor="rgba(7, 112, 227, 0.5)"
 />
 `;
 
@@ -54,9 +54,9 @@ exports[`Android BpkSwitch dark mode should support theming 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   thumbTintColor="red"
-  trackColorForFalse="rgb(221, 221, 229)"
-  trackColorForTrue="rgba(255, 0, 0, 0.32)"
-  trackTintColor="rgba(255, 0, 0, 0.32)"
+  trackColorForFalse="rgb(44, 44, 46)"
+  trackColorForTrue="rgba(255, 0, 0, 0.5)"
+  trackTintColor="rgba(255, 0, 0, 0.5)"
 />
 `;
 

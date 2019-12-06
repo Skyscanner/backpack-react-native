@@ -11,7 +11,7 @@ exports[`Android BpkHorizontalNavItem dark mode should render correctly 1`] = `
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": null,
+      "color": -9934465,
       "type": "RippleAndroid",
     }
   }
@@ -71,7 +71,7 @@ exports[`Android BpkHorizontalNavItem dark mode should render correctly with "di
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": null,
+      "color": -9934465,
       "type": "RippleAndroid",
     }
   }
@@ -130,7 +130,7 @@ exports[`Android BpkHorizontalNavItem dark mode should render correctly with "se
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": null,
+      "color": -9934465,
       "type": "RippleAndroid",
     }
   }

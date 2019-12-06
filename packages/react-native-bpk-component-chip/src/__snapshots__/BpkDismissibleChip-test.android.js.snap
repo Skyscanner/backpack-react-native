@@ -22,7 +22,7 @@ exports[`Android BpkDismissibleChip dark mode should render correctly 1`] = `
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": null,
+        "color": -9934465,
         "type": "RippleAndroid",
       }
     }
@@ -121,7 +121,7 @@ exports[`Android BpkDismissibleChip dark mode should render correctly with "disa
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": null,
+        "color": -9934465,
         "type": "RippleAndroid",
       }
     }
@@ -233,7 +233,7 @@ exports[`Android BpkDismissibleChip dark mode should render outline correctly 1`
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": null,
+        "color": -9934465,
         "type": "RippleAndroid",
       }
     }

@@ -10,7 +10,7 @@ exports[`Android BpkSelect dark mode should render correctly 1`] = `
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": null,
+      "color": -9934465,
       "type": "RippleAndroid",
     }
   }
@@ -71,7 +71,7 @@ exports[`Android BpkSelect dark mode should render correctly with "showImage" an
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": null,
+      "color": -9934465,
       "type": "RippleAndroid",
     }
   }
@@ -147,7 +147,7 @@ exports[`Android BpkSelect dark mode should render correctly with "showImage" an
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": null,
+      "color": -9934465,
       "type": "RippleAndroid",
     }
   }
@@ -220,7 +220,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": null,
+      "color": -9934465,
       "type": "RippleAndroid",
     }
   }
@@ -311,7 +311,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
     nativeBackgroundAndroid={
       Object {
         "borderless": false,
-        "color": null,
+        "color": -9934465,
         "type": "RippleAndroid",
       }
     }
@@ -423,7 +423,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" true 1
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": null,
+      "color": -9934465,
       "type": "RippleAndroid",
     }
   }
@@ -510,7 +510,7 @@ exports[`Android BpkSelect dark mode should render correctly with a text label 1
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": null,
+      "color": -9934465,
       "type": "RippleAndroid",
     }
   }
@@ -594,7 +594,7 @@ exports[`Android BpkSelect dark mode should render correctly with an element lab
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": null,
+      "color": -9934465,
       "type": "RippleAndroid",
     }
   }
@@ -656,7 +656,7 @@ exports[`Android BpkSelect dark mode should render correctly with custom styles 
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": null,
+      "color": -9934465,
       "type": "RippleAndroid",
     }
   }
@@ -744,7 +744,7 @@ exports[`Android BpkSelect dark mode should render correctly with the disabled p
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": null,
+      "color": -9934465,
       "type": "RippleAndroid",
     }
   }

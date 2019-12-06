@@ -5,9 +5,9 @@ exports[`Android BpkCard dark mode should render correctly 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(29, 27, 32)",
         "borderRadius": 4,
-        "elevation": 2,
+        "elevation": 0,
       },
     ]
   }
@@ -21,7 +21,7 @@ exports[`Android BpkCard dark mode should render correctly 1`] = `
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": null,
+        "color": -9934465,
         "type": "RippleAndroid",
       }
     }
@@ -66,12 +66,12 @@ exports[`Android BpkCard dark mode should render correctly with the "focused" st
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(29, 27, 32)",
         "borderRadius": 4,
-        "elevation": 2,
+        "elevation": 0,
       },
       Object {
-        "elevation": 8,
+        "backgroundColor": "rgb(44, 44, 46)",
       },
     ]
   }
@@ -85,7 +85,7 @@ exports[`Android BpkCard dark mode should render correctly with the "focused" st
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": null,
+        "color": -9934465,
         "type": "RippleAndroid",
       }
     }

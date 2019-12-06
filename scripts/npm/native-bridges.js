@@ -128,13 +128,21 @@ const getStaleAndroidBridges = () => {
   const command = lernaChanged(cfg);
 
   return command
-    .then(() => JSON.parse(command.result.text))
-    .then(pkgs => {
+    .then(() => {
       restoreLog();
-      return filterPromise(pkgs, pkg =>
+      const changed = JSON.parse(command.result.text);
+      if (!changed || changed.length === 0) {
+        throw new Error(
+          'Lerna changed returned no changes, there is nothing to release!',
+        );
+      }
+      return changed;
+    })
+    .then(pkgs =>
+      filterPromise(pkgs, pkg =>
         Promise.resolve(!pkg.private && hasAndroidBridge(pkg)),
-      );
-    });
+      ),
+    );
 };
 
 const gradleExec = (cmd, stdout = null, stderr = null) => {

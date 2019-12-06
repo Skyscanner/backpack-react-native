@@ -29,7 +29,7 @@ exports[`Android BpkBannerAlert dark mode should accept userland styling 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(241, 242, 248)",
+            "backgroundColor": "rgb(29, 27, 32)",
             "borderRadius": 4,
             "minHeight": 1,
           },
@@ -66,7 +66,7 @@ exports[`Android BpkBannerAlert dark mode should accept userland styling 1`] = `
                   "marginEnd": 8,
                 },
                 Object {
-                  "color": "rgb(104, 105, 127)",
+                  "color": "rgb(143, 144, 160)",
                 },
               ],
             ]
@@ -74,26 +74,35 @@ exports[`Android BpkBannerAlert dark mode should accept userland styling 1`] = `
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          Neutral alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            Neutral alert.
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -108,7 +117,7 @@ exports[`Android BpkBannerAlert dark mode should accept userland styling 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(241, 242, 248)",
+            "backgroundColor": "rgb(29, 27, 32)",
             "borderRadius": 4,
             "minHeight": 1,
           },
@@ -145,7 +154,7 @@ exports[`Android BpkBannerAlert dark mode should accept userland styling 1`] = `
                   "marginEnd": 8,
                 },
                 Object {
-                  "color": "rgb(104, 105, 127)",
+                  "color": "rgb(143, 144, 160)",
                 },
               ],
             ]
@@ -153,26 +162,35 @@ exports[`Android BpkBannerAlert dark mode should accept userland styling 1`] = `
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          Neutral alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            Neutral alert.
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -207,7 +225,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with dismissab
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(241, 242, 248)",
+            "backgroundColor": "rgb(29, 27, 32)",
             "borderRadius": 4,
             "minHeight": 1,
           },
@@ -244,7 +262,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with dismissab
                   "marginEnd": 8,
                 },
                 Object {
-                  "color": "rgb(104, 105, 127)",
+                  "color": "rgb(143, 144, 160)",
                 },
               ],
             ]
@@ -252,26 +270,35 @@ exports[`Android BpkBannerAlert dark mode should render correctly with dismissab
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          Neutral alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            Neutral alert.
+          </Text>
+        </View>
         <View
           accessibilityLabel="Dismiss"
           accessibilityRole="button"
@@ -346,7 +373,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with dismissab
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(241, 242, 248)",
+            "backgroundColor": "rgb(29, 27, 32)",
             "borderRadius": 4,
             "minHeight": 1,
           },
@@ -383,7 +410,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with dismissab
                   "marginEnd": 8,
                 },
                 Object {
-                  "color": "rgb(104, 105, 127)",
+                  "color": "rgb(143, 144, 160)",
                 },
               ],
             ]
@@ -391,26 +418,35 @@ exports[`Android BpkBannerAlert dark mode should render correctly with dismissab
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          Neutral alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            Neutral alert.
+          </Text>
+        </View>
         <View
           accessibilityLabel="Dismiss"
           accessibilityRole="button"
@@ -505,7 +541,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(241, 242, 248)",
+            "backgroundColor": "rgb(29, 27, 32)",
             "borderRadius": 4,
             "minHeight": 1,
           },
@@ -550,26 +586,35 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          error alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            error alert.
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -584,7 +629,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(241, 242, 248)",
+            "backgroundColor": "rgb(29, 27, 32)",
             "borderRadius": 4,
             "minHeight": 1,
           },
@@ -629,26 +674,35 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          error alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            error alert.
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -683,7 +737,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(241, 242, 248)",
+            "backgroundColor": "rgb(29, 27, 32)",
             "borderRadius": 4,
             "minHeight": 1,
           },
@@ -720,7 +774,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
                   "marginEnd": 8,
                 },
                 Object {
-                  "color": "rgb(104, 105, 127)",
+                  "color": "rgb(143, 144, 160)",
                 },
               ],
             ]
@@ -728,26 +782,35 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          neutral alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            neutral alert.
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -762,7 +825,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(241, 242, 248)",
+            "backgroundColor": "rgb(29, 27, 32)",
             "borderRadius": 4,
             "minHeight": 1,
           },
@@ -799,7 +862,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
                   "marginEnd": 8,
                 },
                 Object {
-                  "color": "rgb(104, 105, 127)",
+                  "color": "rgb(143, 144, 160)",
                 },
               ],
             ]
@@ -807,26 +870,35 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          neutral alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            neutral alert.
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -861,7 +933,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(241, 242, 248)",
+            "backgroundColor": "rgb(29, 27, 32)",
             "borderRadius": 4,
             "minHeight": 1,
           },
@@ -906,26 +978,35 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          success alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            success alert.
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -940,7 +1021,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(241, 242, 248)",
+            "backgroundColor": "rgb(29, 27, 32)",
             "borderRadius": 4,
             "minHeight": 1,
           },
@@ -985,26 +1066,35 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          success alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            success alert.
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -1039,7 +1129,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(241, 242, 248)",
+            "backgroundColor": "rgb(29, 27, 32)",
             "borderRadius": 4,
             "minHeight": 1,
           },
@@ -1084,26 +1174,35 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          warn alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            warn alert.
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -1118,7 +1217,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(241, 242, 248)",
+            "backgroundColor": "rgb(29, 27, 32)",
             "borderRadius": 4,
             "minHeight": 1,
           },
@@ -1163,26 +1262,35 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          warn alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            warn alert.
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -1263,26 +1371,35 @@ exports[`Android BpkBannerAlert light mode should accept userland styling 1`] = 
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          Neutral alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            Neutral alert.
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -1342,26 +1459,35 @@ exports[`Android BpkBannerAlert light mode should accept userland styling 1`] = 
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          Neutral alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            Neutral alert.
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -1441,26 +1567,35 @@ exports[`Android BpkBannerAlert light mode should render correctly with dismissa
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          Neutral alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            Neutral alert.
+          </Text>
+        </View>
         <View
           accessibilityLabel="Dismiss"
           accessibilityRole="button"
@@ -1580,26 +1715,35 @@ exports[`Android BpkBannerAlert light mode should render correctly with dismissa
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          Neutral alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            Neutral alert.
+          </Text>
+        </View>
         <View
           accessibilityLabel="Dismiss"
           accessibilityRole="button"
@@ -1739,26 +1883,35 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          error alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            error alert.
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -1818,26 +1971,35 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          error alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            error alert.
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -1917,26 +2079,35 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          neutral alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            neutral alert.
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -1996,26 +2167,35 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          neutral alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            neutral alert.
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -2095,26 +2275,35 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          success alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            success alert.
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -2174,26 +2363,35 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          success alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            success alert.
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -2273,26 +2471,35 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          warn alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            warn alert.
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -2352,26 +2559,35 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          warn alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            warn alert.
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -2451,26 +2667,35 @@ exports[`Android BpkBannerAlert should render correctly when not shown 1`] = `
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          Neutral alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            Neutral alert.
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -2530,26 +2755,35 @@ exports[`Android BpkBannerAlert should render correctly when not shown 1`] = `
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          Neutral alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            Neutral alert.
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -2629,26 +2863,35 @@ exports[`Android BpkBannerAlert should render correctly with animateOnEnter 1`] 
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          Neutral alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            Neutral alert.
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -2708,26 +2951,35 @@ exports[`Android BpkBannerAlert should render correctly with animateOnEnter 1`] 
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          Neutral alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            Neutral alert.
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -2807,26 +3059,35 @@ exports[`Android BpkBannerAlert should render correctly with animateOnLeave 1`] 
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          Neutral alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            Neutral alert.
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -2886,26 +3147,35 @@ exports[`Android BpkBannerAlert should render correctly with animateOnLeave 1`] 
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          Neutral alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            Neutral alert.
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -3004,26 +3274,35 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          Neutral alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            Neutral alert.
+          </Text>
+        </View>
         <Text
           allowFontScaling={false}
           style={
@@ -3198,26 +3477,35 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          Neutral alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            Neutral alert.
+          </Text>
+        </View>
         <Text
           allowFontScaling={false}
           style={
@@ -3412,26 +3700,35 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          Neutral alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            Neutral alert.
+          </Text>
+        </View>
         <Text
           allowFontScaling={false}
           style={
@@ -3606,26 +3903,35 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
         >
           
         </Text>
-        <Text
-          allowFontScaling={false}
+        <View
           style={
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "sans-serif",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-              },
-              Object {},
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
-          Neutral alert.
-        </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {},
+                Object {
+                  "alignSelf": "flex-start",
+                  "textAlign": "left",
+                },
+              ]
+            }
+          >
+            Neutral alert.
+          </Text>
+        </View>
         <Text
           allowFontScaling={false}
           style={

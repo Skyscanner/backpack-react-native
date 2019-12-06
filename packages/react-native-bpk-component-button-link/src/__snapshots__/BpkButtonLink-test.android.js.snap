@@ -22,7 +22,7 @@ exports[`Android BpkButtonLink dark mode should render correctly 1`] = `
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": null,
+        "color": -9934465,
         "type": "RippleAndroid",
       }
     }
@@ -97,7 +97,7 @@ exports[`Android BpkButtonLink dark mode should support overwriting styles 1`] =
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": null,
+        "color": -9934465,
         "type": "RippleAndroid",
       }
     }
@@ -174,7 +174,7 @@ exports[`Android BpkButtonLink dark mode should support the "disabled" property 
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": null,
+        "color": -9934465,
         "type": "RippleAndroid",
       }
     }
@@ -250,7 +250,7 @@ exports[`Android BpkButtonLink dark mode should support the "icon" property 1`] 
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": null,
+        "color": -9934465,
         "type": "RippleAndroid",
       }
     }

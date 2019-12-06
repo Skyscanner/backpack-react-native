@@ -69,9 +69,18 @@ const fixDependencyErrors = packageFiles => {
   });
 };
 
-const checkBpkDependencyList = (dependencies, correctVersions, packageName) => {
+const checkBpkDependencyList = (
+  dependencies,
+  correctVersions,
+  packageName,
+  whiteList = [],
+) => {
   Object.keys(dependencies).forEach(dependency => {
-    if (Object.keys(correctVersions).indexOf(dependency) !== -1) {
+    const isWhiteListed = whiteList.indexOf(dependency) > -1;
+    if (
+      !isWhiteListed &&
+      Object.keys(correctVersions).indexOf(dependency) !== -1
+    ) {
       const dependencyVersion = dependencies[dependency];
       const correctDependencyVersion = `^${correctVersions[dependency]}`;
       if (dependencyVersion !== correctDependencyVersion) {
@@ -96,7 +105,9 @@ const checkBpkDependencies = (packageFile, correctVersions) => {
   } = pfContent;
 
   if (peerDependencies !== undefined) {
-    checkBpkDependencyList(peerDependencies, correctVersions, packageName);
+    checkBpkDependencyList(peerDependencies, correctVersions, packageName, [
+      'react-native-bpk-appearance',
+    ]);
   }
   if (dependencies !== undefined) {
     checkBpkDependencyList(dependencies, correctVersions, packageName);

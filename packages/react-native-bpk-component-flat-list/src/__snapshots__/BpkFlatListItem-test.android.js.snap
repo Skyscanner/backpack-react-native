@@ -10,7 +10,7 @@ exports[`Android BpkFlatListItem dark mode should render correctly 1`] = `
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": null,
+      "color": -9934465,
       "type": "RippleAndroid",
     }
   }
@@ -55,7 +55,6 @@ exports[`Android BpkFlatListItem dark mode should render correctly 1`] = `
           Object {},
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
               "flex": 1,
             },
           ],
@@ -106,7 +105,7 @@ exports[`Android BpkFlatListItem dark mode should support the "selected" propert
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": null,
+      "color": -9934465,
       "type": "RippleAndroid",
     }
   }
@@ -151,11 +150,10 @@ exports[`Android BpkFlatListItem dark mode should support the "selected" propert
           Object {},
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
               "flex": 1,
             },
             Object {
-              "color": "rgb(7, 112, 227)",
+              "color": "rgb(109, 159, 235)",
             },
           ],
         ]
@@ -177,7 +175,7 @@ exports[`Android BpkFlatListItem dark mode should support the "selected" propert
           "width": 20,
         },
         Object {
-          "borderColor": "rgb(7, 112, 227)",
+          "borderColor": "rgb(109, 159, 235)",
         },
       ]
     }
@@ -192,7 +190,7 @@ exports[`Android BpkFlatListItem dark mode should support the "selected" propert
             "width": 10,
           },
           Object {
-            "backgroundColor": "rgb(7, 112, 227)",
+            "backgroundColor": "rgb(109, 159, 235)",
           },
         ]
       }
@@ -256,7 +254,6 @@ exports[`Android BpkFlatListItem light mode should render correctly 1`] = `
           Object {},
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
               "flex": 1,
             },
           ],
@@ -352,7 +349,6 @@ exports[`Android BpkFlatListItem light mode should support the "selected" proper
           Object {},
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
               "flex": 1,
             },
             Object {
@@ -467,7 +463,6 @@ exports[`Android BpkFlatListItem should support the "image" property 1`] = `
           Object {},
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
               "flex": 1,
             },
           ],
@@ -515,7 +510,6 @@ Object {
   "numberOfLines": 7,
   "style": Array [
     Object {
-      "color": "rgb(17, 18, 54)",
       "flex": 1,
     },
   ],
@@ -580,11 +574,10 @@ exports[`Android should support theming when selected 1`] = `
           },
           Object {},
           Object {
-            "fontFamily": "System",
+            "fontFamily": "relative",
           },
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
               "flex": 1,
             },
             Object {

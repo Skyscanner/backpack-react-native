@@ -20,6 +20,8 @@
 
 import React from 'react';
 import renderer from 'react-test-renderer';
+import { TouchableNativeFeedback } from 'react-native';
+import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 
 import BpkTouchableNativeFeedback from './BpkTouchableNativeFeedback';
 
@@ -41,12 +43,23 @@ jest.mock('TouchableNativeFeedback', () =>
   ),
 );
 
+jest.mock('react-native-bpk-appearance', () =>
+  jest.requireActual('react-native-bpk-appearance'),
+);
+
 const FakeComponent = 'FakeComponent';
 
 describe('BpkTouchableNativeFeedback', () => {
   beforeEach(() => {
     jest.resetModules();
+    // eslint-disable-next-line
+    jest.spyOn(TouchableNativeFeedback, 'Ripple');
   });
+
+  afterEach(() => {
+    TouchableNativeFeedback.Ripple.mockReset();
+  });
+
   const styles = () => {
     const { StyleSheet } = jest.requireActual('react-native');
     return StyleSheet.create({
@@ -56,57 +69,98 @@ describe('BpkTouchableNativeFeedback', () => {
     });
   };
 
-  it('should render correctly on API < 21', () => {
-    mockPlatform('android', 19);
+  describeEachColorScheme(
+    BpkTouchableNativeFeedback,
+    (WithColorScheme, colorScheme) => {
+      it('should render correctly on API < 21', () => {
+        mockPlatform('android', 19);
 
-    const tree = renderer
-      .create(
-        <BpkTouchableNativeFeedback>
-          <FakeComponent />
-        </BpkTouchableNativeFeedback>,
-      )
-      .toJSON();
+        const tree = renderer
+          .create(
+            <WithColorScheme>
+              <FakeComponent />
+            </WithColorScheme>,
+          )
+          .toJSON();
 
-    expect(tree).toMatchSnapshot();
-  });
+        expect(tree).toMatchSnapshot();
+      });
 
-  it('should render correctly on API >= 21', () => {
-    mockPlatform('android', 21);
+      it('should render correctly on API >= 21', () => {
+        mockPlatform('android', 21);
 
-    const tree = renderer
-      .create(
-        <BpkTouchableNativeFeedback>
-          <FakeComponent />
-        </BpkTouchableNativeFeedback>,
-      )
-      .toJSON();
+        const tree = renderer
+          .create(
+            <WithColorScheme>
+              <FakeComponent />
+            </WithColorScheme>,
+          )
+          .toJSON();
 
-    expect(tree).toMatchSnapshot();
-  });
+        expect(tree).toMatchSnapshot();
+      });
 
-  it('should render correctly with custom style prop', () => {
-    mockPlatform('android', 21);
-    const tree = renderer
-      .create(
-        <BpkTouchableNativeFeedback style={styles().custom}>
-          <FakeComponent />
-        </BpkTouchableNativeFeedback>,
-      )
-      .toJSON();
+      it('should render correctly with custom style prop', () => {
+        mockPlatform('android', 21);
+        const tree = renderer
+          .create(
+            <WithColorScheme style={styles().custom}>
+              <FakeComponent />
+            </WithColorScheme>,
+          )
+          .toJSON();
 
-    expect(tree).toMatchSnapshot();
-  });
+        expect(tree).toMatchSnapshot();
+      });
 
-  it('should render correctly with arbitrary props', () => {
-    mockPlatform('android', 21);
-    const tree = renderer
-      .create(
-        <BpkTouchableNativeFeedback testID="arbitrary value">
-          <FakeComponent />
-        </BpkTouchableNativeFeedback>,
-      )
-      .toJSON();
+      it('should render correctly with arbitrary props', () => {
+        mockPlatform('android', 21);
+        const tree = renderer
+          .create(
+            <WithColorScheme testID="arbitrary value">
+              <FakeComponent />
+            </WithColorScheme>,
+          )
+          .toJSON();
 
-    expect(tree).toMatchSnapshot();
-  });
+        expect(tree).toMatchSnapshot();
+      });
+
+      it('should render correctly with a string `color` prop', () => {
+        mockPlatform('android', 21);
+        const tree = renderer
+          .create(
+            <WithColorScheme color="rgb(255, 255, 255)">
+              <FakeComponent />
+            </WithColorScheme>,
+          )
+          .toJSON();
+
+        expect(TouchableNativeFeedback.Ripple).toHaveBeenCalledWith(
+          'rgb(255, 255, 255)',
+          true,
+        );
+        expect(tree).toMatchSnapshot();
+      });
+
+      it('should render correctly with a dynamic `color` prop', () => {
+        mockPlatform('android', 21);
+        const tree = renderer
+          .create(
+            <WithColorScheme
+              color={{ light: 'rgb(255, 255, 255)', dark: 'rgb(0, 0, 0)' }}
+            >
+              <FakeComponent />
+            </WithColorScheme>,
+          )
+          .toJSON();
+
+        expect(TouchableNativeFeedback.Ripple).toHaveBeenLastCalledWith(
+          { light: 'rgb(255, 255, 255)', dark: 'rgb(0, 0, 0)' }[colorScheme],
+          true,
+        );
+        expect(tree).toMatchSnapshot();
+      });
+    },
+  );
 });

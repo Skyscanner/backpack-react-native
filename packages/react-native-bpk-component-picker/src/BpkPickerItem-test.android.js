@@ -20,6 +20,7 @@
 
 import React from 'react';
 import TestRenderer from 'react-test-renderer';
+import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 
 import BpkPickerItem from './BpkPickerItem.android';
 
@@ -50,24 +51,26 @@ jest.mock('bpk-tokens/tokens/base.react.native', () =>
 
 describe('Android', () => {
   describe('BpkPickerItem', () => {
-    it('should render correctly', () => {
-      const testRenderer = TestRenderer.create(
-        <BpkPickerItem label="label" value="value" />,
-      );
-      expect(testRenderer.toJSON()).toMatchSnapshot();
-    });
-    it('should render correctly with the selected prop', () => {
-      const testRenderer = TestRenderer.create(
-        <BpkPickerItem label="label" value="value" selected />,
-      );
-      expect(testRenderer.toJSON()).toMatchSnapshot();
-    });
-    it('should render correctly with an onPress function', () => {
-      const onPressFn = jest.fn();
-      const testRenderer = TestRenderer.create(
-        <BpkPickerItem label="label" value="value" onPress={onPressFn} />,
-      );
-      expect(testRenderer.toJSON()).toMatchSnapshot();
+    describeEachColorScheme(BpkPickerItem, WithColorScheme => {
+      it('should render correctly', () => {
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme label="label" value="value" />,
+        );
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
+      it('should render correctly with the selected prop', () => {
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme label="label" value="value" selected />,
+        );
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
+      it('should render correctly with an onPress function', () => {
+        const onPressFn = jest.fn();
+        const testRenderer = TestRenderer.create(
+          <WithColorScheme label="label" value="value" onPress={onPressFn} />,
+        );
+        expect(testRenderer.toJSON()).toMatchSnapshot();
+      });
     });
   });
 });

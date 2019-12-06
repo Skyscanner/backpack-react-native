@@ -7,6 +7,10 @@
 - react-native-bpk-component-button:
   - Removed `buttonBorderRadius` optional theming attribute.
 
+**Added:**
+
+- react-native-bpk-component-picker:
+  - Added dark mode support.
 
 ## How to write a good changelog entry
 

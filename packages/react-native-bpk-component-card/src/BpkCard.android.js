@@ -20,7 +20,9 @@
 
 import PropTypes from 'prop-types';
 import {
-  colorWhite,
+  backgroundLightColor,
+  backgroundSecondaryDarkColor,
+  backgroundTertiaryDarkColor,
   elevationSm,
   elevationLg,
   borderRadiusSm,
@@ -28,16 +30,23 @@ import {
   spacingBase,
 } from 'bpk-tokens/tokens/base.react.native';
 import React, { type Node, type ElementProps } from 'react';
-import { Platform, View, StyleSheet, ViewPropTypes } from 'react-native';
+import { Platform, View, ViewPropTypes } from 'react-native';
 import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-native-feedback';
+import {
+  BpkDynamicStyleSheet,
+  useBpkDynamicStyleSheet,
+} from 'react-native-bpk-appearance';
 
 import CORNER_STYLES, { defaultCornerStyle } from './BpkCardCornerStyles';
 
-const styles = StyleSheet.create({
+const dynamicStyles = BpkDynamicStyleSheet.create({
   card: {
-    backgroundColor: colorWhite,
+    backgroundColor: {
+      light: backgroundLightColor,
+      dark: backgroundSecondaryDarkColor,
+    },
     borderRadius: borderRadiusSm,
-    elevation: elevationSm,
+    elevation: { light: elevationSm, dark: 0 },
   },
   cardCornerStyleLarge: {
     borderRadius: borderRadiusLg,
@@ -46,7 +55,12 @@ const styles = StyleSheet.create({
     padding: spacingBase,
   },
   cardFocused: {
-    elevation: elevationLg,
+    light: {
+      elevation: elevationLg,
+    },
+    dark: {
+      backgroundColor: backgroundTertiaryDarkColor,
+    },
   },
 });
 
@@ -74,6 +88,7 @@ const BpkCard = (props: Props) => {
     ...rest
   } = props;
 
+  const styles = useBpkDynamicStyleSheet(dynamicStyles);
   const style = [styles.card];
   const innerStyle = [];
 

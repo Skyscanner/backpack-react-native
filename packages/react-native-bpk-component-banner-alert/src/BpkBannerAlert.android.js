@@ -24,18 +24,22 @@ import {
   spacingBase,
   spacingLg,
   colorPanjin,
-  colorSkyGrayTint07,
-  colorSkyGrayTint02,
+  backgroundSecondaryColor,
   colorMonteverde,
   colorErfoud,
   borderRadiusSm,
+  textSecondaryColor,
 } from 'bpk-tokens/tokens/base.react.native';
-import { StyleSheet, View } from 'react-native';
+import { View } from 'react-native';
 import BpkText from 'react-native-bpk-component-text';
 import BpkIcon, { icons } from 'react-native-bpk-component-icon';
 import BpkButtonLink from 'react-native-bpk-component-button-link';
 import BpkAnimateHeight from 'react-native-bpk-component-animate-height';
 import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-native-feedback';
+import {
+  BpkDynamicStyleSheet,
+  useBpkDynamicStyleSheet,
+} from 'react-native-bpk-appearance';
 
 import {
   type Props,
@@ -45,12 +49,12 @@ import {
 } from './common-types';
 import AnimateAndFade from './AnimateAndFade';
 
-const STYLES = StyleSheet.create({
+const dynamicStyles = BpkDynamicStyleSheet.create({
   background: {
     // required for AnimateAndFade to work correctly :/
     minHeight: 1, // eslint-disable-line backpack/use-tokens
     borderRadius: borderRadiusSm,
-    backgroundColor: colorSkyGrayTint07,
+    backgroundColor: backgroundSecondaryColor,
   },
   row: {
     minHeight: spacingBase * 3,
@@ -72,10 +76,15 @@ const STYLES = StyleSheet.create({
     color: colorPanjin,
   },
   iconNeutral: {
-    color: colorSkyGrayTint02,
+    color: textSecondaryColor,
+  },
+  // This is added to make the message text RTL friendly
+  messageContainer: {
+    flex: 1,
   },
   message: {
-    flex: 1,
+    alignSelf: 'flex-start',
+    textAlign: 'left',
   },
   closeButton: {
     marginStart: spacingMd,
@@ -89,23 +98,31 @@ const STYLES = StyleSheet.create({
   },
 });
 
-const ALERT_TYPE_STYLES = {
-  [ALERT_TYPES.success]: {
-    icon: icons['tick-circle'],
-    iconStyle: STYLES.iconSuccess,
-  },
-  [ALERT_TYPES.warn]: {
-    icon: icons['information-circle'],
-    iconStyle: STYLES.iconWarn,
-  },
-  [ALERT_TYPES.error]: {
-    icon: icons['information-circle'],
-    iconStyle: STYLES.iconError,
-  },
-  [ALERT_TYPES.neutral]: {
-    icon: icons['information-circle'],
-    iconStyle: STYLES.iconNeutral,
-  },
+const getAlertTypeStyle = (type: $Keys<typeof ALERT_TYPES>, styles) => {
+  switch (type) {
+    case ALERT_TYPES.success:
+      return {
+        icon: icons['tick-circle'],
+        iconStyle: styles.iconSuccess,
+      };
+    case ALERT_TYPES.warn:
+      return {
+        icon: icons['information-circle'],
+        iconStyle: styles.iconWarn,
+      };
+    case ALERT_TYPES.error:
+      return {
+        icon: icons['information-circle'],
+        iconStyle: styles.iconError,
+      };
+    case ALERT_TYPES.neutral:
+      return {
+        icon: icons['information-circle'],
+        iconStyle: styles.iconNeutral,
+      };
+    default:
+      return {};
+  }
 };
 
 const BpkBannerAlert = (props: Props) => {
@@ -126,25 +143,28 @@ const BpkBannerAlert = (props: Props) => {
     ...rest
   } = props;
 
+  const styles = useBpkDynamicStyleSheet(dynamicStyles);
   const expandable = children !== null;
-  const { icon, iconStyle } = ALERT_TYPE_STYLES[type] || {};
+  const { icon, iconStyle } = getAlertTypeStyle(type, styles);
 
   const rowContent = (
     <Fragment>
-      <BpkIcon style={[STYLES.icon, iconStyle]} icon={icon} small />
-      <BpkText style={STYLES.message} textStyle="sm">
-        {message}
-      </BpkText>
+      <BpkIcon style={[styles.icon, iconStyle]} icon={icon} small />
+      <View style={styles.messageContainer}>
+        <BpkText style={styles.message} textStyle="sm">
+          {message}
+        </BpkText>
+      </View>
       {expandable && (
         <BpkIcon
-          style={STYLES.expandIcon}
+          style={styles.expandIcon}
           icon={expanded ? icons['chevron-up'] : icons['chevron-down']}
           small
         />
       )}
       {dismissable && dismissButtonLabel && onDismiss && (
         <BpkButtonLink
-          style={STYLES.closeButton}
+          style={styles.closeButton}
           title={dismissButtonLabel}
           onPress={onDismiss}
         />
@@ -159,22 +179,22 @@ const BpkBannerAlert = (props: Props) => {
       show={show}
       {...rest}
     >
-      <View style={[STYLES.background, bannerStyle]}>
+      <View style={[styles.background, bannerStyle]}>
         {expandable ? (
           <BpkTouchableNativeFeedback
             onPress={onToggleExpanded}
             accessibilityRole="button"
             accessibilityLabel={toggleExpandedButtonLabel}
           >
-            <View style={STYLES.row}>{rowContent}</View>
+            <View style={styles.row}>{rowContent}</View>
           </BpkTouchableNativeFeedback>
         ) : (
-          <View style={STYLES.row}>{rowContent}</View>
+          <View style={styles.row}>{rowContent}</View>
         )}
         {expandable && (
           <BpkAnimateHeight
             expanded={expanded}
-            innerStyle={STYLES.expandableContent}
+            innerStyle={styles.expandableContent}
           >
             {children}
           </BpkAnimateHeight>
