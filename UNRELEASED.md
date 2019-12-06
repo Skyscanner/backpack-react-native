@@ -10,7 +10,7 @@
 **Added:**
 
 - react-native-bpk-component-picker:
-  - Added dark mode support.
+  - Added dark mode support (iOS and Android).
 
 ## How to write a good changelog entry
 

@@ -19,19 +19,21 @@
 /* @flow */
 
 import React from 'react';
-import {
-  Modal,
-  Picker,
-  View,
-  StyleSheet,
-  TouchableWithoutFeedback,
-} from 'react-native';
+import { Modal, Picker, View, TouchableWithoutFeedback } from 'react-native';
 import PropTypes from 'prop-types';
 import BpkButtonLink from 'react-native-bpk-component-button-link';
 import {
   colorSkyGrayTint05,
   spacingBase,
+  backgroundSecondaryDarkColor,
+  backgroundTertiaryDarkColor,
+  primaryDarkColor,
+  textPrimaryDarkColor,
 } from 'bpk-tokens/tokens/base.react.native';
+import {
+  BpkDynamicStyleSheet,
+  useBpkDynamicStyleSheet,
+} from 'react-native-bpk-appearance';
 
 import {
   PICKER_MENU_PROP_TYPE,
@@ -40,13 +42,22 @@ import {
 } from './common-types';
 
 // Set to match built-in input accessory views in iOS.
-const IOS_INPUT_ACCESSORY_VIEW_BACKGROUND_COLOR = '#f9f9f9';
+const IOS_INPUT_ACCESSORY_VIEW_BACKGROUND_COLOR = {
+  light: '#f9f9f9',
+  dark: backgroundSecondaryDarkColor,
+};
 const IOS_INPUT_ACCESSORY_VIEW_HEIGHT = 45;
-const IOS_INPUT_ACCESSORY_VIEW_DONE_LABEL_COLOR = '#007aff';
+const IOS_INPUT_ACCESSORY_VIEW_DONE_LABEL_COLOR = {
+  light: '#007aff',
+  dark: primaryDarkColor,
+};
 const IOS_INPUT_ACCESSORY_VIEW_DONE_LABEL_FONT_SIZE = 17;
-const IOS_PICKER_MODAL_BACKGROUND_COLOR = '#d0d4da';
+const IOS_PICKER_MODAL_BACKGROUND_COLOR = {
+  light: '#d0d4da',
+  dark: backgroundTertiaryDarkColor,
+};
 
-const styles = StyleSheet.create({
+const dynamicStyles = BpkDynamicStyleSheet.create({
   dismissOverlay: {
     flex: 1,
   },
@@ -62,7 +73,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacingBase,
     flexDirection: 'row',
     backgroundColor: IOS_INPUT_ACCESSORY_VIEW_BACKGROUND_COLOR,
-    borderTopWidth: 1, // eslint-disable-line backpack/use-tokens
+    borderTopWidth: { light: 1, dark: 0 }, // eslint-disable-line backpack/use-tokens
     borderColor: colorSkyGrayTint05,
     justifyContent: 'flex-end',
     height: IOS_INPUT_ACCESSORY_VIEW_HEIGHT,
@@ -71,6 +82,9 @@ const styles = StyleSheet.create({
   doneLabel: {
     color: IOS_INPUT_ACCESSORY_VIEW_DONE_LABEL_COLOR,
     fontSize: IOS_INPUT_ACCESSORY_VIEW_DONE_LABEL_FONT_SIZE,
+  },
+  itemStyle: {
+    color: { light: null, dark: textPrimaryDarkColor },
   },
 });
 
@@ -91,6 +105,7 @@ const BpkPickerMenu = (props: Props) => {
   const pickerItems = React.Children.map(children, child =>
     React.cloneElement(child, { key: child.props.value }),
   );
+  const styles = useBpkDynamicStyleSheet(dynamicStyles);
 
   return (
     <Modal
@@ -113,7 +128,11 @@ const BpkPickerMenu = (props: Props) => {
             }}
           />
         </View>
-        <Picker selectedValue={selectedValue} onValueChange={onValueChange}>
+        <Picker
+          selectedValue={selectedValue}
+          onValueChange={onValueChange}
+          itemStyle={styles.itemStyle}
+        >
           {pickerItems}
         </Picker>
       </View>

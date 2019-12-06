@@ -32,7 +32,7 @@ exports[`iOS BpkPicker dark mode should render correctly 1`] = `
   <View
     style={
       Object {
-        "backgroundColor": "#d0d4da",
+        "backgroundColor": "rgb(44, 44, 46)",
         "bottom": 0,
         "flexDirection": "column",
         "position": "absolute",
@@ -44,9 +44,9 @@ exports[`iOS BpkPicker dark mode should render correctly 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "backgroundColor": "#f9f9f9",
+          "backgroundColor": "rgb(29, 27, 32)",
           "borderColor": "rgb(205, 205, 215)",
-          "borderTopWidth": 1,
+          "borderTopWidth": 0,
           "flex": 1,
           "flexDirection": "row",
           "height": 45,
@@ -103,7 +103,7 @@ exports[`iOS BpkPicker dark mode should render correctly 1`] = `
                   "fontWeight": "600",
                 },
                 Object {
-                  "color": "#007aff",
+                  "color": "rgb(109, 159, 235)",
                   "fontSize": 17,
                 },
               ]
@@ -139,7 +139,9 @@ exports[`iOS BpkPicker dark mode should render correctly 1`] = `
             Object {
               "height": 216,
             },
-            undefined,
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
           ]
         }
       />
@@ -180,7 +182,7 @@ exports[`iOS BpkPicker dark mode should render correctly with a selected value 1
   <View
     style={
       Object {
-        "backgroundColor": "#d0d4da",
+        "backgroundColor": "rgb(44, 44, 46)",
         "bottom": 0,
         "flexDirection": "column",
         "position": "absolute",
@@ -192,9 +194,9 @@ exports[`iOS BpkPicker dark mode should render correctly with a selected value 1
       style={
         Object {
           "alignItems": "center",
-          "backgroundColor": "#f9f9f9",
+          "backgroundColor": "rgb(29, 27, 32)",
           "borderColor": "rgb(205, 205, 215)",
-          "borderTopWidth": 1,
+          "borderTopWidth": 0,
           "flex": 1,
           "flexDirection": "row",
           "height": 45,
@@ -251,7 +253,7 @@ exports[`iOS BpkPicker dark mode should render correctly with a selected value 1
                   "fontWeight": "600",
                 },
                 Object {
-                  "color": "#007aff",
+                  "color": "rgb(109, 159, 235)",
                   "fontSize": 17,
                 },
               ]
@@ -287,7 +289,9 @@ exports[`iOS BpkPicker dark mode should render correctly with a selected value 1
             Object {
               "height": 216,
             },
-            undefined,
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
           ]
         }
       />
@@ -435,7 +439,9 @@ exports[`iOS BpkPicker light mode should render correctly 1`] = `
             Object {
               "height": 216,
             },
-            undefined,
+            Object {
+              "color": null,
+            },
           ]
         }
       />
@@ -583,7 +589,9 @@ exports[`iOS BpkPicker light mode should render correctly with a selected value 
             Object {
               "height": 216,
             },
-            undefined,
+            Object {
+              "color": null,
+            },
           ]
         }
       />
