@@ -52,7 +52,7 @@ exports[`ios TitleView dark mode should render correctly with leading icon 1`] =
           "letterSpacing": 0.12,
         },
         Object {
-          "fontWeight": "600",
+          "fontWeight": "700",
         },
         Array [
           Object {
@@ -96,7 +96,7 @@ exports[`ios TitleView dark mode should render correctly with only a title 1`] =
           "letterSpacing": 0.12,
         },
         Object {
-          "fontWeight": "600",
+          "fontWeight": "700",
         },
         Array [
           Object {
@@ -138,7 +138,7 @@ exports[`ios TitleView dark mode should render correctly with trailing icon 1`] 
           "letterSpacing": 0.12,
         },
         Object {
-          "fontWeight": "600",
+          "fontWeight": "700",
         },
         Array [
           Object {
@@ -234,7 +234,7 @@ exports[`ios TitleView light mode should render correctly with leading icon 1`] 
           "letterSpacing": 0.12,
         },
         Object {
-          "fontWeight": "600",
+          "fontWeight": "700",
         },
         Array [
           Object {
@@ -278,7 +278,7 @@ exports[`ios TitleView light mode should render correctly with only a title 1`] 
           "letterSpacing": 0.12,
         },
         Object {
-          "fontWeight": "600",
+          "fontWeight": "700",
         },
         Array [
           Object {
@@ -320,7 +320,7 @@ exports[`ios TitleView light mode should render correctly with trailing icon 1`]
           "letterSpacing": 0.12,
         },
         Object {
-          "fontWeight": "600",
+          "fontWeight": "700",
         },
         Array [
           Object {

@@ -100,7 +100,7 @@ exports[`iOS BpkPicker dark mode should render correctly 1`] = `
                   "letterSpacing": 0.154,
                 },
                 Object {
-                  "fontWeight": "600",
+                  "fontWeight": "700",
                 },
                 Object {
                   "color": "#007aff",
@@ -248,7 +248,7 @@ exports[`iOS BpkPicker dark mode should render correctly with a selected value 1
                   "letterSpacing": 0.154,
                 },
                 Object {
-                  "fontWeight": "600",
+                  "fontWeight": "700",
                 },
                 Object {
                   "color": "#007aff",
@@ -396,7 +396,7 @@ exports[`iOS BpkPicker light mode should render correctly 1`] = `
                   "letterSpacing": 0.154,
                 },
                 Object {
-                  "fontWeight": "600",
+                  "fontWeight": "700",
                 },
                 Object {
                   "color": "#007aff",
@@ -544,7 +544,7 @@ exports[`iOS BpkPicker light mode should render correctly with a selected value 
                   "letterSpacing": 0.154,
                 },
                 Object {
-                  "fontWeight": "600",
+                  "fontWeight": "700",
                 },
                 Object {
                   "color": "#007aff",

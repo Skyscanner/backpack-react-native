@@ -54,7 +54,7 @@ exports[`iOS BpkButton dark mode should render correctly 1`] = `
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(255, 255, 255)",
@@ -138,7 +138,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="destructive"
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(209, 67, 91)",
@@ -230,7 +230,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="destructive"
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(99, 99, 102)",
@@ -321,7 +321,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="featured" 1`
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(255, 255, 255)",
@@ -412,7 +412,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="featured" an
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(99, 99, 102)",
@@ -499,7 +499,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="primary" 1`]
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(255, 255, 255)",
@@ -590,7 +590,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="primary" and
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(99, 99, 102)",
@@ -674,7 +674,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="secondary" 1
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(109, 159, 235)",
@@ -766,7 +766,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="secondary" a
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(99, 99, 102)",
@@ -861,7 +861,7 @@ exports[`iOS BpkButton dark mode should support overwriting styles 1`] = `
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(255, 255, 255)",
@@ -952,7 +952,7 @@ exports[`iOS BpkButton dark mode should support the "disabled" property 1`] = `
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(99, 99, 102)",
@@ -1039,7 +1039,7 @@ exports[`iOS BpkButton light mode should render correctly 1`] = `
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(255, 255, 255)",
@@ -1123,7 +1123,7 @@ exports[`iOS BpkButton light mode should render correctly with type="destructive
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(209, 67, 91)",
@@ -1215,7 +1215,7 @@ exports[`iOS BpkButton light mode should render correctly with type="destructive
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(178, 178, 191)",
@@ -1306,7 +1306,7 @@ exports[`iOS BpkButton light mode should render correctly with type="featured" 1
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(255, 255, 255)",
@@ -1397,7 +1397,7 @@ exports[`iOS BpkButton light mode should render correctly with type="featured" a
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(178, 178, 191)",
@@ -1484,7 +1484,7 @@ exports[`iOS BpkButton light mode should render correctly with type="primary" 1`
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(255, 255, 255)",
@@ -1575,7 +1575,7 @@ exports[`iOS BpkButton light mode should render correctly with type="primary" an
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(178, 178, 191)",
@@ -1659,7 +1659,7 @@ exports[`iOS BpkButton light mode should render correctly with type="secondary" 
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(7, 112, 227)",
@@ -1751,7 +1751,7 @@ exports[`iOS BpkButton light mode should render correctly with type="secondary" 
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(178, 178, 191)",
@@ -1846,7 +1846,7 @@ exports[`iOS BpkButton light mode should support overwriting styles 1`] = `
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(255, 255, 255)",
@@ -1937,7 +1937,7 @@ exports[`iOS BpkButton light mode should support the "disabled" property 1`] = `
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(178, 178, 191)",
@@ -2047,7 +2047,7 @@ exports[`iOS BpkButton should render correctly with iconAlignment="leading" 1`] 
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(255, 255, 255)",
@@ -2164,7 +2164,7 @@ exports[`iOS BpkButton should render correctly with iconAlignment="trailing" 1`]
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(255, 255, 255)",
@@ -2385,7 +2385,7 @@ exports[`iOS BpkButton should support having an icon as well as a title 1`] = `
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(255, 255, 255)",
@@ -2502,7 +2502,7 @@ exports[`iOS BpkButton should support the "icon" property 1`] = `
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(255, 255, 255)",
@@ -2793,7 +2793,7 @@ exports[`iOS BpkButtonThemed should render correctly 1`] = `
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "red",
@@ -2910,7 +2910,7 @@ exports[`iOS should support the "icon" and "large" property 1`] = `
             "letterSpacing": null,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(255, 255, 255)",
@@ -3099,7 +3099,7 @@ exports[`iOS should support the "large" and secondary property 1`] = `
             "letterSpacing": null,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(7, 112, 227)",
@@ -3193,7 +3193,7 @@ exports[`iOS should support the "large" property 1`] = `
             "letterSpacing": null,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Object {
             "color": "rgb(255, 255, 255)",

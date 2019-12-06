@@ -46,7 +46,7 @@ exports[`iOS BpkButtonLink dark mode should render correctly 1`] = `
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Array [
             Object {
@@ -109,7 +109,7 @@ exports[`iOS BpkButtonLink dark mode should support overwriting styles 1`] = `
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Array [
             Object {
@@ -175,7 +175,7 @@ exports[`iOS BpkButtonLink dark mode should support the "disabled" property 1`] 
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Array [
             Object {
@@ -240,7 +240,7 @@ exports[`iOS BpkButtonLink dark mode should support the "icon" property 1`] = `
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Array [
             Object {
@@ -326,7 +326,7 @@ exports[`iOS BpkButtonLink light mode should render correctly 1`] = `
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Array [
             Object {
@@ -389,7 +389,7 @@ exports[`iOS BpkButtonLink light mode should support overwriting styles 1`] = `
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Array [
             Object {
@@ -455,7 +455,7 @@ exports[`iOS BpkButtonLink light mode should support the "disabled" property 1`]
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Array [
             Object {
@@ -520,7 +520,7 @@ exports[`iOS BpkButtonLink light mode should support the "icon" property 1`] = `
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Array [
             Object {
@@ -609,7 +609,7 @@ exports[`iOS BpkButtonLink should render correctly with iconAlignment="leading" 
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Array [
             Object {
@@ -699,7 +699,7 @@ exports[`iOS BpkButtonLink should render correctly with iconAlignment="trailing"
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Array [
             Object {
@@ -785,7 +785,7 @@ exports[`iOS BpkButtonLink should render correctly with text props provided 1`] 
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Array [
             Object {
@@ -847,7 +847,7 @@ exports[`iOS BpkButtonLink should render correctly with theme prop 1`] = `
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Array [
             Object {
@@ -912,7 +912,7 @@ exports[`iOS BpkButtonLink should support elements as icons 1`] = `
             "letterSpacing": 0.154,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Array [
             Object {
@@ -994,7 +994,7 @@ exports[`iOS should support the "icon" and "large" property 1`] = `
             "letterSpacing": null,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Array [
             Object {
@@ -1080,7 +1080,7 @@ exports[`iOS should support the "large" property 1`] = `
             "letterSpacing": null,
           },
           Object {
-            "fontWeight": "600",
+            "fontWeight": "700",
           },
           Array [
             Object {

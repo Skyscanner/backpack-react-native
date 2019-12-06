@@ -141,7 +141,7 @@ exports[`ios BpkNavigationBar dark mode should render correctly 1`] = `
                 "letterSpacing": 0.12,
               },
               Object {
-                "fontWeight": "600",
+                "fontWeight": "700",
               },
               Array [
                 Object {
@@ -304,7 +304,7 @@ exports[`ios BpkNavigationBar dark mode should render correctly with a subtitle 
                 "letterSpacing": 0.12,
               },
               Object {
-                "fontWeight": "600",
+                "fontWeight": "700",
               },
               Array [
                 Object {
@@ -631,7 +631,7 @@ exports[`ios BpkNavigationBar dark mode should render correctly with an icon in 
                 "letterSpacing": 0.12,
               },
               Object {
-                "fontWeight": "600",
+                "fontWeight": "700",
               },
               Array [
                 Object {
@@ -796,7 +796,7 @@ exports[`ios BpkNavigationBar dark mode should render correctly with custom styl
                 "letterSpacing": 0.12,
               },
               Object {
-                "fontWeight": "600",
+                "fontWeight": "700",
               },
               Array [
                 Object {
@@ -938,7 +938,7 @@ exports[`ios BpkNavigationBar dark mode should render correctly with trailing bu
                 "letterSpacing": 0.12,
               },
               Object {
-                "fontWeight": "600",
+                "fontWeight": "700",
               },
               Array [
                 Object {
@@ -989,7 +989,7 @@ exports[`ios BpkNavigationBar dark mode should render correctly with trailing bu
               "letterSpacing": 0.12,
             },
             Object {
-              "fontWeight": "600",
+              "fontWeight": "700",
             },
             Array [
               Object {
@@ -1147,7 +1147,7 @@ exports[`ios BpkNavigationBar light mode should render correctly 1`] = `
                 "letterSpacing": 0.12,
               },
               Object {
-                "fontWeight": "600",
+                "fontWeight": "700",
               },
               Array [
                 Object {
@@ -1310,7 +1310,7 @@ exports[`ios BpkNavigationBar light mode should render correctly with a subtitle
                 "letterSpacing": 0.12,
               },
               Object {
-                "fontWeight": "600",
+                "fontWeight": "700",
               },
               Array [
                 Object {
@@ -1637,7 +1637,7 @@ exports[`ios BpkNavigationBar light mode should render correctly with an icon in
                 "letterSpacing": 0.12,
               },
               Object {
-                "fontWeight": "600",
+                "fontWeight": "700",
               },
               Array [
                 Object {
@@ -1802,7 +1802,7 @@ exports[`ios BpkNavigationBar light mode should render correctly with custom sty
                 "letterSpacing": 0.12,
               },
               Object {
-                "fontWeight": "600",
+                "fontWeight": "700",
               },
               Array [
                 Object {
@@ -1944,7 +1944,7 @@ exports[`ios BpkNavigationBar light mode should render correctly with trailing b
                 "letterSpacing": 0.12,
               },
               Object {
-                "fontWeight": "600",
+                "fontWeight": "700",
               },
               Array [
                 Object {
@@ -1995,7 +1995,7 @@ exports[`ios BpkNavigationBar light mode should render correctly with trailing b
               "letterSpacing": 0.12,
             },
             Object {
-              "fontWeight": "600",
+              "fontWeight": "700",
             },
             Array [
               Object {

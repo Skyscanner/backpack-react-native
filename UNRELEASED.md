@@ -12,6 +12,11 @@
 - react-native-bpk-component-picker:
   - Added dark mode support.
 
+**Fixed:**
+
+- react-native-bpk-component-text:
+  - On iOS, `emphasize` font weight is now 700 to match other platforms.
+
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
