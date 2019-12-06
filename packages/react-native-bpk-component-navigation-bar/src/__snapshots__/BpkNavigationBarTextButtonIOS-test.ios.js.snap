@@ -141,7 +141,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly emp
           "letterSpacing": 0.12,
         },
         Object {
-          "fontWeight": "600",
+          "fontWeight": "700",
         },
         Array [
           Object {
@@ -655,7 +655,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly em
           "letterSpacing": 0.12,
         },
         Object {
-          "fontWeight": "600",
+          "fontWeight": "700",
         },
         Array [
           Object {

@@ -99,7 +99,7 @@ exports[`iOS BpkText should ignore weight prop if deprecated \`emphasize\` prop 
         "letterSpacing": null,
       },
       Object {
-        "fontWeight": "600",
+        "fontWeight": "700",
       },
     ]
   }
@@ -121,7 +121,7 @@ exports[`iOS BpkText should render correctly with deprecated \`emphasize\` prop 
         "letterSpacing": 0.12,
       },
       Object {
-        "fontWeight": "600",
+        "fontWeight": "700",
       },
     ]
   }
@@ -143,7 +143,7 @@ exports[`iOS BpkText should render correctly with textStyle="base and weight="em
         "letterSpacing": 0.12,
       },
       Object {
-        "fontWeight": "600",
+        "fontWeight": "700",
       },
     ]
   }
@@ -185,7 +185,7 @@ exports[`iOS BpkText should render correctly with textStyle="caps and weight="em
         "letterSpacing": 0.28,
       },
       Object {
-        "fontWeight": "600",
+        "fontWeight": "700",
       },
     ]
   }
@@ -227,7 +227,7 @@ exports[`iOS BpkText should render correctly with textStyle="lg and weight="emph
         "letterSpacing": null,
       },
       Object {
-        "fontWeight": "600",
+        "fontWeight": "700",
       },
     ]
   }
@@ -269,7 +269,7 @@ exports[`iOS BpkText should render correctly with textStyle="sm and weight="emph
         "letterSpacing": 0.154,
       },
       Object {
-        "fontWeight": "600",
+        "fontWeight": "700",
       },
     ]
   }
@@ -311,7 +311,7 @@ exports[`iOS BpkText should render correctly with textStyle="xl and weight="emph
         "letterSpacing": null,
       },
       Object {
-        "fontWeight": "600",
+        "fontWeight": "700",
       },
     ]
   }
@@ -375,7 +375,7 @@ exports[`iOS BpkText should render correctly with textStyle="xs and weight="emph
         "letterSpacing": 0,
       },
       Object {
-        "fontWeight": "600",
+        "fontWeight": "700",
       },
     ]
   }
@@ -417,7 +417,7 @@ exports[`iOS BpkText should render correctly with textStyle="xxl and weight="emp
         "letterSpacing": null,
       },
       Object {
-        "fontWeight": "600",
+        "fontWeight": "700",
       },
     ]
   }
@@ -481,7 +481,7 @@ exports[`iOS BpkText should render correctly with textStyle="xxxl and weight="em
         "letterSpacing": null,
       },
       Object {
-        "fontWeight": "600",
+        "fontWeight": "700",
       },
     ]
   }
@@ -545,7 +545,7 @@ exports[`iOS should not apply \`emphasize\` for textStyle="xxl" 1`] = `
         "letterSpacing": null,
       },
       Object {
-        "fontWeight": "600",
+        "fontWeight": "700",
       },
     ]
   }
