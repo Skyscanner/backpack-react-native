@@ -2,6 +2,11 @@
 
 > Place your changes below this line.
 
+**Changed:**
+
+- react-native-bpk-component-button:
+  - Removed `buttonBorderRadius` optional theming attribute.
+
 **Added:**
 
 - react-native-bpk-component-picker:

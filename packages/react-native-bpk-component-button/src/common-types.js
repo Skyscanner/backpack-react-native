@@ -50,8 +50,6 @@ export const REQUIRED_THEME_ATTRIBUTES = {
   ],
 };
 
-export const OPTIONAL_THEME_ATTRIBUTES = ['buttonBorderRadius'];
-
 export const BUTTON_TYPES = {
   primary: 'primary',
   secondary: 'secondary',
