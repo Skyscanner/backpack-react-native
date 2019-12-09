@@ -5,7 +5,8 @@
     "plugin:flowtype/recommended"
   ],
   "plugins": [
-    "flowtype"
+    "flowtype",
+    "react-hooks"
   ],
   "env": {
     "browser": true,
@@ -71,6 +72,8 @@
           "render"
         ]
       }
-    ]
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   }
 }

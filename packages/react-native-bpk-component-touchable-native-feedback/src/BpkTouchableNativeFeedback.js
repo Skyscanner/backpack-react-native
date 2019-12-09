@@ -44,10 +44,12 @@ export type Props = {
 
 const BpkTouchableNativeFeedback = (props: Props) => {
   const { children, style, borderlessBackground, color, ...rest } = props;
-  const rippleColor =
-    color != null
-      ? useBpkDynamicValue(color)
-      : useBpkDynamicValue({ light: null, dark: colorSkyGrayTint02 });
+  const resolvedColor = useBpkDynamicValue(color);
+  const defaultRippleColor = useBpkDynamicValue({
+    light: null,
+    dark: colorSkyGrayTint02,
+  });
+  const rippleColor = resolvedColor || defaultRippleColor;
   const preLollipop = Platform.Version < 21;
   const background = preLollipop
     ? TouchableNativeFeedback.SelectableBackground()

@@ -158,6 +158,7 @@ export const getThemeAttributes = (
 };
 
 export const grayForTheme = (theme: ?Object, colorName: string) => {
+  // eslint-disable-next-line no-console
   console.warn(
     'This theming utility has been deprecated and marked for removal. Please update usages of this method to use the Backpack gray palette',
   );

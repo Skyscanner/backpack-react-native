@@ -44,7 +44,7 @@ type SpinnerType = $Keys<typeof SPINNER_TYPES>;
 
 const REQUIRED_THEME_ATTRIBUTES = ['spinnerPrimaryColor'];
 
-const getSpinnerColor = (themeAttributes: ?Object, type: SpinnerType) => {
+const useSpinnerColor = (themeAttributes: ?Object, type: SpinnerType) => {
   const colorMappings = {
     [SPINNER_TYPES.primary]: useBpkDynamicValue({
       light: colorSkyBlue,
@@ -85,7 +85,7 @@ const BpkSpinner = (props: Props) => {
   return (
     // eslint-disable-next-line backpack/use-components
     <ActivityIndicator
-      color={getSpinnerColor(themeAttributes, spinnerType)}
+      color={useSpinnerColor(themeAttributes, spinnerType)}
       size={small ? 'small' : 'large'}
       {...rest}
     />

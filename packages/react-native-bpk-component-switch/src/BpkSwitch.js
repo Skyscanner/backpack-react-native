@@ -44,6 +44,11 @@ const useColors = (themeAttributes: ?Object, value: ?boolean): Object => {
     ? themeAttributes.switchPrimaryColor
     : colorSkyBlue;
 
+  const androidUnselectedThumbColor = useBpkDynamicValue({
+    light: colorSkyGrayTint07,
+    dark: colorBlackTint03,
+  });
+
   // The color props mean different things based on the platform.
   const colors = Platform.select({
     ios: {
@@ -56,12 +61,7 @@ const useColors = (themeAttributes: ?Object, value: ?boolean): Object => {
       },
     },
     android: {
-      thumbColor: value
-        ? primaryColor
-        : useBpkDynamicValue({
-            light: colorSkyGrayTint07,
-            dark: colorBlackTint03,
-          }),
+      thumbColor: value ? primaryColor : androidUnselectedThumbColor,
       trackColor: {
         false: useBpkDynamicValue({
           light: colorSkyGrayTint06,
