@@ -83,18 +83,17 @@ export type Props = {
 
 const useLoadingAnimation = (loaded: boolean) => {
   const showLoadingIndicator = useRef(!loaded);
-  const imageOpacity = useRef(new Animated.Value(loaded ? 1 : 0)).current;
-  const loadingIndicatorOpacity = useRef(new Animated.Value(loaded ? 0 : 1))
-    .current;
+  const imageOpacityRef = useRef(new Animated.Value(loaded ? 1 : 0));
+  const loadingIndicatorOpacityRef = useRef(new Animated.Value(loaded ? 0 : 1));
 
   useEffect(() => {
     if (loaded) {
       Animated.sequence([
-        Animated.timing(imageOpacity, {
+        Animated.timing(imageOpacityRef.current, {
           toValue: 1,
           duration: animationDurationBase,
         }),
-        Animated.timing(loadingIndicatorOpacity, {
+        Animated.timing(loadingIndicatorOpacityRef.current, {
           toValue: 0,
           duration: animationDurationBase,
         }),
@@ -104,7 +103,11 @@ const useLoadingAnimation = (loaded: boolean) => {
     }
   }, [loaded]);
 
-  return [showLoadingIndicator.current, imageOpacity, loadingIndicatorOpacity];
+  return [
+    showLoadingIndicator.current,
+    imageOpacityRef.current,
+    loadingIndicatorOpacityRef.current,
+  ];
 };
 
 const BpkImage = (props: Props) => {

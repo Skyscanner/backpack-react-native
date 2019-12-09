@@ -55,7 +55,8 @@ export type Props = {
 
 const TitleView = (props: Props) => {
   const { title, tintColor, style, ...rest } = props;
-  const tintColorFinal = tintColor || useBpkDynamicValue(textPrimaryColor);
+  const textColor = useBpkDynamicValue(textPrimaryColor);
+  const tintColorFinal = tintColor || textColor;
   const titleValue = typeof title === 'object' ? title.value : title;
   const hasIcon = typeof title === 'object';
   let isLeading = false;
