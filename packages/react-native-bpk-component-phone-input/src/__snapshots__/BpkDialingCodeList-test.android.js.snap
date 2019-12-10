@@ -2,35 +2,47 @@
 
 exports[`Android BpkDialingCodeList should render correctly 1`] = `
 <RCTScrollView
-  ItemSeparatorComponent={[Function]}
   data={
     Array [
       Object {
-        "dialingCode": "0",
-        "id": "0",
-        "name": "Zero",
+        "data": Array [
+          Object {
+            "dialingCode": "0",
+            "id": "0",
+            "name": "Zero",
+          },
+        ],
+        "title": "Z",
       },
       Object {
-        "dialingCode": "1",
-        "id": "1",
-        "name": "One",
+        "data": Array [
+          Object {
+            "dialingCode": "1",
+            "id": "1",
+            "name": "One",
+          },
+        ],
+        "title": "O",
       },
       Object {
-        "dialingCode": "2",
-        "id": "2",
-        "name": "Two",
+        "data": Array [
+          Object {
+            "dialingCode": "2",
+            "id": "2",
+            "name": "Two",
+          },
+        ],
+        "title": "T",
       },
     ]
   }
   disableVirtualization={false}
-  extraData={null}
   getItem={[Function]}
   getItemCount={[Function]}
   horizontal={false}
   initialNumToRender={10}
   keyExtractor={[Function]}
   maxToRenderPerBatch={10}
-  numColumns={1}
   onContentSizeChange={[Function]}
   onEndReachedThreshold={2}
   onLayout={[Function]}
@@ -38,15 +50,90 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
-  removeClippedSubviews={true}
   renderItem={[Function]}
+  renderSectionHeader={[Function]}
   scrollEventThrottle={50}
+  sections={
+    Array [
+      Object {
+        "data": Array [
+          Object {
+            "dialingCode": "0",
+            "id": "0",
+            "name": "Zero",
+          },
+        ],
+        "title": "Z",
+      },
+      Object {
+        "data": Array [
+          Object {
+            "dialingCode": "1",
+            "id": "1",
+            "name": "One",
+          },
+        ],
+        "title": "O",
+      },
+      Object {
+        "data": Array [
+          Object {
+            "dialingCode": "2",
+            "id": "2",
+            "name": "Two",
+          },
+        ],
+        "title": "T",
+      },
+    ]
+  }
   stickyHeaderIndices={Array []}
+  stickySectionHeadersEnabled={false}
   updateCellsBatchingPeriod={50}
-  viewabilityConfigCallbackPairs={Array []}
   windowSize={21}
 >
   <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "borderTopColor": "rgb(221, 221, 229)",
+            "borderTopWidth": 1,
+            "flexDirection": "row",
+            "height": 48,
+            "justifyContent": "flex-start",
+            "paddingHorizontal": 16,
+          }
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "rgb(17, 18, 54)",
+                "fontFamily": "sans-serif",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "letterSpacing": 0,
+              },
+              Object {
+                "fontFamily": "sans-serif-medium",
+              },
+              Object {
+                "color": "rgb(104, 105, 127)",
+              },
+            ]
+          }
+        >
+          Z
+        </Text>
+      </View>
+    </View>
     <View
       onLayout={[Function]}
       style={null}
@@ -172,16 +259,51 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
           }
         />
       </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    />
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
       <View
         style={
           Object {
-            "backgroundColor": "rgb(205, 205, 215)",
-            "flex": 1,
-            "height": 1,
-            "marginHorizontal": 8,
+            "alignItems": "center",
+            "borderTopColor": "rgb(221, 221, 229)",
+            "borderTopWidth": 1,
+            "flexDirection": "row",
+            "height": 48,
+            "justifyContent": "flex-start",
+            "paddingHorizontal": 16,
           }
         }
-      />
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "rgb(17, 18, 54)",
+                "fontFamily": "sans-serif",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "letterSpacing": 0,
+              },
+              Object {
+                "fontFamily": "sans-serif-medium",
+              },
+              Object {
+                "color": "rgb(104, 105, 127)",
+              },
+            ]
+          }
+        >
+          O
+        </Text>
+      </View>
     </View>
     <View
       onLayout={[Function]}
@@ -308,16 +430,51 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
           }
         />
       </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    />
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
       <View
         style={
           Object {
-            "backgroundColor": "rgb(205, 205, 215)",
-            "flex": 1,
-            "height": 1,
-            "marginHorizontal": 8,
+            "alignItems": "center",
+            "borderTopColor": "rgb(221, 221, 229)",
+            "borderTopWidth": 1,
+            "flexDirection": "row",
+            "height": 48,
+            "justifyContent": "flex-start",
+            "paddingHorizontal": 16,
           }
         }
-      />
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "rgb(17, 18, 54)",
+                "fontFamily": "sans-serif",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "letterSpacing": 0,
+              },
+              Object {
+                "fontFamily": "sans-serif-medium",
+              },
+              Object {
+                "color": "rgb(104, 105, 127)",
+              },
+            ]
+          }
+        >
+          T
+        </Text>
+      </View>
     </View>
     <View
       onLayout={[Function]}
@@ -445,41 +602,57 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
         />
       </View>
     </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    />
   </View>
 </RCTScrollView>
 `;
 
 exports[`Android BpkDialingCodeList should render correctly with "selectedId" set 1`] = `
 <RCTScrollView
-  ItemSeparatorComponent={[Function]}
   data={
     Array [
       Object {
-        "dialingCode": "0",
-        "id": "0",
-        "name": "Zero",
+        "data": Array [
+          Object {
+            "dialingCode": "0",
+            "id": "0",
+            "name": "Zero",
+          },
+        ],
+        "title": "Z",
       },
       Object {
-        "dialingCode": "1",
-        "id": "1",
-        "name": "One",
+        "data": Array [
+          Object {
+            "dialingCode": "1",
+            "id": "1",
+            "name": "One",
+          },
+        ],
+        "title": "O",
       },
       Object {
-        "dialingCode": "2",
-        "id": "2",
-        "name": "Two",
+        "data": Array [
+          Object {
+            "dialingCode": "2",
+            "id": "2",
+            "name": "Two",
+          },
+        ],
+        "title": "T",
       },
     ]
   }
   disableVirtualization={false}
-  extraData="0"
   getItem={[Function]}
   getItemCount={[Function]}
   horizontal={false}
   initialNumToRender={10}
   keyExtractor={[Function]}
   maxToRenderPerBatch={10}
-  numColumns={1}
   onContentSizeChange={[Function]}
   onEndReachedThreshold={2}
   onLayout={[Function]}
@@ -487,15 +660,90 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
-  removeClippedSubviews={true}
   renderItem={[Function]}
+  renderSectionHeader={[Function]}
   scrollEventThrottle={50}
+  sections={
+    Array [
+      Object {
+        "data": Array [
+          Object {
+            "dialingCode": "0",
+            "id": "0",
+            "name": "Zero",
+          },
+        ],
+        "title": "Z",
+      },
+      Object {
+        "data": Array [
+          Object {
+            "dialingCode": "1",
+            "id": "1",
+            "name": "One",
+          },
+        ],
+        "title": "O",
+      },
+      Object {
+        "data": Array [
+          Object {
+            "dialingCode": "2",
+            "id": "2",
+            "name": "Two",
+          },
+        ],
+        "title": "T",
+      },
+    ]
+  }
   stickyHeaderIndices={Array []}
+  stickySectionHeadersEnabled={false}
   updateCellsBatchingPeriod={50}
-  viewabilityConfigCallbackPairs={Array []}
   windowSize={21}
 >
   <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "borderTopColor": "rgb(221, 221, 229)",
+            "borderTopWidth": 1,
+            "flexDirection": "row",
+            "height": 48,
+            "justifyContent": "flex-start",
+            "paddingHorizontal": 16,
+          }
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "rgb(17, 18, 54)",
+                "fontFamily": "sans-serif",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "letterSpacing": 0,
+              },
+              Object {
+                "fontFamily": "sans-serif-medium",
+              },
+              Object {
+                "color": "rgb(104, 105, 127)",
+              },
+            ]
+          }
+        >
+          Z
+        </Text>
+      </View>
+    </View>
     <View
       onLayout={[Function]}
       style={null}
@@ -627,16 +875,51 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
           }
         />
       </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    />
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
       <View
         style={
           Object {
-            "backgroundColor": "rgb(205, 205, 215)",
-            "flex": 1,
-            "height": 1,
-            "marginHorizontal": 8,
+            "alignItems": "center",
+            "borderTopColor": "rgb(221, 221, 229)",
+            "borderTopWidth": 1,
+            "flexDirection": "row",
+            "height": 48,
+            "justifyContent": "flex-start",
+            "paddingHorizontal": 16,
           }
         }
-      />
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "rgb(17, 18, 54)",
+                "fontFamily": "sans-serif",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "letterSpacing": 0,
+              },
+              Object {
+                "fontFamily": "sans-serif-medium",
+              },
+              Object {
+                "color": "rgb(104, 105, 127)",
+              },
+            ]
+          }
+        >
+          O
+        </Text>
+      </View>
     </View>
     <View
       onLayout={[Function]}
@@ -763,16 +1046,51 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
           }
         />
       </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    />
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
       <View
         style={
           Object {
-            "backgroundColor": "rgb(205, 205, 215)",
-            "flex": 1,
-            "height": 1,
-            "marginHorizontal": 8,
+            "alignItems": "center",
+            "borderTopColor": "rgb(221, 221, 229)",
+            "borderTopWidth": 1,
+            "flexDirection": "row",
+            "height": 48,
+            "justifyContent": "flex-start",
+            "paddingHorizontal": 16,
           }
         }
-      />
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "rgb(17, 18, 54)",
+                "fontFamily": "sans-serif",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "letterSpacing": 0,
+              },
+              Object {
+                "fontFamily": "sans-serif-medium",
+              },
+              Object {
+                "color": "rgb(104, 105, 127)",
+              },
+            ]
+          }
+        >
+          T
+        </Text>
+      </View>
     </View>
     <View
       onLayout={[Function]}
@@ -900,6 +1218,10 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
         />
       </View>
     </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    />
   </View>
 </RCTScrollView>
 `;
