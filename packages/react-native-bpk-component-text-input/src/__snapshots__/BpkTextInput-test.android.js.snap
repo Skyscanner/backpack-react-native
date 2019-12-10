@@ -66,7 +66,6 @@ exports[`Android BpkTextInput dark mode should ignore when placeholder is provid
           ]
         }
         underlineColorAndroid="transparent"
-        value=""
       />
     </View>
   </View>
@@ -139,7 +138,6 @@ exports[`Android BpkTextInput dark mode should render correctly 1`] = `
           ]
         }
         underlineColorAndroid="transparent"
-        value=""
       />
     </View>
   </View>
@@ -214,7 +212,6 @@ exports[`Android BpkTextInput dark mode should render correctly with \`accessory
           ]
         }
         underlineColorAndroid="transparent"
-        value=""
       />
     </View>
   </View>
@@ -288,7 +285,6 @@ exports[`Android BpkTextInput dark mode should render correctly with arbitrary p
         }
         testId="arbitrary"
         underlineColorAndroid="transparent"
-        value=""
       />
     </View>
   </View>
@@ -365,7 +361,6 @@ exports[`Android BpkTextInput dark mode should render correctly with custom styl
           ]
         }
         underlineColorAndroid="transparent"
-        value=""
       />
     </View>
   </View>
@@ -945,7 +940,6 @@ exports[`Android BpkTextInput dark mode should render correctly with valid 1`] =
           ]
         }
         underlineColorAndroid="transparent"
-        value=""
       />
       <Text
         allowFontScaling={false}
@@ -1045,7 +1039,6 @@ exports[`Android BpkTextInput dark mode should render correctly with valid false
           ]
         }
         underlineColorAndroid="transparent"
-        value=""
       />
       <Text
         allowFontScaling={false}
@@ -1342,7 +1335,6 @@ exports[`Android BpkTextInput dark mode should support font theming 1`] = `
           ]
         }
         underlineColorAndroid="transparent"
-        value=""
       />
     </View>
   </View>
@@ -1415,7 +1407,6 @@ exports[`Android BpkTextInput dark mode should support theming 1`] = `
           ]
         }
         underlineColorAndroid="transparent"
-        value=""
       />
     </View>
   </View>
@@ -1488,7 +1479,6 @@ exports[`Android BpkTextInput light mode should ignore when placeholder is provi
           ]
         }
         underlineColorAndroid="transparent"
-        value=""
       />
     </View>
   </View>
@@ -1561,7 +1551,6 @@ exports[`Android BpkTextInput light mode should render correctly 1`] = `
           ]
         }
         underlineColorAndroid="transparent"
-        value=""
       />
     </View>
   </View>
@@ -1636,7 +1625,6 @@ exports[`Android BpkTextInput light mode should render correctly with \`accessor
           ]
         }
         underlineColorAndroid="transparent"
-        value=""
       />
     </View>
   </View>
@@ -1710,7 +1698,6 @@ exports[`Android BpkTextInput light mode should render correctly with arbitrary 
         }
         testId="arbitrary"
         underlineColorAndroid="transparent"
-        value=""
       />
     </View>
   </View>
@@ -1787,7 +1774,6 @@ exports[`Android BpkTextInput light mode should render correctly with custom sty
           ]
         }
         underlineColorAndroid="transparent"
-        value=""
       />
     </View>
   </View>
@@ -2367,7 +2353,6 @@ exports[`Android BpkTextInput light mode should render correctly with valid 1`] 
           ]
         }
         underlineColorAndroid="transparent"
-        value=""
       />
       <Text
         allowFontScaling={false}
@@ -2467,7 +2452,6 @@ exports[`Android BpkTextInput light mode should render correctly with valid fals
           ]
         }
         underlineColorAndroid="transparent"
-        value=""
       />
       <Text
         allowFontScaling={false}
@@ -2764,7 +2748,6 @@ exports[`Android BpkTextInput light mode should support font theming 1`] = `
           ]
         }
         underlineColorAndroid="transparent"
-        value=""
       />
     </View>
   </View>
@@ -2837,7 +2820,6 @@ exports[`Android BpkTextInput light mode should support theming 1`] = `
           ]
         }
         underlineColorAndroid="transparent"
-        value=""
       />
     </View>
   </View>

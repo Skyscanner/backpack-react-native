@@ -18,10 +18,11 @@
 
 /* @flow */
 
-import React, { Component } from 'react';
+import React, { Component, useState, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import { ScrollView, View } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
+import { action } from '@storybook/addon-actions';
 import {
   lineColor,
   backgroundSecondaryColor,
@@ -51,11 +52,15 @@ const dynamicStyles = BpkDynamicStyleSheet.create({
 });
 
 class StatefulBpkTextInput extends Component<
-  { initialValue: string, label: string },
-  { value: string },
+  { initialValue: string | typeof undefined, label: string },
+  { value: string | typeof undefined },
 > {
   static propTypes = {
-    initialValue: PropTypes.string.isRequired,
+    initialValue: PropTypes.string,
+  };
+
+  static defaultProps = {
+    initialValue: undefined,
   };
 
   constructor(props) {
@@ -88,18 +93,20 @@ storiesOf('react-native-bpk-component-text-input', module)
     return (
       <ScrollView>
         <StatefulBpkTextInput
+          onChange={action('changed')}
           label="Input"
-          initialValue=""
           style={styles.input}
           placeholder="3 letter airport code"
         />
         <StatefulBpkTextInput
+          onChange={action('changed')}
           label="Input with value and description"
           initialValue="Edinburgh"
           description="Enter your destination."
           style={styles.input}
         />
         <StatefulBpkTextInput
+          onChange={action('changed')}
           label="Input with multiline value"
           initialValue="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor." // eslint-disable-line max-len
           multiline
@@ -107,12 +114,13 @@ storiesOf('react-native-bpk-component-text-input', module)
           autoGrow
         />
         <StatefulBpkTextInput
+          onChange={action('changed')}
           label="Valid input"
-          initialValue="Edinburgh"
           valid
           style={styles.input}
         />
         <StatefulBpkTextInput
+          onChange={action('changed')}
           label="Invalid input"
           initialValue="Edinbvrgh"
           valid={false}
@@ -120,33 +128,35 @@ storiesOf('react-native-bpk-component-text-input', module)
           style={styles.input}
         />
         <StatefulBpkTextInput
+          onChange={action('changed')}
           label="Non-editable input"
-          initialValue=""
           editable={false}
           style={styles.input}
         />
         <StatefulBpkTextInput
+          onChange={action('changed')}
           label="Password"
           initialValue="letmein"
           secureTextEntry
           style={styles.input}
         />
         <StatefulBpkTextInput
+          onChange={action('changed')}
           label="Phone number"
           initialValue="+441234567890"
           keyboardType="phone-pad"
           style={styles.input}
         />
         <StatefulBpkTextInput
+          onChange={action('changed')}
           label="Input with date mask"
-          initialValue=""
           mask="99/99"
           maxLength={5}
           style={styles.input}
         />
         <StatefulBpkTextInput
+          onChange={action('changed')}
           label="Input with card number mask"
-          initialValue=""
           mask="9999-9999-9999-9999"
           maxLength={19}
           style={styles.input}
@@ -167,7 +177,6 @@ storiesOf('react-native-bpk-component-text-input', module)
         />
         <StatefulBpkTextInput
           label="Phone number"
-          initialValue=""
           keyboardType="phone-pad"
           style={styles.input}
           placeholder="E.g. 1234567890"
@@ -184,6 +193,37 @@ storiesOf('react-native-bpk-component-text-input', module)
       </ScrollView>
     );
   })
+  .add('With forced value', () => {
+    const [value, setValue] = useState('');
+    const onChange = useCallback((e: any) => {
+      const { text } = e.nativeEvent;
+      if (!text || text.length === 0) {
+        setValue('');
+      } else {
+        setValue(text.replace(/./g, '*'));
+      }
+    }, []);
+    const styles = useBpkDynamicStyleSheet(dynamicStyles);
+
+    return (
+      <BpkTextInput
+        label="Hidden input"
+        style={styles.input}
+        value={value}
+        onChange={onChange}
+      />
+    );
+  })
+  .add('Uncontrolled', () => {
+    const styles = useBpkDynamicStyleSheet(dynamicStyles);
+    return (
+      <BpkTextInput
+        label="Uncontrolled"
+        style={[styles.input]}
+        onChange={action('changed')}
+      />
+    );
+  })
   .add('Themed', () => {
     const styles = useBpkDynamicStyleSheet(dynamicStyles);
     return (
@@ -191,7 +231,6 @@ storiesOf('react-native-bpk-component-text-input', module)
         <ScrollView>
           <StatefulBpkTextInput
             label="Input"
-            initialValue=""
             style={styles.input}
             placeholder="3 letter airport code"
           />

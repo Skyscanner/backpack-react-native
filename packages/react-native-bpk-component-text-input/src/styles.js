@@ -124,7 +124,7 @@ const animatedStyles = StyleSheet.create({
 });
 
 const getLabelColorValue = (
-  value: string,
+  value: ?string,
   valid: ?boolean,
   editable: boolean,
   hasAccessoryView: boolean,
@@ -158,7 +158,7 @@ const getLabelStyle = (
     editable,
     hasAccessoryView,
   }: {
-    value: string,
+    value: ?string,
     valid: ?boolean,
     editable: boolean,
     hasAccessoryView: boolean,

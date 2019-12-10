@@ -103,7 +103,6 @@ export default class App extends Component {
 | Property                    | PropType                                                    | Required | Default Value |
 | --------------------------- | ----------------------------------------------------------- | -------- | ------------- |
 | label                       | string                                                      | true     | -             |
-| value                       | string                                                      | true     | -             |
 | clearButtonMode (iOS only)  | oneOf('never', 'while-editing', 'unless-editing', 'always') | false    | while-editing |
 | description                 | string                                                      | false    | null          |
 | editable                    | bool                                                        | false    | true          |
@@ -113,6 +112,7 @@ export default class App extends Component {
 | validationMessage           | string                                                      | false    | null          |
 | style                       | style                                                       | false    | null          |
 | accessoryView               | node                                                        | false    | null          |
+| value                       | string                                                      | false    | undefined     |
 
 ## Mask
 

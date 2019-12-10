@@ -50,7 +50,6 @@ import {
 
 export type Props = {
   label: string,
-  value: string,
   clearButtonMode: 'never' | 'while-editing' | 'unless-editing' | 'always',
   editable: boolean,
   description: ?string,
@@ -63,12 +62,12 @@ export type Props = {
   valid: ?boolean,
   validationMessage: ?string,
   accessoryView: ?Node,
+  value: ?string,
   theme: ?Theme,
 };
 
 export const propTypes = {
   label: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
   // eslint-disable-next-line react/forbid-foreign-prop-types
   clearButtonMode: TextInput.propTypes.clearButtonMode,
   description: PropTypes.string,
@@ -82,6 +81,7 @@ export const propTypes = {
   valid: PropTypes.oneOf([true, false, null]),
   validationMessage: PropTypes.string,
   accessoryView: PropTypes.node,
+  value: PropTypes.string,
   theme: themePropType,
 };
 
@@ -98,6 +98,7 @@ export const defaultProps = {
   valid: null,
   validationMessage: null,
   accessoryView: null,
+  value: undefined,
   theme: null,
 };
 
@@ -279,7 +280,7 @@ class BpkTextInput extends Component<EnhancedProps, State> {
           <Animated.View style={animatedInputStyle}>
             <TextInput
               editable={editable}
-              value={mask ? this.tinymask.mask(value) : value || ''}
+              value={mask && value ? this.tinymask.mask(value) : value}
               style={inputTextStyle}
               onFocus={this.onFocus}
               onBlur={this.onBlur}

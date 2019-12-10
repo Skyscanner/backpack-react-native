@@ -32,7 +32,7 @@ const commonTests = () => {
     describeEachColorScheme(BpkTextInput, WithColorScheme => {
       it('should render correctly', () => {
         const testRenderer = TestRenderer.create(
-          <WithColorScheme label="Name" value="" />,
+          <WithColorScheme label="Name" />,
         );
 
         expect(testRenderer.toJSON()).toMatchSnapshot();
@@ -40,7 +40,7 @@ const commonTests = () => {
 
       it('should render correctly with arbitrary props', () => {
         const testRenderer = TestRenderer.create(
-          <WithColorScheme label="Name" value="" testId="arbitrary" />,
+          <WithColorScheme label="Name" testId="arbitrary" />,
         );
 
         expect(testRenderer.toJSON()).toMatchSnapshot();
@@ -54,7 +54,7 @@ const commonTests = () => {
         });
 
         const testRenderer = TestRenderer.create(
-          <WithColorScheme label="Name" value="" style={styles.custom} />,
+          <WithColorScheme label="Name" style={styles.custom} />,
         );
 
         expect(testRenderer.toJSON()).toMatchSnapshot();
@@ -96,7 +96,7 @@ const commonTests = () => {
 
       it('should render correctly with valid', () => {
         const testRenderer = TestRenderer.create(
-          <WithColorScheme label="Name" value="" valid />,
+          <WithColorScheme label="Name" valid />,
         );
 
         expect(testRenderer.toJSON()).toMatchSnapshot();
@@ -104,7 +104,7 @@ const commonTests = () => {
 
       it('should render correctly with valid false', () => {
         const testRenderer = TestRenderer.create(
-          <WithColorScheme label="Name" value="" valid={false} />,
+          <WithColorScheme label="Name" valid={false} />,
         );
 
         expect(testRenderer.toJSON()).toMatchSnapshot();
@@ -148,7 +148,7 @@ const commonTests = () => {
 
       it('should ignore when placeholder is provided, as element is not focused', () => {
         const testRenderer = TestRenderer.create(
-          <WithColorScheme label="Name" value="" placeholder="Placeholder" />,
+          <WithColorScheme label="Name" placeholder="Placeholder" />,
         );
 
         expect(testRenderer.toJSON()).toMatchSnapshot();
@@ -156,7 +156,7 @@ const commonTests = () => {
 
       it('should render correctly with `accessoryView`', () => {
         const testRenderer = TestRenderer.create(
-          <WithColorScheme label="Name" value="" accessoryView={<View />} />,
+          <WithColorScheme label="Name" accessoryView={<View />} />,
         );
 
         expect(testRenderer.toJSON()).toMatchSnapshot();
@@ -188,7 +188,7 @@ const commonTests = () => {
         };
         const testRenderer = TestRenderer.create(
           <BpkThemeProvider theme={theme}>
-            <WithColorScheme label="Name" value="" />
+            <WithColorScheme label="Name" />
           </BpkThemeProvider>,
         );
         expect(testRenderer.toJSON()).toMatchSnapshot();
@@ -200,7 +200,7 @@ const commonTests = () => {
         };
         const testRenderer = TestRenderer.create(
           <BpkThemeProvider theme={theme}>
-            <WithColorScheme label="Name" value="" />
+            <WithColorScheme label="Name" />
           </BpkThemeProvider>,
         );
         expect(testRenderer.toJSON()).toMatchSnapshot();
