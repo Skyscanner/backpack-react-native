@@ -38,7 +38,7 @@ export type DialingCodeListProps = {
   renderFlag: RenderFlag,
   onItemPress: Code => void,
   selectedId: ?string,
-  suggested?: {
+  suggested: ?{
     ids: Array<string>,
     title: string,
   },
@@ -66,7 +66,7 @@ export const LIST_COMMON_PROP_TYPES = {
 
 export const LIST_COMMON_DEFAULT_PROPS = {
   selectedId: null,
-  suggested: undefined,
+  suggested: null,
 };
 
 export const LIST_ITEM_COMMON_DEFAULT_PROPS = {
