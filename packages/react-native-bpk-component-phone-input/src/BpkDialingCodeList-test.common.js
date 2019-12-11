@@ -81,7 +81,6 @@ const commonTests = () => {
     });
   });
 
-  // This test can be moved to commonTests() once the feature has been implemented on android
   it('should render correctly with suggested IDs', () => {
     const tree = renderer.create(
       <BpkDialingCodeList
