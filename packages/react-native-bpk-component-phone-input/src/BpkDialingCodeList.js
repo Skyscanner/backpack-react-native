@@ -53,12 +53,23 @@ and returns:
   },
 ]
 */
-const convertCodesIntoSections = data => {
-  const alphabetisedList = groupBy(data, x => x.name[0].toLowerCase());
-  return Object.keys(alphabetisedList).map(letter => ({
-    title: letter.toUpperCase(),
-    data: alphabetisedList[letter],
-  }));
+const convertCodesIntoSections = (data, suggested) => {
+  const promotedData = suggested
+    ? [
+        {
+          title: suggested.title,
+          data: data.filter(code => suggested.ids.includes(code.id)),
+        },
+      ]
+    : [];
+  const groupedList = groupBy(data, x => x.name[0].toLowerCase());
+  return [
+    ...promotedData,
+    ...Object.keys(groupedList).map(letter => ({
+      title: letter.toUpperCase(),
+      data: groupedList[letter],
+    })),
+  ];
 };
 
 export type Props = {
@@ -70,9 +81,10 @@ const BpkDialingCodeList = ({
   onItemPress,
   renderFlag,
   selectedId,
+  suggested,
 }: Props) => (
   <BpkSectionList
-    sections={convertCodesIntoSections(dialingCodes)}
+    sections={convertCodesIntoSections(dialingCodes, suggested)}
     renderItem={({ item }) => (
       <BpkSectionListItem
         title={`${item.dialingCode} ${item.name}`}

@@ -1225,3 +1225,58 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
   </View>
 </RCTScrollView>
 `;
+
+exports[`Android should render correctly with suggested IDs 1`] = `
+Array [
+  Object {
+    "data": Array [
+      Object {
+        "dialingCode": "1",
+        "id": "1",
+        "name": "One",
+      },
+      Object {
+        "dialingCode": "3",
+        "id": "3",
+        "name": "Three",
+      },
+    ],
+    "title": "Suggested for you",
+  },
+  Object {
+    "data": Array [
+      Object {
+        "dialingCode": "0",
+        "id": "0",
+        "name": "Zero",
+      },
+    ],
+    "title": "Z",
+  },
+  Object {
+    "data": Array [
+      Object {
+        "dialingCode": "1",
+        "id": "1",
+        "name": "One",
+      },
+    ],
+    "title": "O",
+  },
+  Object {
+    "data": Array [
+      Object {
+        "dialingCode": "2",
+        "id": "2",
+        "name": "Two",
+      },
+      Object {
+        "dialingCode": "3",
+        "id": "3",
+        "name": "Three",
+      },
+    ],
+    "title": "T",
+  },
+]
+`;

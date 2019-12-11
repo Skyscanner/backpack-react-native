@@ -17,7 +17,6 @@
  */
 
 /* @flow */
-
 import commonTests from './BpkDialingCodeList-test.common';
 
 describe('iOS', () => {
