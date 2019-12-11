@@ -78,11 +78,11 @@ export default class App extends Component {
 
 | Property                    | PropType                                                    | Required | Default Value |
 | --------------------------- | ----------------------------------------------------------- | -------- | ------------- |
-| dialingCodes                | arrayOf({id, dialingCode, name})                           | true     | -             |
+| dialingCodes                | arrayOf({id, dialingCode, name})                            | true     | -             |
 | onItemPress                 | func                                                        | true     | -             |
 | renderFlag                  | func                                                        | true     | -             |
 | selectedId                  | string                                                      | false    | null          |
-| suggested (iOS only)        | { ids, title }                                              | false    | null          |
+| suggested                   | { ids, title }                                              | false    | null          |
 
 ## BpkPhoneNumberInput
 
