@@ -25,6 +25,7 @@ import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
 import {
   spacingBase,
+  spacingLg,
   backgroundColor,
 } from 'bpk-tokens/tokens/base.react.native';
 import { useBpkDynamicValue } from 'react-native-bpk-appearance';
@@ -119,6 +120,11 @@ const codes = [
   { id: 'WK', dialingCode: '+99', name: 'Wakanda' },
 ];
 
+const suggestedCodes = {
+  title: 'Suggestions',
+  ids: ['IS', 'JP'],
+};
+
 const getFlagUriFromCountryCode = countryCode =>
   `https://images.skyscnr.com/images/country/flag/header/${countryCode.toLowerCase()}.png`;
 
@@ -136,19 +142,22 @@ class StatefulBpkDialingCodeList extends React.Component<
 
   render() {
     return (
-      <BpkDialingCodeList
-        dialingCodes={codes}
-        selectedId={this.state.selectedId}
-        onItemPress={item => {
-          action(`${item.name} selected`);
-          this.setState({ selectedId: item.id });
-        }}
-        renderFlag={item => (
-          <Image // eslint-disable-line backpack/use-components
-            source={{ uri: getFlagUriFromCountryCode(item.id) }}
-          />
-        )}
-      />
+      <View style={{ marginTop: spacingLg }}>
+        <BpkDialingCodeList
+          dialingCodes={codes}
+          suggested={suggestedCodes}
+          selectedId={this.state.selectedId}
+          onItemPress={item => {
+            action(`${item.name} selected`);
+            this.setState({ selectedId: item.id });
+          }}
+          renderFlag={item => (
+            <Image // eslint-disable-line backpack/use-components
+              source={{ uri: getFlagUriFromCountryCode(item.id) }}
+            />
+          )}
+        />
+      </View>
     );
   }
 }
