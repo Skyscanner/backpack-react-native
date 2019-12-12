@@ -2,6 +2,21 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-12-12 - Phone input sections
+
+**Breaking:**
+- react-native-bpk-component-phone-input
+  - On android the phone input now uses BpkSectionList instead of BpkFlatList. This means that it is split into sections by the first character of each country (aligned with the iOS implementation).
+
+**Added:**
+- react-native-bpk-component-phone-input
+  - Add support for suggested country codes at the top of the picker.
+
+**Fixed:**
+- react-native-bpk-component-calendar:
+- react-native-bpk-component-dialog:
+  - `backpack-ios` dependency is now ~> 24.0
+
 # 2019-12-06 - Fix `emphasize` font for iOS and more dark mode support
 
 **Added:**
@@ -19,7 +34,7 @@
 
 # 2019-12-05 - Fixed RTL for banner alert and improve Android dark mode support
 
-**Fixed:**	
+**Fixed:**
 
 - react-native-bpk-component-banner-alert:
   - Fixed RTL alignment.
