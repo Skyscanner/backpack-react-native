@@ -95,14 +95,16 @@ export default class App extends Component {
 
 ### BpkPicker
 
-| Property             | PropType                              | Required | Default Value |
-| -----------          | ------------------------------------- | -------- | ------------- |
-| children             | node                                  | true     | -             |
-| doneLabel (iOS only) | string                                | true     | -             |
-| onClose              | func                                  | true     | -             |
-| onValueChange        | func                                  | true     | -             |
-| isOpen               | bool                                  | false    | false         |
-| selectedValue        | oneOfType(string, number)             | false    | null          |
+| Property                    | PropType                              | Required | Default Value |
+| -----------                 | ------------------------------------- | -------- | ------------- |
+| children                    | node                                  | true     | -             |
+| doneLabel (iOS only)        | string                                | true     | -             |
+| onClose                     | func                                  | true     | -             |
+| onValueChange               | func                                  | true     | -             |
+| isOpen                      | bool                                  | false    | false         |
+| selectedValue               | oneOfType(string, number)             | false    | null          |
+| onShow                      | func                                  | false    | -             |
+| pickerContentRef (iOS only) | React.Ref                             | false    | null          |
 
 ### BpkPickerItem
 

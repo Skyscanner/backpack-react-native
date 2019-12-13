@@ -297,6 +297,9 @@ BpkAppearancePreferences
 ColorSchemeName
 BpkDynamicStyle
 BpkDynamicStyleProp
+pickerContentRef
+onShow
+React.Ref
 
 # Sizes
 xs
