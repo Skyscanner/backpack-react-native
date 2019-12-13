@@ -18,7 +18,7 @@
 
 /* @flow */
 
-import React from 'react';
+import React, { type Ref, type ElementProps } from 'react';
 import { Modal, Picker, View, TouchableWithoutFeedback } from 'react-native';
 import PropTypes from 'prop-types';
 import BpkButtonLink from 'react-native-bpk-component-button-link';
@@ -88,9 +88,13 @@ const dynamicStyles = BpkDynamicStyleSheet.create({
   },
 });
 
+type ModalProps = ElementProps<typeof Modal>;
+
 type Props = {
   ...$Exact<PickerMenuProps>,
   doneLabel: string,
+  onShow?: $PropertyType<ModalProps, 'onShow'>,
+  pickerContentRef?: Ref<typeof View>,
 };
 
 const BpkPickerMenu = (props: Props) => {
@@ -101,6 +105,8 @@ const BpkPickerMenu = (props: Props) => {
     onValueChange,
     onClose,
     doneLabel,
+    onShow,
+    pickerContentRef,
   } = props;
   const pickerItems = React.Children.map(children, child =>
     React.cloneElement(child, { key: child.props.value }),
@@ -113,11 +119,12 @@ const BpkPickerMenu = (props: Props) => {
       transparent
       visible={visible}
       animationType="slide"
+      onShow={onShow}
     >
       <TouchableWithoutFeedback onPress={onClose}>
         <View style={styles.dismissOverlay} />
       </TouchableWithoutFeedback>
-      <View style={styles.modal}>
+      <View style={styles.modal} ref={pickerContentRef}>
         <View style={styles.modalHeader}>
           <BpkButtonLink
             title={doneLabel}
