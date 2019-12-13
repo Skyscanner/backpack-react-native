@@ -5,6 +5,7 @@ exports[`Android BpkPicker dark mode should render correctly 1`] = `
   animationType="fade"
   hardwareAccelerated={false}
   onRequestClose={[Function]}
+  onShow={[Function]}
   transparent={true}
   visible={false}
 >
@@ -207,6 +208,7 @@ exports[`Android BpkPicker dark mode should render correctly with a selected val
   animationType="fade"
   hardwareAccelerated={false}
   onRequestClose={[Function]}
+  onShow={[Function]}
   transparent={true}
   visible={false}
 >
@@ -415,6 +417,7 @@ exports[`Android BpkPicker light mode should render correctly 1`] = `
   animationType="fade"
   hardwareAccelerated={false}
   onRequestClose={[Function]}
+  onShow={[Function]}
   transparent={true}
   visible={false}
 >
@@ -617,6 +620,7 @@ exports[`Android BpkPicker light mode should render correctly with a selected va
   animationType="fade"
   hardwareAccelerated={false}
   onRequestClose={[Function]}
+  onShow={[Function]}
   transparent={true}
   visible={false}
 >

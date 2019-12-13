@@ -4,6 +4,7 @@ exports[`iOS BpkPicker dark mode should render correctly 1`] = `
 <Modal
   animationType="slide"
   hardwareAccelerated={false}
+  onShow={[Function]}
   supportedOrientations={
     Array [
       "portrait",
@@ -154,6 +155,7 @@ exports[`iOS BpkPicker dark mode should render correctly with a selected value 1
 <Modal
   animationType="slide"
   hardwareAccelerated={false}
+  onShow={[Function]}
   supportedOrientations={
     Array [
       "portrait",
@@ -304,6 +306,7 @@ exports[`iOS BpkPicker light mode should render correctly 1`] = `
 <Modal
   animationType="slide"
   hardwareAccelerated={false}
+  onShow={[Function]}
   supportedOrientations={
     Array [
       "portrait",
@@ -454,6 +457,7 @@ exports[`iOS BpkPicker light mode should render correctly with a selected value 
 <Modal
   animationType="slide"
   hardwareAccelerated={false}
+  onShow={[Function]}
   supportedOrientations={
     Array [
       "portrait",

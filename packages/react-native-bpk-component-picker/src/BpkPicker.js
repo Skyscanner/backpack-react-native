@@ -18,11 +18,14 @@
 
 /* @flow */
 
-import React, { type Node } from 'react';
+import React, { type Ref, type ElementProps, type Node } from 'react';
+import { Modal, View } from 'react-native';
 import PropTypes from 'prop-types';
 
 import BpkPickerMenu from './BpkPickerMenu';
 import { PICKER_VALUE_PROP_TYPE, type PickerValue } from './common-types';
+
+type ModalProps = ElementProps<typeof Modal>;
 
 export type Props = {
   children: Node,
@@ -31,6 +34,8 @@ export type Props = {
   onValueChange: (PickerValue, number) => mixed,
   isOpen: boolean,
   selectedValue: PickerValue,
+  onShow: $PropertyType<ModalProps, 'onShow'>,
+  pickerContentRef: Ref<typeof View>,
 };
 
 const BpkPicker = (props: Props) => {
@@ -68,6 +73,8 @@ BpkPicker.propTypes = {
 BpkPicker.defaultProps = {
   isOpen: false,
   selectedValue: null,
+  onShow: () => null,
+  pickerContentRef: React.createRef(),
 };
 
 export default BpkPicker;

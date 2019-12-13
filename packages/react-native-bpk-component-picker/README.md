@@ -103,6 +103,8 @@ export default class App extends Component {
 | onValueChange        | func                                  | true     | -             |
 | isOpen               | bool                                  | false    | false         |
 | selectedValue        | oneOfType(string, number)             | false    | null          |
+| onShow               | func                                  | false    | -             |
+| pickerContentRef     | React.Ref                             | false    | null          |
 
 ### BpkPickerItem
 

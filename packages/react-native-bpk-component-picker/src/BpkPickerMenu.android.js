@@ -71,7 +71,15 @@ const dynamicStyles = BpkDynamicStyleSheet.create({
 });
 
 const BpkPickerMenu = (props: PickerMenuProps) => {
-  const { visible, children, onValueChange, onClose, selectedValue } = props;
+  const {
+    visible,
+    children,
+    onValueChange,
+    onClose,
+    selectedValue,
+    onShow,
+    pickerContentRef,
+  } = props;
 
   // Instead of passing children through, we have to turn them into a data structure
   // in order to pass them to FlatList.
@@ -110,11 +118,12 @@ const BpkPickerMenu = (props: PickerMenuProps) => {
       visible={visible}
       animationType="fade"
       onRequestClose={onClose}
+      onShow={onShow}
     >
       <TouchableWithoutFeedback onPress={onClose}>
         <View style={styles.overlay} />
       </TouchableWithoutFeedback>
-      <View style={styles.listWrapper}>
+      <View style={styles.listWrapper} ref={pickerContentRef}>
         <FlatList
           data={pickerItems}
           getItemLayout={(data, index) => ({
