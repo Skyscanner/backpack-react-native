@@ -18,7 +18,7 @@
 
 /* @flow */
 
-import React, { type Ref, type ElementProps } from 'react';
+import React from 'react';
 import { Modal, Picker, View, TouchableWithoutFeedback } from 'react-native';
 import PropTypes from 'prop-types';
 import BpkButtonLink from 'react-native-bpk-component-button-link';
@@ -88,13 +88,9 @@ const dynamicStyles = BpkDynamicStyleSheet.create({
   },
 });
 
-type ModalProps = ElementProps<typeof Modal>;
-
 type Props = {
   ...$Exact<PickerMenuProps>,
   doneLabel: string,
-  onShow?: $PropertyType<ModalProps, 'onShow'>,
-  pickerContentRef?: Ref<typeof View>,
 };
 
 const BpkPickerMenu = (props: Props) => {

@@ -34,8 +34,8 @@ export type Props = {
   onValueChange: (PickerValue, number) => mixed,
   isOpen: boolean,
   selectedValue: PickerValue,
-  onShow?: $PropertyType<ModalProps, 'onShow'>,
-  pickerContentRef?: Ref<typeof View>,
+  onShow: $PropertyType<ModalProps, 'onShow'>,
+  pickerContentRef: Ref<typeof View>,
 };
 
 const BpkPicker = (props: Props) => {
@@ -74,7 +74,7 @@ BpkPicker.defaultProps = {
   isOpen: false,
   selectedValue: null,
   onShow: () => null,
-  pickerContentRef: null,
+  pickerContentRef: React.createRef(),
 };
 
 export default BpkPicker;

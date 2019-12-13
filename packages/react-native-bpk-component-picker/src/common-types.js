@@ -18,17 +18,21 @@
 
 /* @flow */
 
-import { type Node } from 'react';
+import { type Node, type ElementProps, type Ref } from 'react';
+import { Modal, View } from 'react-native';
 import PropTypes from 'prop-types';
 
 export type PickerValue = ?(string | number);
 
+type ModalProps = ElementProps<typeof Modal>;
 export type PickerMenuProps = {
   children: Node,
   onClose: () => mixed,
   onValueChange: (PickerValue, number) => mixed,
   selectedValue: PickerValue,
   visible: boolean,
+  onShow: $PropertyType<ModalProps, 'onShow'>,
+  pickerContentRef: Ref<typeof View>,
 };
 
 export const PICKER_VALUE_PROP_TYPE = PropTypes.oneOfType([
