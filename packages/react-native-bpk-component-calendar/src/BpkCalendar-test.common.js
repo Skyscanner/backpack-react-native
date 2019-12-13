@@ -21,6 +21,7 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import renderer from 'react-test-renderer';
 
+import DateMatchers from './DateMatchers';
 import BpkCalendar from './BpkCalendar';
 import { SELECTION_TYPES } from './common-types';
 
@@ -99,7 +100,7 @@ const commonTests = () => {
       const tree = renderer
         .create(
           <BpkCalendar
-            selectionType={SELECTION_TYPES.single}
+            selectionType={SELECTION_TYPES.range}
             selectedDates={[
               new Date(Date.UTC(2019, 4, 19)),
               new Date(Date.UTC(2019, 4, 21)),
@@ -111,48 +112,46 @@ const commonTests = () => {
       expect(tree).toMatchSnapshot();
     });
 
-    // TODO: Enable these when Android is merged
+    it('should error with selection type "single" and selectedDates.length > 1', () => {
+      jest.spyOn(console, 'error').mockImplementation(() => jest.fn());
+      renderer.create(
+        <BpkCalendar
+          selectionType={SELECTION_TYPES.single}
+          selectedDates={[new Date(2019, 4, 19), new Date(2019, 4, 20)]}
+          {...defaultProps}
+        />,
+      );
+      expect(console.error).toHaveBeenCalled();
+    });
 
-    // it('should error with selection type "single" and selectedDates.length > 1', () => {
-    //   jest.spyOn(console, 'error').mockImplementation(() => jest.fn());
-    //   renderer.create(
-    //     <BpkCalendar
-    //       selectionType={SELECTION_TYPES.single}
-    //       selectedDates={[new Date(2019, 4, 19), new Date(2019, 4, 20)]}
-    //       {...defaultProps}
-    //     />,
-    //   );
-    //   expect(console.error).toHaveBeenCalled();
-    // });
+    it('should error if when maxDate is before minDate', () => {
+      expect(() => {
+        renderer.create(
+          <BpkCalendar
+            selectionType={SELECTION_TYPES.single}
+            minDate={new Date(2020, 4, 19)}
+            maxDate={new Date(2019, 4, 19)}
+            {...defaultProps}
+          />,
+        );
+      }).toThrowError('BpkCalendar: "minDate" must be before "maxDate"');
+    });
 
-    // it('should error if when maxDate is before minDate', () => {
-    //   expect(() => {
-    //     renderer.create(
-    //       <BpkCalendar
-    //         selectionType={SELECTION_TYPES.single}
-    //         minDate={new Date(2020, 4, 19)}
-    //         maxDate={new Date(2019, 4, 19)}
-    //         {...defaultProps}
-    //       />,
-    //     );
-    //   }).toThrowError('BpkCalendar: "minDate" must be before "maxDate"');
-    // });
-
-    // it('should error with selection type "range" and selectedDates.length > 2', () => {
-    //   jest.spyOn(console, 'error').mockImplementation(() => jest.fn());
-    //   renderer.create(
-    //     <BpkCalendar
-    //       selectionType={SELECTION_TYPES.range}
-    //       selectedDates={[
-    //         new Date(2019, 4, 19),
-    //         new Date(2019, 4, 20),
-    //         new Date(2019, 4, 21),
-    //       ]}
-    //       {...defaultProps}
-    //     />,
-    //   );
-    //   expect(console.error).toHaveBeenCalled();
-    // });
+    it('should error with selection type "range" and selectedDates.length > 2', () => {
+      jest.spyOn(console, 'error').mockImplementation(() => jest.fn());
+      renderer.create(
+        <BpkCalendar
+          selectionType={SELECTION_TYPES.range}
+          selectedDates={[
+            new Date(2019, 4, 19),
+            new Date(2019, 4, 20),
+            new Date(2019, 4, 21),
+          ]}
+          {...defaultProps}
+        />,
+      );
+      expect(console.error).toHaveBeenCalled();
+    });
 
     it('should render correctly with selection type "multiple" and selected dates', () => {
       const tree = renderer
@@ -212,6 +211,19 @@ const commonTests = () => {
         )
         .toJSON();
 
+      expect(tree).toMatchSnapshot();
+    });
+
+    it('should render correctly with disabled dates', () => {
+      const tree = renderer
+        .create(
+          <BpkCalendar
+            selectionType={SELECTION_TYPES.single}
+            {...defaultProps}
+            disabledDates={DateMatchers.after(Date.UTC(2019, 11, 16))}
+          />,
+        )
+        .toJSON();
       expect(tree).toMatchSnapshot();
     });
   });

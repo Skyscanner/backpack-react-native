@@ -31,19 +31,9 @@ import {
   SELECTION_TYPES,
   type CommonProps,
 } from './common-types';
+import parseDateToNative from './parseDateToNative';
 
 const RCTBPKCalendar = requireNativeComponent('RCTBPKCalendar');
-
-const parseDateToNative = (date: ?(Date | number)) => {
-  if (date) {
-    // Use timestamps instead of Date objects because something goes awry over the bridge
-    // when we try to send dates.
-    const timestamp = typeof date === 'number' ? date : date.getTime();
-    return timestamp;
-  }
-
-  return date;
-};
 
 export type Props = {
   ...$Exact<CommonProps>,
@@ -85,14 +75,6 @@ class BpkCalendar extends Component<Props, {}> {
       selectionType,
       ...rest
     } = this.props;
-
-    if (minDate && maxDate) {
-      if (minDate > maxDate) {
-        // It's safer to throw an error rather than use a prop type because if
-        // we let this get rendered it will crash the calendar.
-        throw new Error(`BpkCalendar: "minDate" must be before "maxDate".`);
-      }
-    }
 
     return (
       <RCTBPKCalendar

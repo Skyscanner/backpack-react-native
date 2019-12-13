@@ -19,7 +19,6 @@ package net.skyscanner.backpack.reactnative.calendar
 
 import android.content.Context
 import android.util.AttributeSet
-import android.view.View
 import android.widget.FrameLayout
 import net.skyscanner.backpack.calendar.BpkCalendar
 import net.skyscanner.backpack.calendar.model.CalendarRange
@@ -37,11 +36,12 @@ class RNCalendarView(
   private var calendar = RNCompatBpkCalendar(context)
   private var controller: CalendarController? = null
   private var selection: CalendarSelection? = null
+  private var shouldUpdateContent = false
 
   init {
-    layoutParams = FrameLayout.LayoutParams(
-            FrameLayout.LayoutParams.MATCH_PARENT,
-            FrameLayout.LayoutParams.MATCH_PARENT)
+    layoutParams = LayoutParams(
+            LayoutParams.MATCH_PARENT,
+            LayoutParams.MATCH_PARENT)
 
     addView(calendar)
   }
@@ -54,7 +54,7 @@ class RNCalendarView(
 
       if (value != field) {
         field = value
-        markStale()
+        markInvalid()
       }
     }
 
@@ -62,7 +62,7 @@ class RNCalendarView(
     set(value) {
       if (value != field) {
         field = value
-        markStale()
+        markInvalid()
       }
     }
 
@@ -70,7 +70,7 @@ class RNCalendarView(
     set(value) {
       if (value != field) {
         field = value
-        markStale()
+        markInvalid()
       }
     }
 
@@ -80,12 +80,20 @@ class RNCalendarView(
 
   var onDatesChange: ChangeCallback? = null
 
+  var disabledDateMatcher: DateMatcher? = null
+    set(value) {
+      if (value != field) {
+        field = value
+        shouldUpdateContent = true
+      }
+    }
+
   fun render() {
     locale ?: throw IllegalStateException("[RNCalendarView] Locale has not been initialized")
 
     selection = selectedDaysToSelection(selectedDates)
 
-    if (isStale()) {
+    if (isInvalid()) {
       controller = createController()
       calendar.setController(controller!!)
       // we set it here to avoid firing the callback when `initiallySelected` dates are provided
@@ -93,6 +101,12 @@ class RNCalendarView(
     } else {
       controller?.onDatesChange = onDatesChange
       controller?.selectionType = selectionType
+      controller?.disabledDateMatcher = disabledDateMatcher
+
+      if (shouldUpdateContent) {
+        shouldUpdateContent = false
+        controller?.updateContent()
+      }
     }
   }
 
@@ -102,6 +116,7 @@ class RNCalendarView(
     minDate?.let { currentController.startDate = it }
     maxDate?.let { currentController.endDate = it }
     selection?.let { currentController.updateSelection(it) }
+    disabledDateMatcher?.let { currentController.disabledDateMatcher = it }
 
     return currentController
   }
@@ -121,16 +136,16 @@ class RNCalendarView(
     }
   }
 
-  private fun markStale() {
+  private fun markInvalid() {
     controller = null
   }
 
-  private fun isStale() = controller == null
+  private fun isInvalid() = controller == null
 
   private val measureAndLayout = Runnable {
     measure(
-            View.MeasureSpec.makeMeasureSpec(width, View.MeasureSpec.EXACTLY),
-            View.MeasureSpec.makeMeasureSpec(height, View.MeasureSpec.EXACTLY))
+            MeasureSpec.makeMeasureSpec(width, MeasureSpec.EXACTLY),
+            MeasureSpec.makeMeasureSpec(height, MeasureSpec.EXACTLY))
     layout(left, top, right, bottom)
   }
 

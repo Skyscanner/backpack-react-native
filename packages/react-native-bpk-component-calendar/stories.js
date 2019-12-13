@@ -18,19 +18,30 @@
 
 /* @flow */
 
-import React, { Component } from 'react';
+import React, {
+  Component,
+  useState,
+  useMemo,
+  useCallback,
+  type Node,
+} from 'react';
 import { View, StyleSheet } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
 import BpkTextInput from 'react-native-bpk-component-text-input';
 import BpkPicker, { BpkPickerItem } from 'react-native-bpk-component-picker';
 import BpkSelect from 'react-native-bpk-component-select';
+import BpkText from 'react-native-bpk-component-text';
 
 import CenterDecorator from '../../storybook/CenterDecorator';
 
 import BpkCalendar, {
   SELECTION_TYPES,
+  DateMatchers,
   type BpkCalendarSelectionType,
 } from './index';
+
+const ONE_DAT_IN_MS = 8.64e7;
+const today = new Date();
 
 const styles = StyleSheet.create({
   base: {
@@ -67,6 +78,52 @@ const formatDateForDisplay = (date: Date) => {
   const day = padLeft(date.getUTCDate());
   const month = padLeft(date.getUTCMonth() + 1);
   return `${day}/${month}/${date.getUTCFullYear()}`;
+};
+
+const useAllWeekends = (startDate: number, endDate: number) =>
+  useMemo(() => {
+    const weekeds = [];
+    let date = startDate;
+    while (date <= endDate) {
+      const day = new Date(date).getDay();
+      if (day === 6 || day === 0) {
+        weekeds.push(date);
+      }
+      date += ONE_DAT_IN_MS;
+    }
+    return weekeds;
+  }, [startDate, endDate]);
+
+const useDateMatchers = (minDate: number, maxDate: number): any => {
+  const allWeekends = useAllWeekends(minDate, maxDate);
+  return useMemo(() => {
+    const minPlus30 = minDate + ONE_DAT_IN_MS * 30;
+    const minPlus60 = minDate + ONE_DAT_IN_MS * 60;
+    return {
+      range: {
+        label: `between ${formatDateForDisplay(
+          new Date(minPlus30),
+        )} and ${formatDateForDisplay(new Date(minPlus60))} (inclusive)`,
+        value: 'range',
+        descriptor: DateMatchers.range(minPlus30, minPlus60),
+      },
+      before: {
+        label: `before ${formatDateForDisplay(new Date(minPlus60))}`,
+        value: 'before',
+        descriptor: DateMatchers.before(minPlus60),
+      },
+      after: {
+        label: `after ${formatDateForDisplay(new Date(minPlus60))}`,
+        value: 'after',
+        descriptor: DateMatchers.after(minPlus60),
+      },
+      any: {
+        label: 'weekends',
+        value: 'any',
+        descriptor: DateMatchers.any(...allWeekends),
+      },
+    };
+  }, [minDate, allWeekends]);
 };
 
 /* eslint-disable react/no-multi-comp */
@@ -176,67 +233,71 @@ class ExampleWithLinkedInputs extends Component<
   }
 }
 
-class ChangeableSelectionTypeStory extends Component<
-  {},
-  {
-    pickerOpen: boolean,
-    selectionType: BpkCalendarSelectionType,
-  },
-> {
-  constructor() {
-    super();
-    this.state = {
-      pickerOpen: false,
-      selectionType: SELECTION_TYPES.single,
-    };
-  }
+type CalendarWithPickerProps = {
+  label: string,
+  options: { [key: string]: { value: string, label: string } },
+  children: ({ selectedValue: string }) => Node,
+};
 
-  onSelectionTypeChange = (selectionType: ?(string | number)) => {
-    const maybe = Object.keys(SELECTION_TYPES).find(x => x === selectionType);
+const CalendarWithPicker = (props: CalendarWithPickerProps) => {
+  const { label, options, children } = props;
+  const [pickerOpen, setPickerOpen] = useState(false);
+  const togglePicker = useCallback(() => {
+    setPickerOpen(isPickerOpen => !isPickerOpen);
+  }, []);
 
-    if (maybe) {
-      this.setState({
-        selectionType: maybe,
-      });
-    }
-  };
+  const firstOption = Object.keys(options)[0];
+  const [selectedValue, setSelectedValue] = useState(
+    options[firstOption].value,
+  );
 
-  togglePicker = () => {
-    this.setState(prevState => ({ pickerOpen: !prevState.pickerOpen }));
-  };
+  return (
+    <View style={styles.base}>
+      <BpkText weight="emphasized" textStyle="sm">
+        {label}
+      </BpkText>
+      <BpkSelect onPress={togglePicker} label={options[selectedValue].label} />
+      {children({ selectedValue })}
+      <BpkPicker
+        doneLabel="Done"
+        isOpen={pickerOpen}
+        onClose={togglePicker}
+        onValueChange={(value: ?(string | number)) => {
+          if (value) {
+            setSelectedValue(value.toString());
+          }
+        }}
+        selectedValue={selectedValue}
+      >
+        {Object.keys(options).map(option => (
+          <BpkPickerItem
+            key={option}
+            label={options[option].label}
+            value={options[option].value}
+          />
+        ))}
+      </BpkPicker>
+    </View>
+  );
+};
 
-  render() {
-    return (
-      <View style={styles.base}>
-        <BpkSelect
-          onPress={this.togglePicker}
-          label={this.state.selectionType}
-        />
+const ChangeableSelectionTypeStory = () => {
+  const options = Object.keys(SELECTION_TYPES).reduce(
+    (acc, type) => ({ ...acc, [type]: { value: type, label: type } }),
+    {},
+  );
+
+  return (
+    <CalendarWithPicker label="Selection type" options={options}>
+      {({ selectedValue }) => (
         <BpkCalendarExample
           style={styles.calendar}
-          selectionType={this.state.selectionType}
+          selectionType={(selectedValue: any)}
         />
-        <BpkPicker
-          doneLabel="Done"
-          isOpen={this.state.pickerOpen}
-          onClose={this.togglePicker}
-          onValueChange={this.onSelectionTypeChange}
-          selectedValue={this.state.selectionType}
-        >
-          {Object.keys(SELECTION_TYPES).map(selectionType => (
-            <BpkPickerItem
-              key={selectionType}
-              label={selectionType}
-              value={selectionType}
-            />
-          ))}
-        </BpkPicker>
-      </View>
-    );
-  }
-}
-
-const today = new Date();
+      )}
+    </CalendarWithPicker>
+  );
+};
 
 storiesOf('react-native-bpk-component-calendar', module)
   .addDecorator(CenterDecorator)
@@ -303,4 +364,42 @@ storiesOf('react-native-bpk-component-calendar', module)
       selectionType={SELECTION_TYPES.single}
       locale={locales.pt_BR}
     />
-  ));
+  ))
+  .add('With disabled dates', () => {
+    const maxDate = Date.UTC(today.getFullYear() + 1, 11, 31);
+    const minDate = Date.UTC(today.getFullYear(), 0, 2);
+
+    const dateMatchers = useDateMatchers(minDate, maxDate);
+
+    return (
+      <CalendarWithPicker label="Disable dates" options={dateMatchers}>
+        {({ selectedValue }) => (
+          <BpkCalendarExample
+            style={styles.calendar}
+            selectionType={SELECTION_TYPES.range}
+            minDate={minDate}
+            maxDate={maxDate}
+            disabledDates={dateMatchers[selectedValue].descriptor}
+          />
+        )}
+      </CalendarWithPicker>
+    );
+  })
+  .add('With disabled dates: update dynamically', () => {
+    const [selectedDates, setSelectedDates] = useState(null);
+    const disabledDates =
+      selectedDates &&
+      selectedDates.length === 1 &&
+      DateMatchers.after(selectedDates[0].getTime() + ONE_DAT_IN_MS * 30);
+
+    return (
+      <BpkCalendarExample
+        onChangeSelectedDates={setSelectedDates}
+        style={styles.calendarOnly}
+        selectionType={SELECTION_TYPES.range}
+        minDate={new Date(Date.UTC(today.getFullYear(), 0, 2))}
+        maxDate={new Date(Date.UTC(today.getFullYear() + 1, 11, 31))}
+        disabledDates={disabledDates || null}
+      />
+    );
+  });

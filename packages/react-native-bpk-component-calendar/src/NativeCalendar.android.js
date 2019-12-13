@@ -26,22 +26,12 @@ import {
   commonDefaultProps,
   type CommonProps,
 } from './common-types';
+import parseDateToNative from './parseDateToNative';
 
 const AndroidBPKCalendarView = requireNativeComponent('AndroidBPKCalendarView');
 
 export type Props = {
   ...$Exact<CommonProps>,
-};
-
-const parseDateToNative = (date: ?(Date | number)) => {
-  if (date) {
-    // Return as unix timestamp because the only number data type that allows null
-    // in the native side is Integer, and the original milliseconds will overflow it.
-    const timestamp = typeof date === 'number' ? date : date.getTime();
-    return timestamp / 1000;
-  }
-
-  return date;
 };
 
 const BpkCalendar = (props: Props) => {

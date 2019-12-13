@@ -36,7 +36,8 @@ console.log('Generating API docs...\n');
 const lernaScope = packagesToRun.map(pkgName => `--scope ${pkgName}`).join(' ');
 
 execSync(
-  `npx lerna exec ${lernaScope} -- npx documentation readme index.js --section=API`,
+  // TODO: --re=.ios.js will always resolve ios file when generating docs, we need a way to include both
+  `npx lerna exec ${lernaScope} -- npx documentation readme index.js --section=API --re=.ios.js`,
 );
 
 console.log(colors.green('\nAll good!\n'));

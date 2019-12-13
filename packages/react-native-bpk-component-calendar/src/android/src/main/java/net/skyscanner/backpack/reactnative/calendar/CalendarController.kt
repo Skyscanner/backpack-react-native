@@ -29,13 +29,18 @@ typealias ChangeCallback = (CalendarSelection) -> Unit
 
 class CalendarController(
   private val applicationContext: Context,
-  override var locale: Locale
+  override var locale: Locale,
+  var disabledDateMatcher: DateMatcher? = null
 ): BpkCalendarController() {
 
   override var endDate: LocalDate = super.endDate
   override var startDate: LocalDate = super.startDate
 
   override var selectionType: SelectionType = SelectionType.RANGE
+
+  override fun isDateDisabled(date: LocalDate): Boolean {
+    return disabledDateMatcher?.match(date) ?: false
+  }
 
   var onDatesChange: ChangeCallback? = null
 
