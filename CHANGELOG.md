@@ -2,6 +2,14 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-12-13 - New props for picker
+
+**Added:**
+
+- react-native-bpk-component-picker:
+  - Expose `onShow` prop.
+  - Allow forwarding ref to picker content using `pickerContentRef` prop.
+
 # 2019-12-12 - Phone input sections
 
 **Breaking:**
