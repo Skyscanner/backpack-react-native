@@ -37,19 +37,38 @@ const grays = {
   colorSkyGray,
 };
 
-export const isValidTheme = (
+const getNumberOfRequiredAttributesSupplied = (
   requiredAttributes: Array<string>,
   theme: Object,
-): boolean =>
-  requiredAttributes.reduce(
-    (valid, attribute) =>
+): number =>
+  requiredAttributes.reduce((accumulator, attribute) => {
+    if (
       has(theme, attribute) &&
       (isBoolean(theme[attribute]) ||
         isNumber(theme[attribute]) ||
-        !isEmpty(theme[attribute])) &&
-      valid,
-    true,
+        !isEmpty(theme[attribute]))
+    ) {
+      return accumulator + 1;
+    }
+    return accumulator;
+  }, 0);
+
+export const isValidTheme = (
+  requiredAttributes: Array<string>,
+  theme: Object,
+): boolean => {
+  const numberOfRequiredAttributesSupplied = getNumberOfRequiredAttributesSupplied(
+    requiredAttributes,
+    theme,
   );
+  if (numberOfRequiredAttributesSupplied === 0) {
+    return true;
+  }
+  if (numberOfRequiredAttributesSupplied === requiredAttributes.length) {
+    return true;
+  }
+  return false;
+};
 
 const filterOutOptionalProps = (
   requiredAttributes: Array<string>,
@@ -119,7 +138,10 @@ export const getThemeAttributes = (
     return null;
   }
 
-  const hasAllRequiredAttributes = isValidTheme(requiredAttributes, theme);
+  // We don't use `isValidTheme` here because we don't want to match themes that have zero required theme attributes.
+  const hasAllRequiredAttributes =
+    getNumberOfRequiredAttributesSupplied(requiredAttributes, theme) ===
+    requiredAttributes.length;
   const hasOptionalAttributes =
     optionalAttributes && optionalAttributes.length > 0;
 

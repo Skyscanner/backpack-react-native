@@ -28,8 +28,8 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <BpkProgress min={0} max={100} value={10} />
-        <BpkProgress min={0} max={100} value={10} type="Bar" />
+        <BpkProgress min={0} max={100} value={10} accessibilityLabel="0 of 100" />
+        <BpkProgress min={0} max={100} value={10} accessibilityLabel="0 of 100" type="Bar" />
       </View>
     );
   }
@@ -46,7 +46,7 @@ export default class App extends Component {
 | value              | number                                | true     | -             |
 | fillStyle          | object                                | false    | -             |
 | style              | object                                | false    | -             |
-| theme              | See [Theme Props](#theme-props) below | false    | -             | 
+| theme              | See [Theme Props](#theme-props) below | false    | -             |
 | type               | oneOf('default', 'bar')               | false    | default       |
 
 
