@@ -2,6 +2,7 @@
 
 exports[`Android BpkCalendar should render correctly 1`] = `
 <AndroidBPKCalendarView
+  disabledDates={null}
   locale="en_GB"
   maxDate={null}
   minDate={null}
@@ -14,6 +15,7 @@ exports[`Android BpkCalendar should render correctly 1`] = `
 
 exports[`Android BpkCalendar should render correctly for selectionType={'multiple'} 1`] = `
 <AndroidBPKCalendarView
+  disabledDates={null}
   locale="en_GB"
   maxDate={null}
   minDate={null}
@@ -26,6 +28,7 @@ exports[`Android BpkCalendar should render correctly for selectionType={'multipl
 
 exports[`Android BpkCalendar should render correctly for selectionType={'range'} 1`] = `
 <AndroidBPKCalendarView
+  disabledDates={null}
   locale="en_GB"
   maxDate={null}
   minDate={null}
@@ -38,6 +41,7 @@ exports[`Android BpkCalendar should render correctly for selectionType={'range'}
 
 exports[`Android BpkCalendar should render correctly for selectionType={'single'} 1`] = `
 <AndroidBPKCalendarView
+  disabledDates={null}
   locale="en_GB"
   maxDate={null}
   minDate={null}
@@ -50,6 +54,7 @@ exports[`Android BpkCalendar should render correctly for selectionType={'single'
 
 exports[`Android BpkCalendar should render correctly with arbitrary props 1`] = `
 <AndroidBPKCalendarView
+  disabledDates={null}
   locale="en_GB"
   maxDate={null}
   minDate={null}
@@ -63,6 +68,7 @@ exports[`Android BpkCalendar should render correctly with arbitrary props 1`] = 
 
 exports[`Android BpkCalendar should render correctly with both minDate and maxDate 1`] = `
 <AndroidBPKCalendarView
+  disabledDates={null}
   locale="en_GB"
   maxDate={1589846400}
   minDate={1558224000}
@@ -75,6 +81,7 @@ exports[`Android BpkCalendar should render correctly with both minDate and maxDa
 
 exports[`Android BpkCalendar should render correctly with custom style 1`] = `
 <AndroidBPKCalendarView
+  disabledDates={null}
   locale="en_GB"
   maxDate={null}
   minDate={null}
@@ -89,8 +96,29 @@ exports[`Android BpkCalendar should render correctly with custom style 1`] = `
 />
 `;
 
+exports[`Android BpkCalendar should render correctly with disabled dates 1`] = `
+<AndroidBPKCalendarView
+  disabledDates={
+    Object {
+      "dates": Array [
+        1576454400,
+      ],
+      "type": "after",
+    }
+  }
+  locale="en_GB"
+  maxDate={null}
+  minDate={null}
+  onChange={[Function]}
+  selectedDates={Array []}
+  selectionType="single"
+  style={null}
+/>
+`;
+
 exports[`Android BpkCalendar should render correctly with maxDate 1`] = `
 <AndroidBPKCalendarView
+  disabledDates={null}
   locale="en_GB"
   maxDate={1589846400}
   minDate={null}
@@ -103,6 +131,7 @@ exports[`Android BpkCalendar should render correctly with maxDate 1`] = `
 
 exports[`Android BpkCalendar should render correctly with minDate 1`] = `
 <AndroidBPKCalendarView
+  disabledDates={null}
   locale="en_GB"
   maxDate={null}
   minDate={1558224000}
@@ -115,6 +144,7 @@ exports[`Android BpkCalendar should render correctly with minDate 1`] = `
 
 exports[`Android BpkCalendar should render correctly with selection type "multiple" and selected dates 1`] = `
 <AndroidBPKCalendarView
+  disabledDates={null}
   locale="en_GB"
   maxDate={null}
   minDate={null}
@@ -132,6 +162,7 @@ exports[`Android BpkCalendar should render correctly with selection type "multip
 
 exports[`Android BpkCalendar should render correctly with selection type "range" and selected dates 1`] = `
 <AndroidBPKCalendarView
+  disabledDates={null}
   locale="en_GB"
   maxDate={null}
   minDate={null}
@@ -142,13 +173,14 @@ exports[`Android BpkCalendar should render correctly with selection type "range"
       1558396800,
     ]
   }
-  selectionType="single"
+  selectionType="range"
   style={null}
 />
 `;
 
 exports[`Android BpkCalendar should render correctly with selection type "single" and selected dates 1`] = `
 <AndroidBPKCalendarView
+  disabledDates={null}
   locale="en_GB"
   maxDate={null}
   minDate={null}

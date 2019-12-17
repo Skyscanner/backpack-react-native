@@ -18,16 +18,17 @@
 
 /* @flow */
 
-import BpkCalendar from './src/BpkCalendar';
-import { SELECTION_TYPES } from './src/common-types';
-import DateMatchers, { type DateMatcher } from './src/DateMatchers';
+import { Platform } from 'react-native';
 
-export type { Props as BpkCalendarProps } from './src/BpkCalendar';
-export type {
-  SelectionType as BpkCalendarSelectionType,
-} from './src/common-types';
+const parseDateToNative = (date: ?(Date | number)) => {
+  if (date) {
+    const timestamp = typeof date === 'number' ? date : date.getTime();
+    // Return as unix timestamp for Android because the only number data type that allows null
+    // in the native side is Integer, and the original milliseconds will overflow it.
+    return Platform.OS === 'android' ? timestamp / 1000 : timestamp;
+  }
 
-export type { DateMatcher as BpkCalendarDateMatcher };
+  return date;
+};
 
-export default BpkCalendar;
-export { SELECTION_TYPES, DateMatchers };
+export default parseDateToNative;

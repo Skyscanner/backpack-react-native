@@ -22,6 +22,8 @@ import { type ElementProps } from 'react';
 import { View, ViewPropTypes } from 'react-native';
 import PropTypes from 'prop-types';
 
+import { type DateMatcher } from './DateMatchers';
+
 type ViewProps = ElementProps<typeof View>;
 type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
 
@@ -35,6 +37,7 @@ export type SelectionType = $Keys<typeof SELECTION_TYPES>;
 
 export type CommonProps = {
   locale: string,
+  disabledDates: ?DateMatcher,
   minDate: ?Date,
   maxDate: ?Date,
   onChangeSelectedDates: ?(Date[]) => mixed,
@@ -83,6 +86,10 @@ const selectedDatesPropType = (
 
 export const commonPropTypes = {
   locale: PropTypes.string.isRequired,
+  disabledDates: PropTypes.shape({
+    type: PropTypes.string,
+    dates: PropTypes.array,
+  }),
   minDate: datePropType,
   maxDate: datePropType,
   onChangeSelectedDates: PropTypes.func,
@@ -98,4 +105,5 @@ export const commonDefaultProps = {
   selectedDates: [],
   selectionType: SELECTION_TYPES.single,
   style: null,
+  disabledDates: null,
 };

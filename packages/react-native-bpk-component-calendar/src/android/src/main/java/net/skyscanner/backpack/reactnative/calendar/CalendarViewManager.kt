@@ -18,6 +18,7 @@
 package net.skyscanner.backpack.reactnative.calendar
 
 import com.facebook.react.bridge.ReadableArray
+import com.facebook.react.bridge.ReadableMap
 import com.facebook.react.uimanager.ThemedReactContext
 import com.facebook.react.uimanager.UIManagerModule
 import com.facebook.react.uimanager.ViewGroupManager
@@ -29,7 +30,7 @@ import net.skyscanner.backpack.reactnative.calendar.events.CalendarChangeEvent
 import org.threeten.bp.Instant
 import org.threeten.bp.LocalDate
 import org.threeten.bp.ZoneId
-import java.lang.IllegalArgumentException
+import kotlin.IllegalArgumentException
 
 class CalendarViewManager : ViewGroupManager<RNCalendarView>() {
 
@@ -81,6 +82,25 @@ class CalendarViewManager : ViewGroupManager<RNCalendarView>() {
   fun setMaxDate(view: RNCalendarView, maxDate: Int?) {
     maxDate?.let {
       view.maxDate = unixToCalendarDay(it)
+    }
+  }
+
+  @ReactProp(name = "disabledDates")
+  fun setDisabledDates(view: RNCalendarView, disableDates: ReadableMap?) {
+    if (disableDates != null) {
+      val type = disableDates.getString("type")
+      val dates = disableDates.getArray("dates")
+      if (type === null || dates === null || dates.size() == 0) {
+        throw IllegalArgumentException("Invalid disabledDates prop, either type` or `dates` is invalid")
+      }
+
+      val parsedDates = (0 until dates.size()).map {
+        unixToCalendarDay(dates.getInt(it))
+      }.toTypedArray()
+
+      view.disabledDateMatcher = DateMatcher.fromJs(type, parsedDates)
+    } else {
+      view.disabledDateMatcher = null
     }
   }
 

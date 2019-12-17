@@ -18,6 +18,14 @@
 
 import commonTests from './BpkCalendar-test.common';
 
+jest.mock('react-native', () => {
+  const reactNative = jest.requireActual('react-native');
+  reactNative.UIManager.getViewManagerConfig = jest.fn(() => ({
+    Commands: { forceUpdate: () => {} },
+  }));
+  return reactNative;
+});
+
 describe('iOS', () => {
   commonTests();
 });

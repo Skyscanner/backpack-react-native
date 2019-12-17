@@ -2,6 +2,7 @@
 
 exports[`iOS BpkCalendar should render correctly 1`] = `
 <RCTBPKCalendar
+  disabledDates={null}
   locale="en_GB"
   maxDate={null}
   minDate={null}
@@ -14,6 +15,7 @@ exports[`iOS BpkCalendar should render correctly 1`] = `
 
 exports[`iOS BpkCalendar should render correctly for selectionType={'multiple'} 1`] = `
 <RCTBPKCalendar
+  disabledDates={null}
   locale="en_GB"
   maxDate={null}
   minDate={null}
@@ -26,6 +28,7 @@ exports[`iOS BpkCalendar should render correctly for selectionType={'multiple'} 
 
 exports[`iOS BpkCalendar should render correctly for selectionType={'range'} 1`] = `
 <RCTBPKCalendar
+  disabledDates={null}
   locale="en_GB"
   maxDate={null}
   minDate={null}
@@ -38,6 +41,7 @@ exports[`iOS BpkCalendar should render correctly for selectionType={'range'} 1`]
 
 exports[`iOS BpkCalendar should render correctly for selectionType={'single'} 1`] = `
 <RCTBPKCalendar
+  disabledDates={null}
   locale="en_GB"
   maxDate={null}
   minDate={null}
@@ -50,6 +54,7 @@ exports[`iOS BpkCalendar should render correctly for selectionType={'single'} 1`
 
 exports[`iOS BpkCalendar should render correctly with arbitrary props 1`] = `
 <RCTBPKCalendar
+  disabledDates={null}
   locale="en_GB"
   maxDate={null}
   minDate={null}
@@ -63,6 +68,7 @@ exports[`iOS BpkCalendar should render correctly with arbitrary props 1`] = `
 
 exports[`iOS BpkCalendar should render correctly with both minDate and maxDate 1`] = `
 <RCTBPKCalendar
+  disabledDates={null}
   locale="en_GB"
   maxDate={1589846400000}
   minDate={1558224000000}
@@ -75,6 +81,7 @@ exports[`iOS BpkCalendar should render correctly with both minDate and maxDate 1
 
 exports[`iOS BpkCalendar should render correctly with custom style 1`] = `
 <RCTBPKCalendar
+  disabledDates={null}
   locale="en_GB"
   maxDate={null}
   minDate={null}
@@ -89,8 +96,29 @@ exports[`iOS BpkCalendar should render correctly with custom style 1`] = `
 />
 `;
 
+exports[`iOS BpkCalendar should render correctly with disabled dates 1`] = `
+<RCTBPKCalendar
+  disabledDates={
+    Object {
+      "dates": Array [
+        1576454400000,
+      ],
+      "type": "after",
+    }
+  }
+  locale="en_GB"
+  maxDate={null}
+  minDate={null}
+  onDateSelection={[Function]}
+  selectedDates={Array []}
+  selectionType="single"
+  style={null}
+/>
+`;
+
 exports[`iOS BpkCalendar should render correctly with maxDate 1`] = `
 <RCTBPKCalendar
+  disabledDates={null}
   locale="en_GB"
   maxDate={1589846400000}
   minDate={null}
@@ -103,6 +131,7 @@ exports[`iOS BpkCalendar should render correctly with maxDate 1`] = `
 
 exports[`iOS BpkCalendar should render correctly with minDate 1`] = `
 <RCTBPKCalendar
+  disabledDates={null}
   locale="en_GB"
   maxDate={null}
   minDate={1558224000000}
@@ -115,6 +144,7 @@ exports[`iOS BpkCalendar should render correctly with minDate 1`] = `
 
 exports[`iOS BpkCalendar should render correctly with selection type "multiple" and selected dates 1`] = `
 <RCTBPKCalendar
+  disabledDates={null}
   locale="en_GB"
   maxDate={null}
   minDate={null}
@@ -133,6 +163,7 @@ exports[`iOS BpkCalendar should render correctly with selection type "multiple" 
 
 exports[`iOS BpkCalendar should render correctly with selection type "range" and selected dates 1`] = `
 <RCTBPKCalendar
+  disabledDates={null}
   locale="en_GB"
   maxDate={null}
   minDate={null}
@@ -143,13 +174,14 @@ exports[`iOS BpkCalendar should render correctly with selection type "range" and
       1558396800000,
     ]
   }
-  selectionType="single"
+  selectionType="range"
   style={null}
 />
 `;
 
 exports[`iOS BpkCalendar should render correctly with selection type "single" and selected dates 1`] = `
 <RCTBPKCalendar
+  disabledDates={null}
   locale="en_GB"
   maxDate={null}
   minDate={null}

@@ -110,6 +110,8 @@ cmd
 cssModules
 datatable
 datauri
+DateMatcher
+DateMatchers
 datepicker
 dialog
 dialogs
@@ -216,6 +218,7 @@ decreaseButtonLabel
 dialingCode
 dialingCodes
 dialogType
+disabledDates
 dismissable
 dismissButtonLabel
 doneLabel
