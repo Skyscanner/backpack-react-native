@@ -1,6 +1,6 @@
 {
   "name": "react-native-bpk-component-animate-height",
-  "version": "3.0.25",
+  "version": "3.0.26",
   "main": "index.js",
   "description": "Backpack React Native animate height component.",
   "repository": {
@@ -18,8 +18,8 @@
     "prop-types": "^15.5.8"
   },
   "devDependencies": {
-    "react-native-bpk-component-button": "^11.1.8",
-    "react-native-bpk-component-text": "^4.2.7"
+    "react-native-bpk-component-button": "^11.1.9",
+    "react-native-bpk-component-text": "^4.2.8"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
