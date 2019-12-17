@@ -26,7 +26,6 @@ import {
   colorWhite,
   colorPanjin,
   colorSkyBlue,
-  colorSkyBlueTint01,
   colorErfoud,
   fontFamily,
 } from 'bpk-tokens/tokens/base.react.native';
@@ -45,15 +44,6 @@ type Theme = {
   buttonSecondaryTextColor: string,
   buttonSecondaryBackgroundColor: string,
   buttonSecondaryBorderColor: string,
-  primaryColor: string,
-  colorGray50: string,
-  colorSkyGrayTint06: string,
-  colorSkyGrayTint05: string,
-  colorSkyGrayTint04: string,
-  colorSkyGrayTint03: string,
-  colorSkyGrayTint02: string,
-  colorSkyGrayTint01: string,
-  colorSkyGray: string,
   textFontFamily: string,
 };
 
@@ -68,15 +58,6 @@ const generateThemeAttributes = (
   buttonSecondaryTextColor: gradientEndColor,
   buttonSecondaryBackgroundColor: colorWhite,
   buttonSecondaryBorderColor: gradientEndColor,
-  primaryColor: gradientStartColor,
-  colorGray50: '#F1F2F8',
-  colorSkyGrayTint06: '#DDDDE5',
-  colorSkyGrayTint05: '#CDCDD7',
-  colorSkyGrayTint04: '#B2B2BF',
-  colorSkyGrayTint03: '#8F90A0',
-  colorSkyGrayTint02: '#68697F',
-  colorSkyGrayTint01: '#444560',
-  colorSkyGray: '#111236',
   textFontFamily: textFontFamily || fontFamily,
 });
 
@@ -96,109 +77,6 @@ type State = {
   theme: Theme,
 };
 
-const SolidColorBlockPrimary = () => (
-  <BpkThemeAttributes>
-    {({ primaryColor }) => (
-      <View
-        style={[styles.solidColorBlock, { backgroundColor: primaryColor }]}
-      />
-    )}
-  </BpkThemeAttributes>
-);
-
-const SolidColorBlockGray50 = () => (
-  <BpkThemeAttributes>
-    {({ colorSkyGrayTint07 }) => (
-      <View
-        style={[
-          styles.solidColorBlock,
-          { backgroundColor: colorSkyGrayTint07 },
-        ]}
-      />
-    )}
-  </BpkThemeAttributes>
-);
-const SolidColorBlockGray100 = () => (
-  <BpkThemeAttributes>
-    {({ colorSkyGrayTint06 }) => (
-      <View
-        style={[
-          styles.solidColorBlock,
-          { backgroundColor: colorSkyGrayTint06 },
-        ]}
-      />
-    )}
-  </BpkThemeAttributes>
-);
-const SolidColorBlockGray200 = () => (
-  <BpkThemeAttributes>
-    {({ colorSkyGrayTint05 }) => (
-      <View
-        style={[
-          styles.solidColorBlock,
-          { backgroundColor: colorSkyGrayTint05 },
-        ]}
-      />
-    )}
-  </BpkThemeAttributes>
-);
-const SolidColorBlockGray300 = () => (
-  <BpkThemeAttributes>
-    {({ colorSkyGrayTint04 }) => (
-      <View
-        style={[
-          styles.solidColorBlock,
-          { backgroundColor: colorSkyGrayTint04 },
-        ]}
-      />
-    )}
-  </BpkThemeAttributes>
-);
-const SolidColorBlockGray400 = () => (
-  <BpkThemeAttributes>
-    {({ colorSkyGrayTint03 }) => (
-      <View
-        style={[
-          styles.solidColorBlock,
-          { backgroundColor: colorSkyGrayTint03 },
-        ]}
-      />
-    )}
-  </BpkThemeAttributes>
-);
-const SolidColorBlockGray500 = () => (
-  <BpkThemeAttributes>
-    {({ colorSkyGrayTint02 }) => (
-      <View
-        style={[
-          styles.solidColorBlock,
-          { backgroundColor: colorSkyGrayTint02 },
-        ]}
-      />
-    )}
-  </BpkThemeAttributes>
-);
-const SolidColorBlockGray700 = () => (
-  <BpkThemeAttributes>
-    {({ colorSkyGrayTint01 }) => (
-      <View
-        style={[
-          styles.solidColorBlock,
-          { backgroundColor: colorSkyGrayTint01 },
-        ]}
-      />
-    )}
-  </BpkThemeAttributes>
-);
-const SolidColorBlockGray900 = () => (
-  <BpkThemeAttributes>
-    {({ colorSkyGray }) => (
-      <View
-        style={[styles.solidColorBlock, { backgroundColor: colorSkyGray }]}
-      />
-    )}
-  </BpkThemeAttributes>
-);
 const BlockOfText = () => (
   <BpkThemeAttributes>
     {({ textFontFamily }) => (
@@ -219,7 +97,7 @@ class BpkThemePicker extends Component<{}, State> {
     this.themes = {
       blue: generateThemeAttributes(
         colorSkyBlue,
-        Platform.OS === 'ios' ? colorSkyBlueTint01 : colorSkyBlue,
+        colorSkyBlue,
         Platform.OS === 'android' ? 'serif-monospace' : 'Courier',
       ),
       yellow: generateThemeAttributes(colorErfoud, colorErfoud),
@@ -266,15 +144,6 @@ class BpkThemePicker extends Component<{}, State> {
               onPress={action('secondary themed button pressed')}
               style={styles.bottomMargin}
             />
-            <SolidColorBlockPrimary />
-            <SolidColorBlockGray50 />
-            <SolidColorBlockGray100 />
-            <SolidColorBlockGray200 />
-            <SolidColorBlockGray300 />
-            <SolidColorBlockGray400 />
-            <SolidColorBlockGray500 />
-            <SolidColorBlockGray700 />
-            <SolidColorBlockGray900 />
             <BlockOfText />
           </View>
         </BpkThemeProvider>

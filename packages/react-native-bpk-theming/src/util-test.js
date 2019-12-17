@@ -35,6 +35,10 @@ const VALID_THEME = {
   themeAttributeC: true,
   nonRequiredAttribute: 'green',
 };
+// When zero required attributes are passed in, the theme is still valid.
+const VALID_EMPTY_THEME = {
+  nonRequiredAttribute: 'green',
+};
 const INVALID_THEME = {
   themeAttributeA: 'red',
   themeAttributeC: true,
@@ -44,6 +48,10 @@ const INVALID_THEME = {
 describe('isValidTheme', () => {
   it('should validated themes that are valid', () => {
     expect(isValidTheme(REQUIRED_ATTRIBUTES, VALID_THEME)).toBeTruthy();
+  });
+
+  it('should validated themes when none of the required props are passed in', () => {
+    expect(isValidTheme(REQUIRED_ATTRIBUTES, VALID_EMPTY_THEME)).toBeTruthy();
   });
 
   it('should fail to validate invalid themes', () => {
@@ -115,18 +123,14 @@ describe('makeThemePropType', () => {
       ).toBeFalsy();
     });
 
-    it('should fail when random props are provided', () => {
+    it('should not fail when random props are provided', () => {
       expect(
         propType(
           { style: { color: colorPanjin }, theme: { ramdom: '1' } },
           'theme',
           'TestComponent',
         ),
-      ).toEqual(
-        new Error(
-          'Invalid prop `theme` supplied to `TestComponent`. When supplying `theme` all the required theming attributes(`themeAttributeA, themeAttributeB, themeAttributeC`) must be supplied.',
-        ),
-      );
+      ).toBeFalsy();
     });
   });
 });
