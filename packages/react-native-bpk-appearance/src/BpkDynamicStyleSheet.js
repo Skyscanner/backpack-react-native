@@ -88,6 +88,10 @@ function extractStyleForVariation<+S: BpkStyleSheetNamedStyles>(
 ) {
   return Object.keys(style).reduce((mapped, topLevelKey) => {
     const styleDef = style[topLevelKey];
+    if (styleDef == null) {
+      mapped[topLevelKey] = styleDef; // eslint-disable-line no-param-reassign
+      return mapped;
+    }
     // $FlowFixMe
     const unpacked = unpackValue(styleDef, variation);
     mapped[topLevelKey] = extractDynamicValues(unpacked, variation); // eslint-disable-line no-param-reassign

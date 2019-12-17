@@ -257,4 +257,16 @@ describe('BpkDynamicStyleSheet', () => {
       );
     });
   });
+
+  it('should not fail with undefined or null styles', () => {
+    const nullStyle = BpkDynamicStyleSheet.create({
+      one: undefined,
+      two: null,
+    });
+    expect(nullStyle.light.one).toBe(undefined);
+    expect(nullStyle.light.two).toBe(null);
+
+    expect(nullStyle.dark.one).toBe(undefined);
+    expect(nullStyle.dark.two).toBe(null);
+  });
 });
