@@ -2,7 +2,10 @@
 
 > Place your changes below this line.
 
-**Changed:**
+**Fixed:**
+
+- react-native-bpk-appearance:
+  - fixed `BpkDynamicStyleSheet.create` to handle `undefined` or `null` styles.
 
 - react-native-bpk-theming:
   - Components that can be themed will now only throw a prop type error when a theme is partially applied. Previously, a prop type error would appear if a component was placed inside a `BpkThemeProvider` but no relevant theming props were given to it. This change enables the use of themed components alongside non-themed ones without seeing warnings.
