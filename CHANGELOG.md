@@ -2,7 +2,7 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
-# 2019-12-17 - New disabled props for calendar and fixes for theming and appearance packages
+# 2019-12-17 - New disabled dates props for calendar and fixes for theming and appearance packages
 
 **Fixed:**
 
