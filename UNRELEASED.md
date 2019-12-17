@@ -2,19 +2,6 @@
 
 > Place your changes below this line.
 
-**Fixed:**
-
-- react-native-bpk-appearance:
-  - fixed `BpkDynamicStyleSheet.create` to handle `undefined` or `null` styles.
-
-- react-native-bpk-theming:
-  - Components that can be themed will now only throw a prop type error when a theme is partially applied. Previously, a prop type error would appear if a component was placed inside a `BpkThemeProvider` but no relevant theming props were given to it. This change enables the use of themed components alongside non-themed ones without seeing warnings.
-  
-**Added:**
-
-- react-native-bpk-component-calendar:
-  - added new `disabledDates` prop. This prop is only supported for Android at the moment.
-
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).

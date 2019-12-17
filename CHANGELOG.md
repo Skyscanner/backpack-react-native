@@ -2,6 +2,21 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-12-17 - New disabled props for calendar and fixes for theming and appearance packages
+
+**Fixed:**
+
+- react-native-bpk-appearance: 1.3.1 => 1.3.2
+  - fixed `BpkDynamicStyleSheet.create` to handle `undefined` or `null` styles.
+
+- react-native-bpk-theming: 1.4.10 => 1.4.11
+  - Components that can be themed will now only throw a prop type error when a theme is partially applied. Previously, a prop type error would appear if a component was placed inside a `BpkThemeProvider` but no relevant theming props were given to it. This change enables the use of themed components alongside non-themed ones without seeing warnings.
+  
+**Added:**
+
+- react-native-bpk-component-calendar: 4.0.19 => 4.1.0
+  - added new `disabledDates` prop. This prop is only supported for Android at the moment.
+
 # 2019-12-13 - New props for picker
 
 **Added:**
