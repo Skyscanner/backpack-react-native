@@ -20,6 +20,7 @@
 
 import { type ElementProps } from 'react';
 import { View, ViewPropTypes } from 'react-native';
+import { type SyntheticEvent } from 'react-native/Libraries/Types/CoreEventTypes';
 import PropTypes from 'prop-types';
 
 import { type DateMatcher } from './DateMatchers';
@@ -34,13 +35,26 @@ export const SELECTION_TYPES = {
 };
 
 export type SelectionType = $Keys<typeof SELECTION_TYPES>;
+export type SelectedDatesChanged = ?(Date[]) => mixed;
+export type NativeEvent = SyntheticEvent<$ReadOnly<{| selectedDates: number[] |}>,>; // eslint-disable-line prettier/prettier
 
 export type CommonProps = {
   locale: string,
   disabledDates: ?DateMatcher,
   minDate: ?Date,
   maxDate: ?Date,
-  onChangeSelectedDates: ?(Date[]) => mixed,
+  onChangeSelectedDates: SelectedDatesChanged,
+  selectedDates: Date[],
+  selectionType: SelectionType,
+  style: ViewStyleProp,
+};
+
+export type NativeCalendarCommonProps = {
+  locale: string,
+  disabledDates: ?DateMatcher,
+  minDate: ?Date,
+  maxDate: ?Date,
+  onChangeSelectedDates: ?(NativeEvent) => mixed,
   selectedDates: Date[],
   selectionType: SelectionType,
   style: ViewStyleProp,
