@@ -146,5 +146,19 @@ describe('android', () => {
         .toJSON();
       expect(tree).toMatchSnapshot();
     });
+
+    it('should forward custom props', () => {
+      const tree = renderer
+        .create(
+          <BpkNavigationBarButtonAndroid
+            title="Back"
+            icon="native-android--back"
+            onPress={jest.fn()}
+            testID="testid"
+          />,
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
   });
 });

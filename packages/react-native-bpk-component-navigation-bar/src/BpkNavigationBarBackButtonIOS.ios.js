@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
 });
 
 const BpkNavigationBarBackButtonIOS = (props: Props) => {
-  const { title, showTitle, onPress, tintColor } = props;
+  const { title, showTitle, onPress, tintColor, ...rest } = props;
   const defaultTintColor = useBpkDynamicValue(textPrimaryColor);
   const tintColorFinal = tintColor || defaultTintColor;
   const titleStyle = [{ color: tintColorFinal }];
@@ -66,6 +66,7 @@ const BpkNavigationBarBackButtonIOS = (props: Props) => {
       accessibilityLabel={title}
       accessible
       style={styles.button}
+      {...rest}
     >
       {/* TODO: replace with BpkImage */}
       {/* eslint-disable-next-line backpack/use-components */}

@@ -67,6 +67,7 @@ const BpkNavigationBarIconButtonIOS = (props: Props) => {
     onPress,
     disabledTintColor,
     tintColor,
+    ...rest
   } = props;
   const defaultTintColor = useBpkDynamicValue(textPrimaryColor);
   const tintColorFinal = disabled
@@ -95,6 +96,7 @@ const BpkNavigationBarIconButtonIOS = (props: Props) => {
       accessible
       style={buttonStyle}
       disabled={disabled}
+      {...rest}
     >
       <BpkIcon icon={icons[icon]} style={iconStyle} />
     </TouchableOpacity>

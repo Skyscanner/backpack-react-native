@@ -101,5 +101,20 @@ describe('iOS', () => {
         expect(tree).toMatchSnapshot();
       });
     });
+
+    it('should forward custom props', () => {
+      const tree = renderer
+        .create(
+          <BpkNavigationBarIconButtonIOS
+            title="Edit"
+            icon="edit"
+            leading={false}
+            onPress={jest.fn()}
+            testID="testID"
+          />,
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
   });
 });

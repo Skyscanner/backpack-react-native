@@ -75,6 +75,7 @@ const BpkNavigationBarTextButtonIOS = (props: Props) => {
     tintColor,
     primaryTintColor,
     leading,
+    ...rest
   } = props;
   const tintColors = {
     [BUTTON_TYPES.default]: useBpkDynamicValue(textPrimaryColor),
@@ -114,6 +115,7 @@ const BpkNavigationBarTextButtonIOS = (props: Props) => {
       accessible
       style={buttonStyle}
       disabled={disabled}
+      {...rest}
     >
       <BpkText
         textStyle="base"

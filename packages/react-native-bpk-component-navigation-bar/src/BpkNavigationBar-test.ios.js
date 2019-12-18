@@ -150,5 +150,33 @@ describe('ios', () => {
         expect(tree).toMatchSnapshot();
       });
     });
+
+    it('should forward custom props', () => {
+      const tree = renderer
+        .create(
+          <BpkNavigationBar
+            title="Backpack"
+            testID="bar"
+            leadingButton={
+              <BpkNavigationBarBackButtonIOS
+                testID="leading"
+                title="Back"
+                icon="long-arrow-left"
+                onPress={jest.fn()}
+              />
+            }
+            trailingButton={
+              <BpkNavigationBarTextButtonIOS
+                testID="trailing"
+                title="Done"
+                emphasize
+                onPress={jest.fn()}
+              />
+            }
+          />,
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
   });
 });

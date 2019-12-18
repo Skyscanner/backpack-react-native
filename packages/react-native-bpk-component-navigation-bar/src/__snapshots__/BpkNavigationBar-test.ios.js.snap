@@ -2011,3 +2011,193 @@ exports[`ios BpkNavigationBar light mode should render correctly with trailing b
   </View>
 </View>
 `;
+
+exports[`ios BpkNavigationBar should forward custom props 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "rgb(241, 242, 248)",
+        "flexDirection": "column",
+        "paddingHorizontal": 8,
+        "shadowColor": "rgb(221, 221, 229)",
+        "shadowOffset": Object {
+          "height": 1,
+          "width": 0,
+        },
+        "shadowOpacity": 1,
+        "shadowRadius": 0,
+        "width": "100%",
+      },
+    ]
+  }
+  testID="bar"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 64,
+          "justifyContent": "space-between",
+          "overflow": "visible",
+          "paddingTop": 20,
+        },
+        false,
+      ]
+    }
+  >
+    <View
+      accessibilityLabel="Back"
+      accessibilityRole="button"
+      accessible={true}
+      clickable={true}
+      isTVSelectable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": "100%",
+          "opacity": 1,
+          "zIndex": 2,
+        }
+      }
+      testID="leading"
+    >
+      <Image
+        source={
+          Object {
+            "testUri": "../../../packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
+          }
+        }
+        style={
+          Array [
+            Array [
+              Object {
+                "marginEnd": 16,
+              },
+            ],
+            Object {
+              "tintColor": "rgb(17, 18, 54)",
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "bottom": 0,
+          "height": 44,
+          "justifyContent": "center",
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 20,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            },
+            Object {
+              "maxWidth": "60%",
+            },
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "color": "rgb(17, 18, 54)",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.12,
+              },
+              Object {
+                "fontWeight": "700",
+              },
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                },
+                null,
+              ],
+            ]
+          }
+        >
+          Backpack
+        </Text>
+      </View>
+    </View>
+    <View
+      accessibilityLabel="Done"
+      accessibilityRole="button"
+      accessibilityStates={Array []}
+      accessible={true}
+      clickable={true}
+      isTVSelectable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "height": "100%",
+          "justifyContent": "center",
+          "marginEnd": 8,
+          "opacity": 1,
+          "zIndex": 2,
+        }
+      }
+      testID="trailing"
+    >
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "letterSpacing": 0.12,
+            },
+            Object {
+              "fontWeight": "700",
+            },
+            Array [
+              Object {
+                "color": "rgb(17, 18, 54)",
+              },
+            ],
+          ]
+        }
+      >
+        Done
+      </Text>
+    </View>
+  </View>
+</View>
+`;
