@@ -176,5 +176,19 @@ describe('iOS', () => {
         expect(tree).toMatchSnapshot();
       });
     });
+
+    it('should forward custom props', () => {
+      const tree = renderer
+        .create(
+          <BpkNavigationBarTextButtonIOS
+            title="Edit"
+            leading={false}
+            onPress={jest.fn()}
+            testID="testid"
+          />,
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
   });
 });

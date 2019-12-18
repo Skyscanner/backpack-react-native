@@ -150,21 +150,6 @@ class BpkNavigationBar extends Component<EnhancedProps, {}> {
     style: null,
   };
 
-  constructor(props: EnhancedProps) {
-    super(props);
-    this.theme = getThemeAttributes(
-      IOS_THEME_ATTRIBUTES,
-      this.props.theme || {},
-    );
-  }
-
-  componentDidUpdate() {
-    this.theme = getThemeAttributes(
-      IOS_THEME_ATTRIBUTES,
-      this.props.theme || {},
-    );
-  }
-
   render() {
     const {
       title,
@@ -172,8 +157,15 @@ class BpkNavigationBar extends Component<EnhancedProps, {}> {
       trailingButton,
       subtitleView,
       style,
+      theme,
       bpkAppearance,
+      ...rest
     } = this.props;
+    const themeAttributes = getThemeAttributes(
+      IOS_THEME_ATTRIBUTES,
+      this.props.theme || {},
+    );
+
     const hasSubtitleView = subtitleView !== null;
     const styles = unpackBpkDynamicValue(dynamicStyles, bpkAppearance);
     const titleStyle = [styles.title];
@@ -184,14 +176,14 @@ class BpkNavigationBar extends Component<EnhancedProps, {}> {
     let disabledTintColor = null;
     let primaryTintColor = null;
 
-    if (this.theme) {
+    if (themeAttributes) {
       const {
         navigationBarTintColor,
         navigationBarDisabledTintColor,
         navigationBarShadowColor,
         navigationBarBackgroundColor,
         navigationBarPrimaryColor,
-      } = this.theme;
+      } = themeAttributes;
       outerBarStyle.push({
         shadowColor: navigationBarShadowColor,
         backgroundColor: navigationBarBackgroundColor,
@@ -241,7 +233,7 @@ class BpkNavigationBar extends Component<EnhancedProps, {}> {
     }
 
     return (
-      <View style={outerBarStyle}>
+      <View style={outerBarStyle} {...rest}>
         <View style={innerBarStyle}>
           {leadingButton &&
             React.cloneElement(leadingButton, {

@@ -978,3 +978,188 @@ exports[`android BpkNavigationBar should render correctly with trailing button 1
   </View>
 </View>
 `;
+
+exports[`android should forward custom props 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "rgb(7, 112, 227)",
+        "elevation": 3,
+        "flexDirection": "column",
+        "paddingHorizontal": 8,
+        "width": "100%",
+      },
+    ]
+  }
+  testID="bar"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 56,
+          "justifyContent": "space-between",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "borderRadius": 40,
+        }
+      }
+    >
+      <View
+        accessibilityLabel="Back"
+        accessibilityRole="button"
+        accessibilityStates={Array []}
+        accessible={true}
+        clickable={true}
+        isTVSelectable={true}
+        nativeBackgroundAndroid={
+          Object {
+            "borderless": true,
+            "color": 872415231,
+            "type": "RippleAndroid",
+          }
+        }
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        testID="leading"
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "rgb(17, 18, 54)",
+                "fontFamily": "BpkIcon",
+                "fontSize": 24,
+                "includeFontPadding": false,
+              },
+              Array [
+                Object {
+                  "padding": 8,
+                },
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                },
+              ],
+            ]
+          }
+        >
+          
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+          },
+          Object {
+            "bottom": 15,
+            "end": 72,
+            "position": "absolute",
+            "start": 72,
+          },
+        ]
+      }
+    >
+      <Text
+        allowFontScaling={false}
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "fontFamily": "sans-serif",
+              "fontSize": 20,
+              "fontWeight": "400",
+              "letterSpacing": -0.4,
+            },
+            Object {
+              "fontFamily": "sans-serif-medium",
+            },
+            Array [
+              Object {
+                "color": "rgb(255, 255, 255)",
+              },
+              null,
+            ],
+          ]
+        }
+      >
+        Backpack
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "borderRadius": 40,
+        }
+      }
+    >
+      <View
+        accessibilityLabel="Done"
+        accessibilityRole="button"
+        accessibilityStates={Array []}
+        accessible={true}
+        clickable={true}
+        isTVSelectable={true}
+        nativeBackgroundAndroid={
+          Object {
+            "borderless": true,
+            "color": 872415231,
+            "type": "RippleAndroid",
+          }
+        }
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        testID="trailing"
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "rgb(17, 18, 54)",
+                "fontFamily": "BpkIcon",
+                "fontSize": 24,
+                "includeFontPadding": false,
+              },
+              Array [
+                Object {
+                  "padding": 8,
+                },
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                },
+              ],
+            ]
+          }
+        >
+          
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

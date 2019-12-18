@@ -127,21 +127,6 @@ class BpkNavigationBar extends Component<Props, {}> {
     style: null,
   };
 
-  constructor(props: Props) {
-    super(props);
-    this.theme = getThemeAttributes(
-      ANDROID_THEME_ATTRIBUTES,
-      this.props.theme || {},
-    );
-  }
-
-  componentDidUpdate() {
-    this.theme = getThemeAttributes(
-      ANDROID_THEME_ATTRIBUTES,
-      this.props.theme || {},
-    );
-  }
-
   render() {
     const {
       title,
@@ -149,7 +134,14 @@ class BpkNavigationBar extends Component<Props, {}> {
       trailingButton,
       subtitleView,
       style,
+      theme,
+      ...rest
     } = this.props;
+    const themeAttributes = getThemeAttributes(
+      ANDROID_THEME_ATTRIBUTES,
+      this.props.theme || {},
+    );
+
     const hasSubtitleView = subtitleView !== null;
 
     const barStyle = [styles.bar];
@@ -161,12 +153,12 @@ class BpkNavigationBar extends Component<Props, {}> {
 
     let titleView = null;
 
-    if (this.theme) {
+    if (themeAttributes) {
       const {
         navigationBarTintColor,
         navigationBarDisabledTintColor,
         navigationBarBackgroundColor,
-      } = this.theme;
+      } = themeAttributes;
 
       titleStyle.push({ color: navigationBarTintColor });
       outerBarStyle.push({
@@ -222,7 +214,7 @@ class BpkNavigationBar extends Component<Props, {}> {
     }
 
     return (
-      <View style={outerBarStyle}>
+      <View style={outerBarStyle} {...rest}>
         <View style={barStyle}>
           {leadingButton &&
             React.cloneElement(leadingButton, {

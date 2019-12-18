@@ -535,3 +535,56 @@ exports[`iOS BpkNavigationBarIconButtonIOS light mode should resepect "tintColor
   </Text>
 </View>
 `;
+
+exports[`iOS BpkNavigationBarIconButtonIOS should forward custom props 1`] = `
+<View
+  accessibilityLabel="Edit"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  clickable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "height": "100%",
+      "justifyContent": "center",
+      "marginEnd": 3,
+      "opacity": 1,
+      "zIndex": 2,
+    }
+  }
+  testID="testID"
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(17, 18, 54)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Array [
+          Object {
+            "fontSize": 28,
+            "lineHeight": 28,
+          },
+          Object {
+            "color": "rgb(17, 18, 54)",
+          },
+        ],
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;

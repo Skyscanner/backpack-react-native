@@ -198,4 +198,32 @@ describe('android', () => {
       expect(tree).toMatchSnapshot();
     });
   });
+
+  it('should forward custom props', () => {
+    const tree = renderer
+      .create(
+        <BpkNavigationBar
+          title="Backpack"
+          testID="bar"
+          leadingButton={
+            <BpkNavigationBarButtonAndroid
+              testID="leading"
+              title="Back"
+              icon="long-arrow-left"
+              onPress={jest.fn()}
+            />
+          }
+          trailingButton={
+            <BpkNavigationBarButtonAndroid
+              testID="trailing"
+              title="Done"
+              icon="tick"
+              onPress={jest.fn()}
+            />
+          }
+        />,
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });

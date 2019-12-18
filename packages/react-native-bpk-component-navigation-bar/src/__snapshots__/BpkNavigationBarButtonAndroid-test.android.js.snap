@@ -1,5 +1,63 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`android BpkNavigationBarButton should forward custom props 1`] = `
+<View
+  style={
+    Object {
+      "borderRadius": 40,
+    }
+  }
+>
+  <View
+    accessibilityLabel="Back"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    clickable={true}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": 872415231,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    testID="testid"
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Array [
+            Object {
+              "padding": 8,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</View>
+`;
+
 exports[`android BpkNavigationBarButton should render correctly back icon 1`] = `
 <View
   style={

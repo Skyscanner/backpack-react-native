@@ -227,3 +227,50 @@ exports[`iOS BpkNavigationBarBackButtonIOS light mode should render correctly wi
   </Text>
 </View>
 `;
+
+exports[`iOS BpkNavigationBarBackButtonIOS should forward custom props 1`] = `
+<View
+  accessibilityLabel="Back"
+  accessibilityRole="button"
+  accessible={true}
+  clickable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "height": "100%",
+      "opacity": 1,
+      "zIndex": 2,
+    }
+  }
+  testID="testid"
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
+      }
+    }
+    style={
+      Array [
+        Array [
+          Object {
+            "marginEnd": 16,
+          },
+        ],
+        Object {
+          "tintColor": "rgb(17, 18, 54)",
+        },
+      ]
+    }
+  />
+</View>
+`;

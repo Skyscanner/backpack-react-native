@@ -43,5 +43,18 @@ describe('iOS', () => {
         expect(tree).toMatchSnapshot();
       });
     });
+
+    it('should forward custom props', () => {
+      const tree = renderer
+        .create(
+          <BpkNavigationBarBackButtonIOS
+            title="Back"
+            onPress={jest.fn()}
+            testID="testid"
+          />,
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
   });
 });
