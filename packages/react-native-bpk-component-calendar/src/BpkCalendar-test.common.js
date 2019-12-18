@@ -20,10 +20,12 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
 import renderer from 'react-test-renderer';
+import { colorSagano, colorPanjin } from 'bpk-tokens/tokens/base.react.native';
 
 import DateMatchers from './DateMatchers';
 import BpkCalendar from './BpkCalendar';
 import { SELECTION_TYPES } from './common-types';
+import colorBucket from './colorBucket';
 
 const defaultProps = {
   locale: 'en_GB',
@@ -221,6 +223,29 @@ const commonTests = () => {
             selectionType={SELECTION_TYPES.single}
             {...defaultProps}
             disabledDates={DateMatchers.after(Date.UTC(2019, 11, 16))}
+          />,
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
+    it('should render correctly with color buckets', () => {
+      const tree = renderer
+        .create(
+          <BpkCalendar
+            selectionType={SELECTION_TYPES.single}
+            {...defaultProps}
+            colorBuckets={[
+              colorBucket(
+                colorSagano,
+                DateMatchers.before(Date.UTC(2019, 11, 18)),
+              ),
+              colorBucket(
+                colorPanjin,
+                DateMatchers.after(Date.UTC(2019, 11, 18)),
+                'dark',
+              ),
+            ]}
           />,
         )
         .toJSON();

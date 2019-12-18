@@ -18,16 +18,17 @@
 
 /* @flow */
 
-import BpkCalendar from './src/BpkCalendar';
-import { SELECTION_TYPES } from './src/common-types';
+import BpkCalendar, { type Props } from './src/BpkCalendar';
+import { SELECTION_TYPES, type SelectionType } from './src/common-types';
 import DateMatchers, { type DateMatcher } from './src/DateMatchers';
+import colorBucket, { type ColorBucket } from './src/colorBucket';
 
-export type { Props as BpkCalendarProps } from './src/BpkCalendar';
 export type {
+  Props as BpkCalendarProps,
   SelectionType as BpkCalendarSelectionType,
-} from './src/common-types';
-
-export type { DateMatcher as BpkCalendarDateMatcher };
+  DateMatcher as BpkCalendarDateMatcher,
+  ColorBucket as BpkCalendarColorBucket,
+};
 
 export default BpkCalendar;
-export { SELECTION_TYPES, DateMatchers };
+export { SELECTION_TYPES, DateMatchers, colorBucket };

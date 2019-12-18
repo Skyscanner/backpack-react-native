@@ -145,6 +145,7 @@ class App extends Component {
 | Property              | PropType               | Required | Default Value          |
 | --------------------- | ---------------------- | -------- | ---------------------- |
 | locale                | string                 | true     | -                      |
+| colorBuckets          | arrayOf(ColorBucket)   | false    | undefined              |
 | disabledDates         | DateMatcher            | false    | null                   |
 | maxDate               | oneOf(Date, number)    | false    | today + 1 year         |
 | minDate               | oneOf(Date, number)    | false    | today                  |
@@ -176,6 +177,9 @@ class App extends Component {
     -   [any](#any)
         -   [Parameters](#parameters-3)
         -   [Examples](#examples-3)
+-   [colorBucket](#colorbucket)
+    -   [Parameters](#parameters-4)
+    -   [Examples](#examples-4)
 
 ### DateMatchers
 
@@ -259,3 +263,30 @@ An any matcher will match if the date is equal to any of the dates provided.
 ```
 
 Returns **DateMatcher** an any date matcher.
+
+### colorBucket
+
+Creates a new color bucket to be used in BpkCalendar.
+
+A color bucket is used to define custom colours for calendar days.
+
+#### Parameters
+
+-   `color` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The background color
+-   `days` **DateMatcher** The days in this bucket
+-   `textStyle` **TextStyle?** The text style. Valid values are `light` or `dark`.
+       Changes how the text looks based on the background color, where light or dark refers
+       to the background colour. (optional, default `undefined`)
+
+#### Examples
+
+```javascript
+<BpkCalendar
+ colorBuckets={[
+   colorBucket(colorPanjin, DateMatchers.range(startOfSumer, endOfSumer)),
+   colorBucket(colorSagano, DateMatchers.after(endOfSumer))
+ ]}
+/>
+```
+
+Returns **ColorBucket** A new color bucket

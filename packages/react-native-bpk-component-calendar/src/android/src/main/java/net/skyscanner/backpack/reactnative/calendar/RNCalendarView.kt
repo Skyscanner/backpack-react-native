@@ -21,9 +21,7 @@ import android.content.Context
 import android.util.AttributeSet
 import android.widget.FrameLayout
 import net.skyscanner.backpack.calendar.BpkCalendar
-import net.skyscanner.backpack.calendar.model.CalendarRange
-import net.skyscanner.backpack.calendar.model.CalendarSelection
-import net.skyscanner.backpack.calendar.model.SingleDay
+import net.skyscanner.backpack.calendar.model.*
 import net.skyscanner.backpack.calendar.presenter.SelectionType
 import net.skyscanner.backpack.calendar.view.OnYearChangedListener
 import org.threeten.bp.LocalDate
@@ -88,6 +86,12 @@ class RNCalendarView(
       }
     }
 
+  internal var colorBuckets: Array<RNColorBucket>? = null
+    set(value) {
+      field = value
+      shouldUpdateContent = true
+    }
+
   fun render() {
     locale ?: throw IllegalStateException("[RNCalendarView] Locale has not been initialized")
 
@@ -102,6 +106,9 @@ class RNCalendarView(
       controller?.onDatesChange = onDatesChange
       controller?.selectionType = selectionType
       controller?.disabledDateMatcher = disabledDateMatcher
+      controller?.calendarColoring = colorBuckets?.let {
+        CalendarColoring(it.map { bucket -> bucket.toColorBucket() }.toSet())
+      }
 
       if (shouldUpdateContent) {
         shouldUpdateContent = false
@@ -117,6 +124,8 @@ class RNCalendarView(
     maxDate?.let { currentController.endDate = it }
     selection?.let { currentController.updateSelection(it) }
     disabledDateMatcher?.let { currentController.disabledDateMatcher = it }
+    colorBuckets?.let { currentController.calendarColoring = CalendarColoring(
+            it.map { bucket -> bucket.toColorBucket()}.toSet()) }
 
     return currentController
   }
@@ -167,6 +176,30 @@ class RNCalendarView(
     override fun onYearChanged(year: Int) {
       super.onYearChanged(year)
       this@RNCalendarView.requestLayout()
+    }
+  }
+
+  private fun RNColorBucket.toColorBucket(): ColoredBucket {
+    val textStyle = if (this.textStyle == "dark") {
+      ColoredBucket.TextStyle.Dark
+    } else {
+      ColoredBucket.TextStyle.Light
+    }
+
+    // TODO: selectedColor has not effect so we are not providing it here
+    return ColoredBucket(this.color, this.days.toSet(), null, textStyle)
+  }
+
+  private fun DateMatcher.toSet(): Set<LocalDate> {
+    val plusOne = { it: LocalDate -> it.plusDays(1) }
+    val minusOne = { it: LocalDate -> it.minusDays(1) }
+
+    return when (this) {
+      is RangeMatcher ->  generateSequence(this.start, plusOne).takeWhile { it <= this.end }.toSet()
+      is BeforeMatcher -> generateSequence(this.end, minusOne).takeWhile { it >= minDate }.toSet()
+      is AfterMatcher -> generateSequence(this.start, plusOne).takeWhile { it <= maxDate }.toSet()
+      is AnyMatcher -> this.dates.toSet()
+      else -> emptySet()
     }
   }
 }

@@ -79,6 +79,43 @@ exports[`iOS BpkCalendar should render correctly with both minDate and maxDate 1
 />
 `;
 
+exports[`iOS BpkCalendar should render correctly with color buckets 1`] = `
+<RCTBPKCalendar
+  colorBuckets={
+    Array [
+      Object {
+        "color": 4291882732,
+        "days": Object {
+          "dates": Array [
+            1576627200000,
+          ],
+          "type": "before",
+        },
+        "textStyle": undefined,
+      },
+      Object {
+        "color": 4291904347,
+        "days": Object {
+          "dates": Array [
+            1576627200000,
+          ],
+          "type": "after",
+        },
+        "textStyle": "dark",
+      },
+    ]
+  }
+  disabledDates={null}
+  locale="en_GB"
+  maxDate={null}
+  minDate={null}
+  onDateSelection={[Function]}
+  selectedDates={Array []}
+  selectionType="single"
+  style={null}
+/>
+`;
+
 exports[`iOS BpkCalendar should render correctly with custom style 1`] = `
 <RCTBPKCalendar
   disabledDates={null}

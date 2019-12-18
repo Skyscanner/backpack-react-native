@@ -105,6 +105,9 @@ className
 classNames
 clearable
 config
+ColorBucket
+colorBucket
+colorBuckets
 ctrl
 cmd
 cssModules
@@ -153,6 +156,7 @@ spacingLg
 stylesheet
 SVGs
 textarea
+TextStyle
 Themeability
 themeable
 TTF
