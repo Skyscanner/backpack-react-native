@@ -29,14 +29,14 @@ import {
   commonPropTypes,
   commonDefaultProps,
   SELECTION_TYPES,
-  type CommonProps,
+  type NativeCalendarCommonProps,
 } from './common-types';
 import parseDateToNative from './parseDateToNative';
 
 const RCTBPKCalendar = requireNativeComponent('RCTBPKCalendar');
 
 export type Props = {
-  ...$Exact<CommonProps>,
+  ...$Exact<NativeCalendarCommonProps>,
 };
 
 class BpkCalendar extends Component<Props, {}> {

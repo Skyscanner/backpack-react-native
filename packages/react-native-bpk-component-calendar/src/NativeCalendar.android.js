@@ -24,14 +24,14 @@ import { requireNativeComponent } from 'react-native';
 import {
   commonPropTypes,
   commonDefaultProps,
-  type CommonProps,
+  type NativeCalendarCommonProps,
 } from './common-types';
 import parseDateToNative from './parseDateToNative';
 
 const AndroidBPKCalendarView = requireNativeComponent('AndroidBPKCalendarView');
 
 export type Props = {
-  ...$Exact<CommonProps>,
+  ...$Exact<NativeCalendarCommonProps>,
 };
 
 const BpkCalendar = (props: Props) => {

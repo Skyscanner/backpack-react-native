@@ -25,6 +25,8 @@ import {
   commonPropTypes,
   commonDefaultProps,
   type CommonProps,
+  type SelectedDatesChanged,
+  type NativeEvent,
 } from './common-types';
 import NativeCalendar from './NativeCalendar';
 
@@ -32,16 +34,18 @@ export type Props = {
   ...$Exact<CommonProps>,
 };
 
-const createOnChangeHandler = memoize(callback => event => {
-  if (event.nativeEvent.selectedDates) {
-    const convertedDates = event.nativeEvent.selectedDates.map(
-      timestamp => new Date(timestamp * 1000),
-    );
-    if (callback) {
-      callback(convertedDates);
+const createOnChangeHandler = memoize(
+  (callback: SelectedDatesChanged) => (event: NativeEvent) => {
+    if (event.nativeEvent.selectedDates) {
+      const convertedDates = event.nativeEvent.selectedDates.map(
+        timestamp => new Date(timestamp * 1000),
+      );
+      if (callback) {
+        callback(convertedDates);
+      }
     }
-  }
-});
+  },
+);
 
 const BpkCalendar = (props: Props) => {
   const {
