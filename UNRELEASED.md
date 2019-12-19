@@ -2,20 +2,6 @@
 
 > Place your changes below this line.
 
-**Fixed:**
-
-- react-native-bpk-component-navigation-bar:
-  - Fixed a bug where updating the theme would only take effect in the next render.
-- react-native-bpk-component-calendar:
-  - Fix the flow types within `BpkCalendar` to accurately reflect the expected types and resolve type errors.
-
-**Added:**
-
-- react-native-bpk-component-navigation-bar:
-  - All components now spread extra props.
-
-- react-native-bpk-component-calendar:
-  - Added new prop `colorBuckets`. Only supported on Android at the moment.
 
 ## How to write a good changelog entry
 

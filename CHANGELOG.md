@@ -2,6 +2,19 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-12-17 - Added colouring support to Android calendar
+
+**Added:**
+
+- react-native-bpk-component-navigation-bar: 7.1.8 => 7.2.0
+  - All components now spread extra props.
+  - Fixed a bug where updating the theme would only take effect in the next render.
+
+- react-native-bpk-component-calendar: 4.1.0 => 4.2.0
+  - Added new prop `colorBuckets`. Only supported on Android at the moment.
+  - Fix the flow types within `BpkCalendar` to accurately reflect the expected types and resolve type errors.
+
+
 # 2019-12-17 - New disabled dates props for calendar and fixes for theming and appearance packages
 
 **Fixed:**
