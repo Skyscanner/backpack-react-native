@@ -27,6 +27,7 @@ type TextStyle = 'light' | 'dark';
 export type ColorBucket = {
   color: ?number,
   days: DateMatcher,
+  textStyle: ?TextStyle,
 };
 
 /**
@@ -34,11 +35,15 @@ export type ColorBucket = {
  *
  * A color bucket is used to define custom colours for calendar days.
  *
+ * NOTE: Your are responsible for ensuring multiple color buckets don't
+ * overlap, in case they do the last one applied (last in the list) will
+ * take precedence.
+ *
  * @example
  * <BpkCalendar
  *  colorBuckets={[
- *    colorBucket(colorPanjin, DateMatchers.range(startOfSumer, endOfSumer)),
- *    colorBucket(colorSagano, DateMatchers.after(endOfSumer))
+ *    colorBucket(colorPanjin, DateMatchers.range(startOfSummer, endOfSummer)),
+ *    colorBucket(colorSagano, DateMatchers.after(endOfSummer))
  *  ]}
  * />
  *

@@ -270,6 +270,10 @@ Creates a new color bucket to be used in BpkCalendar.
 
 A color bucket is used to define custom colours for calendar days.
 
+NOTE: Your are responsible for ensuring multiple color buckets don't
+overlap, in case they do the last one applied (last in the list) will
+take precedence.
+
 #### Parameters
 
 -   `color` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The background color
@@ -283,8 +287,8 @@ A color bucket is used to define custom colours for calendar days.
 ```javascript
 <BpkCalendar
  colorBuckets={[
-   colorBucket(colorPanjin, DateMatchers.range(startOfSumer, endOfSumer)),
-   colorBucket(colorSagano, DateMatchers.after(endOfSumer))
+   colorBucket(colorPanjin, DateMatchers.range(startOfSummer, endOfSummer)),
+   colorBucket(colorSagano, DateMatchers.after(endOfSummer))
  ]}
 />
 ```

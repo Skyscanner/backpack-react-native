@@ -416,7 +416,7 @@ storiesOf('react-native-bpk-component-calendar', module)
     const dateMatchers = useDateMatchers(minDate, maxDate);
 
     return (
-      <CalendarWithPicker label="Disable dates" options={dateMatchers}>
+      <CalendarWithPicker label="Colour bucket" options={dateMatchers}>
         {({ selectedValue }) => (
           <BpkCalendarExample
             style={styles.calendarOnly}
