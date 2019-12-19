@@ -17,6 +17,8 @@ import BpkSectionList, {
   BpkSectionListHeader,
   BpkSectionListItem,
   BpkSectionListItemSeparator,
+  BpkSectionListSearchField,
+  BpkSectionListNoResultsText,
 } from 'react-native-bpk-component-section-list';
 
 const AIRPORTS = [
@@ -86,6 +88,10 @@ export default class App extends Component {
     />
   );
 
+    filterItems = text => {
+      // Logic to filter the data based on user input.
+    }
+
   render() {
     return (
       <BpkSectionList
@@ -95,6 +101,15 @@ export default class App extends Component {
           <BpkSectionListHeader title={section.title} />
         )}
         ItemSeparatorComponent={BpkSectionListItemSeparator}
+        ListHeaderComponent={
+          <BpkSectionListSearchField
+            placeholder="Search airports"
+            onChangeText={this.filterItems}
+          />
+        }
+        ListEmptyComponent={
+          <BpkSectionListNoResultsText>No results</BpkFlatListNoResultsText>
+        }
       />
     );
   }
@@ -129,7 +144,23 @@ Inherits all props from React Native's [SectionList](https://facebook.github.io/
 
 ### BpkSectionListItemSeparator
 
-None.
+Use this as the value for [`ItemSeparatorComponent`](https://facebook.github.io/react-native/docs/sectionlist#itemseparatorcomponent).
+
+No props.
+
+### BpkSectionListSearchField
+
+This can be used as the value for [`ListHeaderComponent`](https://facebook.github.io/react-native/docs/sectionlist#listheadercomponent) to allow users to search the list.
+
+It's an instance of React Native's [`TextInput`](https://facebook.github.io/react-native/docs/textinput) component and accepts the same props.
+
+### BpkSectionListNoResultsText
+
+Use this as the value for [`ListEmptyComponent`](https://facebook.github.io/react-native/docs/sectionlist#listemptycomponent). It's generally only needed when the list can be searched.
+
+| Property           | PropType                              | Required | Default Value |
+| ------------------ | ------------------------------------- | -------- | ------------- |
+| children           | Node                                  | true     | -             |
 
 ## Theme Props
 

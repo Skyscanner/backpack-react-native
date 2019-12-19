@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Android BpkFlatListNoResultsText dark mode should render correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "padding": 16,
+      },
+      null,
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "sans-serif",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": -0.2,
+        },
+        Object {},
+      ]
+    }
+  >
+    No results!
+  </Text>
+</View>
+`;
+
+exports[`Android BpkFlatListNoResultsText dark mode should support arbitrary props 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "padding": 16,
+      },
+      null,
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "sans-serif",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": -0.2,
+        },
+        Object {},
+      ]
+    }
+    testID="123"
+  >
+    No results!
+  </Text>
+</View>
+`;
+
+exports[`Android BpkFlatListNoResultsText dark mode should support userland styles 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "padding": 16,
+      },
+      Object {
+        "flexDirection": "column",
+      },
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "sans-serif",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": -0.2,
+        },
+        Object {},
+      ]
+    }
+  >
+    No results!
+  </Text>
+</View>
+`;
+
+exports[`Android BpkFlatListNoResultsText light mode should render correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "padding": 16,
+      },
+      null,
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(17, 18, 54)",
+          "fontFamily": "sans-serif",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": -0.2,
+        },
+        Object {},
+      ]
+    }
+  >
+    No results!
+  </Text>
+</View>
+`;
+
+exports[`Android BpkFlatListNoResultsText light mode should support arbitrary props 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "padding": 16,
+      },
+      null,
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(17, 18, 54)",
+          "fontFamily": "sans-serif",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": -0.2,
+        },
+        Object {},
+      ]
+    }
+    testID="123"
+  >
+    No results!
+  </Text>
+</View>
+`;
+
+exports[`Android BpkFlatListNoResultsText light mode should support userland styles 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "padding": 16,
+      },
+      Object {
+        "flexDirection": "column",
+      },
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(17, 18, 54)",
+          "fontFamily": "sans-serif",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": -0.2,
+        },
+        Object {},
+      ]
+    }
+  >
+    No results!
+  </Text>
+</View>
+`;

@@ -18,44 +18,116 @@
 
 /* @flow */
 
-import { TextInput, View } from 'react-native';
-import React from 'react';
+import { Platform, TextInput, View, ViewPropTypes } from 'react-native';
+import React, { type ElementProps } from 'react';
+import BpkIcon, { icons } from 'react-native-bpk-component-icon';
+import {
+  backgroundTertiaryDarkColor,
+  colorSkyGrayTint03,
+  colorSkyGrayTint06,
+  colorWhite,
+  primaryColor,
+  textPrimaryColor,
+  elevationSm,
+  elevationBase,
+  fontSizeBase,
+  spacingMd,
+  spacingBase,
+  spacingXxl,
+} from 'bpk-tokens/tokens/base.react.native';
+import { setOpacity } from 'bpk-tokens';
 import {
   BpkDynamicStyleSheet,
   useBpkDynamicStyleSheet,
 } from 'react-native-bpk-appearance';
 
-// All taken from Apple's iOS UI Sketch library.
-const IOS_SEARCH_INPUT_HEIGHT = 36;
-const IOS_SEARCH_INPUT_BACKGROUND_COLOR = 'rgba(142, 142, 147, 0.12)';
-const IOS_SEARCH_INPUT_PLACEHOLDER_COLOR = 'rgb(142, 142, 147)';
-const IOS_SEARCH_INPUT_FONT_SIZE = 17;
-const IOS_SEARCH_INPUT_BORDER_RADIUS = 8;
-const IOS_SEARCH_INPUT_HORIZONTAL_MARGIN = 12;
-const IOS_SEARCH_INPUT_HORIZONTAL_PADDING = 8;
+// Taken from Apple's iOS UI Sketch library.
+const IOS_SEARCH_INPUT_BACKGROUND_OPACITY = 0.12;
 
 const dynamicStyles = BpkDynamicStyleSheet.create({
+  wrapper: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginHorizontal: spacingBase,
+    marginBottom: spacingMd,
+  },
+  icon: {
+    position: 'absolute',
+    left: spacingMd,
+    ...Platform.select({
+      android: {
+        color: primaryColor,
+        zIndex: 100,
+        // Elevation must be higher than the TextInput's elevation or it gets covered.
+        elevation: elevationBase,
+      },
+      ios: {
+        color: colorSkyGrayTint03,
+      },
+    }),
+  },
   textInput: {
-    backgroundColor: IOS_SEARCH_INPUT_BACKGROUND_COLOR,
-    borderRadius: IOS_SEARCH_INPUT_BORDER_RADIUS,
-    fontSize: IOS_SEARCH_INPUT_FONT_SIZE,
-    height: IOS_SEARCH_INPUT_HEIGHT,
-    marginHorizontal: IOS_SEARCH_INPUT_HORIZONTAL_MARGIN,
-    paddingHorizontal: IOS_SEARCH_INPUT_HORIZONTAL_PADDING,
+    ...Platform.select({
+      android: {
+        backgroundColor: {
+          dark: backgroundTertiaryDarkColor,
+          light: colorWhite,
+        },
+        elevation: { light: elevationSm, dark: null },
+        // This is needed because otherwise the elevation shadow at the top is cut off
+        marginTop: 2, // eslint-disable-line backpack/use-tokens
+      },
+      ios: {
+        backgroundColor: {
+          light: setOpacity(
+            colorSkyGrayTint03,
+            IOS_SEARCH_INPUT_BACKGROUND_OPACITY,
+          ),
+          dark: setOpacity(
+            colorSkyGrayTint06,
+            IOS_SEARCH_INPUT_BACKGROUND_OPACITY,
+          ),
+        },
+      },
+    }),
+    borderRadius: spacingMd,
+    color: textPrimaryColor,
+    flex: 1,
+    fontSize: fontSizeBase,
+    paddingEnd: spacingMd,
+    paddingStart: spacingXxl,
+    paddingVertical: spacingMd,
   },
 });
 
-const BpkFlatListSearchField = () => {
+type ViewProps = ElementProps<typeof View>;
+type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
+
+type Props = {
+  style: ViewStyleProp,
+};
+
+const BpkFlatListSearchField = (props: Props) => {
+  const { style: userStyle, ...rest } = props;
   const styles = useBpkDynamicStyleSheet(dynamicStyles);
   return (
-    <View>
+    <View style={[styles.wrapper, userStyle]}>
       <TextInput
         style={styles.textInput}
-        placeholder="Search"
-        placeholderTextColor={IOS_SEARCH_INPUT_PLACEHOLDER_COLOR}
+        placeholderTextColor={colorSkyGrayTint03}
+        {...rest}
       />
+      <BpkIcon icon={icons.search} style={styles.icon} />
     </View>
   );
+};
+
+BpkFlatListSearchField.propTypes = {
+  style: ViewPropTypes.style,
+};
+
+BpkFlatListSearchField.defaultProps = {
+  style: null,
 };
 
 export default BpkFlatListSearchField;

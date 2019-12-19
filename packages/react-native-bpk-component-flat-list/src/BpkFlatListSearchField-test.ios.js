@@ -18,17 +18,8 @@
 
 /* @flow */
 
-import BpkFlatList from './src/BpkFlatList';
-import BpkFlatListItem from './src/BpkFlatListItem';
-import BpkFlatListItemSeparator from './src/BpkFlatListItemSeparator';
-import BpkFlatListSearchField from './src/BpkFlatListSearchField';
-import BpkFlatListNoResultsText from './src/BpkFlatListNoResultsText';
+import commonTests from './BpkFlatListSearchField-test.common';
 
-export type { FlatListItemProps } from './src/common-types';
-export {
-  BpkFlatListItem,
-  BpkFlatListItemSeparator,
-  BpkFlatListSearchField,
-  BpkFlatListNoResultsText,
-};
-export default BpkFlatList;
+describe('iOS', () => {
+  commonTests();
+});

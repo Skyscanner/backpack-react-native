@@ -1,0 +1,337 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`iOS BpkFlatListSearchField dark mode should render correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "marginBottom": 8,
+        "marginHorizontal": 16,
+      },
+      null,
+    ]
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    placeholderTextColor="rgb(143, 144, 160)"
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "backgroundColor": "rgba(221, 221, 229, 0.12)",
+        "borderRadius": 8,
+        "color": "rgb(255, 255, 255)",
+        "flex": 1,
+        "fontSize": 16,
+        "paddingEnd": 8,
+        "paddingStart": 40,
+        "paddingVertical": 8,
+      }
+    }
+    underlineColorAndroid="transparent"
+  />
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Object {
+          "color": "rgb(143, 144, 160)",
+          "left": 8,
+          "position": "absolute",
+        },
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkFlatListSearchField dark mode should support arbitrary props 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "marginBottom": 8,
+        "marginHorizontal": 16,
+      },
+      null,
+    ]
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    placeholderTextColor="rgb(143, 144, 160)"
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "backgroundColor": "rgba(221, 221, 229, 0.12)",
+        "borderRadius": 8,
+        "color": "rgb(255, 255, 255)",
+        "flex": 1,
+        "fontSize": 16,
+        "paddingEnd": 8,
+        "paddingStart": 40,
+        "paddingVertical": 8,
+      }
+    }
+    testID="123"
+    underlineColorAndroid="transparent"
+  />
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Object {
+          "color": "rgb(143, 144, 160)",
+          "left": 8,
+          "position": "absolute",
+        },
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkFlatListSearchField dark mode should support userland styles 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "marginBottom": 8,
+        "marginHorizontal": 16,
+      },
+      Object {
+        "flexDirection": "row",
+      },
+    ]
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    placeholderTextColor="rgb(143, 144, 160)"
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "backgroundColor": "rgba(221, 221, 229, 0.12)",
+        "borderRadius": 8,
+        "color": "rgb(255, 255, 255)",
+        "flex": 1,
+        "fontSize": 16,
+        "paddingEnd": 8,
+        "paddingStart": 40,
+        "paddingVertical": 8,
+      }
+    }
+    underlineColorAndroid="transparent"
+  />
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Object {
+          "color": "rgb(143, 144, 160)",
+          "left": 8,
+          "position": "absolute",
+        },
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkFlatListSearchField light mode should render correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "marginBottom": 8,
+        "marginHorizontal": 16,
+      },
+      null,
+    ]
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    placeholderTextColor="rgb(143, 144, 160)"
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "backgroundColor": "rgba(143, 144, 160, 0.12)",
+        "borderRadius": 8,
+        "color": "rgb(17, 18, 54)",
+        "flex": 1,
+        "fontSize": 16,
+        "paddingEnd": 8,
+        "paddingStart": 40,
+        "paddingVertical": 8,
+      }
+    }
+    underlineColorAndroid="transparent"
+  />
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(17, 18, 54)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Object {
+          "color": "rgb(143, 144, 160)",
+          "left": 8,
+          "position": "absolute",
+        },
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkFlatListSearchField light mode should support arbitrary props 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "marginBottom": 8,
+        "marginHorizontal": 16,
+      },
+      null,
+    ]
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    placeholderTextColor="rgb(143, 144, 160)"
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "backgroundColor": "rgba(143, 144, 160, 0.12)",
+        "borderRadius": 8,
+        "color": "rgb(17, 18, 54)",
+        "flex": 1,
+        "fontSize": 16,
+        "paddingEnd": 8,
+        "paddingStart": 40,
+        "paddingVertical": 8,
+      }
+    }
+    testID="123"
+    underlineColorAndroid="transparent"
+  />
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(17, 18, 54)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Object {
+          "color": "rgb(143, 144, 160)",
+          "left": 8,
+          "position": "absolute",
+        },
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkFlatListSearchField light mode should support userland styles 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "marginBottom": 8,
+        "marginHorizontal": 16,
+      },
+      Object {
+        "flexDirection": "row",
+      },
+    ]
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    placeholderTextColor="rgb(143, 144, 160)"
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "backgroundColor": "rgba(143, 144, 160, 0.12)",
+        "borderRadius": 8,
+        "color": "rgb(17, 18, 54)",
+        "flex": 1,
+        "fontSize": 16,
+        "paddingEnd": 8,
+        "paddingStart": 40,
+        "paddingVertical": 8,
+      }
+    }
+    underlineColorAndroid="transparent"
+  />
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(17, 18, 54)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Object {
+          "color": "rgb(143, 144, 160)",
+          "left": 8,
+          "position": "absolute",
+        },
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
