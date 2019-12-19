@@ -19,7 +19,9 @@ package net.skyscanner.backpack.reactnative.calendar
 
 import android.content.Context
 import android.view.View
+import net.skyscanner.backpack.calendar.model.CalendarColoring
 import net.skyscanner.backpack.calendar.model.CalendarSelection
+import net.skyscanner.backpack.calendar.model.ColoredBucket
 import net.skyscanner.backpack.calendar.presenter.BpkCalendarController
 import net.skyscanner.backpack.calendar.presenter.SelectionType
 import org.threeten.bp.LocalDate
@@ -41,6 +43,8 @@ class CalendarController(
   override fun isDateDisabled(date: LocalDate): Boolean {
     return disabledDateMatcher?.match(date) ?: false
   }
+
+  override var calendarColoring: CalendarColoring? = null
 
   var onDatesChange: ChangeCallback? = null
 

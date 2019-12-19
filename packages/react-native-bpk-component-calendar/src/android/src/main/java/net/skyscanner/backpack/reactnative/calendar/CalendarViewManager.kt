@@ -88,19 +88,35 @@ class CalendarViewManager : ViewGroupManager<RNCalendarView>() {
   @ReactProp(name = "disabledDates")
   fun setDisabledDates(view: RNCalendarView, disableDates: ReadableMap?) {
     if (disableDates != null) {
-      val type = disableDates.getString("type")
-      val dates = disableDates.getArray("dates")
-      if (type === null || dates === null || dates.size() == 0) {
-        throw IllegalArgumentException("Invalid disabledDates prop, either type` or `dates` is invalid")
-      }
-
-      val parsedDates = (0 until dates.size()).map {
-        unixToCalendarDay(dates.getInt(it))
-      }.toTypedArray()
-
-      view.disabledDateMatcher = DateMatcher.fromJs(type, parsedDates)
+      view.disabledDateMatcher = disableDates.toDateMatcher()
     } else {
       view.disabledDateMatcher = null
+    }
+  }
+
+  @ReactProp(name = "colorBuckets")
+  fun setColorBuckets(view: RNCalendarView, colourBuckets: ReadableArray?) {
+    if (colourBuckets != null) {
+      val parsedBuckets = (0 until colourBuckets.size()).map {
+        val bucket = colourBuckets.getMap(it)
+                ?: throw IllegalArgumentException("Invalid colour bucket provided to BpkCalendar")
+
+        val textStyle = bucket.safeGet("textStyle", ReadableMap::getString)
+
+        val color = bucket.getInt("color")
+        val days = bucket.getMap("days")
+                ?: throw IllegalArgumentException("Invalid colour bucket provided to BpkCalendar. `days` is null")
+
+        RNColorBucket(
+          color = color,
+          days = days.toDateMatcher(),
+          textStyle = textStyle
+        )
+      }.toTypedArray()
+
+      view.colorBuckets = parsedBuckets
+    } else {
+      view.colorBuckets = null
     }
   }
 
@@ -131,5 +147,27 @@ class CalendarViewManager : ViewGroupManager<RNCalendarView>() {
   private fun unixToCalendarDay(unixTime: Int): LocalDate {
     // TODO: Explore sending a "dummy" date here (01-01-2019) to avoid having to deal with timezones
     return Instant.ofEpochMilli(unixTime * 1000L).atZone(ZONE_ID_UTC).toLocalDate()
+  }
+
+  private fun <T>ReadableMap.safeGet(key: String, getter: (map: ReadableMap, key: String) -> T): T? {
+    if (!this.hasKey(key)) {
+      return null
+    }
+
+    return getter.invoke(this, key)
+  }
+
+  private fun ReadableMap.toDateMatcher(): DateMatcher {
+    val type = this.getString("type")
+    val dates = this.getArray("dates")
+    if (type === null || dates === null || dates.size() == 0) {
+      throw IllegalArgumentException("Invalid disabledDates prop, either type` or `dates` is invalid")
+    }
+
+    val parsedDates = (0 until dates.size()).map {
+      unixToCalendarDay(dates.getInt(it))
+    }.toTypedArray()
+
+    return DateMatcher.fromJs(type, parsedDates)
   }
 }

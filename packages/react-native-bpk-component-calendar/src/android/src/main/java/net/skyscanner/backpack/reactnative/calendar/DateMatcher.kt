@@ -35,25 +35,25 @@ interface DateMatcher {
   fun match(date: LocalDate): Boolean
 }
 
-internal class RangeMatcher(private val start: LocalDate, private val end: LocalDate): DateMatcher {
+internal class RangeMatcher(internal val start: LocalDate, internal val end: LocalDate): DateMatcher {
   override fun match(date: LocalDate): Boolean {
     return date in start..end
   }
 }
 
-internal class AfterMatcher(private val start: LocalDate): DateMatcher {
+internal class AfterMatcher(internal val start: LocalDate): DateMatcher {
   override fun match(date: LocalDate): Boolean {
     return date > start
   }
 }
 
-internal class BeforeMatcher(private val end: LocalDate): DateMatcher {
+internal class BeforeMatcher(internal val end: LocalDate): DateMatcher {
   override fun match(date: LocalDate): Boolean {
     return date < end
   }
 }
 
-internal class AnyMatcher(private val dates: Array<LocalDate>): DateMatcher {
+internal class AnyMatcher(internal val dates: Array<LocalDate>): DateMatcher {
   override fun match(date: LocalDate): Boolean {
     return dates.any { it == date }
   }

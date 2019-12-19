@@ -14,6 +14,9 @@
 - react-native-bpk-component-navigation-bar:
   - All components now spread extra props.
 
+- react-native-bpk-component-calendar:
+  - Added new prop `colorBuckets`. Only supported on Android at the moment.
+
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).

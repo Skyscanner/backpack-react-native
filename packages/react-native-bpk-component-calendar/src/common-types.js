@@ -24,6 +24,7 @@ import { type SyntheticEvent } from 'react-native/Libraries/Types/CoreEventTypes
 import PropTypes from 'prop-types';
 
 import { type DateMatcher } from './DateMatchers';
+import { type ColorBucket } from './colorBucket';
 
 type ViewProps = ElementProps<typeof View>;
 type ViewStyleProp = $PropertyType<ViewProps, 'style'>;
@@ -40,6 +41,7 @@ export type NativeEvent = SyntheticEvent<$ReadOnly<{| selectedDates: number[] |}
 
 export type CommonProps = {
   locale: string,
+  colorBuckets: ?(ColorBucket[]),
   disabledDates: ?DateMatcher,
   minDate: ?Date,
   maxDate: ?Date,
@@ -100,6 +102,7 @@ const selectedDatesPropType = (
 
 export const commonPropTypes = {
   locale: PropTypes.string.isRequired,
+  colorBuckets: PropTypes.array,
   disabledDates: PropTypes.shape({
     type: PropTypes.string,
     dates: PropTypes.array,
@@ -120,4 +123,5 @@ export const commonDefaultProps = {
   selectionType: SELECTION_TYPES.single,
   style: null,
   disabledDates: null,
+  colorBuckets: undefined,
 };

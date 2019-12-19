@@ -79,6 +79,43 @@ exports[`Android BpkCalendar should render correctly with both minDate and maxDa
 />
 `;
 
+exports[`Android BpkCalendar should render correctly with color buckets 1`] = `
+<AndroidBPKCalendarView
+  colorBuckets={
+    Array [
+      Object {
+        "color": -3084564,
+        "days": Object {
+          "dates": Array [
+            1576627200,
+          ],
+          "type": "before",
+        },
+        "textStyle": undefined,
+      },
+      Object {
+        "color": -3062949,
+        "days": Object {
+          "dates": Array [
+            1576627200,
+          ],
+          "type": "after",
+        },
+        "textStyle": "dark",
+      },
+    ]
+  }
+  disabledDates={null}
+  locale="en_GB"
+  maxDate={null}
+  minDate={null}
+  onChange={[Function]}
+  selectedDates={Array []}
+  selectionType="single"
+  style={null}
+/>
+`;
+
 exports[`Android BpkCalendar should render correctly with custom style 1`] = `
 <AndroidBPKCalendarView
   disabledDates={null}

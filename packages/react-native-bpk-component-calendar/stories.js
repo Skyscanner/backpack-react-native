@@ -31,12 +31,18 @@ import BpkTextInput from 'react-native-bpk-component-text-input';
 import BpkPicker, { BpkPickerItem } from 'react-native-bpk-component-picker';
 import BpkSelect from 'react-native-bpk-component-select';
 import BpkText from 'react-native-bpk-component-text';
+import {
+  colorSagano,
+  colorPanjin,
+  colorBagan,
+} from 'bpk-tokens/tokens/base.react.native';
 
 import CenterDecorator from '../../storybook/CenterDecorator';
 
 import BpkCalendar, {
   SELECTION_TYPES,
   DateMatchers,
+  colorBucket,
   type BpkCalendarSelectionType,
 } from './index';
 
@@ -400,6 +406,62 @@ storiesOf('react-native-bpk-component-calendar', module)
         minDate={new Date(Date.UTC(today.getFullYear(), 0, 2))}
         maxDate={new Date(Date.UTC(today.getFullYear() + 1, 11, 31))}
         disabledDates={disabledDates || null}
+      />
+    );
+  })
+  .add('Colour buckets', () => {
+    const maxDate = Date.UTC(today.getFullYear() + 1, 11, 31);
+    const minDate = Date.UTC(today.getFullYear(), 0, 2);
+
+    const dateMatchers = useDateMatchers(minDate, maxDate);
+
+    return (
+      <CalendarWithPicker label="Colour bucket" options={dateMatchers}>
+        {({ selectedValue }) => (
+          <BpkCalendarExample
+            style={styles.calendarOnly}
+            selectionType={SELECTION_TYPES.range}
+            minDate={minDate}
+            maxDate={maxDate}
+            colorBuckets={[
+              colorBucket(colorSagano, dateMatchers[selectedValue].descriptor),
+            ]}
+          />
+        )}
+      </CalendarWithPicker>
+    );
+  })
+  .add('Colour buckets: full example', () => {
+    const maxDate = Date.UTC(today.getFullYear() + 1, 11, 31);
+    const minDate = Date.UTC(today.getFullYear(), 0, 2);
+
+    const buckets = useMemo(() => {
+      let date = minDate;
+      const one = [];
+      const two = [];
+      const three = [];
+      while (date <= maxDate) {
+        one.push(date);
+        date += ONE_DAT_IN_MS;
+        two.push(date);
+        date += ONE_DAT_IN_MS;
+        three.push(date);
+        date += ONE_DAT_IN_MS;
+      }
+      return [
+        colorBucket(colorSagano, DateMatchers.any(...one)),
+        colorBucket(colorBagan, DateMatchers.any(...two)),
+        colorBucket(colorPanjin, DateMatchers.any(...three), 'dark'),
+      ];
+    }, [maxDate, minDate]);
+
+    return (
+      <BpkCalendarExample
+        style={styles.calendarOnly}
+        selectionType={SELECTION_TYPES.range}
+        minDate={minDate}
+        maxDate={maxDate}
+        colorBuckets={buckets}
       />
     );
   });
