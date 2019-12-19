@@ -21,7 +21,8 @@
 import BpkFlatList from './src/BpkFlatList';
 import BpkFlatListItem from './src/BpkFlatListItem';
 import BpkFlatListItemSeparator from './src/BpkFlatListItemSeparator';
+import BpkFlatListSearchField from './src/BpkFlatListSearchField';
 
 export type { FlatListItemProps } from './src/common-types';
-export { BpkFlatListItem, BpkFlatListItemSeparator };
+export { BpkFlatListItem, BpkFlatListItemSeparator, BpkFlatListSearchField };
 export default BpkFlatList;

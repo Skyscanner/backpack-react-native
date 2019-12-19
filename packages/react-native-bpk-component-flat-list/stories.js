@@ -29,6 +29,7 @@ import themeAttributes from '../../storybook/themeAttributes';
 import BpkFlatList, {
   BpkFlatListItem,
   BpkFlatListItemSeparator,
+  BpkFlatListSearchField,
 } from './index';
 
 const styles = StyleSheet.create({
@@ -120,6 +121,7 @@ class StatefulBpkFlatList extends React.Component<
   render() {
     return (
       <BpkFlatList
+        ListHeaderComponent={BpkFlatListSearchField}
         data={this.getData()}
         renderItem={this.renderItem}
         ItemSeparatorComponent={
