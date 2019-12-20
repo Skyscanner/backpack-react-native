@@ -91,7 +91,7 @@ class StatefulBpkSectionList extends React.Component<
     showImages: boolean,
     includeSearch: boolean,
   },
-  { selectedAirport: string },
+  { selectedAirport: string, data: Array<any> },
 > {
   itemPressCallbacks: { [string]: () => mixed };
 

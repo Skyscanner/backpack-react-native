@@ -73,7 +73,7 @@ const dynamicStyles = BpkDynamicStyleSheet.create({
           dark: backgroundTertiaryDarkColor,
           light: colorWhite,
         },
-        elevation: { light: elevationSm, dark: null },
+        elevation: { light: elevationSm, dark: 0 },
         // This is needed because otherwise the elevation shadow at the top is cut off
         marginTop: 2, // eslint-disable-line backpack/use-tokens
       },
