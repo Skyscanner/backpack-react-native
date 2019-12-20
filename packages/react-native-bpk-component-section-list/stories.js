@@ -30,6 +30,8 @@ import BpkSectionList, {
   BpkSectionListItem,
   BpkSectionListItemSeparator,
   BpkSectionListHeader,
+  BpkSectionListSearchField,
+  BpkSectionListNoResultsText,
 } from './index';
 
 const styles = StyleSheet.create({
@@ -87,25 +89,28 @@ class StatefulBpkSectionList extends React.Component<
   {
     extraEntries: number,
     showImages: boolean,
+    includeSearch: boolean,
   },
-  { selectedAirport: string },
+  { selectedAirport: string, data: Array<any> },
 > {
   itemPressCallbacks: { [string]: () => mixed };
 
   static propTypes = {
     extraEntries: PropTypes.number,
     showImages: PropTypes.bool,
+    includeSearch: PropTypes.bool,
   };
 
   static defaultProps = {
     extraEntries: 0,
     showImages: false,
+    includeSearch: false,
   };
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.itemPressCallbacks = {};
-    this.state = { selectedAirport: 'GLA' };
+    this.state = { selectedAirport: 'GLA', data: this.getData() };
   }
 
   getOnItemPressCallback = (id): (() => mixed) => {
@@ -129,6 +134,23 @@ class StatefulBpkSectionList extends React.Component<
     return data;
   };
 
+  filterData = text => {
+    const filteredData = airportCities.filter(city => {
+      const filteredAirports = city.data.filter(airport =>
+        airport.name.toLowerCase().includes(text.toLowerCase()),
+      );
+      if (filteredAirports.length > 0) {
+        return {
+          title: city.title,
+          country: city.country,
+          data: filteredAirports,
+        };
+      }
+      return false;
+    });
+    this.setState({ data: filteredData });
+  };
+
   renderItem = ({ item, section }) => (
     <BpkSectionListItem
       title={item.name}
@@ -148,7 +170,7 @@ class StatefulBpkSectionList extends React.Component<
   render() {
     return (
       <BpkSectionList
-        sections={this.getData()}
+        sections={this.state.data}
         renderItem={this.renderItem}
         renderSectionHeader={({ section: { title } }) => (
           <BpkSectionListHeader title={title} />
@@ -158,6 +180,21 @@ class StatefulBpkSectionList extends React.Component<
         }
         keyExtractor={item => item.id}
         removeClippedSubviews
+        ListHeaderComponent={
+          this.props.includeSearch ? (
+            <BpkSectionListSearchField
+              placeholder="Search airports"
+              onChangeText={this.filterData}
+            />
+          ) : null
+        }
+        ListEmptyComponent={
+          this.props.includeSearch ? (
+            <BpkSectionListNoResultsText>
+              No results
+            </BpkSectionListNoResultsText>
+          ) : null
+        }
       />
     );
   }
@@ -167,6 +204,7 @@ storiesOf('react-native-bpk-component-section-list', module)
   .addDecorator(getStory => <View style={styles.topMargin}>{getStory()}</View>)
   .add('docs:default', () => <StatefulBpkSectionList />)
   .add('docs:with-images', () => <StatefulBpkSectionList showImages />)
+  .add('docs:with-search', () => <StatefulBpkSectionList includeSearch />)
   .add('Perf (Long list)', () => <StatefulBpkSectionList extraEntries={200} />)
   .add('Themed', () => (
     <BpkThemeProvider theme={themeAttributes}>

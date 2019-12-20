@@ -1,0 +1,361 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Android BpkFlatListSearchField dark mode should render correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "marginBottom": 8,
+        "marginHorizontal": 16,
+      },
+      null,
+    ]
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    placeholderTextColor="rgb(143, 144, 160)"
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "backgroundColor": "rgb(44, 44, 46)",
+        "borderRadius": 8,
+        "color": "rgb(255, 255, 255)",
+        "elevation": 0,
+        "flex": 1,
+        "fontSize": 16,
+        "marginTop": 2,
+        "paddingEnd": 8,
+        "paddingStart": 40,
+        "paddingVertical": 8,
+      }
+    }
+    underlineColorAndroid="transparent"
+  />
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Object {
+          "color": "rgb(109, 159, 235)",
+          "elevation": 4,
+          "left": 8,
+          "position": "absolute",
+          "zIndex": 100,
+        },
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
+
+exports[`Android BpkFlatListSearchField dark mode should support arbitrary props 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "marginBottom": 8,
+        "marginHorizontal": 16,
+      },
+      null,
+    ]
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    placeholderTextColor="rgb(143, 144, 160)"
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "backgroundColor": "rgb(44, 44, 46)",
+        "borderRadius": 8,
+        "color": "rgb(255, 255, 255)",
+        "elevation": 0,
+        "flex": 1,
+        "fontSize": 16,
+        "marginTop": 2,
+        "paddingEnd": 8,
+        "paddingStart": 40,
+        "paddingVertical": 8,
+      }
+    }
+    testID="123"
+    underlineColorAndroid="transparent"
+  />
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Object {
+          "color": "rgb(109, 159, 235)",
+          "elevation": 4,
+          "left": 8,
+          "position": "absolute",
+          "zIndex": 100,
+        },
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
+
+exports[`Android BpkFlatListSearchField dark mode should support userland styles 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "marginBottom": 8,
+        "marginHorizontal": 16,
+      },
+      Object {
+        "flexDirection": "row",
+      },
+    ]
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    placeholderTextColor="rgb(143, 144, 160)"
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "backgroundColor": "rgb(44, 44, 46)",
+        "borderRadius": 8,
+        "color": "rgb(255, 255, 255)",
+        "elevation": 0,
+        "flex": 1,
+        "fontSize": 16,
+        "marginTop": 2,
+        "paddingEnd": 8,
+        "paddingStart": 40,
+        "paddingVertical": 8,
+      }
+    }
+    underlineColorAndroid="transparent"
+  />
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Object {
+          "color": "rgb(109, 159, 235)",
+          "elevation": 4,
+          "left": 8,
+          "position": "absolute",
+          "zIndex": 100,
+        },
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
+
+exports[`Android BpkFlatListSearchField light mode should render correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "marginBottom": 8,
+        "marginHorizontal": 16,
+      },
+      null,
+    ]
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    placeholderTextColor="rgb(143, 144, 160)"
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderRadius": 8,
+        "color": "rgb(17, 18, 54)",
+        "elevation": 2,
+        "flex": 1,
+        "fontSize": 16,
+        "marginTop": 2,
+        "paddingEnd": 8,
+        "paddingStart": 40,
+        "paddingVertical": 8,
+      }
+    }
+    underlineColorAndroid="transparent"
+  />
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(17, 18, 54)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Object {
+          "color": "rgb(7, 112, 227)",
+          "elevation": 4,
+          "left": 8,
+          "position": "absolute",
+          "zIndex": 100,
+        },
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
+
+exports[`Android BpkFlatListSearchField light mode should support arbitrary props 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "marginBottom": 8,
+        "marginHorizontal": 16,
+      },
+      null,
+    ]
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    placeholderTextColor="rgb(143, 144, 160)"
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderRadius": 8,
+        "color": "rgb(17, 18, 54)",
+        "elevation": 2,
+        "flex": 1,
+        "fontSize": 16,
+        "marginTop": 2,
+        "paddingEnd": 8,
+        "paddingStart": 40,
+        "paddingVertical": 8,
+      }
+    }
+    testID="123"
+    underlineColorAndroid="transparent"
+  />
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(17, 18, 54)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Object {
+          "color": "rgb(7, 112, 227)",
+          "elevation": 4,
+          "left": 8,
+          "position": "absolute",
+          "zIndex": 100,
+        },
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
+
+exports[`Android BpkFlatListSearchField light mode should support userland styles 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "marginBottom": 8,
+        "marginHorizontal": 16,
+      },
+      Object {
+        "flexDirection": "row",
+      },
+    ]
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    placeholderTextColor="rgb(143, 144, 160)"
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderRadius": 8,
+        "color": "rgb(17, 18, 54)",
+        "elevation": 2,
+        "flex": 1,
+        "fontSize": 16,
+        "marginTop": 2,
+        "paddingEnd": 8,
+        "paddingStart": 40,
+        "paddingVertical": 8,
+      }
+    }
+    underlineColorAndroid="transparent"
+  />
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(17, 18, 54)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Object {
+          "color": "rgb(7, 112, 227)",
+          "elevation": 4,
+          "left": 8,
+          "position": "absolute",
+          "zIndex": 100,
+        },
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;

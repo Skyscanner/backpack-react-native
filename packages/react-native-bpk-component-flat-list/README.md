@@ -14,7 +14,12 @@ npm install react-native-bpk-component-flat-list --save-dev
 ```js
 import React, { Component } from 'react';
 import { Image } from 'react-native';
-import BpkFlatList, { BpkFlatListItem, BpkFlatListItemSeparator } from 'react-native-bpk-component-flat-list';
+import BpkFlatList, {
+  BpkFlatListItem,
+  BpkFlatListItemSeparator,
+  BpkFlatListSearchField,
+  BpkFlatListNoResultsText,
+  } from 'react-native-bpk-component-flat-list';
 
 const COUNTRIES = [
   { id: 'DZ', name: 'Algeria' },
@@ -59,12 +64,25 @@ export default class App extends Component {
     />
   );
 
+  filterItems = text => {
+    // Logic to filter the data based on user input.
+  }
+
   render() {
     return (
       <BpkFlatList
         data={COUNTRIES}
         renderItem={this.renderItem}
         ItemSeparatorComponent={BpkFlatListItemSeparator}
+        ListHeaderComponent={
+          <BpkFlatListSearchField
+            placeholder="Search countries"
+            onChangeText={this.filterItems}
+          />
+        }
+        ListEmptyComponent={
+          <BpkFlatListNoResultsText>No results</BpkFlatListNoResultsText>
+        }
       />
     );
   }
@@ -93,7 +111,23 @@ Inherits all props from React Native's [FlatList](https://facebook.github.io/rea
 
 ### BpkFlatListItemSeparator
 
-None.
+Use this as the value for [`ItemSeparatorComponent`](https://facebook.github.io/react-native/docs/flatlist#itemseparatorcomponent).
+
+No props.
+
+### BpkFlatListSearchField
+
+This can be used as the value for [`ListHeaderComponent`](https://facebook.github.io/react-native/docs/flatlist#listheadercomponent) to allow users to search the list.
+
+It's an instance of React Native's [`TextInput`](https://facebook.github.io/react-native/docs/textinput) component and accepts the same props.
+
+### BpkFlatListNoResultsText
+
+Use this as the value for [`ListEmptyComponent`](https://facebook.github.io/react-native/docs/flatlist#listemptycomponent). It's generally only needed when the list can be searched.
+
+| Property           | PropType                              | Required | Default Value |
+| ------------------ | ------------------------------------- | -------- | ------------- |
+| children           | Node                                  | true     | -             |
 
 ## Theme Props
 

@@ -29,6 +29,8 @@ import themeAttributes from '../../storybook/themeAttributes';
 import BpkFlatList, {
   BpkFlatListItem,
   BpkFlatListItemSeparator,
+  BpkFlatListSearchField,
+  BpkFlatListNoResultsText,
 } from './index';
 
 const styles = StyleSheet.create({
@@ -60,25 +62,28 @@ class StatefulBpkFlatList extends React.Component<
   {
     extraEntries: number,
     showImages: boolean,
+    includeSearch: boolean,
   },
-  { selectedCountry: string },
+  { countries: Array<{ id: string, name: string }>, selectedCountry: string },
 > {
   itemPressCallbacks: { [string]: () => mixed };
 
   static propTypes = {
     extraEntries: PropTypes.number,
     showImages: PropTypes.bool,
+    includeSearch: PropTypes.bool,
   };
 
   static defaultProps = {
     extraEntries: 0,
     showImages: false,
+    includeSearch: false,
   };
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.itemPressCallbacks = {};
-    this.state = { selectedCountry: 'DJ' };
+    this.state = { selectedCountry: 'DJ', countries: this.getData() };
   }
 
   getOnItemPressCallback = (id: string) => {
@@ -98,6 +103,14 @@ class StatefulBpkFlatList extends React.Component<
       );
     }
     return data;
+  };
+
+  filterCountries = text => {
+    const filteredCountries = countries.filter(country =>
+      country.name.toLowerCase().includes(text.toLowerCase()),
+    );
+
+    this.setState({ countries: filteredCountries });
   };
 
   renderItem = ({ item }) => (
@@ -120,13 +133,26 @@ class StatefulBpkFlatList extends React.Component<
   render() {
     return (
       <BpkFlatList
-        data={this.getData()}
+        data={this.state.countries}
         renderItem={this.renderItem}
         ItemSeparatorComponent={
           Platform.OS === 'ios' ? BpkFlatListItemSeparator : null
         }
         keyExtractor={item => item.id}
         extraData={this.state}
+        ListHeaderComponent={
+          this.props.includeSearch ? (
+            <BpkFlatListSearchField
+              placeholder="Search countries"
+              onChangeText={this.filterCountries}
+            />
+          ) : null
+        }
+        ListEmptyComponent={
+          this.props.includeSearch ? (
+            <BpkFlatListNoResultsText>No results</BpkFlatListNoResultsText>
+          ) : null
+        }
       />
     );
   }
@@ -136,6 +162,7 @@ storiesOf('react-native-bpk-component-flat-list', module)
   .addDecorator(getStory => <View style={styles.topMargin}>{getStory()}</View>)
   .add('docs:default', () => <StatefulBpkFlatList />)
   .add('docs:with-images', () => <StatefulBpkFlatList showImages />)
+  .add('docs:with-search', () => <StatefulBpkFlatList includeSearch />)
   .add('Perf (Long list)', () => <StatefulBpkFlatList extraEntries={200} />)
   .add('Themed', () => (
     <BpkThemeProvider theme={themeAttributes}>

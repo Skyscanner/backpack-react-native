@@ -37,6 +37,8 @@ BpkFlatList
 BpkFlatListHeader
 BpkFlatListItem
 BpkFlatListItemSeparator
+BpkFlatListSearchField
+BpkFlatListNoResultsText
 BpkHorizontalNav
 BpkHorizontalNavItem
 BpkIcon
@@ -59,6 +61,8 @@ BpkSectionList
 BpkSectionListHeader
 BpkSectionListItem
 BpkSectionListItemSeparator
+BpkSectionListSearchField
+BpkSectionListNoResultsText
 BpkSelect
 BpkTicket
 # End of component names

@@ -21,6 +21,8 @@
 import {
   BpkFlatListItem as BpkSectionListItem,
   BpkFlatListItemSeparator as BpkSectionListItemSeparator,
+  BpkFlatListSearchField as BpkSectionListSearchField,
+  BpkFlatListNoResultsText as BpkSectionListNoResultsText,
   type FlatListItemProps,
 } from 'react-native-bpk-component-flat-list';
 
@@ -37,4 +39,6 @@ export {
   BpkSectionListItem,
   BpkSectionListHeader,
   BpkSectionListItemSeparator,
+  BpkSectionListSearchField,
+  BpkSectionListNoResultsText,
 };
