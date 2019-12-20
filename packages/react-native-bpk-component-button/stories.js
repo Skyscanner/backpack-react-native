@@ -24,7 +24,7 @@ import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
 import BpkThemeProvider from 'react-native-bpk-theming';
 import { icons } from 'react-native-bpk-component-icon';
-import { spacingMd } from 'bpk-tokens/tokens/base.react.native';
+import { colorAbisko, spacingMd } from 'bpk-tokens/tokens/base.react.native';
 import BpkText from 'react-native-bpk-component-text';
 
 import themeAttributes from '../../storybook/themeAttributes';
@@ -38,6 +38,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'flex-start',
+    padding: spacingMd,
+  },
+  btnContainerDark: {
+    backgroundColor: colorAbisko,
   },
   buttonStyles: {
     marginBottom: spacingMd,
@@ -62,7 +66,12 @@ const generateButtonStoryForType = (
         <StorySubheading>
           {storyAsLabel ? formattedType : ''} Large
         </StorySubheading>
-        <View style={styles.btnContainer}>
+        <View
+          style={[
+            styles.btnContainer,
+            type === BUTTON_TYPES.outline && styles.btnContainerDark,
+          ]}
+        >
           <BpkButton
             large
             type={type}
@@ -113,7 +122,12 @@ const generateButtonStoryForType = (
       <StorySubheading>
         {storyAsLabel ? formattedType : 'Default'}
       </StorySubheading>
-      <View style={styles.btnContainer}>
+      <View
+        style={[
+          styles.btnContainer,
+          type === BUTTON_TYPES.outline && styles.btnContainerDark,
+        ]}
+      >
         <BpkButton
           type={type}
           title="Button"
@@ -186,6 +200,9 @@ storiesOf('react-native-bpk-component-button', module)
   ))
   .add('docs:featured', () => (
     <View>{generateButtonStoryForType('featured')}</View>
+  ))
+  .add('docs:outline', () => (
+    <View>{generateButtonStoryForType('outline')}</View>
   ))
   .add('Themed', () => allThemedButtons)
   .add('Icon alignments', () => (

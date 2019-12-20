@@ -2,6 +2,11 @@
 
 > Place your changes below this line.
 
+**Added:**
+
+- react-native-bpk-component-button:
+  - Added `outline` button type.
+
 
 ## How to write a good changelog entry
 

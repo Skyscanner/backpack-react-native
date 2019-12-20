@@ -53,9 +53,12 @@ const borderedButtonBorderColor = {
 
 function valueOrDefault<T>(
   haystack: ?Theme,
-  needle: string,
+  needle: ?string,
   defaultValue: T,
 ): T {
+  if (!needle) {
+    return defaultValue;
+  }
   return (haystack && haystack[needle]) || defaultValue;
 }
 
@@ -81,6 +84,7 @@ export const backgroundColorForType = (
     [BUTTON_TYPES.featured]: colorSkyBlue,
     [BUTTON_TYPES.secondary]: borderedButtonBackgroundColor,
     [BUTTON_TYPES.destructive]: borderedButtonBackgroundColor,
+    [BUTTON_TYPES.outline]: { dark: 'transparent', light: 'transparent' },
   };
 
   const backgroundColorThemePropsMappedToType = {
@@ -88,6 +92,7 @@ export const backgroundColorForType = (
     [BUTTON_TYPES.featured]: 'buttonFeaturedGradientStartColor',
     [BUTTON_TYPES.secondary]: 'buttonSecondaryBackgroundColor',
     [BUTTON_TYPES.destructive]: 'buttonDestructiveBackgroundColor',
+    [BUTTON_TYPES.outline]: null,
   };
 
   return valueOrDefault(
@@ -144,6 +149,7 @@ export const textColorForType = (
     [BUTTON_TYPES.featured]: colorWhite,
     [BUTTON_TYPES.secondary]: primaryColor,
     [BUTTON_TYPES.destructive]: colorPanjin,
+    [BUTTON_TYPES.outline]: colorWhite,
   };
 
   const textColorThemePropsMappedToType = {
@@ -151,6 +157,7 @@ export const textColorForType = (
     [BUTTON_TYPES.featured]: 'buttonFeaturedTextColor',
     [BUTTON_TYPES.secondary]: 'buttonSecondaryTextColor',
     [BUTTON_TYPES.destructive]: 'buttonDestructiveTextColor',
+    [BUTTON_TYPES.outline]: null,
   };
 
   return valueOrDefault(
@@ -161,7 +168,7 @@ export const textColorForType = (
 };
 
 export const borderColorForType = (
-  type: 'secondary' | 'destructive',
+  type: 'secondary' | 'destructive' | 'outline',
   themeAttributes: ?Theme,
   disabled: boolean,
 ) => {
@@ -172,11 +179,13 @@ export const borderColorForType = (
   const borderColors = {
     [BUTTON_TYPES.secondary]: borderedButtonBorderColor,
     [BUTTON_TYPES.destructive]: borderedButtonBorderColor,
+    [BUTTON_TYPES.outline]: colorWhite,
   };
 
   const borderColorThemePropsMappedToType = {
     [BUTTON_TYPES.secondary]: 'buttonSecondaryBorderColor',
     [BUTTON_TYPES.destructive]: 'buttonDestructiveBorderColor',
+    [BUTTON_TYPES.outline]: null,
   };
 
   return valueOrDefault(

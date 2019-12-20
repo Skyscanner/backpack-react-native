@@ -609,6 +609,184 @@ exports[`Android BpkButton dark mode should render correctly with type="featured
 </View>
 `;
 
+exports[`Android BpkButton dark mode should render correctly with type="outline" 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "overflow": "hidden",
+      },
+      Object {
+        "borderRadius": 4,
+      },
+      null,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    clickable={true}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": -9934465,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderWidth": 2,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 10,
+          "paddingVertical": 6,
+        },
+        Object {
+          "backgroundColor": "transparent",
+          "borderColor": "rgb(255, 255, 255)",
+          "borderRadius": 4,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "lineHeight": 20,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      LOREM IPSUM
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Android BpkButton dark mode should render correctly with type="outline" and disabled 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "overflow": "hidden",
+      },
+      Object {
+        "borderRadius": 4,
+      },
+      null,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={
+      Array [
+        "disabled",
+      ]
+    }
+    accessible={true}
+    clickable={false}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": -9934465,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderWidth": 2,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 10,
+          "paddingVertical": 6,
+        },
+        Object {
+          "backgroundColor": "rgb(44, 44, 46)",
+          "borderColor": "rgb(44, 44, 46)",
+          "borderRadius": 4,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "lineHeight": 20,
+            },
+            Object {
+              "color": "rgb(99, 99, 102)",
+            },
+          ],
+        ]
+      }
+    >
+      LOREM IPSUM
+    </Text>
+  </View>
+</View>
+`;
+
 exports[`Android BpkButton dark mode should render correctly with type="primary" 1`] = `
 <View
   style={
@@ -1545,6 +1723,184 @@ exports[`Android BpkButton light mode should render correctly with type="feature
         },
         Object {
           "backgroundColor": "rgb(221, 221, 229)",
+          "borderRadius": 4,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "lineHeight": 20,
+            },
+            Object {
+              "color": "rgb(178, 178, 191)",
+            },
+          ],
+        ]
+      }
+    >
+      LOREM IPSUM
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Android BpkButton light mode should render correctly with type="outline" 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "overflow": "hidden",
+      },
+      Object {
+        "borderRadius": 4,
+      },
+      null,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    clickable={true}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderWidth": 2,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 10,
+          "paddingVertical": 6,
+        },
+        Object {
+          "backgroundColor": "transparent",
+          "borderColor": "rgb(255, 255, 255)",
+          "borderRadius": 4,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "lineHeight": 20,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      LOREM IPSUM
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Android BpkButton light mode should render correctly with type="outline" and disabled 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "overflow": "hidden",
+      },
+      Object {
+        "borderRadius": 4,
+      },
+      null,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={
+      Array [
+        "disabled",
+      ]
+    }
+    accessible={true}
+    clickable={false}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderWidth": 2,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 10,
+          "paddingVertical": 6,
+        },
+        Object {
+          "backgroundColor": "rgb(221, 221, 229)",
+          "borderColor": "rgb(221, 221, 229)",
           "borderRadius": 4,
         },
         Object {
