@@ -73,7 +73,85 @@ export default class App extends Component {
 }
 ```
 
+### Usage with search
+
+You can combine the dialing code list with [`SectionList`'s search abilities](/components/section-list?platform=native#with-search) to allow users to search the dialing code list.
+
+A default filtering function - `getFilteredDialingCodes` - is available for you to use, or you can perform your own filtering logic.
+
+```js
+import React, { Component } from 'react';
+import { Image } from 'react-native';
+import {
+  BpkDialingCodeList,
+  getFilteredDialingCodes,
+} from 'react-native-bpk-component-phone-input';
+import {
+  BpkSectionListNoResultsText,
+  BpkSectionListSearchField,
+} from 'react-native-bpk-component-section-list';
+
+const CODES = [
+  { id: 'DZ', dialingCode: '+213', name: 'Algeria' },
+  { id: 'CA', dialingCode: '+1', name: 'Canada' },
+  { id: 'CD', dialingCode: '+243', name: 'Democratic Republic of the Congo' },
+  { id: 'IT', dialingCode: '+39', name: 'Italy' },
+  { id: 'JP', dialingCode: '+81', name: 'Japan' },
+  { id: 'SE', dialingCode: '+46', name: 'Sweden' },
+  { id: 'GB', dialingCode: '+44', name: 'United Kingdom' },
+];
+
+const FLAG_IMAGES = {
+  'DZ': '/resources/algeria.png',
+  'CA': '/resources/canada.png',
+  'CD': '/resources/drcongo.png',
+  'IT': '/resources/italy.png',
+  'JP': '/resources/japan.png',
+  'SE': '/resources/sweden.png',
+  'GB': '/resources/uk.png',
+};
+
+const SUGGESTED = {
+  ids: ['IT', 'GB'],  // The IDs must match the ones from dialingCodes
+  title: 'Suggested', // The title shown above the suggested codes
+};
+
+export default class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      codes: CODES,
+    };
+  }
+
+  doSearch = (searchText) => {
+    const codes = getFilteredDialingCodes(searchText, CODES);
+    this.setState({ codes });
+  }
+
+  render() {
+    return (
+      <BpkDialingCodeList
+        dialingCodes={this.state.codes}
+        selectedId="CD"
+        onItemPress={code => console.log(code.id)}
+        renderFlag={code => <Image source={require(FLAG_IMAGES[code.id])} />}
+        suggested={SUGGESTED}
+        ListHeaderComponent={
+          <BpkSectionListSearchField placeholder="Search" onChangeText={this.doSearch} />
+        }
+        ListEmptyComponent={
+          <BpkSectionListNoResultsText>No results</BpkSectionListNoResultsText>
+        }
+      />
+    );
+  }
+}
+```
+
 ### Props
+
+Is an instance of React Native's [SectionList](https://facebook.github.io/react-native/docs/sectionlist.html) component so it accepts the same props, as well as the following:
 
 
 | Property                    | PropType                                                    | Required | Default Value |
