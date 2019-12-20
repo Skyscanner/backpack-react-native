@@ -2,12 +2,6 @@
 
 > Place your changes below this line.
 
-**Added:**
-
-- react-native-bpk-appearance:
-  - Added new component `BpkAppearanceConsumer` to facilitate use in class components.
-- react-native-bpk-component-phone-input:
-  - Added `getFilteredDialingCodes` function for when the dialing code list is paired with `SectionList`'s search functionality.
 
 ## How to write a good changelog entry
 

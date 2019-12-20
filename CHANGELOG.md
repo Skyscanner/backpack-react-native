@@ -2,6 +2,15 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-12-20 - Making appearance easier to use plus making it easier to search dialing code lists
+
+**Added:**
+
+- react-native-bpk-appearance: 1.3.2 => 1.4.0
+  - Added new component `BpkAppearanceConsumer` to facilitate use in class components.
+- react-native-bpk-component-phone-input: 6.0.3 => 6.1.0
+  - Added `getFilteredDialingCodes` function for when the dialing code list is paired with `SectionList`'s search functionality.
+
 # 2019-12-20 - Search for lists
 
 **Added:**
