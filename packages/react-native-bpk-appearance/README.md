@@ -148,7 +148,61 @@ const UserProfile = () => {
 };
 ```
 
-For non-functional components use `withBpkAppearance` HOC and the `unpack*` functions. (See full in API section bellow).
+For non-functional components use `BpkAppearanceConsumer` or `withBpkAppearance` HOC and the `unpack*` functions. (See full in API section bellow).
+
+### BpkAppearanceConsumer usage
+
+```js
+import React, { Component, type Config } from 'react';
+import { View } from 'react-native';
+import BpkText from 'react-native-bpk-component-text';
+import {
+  BpkDynamicStyleSheet,
+  unpackBpkDynamicValue,
+  BpkAppearanceConsumer,
+} from 'react-native-bpk-appearance';
+import {
+  backgroundDarkColor,
+  backgroundLightColor,
+} from 'bpk-tokens/tokens/base.react.native';
+
+const style = BpkDynamicStyleSheet.create({
+  view: {
+    backgroundColor: { light: backgroundLightColor, dark: backgroundDarkColor }
+  }
+});
+
+type Props = {
+  user: Object,
+}
+
+const defaultProps = {
+  user: { guest: true }
+};
+
+class UserProfile extends Component<Props> {
+  render() {
+    const { user } = this.props;
+
+    return (
+      <BpkAppearanceConsumer>
+        {({ bpkAppearance }) => {
+          const currentStyle = unpackBpkDynamicValue(style, bpkAppearance);
+          return (
+            <View style={currentStyle.view}>
+              <BpkText>{user.name}</BpkText>
+            </View>
+          )
+        }}
+      </BpkAppearanceConsumer>
+    );
+  }
+};
+
+export default BpkAppearanceConsumer;
+```
+
+### withBpkAppearance usage
 
 ```js
 import React, { Component, type Config } from 'react';
@@ -213,21 +267,24 @@ export default withBpkAppearance<ComponentConfig>(UserProfile);
 -   [useBpkDynamicStyleSheet](#usebpkdynamicstylesheet)
     -   [Parameters](#parameters-2)
     -   [Examples](#examples-2)
--   [BpkDynamicStyleSheet](#bpkdynamicstylesheet)
--   [create](#create)
+-   [BpkAppearanceConsumer](#bpkappearanceconsumer)
     -   [Parameters](#parameters-3)
     -   [Examples](#examples-3)
--   [withBpkAppearance](#withbpkappearance)
+-   [BpkDynamicStyleSheet](#bpkdynamicstylesheet)
+-   [create](#create)
     -   [Parameters](#parameters-4)
     -   [Examples](#examples-4)
--   [isBpkDynamicValue](#isbpkdynamicvalue)
+-   [withBpkAppearance](#withbpkappearance)
     -   [Parameters](#parameters-5)
--   [unpackBpkDynamicValue](#unpackbpkdynamicvalue)
-    -   [Parameters](#parameters-6)
     -   [Examples](#examples-5)
--   [unpackBpkDynamicStyle](#unpackbpkdynamicstyle)
+-   [isBpkDynamicValue](#isbpkdynamicvalue)
+    -   [Parameters](#parameters-6)
+-   [unpackBpkDynamicValue](#unpackbpkdynamicvalue)
     -   [Parameters](#parameters-7)
     -   [Examples](#examples-6)
+-   [unpackBpkDynamicStyle](#unpackbpkdynamicstyle)
+    -   [Parameters](#parameters-8)
+    -   [Examples](#examples-7)
 
 ### useBpkAppearance
 
@@ -299,6 +356,34 @@ const styles = useBpkDynamicStyleSheet(dynamicStyles);
 ```
 
 Returns **BpkDynamicStyleProp** the current stylesheet
+
+### BpkAppearanceConsumer
+
+-   **See: <https://reactjs.org/docs/render-props.html>**
+
+A render prop component that provides the current BpkAppearance
+as provided by the nearest [BpkAppearanceProvider].
+
+NOTE: This component should mainly be used in class components, for
+functional components we recommend using the provided hooks.
+
+#### Parameters
+
+-   `children` **[Function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** Function that will receive the current appearance and should return a react Node.
+    -   `children.children`  
+
+#### Examples
+
+```javascript
+<BpkAppearanceConsumer>
+  {({ bpkAppearance }) => {
+   const logo = unpackDynamicValue({ light: 'light.png', dark: 'dark.png' }, bpkAppearance);
+   return <BpkImage style={styles.image} alt="image title" source={{uri: logo}} />
+  }}
+</BpkAppearanceConsumer>
+```
+
+Returns **[Node](https://developer.mozilla.org/docs/Web/API/Node/nextSibling)** a react Node.
 
 ### BpkDynamicStyleSheet
 

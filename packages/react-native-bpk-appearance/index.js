@@ -32,6 +32,10 @@ import BpkAppearanceProvider, {
   BpkAppearanceProviderContext,
   type Props as BpkAppearanceProviderProps,
 } from './src/BpkAppearanceProvider';
+import BpkAppearanceConsumer, {
+  type Props as BpkAppearanceConsumerProps,
+  type ChildrenProps as BpkAppearanceConsumerChildrenProps,
+} from './src/BpkAppearanceConsumer';
 import BpkDynamicStyleSheet, {
   type BpkDynamicStyle,
   type BpkDynamicStyleProp,
@@ -57,12 +61,15 @@ export {
   unpackBpkDynamicStyle,
   BpkAppearanceProviderContext,
   BpkAppearanceProvider,
+  BpkAppearanceConsumer,
   BpkDynamicStyleSheet,
   withBpkAppearance,
 };
 export type {
   BpkAppearancePreferences,
   BpkAppearanceProviderProps,
+  BpkAppearanceConsumerProps,
+  BpkAppearanceConsumerChildrenProps,
   BpkDynamicStyle,
   BpkDynamicStyleProp,
   BpkDynamicValue,
