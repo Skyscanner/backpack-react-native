@@ -21,12 +21,12 @@
 import React from 'react';
 import { I18nManager, Platform } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
-import { action } from '@storybook/addon-actions';
 import BpkThemeProvider from 'react-native-bpk-theming';
 import BpkCard from 'react-native-bpk-component-card';
 import BpkText from 'react-native-bpk-component-text';
 import BpkImage from 'react-native-bpk-component-image';
 
+import action from '../../storybook/addons/actions';
 import themeAttributes from '../../storybook/themeAttributes';
 
 import BpkNavigationBar, {

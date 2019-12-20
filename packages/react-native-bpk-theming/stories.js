@@ -18,7 +18,6 @@
 /* @flow */
 
 import React, { Component } from 'react';
-import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react-native';
 import { Text, StyleSheet, View, Picker, Platform } from 'react-native';
 import {
@@ -34,6 +33,7 @@ import {
 // b) it causes cyclic dependencies in lerna
 import BpkButton from '../react-native-bpk-component-button';
 import CenterDecorator from '../../storybook/CenterDecorator';
+import action from '../../storybook/addons/actions';
 
 import BpkThemeProvider, { BpkThemeAttributes } from './index';
 
