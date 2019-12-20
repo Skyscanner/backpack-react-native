@@ -62,6 +62,10 @@ export const LIST_COMMON_PROP_TYPES = {
   onItemPress: PropTypes.func.isRequired,
   renderFlag: PropTypes.func.isRequired,
   selectedId: PropTypes.string,
+  suggested: PropTypes.shape({
+    ids: PropTypes.arrayOf(PropTypes.string),
+    title: PropTypes.string,
+  }),
 };
 
 export const LIST_COMMON_DEFAULT_PROPS = {

@@ -29,6 +29,10 @@ import {
   backgroundColor,
 } from 'bpk-tokens/tokens/base.react.native';
 import { useBpkDynamicValue } from 'react-native-bpk-appearance';
+import {
+  BpkSectionListNoResultsText,
+  BpkSectionListSearchField,
+} from 'react-native-bpk-component-section-list';
 
 import CenterDecorator from '../../storybook/CenterDecorator';
 
@@ -38,7 +42,7 @@ import BpkPhoneNumberInput, {
   propTypes as phoneNumberInputPropTypes,
 } from './src/BpkPhoneNumberInput';
 
-import { BpkDialingCodeList } from './index';
+import { BpkDialingCodeList, getFilteredDialingCodes } from './index';
 
 const styles = StyleSheet.create({
   fullOuter: {
@@ -172,6 +176,7 @@ const FullyIntegrated = (props: FullyIntegratedProps) => {
   const [selectedId, setSelectedId] = useState(props.initiallySelectedId);
   const [pickerOpen, setPickerOpen] = useState(false);
   const [phoneNumber, setPhoneNumber] = useState('');
+  const [dialingCodes, setDialingCodes] = useState(props.codes);
 
   const onPhoneNumberChange = useCallback((value: string) => {
     setPhoneNumber(value);
@@ -198,6 +203,14 @@ const FullyIntegrated = (props: FullyIntegratedProps) => {
     [],
   );
 
+  const onSearch = text => {
+    const filteredDialingCodes: Array<Code> = getFilteredDialingCodes(
+      text,
+      props.codes,
+    );
+    setDialingCodes(filteredDialingCodes);
+  };
+
   const modalBackground = useBpkDynamicValue(backgroundColor);
 
   return (
@@ -209,10 +222,21 @@ const FullyIntegrated = (props: FullyIntegratedProps) => {
       >
         <View style={{ backgroundColor: modalBackground }}>
           <BpkDialingCodeList
-            dialingCodes={props.codes}
+            dialingCodes={dialingCodes}
             onItemPress={onItemPicked}
             renderFlag={renderFlag}
             selectedId={selectedId}
+            ListHeaderComponent={
+              <BpkSectionListSearchField
+                placeholder="Search countries"
+                onChangeText={onSearch}
+              />
+            }
+            ListEmptyComponent={
+              <BpkSectionListNoResultsText>
+                No countries
+              </BpkSectionListNoResultsText>
+            }
           />
         </View>
       </Modal>

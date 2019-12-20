@@ -28,6 +28,7 @@ import BpkSectionList, {
 
 import BpkFlag from './BpkFlag';
 import {
+  type Code,
   type DialingCodeListProps,
   LIST_COMMON_PROP_TYPES,
   LIST_COMMON_DEFAULT_PROPS,
@@ -76,12 +77,21 @@ export type Props = {
   ...$Exact<DialingCodeListProps>,
 };
 
+export const getFilteredDialingCodes = (
+  searchText: string,
+  dialingCodes: Array<Code>,
+): Array<Code> =>
+  dialingCodes.filter(dialingCode =>
+    dialingCode.name.toLowerCase().includes(searchText.toLowerCase()),
+  );
+
 const BpkDialingCodeList = ({
   dialingCodes,
   onItemPress,
   renderFlag,
   selectedId,
   suggested,
+  ...rest
 }: Props) => (
   <BpkSectionList
     sections={convertCodesIntoSections(dialingCodes, suggested)}
@@ -100,6 +110,7 @@ const BpkDialingCodeList = ({
     )}
     keyExtractor={item => item.id}
     ItemSeparatorComponent={BpkSectionListItemSeparator}
+    {...rest}
   />
 );
 

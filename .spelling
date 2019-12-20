@@ -224,6 +224,7 @@ CORNER_STYLES.lg
 DataSource
 dateProps
 decreaseButtonLabel
+dialing
 dialingCode
 dialingCodes
 dialogType
