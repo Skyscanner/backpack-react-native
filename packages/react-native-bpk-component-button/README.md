@@ -101,7 +101,7 @@ export default class App extends Component {
 | iconOnly (iOS only)   | bool                                                                      | false    | false         |
 | large (iOS only)      | bool                                                                      | false    | false         |
 | theme                 | See [Theme Props](#theme-props) below                                     | false    | null          |
-| type                  | oneOf('primary', 'featured', 'secondary', 'destructive')                  | false    | null          |
+| type                  | oneOf('primary', 'featured', 'secondary', 'destructive', 'outline')       | false    | null          |
 
 ## Theme Props
 
@@ -128,7 +128,3 @@ export default class App extends Component {
 * `buttonDestructiveTextColor`
 * `buttonDestructiveBackgroundColor`
 * `buttonDestructiveBorderColor`
-
-### All button types
-
-* `buttonBorderRadius` (Optional, doesn't apply when `iconOnly={true}`)

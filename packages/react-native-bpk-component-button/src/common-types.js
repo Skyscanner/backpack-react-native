@@ -48,6 +48,7 @@ export const REQUIRED_THEME_ATTRIBUTES = {
     'buttonFeaturedGradientStartColor',
     'buttonFeaturedGradientEndColor',
   ],
+  outline: [],
 };
 
 export const BUTTON_TYPES = {

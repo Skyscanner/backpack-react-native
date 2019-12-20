@@ -474,7 +474,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="outline" 1`]
         },
         null,
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "transparent",
           "borderColor": "rgb(255, 255, 255)",
           "borderRadius": 4,
         },
@@ -1639,7 +1639,7 @@ exports[`iOS BpkButton light mode should render correctly with type="outline" 1`
         },
         null,
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "transparent",
           "borderColor": "rgb(255, 255, 255)",
           "borderRadius": 4,
         },

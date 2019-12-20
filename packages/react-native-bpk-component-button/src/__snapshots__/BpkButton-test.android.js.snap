@@ -655,7 +655,7 @@ exports[`Android BpkButton dark mode should render correctly with type="outline"
           "paddingVertical": 6,
         },
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "transparent",
           "borderColor": "rgb(255, 255, 255)",
           "borderRadius": 4,
         },
@@ -1808,7 +1808,7 @@ exports[`Android BpkButton light mode should render correctly with type="outline
           "paddingVertical": 6,
         },
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "transparent",
           "borderColor": "rgb(255, 255, 255)",
           "borderRadius": 4,
         },
