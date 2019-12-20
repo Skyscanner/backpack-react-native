@@ -10,6 +10,7 @@
 
 # Component names
 BpkAppearance
+BpkAppearanceConsumer
 BpkAppearanceProvider
 BpkAutosuggest
 BpkBarChart
