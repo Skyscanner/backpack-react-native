@@ -2,6 +2,14 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-12-20 - Search for lists
+
+**Added:**
+- react-native-bpk-component-flat-list: 5.2.3 => 5.3.0
+  - New `BpkFlatListSearchField` and `BpkFlatListNoResultsText` components to allow users to search lists.
+- react-native-bpk-component-section-list: 5.2.3 => 5.3.0
+  - New `BpkSectionListSearchField` and `BpkSectionListNoResultsText` components to allow users to search lists.
+
 # 2019-12-17 - Added colouring support to Android calendar
 
 **Added:**
@@ -24,7 +32,7 @@
 
 - react-native-bpk-theming: 1.4.10 => 1.4.11
   - Components that can be themed will now only throw a prop type error when a theme is partially applied. Previously, a prop type error would appear if a component was placed inside a `BpkThemeProvider` but no relevant theming props were given to it. This change enables the use of themed components alongside non-themed ones without seeing warnings.
-  
+
 **Added:**
 
 - react-native-bpk-component-calendar: 4.0.19 => 4.1.0

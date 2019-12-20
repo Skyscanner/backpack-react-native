@@ -2,13 +2,6 @@
 
 > Place your changes below this line.
 
-**Added:**
-
-- react-native-bpk-component-flat-list:
-  - New `BpkFlatListSearchField` and `BpkFlatListNoResultsText` components to allow users to search lists.
-- react-native-bpk-component-section-list:
-  - New `BpkSectionListSearchField` and `BpkSectionListNoResultsText` components to allow users to search lists.
-
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
