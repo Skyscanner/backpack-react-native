@@ -55,6 +55,7 @@ export const BUTTON_TYPES = {
   secondary: 'secondary',
   destructive: 'destructive',
   featured: 'featured',
+  outline: 'outline',
 };
 
 export const ICON_ALIGNMENTS = {

@@ -144,6 +144,7 @@ export const textColorForType = (
     [BUTTON_TYPES.featured]: colorWhite,
     [BUTTON_TYPES.secondary]: primaryColor,
     [BUTTON_TYPES.destructive]: colorPanjin,
+    [BUTTON_TYPES.outline]: colorWhite,
   };
 
   const textColorThemePropsMappedToType = {
@@ -161,7 +162,7 @@ export const textColorForType = (
 };
 
 export const borderColorForType = (
-  type: 'secondary' | 'destructive',
+  type: 'secondary' | 'destructive' | 'outline',
   themeAttributes: ?Theme,
   disabled: boolean,
 ) => {
@@ -172,6 +173,7 @@ export const borderColorForType = (
   const borderColors = {
     [BUTTON_TYPES.secondary]: borderedButtonBorderColor,
     [BUTTON_TYPES.destructive]: borderedButtonBorderColor,
+    [BUTTON_TYPES.outline]: colorWhite,
   };
 
   const borderColorThemePropsMappedToType = {
