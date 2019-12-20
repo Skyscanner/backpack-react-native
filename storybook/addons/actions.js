@@ -64,7 +64,7 @@ const { action } = decorate([
  * Creates an action that can handle cyclic object structures as StoryBook is not able to handle
  * this currently.
  *
- * Note that this might end up removing some props from the ation object so don't relly 100% on
+ * Note that this might end up removing some props from the action object so don't rely 100% on
  * this output if you are looking for all possible props of an event.
  *
  * @returns {Function} action creator
