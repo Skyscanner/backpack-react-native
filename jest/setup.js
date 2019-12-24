@@ -18,11 +18,13 @@
 
 /* @flow */
 
-import { NativeModules } from 'react-native';
+import ReactNative from 'react-native';
 
-NativeModules.RNDarkMode = {
-  initialMode: 'light',
-  supportsDarkMode: true,
-  addListener: jest.fn(),
-  removeListeners: jest.fn(),
-};
+if (ReactNative) {
+  ReactNative.NativeModules.RNDarkMode = {
+    initialMode: 'light',
+    supportsDarkMode: true,
+    addListener: jest.fn(),
+    removeListeners: jest.fn(),
+  };
+}
