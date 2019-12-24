@@ -26,10 +26,11 @@ const testRegex =
 
 module.exports = {
   preset: 'react-native',
-  // haste: {
-  //   defaultPlatform,
-  //   platforms: ['android', 'ios', 'native'],
-  // },
+  haste: {
+    defaultPlatform,
+    platforms: ['android', 'ios', 'native'],
+  },
+  setupFiles: ['./node_modules/react-native/jest/setup.js'],
   verbose: true,
   testRegex,
   testMatch: null,
