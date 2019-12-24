@@ -23,14 +23,20 @@
     "clean": "npm run clean:lerna && npm run clean:node_modules",
     "lint:fix": "eslint . --ext .js,.jsx --fix",
     "lint": "eslint . --ext .js,.jsx",
-    "jest:update": "jest --updateSnapshot",
-    "jest:watch": "jest --watch",
+    "jest": "npm run jest:ios && npm run jest:android",
+    "jest:update": "npm run jest:ios:update && npm run jest:android:update",
+    "jest:ios": "jest --coverage",
+    "jest:ios:update": "jest --updateSnapshot",
+    "jest:ios:watch": "jest --watch",
+    "jest:android": "PLATFORM=android jest --coverage",
+    "jest:android:update": "PLATFORM=android jest --updateSnapshot",
+    "jest:android:watch": "PLATFORM=android jest --watch",
     "flow": "flow",
     "flow-check-ios": "flow check",
     "flow-check-android": "flow check --flowconfig-name .flowconfig.android",
     "check-bpk-dependencies": "node scripts/npm/check-bpk-dependencies.js",
     "fix-bpk-dependencies": "node scripts/npm/check-bpk-dependencies.js --fix",
-    "test": "npm run lint && npm run check-bpk-dependencies && jest --coverage && npm run flow-check-ios && npm run flow-check-android && npm run spellcheck",
+    "test": "npm run lint && npm run check-bpk-dependencies && npm run jest && npm run flow-check-ios && npm run flow-check-android && npm run spellcheck",
     "check-owners": "npm whoami && ( node scripts/npm/get-owners.js | grep -E $(npm whoami) ) && node scripts/npm/check-owners.js",
     "check-maven-auth": "(cd android && ./gradlew :react-native-bpk-component-calendar:checkMavenCredentials)",
     "publish": "npm run check-maven-auth && npm run check-owners && git pull --rebase && npm run flow stop && npm test && npm run publish:prepare && lerna publish && npm run publish:bridges",
@@ -50,29 +56,6 @@
     "spellcheck:interactive": "mdspell --en-gb --ignore-acronyms --ignore-numbers '*.md' '**/*.md' '!**/node_modules/**/*.md' '!ios/Pods/**/*.md'",
     "start": "react-native start",
     "documentation": "node ./scripts/npm/documentation.js"
-  },
-  "jest": {
-    "preset": "react-native",
-    "verbose": true,
-    "testRegex": ".*-test(\\.ios)?(\\.android)?\\.js$",
-    "testMatch": null,
-    "transformIgnorePatterns": [
-      "node_modules/(?!react-native|bpk|@skyscanner|lodash-es)"
-    ],
-    "transform": {
-      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
-    },
-    "coverageThreshold": {
-      "global": {
-        "statements": 75,
-        "branches": 70,
-        "functions": 75,
-        "lines": 75
-      }
-    },
-    "setupFilesAfterEnv": [
-      "<rootDir>/jest/setup.js"
-    ]
   },
   "husky": {
     "hooks": {
