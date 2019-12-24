@@ -20,11 +20,11 @@
 
 import ReactNative from 'react-native';
 
-if (ReactNative.NativeModules) {
+try {
   ReactNative.NativeModules.RNDarkMode = {
     initialMode: 'light',
     supportsDarkMode: true,
     addListener: jest.fn(),
     removeListeners: jest.fn(),
   };
-}
+} catch (_e) {} // eslint-disable-line
