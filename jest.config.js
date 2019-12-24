@@ -26,10 +26,10 @@ const testRegex =
 
 module.exports = {
   preset: 'react-native',
-  haste: {
-    defaultPlatform,
-    platforms: ['android', 'ios', 'native'],
-  },
+  // haste: {
+  //   defaultPlatform,
+  //   platforms: ['android', 'ios', 'native'],
+  // },
   verbose: true,
   testRegex,
   testMatch: null,
