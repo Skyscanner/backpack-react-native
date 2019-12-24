@@ -20,7 +20,7 @@
 
 import ReactNative from 'react-native';
 
-if (ReactNative) {
+if (ReactNative.NativeModules) {
   ReactNative.NativeModules.RNDarkMode = {
     initialMode: 'light',
     supportsDarkMode: true,
