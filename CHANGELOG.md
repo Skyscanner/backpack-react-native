@@ -2,6 +2,22 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-12-28
+
+- react-native-bpk-component-calendar: 4.2.0 => 4.2.1
+  - Updated `backpack-ios` dependency to `25.0`.
+
+- react-native-bpk-component-dialog: 4.0.18 => 4.0.19
+  - Updated `backpack-ios` dependency to `25.0`.
+
+- react-native-bpk-component-rating: 0.0.11 => 0.0.12
+  - Updated `backpack-ios` dependency to `25.0`.
+
+**Added:**
+
+ - react-native-bpk-component-button: 11.1.9 => 11.2.0
+  - Added `outline` button type.
+
 # 2019-12-20 - Making appearance easier to use plus making it easier to search dialing code lists
 
 **Added:**
