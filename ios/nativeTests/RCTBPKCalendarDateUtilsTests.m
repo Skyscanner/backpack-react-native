@@ -3,7 +3,7 @@
 //  Backpack Native Tests
 //
 //  Created by Hugo Tunius on 29/01/2019.
-//  Copyright © 2019 Facebook. All rights reserved.
+//  Copyright 2016-2020 Skyscanner Ltd
 //
 
 #import <XCTest/XCTest.h>
