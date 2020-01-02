@@ -15,9 +15,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-import '@storybook/addon-ondevice-actions/register';
+import '@storybook/addon-actions/register';
+import './addons/rtl';
 import './addons/dark-mode';
-
-// FIXME: This addom is not working
-// import './addons/rtl';

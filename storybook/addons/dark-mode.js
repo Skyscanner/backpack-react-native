@@ -20,27 +20,57 @@
 
 import React from 'react';
 import addons from '@storybook/addons';
+import { AddonPanel } from '@storybook/components';
 
-import BpkAppearance, {
-  useBpkColorScheme,
-  BpkAppearanceProvider,
-} from '../../packages/react-native-bpk-appearance';
-import BpkSwitch from '../../packages/react-native-bpk-component-switch';
-
-import AddonPanel from './AddonPanel';
+import { DM_INIT, DM_EVENT } from '../constants';
 
 export const ID = 'dark-mode';
 export const PANEL_ID = `${ID}/panel`;
 
-const DarkModePanel = () => {
-  const colorScheme = useBpkColorScheme();
-  const onValueChange = value => {
-    BpkAppearance.set({ colorScheme: value ? 'dark' : 'light' });
+class DarkModePanel extends React.Component<
+  {},
+  { colorScheme: 'light' | 'dark' },
+> {
+  constructor(props) {
+    super(props);
+    this.state = { colorScheme: 'light' };
+  }
+
+  componentDidMount() {
+    const channel = addons.getChannel();
+    channel.on(DM_INIT, this.initDM);
+  }
+
+  initDM = colorScheme => {
+    this.setState({ colorScheme });
   };
-  return (
-    <BpkSwitch value={colorScheme === 'dark'} onValueChange={onValueChange} />
-  );
-};
+
+  toggleDM = () => {
+    this.setState(prevState => {
+      const colorScheme = prevState.colorScheme === 'light' ? 'dark' : 'light';
+      const channel = addons.getChannel();
+      channel.emit(DM_EVENT, colorScheme);
+      return { colorScheme };
+    });
+  };
+
+  render() {
+    return (
+      <div style={{ padding: '10px' }}>
+        <button type="button" onClick={this.toggleDM}>
+          Toogle Dark mode
+        </button>
+        <p>
+          Dark mode is{' '}
+          <strong>
+            {this.state.colorScheme === 'dark' ? 'enabled' : 'disabled'}
+          </strong>
+          .
+        </p>
+      </div>
+    );
+  }
+}
 
 type RenderProps = {
   active: boolean,
@@ -51,9 +81,7 @@ type RenderProps = {
 addons.register(ID, () => {
   const render = ({ active, key }: RenderProps) => (
     <AddonPanel active={active} key={key}>
-      <BpkAppearanceProvider>
-        <DarkModePanel />
-      </BpkAppearanceProvider>
+      <DarkModePanel />
     </AddonPanel>
   );
   // Also need to set a unique name to the panel.

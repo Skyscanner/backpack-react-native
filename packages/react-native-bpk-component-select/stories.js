@@ -21,9 +21,9 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
-import { action } from '@storybook/addon-actions';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
 
+import action from '../../storybook/addons/actions';
 import CenterDecorator from '../../storybook/CenterDecorator';
 import { StorySubheading } from '../../storybook/TextStyles';
 

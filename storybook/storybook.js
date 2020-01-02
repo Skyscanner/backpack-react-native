@@ -18,26 +18,23 @@
 
 /* @flow */
 import React, { type Node } from 'react';
-import './rn-addons';
 import addon from '@storybook/addons';
 import { I18nManager, YellowBox, View } from 'react-native';
 import { getStorybookUI, configure } from '@storybook/react-native';
-// TODO: Update to semantic colour when available
-import {
-  backgroundDarkColor,
-  backgroundLightColor,
-} from 'bpk-tokens/tokens/base.react.native';
+import { backgroundColor } from 'bpk-tokens/tokens/base.react.native';
 
-import {
+import BpkAppearance, {
   BpkAppearanceProvider,
   useBpkDynamicValue,
 } from '../packages/react-native-bpk-appearance';
 
-import { RTL_EVENT, CHANNEL_POLL_INTERVAL } from './constants';
-
-const toggleRTL = rtlEnabled => {
-  I18nManager.forceRTL(!rtlEnabled);
-};
+import {
+  RTL_EVENT,
+  CHANNEL_POLL_INTERVAL,
+  RTL_INIT,
+  DM_EVENT,
+  DM_INIT,
+} from './constants';
 
 const onChannelAvailable = (...fns) => {
   const interval = setInterval(() => {
@@ -53,8 +50,14 @@ const onChannelAvailable = (...fns) => {
   }, CHANNEL_POLL_INTERVAL);
 };
 
-const enableRtlFromUi = channel => {
-  channel.on(RTL_EVENT, toggleRTL);
+const initRtlAddon = channel => {
+  channel.emit(RTL_INIT, I18nManager.isRTL);
+  channel.on(RTL_EVENT, rtlEnabled => I18nManager.forceRTL(rtlEnabled));
+};
+
+const initDarkModeAddon = channel => {
+  channel.emit(DM_INIT, BpkAppearance.get().colorScheme || 'light');
+  channel.on(DM_EVENT, colorScheme => BpkAppearance.set({ colorScheme }));
 };
 
 const hideWarnings = () => {
@@ -104,27 +107,20 @@ configure(() => {
 }, module);
 /* eslint-enable global-require */
 
-const StorybookUI = getStorybookUI({ onDeviceUI: true });
+const StorybookUI = getStorybookUI({ onDeviceUI: false });
 
-onChannelAvailable(enableRtlFromUi, hideWarnings);
+onChannelAvailable(hideWarnings, initRtlAddon, initDarkModeAddon);
 
-const BackgroundWrapper = ({ children }: { children: Node }) => {
-  const backgroundColor = useBpkDynamicValue({
-    light: backgroundLightColor,
-    dark: backgroundDarkColor,
-  });
-
-  return (
-    <View
-      style={{
-        backgroundColor,
-        flex: 1,
-      }}
-    >
-      {children}
-    </View>
-  );
-};
+const BackgroundWrapper = ({ children }: { children: Node }) => (
+  <View
+    style={{
+      backgroundColor: useBpkDynamicValue(backgroundColor),
+      flex: 1,
+    }}
+  >
+    {children}
+  </View>
+);
 
 export default (props: Object) => (
   <BpkAppearanceProvider>

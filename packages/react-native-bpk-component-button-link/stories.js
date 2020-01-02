@@ -20,11 +20,11 @@
 
 import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react-native';
-import { action } from '@storybook/addon-actions';
 import BpkThemeProvider from 'react-native-bpk-theming';
 import { View, Platform, StyleSheet } from 'react-native';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
 
+import action from '../../storybook/addons/actions';
 import { StorySubheading } from '../../storybook/TextStyles';
 import themeAttributes from '../../storybook/themeAttributes';
 import CenterDecorator from '../../storybook/CenterDecorator';

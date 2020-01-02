@@ -142,10 +142,9 @@ For members of Backpack we have a keystore tied to our Google Maps API key in La
 
 We use [Storybook](https://storybook.js.org/) for our development environment.
 
-1. Run `npm start` to start the storybook server.
-2. Open another terminal tab/window.
-3. Run `npm run ios` to run the Backpack app on an iPhone simulator.
-4. Run `npm run android` to run the Backpack app on an Android emulator.
+1. Run `npm run storybook` to start the Storybook server and go to [localhost:7007](http://localhost:7007).
+1. In another terminal tab/window, run `npm start` to start the React Native server.
+1. In a third terminal tab/window, run `npm run ios` and `npm run android` to run the Backpack app on an iPhone simulator and Android emulator.
 
 At this point, you should have a functioning development environment running on your local machine.
 

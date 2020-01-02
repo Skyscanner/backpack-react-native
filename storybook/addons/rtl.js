@@ -17,9 +17,9 @@
  */
 import React from 'react';
 import addons from '@storybook/addons';
+import { AddonPanel } from '@storybook/components';
 
-import BpkButton from '../../packages/react-native-bpk-component-button';
-import { RTL_EVENT } from '../constants';
+import { RTL_EVENT, RTL_INIT } from '../constants';
 
 class Panel extends React.Component {
   constructor(props) {
@@ -29,20 +29,36 @@ class Panel extends React.Component {
     };
   }
 
-  toggleRtl = () => {
-    this.setState(prevState => ({
-      rtlEnabled: !prevState.rtlEnabled,
-    }));
+  componentDidMount() {
     const channel = addons.getChannel();
-    channel.emit(RTL_EVENT, this.state.rtlEnabled);
+    channel.on(RTL_INIT, this.initRtl);
+  }
+
+  initRtl = rtlEnabled => {
+    this.setState({ rtlEnabled });
+  };
+
+  toggleRtl = () => {
+    this.setState(prevState => {
+      const rtlEnabled = !prevState.rtlEnabled;
+      const channel = addons.getChannel();
+      channel.emit(RTL_EVENT, rtlEnabled);
+      return { rtlEnabled };
+    });
   };
 
   render() {
     return (
-      <BpkButton
-        title={`${this.state.rtlEnabled ? 'Disable' : 'Enable'} RTL`}
-        onPress={this.toggleRtl}
-      />
+      <div style={{ padding: '10px' }}>
+        <button type="button" onClick={this.toggleRtl}>
+          Toogle RTL
+        </button>
+        <p>
+          RTL is{' '}
+          <strong>{this.state.rtlEnabled ? 'enabled' : 'disabled'}</strong>.
+        </p>
+        <p>Reload the app to apply changes.</p>
+      </div>
     );
   }
 }
@@ -52,6 +68,12 @@ addons.register('rtl-toggle', api => {
   // Also need to set a unique name to the panel.
   addons.addPanel('rtl-toggle/panel', {
     title: 'RTL',
-    render: () => <Panel channel={addons.getChannel()} api={api} />,
+    render: (
+      { active, key }, // eslint-disable-line
+    ) => (
+      <AddonPanel active={active} key={key}>
+        <Panel channel={addons.getChannel()} api={api} />
+      </AddonPanel>
+    ),
   });
 });

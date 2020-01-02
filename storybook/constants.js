@@ -17,4 +17,7 @@
  */
 
 export const RTL_EVENT = 'rtl-toggle';
+export const RTL_INIT = 'rtl-init';
+export const DM_EVENT = 'dark-mode-toggle';
+export const DM_INIT = 'dark-mode-init';
 export const CHANNEL_POLL_INTERVAL = 500;

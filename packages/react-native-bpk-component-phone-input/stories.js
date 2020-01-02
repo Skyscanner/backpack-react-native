@@ -22,7 +22,6 @@ import React, { Component, useState, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import { Image, Modal, StyleSheet, View } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
-import { action } from '@storybook/addon-actions';
 import {
   spacingBase,
   spacingLg,
@@ -34,6 +33,7 @@ import {
   BpkSectionListSearchField,
 } from 'react-native-bpk-component-section-list';
 
+import action from '../../storybook/addons/actions';
 import CenterDecorator from '../../storybook/CenterDecorator';
 
 import { type Id, type Code } from './src/common-types';

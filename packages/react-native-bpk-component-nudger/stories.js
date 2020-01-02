@@ -21,10 +21,10 @@
 import React, { Component } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
-import { action } from '@storybook/addon-actions';
 import BpkThemeProvider from 'react-native-bpk-theming';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
 
+import action from '../../storybook/addons/actions';
 import CenterDecorator from '../../storybook/CenterDecorator';
 import themeAttributes from '../../storybook/themeAttributes';
 import { StorySubheading } from '../../storybook/TextStyles';

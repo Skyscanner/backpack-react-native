@@ -21,7 +21,6 @@
 import { View, Platform, ScrollView, StyleSheet } from 'react-native';
 import React from 'react';
 import { storiesOf } from '@storybook/react-native';
-import { action } from '@storybook/addon-actions';
 import BpkThemeProvider from 'react-native-bpk-theming';
 import { icons } from 'react-native-bpk-component-icon';
 import { colorAbisko, spacingMd } from 'bpk-tokens/tokens/base.react.native';
@@ -30,6 +29,7 @@ import BpkText from 'react-native-bpk-component-text';
 import themeAttributes from '../../storybook/themeAttributes';
 import { StoryHeading, StorySubheading } from '../../storybook/TextStyles';
 import CenterDecorator from '../../storybook/CenterDecorator';
+import action from '../../storybook/addons/actions';
 
 import BpkButton, { BUTTON_TYPES, ICON_ALIGNMENTS } from './index';
 

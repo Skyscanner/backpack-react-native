@@ -21,7 +21,6 @@
 import React, { Fragment } from 'react';
 import { StyleSheet, View, ScrollView } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
-import { action } from '@storybook/addon-actions';
 import BpkText from 'react-native-bpk-component-text';
 import {
   spacingBase,
@@ -30,6 +29,7 @@ import {
 } from 'bpk-tokens/tokens/base.react.native';
 import BpkThemeProvider from 'react-native-bpk-theming';
 
+import action from '../../storybook/addons/actions';
 import CenterDecorator from '../../storybook/CenterDecorator';
 import themeAttributes from '../../storybook/themeAttributes';
 import { StoryHeading } from '../../storybook/TextStyles';
