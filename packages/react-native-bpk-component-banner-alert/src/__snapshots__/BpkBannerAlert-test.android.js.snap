@@ -300,27 +300,39 @@ exports[`Android BpkBannerAlert dark mode should render correctly with dismissab
           </Text>
         </View>
         <View
-          accessibilityLabel="Dismiss"
-          accessibilityRole="button"
-          accessibilityStates={Array []}
-          accessible={true}
-          clickable={true}
-          isTVSelectable={true}
-          onClick={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
-            Object {
-              "marginStart": 8,
-              "opacity": 1,
-            }
+            Array [
+              Object {
+                "borderRadius": 0,
+                "overflow": "hidden",
+              },
+              Object {
+                "marginStart": 8,
+              },
+            ]
           }
         >
           <View
+            accessibilityLabel="Dismiss"
+            accessibilityRole="button"
+            accessibilityStates={Array []}
+            accessible={true}
+            clickable={true}
+            isTVSelectable={true}
+            nativeBackgroundAndroid={
+              Object {
+                "borderless": true,
+                "color": -9934465,
+                "type": "RippleAndroid",
+              }
+            }
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
             style={
               Array [
                 Object {
@@ -355,7 +367,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with dismissab
                 ]
               }
             >
-              Dismiss
+              DISMISS
             </Text>
           </View>
         </View>
@@ -448,27 +460,39 @@ exports[`Android BpkBannerAlert dark mode should render correctly with dismissab
           </Text>
         </View>
         <View
-          accessibilityLabel="Dismiss"
-          accessibilityRole="button"
-          accessibilityStates={Array []}
-          accessible={true}
-          clickable={true}
-          isTVSelectable={true}
-          onClick={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
-            Object {
-              "marginStart": 8,
-              "opacity": 1,
-            }
+            Array [
+              Object {
+                "borderRadius": 0,
+                "overflow": "hidden",
+              },
+              Object {
+                "marginStart": 8,
+              },
+            ]
           }
         >
           <View
+            accessibilityLabel="Dismiss"
+            accessibilityRole="button"
+            accessibilityStates={Array []}
+            accessible={true}
+            clickable={true}
+            isTVSelectable={true}
+            nativeBackgroundAndroid={
+              Object {
+                "borderless": true,
+                "color": -9934465,
+                "type": "RippleAndroid",
+              }
+            }
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
             style={
               Array [
                 Object {
@@ -503,7 +527,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with dismissab
                 ]
               }
             >
-              Dismiss
+              DISMISS
             </Text>
           </View>
         </View>
@@ -1597,27 +1621,39 @@ exports[`Android BpkBannerAlert light mode should render correctly with dismissa
           </Text>
         </View>
         <View
-          accessibilityLabel="Dismiss"
-          accessibilityRole="button"
-          accessibilityStates={Array []}
-          accessible={true}
-          clickable={true}
-          isTVSelectable={true}
-          onClick={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
-            Object {
-              "marginStart": 8,
-              "opacity": 1,
-            }
+            Array [
+              Object {
+                "borderRadius": 0,
+                "overflow": "hidden",
+              },
+              Object {
+                "marginStart": 8,
+              },
+            ]
           }
         >
           <View
+            accessibilityLabel="Dismiss"
+            accessibilityRole="button"
+            accessibilityStates={Array []}
+            accessible={true}
+            clickable={true}
+            isTVSelectable={true}
+            nativeBackgroundAndroid={
+              Object {
+                "borderless": true,
+                "color": null,
+                "type": "RippleAndroid",
+              }
+            }
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
             style={
               Array [
                 Object {
@@ -1652,7 +1688,7 @@ exports[`Android BpkBannerAlert light mode should render correctly with dismissa
                 ]
               }
             >
-              Dismiss
+              DISMISS
             </Text>
           </View>
         </View>
@@ -1745,27 +1781,39 @@ exports[`Android BpkBannerAlert light mode should render correctly with dismissa
           </Text>
         </View>
         <View
-          accessibilityLabel="Dismiss"
-          accessibilityRole="button"
-          accessibilityStates={Array []}
-          accessible={true}
-          clickable={true}
-          isTVSelectable={true}
-          onClick={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
-            Object {
-              "marginStart": 8,
-              "opacity": 1,
-            }
+            Array [
+              Object {
+                "borderRadius": 0,
+                "overflow": "hidden",
+              },
+              Object {
+                "marginStart": 8,
+              },
+            ]
           }
         >
           <View
+            accessibilityLabel="Dismiss"
+            accessibilityRole="button"
+            accessibilityStates={Array []}
+            accessible={true}
+            clickable={true}
+            isTVSelectable={true}
+            nativeBackgroundAndroid={
+              Object {
+                "borderless": true,
+                "color": null,
+                "type": "RippleAndroid",
+              }
+            }
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
             style={
               Array [
                 Object {
@@ -1800,7 +1848,7 @@ exports[`Android BpkBannerAlert light mode should render correctly with dismissa
                 ]
               }
             >
-              Dismiss
+              DISMISS
             </Text>
           </View>
         </View>
