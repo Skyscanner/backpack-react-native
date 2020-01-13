@@ -5,7 +5,7 @@
     "defaultPlatform": "android",
     "platforms": ["android", "ios", "native"]
   },
-  "testRegex": ".*-test(\\.android)?\\.js$",
+  "testRegex": ".*-test\\.android\\.js$",
   "testMatch": null,
   "transformIgnorePatterns": [
     "node_modules/(?!react-native|bpk|@skyscanner|lodash-es)"

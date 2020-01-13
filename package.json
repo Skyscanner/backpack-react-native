@@ -23,7 +23,7 @@
     "clean": "npm run clean:lerna && npm run clean:node_modules",
     "lint:fix": "eslint . --ext .js,.jsx --fix",
     "lint": "eslint . --ext .js,.jsx",
-    "jest": "npm run jest:ios && npm run jest:android",
+    "jest": "npm run jest:android && npm run jest:ios",
     "jest:update": "npm run jest:ios:update && npm run jest:android:update",
     "jest:ios": "jest --coverage --config=jest.ios.config.json",
     "jest:ios:update": "jest --updateSnapshot --config=jest.ios.config.json",
