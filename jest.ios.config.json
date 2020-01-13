@@ -1,0 +1,23 @@
+{
+  "preset": "react-native",
+  "verbose": true,
+  "testRegex": ".*-test(\\.ios)?\\.js$",
+  "testMatch": null,
+  "transformIgnorePatterns": [
+    "node_modules/(?!react-native|bpk|@skyscanner|lodash-es)"
+  ],
+  "transform": {
+    "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
+  },
+  "coverageThreshold": {
+    "global": {
+      "statements": 75,
+      "branches": 70,
+      "functions": 75,
+      "lines": 75
+    }
+  },
+  "setupFilesAfterEnv": [
+    "<rootDir>/jest/setup.js"
+  ]
+}
