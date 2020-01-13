@@ -1,10 +1,6 @@
 {
   "preset": "react-native",
   "verbose": true,
-  "haste": {
-    "defaultPlatform": "ios",
-    "platforms": ["android", "ios", "native"]
-  },
   "testRegex": ".*-test\\.android\\.js$",
   "testMatch": null,
   "transformIgnorePatterns": [
