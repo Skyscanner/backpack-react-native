@@ -60,10 +60,10 @@ exports[`Android withDivider should render correctly 1`] = `
           Array [
             Object {
               "color": "rgb(17, 18, 54)",
-              "fontFamily": "System",
+              "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",
-              "letterSpacing": 0.12,
+              "letterSpacing": -0.2,
             },
             Object {},
           ]
@@ -103,10 +103,10 @@ exports[`Android withDivider should render correctly 1`] = `
           Array [
             Object {
               "color": "rgb(17, 18, 54)",
-              "fontFamily": "System",
+              "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",
-              "letterSpacing": 0.12,
+              "letterSpacing": -0.2,
             },
             Object {},
           ]
@@ -182,10 +182,10 @@ exports[`Android withDivider should render correctly with "cornerStyle=large" 1`
           Array [
             Object {
               "color": "rgb(17, 18, 54)",
-              "fontFamily": "System",
+              "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",
-              "letterSpacing": 0.12,
+              "letterSpacing": -0.2,
             },
             Object {},
           ]
@@ -225,10 +225,10 @@ exports[`Android withDivider should render correctly with "cornerStyle=large" 1`
           Array [
             Object {
               "color": "rgb(17, 18, 54)",
-              "fontFamily": "System",
+              "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",
-              "letterSpacing": 0.12,
+              "letterSpacing": -0.2,
             },
             Object {},
           ]
@@ -302,10 +302,10 @@ exports[`Android withDivider should render correctly with arbitrary props 1`] = 
           Array [
             Object {
               "color": "rgb(17, 18, 54)",
-              "fontFamily": "System",
+              "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",
-              "letterSpacing": 0.12,
+              "letterSpacing": -0.2,
             },
             Object {},
           ]
@@ -345,10 +345,10 @@ exports[`Android withDivider should render correctly with arbitrary props 1`] = 
           Array [
             Object {
               "color": "rgb(17, 18, 54)",
-              "fontFamily": "System",
+              "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",
-              "letterSpacing": 0.12,
+              "letterSpacing": -0.2,
             },
             Object {},
           ]
@@ -424,10 +424,10 @@ exports[`Android withDivider should render correctly with custom main style 1`] 
           Array [
             Object {
               "color": "rgb(17, 18, 54)",
-              "fontFamily": "System",
+              "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",
-              "letterSpacing": 0.12,
+              "letterSpacing": -0.2,
             },
             Object {},
           ]
@@ -467,10 +467,10 @@ exports[`Android withDivider should render correctly with custom main style 1`] 
           Array [
             Object {
               "color": "rgb(17, 18, 54)",
-              "fontFamily": "System",
+              "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",
-              "letterSpacing": 0.12,
+              "letterSpacing": -0.2,
             },
             Object {},
           ]
@@ -543,10 +543,10 @@ exports[`Android withDivider should render correctly with custom stub style 1`] 
           Array [
             Object {
               "color": "rgb(17, 18, 54)",
-              "fontFamily": "System",
+              "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",
-              "letterSpacing": 0.12,
+              "letterSpacing": -0.2,
             },
             Object {},
           ]
@@ -589,10 +589,10 @@ exports[`Android withDivider should render correctly with custom stub style 1`] 
           Array [
             Object {
               "color": "rgb(17, 18, 54)",
-              "fontFamily": "System",
+              "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",
-              "letterSpacing": 0.12,
+              "letterSpacing": -0.2,
             },
             Object {},
           ]
@@ -662,10 +662,10 @@ exports[`Android withDivider should render correctly without padding 1`] = `
           Array [
             Object {
               "color": "rgb(17, 18, 54)",
-              "fontFamily": "System",
+              "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",
-              "letterSpacing": 0.12,
+              "letterSpacing": -0.2,
             },
             Object {},
           ]
@@ -702,10 +702,10 @@ exports[`Android withDivider should render correctly without padding 1`] = `
           Array [
             Object {
               "color": "rgb(17, 18, 54)",
-              "fontFamily": "System",
+              "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",
-              "letterSpacing": 0.12,
+              "letterSpacing": -0.2,
             },
             Object {},
           ]

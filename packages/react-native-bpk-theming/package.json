@@ -1,27 +1,27 @@
 {
-  "name": "react-native-bpk-theming",
-  "version": "1.4.11",
-  "main": "index.js",
-  "description": "Backpack React Native theming utlities.",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:Skyscanner/backpack.git"
-  },
-  "author": "Backpack Design System <backpack@skyscanner.net>",
-  "license": "Apache-2.0",
-  "peerDependencies": {
-    "react": "^16.8.3",
-    "react-native": ">= 0.59.0"
-  },
-  "dependencies": {
-    "lodash": "^4.17.4",
-    "theming": "^1.1.0"
-  },
-  "devDependencies": {
-    "bpk-tokens": "^29.4.0"
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
-  "gitHead": "903982367530e8e96dd7c1f3a42307f71a77dceb"
+		"name": "react-native-bpk-theming",
+		"version": "1.4.11",
+		"main": "index.js",
+		"description": "Backpack React Native theming utlities.",
+		"repository": {
+				"type": "git",
+				"url": "git@github.com:Skyscanner/backpack.git"
+		},
+		"author": "Backpack Design System <backpack@skyscanner.net>",
+		"license": "Apache-2.0",
+		"peerDependencies": {
+				"react": "^16.8.3",
+				"react-native": ">= 0.59.0"
+		},
+		"dependencies": {
+				"lodash": "^4.17.4",
+				"theming": "^1.1.0"
+		},
+		"devDependencies": {
+				"bpk-tokens": "^29.4.0"
+		},
+		"publishConfig": {
+				"registry": "https://registry.npmjs.org/"
+		},
+		"gitHead": "903982367530e8e96dd7c1f3a42307f71a77dceb"
 }

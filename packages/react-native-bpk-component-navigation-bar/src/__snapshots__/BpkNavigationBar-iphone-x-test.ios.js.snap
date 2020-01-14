@@ -62,11 +62,7 @@ exports[`ios - iPhone X  BpkNavigationBar dark mode should render correctly 1`] 
       }
     >
       <Image
-        source={
-          Object {
-            "testUri": "../../../packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
-          }
-        }
+        source={1}
         style={
           Array [
             Array [
@@ -419,11 +415,7 @@ exports[`ios - iPhone X  BpkNavigationBar light mode should render correctly 1`]
       }
     >
       <Image
-        source={
-          Object {
-            "testUri": "../../../packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
-          }
-        }
+        source={1}
         style={
           Array [
             Array [
