@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`iOS BpkDialog should render correctly 1`] = `
+exports[`Android BpkDialog should render correctly 1`] = `
 <AndroidBPKDialogView
   actions={Array []}
   description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -19,7 +19,7 @@ exports[`iOS BpkDialog should render correctly 1`] = `
 />
 `;
 
-exports[`iOS BpkDialog should render correctly open 1`] = `
+exports[`Android BpkDialog should render correctly open 1`] = `
 <AndroidBPKDialogView
   actions={Array []}
   description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -37,7 +37,7 @@ exports[`iOS BpkDialog should render correctly open 1`] = `
 />
 `;
 
-exports[`iOS BpkDialog should render correctly with bottom sheet style 1`] = `
+exports[`Android BpkDialog should render correctly with bottom sheet style 1`] = `
 <AndroidBPKDialogView
   actions={Array []}
   description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -56,7 +56,7 @@ exports[`iOS BpkDialog should render correctly with bottom sheet style 1`] = `
 />
 `;
 
-exports[`iOS BpkDialog should render correctly with disabled scrim actions 1`] = `
+exports[`Android BpkDialog should render correctly with disabled scrim actions 1`] = `
 <AndroidBPKDialogView
   actions={Array []}
   description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -75,7 +75,7 @@ exports[`iOS BpkDialog should render correctly with disabled scrim actions 1`] =
 />
 `;
 
-exports[`iOS BpkDialog should render correctly with one actions 1`] = `
+exports[`Android BpkDialog should render correctly with one actions 1`] = `
 <AndroidBPKDialogView
   actions={
     Array [
@@ -102,7 +102,7 @@ exports[`iOS BpkDialog should render correctly with one actions 1`] = `
 />
 `;
 
-exports[`iOS BpkDialog should render correctly with two actions 1`] = `
+exports[`Android BpkDialog should render correctly with two actions 1`] = `
 <AndroidBPKDialogView
   actions={
     Array [

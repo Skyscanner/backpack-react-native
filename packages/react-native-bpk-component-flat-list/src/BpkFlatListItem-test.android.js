@@ -20,38 +20,6 @@
 
 import commonTests from './BpkFlatListItem-test.common';
 
-jest.mock('react-native', () => {
-  const reactNative = jest.requireActual('react-native');
-  jest
-    .spyOn(reactNative.Platform, 'select')
-    .mockImplementation(obj => obj.android || obj.default);
-  reactNative.Platform.OS = 'android';
-  return reactNative;
-});
-
-jest.mock('TouchableNativeFeedback', () =>
-  jest.requireActual(
-    'react-native/Libraries/Components/Touchable/TouchableNativeFeedback.android.js',
-  ),
-);
-
-jest.mock(
-  './../node_modules/react-native-bpk-component-text/node_modules/bpk-tokens/tokens/base.react.native',
-  () => jest.requireActual('bpk-tokens/tokens/base.react.native.android.js'),
-);
-
-jest.mock('bpk-tokens/tokens/base.react.native', () =>
-  jest.requireActual('bpk-tokens/tokens/base.react.native.android.js'),
-);
-
-jest.mock('./BpkRadioIcon.android', () =>
-  jest.requireActual('./BpkRadioIcon.android.js'),
-);
-
-jest.mock('./BpkFlatListItem', () =>
-  jest.requireActual('./BpkFlatListItem.android.js'),
-);
-
 describe('Android', () => {
   commonTests();
 });

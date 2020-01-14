@@ -22,17 +22,9 @@ import commonTests from './withRtlSupport-test.common';
 
 jest.mock('react-native', () => {
   const reactNative = jest.requireActual('react-native');
-  jest
-    .spyOn(reactNative.Platform, 'select')
-    .mockImplementation(obj => obj.android || obj.default);
-  reactNative.Platform.OS = 'android';
   Object.defineProperty(reactNative.I18nManager, 'isRTL', { value: true });
   return reactNative;
 });
-
-jest.mock('bpk-tokens/tokens/base.react.native', () =>
-  jest.requireActual('bpk-tokens/tokens/base.react.native.android'),
-);
 
 describe('Android', () => {
   commonTests();
