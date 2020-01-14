@@ -57,6 +57,7 @@ exports[`Android BpkDismissibleChip dark mode should render correctly 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {},
           Array [
@@ -159,6 +160,7 @@ exports[`Android BpkDismissibleChip dark mode should render correctly with "disa
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {},
           Array [
@@ -274,6 +276,7 @@ exports[`Android BpkDismissibleChip dark mode should render outline correctly 1`
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {},
           Array [
@@ -379,6 +382,7 @@ exports[`Android BpkDismissibleChip light mode should render correctly 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {},
           Array [
@@ -481,6 +485,7 @@ exports[`Android BpkDismissibleChip light mode should render correctly with "dis
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {},
           Array [
@@ -596,6 +601,7 @@ exports[`Android BpkDismissibleChip light mode should render outline correctly 1
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {},
           Array [
@@ -825,6 +831,7 @@ exports[`Android BpkDismissibleChip should render correctly with arbitrary props
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {},
           Array [
@@ -931,6 +938,7 @@ exports[`Android BpkDismissibleChip should render correctly with custom style 1`
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {},
           Array [

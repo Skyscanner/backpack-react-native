@@ -51,6 +51,7 @@ exports[`Android BpkFlatListItem dark mode should render correctly 1`] = `
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": -0.2,
+            "textAlign": "left",
           },
           Object {},
           Array [
@@ -146,6 +147,7 @@ exports[`Android BpkFlatListItem dark mode should support the "selected" propert
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": -0.2,
+            "textAlign": "left",
           },
           Object {},
           Array [
@@ -250,6 +252,7 @@ exports[`Android BpkFlatListItem light mode should render correctly 1`] = `
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": -0.2,
+            "textAlign": "left",
           },
           Object {},
           Array [
@@ -345,6 +348,7 @@ exports[`Android BpkFlatListItem light mode should support the "selected" proper
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": -0.2,
+            "textAlign": "left",
           },
           Object {},
           Array [
@@ -459,6 +463,7 @@ exports[`Android BpkFlatListItem should support the "image" property 1`] = `
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": -0.2,
+            "textAlign": "left",
           },
           Object {},
           Array [
@@ -571,6 +576,7 @@ exports[`Android should support theming when selected 1`] = `
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": -0.2,
+            "textAlign": "left",
           },
           Object {},
           Object {

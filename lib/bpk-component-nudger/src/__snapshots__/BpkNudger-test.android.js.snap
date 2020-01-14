@@ -119,6 +119,7 @@ exports[`Android BpkNudger should render correctly 1`] = `
           "fontSize": 20,
           "fontWeight": "400",
           "letterSpacing": -0.4,
+          "textAlign": "left",
         },
         Object {
           "fontFamily": "sans-serif-medium",
@@ -355,6 +356,7 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
           "fontSize": 20,
           "fontWeight": "400",
           "letterSpacing": -0.4,
+          "textAlign": "left",
         },
         Object {
           "fontFamily": "sans-serif-medium",
@@ -587,6 +589,7 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
           "fontSize": 20,
           "fontWeight": "400",
           "letterSpacing": -0.4,
+          "textAlign": "left",
         },
         Object {
           "fontFamily": "sans-serif-medium",
@@ -827,6 +830,7 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
           "fontSize": 20,
           "fontWeight": "400",
           "letterSpacing": -0.4,
+          "textAlign": "left",
         },
         Object {
           "fontFamily": "sans-serif-medium",

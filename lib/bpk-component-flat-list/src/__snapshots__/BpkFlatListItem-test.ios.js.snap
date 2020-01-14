@@ -47,6 +47,7 @@ exports[`iOS BpkFlatListItem dark mode should render correctly 1`] = `
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": 0.12,
+            "textAlign": "left",
           },
           Object {},
           Array [
@@ -150,6 +151,7 @@ exports[`iOS BpkFlatListItem dark mode should support the "selected" property 1`
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": 0.12,
+            "textAlign": "left",
           },
           Object {},
           Array [
@@ -259,6 +261,7 @@ exports[`iOS BpkFlatListItem light mode should render correctly 1`] = `
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": 0.12,
+            "textAlign": "left",
           },
           Object {},
           Array [
@@ -362,6 +365,7 @@ exports[`iOS BpkFlatListItem light mode should support the "selected" property 1
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": 0.12,
+            "textAlign": "left",
           },
           Object {},
           Array [
@@ -481,6 +485,7 @@ exports[`iOS BpkFlatListItem should support the "image" property 1`] = `
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": 0.12,
+            "textAlign": "left",
           },
           Object {},
           Array [
@@ -601,6 +606,7 @@ exports[`iOS should support theming when selected 1`] = `
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": 0.12,
+            "textAlign": "left",
           },
           Object {},
           Object {

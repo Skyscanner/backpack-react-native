@@ -48,6 +48,7 @@ exports[`iOS BpkDismissibleChip dark mode should render correctly 1`] = `
           "fontSize": 14,
           "fontWeight": "400",
           "letterSpacing": 0.154,
+          "textAlign": "left",
         },
         Object {},
         Array [
@@ -159,6 +160,7 @@ exports[`iOS BpkDismissibleChip dark mode should render correctly with "disabled
           "fontSize": 14,
           "fontWeight": "400",
           "letterSpacing": 0.154,
+          "textAlign": "left",
         },
         Object {},
         Array [
@@ -283,6 +285,7 @@ exports[`iOS BpkDismissibleChip dark mode should render outline correctly 1`] = 
           "fontSize": 14,
           "fontWeight": "400",
           "letterSpacing": 0.154,
+          "textAlign": "left",
         },
         Object {},
         Array [
@@ -397,6 +400,7 @@ exports[`iOS BpkDismissibleChip light mode should render correctly 1`] = `
           "fontSize": 14,
           "fontWeight": "400",
           "letterSpacing": 0.154,
+          "textAlign": "left",
         },
         Object {},
         Array [
@@ -508,6 +512,7 @@ exports[`iOS BpkDismissibleChip light mode should render correctly with "disable
           "fontSize": 14,
           "fontWeight": "400",
           "letterSpacing": 0.154,
+          "textAlign": "left",
         },
         Object {},
         Array [
@@ -632,6 +637,7 @@ exports[`iOS BpkDismissibleChip light mode should render outline correctly 1`] =
           "fontSize": 14,
           "fontWeight": "400",
           "letterSpacing": 0.154,
+          "textAlign": "left",
         },
         Object {},
         Array [
@@ -879,6 +885,7 @@ exports[`iOS BpkDismissibleChip should render correctly with arbitrary props 1`]
           "fontSize": 14,
           "fontWeight": "400",
           "letterSpacing": 0.154,
+          "textAlign": "left",
         },
         Object {},
         Array [
@@ -994,6 +1001,7 @@ exports[`iOS BpkDismissibleChip should render correctly with custom style 1`] = 
           "fontSize": 14,
           "fontWeight": "400",
           "letterSpacing": 0.154,
+          "textAlign": "left",
         },
         Object {},
         Array [

@@ -88,6 +88,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
                 "fontSize": 16,
                 "fontWeight": "400",
                 "letterSpacing": 0.12,
+                "textAlign": "left",
               },
               Object {},
               Array [
@@ -280,6 +281,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
                 "fontSize": 16,
                 "fontWeight": "400",
                 "letterSpacing": 0.12,
+                "textAlign": "left",
               },
               Object {},
               Array [

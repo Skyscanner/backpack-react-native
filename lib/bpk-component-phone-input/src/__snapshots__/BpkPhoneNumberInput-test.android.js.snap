@@ -89,6 +89,7 @@ exports[`Android BpkPhoneNumberInput should render correctly 1`] = `
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": -0.2,
+              "textAlign": "left",
             },
             Object {},
             Array [
@@ -265,6 +266,7 @@ exports[`Android BpkPhoneNumberInput should render correctly with \`editable\` f
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": -0.2,
+              "textAlign": "left",
             },
             Object {},
             Array [

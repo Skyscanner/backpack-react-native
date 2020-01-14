@@ -48,6 +48,7 @@ exports[`iOS BpkChip dark mode should render correctly 1`] = `
           "fontSize": 14,
           "fontWeight": "400",
           "letterSpacing": 0.154,
+          "textAlign": "left",
         },
         Object {},
         Array [
@@ -134,6 +135,7 @@ exports[`iOS BpkChip dark mode should render correctly with "disabled" 1`] = `
           "fontSize": 14,
           "fontWeight": "400",
           "letterSpacing": 0.154,
+          "textAlign": "left",
         },
         Object {},
         Array [
@@ -227,6 +229,7 @@ exports[`iOS BpkChip dark mode should render correctly with "selected" 1`] = `
           "fontSize": 14,
           "fontWeight": "400",
           "letterSpacing": 0.154,
+          "textAlign": "left",
         },
         Object {},
         Array [
@@ -323,6 +326,7 @@ exports[`iOS BpkChip dark mode should render outline correctly 1`] = `
           "fontSize": 14,
           "fontWeight": "400",
           "letterSpacing": 0.154,
+          "textAlign": "left",
         },
         Object {},
         Array [
@@ -409,6 +413,7 @@ exports[`iOS BpkChip light mode should render correctly 1`] = `
           "fontSize": 14,
           "fontWeight": "400",
           "letterSpacing": 0.154,
+          "textAlign": "left",
         },
         Object {},
         Array [
@@ -495,6 +500,7 @@ exports[`iOS BpkChip light mode should render correctly with "disabled" 1`] = `
           "fontSize": 14,
           "fontWeight": "400",
           "letterSpacing": 0.154,
+          "textAlign": "left",
         },
         Object {},
         Array [
@@ -588,6 +594,7 @@ exports[`iOS BpkChip light mode should render correctly with "selected" 1`] = `
           "fontSize": 14,
           "fontWeight": "400",
           "letterSpacing": 0.154,
+          "textAlign": "left",
         },
         Object {},
         Array [
@@ -684,6 +691,7 @@ exports[`iOS BpkChip light mode should render outline correctly 1`] = `
           "fontSize": 14,
           "fontWeight": "400",
           "letterSpacing": 0.154,
+          "textAlign": "left",
         },
         Object {},
         Array [
@@ -878,6 +886,7 @@ exports[`iOS BpkChip should render correctly with arbitrary props 1`] = `
           "fontSize": 14,
           "fontWeight": "400",
           "letterSpacing": 0.154,
+          "textAlign": "left",
         },
         Object {},
         Array [
@@ -965,6 +974,7 @@ exports[`iOS BpkChip should render correctly with custom style 1`] = `
           "fontSize": 14,
           "fontWeight": "400",
           "letterSpacing": 0.154,
+          "textAlign": "left",
         },
         Object {},
         Array [
@@ -1058,6 +1068,7 @@ exports[`iOS BpkChip should support theming when selected 1`] = `
           "fontSize": 14,
           "fontWeight": "400",
           "letterSpacing": 0.154,
+          "textAlign": "left",
         },
         Object {},
         Object {

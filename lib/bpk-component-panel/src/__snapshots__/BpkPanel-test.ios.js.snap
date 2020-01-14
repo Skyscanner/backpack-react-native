@@ -26,6 +26,7 @@ exports[`iOS BpkPanel dark mode should render correctly 1`] = `
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": 0.12,
+          "textAlign": "left",
         },
         Object {},
       ]
@@ -62,6 +63,7 @@ exports[`iOS BpkPanel light mode should render correctly 1`] = `
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": 0.12,
+          "textAlign": "left",
         },
         Object {},
       ]
@@ -99,6 +101,7 @@ exports[`iOS BpkPanel should render correctly with arbitrary props 1`] = `
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": 0.12,
+          "textAlign": "left",
         },
         Object {},
       ]
@@ -138,6 +141,7 @@ exports[`iOS BpkPanel should render correctly with custom style 1`] = `
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": 0.12,
+          "textAlign": "left",
         },
         Object {},
       ]
@@ -171,6 +175,7 @@ exports[`iOS BpkPanel should render correctly without padding 1`] = `
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": 0.12,
+          "textAlign": "left",
         },
         Object {},
       ]
