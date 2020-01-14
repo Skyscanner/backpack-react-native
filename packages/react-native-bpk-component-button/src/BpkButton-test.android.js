@@ -28,36 +28,12 @@ const onPressFn = jest.fn();
 
 const mockPlatform = (platform, version) => {
   const reactNative = jest.requireActual('react-native');
-  jest
-    .spyOn(reactNative.Platform, 'select')
-    .mockImplementation(obj => obj.platform || obj.default);
-  reactNative.Platform.OS = platform;
-
   Object.defineProperty(reactNative.Platform, 'Version', {
     value: version,
   });
 
   return reactNative;
 };
-
-mockPlatform('android', 21);
-
-jest.mock('TouchableNativeFeedback', () =>
-  jest.requireActual(
-    'react-native/Libraries/Components/Touchable/TouchableNativeFeedback.android.js',
-  ),
-);
-
-jest.mock(
-  './../node_modules/react-native-bpk-component-text/node_modules/bpk-tokens/tokens/base.react.native',
-  () => jest.requireActual('bpk-tokens/tokens/base.react.native.android.js'),
-);
-
-jest.mock('bpk-tokens/tokens/base.react.native', () =>
-  jest.requireActual('bpk-tokens/tokens/base.react.native.android.js'),
-);
-
-jest.mock('./BpkButton', () => jest.requireActual('./BpkButton.android.js'));
 
 describe('Android', () => {
   commonTests();

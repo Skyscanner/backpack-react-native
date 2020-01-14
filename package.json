@@ -52,29 +52,6 @@
     "storybook": "(adb reverse tcp:7007 tcp:7007 || true) && start-storybook",
     "documentation": "node ./scripts/npm/documentation.js"
   },
-  "jest": {
-    "preset": "react-native",
-    "verbose": true,
-    "testRegex": ".*-test(\\.ios)?(\\.android)?\\.js$",
-    "testMatch": null,
-    "transformIgnorePatterns": [
-      "node_modules/(?!react-native|bpk|@skyscanner|lodash-es)"
-    ],
-    "transform": {
-      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
-    },
-    "coverageThreshold": {
-      "global": {
-        "statements": 75,
-        "branches": 70,
-        "functions": 75,
-        "lines": 75
-      }
-    },
-    "setupFilesAfterEnv": [
-      "<rootDir>/jest/setup.js"
-    ]
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -116,7 +93,8 @@
     "flow-bin": "^0.98.0",
     "globby": "^10.0.0",
     "husky": "^3.0.0",
-    "jest": "^24.1.0",
+    "jest": "^24.6.0",
+    "jest-expo": "^35.0.0",
     "lerna": "^3.10.7",
     "lint-staged": "^9.0.0",
     "lodash": "^4.17.15",

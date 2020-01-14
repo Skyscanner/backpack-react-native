@@ -143,6 +143,14 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
         accessibilityRole="button"
         accessible={true}
         clickable={true}
+        isTVSelectable={true}
+        nativeBackgroundAndroid={
+          Object {
+            "borderless": false,
+            "color": null,
+            "type": "RippleAndroid",
+          }
+        }
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -151,18 +159,14 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "flex": 1,
-              "flexDirection": "row",
-              "justifyContent": "space-between",
-              "minHeight": 44,
-              "paddingHorizontal": 16,
-              "paddingVertical": 8,
-            },
-            null,
-          ]
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "minHeight": 48,
+            "padding": 16,
+          }
         }
       >
         <View
@@ -189,7 +193,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
                 Array [
                   null,
                   Object {
-                    "marginRight": 24,
+                    "marginRight": 32,
                   },
                 ],
               ]
@@ -218,46 +222,34 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
             0 Zero
           </Text>
         </View>
-        <Text
-          allowFontScaling={false}
-          style={
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "BpkIcon",
-                "fontSize": 24,
-                "includeFontPadding": false,
-              },
-              Object {
-                "fontSize": 16,
-              },
-              Array [
-                Object {
-                  "color": "rgb(7, 112, 227)",
-                  "opacity": 0,
-                },
-              ],
-            ]
-          }
-        >
-          
-        </Text>
         <View
           style={
             Array [
               Object {
-                "backgroundColor": "rgb(17, 18, 54)",
-                "bottom": 0,
-                "flex": 1,
-                "left": 0,
-                "opacity": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
+                "alignItems": "center",
+                "borderColor": "rgb(221, 221, 229)",
+                "borderRadius": 20,
+                "borderWidth": 1,
+                "height": 20,
+                "justifyContent": "center",
+                "width": 20,
               },
             ]
           }
-        />
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderRadius": 10,
+                  "height": 10,
+                  "width": 10,
+                },
+              ]
+            }
+          />
+        </View>
       </View>
     </View>
     <View
@@ -314,6 +306,14 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
         accessibilityRole="button"
         accessible={true}
         clickable={true}
+        isTVSelectable={true}
+        nativeBackgroundAndroid={
+          Object {
+            "borderless": false,
+            "color": null,
+            "type": "RippleAndroid",
+          }
+        }
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -322,18 +322,14 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "flex": 1,
-              "flexDirection": "row",
-              "justifyContent": "space-between",
-              "minHeight": 44,
-              "paddingHorizontal": 16,
-              "paddingVertical": 8,
-            },
-            null,
-          ]
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "minHeight": 48,
+            "padding": 16,
+          }
         }
       >
         <View
@@ -360,7 +356,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
                 Array [
                   null,
                   Object {
-                    "marginRight": 24,
+                    "marginRight": 32,
                   },
                 ],
               ]
@@ -389,46 +385,34 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
             1 One
           </Text>
         </View>
-        <Text
-          allowFontScaling={false}
-          style={
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "BpkIcon",
-                "fontSize": 24,
-                "includeFontPadding": false,
-              },
-              Object {
-                "fontSize": 16,
-              },
-              Array [
-                Object {
-                  "color": "rgb(7, 112, 227)",
-                  "opacity": 0,
-                },
-              ],
-            ]
-          }
-        >
-          
-        </Text>
         <View
           style={
             Array [
               Object {
-                "backgroundColor": "rgb(17, 18, 54)",
-                "bottom": 0,
-                "flex": 1,
-                "left": 0,
-                "opacity": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
+                "alignItems": "center",
+                "borderColor": "rgb(221, 221, 229)",
+                "borderRadius": 20,
+                "borderWidth": 1,
+                "height": 20,
+                "justifyContent": "center",
+                "width": 20,
               },
             ]
           }
-        />
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderRadius": 10,
+                  "height": 10,
+                  "width": 10,
+                },
+              ]
+            }
+          />
+        </View>
       </View>
     </View>
     <View
@@ -485,6 +469,14 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
         accessibilityRole="button"
         accessible={true}
         clickable={true}
+        isTVSelectable={true}
+        nativeBackgroundAndroid={
+          Object {
+            "borderless": false,
+            "color": null,
+            "type": "RippleAndroid",
+          }
+        }
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -493,18 +485,14 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "flex": 1,
-              "flexDirection": "row",
-              "justifyContent": "space-between",
-              "minHeight": 44,
-              "paddingHorizontal": 16,
-              "paddingVertical": 8,
-            },
-            null,
-          ]
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "minHeight": 48,
+            "padding": 16,
+          }
         }
       >
         <View
@@ -531,7 +519,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
                 Array [
                   null,
                   Object {
-                    "marginRight": 24,
+                    "marginRight": 32,
                   },
                 ],
               ]
@@ -560,46 +548,34 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
             2 Two
           </Text>
         </View>
-        <Text
-          allowFontScaling={false}
-          style={
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "BpkIcon",
-                "fontSize": 24,
-                "includeFontPadding": false,
-              },
-              Object {
-                "fontSize": 16,
-              },
-              Array [
-                Object {
-                  "color": "rgb(7, 112, 227)",
-                  "opacity": 0,
-                },
-              ],
-            ]
-          }
-        >
-          
-        </Text>
         <View
           style={
             Array [
               Object {
-                "backgroundColor": "rgb(17, 18, 54)",
-                "bottom": 0,
-                "flex": 1,
-                "left": 0,
-                "opacity": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
+                "alignItems": "center",
+                "borderColor": "rgb(221, 221, 229)",
+                "borderRadius": 20,
+                "borderWidth": 1,
+                "height": 20,
+                "justifyContent": "center",
+                "width": 20,
               },
             ]
           }
-        />
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderRadius": 10,
+                  "height": 10,
+                  "width": 10,
+                },
+              ]
+            }
+          />
+        </View>
       </View>
     </View>
     <View
@@ -753,6 +729,14 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
         accessibilityRole="button"
         accessible={true}
         clickable={true}
+        isTVSelectable={true}
+        nativeBackgroundAndroid={
+          Object {
+            "borderless": false,
+            "color": null,
+            "type": "RippleAndroid",
+          }
+        }
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -761,18 +745,14 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "flex": 1,
-              "flexDirection": "row",
-              "justifyContent": "space-between",
-              "minHeight": 44,
-              "paddingHorizontal": 16,
-              "paddingVertical": 8,
-            },
-            null,
-          ]
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "minHeight": 48,
+            "padding": 16,
+          }
         }
       >
         <View
@@ -799,7 +779,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
                 Array [
                   null,
                   Object {
-                    "marginRight": 24,
+                    "marginRight": 32,
                   },
                 ],
               ]
@@ -831,49 +811,40 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
             0 Zero
           </Text>
         </View>
-        <Text
-          allowFontScaling={false}
-          style={
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "BpkIcon",
-                "fontSize": 24,
-                "includeFontPadding": false,
-              },
-              Object {
-                "fontSize": 16,
-              },
-              Array [
-                Object {
-                  "color": "rgb(7, 112, 227)",
-                  "opacity": 0,
-                },
-                Object {
-                  "opacity": 1,
-                },
-              ],
-            ]
-          }
-        >
-          
-        </Text>
         <View
           style={
             Array [
               Object {
-                "backgroundColor": "rgb(17, 18, 54)",
-                "bottom": 0,
-                "flex": 1,
-                "left": 0,
-                "opacity": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
+                "alignItems": "center",
+                "borderColor": "rgb(221, 221, 229)",
+                "borderRadius": 20,
+                "borderWidth": 1,
+                "height": 20,
+                "justifyContent": "center",
+                "width": 20,
+              },
+              Object {
+                "borderColor": "rgb(7, 112, 227)",
               },
             ]
           }
-        />
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderRadius": 10,
+                  "height": 10,
+                  "width": 10,
+                },
+                Object {
+                  "backgroundColor": "rgb(7, 112, 227)",
+                },
+              ]
+            }
+          />
+        </View>
       </View>
     </View>
     <View
@@ -930,6 +901,14 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
         accessibilityRole="button"
         accessible={true}
         clickable={true}
+        isTVSelectable={true}
+        nativeBackgroundAndroid={
+          Object {
+            "borderless": false,
+            "color": null,
+            "type": "RippleAndroid",
+          }
+        }
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -938,18 +917,14 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "flex": 1,
-              "flexDirection": "row",
-              "justifyContent": "space-between",
-              "minHeight": 44,
-              "paddingHorizontal": 16,
-              "paddingVertical": 8,
-            },
-            null,
-          ]
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "minHeight": 48,
+            "padding": 16,
+          }
         }
       >
         <View
@@ -976,7 +951,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
                 Array [
                   null,
                   Object {
-                    "marginRight": 24,
+                    "marginRight": 32,
                   },
                 ],
               ]
@@ -1005,46 +980,34 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
             1 One
           </Text>
         </View>
-        <Text
-          allowFontScaling={false}
-          style={
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "BpkIcon",
-                "fontSize": 24,
-                "includeFontPadding": false,
-              },
-              Object {
-                "fontSize": 16,
-              },
-              Array [
-                Object {
-                  "color": "rgb(7, 112, 227)",
-                  "opacity": 0,
-                },
-              ],
-            ]
-          }
-        >
-          
-        </Text>
         <View
           style={
             Array [
               Object {
-                "backgroundColor": "rgb(17, 18, 54)",
-                "bottom": 0,
-                "flex": 1,
-                "left": 0,
-                "opacity": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
+                "alignItems": "center",
+                "borderColor": "rgb(221, 221, 229)",
+                "borderRadius": 20,
+                "borderWidth": 1,
+                "height": 20,
+                "justifyContent": "center",
+                "width": 20,
               },
             ]
           }
-        />
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderRadius": 10,
+                  "height": 10,
+                  "width": 10,
+                },
+              ]
+            }
+          />
+        </View>
       </View>
     </View>
     <View
@@ -1101,6 +1064,14 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
         accessibilityRole="button"
         accessible={true}
         clickable={true}
+        isTVSelectable={true}
+        nativeBackgroundAndroid={
+          Object {
+            "borderless": false,
+            "color": null,
+            "type": "RippleAndroid",
+          }
+        }
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -1109,18 +1080,14 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "flex": 1,
-              "flexDirection": "row",
-              "justifyContent": "space-between",
-              "minHeight": 44,
-              "paddingHorizontal": 16,
-              "paddingVertical": 8,
-            },
-            null,
-          ]
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "minHeight": 48,
+            "padding": 16,
+          }
         }
       >
         <View
@@ -1147,7 +1114,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
                 Array [
                   null,
                   Object {
-                    "marginRight": 24,
+                    "marginRight": 32,
                   },
                 ],
               ]
@@ -1176,46 +1143,34 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
             2 Two
           </Text>
         </View>
-        <Text
-          allowFontScaling={false}
-          style={
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "BpkIcon",
-                "fontSize": 24,
-                "includeFontPadding": false,
-              },
-              Object {
-                "fontSize": 16,
-              },
-              Array [
-                Object {
-                  "color": "rgb(7, 112, 227)",
-                  "opacity": 0,
-                },
-              ],
-            ]
-          }
-        >
-          
-        </Text>
         <View
           style={
             Array [
               Object {
-                "backgroundColor": "rgb(17, 18, 54)",
-                "bottom": 0,
-                "flex": 1,
-                "left": 0,
-                "opacity": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
+                "alignItems": "center",
+                "borderColor": "rgb(221, 221, 229)",
+                "borderRadius": 20,
+                "borderWidth": 1,
+                "height": 20,
+                "justifyContent": "center",
+                "width": 20,
               },
             ]
           }
-        />
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderRadius": 10,
+                  "height": 10,
+                  "width": 10,
+                },
+              ]
+            }
+          />
+        </View>
       </View>
     </View>
     <View

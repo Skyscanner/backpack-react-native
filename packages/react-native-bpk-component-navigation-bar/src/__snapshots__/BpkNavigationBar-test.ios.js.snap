@@ -59,11 +59,7 @@ exports[`ios BpkNavigationBar dark mode should render correctly 1`] = `
       }
     >
       <Image
-        source={
-          Object {
-            "testUri": "../../../packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
-          }
-        }
+        source={1}
         style={
           Array [
             Array [
@@ -222,11 +218,7 @@ exports[`ios BpkNavigationBar dark mode should render correctly with a subtitle 
       }
     >
       <Image
-        source={
-          Object {
-            "testUri": "../../../packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
-          }
-        }
+        source={1}
         style={
           Array [
             Array [
@@ -393,11 +385,7 @@ exports[`ios BpkNavigationBar dark mode should render correctly with a title vie
       }
     >
       <Image
-        source={
-          Object {
-            "testUri": "../../../packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
-          }
-        }
+        source={1}
         style={
           Array [
             Array [
@@ -523,11 +511,7 @@ exports[`ios BpkNavigationBar dark mode should render correctly with an icon in 
       }
     >
       <Image
-        source={
-          Object {
-            "testUri": "../../../packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
-          }
-        }
+        source={1}
         style={
           Array [
             Array [
@@ -714,11 +698,7 @@ exports[`ios BpkNavigationBar dark mode should render correctly with custom styl
       }
     >
       <Image
-        source={
-          Object {
-            "testUri": "../../../packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
-          }
-        }
+        source={1}
         style={
           Array [
             Array [
@@ -1065,11 +1045,7 @@ exports[`ios BpkNavigationBar light mode should render correctly 1`] = `
       }
     >
       <Image
-        source={
-          Object {
-            "testUri": "../../../packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
-          }
-        }
+        source={1}
         style={
           Array [
             Array [
@@ -1228,11 +1204,7 @@ exports[`ios BpkNavigationBar light mode should render correctly with a subtitle
       }
     >
       <Image
-        source={
-          Object {
-            "testUri": "../../../packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
-          }
-        }
+        source={1}
         style={
           Array [
             Array [
@@ -1399,11 +1371,7 @@ exports[`ios BpkNavigationBar light mode should render correctly with a title vi
       }
     >
       <Image
-        source={
-          Object {
-            "testUri": "../../../packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
-          }
-        }
+        source={1}
         style={
           Array [
             Array [
@@ -1529,11 +1497,7 @@ exports[`ios BpkNavigationBar light mode should render correctly with an icon in
       }
     >
       <Image
-        source={
-          Object {
-            "testUri": "../../../packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
-          }
-        }
+        source={1}
         style={
           Array [
             Array [
@@ -1720,11 +1684,7 @@ exports[`ios BpkNavigationBar light mode should render correctly with custom sty
       }
     >
       <Image
-        source={
-          Object {
-            "testUri": "../../../packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
-          }
-        }
+        source={1}
         style={
           Array [
             Array [
@@ -2073,11 +2033,7 @@ exports[`ios BpkNavigationBar should forward custom props 1`] = `
       testID="leading"
     >
       <Image
-        source={
-          Object {
-            "testUri": "../../../packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
-          }
-        }
+        source={1}
         style={
           Array [
             Array [

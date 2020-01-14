@@ -43,6 +43,13 @@ const commonTests = () => {
 
     it('should error when theme is not provided', () => {
       jest.spyOn(console, 'error').mockImplementation(() => jest.fn());
+      // is-function used by `theming < 2` is buggy and will consider undefined a function
+      // when window is defined but window.alert is not (which is the case during tests)
+      // We make it undefined here to go around that.
+
+      // TODO: update theming to any version over 2
+      window = undefined; // eslint-disable-line
+
       expect(() =>
         renderer.create(
           <BpkThemeProvider>

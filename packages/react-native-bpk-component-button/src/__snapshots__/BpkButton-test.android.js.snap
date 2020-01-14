@@ -2781,6 +2781,7 @@ exports[`Android BpkButton should support elements as icons 1`] = `
                 "marginStart": 4,
               },
               Object {
+                "lineHeight": 20,
                 "marginEnd": 0,
                 "marginStart": 0,
               },
@@ -3107,6 +3108,7 @@ exports[`Android BpkButton should support the "iconOnly" property 1`] = `
               "marginStart": 4,
             },
             Object {
+              "lineHeight": 20,
               "marginEnd": 0,
               "marginStart": 0,
             },
@@ -3202,6 +3204,7 @@ exports[`Android BpkButtonThemed should not apply border radius when a theme is 
               "marginStart": 4,
             },
             Object {
+              "lineHeight": 20,
               "marginEnd": 0,
               "marginStart": 0,
             },

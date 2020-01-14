@@ -1,50 +1,82 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`iOS BpkDialog should render correctly 1`] = `null`;
-
-exports[`iOS BpkDialog should render correctly open 1`] = `
-<RCTBPKDialog
+exports[`Android BpkDialog should render correctly 1`] = `
+<AndroidBPKDialogView
   actions={Array []}
   description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
   dialogType="alert"
-  iconColor={4278232728}
-  iconId="tick"
-  identifier={1}
+  icon={
+    Object {
+      "iconColor": "bpkMonteverde",
+      "iconId": "bpk_tick",
+    }
+  }
+  isOpen={false}
+  onChange={[Function]}
+  scrimEnabled={true}
+  title="BackpackDialog"
+  type="alert"
+/>
+`;
+
+exports[`Android BpkDialog should render correctly open 1`] = `
+<AndroidBPKDialogView
+  actions={Array []}
+  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  dialogType="alert"
+  icon={
+    Object {
+      "iconColor": "bpkMonteverde",
+      "iconId": "bpk_tick",
+    }
+  }
+  isOpen={true}
+  onChange={[Function]}
   scrimEnabled={true}
   title="BackpackDialog"
 />
 `;
 
-exports[`iOS BpkDialog should render correctly with bottom sheet style 1`] = `
-<RCTBPKDialog
+exports[`Android BpkDialog should render correctly with bottom sheet style 1`] = `
+<AndroidBPKDialogView
   actions={Array []}
   description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
   dialogType="alert"
-  iconColor={4278232728}
-  iconId="tick"
-  identifier={5}
+  icon={
+    Object {
+      "iconColor": "bpkMonteverde",
+      "iconId": "bpk_tick",
+    }
+  }
+  isOpen={true}
+  onChange={[Function]}
   scrimEnabled={true}
   title="BackpackDialog"
   type="bottomSheet"
 />
 `;
 
-exports[`iOS BpkDialog should render correctly with disabled scrim actions 1`] = `
-<RCTBPKDialog
+exports[`Android BpkDialog should render correctly with disabled scrim actions 1`] = `
+<AndroidBPKDialogView
   actions={Array []}
   description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
   dialogType="alert"
-  iconColor={4278232728}
-  iconId="tick"
-  identifier={4}
+  icon={
+    Object {
+      "iconColor": "bpkMonteverde",
+      "iconId": "bpk_tick",
+    }
+  }
+  isOpen={true}
+  onChange={[Function]}
   scrimEnabled={false}
   title="BackpackDialog"
   type="alert"
 />
 `;
 
-exports[`iOS BpkDialog should render correctly with one actions 1`] = `
-<RCTBPKDialog
+exports[`Android BpkDialog should render correctly with one actions 1`] = `
+<AndroidBPKDialogView
   actions={
     Array [
       Object {
@@ -56,17 +88,22 @@ exports[`iOS BpkDialog should render correctly with one actions 1`] = `
   }
   description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
   dialogType="alert"
-  iconColor={4278232728}
-  iconId="tick"
-  identifier={2}
+  icon={
+    Object {
+      "iconColor": "bpkMonteverde",
+      "iconId": "bpk_tick",
+    }
+  }
+  isOpen={true}
+  onChange={[Function]}
   scrimEnabled={true}
   title="BackpackDialog"
   type="alert"
 />
 `;
 
-exports[`iOS BpkDialog should render correctly with two actions 1`] = `
-<RCTBPKDialog
+exports[`Android BpkDialog should render correctly with two actions 1`] = `
+<AndroidBPKDialogView
   actions={
     Array [
       Object {
@@ -83,9 +120,14 @@ exports[`iOS BpkDialog should render correctly with two actions 1`] = `
   }
   description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
   dialogType="alert"
-  iconColor={4278232728}
-  iconId="tick"
-  identifier={3}
+  icon={
+    Object {
+      "iconColor": "bpkMonteverde",
+      "iconId": "bpk_tick",
+    }
+  }
+  isOpen={true}
+  onChange={[Function]}
   scrimEnabled={true}
   title="BackpackDialog"
   type="alert"

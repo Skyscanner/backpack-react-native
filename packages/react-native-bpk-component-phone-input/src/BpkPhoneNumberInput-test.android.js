@@ -20,32 +20,6 @@
 
 import commonTests from './BpkPhoneNumberInput-test.common';
 
-jest.mock('react-native', () => {
-  const reactNative = jest.requireActual('react-native');
-  jest
-    .spyOn(reactNative.Platform, 'select')
-    .mockImplementation(obj => obj.android || obj.default);
-  reactNative.Platform.OS = 'android';
-  reactNative.TouchableNativeFeedback.SelectableBackground = jest.fn();
-
-  return reactNative;
-});
-
-jest.mock('TouchableNativeFeedback', () =>
-  jest.requireActual(
-    'react-native/Libraries/Components/Touchable/TouchableNativeFeedback.android.js',
-  ),
-);
-
-jest.mock(
-  './../node_modules/react-native-bpk-component-text/node_modules/bpk-tokens/tokens/base.react.native',
-  () => jest.requireActual('bpk-tokens/tokens/base.react.native.android.js'),
-);
-
-jest.mock('bpk-tokens/tokens/base.react.native', () =>
-  jest.requireActual('bpk-tokens/tokens/base.react.native.android.js'),
-);
-
 describe('Android', () => {
   commonTests();
 });

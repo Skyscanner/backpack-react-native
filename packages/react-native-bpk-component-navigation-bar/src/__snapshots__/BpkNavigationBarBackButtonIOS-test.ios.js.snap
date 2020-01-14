@@ -25,11 +25,7 @@ exports[`iOS BpkNavigationBarBackButtonIOS dark mode should render correctly 1`]
   }
 >
   <Image
-    source={
-      Object {
-        "testUri": "../../../packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
-      }
-    }
+    source={1}
     style={
       Array [
         Array [
@@ -71,11 +67,7 @@ exports[`iOS BpkNavigationBarBackButtonIOS dark mode should render correctly wit
   }
 >
   <Image
-    source={
-      Object {
-        "testUri": "../../../packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
-      }
-    }
+    source={1}
     style={
       Array [
         Array [
@@ -139,11 +131,7 @@ exports[`iOS BpkNavigationBarBackButtonIOS light mode should render correctly 1`
   }
 >
   <Image
-    source={
-      Object {
-        "testUri": "../../../packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
-      }
-    }
+    source={1}
     style={
       Array [
         Array [
@@ -185,11 +173,7 @@ exports[`iOS BpkNavigationBarBackButtonIOS light mode should render correctly wi
   }
 >
   <Image
-    source={
-      Object {
-        "testUri": "../../../packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
-      }
-    }
+    source={1}
     style={
       Array [
         Array [
@@ -254,11 +238,7 @@ exports[`iOS BpkNavigationBarBackButtonIOS should forward custom props 1`] = `
   testID="testid"
 >
   <Image
-    source={
-      Object {
-        "testUri": "../../../packages/react-native-bpk-component-navigation-bar/src/chevron-left.png",
-      }
-    }
+    source={1}
     style={
       Array [
         Array [

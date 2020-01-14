@@ -16,10 +16,20 @@
  * limitations under the License.
  */
 
-/* @flow */
+module.exports = {
+  // resolves from test to snapshot path
+  resolveSnapshotPath: (testPath, snapshotExtension) => {
+    const parts = testPath.split('/');
+    const fileName = parts.pop();
+    return `${parts.join('/')}/__snapshots__/${fileName}${snapshotExtension}`;
+  },
 
-import commonTests from './BpkCarouselIndicatorDot-test.common';
+  // resolves from snapshot to test path
+  resolveTestPath: (snapshotFilePath, snapshotExtension) =>
+    snapshotFilePath
+      .replace('__snapshots__/', '')
+      .slice(0, -snapshotExtension.length),
 
-describe('Android', () => {
-  commonTests();
-});
+  // Example test path, used for preflight consistency check of the implementation above
+  testPathForConsistencyCheck: 'some/example-test.js',
+};
