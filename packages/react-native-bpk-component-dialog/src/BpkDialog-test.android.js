@@ -34,6 +34,6 @@ const defaultProps = {
   },
 };
 
-describe('iOS', () => {
+describe('Android', () => {
   commonTests(defaultProps);
 });

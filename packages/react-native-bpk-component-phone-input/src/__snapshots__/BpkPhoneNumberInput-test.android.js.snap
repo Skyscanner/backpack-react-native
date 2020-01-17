@@ -8,7 +8,7 @@ exports[`Android BpkPhoneNumberInput should render correctly 1`] = `
     style={
       Object {
         "flexDirection": "row",
-        "paddingTop": 17,
+        "paddingTop": 16,
       }
     }
   >
@@ -19,10 +19,10 @@ exports[`Android BpkPhoneNumberInput should render correctly 1`] = `
       style={
         Object {
           "color": "rgba(104, 105, 127, 1)",
-          "fontFamily": "System",
+          "fontFamily": "sans-serif",
           "fontSize": 14,
           "fontWeight": "400",
-          "lineHeight": 17,
+          "lineHeight": 16,
           "position": "absolute",
           "top": 0,
         }
@@ -180,7 +180,7 @@ exports[`Android BpkPhoneNumberInput should render correctly with \`editable\` f
     style={
       Object {
         "flexDirection": "row",
-        "paddingTop": 17,
+        "paddingTop": 16,
       }
     }
   >
@@ -191,10 +191,10 @@ exports[`Android BpkPhoneNumberInput should render correctly with \`editable\` f
       style={
         Object {
           "color": "rgba(221, 221, 229, 1)",
-          "fontFamily": "System",
+          "fontFamily": "sans-serif",
           "fontSize": 14,
           "fontWeight": "400",
-          "lineHeight": 17,
+          "lineHeight": 16,
           "position": "absolute",
           "top": 0,
         }

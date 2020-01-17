@@ -27,20 +27,6 @@ import commonTests from './BpkText-test.common';
 
 import { WEIGHT_STYLES } from '..';
 
-jest.mock('react-native', () => {
-  const reactNative = jest.requireActual('react-native');
-  jest
-    .spyOn(reactNative.Platform, 'select')
-    .mockImplementation(obj => obj.android || obj.default);
-  reactNative.Platform.OS = 'android';
-
-  return reactNative;
-});
-
-jest.mock('bpk-tokens/tokens/base.react.native', () =>
-  jest.requireActual('bpk-tokens/tokens/base.react.native.android.js'),
-);
-
 describe('Android', () => {
   commonTests();
 
