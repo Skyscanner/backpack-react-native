@@ -25,7 +25,7 @@ import {
   colorMonteverde,
   spacingSm,
   colorSkyGrayTint06,
-  colorBlackTint03,
+  colorBlackTint05,
 } from 'bpk-tokens/tokens/base.react.native';
 import {
   BpkDynamicStyleSheet,
@@ -43,7 +43,7 @@ const dynamicStyles = BpkDynamicStyleSheet.create({
     color: colorPanjin,
   },
   iconDisabled: {
-    color: { light: colorSkyGrayTint06, dark: colorBlackTint03 },
+    color: { light: colorSkyGrayTint06, dark: colorBlackTint05 },
   },
 });
 

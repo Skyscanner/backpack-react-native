@@ -27,7 +27,7 @@ import {
   colorSkyGrayTint06,
   colorSkyGrayTint04,
   colorSkyGrayTint02,
-  colorBlackTint03,
+  colorBlackTint05,
   colorBlackTint02,
   colorMonteverde,
   colorPanjin,
@@ -141,7 +141,7 @@ export const textColorForType = (
   disabled: boolean,
 ) => {
   if (disabled) {
-    return { light: colorSkyGrayTint04, dark: colorBlackTint03 };
+    return { light: colorSkyGrayTint04, dark: colorBlackTint05 };
   }
 
   const textColors = {

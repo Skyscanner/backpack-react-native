@@ -23,7 +23,7 @@ import React, { type ElementProps } from 'react';
 import PropTypes from 'prop-types';
 import {
   colorSkyGrayTint04,
-  colorBlackTint03,
+  colorBlackTint05,
   primaryColor,
   spacingSm,
   spacingXl,
@@ -57,7 +57,7 @@ const dynamicStyles = BpkDynamicStyleSheet.create({
     paddingHorizontal: spacingBase,
   },
   textDisabled: {
-    color: { light: colorSkyGrayTint04, dark: colorBlackTint03 },
+    color: { light: colorSkyGrayTint04, dark: colorBlackTint05 },
   },
   textSelected: {
     color: primaryColor,

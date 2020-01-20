@@ -27,7 +27,7 @@ import {
   spacingSm,
   colorErfoud,
   colorSkyGrayTint06,
-  colorBlackTint02,
+  colorBlackTint04,
 } from 'bpk-tokens/tokens/base.react.native';
 import {
   getThemeAttributes,
@@ -55,7 +55,7 @@ const dynamicStyles = BpkDynamicStyleSheet.create({
     right: 0,
     fontSize: STAR_SIZE,
     lineHeight: STAR_SIZE,
-    color: { light: colorSkyGrayTint06, dark: colorBlackTint02 },
+    color: { light: colorSkyGrayTint06, dark: colorBlackTint04 },
     zIndex: 1,
     backgroundColor: 'transparent',
   },

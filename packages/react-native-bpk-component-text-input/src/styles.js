@@ -24,7 +24,7 @@ import {
   borderSizeSm,
   primaryColor,
   lineDarkColor,
-  colorBlackTint03,
+  colorBlackTint05,
   colorSkyGrayTint06,
   colorSkyGrayTint05,
   colorSkyGrayTint04,
@@ -49,7 +49,7 @@ import {
   type BpkDynamicValue,
 } from 'react-native-bpk-appearance';
 
-const disabledColor = { light: colorSkyGrayTint06, dark: colorBlackTint03 };
+const disabledColor = { light: colorSkyGrayTint06, dark: colorBlackTint05 };
 const notFocusedColor = colorSkyGrayTint04;
 const underlineColor = { light: colorSkyGrayTint06, dark: lineDarkColor };
 const placeholderColor = {

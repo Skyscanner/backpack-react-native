@@ -26,7 +26,7 @@ import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-nat
 import BpkText from 'react-native-bpk-component-text';
 import {
   colorSkyGrayTint06,
-  colorBlackTint03,
+  colorBlackTint05,
   colorPanjin,
   borderSizeSm,
   spacingBase,
@@ -58,7 +58,7 @@ const dynamicStyles = BpkDynamicStyleSheet.create({
     marginEnd: 'auto',
   },
   selectContentDisabled: {
-    color: { light: colorSkyGrayTint06, dark: colorBlackTint03 },
+    color: { light: colorSkyGrayTint06, dark: colorBlackTint05 },
   },
   selectImage: {
     width: spacingBase,

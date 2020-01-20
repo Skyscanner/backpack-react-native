@@ -21,7 +21,7 @@
 import {
   primaryColor,
   colorSkyGrayTint04,
-  colorBlackTint03,
+  colorBlackTint05,
   spacingSm,
   spacingXl,
 } from 'bpk-tokens/tokens/base.react.native';
@@ -47,7 +47,7 @@ const styles = BpkDynamicStyleSheet.create({
     color: primaryColor,
   },
   textDisabled: {
-    color: { light: colorSkyGrayTint04, dark: colorBlackTint03 },
+    color: { light: colorSkyGrayTint04, dark: colorBlackTint05 },
   },
   icon: {
     color: primaryColor,

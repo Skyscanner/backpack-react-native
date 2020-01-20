@@ -30,7 +30,7 @@ import {
   textPrimaryColor,
   lineDarkColor,
   colorSkyBlue,
-  colorBlackTint03,
+  colorBlackTint05,
   colorSkyGrayTint05,
   colorSkyGrayTint04,
   colorSkyGrayTint02,
@@ -56,7 +56,7 @@ import {
   CHIP_TYPES,
 } from './common-types';
 
-const disabledTextColor = { light: colorSkyGrayTint04, dark: colorBlackTint03 };
+const disabledTextColor = { light: colorSkyGrayTint04, dark: colorBlackTint05 };
 
 const dynamicStyles = BpkDynamicStyleSheet.create({
   inner: {
@@ -115,10 +115,10 @@ const dynamicStyles = BpkDynamicStyleSheet.create({
     color: colorSkyGrayTint05,
   },
   textOutlineDisabled: {
-    color: colorBlackTint03,
+    color: colorBlackTint05,
   },
   iconOutlineDisabled: {
-    color: colorBlackTint03,
+    color: colorBlackTint05,
   },
 });
 

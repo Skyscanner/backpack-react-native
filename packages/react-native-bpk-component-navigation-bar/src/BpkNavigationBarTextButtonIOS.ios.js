@@ -23,7 +23,7 @@ import PropTypes from 'prop-types';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 import BpkText, { WEIGHT_STYLES } from 'react-native-bpk-component-text';
 import {
-  colorBlackTint03,
+  colorBlackTint05,
   colorSkyGrayTint04,
   textPrimaryColor,
   primaryColor,
@@ -91,7 +91,7 @@ const BpkNavigationBarTextButtonIOS = (props: Props) => {
 
   const defaultTintColor = useBpkDynamicValue({
     light: colorSkyGrayTint04,
-    dark: colorBlackTint03,
+    dark: colorBlackTint05,
   });
 
   const accessibilityStates = [];

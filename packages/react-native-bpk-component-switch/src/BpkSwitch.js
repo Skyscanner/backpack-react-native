@@ -30,7 +30,7 @@ import {
   colorSkyBlue,
   colorBlackTint01,
   colorBlackTint02,
-  colorBlackTint03,
+  colorBlackTint05,
   colorSkyGrayTint06,
   colorSkyGrayTint07,
 } from 'bpk-tokens/tokens/base.react.native';
@@ -46,7 +46,7 @@ const useColors = (themeAttributes: ?Object, value: ?boolean): Object => {
 
   const androidUnselectedThumbColor = useBpkDynamicValue({
     light: colorSkyGrayTint07,
-    dark: colorBlackTint03,
+    dark: colorBlackTint05,
   });
 
   // The color props mean different things based on the platform.
