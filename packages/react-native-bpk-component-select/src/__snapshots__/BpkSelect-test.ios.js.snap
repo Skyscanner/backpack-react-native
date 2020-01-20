@@ -21,7 +21,7 @@ exports[`iOS BpkSelect dark mode should render correctly 1`] = `
         Object {
           "alignItems": "center",
           "borderBottomWidth": 1,
-          "borderColor": "rgb(68, 69, 96)",
+          "borderColor": "rgb(72, 72, 74)",
           "flexDirection": "row",
           "justifyContent": "space-between",
           "paddingVertical": 4,
@@ -94,7 +94,7 @@ exports[`iOS BpkSelect dark mode should render correctly with "showImage" and im
         Object {
           "alignItems": "center",
           "borderBottomWidth": 1,
-          "borderColor": "rgb(68, 69, 96)",
+          "borderColor": "rgb(72, 72, 74)",
           "flexDirection": "row",
           "justifyContent": "space-between",
           "paddingVertical": 4,
@@ -182,7 +182,7 @@ exports[`iOS BpkSelect dark mode should render correctly with "showImage" and no
         Object {
           "alignItems": "center",
           "borderBottomWidth": 1,
-          "borderColor": "rgb(68, 69, 96)",
+          "borderColor": "rgb(72, 72, 74)",
           "flexDirection": "row",
           "justifyContent": "space-between",
           "paddingVertical": 4,
@@ -267,7 +267,7 @@ exports[`iOS BpkSelect dark mode should render correctly with "valid" false 1`] 
         Object {
           "alignItems": "center",
           "borderBottomWidth": 1,
-          "borderColor": "rgb(68, 69, 96)",
+          "borderColor": "rgb(72, 72, 74)",
           "flexDirection": "row",
           "justifyContent": "space-between",
           "paddingVertical": 4,
@@ -370,7 +370,7 @@ exports[`iOS BpkSelect dark mode should render correctly with "valid" false and 
           Object {
             "alignItems": "center",
             "borderBottomWidth": 1,
-            "borderColor": "rgb(68, 69, 96)",
+            "borderColor": "rgb(72, 72, 74)",
             "flexDirection": "row",
             "justifyContent": "space-between",
             "paddingVertical": 4,
@@ -494,7 +494,7 @@ exports[`iOS BpkSelect dark mode should render correctly with "valid" true 1`] =
         Object {
           "alignItems": "center",
           "borderBottomWidth": 1,
-          "borderColor": "rgb(68, 69, 96)",
+          "borderColor": "rgb(72, 72, 74)",
           "flexDirection": "row",
           "justifyContent": "space-between",
           "paddingVertical": 4,
@@ -593,7 +593,7 @@ exports[`iOS BpkSelect dark mode should render correctly with a text label 1`] =
         Object {
           "alignItems": "center",
           "borderBottomWidth": 1,
-          "borderColor": "rgb(68, 69, 96)",
+          "borderColor": "rgb(72, 72, 74)",
           "flexDirection": "row",
           "justifyContent": "space-between",
           "paddingVertical": 4,
@@ -689,7 +689,7 @@ exports[`iOS BpkSelect dark mode should render correctly with an element label 1
         Object {
           "alignItems": "center",
           "borderBottomWidth": 1,
-          "borderColor": "rgb(68, 69, 96)",
+          "borderColor": "rgb(72, 72, 74)",
           "flexDirection": "row",
           "justifyContent": "space-between",
           "paddingVertical": 4,
@@ -767,7 +767,7 @@ exports[`iOS BpkSelect dark mode should render correctly with custom styles 1`] 
         Object {
           "alignItems": "center",
           "borderBottomWidth": 1,
-          "borderColor": "rgb(68, 69, 96)",
+          "borderColor": "rgb(72, 72, 74)",
           "flexDirection": "row",
           "justifyContent": "space-between",
           "paddingVertical": 4,
@@ -867,7 +867,7 @@ exports[`iOS BpkSelect dark mode should render correctly with the disabled prop 
         Object {
           "alignItems": "center",
           "borderBottomWidth": 1,
-          "borderColor": "rgb(68, 69, 96)",
+          "borderColor": "rgb(72, 72, 74)",
           "flexDirection": "row",
           "justifyContent": "space-between",
           "paddingVertical": 4,

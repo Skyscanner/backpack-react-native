@@ -29,7 +29,7 @@ exports[`Android BpkSectionListHeader dark mode should render correctly 1`] = `
           "fontFamily": "sans-serif-medium",
         },
         Object {
-          "color": "rgb(143, 144, 160)",
+          "color": "rgb(142, 142, 147)",
         },
       ]
     }

@@ -18,7 +18,7 @@
     "react-native-bpk-test-utils": "^0.0.5"
   },
   "dependencies": {
-    "bpk-tokens": "^29.4.0",
+    "bpk-tokens": "^29.6.1",
     "prop-types": "^15.5.8",
     "react-native-bpk-theming": "^1.4.11"
   },

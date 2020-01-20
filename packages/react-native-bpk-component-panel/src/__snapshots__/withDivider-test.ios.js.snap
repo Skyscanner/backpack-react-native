@@ -55,7 +55,7 @@ exports[`iOS withDivider dark mode should render correctly 1`] = `
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(68, 69, 96)",
+          "backgroundColor": "rgb(72, 72, 74)",
           "flexDirection": "column",
           "width": 1,
         },

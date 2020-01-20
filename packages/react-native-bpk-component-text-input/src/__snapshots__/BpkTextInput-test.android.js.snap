@@ -164,7 +164,7 @@ exports[`Android BpkTextInput dark mode should render correctly with \`accessory
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(143, 144, 160, 1)",
+          "color": "rgba(142, 142, 147, 1)",
           "fontFamily": "sans-serif",
           "fontSize": 14,
           "fontWeight": "400",
@@ -390,7 +390,7 @@ exports[`Android BpkTextInput dark mode should render correctly with description
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(143, 144, 160, 1)",
+          "color": "rgba(142, 142, 147, 1)",
           "fontFamily": "sans-serif",
           "fontSize": 14,
           "fontWeight": "400",
@@ -455,7 +455,7 @@ exports[`Android BpkTextInput dark mode should render correctly with description
         },
         Object {},
         Object {
-          "color": "rgb(143, 144, 160)",
+          "color": "rgb(142, 142, 147)",
           "paddingTop": 4,
         },
       ]
@@ -751,7 +751,7 @@ exports[`Android BpkTextInput dark mode should render correctly with mask="99/99
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(143, 144, 160, 1)",
+          "color": "rgba(142, 142, 147, 1)",
           "fontFamily": "sans-serif",
           "fontSize": 14,
           "fontWeight": "400",
@@ -824,7 +824,7 @@ exports[`Android BpkTextInput dark mode should render correctly with mask="9999-
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(143, 144, 160, 1)",
+          "color": "rgba(142, 142, 147, 1)",
           "fontFamily": "sans-serif",
           "fontSize": 14,
           "fontWeight": "400",
@@ -1218,7 +1218,7 @@ exports[`Android BpkTextInput dark mode should render correctly with value 1`] =
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(143, 144, 160, 1)",
+          "color": "rgba(142, 142, 147, 1)",
           "fontFamily": "sans-serif",
           "fontSize": 14,
           "fontWeight": "400",

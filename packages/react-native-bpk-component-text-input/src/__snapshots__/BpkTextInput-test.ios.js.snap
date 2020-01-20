@@ -34,7 +34,7 @@ exports[`iOS BpkTextInput dark mode should ignore when placeholder is provided, 
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomColor": "rgba(72, 72, 74, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -107,7 +107,7 @@ exports[`iOS BpkTextInput dark mode should render correctly 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomColor": "rgba(72, 72, 74, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -164,7 +164,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with \`accessoryView
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(143, 144, 160, 1)",
+          "color": "rgba(142, 142, 147, 1)",
           "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "400",
@@ -181,7 +181,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with \`accessoryView
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomColor": "rgba(72, 72, 74, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -255,7 +255,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with arbitrary props
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomColor": "rgba(72, 72, 74, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -333,7 +333,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with custom style 1`
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomColor": "rgba(72, 72, 74, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -390,7 +390,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with description 1`]
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(143, 144, 160, 1)",
+          "color": "rgba(142, 142, 147, 1)",
           "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "400",
@@ -406,7 +406,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with description 1`]
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomColor": "rgba(72, 72, 74, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -455,7 +455,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with description 1`]
         },
         Object {},
         Object {
-          "color": "rgb(143, 144, 160)",
+          "color": "rgb(142, 142, 147)",
           "paddingTop": 4,
         },
       ]
@@ -621,7 +621,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with editable=false 
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomColor": "rgba(72, 72, 74, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -694,7 +694,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with inputRef set 1`
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomColor": "rgba(72, 72, 74, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -751,7 +751,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with mask="99/99" 1`
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(143, 144, 160, 1)",
+          "color": "rgba(142, 142, 147, 1)",
           "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "400",
@@ -767,7 +767,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with mask="99/99" 1`
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomColor": "rgba(72, 72, 74, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -824,7 +824,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with mask="9999-9999
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(143, 144, 160, 1)",
+          "color": "rgba(142, 142, 147, 1)",
           "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "400",
@@ -840,7 +840,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with mask="9999-9999
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomColor": "rgba(72, 72, 74, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -913,7 +913,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with valid 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomColor": "rgba(72, 72, 74, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -1218,7 +1218,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with value 1`] = `
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(143, 144, 160, 1)",
+          "color": "rgba(142, 142, 147, 1)",
           "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "400",
@@ -1234,7 +1234,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with value 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomColor": "rgba(72, 72, 74, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -1307,7 +1307,7 @@ exports[`iOS BpkTextInput dark mode should support font theming 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomColor": "rgba(72, 72, 74, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -1383,7 +1383,7 @@ exports[`iOS BpkTextInput dark mode should support theming 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomColor": "rgba(72, 72, 74, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",

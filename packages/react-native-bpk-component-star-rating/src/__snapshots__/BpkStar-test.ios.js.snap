@@ -23,7 +23,7 @@ exports[`iOS BpkStar dark mode should render correctly when empty 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(44, 44, 46)",
+            "color": "rgb(72, 72, 74)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -64,7 +64,7 @@ exports[`iOS BpkStar dark mode should render correctly when full 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(44, 44, 46)",
+            "color": "rgb(72, 72, 74)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -92,7 +92,7 @@ exports[`iOS BpkStar dark mode should render correctly when full 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(44, 44, 46)",
+            "color": "rgb(72, 72, 74)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -139,7 +139,7 @@ exports[`iOS BpkStar dark mode should render correctly when half 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(44, 44, 46)",
+            "color": "rgb(72, 72, 74)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -167,7 +167,7 @@ exports[`iOS BpkStar dark mode should render correctly when half 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(44, 44, 46)",
+            "color": "rgb(72, 72, 74)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -214,7 +214,7 @@ exports[`iOS BpkStar dark mode should support theming when empty 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(44, 44, 46)",
+            "color": "rgb(72, 72, 74)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -258,7 +258,7 @@ exports[`iOS BpkStar dark mode should support theming when full 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(44, 44, 46)",
+            "color": "rgb(72, 72, 74)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -289,7 +289,7 @@ exports[`iOS BpkStar dark mode should support theming when full 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(44, 44, 46)",
+            "color": "rgb(72, 72, 74)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -339,7 +339,7 @@ exports[`iOS BpkStar dark mode should support theming when half 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(44, 44, 46)",
+            "color": "rgb(72, 72, 74)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -370,7 +370,7 @@ exports[`iOS BpkStar dark mode should support theming when half 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(44, 44, 46)",
+            "color": "rgb(72, 72, 74)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,

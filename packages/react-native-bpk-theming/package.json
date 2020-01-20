@@ -18,7 +18,7 @@
 				"theming": "^1.1.0"
 		},
 		"devDependencies": {
-				"bpk-tokens": "^29.4.0"
+				"bpk-tokens": "^29.6.1"
 		},
 		"publishConfig": {
 				"registry": "https://registry.npmjs.org/"
