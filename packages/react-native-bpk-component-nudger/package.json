@@ -1,6 +1,6 @@
 {
   "name": "react-native-bpk-component-nudger",
-  "version": "4.0.16",
+  "version": "4.0.17",
   "main": "index.js",
   "description": "Backpack React Native budger component.",
   "repository": {
@@ -14,15 +14,15 @@
     "react-native": ">= 0.59.0"
   },
   "devDependencies": {
-    "react-native-bpk-theming": "^1.4.11"
+    "react-native-bpk-theming": "^1.4.12"
   },
   "dependencies": {
     "bpk-tokens": "^29.6.1",
     "lodash": "^4.17.5",
     "prop-types": "^15.5.8",
-    "react-native-bpk-component-button": "^11.2.0",
-    "react-native-bpk-component-icon": "^2.2.7",
-    "react-native-bpk-component-text": "^4.2.8"
+    "react-native-bpk-component-button": "^11.2.1",
+    "react-native-bpk-component-icon": "^2.2.8",
+    "react-native-bpk-component-text": "^4.2.9"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
