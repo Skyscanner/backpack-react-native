@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2020-01-20
+
+**Fixed:**
+ - react-native-bpk-component-button: 11.2.0 => 11.2.1
+ - react-native-bpk-component-star-rating: 2.1.4 => 2.1.5
+   - Adopted latest dark mode colour specification.
+
 # 2019-12-28
 
 - react-native-bpk-component-calendar: 4.2.0 => 4.2.1
