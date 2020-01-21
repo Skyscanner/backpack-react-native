@@ -257,7 +257,7 @@ exports[`Android BpkDismissibleChip dark mode should render outline correctly 1`
         },
         Object {
           "backgroundColor": "transparent",
-          "borderColor": "rgb(68, 69, 96)",
+          "borderColor": "rgb(72, 72, 74)",
           "borderWidth": 1,
           "paddingVertical": 7,
         },
@@ -579,7 +579,7 @@ exports[`Android BpkDismissibleChip light mode should render outline correctly 1
         },
         Object {
           "backgroundColor": "transparent",
-          "borderColor": "rgb(68, 69, 96)",
+          "borderColor": "rgb(72, 72, 74)",
           "borderWidth": 1,
           "paddingVertical": 7,
         },
