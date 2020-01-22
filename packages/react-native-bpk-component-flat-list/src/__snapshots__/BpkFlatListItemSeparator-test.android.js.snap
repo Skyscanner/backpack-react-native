@@ -4,7 +4,7 @@ exports[`Android BpkFlatListItemSeparator dark mode should render correctly 1`] 
 <View
   style={
     Object {
-      "backgroundColor": "rgb(68, 69, 96)",
+      "backgroundColor": "rgb(72, 72, 74)",
       "flex": 1,
       "height": 1,
       "marginHorizontal": 8,

@@ -6,7 +6,7 @@ exports[`Android BpkHorizontalNav dark mode should render correctly 1`] = `
   contentContainerStyle={
     Array [
       Object {
-        "borderBottomColor": "rgb(68, 69, 96)",
+        "borderBottomColor": "rgb(72, 72, 74)",
         "borderBottomWidth": 1,
         "borderColor": "transparent",
         "flexDirection": "column",

@@ -26,7 +26,7 @@ exports[`Android BpkSelect dark mode should render correctly 1`] = `
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(68, 69, 96)",
+        "borderColor": "rgb(72, 72, 74)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -87,7 +87,7 @@ exports[`Android BpkSelect dark mode should render correctly with "showImage" an
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(68, 69, 96)",
+        "borderColor": "rgb(72, 72, 74)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -163,7 +163,7 @@ exports[`Android BpkSelect dark mode should render correctly with "showImage" an
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(68, 69, 96)",
+        "borderColor": "rgb(72, 72, 74)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -236,7 +236,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(68, 69, 96)",
+        "borderColor": "rgb(72, 72, 74)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -327,7 +327,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
         Object {
           "alignItems": "center",
           "borderBottomWidth": 1,
-          "borderColor": "rgb(68, 69, 96)",
+          "borderColor": "rgb(72, 72, 74)",
           "flexDirection": "row",
           "justifyContent": "space-between",
           "paddingVertical": 4,
@@ -439,7 +439,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" true 1
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(68, 69, 96)",
+        "borderColor": "rgb(72, 72, 74)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -526,7 +526,7 @@ exports[`Android BpkSelect dark mode should render correctly with a text label 1
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(68, 69, 96)",
+        "borderColor": "rgb(72, 72, 74)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -610,7 +610,7 @@ exports[`Android BpkSelect dark mode should render correctly with an element lab
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(68, 69, 96)",
+        "borderColor": "rgb(72, 72, 74)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -672,7 +672,7 @@ exports[`Android BpkSelect dark mode should render correctly with custom styles 
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(68, 69, 96)",
+        "borderColor": "rgb(72, 72, 74)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -760,7 +760,7 @@ exports[`Android BpkSelect dark mode should render correctly with the disabled p
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(68, 69, 96)",
+        "borderColor": "rgb(72, 72, 74)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,

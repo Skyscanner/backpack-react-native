@@ -5,7 +5,7 @@ exports[`Android BpkSectionListHeader dark mode should render correctly 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "borderTopColor": "rgb(68, 69, 96)",
+      "borderTopColor": "rgb(72, 72, 74)",
       "borderTopWidth": 1,
       "flexDirection": "row",
       "height": 48,

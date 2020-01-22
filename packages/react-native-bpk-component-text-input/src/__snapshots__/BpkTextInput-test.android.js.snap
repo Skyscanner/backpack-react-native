@@ -34,7 +34,7 @@ exports[`Android BpkTextInput dark mode should ignore when placeholder is provid
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomColor": "rgba(72, 72, 74, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -107,7 +107,7 @@ exports[`Android BpkTextInput dark mode should render correctly 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomColor": "rgba(72, 72, 74, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -181,7 +181,7 @@ exports[`Android BpkTextInput dark mode should render correctly with \`accessory
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomColor": "rgba(72, 72, 74, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -255,7 +255,7 @@ exports[`Android BpkTextInput dark mode should render correctly with arbitrary p
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomColor": "rgba(72, 72, 74, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -333,7 +333,7 @@ exports[`Android BpkTextInput dark mode should render correctly with custom styl
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomColor": "rgba(72, 72, 74, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -406,7 +406,7 @@ exports[`Android BpkTextInput dark mode should render correctly with description
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomColor": "rgba(72, 72, 74, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -621,7 +621,7 @@ exports[`Android BpkTextInput dark mode should render correctly with editable=fa
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomColor": "rgba(72, 72, 74, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -694,7 +694,7 @@ exports[`Android BpkTextInput dark mode should render correctly with inputRef se
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomColor": "rgba(72, 72, 74, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -767,7 +767,7 @@ exports[`Android BpkTextInput dark mode should render correctly with mask="99/99
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomColor": "rgba(72, 72, 74, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -840,7 +840,7 @@ exports[`Android BpkTextInput dark mode should render correctly with mask="9999-
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomColor": "rgba(72, 72, 74, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -913,7 +913,7 @@ exports[`Android BpkTextInput dark mode should render correctly with valid 1`] =
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomColor": "rgba(72, 72, 74, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -1234,7 +1234,7 @@ exports[`Android BpkTextInput dark mode should render correctly with value 1`] =
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomColor": "rgba(72, 72, 74, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -1307,7 +1307,7 @@ exports[`Android BpkTextInput dark mode should support font theming 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomColor": "rgba(72, 72, 74, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -1383,7 +1383,7 @@ exports[`Android BpkTextInput dark mode should support theming 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(68, 69, 96, 1)",
+          "borderBottomColor": "rgba(72, 72, 74, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
