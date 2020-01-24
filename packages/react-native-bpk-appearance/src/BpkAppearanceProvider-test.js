@@ -23,9 +23,11 @@ import BpkAppearanceProvider, {
 } from './BpkAppearanceProvider';
 import BpkAppearance from './BpkAppearance';
 
-jest.mock('react-native-dark-mode', () => ({
-  initialMode: 'light',
-  eventEmitter: { on: jest.fn() },
+jest.mock('react-native-appearance', () => ({
+  Appearance: {
+    getColorScheme: jest.fn(() => 'light'),
+    addChangeListener: jest.fn(),
+  },
 }));
 
 const TestComponent = () => {

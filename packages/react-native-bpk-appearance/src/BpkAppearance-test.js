@@ -15,25 +15,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { eventEmitter as mockedEmitter } from 'react-native-dark-mode';
 
 import subject from './BpkAppearance';
 
-jest.mock('react-native-dark-mode', () => {
-  const eventEmitter = (() => {
-    let registeredCallback = () => {};
-    return {
-      on: (event, callback) => {
-        registeredCallback = callback;
-      },
-      trigger: newMode => registeredCallback(newMode),
-    };
-  })();
-  return {
-    initialMode: 'light',
-    eventEmitter,
-  };
-});
+jest.mock('react-native-appearance', () => ({
+  Appearance: {
+    getColorScheme: jest.fn(() => 'light'),
+    addChangeListener: jest.fn(),
+  },
+}));
 
 describe('BpkAppearance', () => {
   const initialAppearance = subject.get();
@@ -104,7 +94,7 @@ describe('BpkAppearance', () => {
     const changeListener = jest.fn();
     subject.addChangeListener(changeListener);
 
-    mockedEmitter.trigger('dark');
+    subject.set({ colorScheme: 'dark' });
 
     expect(changeListener).toHaveBeenCalledWith({ colorScheme: 'dark' });
     subject.removeChangeListener(changeListener);

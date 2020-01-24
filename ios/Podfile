@@ -45,7 +45,7 @@ target 'Backpack Native' do
 
   # Third party pods
   pod 'react-native-maps', path: '../packages/react-native-bpk-component-map/node_modules/react-native-maps', :modular_headers => false
-  pod 'ReactNativeDarkMode', path: '../packages/react-native-bpk-appearance/node_modules/react-native-dark-mode/ReactNativeDarkMode.podspec', :modular_headers => false
+  pod 'react-native-appearance', :path => '../packages/react-native-bpk-appearance/node_modules/react-native-appearance', :modular_headers => false
 
   target 'Backpack Native Tests' do
     inherit! :search_paths

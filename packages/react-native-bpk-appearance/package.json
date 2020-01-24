@@ -16,7 +16,7 @@
   "dependencies": {
     "bpk-tokens": "^32.0.0",
     "prop-types": "^15.5.8",
-    "react-native-dark-mode": "^0.2.1-rc.0"
+    "react-native-appearance": "^0.3.2"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"

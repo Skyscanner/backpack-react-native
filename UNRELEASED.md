@@ -2,6 +2,13 @@
 
 > Place your changes below this line.
 
+<<<<<<< HEAD
+=======
+**Fixed:**
+ - react-native-bpk-appearance:
+   - We've changed the underlying library used to enable dark-mode support.
+
+>>>>>>> [BPK-3515] Replace underlying bpk-appearance library
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).

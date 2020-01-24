@@ -18,7 +18,7 @@
 
 /* @flow */
 
-import { initialMode, eventEmitter } from 'react-native-dark-mode';
+import { Appearance } from 'react-native-appearance';
 
 export type ColorSchemeName = 'light' | 'dark';
 
@@ -28,7 +28,9 @@ export type BpkAppearancePreferences = {
 
 export type BpkAppearanceChangeListener = BpkAppearancePreferences => void;
 
-let currentPreferences: BpkAppearancePreferences = { colorScheme: initialMode };
+let currentPreferences: BpkAppearancePreferences = {
+  colorScheme: Appearance.getColorScheme(),
+};
 const listeners: Set<BpkAppearanceChangeListener> = new Set([]);
 
 const appearance = {
@@ -47,8 +49,8 @@ const appearance = {
   },
 };
 
-eventEmitter.on('currentModeChanged', newMode => {
-  appearance.set({ ...currentPreferences, colorScheme: newMode });
+Appearance.addChangeListener(({ colorScheme }) => {
+  appearance.set({ ...currentPreferences, colorScheme });
 });
 
 export default appearance;
