@@ -26,13 +26,6 @@ import BpkAppearanceConsumer, {
   type ChildrenProps,
 } from './BpkAppearanceConsumer';
 
-jest.mock('react-native-appearance', () => ({
-  Appearance: {
-    getColorScheme: jest.fn(() => 'light'),
-    addChangeListener: jest.fn(),
-  },
-}));
-
 const TestComponent = ({ bpkAppearance }) => {
   TestComponent.currentAppearance = bpkAppearance;
   return null;

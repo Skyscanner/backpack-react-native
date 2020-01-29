@@ -29,13 +29,6 @@ import {
   useBpkDynamicStyle,
 } from './hooks';
 
-jest.mock('react-native-appearance', () => ({
-  Appearance: {
-    getColorScheme: jest.fn(() => 'light'),
-    addChangeListener: jest.fn(),
-  },
-}));
-
 const TestComponent = ({ hook }) => {
   TestComponent.currentValue = hook();
   return null;

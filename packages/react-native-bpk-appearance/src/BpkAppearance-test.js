@@ -18,13 +18,6 @@
 
 import subject from './BpkAppearance';
 
-jest.mock('react-native-appearance', () => ({
-  Appearance: {
-    getColorScheme: jest.fn(() => 'light'),
-    addChangeListener: jest.fn(),
-  },
-}));
-
 describe('BpkAppearance', () => {
   const initialAppearance = subject.get();
   afterEach(() => {

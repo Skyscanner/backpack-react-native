@@ -23,13 +23,6 @@ import BpkAppearanceProvider, {
 } from './BpkAppearanceProvider';
 import BpkAppearance from './BpkAppearance';
 
-jest.mock('react-native-appearance', () => ({
-  Appearance: {
-    getColorScheme: jest.fn(() => 'light'),
-    addChangeListener: jest.fn(),
-  },
-}));
-
 const TestComponent = () => {
   TestComponent.currentAppearance = useContext(BpkAppearanceProviderContext);
   return null;
