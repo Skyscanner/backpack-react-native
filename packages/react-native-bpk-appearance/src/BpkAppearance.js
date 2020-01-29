@@ -21,6 +21,7 @@
 import { Appearance } from 'react-native-appearance';
 
 export type ColorSchemeName = 'light' | 'dark';
+type NativeColorSchemeName = 'no-preference' | ColorSchemeName;
 
 export type BpkAppearancePreferences = {
   colorScheme?: ColorSchemeName,
@@ -28,9 +29,20 @@ export type BpkAppearancePreferences = {
 
 export type BpkAppearanceChangeListener = BpkAppearancePreferences => void;
 
-let currentPreferences: BpkAppearancePreferences = {
-  colorScheme: Appearance.getColorScheme(),
+const normalizeColorScheme = (
+  colorScheme: NativeColorSchemeName,
+): ColorSchemeName => {
+  if (colorScheme === 'no-preference') {
+    return 'light';
+  }
+
+  return colorScheme;
 };
+
+let currentPreferences: BpkAppearancePreferences = {
+  colorScheme: normalizeColorScheme(Appearance.getColorScheme()),
+};
+
 const listeners: Set<BpkAppearanceChangeListener> = new Set([]);
 
 const appearance = {
@@ -49,8 +61,13 @@ const appearance = {
   },
 };
 
-Appearance.addChangeListener(({ colorScheme }) => {
-  appearance.set({ ...currentPreferences, colorScheme });
-});
+Appearance.addChangeListener(
+  ({ colorScheme }: { colorScheme: NativeColorSchemeName }) => {
+    appearance.set({
+      ...currentPreferences,
+      colorScheme: normalizeColorScheme(colorScheme),
+    });
+  },
+);
 
 export default appearance;

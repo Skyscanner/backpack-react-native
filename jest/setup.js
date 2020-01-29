@@ -20,9 +20,13 @@
 
 import { NativeModules } from 'react-native';
 
-NativeModules.RNDarkMode = {
-  initialMode: 'light',
-  supportsDarkMode: true,
-  addListener: jest.fn(),
-  removeListeners: jest.fn(),
-};
+// Need to redefine the property as it is defined with a `getter` and setting it normally would not replace that
+Object.defineProperty(NativeModules, 'RNCAppearance', {
+  value: {
+    initialPreferences: {
+      colorScheme: 'light',
+    },
+    addListener: jest.fn(),
+    removeListener: jest.fn(),
+  },
+});

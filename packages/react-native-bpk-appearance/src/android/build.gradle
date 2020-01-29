@@ -39,8 +39,8 @@ android {
 dependencies {
   if (project.ext.embedDeps) {
     // embed deps will be added to the arr directly (fat-jar) and not as a dependency
-    embed project(path: ':react-native-dark-mode', configuration: 'default')
+    embed project(path: ':react-native-appearance', configuration: 'default')
   } else {
-    api project(':react-native-dark-mode')
+    api project(':react-native-appearance')
   }
 }

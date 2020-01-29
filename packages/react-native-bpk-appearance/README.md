@@ -65,10 +65,10 @@ Alternatively, the pre compiled version is available on Skyscanner's internal Ar
 
 #### Importing the bridge package
 
-After you have installed the lib, import the `DialogPackage()` in your react application:
+After you have installed the lib, import the `RNCAppearancePackage()` in your react application:
 
 ```java
-import com.codemotionapps.reactnativedarkmode.DarkModePackage
+import io.expo.appearance.RNCAppearancePackage
 
 ....
 
@@ -76,7 +76,7 @@ import com.codemotionapps.reactnativedarkmode.DarkModePackage
 protected List<ReactPackage> getPackages() {
     return Arrays.<ReactPackage>asList(
             new MainReactPackage(),
-            new DarkModePackage()
+            new RNCAppearancePackage()
     );
 }
 ```
