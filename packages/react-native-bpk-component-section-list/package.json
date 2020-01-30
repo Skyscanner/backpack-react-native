@@ -1,6 +1,6 @@
 {
   "name": "react-native-bpk-component-section-list",
-  "version": "5.3.2",
+  "version": "5.3.3",
   "main": "index.js",
   "description": "Backpack React Native section list component.",
   "repository": {
@@ -17,12 +17,12 @@
   "dependencies": {
     "bpk-tokens": "^30.1.2",
     "prop-types": "^15.5.8",
-    "react-native-bpk-component-flat-list": "^5.3.2",
-    "react-native-bpk-component-icon": "^2.2.9",
-    "react-native-bpk-component-text": "^4.2.10",
-    "react-native-bpk-component-touchable-native-feedback": "^2.0.24",
-    "react-native-bpk-component-touchable-overlay": "^2.1.9",
-    "react-native-bpk-theming": "^1.4.13"
+    "react-native-bpk-component-flat-list": "^5.3.3",
+    "react-native-bpk-component-icon": "^2.2.10",
+    "react-native-bpk-component-text": "^4.2.11",
+    "react-native-bpk-component-touchable-native-feedback": "^2.0.25",
+    "react-native-bpk-component-touchable-overlay": "^2.1.10",
+    "react-native-bpk-theming": "^1.4.14"
   },
   "devDependencies": {
     "react-native-bpk-test-utils": "^0.0.6"
