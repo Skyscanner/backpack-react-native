@@ -1,6 +1,6 @@
 {
   "name": "react-native-bpk-component-banner-alert",
-  "version": "7.2.5",
+  "version": "7.2.6",
   "main": "index.js",
   "description": "Backpack React Native banner alert component.",
   "repository": {
@@ -17,19 +17,19 @@
   "dependencies": {
     "bpk-tokens": "^30.1.2",
     "prop-types": "^15.5.8",
-    "react-native-bpk-component-animate-height": "^3.0.28",
-    "react-native-bpk-component-button-link": "^6.1.9",
-    "react-native-bpk-component-icon": "^2.2.8",
-    "react-native-bpk-component-text": "^4.2.9",
-    "react-native-bpk-component-touchable-native-feedback": "^2.0.23",
-    "react-native-bpk-component-touchable-overlay": "^2.1.8"
+    "react-native-bpk-component-animate-height": "^3.0.29",
+    "react-native-bpk-component-button-link": "^6.1.10",
+    "react-native-bpk-component-icon": "^2.2.9",
+    "react-native-bpk-component-text": "^4.2.10",
+    "react-native-bpk-component-touchable-native-feedback": "^2.0.24",
+    "react-native-bpk-component-touchable-overlay": "^2.1.9"
   },
   "devDependencies": {
-    "react-native-bpk-component-button": "^11.2.1",
+    "react-native-bpk-component-button": "^11.2.2",
     "react-native-bpk-test-utils": "^0.0.6"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "gitHead": "5f73e94afd4e1fab170adbb3573cd93064761eeb"
+  "gitHead": "4c3f5e828659a6d1decfa4bacfd9dac6a15d19ca"
 }

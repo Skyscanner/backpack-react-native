@@ -2,9 +2,6 @@
 
 > Place your changes below this line.
 
-**Fixed:**
-
-- Bumped `bpk-tokens` dependency.
 
 ## How to write a good changelog entry
 

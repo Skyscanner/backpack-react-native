@@ -2,6 +2,11 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2020-01-22 - Updated dependencies
+
+**Fixed:**
+- Bumped `bpk-tokens` dependency.
+
 # 2020-01-20
 
 **Fixed:**
