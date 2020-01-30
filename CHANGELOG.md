@@ -2,6 +2,12 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2020-01-30
+
+**Fixed:**
+- react-native-bpk-component-calendar:
+  - fixed crash happening when using the pre-compiled version with the latest backpack-android.
+
 # 2020-01-22 - Updated dependencies
 
 **Fixed:**
