@@ -26,9 +26,9 @@ import {
   colorSkyBlue,
   colorSkyGrayTint06,
   colorSkyGrayTint04,
-  colorSkyGrayTint02,
-  colorBlackTint05,
-  colorBlackTint02,
+  colorBlackTint06,
+  colorBlack,
+  colorBlackTint04,
   colorMonteverde,
   colorPanjin,
   colorWhite,
@@ -38,17 +38,17 @@ import { BUTTON_TYPES, type ButtonType } from './common-types';
 
 const disabledBackgroundColor = {
   light: colorSkyGrayTint06,
-  dark: colorBlackTint02,
+  dark: colorBlackTint04,
 };
 
 const borderedButtonBackgroundColor = {
   light: colorWhite,
-  dark: colorBlackTint02,
+  dark: colorBlack,
 };
 
 const borderedButtonBorderColor = {
   light: colorSkyGrayTint06,
-  dark: colorSkyGrayTint02,
+  dark: colorBlackTint04,
 };
 
 function valueOrDefault<T>(
@@ -141,7 +141,7 @@ export const textColorForType = (
   disabled: boolean,
 ) => {
   if (disabled) {
-    return { light: colorSkyGrayTint04, dark: colorBlackTint05 };
+    return { light: colorSkyGrayTint04, dark: colorBlackTint06 };
   }
 
   const textColors = {

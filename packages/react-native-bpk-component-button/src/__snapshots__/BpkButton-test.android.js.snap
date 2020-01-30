@@ -300,8 +300,8 @@ exports[`Android BpkButton dark mode should render correctly with type="destruct
           "paddingVertical": 6,
         },
         Object {
-          "backgroundColor": "rgb(44, 44, 46)",
-          "borderColor": "rgb(104, 105, 127)",
+          "backgroundColor": "rgb(0, 0, 0)",
+          "borderColor": "rgb(72, 72, 74)",
           "borderRadius": 4,
         },
         Object {
@@ -391,8 +391,8 @@ exports[`Android BpkButton dark mode should render correctly with type="destruct
           "paddingVertical": 6,
         },
         Object {
-          "backgroundColor": "rgb(44, 44, 46)",
-          "borderColor": "rgb(44, 44, 46)",
+          "backgroundColor": "rgb(72, 72, 74)",
+          "borderColor": "rgb(72, 72, 74)",
           "borderRadius": 4,
         },
         Object {
@@ -420,7 +420,7 @@ exports[`Android BpkButton dark mode should render correctly with type="destruct
               "lineHeight": 20,
             },
             Object {
-              "color": "rgb(99, 99, 102)",
+              "color": "rgb(142, 142, 147)",
             },
           ],
         ]
@@ -569,7 +569,7 @@ exports[`Android BpkButton dark mode should render correctly with type="featured
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(44, 44, 46)",
+          "backgroundColor": "rgb(72, 72, 74)",
           "borderRadius": 4,
         },
         Object {
@@ -597,7 +597,7 @@ exports[`Android BpkButton dark mode should render correctly with type="featured
               "lineHeight": 20,
             },
             Object {
-              "color": "rgb(99, 99, 102)",
+              "color": "rgb(142, 142, 147)",
             },
           ],
         ]
@@ -746,8 +746,8 @@ exports[`Android BpkButton dark mode should render correctly with type="outline"
           "paddingVertical": 6,
         },
         Object {
-          "backgroundColor": "rgb(44, 44, 46)",
-          "borderColor": "rgb(44, 44, 46)",
+          "backgroundColor": "rgb(72, 72, 74)",
+          "borderColor": "rgb(72, 72, 74)",
           "borderRadius": 4,
         },
         Object {
@@ -775,7 +775,7 @@ exports[`Android BpkButton dark mode should render correctly with type="outline"
               "lineHeight": 20,
             },
             Object {
-              "color": "rgb(99, 99, 102)",
+              "color": "rgb(142, 142, 147)",
             },
           ],
         ]
@@ -924,7 +924,7 @@ exports[`Android BpkButton dark mode should render correctly with type="primary"
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(44, 44, 46)",
+          "backgroundColor": "rgb(72, 72, 74)",
           "borderRadius": 4,
         },
         Object {
@@ -952,7 +952,7 @@ exports[`Android BpkButton dark mode should render correctly with type="primary"
               "lineHeight": 20,
             },
             Object {
-              "color": "rgb(99, 99, 102)",
+              "color": "rgb(142, 142, 147)",
             },
           ],
         ]
@@ -1010,8 +1010,8 @@ exports[`Android BpkButton dark mode should render correctly with type="secondar
           "paddingVertical": 6,
         },
         Object {
-          "backgroundColor": "rgb(44, 44, 46)",
-          "borderColor": "rgb(104, 105, 127)",
+          "backgroundColor": "rgb(0, 0, 0)",
+          "borderColor": "rgb(72, 72, 74)",
           "borderRadius": 4,
         },
         Object {
@@ -1101,8 +1101,8 @@ exports[`Android BpkButton dark mode should render correctly with type="secondar
           "paddingVertical": 6,
         },
         Object {
-          "backgroundColor": "rgb(44, 44, 46)",
-          "borderColor": "rgb(44, 44, 46)",
+          "backgroundColor": "rgb(72, 72, 74)",
+          "borderColor": "rgb(72, 72, 74)",
           "borderRadius": 4,
         },
         Object {
@@ -1130,7 +1130,7 @@ exports[`Android BpkButton dark mode should render correctly with type="secondar
               "lineHeight": 20,
             },
             Object {
-              "color": "rgb(99, 99, 102)",
+              "color": "rgb(142, 142, 147)",
             },
           ],
         ]
@@ -1282,7 +1282,7 @@ exports[`Android BpkButton dark mode should support the "disabled" property 1`] 
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(44, 44, 46)",
+          "backgroundColor": "rgb(72, 72, 74)",
           "borderRadius": 4,
         },
         Object {
@@ -1310,7 +1310,7 @@ exports[`Android BpkButton dark mode should support the "disabled" property 1`] 
               "lineHeight": 20,
             },
             Object {
-              "color": "rgb(99, 99, 102)",
+              "color": "rgb(142, 142, 147)",
             },
           ],
         ]
