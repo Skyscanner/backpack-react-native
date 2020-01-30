@@ -49,19 +49,21 @@ const findReplace = (file, findReplaces) => {
 const fixDependencyErrors = packageFiles => {
   const findReplaces = [];
   errors.forEach(error => {
-    findReplaces.push({
-      find: new RegExp(
-        `\\"${error.dependency}\\"\\:[ ]+\\"\\^[0-9]+\\.[0-9]+\\.[0-9]+\\"`,
-        'g',
-      ),
-      replace: `"${error.dependency}": "${error.correctDependencyVersion}"`,
-    });
-    // eslint-disable-next-line max-len
-    console.log(
-      `${error.dependency} dependency upgraded from ${
-        error.dependencyVersion
-      } to ${error.correctDependencyVersion}`,
-    );
+    if (error.type === 'InvalidVersion') {
+      findReplaces.push({
+        find: new RegExp(
+          `\\"${error.dependency}\\"\\:[ ]+\\"\\^[0-9]+\\.[0-9]+\\.[0-9]+\\"`,
+          'g',
+        ),
+        replace: `"${error.dependency}": "${error.correctDependencyVersion}"`,
+      });
+      // eslint-disable-next-line max-len
+      console.log(
+        `${error.dependency} dependency upgraded from ${
+          error.dependencyVersion
+        } to ${error.correctDependencyVersion}`,
+      );
+    }
   });
 
   packageFiles.forEach(file => {
@@ -73,26 +75,52 @@ const checkBpkDependencyList = (
   dependencies,
   correctVersions,
   packageName,
+  validations = [],
   whiteList = [],
 ) => {
   Object.keys(dependencies).forEach(dependency => {
     const isWhiteListed = whiteList.indexOf(dependency) > -1;
-    if (
-      !isWhiteListed &&
-      Object.keys(correctVersions).indexOf(dependency) !== -1
-    ) {
-      const dependencyVersion = dependencies[dependency];
-      const correctDependencyVersion = `^${correctVersions[dependency]}`;
-      if (dependencyVersion !== correctDependencyVersion) {
-        errors.push({
-          packageName,
-          dependency,
-          dependencyVersion,
-          correctDependencyVersion,
-        });
-      }
+    if (!isWhiteListed) {
+      validations.forEach(validation =>
+        validation(dependencies, dependency, correctVersions, packageName),
+      );
     }
   });
+};
+
+const validateDependencyVersion = (
+  dependencies,
+  dependency,
+  correctVersions,
+  packageName,
+) => {
+  if (Object.keys(correctVersions).indexOf(dependency) !== -1) {
+    const dependencyVersion = dependencies[dependency];
+    const correctDependencyVersion = `^${correctVersions[dependency]}`;
+    if (dependencyVersion !== correctDependencyVersion) {
+      errors.push({
+        type: 'InvalidVersion',
+        packageName,
+        dependency,
+        dependencyVersion,
+        correctDependencyVersion,
+      });
+    }
+  }
+};
+
+const validateBpkAppearance = (
+  dependencies,
+  dependency,
+  correctVersions,
+  packageName,
+) => {
+  if (dependency === 'react-native-bpk-appearance') {
+    errors.push({
+      type: 'BpkAppearanceNotPeer',
+      packageName,
+    });
+  }
 };
 
 const checkBpkDependencies = (packageFile, correctVersions) => {
@@ -105,15 +133,25 @@ const checkBpkDependencies = (packageFile, correctVersions) => {
   } = pfContent;
 
   if (peerDependencies !== undefined) {
-    checkBpkDependencyList(peerDependencies, correctVersions, packageName, [
-      'react-native-bpk-appearance',
-    ]);
+    checkBpkDependencyList(
+      peerDependencies,
+      correctVersions,
+      packageName,
+      [validateDependencyVersion],
+      ['react-native-bpk-appearance'],
+    );
   }
   if (dependencies !== undefined) {
-    checkBpkDependencyList(dependencies, correctVersions, packageName);
+    checkBpkDependencyList(dependencies, correctVersions, packageName, [
+      validateDependencyVersion,
+      validateBpkAppearance,
+    ]);
   }
   if (devDependencies !== undefined) {
-    checkBpkDependencyList(devDependencies, correctVersions, packageName);
+    checkBpkDependencyList(devDependencies, correctVersions, packageName, [
+      validateDependencyVersion,
+      validateBpkAppearance,
+    ]);
   }
 };
 
@@ -166,12 +204,23 @@ if (errors.length === 0) {
   console.log('Some Backpack cross dependencies are outdated  😱');
   console.log('');
   errors.forEach(error => {
-    // eslint-disable-next-line max-len
-    console.log(
-      `${error.packageName} depends on ${error.dependency} ${
-        error.dependencyVersion
-      }, it should be ${error.correctDependencyVersion}`,
-    );
+    if (error.type === 'InvalidVersion') {
+      // eslint-disable-next-line max-len
+      console.log(
+        `${error.packageName} depends on ${error.dependency} ${
+          error.dependencyVersion
+        }, it should be ${error.correctDependencyVersion}`,
+      );
+    } else if (error.type === 'BpkAppearanceNotPeer') {
+      // eslint-disable-next-line max-len
+      console.log(
+        `${
+          error.packageName
+        } depends on react-native-bpk-appearance. It should be a peer dependency`,
+      );
+    } else {
+      console.log(error);
+    }
   });
   console.log('');
   process.exit(1);
