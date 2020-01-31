@@ -4,10 +4,7 @@ exports[`iOS BpkFlag should render correctly 1`] = `
 <View
   style={
     Array [
-      Object {
-        "borderColor": "rgb(221, 221, 229)",
-        "borderWidth": 1,
-      },
+      undefined,
       Object {
         "height": 16,
         "width": 24,
@@ -21,10 +18,7 @@ exports[`iOS BpkFlag should render correctly with a custom style 1`] = `
 <View
   style={
     Array [
-      Object {
-        "borderColor": "rgb(221, 221, 229)",
-        "borderWidth": 1,
-      },
+      undefined,
       Object {
         "height": 16,
         "width": 24,
@@ -41,10 +35,7 @@ exports[`iOS BpkFlag should render correctly with a custom width 1`] = `
 <View
   style={
     Array [
-      Object {
-        "borderColor": "rgb(221, 221, 229)",
-        "borderWidth": 1,
-      },
+      undefined,
       Object {
         "height": 28,
         "width": 42,
@@ -59,10 +50,7 @@ exports[`iOS BpkFlag should render correctly with an image 1`] = `
   resizeMode="contain"
   style={
     Array [
-      Object {
-        "borderColor": "rgb(221, 221, 229)",
-        "borderWidth": 1,
-      },
+      undefined,
       Object {
         "height": 16,
         "width": 24,

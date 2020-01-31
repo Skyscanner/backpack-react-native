@@ -182,10 +182,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
             resizeMode="contain"
             style={
               Array [
-                Object {
-                  "borderColor": "rgb(221, 221, 229)",
-                  "borderWidth": 1,
-                },
+                undefined,
                 Object {
                   "height": 16,
                   "width": 24,
@@ -345,10 +342,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
             resizeMode="contain"
             style={
               Array [
-                Object {
-                  "borderColor": "rgb(221, 221, 229)",
-                  "borderWidth": 1,
-                },
+                undefined,
                 Object {
                   "height": 16,
                   "width": 24,
@@ -508,10 +502,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
             resizeMode="contain"
             style={
               Array [
-                Object {
-                  "borderColor": "rgb(221, 221, 229)",
-                  "borderWidth": 1,
-                },
+                undefined,
                 Object {
                   "height": 16,
                   "width": 24,
@@ -768,10 +759,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
             resizeMode="contain"
             style={
               Array [
-                Object {
-                  "borderColor": "rgb(221, 221, 229)",
-                  "borderWidth": 1,
-                },
+                undefined,
                 Object {
                   "height": 16,
                   "width": 24,
@@ -940,10 +928,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
             resizeMode="contain"
             style={
               Array [
-                Object {
-                  "borderColor": "rgb(221, 221, 229)",
-                  "borderWidth": 1,
-                },
+                undefined,
                 Object {
                   "height": 16,
                   "width": 24,
@@ -1103,10 +1088,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
             resizeMode="contain"
             style={
               Array [
-                Object {
-                  "borderColor": "rgb(221, 221, 229)",
-                  "borderWidth": 1,
-                },
+                undefined,
                 Object {
                   "height": 16,
                   "width": 24,

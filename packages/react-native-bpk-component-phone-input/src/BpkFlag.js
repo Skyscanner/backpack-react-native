@@ -20,11 +20,13 @@
 
 import React, { type ElementProps } from 'react';
 import PropTypes from 'prop-types';
-import { StyleSheet, View, ViewPropTypes } from 'react-native';
+import { View, ViewPropTypes } from 'react-native';
 import {
-  spacingLg,
+  colorBlack,
   colorSkyGrayTint06,
+  spacingLg,
 } from 'bpk-tokens/tokens/base.react.native';
+import { BpkDynamicStyleSheet } from 'react-native-bpk-appearance';
 
 import { type Flag } from './common-types';
 
@@ -39,10 +41,18 @@ export type Props = {
   style: ViewStyleProp,
 };
 
-const styles = StyleSheet.create({
-  flag: {
-    borderColor: colorSkyGrayTint06,
-    borderWidth: 1, // eslint-disable-line backpack/use-tokens
+const styles = BpkDynamicStyleSheet.create({
+  light: {
+    flag: {
+      borderColor: colorSkyGrayTint06,
+      borderWidth: 1, // eslint-disable-line backpack/use-tokens
+    },
+  },
+  dark: {
+    flag: {
+      borderColor: colorBlack,
+      borderWidth: 1, // eslint-disable-line backpack/use-tokens
+    },
   },
 });
 
