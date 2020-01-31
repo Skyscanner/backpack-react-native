@@ -2,6 +2,17 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2020-01-31 - Dark mode fixes.
+
+**Fixed:**
+
+- react-native-bpk-component-button: 11.2.3 => 11.2.4
+- react-native-bpk-component-nudger: 4.0.19 => 4.0.20
+  - Tweaked disabled, secondary and destructive button colours to stand out more when Dark Mode is enabled.
+
+- react-native-bpk-component-phone-input: 6.1.4 => 6.1.5
+  - Fixed `borderColor` of `BpkFlag` for dark mode.
+
 # 2020-01-30
 
 **Fixed:**
