@@ -26,7 +26,10 @@ import {
   colorSkyGrayTint06,
   spacingLg,
 } from 'bpk-tokens/tokens/base.react.native';
-import { BpkDynamicStyleSheet } from 'react-native-bpk-appearance';
+import {
+  BpkDynamicStyleSheet,
+  useBpkDynamicStyleSheet,
+} from 'react-native-bpk-appearance';
 
 import { type Flag } from './common-types';
 
@@ -41,7 +44,7 @@ export type Props = {
   style: ViewStyleProp,
 };
 
-const styles = BpkDynamicStyleSheet.create({
+const dynamicStyles = BpkDynamicStyleSheet.create({
   flag: {
     borderColor: {
       light: colorSkyGrayTint06,
@@ -52,6 +55,7 @@ const styles = BpkDynamicStyleSheet.create({
 });
 
 const BpkFlag = (props: Props) => {
+  const styles = useBpkDynamicStyleSheet(dynamicStyles);
   const { flag, style, width, ...rest } = props;
   const imageStyle = { width, height: width / ASPECT_RATIO };
   const finalStyle = [styles.flag, imageStyle];
