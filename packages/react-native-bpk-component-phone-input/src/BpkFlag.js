@@ -42,17 +42,12 @@ export type Props = {
 };
 
 const styles = BpkDynamicStyleSheet.create({
-  light: {
-    flag: {
-      borderColor: colorSkyGrayTint06,
-      borderWidth: 1, // eslint-disable-line backpack/use-tokens
+  flag: {
+    borderColor: {
+      light: colorSkyGrayTint06,
+      dark: colorBlack,
     },
-  },
-  dark: {
-    flag: {
-      borderColor: colorBlack,
-      borderWidth: 1, // eslint-disable-line backpack/use-tokens
-    },
+    borderWidth: 1, // eslint-disable-line backpack/use-tokens
   },
 });
 
