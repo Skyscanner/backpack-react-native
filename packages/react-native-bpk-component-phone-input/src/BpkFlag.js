@@ -20,11 +20,16 @@
 
 import React, { type ElementProps } from 'react';
 import PropTypes from 'prop-types';
-import { StyleSheet, View, ViewPropTypes } from 'react-native';
+import { View, ViewPropTypes } from 'react-native';
 import {
-  spacingLg,
+  colorBlack,
   colorSkyGrayTint06,
+  spacingLg,
 } from 'bpk-tokens/tokens/base.react.native';
+import {
+  BpkDynamicStyleSheet,
+  useBpkDynamicStyleSheet,
+} from 'react-native-bpk-appearance';
 
 import { type Flag } from './common-types';
 
@@ -39,14 +44,18 @@ export type Props = {
   style: ViewStyleProp,
 };
 
-const styles = StyleSheet.create({
+const dynamicStyles = BpkDynamicStyleSheet.create({
   flag: {
-    borderColor: colorSkyGrayTint06,
+    borderColor: {
+      light: colorSkyGrayTint06,
+      dark: colorBlack,
+    },
     borderWidth: 1, // eslint-disable-line backpack/use-tokens
   },
 });
 
 const BpkFlag = (props: Props) => {
+  const styles = useBpkDynamicStyleSheet(dynamicStyles);
   const { flag, style, width, ...rest } = props;
   const imageStyle = { width, height: width / ASPECT_RATIO };
   const finalStyle = [styles.flag, imageStyle];
