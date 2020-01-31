@@ -2,6 +2,12 @@
 
 > Place your changes below this line.
 
+**Fixed:**
+
+- react-native-bpk-component-button:
+- react-native-bpk-component-nudger:
+  - Tweaked disabled, secondary and destructive button colours to stand out more when Dark Mode is enabled.
+
 
 ## How to write a good changelog entry
 
