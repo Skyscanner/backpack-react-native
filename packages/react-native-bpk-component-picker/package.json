@@ -1,6 +1,6 @@
 {
   "name": "react-native-bpk-component-picker",
-  "version": "5.2.5",
+  "version": "5.2.6",
   "main": "index.js",
   "description": "Backpack React Native picker component.",
   "repository": {
@@ -24,7 +24,7 @@
     "react-native-bpk-component-touchable-overlay": "^2.1.10"
   },
   "devDependencies": {
-    "react-native-bpk-component-button": "^11.2.3",
+    "react-native-bpk-component-button": "^11.2.4",
     "react-native-bpk-test-utils": "^0.0.6"
   },
   "publishConfig": {

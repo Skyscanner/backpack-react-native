@@ -1,6 +1,6 @@
 {
   "name": "react-native-bpk-component-alert",
-  "version": "3.0.30",
+  "version": "3.0.31",
   "main": "index.js",
   "description": "Backpack React Native alert component.",
   "repository": {
@@ -14,7 +14,7 @@
     "react-native": ">= 0.59.0"
   },
   "devDependencies": {
-    "react-native-bpk-component-button": "^11.2.3"
+    "react-native-bpk-component-button": "^11.2.4"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
