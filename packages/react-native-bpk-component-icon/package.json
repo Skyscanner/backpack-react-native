@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "bpk-svgs": "^8.2.0",
-    "bpk-tokens": "^30.1.2",
+    "bpk-tokens": "^31.0.0",
     "prop-types": "^15.5.8"
   },
   "devDependencies": {
