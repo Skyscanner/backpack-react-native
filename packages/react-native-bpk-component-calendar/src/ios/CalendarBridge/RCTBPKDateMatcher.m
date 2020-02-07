@@ -1,7 +1,7 @@
 /*
  * Backpack - Skyscanner's Design System
  *
- * Copyright 2016-2020 Skyscanner Ltd
+ * Copyright 2018-2020 Skyscanner Ltd
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,16 +16,21 @@
  * limitations under the License.
  */
 
-#import <Backpack/Calendar.h>
-#import <CoreLocation/CoreLocation.h>
-#import <React/RCTConvert.h>
+#import "RCTBPKDateMatcher.h"
 
-@class RCTBPKColorBucket;
-@interface RCTConvert (RCTBPKCalendar)
+NS_ASSUME_NONNULL_BEGIN
+@implementation RCTBPKDateMatcher
 
-+ (BPKCalendarSelection)BPKCalendarSelection:(id)json;
-+ (NSArray<NSDate *> *)NSDateArray:(id)json;
-+ (RCTBPKColorBucket *)RCTBPKColorBucket:(id)json;
-+ (NSArray<RCTBPKColorBucket *> *)RCTBPKColorBucketArray:(id)json;
+- (instancetype)initWithMatcherType:(RCTBPKDateMatcherType)matcherType dates:(NSArray<NSDate *> *)dates {
+    self = [super init];
+
+    if (self) {
+        self.matcherType = matcherType;
+        self.dates = dates;
+    }
+
+    return self;
+}
 
 @end
+NS_ASSUME_NONNULL_END

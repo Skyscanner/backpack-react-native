@@ -16,16 +16,27 @@
  * limitations under the License.
  */
 
-#import <Backpack/Calendar.h>
-#import <CoreLocation/CoreLocation.h>
-#import <React/RCTConvert.h>
+#import <Backpack/SimpleDate.h>
 
-@class RCTBPKColorBucket;
-@interface RCTConvert (RCTBPKCalendar)
+NS_ASSUME_NONNULL_BEGIN
 
-+ (BPKCalendarSelection)BPKCalendarSelection:(id)json;
-+ (NSArray<NSDate *> *)NSDateArray:(id)json;
-+ (RCTBPKColorBucket *)RCTBPKColorBucket:(id)json;
-+ (NSArray<RCTBPKColorBucket *> *)RCTBPKColorBucketArray:(id)json;
+@interface RCTBPKDateMatcher : NSObject
+
+/**
+ * Enum values for specifying calendar selection type
+ */
+typedef NS_ENUM(NSUInteger, RCTBPKDateMatcherType) {
+    RCTBPKDateMatcherTypeRange = 0,
+    RCTBPKDateMatcherTypeAfter = 1,
+    RCTBPKDateMatcherTypeBefore = 2,
+    RCTBPKDateMatcherTypeAny = 3,
+};
+
+@property(nonatomic) RCTBPKDateMatcherType matcherType;
+@property(nonatomic, nullable) NSArray<NSDate *> *dates;
+
+- (instancetype)initWithMatcherType:(RCTBPKDateMatcherType)matcherType dates:(NSArray<NSDate *> *)dates;
 
 @end
+
+NS_ASSUME_NONNULL_END

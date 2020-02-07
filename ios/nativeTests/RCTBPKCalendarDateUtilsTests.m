@@ -20,6 +20,10 @@
 
 @implementation RCTBPKCalendarDateUtilsTests
 
+- (NSDate *)midnight20190121UTC {
+    return [NSDate dateWithTimeIntervalSince1970:1548028800];
+}
+
 - (NSDate *)midnight20190124UTC {
     return [NSDate dateWithTimeIntervalSince1970:1548288000];
 }
@@ -73,6 +77,18 @@
 
     XCTAssertEqualObjects(originalDate, result);
     XCTAssertNotEqualObjects(originalDate, utcDate);
+}
+
+- (void)testDateIsBefore {
+  XCTAssertTrue([RCTBPKCalendarDateUtils date:self.midnight20190121UTC isBeforeDate:self.midnight20190124UTC]);
+  XCTAssertFalse([RCTBPKCalendarDateUtils date:self.midnight20190124UTC isBeforeDate:self.midnight20190121UTC]);
+  XCTAssertFalse([RCTBPKCalendarDateUtils date:self.midnight20190121UTC isBeforeDate:self.midnight20190121UTC]);
+}
+
+- (void)testDateIsAfter {
+  XCTAssertTrue([RCTBPKCalendarDateUtils date:self.midnight20190124UTC isAfterDate:self.midnight20190121UTC]);
+  XCTAssertFalse([RCTBPKCalendarDateUtils date:self.midnight20190121UTC isAfterDate:self.midnight20190124UTC]);
+  XCTAssertFalse([RCTBPKCalendarDateUtils date:self.midnight20190121UTC isAfterDate:self.midnight20190121UTC]);
 }
 
 @end

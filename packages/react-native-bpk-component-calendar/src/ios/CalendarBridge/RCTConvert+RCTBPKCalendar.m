@@ -19,6 +19,9 @@
 #import "RCTConvert+RCTBPKCalendar.h"
 #import <React/RCTConvert+CoreLocation.h>
 
+#import "RCTBPKColorBucket.h"
+#import "RCTBPKDateMatcher.h"
+
 @implementation RCTConvert (RCTBPKCalendar)
 
 RCT_ENUM_CONVERTER(BPKCalendarSelection, (@{
@@ -27,6 +30,37 @@ RCT_ENUM_CONVERTER(BPKCalendarSelection, (@{
                        @"range": @(BPKCalendarSelectionRange)
                    }),
                    BPKCalendarSelectionSingle, integerValue)
+
+RCT_ENUM_CONVERTER(RCTBPKColorBucketTextStyle, (@{
+                       @"default": @(RCTBPKColorBucketTextStyleDefault),
+                       @"light": @(RCTBPKColorBucketTextStyleLight),
+                       @"dark": @(RCTBPKColorBucketTextStyleDark)
+                   }),
+                   RCTBPKColorBucketTextStyleDefault, integerValue)
+
+RCT_ENUM_CONVERTER(RCTBPKDateMatcherType, (@{
+                       @"range": @(RCTBPKDateMatcherTypeRange),
+                       @"after": @(RCTBPKDateMatcherTypeAfter),
+                       @"before": @(RCTBPKDateMatcherTypeBefore),
+                       @"any": @(RCTBPKDateMatcherTypeAny)
+                   }),
+                   RCTBPKColorBucketTextStyleDefault, integerValue)
+
 RCT_ARRAY_CONVERTER(NSDate)
+RCT_ARRAY_CONVERTER(RCTBPKColorBucket)
+
++ (RCTBPKDateMatcher *)RCTBPKDateMatcher:(id)json {
+    RCTBPKDateMatcherType matcherType = [RCTConvert RCTBPKDateMatcherType:json[@"type"]];
+    NSArray<NSDate *> *dates = [RCTConvert NSDateArray:json[@"dates"]];
+    return [[RCTBPKDateMatcher alloc] initWithMatcherType:matcherType dates:dates];
+}
+
++ (RCTBPKColorBucket *)RCTBPKColorBucket:(id)json {
+    UIColor *color = [RCTConvert UIColor:json[@"color"]];
+    RCTBPKColorBucketTextStyle textStyle =
+        [RCTConvert RCTBPKColorBucketTextStyle:json[@"textStyle"] ? json[@"textStyle"] : @"default"];
+    RCTBPKDateMatcher *dateMatcher = [RCTConvert RCTBPKDateMatcher:json[@"days"]];
+    return [[RCTBPKColorBucket alloc] initWithColor:color textStyle:textStyle days:dateMatcher];
+}
 
 @end

@@ -19,6 +19,8 @@
 #import "RCTBPKCalendar.h"
 
 #import "RCTBPKCalendarDateUtils.h"
+#import "RCTBPKColorBucket.h"
+#import "RCTBPKDateMatcher.h"
 
 NS_ASSUME_NONNULL_BEGIN
 @interface RCTBPKCalendar ()
@@ -125,6 +127,24 @@ NS_ASSUME_NONNULL_BEGIN
     }
 
     [super setSelectedDates:simpleDates];
+}
+
+- (void)setRct_colorBuckets:(NSArray<RCTBPKColorBucket *> *_Nullable)rct_colorBuckets {
+    _rct_colorBuckets = rct_colorBuckets;
+
+    for (NSInteger i = 0; i < rct_colorBuckets.count; i += 1) {
+        RCTBPKColorBucket *bucket = rct_colorBuckets[i];
+
+        NSMutableArray *localDates = [[NSMutableArray alloc] initWithCapacity:bucket.days.dates.count];
+        for (int j = 0; j < bucket.days.dates.count; j += 1) {
+            localDates[j] = [RCTBPKCalendarDateUtils convertDateToLocal:bucket.days.dates[j]
+                                                          localCalendar:self.gregorian
+                                                            utcCalendar:self.utcCalendar];
+        }
+
+        bucket.days.dates = localDates;
+    }
+    [self reloadData];
 }
 
 @end
