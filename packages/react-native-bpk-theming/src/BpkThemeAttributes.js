@@ -89,6 +89,11 @@ export type Props = {
  *
  */
 const BpkThemeAttributes = (props: Props) => {
+  // eslint-disable-next-line no-console
+  console.warn(
+    'The BpkThemeAttributes component has been deprecated and marked for removal. Please remove usages of this component to utilise the brand palette',
+  );
+
   const { theme, children } = props;
   const primaryColor =
     theme && theme.primaryColor != null ? theme.primaryColor : colorSkyBlue;
