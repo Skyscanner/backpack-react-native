@@ -7,6 +7,14 @@
 - react-native-bpk-theming:
   - Deprecated `BpkThemeAttributes` components as no longer required. Will be removed in future version.
 
+- react-native-bpk-appearance:
+  - `useBpkDynamicValue` and `useBpkDynamicStyle` can now handle simple union types. e.g. `string | BpkDynamicValue<string>`.
+
+- react-native-bpk-component-progress:
+  - fixed progress animation duration.
+
+- bpk-tokens was update for all packages.
+
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
