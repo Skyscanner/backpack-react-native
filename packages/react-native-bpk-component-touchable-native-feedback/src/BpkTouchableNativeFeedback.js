@@ -45,10 +45,14 @@ export type Props = {
 const BpkTouchableNativeFeedback = (props: Props) => {
   const { children, style, borderlessBackground, color, ...rest } = props;
   const resolvedColor = useBpkDynamicValue(color);
-  const defaultRippleColor = useBpkDynamicValue({
-    light: null,
-    dark: colorSkyGrayTint02,
-  });
+  /* eslint-disable prettier/prettier */
+  const defaultRippleColor = useBpkDynamicValue<BpkDynamicValue<null | string>>(
+    {
+      light: null,
+      dark: colorSkyGrayTint02,
+    },
+  );
+  /* eslint-enable prettier/prettier */
   const rippleColor = resolvedColor || defaultRippleColor;
   const preLollipop = Platform.Version < 21;
   const background = preLollipop

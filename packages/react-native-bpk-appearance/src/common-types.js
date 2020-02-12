@@ -24,13 +24,13 @@ export type BpkDynamicValue<T> = { light: T, dark: T };
 // prettier does't handle this well
 // prettier-ignore
 export type UnpackedBpkDynamicValue<X> = $Call<
-  & ((BpkDynamicValue<string>) => string)
-  & ((BpkDynamicValue<number>) => number)
-  & ((BpkDynamicValue<boolean>) => boolean)
-  & ((BpkDynamicValue<Array<string>>) => Array<string>)
-  & ((BpkDynamicValue<Array<number>>) => Array<number>)
-  & ((BpkDynamicValue<Array<boolean>>) => Array<boolean>)
-  & ((BpkDynamicValue<*>) => any)
+  & ((string | BpkDynamicValue<string>) => string)
+  & ((number | BpkDynamicValue<number>) => number)
+  & ((boolean | BpkDynamicValue<boolean>) => boolean)
+  & ((Array<string> | BpkDynamicValue<Array<string>>) => Array<string>)
+  & ((Array<number> | BpkDynamicValue<Array<number>>) => Array<number>)
+  & ((Array<boolean> | BpkDynamicValue<Array<boolean>>) => Array<boolean>)
+  & ((any | BpkDynamicValue<*>) => any)
   & ((*) => X),
   X
 >;

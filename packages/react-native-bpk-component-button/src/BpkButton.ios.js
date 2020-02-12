@@ -128,7 +128,8 @@ const BpkButton = (props: Props) => {
     buttonColorsForType(type, themeAttributes, disabled),
   );
 
-  const textColor = useBpkDynamicValue(
+  const textColor: string = useBpkDynamicValue(
+    // $FlowFixMe
     textColorForType(type, themeAttributes, disabled),
   );
 

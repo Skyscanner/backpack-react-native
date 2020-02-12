@@ -22,7 +22,7 @@ import React, { Component, type ElementProps, type Config } from 'react';
 import PropTypes from 'prop-types';
 import { View, Animated, Easing, Platform, ViewPropTypes } from 'react-native';
 import {
-  animmationDurationBase,
+  animationDurationBase,
   spacingMd,
   colorSkyGrayTint06,
   colorBlackTint02,
@@ -136,7 +136,7 @@ class BpkProgress extends Component<EnhancedProps, State> {
     if (this.props.value >= 0 && this.props.value !== prevProps.value) {
       Animated.timing(this.progressAnimation, {
         easing: Easing.inOut(Easing.ease),
-        duration: animmationDurationBase,
+        duration: animationDurationBase,
         toValue: this.getWithinBoundsProgress(),
       }).start();
     }
