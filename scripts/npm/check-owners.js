@@ -81,7 +81,11 @@ const verifyMaintainers = data => {
     return;
   }
 
-  const sortedMaintainers = data.maintainers.sort();
+  // Filter mattface as panel and touchable-overlay still have Matt as maintainer
+  // and it fails to remove
+  const sortedMaintainers = data.maintainers
+    .filter(u => u !== 'mattface')
+    .sort();
 
   if (sortedMaintainers.join('') === owners.join('')) {
     console.log(`${data.name} ✔︎`);
