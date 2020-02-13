@@ -158,6 +158,7 @@ class BpkAnimateHeight extends Component<Props, { computedHeight: ?number }> {
       }
 
       Animated.timing(this.height, { toValue, duration, delay }).start(() => {
+        // $FlowFixMe doesn't work with the current flow version in the app
         this.adjustChildHeight.reset();
         if (onAnimationComplete) {
           onAnimationComplete();
