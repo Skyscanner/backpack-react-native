@@ -6,6 +6,9 @@
 
 **Fixed:**
 
+- react-native-bpk-component-animate-height:
+  - Fix flow error for latest flow-bin.
+
 - react-native-bpk-theming:
   - Deprecated `BpkThemeAttributes` components as no longer required. Will be removed in future version.
 
