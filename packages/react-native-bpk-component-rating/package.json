@@ -1,6 +1,6 @@
 {
   "name": "react-native-bpk-component-rating",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "main": "index.js",
   "description": "Backpack React Native rating component.",
   "repository": {
@@ -21,9 +21,9 @@
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
-    "react-native-bpk-component-button": "^11.2.4",
-    "react-native-bpk-component-icon": "^2.2.10",
-    "react-native-bpk-component-text": "^4.2.11"
+    "react-native-bpk-component-button": "^11.2.5",
+    "react-native-bpk-component-icon": "^2.2.11",
+    "react-native-bpk-component-text": "^4.2.12"
   },
   "gitHead": "805acf8b0c4d6944f6834272dc7654b8307d8210"
 }
