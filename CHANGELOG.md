@@ -2,6 +2,21 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2020-02-13 - Deprecated `BpkThemeAttributes` and update bpk-tokens.
+
+**Fixed:**
+
+- react-native-bpk-theming:
+  - Deprecated `BpkThemeAttributes` components as no longer required. Will be removed in future version.
+
+- react-native-bpk-appearance:
+  - `useBpkDynamicValue` and `useBpkDynamicStyle` can now handle simple union types. e.g. `string | BpkDynamicValue<string>`.
+
+- react-native-bpk-component-progress:
+  - fixed progress animation duration.
+
+- bpk-tokens was update for all packages.
+
 # 2020-01-31 - Dark mode fixes.
 
 **Fixed:**
