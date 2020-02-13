@@ -22,7 +22,7 @@ exports[`Android BpkBadge should render correctly docked to the end 1`] = `
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(0, 166, 152)",
+          "backgroundColor": "rgb(115, 206, 198)",
         },
         Object {
           "borderBottomLeftRadius": 4,
@@ -386,7 +386,7 @@ exports[`Android BpkBadge should render correctly docked to the start 1`] = `
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(0, 166, 152)",
+          "backgroundColor": "rgb(115, 206, 198)",
         },
         Object {
           "borderBottomLeftRadius": 0,
@@ -750,7 +750,7 @@ exports[`Android BpkBadge should render correctly in normal mode 1`] = `
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(0, 166, 152)",
+          "backgroundColor": "rgb(115, 206, 198)",
         },
       ]
     }
@@ -1066,7 +1066,7 @@ exports[`Android BpkBadge should render correctly with icon 1`] = `
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(0, 166, 152)",
+          "backgroundColor": "rgb(115, 206, 198)",
         },
       ]
     }
@@ -1608,7 +1608,7 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(0, 166, 152)",
+          "backgroundColor": "rgb(115, 206, 198)",
         },
       ]
     }
@@ -2530,7 +2530,7 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(0, 166, 152)",
+          "backgroundColor": "rgb(115, 206, 198)",
         },
       ]
     }
@@ -3286,7 +3286,7 @@ exports[`Android BpkBadge should render correctly with user provided style 1`] =
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(0, 166, 152)",
+          "backgroundColor": "rgb(115, 206, 198)",
         },
         Object {
           "margin": 4,
@@ -3620,7 +3620,7 @@ exports[`Android BpkBadge should support theming 1`] = `
           "borderTopRightRadius": 4,
         },
         Object {
-          "backgroundColor": "rgb(0, 166, 152)",
+          "backgroundColor": "rgb(115, 206, 198)",
         },
         Object {
           "backgroundColor": "blue",
