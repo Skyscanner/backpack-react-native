@@ -31,8 +31,8 @@ import {
   colorSkyGray,
   colorSkyGrayTint07,
   colorErfoud,
+  colorGlencoe,
   colorPanjin,
-  colorMonteverde,
   colorWhite,
   borderRadiusSm,
   borderSizeSm,
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     backgroundColor: colorErfoud,
   },
   viewSuccess: {
-    backgroundColor: colorMonteverde,
+    backgroundColor: colorGlencoe,
   },
   viewDestructive: {
     backgroundColor: colorPanjin,

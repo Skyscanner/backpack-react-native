@@ -2,6 +2,11 @@
 
 > Place your changes below this line.
 
+**Fixed:**
+
+- react-native-bpk-component-badge:
+  - We've made the `success` badge lighter as it looked strange with dark text.
+
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
