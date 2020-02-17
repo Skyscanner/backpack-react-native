@@ -88,7 +88,7 @@
     "documentation": "^12.1.4",
     "eslint-config-skyscanner-with-prettier": "^0.8.0",
     "eslint-plugin-flowtype": "^4.0.0",
-    "eslint-plugin-react-hooks": "^1.7.0",
+    "eslint-plugin-react-hooks": "^2.4.0",
     "eslint_d": "^8.0.0",
     "flow-bin": "^0.98.0",
     "globby": "^10.0.0",
