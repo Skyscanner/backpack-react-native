@@ -266,6 +266,12 @@ SNAPSHOT=true ./gradlew :<project-name>:publish
 
 </details>
 
+## Using relative font
+
+> Ignore this if you are not a Skyscanner employee.
+
+Follow the internal documentation on how to "Setup relative font for RN example app".
+
 ## And finally..
 
 If you have any questions at all, don't hesitate to get in touch. We love to talk all things Backpack and we look forward to seeing your contribution!

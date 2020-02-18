@@ -35,6 +35,7 @@ import {
   DM_EVENT,
   DM_INIT,
 } from './constants';
+import RelativeFontProvider from './RelativeFontProvider';
 
 const onChannelAvailable = (...fns) => {
   const interval = setInterval(() => {
@@ -123,9 +124,11 @@ const BackgroundWrapper = ({ children }: { children: Node }) => (
 );
 
 export default (props: Object) => (
-  <BpkAppearanceProvider>
-    <BackgroundWrapper>
-      <StorybookUI {...props} />
-    </BackgroundWrapper>
-  </BpkAppearanceProvider>
+  <RelativeFontProvider>
+    <BpkAppearanceProvider>
+      <BackgroundWrapper>
+        <StorybookUI {...props} />
+      </BackgroundWrapper>
+    </BpkAppearanceProvider>
+  </RelativeFontProvider>
 );
