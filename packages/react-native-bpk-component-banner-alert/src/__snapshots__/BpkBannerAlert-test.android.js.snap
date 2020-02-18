@@ -317,7 +317,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with dismissab
             accessibilityRole="button"
             accessibilityStates={Array []}
             accessible={true}
-            clickable={true}
+            focusable={true}
             isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
@@ -477,7 +477,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with dismissab
             accessibilityRole="button"
             accessibilityStates={Array []}
             accessible={true}
-            clickable={true}
+            focusable={true}
             isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
@@ -1638,7 +1638,7 @@ exports[`Android BpkBannerAlert light mode should render correctly with dismissa
             accessibilityRole="button"
             accessibilityStates={Array []}
             accessible={true}
-            clickable={true}
+            focusable={true}
             isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
@@ -1798,7 +1798,7 @@ exports[`Android BpkBannerAlert light mode should render correctly with dismissa
             accessibilityRole="button"
             accessibilityStates={Array []}
             accessible={true}
-            clickable={true}
+            focusable={true}
             isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
@@ -3270,7 +3270,7 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
         accessibilityLabel="Expand"
         accessibilityRole="button"
         accessible={true}
-        clickable={true}
+        focusable={true}
         isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
@@ -3473,7 +3473,7 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
         accessibilityLabel="Expand"
         accessibilityRole="button"
         accessible={true}
-        clickable={true}
+        focusable={true}
         isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
@@ -3696,7 +3696,7 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
         accessibilityLabel="Expand"
         accessibilityRole="button"
         accessible={true}
-        clickable={true}
+        focusable={true}
         isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
@@ -3899,7 +3899,7 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
         accessibilityLabel="Expand"
         accessibilityRole="button"
         accessible={true}
-        clickable={true}
+        focusable={true}
         isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {

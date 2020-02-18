@@ -5,7 +5,7 @@ exports[`Android BpkSelect dark mode should render correctly 1`] = `
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -66,7 +66,7 @@ exports[`Android BpkSelect dark mode should render correctly with "showImage" an
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -142,7 +142,7 @@ exports[`Android BpkSelect dark mode should render correctly with "showImage" an
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -215,7 +215,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -306,7 +306,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
     accessibilityRole="button"
     accessibilityStates={Array []}
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -418,7 +418,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" true 1
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -505,7 +505,7 @@ exports[`Android BpkSelect dark mode should render correctly with a text label 1
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -589,7 +589,7 @@ exports[`Android BpkSelect dark mode should render correctly with an element lab
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -651,7 +651,7 @@ exports[`Android BpkSelect dark mode should render correctly with custom styles 
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -739,7 +739,7 @@ exports[`Android BpkSelect dark mode should render correctly with the disabled p
     ]
   }
   accessible={true}
-  clickable={false}
+  focusable={false}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -829,7 +829,7 @@ exports[`Android BpkSelect light mode should render correctly 1`] = `
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -890,7 +890,7 @@ exports[`Android BpkSelect light mode should render correctly with "showImage" a
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -966,7 +966,7 @@ exports[`Android BpkSelect light mode should render correctly with "showImage" a
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -1039,7 +1039,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -1130,7 +1130,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
     accessibilityRole="button"
     accessibilityStates={Array []}
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -1242,7 +1242,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" true 
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -1329,7 +1329,7 @@ exports[`Android BpkSelect light mode should render correctly with a text label 
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -1413,7 +1413,7 @@ exports[`Android BpkSelect light mode should render correctly with an element la
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -1475,7 +1475,7 @@ exports[`Android BpkSelect light mode should render correctly with custom styles
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -1563,7 +1563,7 @@ exports[`Android BpkSelect light mode should render correctly with the disabled 
     ]
   }
   accessible={true}
-  clickable={false}
+  focusable={false}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {

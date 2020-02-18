@@ -3,7 +3,7 @@
 exports[`BpkTouchableNativeFeedback dark mode should render correctly on API < 21 1`] = `
 <FakeComponent
   accessible={true}
-  clickable={false}
+  focusable={false}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -24,7 +24,7 @@ exports[`BpkTouchableNativeFeedback dark mode should render correctly on API < 2
 exports[`BpkTouchableNativeFeedback dark mode should render correctly on API >= 21 1`] = `
 <FakeComponent
   accessible={true}
-  clickable={false}
+  focusable={false}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -46,7 +46,7 @@ exports[`BpkTouchableNativeFeedback dark mode should render correctly on API >= 
 exports[`BpkTouchableNativeFeedback dark mode should render correctly with a dynamic \`color\` prop 1`] = `
 <FakeComponent
   accessible={true}
-  clickable={false}
+  focusable={false}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -68,7 +68,7 @@ exports[`BpkTouchableNativeFeedback dark mode should render correctly with a dyn
 exports[`BpkTouchableNativeFeedback dark mode should render correctly with a string \`color\` prop 1`] = `
 <FakeComponent
   accessible={true}
-  clickable={false}
+  focusable={false}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -90,7 +90,7 @@ exports[`BpkTouchableNativeFeedback dark mode should render correctly with a str
 exports[`BpkTouchableNativeFeedback dark mode should render correctly with arbitrary props 1`] = `
 <FakeComponent
   accessible={true}
-  clickable={false}
+  focusable={false}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -113,7 +113,7 @@ exports[`BpkTouchableNativeFeedback dark mode should render correctly with arbit
 exports[`BpkTouchableNativeFeedback dark mode should render correctly with custom style prop 1`] = `
 <FakeComponent
   accessible={true}
-  clickable={false}
+  focusable={false}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -135,7 +135,7 @@ exports[`BpkTouchableNativeFeedback dark mode should render correctly with custo
 exports[`BpkTouchableNativeFeedback light mode should render correctly on API < 21 1`] = `
 <FakeComponent
   accessible={true}
-  clickable={false}
+  focusable={false}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -156,7 +156,7 @@ exports[`BpkTouchableNativeFeedback light mode should render correctly on API < 
 exports[`BpkTouchableNativeFeedback light mode should render correctly on API >= 21 1`] = `
 <FakeComponent
   accessible={true}
-  clickable={false}
+  focusable={false}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -178,7 +178,7 @@ exports[`BpkTouchableNativeFeedback light mode should render correctly on API >=
 exports[`BpkTouchableNativeFeedback light mode should render correctly with a dynamic \`color\` prop 1`] = `
 <FakeComponent
   accessible={true}
-  clickable={false}
+  focusable={false}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -200,7 +200,7 @@ exports[`BpkTouchableNativeFeedback light mode should render correctly with a dy
 exports[`BpkTouchableNativeFeedback light mode should render correctly with a string \`color\` prop 1`] = `
 <FakeComponent
   accessible={true}
-  clickable={false}
+  focusable={false}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -222,7 +222,7 @@ exports[`BpkTouchableNativeFeedback light mode should render correctly with a st
 exports[`BpkTouchableNativeFeedback light mode should render correctly with arbitrary props 1`] = `
 <FakeComponent
   accessible={true}
-  clickable={false}
+  focusable={false}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -245,7 +245,7 @@ exports[`BpkTouchableNativeFeedback light mode should render correctly with arbi
 exports[`BpkTouchableNativeFeedback light mode should render correctly with custom style prop 1`] = `
 <FakeComponent
   accessible={true}
-  clickable={false}
+  focusable={false}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {

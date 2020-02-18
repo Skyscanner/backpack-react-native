@@ -17,7 +17,7 @@ exports[`iOS BpkNudger should render correctly 1`] = `
     accessibilityRole="button"
     accessibilityStates={Array []}
     accessible={true}
-    clickable={true}
+    focusable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -144,7 +144,7 @@ exports[`iOS BpkNudger should render correctly 1`] = `
     accessibilityRole="button"
     accessibilityStates={Array []}
     accessible={true}
-    clickable={true}
+    focusable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -267,7 +267,7 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
       ]
     }
     accessible={true}
-    clickable={true}
+    focusable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -394,7 +394,7 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
     accessibilityRole="button"
     accessibilityStates={Array []}
     accessible={true}
-    clickable={true}
+    focusable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -513,7 +513,7 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
     accessibilityRole="button"
     accessibilityStates={Array []}
     accessible={true}
-    clickable={true}
+    focusable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -644,7 +644,7 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
       ]
     }
     accessible={true}
-    clickable={true}
+    focusable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -767,7 +767,7 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
       ]
     }
     accessible={true}
-    clickable={true}
+    focusable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -894,7 +894,7 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
     accessibilityRole="button"
     accessibilityStates={Array []}
     accessible={true}
-    clickable={true}
+    focusable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}

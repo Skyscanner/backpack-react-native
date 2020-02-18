@@ -51,7 +51,8 @@ function withAnimatedProps<Props: {}>(
       });
     }
 
-    componentWillReceiveProps(nextProps: Props) {
+    // eslint-disable-next-line camelcase
+    UNSAFE_componentWillReceiveProps(nextProps: Props) {
       const animations = animatedProps.map(prop =>
         Animated.timing(this.state[prop], {
           toValue: nextProps[prop],

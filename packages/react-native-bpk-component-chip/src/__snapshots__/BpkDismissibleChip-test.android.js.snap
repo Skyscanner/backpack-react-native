@@ -17,7 +17,7 @@ exports[`Android BpkDismissibleChip dark mode should render correctly 1`] = `
     accessibilityLabel="Dismiss"
     accessibilityRole="button"
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -116,7 +116,7 @@ exports[`Android BpkDismissibleChip dark mode should render correctly with "disa
     accessibilityLabel="Dismiss"
     accessibilityRole="button"
     accessible={true}
-    clickable={false}
+    focusable={false}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -228,7 +228,7 @@ exports[`Android BpkDismissibleChip dark mode should render outline correctly 1`
     accessibilityLabel="Dismiss"
     accessibilityRole="button"
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -339,7 +339,7 @@ exports[`Android BpkDismissibleChip light mode should render correctly 1`] = `
     accessibilityLabel="Dismiss"
     accessibilityRole="button"
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -438,7 +438,7 @@ exports[`Android BpkDismissibleChip light mode should render correctly with "dis
     accessibilityLabel="Dismiss"
     accessibilityRole="button"
     accessible={true}
-    clickable={false}
+    focusable={false}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -550,7 +550,7 @@ exports[`Android BpkDismissibleChip light mode should render outline correctly 1
     accessibilityLabel="Dismiss"
     accessibilityRole="button"
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -661,7 +661,7 @@ exports[`Android BpkDismissibleChip should render correctly with arbitrary props
     accessibilityLabel="Dismiss"
     accessibilityRole="button"
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -765,7 +765,7 @@ exports[`Android BpkDismissibleChip should render correctly with custom style 1`
     accessibilityLabel="Dismiss"
     accessibilityRole="button"
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {

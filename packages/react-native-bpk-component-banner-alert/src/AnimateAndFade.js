@@ -101,7 +101,8 @@ class AnimateAndFade extends Component<Props> {
     this.measure(captureHeightAndAnimate);
   }
 
-  componentWillReceiveProps(nextProps: Props) {
+  // eslint-disable-next-line camelcase
+  UNSAFE_componentWillReceiveProps(nextProps: Props) {
     this.shouldRenderHeight = true;
 
     if (nextProps.show === this.props.show && this.props.show) {

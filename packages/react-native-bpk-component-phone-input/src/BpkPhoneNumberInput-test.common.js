@@ -27,7 +27,6 @@ import BpkPhoneNumberInput from './BpkPhoneNumberInput';
 const onPressFn = jest.fn();
 
 const commonTests = () => {
-  jest.mock('Image', () => 'Image');
   describe('BpkPhoneNumberInput', () => {
     it('should render correctly', () => {
       const tree = renderer

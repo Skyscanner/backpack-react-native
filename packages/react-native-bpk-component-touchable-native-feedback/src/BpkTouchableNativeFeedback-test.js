@@ -37,10 +37,12 @@ const mockPlatform = (platform, version) => {
   return reactNative;
 };
 
-jest.mock('TouchableNativeFeedback', () =>
-  jest.requireActual(
-    'react-native/Libraries/Components/Touchable/TouchableNativeFeedback.android.js',
-  ),
+jest.mock(
+  'react-native/Libraries/Components/Touchable/TouchableNativeFeedback',
+  () =>
+    jest.requireActual(
+      'react-native/Libraries/Components/Touchable/TouchableNativeFeedback.android.js',
+    ),
 );
 
 jest.mock('react-native-bpk-appearance', () =>

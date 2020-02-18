@@ -17,7 +17,7 @@ exports[`Android BpkButtonLink dark mode should render correctly 1`] = `
     accessibilityRole="button"
     accessibilityStates={Array []}
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -92,7 +92,7 @@ exports[`Android BpkButtonLink dark mode should support overwriting styles 1`] =
     accessibilityRole="button"
     accessibilityStates={Array []}
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -169,7 +169,7 @@ exports[`Android BpkButtonLink dark mode should support the "disabled" property 
       ]
     }
     accessible={true}
-    clickable={false}
+    focusable={false}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -245,7 +245,7 @@ exports[`Android BpkButtonLink dark mode should support the "icon" property 1`] 
     accessibilityRole="button"
     accessibilityStates={Array []}
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -342,7 +342,7 @@ exports[`Android BpkButtonLink light mode should render correctly 1`] = `
     accessibilityRole="button"
     accessibilityStates={Array []}
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -417,7 +417,7 @@ exports[`Android BpkButtonLink light mode should support overwriting styles 1`] 
     accessibilityRole="button"
     accessibilityStates={Array []}
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -494,7 +494,7 @@ exports[`Android BpkButtonLink light mode should support the "disabled" property
       ]
     }
     accessible={true}
-    clickable={false}
+    focusable={false}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -570,7 +570,7 @@ exports[`Android BpkButtonLink light mode should support the "icon" property 1`]
     accessibilityRole="button"
     accessibilityStates={Array []}
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -667,7 +667,7 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="leadi
     accessibilityRole="button"
     accessibilityStates={Array []}
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -771,7 +771,7 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="trail
     accessibilityRole="button"
     accessibilityStates={Array []}
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -868,7 +868,7 @@ exports[`Android BpkButtonLink should render correctly with text props provided 
     accessibilityRole="button"
     accessibilityStates={Array []}
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -941,7 +941,7 @@ exports[`Android BpkButtonLink should render correctly with theme prop 1`] = `
     accessibilityRole="button"
     accessibilityStates={Array []}
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -1017,7 +1017,7 @@ exports[`Android BpkButtonLink should support elements as icons 1`] = `
     accessibilityRole="button"
     accessibilityStates={Array []}
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -1107,7 +1107,7 @@ exports[`Android should support "borderlessBackground" equal to false 1`] = `
     accessibilityRole="button"
     accessibilityStates={Array []}
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -1180,7 +1180,7 @@ exports[`Android should support "uppercase" equal to false 1`] = `
     accessibilityRole="button"
     accessibilityStates={Array []}
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {

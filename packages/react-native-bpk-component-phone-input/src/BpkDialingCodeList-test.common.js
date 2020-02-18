@@ -51,7 +51,6 @@ const SUGGESTED = {
 };
 
 const commonTests = () => {
-  jest.mock('Image', () => 'Image');
   describe('BpkDialingCodeList', () => {
     it('should render correctly', () => {
       const tree = renderer

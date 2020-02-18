@@ -26,7 +26,6 @@ import { spacingSm } from 'bpk-tokens/tokens/base.react.native';
 import BpkFlag from './BpkFlag';
 
 const commonTests = () => {
-  jest.mock('Image', () => 'Image');
   describe('BpkFlag', () => {
     it('should render correctly', () => {
       const tree = renderer.create(<BpkFlag />).toJSON();

@@ -34,7 +34,7 @@ exports[`Android BpkPhoneNumberInput should render correctly 1`] = `
       accessibilityRole="button"
       accessibilityStates={Array []}
       accessible={true}
-      clickable={true}
+      focusable={true}
       isTVSelectable={true}
       nativeBackgroundAndroid={
         Object {
@@ -210,7 +210,7 @@ exports[`Android BpkPhoneNumberInput should render correctly with \`editable\` f
         ]
       }
       accessible={true}
-      clickable={false}
+      focusable={false}
       isTVSelectable={true}
       nativeBackgroundAndroid={
         Object {

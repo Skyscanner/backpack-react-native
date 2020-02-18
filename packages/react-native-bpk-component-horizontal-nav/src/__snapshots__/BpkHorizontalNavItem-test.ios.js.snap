@@ -6,7 +6,7 @@ exports[`iOS BpkHorizontalNavItem dark mode should render correctly 1`] = `
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -78,7 +78,7 @@ exports[`iOS BpkHorizontalNavItem dark mode should render correctly with "disabl
     ]
   }
   accessible={true}
-  clickable={true}
+  focusable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -149,7 +149,7 @@ exports[`iOS BpkHorizontalNavItem dark mode should render correctly with "select
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -220,7 +220,7 @@ exports[`iOS BpkHorizontalNavItem light mode should render correctly 1`] = `
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -292,7 +292,7 @@ exports[`iOS BpkHorizontalNavItem light mode should render correctly with "disab
     ]
   }
   accessible={true}
-  clickable={true}
+  focusable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -363,7 +363,7 @@ exports[`iOS BpkHorizontalNavItem light mode should render correctly with "selec
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -434,7 +434,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly with "small" prop 1`] 
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -505,7 +505,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly with "spaceAround" pro
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -573,7 +573,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly with arbitrary props 1
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -641,7 +641,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly with custom "style" pr
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -712,7 +712,7 @@ exports[`iOS BpkHorizontalNavItem should support theming 1`] = `
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}

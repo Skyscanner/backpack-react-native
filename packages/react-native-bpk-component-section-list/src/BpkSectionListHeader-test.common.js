@@ -25,7 +25,6 @@ import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 import BpkSectionListHeader from './BpkSectionListHeader';
 
 const commonTests = () => {
-  jest.mock('Image', () => 'Image');
   describe('BpkSectionListHeader', () => {
     describeEachColorScheme(BpkSectionListHeader, WithColorScheme => {
       it('should render correctly', () => {
