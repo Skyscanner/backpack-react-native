@@ -2,6 +2,11 @@
 
 > Place your changes below this line.
 
+**Breaking:**
+
+- All components:
+  - Upgraded react-native to 0.61.5
+
 **Fixed:**
 
 - react-native-bpk-component-badge:
