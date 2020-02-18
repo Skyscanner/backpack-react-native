@@ -30,7 +30,7 @@ type ModalProps = ElementProps<typeof Modal>;
 export type Props = {
   children: Node,
   doneLabel: string,
-  onClose: () => mixed,
+  onClose: () => void | Promise<void>,
   onValueChange: (PickerValue, number) => mixed,
   isOpen: boolean,
   selectedValue: PickerValue,
@@ -73,7 +73,7 @@ BpkPicker.propTypes = {
 BpkPicker.defaultProps = {
   isOpen: false,
   selectedValue: null,
-  onShow: () => null,
+  onShow: () => undefined,
   pickerContentRef: React.createRef(),
 };
 

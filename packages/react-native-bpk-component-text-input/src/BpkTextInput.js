@@ -136,10 +136,12 @@ class BpkTextInput extends Component<EnhancedProps, State> {
       Animated.timing(this.animatedValues.color, {
         toValue: this.getColorAnimatedValue(),
         duration: animationDurationSm,
+        useNativeDriver: false,
       }),
       Animated.timing(this.animatedValues.labelPosition, {
         toValue: this.getLabelPositionAnimatedValue(),
         duration: animationDurationSm,
+        useNativeDriver: false,
       }),
     ]).start();
   }

@@ -100,6 +100,7 @@ class BpkCarouselIndicatorDot extends React.PureComponent<Props, {}> {
     Animated.timing(this.size, {
       duration: animationDurationSm,
       toValue: indicatorDimensions[size],
+      useNativeDriver: false,
     }).start(callback);
   };
 

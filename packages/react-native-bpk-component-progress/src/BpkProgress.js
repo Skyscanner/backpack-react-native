@@ -138,6 +138,7 @@ class BpkProgress extends Component<EnhancedProps, State> {
         easing: Easing.inOut(Easing.ease),
         duration: animationDurationBase,
         toValue: this.getWithinBoundsProgress(),
+        useNativeDriver: false,
       }).start();
     }
   }

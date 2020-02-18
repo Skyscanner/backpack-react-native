@@ -56,6 +56,7 @@ function withAnimatedProps<Props: {}>(
         Animated.timing(this.state[prop], {
           toValue: nextProps[prop],
           duration: animationDurationSm,
+          useNativeDriver: false,
         }),
       );
 

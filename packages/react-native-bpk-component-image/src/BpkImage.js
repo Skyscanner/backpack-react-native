@@ -92,10 +92,12 @@ const useLoadingAnimation = (loaded: boolean) => {
         Animated.timing(imageOpacityRef.current, {
           toValue: 1,
           duration: animationDurationBase,
+          useNativeDriver: false,
         }),
         Animated.timing(loadingIndicatorOpacityRef.current, {
           toValue: 0,
           duration: animationDurationBase,
+          useNativeDriver: false,
         }),
       ]).start(() => {
         showLoadingIndicator.current = false;

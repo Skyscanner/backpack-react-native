@@ -27,7 +27,7 @@ export type PickerValue = ?(string | number);
 type ModalProps = ElementProps<typeof Modal>;
 export type PickerMenuProps = {
   children: Node,
-  onClose: () => mixed,
+  onClose: () => void | Promise<void>,
   onValueChange: (PickerValue, number) => mixed,
   selectedValue: PickerValue,
   visible: boolean,

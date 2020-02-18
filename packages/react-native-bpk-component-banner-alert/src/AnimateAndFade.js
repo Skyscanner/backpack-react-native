@@ -137,11 +137,13 @@ class AnimateAndFade extends Component<Props> {
     const heightAnimation = Animated.timing(this.height, {
       toValue: show ? height : COLLAPSED_HEIGHT,
       duration,
+      useNativeDriver: false,
     });
 
     const opacityAnimation = Animated.timing(this.opacity, {
       toValue: show ? 1 : 0,
       duration,
+      useNativeDriver: false,
     });
 
     Animated.sequence(
