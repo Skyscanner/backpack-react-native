@@ -2,6 +2,52 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2020-02-19 - RN 0.61.5 upgrade.
+
+**Breaking:**
+
+- react-native-bpk-appearance: 1.4.4 => 2.0.0
+- react-native-bpk-component-alert: 3.0.32 => 4.0.0
+- react-native-bpk-component-animate-height: 3.0.33 => 4.0.0
+- react-native-bpk-component-badge: 5.0.19 => 6.0.0
+- react-native-bpk-component-banner-alert: 7.2.10 => 8.0.0
+- react-native-bpk-component-button-link: 6.1.12 => 7.0.0
+- react-native-bpk-component-button: 11.2.5 => 12.0.0
+- react-native-bpk-component-calendar: 4.2.6 => 5.0.0
+- react-native-bpk-component-card: 2.2.7 => 3.0.0
+- react-native-bpk-component-carousel-indicator: 2.0.32 => 3.0.0
+- react-native-bpk-component-carousel: 2.0.33 => 3.0.0
+- react-native-bpk-component-chip: 5.1.12 => 6.0.0
+- react-native-bpk-component-dialog: 4.0.24 => 5.0.0
+- react-native-bpk-component-flat-list: 5.3.4 => 6.0.0
+- react-native-bpk-component-horizontal-nav: 6.1.12 => 7.0.0
+- react-native-bpk-component-icon: 2.2.11 => 3.0.0
+- react-native-bpk-component-image: 2.1.12 => 3.0.0
+- react-native-bpk-component-navigation-bar: 7.2.6 => 8.0.0
+- react-native-bpk-component-nudger: 4.0.21 => 5.0.0
+- react-native-bpk-component-panel: 1.1.11 => 2.0.0
+- react-native-bpk-component-phone-input: 6.1.6 => 7.0.0
+- react-native-bpk-component-picker: 5.2.7 => 6.0.0
+- react-native-bpk-component-progress: 2.1.9 => 3.0.0
+- react-native-bpk-component-rating: 0.0.17 => 1.0.0
+- react-native-bpk-component-section-list: 5.3.4 => 6.0.0
+- react-native-bpk-component-select: 4.1.11 => 5.0.0
+- react-native-bpk-component-spinner: 2.1.10 => 3.0.0
+- react-native-bpk-component-star-rating: 2.1.8 => 3.0.0
+- react-native-bpk-component-switch: 3.1.10 => 4.0.0
+- react-native-bpk-component-text-input: 4.1.9 => 5.0.0
+- react-native-bpk-component-text: 4.2.12 => 5.0.0
+- react-native-bpk-component-touchable-native-feedback: 2.0.26 => 3.0.0
+- react-native-bpk-component-touchable-overlay: 2.1.11 => 3.0.0
+- react-native-bpk-styles: 2.0.15 => 3.0.0
+- react-native-bpk-theming: 1.4.15 => 2.0.0
+  - Upgraded react-native to 0.61.5
+
+**Fixed:**
+
+- react-native-bpk-component-badge:
+  - We've made the `success` badge lighter as it looked strange with dark text.
+
 # 2020-02-13 - Deprecated `BpkThemeAttributes` and update bpk-tokens.
 
 **Fixed:**
