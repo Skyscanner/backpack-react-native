@@ -77,7 +77,7 @@ export default class App extends Component {
 
 You can combine the dialing code list with [`SectionList`'s search abilities](/components/section-list?platform=native#with-search) to allow users to search the dialing code list.
 
-A default filtering function - `getFilteredDialingCodes` - is available for you to use, or you can perform your own filtering logic.
+A default filtering function - `getFilteredDialingCodes` - is available for you to use. It filters using the `dialingCode` and `name` properties. You can either use this or provide your own filtering logic if you need advanced functionality.
 
 ```js
 import React, { Component } from 'react';

@@ -23,7 +23,9 @@ import { Image } from 'react-native';
 import renderer from 'react-test-renderer';
 import BpkSectionList from 'react-native-bpk-component-section-list';
 
-import BpkDialingCodeList from './BpkDialingCodeList';
+import BpkDialingCodeList, {
+  getFilteredDialingCodes,
+} from './BpkDialingCodeList';
 
 const onPressFn = jest.fn();
 
@@ -51,6 +53,15 @@ const SUGGESTED = {
 };
 
 const commonTests = () => {
+  describe('getFilteredDialingCodes', () => {
+    it('should search by name', () => {
+      expect(getFilteredDialingCodes('Zero', CODES)).toEqual([CODES[0]]);
+    });
+    it('should search by dialingCode', () => {
+      expect(getFilteredDialingCodes('0', CODES)).toEqual([CODES[0]]);
+    });
+  });
+
   describe('BpkDialingCodeList', () => {
     it('should render correctly', () => {
       const tree = renderer
