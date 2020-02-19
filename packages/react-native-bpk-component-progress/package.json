@@ -1,6 +1,6 @@
 {
   "name": "react-native-bpk-component-progress",
-  "version": "3.0.0",
+  "version": "2.1.9",
   "main": "index.js",
   "description": "Backpack React Native progress component.",
   "repository": {
@@ -17,7 +17,7 @@
   "dependencies": {
     "bpk-tokens": "^32.0.0",
     "prop-types": "^15.5.8",
-    "react-native-bpk-theming": "^2.0.0"
+    "react-native-bpk-theming": "^1.4.15"
   },
   "devDependencies": {
     "react-native-bpk-test-utils": "^0.0.6"
