@@ -25,7 +25,6 @@ import { describeEachColorScheme } from 'react-native-bpk-test-utils';
 import BpkFlatListItemSeparator from './BpkFlatListItemSeparator';
 
 const commonTests = () => {
-  jest.mock('Image', () => 'Image');
   describe('BpkFlatListItemSeparator', () => {
     describeEachColorScheme(BpkFlatListItemSeparator, WithColorScheme => {
       it('should render correctly', () => {

@@ -38,7 +38,7 @@ exports[`android BpkNavigationBar should render correctly 1`] = `
         accessibilityRole="button"
         accessibilityStates={Array []}
         accessible={true}
-        clickable={true}
+        focusable={true}
         isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
@@ -169,7 +169,7 @@ exports[`android BpkNavigationBar should render correctly with a subtitle view 1
         accessibilityRole="button"
         accessibilityStates={Array []}
         accessible={true}
-        clickable={true}
+        focusable={true}
         isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
@@ -308,7 +308,7 @@ exports[`android BpkNavigationBar should render correctly with a title view 1`] 
         accessibilityRole="button"
         accessibilityStates={Array []}
         accessible={true}
-        clickable={true}
+        focusable={true}
         isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
@@ -417,7 +417,7 @@ exports[`android BpkNavigationBar should render correctly with an icon in the ti
         accessibilityRole="button"
         accessibilityStates={Array []}
         accessible={true}
-        clickable={true}
+        focusable={true}
         isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
@@ -576,7 +576,7 @@ exports[`android BpkNavigationBar should render correctly with custom style 1`] 
         accessibilityRole="button"
         accessibilityStates={Array []}
         accessible={true}
-        clickable={true}
+        focusable={true}
         isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
@@ -707,7 +707,7 @@ exports[`android BpkNavigationBar should render correctly with custom theme 1`] 
         accessibilityRole="button"
         accessibilityStates={Array []}
         accessible={true}
-        clickable={true}
+        focusable={true}
         isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
@@ -835,7 +835,7 @@ exports[`android BpkNavigationBar should render correctly with trailing button 1
         accessibilityRole="button"
         accessibilityStates={Array []}
         accessible={true}
-        clickable={true}
+        focusable={true}
         isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
@@ -933,7 +933,7 @@ exports[`android BpkNavigationBar should render correctly with trailing button 1
         accessibilityRole="button"
         accessibilityStates={Array []}
         accessible={true}
-        clickable={true}
+        focusable={true}
         isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
@@ -1018,7 +1018,7 @@ exports[`android should forward custom props 1`] = `
         accessibilityRole="button"
         accessibilityStates={Array []}
         accessible={true}
-        clickable={true}
+        focusable={true}
         isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
@@ -1117,7 +1117,7 @@ exports[`android should forward custom props 1`] = `
         accessibilityRole="button"
         accessibilityStates={Array []}
         accessible={true}
-        clickable={true}
+        focusable={true}
         isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {

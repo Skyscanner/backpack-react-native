@@ -104,7 +104,8 @@ class BpkHorizontalNav extends React.Component<
     };
   }
 
-  componentWillReceiveProps(nextProps) {
+  // eslint-disable-next-line camelcase
+  UNSAFE_componentWillReceiveProps(nextProps) {
     if (nextProps.selectedId && this.childrenPositions[nextProps.selectedId]) {
       const nextLayoutProps = this.childrenPositions[nextProps.selectedId];
 

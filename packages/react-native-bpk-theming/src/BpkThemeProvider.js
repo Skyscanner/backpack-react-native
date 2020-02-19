@@ -22,6 +22,16 @@ import createWithTheme from './create-with-theme';
 
 const BpkThemeProvider = ThemeProvider;
 
+// TODO (BPK-3639): Upgrade theming package and remove this
+const cwm = ThemeProvider.prototype.componentWillMount;
+const cwrp = ThemeProvider.prototype.componentWillReceiveProps;
+
+BpkThemeProvider.prototype.UNSAFE_componentWillMount = cwm;
+BpkThemeProvider.prototype.UNSAFE_componentWillReceiveProps = cwrp;
+
+delete BpkThemeProvider.prototype.componentWillMount;
+delete BpkThemeProvider.prototype.componentWillReceiveProps;
+
 export default BpkThemeProvider;
 const withTheme = createWithTheme();
 export { withTheme };

@@ -206,7 +206,11 @@ const allPropsDynamic = BpkDynamicStyleSheet.create({
     textShadowRadius: { light: 1, dark: 0 },
     tintColor: { light: '#fff', dark: '#f0f' },
     top: { light: 1, dark: 0 },
-    transform: { light: [{ rotateX: '45deg' }], dark: [{ rotateX: '45deg' }] },
+    transform: {
+      // the type is required here because of a flow bug https://github.com/facebook/flow/issues/2507
+      light: ([{ rotateX: '45deg' }]: Array<{| rotateX: string |}>),
+      dark: ([{ rotateX: '45deg' }]: Array<{| rotateX: string |}>),
+    },
     width: { light: 1, dark: 0 },
     writingDirection: { light: 'rtl', dark: 'ltr' },
     zIndex: { light: 100, dark: 0 },

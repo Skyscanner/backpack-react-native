@@ -16,7 +16,7 @@ exports[`iOS BpkPicker dark mode should render correctly 1`] = `
 >
   <View
     accessible={true}
-    clickable={true}
+    focusable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -61,7 +61,7 @@ exports[`iOS BpkPicker dark mode should render correctly 1`] = `
         accessibilityRole="button"
         accessibilityStates={Array []}
         accessible={true}
-        clickable={true}
+        focusable={true}
         isTVSelectable={true}
         onClick={[Function]}
         onResponderGrant={[Function]}
@@ -167,7 +167,7 @@ exports[`iOS BpkPicker dark mode should render correctly with a selected value 1
 >
   <View
     accessible={true}
-    clickable={true}
+    focusable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -212,7 +212,7 @@ exports[`iOS BpkPicker dark mode should render correctly with a selected value 1
         accessibilityRole="button"
         accessibilityStates={Array []}
         accessible={true}
-        clickable={true}
+        focusable={true}
         isTVSelectable={true}
         onClick={[Function]}
         onResponderGrant={[Function]}
@@ -318,7 +318,7 @@ exports[`iOS BpkPicker light mode should render correctly 1`] = `
 >
   <View
     accessible={true}
-    clickable={true}
+    focusable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -363,7 +363,7 @@ exports[`iOS BpkPicker light mode should render correctly 1`] = `
         accessibilityRole="button"
         accessibilityStates={Array []}
         accessible={true}
-        clickable={true}
+        focusable={true}
         isTVSelectable={true}
         onClick={[Function]}
         onResponderGrant={[Function]}
@@ -469,7 +469,7 @@ exports[`iOS BpkPicker light mode should render correctly with a selected value 
 >
   <View
     accessible={true}
-    clickable={true}
+    focusable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -514,7 +514,7 @@ exports[`iOS BpkPicker light mode should render correctly with a selected value 
         accessibilityRole="button"
         accessibilityStates={Array []}
         accessible={true}
-        clickable={true}
+        focusable={true}
         isTVSelectable={true}
         onClick={[Function]}
         onResponderGrant={[Function]}

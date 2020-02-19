@@ -42,7 +42,7 @@ exports[`ios - iPhone X  BpkNavigationBar dark mode should render correctly 1`] 
       accessibilityLabel="Back"
       accessibilityRole="button"
       accessible={true}
-      clickable={true}
+      focusable={true}
       isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
@@ -202,7 +202,7 @@ exports[`ios - iPhone X  BpkNavigationBar dark mode should render correctly with
       accessibilityRole="button"
       accessibilityStates={Array []}
       accessible={true}
-      clickable={true}
+      focusable={true}
       isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
@@ -305,7 +305,7 @@ exports[`ios - iPhone X  BpkNavigationBar dark mode should render correctly with
       accessibilityRole="button"
       accessibilityStates={Array []}
       accessible={true}
-      clickable={true}
+      focusable={true}
       isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
@@ -395,7 +395,7 @@ exports[`ios - iPhone X  BpkNavigationBar light mode should render correctly 1`]
       accessibilityLabel="Back"
       accessibilityRole="button"
       accessible={true}
-      clickable={true}
+      focusable={true}
       isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
@@ -555,7 +555,7 @@ exports[`ios - iPhone X  BpkNavigationBar light mode should render correctly wit
       accessibilityRole="button"
       accessibilityStates={Array []}
       accessible={true}
-      clickable={true}
+      focusable={true}
       isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
@@ -658,7 +658,7 @@ exports[`ios - iPhone X  BpkNavigationBar light mode should render correctly wit
       accessibilityRole="button"
       accessibilityStates={Array []}
       accessible={true}
-      clickable={true}
+      focusable={true}
       isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}

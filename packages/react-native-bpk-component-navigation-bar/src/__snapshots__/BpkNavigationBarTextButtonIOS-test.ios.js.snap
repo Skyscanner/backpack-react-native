@@ -6,7 +6,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly 1`]
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
@@ -60,7 +60,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly dis
     ]
   }
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
@@ -110,7 +110,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly emp
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
@@ -162,7 +162,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly lea
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
@@ -212,7 +212,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly wit
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
@@ -266,7 +266,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly wit
     ]
   }
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
@@ -320,7 +320,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should respect "disabledTin
     ]
   }
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
@@ -370,7 +370,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should respect "primaryTint
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
@@ -420,7 +420,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should respect "tintColor" 
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
@@ -470,7 +470,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should respect "tintColor" 
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
@@ -520,7 +520,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly 1`
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
@@ -574,7 +574,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly di
     ]
   }
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
@@ -624,7 +624,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly em
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
@@ -676,7 +676,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly le
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
@@ -726,7 +726,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly wi
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
@@ -780,7 +780,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly wi
     ]
   }
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
@@ -834,7 +834,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should respect "disabledTi
     ]
   }
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
@@ -884,7 +884,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should respect "primaryTin
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
@@ -934,7 +934,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should respect "tintColor"
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
@@ -984,7 +984,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should respect "tintColor"
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
@@ -1034,7 +1034,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS should forward custom props 1`] = `
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}

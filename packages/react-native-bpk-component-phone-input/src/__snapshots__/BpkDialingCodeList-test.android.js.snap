@@ -142,7 +142,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
         accessibilityLabel="0 Zero"
         accessibilityRole="button"
         accessible={true}
-        clickable={true}
+        focusable={true}
         isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
@@ -305,7 +305,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
         accessibilityLabel="1 One"
         accessibilityRole="button"
         accessible={true}
-        clickable={true}
+        focusable={true}
         isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
@@ -468,7 +468,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
         accessibilityLabel="2 Two"
         accessibilityRole="button"
         accessible={true}
-        clickable={true}
+        focusable={true}
         isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
@@ -728,7 +728,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
         accessibilityLabel="0 Zero"
         accessibilityRole="button"
         accessible={true}
-        clickable={true}
+        focusable={true}
         isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
@@ -900,7 +900,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
         accessibilityLabel="1 One"
         accessibilityRole="button"
         accessible={true}
-        clickable={true}
+        focusable={true}
         isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
@@ -1063,7 +1063,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
         accessibilityLabel="2 Two"
         accessibilityRole="button"
         accessible={true}
-        clickable={true}
+        focusable={true}
         isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {

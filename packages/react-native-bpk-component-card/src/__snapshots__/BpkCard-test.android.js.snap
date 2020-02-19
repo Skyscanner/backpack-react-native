@@ -16,7 +16,7 @@ exports[`Android BpkCard dark mode should render correctly 1`] = `
     accessibilityLabel="Example Card"
     accessibilityRole="button"
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -80,7 +80,7 @@ exports[`Android BpkCard dark mode should render correctly with the "focused" st
     accessibilityLabel="Example Card"
     accessibilityRole="button"
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -141,7 +141,7 @@ exports[`Android BpkCard light mode should render correctly 1`] = `
     accessibilityLabel="Example Card"
     accessibilityRole="button"
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -205,7 +205,7 @@ exports[`Android BpkCard light mode should render correctly with the "focused" s
     accessibilityLabel="Example Card"
     accessibilityRole="button"
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -269,7 +269,7 @@ exports[`Android BpkCard should render correctly when "cornerStyle=large" 1`] = 
     accessibilityLabel="Example Card"
     accessibilityRole="button"
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -330,7 +330,7 @@ exports[`Android BpkCard should render correctly with arbitrary props 1`] = `
     accessibilityLabel="Example Card"
     accessibilityRole="button"
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -392,7 +392,7 @@ exports[`Android BpkCard should render correctly with custom inner style 1`] = `
     accessibilityLabel="Example Card"
     accessibilityRole="button"
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -459,7 +459,7 @@ exports[`Android BpkCard should render correctly with custom style 1`] = `
     accessibilityLabel="Example Card"
     accessibilityRole="button"
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -520,7 +520,7 @@ exports[`Android BpkCard should render correctly without padding 1`] = `
     accessibilityLabel="Example Card"
     accessibilityRole="button"
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {

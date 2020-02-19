@@ -11,7 +11,7 @@ exports[`Android BpkPicker dark mode should render correctly 1`] = `
 >
   <View
     accessible={true}
-    clickable={true}
+    focusable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -105,7 +105,7 @@ exports[`Android BpkPicker dark mode should render correctly 1`] = `
             accessibilityRole="button"
             accessibilityStates={Array []}
             accessible={true}
-            clickable={true}
+            focusable={true}
             isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
@@ -155,7 +155,7 @@ exports[`Android BpkPicker dark mode should render correctly 1`] = `
             accessibilityRole="button"
             accessibilityStates={Array []}
             accessible={true}
-            clickable={true}
+            focusable={true}
             isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
@@ -214,7 +214,7 @@ exports[`Android BpkPicker dark mode should render correctly with a selected val
 >
   <View
     accessible={true}
-    clickable={true}
+    focusable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -312,7 +312,7 @@ exports[`Android BpkPicker dark mode should render correctly with a selected val
               ]
             }
             accessible={true}
-            clickable={true}
+            focusable={true}
             isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
@@ -364,7 +364,7 @@ exports[`Android BpkPicker dark mode should render correctly with a selected val
             accessibilityRole="button"
             accessibilityStates={Array []}
             accessible={true}
-            clickable={true}
+            focusable={true}
             isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
@@ -423,7 +423,7 @@ exports[`Android BpkPicker light mode should render correctly 1`] = `
 >
   <View
     accessible={true}
-    clickable={true}
+    focusable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -517,7 +517,7 @@ exports[`Android BpkPicker light mode should render correctly 1`] = `
             accessibilityRole="button"
             accessibilityStates={Array []}
             accessible={true}
-            clickable={true}
+            focusable={true}
             isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
@@ -567,7 +567,7 @@ exports[`Android BpkPicker light mode should render correctly 1`] = `
             accessibilityRole="button"
             accessibilityStates={Array []}
             accessible={true}
-            clickable={true}
+            focusable={true}
             isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
@@ -626,7 +626,7 @@ exports[`Android BpkPicker light mode should render correctly with a selected va
 >
   <View
     accessible={true}
-    clickable={true}
+    focusable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -724,7 +724,7 @@ exports[`Android BpkPicker light mode should render correctly with a selected va
               ]
             }
             accessible={true}
-            clickable={true}
+            focusable={true}
             isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
@@ -776,7 +776,7 @@ exports[`Android BpkPicker light mode should render correctly with a selected va
             accessibilityRole="button"
             accessibilityStates={Array []}
             accessible={true}
-            clickable={true}
+            focusable={true}
             isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {

@@ -29,8 +29,6 @@ import { BUTTON_TYPES, ICON_ALIGNMENTS } from './common-types';
 const onPressFn = jest.fn();
 
 const commonTests = () => {
-  jest.mock('Text', () => 'Text');
-
   describe('BpkButton', () => {
     describeEachColorScheme(BpkButton, BpkButtonWithColorScheme => {
       it('should render correctly', () => {

@@ -6,7 +6,7 @@ exports[`Android BpkPickerItem dark mode should render correctly 1`] = `
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -55,7 +55,7 @@ exports[`Android BpkPickerItem dark mode should render correctly with an onPress
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -108,7 +108,7 @@ exports[`Android BpkPickerItem dark mode should render correctly with the select
     ]
   }
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -159,7 +159,7 @@ exports[`Android BpkPickerItem light mode should render correctly 1`] = `
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -208,7 +208,7 @@ exports[`Android BpkPickerItem light mode should render correctly with an onPres
   accessibilityRole="button"
   accessibilityStates={Array []}
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
@@ -261,7 +261,7 @@ exports[`Android BpkPickerItem light mode should render correctly with the selec
     ]
   }
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {

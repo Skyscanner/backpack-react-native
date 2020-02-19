@@ -23,8 +23,12 @@ export default (() => {
   if (Platform.OS === 'android') {
     return false;
   }
+  const windowDimensions = DeviceInfo.getConstants().Dimensions.window;
+  if (!windowDimensions) {
+    return false;
+  }
 
-  const { width, height } = DeviceInfo.Dimensions.window;
+  const { width, height } = windowDimensions;
 
   // iPhone X, iPhone XS, iPhone 11 Pro
   if (width === 375 && height === 812) {

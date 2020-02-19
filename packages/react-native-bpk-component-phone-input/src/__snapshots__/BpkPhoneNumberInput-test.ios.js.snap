@@ -34,7 +34,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
       accessibilityRole="button"
       accessibilityStates={Array []}
       accessible={true}
-      clickable={true}
+      focusable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -226,7 +226,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
         ]
       }
       accessible={true}
-      clickable={true}
+      focusable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}

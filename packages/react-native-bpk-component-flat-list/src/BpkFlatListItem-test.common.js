@@ -29,7 +29,6 @@ import BpkFlatListItem from './BpkFlatListItem';
 const onPressFn = jest.fn();
 
 const commonTests = () => {
-  jest.mock('Image', () => 'Image');
   describe('BpkFlatListItem', () => {
     describeEachColorScheme(BpkFlatListItem, BpkFlatListItemWithColorScheme => {
       it('should render correctly', () => {

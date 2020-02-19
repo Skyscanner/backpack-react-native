@@ -5,7 +5,7 @@ exports[`iOS BpkNavigationBarBackButtonIOS dark mode should render correctly 1`]
   accessibilityLabel="Back"
   accessibilityRole="button"
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
@@ -47,7 +47,7 @@ exports[`iOS BpkNavigationBarBackButtonIOS dark mode should render correctly wit
   accessibilityLabel="Back"
   accessibilityRole="button"
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
@@ -111,7 +111,7 @@ exports[`iOS BpkNavigationBarBackButtonIOS light mode should render correctly 1`
   accessibilityLabel="Back"
   accessibilityRole="button"
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
@@ -153,7 +153,7 @@ exports[`iOS BpkNavigationBarBackButtonIOS light mode should render correctly wi
   accessibilityLabel="Back"
   accessibilityRole="button"
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
@@ -217,7 +217,7 @@ exports[`iOS BpkNavigationBarBackButtonIOS should forward custom props 1`] = `
   accessibilityLabel="Back"
   accessibilityRole="button"
   accessible={true}
-  clickable={true}
+  focusable={true}
   isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}

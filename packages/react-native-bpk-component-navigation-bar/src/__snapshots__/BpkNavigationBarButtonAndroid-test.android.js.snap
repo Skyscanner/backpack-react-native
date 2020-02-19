@@ -13,7 +13,7 @@ exports[`android BpkNavigationBarButton should forward custom props 1`] = `
     accessibilityRole="button"
     accessibilityStates={Array []}
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -71,7 +71,7 @@ exports[`android BpkNavigationBarButton should render correctly back icon 1`] = 
     accessibilityRole="button"
     accessibilityStates={Array []}
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -132,7 +132,7 @@ exports[`android BpkNavigationBarButton should render correctly disabled 1`] = `
       ]
     }
     accessible={true}
-    clickable={false}
+    focusable={false}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -189,7 +189,7 @@ exports[`android BpkNavigationBarButton should render correctly with close icon 
     accessibilityRole="button"
     accessibilityStates={Array []}
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -246,7 +246,7 @@ exports[`android BpkNavigationBarButton should render correctly with tick icon 1
     accessibilityRole="button"
     accessibilityStates={Array []}
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -307,7 +307,7 @@ exports[`android BpkNavigationBarButton should respect "disabledTintColor" 1`] =
       ]
     }
     accessible={true}
-    clickable={false}
+    focusable={false}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -364,7 +364,7 @@ exports[`android BpkNavigationBarButton should respect "tintColor" 1`] = `
     accessibilityRole="button"
     accessibilityStates={Array []}
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
@@ -421,7 +421,7 @@ exports[`android BpkNavigationBarButton should respect "touchableColor" 1`] = `
     accessibilityRole="button"
     accessibilityStates={Array []}
     accessible={true}
-    clickable={true}
+    focusable={true}
     isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
