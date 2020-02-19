@@ -81,8 +81,10 @@ export const getFilteredDialingCodes = (
   searchText: string,
   dialingCodes: Array<Code>,
 ): Array<Code> =>
-  dialingCodes.filter(dialingCode =>
-    dialingCode.name.toLowerCase().includes(searchText.toLowerCase()),
+  dialingCodes.filter(
+    dialingCode =>
+      dialingCode.name.toLowerCase().includes(searchText.toLowerCase()) ||
+      dialingCode.dialingCode.toLowerCase().includes(searchText.toLowerCase()),
   );
 
 const BpkDialingCodeList = ({
