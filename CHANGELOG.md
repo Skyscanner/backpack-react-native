@@ -2,6 +2,20 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2020-02-20 - `backpack-ios` upgrade
+
+**Fixed:**
+
+- react-native-bpk-component-calendar: 5.0.0 => 5.0.1
+  - Updated `backpack-ios` dependency to `26.0`.
+
+- react-native-bpk-component-dialog: 5.0.0 => 5.0.1
+  - Updated `backpack-ios` dependency to `26.0`.
+
+- react-native-bpk-component-rating: 1.0.0 => 1.1.0
+  - Updated `backpack-ios` dependency to `26.0`.
+  - Bumped to `1.1.0` due to conflicting existing tags.
+
 # 2020-02-20 - Better dialing code filtering
 
 **Changed:**
