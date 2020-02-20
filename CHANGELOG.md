@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2020-02-20 - Better dialing code filtering
+
+**Changed:**
+
+- react-native-bpk-component-phone-input: 7.0.0 => 7.0.1
+  - `getFilteredDialingCodes` now filters on `dialingCode` in addition to the `name` property.
+
 # 2020-02-19 - RN 0.61.5 upgrade.
 
 **Breaking:**

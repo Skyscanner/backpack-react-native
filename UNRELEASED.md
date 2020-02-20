@@ -2,11 +2,6 @@
 
 > Place your changes below this line.
 
-**Changed:**
-
-- react-native-bpk-component-phone-input:
-  - `getFilteredDialingCodes` now filters on `dialingCode` in addition to the `name` property.
-
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
