@@ -1,5 +1,5 @@
 PODS:
-  - Backpack (25.3.0):
+  - Backpack (26.0.0):
     - FloatingPanel (= 1.6.6)
     - FSCalendar (~> 2.8)
     - MBProgressHUD (~> 0.9.1)
@@ -193,13 +193,13 @@ PODS:
     - React-jsi (= 0.61.5)
   - React-jsinspector (0.61.5)
   - react-native-bpk-component-calendar (5.0.0):
-    - Backpack (~> 25.0)
+    - Backpack (~> 26.0)
     - React
   - react-native-bpk-component-dialog (5.0.0):
-    - Backpack (~> 25.0)
+    - Backpack (~> 26.0)
     - React
   - react-native-bpk-component-rating (1.0.0):
-    - Backpack (~> 25.0)
+    - Backpack (~> 26.0)
     - React
   - react-native-maps (0.26.1):
     - React
@@ -244,7 +244,7 @@ PODS:
   - Yoga (1.14.0)
 
 DEPENDENCIES:
-  - Backpack (~> 25.0)
+  - Backpack (~> 26.0)
   - BVLinearGradient (from `../node_modules/react-native-linear-gradient`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
@@ -354,7 +354,7 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  Backpack: fc567118af965717386c3f682fcb71588f97a4cc
+  Backpack: 6a0ed1b2e26d6d7a6f58e4de582244706739d0d6
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BVLinearGradient: 0d985ec461359c82bc254f26d11008bdae50d17a
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
@@ -374,9 +374,9 @@ SPEC CHECKSUMS:
   React-jsi: cb2cd74d7ccf4cffb071a46833613edc79cdf8f7
   React-jsiexecutor: d5525f9ed5f782fdbacb64b9b01a43a9323d2386
   React-jsinspector: fa0ecc501688c3c4c34f28834a76302233e29dc0
-  react-native-bpk-component-calendar: 97e35a6764677d49bf4ae7c5fb5508e389548e1d
-  react-native-bpk-component-dialog: 4147320cce9e2ba92dc747f07a0da2d68e4e7809
-  react-native-bpk-component-rating: b6f71de70d13eb43f7b0441f5339132b070198ce
+  react-native-bpk-component-calendar: 0550505aee3edf16f9126048c0241a18ba0dbe37
+  react-native-bpk-component-dialog: dfe0ca7b769834922d4e85eb79971c7ccdcf4e07
+  react-native-bpk-component-rating: b783051751f8e7db430c6d023e3d7fb2ed4001e9
   react-native-maps: 6e499eee4eabf422ba8b6f94e993cc768bf35153
   React-RCTActionSheet: 600b4d10e3aea0913b5a92256d2719c0cdd26d76
   React-RCTAnimation: 791a87558389c80908ed06cc5dfc5e7920dfa360
@@ -392,6 +392,6 @@ SPEC CHECKSUMS:
   TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
   Yoga: f2a7cd4280bfe2cca5a7aed98ba0eb3d1310f18b
 
-PODFILE CHECKSUM: bf714388e65e32a04522df3e755d8728a1f5f736
+PODFILE CHECKSUM: 0e549ba783bfad367e2e197b527a42e2250e8a45
 
 COCOAPODS: 1.8.1
