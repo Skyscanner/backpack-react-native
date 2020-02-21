@@ -189,10 +189,11 @@ PODS:
     - DoubleConversion
     - Folly (= 2018.10.22.00)
     - glog
-<<<<<<< HEAD
     - React-cxxreact (= 0.61.5)
     - React-jsi (= 0.61.5)
   - React-jsinspector (0.61.5)
+  - react-native-appearance (0.3.2):
+    - React
   - react-native-bpk-component-calendar (5.0.1):
     - Backpack (~> 26.0)
     - React
@@ -239,50 +240,6 @@ PODS:
     - React-cxxreact (= 0.61.5)
     - React-jsi (= 0.61.5)
     - ReactCommon/jscallinvoker (= 0.61.5)
-  - ReactNativeDarkMode (0.2.1-rc.0):
-    - React
-=======
-    - React-cxxreact (= 0.60.4)
-    - React-jsi (= 0.60.4)
-  - React-jsinspector (0.60.4)
-  - react-native-appearance (0.3.2):
-    - React
-  - react-native-bpk-component-calendar (4.2.3):
-    - Backpack (~> 25.0)
-    - React
-  - react-native-bpk-component-dialog (4.0.21):
-    - Backpack (~> 25.0)
-    - React
-  - react-native-bpk-component-rating (0.0.14):
-    - Backpack (~> 25.0)
-    - React
-  - react-native-maps (0.26.1):
-    - React
-  - React-RCTActionSheet (0.60.4):
-    - React-Core (= 0.60.4)
-  - React-RCTAnimation (0.60.4):
-    - React-Core (= 0.60.4)
-  - React-RCTBlob (0.60.4):
-    - React-Core (= 0.60.4)
-    - React-RCTNetwork (= 0.60.4)
-    - React-RCTWebSocket (= 0.60.4)
-  - React-RCTImage (0.60.4):
-    - React-Core (= 0.60.4)
-    - React-RCTNetwork (= 0.60.4)
-  - React-RCTLinking (0.60.4):
-    - React-Core (= 0.60.4)
-  - React-RCTNetwork (0.60.4):
-    - React-Core (= 0.60.4)
-  - React-RCTSettings (0.60.4):
-    - React-Core (= 0.60.4)
-  - React-RCTText (0.60.4):
-    - React-Core (= 0.60.4)
-  - React-RCTVibration (0.60.4):
-    - React-Core (= 0.60.4)
-  - React-RCTWebSocket (0.60.4):
-    - React-Core (= 0.60.4)
-    - React-fishhook (= 0.60.4)
->>>>>>> [BPK-3515] Replace underlying bpk-appearance library
   - TTTAttributedLabel (1.13.4)
   - Yoga (1.14.0)
 
@@ -319,15 +276,9 @@ DEPENDENCIES:
   - React-RCTSettings (from `../node_modules/react-native/Libraries/Settings`)
   - React-RCTText (from `../node_modules/react-native/Libraries/Text`)
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
-<<<<<<< HEAD
   - ReactCommon/jscallinvoker (from `../node_modules/react-native/ReactCommon`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
-  - ReactNativeDarkMode (from `../packages/react-native-bpk-appearance/node_modules/react-native-dark-mode/ReactNativeDarkMode.podspec`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
-=======
-  - React-RCTWebSocket (from `../node_modules/react-native/Libraries/WebSocket`)
-  - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
->>>>>>> [BPK-3515] Replace underlying bpk-appearance library
 
 SPEC REPOS:
   trunk:
@@ -397,17 +348,9 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/Text"
   React-RCTVibration:
     :path: "../node_modules/react-native/Libraries/Vibration"
-<<<<<<< HEAD
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
-  ReactNativeDarkMode:
-    :path: "../packages/react-native-bpk-appearance/node_modules/react-native-dark-mode/ReactNativeDarkMode.podspec"
   Yoga:
-=======
-  React-RCTWebSocket:
-    :path: "../node_modules/react-native/Libraries/WebSocket"
-  yoga:
->>>>>>> [BPK-3515] Replace underlying bpk-appearance library
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
@@ -422,7 +365,6 @@ SPEC CHECKSUMS:
   FSCalendar: 5245140456fcbcac5824c203b98bd8068bdfee1a
   glog: 1f3da668190260b06b429bb211bfbee5cd790c28
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
-<<<<<<< HEAD
   RCTRequired: b153add4da6e7dbc44aebf93f3cf4fcae392ddf1
   RCTTypeSafety: 9aa1b91d7f9310fc6eadc3cf95126ffe818af320
   React: b6a59ef847b2b40bb6e0180a97d0ca716969ac78
@@ -432,6 +374,7 @@ SPEC CHECKSUMS:
   React-jsi: cb2cd74d7ccf4cffb071a46833613edc79cdf8f7
   React-jsiexecutor: d5525f9ed5f782fdbacb64b9b01a43a9323d2386
   React-jsinspector: fa0ecc501688c3c4c34f28834a76302233e29dc0
+  react-native-appearance: f03bb953dae4dc696554a190292b513b075d3e93
   react-native-bpk-component-calendar: dcc83b02d915a472ae2847b3fa421ecd15856bf2
   react-native-bpk-component-dialog: afac41250a1b2f52f45d1c5a194dbc1f7f51b835
   react-native-bpk-component-rating: 6eff121f6304c334b11dc05d7aa47be70b6b5899
@@ -446,39 +389,9 @@ SPEC CHECKSUMS:
   React-RCTText: 9ccc88273e9a3aacff5094d2175a605efa854dbe
   React-RCTVibration: a49a1f42bf8f5acf1c3e297097517c6b3af377ad
   ReactCommon: 198c7c8d3591f975e5431bec1b0b3b581aa1c5dd
-  ReactNativeDarkMode: 3ee0ababebaa4cffa227113d89107e68e57f8937
-=======
-  React: ff7ee2ae5ee1c1d9ae2183b4111045b25294bb01
-  React-Core: 8e0ea421cae5609d2562850f98421b15030476fa
-  React-cxxreact: 326880209990151a7182a813311054e9772ba510
-  React-DevSupport: e9f10e6721e78e87622fc985db695c0c0168db8a
-  React-fishhook: 1f0e5b08449403fa75c3fb3881a0beefbada14af
-  React-jsi: 21d3153b1153fbf6510a92b6b11e33e725cb7432
-  React-jsiexecutor: 7549641e48bafae7bfee3f3ea19bf4901639c5de
-  React-jsinspector: 73f24a02fa684ed6a2b828ba116874a2191ded88
-  react-native-appearance: f03bb953dae4dc696554a190292b513b075d3e93
-  react-native-bpk-component-calendar: 0e5f74db7253aa0cf89a28df26d9219c4664158d
-  react-native-bpk-component-dialog: b60ad733a24f63dce78e5a2114e2f32cd0e60e54
-  react-native-bpk-component-rating: 384d748e17df77a006d6e6e3089a9890f2d9aae5
-  react-native-maps: 6e499eee4eabf422ba8b6f94e993cc768bf35153
-  React-RCTActionSheet: 9f71d7ae3e8fb10e08d162cbf14c621349dbfab3
-  React-RCTAnimation: 981d8c95b0e30918a9832ccac32af83562a27fae
-  React-RCTBlob: 21e73d1020a302a75fed30dbaee9f15287b80baa
-  React-RCTImage: c0bc6ac0926517b6fb7e4c279b04843113e99d1d
-  React-RCTLinking: 1af3f3c59114bed3deec0107c62e7efad0932ee5
-  React-RCTNetwork: 35df9de46e19cda5c56380be1a7759b9b8cb2fcd
-  React-RCTSettings: f580504c2cd1f44e25add10fb9ed3954f67f8ac5
-  React-RCTText: e0f224898b13af9aa036ea7cb3d438daa68c1044
-  React-RCTVibration: 0bea40cd51bd089bd591a8f74c86e91fdf2666c5
-  React-RCTWebSocket: 163873f4cdd5f1058a9483443404fc3801581cb6
->>>>>>> [BPK-3515] Replace underlying bpk-appearance library
   TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
   Yoga: f2a7cd4280bfe2cca5a7aed98ba0eb3d1310f18b
 
-<<<<<<< HEAD
-PODFILE CHECKSUM: 0e549ba783bfad367e2e197b527a42e2250e8a45
-=======
-PODFILE CHECKSUM: fd61899c855a688b94da1a82b3493e1a3bb9b51a
->>>>>>> [BPK-3515] Replace underlying bpk-appearance library
+PODFILE CHECKSUM: b741bea606c4671edf300ab6f8404c733df02125
 
 COCOAPODS: 1.8.1

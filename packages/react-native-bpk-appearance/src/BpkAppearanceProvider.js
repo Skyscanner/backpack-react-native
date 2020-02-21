@@ -23,7 +23,10 @@ import React, {
   useEffect,
   type Context,
   type Node,
+  Fragment,
 } from 'react';
+import { Platform } from 'react-native';
+import { AppearanceProvider } from 'react-native-appearance';
 
 import BpkAppearance, { type BpkAppearancePreferences } from './BpkAppearance';
 
@@ -53,12 +56,17 @@ const BpkAppearanceProvider = ({ children, appearanceOverride }: Props) => {
     };
   }, []);
 
+  // AppearanceProvider is only required for iOS to trigger changes
+  const Wrapper = Platform.OS === 'ios' ? AppearanceProvider : Fragment;
+
   return (
-    <BpkAppearanceProviderContext.Provider
-      value={{ ...currentAppearance, ...appearanceOverride }}
-    >
-      {children}
-    </BpkAppearanceProviderContext.Provider>
+    <Wrapper>
+      <BpkAppearanceProviderContext.Provider
+        value={{ ...currentAppearance, ...appearanceOverride }}
+      >
+        {children}
+      </BpkAppearanceProviderContext.Provider>
+    </Wrapper>
   );
 };
 
