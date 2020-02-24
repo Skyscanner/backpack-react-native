@@ -1,89 +1,121 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`iOS BpkText dark mode should render correctly 1`] = `
-<Text
-  allowFontScaling={false}
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "color": "rgb(255, 255, 255)",
-        "fontFamily": "System",
-        "fontSize": 16,
-        "fontWeight": "400",
-        "letterSpacing": 0.12,
-      },
-      Object {},
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-</Text>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.12,
+        },
+        Object {},
+      ]
+    }
+  >
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  </Text>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkText dark mode should support overwriting styles 1`] = `
-<Text
-  allowFontScaling={false}
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "color": "rgb(255, 255, 255)",
-        "fontFamily": "System",
-        "fontSize": 16,
-        "fontWeight": "400",
-        "letterSpacing": 0.12,
-      },
-      Object {},
-      Object {
-        "color": "rgb(209, 67, 91)",
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-</Text>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.12,
+        },
+        Object {},
+        Object {
+          "color": "rgb(209, 67, 91)",
+        },
+      ]
+    }
+  >
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  </Text>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkText light mode should render correctly 1`] = `
-<Text
-  allowFontScaling={false}
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "color": "rgb(17, 18, 54)",
-        "fontFamily": "System",
-        "fontSize": 16,
-        "fontWeight": "400",
-        "letterSpacing": 0.12,
-      },
-      Object {},
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-</Text>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(17, 18, 54)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.12,
+        },
+        Object {},
+      ]
+    }
+  >
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  </Text>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkText light mode should support overwriting styles 1`] = `
-<Text
-  allowFontScaling={false}
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "color": "rgb(17, 18, 54)",
-        "fontFamily": "System",
-        "fontSize": 16,
-        "fontWeight": "400",
-        "letterSpacing": 0.12,
-      },
-      Object {},
-      Object {
-        "color": "rgb(209, 67, 91)",
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-</Text>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(17, 18, 54)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.12,
+        },
+        Object {},
+        Object {
+          "color": "rgb(209, 67, 91)",
+        },
+      ]
+    }
+  >
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  </Text>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkText should ignore weight prop if deprecated \`emphasize\` prop is being used 1`] = `

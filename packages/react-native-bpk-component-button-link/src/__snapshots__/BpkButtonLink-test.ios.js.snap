@@ -1,563 +1,627 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`iOS BpkButtonLink dark mode should render correctly 1`] = `
-<View
-  accessibilityLabel="Lorem ipsum"
-  accessibilityRole="button"
-  accessibilityStates={Array []}
-  accessible={true}
-  focusable={true}
-  isTVSelectable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
+<RNCAppearanceProvider
   style={
     Object {
-      "opacity": 1,
+      "flex": 1,
     }
   }
 >
   <View
+    accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "justifyContent": "center",
-          "minHeight": 32,
-        },
-      ]
+      Object {
+        "opacity": 1,
+      }
     }
   >
-    <Text
-      allowFontScaling={false}
-      numberOfLines={1}
+    <View
       style={
         Array [
           Object {
-            "color": "rgb(255, 255, 255)",
-            "fontFamily": "System",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "letterSpacing": 0.154,
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "minHeight": 32,
           },
-          Object {
-            "fontWeight": "700",
-          },
-          Array [
-            Object {
-              "color": "rgb(109, 159, 235)",
-            },
-          ],
         ]
       }
     >
-      Lorem ipsum
-    </Text>
+      <Text
+        allowFontScaling={false}
+        numberOfLines={1}
+        style={
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "System",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "letterSpacing": 0.154,
+            },
+            Object {
+              "fontWeight": "700",
+            },
+            Array [
+              Object {
+                "color": "rgb(109, 159, 235)",
+              },
+            ],
+          ]
+        }
+      >
+        Lorem ipsum
+      </Text>
+    </View>
   </View>
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkButtonLink dark mode should support overwriting styles 1`] = `
-<View
-  accessibilityLabel="Lorem ipsum"
-  accessibilityRole="button"
-  accessibilityStates={Array []}
-  accessible={true}
-  focusable={true}
-  isTVSelectable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
+<RNCAppearanceProvider
   style={
     Object {
-      "opacity": 1,
-      "width": 4,
+      "flex": 1,
     }
   }
 >
   <View
+    accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "justifyContent": "center",
-          "minHeight": 32,
-        },
-      ]
+      Object {
+        "opacity": 1,
+        "width": 4,
+      }
     }
   >
-    <Text
-      allowFontScaling={false}
-      numberOfLines={1}
+    <View
       style={
         Array [
           Object {
-            "color": "rgb(255, 255, 255)",
-            "fontFamily": "System",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "letterSpacing": 0.154,
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "minHeight": 32,
           },
-          Object {
-            "fontWeight": "700",
-          },
-          Array [
-            Object {
-              "color": "rgb(109, 159, 235)",
-            },
-          ],
         ]
       }
     >
-      Lorem ipsum
-    </Text>
+      <Text
+        allowFontScaling={false}
+        numberOfLines={1}
+        style={
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "System",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "letterSpacing": 0.154,
+            },
+            Object {
+              "fontWeight": "700",
+            },
+            Array [
+              Object {
+                "color": "rgb(109, 159, 235)",
+              },
+            ],
+          ]
+        }
+      >
+        Lorem ipsum
+      </Text>
+    </View>
   </View>
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkButtonLink dark mode should support the "disabled" property 1`] = `
-<View
-  accessibilityLabel="Lorem ipsum"
-  accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "disabled",
-    ]
-  }
-  accessible={true}
-  focusable={true}
-  isTVSelectable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
+<RNCAppearanceProvider
   style={
     Object {
-      "opacity": 1,
+      "flex": 1,
     }
   }
 >
   <View
-    style={
+    accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={
       Array [
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "justifyContent": "center",
-          "minHeight": 32,
-        },
+        "disabled",
       ]
     }
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
   >
-    <Text
-      allowFontScaling={false}
-      numberOfLines={1}
+    <View
       style={
         Array [
           Object {
-            "color": "rgb(255, 255, 255)",
-            "fontFamily": "System",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "letterSpacing": 0.154,
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "minHeight": 32,
           },
-          Object {
-            "fontWeight": "700",
-          },
-          Array [
-            Object {
-              "color": "rgb(109, 159, 235)",
-            },
-            Object {
-              "color": "rgb(99, 99, 102)",
-            },
-          ],
         ]
       }
     >
-      Lorem ipsum
-    </Text>
+      <Text
+        allowFontScaling={false}
+        numberOfLines={1}
+        style={
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "System",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "letterSpacing": 0.154,
+            },
+            Object {
+              "fontWeight": "700",
+            },
+            Array [
+              Object {
+                "color": "rgb(109, 159, 235)",
+              },
+              Object {
+                "color": "rgb(99, 99, 102)",
+              },
+            ],
+          ]
+        }
+      >
+        Lorem ipsum
+      </Text>
+    </View>
   </View>
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkButtonLink dark mode should support the "icon" property 1`] = `
-<View
-  accessibilityLabel="Lorem ipsum"
-  accessibilityRole="button"
-  accessibilityStates={Array []}
-  accessible={true}
-  focusable={true}
-  isTVSelectable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
+<RNCAppearanceProvider
   style={
     Object {
-      "opacity": 1,
+      "flex": 1,
     }
   }
 >
   <View
+    accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "justifyContent": "center",
-          "minHeight": 32,
-        },
-      ]
+      Object {
+        "opacity": 1,
+      }
     }
   >
-    <Text
-      allowFontScaling={false}
-      numberOfLines={1}
+    <View
       style={
         Array [
           Object {
-            "color": "rgb(255, 255, 255)",
-            "fontFamily": "System",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "letterSpacing": 0.154,
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "minHeight": 32,
           },
-          Object {
-            "fontWeight": "700",
-          },
-          Array [
-            Object {
-              "color": "rgb(109, 159, 235)",
-            },
-          ],
         ]
       }
     >
-      Lorem ipsum
-    </Text>
-    <Text
-      allowFontScaling={false}
-      style={
-        Array [
-          Object {
-            "color": "rgb(255, 255, 255)",
-            "fontFamily": "BpkIcon",
-            "fontSize": 24,
-            "includeFontPadding": false,
-          },
-          Object {
-            "fontSize": 16,
-          },
+      <Text
+        allowFontScaling={false}
+        numberOfLines={1}
+        style={
           Array [
             Object {
-              "color": "rgb(109, 159, 235)",
-              "marginLeft": 4,
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "System",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "letterSpacing": 0.154,
             },
-          ],
-        ]
-      }
-    >
-      
-    </Text>
+            Object {
+              "fontWeight": "700",
+            },
+            Array [
+              Object {
+                "color": "rgb(109, 159, 235)",
+              },
+            ],
+          ]
+        }
+      >
+        Lorem ipsum
+      </Text>
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "BpkIcon",
+              "fontSize": 24,
+              "includeFontPadding": false,
+            },
+            Object {
+              "fontSize": 16,
+            },
+            Array [
+              Object {
+                "color": "rgb(109, 159, 235)",
+                "marginLeft": 4,
+              },
+            ],
+          ]
+        }
+      >
+        
+      </Text>
+    </View>
   </View>
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkButtonLink light mode should render correctly 1`] = `
-<View
-  accessibilityLabel="Lorem ipsum"
-  accessibilityRole="button"
-  accessibilityStates={Array []}
-  accessible={true}
-  focusable={true}
-  isTVSelectable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
+<RNCAppearanceProvider
   style={
     Object {
-      "opacity": 1,
+      "flex": 1,
     }
   }
 >
   <View
+    accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "justifyContent": "center",
-          "minHeight": 32,
-        },
-      ]
+      Object {
+        "opacity": 1,
+      }
     }
   >
-    <Text
-      allowFontScaling={false}
-      numberOfLines={1}
+    <View
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
-            "fontFamily": "System",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "letterSpacing": 0.154,
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "minHeight": 32,
           },
-          Object {
-            "fontWeight": "700",
-          },
-          Array [
-            Object {
-              "color": "rgb(7, 112, 227)",
-            },
-          ],
         ]
       }
     >
-      Lorem ipsum
-    </Text>
+      <Text
+        allowFontScaling={false}
+        numberOfLines={1}
+        style={
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "fontFamily": "System",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "letterSpacing": 0.154,
+            },
+            Object {
+              "fontWeight": "700",
+            },
+            Array [
+              Object {
+                "color": "rgb(7, 112, 227)",
+              },
+            ],
+          ]
+        }
+      >
+        Lorem ipsum
+      </Text>
+    </View>
   </View>
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkButtonLink light mode should support overwriting styles 1`] = `
-<View
-  accessibilityLabel="Lorem ipsum"
-  accessibilityRole="button"
-  accessibilityStates={Array []}
-  accessible={true}
-  focusable={true}
-  isTVSelectable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
+<RNCAppearanceProvider
   style={
     Object {
-      "opacity": 1,
-      "width": 4,
+      "flex": 1,
     }
   }
 >
   <View
+    accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "justifyContent": "center",
-          "minHeight": 32,
-        },
-      ]
+      Object {
+        "opacity": 1,
+        "width": 4,
+      }
     }
   >
-    <Text
-      allowFontScaling={false}
-      numberOfLines={1}
+    <View
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
-            "fontFamily": "System",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "letterSpacing": 0.154,
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "minHeight": 32,
           },
-          Object {
-            "fontWeight": "700",
-          },
-          Array [
-            Object {
-              "color": "rgb(7, 112, 227)",
-            },
-          ],
         ]
       }
     >
-      Lorem ipsum
-    </Text>
+      <Text
+        allowFontScaling={false}
+        numberOfLines={1}
+        style={
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "fontFamily": "System",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "letterSpacing": 0.154,
+            },
+            Object {
+              "fontWeight": "700",
+            },
+            Array [
+              Object {
+                "color": "rgb(7, 112, 227)",
+              },
+            ],
+          ]
+        }
+      >
+        Lorem ipsum
+      </Text>
+    </View>
   </View>
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkButtonLink light mode should support the "disabled" property 1`] = `
-<View
-  accessibilityLabel="Lorem ipsum"
-  accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "disabled",
-    ]
-  }
-  accessible={true}
-  focusable={true}
-  isTVSelectable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
+<RNCAppearanceProvider
   style={
     Object {
-      "opacity": 1,
+      "flex": 1,
     }
   }
 >
   <View
-    style={
+    accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={
       Array [
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "justifyContent": "center",
-          "minHeight": 32,
-        },
+        "disabled",
       ]
     }
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
   >
-    <Text
-      allowFontScaling={false}
-      numberOfLines={1}
+    <View
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
-            "fontFamily": "System",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "letterSpacing": 0.154,
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "minHeight": 32,
           },
-          Object {
-            "fontWeight": "700",
-          },
-          Array [
-            Object {
-              "color": "rgb(7, 112, 227)",
-            },
-            Object {
-              "color": "rgb(178, 178, 191)",
-            },
-          ],
         ]
       }
     >
-      Lorem ipsum
-    </Text>
+      <Text
+        allowFontScaling={false}
+        numberOfLines={1}
+        style={
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "fontFamily": "System",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "letterSpacing": 0.154,
+            },
+            Object {
+              "fontWeight": "700",
+            },
+            Array [
+              Object {
+                "color": "rgb(7, 112, 227)",
+              },
+              Object {
+                "color": "rgb(178, 178, 191)",
+              },
+            ],
+          ]
+        }
+      >
+        Lorem ipsum
+      </Text>
+    </View>
   </View>
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkButtonLink light mode should support the "icon" property 1`] = `
-<View
-  accessibilityLabel="Lorem ipsum"
-  accessibilityRole="button"
-  accessibilityStates={Array []}
-  accessible={true}
-  focusable={true}
-  isTVSelectable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
+<RNCAppearanceProvider
   style={
     Object {
-      "opacity": 1,
+      "flex": 1,
     }
   }
 >
   <View
+    accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "justifyContent": "center",
-          "minHeight": 32,
-        },
-      ]
+      Object {
+        "opacity": 1,
+      }
     }
   >
-    <Text
-      allowFontScaling={false}
-      numberOfLines={1}
+    <View
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
-            "fontFamily": "System",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "letterSpacing": 0.154,
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "minHeight": 32,
           },
-          Object {
-            "fontWeight": "700",
-          },
-          Array [
-            Object {
-              "color": "rgb(7, 112, 227)",
-            },
-          ],
         ]
       }
     >
-      Lorem ipsum
-    </Text>
-    <Text
-      allowFontScaling={false}
-      style={
-        Array [
-          Object {
-            "color": "rgb(17, 18, 54)",
-            "fontFamily": "BpkIcon",
-            "fontSize": 24,
-            "includeFontPadding": false,
-          },
-          Object {
-            "fontSize": 16,
-          },
+      <Text
+        allowFontScaling={false}
+        numberOfLines={1}
+        style={
           Array [
             Object {
-              "color": "rgb(7, 112, 227)",
-              "marginLeft": 4,
+              "color": "rgb(17, 18, 54)",
+              "fontFamily": "System",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "letterSpacing": 0.154,
             },
-          ],
-        ]
-      }
-    >
-      
-    </Text>
+            Object {
+              "fontWeight": "700",
+            },
+            Array [
+              Object {
+                "color": "rgb(7, 112, 227)",
+              },
+            ],
+          ]
+        }
+      >
+        Lorem ipsum
+      </Text>
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "fontFamily": "BpkIcon",
+              "fontSize": 24,
+              "includeFontPadding": false,
+            },
+            Object {
+              "fontSize": 16,
+            },
+            Array [
+              Object {
+                "color": "rgb(7, 112, 227)",
+                "marginLeft": 4,
+              },
+            ],
+          ]
+        }
+      >
+        
+      </Text>
+    </View>
   </View>
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkButtonLink should render correctly with iconAlignment="leading" 1`] = `

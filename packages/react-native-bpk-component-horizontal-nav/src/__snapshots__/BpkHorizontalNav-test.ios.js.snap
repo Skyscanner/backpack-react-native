@@ -1,63 +1,79 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`iOS BpkHorizontalNav dark mode should render correctly 1`] = `
-<RCTScrollView
-  alwaysBounceHorizontal={false}
-  contentContainerStyle={
-    Array [
-      Object {
-        "borderBottomColor": "rgb(72, 72, 74)",
-        "borderBottomWidth": 1,
-        "borderColor": "transparent",
-        "flexDirection": "column",
-      },
-    ]
+<RNCAppearanceProvider
+  style={
+    Object {
+      "flex": 1,
+    }
   }
-  horizontal={true}
-  showsHorizontalScrollIndicator={false}
 >
-  <View>
-    <View
-      style={
-        Array [
-          Object {
-            "flexDirection": "row",
-          },
-        ]
-      }
-    />
-  </View>
-</RCTScrollView>
+  <RCTScrollView
+    alwaysBounceHorizontal={false}
+    contentContainerStyle={
+      Array [
+        Object {
+          "borderBottomColor": "rgb(72, 72, 74)",
+          "borderBottomWidth": 1,
+          "borderColor": "transparent",
+          "flexDirection": "column",
+        },
+      ]
+    }
+    horizontal={true}
+    showsHorizontalScrollIndicator={false}
+  >
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+          ]
+        }
+      />
+    </View>
+  </RCTScrollView>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkHorizontalNav light mode should render correctly 1`] = `
-<RCTScrollView
-  alwaysBounceHorizontal={false}
-  contentContainerStyle={
-    Array [
-      Object {
-        "borderBottomColor": "rgb(205, 205, 215)",
-        "borderBottomWidth": 1,
-        "borderColor": "transparent",
-        "flexDirection": "column",
-      },
-    ]
+<RNCAppearanceProvider
+  style={
+    Object {
+      "flex": 1,
+    }
   }
-  horizontal={true}
-  showsHorizontalScrollIndicator={false}
 >
-  <View>
-    <View
-      style={
-        Array [
-          Object {
-            "flexDirection": "row",
-          },
-        ]
-      }
-    />
-  </View>
-</RCTScrollView>
+  <RCTScrollView
+    alwaysBounceHorizontal={false}
+    contentContainerStyle={
+      Array [
+        Object {
+          "borderBottomColor": "rgb(205, 205, 215)",
+          "borderBottomWidth": 1,
+          "borderColor": "transparent",
+          "flexDirection": "column",
+        },
+      ]
+    }
+    horizontal={true}
+    showsHorizontalScrollIndicator={false}
+  >
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+          ]
+        }
+      />
+    </View>
+  </RCTScrollView>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkHorizontalNav should render correctly with arbitrary props 1`] = `

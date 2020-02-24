@@ -1,325 +1,357 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`iOS BpkCard dark mode should render correctly 1`] = `
-<View
-  accessibilityLabel="Example Card"
-  accessibilityRole="button"
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "backgroundColor": "rgb(29, 27, 32)",
-        "borderRadius": 4,
-      },
-      Object {
-        "padding": 16,
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
   <View
+    accessibilityLabel="Example Card"
+    accessibilityRole="button"
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
       Array [
         Object {
-          "backgroundColor": "transparent",
+          "backgroundColor": "rgb(29, 27, 32)",
+          "borderRadius": 4,
+        },
+        Object {
+          "padding": 16,
         },
       ]
     }
   >
-    <Text
-      allowFontScaling={false}
+    <View
       style={
         Array [
           Object {
-            "color": "rgb(255, 255, 255)",
-            "fontFamily": "System",
-            "fontSize": 16,
-            "fontWeight": "400",
-            "letterSpacing": 0.12,
+            "backgroundColor": "transparent",
           },
-          Object {},
         ]
       }
     >
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </Text>
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "letterSpacing": 0.12,
+            },
+            Object {},
+          ]
+        }
+      >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 4,
+          },
+        ]
+      }
+    />
   </View>
-  <View
-    style={
-      Array [
-        Object {
-          "backgroundColor": "rgb(255, 255, 255)",
-          "bottom": 0,
-          "flex": 1,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        },
-        Object {
-          "borderRadius": 4,
-        },
-      ]
-    }
-  />
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkCard dark mode should render correctly with the "focused" state 1`] = `
-<View
-  accessibilityLabel="Example Card"
-  accessibilityRole="button"
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "backgroundColor": "rgb(29, 27, 32)",
-        "borderRadius": 4,
-      },
-      Object {
-        "padding": 16,
-      },
-      Object {
-        "backgroundColor": "rgb(44, 44, 46)",
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
   <View
+    accessibilityLabel="Example Card"
+    accessibilityRole="button"
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
       Array [
         Object {
-          "backgroundColor": "transparent",
+          "backgroundColor": "rgb(29, 27, 32)",
+          "borderRadius": 4,
+        },
+        Object {
+          "padding": 16,
+        },
+        Object {
+          "backgroundColor": "rgb(44, 44, 46)",
         },
       ]
     }
   >
-    <Text
-      allowFontScaling={false}
+    <View
       style={
         Array [
           Object {
-            "color": "rgb(255, 255, 255)",
-            "fontFamily": "System",
-            "fontSize": 16,
-            "fontWeight": "400",
-            "letterSpacing": 0.12,
+            "backgroundColor": "transparent",
           },
-          Object {},
         ]
       }
     >
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </Text>
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "letterSpacing": 0.12,
+            },
+            Object {},
+          ]
+        }
+      >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 4,
+          },
+        ]
+      }
+    />
   </View>
+</RNCAppearanceProvider>
+`;
+
+exports[`iOS BpkCard light mode should render correctly 1`] = `
+<RNCAppearanceProvider
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
   <View
+    accessibilityLabel="Example Card"
+    accessibilityRole="button"
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
       Array [
         Object {
           "backgroundColor": "rgb(255, 255, 255)",
-          "bottom": 0,
-          "flex": 1,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        },
-        Object {
           "borderRadius": 4,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
+          },
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
         },
-      ]
-    }
-  />
-</View>
-`;
-
-exports[`iOS BpkCard light mode should render correctly 1`] = `
-<View
-  accessibilityLabel="Example Card"
-  accessibilityRole="button"
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Array [
-      Object {
-        "backgroundColor": "rgb(255, 255, 255)",
-        "borderRadius": 4,
-        "shadowColor": "rgb(17, 18, 54)",
-        "shadowOffset": Object {
-          "height": 0.5,
-          "width": 0,
-        },
-        "shadowOpacity": 0.15,
-        "shadowRadius": 1.5,
-      },
-      Object {
-        "padding": 16,
-      },
-    ]
-  }
->
-  <View
-    style={
-      Array [
         Object {
-          "backgroundColor": "transparent",
+          "padding": 16,
         },
       ]
     }
   >
-    <Text
-      allowFontScaling={false}
+    <View
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
-            "fontFamily": "System",
-            "fontSize": 16,
-            "fontWeight": "400",
-            "letterSpacing": 0.12,
+            "backgroundColor": "transparent",
           },
-          Object {},
         ]
       }
     >
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </Text>
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "letterSpacing": 0.12,
+            },
+            Object {},
+          ]
+        }
+      >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(17, 18, 54)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 4,
+          },
+        ]
+      }
+    />
   </View>
-  <View
-    style={
-      Array [
-        Object {
-          "backgroundColor": "rgb(17, 18, 54)",
-          "bottom": 0,
-          "flex": 1,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        },
-        Object {
-          "borderRadius": 4,
-        },
-      ]
-    }
-  />
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkCard light mode should render correctly with the "focused" state 1`] = `
-<View
-  accessibilityLabel="Example Card"
-  accessibilityRole="button"
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "backgroundColor": "rgb(255, 255, 255)",
-        "borderRadius": 4,
-        "shadowColor": "rgb(17, 18, 54)",
-        "shadowOffset": Object {
-          "height": 0.5,
-          "width": 0,
-        },
-        "shadowOpacity": 0.15,
-        "shadowRadius": 1.5,
-      },
-      Object {
-        "padding": 16,
-      },
-      Object {
-        "shadowColor": "rgb(17, 18, 54)",
-        "shadowOffset": Object {
-          "height": 2,
-          "width": 0,
-        },
-        "shadowOpacity": 0.15,
-        "shadowRadius": 8,
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
   <View
+    accessibilityLabel="Example Card"
+    accessibilityRole="button"
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
       Array [
         Object {
-          "backgroundColor": "transparent",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderRadius": 4,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
+          },
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        },
+        Object {
+          "padding": 16,
+        },
+        Object {
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 0.15,
+          "shadowRadius": 8,
         },
       ]
     }
   >
-    <Text
-      allowFontScaling={false}
+    <View
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
-            "fontFamily": "System",
-            "fontSize": 16,
-            "fontWeight": "400",
-            "letterSpacing": 0.12,
+            "backgroundColor": "transparent",
           },
-          Object {},
         ]
       }
     >
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </Text>
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "letterSpacing": 0.12,
+            },
+            Object {},
+          ]
+        }
+      >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(17, 18, 54)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 4,
+          },
+        ]
+      }
+    />
   </View>
-  <View
-    style={
-      Array [
-        Object {
-          "backgroundColor": "rgb(17, 18, 54)",
-          "bottom": 0,
-          "flex": 1,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        },
-        Object {
-          "borderRadius": 4,
-        },
-      ]
-    }
-  />
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkCard should render correctly when "cornerStyle=large" 1`] = `

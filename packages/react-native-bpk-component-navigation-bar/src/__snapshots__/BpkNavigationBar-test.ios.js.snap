@@ -1,132 +1,87 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ios BpkNavigationBar dark mode should render correctly 1`] = `
-<View
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "backgroundColor": "rgb(29, 27, 32)",
-        "flexDirection": "column",
-        "paddingHorizontal": 8,
-        "shadowColor": null,
-        "shadowOffset": Object {
-          "height": 1,
-          "width": 0,
-        },
-        "shadowOpacity": 1,
-        "shadowRadius": 0,
-        "width": "100%",
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
   <View
     style={
       Array [
         Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": 64,
-          "justifyContent": "space-between",
-          "overflow": "visible",
-          "paddingTop": 20,
+          "backgroundColor": "rgb(29, 27, 32)",
+          "flexDirection": "column",
+          "paddingHorizontal": 8,
+          "shadowColor": null,
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 0,
+          "width": "100%",
         },
-        false,
       ]
     }
   >
     <View
-      accessibilityLabel="Back"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      isTVSelectable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
       style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": "100%",
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
-    >
-      <Image
-        source={1}
-        style={
-          Array [
-            Array [
-              Object {
-                "marginEnd": 8,
-              },
-            ],
-            Object {
-              "tintColor": "rgb(255, 255, 255)",
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-            },
-            Object {},
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-          ]
-        }
-      >
-        Back
-      </Text>
-    </View>
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "bottom": 0,
-          "height": 44,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 20,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 64,
+            "justifyContent": "space-between",
+            "overflow": "visible",
+            "paddingTop": 20,
+          },
+          false,
+        ]
       }
     >
       <View
+        accessibilityLabel="Back"
+        accessibilityRole="button"
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "flexDirection": "row",
-            },
-            Object {
-              "maxWidth": "60%",
-            },
-          ]
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": "100%",
+            "opacity": 1,
+            "zIndex": 2,
+          }
         }
       >
+        <Image
+          source={1}
+          style={
+            Array [
+              Array [
+                Object {
+                  "marginEnd": 8,
+                },
+              ],
+              Object {
+                "tintColor": "rgb(255, 255, 255)",
+              },
+            ]
+          }
+        />
         <Text
           allowFontScaling={false}
-          ellipsizeMode="tail"
-          numberOfLines={1}
           style={
             Array [
               Object {
@@ -136,156 +91,164 @@ exports[`ios BpkNavigationBar dark mode should render correctly 1`] = `
                 "fontWeight": "400",
                 "letterSpacing": 0.12,
               },
-              Object {
-                "fontWeight": "700",
-              },
+              Object {},
               Array [
                 Object {
                   "color": "rgb(255, 255, 255)",
                 },
-                null,
               ],
             ]
           }
         >
-          Backpack
+          Back
         </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "bottom": 0,
+            "height": 44,
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 20,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+              },
+              Object {
+                "maxWidth": "60%",
+              },
+            ]
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "400",
+                  "letterSpacing": 0.12,
+                },
+                Object {
+                  "fontWeight": "700",
+                },
+                Array [
+                  Object {
+                    "color": "rgb(255, 255, 255)",
+                  },
+                  null,
+                ],
+              ]
+            }
+          >
+            Backpack
+          </Text>
+        </View>
       </View>
     </View>
   </View>
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`ios BpkNavigationBar dark mode should render correctly with a subtitle view 1`] = `
-<View
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "backgroundColor": "rgb(29, 27, 32)",
-        "flexDirection": "column",
-        "paddingHorizontal": 8,
-        "shadowColor": null,
-        "shadowOffset": Object {
-          "height": 1,
-          "width": 0,
-        },
-        "shadowOpacity": 1,
-        "shadowRadius": 0,
-        "width": "100%",
-      },
-      Object {
-        "paddingBottom": 16,
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
   <View
     style={
       Array [
         Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": 64,
-          "justifyContent": "space-between",
-          "overflow": "visible",
-          "paddingTop": 20,
+          "backgroundColor": "rgb(29, 27, 32)",
+          "flexDirection": "column",
+          "paddingHorizontal": 8,
+          "shadowColor": null,
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 0,
+          "width": "100%",
         },
-        false,
+        Object {
+          "paddingBottom": 16,
+        },
       ]
     }
   >
     <View
-      accessibilityLabel="Back"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      isTVSelectable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
       style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": "100%",
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
-    >
-      <Image
-        source={1}
-        style={
-          Array [
-            Array [
-              Object {
-                "marginEnd": 8,
-              },
-            ],
-            Object {
-              "tintColor": "rgb(255, 255, 255)",
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-            },
-            Object {},
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-          ]
-        }
-      >
-        Back
-      </Text>
-    </View>
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "bottom": 0,
-          "height": 44,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 20,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 64,
+            "justifyContent": "space-between",
+            "overflow": "visible",
+            "paddingTop": 20,
+          },
+          false,
+        ]
       }
     >
       <View
+        accessibilityLabel="Back"
+        accessibilityRole="button"
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "flexDirection": "row",
-            },
-            Object {
-              "maxWidth": "60%",
-            },
-          ]
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": "100%",
+            "opacity": 1,
+            "zIndex": 2,
+          }
         }
       >
+        <Image
+          source={1}
+          style={
+            Array [
+              Array [
+                Object {
+                  "marginEnd": 8,
+                },
+              ],
+              Object {
+                "tintColor": "rgb(255, 255, 255)",
+              },
+            ]
+          }
+        />
         <Text
           allowFontScaling={false}
-          ellipsizeMode="tail"
-          numberOfLines={1}
           style={
             Array [
               Object {
@@ -295,316 +258,306 @@ exports[`ios BpkNavigationBar dark mode should render correctly with a subtitle 
                 "fontWeight": "400",
                 "letterSpacing": 0.12,
               },
-              Object {
-                "fontWeight": "700",
-              },
+              Object {},
               Array [
                 Object {
                   "color": "rgb(255, 255, 255)",
                 },
-                null,
               ],
             ]
           }
         >
-          Backpack
+          Back
         </Text>
       </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "bottom": 0,
+            "height": 44,
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 20,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+              },
+              Object {
+                "maxWidth": "60%",
+              },
+            ]
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "400",
+                  "letterSpacing": 0.12,
+                },
+                Object {
+                  "fontWeight": "700",
+                },
+                Array [
+                  Object {
+                    "color": "rgb(255, 255, 255)",
+                  },
+                  null,
+                ],
+              ]
+            }
+          >
+            Backpack
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 8,
+        }
+      }
+    >
+      <View
+        testID="subtitle-view"
+      />
     </View>
   </View>
-  <View
-    style={
-      Object {
-        "paddingHorizontal": 8,
-      }
-    }
-  >
-    <View
-      testID="subtitle-view"
-    />
-  </View>
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`ios BpkNavigationBar dark mode should render correctly with a title view 1`] = `
-<View
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "backgroundColor": "rgb(29, 27, 32)",
-        "flexDirection": "column",
-        "paddingHorizontal": 8,
-        "shadowColor": null,
-        "shadowOffset": Object {
-          "height": 1,
-          "width": 0,
-        },
-        "shadowOpacity": 1,
-        "shadowRadius": 0,
-        "width": "100%",
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
   <View
     style={
       Array [
         Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": 64,
-          "justifyContent": "space-between",
-          "overflow": "visible",
-          "paddingTop": 20,
+          "backgroundColor": "rgb(29, 27, 32)",
+          "flexDirection": "column",
+          "paddingHorizontal": 8,
+          "shadowColor": null,
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 0,
+          "width": "100%",
         },
-        false,
       ]
     }
   >
     <View
-      accessibilityLabel="Back"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      isTVSelectable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
       style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": "100%",
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
-    >
-      <Image
-        source={1}
-        style={
-          Array [
-            Array [
-              Object {
-                "marginEnd": 8,
-              },
-            ],
-            Object {
-              "tintColor": "rgb(255, 255, 255)",
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-            },
-            Object {},
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-          ]
-        }
-      >
-        Back
-      </Text>
-    </View>
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "bottom": 0,
-          "height": 44,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 20,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 64,
+            "justifyContent": "space-between",
+            "overflow": "visible",
+            "paddingTop": 20,
+          },
+          false,
+        ]
       }
     >
       <View
+        accessibilityLabel="Back"
+        accessibilityRole="button"
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
         style={
-          Array [
-            null,
-            Object {
-              "maxHeight": 28,
-            },
-          ]
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": "100%",
+            "opacity": 1,
+            "zIndex": 2,
+          }
         }
-        testID="title-view"
-      />
+      >
+        <Image
+          source={1}
+          style={
+            Array [
+              Array [
+                Object {
+                  "marginEnd": 8,
+                },
+              ],
+              Object {
+                "tintColor": "rgb(255, 255, 255)",
+              },
+            ]
+          }
+        />
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "rgb(255, 255, 255)",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.12,
+              },
+              Object {},
+              Array [
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                },
+              ],
+            ]
+          }
+        >
+          Back
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "bottom": 0,
+            "height": 44,
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 20,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              null,
+              Object {
+                "maxHeight": 28,
+              },
+            ]
+          }
+          testID="title-view"
+        />
+      </View>
     </View>
   </View>
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`ios BpkNavigationBar dark mode should render correctly with an icon in the title 1`] = `
-<View
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "backgroundColor": "rgb(29, 27, 32)",
-        "flexDirection": "column",
-        "paddingHorizontal": 8,
-        "shadowColor": null,
-        "shadowOffset": Object {
-          "height": 1,
-          "width": 0,
-        },
-        "shadowOpacity": 1,
-        "shadowRadius": 0,
-        "width": "100%",
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
   <View
     style={
       Array [
         Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": 64,
-          "justifyContent": "space-between",
-          "overflow": "visible",
-          "paddingTop": 20,
+          "backgroundColor": "rgb(29, 27, 32)",
+          "flexDirection": "column",
+          "paddingHorizontal": 8,
+          "shadowColor": null,
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 0,
+          "width": "100%",
         },
-        false,
       ]
     }
   >
     <View
-      accessibilityLabel="Back"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      isTVSelectable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
       style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": "100%",
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
-    >
-      <Image
-        source={1}
-        style={
-          Array [
-            Array [
-              Object {
-                "marginEnd": 8,
-              },
-            ],
-            Object {
-              "tintColor": "rgb(255, 255, 255)",
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-            },
-            Object {},
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-          ]
-        }
-      >
-        Back
-      </Text>
-    </View>
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "bottom": 0,
-          "height": 44,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 20,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 64,
+            "justifyContent": "space-between",
+            "overflow": "visible",
+            "paddingTop": 20,
+          },
+          false,
+        ]
       }
     >
       <View
+        accessibilityLabel="Back"
+        accessibilityRole="button"
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "flexDirection": "row",
-            },
-            Object {
-              "maxWidth": "60%",
-            },
-          ]
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": "100%",
+            "opacity": 1,
+            "zIndex": 2,
+          }
         }
       >
-        <Text
-          allowFontScaling={false}
+        <Image
+          source={1}
           style={
             Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-                "fontFamily": "BpkIcon",
-                "fontSize": 24,
-                "includeFontPadding": false,
-              },
-              Object {
-                "fontSize": 16,
-              },
               Array [
                 Object {
-                  "marginEnd": 4,
-                },
-                Object {
-                  "color": "rgb(255, 255, 255)",
+                  "marginEnd": 8,
                 },
               ],
+              Object {
+                "tintColor": "rgb(255, 255, 255)",
+              },
             ]
           }
-        >
-          
-        </Text>
+        />
         <Text
           allowFontScaling={false}
-          ellipsizeMode="tail"
-          numberOfLines={1}
           style={
             Array [
               Object {
@@ -614,158 +567,192 @@ exports[`ios BpkNavigationBar dark mode should render correctly with an icon in 
                 "fontWeight": "400",
                 "letterSpacing": 0.12,
               },
-              Object {
-                "fontWeight": "700",
-              },
+              Object {},
               Array [
                 Object {
                   "color": "rgb(255, 255, 255)",
-                },
-                Object {
-                  "lineHeight": 24,
                 },
               ],
             ]
           }
         >
-          Checkout
+          Back
         </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "bottom": 0,
+            "height": 44,
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 20,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+              },
+              Object {
+                "maxWidth": "60%",
+              },
+            ]
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                  "fontFamily": "BpkIcon",
+                  "fontSize": 24,
+                  "includeFontPadding": false,
+                },
+                Object {
+                  "fontSize": 16,
+                },
+                Array [
+                  Object {
+                    "marginEnd": 4,
+                  },
+                  Object {
+                    "color": "rgb(255, 255, 255)",
+                  },
+                ],
+              ]
+            }
+          >
+            
+          </Text>
+          <Text
+            allowFontScaling={false}
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "400",
+                  "letterSpacing": 0.12,
+                },
+                Object {
+                  "fontWeight": "700",
+                },
+                Array [
+                  Object {
+                    "color": "rgb(255, 255, 255)",
+                  },
+                  Object {
+                    "lineHeight": 24,
+                  },
+                ],
+              ]
+            }
+          >
+            Checkout
+          </Text>
+        </View>
       </View>
     </View>
   </View>
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`ios BpkNavigationBar dark mode should render correctly with custom style 1`] = `
-<View
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "backgroundColor": "rgb(29, 27, 32)",
-        "flexDirection": "column",
-        "paddingHorizontal": 8,
-        "shadowColor": null,
-        "shadowOffset": Object {
-          "height": 1,
-          "width": 0,
-        },
-        "shadowOpacity": 1,
-        "shadowRadius": 0,
-        "width": "100%",
-      },
-      Object {
-        "zIndex": 5,
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
   <View
     style={
       Array [
         Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": 64,
-          "justifyContent": "space-between",
-          "overflow": "visible",
-          "paddingTop": 20,
+          "backgroundColor": "rgb(29, 27, 32)",
+          "flexDirection": "column",
+          "paddingHorizontal": 8,
+          "shadowColor": null,
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 0,
+          "width": "100%",
         },
-        false,
+        Object {
+          "zIndex": 5,
+        },
       ]
     }
   >
     <View
-      accessibilityLabel="Back"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      isTVSelectable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
       style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": "100%",
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
-    >
-      <Image
-        source={1}
-        style={
-          Array [
-            Array [
-              Object {
-                "marginEnd": 8,
-              },
-            ],
-            Object {
-              "tintColor": "rgb(255, 255, 255)",
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-            },
-            Object {},
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-          ]
-        }
-      >
-        Back
-      </Text>
-    </View>
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "bottom": 0,
-          "height": 44,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 20,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 64,
+            "justifyContent": "space-between",
+            "overflow": "visible",
+            "paddingTop": 20,
+          },
+          false,
+        ]
       }
     >
       <View
+        accessibilityLabel="Back"
+        accessibilityRole="button"
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "flexDirection": "row",
-            },
-            Object {
-              "maxWidth": "60%",
-            },
-          ]
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": "100%",
+            "opacity": 1,
+            "zIndex": 2,
+          }
         }
       >
+        <Image
+          source={1}
+          style={
+            Array [
+              Array [
+                Object {
+                  "marginEnd": 8,
+                },
+              ],
+              Object {
+                "tintColor": "rgb(255, 255, 255)",
+              },
+            ]
+          }
+        />
         <Text
           allowFontScaling={false}
-          ellipsizeMode="tail"
-          numberOfLines={1}
           style={
             Array [
               Object {
@@ -775,139 +762,250 @@ exports[`ios BpkNavigationBar dark mode should render correctly with custom styl
                 "fontWeight": "400",
                 "letterSpacing": 0.12,
               },
-              Object {
-                "fontWeight": "700",
-              },
+              Object {},
               Array [
                 Object {
                   "color": "rgb(255, 255, 255)",
                 },
-                null,
               ],
             ]
           }
         >
-          Backpack
+          Back
         </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "bottom": 0,
+            "height": 44,
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 20,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+              },
+              Object {
+                "maxWidth": "60%",
+              },
+            ]
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "400",
+                  "letterSpacing": 0.12,
+                },
+                Object {
+                  "fontWeight": "700",
+                },
+                Array [
+                  Object {
+                    "color": "rgb(255, 255, 255)",
+                  },
+                  null,
+                ],
+              ]
+            }
+          >
+            Backpack
+          </Text>
+        </View>
       </View>
     </View>
   </View>
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`ios BpkNavigationBar dark mode should render correctly with trailing button 1`] = `
-<View
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "backgroundColor": "rgb(29, 27, 32)",
-        "flexDirection": "column",
-        "paddingHorizontal": 8,
-        "shadowColor": null,
-        "shadowOffset": Object {
-          "height": 1,
-          "width": 0,
-        },
-        "shadowOpacity": 1,
-        "shadowRadius": 0,
-        "width": "100%",
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
   <View
     style={
       Array [
         Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": 64,
-          "justifyContent": "space-between",
-          "overflow": "visible",
-          "paddingTop": 20,
+          "backgroundColor": "rgb(29, 27, 32)",
+          "flexDirection": "column",
+          "paddingHorizontal": 8,
+          "shadowColor": null,
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 0,
+          "width": "100%",
         },
-        false,
       ]
     }
   >
     <View
-      accessibilityLabel="Cancel"
-      accessibilityRole="button"
-      accessibilityStates={Array []}
-      accessible={true}
-      focusable={true}
-      isTVSelectable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
       style={
-        Object {
-          "height": "100%",
-          "justifyContent": "center",
-          "marginStart": 8,
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
-    >
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-            },
-            Object {},
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-          ]
-        }
-      >
-        Cancel
-      </Text>
-    </View>
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "bottom": 0,
-          "height": 44,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 20,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 64,
+            "justifyContent": "space-between",
+            "overflow": "visible",
+            "paddingTop": 20,
+          },
+          false,
+        ]
       }
     >
       <View
+        accessibilityLabel="Cancel"
+        accessibilityRole="button"
+        accessibilityStates={Array []}
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "flexDirection": "row",
-            },
-            Object {
-              "maxWidth": "60%",
-            },
-          ]
+          Object {
+            "height": "100%",
+            "justifyContent": "center",
+            "marginStart": 8,
+            "opacity": 1,
+            "zIndex": 2,
+          }
         }
       >
         <Text
           allowFontScaling={false}
-          ellipsizeMode="tail"
-          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "color": "rgb(255, 255, 255)",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.12,
+              },
+              Object {},
+              Array [
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                },
+              ],
+            ]
+          }
+        >
+          Cancel
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "bottom": 0,
+            "height": 44,
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 20,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+              },
+              Object {
+                "maxWidth": "60%",
+              },
+            ]
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "400",
+                  "letterSpacing": 0.12,
+                },
+                Object {
+                  "fontWeight": "700",
+                },
+                Array [
+                  Object {
+                    "color": "rgb(255, 255, 255)",
+                  },
+                  null,
+                ],
+              ]
+            }
+          >
+            Backpack
+          </Text>
+        </View>
+      </View>
+      <View
+        accessibilityLabel="Done"
+        accessibilityRole="button"
+        accessibilityStates={Array []}
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "height": "100%",
+            "justifyContent": "center",
+            "marginEnd": 8,
+            "opacity": 1,
+            "zIndex": 2,
+          }
+        }
+      >
+        <Text
+          allowFontScaling={false}
           style={
             Array [
               Object {
@@ -924,195 +1022,100 @@ exports[`ios BpkNavigationBar dark mode should render correctly with trailing bu
                 Object {
                   "color": "rgb(255, 255, 255)",
                 },
-                null,
               ],
             ]
           }
         >
-          Backpack
+          Done
         </Text>
       </View>
     </View>
-    <View
-      accessibilityLabel="Done"
-      accessibilityRole="button"
-      accessibilityStates={Array []}
-      accessible={true}
-      focusable={true}
-      isTVSelectable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "height": "100%",
-          "justifyContent": "center",
-          "marginEnd": 8,
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
-    >
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-            },
-            Object {
-              "fontWeight": "700",
-            },
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-          ]
-        }
-      >
-        Done
-      </Text>
-    </View>
   </View>
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`ios BpkNavigationBar light mode should render correctly 1`] = `
-<View
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "backgroundColor": "rgb(241, 242, 248)",
-        "flexDirection": "column",
-        "paddingHorizontal": 8,
-        "shadowColor": "rgb(221, 221, 229)",
-        "shadowOffset": Object {
-          "height": 1,
-          "width": 0,
-        },
-        "shadowOpacity": 1,
-        "shadowRadius": 0,
-        "width": "100%",
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
   <View
     style={
       Array [
         Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": 64,
-          "justifyContent": "space-between",
-          "overflow": "visible",
-          "paddingTop": 20,
+          "backgroundColor": "rgb(241, 242, 248)",
+          "flexDirection": "column",
+          "paddingHorizontal": 8,
+          "shadowColor": "rgb(221, 221, 229)",
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 0,
+          "width": "100%",
         },
-        false,
       ]
     }
   >
     <View
-      accessibilityLabel="Back"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      isTVSelectable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
       style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": "100%",
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
-    >
-      <Image
-        source={1}
-        style={
-          Array [
-            Array [
-              Object {
-                "marginEnd": 8,
-              },
-            ],
-            Object {
-              "tintColor": "rgb(17, 18, 54)",
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(17, 18, 54)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-            },
-            Object {},
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-              },
-            ],
-          ]
-        }
-      >
-        Back
-      </Text>
-    </View>
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "bottom": 0,
-          "height": 44,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 20,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 64,
+            "justifyContent": "space-between",
+            "overflow": "visible",
+            "paddingTop": 20,
+          },
+          false,
+        ]
       }
     >
       <View
+        accessibilityLabel="Back"
+        accessibilityRole="button"
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "flexDirection": "row",
-            },
-            Object {
-              "maxWidth": "60%",
-            },
-          ]
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": "100%",
+            "opacity": 1,
+            "zIndex": 2,
+          }
         }
       >
+        <Image
+          source={1}
+          style={
+            Array [
+              Array [
+                Object {
+                  "marginEnd": 8,
+                },
+              ],
+              Object {
+                "tintColor": "rgb(17, 18, 54)",
+              },
+            ]
+          }
+        />
         <Text
           allowFontScaling={false}
-          ellipsizeMode="tail"
-          numberOfLines={1}
           style={
             Array [
               Object {
@@ -1122,156 +1125,164 @@ exports[`ios BpkNavigationBar light mode should render correctly 1`] = `
                 "fontWeight": "400",
                 "letterSpacing": 0.12,
               },
-              Object {
-                "fontWeight": "700",
-              },
+              Object {},
               Array [
                 Object {
                   "color": "rgb(17, 18, 54)",
                 },
-                null,
               ],
             ]
           }
         >
-          Backpack
+          Back
         </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "bottom": 0,
+            "height": 44,
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 20,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+              },
+              Object {
+                "maxWidth": "60%",
+              },
+            ]
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "400",
+                  "letterSpacing": 0.12,
+                },
+                Object {
+                  "fontWeight": "700",
+                },
+                Array [
+                  Object {
+                    "color": "rgb(17, 18, 54)",
+                  },
+                  null,
+                ],
+              ]
+            }
+          >
+            Backpack
+          </Text>
+        </View>
       </View>
     </View>
   </View>
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`ios BpkNavigationBar light mode should render correctly with a subtitle view 1`] = `
-<View
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "backgroundColor": "rgb(241, 242, 248)",
-        "flexDirection": "column",
-        "paddingHorizontal": 8,
-        "shadowColor": "rgb(221, 221, 229)",
-        "shadowOffset": Object {
-          "height": 1,
-          "width": 0,
-        },
-        "shadowOpacity": 1,
-        "shadowRadius": 0,
-        "width": "100%",
-      },
-      Object {
-        "paddingBottom": 16,
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
   <View
     style={
       Array [
         Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": 64,
-          "justifyContent": "space-between",
-          "overflow": "visible",
-          "paddingTop": 20,
+          "backgroundColor": "rgb(241, 242, 248)",
+          "flexDirection": "column",
+          "paddingHorizontal": 8,
+          "shadowColor": "rgb(221, 221, 229)",
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 0,
+          "width": "100%",
         },
-        false,
+        Object {
+          "paddingBottom": 16,
+        },
       ]
     }
   >
     <View
-      accessibilityLabel="Back"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      isTVSelectable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
       style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": "100%",
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
-    >
-      <Image
-        source={1}
-        style={
-          Array [
-            Array [
-              Object {
-                "marginEnd": 8,
-              },
-            ],
-            Object {
-              "tintColor": "rgb(17, 18, 54)",
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(17, 18, 54)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-            },
-            Object {},
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-              },
-            ],
-          ]
-        }
-      >
-        Back
-      </Text>
-    </View>
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "bottom": 0,
-          "height": 44,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 20,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 64,
+            "justifyContent": "space-between",
+            "overflow": "visible",
+            "paddingTop": 20,
+          },
+          false,
+        ]
       }
     >
       <View
+        accessibilityLabel="Back"
+        accessibilityRole="button"
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "flexDirection": "row",
-            },
-            Object {
-              "maxWidth": "60%",
-            },
-          ]
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": "100%",
+            "opacity": 1,
+            "zIndex": 2,
+          }
         }
       >
+        <Image
+          source={1}
+          style={
+            Array [
+              Array [
+                Object {
+                  "marginEnd": 8,
+                },
+              ],
+              Object {
+                "tintColor": "rgb(17, 18, 54)",
+              },
+            ]
+          }
+        />
         <Text
           allowFontScaling={false}
-          ellipsizeMode="tail"
-          numberOfLines={1}
           style={
             Array [
               Object {
@@ -1281,316 +1292,306 @@ exports[`ios BpkNavigationBar light mode should render correctly with a subtitle
                 "fontWeight": "400",
                 "letterSpacing": 0.12,
               },
-              Object {
-                "fontWeight": "700",
-              },
+              Object {},
               Array [
                 Object {
                   "color": "rgb(17, 18, 54)",
                 },
-                null,
               ],
             ]
           }
         >
-          Backpack
+          Back
         </Text>
       </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "bottom": 0,
+            "height": 44,
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 20,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+              },
+              Object {
+                "maxWidth": "60%",
+              },
+            ]
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "400",
+                  "letterSpacing": 0.12,
+                },
+                Object {
+                  "fontWeight": "700",
+                },
+                Array [
+                  Object {
+                    "color": "rgb(17, 18, 54)",
+                  },
+                  null,
+                ],
+              ]
+            }
+          >
+            Backpack
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 8,
+        }
+      }
+    >
+      <View
+        testID="subtitle-view"
+      />
     </View>
   </View>
-  <View
-    style={
-      Object {
-        "paddingHorizontal": 8,
-      }
-    }
-  >
-    <View
-      testID="subtitle-view"
-    />
-  </View>
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`ios BpkNavigationBar light mode should render correctly with a title view 1`] = `
-<View
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "backgroundColor": "rgb(241, 242, 248)",
-        "flexDirection": "column",
-        "paddingHorizontal": 8,
-        "shadowColor": "rgb(221, 221, 229)",
-        "shadowOffset": Object {
-          "height": 1,
-          "width": 0,
-        },
-        "shadowOpacity": 1,
-        "shadowRadius": 0,
-        "width": "100%",
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
   <View
     style={
       Array [
         Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": 64,
-          "justifyContent": "space-between",
-          "overflow": "visible",
-          "paddingTop": 20,
+          "backgroundColor": "rgb(241, 242, 248)",
+          "flexDirection": "column",
+          "paddingHorizontal": 8,
+          "shadowColor": "rgb(221, 221, 229)",
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 0,
+          "width": "100%",
         },
-        false,
       ]
     }
   >
     <View
-      accessibilityLabel="Back"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      isTVSelectable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
       style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": "100%",
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
-    >
-      <Image
-        source={1}
-        style={
-          Array [
-            Array [
-              Object {
-                "marginEnd": 8,
-              },
-            ],
-            Object {
-              "tintColor": "rgb(17, 18, 54)",
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(17, 18, 54)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-            },
-            Object {},
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-              },
-            ],
-          ]
-        }
-      >
-        Back
-      </Text>
-    </View>
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "bottom": 0,
-          "height": 44,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 20,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 64,
+            "justifyContent": "space-between",
+            "overflow": "visible",
+            "paddingTop": 20,
+          },
+          false,
+        ]
       }
     >
       <View
+        accessibilityLabel="Back"
+        accessibilityRole="button"
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
         style={
-          Array [
-            null,
-            Object {
-              "maxHeight": 28,
-            },
-          ]
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": "100%",
+            "opacity": 1,
+            "zIndex": 2,
+          }
         }
-        testID="title-view"
-      />
+      >
+        <Image
+          source={1}
+          style={
+            Array [
+              Array [
+                Object {
+                  "marginEnd": 8,
+                },
+              ],
+              Object {
+                "tintColor": "rgb(17, 18, 54)",
+              },
+            ]
+          }
+        />
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "rgb(17, 18, 54)",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.12,
+              },
+              Object {},
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                },
+              ],
+            ]
+          }
+        >
+          Back
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "bottom": 0,
+            "height": 44,
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 20,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              null,
+              Object {
+                "maxHeight": 28,
+              },
+            ]
+          }
+          testID="title-view"
+        />
+      </View>
     </View>
   </View>
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`ios BpkNavigationBar light mode should render correctly with an icon in the title 1`] = `
-<View
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "backgroundColor": "rgb(241, 242, 248)",
-        "flexDirection": "column",
-        "paddingHorizontal": 8,
-        "shadowColor": "rgb(221, 221, 229)",
-        "shadowOffset": Object {
-          "height": 1,
-          "width": 0,
-        },
-        "shadowOpacity": 1,
-        "shadowRadius": 0,
-        "width": "100%",
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
   <View
     style={
       Array [
         Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": 64,
-          "justifyContent": "space-between",
-          "overflow": "visible",
-          "paddingTop": 20,
+          "backgroundColor": "rgb(241, 242, 248)",
+          "flexDirection": "column",
+          "paddingHorizontal": 8,
+          "shadowColor": "rgb(221, 221, 229)",
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 0,
+          "width": "100%",
         },
-        false,
       ]
     }
   >
     <View
-      accessibilityLabel="Back"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      isTVSelectable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
       style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": "100%",
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
-    >
-      <Image
-        source={1}
-        style={
-          Array [
-            Array [
-              Object {
-                "marginEnd": 8,
-              },
-            ],
-            Object {
-              "tintColor": "rgb(17, 18, 54)",
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(17, 18, 54)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-            },
-            Object {},
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-              },
-            ],
-          ]
-        }
-      >
-        Back
-      </Text>
-    </View>
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "bottom": 0,
-          "height": 44,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 20,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 64,
+            "justifyContent": "space-between",
+            "overflow": "visible",
+            "paddingTop": 20,
+          },
+          false,
+        ]
       }
     >
       <View
+        accessibilityLabel="Back"
+        accessibilityRole="button"
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "flexDirection": "row",
-            },
-            Object {
-              "maxWidth": "60%",
-            },
-          ]
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": "100%",
+            "opacity": 1,
+            "zIndex": 2,
+          }
         }
       >
-        <Text
-          allowFontScaling={false}
+        <Image
+          source={1}
           style={
             Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-                "fontFamily": "BpkIcon",
-                "fontSize": 24,
-                "includeFontPadding": false,
-              },
-              Object {
-                "fontSize": 16,
-              },
               Array [
                 Object {
-                  "marginEnd": 4,
-                },
-                Object {
-                  "color": "rgb(17, 18, 54)",
+                  "marginEnd": 8,
                 },
               ],
+              Object {
+                "tintColor": "rgb(17, 18, 54)",
+              },
             ]
           }
-        >
-          
-        </Text>
+        />
         <Text
           allowFontScaling={false}
-          ellipsizeMode="tail"
-          numberOfLines={1}
           style={
             Array [
               Object {
@@ -1600,158 +1601,192 @@ exports[`ios BpkNavigationBar light mode should render correctly with an icon in
                 "fontWeight": "400",
                 "letterSpacing": 0.12,
               },
-              Object {
-                "fontWeight": "700",
-              },
+              Object {},
               Array [
                 Object {
                   "color": "rgb(17, 18, 54)",
-                },
-                Object {
-                  "lineHeight": 24,
                 },
               ],
             ]
           }
         >
-          Checkout
+          Back
         </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "bottom": 0,
+            "height": 44,
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 20,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+              },
+              Object {
+                "maxWidth": "60%",
+              },
+            ]
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                  "fontFamily": "BpkIcon",
+                  "fontSize": 24,
+                  "includeFontPadding": false,
+                },
+                Object {
+                  "fontSize": 16,
+                },
+                Array [
+                  Object {
+                    "marginEnd": 4,
+                  },
+                  Object {
+                    "color": "rgb(17, 18, 54)",
+                  },
+                ],
+              ]
+            }
+          >
+            
+          </Text>
+          <Text
+            allowFontScaling={false}
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "400",
+                  "letterSpacing": 0.12,
+                },
+                Object {
+                  "fontWeight": "700",
+                },
+                Array [
+                  Object {
+                    "color": "rgb(17, 18, 54)",
+                  },
+                  Object {
+                    "lineHeight": 24,
+                  },
+                ],
+              ]
+            }
+          >
+            Checkout
+          </Text>
+        </View>
       </View>
     </View>
   </View>
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`ios BpkNavigationBar light mode should render correctly with custom style 1`] = `
-<View
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "backgroundColor": "rgb(241, 242, 248)",
-        "flexDirection": "column",
-        "paddingHorizontal": 8,
-        "shadowColor": "rgb(221, 221, 229)",
-        "shadowOffset": Object {
-          "height": 1,
-          "width": 0,
-        },
-        "shadowOpacity": 1,
-        "shadowRadius": 0,
-        "width": "100%",
-      },
-      Object {
-        "zIndex": 5,
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
   <View
     style={
       Array [
         Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": 64,
-          "justifyContent": "space-between",
-          "overflow": "visible",
-          "paddingTop": 20,
+          "backgroundColor": "rgb(241, 242, 248)",
+          "flexDirection": "column",
+          "paddingHorizontal": 8,
+          "shadowColor": "rgb(221, 221, 229)",
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 0,
+          "width": "100%",
         },
-        false,
+        Object {
+          "zIndex": 5,
+        },
       ]
     }
   >
     <View
-      accessibilityLabel="Back"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      isTVSelectable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
       style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": "100%",
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
-    >
-      <Image
-        source={1}
-        style={
-          Array [
-            Array [
-              Object {
-                "marginEnd": 8,
-              },
-            ],
-            Object {
-              "tintColor": "rgb(17, 18, 54)",
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(17, 18, 54)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-            },
-            Object {},
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-              },
-            ],
-          ]
-        }
-      >
-        Back
-      </Text>
-    </View>
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "bottom": 0,
-          "height": 44,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 20,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 64,
+            "justifyContent": "space-between",
+            "overflow": "visible",
+            "paddingTop": 20,
+          },
+          false,
+        ]
       }
     >
       <View
+        accessibilityLabel="Back"
+        accessibilityRole="button"
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "flexDirection": "row",
-            },
-            Object {
-              "maxWidth": "60%",
-            },
-          ]
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": "100%",
+            "opacity": 1,
+            "zIndex": 2,
+          }
         }
       >
+        <Image
+          source={1}
+          style={
+            Array [
+              Array [
+                Object {
+                  "marginEnd": 8,
+                },
+              ],
+              Object {
+                "tintColor": "rgb(17, 18, 54)",
+              },
+            ]
+          }
+        />
         <Text
           allowFontScaling={false}
-          ellipsizeMode="tail"
-          numberOfLines={1}
           style={
             Array [
               Object {
@@ -1761,139 +1796,250 @@ exports[`ios BpkNavigationBar light mode should render correctly with custom sty
                 "fontWeight": "400",
                 "letterSpacing": 0.12,
               },
-              Object {
-                "fontWeight": "700",
-              },
+              Object {},
               Array [
                 Object {
                   "color": "rgb(17, 18, 54)",
                 },
-                null,
               ],
             ]
           }
         >
-          Backpack
+          Back
         </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "bottom": 0,
+            "height": 44,
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 20,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+              },
+              Object {
+                "maxWidth": "60%",
+              },
+            ]
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "400",
+                  "letterSpacing": 0.12,
+                },
+                Object {
+                  "fontWeight": "700",
+                },
+                Array [
+                  Object {
+                    "color": "rgb(17, 18, 54)",
+                  },
+                  null,
+                ],
+              ]
+            }
+          >
+            Backpack
+          </Text>
+        </View>
       </View>
     </View>
   </View>
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`ios BpkNavigationBar light mode should render correctly with trailing button 1`] = `
-<View
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "backgroundColor": "rgb(241, 242, 248)",
-        "flexDirection": "column",
-        "paddingHorizontal": 8,
-        "shadowColor": "rgb(221, 221, 229)",
-        "shadowOffset": Object {
-          "height": 1,
-          "width": 0,
-        },
-        "shadowOpacity": 1,
-        "shadowRadius": 0,
-        "width": "100%",
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
   <View
     style={
       Array [
         Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": 64,
-          "justifyContent": "space-between",
-          "overflow": "visible",
-          "paddingTop": 20,
+          "backgroundColor": "rgb(241, 242, 248)",
+          "flexDirection": "column",
+          "paddingHorizontal": 8,
+          "shadowColor": "rgb(221, 221, 229)",
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 0,
+          "width": "100%",
         },
-        false,
       ]
     }
   >
     <View
-      accessibilityLabel="Cancel"
-      accessibilityRole="button"
-      accessibilityStates={Array []}
-      accessible={true}
-      focusable={true}
-      isTVSelectable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
       style={
-        Object {
-          "height": "100%",
-          "justifyContent": "center",
-          "marginStart": 8,
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
-    >
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(17, 18, 54)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-            },
-            Object {},
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-              },
-            ],
-          ]
-        }
-      >
-        Cancel
-      </Text>
-    </View>
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "bottom": 0,
-          "height": 44,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 20,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 64,
+            "justifyContent": "space-between",
+            "overflow": "visible",
+            "paddingTop": 20,
+          },
+          false,
+        ]
       }
     >
       <View
+        accessibilityLabel="Cancel"
+        accessibilityRole="button"
+        accessibilityStates={Array []}
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "flexDirection": "row",
-            },
-            Object {
-              "maxWidth": "60%",
-            },
-          ]
+          Object {
+            "height": "100%",
+            "justifyContent": "center",
+            "marginStart": 8,
+            "opacity": 1,
+            "zIndex": 2,
+          }
         }
       >
         <Text
           allowFontScaling={false}
-          ellipsizeMode="tail"
-          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "color": "rgb(17, 18, 54)",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.12,
+              },
+              Object {},
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                },
+              ],
+            ]
+          }
+        >
+          Cancel
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "bottom": 0,
+            "height": 44,
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 20,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+              },
+              Object {
+                "maxWidth": "60%",
+              },
+            ]
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(17, 18, 54)",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "400",
+                  "letterSpacing": 0.12,
+                },
+                Object {
+                  "fontWeight": "700",
+                },
+                Array [
+                  Object {
+                    "color": "rgb(17, 18, 54)",
+                  },
+                  null,
+                ],
+              ]
+            }
+          >
+            Backpack
+          </Text>
+        </View>
+      </View>
+      <View
+        accessibilityLabel="Done"
+        accessibilityRole="button"
+        accessibilityStates={Array []}
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "height": "100%",
+            "justifyContent": "center",
+            "marginEnd": 8,
+            "opacity": 1,
+            "zIndex": 2,
+          }
+        }
+      >
+        <Text
+          allowFontScaling={false}
           style={
             Array [
               Object {
@@ -1910,66 +2056,16 @@ exports[`ios BpkNavigationBar light mode should render correctly with trailing b
                 Object {
                   "color": "rgb(17, 18, 54)",
                 },
-                null,
               ],
             ]
           }
         >
-          Backpack
+          Done
         </Text>
       </View>
     </View>
-    <View
-      accessibilityLabel="Done"
-      accessibilityRole="button"
-      accessibilityStates={Array []}
-      accessible={true}
-      focusable={true}
-      isTVSelectable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "height": "100%",
-          "justifyContent": "center",
-          "marginEnd": 8,
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
-    >
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(17, 18, 54)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-            },
-            Object {
-              "fontWeight": "700",
-            },
-            Array [
-              Object {
-                "color": "rgb(17, 18, 54)",
-              },
-            ],
-          ]
-        }
-      >
-        Done
-      </Text>
-    </View>
   </View>
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`ios BpkNavigationBar should forward custom props 1`] = `

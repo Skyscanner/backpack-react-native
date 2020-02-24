@@ -1,37 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`iOS BpkHorizontalNavSelectedIndicator dark mode should render correctly 1`] = `
-<View
+<RNCAppearanceProvider
   style={
     Object {
-      "backgroundColor": "rgb(109, 159, 235)",
-      "height": 2,
-      "transform": Array [
-        Object {
-          "translateX": 0,
-        },
-      ],
-      "width": 100,
+      "flex": 1,
     }
   }
-/>
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "rgb(109, 159, 235)",
+        "height": 2,
+        "transform": Array [
+          Object {
+            "translateX": 0,
+          },
+        ],
+        "width": 100,
+      }
+    }
+  />
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkHorizontalNavSelectedIndicator light mode should render correctly 1`] = `
-<View
+<RNCAppearanceProvider
   style={
     Object {
-      "backgroundColor": "rgb(7, 112, 227)",
-      "height": 2,
-      "transform": Array [
-        Object {
-          "translateX": 0,
-        },
-      ],
-      "width": 100,
+      "flex": 1,
     }
   }
-/>
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "rgb(7, 112, 227)",
+        "height": 2,
+        "transform": Array [
+          Object {
+            "translateX": 0,
+          },
+        ],
+        "width": 100,
+      }
+    }
+  />
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkHorizontalNavSelectedIndicator should support theming 1`] = `

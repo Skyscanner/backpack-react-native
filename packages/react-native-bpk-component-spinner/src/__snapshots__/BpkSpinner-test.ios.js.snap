@@ -1,127 +1,239 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`iOS BpkSpinner dark mode should disable theming if the required attribute is omitted 1`] = `
-<ActivityIndicator
-  animating={true}
-  color="rgb(255, 255, 255)"
-  hidesWhenStopped={true}
-  size="large"
-/>
+<RNCAppearanceProvider
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <ActivityIndicator
+    animating={true}
+    color="rgb(255, 255, 255)"
+    hidesWhenStopped={true}
+    size="large"
+  />
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkSpinner dark mode should render correctly 1`] = `
-<ActivityIndicator
-  animating={true}
-  color="rgb(255, 255, 255)"
-  hidesWhenStopped={true}
-  size="large"
-/>
+<RNCAppearanceProvider
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <ActivityIndicator
+    animating={true}
+    color="rgb(255, 255, 255)"
+    hidesWhenStopped={true}
+    size="large"
+  />
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkSpinner dark mode should support the "small" property 1`] = `
-<ActivityIndicator
-  animating={true}
-  color="rgb(255, 255, 255)"
-  hidesWhenStopped={true}
-  size="small"
-/>
+<RNCAppearanceProvider
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <ActivityIndicator
+    animating={true}
+    color="rgb(255, 255, 255)"
+    hidesWhenStopped={true}
+    size="small"
+  />
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkSpinner dark mode should support theming 1`] = `
-<ActivityIndicator
-  animating={true}
-  color="red"
-  hidesWhenStopped={true}
-  size="large"
-/>
+<RNCAppearanceProvider
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <ActivityIndicator
+    animating={true}
+    color="red"
+    hidesWhenStopped={true}
+    size="large"
+  />
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkSpinner dark mode should support type="dark" 1`] = `
-<ActivityIndicator
-  animating={true}
-  color="rgb(68, 69, 96)"
-  hidesWhenStopped={true}
-  size="large"
-/>
+<RNCAppearanceProvider
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <ActivityIndicator
+    animating={true}
+    color="rgb(68, 69, 96)"
+    hidesWhenStopped={true}
+    size="large"
+  />
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkSpinner dark mode should support type="light" 1`] = `
-<ActivityIndicator
-  animating={true}
-  color="rgb(255, 255, 255)"
-  hidesWhenStopped={true}
-  size="large"
-/>
+<RNCAppearanceProvider
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <ActivityIndicator
+    animating={true}
+    color="rgb(255, 255, 255)"
+    hidesWhenStopped={true}
+    size="large"
+  />
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkSpinner dark mode should support type="primary" 1`] = `
-<ActivityIndicator
-  animating={true}
-  color="rgb(255, 255, 255)"
-  hidesWhenStopped={true}
-  size="large"
-/>
+<RNCAppearanceProvider
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <ActivityIndicator
+    animating={true}
+    color="rgb(255, 255, 255)"
+    hidesWhenStopped={true}
+    size="large"
+  />
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkSpinner light mode should disable theming if the required attribute is omitted 1`] = `
-<ActivityIndicator
-  animating={true}
-  color="rgb(7, 112, 227)"
-  hidesWhenStopped={true}
-  size="large"
-/>
+<RNCAppearanceProvider
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <ActivityIndicator
+    animating={true}
+    color="rgb(7, 112, 227)"
+    hidesWhenStopped={true}
+    size="large"
+  />
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkSpinner light mode should render correctly 1`] = `
-<ActivityIndicator
-  animating={true}
-  color="rgb(7, 112, 227)"
-  hidesWhenStopped={true}
-  size="large"
-/>
+<RNCAppearanceProvider
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <ActivityIndicator
+    animating={true}
+    color="rgb(7, 112, 227)"
+    hidesWhenStopped={true}
+    size="large"
+  />
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkSpinner light mode should support the "small" property 1`] = `
-<ActivityIndicator
-  animating={true}
-  color="rgb(7, 112, 227)"
-  hidesWhenStopped={true}
-  size="small"
-/>
+<RNCAppearanceProvider
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <ActivityIndicator
+    animating={true}
+    color="rgb(7, 112, 227)"
+    hidesWhenStopped={true}
+    size="small"
+  />
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkSpinner light mode should support theming 1`] = `
-<ActivityIndicator
-  animating={true}
-  color="red"
-  hidesWhenStopped={true}
-  size="large"
-/>
+<RNCAppearanceProvider
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <ActivityIndicator
+    animating={true}
+    color="red"
+    hidesWhenStopped={true}
+    size="large"
+  />
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkSpinner light mode should support type="dark" 1`] = `
-<ActivityIndicator
-  animating={true}
-  color="rgb(68, 69, 96)"
-  hidesWhenStopped={true}
-  size="large"
-/>
+<RNCAppearanceProvider
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <ActivityIndicator
+    animating={true}
+    color="rgb(68, 69, 96)"
+    hidesWhenStopped={true}
+    size="large"
+  />
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkSpinner light mode should support type="light" 1`] = `
-<ActivityIndicator
-  animating={true}
-  color="rgb(255, 255, 255)"
-  hidesWhenStopped={true}
-  size="large"
-/>
+<RNCAppearanceProvider
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <ActivityIndicator
+    animating={true}
+    color="rgb(255, 255, 255)"
+    hidesWhenStopped={true}
+    size="large"
+  />
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkSpinner light mode should support type="primary" 1`] = `
-<ActivityIndicator
-  animating={true}
-  color="rgb(7, 112, 227)"
-  hidesWhenStopped={true}
-  size="large"
-/>
+<RNCAppearanceProvider
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <ActivityIndicator
+    animating={true}
+    color="rgb(7, 112, 227)"
+    hidesWhenStopped={true}
+    size="large"
+  />
+</RNCAppearanceProvider>
 `;

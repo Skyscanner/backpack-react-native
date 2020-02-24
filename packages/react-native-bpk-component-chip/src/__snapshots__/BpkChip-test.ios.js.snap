@@ -1,725 +1,789 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`iOS BpkChip dark mode should render correctly 1`] = `
-<View
-  accessibilityLabel="Accessibility label"
-  accessibilityRole="button"
-  accessibilityStates={Array []}
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
+<RNCAppearanceProvider
   style={
-    Array [
-      Array [
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "rgb(44, 44, 46)",
-          "borderRadius": 40,
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-          "paddingHorizontal": 16,
-          "paddingVertical": 8,
-          "shadowColor": "rgb(17, 18, 54)",
-          "shadowOffset": Object {
-            "height": 0.5,
-            "width": 0,
-          },
-          "shadowOpacity": 0.15,
-          "shadowRadius": 1.5,
-        },
-      ],
-      Array [],
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessibilityLabel="Accessibility label"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "System",
-          "fontSize": 14,
-          "fontWeight": "400",
-          "letterSpacing": 0.154,
-        },
-        Object {},
         Array [
           Object {
-            "color": "rgb(255, 255, 255)",
-            "includeFontPadding": false,
+            "alignItems": "center",
+            "backgroundColor": "rgb(44, 44, 46)",
+            "borderRadius": 40,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingHorizontal": 16,
+            "paddingVertical": 8,
+            "shadowColor": "rgb(17, 18, 54)",
+            "shadowOffset": Object {
+              "height": 0.5,
+              "width": 0,
+            },
+            "shadowOpacity": 0.15,
+            "shadowRadius": 1.5,
           },
         ],
+        Array [],
       ]
     }
   >
-    Label
-  </Text>
-  <View
-    style={
-      Array [
-        Object {
-          "backgroundColor": "rgb(255, 255, 255)",
-          "bottom": 0,
-          "flex": 1,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        },
-        Object {
-          "borderRadius": 40,
-        },
-      ]
-    }
-  />
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "System",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0.154,
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+              "includeFontPadding": false,
+            },
+          ],
+        ]
+      }
+    >
+      Label
+    </Text>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 40,
+          },
+        ]
+      }
+    />
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkChip dark mode should render correctly with "disabled" 1`] = `
-<View
-  accessibilityLabel="Accessibility label"
-  accessibilityRole="button"
-  accessibilityStates={Array []}
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
+<RNCAppearanceProvider
   style={
-    Array [
-      Array [
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "rgb(44, 44, 46)",
-          "borderRadius": 40,
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-          "paddingHorizontal": 16,
-          "paddingVertical": 8,
-          "shadowColor": "rgb(17, 18, 54)",
-          "shadowOffset": Object {
-            "height": 0.5,
-            "width": 0,
-          },
-          "shadowOpacity": 0.15,
-          "shadowRadius": 1.5,
-        },
-        Object {
-          "backgroundColor": "rgb(44, 44, 46)",
-        },
-      ],
-      Array [],
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessibilityLabel="Accessibility label"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "System",
-          "fontSize": 14,
-          "fontWeight": "400",
-          "letterSpacing": 0.154,
-        },
-        Object {},
         Array [
           Object {
-            "color": "rgb(255, 255, 255)",
-            "includeFontPadding": false,
+            "alignItems": "center",
+            "backgroundColor": "rgb(44, 44, 46)",
+            "borderRadius": 40,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingHorizontal": 16,
+            "paddingVertical": 8,
+            "shadowColor": "rgb(17, 18, 54)",
+            "shadowOffset": Object {
+              "height": 0.5,
+              "width": 0,
+            },
+            "shadowOpacity": 0.15,
+            "shadowRadius": 1.5,
           },
           Object {
-            "color": "rgb(99, 99, 102)",
+            "backgroundColor": "rgb(44, 44, 46)",
           },
         ],
+        Array [],
       ]
     }
   >
-    Label
-  </Text>
-  <View
-    style={
-      Array [
-        Object {
-          "backgroundColor": "rgb(255, 255, 255)",
-          "bottom": 0,
-          "flex": 1,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        },
-        Object {
-          "borderRadius": 40,
-        },
-      ]
-    }
-  />
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "System",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0.154,
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+              "includeFontPadding": false,
+            },
+            Object {
+              "color": "rgb(99, 99, 102)",
+            },
+          ],
+        ]
+      }
+    >
+      Label
+    </Text>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 40,
+          },
+        ]
+      }
+    />
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkChip dark mode should render correctly with "selected" 1`] = `
-<View
-  accessibilityLabel="Accessibility label"
-  accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "selected",
-    ]
-  }
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
+<RNCAppearanceProvider
   style={
-    Array [
-      Array [
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "rgb(44, 44, 46)",
-          "borderRadius": 40,
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-          "paddingHorizontal": 16,
-          "paddingVertical": 8,
-          "shadowColor": "rgb(17, 18, 54)",
-          "shadowOffset": Object {
-            "height": 0.5,
-            "width": 0,
-          },
-          "shadowOpacity": 0.15,
-          "shadowRadius": 1.5,
-        },
-        Object {
-          "backgroundColor": "rgb(7, 112, 227)",
-        },
-      ],
-      Array [],
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessibilityLabel="Accessibility label"
+    accessibilityRole="button"
+    accessibilityStates={
+      Array [
+        "selected",
+      ]
+    }
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "System",
-          "fontSize": 14,
-          "fontWeight": "400",
-          "letterSpacing": 0.154,
-        },
-        Object {},
         Array [
           Object {
-            "color": "rgb(255, 255, 255)",
-            "includeFontPadding": false,
+            "alignItems": "center",
+            "backgroundColor": "rgb(44, 44, 46)",
+            "borderRadius": 40,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingHorizontal": 16,
+            "paddingVertical": 8,
+            "shadowColor": "rgb(17, 18, 54)",
+            "shadowOffset": Object {
+              "height": 0.5,
+              "width": 0,
+            },
+            "shadowOpacity": 0.15,
+            "shadowRadius": 1.5,
           },
           Object {
-            "color": "rgb(255, 255, 255)",
+            "backgroundColor": "rgb(7, 112, 227)",
           },
         ],
+        Array [],
       ]
     }
   >
-    Label
-  </Text>
-  <View
-    style={
-      Array [
-        Object {
-          "backgroundColor": "rgb(255, 255, 255)",
-          "bottom": 0,
-          "flex": 1,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        },
-        Object {
-          "borderRadius": 40,
-        },
-      ]
-    }
-  />
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "System",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0.154,
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+              "includeFontPadding": false,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      Label
+    </Text>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 40,
+          },
+        ]
+      }
+    />
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkChip dark mode should render outline correctly 1`] = `
-<View
-  accessibilityLabel="Accessibility label"
-  accessibilityRole="button"
-  accessibilityStates={Array []}
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
+<RNCAppearanceProvider
   style={
-    Array [
-      Array [
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "rgb(44, 44, 46)",
-          "borderRadius": 40,
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-          "paddingHorizontal": 16,
-          "paddingVertical": 8,
-          "shadowColor": "rgb(17, 18, 54)",
-          "shadowOffset": Object {
-            "height": 0.5,
-            "width": 0,
-          },
-          "shadowOpacity": 0.15,
-          "shadowRadius": 1.5,
-        },
-        Object {
-          "backgroundColor": "transparent",
-          "borderColor": "rgb(72, 72, 74)",
-          "borderWidth": 1,
-          "paddingVertical": 7,
-        },
-      ],
-      Array [
-        Object {
-          "elevation": 0,
-        },
-      ],
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessibilityLabel="Accessibility label"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "System",
-          "fontSize": 14,
-          "fontWeight": "400",
-          "letterSpacing": 0.154,
-        },
-        Object {},
         Array [
           Object {
-            "color": "rgb(255, 255, 255)",
-            "includeFontPadding": false,
+            "alignItems": "center",
+            "backgroundColor": "rgb(44, 44, 46)",
+            "borderRadius": 40,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingHorizontal": 16,
+            "paddingVertical": 8,
+            "shadowColor": "rgb(17, 18, 54)",
+            "shadowOffset": Object {
+              "height": 0.5,
+              "width": 0,
+            },
+            "shadowOpacity": 0.15,
+            "shadowRadius": 1.5,
           },
           Object {
-            "color": "rgb(255, 255, 255)",
+            "backgroundColor": "transparent",
+            "borderColor": "rgb(72, 72, 74)",
+            "borderWidth": 1,
+            "paddingVertical": 7,
+          },
+        ],
+        Array [
+          Object {
+            "elevation": 0,
           },
         ],
       ]
     }
   >
-    Label
-  </Text>
-  <View
-    style={
-      Array [
-        Object {
-          "backgroundColor": "rgb(255, 255, 255)",
-          "bottom": 0,
-          "flex": 1,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        },
-        Object {
-          "borderRadius": 40,
-        },
-      ]
-    }
-  />
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "System",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0.154,
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+              "includeFontPadding": false,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      Label
+    </Text>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 40,
+          },
+        ]
+      }
+    />
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkChip light mode should render correctly 1`] = `
-<View
-  accessibilityLabel="Accessibility label"
-  accessibilityRole="button"
-  accessibilityStates={Array []}
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
+<RNCAppearanceProvider
   style={
-    Array [
-      Array [
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "rgb(255, 255, 255)",
-          "borderRadius": 40,
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-          "paddingHorizontal": 16,
-          "paddingVertical": 8,
-          "shadowColor": "rgb(17, 18, 54)",
-          "shadowOffset": Object {
-            "height": 0.5,
-            "width": 0,
-          },
-          "shadowOpacity": 0.15,
-          "shadowRadius": 1.5,
-        },
-      ],
-      Array [],
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessibilityLabel="Accessibility label"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Object {
-          "color": "rgb(17, 18, 54)",
-          "fontFamily": "System",
-          "fontSize": 14,
-          "fontWeight": "400",
-          "letterSpacing": 0.154,
-        },
-        Object {},
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
-            "includeFontPadding": false,
+            "alignItems": "center",
+            "backgroundColor": "rgb(255, 255, 255)",
+            "borderRadius": 40,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingHorizontal": 16,
+            "paddingVertical": 8,
+            "shadowColor": "rgb(17, 18, 54)",
+            "shadowOffset": Object {
+              "height": 0.5,
+              "width": 0,
+            },
+            "shadowOpacity": 0.15,
+            "shadowRadius": 1.5,
           },
         ],
+        Array [],
       ]
     }
   >
-    Label
-  </Text>
-  <View
-    style={
-      Array [
-        Object {
-          "backgroundColor": "rgb(17, 18, 54)",
-          "bottom": 0,
-          "flex": 1,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        },
-        Object {
-          "borderRadius": 40,
-        },
-      ]
-    }
-  />
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "System",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0.154,
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "includeFontPadding": false,
+            },
+          ],
+        ]
+      }
+    >
+      Label
+    </Text>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(17, 18, 54)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 40,
+          },
+        ]
+      }
+    />
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkChip light mode should render correctly with "disabled" 1`] = `
-<View
-  accessibilityLabel="Accessibility label"
-  accessibilityRole="button"
-  accessibilityStates={Array []}
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
+<RNCAppearanceProvider
   style={
-    Array [
-      Array [
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "rgb(255, 255, 255)",
-          "borderRadius": 40,
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-          "paddingHorizontal": 16,
-          "paddingVertical": 8,
-          "shadowColor": "rgb(17, 18, 54)",
-          "shadowOffset": Object {
-            "height": 0.5,
-            "width": 0,
-          },
-          "shadowOpacity": 0.15,
-          "shadowRadius": 1.5,
-        },
-        Object {
-          "backgroundColor": "rgb(255, 255, 255)",
-        },
-      ],
-      Array [],
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessibilityLabel="Accessibility label"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Object {
-          "color": "rgb(17, 18, 54)",
-          "fontFamily": "System",
-          "fontSize": 14,
-          "fontWeight": "400",
-          "letterSpacing": 0.154,
-        },
-        Object {},
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
-            "includeFontPadding": false,
+            "alignItems": "center",
+            "backgroundColor": "rgb(255, 255, 255)",
+            "borderRadius": 40,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingHorizontal": 16,
+            "paddingVertical": 8,
+            "shadowColor": "rgb(17, 18, 54)",
+            "shadowOffset": Object {
+              "height": 0.5,
+              "width": 0,
+            },
+            "shadowOpacity": 0.15,
+            "shadowRadius": 1.5,
           },
           Object {
-            "color": "rgb(178, 178, 191)",
+            "backgroundColor": "rgb(255, 255, 255)",
           },
         ],
+        Array [],
       ]
     }
   >
-    Label
-  </Text>
-  <View
-    style={
-      Array [
-        Object {
-          "backgroundColor": "rgb(17, 18, 54)",
-          "bottom": 0,
-          "flex": 1,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        },
-        Object {
-          "borderRadius": 40,
-        },
-      ]
-    }
-  />
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "System",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0.154,
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "includeFontPadding": false,
+            },
+            Object {
+              "color": "rgb(178, 178, 191)",
+            },
+          ],
+        ]
+      }
+    >
+      Label
+    </Text>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(17, 18, 54)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 40,
+          },
+        ]
+      }
+    />
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkChip light mode should render correctly with "selected" 1`] = `
-<View
-  accessibilityLabel="Accessibility label"
-  accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "selected",
-    ]
-  }
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
+<RNCAppearanceProvider
   style={
-    Array [
-      Array [
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "rgb(255, 255, 255)",
-          "borderRadius": 40,
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-          "paddingHorizontal": 16,
-          "paddingVertical": 8,
-          "shadowColor": "rgb(17, 18, 54)",
-          "shadowOffset": Object {
-            "height": 0.5,
-            "width": 0,
-          },
-          "shadowOpacity": 0.15,
-          "shadowRadius": 1.5,
-        },
-        Object {
-          "backgroundColor": "rgb(7, 112, 227)",
-        },
-      ],
-      Array [],
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessibilityLabel="Accessibility label"
+    accessibilityRole="button"
+    accessibilityStates={
+      Array [
+        "selected",
+      ]
+    }
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Object {
-          "color": "rgb(17, 18, 54)",
-          "fontFamily": "System",
-          "fontSize": 14,
-          "fontWeight": "400",
-          "letterSpacing": 0.154,
-        },
-        Object {},
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
-            "includeFontPadding": false,
+            "alignItems": "center",
+            "backgroundColor": "rgb(255, 255, 255)",
+            "borderRadius": 40,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingHorizontal": 16,
+            "paddingVertical": 8,
+            "shadowColor": "rgb(17, 18, 54)",
+            "shadowOffset": Object {
+              "height": 0.5,
+              "width": 0,
+            },
+            "shadowOpacity": 0.15,
+            "shadowRadius": 1.5,
           },
           Object {
-            "color": "rgb(255, 255, 255)",
+            "backgroundColor": "rgb(7, 112, 227)",
           },
         ],
+        Array [],
       ]
     }
   >
-    Label
-  </Text>
-  <View
-    style={
-      Array [
-        Object {
-          "backgroundColor": "rgb(17, 18, 54)",
-          "bottom": 0,
-          "flex": 1,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        },
-        Object {
-          "borderRadius": 40,
-        },
-      ]
-    }
-  />
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "System",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0.154,
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "includeFontPadding": false,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      Label
+    </Text>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(17, 18, 54)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 40,
+          },
+        ]
+      }
+    />
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkChip light mode should render outline correctly 1`] = `
-<View
-  accessibilityLabel="Accessibility label"
-  accessibilityRole="button"
-  accessibilityStates={Array []}
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
+<RNCAppearanceProvider
   style={
-    Array [
-      Array [
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "rgb(255, 255, 255)",
-          "borderRadius": 40,
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-          "paddingHorizontal": 16,
-          "paddingVertical": 8,
-          "shadowColor": "rgb(17, 18, 54)",
-          "shadowOffset": Object {
-            "height": 0.5,
-            "width": 0,
-          },
-          "shadowOpacity": 0.15,
-          "shadowRadius": 1.5,
-        },
-        Object {
-          "backgroundColor": "transparent",
-          "borderColor": "rgb(72, 72, 74)",
-          "borderWidth": 1,
-          "paddingVertical": 7,
-        },
-      ],
-      Array [
-        Object {
-          "elevation": 0,
-        },
-      ],
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessibilityLabel="Accessibility label"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
       Array [
-        Object {
-          "color": "rgb(17, 18, 54)",
-          "fontFamily": "System",
-          "fontSize": 14,
-          "fontWeight": "400",
-          "letterSpacing": 0.154,
-        },
-        Object {},
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
-            "includeFontPadding": false,
+            "alignItems": "center",
+            "backgroundColor": "rgb(255, 255, 255)",
+            "borderRadius": 40,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingHorizontal": 16,
+            "paddingVertical": 8,
+            "shadowColor": "rgb(17, 18, 54)",
+            "shadowOffset": Object {
+              "height": 0.5,
+              "width": 0,
+            },
+            "shadowOpacity": 0.15,
+            "shadowRadius": 1.5,
           },
           Object {
-            "color": "rgb(255, 255, 255)",
+            "backgroundColor": "transparent",
+            "borderColor": "rgb(72, 72, 74)",
+            "borderWidth": 1,
+            "paddingVertical": 7,
+          },
+        ],
+        Array [
+          Object {
+            "elevation": 0,
           },
         ],
       ]
     }
   >
-    Label
-  </Text>
-  <View
-    style={
-      Array [
-        Object {
-          "backgroundColor": "rgb(17, 18, 54)",
-          "bottom": 0,
-          "flex": 1,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        },
-        Object {
-          "borderRadius": 40,
-        },
-      ]
-    }
-  />
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "System",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0.154,
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "includeFontPadding": false,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      Label
+    </Text>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(17, 18, 54)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 40,
+          },
+        ]
+      }
+    />
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkChip should render correctly with arbitrary props 1`] = `

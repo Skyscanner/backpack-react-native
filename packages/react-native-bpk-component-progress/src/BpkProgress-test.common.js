@@ -19,7 +19,7 @@
 /* @flow */
 
 import React from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 import renderer from 'react-test-renderer';
 import BpkThemeProvider from 'react-native-bpk-theming';
 import { spacingSm, colorPanjin } from 'bpk-tokens/tokens/base.react.native';
@@ -39,7 +39,11 @@ const renderWithLayout = (component: any, layout: { width?: number }) => {
   if (!json) {
     throw new Error('renderWithLayout failed when calling toJSON');
   }
-  json.props.onLayout(mockNativeEvent);
+  if (Platform.OS === 'ios') {
+    json.children[0].props.onLayout(mockNativeEvent);
+  } else {
+    json.props.onLayout(mockNativeEvent);
+  }
   return rendered;
 };
 

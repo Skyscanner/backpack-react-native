@@ -1,211 +1,259 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`iOS BpkFlatListNoResultsText dark mode should render correctly 1`] = `
-<View
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "padding": 16,
-      },
-      null,
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
     style={
       Array [
         Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "padding": 16,
         },
-        Object {},
+        null,
       ]
     }
   >
-    No results!
-  </Text>
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {},
+        ]
+      }
+    >
+      No results!
+    </Text>
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkFlatListNoResultsText dark mode should support arbitrary props 1`] = `
-<View
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "padding": 16,
-      },
-      null,
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
     style={
       Array [
         Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "padding": 16,
         },
-        Object {},
+        null,
       ]
     }
-    testID="123"
   >
-    No results!
-  </Text>
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {},
+        ]
+      }
+      testID="123"
+    >
+      No results!
+    </Text>
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkFlatListNoResultsText dark mode should support userland styles 1`] = `
-<View
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "padding": 16,
-      },
-      Object {
-        "flexDirection": "column",
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
     style={
       Array [
         Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "padding": 16,
         },
-        Object {},
+        Object {
+          "flexDirection": "column",
+        },
       ]
     }
   >
-    No results!
-  </Text>
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {},
+        ]
+      }
+    >
+      No results!
+    </Text>
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkFlatListNoResultsText light mode should render correctly 1`] = `
-<View
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "padding": 16,
-      },
-      null,
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "padding": 16,
         },
-        Object {},
+        null,
       ]
     }
   >
-    No results!
-  </Text>
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {},
+        ]
+      }
+    >
+      No results!
+    </Text>
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkFlatListNoResultsText light mode should support arbitrary props 1`] = `
-<View
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "padding": 16,
-      },
-      null,
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "padding": 16,
         },
-        Object {},
+        null,
       ]
     }
-    testID="123"
   >
-    No results!
-  </Text>
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {},
+        ]
+      }
+      testID="123"
+    >
+      No results!
+    </Text>
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkFlatListNoResultsText light mode should support userland styles 1`] = `
-<View
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "padding": 16,
-      },
-      Object {
-        "flexDirection": "column",
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "padding": 16,
         },
-        Object {},
+        Object {
+          "flexDirection": "column",
+        },
       ]
     }
   >
-    No results!
-  </Text>
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {},
+        ]
+      }
+    >
+      No results!
+    </Text>
+  </View>
+</RNCAppearanceProvider>
 `;

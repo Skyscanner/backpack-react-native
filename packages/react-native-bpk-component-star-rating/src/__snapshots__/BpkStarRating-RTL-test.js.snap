@@ -1,823 +1,919 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RTL BpkStar dark mode should render correctly when empty 1`] = `
-<View
-  accessible={false}
+<RNCAppearanceProvider
   style={
     Object {
-      "height": 12,
-      "width": 12,
+      "flex": 1,
     }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessible={false}
     style={
-      Array [
-        Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "BpkIcon",
-          "fontSize": 24,
-          "includeFontPadding": false,
-        },
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "color": "rgb(72, 72, 74)",
-            "fontSize": 12,
-            "left": 0,
-            "lineHeight": 12,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "zIndex": 1,
-          },
-        ],
-      ]
+      Object {
+        "height": 12,
+        "width": 12,
+      }
     }
   >
-    
-  </Text>
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "color": "rgb(72, 72, 74)",
+              "fontSize": 12,
+              "left": 0,
+              "lineHeight": 12,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "zIndex": 1,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`RTL BpkStar dark mode should render correctly when full 1`] = `
-<View
-  accessible={false}
+<RNCAppearanceProvider
   style={
     Object {
-      "height": 12,
-      "width": 12,
+      "flex": 1,
     }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessible={false}
     style={
-      Array [
-        Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "BpkIcon",
-          "fontSize": 24,
-          "includeFontPadding": false,
-        },
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "color": "rgb(72, 72, 74)",
-            "fontSize": 12,
-            "left": 0,
-            "lineHeight": 12,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "zIndex": 1,
-          },
-        ],
-      ]
+      Object {
+        "height": 12,
+        "width": 12,
+      }
     }
   >
-    
-  </Text>
-  <Text
-    allowFontScaling={false}
-    style={
-      Array [
-        Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "BpkIcon",
-          "fontSize": 24,
-          "includeFontPadding": false,
-        },
+    <Text
+      allowFontScaling={false}
+      style={
         Array [
           Object {
-            "backgroundColor": "transparent",
-            "color": "rgb(72, 72, 74)",
-            "fontSize": 12,
-            "left": 0,
-            "lineHeight": 12,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "zIndex": 1,
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
           },
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "color": "rgb(72, 72, 74)",
+              "fontSize": 12,
+              "left": 0,
+              "lineHeight": 12,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "zIndex": 1,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
           Object {
-            "zIndex": 2,
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
           },
-          Object {
-            "color": "rgb(255, 181, 77)",
-          },
-        ],
-      ]
-    }
-  >
-    
-  </Text>
-</View>
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "color": "rgb(72, 72, 74)",
+              "fontSize": 12,
+              "left": 0,
+              "lineHeight": 12,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "zIndex": 1,
+            },
+            Object {
+              "zIndex": 2,
+            },
+            Object {
+              "color": "rgb(255, 181, 77)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`RTL BpkStar dark mode should render correctly when half 1`] = `
-<View
-  accessible={false}
+<RNCAppearanceProvider
   style={
     Object {
-      "height": 12,
-      "width": 12,
+      "flex": 1,
     }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessible={false}
     style={
-      Array [
-        Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "BpkIcon",
-          "fontSize": 24,
-          "includeFontPadding": false,
-        },
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "color": "rgb(72, 72, 74)",
-            "fontSize": 12,
-            "left": 0,
-            "lineHeight": 12,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "zIndex": 1,
-          },
-        ],
-      ]
+      Object {
+        "height": 12,
+        "width": 12,
+      }
     }
   >
-    
-  </Text>
-  <Text
-    allowFontScaling={false}
-    style={
-      Array [
-        Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "BpkIcon",
-          "fontSize": 24,
-          "includeFontPadding": false,
-        },
+    <Text
+      allowFontScaling={false}
+      style={
         Array [
           Object {
-            "backgroundColor": "transparent",
-            "color": "rgb(72, 72, 74)",
-            "fontSize": 12,
-            "left": 0,
-            "lineHeight": 12,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "zIndex": 1,
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
           },
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "color": "rgb(72, 72, 74)",
+              "fontSize": 12,
+              "left": 0,
+              "lineHeight": 12,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "zIndex": 1,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
           Object {
-            "zIndex": 2,
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
           },
-          Object {
-            "color": "rgb(255, 181, 77)",
-          },
-          Object {
-            "transform": Array [
-              Object {
-                "scaleX": -1,
-              },
-            ],
-          },
-        ],
-      ]
-    }
-  >
-    
-  </Text>
-</View>
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "color": "rgb(72, 72, 74)",
+              "fontSize": 12,
+              "left": 0,
+              "lineHeight": 12,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "zIndex": 1,
+            },
+            Object {
+              "zIndex": 2,
+            },
+            Object {
+              "color": "rgb(255, 181, 77)",
+            },
+            Object {
+              "transform": Array [
+                Object {
+                  "scaleX": -1,
+                },
+              ],
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`RTL BpkStar dark mode should support theming when empty 1`] = `
-<View
-  accessible={false}
+<RNCAppearanceProvider
   style={
     Object {
-      "height": 12,
-      "width": 12,
+      "flex": 1,
     }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessible={false}
     style={
-      Array [
-        Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "BpkIcon",
-          "fontSize": 24,
-          "includeFontPadding": false,
-        },
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "color": "rgb(72, 72, 74)",
-            "fontSize": 12,
-            "left": 0,
-            "lineHeight": 12,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "zIndex": 1,
-          },
-          Object {
-            "color": "blue",
-          },
-        ],
-      ]
+      Object {
+        "height": 12,
+        "width": 12,
+      }
     }
   >
-    
-  </Text>
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "color": "rgb(72, 72, 74)",
+              "fontSize": 12,
+              "left": 0,
+              "lineHeight": 12,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "zIndex": 1,
+            },
+            Object {
+              "color": "blue",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`RTL BpkStar dark mode should support theming when full 1`] = `
-<View
-  accessible={false}
+<RNCAppearanceProvider
   style={
     Object {
-      "height": 12,
-      "width": 12,
+      "flex": 1,
     }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessible={false}
     style={
-      Array [
-        Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "BpkIcon",
-          "fontSize": 24,
-          "includeFontPadding": false,
-        },
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "color": "rgb(72, 72, 74)",
-            "fontSize": 12,
-            "left": 0,
-            "lineHeight": 12,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "zIndex": 1,
-          },
-          Object {
-            "color": "blue",
-          },
-        ],
-      ]
+      Object {
+        "height": 12,
+        "width": 12,
+      }
     }
   >
-    
-  </Text>
-  <Text
-    allowFontScaling={false}
-    style={
-      Array [
-        Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "BpkIcon",
-          "fontSize": 24,
-          "includeFontPadding": false,
-        },
+    <Text
+      allowFontScaling={false}
+      style={
         Array [
           Object {
-            "backgroundColor": "transparent",
-            "color": "rgb(72, 72, 74)",
-            "fontSize": 12,
-            "left": 0,
-            "lineHeight": 12,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "zIndex": 1,
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
           },
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "color": "rgb(72, 72, 74)",
+              "fontSize": 12,
+              "left": 0,
+              "lineHeight": 12,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "zIndex": 1,
+            },
+            Object {
+              "color": "blue",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
           Object {
-            "zIndex": 2,
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
           },
-          Object {
-            "color": "rgb(255, 181, 77)",
-          },
-          Object {
-            "color": "pink",
-          },
-        ],
-      ]
-    }
-  >
-    
-  </Text>
-</View>
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "color": "rgb(72, 72, 74)",
+              "fontSize": 12,
+              "left": 0,
+              "lineHeight": 12,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "zIndex": 1,
+            },
+            Object {
+              "zIndex": 2,
+            },
+            Object {
+              "color": "rgb(255, 181, 77)",
+            },
+            Object {
+              "color": "pink",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`RTL BpkStar dark mode should support theming when half 1`] = `
-<View
-  accessible={false}
+<RNCAppearanceProvider
   style={
     Object {
-      "height": 12,
-      "width": 12,
+      "flex": 1,
     }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessible={false}
     style={
-      Array [
-        Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "BpkIcon",
-          "fontSize": 24,
-          "includeFontPadding": false,
-        },
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "color": "rgb(72, 72, 74)",
-            "fontSize": 12,
-            "left": 0,
-            "lineHeight": 12,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "zIndex": 1,
-          },
-          Object {
-            "color": "blue",
-          },
-        ],
-      ]
+      Object {
+        "height": 12,
+        "width": 12,
+      }
     }
   >
-    
-  </Text>
-  <Text
-    allowFontScaling={false}
-    style={
-      Array [
-        Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "BpkIcon",
-          "fontSize": 24,
-          "includeFontPadding": false,
-        },
+    <Text
+      allowFontScaling={false}
+      style={
         Array [
           Object {
-            "backgroundColor": "transparent",
-            "color": "rgb(72, 72, 74)",
-            "fontSize": 12,
-            "left": 0,
-            "lineHeight": 12,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "zIndex": 1,
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
           },
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "color": "rgb(72, 72, 74)",
+              "fontSize": 12,
+              "left": 0,
+              "lineHeight": 12,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "zIndex": 1,
+            },
+            Object {
+              "color": "blue",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
           Object {
-            "zIndex": 2,
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
           },
-          Object {
-            "color": "rgb(255, 181, 77)",
-          },
-          Object {
-            "color": "pink",
-          },
-          Object {
-            "transform": Array [
-              Object {
-                "scaleX": -1,
-              },
-            ],
-          },
-        ],
-      ]
-    }
-  >
-    
-  </Text>
-</View>
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "color": "rgb(72, 72, 74)",
+              "fontSize": 12,
+              "left": 0,
+              "lineHeight": 12,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "zIndex": 1,
+            },
+            Object {
+              "zIndex": 2,
+            },
+            Object {
+              "color": "rgb(255, 181, 77)",
+            },
+            Object {
+              "color": "pink",
+            },
+            Object {
+              "transform": Array [
+                Object {
+                  "scaleX": -1,
+                },
+              ],
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`RTL BpkStar light mode should render correctly when empty 1`] = `
-<View
-  accessible={false}
+<RNCAppearanceProvider
   style={
     Object {
-      "height": 12,
-      "width": 12,
+      "flex": 1,
     }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessible={false}
     style={
-      Array [
-        Object {
-          "color": "rgb(17, 18, 54)",
-          "fontFamily": "BpkIcon",
-          "fontSize": 24,
-          "includeFontPadding": false,
-        },
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "color": "rgb(221, 221, 229)",
-            "fontSize": 12,
-            "left": 0,
-            "lineHeight": 12,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "zIndex": 1,
-          },
-        ],
-      ]
+      Object {
+        "height": 12,
+        "width": 12,
+      }
     }
   >
-    
-  </Text>
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "color": "rgb(221, 221, 229)",
+              "fontSize": 12,
+              "left": 0,
+              "lineHeight": 12,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "zIndex": 1,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`RTL BpkStar light mode should render correctly when full 1`] = `
-<View
-  accessible={false}
+<RNCAppearanceProvider
   style={
     Object {
-      "height": 12,
-      "width": 12,
+      "flex": 1,
     }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessible={false}
     style={
-      Array [
-        Object {
-          "color": "rgb(17, 18, 54)",
-          "fontFamily": "BpkIcon",
-          "fontSize": 24,
-          "includeFontPadding": false,
-        },
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "color": "rgb(221, 221, 229)",
-            "fontSize": 12,
-            "left": 0,
-            "lineHeight": 12,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "zIndex": 1,
-          },
-        ],
-      ]
+      Object {
+        "height": 12,
+        "width": 12,
+      }
     }
   >
-    
-  </Text>
-  <Text
-    allowFontScaling={false}
-    style={
-      Array [
-        Object {
-          "color": "rgb(17, 18, 54)",
-          "fontFamily": "BpkIcon",
-          "fontSize": 24,
-          "includeFontPadding": false,
-        },
+    <Text
+      allowFontScaling={false}
+      style={
         Array [
           Object {
-            "backgroundColor": "transparent",
-            "color": "rgb(221, 221, 229)",
-            "fontSize": 12,
-            "left": 0,
-            "lineHeight": 12,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "zIndex": 1,
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
           },
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "color": "rgb(221, 221, 229)",
+              "fontSize": 12,
+              "left": 0,
+              "lineHeight": 12,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "zIndex": 1,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
           Object {
-            "zIndex": 2,
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
           },
-          Object {
-            "color": "rgb(255, 181, 77)",
-          },
-        ],
-      ]
-    }
-  >
-    
-  </Text>
-</View>
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "color": "rgb(221, 221, 229)",
+              "fontSize": 12,
+              "left": 0,
+              "lineHeight": 12,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "zIndex": 1,
+            },
+            Object {
+              "zIndex": 2,
+            },
+            Object {
+              "color": "rgb(255, 181, 77)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`RTL BpkStar light mode should render correctly when half 1`] = `
-<View
-  accessible={false}
+<RNCAppearanceProvider
   style={
     Object {
-      "height": 12,
-      "width": 12,
+      "flex": 1,
     }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessible={false}
     style={
-      Array [
-        Object {
-          "color": "rgb(17, 18, 54)",
-          "fontFamily": "BpkIcon",
-          "fontSize": 24,
-          "includeFontPadding": false,
-        },
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "color": "rgb(221, 221, 229)",
-            "fontSize": 12,
-            "left": 0,
-            "lineHeight": 12,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "zIndex": 1,
-          },
-        ],
-      ]
+      Object {
+        "height": 12,
+        "width": 12,
+      }
     }
   >
-    
-  </Text>
-  <Text
-    allowFontScaling={false}
-    style={
-      Array [
-        Object {
-          "color": "rgb(17, 18, 54)",
-          "fontFamily": "BpkIcon",
-          "fontSize": 24,
-          "includeFontPadding": false,
-        },
+    <Text
+      allowFontScaling={false}
+      style={
         Array [
           Object {
-            "backgroundColor": "transparent",
-            "color": "rgb(221, 221, 229)",
-            "fontSize": 12,
-            "left": 0,
-            "lineHeight": 12,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "zIndex": 1,
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
           },
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "color": "rgb(221, 221, 229)",
+              "fontSize": 12,
+              "left": 0,
+              "lineHeight": 12,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "zIndex": 1,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
           Object {
-            "zIndex": 2,
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
           },
-          Object {
-            "color": "rgb(255, 181, 77)",
-          },
-          Object {
-            "transform": Array [
-              Object {
-                "scaleX": -1,
-              },
-            ],
-          },
-        ],
-      ]
-    }
-  >
-    
-  </Text>
-</View>
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "color": "rgb(221, 221, 229)",
+              "fontSize": 12,
+              "left": 0,
+              "lineHeight": 12,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "zIndex": 1,
+            },
+            Object {
+              "zIndex": 2,
+            },
+            Object {
+              "color": "rgb(255, 181, 77)",
+            },
+            Object {
+              "transform": Array [
+                Object {
+                  "scaleX": -1,
+                },
+              ],
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`RTL BpkStar light mode should support theming when empty 1`] = `
-<View
-  accessible={false}
+<RNCAppearanceProvider
   style={
     Object {
-      "height": 12,
-      "width": 12,
+      "flex": 1,
     }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessible={false}
     style={
-      Array [
-        Object {
-          "color": "rgb(17, 18, 54)",
-          "fontFamily": "BpkIcon",
-          "fontSize": 24,
-          "includeFontPadding": false,
-        },
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "color": "rgb(221, 221, 229)",
-            "fontSize": 12,
-            "left": 0,
-            "lineHeight": 12,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "zIndex": 1,
-          },
-          Object {
-            "color": "blue",
-          },
-        ],
-      ]
+      Object {
+        "height": 12,
+        "width": 12,
+      }
     }
   >
-    
-  </Text>
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "color": "rgb(221, 221, 229)",
+              "fontSize": 12,
+              "left": 0,
+              "lineHeight": 12,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "zIndex": 1,
+            },
+            Object {
+              "color": "blue",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`RTL BpkStar light mode should support theming when full 1`] = `
-<View
-  accessible={false}
+<RNCAppearanceProvider
   style={
     Object {
-      "height": 12,
-      "width": 12,
+      "flex": 1,
     }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessible={false}
     style={
-      Array [
-        Object {
-          "color": "rgb(17, 18, 54)",
-          "fontFamily": "BpkIcon",
-          "fontSize": 24,
-          "includeFontPadding": false,
-        },
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "color": "rgb(221, 221, 229)",
-            "fontSize": 12,
-            "left": 0,
-            "lineHeight": 12,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "zIndex": 1,
-          },
-          Object {
-            "color": "blue",
-          },
-        ],
-      ]
+      Object {
+        "height": 12,
+        "width": 12,
+      }
     }
   >
-    
-  </Text>
-  <Text
-    allowFontScaling={false}
-    style={
-      Array [
-        Object {
-          "color": "rgb(17, 18, 54)",
-          "fontFamily": "BpkIcon",
-          "fontSize": 24,
-          "includeFontPadding": false,
-        },
+    <Text
+      allowFontScaling={false}
+      style={
         Array [
           Object {
-            "backgroundColor": "transparent",
-            "color": "rgb(221, 221, 229)",
-            "fontSize": 12,
-            "left": 0,
-            "lineHeight": 12,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "zIndex": 1,
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
           },
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "color": "rgb(221, 221, 229)",
+              "fontSize": 12,
+              "left": 0,
+              "lineHeight": 12,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "zIndex": 1,
+            },
+            Object {
+              "color": "blue",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
           Object {
-            "zIndex": 2,
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
           },
-          Object {
-            "color": "rgb(255, 181, 77)",
-          },
-          Object {
-            "color": "pink",
-          },
-        ],
-      ]
-    }
-  >
-    
-  </Text>
-</View>
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "color": "rgb(221, 221, 229)",
+              "fontSize": 12,
+              "left": 0,
+              "lineHeight": 12,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "zIndex": 1,
+            },
+            Object {
+              "zIndex": 2,
+            },
+            Object {
+              "color": "rgb(255, 181, 77)",
+            },
+            Object {
+              "color": "pink",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`RTL BpkStar light mode should support theming when half 1`] = `
-<View
-  accessible={false}
+<RNCAppearanceProvider
   style={
     Object {
-      "height": 12,
-      "width": 12,
+      "flex": 1,
     }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessible={false}
     style={
-      Array [
-        Object {
-          "color": "rgb(17, 18, 54)",
-          "fontFamily": "BpkIcon",
-          "fontSize": 24,
-          "includeFontPadding": false,
-        },
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "color": "rgb(221, 221, 229)",
-            "fontSize": 12,
-            "left": 0,
-            "lineHeight": 12,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "zIndex": 1,
-          },
-          Object {
-            "color": "blue",
-          },
-        ],
-      ]
+      Object {
+        "height": 12,
+        "width": 12,
+      }
     }
   >
-    
-  </Text>
-  <Text
-    allowFontScaling={false}
-    style={
-      Array [
-        Object {
-          "color": "rgb(17, 18, 54)",
-          "fontFamily": "BpkIcon",
-          "fontSize": 24,
-          "includeFontPadding": false,
-        },
+    <Text
+      allowFontScaling={false}
+      style={
         Array [
           Object {
-            "backgroundColor": "transparent",
-            "color": "rgb(221, 221, 229)",
-            "fontSize": 12,
-            "left": 0,
-            "lineHeight": 12,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "zIndex": 1,
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
           },
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "color": "rgb(221, 221, 229)",
+              "fontSize": 12,
+              "left": 0,
+              "lineHeight": 12,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "zIndex": 1,
+            },
+            Object {
+              "color": "blue",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
           Object {
-            "zIndex": 2,
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
           },
-          Object {
-            "color": "rgb(255, 181, 77)",
-          },
-          Object {
-            "color": "pink",
-          },
-          Object {
-            "transform": Array [
-              Object {
-                "scaleX": -1,
-              },
-            ],
-          },
-        ],
-      ]
-    }
-  >
-    
-  </Text>
-</View>
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "color": "rgb(221, 221, 229)",
+              "fontSize": 12,
+              "left": 0,
+              "lineHeight": 12,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "zIndex": 1,
+            },
+            Object {
+              "zIndex": 2,
+            },
+            Object {
+              "color": "rgb(255, 181, 77)",
+            },
+            Object {
+              "color": "pink",
+            },
+            Object {
+              "transform": Array [
+                Object {
+                  "scaleX": -1,
+                },
+              ],
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</RNCAppearanceProvider>
 `;

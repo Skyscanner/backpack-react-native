@@ -1,185 +1,249 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`iOS BpkSwitch dark mode should disable theming if the required attribute is omitted 1`] = `
-<RCTSwitch
-  accessibilityRole="button"
-  onChange={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  onTintColor="rgb(7, 112, 227)"
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "height": 31,
-        "width": 51,
-      },
-      Object {
-        "backgroundColor": "rgb(29, 27, 32)",
-        "borderRadius": 16,
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
-  value={true}
-/>
+>
+  <RCTSwitch
+    accessibilityRole="button"
+    onChange={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onTintColor="rgb(7, 112, 227)"
+    style={
+      Array [
+        Object {
+          "height": 31,
+          "width": 51,
+        },
+        Object {
+          "backgroundColor": "rgb(29, 27, 32)",
+          "borderRadius": 16,
+        },
+      ]
+    }
+    value={true}
+  />
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkSwitch dark mode should render correctly 1`] = `
-<RCTSwitch
-  accessibilityRole="button"
-  onChange={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  onTintColor="rgb(7, 112, 227)"
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "height": 31,
-        "width": 51,
-      },
-      Object {
-        "backgroundColor": "rgb(29, 27, 32)",
-        "borderRadius": 16,
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
-  value={false}
-/>
+>
+  <RCTSwitch
+    accessibilityRole="button"
+    onChange={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onTintColor="rgb(7, 112, 227)"
+    style={
+      Array [
+        Object {
+          "height": 31,
+          "width": 51,
+        },
+        Object {
+          "backgroundColor": "rgb(29, 27, 32)",
+          "borderRadius": 16,
+        },
+      ]
+    }
+    value={false}
+  />
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkSwitch dark mode should support the "value" prop 1`] = `
-<RCTSwitch
-  accessibilityRole="button"
-  onChange={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  onTintColor="rgb(7, 112, 227)"
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "height": 31,
-        "width": 51,
-      },
-      Object {
-        "backgroundColor": "rgb(29, 27, 32)",
-        "borderRadius": 16,
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
-  value={true}
-/>
+>
+  <RCTSwitch
+    accessibilityRole="button"
+    onChange={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onTintColor="rgb(7, 112, 227)"
+    style={
+      Array [
+        Object {
+          "height": 31,
+          "width": 51,
+        },
+        Object {
+          "backgroundColor": "rgb(29, 27, 32)",
+          "borderRadius": 16,
+        },
+      ]
+    }
+    value={true}
+  />
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkSwitch dark mode should support theming 1`] = `
-<RCTSwitch
-  accessibilityRole="button"
-  onChange={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  onTintColor="red"
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "height": 31,
-        "width": 51,
-      },
-      Object {
-        "backgroundColor": "rgb(29, 27, 32)",
-        "borderRadius": 16,
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
-  value={true}
-/>
+>
+  <RCTSwitch
+    accessibilityRole="button"
+    onChange={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onTintColor="red"
+    style={
+      Array [
+        Object {
+          "height": 31,
+          "width": 51,
+        },
+        Object {
+          "backgroundColor": "rgb(29, 27, 32)",
+          "borderRadius": 16,
+        },
+      ]
+    }
+    value={true}
+  />
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkSwitch light mode should disable theming if the required attribute is omitted 1`] = `
-<RCTSwitch
-  accessibilityRole="button"
-  onChange={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  onTintColor="rgb(7, 112, 227)"
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "height": 31,
-        "width": 51,
-      },
-      Object {
-        "backgroundColor": "rgb(221, 221, 229)",
-        "borderRadius": 16,
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
-  value={true}
-/>
+>
+  <RCTSwitch
+    accessibilityRole="button"
+    onChange={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onTintColor="rgb(7, 112, 227)"
+    style={
+      Array [
+        Object {
+          "height": 31,
+          "width": 51,
+        },
+        Object {
+          "backgroundColor": "rgb(221, 221, 229)",
+          "borderRadius": 16,
+        },
+      ]
+    }
+    value={true}
+  />
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkSwitch light mode should render correctly 1`] = `
-<RCTSwitch
-  accessibilityRole="button"
-  onChange={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  onTintColor="rgb(7, 112, 227)"
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "height": 31,
-        "width": 51,
-      },
-      Object {
-        "backgroundColor": "rgb(221, 221, 229)",
-        "borderRadius": 16,
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
-  value={false}
-/>
+>
+  <RCTSwitch
+    accessibilityRole="button"
+    onChange={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onTintColor="rgb(7, 112, 227)"
+    style={
+      Array [
+        Object {
+          "height": 31,
+          "width": 51,
+        },
+        Object {
+          "backgroundColor": "rgb(221, 221, 229)",
+          "borderRadius": 16,
+        },
+      ]
+    }
+    value={false}
+  />
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkSwitch light mode should support the "value" prop 1`] = `
-<RCTSwitch
-  accessibilityRole="button"
-  onChange={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  onTintColor="rgb(7, 112, 227)"
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "height": 31,
-        "width": 51,
-      },
-      Object {
-        "backgroundColor": "rgb(221, 221, 229)",
-        "borderRadius": 16,
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
-  value={true}
-/>
+>
+  <RCTSwitch
+    accessibilityRole="button"
+    onChange={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onTintColor="rgb(7, 112, 227)"
+    style={
+      Array [
+        Object {
+          "height": 31,
+          "width": 51,
+        },
+        Object {
+          "backgroundColor": "rgb(221, 221, 229)",
+          "borderRadius": 16,
+        },
+      ]
+    }
+    value={true}
+  />
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkSwitch light mode should support theming 1`] = `
-<RCTSwitch
-  accessibilityRole="button"
-  onChange={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  onTintColor="red"
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "height": 31,
-        "width": 51,
-      },
-      Object {
-        "backgroundColor": "rgb(221, 221, 229)",
-        "borderRadius": 16,
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
-  value={true}
-/>
+>
+  <RCTSwitch
+    accessibilityRole="button"
+    onChange={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onTintColor="red"
+    style={
+      Array [
+        Object {
+          "height": 31,
+          "width": 51,
+        },
+        Object {
+          "backgroundColor": "rgb(221, 221, 229)",
+          "borderRadius": 16,
+        },
+      ]
+    }
+    value={true}
+  />
+</RNCAppearanceProvider>
 `;

@@ -1,365 +1,413 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ios TitleView dark mode should render correctly with leading icon 1`] = `
-<View
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "flexDirection": "row",
-      },
-      undefined,
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
     style={
       Array [
         Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "BpkIcon",
-          "fontSize": 24,
-          "includeFontPadding": false,
+          "alignItems": "center",
+          "flexDirection": "row",
         },
-        Object {
-          "fontSize": 16,
-        },
-        Array [
-          Object {
-            "marginEnd": 4,
-          },
-          Object {
-            "color": "rgb(255, 255, 255)",
-          },
-        ],
+        undefined,
       ]
     }
   >
-    
-  </Text>
-  <Text
-    allowFontScaling={false}
-    ellipsizeMode="tail"
-    numberOfLines={1}
-    style={
-      Array [
-        Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
-        },
-        Object {
-          "fontWeight": "700",
-        },
+    <Text
+      allowFontScaling={false}
+      style={
         Array [
           Object {
             "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
           },
           Object {
-            "lineHeight": 24,
+            "fontSize": 16,
           },
-        ],
-      ]
-    }
-  >
-    Checkout
-  </Text>
-</View>
+          Array [
+            Object {
+              "marginEnd": 4,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={false}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {
+            "fontWeight": "700",
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "lineHeight": 24,
+            },
+          ],
+        ]
+      }
+    >
+      Checkout
+    </Text>
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`ios TitleView dark mode should render correctly with only a title 1`] = `
-<View
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "flexDirection": "row",
-      },
-      undefined,
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  <Text
-    allowFontScaling={false}
-    ellipsizeMode="tail"
-    numberOfLines={1}
+  <View
     style={
       Array [
         Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
+          "alignItems": "center",
+          "flexDirection": "row",
         },
-        Object {
-          "fontWeight": "700",
-        },
-        Array [
-          Object {
-            "color": "rgb(255, 255, 255)",
-          },
-          null,
-        ],
+        undefined,
       ]
     }
   >
-    Backpack
-  </Text>
-</View>
+    <Text
+      allowFontScaling={false}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {
+            "fontWeight": "700",
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            null,
+          ],
+        ]
+      }
+    >
+      Backpack
+    </Text>
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`ios TitleView dark mode should render correctly with trailing icon 1`] = `
-<View
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "flexDirection": "row",
-      },
-      undefined,
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  <Text
-    allowFontScaling={false}
-    ellipsizeMode="tail"
-    numberOfLines={1}
+  <View
     style={
       Array [
         Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
+          "alignItems": "center",
+          "flexDirection": "row",
         },
-        Object {
-          "fontWeight": "700",
-        },
-        Array [
-          Object {
-            "color": "rgb(255, 255, 255)",
-          },
-          Object {
-            "lineHeight": 24,
-          },
-        ],
+        undefined,
       ]
     }
   >
-    Checkout
-  </Text>
-  <Text
-    allowFontScaling={false}
-    style={
-      Array [
-        Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "BpkIcon",
-          "fontSize": 24,
-          "includeFontPadding": false,
-        },
-        Object {
-          "fontSize": 16,
-        },
+    <Text
+      allowFontScaling={false}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
         Array [
           Object {
-            "marginStart": 4,
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
           },
           Object {
-            "color": "rgb(255, 255, 255)",
+            "fontWeight": "700",
           },
-        ],
-      ]
-    }
-  >
-    
-  </Text>
-</View>
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "lineHeight": 24,
+            },
+          ],
+        ]
+      }
+    >
+      Checkout
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`ios TitleView light mode should render correctly with leading icon 1`] = `
-<View
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "flexDirection": "row",
-      },
-      undefined,
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
-          "fontFamily": "BpkIcon",
-          "fontSize": 24,
-          "includeFontPadding": false,
+          "alignItems": "center",
+          "flexDirection": "row",
         },
-        Object {
-          "fontSize": 16,
-        },
-        Array [
-          Object {
-            "marginEnd": 4,
-          },
-          Object {
-            "color": "rgb(255, 255, 255)",
-          },
-        ],
+        undefined,
       ]
     }
   >
-    
-  </Text>
-  <Text
-    allowFontScaling={false}
-    ellipsizeMode="tail"
-    numberOfLines={1}
-    style={
-      Array [
-        Object {
-          "color": "rgb(17, 18, 54)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
-        },
-        Object {
-          "fontWeight": "700",
-        },
+    <Text
+      allowFontScaling={false}
+      style={
         Array [
           Object {
-            "color": "rgb(255, 255, 255)",
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
           },
           Object {
-            "lineHeight": 24,
+            "fontSize": 16,
           },
-        ],
-      ]
-    }
-  >
-    Checkout
-  </Text>
-</View>
+          Array [
+            Object {
+              "marginEnd": 4,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={false}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {
+            "fontWeight": "700",
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "lineHeight": 24,
+            },
+          ],
+        ]
+      }
+    >
+      Checkout
+    </Text>
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`ios TitleView light mode should render correctly with only a title 1`] = `
-<View
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "flexDirection": "row",
-      },
-      undefined,
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  <Text
-    allowFontScaling={false}
-    ellipsizeMode="tail"
-    numberOfLines={1}
+  <View
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
+          "alignItems": "center",
+          "flexDirection": "row",
         },
-        Object {
-          "fontWeight": "700",
-        },
-        Array [
-          Object {
-            "color": "rgb(255, 255, 255)",
-          },
-          null,
-        ],
+        undefined,
       ]
     }
   >
-    Backpack
-  </Text>
-</View>
+    <Text
+      allowFontScaling={false}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {
+            "fontWeight": "700",
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            null,
+          ],
+        ]
+      }
+    >
+      Backpack
+    </Text>
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`ios TitleView light mode should render correctly with trailing icon 1`] = `
-<View
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "flexDirection": "row",
-      },
-      undefined,
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  <Text
-    allowFontScaling={false}
-    ellipsizeMode="tail"
-    numberOfLines={1}
+  <View
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
+          "alignItems": "center",
+          "flexDirection": "row",
         },
-        Object {
-          "fontWeight": "700",
-        },
-        Array [
-          Object {
-            "color": "rgb(255, 255, 255)",
-          },
-          Object {
-            "lineHeight": 24,
-          },
-        ],
+        undefined,
       ]
     }
   >
-    Checkout
-  </Text>
-  <Text
-    allowFontScaling={false}
-    style={
-      Array [
-        Object {
-          "color": "rgb(17, 18, 54)",
-          "fontFamily": "BpkIcon",
-          "fontSize": 24,
-          "includeFontPadding": false,
-        },
-        Object {
-          "fontSize": 16,
-        },
+    <Text
+      allowFontScaling={false}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
         Array [
           Object {
-            "marginStart": 4,
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
           },
           Object {
-            "color": "rgb(255, 255, 255)",
+            "fontWeight": "700",
           },
-        ],
-      ]
-    }
-  >
-    
-  </Text>
-</View>
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "lineHeight": 24,
+            },
+          ],
+        ]
+      }
+    >
+      Checkout
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</RNCAppearanceProvider>
 `;

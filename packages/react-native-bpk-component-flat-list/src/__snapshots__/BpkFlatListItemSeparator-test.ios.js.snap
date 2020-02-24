@@ -1,27 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`iOS BpkFlatListItemSeparator dark mode should render correctly 1`] = `
-<View
+<RNCAppearanceProvider
   style={
     Object {
-      "backgroundColor": "rgb(72, 72, 74)",
       "flex": 1,
-      "height": 1,
-      "marginLeft": 16,
     }
   }
-/>
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "rgb(72, 72, 74)",
+        "flex": 1,
+        "height": 1,
+        "marginLeft": 16,
+      }
+    }
+  />
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkFlatListItemSeparator light mode should render correctly 1`] = `
-<View
+<RNCAppearanceProvider
   style={
     Object {
-      "backgroundColor": "rgb(205, 205, 215)",
       "flex": 1,
-      "height": 1,
-      "marginLeft": 16,
     }
   }
-/>
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "rgb(205, 205, 215)",
+        "flex": 1,
+        "height": 1,
+        "marginLeft": 16,
+      }
+    }
+  />
+</RNCAppearanceProvider>
 `;

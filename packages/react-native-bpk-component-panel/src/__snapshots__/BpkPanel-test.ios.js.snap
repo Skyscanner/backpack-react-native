@@ -1,75 +1,91 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`iOS BpkPanel dark mode should render correctly 1`] = `
-<View
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "backgroundColor": "rgb(29, 27, 32)",
-        "borderColor": null,
-        "borderRadius": 4,
-        "borderWidth": 0,
-      },
-      Object {
-        "padding": 16,
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
     style={
       Array [
         Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
+          "backgroundColor": "rgb(29, 27, 32)",
+          "borderColor": null,
+          "borderRadius": 4,
+          "borderWidth": 0,
         },
-        Object {},
+        Object {
+          "padding": 16,
+        },
       ]
     }
   >
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-  </Text>
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {},
+        ]
+      }
+    >
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+    </Text>
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkPanel light mode should render correctly 1`] = `
-<View
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "backgroundColor": "rgb(255, 255, 255)",
-        "borderColor": "rgb(221, 221, 229)",
-        "borderRadius": 4,
-        "borderWidth": 1,
-      },
-      Object {
-        "padding": 16,
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderColor": "rgb(221, 221, 229)",
+          "borderRadius": 4,
+          "borderWidth": 1,
         },
-        Object {},
+        Object {
+          "padding": 16,
+        },
       ]
     }
   >
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-  </Text>
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {},
+        ]
+      }
+    >
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+    </Text>
+  </View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkPanel should render correctly with arbitrary props 1`] = `

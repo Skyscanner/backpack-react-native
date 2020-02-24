@@ -1,431 +1,479 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`iOS BpkHorizontalNavItem dark mode should render correctly 1`] = `
-<View
-  accessibilityLabel="Nav"
-  accessibilityRole="button"
-  accessibilityStates={Array []}
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={null}
+<RNCAppearanceProvider
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
 >
   <View
-    style={
-      Array [
-        Object {
-          "height": 33,
-          "justifyContent": "center",
-        },
-      ]
-    }
+    accessibilityLabel="Nav"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={null}
   >
-    <Text
-      allowFontScaling={false}
+    <View
       style={
         Array [
           Object {
-            "color": "rgb(255, 255, 255)",
-            "fontFamily": "System",
-            "fontSize": 16,
-            "fontWeight": "400",
-            "letterSpacing": 0.12,
+            "height": 33,
+            "justifyContent": "center",
           },
-          Object {},
-          Array [
-            Object {
-              "paddingHorizontal": 16,
-            },
-          ],
         ]
       }
     >
-      Nav
-    </Text>
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "letterSpacing": 0.12,
+            },
+            Object {},
+            Array [
+              Object {
+                "paddingHorizontal": 16,
+              },
+            ],
+          ]
+        }
+      >
+        Nav
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
+      }
+    />
   </View>
-  <View
-    style={
-      Array [
-        Object {
-          "backgroundColor": "rgb(255, 255, 255)",
-          "bottom": 0,
-          "flex": 1,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        },
-      ]
-    }
-  />
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkHorizontalNavItem dark mode should render correctly with "disabled" prop 1`] = `
-<View
-  accessibilityLabel="Nav"
-  accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "disabled",
-    ]
+<RNCAppearanceProvider
+  style={
+    Object {
+      "flex": 1,
+    }
   }
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={null}
 >
   <View
-    style={
+    accessibilityLabel="Nav"
+    accessibilityRole="button"
+    accessibilityStates={
       Array [
-        Object {
-          "height": 33,
-          "justifyContent": "center",
-        },
+        "disabled",
       ]
     }
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={null}
   >
-    <Text
-      allowFontScaling={false}
+    <View
       style={
         Array [
           Object {
-            "color": "rgb(255, 255, 255)",
-            "fontFamily": "System",
-            "fontSize": 16,
-            "fontWeight": "400",
-            "letterSpacing": 0.12,
+            "height": 33,
+            "justifyContent": "center",
           },
-          Object {},
-          Array [
-            Object {
-              "paddingHorizontal": 16,
-            },
-            Object {
-              "color": "rgb(99, 99, 102)",
-            },
-          ],
         ]
       }
     >
-      Nav
-    </Text>
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "letterSpacing": 0.12,
+            },
+            Object {},
+            Array [
+              Object {
+                "paddingHorizontal": 16,
+              },
+              Object {
+                "color": "rgb(99, 99, 102)",
+              },
+            ],
+          ]
+        }
+      >
+        Nav
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
+      }
+    />
   </View>
-  <View
-    style={
-      Array [
-        Object {
-          "backgroundColor": "rgb(255, 255, 255)",
-          "bottom": 0,
-          "flex": 1,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        },
-      ]
-    }
-  />
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkHorizontalNavItem dark mode should render correctly with "selected" prop 1`] = `
-<View
-  accessibilityLabel="Nav"
-  accessibilityRole="button"
-  accessibilityStates={Array []}
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={null}
+<RNCAppearanceProvider
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
 >
   <View
-    style={
-      Array [
-        Object {
-          "height": 33,
-          "justifyContent": "center",
-        },
-      ]
-    }
+    accessibilityLabel="Nav"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={null}
   >
-    <Text
-      allowFontScaling={false}
+    <View
       style={
         Array [
           Object {
-            "color": "rgb(255, 255, 255)",
-            "fontFamily": "System",
-            "fontSize": 16,
-            "fontWeight": "400",
-            "letterSpacing": 0.12,
+            "height": 33,
+            "justifyContent": "center",
           },
-          Object {},
-          Array [
-            Object {
-              "paddingHorizontal": 16,
-            },
-            Object {
-              "color": "rgb(109, 159, 235)",
-            },
-          ],
         ]
       }
     >
-      Nav
-    </Text>
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "letterSpacing": 0.12,
+            },
+            Object {},
+            Array [
+              Object {
+                "paddingHorizontal": 16,
+              },
+              Object {
+                "color": "rgb(109, 159, 235)",
+              },
+            ],
+          ]
+        }
+      >
+        Nav
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
+      }
+    />
   </View>
-  <View
-    style={
-      Array [
-        Object {
-          "backgroundColor": "rgb(255, 255, 255)",
-          "bottom": 0,
-          "flex": 1,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        },
-      ]
-    }
-  />
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkHorizontalNavItem light mode should render correctly 1`] = `
-<View
-  accessibilityLabel="Nav"
-  accessibilityRole="button"
-  accessibilityStates={Array []}
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={null}
+<RNCAppearanceProvider
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
 >
   <View
-    style={
-      Array [
-        Object {
-          "height": 33,
-          "justifyContent": "center",
-        },
-      ]
-    }
+    accessibilityLabel="Nav"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={null}
   >
-    <Text
-      allowFontScaling={false}
+    <View
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
-            "fontFamily": "System",
-            "fontSize": 16,
-            "fontWeight": "400",
-            "letterSpacing": 0.12,
+            "height": 33,
+            "justifyContent": "center",
           },
-          Object {},
-          Array [
-            Object {
-              "paddingHorizontal": 16,
-            },
-          ],
         ]
       }
     >
-      Nav
-    </Text>
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "letterSpacing": 0.12,
+            },
+            Object {},
+            Array [
+              Object {
+                "paddingHorizontal": 16,
+              },
+            ],
+          ]
+        }
+      >
+        Nav
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(17, 18, 54)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
+      }
+    />
   </View>
-  <View
-    style={
-      Array [
-        Object {
-          "backgroundColor": "rgb(17, 18, 54)",
-          "bottom": 0,
-          "flex": 1,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        },
-      ]
-    }
-  />
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkHorizontalNavItem light mode should render correctly with "disabled" prop 1`] = `
-<View
-  accessibilityLabel="Nav"
-  accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "disabled",
-    ]
+<RNCAppearanceProvider
+  style={
+    Object {
+      "flex": 1,
+    }
   }
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={null}
 >
   <View
-    style={
+    accessibilityLabel="Nav"
+    accessibilityRole="button"
+    accessibilityStates={
       Array [
-        Object {
-          "height": 33,
-          "justifyContent": "center",
-        },
+        "disabled",
       ]
     }
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={null}
   >
-    <Text
-      allowFontScaling={false}
+    <View
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
-            "fontFamily": "System",
-            "fontSize": 16,
-            "fontWeight": "400",
-            "letterSpacing": 0.12,
+            "height": 33,
+            "justifyContent": "center",
           },
-          Object {},
-          Array [
-            Object {
-              "paddingHorizontal": 16,
-            },
-            Object {
-              "color": "rgb(178, 178, 191)",
-            },
-          ],
         ]
       }
     >
-      Nav
-    </Text>
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "letterSpacing": 0.12,
+            },
+            Object {},
+            Array [
+              Object {
+                "paddingHorizontal": 16,
+              },
+              Object {
+                "color": "rgb(178, 178, 191)",
+              },
+            ],
+          ]
+        }
+      >
+        Nav
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(17, 18, 54)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
+      }
+    />
   </View>
-  <View
-    style={
-      Array [
-        Object {
-          "backgroundColor": "rgb(17, 18, 54)",
-          "bottom": 0,
-          "flex": 1,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        },
-      ]
-    }
-  />
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkHorizontalNavItem light mode should render correctly with "selected" prop 1`] = `
-<View
-  accessibilityLabel="Nav"
-  accessibilityRole="button"
-  accessibilityStates={Array []}
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={null}
+<RNCAppearanceProvider
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
 >
   <View
-    style={
-      Array [
-        Object {
-          "height": 33,
-          "justifyContent": "center",
-        },
-      ]
-    }
+    accessibilityLabel="Nav"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={null}
   >
-    <Text
-      allowFontScaling={false}
+    <View
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
-            "fontFamily": "System",
-            "fontSize": 16,
-            "fontWeight": "400",
-            "letterSpacing": 0.12,
+            "height": 33,
+            "justifyContent": "center",
           },
-          Object {},
-          Array [
-            Object {
-              "paddingHorizontal": 16,
-            },
-            Object {
-              "color": "rgb(7, 112, 227)",
-            },
-          ],
         ]
       }
     >
-      Nav
-    </Text>
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "letterSpacing": 0.12,
+            },
+            Object {},
+            Array [
+              Object {
+                "paddingHorizontal": 16,
+              },
+              Object {
+                "color": "rgb(7, 112, 227)",
+              },
+            ],
+          ]
+        }
+      >
+        Nav
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(17, 18, 54)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
+      }
+    />
   </View>
-  <View
-    style={
-      Array [
-        Object {
-          "backgroundColor": "rgb(17, 18, 54)",
-          "bottom": 0,
-          "flex": 1,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        },
-      ]
-    }
-  />
-</View>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkHorizontalNavItem should render correctly with "small" prop 1`] = `

@@ -1,81 +1,113 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`iOS BpkIcon dark mode should apply user props 1`] = `
-<Text
-  allowFontScaling={false}
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "color": "rgb(255, 255, 255)",
-        "fontFamily": "BpkIcon",
-        "fontSize": 24,
-        "includeFontPadding": false,
-      },
-      Object {
-        "color": "rgb(7, 112, 227)",
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  
-</Text>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Object {
+          "color": "rgb(7, 112, 227)",
+        },
+      ]
+    }
+  >
+    
+  </Text>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkIcon dark mode should render correctly 1`] = `
-<Text
-  allowFontScaling={false}
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "color": "rgb(255, 255, 255)",
-        "fontFamily": "BpkIcon",
-        "fontSize": 24,
-        "includeFontPadding": false,
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  
-</Text>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+      ]
+    }
+  >
+    
+  </Text>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkIcon light mode should apply user props 1`] = `
-<Text
-  allowFontScaling={false}
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "color": "rgb(17, 18, 54)",
-        "fontFamily": "BpkIcon",
-        "fontSize": 24,
-        "includeFontPadding": false,
-      },
-      Object {
-        "color": "rgb(7, 112, 227)",
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  
-</Text>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(17, 18, 54)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Object {
+          "color": "rgb(7, 112, 227)",
+        },
+      ]
+    }
+  >
+    
+  </Text>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkIcon light mode should render correctly 1`] = `
-<Text
-  allowFontScaling={false}
+<RNCAppearanceProvider
   style={
-    Array [
-      Object {
-        "color": "rgb(17, 18, 54)",
-        "fontFamily": "BpkIcon",
-        "fontSize": 24,
-        "includeFontPadding": false,
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  
-</Text>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(17, 18, 54)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+      ]
+    }
+  >
+    
+  </Text>
+</RNCAppearanceProvider>
 `;
 
 exports[`iOS BpkIcon should render small icon correctly 1`] = `
