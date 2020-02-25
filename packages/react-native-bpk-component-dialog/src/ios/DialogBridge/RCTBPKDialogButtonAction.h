@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-#import <Foundation/Foundation.h>
 #import <Backpack/Button.h>
+#import <Foundation/Foundation.h>
 #import <React/RCTConvert.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -41,16 +41,15 @@ NS_ASSUME_NONNULL_BEGIN
  * @param title The title to use.
  * @param style The style of the `BPKButton` to use.
  */
-+ (instancetype _Nonnull)actionWithTitle:(NSString *)title
-                                   style:(BPKButtonStyle)style;
++ (instancetype _Nonnull)actionWithTitle:(NSString *)title style:(BPKButtonStyle)style;
 
 - (instancetype _Nonnull)init __attribute__((unavailable("init not available, use actionWithTitle:")));
 
 @end
 
-@interface RCTConvert(RCTBPKDialogButtonAction)
+@interface RCTConvert (RCTBPKDialogButtonAction)
 
-+ (RCTBPKDialogButtonAction * _Nullable)RCTBPKDialogButtonAction:(id)json;
++ (RCTBPKDialogButtonAction *_Nullable)RCTBPKDialogButtonAction:(id)json;
 
 @end
 NS_ASSUME_NONNULL_END

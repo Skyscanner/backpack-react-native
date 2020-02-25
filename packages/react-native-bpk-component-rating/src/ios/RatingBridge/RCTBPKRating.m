@@ -1,20 +1,20 @@
 /*
-* Backpack - Skyscanner's Design System
-*
-* Copyright 2016-2020 Skyscanner Ltd
-*
-* Licensed under the Apache License, Version 2.0 (the "License");
-* you may not use this file except in compliance with the License.
-* You may obtain a copy of the License at
-*
-*   http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing, software
-* distributed under the License is distributed on an "AS IS" BASIS,
-* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-* See the License for the specific language governing permissions and
-* limitations under the License.
-*/
+ * Backpack - Skyscanner's Design System
+ *
+ * Copyright 2016-2020 Skyscanner Ltd
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 #import "RCTBPKRating.h"
 
@@ -22,7 +22,7 @@
 #import <React/RCTUIManager.h>
 #import <React/RCTUIManagerUtils.h>
 
-@interface RCTBPKRating()
+@interface RCTBPKRating ()
 @property(nonatomic, weak, nullable) RCTBridge *bridge;
 @property(nonatomic, assign) CGSize lastSeenSize;
 @end
@@ -34,16 +34,21 @@
  * views is not trivial. Here's how it works in `RCTBPKRating`.
  *
  * 1. The view is created by `RCTBPKRatingManager` with a zero frame.
- * 2. Immediately or whenever a prop changes we remeasure the size with `systemLayoutSizeFittingSize:`.
- * 3. With the size from auto layout we update the shadow view's intrinsticContentSize.
- * 4. This size is used by the Yoga measure function `RCTShadowViewMeasure` to determine to
- *    bounds and center during Yoga's layout algorithm.
- * 5. The bounds/center of `RCTBPKRating` gets set by React via `reactSetFrame:` which sets `bounds` and `center`.
- * 6. We use `translatesAutoresizingMaskIntoConstraints` to ensure that the subviews of `BPKRating` respect this outcome.
+ * 2. Immediately or whenever a prop changes we remeasure the size with
+ * `systemLayoutSizeFittingSize:`.
+ * 3. With the size from auto layout we update the shadow view's
+ * intrinsticContentSize.
+ * 4. This size is used by the Yoga measure function `RCTShadowViewMeasure` to
+ * determine to bounds and center during Yoga's layout algorithm.
+ * 5. The bounds/center of `RCTBPKRating` gets set by React via `reactSetFrame:`
+ * which sets `bounds` and `center`.
+ * 6. We use `translatesAutoresizingMaskIntoConstraints` to ensure that the
+ * subviews of `BPKRating` respect this outcome.
  *
- * **Note:** Initially this causes constraint violations because the frame is zero which forces auto layout to break a
- * constraint. In practice this is okay because this UI never has time to render before it's redone with the correct
- * bounds/center.
+ * **Note:** Initially this causes constraint violations because the frame is
+ * zero which forces auto layout to break a constraint. In practice this is
+ * okay because this UI never has time to render before it's redone with the
+ * correct bounds/center.
  */
 @implementation RCTBPKRating
 
@@ -90,7 +95,8 @@
 #pragma mark - Custom Properties
 
 - (void)setRct_title:(NSArray<NSString *> *)rct_title {
-    NSAssert(rct_title.count == 1 || rct_title.count == 3, @"RCTBPKRating's `rct_title` takes an argument of arity 1 or 3.");
+    NSAssert(rct_title.count == 1 || rct_title.count == 3,
+             @"RCTBPKRating's `rct_title` takes an argument of arity 1 or 3.");
     if (rct_title.count != 1 && rct_title.count != 3) {
         return;
     }
@@ -101,7 +107,8 @@
 }
 
 - (void)setRct_subtitle:(NSArray<NSString *> *)rct_subtitle {
-    NSAssert(rct_subtitle.count == 1 || rct_subtitle.count == 3, @"RCTBPKRating's `setRct_subtitle:` takes an argument of arity 1 or 3.");
+    NSAssert(rct_subtitle.count == 1 || rct_subtitle.count == 3,
+             @"RCTBPKRating's `setRct_subtitle:` takes an argument of arity 1 or 3.");
     if (rct_subtitle.count != 1 && rct_subtitle.count != 3) {
         return;
     }
@@ -120,18 +127,15 @@
     }
 
     BPKRatingTextDefinition *definition;
-    if (arr.count == 1 ) {
-        definition = [[BPKRatingTextDefinition alloc]
-                      initWithHighRatingText:arr[0]
-                      mediumRatingText:arr[0]
-                      lowRatingText:arr[0]];
+    if (arr.count == 1) {
+        definition = [[BPKRatingTextDefinition alloc] initWithHighRatingText:arr[0]
+                                                            mediumRatingText:arr[0]
+                                                               lowRatingText:arr[0]];
     } else {
-        definition = [[BPKRatingTextDefinition alloc]
-                      initWithHighRatingText:arr[2]
-                      mediumRatingText:arr[1]
-                      lowRatingText:arr[0]];
+        definition = [[BPKRatingTextDefinition alloc] initWithHighRatingText:arr[2]
+                                                            mediumRatingText:arr[1]
+                                                               lowRatingText:arr[0]];
     }
-
 
     return definition;
 }

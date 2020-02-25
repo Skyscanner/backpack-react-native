@@ -23,26 +23,23 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, assign) BPKButtonStyle style;
 @property(nonatomic, copy) NSString *title;
 
-- (instancetype _Nonnull)initWithButtonStyle:(BPKButtonStyle)style
-                                       title:(NSString *)title;
+- (instancetype _Nonnull)initWithButtonStyle:(BPKButtonStyle)style title:(NSString *)title;
 @end
 
 @implementation RCTBPKDialogButtonAction
 
-- (instancetype _Nonnull)initWithButtonStyle:(BPKButtonStyle)style
-                                       title:(NSString *)title {
+- (instancetype _Nonnull)initWithButtonStyle:(BPKButtonStyle)style title:(NSString *)title {
     self = [super init];
-    
+
     if (self) {
         self.style = style;
         self.title = title;
     }
-    
+
     return self;
 }
 
-+ (instancetype _Nonnull)actionWithTitle:(NSString *)title
-                                   style:(BPKButtonStyle)style {
++ (instancetype _Nonnull)actionWithTitle:(NSString *)title style:(BPKButtonStyle)style {
     return [[self alloc] initWithButtonStyle:style title:title];
 }
 
@@ -66,18 +63,18 @@ RCT_ARRAY_CONVERTER(RCTBPKDialogButtonAction);
     }
 }
 
-+ (RCTBPKDialogButtonAction * _Nullable)RCTBPKDialogButtonAction:(id)json {
++ (RCTBPKDialogButtonAction *_Nullable)RCTBPKDialogButtonAction:(id)json {
     if (!json) {
         return nil;
     }
-    
+
     if ([json isKindOfClass:[NSDictionary class]]) {
         NSDictionary *payload = (NSDictionary *)json;
         NSString *title = payload[@"text"];
         BPKButtonStyle style = [self buttomStyleFrom:payload[@"type"]];
         return [RCTBPKDialogButtonAction actionWithTitle:title style:style];
     }
-    
+
     RCTLogConvertError(json, @"a valid RCTBPKDialogButtonAction action");
     return nil;
 }

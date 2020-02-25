@@ -24,15 +24,15 @@ NS_ASSUME_NONNULL_BEGIN
 RCT_EXPORT_MODULE();
 
 - (NSArray<NSString *> *)supportedEvents {
-    return @[ @"bpkDialogAction", @"bpkDialogScrim" ];
+    return @[@"bpkDialogAction", @"bpkDialogScrim"];
 }
 
 - (void)didInvokeActionForDialogWithIdentifier:(NSUInteger)identifier actionIndex:(NSUInteger)index {
-    [self sendEventWithName:@"bpkDialogAction" body:@{ @"identifier": @(identifier), @"actionIndex": @(index) }];
+    [self sendEventWithName:@"bpkDialogAction" body:@{@"identifier": @(identifier), @"actionIndex": @(index)}];
 }
 
 - (void)didInvokeScrimActionForDialogWithIdentifier:(NSUInteger)identifier {
-    [self sendEventWithName:@"bpkDialogScrim" body:@{ @"identifier": @(identifier) }];
+    [self sendEventWithName:@"bpkDialogScrim" body:@{@"identifier": @(identifier)}];
 }
 
 @end

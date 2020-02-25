@@ -10,6 +10,6 @@
 #import <React/RCTBridgeModule.h>
 
 @class RCTDevMenuItem;
-@interface ToggleNavigationBarMenuModule : NSObject<RCTBridgeModule>
-@property (nonatomic, strong, readonly) RCTDevMenuItem *devMenuItem;
+@interface ToggleNavigationBarMenuModule : NSObject <RCTBridgeModule>
+@property(nonatomic, strong, readonly) RCTDevMenuItem *devMenuItem;
 @end

@@ -18,12 +18,12 @@
 
 #import <UIKit/UIKit.h>
 
+#import <Backpack/Dialog.h>
 #import <React/RCTInvalidating.h>
 #import <React/RCTView.h>
-#import <Backpack/Dialog.h>
 
-#import "RCTBPKDialogManager.h"
 #import "RCTBPKDialogButtonAction.h"
+#import "RCTBPKDialogManager.h"
 
 @class RCTBridge;
 

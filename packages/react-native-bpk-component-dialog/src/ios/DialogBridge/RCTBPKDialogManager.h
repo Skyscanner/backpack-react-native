@@ -23,8 +23,8 @@ typedef void (^RCTDialogInteractor)(UIViewController *reactViewController, UIVie
 
 @interface RCTBPKDialogManager : RCTViewManager <RCTInvalidating>
 
-@property (nonatomic, strong) RCTDialogInteractor presentationBlock;
-@property (nonatomic, strong) RCTDialogInteractor dismissalBlock;
+@property(nonatomic, strong) RCTDialogInteractor presentationBlock;
+@property(nonatomic, strong) RCTDialogInteractor dismissalBlock;
 
 @end
 NS_ASSUME_NONNULL_END
