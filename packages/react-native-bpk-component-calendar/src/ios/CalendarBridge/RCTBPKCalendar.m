@@ -85,7 +85,7 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 - (nullable NSDate *)rct_minDate {
-  return [self.minDate dateForCalendar:self.gregorian];
+    return [self.minDate dateForCalendar:self.gregorian];
 }
 
 - (void)setRct_maxDate:(nullable NSDate *)rct_maxDate {
@@ -110,7 +110,7 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 - (nullable NSDate *)rct_maxDate {
-  return [self.maxDate dateForCalendar:self.gregorian];
+    return [self.maxDate dateForCalendar:self.gregorian];
 }
 
 - (void)setRct_selectedDates:(NSArray<NSDate *> *)rct_selectedDates {

@@ -17,24 +17,23 @@
  */
 
 #import "RCTBPKDialog.h"
-#import <UIKit/UIKit.h>
-#import <React/RCTBridge.h>
-#import <React/RCTUIManager.h>
-#import <React/RCTTouchHandler.h>
 #import <Backpack/Color.h>
+#import <React/RCTBridge.h>
+#import <React/RCTTouchHandler.h>
+#import <React/RCTUIManager.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-@implementation RCTBPKDialog
-{
+@implementation RCTBPKDialog {
     __weak RCTBridge *_bridge;
     BOOL _isPresented;
     RCTTouchHandler *_touchHandler;
 }
 
-RCT_NOT_IMPLEMENTED(- (instancetype)initWithFrame:(CGRect)frame)
-RCT_NOT_IMPLEMENTED(- (instancetype _Nullable)initWithCoder:coder)
+RCT_NOT_IMPLEMENTED(-(instancetype)initWithFrame : (CGRect)frame)
+RCT_NOT_IMPLEMENTED(-(instancetype _Nullable)initWithCoder : coder)
 
-- (instancetype) initWithBridge:(RCTBridge *)bridge {
+- (instancetype)initWithBridge:(RCTBridge *)bridge {
     if ((self = [super initWithFrame:CGRectZero])) {
         _bridge = bridge;
         _isPresented = NO;
@@ -48,7 +47,7 @@ RCT_NOT_IMPLEMENTED(- (instancetype _Nullable)initWithCoder:coder)
         _isPresented = NO;
     }
 }
-    
+
 - (void)didMoveToWindow {
     [super didMoveToWindow];
     if (!_isPresented && self.window) {
@@ -59,7 +58,7 @@ RCT_NOT_IMPLEMENTED(- (instancetype _Nullable)initWithCoder:coder)
 
 - (void)didMoveToSuperview {
     [super didMoveToSuperview];
-    
+
     if (_isPresented && !self.superview) {
         [self dismiss];
     }
@@ -67,7 +66,7 @@ RCT_NOT_IMPLEMENTED(- (instancetype _Nullable)initWithCoder:coder)
 
 - (void)invalidate {
     dispatch_async(dispatch_get_main_queue(), ^{
-        [self dismiss];
+      [self dismiss];
     });
 }
 

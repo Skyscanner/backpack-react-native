@@ -16,28 +16,29 @@
  * limitations under the License.
  */
 
-#import <React/RCTBridge.h>
-#import <React/RCTUIManager.h>
 #import <Backpack/Color.h>
 #import <Backpack/Icon.h>
+#import <React/RCTBridge.h>
+#import <React/RCTUIManager.h>
 
-#import "RCTBPKDialogManager.h"
 #import "RCTBPKDialog.h"
-#import "RCTBPKDialogEventsManager.h"
-#import "RCTBPKDialogUtils.h"
 #import "RCTBPKDialogButtonAction.h"
+#import "RCTBPKDialogEventsManager.h"
+#import "RCTBPKDialogManager.h"
+#import "RCTBPKDialogUtils.h"
 
 NS_ASSUME_NONNULL_BEGIN
 @implementation RCTConvert (RCTBPKDialog)
 
 RCT_ENUM_CONVERTER(BPKDialogControllerStyle, (@{
-    @"alert": @(BPKDialogControllerStyleAlert),
-    @"bottomSheet": @(BPKDialogControllerStyleBottomSheet),
-    }), BPKDialogControllerStyleAlert, integerValue)
+                       @"alert": @(BPKDialogControllerStyleAlert),
+                       @"bottomSheet": @(BPKDialogControllerStyleBottomSheet),
+                   }),
+                   BPKDialogControllerStyleAlert, integerValue)
 
 @end
 
-@interface RCTBPKDialogManager() <RCTDialogInteractor>
+@interface RCTBPKDialogManager () <RCTDialogInteractor>
 
 @end
 
@@ -59,29 +60,32 @@ RCT_EXPORT_MODULE()
 
 - (void)presentDialog:(RCTBPKDialog *)dialog {
     BPKDialogIconDefinition *iconDefinition =
-    [[BPKDialogIconDefinition alloc] initWithIcon:[BPKIcon templateIconNamed:dialog.iconId size:BPKIconSizeLarge]
-                              iconBackgroundColor:dialog.iconColor];
+        [[BPKDialogIconDefinition alloc] initWithIcon:[BPKIcon templateIconNamed:dialog.iconId size:BPKIconSizeLarge]
+                                  iconBackgroundColor:dialog.iconColor];
     dialog.dialogController = [BPKDialogController dialogControllerWithTitle:dialog.title
-                                                                        message:dialog.message
-                                                                          style:dialog.style
-                                                                 iconDefinition:iconDefinition];
-    
-    BPKDialogScrimAction *scrimAction = [BPKDialogScrimAction actionWithHandler:^(BOOL didDismiss) {
-        [[self.bridge moduleForClass:[RCTBPKDialogEventsManager class]] didInvokeScrimActionForDialogWithIdentifier:dialog.identifier.unsignedIntegerValue];
-    } shouldDismiss:dialog.scrimEnabled];
+                                                                     message:dialog.message
+                                                                       style:dialog.style
+                                                              iconDefinition:iconDefinition];
+
+    BPKDialogScrimAction *scrimAction = [BPKDialogScrimAction
+        actionWithHandler:^(BOOL didDismiss) {
+          [[self.bridge moduleForClass:[RCTBPKDialogEventsManager class]]
+              didInvokeScrimActionForDialogWithIdentifier:dialog.identifier.unsignedIntegerValue];
+        }
+            shouldDismiss:dialog.scrimEnabled];
 
     dialog.dialogController.scrimAction = scrimAction;
 
     for (NSUInteger i = 0; i < dialog.actions.count; ++i) {
         RCTBPKDialogButtonAction *reactAction = dialog.actions[i];
         BPKDialogButtonAction *action = [BPKDialogButtonAction
-                                         actionWithTitle:reactAction.title
-                                         style:reactAction.style
-                                         handler:^(BPKDialogButtonAction *dialogAction) {
-                                             [[self.bridge moduleForClass:[RCTBPKDialogEventsManager class]] didInvokeActionForDialogWithIdentifier:dialog.identifier.unsignedIntegerValue
-                                                                                                                                        actionIndex:i];
-
-                                         }];
+            actionWithTitle:reactAction.title
+                      style:reactAction.style
+                    handler:^(BPKDialogButtonAction *dialogAction) {
+                      [[self.bridge moduleForClass:[RCTBPKDialogEventsManager class]]
+                          didInvokeActionForDialogWithIdentifier:dialog.identifier.unsignedIntegerValue
+                                                     actionIndex:i];
+                    }];
         [dialog.dialogController addButtonAction:action];
     }
     if (self.presentationBlock) {
