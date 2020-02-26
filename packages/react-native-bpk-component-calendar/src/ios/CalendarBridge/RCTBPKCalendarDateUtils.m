@@ -39,5 +39,15 @@ NS_ASSUME_NONNULL_BEGIN
     return [localCalendar dateFromComponents:utcComponents];
 }
 
++ (BOOL)date:(NSDate *)date isAfterDate:(NSDate *)reference {
+    NSComparisonResult ordering = [reference compare:date];
+    return ordering == NSOrderedAscending;
+}
+
++ (BOOL)date:(NSDate *)date isBeforeDate:(NSDate *)reference {
+    NSComparisonResult ordering = [reference compare:date];
+    return ordering == NSOrderedDescending;
+}
+
 @end
 NS_ASSUME_NONNULL_END

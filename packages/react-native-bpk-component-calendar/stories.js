@@ -46,7 +46,7 @@ import BpkCalendar, {
   type BpkCalendarSelectionType,
 } from './index';
 
-const ONE_DAT_IN_MS = 8.64e7;
+const ONE_DAY_IN_MS = 8.64e7;
 const today = new Date();
 
 const styles = StyleSheet.create({
@@ -95,7 +95,7 @@ const useAllWeekends = (startDate: number, endDate: number) =>
       if (day === 6 || day === 0) {
         weekeds.push(date);
       }
-      date += ONE_DAT_IN_MS;
+      date += ONE_DAY_IN_MS;
     }
     return weekeds;
   }, [startDate, endDate]);
@@ -103,8 +103,8 @@ const useAllWeekends = (startDate: number, endDate: number) =>
 const useDateMatchers = (minDate: number, maxDate: number): any => {
   const allWeekends = useAllWeekends(minDate, maxDate);
   return useMemo(() => {
-    const minPlus30 = minDate + ONE_DAT_IN_MS * 30;
-    const minPlus60 = minDate + ONE_DAT_IN_MS * 60;
+    const minPlus30 = minDate + ONE_DAY_IN_MS * 30;
+    const minPlus60 = minDate + ONE_DAY_IN_MS * 60;
     return {
       range: {
         label: `between ${formatDateForDisplay(
@@ -396,7 +396,7 @@ storiesOf('react-native-bpk-component-calendar', module)
     const disabledDates =
       selectedDates &&
       selectedDates.length === 1 &&
-      DateMatchers.after(selectedDates[0].getTime() + ONE_DAT_IN_MS * 30);
+      DateMatchers.after(selectedDates[0].getTime() + ONE_DAY_IN_MS * 30);
 
     return (
       <BpkCalendarExample
@@ -442,11 +442,11 @@ storiesOf('react-native-bpk-component-calendar', module)
       const three = [];
       while (date <= maxDate) {
         one.push(date);
-        date += ONE_DAT_IN_MS;
+        date += ONE_DAY_IN_MS;
         two.push(date);
-        date += ONE_DAT_IN_MS;
+        date += ONE_DAY_IN_MS;
         three.push(date);
-        date += ONE_DAT_IN_MS;
+        date += ONE_DAY_IN_MS;
       }
       return [
         colorBucket(colorSagano, DateMatchers.any(...one)),

@@ -2,6 +2,11 @@
 
 > Place your changes below this line.
 
+**Added:**
+
+- react-native-bpk-component-calendar:
+  - `colorBuckets` are now supported on iOS.
+
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).

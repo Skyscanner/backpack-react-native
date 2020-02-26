@@ -68,6 +68,26 @@ NS_ASSUME_NONNULL_BEGIN
                  localCalendar:(NSCalendar *)localCalendar
                    utcCalendar:(NSCalendar *)utcCalendar;
 
+/**
+ * Determine if a date is after another
+ *
+ * @param date The date which you want to compare.
+ * @param reference The reference date.
+
+ * @return YES if `date` is after `reference`.
+ */
++ (BOOL)date:(NSDate *)date isAfterDate:(NSDate *)reference;
+
+/**
+ * Determine if a date is before another
+ *
+ * @param date The date which you want to compare.
+ * @param reference The reference date.
+
+ * @return YES if `date` is before `reference`.
+ */
++ (BOOL)date:(NSDate *)date isBeforeDate:(NSDate *)reference;
+
 @end
 
 NS_ASSUME_NONNULL_END

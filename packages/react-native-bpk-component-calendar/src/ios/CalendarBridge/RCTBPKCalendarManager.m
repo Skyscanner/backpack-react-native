@@ -20,12 +20,15 @@
 #import <React/RCTBridge.h>
 #import <React/RCTUIManager.h>
 
+#import <Backpack/Color.h>
+
 #import "RCTBPKCalendar.h"
 #import "RCTBPKCalendarDateUtils.h"
+#import "RCTBPKColorBucket.h"
+#import "RCTBPKDateMatcher.h"
 #import "RCTConvert+RCTBPKCalendar.h"
 
 @interface RCTBPKCalendarManager () <BPKCalendarDelegate>
-
 @end
 
 @implementation RCTBPKCalendarManager
@@ -41,6 +44,7 @@ RCT_EXPORT_MODULE()
 
 RCT_REMAP_VIEW_PROPERTY(minDate, rct_minDate, NSDate)
 RCT_REMAP_VIEW_PROPERTY(maxDate, rct_maxDate, NSDate)
+RCT_REMAP_VIEW_PROPERTY(colorBuckets, rct_colorBuckets, RCTBPKColorBucketArray);
 RCT_EXPORT_VIEW_PROPERTY(selectionType, BPKCalendarSelection)
 RCT_EXPORT_VIEW_PROPERTY(locale, NSLocale)
 RCT_REMAP_VIEW_PROPERTY(selectedDates, rct_selectedDates, NSArray<NSDate *> *)
@@ -105,6 +109,93 @@ RCT_EXPORT_METHOD(forceRender : (nonnull NSNumber *)reactTag) {
     }
 
     calendar.onDateSelection(@{@"selectedDates": dateArray});
+}
+
+- (RCTBPKColorBucket *_Nullable)colorBucketForDate:(NSDate *)date
+                                      colorBuckets:(NSArray<RCTBPKColorBucket *> *)colorBuckets {
+    for (RCTBPKColorBucket *bucket in colorBuckets) {
+        switch (bucket.days.matcherType) {
+        case RCTBPKDateMatcherTypeRange:
+            if ([RCTBPKCalendarDateUtils date:date isAfterDate:bucket.days.dates[0]] &&
+                [RCTBPKCalendarDateUtils date:date isBeforeDate:bucket.days.dates[1]]) {
+                return bucket;
+            }
+            break;
+        case RCTBPKDateMatcherTypeBefore:
+            if ([RCTBPKCalendarDateUtils date:date isBeforeDate:bucket.days.dates[0]]) {
+                return bucket;
+            }
+            break;
+        case RCTBPKDateMatcherTypeAfter:
+            if ([RCTBPKCalendarDateUtils date:date isAfterDate:bucket.days.dates[0]]) {
+                return bucket;
+            }
+            return nil;
+        case RCTBPKDateMatcherTypeAny:
+            for (NSDate *bucketDate in bucket.days.dates) {
+                if ([bucketDate isEqualToDate:date]) {
+                    return bucket;
+                }
+            }
+            break;
+        }
+    }
+    return nil;
+}
+
+- (UIColor *)calendar:(BPKCalendar *)calendar fillColorForDate:(NSDate *)date {
+    NSAssert([calendar isKindOfClass:RCTBPKCalendar.class],
+             @"calendar value is not of type RCTBPKCalendar as expected.");
+    if (![calendar isKindOfClass:RCTBPKCalendar.class]) {
+        return BPKColor.clear;
+    }
+
+    RCTBPKCalendar *rctCalendar = (RCTBPKCalendar *)calendar;
+    RCTBPKColorBucket *colorBucket = [self colorBucketForDate:date colorBuckets:rctCalendar.rct_colorBuckets];
+
+    if (colorBucket) {
+        return colorBucket.color;
+    }
+    return BPKColor.clear;
+}
+
+- (UIColor *)calendar:(BPKCalendar *)calendar titleColorForDate:(NSDate *)date {
+    NSAssert([calendar isKindOfClass:RCTBPKCalendar.class],
+             @"calendar value is not of type RCTBPKCalendar as expected.");
+    if (![calendar isKindOfClass:RCTBPKCalendar.class]) {
+        return BPKColor.textPrimaryColor;
+    }
+
+    RCTBPKCalendar *rctCalendar = (RCTBPKCalendar *)calendar;
+    RCTBPKColorBucket *colorBucket = [self colorBucketForDate:date colorBuckets:rctCalendar.rct_colorBuckets];
+
+    if (colorBucket) {
+        switch (colorBucket.textStyle) {
+        case RCTBPKColorBucketTextStyleDefault:
+            return [self.class getTextColorForBackground:colorBucket.color];
+        case RCTBPKColorBucketTextStyleLight:
+            return BPKColor.textPrimaryLightColor;
+        case RCTBPKColorBucketTextStyleDark:
+            return BPKColor.textPrimaryDarkColor;
+        }
+    }
+    return BPKColor.textPrimaryColor;
+}
+
+#pragma mark - Helpers
+
++ (UIColor *)getTextColorForBackground:(UIColor *)backgroundColor {
+    CIColor *ciColor = [[CIColor alloc] initWithColor:backgroundColor];
+
+    // Luminance calculation using the "Relative luminance in colorimetric spaces" algorithm
+    // https://en.wikipedia.org/wiki/Relative_luminance#Relative_luminance_in_colorimetric_spaces
+    double luminance = 0.2126 * ciColor.red + 0.7152 * ciColor.green + 0.0722 * ciColor.blue;
+
+    if (luminance < 0.5) {
+        return BPKColor.textPrimaryDarkColor;
+    } else {
+        return BPKColor.textPrimaryLightColor;
+    }
 }
 
 @end
