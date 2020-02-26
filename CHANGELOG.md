@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2020-02-26
+
+**Added:**
+
+- react-native-bpk-component-calendar:
+  - `colorBuckets` are now supported on iOS.
+
 # 2020-02-20 - `backpack-ios` upgrade
 
 **Fixed:**
