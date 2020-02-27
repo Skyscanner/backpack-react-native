@@ -5,21 +5,8 @@ rootProject.name = 'native'
 
 include ':app'
 
-// react-native-calendar
-include ':react-native-bpk-component-calendar'
-project(':react-native-bpk-component-calendar').projectDir = new File(rootProject.projectDir, '../packages/react-native-bpk-component-calendar/src/android')
-
-// react-native-dialog
-include ':react-native-bpk-component-dialog'
-project(':react-native-bpk-component-dialog').projectDir = new File(rootProject.projectDir, '../packages/react-native-bpk-component-dialog/src/android')
-
-// react-native-rating
-include ':react-native-bpk-component-rating'
-project(':react-native-bpk-component-rating').projectDir = new File(rootProject.projectDir, '../packages/react-native-bpk-component-rating/src/android')
-
-// react-native-appearance
-include ':react-native-bpk-appearance'
-project(':react-native-bpk-appearance').projectDir = new File(rootProject.projectDir, '../packages/react-native-bpk-appearance/src/android')
+include ':backpack-react-native'
+project(':backpack-react-native').projectDir = new File(rootProject.projectDir, '../src/android')
 
 // react-native-linear-gradient
 include ':react-native-linear-gradient'
@@ -27,7 +14,7 @@ project(':react-native-linear-gradient').projectDir = new File(rootProject.proje
 
 // react-native-appearance
 include ':react-native-dark-mode'
-project(':react-native-dark-mode').projectDir = new File(rootProject.projectDir, '../packages/react-native-bpk-appearance/node_modules/react-native-dark-mode/android')
+project(':react-native-dark-mode').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-dark-mode/android')
 
 
 

@@ -86,10 +86,7 @@ const schema = {
 };
 
 _.mixin({
-  pascalCase: _.flow(
-    _.camelCase,
-    _.upperFirst,
-  ),
+  pascalCase: _.flow(_.camelCase, _.upperFirst),
 });
 
 // Util to recursively make dirs
@@ -126,18 +123,15 @@ const createComponent = async (err, { name }) => {
     return;
   }
 
-  const boilerplateComponentPath = `packages/react-native-bpk-component-boilerplate`;
-  const newComponentPath = `packages/react-native-bpk-component-${name}`;
+  const boilerplateComponentPath = `src/js/react-native-bpk-component-boilerplate`;
+  const newComponentPath = `src/js/react-native-bpk-component-${name}`;
   const storybookConfigFile = `storybook/storybook.js`;
   const spellingFile = `.spelling`;
-  const storybookImport = `require('../packages/react-native-bpk-component-${name}/stories');`;
+  const storybookImport = `require('../src/js/react-native-bpk-component-${name}/stories');`;
 
   const pascalCaseName = _.pascalCase(name);
 
-  const boilerPlateFilePaths = await globby([
-    `${boilerplateComponentPath}/**`,
-    `!**/node_modules/**`,
-  ]);
+  const boilerPlateFilePaths = await globby([`${boilerplateComponentPath}/**`]);
 
   const processBoilerPlateFiles = boilerPlateFilePath => {
     const newFilePath = boilerPlateFilePath

@@ -4,8 +4,11 @@ PODS:
     - FSCalendar (~> 2.8)
     - MBProgressHUD (~> 0.9.1)
     - TTTAttributedLabel (~> 1.13.4)
+  - BackpackReactNative (0.0.1):
+    - Backpack (~> 26.1)
+    - React
   - boost-for-react-native (1.63.0)
-  - BVLinearGradient (2.5.3):
+  - BVLinearGradient (2.5.6):
     - React
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.61.5)
@@ -192,15 +195,6 @@ PODS:
     - React-cxxreact (= 0.61.5)
     - React-jsi (= 0.61.5)
   - React-jsinspector (0.61.5)
-  - react-native-bpk-component-calendar (5.1.1):
-    - Backpack (~> 26.1)
-    - React
-  - react-native-bpk-component-dialog (5.0.3):
-    - Backpack (~> 26.1)
-    - React
-  - react-native-bpk-component-rating (1.1.2):
-    - Backpack (~> 26.1)
-    - React
   - react-native-maps (0.26.1):
     - React
   - React-RCTActionSheet (0.61.5):
@@ -238,13 +232,14 @@ PODS:
     - React-cxxreact (= 0.61.5)
     - React-jsi (= 0.61.5)
     - ReactCommon/jscallinvoker (= 0.61.5)
-  - ReactNativeDarkMode (0.2.1-rc.0):
+  - ReactNativeDarkMode (0.2.2):
     - React
   - TTTAttributedLabel (1.13.4)
   - Yoga (1.14.0)
 
 DEPENDENCIES:
   - Backpack (~> 26.1)
+  - BackpackReactNative (from `../src/ios/BackpackReactNative`)
   - BVLinearGradient (from `../node_modules/react-native-linear-gradient`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
@@ -262,10 +257,7 @@ DEPENDENCIES:
   - React-jsi (from `../node_modules/react-native/ReactCommon/jsi`)
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
-  - react-native-bpk-component-calendar (from `../packages/react-native-bpk-component-calendar`)
-  - react-native-bpk-component-dialog (from `../packages/react-native-bpk-component-dialog`)
-  - react-native-bpk-component-rating (from `../packages/react-native-bpk-component-rating`)
-  - react-native-maps (from `../packages/react-native-bpk-component-map/node_modules/react-native-maps`)
+  - react-native-maps (from `../node_modules/react-native-maps`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
   - React-RCTBlob (from `../node_modules/react-native/Libraries/Blob`)
@@ -277,7 +269,7 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - ReactCommon/jscallinvoker (from `../node_modules/react-native/ReactCommon`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
-  - ReactNativeDarkMode (from `../packages/react-native-bpk-appearance/node_modules/react-native-dark-mode/ReactNativeDarkMode.podspec`)
+  - ReactNativeDarkMode (from `../node_modules/react-native-dark-mode/ReactNativeDarkMode.podspec`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -290,6 +282,8 @@ SPEC REPOS:
     - TTTAttributedLabel
 
 EXTERNAL SOURCES:
+  BackpackReactNative:
+    :path: "../src/ios/BackpackReactNative"
   BVLinearGradient:
     :path: "../node_modules/react-native-linear-gradient"
   DoubleConversion:
@@ -320,14 +314,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsiexecutor"
   React-jsinspector:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
-  react-native-bpk-component-calendar:
-    :path: "../packages/react-native-bpk-component-calendar"
-  react-native-bpk-component-dialog:
-    :path: "../packages/react-native-bpk-component-dialog"
-  react-native-bpk-component-rating:
-    :path: "../packages/react-native-bpk-component-rating"
   react-native-maps:
-    :path: "../packages/react-native-bpk-component-map/node_modules/react-native-maps"
+    :path: "../node_modules/react-native-maps"
   React-RCTActionSheet:
     :path: "../node_modules/react-native/Libraries/ActionSheetIOS"
   React-RCTAnimation:
@@ -349,14 +337,15 @@ EXTERNAL SOURCES:
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
   ReactNativeDarkMode:
-    :path: "../packages/react-native-bpk-appearance/node_modules/react-native-dark-mode/ReactNativeDarkMode.podspec"
+    :path: "../node_modules/react-native-dark-mode/ReactNativeDarkMode.podspec"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
   Backpack: ee32b09c23aa6b6ee9761143a91efad5a4287049
+  BackpackReactNative: 0ec17c5e2aa195444f05efdd9de5cf1d745cf0ed
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
-  BVLinearGradient: 0d985ec461359c82bc254f26d11008bdae50d17a
+  BVLinearGradient: e3aad03778a456d77928f594a649e96995f1c872
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
   FBLazyVector: aaeaf388755e4f29cd74acbc9e3b8da6d807c37f
   FBReactNativeSpec: 118d0d177724c2d67f08a59136eb29ef5943ec75
@@ -374,9 +363,6 @@ SPEC CHECKSUMS:
   React-jsi: cb2cd74d7ccf4cffb071a46833613edc79cdf8f7
   React-jsiexecutor: d5525f9ed5f782fdbacb64b9b01a43a9323d2386
   React-jsinspector: fa0ecc501688c3c4c34f28834a76302233e29dc0
-  react-native-bpk-component-calendar: 34c56bf0547c16993b1bd1ec0eb9d37a754ad4d1
-  react-native-bpk-component-dialog: 3d3a4f9640a8632cc6514a5f1bfb59a89c18f609
-  react-native-bpk-component-rating: 69bd75b2aa281ebda076d7fa76015aac83be0ba3
   react-native-maps: 6e499eee4eabf422ba8b6f94e993cc768bf35153
   React-RCTActionSheet: 600b4d10e3aea0913b5a92256d2719c0cdd26d76
   React-RCTAnimation: 791a87558389c80908ed06cc5dfc5e7920dfa360
@@ -388,10 +374,10 @@ SPEC CHECKSUMS:
   React-RCTText: 9ccc88273e9a3aacff5094d2175a605efa854dbe
   React-RCTVibration: a49a1f42bf8f5acf1c3e297097517c6b3af377ad
   ReactCommon: 198c7c8d3591f975e5431bec1b0b3b581aa1c5dd
-  ReactNativeDarkMode: 3ee0ababebaa4cffa227113d89107e68e57f8937
+  ReactNativeDarkMode: 0178ffca3b10f6a7c9f49d6f9810232b328fa949
   TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
   Yoga: f2a7cd4280bfe2cca5a7aed98ba0eb3d1310f18b
 
-PODFILE CHECKSUM: fe6a1b3c9a3e11ca5c5f3821a1cc9bae2186154f
+PODFILE CHECKSUM: 7a9e70507ede74c2993ac17b4537b4d73d971821
 
 COCOAPODS: 1.8.1

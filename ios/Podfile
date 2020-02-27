@@ -38,14 +38,11 @@ target 'Backpack Native' do
 
   # RN Bridging Pods
   pod 'Backpack', '~> 26.1'
-
-  pod 'react-native-bpk-component-calendar', path: '../packages/react-native-bpk-component-calendar', :modular_headers => false
-  pod 'react-native-bpk-component-dialog', path: '../packages/react-native-bpk-component-dialog', :modular_headers => false
-  pod 'react-native-bpk-component-rating', path: '../packages/react-native-bpk-component-rating', :modular_headers => false
+  pod 'BackpackReactNative', path: '../src/ios/BackpackReactNative', :modular_headers => false
 
   # Third party pods
-  pod 'react-native-maps', path: '../packages/react-native-bpk-component-map/node_modules/react-native-maps', :modular_headers => false
-  pod 'ReactNativeDarkMode', path: '../packages/react-native-bpk-appearance/node_modules/react-native-dark-mode/ReactNativeDarkMode.podspec', :modular_headers => false
+  pod 'react-native-maps', path: '../node_modules/react-native-maps', :modular_headers => false
+  pod 'ReactNativeDarkMode', path: '../node_modules/react-native-dark-mode/ReactNativeDarkMode.podspec', :modular_headers => false
 
   target 'Backpack Native Tests' do
     inherit! :search_paths

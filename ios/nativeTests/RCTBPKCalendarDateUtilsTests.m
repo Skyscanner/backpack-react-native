@@ -8,7 +8,7 @@
 
 #import <XCTest/XCTest.h>
 
-#import <react-native-bpk-component-calendar/RCTBPKCalendarDateUtils.h>
+#import <BackpackReactNative/RCTBPKCalendarDateUtils.h>
 
 @interface RCTBPKCalendarDateUtilsTests : XCTestCase
 @property(nonatomic, strong) NSCalendar *localCalendar;
