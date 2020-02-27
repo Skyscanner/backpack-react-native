@@ -31,11 +31,7 @@ import BpkTextInput from 'react-native-bpk-component-text-input';
 import BpkPicker, { BpkPickerItem } from 'react-native-bpk-component-picker';
 import BpkSelect from 'react-native-bpk-component-select';
 import BpkText from 'react-native-bpk-component-text';
-import {
-  colorSagano,
-  colorPanjin,
-  colorBagan,
-} from 'bpk-tokens/tokens/base.react.native';
+import { colorSagano } from 'bpk-tokens/tokens/base.react.native';
 
 import CenterDecorator from '../../storybook/CenterDecorator';
 
@@ -43,6 +39,9 @@ import BpkCalendar, {
   SELECTION_TYPES,
   DateMatchers,
   colorBucket,
+  colorBucketNegative,
+  colorBucketNeutral,
+  colorBucketPositive,
   type BpkCalendarSelectionType,
 } from './index';
 
@@ -449,9 +448,9 @@ storiesOf('react-native-bpk-component-calendar', module)
         date += ONE_DAY_IN_MS;
       }
       return [
-        colorBucket(colorSagano, DateMatchers.any(...one)),
-        colorBucket(colorBagan, DateMatchers.any(...two)),
-        colorBucket(colorPanjin, DateMatchers.any(...three), 'dark'),
+        colorBucketPositive(DateMatchers.any(...one)),
+        colorBucketNeutral(DateMatchers.any(...two)),
+        colorBucketNegative(DateMatchers.any(...three)),
       ];
     }, [maxDate, minDate]);
 
