@@ -107,10 +107,13 @@ class CalendarViewManager : ViewGroupManager<RNCalendarView>() {
         val days = bucket.getMap("days")
                 ?: throw IllegalArgumentException("Invalid colour bucket provided to BpkCalendar. `days` is null")
 
+        val cellStyle = bucket.safeGet("__cellStyle", ReadableMap::getString)
+
         RNColorBucket(
           color = color,
           days = days.toDateMatcher(),
-          textStyle = textStyle
+          textStyle = textStyle,
+          cellStyle = cellStyle
         )
       }.toTypedArray()
 

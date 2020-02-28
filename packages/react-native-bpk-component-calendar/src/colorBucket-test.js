@@ -19,10 +19,19 @@
 /* @flow */
 
 import { processColor } from 'react-native';
-import { colorSagano } from 'bpk-tokens/tokens/base.react.native';
+import {
+  colorSagano,
+  colorHillier,
+  colorErfoud,
+  colorGlencoe,
+} from 'bpk-tokens/tokens/base.react.native';
 
 import DateMatchers from './DateMatchers';
-import colorBucket from './colorBucket';
+import colorBucket, {
+  colorBucketNegative,
+  colorBucketNeutral,
+  colorBucketPositive,
+} from './colorBucket';
 
 const dateOne = Date.UTC(2019, 11, 16);
 
@@ -41,6 +50,20 @@ describe('BpkCalendar - colorBucket', () => {
       color: processColor(colorSagano),
       days,
       textStyle: 'dark',
+    });
+  });
+
+  it.each([
+    ['negative', colorBucketNegative, colorHillier],
+    ['neutral', colorBucketNeutral, colorErfoud],
+    ['positive', colorBucketPositive, colorGlencoe],
+  ])('creates a %s color bucket', (cellStyle, createBucket, color) => {
+    const days = DateMatchers.after(dateOne);
+    expect(createBucket(days)).toEqual({
+      color: processColor(color),
+      days,
+      textStyle: 'light',
+      __cellStyle: cellStyle,
     });
   });
 });

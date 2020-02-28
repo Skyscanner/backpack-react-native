@@ -143,6 +143,20 @@ RCT_EXPORT_METHOD(forceRender : (nonnull NSNumber *)reactTag) {
     return nil;
 }
 
+- (BPKCalendarDateCellStyle)calendar:(BPKCalendar *)calendar cellStyleForDate:(BPKSimpleDate *)date {
+    NSAssert([calendar isKindOfClass:RCTBPKCalendar.class],
+             @"calendar value is not of type RCTBPKCalendar as expected.");
+    if (![calendar isKindOfClass:RCTBPKCalendar.class]) {
+        return BPKCalendarDateCellStyleNormal;
+    }
+
+    NSDate *localDate = [date dateForCalendar:calendar.gregorian];
+    RCTBPKCalendar *rctCalendar = (RCTBPKCalendar *)calendar;
+    RCTBPKColorBucket *colorBucket = [self colorBucketForDate:localDate colorBuckets:rctCalendar.rct_colorBuckets];
+
+    return colorBucket.cellStyle;
+}
+
 - (UIColor *)calendar:(BPKCalendar *)calendar fillColorForDate:(NSDate *)date {
     NSAssert([calendar isKindOfClass:RCTBPKCalendar.class],
              @"calendar value is not of type RCTBPKCalendar as expected.");

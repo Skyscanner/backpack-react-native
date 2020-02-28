@@ -2,6 +2,17 @@
 
 > Place your changes below this line.
 
+**Added:**
+
+- react-native-bpk-component-calendar:
+  - Added three new predefined colour buckets. `colorBucketNegative`, `colorBucketNeutral` and `colorBucketPositive`.
+
+**Breaking:**
+
+- react-native-bpk-component-calendar:
+  - Updated `backpack-android` to `22.0.0` and addressed breaking changes.
+  - To use this version ensure `backpack-android` version is `22.0.0` or above.
+
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
@@ -29,4 +40,3 @@ See [`CHANGELOG.md`](CHANGELOG.md) for real-world examples of good changelog ent
 
 - react-native-bpk-component-horcrux:
   - Fixed issue where `BpkHorcrux` would occasionally possess the living.
-

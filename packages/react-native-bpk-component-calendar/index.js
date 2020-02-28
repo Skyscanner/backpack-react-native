@@ -21,7 +21,12 @@
 import BpkCalendar, { type Props } from './src/BpkCalendar';
 import { SELECTION_TYPES, type SelectionType } from './src/common-types';
 import DateMatchers, { type DateMatcher } from './src/DateMatchers';
-import colorBucket, { type ColorBucket } from './src/colorBucket';
+import colorBucket, {
+  colorBucketNegative,
+  colorBucketNeutral,
+  colorBucketPositive,
+  type ColorBucket,
+} from './src/colorBucket';
 
 export type {
   Props as BpkCalendarProps,
@@ -31,4 +36,11 @@ export type {
 };
 
 export default BpkCalendar;
-export { SELECTION_TYPES, DateMatchers, colorBucket };
+export {
+  SELECTION_TYPES,
+  DateMatchers,
+  colorBucket,
+  colorBucketNegative,
+  colorBucketNeutral,
+  colorBucketPositive,
+};

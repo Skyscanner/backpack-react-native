@@ -180,14 +180,24 @@ class RNCalendarView(
   }
 
   private fun RNColorBucket.toColorBucket(): ColoredBucket {
-    val textStyle = if (this.textStyle == "dark") {
-      ColoredBucket.TextStyle.Dark
-    } else {
-      ColoredBucket.TextStyle.Light
+    if (this.cellStyle !== null) {
+      when (cellStyle) {
+        "negative" -> ColoredBucket(CalendarCellStyle.Negative, this.days.toSet())
+        "positive" -> ColoredBucket(CalendarCellStyle.Positive, this.days.toSet())
+        "neutral" -> ColoredBucket(CalendarCellStyle.Neutral, this.days.toSet())
+        else -> throw IllegalStateException("Invalid cellStyle: $cellStyle")
+      }
     }
 
-    // TODO: selectedColor has not effect so we are not providing it here
-    return ColoredBucket(this.color, this.days.toSet(), null, textStyle)
+    val textStyle = this.textStyle?.let {
+      if (it == "dark") {
+        CalendarCellStyle.TextStyle.Dark
+      } else {
+        CalendarCellStyle.TextStyle.Light
+      }
+    }
+
+    return ColoredBucket(CalendarCellStyle.Custom(this.color, textStyle), this.days.toSet())
   }
 
   private fun DateMatcher.toSet(): Set<LocalDate> {

@@ -19,10 +19,16 @@
 /* @flow */
 
 import { processColor } from 'react-native';
+import {
+  colorErfoud,
+  colorHillier,
+  colorGlencoe,
+} from 'bpk-tokens/tokens/base.react.native';
 
 import { type DateMatcher } from './DateMatchers';
 
 type TextStyle = 'light' | 'dark';
+type CellStyle = 'negative' | 'neutral' | 'positive';
 
 export type ColorBucket = {
   color: ?number,
@@ -64,5 +70,56 @@ const colorBucket = (
   days,
   textStyle,
 });
+
+/**
+ * Create a backwards compatible bucket that will work with the previous "open"
+ * way of setting buckets in the native side, but also contains the information
+ * to use the new approach if possible.
+ *
+ * This will ensure RN will always follow the native definition for these predefined
+ * buckets in case they are available
+ *
+ * @param {ColorBucket} bucket the bucket
+ * @param {CellStyle} cellStyle the cellStyle
+ *
+ * @returns {Object} a color bucket with the cell style information
+ */
+const bucketCompat = (bucket: ColorBucket, cellStyle: CellStyle) => ({
+  ...bucket,
+  __cellStyle: cellStyle,
+});
+
+/**
+ * A negative cell style which is suitable to indicate for example
+ * a date which has a comparatively high price among the dates in
+ * the calendar.
+ *
+ * @param {DateMatcher} days - The days in this bucket
+ * @returns {ColorBucket} the negative bucket
+ */
+export const colorBucketNegative = (days: DateMatcher) =>
+  bucketCompat(colorBucket(colorHillier, days, 'light'), 'negative');
+
+/**
+ * A neutral cell style which is suitable to indicate for example
+ * a date which has a comparatively average price among the dates in
+ * the calendar.
+ *
+ * @param {DateMatcher} days - The days in this bucket
+ * @returns {ColorBucket} the neutral bucket
+ */
+export const colorBucketNeutral = (days: DateMatcher) =>
+  bucketCompat(colorBucket(colorErfoud, days, 'light'), 'neutral');
+
+/**
+ * A positive cell style which is suitable to indicate for example
+ * a date which has a comparatively low price among the dates in
+ * the calendar.
+ *
+ * @param {DateMatcher} days - The days in this bucket
+ * @returns {ColorBucket} the positive bucket
+ */
+export const colorBucketPositive = (days: DateMatcher) =>
+  bucketCompat(colorBucket(colorGlencoe, days, 'light'), 'positive');
 
 export default colorBucket;
