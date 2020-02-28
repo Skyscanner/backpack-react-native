@@ -1,6 +1,6 @@
 {
   "name": "react-native-bpk-component-dialog",
-  "version": "5.0.3",
+  "version": "6.0.0",
   "main": "index.js",
   "description": "Backpack React Native dialog component.",
   "repository": {
