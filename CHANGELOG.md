@@ -2,6 +2,21 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2020-02-28
+
+**Added:**
+
+- react-native-bpk-component-calendar:
+  - Added three new predefined colour buckets. `colorBucketNegative`, `colorBucketNeutral` and `colorBucketPositive`.
+
+**Breaking:**
+
+- react-native-bpk-component-calendar: 5.1.1 => 6.0.0
+- react-native-bpk-component-dialog: 5.0.3 => 6.0.0
+- react-native-bpk-component-rating: 1.1.2 => 2.0.0
+  - Updated `backpack-android` to `22.0.0` and addressed breaking changes.
+  - To use this version ensure `backpack-android` version is `22.0.0` or above.
+
 # 2020-02-26
 
 **Added:**

@@ -2,16 +2,6 @@
 
 > Place your changes below this line.
 
-**Added:**
-
-- react-native-bpk-component-calendar:
-  - Added three new predefined colour buckets. `colorBucketNegative`, `colorBucketNeutral` and `colorBucketPositive`.
-
-**Breaking:**
-
-- react-native-bpk-component-calendar:
-  - Updated `backpack-android` to `22.0.0` and addressed breaking changes.
-  - To use this version ensure `backpack-android` version is `22.0.0` or above.
 
 ## How to write a good changelog entry
 
