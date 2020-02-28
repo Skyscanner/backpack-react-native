@@ -5,7 +5,7 @@
 **Added:**
 
 - react-native-bpk-component-calendar:
-  - Added three new pre defined colour buckets. `colorBucketNegative`, `colorBucketNeutral` and `colorBucketPositive`.
+  - Added three new predefined colour buckets. `colorBucketNegative`, `colorBucketNeutral` and `colorBucketPositive`.
 
 **Breaking:**
 
@@ -40,4 +40,3 @@ See [`CHANGELOG.md`](CHANGELOG.md) for real-world examples of good changelog ent
 
 - react-native-bpk-component-horcrux:
   - Fixed issue where `BpkHorcrux` would occasionally possess the living.
-
