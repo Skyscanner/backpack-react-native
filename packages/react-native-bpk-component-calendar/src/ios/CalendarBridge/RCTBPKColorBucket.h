@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-#import <Backpack/SimpleDate.h>
+#import <Backpack/Calendar.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -35,10 +35,12 @@ typedef NS_ENUM(NSUInteger, RCTBPKColorBucketTextStyle) {
 @property(nonatomic, readonly, strong) UIColor *color;
 @property(nonatomic, readonly, assign) RCTBPKColorBucketTextStyle textStyle;
 @property(nonatomic, readonly, strong, nullable) RCTBPKDateMatcher *days;
+@property(nonatomic, readonly, assign) BPKCalendarDateCellStyle cellStyle;
 
 - (instancetype)initWithColor:(UIColor *)color
                     textStyle:(RCTBPKColorBucketTextStyle)textStyle
-                         days:(RCTBPKDateMatcher *)days;
+                         days:(RCTBPKDateMatcher *)days
+                    cellStyle:(BPKCalendarDateCellStyle)cellStyle;
 
 @end
 
