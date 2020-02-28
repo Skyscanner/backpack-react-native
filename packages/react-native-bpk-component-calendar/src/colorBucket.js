@@ -76,7 +76,7 @@ const colorBucket = (
  * way of setting buckets in the native side, but also contains the information
  * to use the new approach if possible.
  *
- * This will ensure RN will always follow the native difinition for these pre defined
+ * This will ensure RN will always follow the native definition for these predefined
  * buckets in case they are available
  *
  * @param {ColorBucket} bucket the bucket
