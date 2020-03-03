@@ -26,7 +26,7 @@ import { backgroundColor } from 'bpk-tokens/tokens/base.react.native';
 import BpkAppearance, {
   BpkAppearanceProvider,
   useBpkDynamicValue,
-} from '../packages/react-native-bpk-appearance';
+} from '../src/js/bpk-appearance';
 
 import {
   RTL_EVENT,
@@ -69,42 +69,42 @@ const hideWarnings = () => {
 
 /* eslint-disable global-require */
 configure(() => {
-  require('../packages/react-native-bpk-component-alert/stories');
-  require('../packages/react-native-bpk-component-animate-height/stories');
-  require('../packages/react-native-bpk-component-badge/stories');
-  require('../packages/react-native-bpk-component-banner-alert/stories');
-  require('../packages/react-native-bpk-component-button-link/stories');
-  require('../packages/react-native-bpk-component-button/stories');
-  require('../packages/react-native-bpk-component-calendar/stories');
-  require('../packages/react-native-bpk-component-card/stories');
-  require('../packages/react-native-bpk-component-carousel-indicator/stories');
-  require('../packages/react-native-bpk-component-carousel/stories');
-  require('../packages/react-native-bpk-component-chip/stories');
-  require('../packages/react-native-bpk-component-dialog/stories');
-  require('../packages/react-native-bpk-component-flat-list/stories');
-  require('../packages/react-native-bpk-component-horizontal-nav/stories');
-  require('../packages/react-native-bpk-component-icon/stories');
-  require('../packages/react-native-bpk-component-image/stories');
-  require('../packages/react-native-bpk-component-map/stories');
-  require('../packages/react-native-bpk-component-navigation-bar/stories');
-  require('../packages/react-native-bpk-component-nudger/stories');
-  require('../packages/react-native-bpk-component-panel/stories');
-  require('../packages/react-native-bpk-component-phone-input/stories');
-  require('../packages/react-native-bpk-component-picker/stories');
-  require('../packages/react-native-bpk-component-progress/stories');
-  require('../packages/react-native-bpk-component-rating/stories');
-  require('../packages/react-native-bpk-component-section-list/stories');
-  require('../packages/react-native-bpk-component-select/stories');
-  require('../packages/react-native-bpk-component-spinner/stories');
-  require('../packages/react-native-bpk-component-star-rating/stories');
-  require('../packages/react-native-bpk-component-switch/stories');
-  require('../packages/react-native-bpk-component-text-input/stories');
-  require('../packages/react-native-bpk-component-text/stories');
-  require('../packages/react-native-bpk-component-touchable-native-feedback/stories');
-  require('../packages/react-native-bpk-component-touchable-overlay/stories');
-  require('../packages/react-native-bpk-appearance/stories');
-  require('../packages/react-native-bpk-styles/stories');
-  require('../packages/react-native-bpk-theming/stories');
+  require('../src/js/bpk-component-alert/stories');
+  require('../src/js/bpk-component-animate-height/stories');
+  require('../src/js/bpk-component-badge/stories');
+  require('../src/js/bpk-component-banner-alert/stories');
+  require('../src/js/bpk-component-button-link/stories');
+  require('../src/js/bpk-component-button/stories');
+  require('../src/js/bpk-component-calendar/stories');
+  require('../src/js/bpk-component-card/stories');
+  require('../src/js/bpk-component-carousel-indicator/stories');
+  require('../src/js/bpk-component-carousel/stories');
+  require('../src/js/bpk-component-chip/stories');
+  require('../src/js/bpk-component-dialog/stories');
+  require('../src/js/bpk-component-flat-list/stories');
+  require('../src/js/bpk-component-horizontal-nav/stories');
+  require('../src/js/bpk-component-icon/stories');
+  require('../src/js/bpk-component-image/stories');
+  require('../src/js/bpk-component-map/stories');
+  require('../src/js/bpk-component-navigation-bar/stories');
+  require('../src/js/bpk-component-nudger/stories');
+  require('../src/js/bpk-component-panel/stories');
+  require('../src/js/bpk-component-phone-input/stories');
+  require('../src/js/bpk-component-picker/stories');
+  require('../src/js/bpk-component-progress/stories');
+  require('../src/js/bpk-component-rating/stories');
+  require('../src/js/bpk-component-section-list/stories');
+  require('../src/js/bpk-component-select/stories');
+  require('../src/js/bpk-component-spinner/stories');
+  require('../src/js/bpk-component-star-rating/stories');
+  require('../src/js/bpk-component-switch/stories');
+  require('../src/js/bpk-component-text-input/stories');
+  require('../src/js/bpk-component-text/stories');
+  require('../src/js/bpk-component-touchable-native-feedback/stories');
+  require('../src/js/bpk-component-touchable-overlay/stories');
+  require('../src/js/bpk-appearance/stories');
+  require('../src/js/bpk-styles/stories');
+  require('../src/js/bpk-theming/stories');
 }, module);
 /* eslint-enable global-require */
 
