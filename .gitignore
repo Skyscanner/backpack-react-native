@@ -62,3 +62,4 @@ coverage
 .env
 android/app/src/main/assets/fonts/skyscanner_relative*
 
+dist

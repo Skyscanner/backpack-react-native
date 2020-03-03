@@ -20,32 +20,18 @@
 
 /* eslint-disable no-console */
 
-const fs = require('fs');
-const util = require('util');
 const https = require('https');
 
-const cliProgress = require('cli-progress');
-
-const bar = new cliProgress.Bar({}, cliProgress.Presets.shades_classic);
-
-let packagesDataFetched = 0;
-
-const readdir = util.promisify(fs.readdir);
-
+const pkg = require('../../package.json');
 const meta = require('../../meta.json');
 
 let failures = false;
 
 const owners = meta.maintainers.map(maintainer => maintainer.npm).sort();
 
-const packageDone = () => {
-  packagesDataFetched += 1;
-  bar.update(packagesDataFetched);
-};
-
-const getPackageMaintainers = pkg =>
+const getPackageMaintainers = pkgName =>
   new Promise((resolve, reject) => {
-    https.get(`https://registry.npmjs.org/${pkg}/`, res => {
+    https.get(`https://registry.npmjs.org/${pkgName}/`, res => {
       let body = '';
       res.setEncoding('utf8');
       res.on('data', d => {
@@ -56,16 +42,14 @@ const getPackageMaintainers = pkg =>
         const pkgData = JSON.parse(body);
 
         if (pkgData.maintainers) {
-          packageDone();
           resolve({
-            name: pkg,
+            name: pkgName,
             maintainers: pkgData.maintainers.map(m => m.name),
             new: false,
           });
         } else {
-          packageDone();
           resolve({
-            name: pkg,
+            name: pkgName,
             new: true,
           });
         }
@@ -102,19 +86,8 @@ const verifyMaintainers = data => {
 
 console.log(`Maintainers are:\n  ${owners.join('\n  ')}\n`);
 
-readdir('packages/')
-  .then(packages => packages.filter(i => !i.startsWith('.')))
-  .then(packages => {
-    bar.start(packages.length, 0);
-    return packages;
-  })
-  .then(packages => Promise.all(packages.map(getPackageMaintainers)))
-  .then(packages => {
-    bar.stop();
-    console.log('');
-    return packages;
-  })
-  .then(maintainers => maintainers.forEach(verifyMaintainers))
+getPackageMaintainers(pkg.name)
+  .then(verifyMaintainers)
   .then(() => {
     if (failures) {
       console.log(
