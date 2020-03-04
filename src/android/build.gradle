@@ -4,6 +4,9 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+// This should come after the kotlin plugins
+apply plugin: 'com.kezong.fat-aar'
+
 apply from: '../../android/gradle-maven-push.gradle'
 
 description='Bridge code for Backpack React Native'

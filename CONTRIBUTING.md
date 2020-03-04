@@ -216,18 +216,14 @@ To run these manually, run `npm run android:emulator` or `npm run android:emulat
 <details>
 <summary>Publish packages (Backpack squad members only)</summary>
 
-- Update the [unreleased changelog](/unreleased.md) with every package that has changed, separating out breaking changes (*major*), additions (*minor*) and fixes (*patch*) changes (you should see examples of this in previous entries of the [changelog](/changelog.md)).
+- Update the [unreleased changelog](/unreleased.md) with everything that has changed, separating out breaking changes (*major*), additions (*minor*) and fixes (*patch*) changes (you should see examples of this in previous entries of the [changelog](/changelog.md)).
   - Some useful commands for determining "what's changed?":
-    - `npm run lerna updated`
-    - `npm run lerna diff <package-name>`
-- Make sure you are an owner of the npm packages (speak to a member of the Backpack squad).
-- **Run `npm run release`** (this will run `lerna publish`). Do not run `npm publish`.
-- You’ll be asked to specify a new version for every package that has changed. Options are *patch*, *minor* or *major*. These should directly align to the entries you put in the [unreleased changelog](/unreleased.md) in step 1.
-- You’ll be asked at the end to confirm. Note you can still exit without making these changes.
+    - `git log --pretty=format:"* %s (%h)" $(git describe --tags --abbrev=0)...HEAD`
+- Make sure you are an owner of the npm package (speak to a member of the Backpack squad).
+- **Run `npm run release`**. Do not run `npm publish`.
+- You’ll be asked to specify a new version. Options are *patch*, *minor* or *major*. These should directly align to the entries you put in the [unreleased changelog](/unreleased.md) in step 1.
 - Move entries from [unreleased.md](/unreleased.md) to the [changelog](/changelog.md). Update the package versions for the new changes, and group them under a title with today’s date and a brief summary of what has changed.
 - Commit and push to master.
-
-Be aware that if `bpk-tokens` has changed, *all* packages in the repository will be updated as they all depend on `bpk-tokens`. Changing an existing token is almost always worth a "major" release, whereas adding a new token is usually a "minor" release.
 
 When a component is released for the first time on npm, remember to add the component to the Skyscanner organisation through the [npm UI](https://www.npmjs.com/settings/skyscanner/teams/team/backpack-react-native/access).
 
@@ -239,19 +235,12 @@ To publish it manually run:
 
 ```
 cd android
-./gradlew :<project-name>:publish
+./gradlew :backpack-react-native:publish
 ```
 
 #### Authentication
 
-To authenticate add the following properties to `android/local.properties`
-
-```
-jfrog_username=<your_name>
-jfrog_password=<your_password>
-```
-
-Alternatively you can set the env variables `JFROG_USERNAME` and `JFROG_PASSWORD`
+Follow the internal documentation to login gradle into the internal Artifactory.
 
 #### Versioning
 
@@ -261,7 +250,7 @@ If you want to publish test code set the env variable `SNAPSHOT=true`, this will
 
 ```
 cd android
-SNAPSHOT=true ./gradlew :<project-name>:publish
+SNAPSHOT=true ./gradlew :backpack-react-native:publish
 ```
 
 </details>
