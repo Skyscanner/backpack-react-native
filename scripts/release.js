@@ -18,7 +18,7 @@
 
 /* eslint-disable no-console */
 
-const { execSync, spawn } = require('child_process');
+const { spawn } = require('child_process');
 const fs = require('fs');
 
 const tmp = require('tmp');
@@ -28,10 +28,10 @@ const semver = require('semver');
 const releaseit = require('release-it');
 
 const root = process.cwd();
-const srcRoot = `${root}/src`;
-const distRoot = `${root}/dist`;
+const scriptsRoot = `${root}/scripts`;
 const androidAppRoot = `${root}/android`;
 const androidPackageName = 'backpack-react-native';
+const gradle = `${androidAppRoot}/gradlew`;
 
 const pkg = require('../package.json');
 
@@ -90,40 +90,77 @@ Check CONTRIBUTION.md to learn how to configure your local environment.
 
 For a complete log check:
   ${colors.yellow(`${logFileName}`)}\n`,
+
+  branchNotUpToDate: `Your local branch is not up to date with remote.
+
+Try running git fetch && git pull first.
+`,
+
+  stateNotPristine: logFileName =>
+    `Your local state is not pristine. Make sure those changes are intentional and commit them before proceeding.
+
+For a complete log check:
+  ${colors.yellow(logFileName)}
+`,
 };
 
 /**
- * Executes a gradle command inside the android project.
+ * Executes a shell command.
  * Note that by default this command will suppress stdout and stderr,
- * you need to provide both in case you want it to be logged.
+ * you need to provide both in case you want it to be logged. see [options]
  *
  * @example
  * ```js
- * gradleExec(['tasks'], process.stdout, process.stderr)
+ * shellExec('ls', ['tasks']);
  * ```
  *
- * @param {Array<String>} cmd the command
- * @param {WritableStream} stdout stream to redirect standard output
- * @param {WritableStream} stderr stream to redirect error output
+ * @param {String} cmd the command
+ * @param {Array<String>} args the command arguments
+ * @param {Object} [options={ cwd: root, stdout: null, sderr: null }] process options
  *
- * @returns {Promise} a promise object
+ * @returns {Promise} a promise object that will succeed when the exit code is 0 and fail otherwise.
  */
-const gradleExec = (cmd, stdout = null, stderr = null) => {
-  const gradle = spawn(`${androidAppRoot}/gradlew`, cmd, {
-    cwd: androidAppRoot,
-  });
+const shellExec = (cmd, args = [], options = {}) => {
+  const safeOptions = { cwd: root, stdout: null, stderr: null, ...options };
+  const { cwd, stdout, stderr } = safeOptions;
+  const shell = spawn(cmd, args, { cwd });
 
-  if (stdout) gradle.stdout.pipe(stdout);
-  if (stderr) gradle.stderr.pipe(stderr);
+  if (stdout) shell.stdout.pipe(stdout);
+  if (stderr) shell.stderr.pipe(stderr);
 
   return new Promise((resolve, reject) => {
-    gradle.on('close', code => {
+    shell.on('close', code => {
       if (code !== 0) {
         reject(code);
       } else {
-        resolve();
+        resolve(code);
       }
     });
+  });
+};
+
+const isBranchUpTodate = () =>
+  shellExec(`${scriptsRoot}/check-branch-up-to-date.sh`).catch(() => {
+    throw new Error(ERRORS.branchNotUpToDate);
+  });
+
+const isPristineState = () => {
+  const logFileName = tmp.tmpNameSync();
+  const logFile = fs.createWriteStream(logFileName);
+  return shellExec(`${scriptsRoot}/check-pristine-state`, [], {
+    stdout: logFile,
+    stderr: logFile,
+  }).catch(() => {
+    throw new Error(ERRORS.stateNotPristine(logFileName));
+  });
+};
+
+const isGradleAuthenticated = () => {
+  const checkMavenCredentials = `:${androidPackageName}:checkMavenCredentials`;
+  return shellExec(gradle, [checkMavenCredentials], {
+    cwd: androidAppRoot,
+  }).catch(() => {
+    throw new Error(ERRORS.invalidAndroidEnv(checkMavenCredentials));
   });
 };
 
@@ -132,36 +169,11 @@ const gradleExec = (cmd, stdout = null, stderr = null) => {
  *
  * @return {Promise} a promise object
  */
-function checkEnv() {
+async function checkEnv() {
   console.log('🤔  ', '> Checking enviroment');
-  const cmd = `:${androidPackageName}:checkMavenCredentials`;
-  return gradleExec([cmd]).catch(() => {
-    throw new Error(ERRORS.invalidAndroidEnv(cmd));
-  });
-}
-
-/**
- * Prepare the release package.
- * This consist manly of copying the contents of `scr` into `dist` and
- * moving the `js` folder up to the root folder.
- *
- * @return {undefined} undefined
- */
-function prepareRelease() {
-  console.log('🧹   ', '> Cleaning up');
-  execSync(`rm -rf ${distRoot} 2> /dev/null`);
-  execSync(`mkdir ${distRoot}`);
-
-  console.log('📦  ', '> Preparing package');
-  // cp -r src/* is much faster than copying file by file,
-  // to filter out files you don't want to publish edit `.npmignore`.
-  execSync(`cp -r ${srcRoot}/* ${distRoot}`);
-
-  // We move js packages up to the root folder so it can be imported direclty, e.g `backpack-react-native/bpk-component-button`
-  execSync(`mv ${distRoot}/js/* ${distRoot}`);
-  execSync(`rm -rf ${distRoot}/js`);
-
-  execSync('cp .npmignore package.json dist');
+  await isBranchUpTodate();
+  await isPristineState();
+  await isGradleAuthenticated();
 }
 
 /**
@@ -179,6 +191,7 @@ async function releaseIt(version) {
     },
     git: {
       requireCleanWorkingDir: true,
+      requireBranch: 'master',
     },
     prompt: {
       src: {
@@ -195,9 +208,13 @@ async function releaseIt(version) {
 
   console.log('🤖  ', '> Publishing Android package');
 
-  const cmd = `:${androidPackageName}:publish`;
+  const cmd = `:${androidPackageName}:publishToMavenLocal`;
   try {
-    await gradleExec(['-PembedDeps=true', cmd], logFile, logFile);
+    await shellExec(gradle, ['-PembedDeps=true', cmd], {
+      cwd: androidAppRoot,
+      stdout: logFile,
+      stderr: logFile,
+    });
   } catch {
     throw new Error(ERRORS.cantPublishAndroid(cmd, logFileName));
   }
@@ -208,7 +225,6 @@ async function release() {
     const { version } = await inquirer.prompt(questions);
 
     await checkEnv();
-    prepareRelease();
     await releaseIt(version);
 
     console.log(
