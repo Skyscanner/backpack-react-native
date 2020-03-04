@@ -1,5 +1,5 @@
 /*
- * Backpack for Android - Skyscanner's Design System
+ * Backpack - Skyscanner's Design System
  *
  * Copyright 2018-2020 Skyscanner Ltd
  *
@@ -17,6 +17,11 @@
  */
 
 /* eslint-disable no-console */
+
+/**
+ * Release script for backpack-react-native.
+ * Use the `--dry-run` flag to test it.
+ */
 
 const { spawn } = require('child_process');
 const fs = require('fs');
@@ -38,6 +43,8 @@ const pkg = require('../package.json');
 const major = semver.inc(pkg.version, 'major');
 const minor = semver.inc(pkg.version, 'minor');
 const patch = semver.inc(pkg.version, 'patch');
+
+const dryRun = process.argv[2] === '--dry-run';
 
 /**
  * List of possible versions to choose from for the new release
@@ -95,13 +102,6 @@ For a complete log check:
 
 Try running git fetch && git pull first.
 `,
-
-  stateNotPristine: logFileName =>
-    `Your local state is not pristine. Make sure those changes are intentional and commit them before proceeding.
-
-For a complete log check:
-  ${colors.yellow(logFileName)}
-`,
 };
 
 /**
@@ -144,17 +144,6 @@ const isBranchUpTodate = () =>
     throw new Error(ERRORS.branchNotUpToDate);
   });
 
-const isPristineState = () => {
-  const logFileName = tmp.tmpNameSync();
-  const logFile = fs.createWriteStream(logFileName);
-  return shellExec(`${scriptsRoot}/check-pristine-state`, [], {
-    stdout: logFile,
-    stderr: logFile,
-  }).catch(() => {
-    throw new Error(ERRORS.stateNotPristine(logFileName));
-  });
-};
-
 const isGradleAuthenticated = () => {
   const checkMavenCredentials = `:${androidPackageName}:checkMavenCredentials`;
   return shellExec(gradle, [checkMavenCredentials], {
@@ -172,7 +161,6 @@ const isGradleAuthenticated = () => {
 async function checkEnv() {
   console.log('🤔  ', '> Checking enviroment');
   await isBranchUpTodate();
-  await isPristineState();
   await isGradleAuthenticated();
 }
 
@@ -184,6 +172,9 @@ async function checkEnv() {
  */
 async function releaseIt(version) {
   const releaseOptions = {
+    'dry-run': dryRun,
+    // Don't ask before commiting and pushing
+    'non-interactive': true,
     increment: version,
     npm: {
       publish: true,
@@ -208,7 +199,7 @@ async function releaseIt(version) {
 
   console.log('🤖  ', '> Publishing Android package');
 
-  const cmd = `:${androidPackageName}:publishToMavenLocal`;
+  const cmd = `:${androidPackageName}:publish${dryRun ? 'ToMavenLocal' : ''}`;
   try {
     await shellExec(gradle, ['-PembedDeps=true', cmd], {
       cwd: androidAppRoot,
