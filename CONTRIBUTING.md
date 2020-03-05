@@ -235,7 +235,7 @@ To publish it manually run:
 
 ```
 cd android
-./gradlew :backpack-react-native:publish
+./gradlew -PinternalBuild=true :backpack-react-native:publish
 ```
 
 #### Authentication
@@ -250,7 +250,7 @@ If you want to publish test code set the env variable `SNAPSHOT=true`, this will
 
 ```
 cd android
-SNAPSHOT=true ./gradlew :backpack-react-native:publish
+SNAPSHOT=true ./gradlew -PinternalBuild=true :backpack-react-native:publish
 ```
 
 </details>
