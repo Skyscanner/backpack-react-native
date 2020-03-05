@@ -38,7 +38,7 @@ target 'Backpack Native' do
 
   # RN Bridging Pods
   pod 'Backpack', '~> 26.1'
-  pod 'BackpackReactNative', path: '../src/ios/BackpackReactNative', :modular_headers => false
+  pod 'BackpackReactNative', path: '../node_modules/backpack-react-native/ios/BackpackReactNative', :modular_headers => false
 
   # Third party pods
   pod 'react-native-maps', path: '../node_modules/react-native-maps', :modular_headers => false

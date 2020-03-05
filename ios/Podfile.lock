@@ -239,7 +239,7 @@ PODS:
 
 DEPENDENCIES:
   - Backpack (~> 26.1)
-  - BackpackReactNative (from `../src/ios/BackpackReactNative`)
+  - BackpackReactNative (from `../node_modules/backpack-react-native/ios/BackpackReactNative`)
   - BVLinearGradient (from `../node_modules/react-native-linear-gradient`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
@@ -283,7 +283,7 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   BackpackReactNative:
-    :path: "../src/ios/BackpackReactNative"
+    :path: "../node_modules/backpack-react-native/ios/BackpackReactNative"
   BVLinearGradient:
     :path: "../node_modules/react-native-linear-gradient"
   DoubleConversion:
@@ -378,6 +378,6 @@ SPEC CHECKSUMS:
   TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
   Yoga: f2a7cd4280bfe2cca5a7aed98ba0eb3d1310f18b
 
-PODFILE CHECKSUM: 7a9e70507ede74c2993ac17b4537b4d73d971821
+PODFILE CHECKSUM: 96058c29cb08879802ee58792f8878088268a3d3
 
 COCOAPODS: 1.8.1

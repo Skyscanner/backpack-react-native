@@ -20,7 +20,7 @@ import React, { type Node } from 'react';
 import { Platform } from 'react-native';
 import { USE_RELATIVE } from 'react-native-dotenv';
 
-import BpkThemeProvider from '../src/js/bpk-theming';
+import BpkThemeProvider from '../lib/bpk-theming';
 
 type Props = {
   children: Node,
