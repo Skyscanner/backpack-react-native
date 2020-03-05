@@ -9,20 +9,12 @@ if (localPropsFile.exists()) {
 
 def artifactoryURL = "https://artifactory.skyscannertools.net/artifactory/infrastructure-maven"
 
-project.ext.embedDeps = project.hasProperty("embedDeps") && project.embedDeps == 'true'
-
 task sourceJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
     classifier "source"
 }
 
 afterEvaluate { project ->
-    project.tasks.bundleReleaseAar.doFirst {
-        if (!project.ext.embedDeps) {
-            throw new IllegalStateException("To build bridges set the `embedDeps` prop to true. e.g. -PembedDeps=true")
-        }
-    }
-
     project.ext.getJFrogPassword = {
         if (project.hasProperty("SKYSCANNER_ARTIFACTORY_MAVEN_PASSWORD")) {
           return project.property("SKYSCANNER_ARTIFACTORY_MAVEN_PASSWORD")

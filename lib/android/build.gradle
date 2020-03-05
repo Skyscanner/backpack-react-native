@@ -1,22 +1,24 @@
-apply plugin: "com.android.library"
-
-apply plugin: 'kotlin-android'
-
-apply plugin: 'kotlin-android-extensions'
-
-// This should come after the kotlin plugins
-apply plugin: 'com.kezong.fat-aar'
-
-apply from: './gradle-maven-push.gradle'
-
-description='Bridge code for Backpack React Native'
-
-group='net.skyscanner.backpack'
-
-version=getVersionFromJsPackage(project)
+import groovy.json.JsonSlurper
 
 def safeExtGet(prop, fallback) {
   rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
+}
+
+def getVersionFromJsPackage(project) {
+  def packageJson = getPackageJson(project)
+  def version = packageJson.version
+
+  def isSnapshot = System.getenv("SNAPSHOT") ?: false
+  if (isSnapshot) {
+      version = version + "-SNAPSHOT"
+  }
+  return version
+}
+
+def getPackageJson(project) {
+  def packageJson = new File(project.projectDir, '../package.json').getText('UTF-8')
+  def jsonSlurper = new JsonSlurper()
+  return jsonSlurper.parseText(packageJson)
 }
 
 def _reactNativeVersion = safeExtGet("reactNative", "+")
@@ -24,6 +26,26 @@ def _compileSdkVersion = safeExtGet("compileSdkVersion", 28)
 def _targetSdkVersion = safeExtGet("targetSdkVersion", 28)
 def _minSdkVersion = safeExtGet("minSdkVersion", 21)
 def _buildToolsVersion = safeExtGet("buildToolsVersion", "28.0.3")
+def _internalBuild = safeExtGet("internalBuild", false)
+
+apply plugin: "com.android.library"
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+if (_internalBuild) {
+  // This should come after the kotlin plugins
+  apply plugin: 'com.kezong.fat-aar'
+
+  apply from: './gradle-maven-push.gradle'
+}
+
+description='Bridge code for Backpack React Native'
+
+group='net.skyscanner.backpack'
+
+version=getVersionFromJsPackage(project)
 
 android {
   compileSdkVersion _compileSdkVersion
@@ -40,7 +62,7 @@ android {
 dependencies {
   compileOnly "com.facebook.react:react-native:${_reactNativeVersion}"
   implementation "com.github.skyscanner:backpack-android:22.0.0"
-  if (project.ext.embedDeps) {
+  if (_internalBuild) {
     // embed deps will be added to the arr directly (fat-jar) and not as a dependency
     embed project(path: ':react-native-dark-mode', configuration: 'default')
   } else {

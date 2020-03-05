@@ -95,7 +95,7 @@ const ERRORS = {
 Check CONTRIBUTING.md to learn how to configure your local environment.
 
 For more details about this error execute:
-  ${colors.yellow(`(cd android && ./gradlew ${cmd})`)}\n`,
+  ${colors.yellow(`(cd ../android && ./gradlew ${cmd.join(' ')})`)}\n`,
 
   cantPublishAndroid: (
     cmd,
@@ -156,8 +156,11 @@ const isBranchUpTodate = () =>
   });
 
 const isGradleAuthenticated = () => {
-  const checkMavenCredentials = `:${androidPackageName}:checkMavenCredentials`;
-  return shellExec(gradle, [checkMavenCredentials], {
+  const checkMavenCredentials = [
+    '-PinternalBuild=true',
+    `:${androidPackageName}:checkMavenCredentials`,
+  ];
+  return shellExec(gradle, checkMavenCredentials, {
     cwd: androidAppRoot,
   }).catch(() => {
     throw new Error(ERRORS.invalidAndroidEnv(checkMavenCredentials));
@@ -211,7 +214,7 @@ async function releaseIt(version) {
 
   const cmd = `:${androidPackageName}:publish${dryRun ? 'ToMavenLocal' : ''}`;
   try {
-    await shellExec(gradle, ['-PembedDeps=true', cmd], {
+    await shellExec(gradle, ['-PinternalBuild=true', cmd], {
       cwd: androidAppRoot,
       stdout: logFile,
       stderr: logFile,

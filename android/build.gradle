@@ -1,5 +1,4 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
-import groovy.json.JsonSlurper
 
 buildscript {
     ext.kotlin_version = '1.3.21'
@@ -66,22 +65,5 @@ ext {
     supportLibVersion = "27.1.1"
     playServicesVersion = "xxx"
     androidMapsUtilsVersion = "0.5+"
-}
-
-def static getVersionFromJsPackage(project) {
-    def packageJson = getPackageJson(project)
-    def version = packageJson.version
-
-    def isSnapshot = System.getenv("SNAPSHOT") ?: false
-    if (isSnapshot) {
-        version = version + "-SNAPSHOT"
-    }
-
-    return version
-}
-
-def static getPackageJson(project) {
-    def packageJson = new File(project.projectDir, '../../package.json').getText('UTF-8')
-    def jsonSlurper = new JsonSlurper()
-    return jsonSlurper.parseText(packageJson)
+    internalBuild = project.hasProperty("internalBuild") && project.internalBuild
 }
