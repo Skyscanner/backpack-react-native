@@ -33,18 +33,29 @@ const semver = require('semver');
 const releaseit = require('release-it');
 
 const root = process.cwd();
-const scriptsRoot = `${root}/scripts`;
-const androidAppRoot = `${root}/android`;
+
+if (root.split('/').pop() !== 'dist') {
+  throw new Error(
+    'Release script should be executed inside `dist` folder. E.g. (cd dist && node ../scripts/release.js)',
+  );
+}
+
+const scriptsRoot = `${root}/../scripts`;
+const androidAppRoot = `${root}/../android`;
 const androidPackageName = 'backpack-react-native';
 const gradle = `${androidAppRoot}/gradlew`;
 
-const pkg = require('../package.json');
+const pkg = require('../lib/package.json');
 
 const major = semver.inc(pkg.version, 'major');
 const minor = semver.inc(pkg.version, 'minor');
 const patch = semver.inc(pkg.version, 'patch');
 
 const dryRun = process.argv[2] === '--dry-run';
+
+if (dryRun) {
+  console.log(colors.yellow('\n"dry-run" mode is on\n'));
+}
 
 /**
  * List of possible versions to choose from for the new release
@@ -178,7 +189,6 @@ async function releaseIt(version) {
     increment: version,
     npm: {
       publish: true,
-      publishPath: './dist',
     },
     git: {
       requireCleanWorkingDir: true,

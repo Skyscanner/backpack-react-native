@@ -36,17 +36,6 @@ fi
 
 mkdir -p "$DEST"
 
-cp -r src/* "$DEST"
+cp -r lib/* lib/.npmignore "$DEST"
 
-# We move js packages up to the root folder so it can be imported direclty, e.g `backpack-react-native/bpk-component-button`
-mv "$DEST"/js/* "$DEST"
-rm -rf "$DEST"/js
-
-# We link instead of copying because we want the version update to be applied
-# to the $DEST folder as well.
-#
-# The release script will run `npm version <version>` in the root folder and
-# then run `npm publish dist`
-ln -s $PWD/package.json "$DEST"
-
-cp README.md CHANGELOG.md LICENSE .npmignore dist
+cp README.md CHANGELOG.md LICENSE dist
