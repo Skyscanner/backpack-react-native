@@ -22,11 +22,14 @@ const { execSync } = require('child_process');
 const fs = require('fs');
 const { Transform } = require('stream');
 const path = require('path');
+const { promisify } = require('util');
 
 const colors = require('colors');
-const prompt = require('prompt');
+const inquirer = require('inquirer');
 const _ = require('lodash');
 const globby = require('globby');
+
+const existsP = promisify(fs.exists);
 
 const STORYBOOK_CONFIG_SPLIT_POINT_1 = 'configure(() => {';
 const STORYBOOK_CONFIG_SPLIT_POINT_2 = '}, module);';
@@ -74,17 +77,6 @@ const addValueToFile = (
   fs.writeFileSync(filename, newFileContent, 'utf8');
 };
 
-const schema = {
-  properties: {
-    name: {
-      description: "Enter the component name, e.g. 'banner-alert'",
-      pattern: /^[a-z-]+$/,
-      message: 'Use snake case, e.g. "banner-alert".',
-      required: true,
-    },
-  },
-};
-
 _.mixin({
   pascalCase: _.flow(_.camelCase, _.upperFirst),
 });
@@ -117,17 +109,12 @@ const Replacer = (source, destination) =>
     },
   });
 
-const createComponent = async (err, { name }) => {
-  if (err) {
-    console.error(err);
-    return;
-  }
-
-  const boilerplateComponentPath = `src/js/react-native-bpk-component-boilerplate`;
-  const newComponentPath = `src/js/react-native-bpk-component-${name}`;
+const createComponent = async name => {
+  const boilerplateComponentPath = `lib/bpk-component-boilerplate`;
+  const newComponentPath = `lib/bpk-component-${name}`;
   const storybookConfigFile = `storybook/storybook.js`;
   const spellingFile = `.spelling`;
-  const storybookImport = `require('../src/js/react-native-bpk-component-${name}/stories');`;
+  const storybookImport = `require('../lib/bpk-component-${name}/stories');`;
 
   const pascalCaseName = _.pascalCase(name);
 
@@ -154,12 +141,9 @@ const createComponent = async (err, { name }) => {
 
   const componentCreationProcess = async directoryAlreadyExists => {
     if (directoryAlreadyExists) {
-      console.error(
-        colors.red(
-          `Directory ${newComponentPath} already exists. New components must have a unique name.`,
-        ),
+      throw new Error(
+        `Directory ${newComponentPath} already exists. New components must have a unique name.`,
       );
-      return;
     }
 
     console.log(colors.yellow(`Creating ${newComponentPath}…`));
@@ -197,16 +181,36 @@ const createComponent = async (err, { name }) => {
 
     console.log(`Run tests with ${colors.cyan(`npm test`)}`);
     console.log(
-      `Run Storybook with ${colors.cyan(
+      `Run js code server with ${colors.cyan(
         `npm start`,
-      )}, then in another terminal run ${colors.cyan(
+      )}, in another terminal run ${colors.cyan(
         `npm run ios`,
-      )} and ${colors.cyan(`npm run android`)}`,
+      )} and ${colors.cyan(
+        `npm run android`,
+      )}, and finally in another terminal run ${colors.cyan(
+        'npm run storybook',
+      )}`,
     );
   };
 
-  fs.exists(newComponentPath, componentCreationProcess);
+  return existsP(newComponentPath).then(componentCreationProcess);
 };
 
-prompt.start();
-prompt.get(schema, createComponent);
+inquirer
+  .prompt([
+    {
+      name: 'name',
+      message: 'What is the name of the component you want to create?',
+      validate: name => {
+        if (!name.match(/^[a-z-]+$/)) {
+          return "Invalid component name, please use only letters and snake case. E.g. 'banner-alert'";
+        }
+        return true;
+      },
+    },
+  ])
+  .then(({ name }) => createComponent(name))
+  .catch(e => {
+    console.log(colors.red(`Something wrong! ${e.stack}`));
+    process.exit(1);
+  });
