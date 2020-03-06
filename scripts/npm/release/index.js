@@ -104,7 +104,12 @@ const isGradleAuthenticated = () => {
 };
 
 const isMasterBranch = () => {
-  if (shell.execSync('git rev-parse --abbrev-ref HEAD') !== 'master') {
+  if (
+    shell
+      .execSync('git rev-parse --abbrev-ref HEAD')
+      .toString()
+      .trim() !== 'master'
+  ) {
     throw new Error(ERRORS.branchNotMaster);
   }
 };
