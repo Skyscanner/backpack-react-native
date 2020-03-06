@@ -24,6 +24,17 @@ npm install backpack-react-native --save
   #### From source
 
   Our Android code is written in `Kotlin`, so in order to compile it from source you need to have `org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"` in the `classpath`.
+  
+  Add the following your root `build.gradle` file:
+
+  ```groovy
+  buildscript {
+    ext.kotlin_version = '1.3.21'
+    dependencies {
+      classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+  }
+  ```
 
   If you have defined project-wide properties in your root `build.gradle`, this library will detect the presence of the following properties:
 
