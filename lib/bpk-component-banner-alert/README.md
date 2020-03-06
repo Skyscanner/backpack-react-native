@@ -1,21 +1,19 @@
-# react-native-bpk-component-banner-alert
+# bpk-component-banner-alert
 
 > Backpack React Native banner alert component.
 
 ## Installation
 
-```sh
-npm install react-native-bpk-component-banner-alert --save-dev
-```
+Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.
 
 ## Usage
 
 ```js
 import React, { Component } from 'react';
 import { View, StyleSheet } from 'react-native';
-import BpkText from 'react-native-bpk-component-text';
+import BpkText from 'backpack-react-native/bpk-component-text';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
-import BpkBannerAlert, { ALERT_TYPES } from 'react-native-bpk-component-banner-alert';
+import BpkBannerAlert, { ALERT_TYPES } from 'backpack-react-native/bpk-component-banner-alert';
 
 const styles = StyleSheet.create({
   container: {

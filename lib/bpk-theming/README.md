@@ -1,20 +1,18 @@
-# react-native-bpk-theming
+# bpk-theming
 
 > Backpack React Native theming utilities.
 
 ## Installation
 
-```sh
-npm install react-native-bpk-theming --save-dev
-```
+Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.
 
 ## Usage
 
 ```js
 import { Component } from 'react';
 import { View } from 'react-native';
-import BpkThemeProvider from 'react-native-bpk-theming';
-import BpkButton from 'react-native-bpk-component-button';
+import BpkThemeProvider from 'backpack-react-native/bpk-theming';
+import BpkButton from 'backpack-react-native/bpk-component-button';
 
 const theme = {
   buttonPrimaryGradientStartColor: '#fce134',

@@ -1,12 +1,10 @@
-# react-native-bpk-component-navigation-bar
+# bpk-component-navigation-bar
 
 > Backpack React Native navigation bar component.
 
 ## Installation
 
-```sh
-npm install react-native-bpk-component-navigation-bar --save-dev
-```
+Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.
 
 ## Usage
 
@@ -25,7 +23,7 @@ import React from "react";
 import { I18nManager } from "react-native";
 import BpkNavigationBar, {
   BpkNavigationBarButtonAndroid
-} from "react-native-bpk-component-navigation-bar";
+} from "bpk-component-navigation-bar";
 
 const backIcon = () =>
   I18nManager.isRTL ? "native-android--forward" : "native-android--back";
@@ -51,7 +49,7 @@ import React from "react";
 import { I18nManager } from "react-native";
 import BpkNavigationBar, {
   BpkNavigationBarBackButtonIOS
-} from "react-native-bpk-component-navigation-bar";
+} from "bpk-component-navigation-bar";
 
 export default () => (
   <BpkNavigationBar
@@ -74,7 +72,7 @@ export default () => (
 Renders the navigation bar.
 
 ```js
-import BpkNavigationBar from 'react-native-bpk-component-navigation-bar'
+import BpkNavigationBar from 'backpack-react-native/bpk-component-navigation-bar'
 ```
 
 #### Props
@@ -119,7 +117,7 @@ PropTypes.shape({
 Renders bar buttons on Android only.
 
 ```js
-import { BpkNavigationBarButtonAndroid } from 'react-native-bpk-component-navigation-bar'
+import { BpkNavigationBarButtonAndroid } from 'backpack-react-native/bpk-component-navigation-bar'
 ```
 
 #### Props
@@ -138,7 +136,7 @@ import { BpkNavigationBarButtonAndroid } from 'react-native-bpk-component-naviga
 Renders a back button on iOS with optional support to show a title.
 
 ```js
-import { BpkNavigationBarBackButtonIOS } from 'react-native-bpk-component-navigation-bar'
+import { BpkNavigationBarBackButtonIOS } from 'backpack-react-native/bpk-component-navigation-bar'
 ```
 
 #### Props
@@ -154,7 +152,7 @@ import { BpkNavigationBarBackButtonIOS } from 'react-native-bpk-component-naviga
 Renders a text button on iOS.
 
 ```js
-import { BpkNavigationBarTextButtonIOS } from 'react-native-bpk-component-navigation-bar'
+import { BpkNavigationBarTextButtonIOS } from 'backpack-react-native/bpk-component-navigation-bar'
 ```
 
 #### Props
@@ -172,7 +170,7 @@ import { BpkNavigationBarTextButtonIOS } from 'react-native-bpk-component-naviga
 Renders a text button on iOS.
 
 ```js
-import { BpkNavigationBarIconButtonIOS } from 'react-native-bpk-component-navigation-bar'
+import { BpkNavigationBarIconButtonIOS } from 'backpack-react-native/bpk-component-navigation-bar'
 ```
 
 #### Props

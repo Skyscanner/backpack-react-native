@@ -1,12 +1,10 @@
-# react-native-bpk-component-section-list
+# bpk-component-section-list
 
 > Backpack React Native section list component.
 
 ## Installation
 
-```sh
-npm install react-native-bpk-component-section-list --save-dev
-```
+Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.
 
 ## Usage
 
@@ -19,7 +17,7 @@ import BpkSectionList, {
   BpkSectionListItemSeparator,
   BpkSectionListSearchField,
   BpkSectionListNoResultsText,
-} from 'react-native-bpk-component-section-list';
+} from 'backpack-react-native/bpk-component-section-list';
 
 const AIRPORTS = [
   {

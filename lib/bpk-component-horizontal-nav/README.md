@@ -1,18 +1,16 @@
-# react-native-bpk-component-horizontal-nav
+# bpk-component-horizontal-nav
 
 > Backpack React Native horizontal navigation component.
 
 ## Installation
 
-```sh
-npm install react-native-bpk-component-horizontal-nav --save-dev
-```
+Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.
 
 ## Usage
 
 ```js
 import React, { Component } from 'react';
-import BpkHorizontalNav, { BpkHorizontalNavItem } from 'react-native-bpk-component-horizontal-nav';
+import BpkHorizontalNav, { BpkHorizontalNavItem } from 'backpack-react-native/bpk-component-horizontal-nav';
 
 export default class App extends Component {
   constructor() {

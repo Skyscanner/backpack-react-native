@@ -1,19 +1,17 @@
-# react-native-bpk-component-star-rating
+# bpk-component-star-rating
 
 > Backpack React Native star rating component.
 
 ## Installation
 
-```sh
-npm install react-native-bpk-component-star-rating --save-dev
-```
+Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.
 
 ## Usage
 
 ```js
 import React, { Component } from 'react';
 import { View, StyleSheet } from 'react-native';
-import StarRating from 'react-native-bpk-component-star-rating';
+import StarRating from 'backpack-react-native/bpk-component-star-rating';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
 
 const styles = StyleSheet.create({

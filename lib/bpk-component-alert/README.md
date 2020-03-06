@@ -1,19 +1,17 @@
-# react-native-bpk-component-alert
+# bpk-component-alert
 
 > Backpack React Native alert component.
 
 ## Installation
 
-```sh
-npm install react-native-bpk-component-alert --save-dev
-```
+Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.
 
 ## Usage
 
 ```js
 import BpkAlert
 import React, { Component } from 'react';
-import BpkAlert from 'react-native-bpk-component-alert';
+import BpkAlert from 'backpack-react-native/bpk-component-alert';
 
 BpkAlert.alert(
   'Alert title',

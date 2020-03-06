@@ -1,21 +1,19 @@
-# react-native-bpk-component-touchable-overlay
+# bpk-component-touchable-overlay
 
 > Backpack React Native touchable overlay component.
 
 ## Installation
 
-```sh
-npm install react-native-bpk-component-touchable-overlay --save-dev
-```
+Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.
 
 ## Usage
 
 ```js
 import React, { Component } from 'react';
 import { View, StyleSheet } from 'react-native';
-import BpkText from 'react-native-bpk-component-text';
+import BpkText from 'backpack-react-native/bpk-component-text';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
-import BpkTouchableOverlay from 'react-native-bpk-component-touchable-overlay';
+import BpkTouchableOverlay from 'backpack-react-native/bpk-component-touchable-overlay';
 
 const styles = StyleSheet.create({
   container: {

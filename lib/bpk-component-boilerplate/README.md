@@ -1,12 +1,10 @@
-# react-native-bpk-component-boilerplate
+# bpk-component-boilerplate
 
 > Backpack React Native boilerplate component.
 
 ## Installation
 
-```sh
-npm install react-native-bpk-component-boilerplate --save-dev
-```
+Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.
 
 ## Usage
 
@@ -14,7 +12,7 @@ npm install react-native-bpk-component-boilerplate --save-dev
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
-import BpkBoilerplate from 'react-native-bpk-component-boilerplate';
+import BpkBoilerplate from 'backpack-react-native/bpk-component-boilerplate';
 
 const styles = StyleSheet.create({
   container: {

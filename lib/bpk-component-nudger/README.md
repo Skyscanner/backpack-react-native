@@ -1,18 +1,16 @@
-# react-native-bpk-component-nudger
+# bpk-component-nudger
 
 > Backpack React Native nudger component.
 
 ## Installation
 
-```sh
-npm install react-native-bpk-component-nudger --save-dev
-```
+Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.
 
 ## Usage
 
 ```js
 import React, { Component } from 'react';
-import BpkNudger from 'react-native-bpk-component-nudger';
+import BpkNudger from 'backpack-react-native/bpk-component-nudger';
 
 export default class App extends Component {
  constructor() {

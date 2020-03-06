@@ -1,12 +1,10 @@
-# react-native-bpk-component-carousel-indicator
+# bpk-component-carousel-indicator
 
 > Backpack React Native carousel indicators component.
 
 ## Installation
 
-```sh
-npm install react-native-bpk-component-carousel-indicator --save-dev
-```
+Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.
 
 ## Usage
 
@@ -14,7 +12,7 @@ npm install react-native-bpk-component-carousel-indicator --save-dev
 import React, { Component } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
-import BpkCarouselIndicator from 'react-native-bpk-component-carousel-indicator';
+import BpkCarouselIndicator from 'backpack-react-native/bpk-component-carousel-indicator';
 
 const styles = StyleSheet.create({
   container: {

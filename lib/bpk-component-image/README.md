@@ -1,12 +1,10 @@
-# react-native-bpk-component-image
+# bpk-component-image
 
 > Backpack React Native image component.
 
 ## Installation
 
-```sh
-npm install react-native-bpk-component-image --save-dev
-```
+Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.
 
 ## Usage
 
@@ -16,7 +14,7 @@ npm install react-native-bpk-component-image --save-dev
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { spacingBase, spacingLg } from 'bpk-tokens/tokens/base.react.native';
-import BpkImage from 'react-native-bpk-component-image';
+import BpkImage from 'backpack-react-native/bpk-component-image';
 
 const styles = StyleSheet.create({
   container: {
@@ -43,7 +41,7 @@ export default () => (
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { spacingBase, spacingLg } from 'bpk-tokens/tokens/base.react.native';
-import BpkImage, { withLoadingBehaviour } from 'react-native-bpk-component-image';
+import BpkImage, { withLoadingBehaviour } from 'backpack-react-native/bpk-component-image';
 
 const BpkImageWithLoading = withLoadingBehaviour(BpkImage);
 

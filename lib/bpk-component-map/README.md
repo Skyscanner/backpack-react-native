@@ -1,22 +1,18 @@
-# react-native-bpk-component-map
+# bpk-component-map
 
 > Backpack React Native map component.
 
 ## Installation
 
-```sh
-npm install react-native-bpk-component-map --save-dev
-```
-
-This package depends on [`react-native-maps`](https://github.com/react-community/react-native-maps) and its native components need to be integrated manually by following their [instructions](https://github.com/react-community/react-native-maps/blob/master/docs/installation.md).
+Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.
 
 ## Usage
 
-`react-native-bpk-component-map` is a thin wrapper around `react-native-maps`. It exports all the same components and values as `react-native-maps` so you should read their [documentation](https://github.com/react-community/react-native-maps).
+`bpk-component-map` is a thin wrapper around `react-native-maps`. It exports all the same components and values as `react-native-maps` so you should read their [documentation](https://github.com/react-community/react-native-maps).
 
 ```js
 import React from 'react';
-import BpkMapView from 'react-native-bpk-component-map';
+import BpkMapView from 'backpack-react-native/bpk-component-map';
 
 
 export default class App extends Component {

@@ -1,13 +1,10 @@
-# react-native-bpk-component-flat-list
+# bpk-component-flat-list
 
 > Backpack React Native flat list component.
 
 ## Installation
 
-```sh
-npm install react-native-bpk-component-flat-list --save-dev
-```
-
+Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.
 
 ## Usage
 
@@ -19,7 +16,7 @@ import BpkFlatList, {
   BpkFlatListItemSeparator,
   BpkFlatListSearchField,
   BpkFlatListNoResultsText,
-  } from 'react-native-bpk-component-flat-list';
+  } from 'backpack-react-native/bpk-component-flat-list';
 
 const COUNTRIES = [
   { id: 'DZ', name: 'Algeria' },

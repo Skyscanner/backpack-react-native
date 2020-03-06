@@ -1,12 +1,10 @@
-# react-native-bpk-component-chip
+# bpk-component-chip
 
 > Backpack React Native chip component.
 
 ## Installation
 
-```sh
-npm install react-native-bpk-component-chip --save-dev
-```
+Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.
 
 ## Usage
 
@@ -14,7 +12,7 @@ npm install react-native-bpk-component-chip --save-dev
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
-import BpkChip, { BpkDismissibleChip } from 'react-native-bpk-component-chip';
+import BpkChip, { BpkDismissibleChip } from 'backpack-react-native/bpk-component-chip';
 
 const styles = StyleSheet.create({
   container: {
