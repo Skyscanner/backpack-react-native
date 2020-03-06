@@ -40,6 +40,7 @@ const root = process.cwd();
 const scriptsRoot = `${root}/scripts`;
 const androidAppRoot = `${root}/android`;
 const distRoot = `${root}/dist`;
+const libRoot = `${root}/lib`;
 const androidPackageName = 'backpack-react-native';
 const gradle = `${androidAppRoot}/gradlew`;
 
@@ -143,11 +144,16 @@ async function checkEnv() {
  */
 async function releaseIt(version) {
   console.log('📠  ', '> Publishing js package');
-  shell.execSync(`npm version ${version} -m "Release %s"`, {
-    cwd: distRoot,
+  // We don't let npm tag and commit the version because it doesn't work unless it's run in the root folder
+  shell.execSync(`npm version ${version} --no-git-tag-version`, {
+    cwd: libRoot,
     dryRun,
   });
 
+  // Tag and commit the version
+  shell.execSync('git add .', { dryRun });
+  shell.execSync(`git commint -m"Release ${version}"`, { dryRun });
+  shell.execSync(`git tag v${version}`, { dryRun });
   shell.execSync('git push origin master', { dryRun });
   shell.execSync(`git push origin v${version}`, { dryRun });
 
