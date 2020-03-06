@@ -152,7 +152,7 @@ async function releaseIt(version) {
 
   // Tag and commit the version
   shell.execSync('git add .', { dryRun });
-  shell.execSync(`git commint -m"Release ${version}"`, { dryRun });
+  shell.execSync(`git commit -m"Release ${version}" --no-verify`, { dryRun });
   shell.execSync(`git tag v${version}`, { dryRun });
   shell.execSync('git push origin master', { dryRun });
   shell.execSync(`git push origin v${version}`, { dryRun });
