@@ -66,8 +66,8 @@
   },
   "documentation": {
     "packages": [
-      "react-native-bpk-appearance",
-      "react-native-bpk-component-calendar"
+      "bpk-appearance",
+      "bpk-component-calendar"
     ]
   },
   "devDependencies": {
