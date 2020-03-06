@@ -22,7 +22,7 @@
 
 const https = require('https');
 
-const pkg = require('../../package.json');
+const pkg = require('../../lib/package.json');
 const meta = require('../../meta.json');
 
 let failures = false;
