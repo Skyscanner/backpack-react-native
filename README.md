@@ -111,7 +111,7 @@ This package depends on [`react-native-maps`](https://github.com/react-community
       android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode">
   ```
 
-  This ensures the RN code will react to system wide changes to the current appearance.
+  This ensures the RN code will react to system-wide changes to the current appearance.
 
   #### Icons
 
