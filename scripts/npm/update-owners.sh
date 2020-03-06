@@ -24,7 +24,7 @@ if [ $# -eq 1 ]; then
 fi
   
 echo "$NPM_OWNERS"
-read -p "Do you want to add the above owners to all packages (y/n)? " confirm
+read -p "Do you want to add the above owners to this package (y/n)? " confirm
 
 if [ "$confirm" != "y" ]; then
   echo "Ok bye. 💁"
@@ -33,20 +33,13 @@ fi
 
 while read username
 do
-  for f in packages/*; do
-    package=`basename $f`
+  package=backpack-react-native
+  echo "Adding $username to $package."
+  npm owner add $username $package
 
-    if [ -d "$f" ] && [ -e "$f/package.json" ]; then
-      if [ -z "$(grep "\"private\": true" "$f/package.json")" ]; then
-        echo "Adding $username to $package."
-        npm owner add $username $package
-
-        if [ $? -ne 0 ]; then
-          exit $?
-        fi
-      fi
-    fi
-  done
+  if [ $? -ne 0 ]; then
+    exit $?
+  fi
 done <<< "$NPM_OWNERS"
 
 echo "Success. 🎉"
