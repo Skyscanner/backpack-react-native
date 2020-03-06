@@ -6,3 +6,4 @@ screenshots
 *-test.js
 stories.js
 __snapshots__
+*.mp4
