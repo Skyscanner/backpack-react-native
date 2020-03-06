@@ -38,4 +38,9 @@ mkdir -p "$DEST"
 
 cp -r lib/* lib/.npmignore "$DEST"
 
+# We link instead of copying because we want the version update to be applied
+# to the lib folder as well.
+#
+ln -s -f $PWD/lib/package.json "$DEST"
+
 cp README.md CHANGELOG.md LICENSE dist

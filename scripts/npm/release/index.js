@@ -23,29 +23,25 @@
  * Use the `--dry-run` flag to test it.
  */
 
-const { spawn } = require('child_process');
 const fs = require('fs');
 
 const tmp = require('tmp');
 const colors = require('colors');
 const inquirer = require('inquirer');
 const semver = require('semver');
-const releaseit = require('release-it');
+
+const pkg = require('../../../lib/package.json');
+
+const Shell = require('./shell');
+const ERRORS = require('./errors');
 
 const root = process.cwd();
 
-if (root.split('/').pop() !== 'dist') {
-  throw new Error(
-    'Release script should be executed inside `dist` folder. E.g. (cd dist && node ../scripts/release.js)',
-  );
-}
-
-const scriptsRoot = `${root}/../scripts`;
-const androidAppRoot = `${root}/../android`;
+const scriptsRoot = `${root}/scripts`;
+const androidAppRoot = `${root}/android`;
+const distRoot = `${root}/dist`;
 const androidPackageName = 'backpack-react-native';
 const gradle = `${androidAppRoot}/gradlew`;
-
-const pkg = require('../lib/package.json');
 
 const major = semver.inc(pkg.version, 'major');
 const minor = semver.inc(pkg.version, 'minor');
@@ -56,6 +52,8 @@ const dryRun = process.argv[2] === '--dry-run';
 if (dryRun) {
   console.log(colors.yellow('\n"dry-run" mode is on\n'));
 }
+
+const shell = Shell(root);
 
 /**
  * List of possible versions to choose from for the new release
@@ -86,72 +84,8 @@ const questions = [
   },
 ];
 
-/**
- * Custom errors with detailed explanations
- */
-const ERRORS = {
-  invalidAndroidEnv: cmd => `Your local environment is not ready to publish native Android bridges.
-
-Check CONTRIBUTING.md to learn how to configure your local environment.
-
-For more details about this error execute:
-  ${colors.yellow(`(cd ../android && ./gradlew ${cmd.join(' ')})`)}\n`,
-
-  cantPublishAndroid: (
-    cmd,
-    logFileName,
-  ) => `Unable to publish native code for Android bridges.
-To publish it manually execute:
-  ${colors.yellow(`(cd android && ./gradlew ${cmd})`)}
-
-Check CONTRIBUTION.md to learn how to configure your local environment.
-
-For a complete log check:
-  ${colors.yellow(`${logFileName}`)}\n`,
-
-  branchNotUpToDate: `Your local branch is not up to date with remote.
-
-Try running git fetch && git pull first.
-`,
-};
-
-/**
- * Executes a shell command.
- * Note that by default this command will suppress stdout and stderr,
- * you need to provide both in case you want it to be logged. see [options]
- *
- * @example
- * ```js
- * shellExec('ls', ['tasks']);
- * ```
- *
- * @param {String} cmd the command
- * @param {Array<String>} args the command arguments
- * @param {Object} [options={ cwd: root, stdout: null, sderr: null }] process options
- *
- * @returns {Promise} a promise object that will succeed when the exit code is 0 and fail otherwise.
- */
-const shellExec = (cmd, args = [], options = {}) => {
-  const safeOptions = { cwd: root, stdout: null, stderr: null, ...options };
-  const { cwd, stdout, stderr } = safeOptions;
-  const shell = spawn(cmd, args, { cwd });
-
-  if (stdout) shell.stdout.pipe(stdout);
-  if (stderr) shell.stderr.pipe(stderr);
-
-  return new Promise((resolve, reject) => {
-    shell.on('close', code => {
-      if (code !== 0) {
-        reject(code);
-      } else {
-        resolve(code);
-      }
-    });
-  });
-};
-
 const isBranchUpTodate = () =>
-  shellExec(`${scriptsRoot}/check-branch-up-to-date.sh`).catch(() => {
+  shell.spawn(`${scriptsRoot}/check-branch-up-to-date.sh`).catch(() => {
     throw new Error(ERRORS.branchNotUpToDate);
   });
 
@@ -160,11 +94,27 @@ const isGradleAuthenticated = () => {
     '-PinternalBuild=true',
     `:${androidPackageName}:checkMavenCredentials`,
   ];
-  return shellExec(gradle, checkMavenCredentials, {
-    cwd: androidAppRoot,
-  }).catch(() => {
-    throw new Error(ERRORS.invalidAndroidEnv(checkMavenCredentials));
-  });
+  return shell
+    .spawn(gradle, checkMavenCredentials, {
+      cwd: androidAppRoot,
+    })
+    .catch(() => {
+      throw new Error(ERRORS.invalidAndroidEnv(checkMavenCredentials));
+    });
+};
+
+const isMasterBranch = () => {
+  if (shell.execSync('git rev-parse --abbrev-ref HEAD') !== 'master') {
+    throw new Error(ERRORS.branchNotMaster);
+  }
+};
+
+const isCleanWorkingDirClean = () => {
+  try {
+    shell.execSync('git diff-index --quiet HEAD --');
+  } catch {
+    throw new Error(ERRORS.workingDirNotClean);
+  }
 };
 
 /**
@@ -176,6 +126,8 @@ async function checkEnv() {
   console.log('🤔  ', '> Checking enviroment');
   await isBranchUpTodate();
   await isGradleAuthenticated();
+  isMasterBranch();
+  isCleanWorkingDirClean();
 }
 
 /**
@@ -185,27 +137,18 @@ async function checkEnv() {
  * @returns {Promise} a promise object.
  */
 async function releaseIt(version) {
-  const releaseOptions = {
-    'dry-run': dryRun,
-    // Don't ask before commiting and pushing
-    'non-interactive': true,
-    increment: version,
-    npm: {
-      publish: true,
-    },
-    git: {
-      requireCleanWorkingDir: true,
-      requireBranch: 'master',
-    },
-    prompt: {
-      src: {
-        release: true,
-      },
-    },
-  };
-
   console.log('📠  ', '> Publishing js package');
-  await releaseit(releaseOptions);
+  shell.execSync(`npm version ${version} -m "Release %s"`, {
+    cwd: distRoot,
+    dryRun,
+  });
+
+  shell.execSync('git push origin master', { dryRun });
+  shell.execSync(`git push origin v${version}`, { dryRun });
+
+  shell.execSync(`npm publish . --tag latest ${dryRun ? '--dry-run' : ''}`, {
+    cwd: distRoot,
+  });
 
   const logFileName = tmp.tmpNameSync();
   const logFile = fs.createWriteStream(logFileName);
@@ -214,7 +157,7 @@ async function releaseIt(version) {
 
   const cmd = `:${androidPackageName}:publish${dryRun ? 'ToMavenLocal' : ''}`;
   try {
-    await shellExec(gradle, ['-PinternalBuild=true', cmd], {
+    await shell.spawn(gradle, ['-PinternalBuild=true', cmd], {
       cwd: androidAppRoot,
       stdout: logFile,
       stderr: logFile,
@@ -224,11 +167,29 @@ async function releaseIt(version) {
   }
 }
 
+const printChangelog = () => {
+  console.log(colors.white('\nChangelog:'));
+  const changes = shell
+    .execSync(
+      'git --no-pager log --pretty=format:"* %s (%h)" $(git describe --tags --abbrev=0)...HEAD',
+    )
+    .toString();
+
+  if (changes === '') {
+    console.log(colors.yellow('  no changes'));
+  } else {
+    console.log(changes);
+  }
+  console.log();
+};
+
 async function release() {
   try {
+    await checkEnv();
+    printChangelog();
+
     const { version } = await inquirer.prompt(questions);
 
-    await checkEnv();
     await releaseIt(version);
 
     console.log(
