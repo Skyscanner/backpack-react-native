@@ -137,7 +137,7 @@ This package depends on [`react-native-maps`](https://github.com/react-community
           <string>BpkIcon.ttf</string>
         </array>
       ```
-      if the entry `UIAppFonts` it's already there, just add `<string>BpkIcon.ttf</string>` inside the `<array>` like so
+      if the entry `UIAppFonts` is already there, just add `<string>BpkIcon.ttf</string>` inside the `<array>` like so
       ```
       <array>
           ... existing entries
