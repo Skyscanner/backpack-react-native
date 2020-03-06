@@ -1,11 +1,11 @@
-# react-native-bpk-component-animate-height
+# bpk-component-animate-height
 
 > Backpack React Native animate height component.
 
 ## Installation
 
 ```sh
-npm install react-native-bpk-component-animate-height --save-dev
+npm install bpk-component-animate-height --save-dev
 ```
 
 ## Usage
@@ -13,10 +13,10 @@ npm install react-native-bpk-component-animate-height --save-dev
 ```js
 import React, { Component } from 'react';
 import { View, StyleSheet } from 'react-native';
-import BpkText from 'react-native-bpk-component-text';
-import BpkButton from 'react-native-bpk-component-button';
+import BpkText from 'backpack-react-native/bpk-component-text';
+import BpkButton from 'backpack-react-native/bpk-component-button';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
-import BpkAnimateHeight from 'react-native-bpk-component-animate-height';
+import BpkAnimateHeight from 'backpack-react-native/bpk-component-animate-height';
 
 const styles = StyleSheet.create({
   container: {

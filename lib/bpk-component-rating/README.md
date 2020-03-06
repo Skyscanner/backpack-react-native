@@ -1,11 +1,11 @@
-# react-native-bpk-component-rating
+# bpk-component-rating
 
 > Backpack React Native rating component.
 
 ## Installation
 
 ```sh
-npm install react-native-bpk-component-rating --save
+npm install bpk-component-rating --save
 ```
 
 Because this package ships with native code, it is also necessary to add some native dependencies to your RN project:
@@ -14,18 +14,18 @@ Because this package ships with native code, it is also necessary to add some na
 
 Add the following configurations to gradle:
 
-  1. Define the `react-native-bpk-component-rating` project in your `settings.gradle` file:
+  1. Define the `bpk-component-rating` project in your `settings.gradle` file:
 
 ```groovy
-    include ':react-native-bpk-component-rating'
-    project(':react-native-bpk-component-rating').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-bpk-component-rating/src/android')
+    include ':bpk-component-rating'
+    project(':bpk-component-rating').projectDir = new File(rootProject.projectDir, '../node_modules/bpk-component-rating/src/android')
 ```
 
-  2. Add `react-native-bpk-component-rating` as a dependency in your app/module `build.gradle` file:
+  2. Add `bpk-component-rating` as a dependency in your app/module `build.gradle` file:
 
 ```groovy
     dependencies {
-      implementation project(':react-native-bpk-component-rating')
+      implementation project(':bpk-component-rating')
     }
 ```
 
@@ -48,7 +48,7 @@ Alternatively, the pre-compiled version is available on Skyscanner's internal Ar
 
 ```groovy
     dependencies {
-      implementation 'net.skyscanner.backpack:react-native-bpk-component-rating:<version>'
+      implementation 'net.skyscanner.backpack:bpk-component-rating:<version>'
     }
 ```
 
@@ -78,17 +78,17 @@ protected List<ReactPackage> getPackages() {
 Add a dependency to your Podfile using the path to the NPM package as follows:
 
 ```
-  pod 'react-native-bpk-component-rating', path: '../node_modules/react-native-bpk-component-rating'
+  pod 'bpk-component-rating', path: '../node_modules/bpk-component-rating'
 ```
 
-Note that the `react-native-bpk-component-rating` depends on [Backpack](https://cocoapods.org/pods/Backpack). If your Podfile also depends on this directly, both dependencies must be for compatible semver versions.
+Note that the `bpk-component-rating` depends on [Backpack](https://cocoapods.org/pods/Backpack). If your Podfile also depends on this directly, both dependencies must be for compatible semver versions.
 
 ## Usage
 
 ```javascript
 import React from 'react';
 import { View } from 'react-native';
-import BpkRating from 'react-native-bpk-component-rating';
+import BpkRating from 'backpack-react-native/bpk-component-rating';
 
 const ratings = () => (
   <View>

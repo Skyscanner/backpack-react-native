@@ -1,11 +1,11 @@
-# react-native-bpk-component-carousel
+# bpk-component-carousel
 
 > Backpack React Native carousel component.
 
 ## Installation
 
 ```sh
-npm install react-native-bpk-component-carousel --save-dev
+npm install bpk-component-carousel --save-dev
 ```
 
 ## Usage
@@ -14,8 +14,8 @@ npm install react-native-bpk-component-carousel --save-dev
 import React, { Component } from 'react';
 import { Image, View, StyleSheet } from 'react-native';
 import { spacingXl } from 'bpk-tokens/tokens/base.react.native';
-import BpkCarousel, { BpkCarouselItem } from 'react-native-bpk-component-carousel';
-import BpkImage, { withLoadingBehaviour } from 'react-native-bpk-component-image';
+import BpkCarousel, { BpkCarouselItem } from 'backpack-react-native/bpk-component-carousel';
+import BpkImage, { withLoadingBehaviour } from 'backpack-react-native/bpk-component-image';
 
 const WithLoadingBpkImage = withLoadingBehaviour(BpkImage);
 

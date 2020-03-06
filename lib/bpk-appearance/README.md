@@ -1,11 +1,11 @@
-# react-native-bpk-appearance
+# bpk-appearance
 
 > Backpack React Native appearance.
 
 ## Installation
 
 ```sh
-npm install react-native-bpk-appearance --save-dev
+npm install bpk-appearance --save-dev
 ```
 
 Because this package ships with native code, it is also necessary to add some native dependencies to your RN project:
@@ -23,18 +23,18 @@ Append `|uiMode` to the `android:configChanges` prop of `<activity>` in `Android
 
 Add the following configurations to gradle:
 
-1.  Define the `react-native-bpk-appearance` project in your `settings.gradle` file:
+1.  Define the `bpk-appearance` project in your `settings.gradle` file:
 
 ```groovy
-    include ':react-native-bpk-appearance'
-    project(':react-native-bpk-appearance').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-bpk-appearance/src/android')
+    include ':bpk-appearance'
+    project(':bpk-appearance').projectDir = new File(rootProject.projectDir, '../node_modules/bpk-appearance/src/android')
 ```
 
-2.  Add `react-native-bpk-appearance` as a dependency in your app/module `build.gradle` file:
+2.  Add `bpk-appearance` as a dependency in your app/module `build.gradle` file:
 
 ```groovy
     dependencies {
-      implementation project(':react-native-bpk-appearance')
+      implementation project(':bpk-appearance')
     }
 ```
 
@@ -57,7 +57,7 @@ Alternatively, the pre compiled version is available on Skyscanner's internal Ar
 
 ```groovy
     dependencies {
-      implementation 'net.skyscanner.backpack:react-native-bpk-appearance:<version>'
+      implementation 'net.skyscanner.backpack:bpk-appearance:<version>'
     }
 ```
 
@@ -85,7 +85,7 @@ protected List<ReactPackage> getPackages() {
 
 Add a dependency to your Podfile using the path to the NPM package as follows:
 
-      pod 'ReactNativeDarkMode', path: '../node_modules/react-native-bpk-appearance/node_modules/react-native-dark-mode/ReactNativeDarkMode.podspec'
+      pod 'ReactNativeDarkMode', path: '../node_modules/bpk-appearance/node_modules/react-native-dark-mode/ReactNativeDarkMode.podspec'
 
 ## Usage
 
@@ -94,7 +94,7 @@ First wrap your app with BpkAppearanceProvider
 ```js
 import {
   useBpkDynamicValue,
-} from 'react-native-bpk-appearance';
+} from 'backpack-react-native/bpk-appearance';
 
 const App = ({ children }) => (
   <BpkAppearanceProvider>
@@ -110,12 +110,12 @@ Now you can use the provided hooks to react to changes in the system appearance
 ```js
 import React from 'react';
 import { View } from 'react-native';
-import BpkImage from 'react-native-bpk-component-image';
+import BpkImage from 'backpack-react-native/bpk-component-image';
 import {
   BpkDynamicStyleSheet,
   useBpkDynamicStyleSheet,
   useBpkDynamicValue,
-} from 'react-native-bpk-appearance';
+} from 'backpack-react-native/bpk-appearance';
 import {
   backgroundDarkColor,
   backgroundLightColor,
@@ -155,12 +155,12 @@ For non-functional components use `BpkAppearanceConsumer` or `withBpkAppearance`
 ```js
 import React, { Component, type Config } from 'react';
 import { View } from 'react-native';
-import BpkText from 'react-native-bpk-component-text';
+import BpkText from 'backpack-react-native/bpk-component-text';
 import {
   BpkDynamicStyleSheet,
   unpackBpkDynamicValue,
   BpkAppearanceConsumer,
-} from 'react-native-bpk-appearance';
+} from 'backpack-react-native/bpk-appearance';
 import {
   backgroundDarkColor,
   backgroundLightColor,
@@ -207,13 +207,13 @@ export default BpkAppearanceConsumer;
 ```js
 import React, { Component, type Config } from 'react';
 import { View } from 'react-native';
-import BpkText from 'react-native-bpk-component-text';
+import BpkText from 'backpack-react-native/bpk-component-text';
 import {
   BpkDynamicStyleSheet,
   withBpkAppearance,
   unpackBpkDynamicValue,
   type WithBpkAppearanceInjectedProps,
-} from 'react-native-bpk-appearance';
+} from 'backpack-react-native/bpk-appearance';
 import {
   backgroundDarkColor,
   backgroundLightColor,
@@ -439,7 +439,7 @@ NOTE: If you are using a functional component use one of the provided hooks inst
 
 ```javascript
 import React, { type Config } from 'react';
-import { type WithBpkAppearanceInjectedProps, withBpkAppearance } from 'react-native-bpk-appearance';
+import { type WithBpkAppearanceInjectedProps, withBpkAppearance } from 'backpack-react-native/bpk-appearance';
 
 class MyComponent extends Component<Props & WithBpkAppearanceInjectedProps> {
  render() {

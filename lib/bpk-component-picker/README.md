@@ -1,11 +1,11 @@
-# react-native-bpk-component-picker
+# bpk-component-picker
 
 > Backpack React Native picker component.
 
 ## Installation
 
 ```sh
-npm install react-native-bpk-component-picker --save-dev
+npm install bpk-component-picker --save-dev
 ```
 
 ## Usage
@@ -14,8 +14,8 @@ npm install react-native-bpk-component-picker --save-dev
 import React, { Component } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
-import BpkPicker, { BpkPickerItem } from 'react-native-bpk-component-picker';
-import BpkSelect from 'react-native-bpk-component-select';
+import BpkPicker, { BpkPickerItem } from 'backpack-react-native/bpk-component-picker';
+import BpkSelect from 'backpack-react-native/bpk-component-select';
 
 const styles = StyleSheet.create({
   container: {

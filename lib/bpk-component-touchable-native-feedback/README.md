@@ -1,11 +1,11 @@
-# react-native-bpk-component-touchable-native-feedback
+# bpk-component-touchable-native-feedback
 
 > Backpack React Native touchable native feedback component.
 
 ## Installation
 
 ```sh
-npm install react-native-bpk-component-touchable-native-feedback --save-dev
+npm install bpk-component-touchable-native-feedback --save-dev
 ```
 
 ## Usage
@@ -13,9 +13,9 @@ npm install react-native-bpk-component-touchable-native-feedback --save-dev
 ```js
 import React, { Component } from 'react';
 import { View, StyleSheet } from 'react-native';
-import BpkText from 'react-native-bpk-component-text';
+import BpkText from 'backpack-react-native/bpk-component-text';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
-import BpkTouchableNativeFeedback from 'react-native-bpk-component-touchable-native-feedback';
+import BpkTouchableNativeFeedback from 'backpack-react-native/bpk-component-touchable-native-feedback';
 
 const styles = StyleSheet.create({
   container: {

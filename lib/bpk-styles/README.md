@@ -1,11 +1,11 @@
-# react-native-bpk-styles
+# bpk-styles
 
 > Common styles for React Native components.
 
 ## Installation
 
 ```sh
-npm install react-native-bpk-styles --save-dev
+npm install bpk-styles --save-dev
 ```
 
 ## Shadows
@@ -24,7 +24,7 @@ import {
   elevationBase,
   elevationLg
 } from 'bpk-tokens/tokens/base.react.native';
-import { shadows } from 'react-native-bpk-styles';
+import { shadows } from 'backpack-react-native/bpk-styles';
 
 const styles = StyleSheet.create({
   component: {
@@ -73,7 +73,7 @@ import {
   elevationBase,
   elevationLg
 } from "bpk-tokens/tokens/base.react.native";
-import { gradients } from "react-native-bpk-styles";
+import { gradients } from "bpk-styles";
 
 const MyComponent = props => {
   return (

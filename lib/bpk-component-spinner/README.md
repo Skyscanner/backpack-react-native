@@ -1,11 +1,11 @@
-# react-native-bpk-component-spinner
+# bpk-component-spinner
 
 > Backpack React Native spinner component.
 
 ## Installation
 
 ```sh
-npm install react-native-bpk-component-spinner --save-dev
+npm install bpk-component-spinner --save-dev
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm install react-native-bpk-component-spinner --save-dev
 ```js
 import React, { Component } from 'react';
 import { View, StyleSheet, Text } from 'react-native';
-import BpkSpinner from 'react-native-bpk-component-spinner';
+import BpkSpinner from 'backpack-react-native/bpk-component-spinner';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
 
 const styles = StyleSheet.create({

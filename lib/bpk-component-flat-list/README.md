@@ -1,11 +1,11 @@
-# react-native-bpk-component-flat-list
+# bpk-component-flat-list
 
 > Backpack React Native flat list component.
 
 ## Installation
 
 ```sh
-npm install react-native-bpk-component-flat-list --save-dev
+npm install bpk-component-flat-list --save-dev
 ```
 
 
@@ -19,7 +19,7 @@ import BpkFlatList, {
   BpkFlatListItemSeparator,
   BpkFlatListSearchField,
   BpkFlatListNoResultsText,
-  } from 'react-native-bpk-component-flat-list';
+  } from 'backpack-react-native/bpk-component-flat-list';
 
 const COUNTRIES = [
   { id: 'DZ', name: 'Algeria' },

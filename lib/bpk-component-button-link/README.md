@@ -1,4 +1,4 @@
-# react-native-bpk-component-button-link
+# bpk-component-button-link
 
 > Backpack React Native button link component.
 
@@ -6,17 +6,17 @@
 
 1. Install the npm package:
 ```sh
-npm install react-native-bpk-component-button-link --save-dev
+npm install bpk-component-button-link --save-dev
 ```
 
-2. `react-native-bpk-component-button-link` depends on [react-native-bpk-component-icon](https://www.npmjs.com/package/react-native-bpk-component-icon). Make sure to follow the installation guide for the icon component for the different platforms.
+2. `bpk-component-button-link` depends on [bpk-component-icon](https://www.npmjs.com/package/bpk-component-icon). Make sure to follow the installation guide for the icon component for the different platforms.
 
 ## Usage
 
 ```js
 import { View } from 'react-native';
 import React, { Component } from 'react';
-import BpkButtonLink from 'react-native-bpk-component-button-link';
+import BpkButtonLink from 'backpack-react-native/bpk-component-button-link';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
 
 const styles = StyleSheet.create({

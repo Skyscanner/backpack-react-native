@@ -1,11 +1,11 @@
-# react-native-bpk-component-panel
+# bpk-component-panel
 
 > Backpack React Native panel component.
 
 ## Installation
 
 ```sh
-npm install react-native-bpk-component-panel --save-dev
+npm install bpk-component-panel --save-dev
 ```
 
 ## Usage
@@ -13,8 +13,8 @@ npm install react-native-bpk-component-panel --save-dev
 ```js
 import React, { Component } from 'react';
 import { View, StyleSheet, Text } from 'react-native';
-import BpkPanel from 'react-native-bpk-component-panel';
-import BpkText from 'react-native-bpk-component-text';
+import BpkPanel from 'backpack-react-native/bpk-component-panel';
+import BpkText from 'backpack-react-native/bpk-component-text';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
 
 const styles = StyleSheet.create({
@@ -50,9 +50,9 @@ export default class App extends Component {
 ```js
 import React, { Component } from 'react';
 import { View, StyleSheet, Text } from 'react-native';
-import BpkText from 'react-native-bpk-component-text';
+import BpkText from 'backpack-react-native/bpk-component-text';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
-import BpkPanel, { withDivider } from 'react-native-bpk-component-panel';
+import BpkPanel, { withDivider } from 'backpack-react-native/bpk-component-panel';
 
 const BpkPanelWithDivider = withDivider(BpkPanel);
 

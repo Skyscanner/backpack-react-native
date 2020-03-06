@@ -1,4 +1,4 @@
-# react-native-bpk-component-button
+# bpk-component-button
 
 > Backpack React Native button component.
 
@@ -6,26 +6,26 @@
 
 1. Install the npm package:
 ```sh
-npm install react-native-bpk-component-button --save-dev
+npm install bpk-component-button --save-dev
 ```
 
 2. Add some dependencies to your Podfile (iOS Only):
 ```sh
 pod 'Yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
 pod 'React', :path => '../node_modules/react-native'
-pod 'BVLinearGradient', :path => '../node_modules/react-native-bpk-component-button/node_modules/react-native-linear-gradient'
+pod 'BVLinearGradient', :path => '../node_modules/bpk-component-button/node_modules/react-native-linear-gradient'
 ```
 
-3. `react-native-bpk-component-button` depends on [react-native-bpk-component-icon](https://www.npmjs.com/package/react-native-bpk-component-icon) make sure to follow the installation guide for the icon component for the different platforms
+3. `bpk-component-button` depends on [bpk-component-icon](https://www.npmjs.com/package/bpk-component-icon) make sure to follow the installation guide for the icon component for the different platforms
 
-**Note:** This is necessary because `react-native-bpk-component-button` depends on [react-native-linear-gradient](https://github.com/react-native-community/react-native-linear-gradient).
+**Note:** This is necessary because `bpk-component-button` depends on [react-native-linear-gradient](https://github.com/react-native-community/react-native-linear-gradient).
 
 ## Usage
 
 ```js
 import { StyleSheet, View } from 'react-native';
 import React, { Component } from 'react';
-import BpkButton, { BUTTON_TYPES, ICON_ALIGNMENTS } from 'react-native-bpk-component-button';
+import BpkButton, { BUTTON_TYPES, ICON_ALIGNMENTS } from 'backpack-react-native/bpk-component-button';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
 
 const styles = StyleSheet.create({

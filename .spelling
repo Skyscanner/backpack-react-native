@@ -325,7 +325,10 @@ xxxl
 
 # Package names
 bpk-animate-height
+bpk-appearance
 bpk-component-accordion
+bpk-component-alert
+bpk-component-animate-height
 bpk-component-autosuggest
 bpk-component-badge
 bpk-component-banner-alert
@@ -335,8 +338,11 @@ bpk-component-boilerplate
 bpk-component-breadcrumb
 bpk-component-breakpoint
 bpk-component-button
+bpk-component-button-link
 bpk-component-calendar
 bpk-component-card
+bpk-component-carousel
+bpk-component-carousel-indicator
 bpk-component-checkbox
 bpk-component-chip
 bpk-component-close-button
@@ -349,6 +355,7 @@ bpk-component-description-list
 bpk-component-dialog
 bpk-component-drawer
 bpk-component-fieldset
+bpk-component-flat-list
 bpk-component-form-validation
 bpk-component-grid
 bpk-component-grid-toggle
@@ -372,10 +379,12 @@ bpk-component-nudger
 bpk-component-pagination
 bpk-component-panel
 bpk-component-paragraph
+bpk-component-picker
 bpk-component-phone-input
 bpk-component-popover
 bpk-component-progress
 bpk-component-radio
+bpk-component-rating
 bpk-component-router-link
 bpk-component-rtl-toggle
 bpk-component-scrollable-calendar
@@ -384,13 +393,17 @@ bpk-component-select
 bpk-component-slider
 bpk-component-spinner
 bpk-component-star-rating
+bpk-component-switch
 bpk-component-table
 bpk-component-text
 bpk-component-textarea
+bpk-component-text-input
 bpk-component-theme-toggle
 bpk-component-ticket
 bpk-component-tile
 bpk-component-tooltip
+bpk-component-touchable-native-feedback
+bpk-component-touchable-overlay
 bpk-dialog-ios
 bpk-docs
 bpk-mixins
@@ -398,6 +411,7 @@ bpk-react-utils
 bpk-scrim-utils
 bpk-stylesheets
 bpk-svgs
+bpk-styles
 bpk-tether
 bpk-theming
 bpk-tokens

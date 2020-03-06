@@ -1,11 +1,11 @@
-# react-native-bpk-component-select
+# bpk-component-select
 
 > Backpack React Native select component.
 
 ## Installation
 
 ```sh
-npm install react-native-bpk-component-select --save-dev
+npm install bpk-component-select --save-dev
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ npm install react-native-bpk-component-select --save-dev
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
-import BpkSelect from 'react-native-bpk-component-select';
+import BpkSelect from 'backpack-react-native/bpk-component-select';
 
 const styles = StyleSheet.create({
   container: {

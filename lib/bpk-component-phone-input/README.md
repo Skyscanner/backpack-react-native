@@ -1,11 +1,11 @@
-# react-native-bpk-component-phone-input
+# bpk-component-phone-input
 
 > Backpack React Native telephone input component.
 
 ## Installation
 
 ```sh
-npm install react-native-bpk-component-phone-input --save-dev
+npm install bpk-component-phone-input --save-dev
 ```
 
 ## Data format
@@ -31,7 +31,7 @@ Optionally, you may supply a list of suggested ids which are your best guess at 
 ```js
 import React, { Component } from 'react';
 import { Image } from 'react-native';
-import { BpkDialingCodeList } from 'react-native-bpk-component-phone-input';
+import { BpkDialingCodeList } from 'backpack-react-native/bpk-component-phone-input';
 
 const CODES = [
   { id: 'DZ', dialingCode: '+213', name: 'Algeria' },
@@ -85,11 +85,11 @@ import { Image } from 'react-native';
 import {
   BpkDialingCodeList,
   getFilteredDialingCodes,
-} from 'react-native-bpk-component-phone-input';
+} from 'backpack-react-native/bpk-component-phone-input';
 import {
   BpkSectionListNoResultsText,
   BpkSectionListSearchField,
-} from 'react-native-bpk-component-section-list';
+} from 'backpack-react-native/bpk-component-section-list';
 
 const CODES = [
   { id: 'DZ', dialingCode: '+213', name: 'Algeria' },
@@ -169,7 +169,7 @@ Is an instance of React Native's [SectionList](https://facebook.github.io/react-
 ```js
 import React, { Component } from 'react';
 import { Image } from 'react-native';
-import { BpkPhoneNumberInput } from 'react-native-bpk-component-phone-input';
+import { BpkPhoneNumberInput } from 'backpack-react-native/bpk-component-phone-input';
 
 const CODES = [
   { id: 'DZ', dialingCode: '+213', name: 'Algeria' },
@@ -212,7 +212,7 @@ Inherits all props from [`BpkTextInput`](https://backpack.github.io/components/n
 ```js
 import React, { Component } from 'react';
 import { Image } from 'react-native';
-import { BpkFlag } from 'react-native-bpk-component-phone-input';
+import { BpkFlag } from 'backpack-react-native/bpk-component-phone-input';
 
 export default class App extends Component {
   render() {

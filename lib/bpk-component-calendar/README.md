@@ -1,11 +1,11 @@
-# react-native-bpk-component-calendar
+# bpk-component-calendar
 
 > Backpack React Native calendar component.
 
 ## Installation
 
 ```sh
-npm install react-native-bpk-component-calendar --save-dev
+npm install bpk-component-calendar --save-dev
 ```
 
 Because this package ships with native code, it is also necessary to add some native dependencies to your RN project:
@@ -14,18 +14,18 @@ Because this package ships with native code, it is also necessary to add some na
 
 Add the following configurations to gradle:
 
-1.  Define the `react-native-bpk-component-calendar` project in your `settings.gradle` file:
+1.  Define the `bpk-component-calendar` project in your `settings.gradle` file:
 
 ```groovy
-    include ':react-native-bpk-component-calendar'
-    project(':react-native-bpk-component-calendar').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-bpk-component-calendar/src/android')
+    include ':bpk-component-calendar'
+    project(':bpk-component-calendar').projectDir = new File(rootProject.projectDir, '../node_modules/bpk-component-calendar/src/android')
 ```
 
-2.  Add `react-native-bpk-component-calendar` as a dependency in your app/module `build.gradle` file:
+2.  Add `bpk-component-calendar` as a dependency in your app/module `build.gradle` file:
 
 ```groovy
     dependencies {
-      implementation project(':react-native-bpk-component-calendar')
+      implementation project(':bpk-component-calendar')
     }
 ```
 
@@ -48,7 +48,7 @@ Alternatively, the pre compiled version is available on Skyscanner's internal Ar
 
 ```groovy
     dependencies {
-      implementation 'net.skyscanner.backpack:react-native-bpk-component-calendar:<version>'
+      implementation 'net.skyscanner.backpack:bpk-component-calendar:<version>'
     }
 ```
 
@@ -76,9 +76,9 @@ protected List<ReactPackage> getPackages() {
 
 Add a dependency to your Podfile using the path to the NPM package as follows:
 
-      pod 'react-native-bpk-component-calendar', path: '../node_modules/react-native-bpk-component-calendar'
+      pod 'bpk-component-calendar', path: '../node_modules/bpk-component-calendar'
 
-Note that the `react-native-bpk-component-calendar` depends on [Backpack](https://cocoapods.org/pods/Backpack). If your Podfile also depends on this directly, both dependencies must be for compatible semver versions.
+Note that the `bpk-component-calendar` depends on [Backpack](https://cocoapods.org/pods/Backpack). If your Podfile also depends on this directly, both dependencies must be for compatible semver versions.
 
 ## Time Zones
 
@@ -107,7 +107,7 @@ const formattedDate = date.toLocaleDateString(locale, { timeZone: 'UTC' });
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
-import BpkCalendar, { SELECTION_TYPES } from 'react-native-bpk-component-calendar';
+import BpkCalendar, { SELECTION_TYPES } from 'backpack-react-native/bpk-component-calendar';
 
 class App extends Component {
   constructor(props) {

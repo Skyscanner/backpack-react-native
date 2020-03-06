@@ -1,11 +1,11 @@
-# react-native-bpk-component-dialog
+# bpk-component-dialog
 
 > Backpack React Native dialog dialog.
 
 ## Installation
 
 ```sh
-npm install react-native-bpk-component-dialog --save-dev
+npm install bpk-component-dialog --save-dev
 ```
 
 Because this package ships with native code, it is also necessary to add some native dependencies to your RN project:
@@ -14,18 +14,18 @@ Because this package ships with native code, it is also necessary to add some na
 
 Add the following configurations to gradle:
 
-  1. Define the `react-native-bpk-component-dialog` project in your `settings.gradle` file:
+  1. Define the `bpk-component-dialog` project in your `settings.gradle` file:
 
 ```groovy
-    include ':react-native-bpk-component-dialog'
-    project(':react-native-bpk-component-dialog').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-bpk-component-dialog/src/android')
+    include ':bpk-component-dialog'
+    project(':bpk-component-dialog').projectDir = new File(rootProject.projectDir, '../node_modules/bpk-component-dialog/src/android')
 ```
 
-  2. Add `react-native-bpk-component-dialog` as a dependency in your app/module `build.gradle` file:
+  2. Add `bpk-component-dialog` as a dependency in your app/module `build.gradle` file:
 
 ```groovy
     dependencies {
-      implementation project(':react-native-bpk-component-dialog')
+      implementation project(':bpk-component-dialog')
     }
 ```
 
@@ -48,7 +48,7 @@ Alternatively, the pre compiled version is available on Skyscanner's internal Ar
 
 ```groovy
     dependencies {
-      implementation 'net.skyscanner.backpack:react-native-bpk-component-dialog:<version>'
+      implementation 'net.skyscanner.backpack:bpk-component-dialog:<version>'
     }
 ```
 
@@ -78,10 +78,10 @@ protected List<ReactPackage> getPackages() {
 Add a dependency to your Podfile using the path to the NPM package as follows:
 
 ```
-  pod 'react-native-bpk-component-dialog', path: '../node_modules/react-native-bpk-component-dialog'
+  pod 'bpk-component-dialog', path: '../node_modules/bpk-component-dialog'
 ```
 
-Note that the `react-native-bpk-component-dialog` depends on [Backpack](https://cocoapods.org/pods/Backpack). If your Podfile also depends on this directly, both dependencies must be for compatible semver versions.
+Note that the `bpk-component-dialog` depends on [Backpack](https://cocoapods.org/pods/Backpack). If your Podfile also depends on this directly, both dependencies must be for compatible semver versions.
 
 ## Usage
 
@@ -89,9 +89,9 @@ Note that the `react-native-bpk-component-dialog` depends on [Backpack](https://
 ```js
 import React, { Component } from 'react';
 import { View } from 'react-native';
-import BpkButton from 'react-native-bpk-component-button';
-import { icons } from 'react-native-bpk-component-icon';
-import BpkDialog, { DIALOG_TYPE, BUTTON_TYPE } from 'react-native-bpk-component-dialog';
+import BpkButton from 'backpack-react-native/bpk-component-button';
+import { icons } from 'backpack-react-native/bpk-component-icon';
+import BpkDialog, { DIALOG_TYPE, BUTTON_TYPE } from 'backpack-react-native/bpk-component-dialog';
 
 class App extends Component {
   constructor(props) {

@@ -1,11 +1,11 @@
-# react-native-bpk-theming
+# bpk-theming
 
 > Backpack React Native theming utilities.
 
 ## Installation
 
 ```sh
-npm install react-native-bpk-theming --save-dev
+npm install bpk-theming --save-dev
 ```
 
 ## Usage
@@ -13,8 +13,8 @@ npm install react-native-bpk-theming --save-dev
 ```js
 import { Component } from 'react';
 import { View } from 'react-native';
-import BpkThemeProvider from 'react-native-bpk-theming';
-import BpkButton from 'react-native-bpk-component-button';
+import BpkThemeProvider from 'backpack-react-native/bpk-theming';
+import BpkButton from 'backpack-react-native/bpk-component-button';
 
 const theme = {
   buttonPrimaryGradientStartColor: '#fce134',

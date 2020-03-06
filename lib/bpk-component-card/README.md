@@ -1,11 +1,11 @@
-# react-native-bpk-component-card
+# bpk-component-card
 
 > Backpack React Native card component.
 
 ## Installation
 
 ```sh
-npm install react-native-bpk-component-card --save-dev
+npm install bpk-component-card --save-dev
 ```
 
 ## Usage
@@ -13,8 +13,8 @@ npm install react-native-bpk-component-card --save-dev
 ```js
 import React, { Component } from 'react';
 import { View, StyleSheet, Text } from 'react-native';
-import BpkCard from 'react-native-bpk-component-card';
-import BpkText from 'react-native-bpk-component-text';
+import BpkCard from 'backpack-react-native/bpk-component-card';
+import BpkText from 'backpack-react-native/bpk-component-text';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
 
 const styles = StyleSheet.create({
@@ -67,9 +67,9 @@ export default class App extends Component {
 ```js
 import React, { Component } from 'react';
 import { View, StyleSheet, Text } from 'react-native';
-import BpkText from 'react-native-bpk-component-text';
+import BpkText from 'backpack-react-native/bpk-component-text';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
-import BpkCard, { CORNER_STYLES, withDivider } from 'react-native-bpk-component-card';
+import BpkCard, { CORNER_STYLES, withDivider } from 'backpack-react-native/bpk-component-card';
 
 const BpkCardWithDivider = withDivider(BpkCard);
 

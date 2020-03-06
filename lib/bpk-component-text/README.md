@@ -1,11 +1,11 @@
-# react-native-bpk-component-text
+# bpk-component-text
 
 > Backpack React Native text component.
 
 ## Installation
 
 ```sh
-npm install react-native-bpk-component-text --save-dev
+npm install bpk-component-text --save-dev
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm install react-native-bpk-component-text --save-dev
 ```js
 import React, { Component } from 'react';
 import { View, StyleSheet } from 'react-native';
-import BpkText, { WEIGHT_STYLES } from 'react-native-bpk-component-text';
+import BpkText, { WEIGHT_STYLES } from 'backpack-react-native/bpk-component-text';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
 
 const styles = StyleSheet.create({

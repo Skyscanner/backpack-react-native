@@ -1,11 +1,11 @@
-# react-native-bpk-component-badge
+# bpk-component-badge
 
 > Backpack React Native badge component.
 
 ## Installation
 
 ```sh
-npm install react-native-bpk-component-badge --save-dev
+npm install bpk-component-badge --save-dev
 ```
 
 ## Usage
@@ -13,8 +13,8 @@ npm install react-native-bpk-component-badge --save-dev
 ```js
 import React, { Component } from 'react';
 import { View, StyleSheet } from 'react-native';
-import BpkBadge, { BpkBadgeIcons, BADGE_TYPES, BADGE_DOCKED_TYPES } from 'react-native-bpk-component-badge';
-import BpkIcon, { icons } from 'react-native-bpk-component-icon';
+import BpkBadge, { BpkBadgeIcons, BADGE_TYPES, BADGE_DOCKED_TYPES } from 'backpack-react-native/bpk-component-badge';
+import BpkIcon, { icons } from 'backpack-react-native/bpk-component-icon';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
 
 const styles = StyleSheet.create({

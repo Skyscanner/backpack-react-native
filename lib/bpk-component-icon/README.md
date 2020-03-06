@@ -1,11 +1,11 @@
-# react-native-bpk-component-icon
+# bpk-component-icon
 
 > Backpack React Native icon component.
 
 ## Installation
 
 ```sh
-npm install react-native-bpk-component-icon --save-dev
+npm install bpk-component-icon --save-dev
 ```
 
 ### iOS installation
@@ -36,7 +36,7 @@ This method has the advantage of fonts being copied from this module at build ti
 Edit `android/app/build.gradle` ( NOT `android/build.gradle` ) and add the following:
 
 ```
-apply from: "node_modules/react-native-bpk-component-icon/fonts.gradle"
+apply from: "node_modules/bpk-component-icon/fonts.gradle"
 ```
 
 ## Usage
@@ -44,7 +44,7 @@ apply from: "node_modules/react-native-bpk-component-icon/fonts.gradle"
 ```js
 import { View } from 'react-native';
 import React, { Component } from 'react';
-import BpkIcon, { icons } from 'react-native-bpk-component-icon';
+import BpkIcon, { icons } from 'backpack-react-native/bpk-component-icon';
 import { spacingBase, colorSkyBlue } from 'bpk-tokens/tokens/base.react.native';
 
 const styles = StyleSheet.create({
@@ -79,7 +79,7 @@ export default class App extends Component {
 ```js
 import { View } from 'react-native';
 import React, { Component } from 'react';
-import BpkIcon, { icons, withRtlSupport } from 'react-native-bpk-component-icon';
+import BpkIcon, { icons, withRtlSupport } from 'backpack-react-native/bpk-component-icon';
 import { spacingBase, colorSkyBlue } from 'bpk-tokens/tokens/base.react.native';
 
 const BpkIconwithRtlSupport = withRtlSupport(BpkIcon);

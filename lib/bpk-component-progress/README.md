@@ -1,11 +1,11 @@
-# react-native-bpk-component-progress
+# bpk-component-progress
 
 > Backpack React Native Progress component.
 
 ## Installation
 
 ```sh
-npm install react-native-bpk-component-progress --save-dev
+npm install bpk-component-progress --save-dev
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm install react-native-bpk-component-progress --save-dev
 ```js
 import React, { Component } from 'react';
 import { View, StyleSheet } from 'react-native';
-import BpkProgress from 'react-native-bpk-component-progress';
+import BpkProgress from 'backpack-react-native/bpk-component-progress';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
 
 const styles = StyleSheet.create({
