@@ -119,17 +119,6 @@ We recommend that you install [a plugin to your editor](https://eslint.org/docs/
 
 Run `npm install` to install dependencies from npm.
 
-<details>
-<summary>A note on dependencies</summary>
-
-Backpack is a multi-package repository, also known as a monorepo. This means that instead of having one code repository for each npm package, we manage them all inside this single repository.
-
-We use [Lerna](https://lernajs.io) to achieve this. Lerna links packages together inside this repo by 'bootstrapping'.
-
-When you run `npm install`, Lerna is bootstrapped automatically as a post-install hook. However, if you change dependencies within a package, you will need to run Lerna manually with `npm run bootstrap`.
-
-</details>
-
 #### Android
 
 To ensure that maps powered by Google work set the `google_maps_api_key` in `android/local.properties` and make sure you are using the backpack.keystore.
