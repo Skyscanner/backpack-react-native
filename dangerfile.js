@@ -51,7 +51,7 @@ if (isPrExternal) {
 
 // Ensure new components are extensible by consumers.
 const componentIntroduced = createdFiles.some(filePath =>
-  filePath.match(/packages\/react-native-bpk-component.+\/src\/.+\.js/),
+  filePath.match(/lib\/bpk-component.+\/src\/.+\.js/),
 );
 
 if (componentIntroduced) {
@@ -63,7 +63,7 @@ if (componentIntroduced) {
 // If any of the packages have changed, the UNRELEASED log should have been updated.
 const unreleasedModified = includes(modifiedFiles, 'UNRELEASED.md');
 const packagesModified = fileChanges.some(filePath =>
-  filePath.startsWith('packages/'),
+  filePath.startsWith('lib/'),
 );
 if (packagesModified && !unreleasedModified && !declaredTrivial) {
   warn(

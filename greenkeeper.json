@@ -7,38 +7,7 @@
     },
     "native": {
       "packages": [
-        "packages/react-native-bpk-component-alert/package.json",
-        "packages/react-native-bpk-component-animate-height/package.json",
-        "packages/react-native-bpk-component-badge/package.json",
-        "packages/react-native-bpk-component-banner-alert/package.json",
-        "packages/react-native-bpk-component-boilerplate/package.json",
-        "packages/react-native-bpk-component-button-link/package.json",
-        "packages/react-native-bpk-component-button/package.json",
-        "packages/react-native-bpk-component-card/package.json",
-        "packages/react-native-bpk-component-carousel-indicator/package.json",
-        "packages/react-native-bpk-component-carousel/package.json",
-        "packages/react-native-bpk-component-chip/package.json",
-        "packages/react-native-bpk-component-flat-list/package.json",
-        "packages/react-native-bpk-component-horizontal-nav/package.json",
-        "packages/react-native-bpk-component-icon/package.json",
-        "packages/react-native-bpk-component-map/package.json",
-        "packages/react-native-bpk-component-navigation-bar/package.json",
-        "packages/react-native-bpk-component-nudger/package.json",
-        "packages/react-native-bpk-component-panel/package.json",
-        "packages/react-native-bpk-component-phone-input/package.json",
-        "packages/react-native-bpk-component-picker/package.json",
-        "packages/react-native-bpk-component-progress/package.json",
-        "packages/react-native-bpk-component-section-list/package.json",
-        "packages/react-native-bpk-component-select/package.json",
-        "packages/react-native-bpk-component-spinner/package.json",
-        "packages/react-native-bpk-component-star-rating/package.json",
-        "packages/react-native-bpk-component-switch/package.json",
-        "packages/react-native-bpk-component-text-input/package.json",
-        "packages/react-native-bpk-component-text/package.json",
-        "packages/react-native-bpk-component-touchable-native-feedback/package.json",
-        "packages/react-native-bpk-component-touchable-overlay/package.json",
-        "packages/react-native-bpk-styles/package.json",
-        "packages/react-native-bpk-theming/package.json"
+        "lib/package.json"
       ]
     }
   }
