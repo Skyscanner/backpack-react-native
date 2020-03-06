@@ -4,12 +4,7 @@
 
 ## Installation
 
-1. Install the npm package:
-```sh
-npm install bpk-component-button-link --save-dev
-```
-
-2. `bpk-component-button-link` depends on [bpk-component-icon](https://www.npmjs.com/package/bpk-component-icon). Make sure to follow the installation guide for the icon component for the different platforms.
+Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.
 
 ## Usage
 

@@ -4,11 +4,7 @@
 
 ## Installation
 
-```sh
-npm install bpk-component-map --save-dev
-```
-
-This package depends on [`react-native-maps`](https://github.com/react-community/react-native-maps) and its native components need to be integrated manually by following their [instructions](https://github.com/react-community/react-native-maps/blob/master/docs/installation.md).
+Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.
 
 ## Usage
 

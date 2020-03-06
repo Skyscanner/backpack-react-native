@@ -12,11 +12,144 @@
 
 ## Usage
 
-### Installing packages
+### Installation
 
 ```sh
-npm install [package-name] --save-dev
+npm install backpack-react-native --save
 ```
+
+<details>
+  <summary>Android</summary>
+
+  #### From source
+
+  Our Android code is written in `Kotlin`, so in order to compile it from source you need to have `org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"` in the `classpath`.
+
+  If you have defined project-wide properties in your root `build.gradle`, this library will detect the presence of the following properties:
+
+  ```groovy
+    ext {
+        compileSdkVersion   = 28
+        targetSdkVersion    = 28
+        minSdkVersion       = 21
+        buildToolsVersion   = "28.0.3"
+    }
+  ```
+  
+  1. Define the `backpack-react-native` project in your `settings.gradle` file:
+
+  ```groovy
+    include ':backpack-react-native'
+    project(':backpack-react-native').projectDir = new File(rootProject.projectDir, '../node_modules/backpack-react-native/android')
+  ```
+
+  2. Add `bpk-appearance` as a dependency in your app/module `build.gradle` file:
+
+  ```groovy
+      dependencies {
+        implementation project(':backpack-react-native')
+      }
+  ```
+
+  #### Pre compiled
+
+  Alternatively, the pre compiled version is available on Skyscanner's internal Artifactory.
+
+  ```groovy
+      dependencies {
+        implementation 'net.skyscanner.backpack:bpk-appearance:<version>'
+      }
+  ```
+
+</details>
+
+<details>
+  <summary>iOS</summary>
+  
+  #### From source
+
+  Add the following dependencies to your Podfile using the path to the NPM package as follows:
+
+  ```ruby
+    pod 'BackpackReactNative', path: '../node_modules/backpack-react-native/ios/BackpackReactNative'
+    pod 'ReactNativeDarkMode', path: '../node_modules/react-native-dark-mode/ReactNativeDarkMode.podspec'
+    pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
+  ```
+
+</details>
+
+#### Third party libs
+
+This package depends on [`react-native-maps`](https://github.com/react-community/react-native-maps) and its native components need to be integrated manually by following their [instructions](https://github.com/react-community/react-native-maps/blob/master/docs/installation.md).
+
+### Configuration
+
+<details>
+  <summary>Android</summary>
+
+  1. Add the native packages to the `getPackages` function in your `MainActiviy`.
+  ```kotlin
+  override fun getPackages(): List<ReactPackage> {
+    return Arrays.asList(
+          MainReactPackage(),
+          ...
+          MapsPackage(),
+          LinearGradientPackage(),
+          CalendarPackage(),
+          DialogPackage(),
+          BpkRatingPackage(),
+          DarkModePackage())
+  }
+  ```
+
+  2. Append `|uiMode` to the `android:configChanges` prop of `<activity>` in `AndroidManifest.xml`. Example:
+
+  ```xml
+  <activity
+      android:name=".MainActivity"
+      android:exported="true"
+      android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode">
+  ```
+
+  This ensures the RN code will react to system wide changes to the current appearance.
+
+  #### Icons
+
+  This method has the advantage of fonts being copied from this module at build time so that the fonts and JS are always in sync, making upgrades painless.
+
+  Edit `android/app/build.gradle` ( NOT `android/build.gradle` ) and add the following:
+
+  ```
+  apply from: "node_modules/backpack-react-native/bpk-component-icon/fonts.gradle"
+  ```
+</details>
+
+<details>
+  <summary>iOS</summary>
+  
+  #### Icons
+
+  The most reliable way to install the file on iOS is manually, three simple steps are required:
+  1. update the `Info.plist` file by adding
+      ```
+      <key>UIAppFonts</key>
+        <array>
+          <string>BpkIcon.ttf</string>
+        </array>
+      ```
+      if the entry `UIAppFonts` it's already there, just add `<string>BpkIcon.ttf</string>` inside the `<array>` like so
+      ```
+      <array>
+          ... existing entries
+          <string>BpkIcon.ttf</string>
+        </array>
+      ```
+  2. In the `Build Phases` of your project, in the section `Copy Bundle Resources` add a reference to the `BpkIcon.ttf` file path like `/path/to/node_modules/bpk-svgs/dist/font/BpkIcon.ttf`
+
+  3. Rebuild the app
+
+</details>
+
 
 ## Contributing
 

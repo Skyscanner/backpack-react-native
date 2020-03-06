@@ -4,9 +4,7 @@
 
 ## Installation
 
-```sh
-npm install bpk-styles --save-dev
-```
+Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.
 
 ## Shadows
 
