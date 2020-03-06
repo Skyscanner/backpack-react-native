@@ -3,7 +3,7 @@
 > Place your changes below this line.
 
 **Added:**
- - react-native-bpk-component-switch:
+ - bpk-component-switch:
    - The track colour is now lighter in dark mode to match the design on iOS.
 
 ## How to write a good changelog entry
@@ -20,16 +20,16 @@ See [`CHANGELOG.md`](CHANGELOG.md) for real-world examples of good changelog ent
 
 **Breaking:**
 
-- react-native-bpk-styles:
+- bpk-styles:
   - Replaced `charmeleon` icon with new `charizard` icon. To upgrade, replace your references to `charmeleon` with `charizard`.
   - Upgraded `fire` dependency to `3.0.0`.
 
 **Added:**
 
-- react-native-bpk-component-infinity-gauntlet:
+- bpk-component-infinity-gauntlet:
   - New `timeStone` prop for controlling time. See &lt;link to docs site&gt;.
 
 **Fixed:**
 
-- react-native-bpk-component-horcrux:
+- bpk-component-horcrux:
   - Fixed issue where `BpkHorcrux` would occasionally possess the living.
