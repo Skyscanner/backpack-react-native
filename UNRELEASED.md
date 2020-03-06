@@ -2,6 +2,9 @@
 
 > Place your changes below this line.
 
+**Added:**
+ - react-native-bpk-component-switch:
+   - The track colour is now lighter in dark mode to match the design on iOS.
 
 ## How to write a good changelog entry
 
