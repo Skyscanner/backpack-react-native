@@ -2,6 +2,12 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 0.0.3 - 2020-03-09
+
+**Added:**
+ - bpk-component-switch:
+   - The track colour is now lighter in dark mode to match the design on iOS.
+
 # 2020-02-28
 
 **Added:**
