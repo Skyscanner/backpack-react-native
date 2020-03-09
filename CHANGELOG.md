@@ -5,8 +5,15 @@
 # 0.0.3 - 2020-03-09
 
 **Added:**
- - bpk-component-switch:
-   - The track colour is now lighter in dark mode to match the design on iOS.
+
+- bpk-component-switch:
+  - The track colour is now lighter in dark mode to match the design on iOS.
+
+# 2020-03-06
+
+**Breaking:**
+
+- Individual packages have been moved to a single `backpack-react-native` package.
 
 # 2020-02-28
 
