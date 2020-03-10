@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "backpack-react-native",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "engines": {
     "node": "^12.13.0",
     "npm": "^6.12.0"
@@ -12,9 +12,6 @@
   },
   "author": "Backpack Design System <backpack@skyscanner.net>",
   "license": "Apache-2.0",
-  "scripts": {
-    "preinstall": "npx ensure-node-env"
-  },
   "dependencies": {
     "@skyscanner/react-native-dash": "0.0.10",
     "@skyscanner/react-native-transitiongroup": "^1.1.3",
