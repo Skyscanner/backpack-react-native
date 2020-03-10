@@ -132,8 +132,6 @@ async function checkEnv() {
   console.log('🤔  ', '> Checking enviroment');
   await isBranchUpTodate();
   await isGradleAuthenticated();
-  isMasterBranch();
-  isCleanWorkingDirClean();
 }
 
 /**
@@ -146,6 +144,11 @@ async function releaseIt(version) {
   console.log('📠  ', '> Publishing js package');
   // We don't let npm tag and commit the version because it doesn't work unless it's run in the root folder
   shell.execSync(`npm version ${version} --no-git-tag-version`, {
+    cwd: libRoot,
+    dryRun,
+  });
+
+  shell.execSync(`cp package.json ${distRoot}/`, {
     cwd: libRoot,
     dryRun,
   });

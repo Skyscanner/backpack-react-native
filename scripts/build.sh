@@ -19,7 +19,7 @@ set -e
 
 DEST=$1
 
-if [ -z "$DEST" ]; then 
+if [ -z "$DEST" ]; then
   echo """
 Usage:
   build [dest-folder]
@@ -41,6 +41,5 @@ cp -r lib/* lib/.npmignore "$DEST"
 # We link instead of copying because we want the version update to be applied
 # to the lib folder as well.
 #
-ln -s -f $PWD/lib/package.json "$DEST"
 
 cp README.md CHANGELOG.md LICENSE dist
