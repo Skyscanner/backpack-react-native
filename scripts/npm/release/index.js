@@ -132,6 +132,8 @@ async function checkEnv() {
   console.log('🤔  ', '> Checking enviroment');
   await isBranchUpTodate();
   await isGradleAuthenticated();
+  isMasterBranch();
+  isCleanWorkingDirClean();
 }
 
 /**
@@ -148,6 +150,7 @@ async function releaseIt(version) {
     dryRun,
   });
 
+  // Linking the package into the dist folder doesn't work, so instead we'll copy it in
   shell.execSync(`cp package.json ${distRoot}/`, {
     cwd: libRoot,
     dryRun,
