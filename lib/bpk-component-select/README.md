@@ -44,6 +44,7 @@ export default () => (
 | -----------          | ------------------------------------- | -------- | ------------- |
 | onPress              | func                                  | true     | -             |
 | disabled             | bool                                  | false    | false         |
+| focused              | bool                                  | false    | false         |
 | label                | oneOfType(string, element)            | false    | null          |
 | valid                | oneOf(true, false, null)              | false    | null          |
 | validationMessage    | string                                | false    | null          |

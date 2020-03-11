@@ -348,6 +348,111 @@ exports[`iOS BpkSelect dark mode should render correctly with "valid" false 1`] 
 </View>
 `;
 
+exports[`iOS BpkSelect dark mode should render correctly with "valid" false and "focused" (focused should take precedence) 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={null}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(72, 72, 74)",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingVertical": 4,
+        },
+        Object {
+          "borderColor": "rgb(209, 67, 91)",
+        },
+        Object {
+          "borderColor": "rgb(109, 159, 235)",
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            Object {
+              "color": "rgb(209, 67, 91)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            null,
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "bottom": 0,
+          "flex": 1,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
 exports[`iOS BpkSelect dark mode should render correctly with "valid" false and a validation message 1`] = `
 <View>
   <View
@@ -948,6 +1053,211 @@ exports[`iOS BpkSelect dark mode should render correctly with the disabled prop 
 </View>
 `;
 
+exports[`iOS BpkSelect dark mode should render correctly with the focused and disabled props (disabled take precedence) 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityStates={
+    Array [
+      "disabled",
+    ]
+  }
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={null}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(72, 72, 74)",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingVertical": 4,
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {},
+          Array [
+            Object {
+              "marginEnd": "auto",
+            },
+            Array [
+              Object {
+                "color": "rgb(99, 99, 102)",
+              },
+            ],
+          ],
+        ]
+      }
+    >
+      label
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            Object {
+              "color": "rgb(99, 99, 102)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "bottom": 0,
+          "flex": 1,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`iOS BpkSelect dark mode should render correctly with the focused prop 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={null}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(72, 72, 74)",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingVertical": 4,
+        },
+        Object {
+          "borderColor": "rgb(109, 159, 235)",
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {},
+          Array [
+            Object {
+              "marginEnd": "auto",
+            },
+            false,
+          ],
+        ]
+      }
+    >
+      label
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            null,
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "bottom": 0,
+          "flex": 1,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
 exports[`iOS BpkSelect light mode should render correctly 1`] = `
 <View
   accessibilityRole="button"
@@ -1222,6 +1532,111 @@ exports[`iOS BpkSelect light mode should render correctly with "valid" false 1`]
         },
         Object {
           "borderColor": "rgb(209, 67, 91)",
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            Object {
+              "color": "rgb(209, 67, 91)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            null,
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(17, 18, 54)",
+          "bottom": 0,
+          "flex": 1,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`iOS BpkSelect light mode should render correctly with "valid" false and "focused" (focused should take precedence) 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={null}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(221, 221, 229)",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingVertical": 4,
+        },
+        Object {
+          "borderColor": "rgb(209, 67, 91)",
+        },
+        Object {
+          "borderColor": "rgb(7, 112, 227)",
         },
       ]
     }
@@ -1870,6 +2285,211 @@ exports[`iOS BpkSelect light mode should render correctly with the disabled prop
             Object {
               "color": "rgb(221, 221, 229)",
             },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(17, 18, 54)",
+          "bottom": 0,
+          "flex": 1,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`iOS BpkSelect light mode should render correctly with the focused and disabled props (disabled take precedence) 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityStates={
+    Array [
+      "disabled",
+    ]
+  }
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={null}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(221, 221, 229)",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingVertical": 4,
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {},
+          Array [
+            Object {
+              "marginEnd": "auto",
+            },
+            Array [
+              Object {
+                "color": "rgb(221, 221, 229)",
+              },
+            ],
+          ],
+        ]
+      }
+    >
+      label
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            Object {
+              "color": "rgb(221, 221, 229)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(17, 18, 54)",
+          "bottom": 0,
+          "flex": 1,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`iOS BpkSelect light mode should render correctly with the focused prop 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={null}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(221, 221, 229)",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingVertical": 4,
+        },
+        Object {
+          "borderColor": "rgb(7, 112, 227)",
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+          },
+          Object {},
+          Array [
+            Object {
+              "marginEnd": "auto",
+            },
+            false,
+          ],
+        ]
+      }
+    >
+      label
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "marginStart": 4,
+            },
+            null,
           ],
         ]
       }
