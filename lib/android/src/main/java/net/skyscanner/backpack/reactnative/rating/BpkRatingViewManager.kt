@@ -34,7 +34,7 @@ class BpkRatingViewManager : BaseViewManager<RNBpkRating, BpkRatingShadowNode>()
 
   override fun getName() = VIEW_NAME
 
-  override fun createViewInstance(reactContext: ThemedReactContext): RNBpkRating {
+  public override fun createViewInstance(reactContext: ThemedReactContext): RNBpkRating {
     return RNBpkRating(reactContext)
   }
 

@@ -6,7 +6,7 @@ rootProject.name = 'native'
 include ':app'
 
 include ':backpack-react-native'
-project(':backpack-react-native').projectDir = new File(rootProject.projectDir, '../node_modules/backpack-react-native/android')
+project(':backpack-react-native').projectDir = new File(rootProject.projectDir, '../lib/android')
 
 // react-native-linear-gradient
 include ':react-native-linear-gradient'
