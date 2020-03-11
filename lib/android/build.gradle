@@ -70,38 +70,4 @@ dependencies {
   } else {
     api project(':react-native-dark-mode')
   }
-
-//  androidTestImplementation("junit:junit:4.12")
-//  androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-////
-//  androidTestImplementation("org.powermock:powermock-api-mockito:1.6.2") {
-//    exclude group: 'org.mockito', module: 'hamcrest-core'
-//    exclude group: 'org.hamcrest', module: 'hamcrest-core'
-//    exclude group: 'junit'
-//    exclude group: 'org.mockito'
-//    exclude group: 'org.objenesis', module: 'objenesis'
-//  }
-////    exclude group: 'org.hamcrest', module: 'hamcrest-core'
-////    exclude group: 'junit', module: 'junit'
-////  }
-//  androidTestImplementation("org.powermock:powermock-module-junit4-rule:1.6.2")
-////  androidTestImplementation("org.powermock:powermock-classloading-xstream:1.6.2")
-//  androidTestImplementation("org.mockito:mockito-core:2.19.1")
-//
-//  androidTestImplementation 'androidx.test.ext:junit:1.1.0'
-
-  androidTestImplementation "androidx.test.ext:junit:1.1.1"
-  androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-  androidTestImplementation 'androidx.test:rules:1.2.0'
-  androidTestImplementation 'com.nhaarman.mockitokotlin2:mockito-kotlin:2.1.0'
-  androidTestImplementation 'org.mockito:mockito-android:2.28.2'
-  androidTestImplementation "com.facebook.react:react-native:${_reactNativeVersion}"
-
-  testImplementation 'junit:junit:4.12'
-
-//  androidTestImplementation 'androidx.test:runner:1.1.0'
-//  androidTestImplementation 'androidx.test:rules:1.1.0'
-
-//  testImplementation("org.easytesting:fest-assert-core:${FEST_ASSERT_CORE_VERSION}")
-//  testImplementation("org.robolectric:robolectric:${ROBOLECTRIC_VERSION}")
 }
