@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 0.1.0 - 2020-03-11
+
+**Added:**
+
+- bpk-component-select:
+  - Added `focused` component to highlight the component when it's being interacted with.
+
 # 0.0.3 - 2020-03-09
 
 **Added:**

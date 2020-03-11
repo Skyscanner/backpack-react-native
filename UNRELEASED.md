@@ -2,11 +2,6 @@
 
 > Place your changes below this line.
 
-**Added:**
-
-- bpk-component-select:
-  - Added `focused` component to highlight the component when it's being interacted with.
-
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
