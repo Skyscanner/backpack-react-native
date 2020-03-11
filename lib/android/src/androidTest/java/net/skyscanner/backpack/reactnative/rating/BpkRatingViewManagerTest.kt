@@ -1,45 +1,27 @@
 package net.skyscanner.backpack.reactnative.rating
 
-import android.util.DisplayMetrics
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import androidx.test.platform.app.InstrumentationRegistry
-import com.facebook.react.bridge.CatalystInstance
 import com.facebook.react.bridge.JavaOnlyArray
 import com.facebook.react.bridge.JavaOnlyMap
-import com.facebook.react.bridge.ReactApplicationContext
-import com.facebook.react.uimanager.DisplayMetricsHolder
 import com.facebook.react.uimanager.ReactStylesDiffMap
-import com.facebook.react.uimanager.ThemedReactContext
 import net.skyscanner.backpack.rating.BpkRating
-import net.skyscanner.backpack.reactnative.testing.ReactTestHelper.createMockCatalystInstance
-import net.skyscanner.backpack.util.BpkTheme
+import net.skyscanner.backpack.reactnative.testing.ReactViewManagerTestRule
 import org.junit.Assert
-import org.junit.Before
+import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
 class BpkRatingViewManagerTest {
 
-  private lateinit var context: ReactApplicationContext
-  private lateinit var catalystInstanceMock: CatalystInstance
-  private lateinit var themedContext: ThemedReactContext
-  private lateinit var manager: BpkRatingViewManager
-
-  @Before
-  fun setUp() {
-    context = ReactApplicationContext(InstrumentationRegistry.getInstrumentation().targetContext)
-    BpkTheme.applyDefaultsToContext(context)
-    catalystInstanceMock = createMockCatalystInstance()
-    context.initializeWithInstance(catalystInstanceMock)
-    themedContext = ThemedReactContext(context, context)
-    manager = BpkRatingViewManager()
-    DisplayMetricsHolder.setWindowDisplayMetrics(DisplayMetrics())
-  }
+  @get:Rule
+  val managerRule = ReactViewManagerTestRule(BpkRatingViewManager::class)
+  private val manager: BpkRatingViewManager
+    get() = managerRule.manager
 
   @Test
   fun test_title() {
-    val view = manager.createViewInstance(themedContext)
+    val view =  manager.createViewInstance(managerRule.themedContext)
     manager.updateProperties(view, buildProps("title", JavaOnlyArray.of("low", "med", "high")))
 
     Assert.assertNotNull(view.title)
