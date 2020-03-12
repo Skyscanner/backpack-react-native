@@ -17,13 +17,15 @@
  */
 package net.skyscanner.backpack.reactnative.rating
 
-import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.facebook.react.uimanager.UIManagerModule
 import com.nhaarman.mockitokotlin2.*
+import net.skyscanner.backpack.R
 import net.skyscanner.backpack.rating.BpkRating
 import net.skyscanner.backpack.reactnative.testing.ReactContextTestRule
-import org.junit.Assert
+import org.hamcrest.CoreMatchers.*
+import org.junit.Assert.*
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -39,26 +41,95 @@ class RNBpkRatingTest {
     val uiModule = contextRule.catalystInstance.getNativeModule(UIManagerModule::class.java)
 
     val rating = RNBpkRating(contextRule.context)
+
+    val title = { _:BpkRating.Score -> "Title" }
+    val subTitle = { _:BpkRating.Score -> "Subtitle" }
+    val value = 1f
+    val iconRes = ContextCompat.getDrawable(contextRule.context, R.drawable.bpk_flag)!!
+    val icon = { _:BpkRating.Score -> iconRes }
+
+    rating.title = title
+    rating.subtitle = subTitle
+    rating.value = value
+    rating.icon = icon
     rating.render()
 
     verify(uiModule).setViewLocalData(eq(rating.id), any())
-    Assert.assertTrue(rating.getChildAt(0) is BpkRating)
+
+    val bpkRating = rating.getChildAt(0)
+    assertTrue(bpkRating is BpkRating)
+
+    bpkRating as BpkRating
+
+    assertEquals(title, bpkRating.title)
+    assertEquals(subTitle, bpkRating.subtitle)
+    assertEquals(value, bpkRating.value)
+    assertEquals(icon, bpkRating.icon)
   }
 
   @Test
   fun test_updating_orientation() {
-    val rating = spy(RNBpkRating(contextRule.context))
+    val rating = RNBpkRating(contextRule.context)
     rating.render()
+
+    val instance = rating.getChildAt(0)
 
     rating.orientation = BpkRating.Orientation.Vertical
     rating.render()
 
-    // TODO: this test relies a bit too much on how this is implemented internally but there is no
-    // way to check the orientation in BpkRating atm, so we are checking we correctly recreate the
-    // view when orientation changes
-    verify(rating, times(2)).removeAllViews()
-    verify(rating, times(2)).addView(any(), any<ViewGroup.LayoutParams>())
+    val newInstance = rating.getChildAt(0)
 
-    Assert.assertEquals(1, rating.childCount)
+    // BpkRating does not expose the orientation so we check if a new instance is correctly created
+    assertThat(instance, not(sameInstance(newInstance)))
+  }
+
+  @Test
+  fun test_updating_zie() {
+    val rating = RNBpkRating(contextRule.context)
+    rating.render()
+
+    val instance = rating.getChildAt(0)
+
+    rating.size = BpkRating.Size.Base
+    rating.render()
+
+    val newInstance = rating.getChildAt(0)
+
+    // BpkRating does not expose the size so we check if a new instance is correctly created
+    assertThat(instance, not(sameInstance(newInstance)))
+  }
+
+  @Test
+  fun test_update() {
+    val rating = RNBpkRating(contextRule.context)
+
+    val title = { _:BpkRating.Score -> "Title" }
+    val subTitle = { _:BpkRating.Score -> "Subtitle" }
+    val value = 1f
+    val flagRes = ContextCompat.getDrawable(contextRule.context, R.drawable.bpk_flag)!!
+    val flag = { _:BpkRating.Score -> flagRes }
+
+    val flaskRes = ContextCompat.getDrawable(contextRule.context, R.drawable.bpk_flask)!!
+    val flask = { _:BpkRating.Score -> flaskRes }
+
+    rating.title = { "Tile1" }
+    rating.subtitle = { "Subtitle1" }
+    rating.value = 2f
+    rating.icon = flag
+    rating.render()
+
+    rating.title = title
+    rating.subtitle = subTitle
+    rating.value = value
+    rating.icon = flask
+    rating.render()
+
+    val bpkRating = rating.getChildAt(0)
+    bpkRating as BpkRating
+
+    assertEquals(title, bpkRating.title)
+    assertEquals(subTitle, bpkRating.subtitle)
+    assertEquals(value, bpkRating.value)
+    assertEquals(flask, bpkRating.icon)
   }
 }
