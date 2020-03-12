@@ -1,0 +1,46 @@
+FULL_TESTS = ENV['FULL_TESTS'] != 'false'
+BUILD_SDK = ENV['BUILD_SDK'] || 'iphonesimulator13.2'
+DESTINATION = ENV['DESTINATION'] || 'platform=iOS Simulator,name=iPhone 8'
+EXAMPLE_WORKSPACE = 'native.xcworkspace'
+EXAMPLE_SCHEMA = 'native'
+ANALYZE_FAIL_MESSAGE = '⚠️'
+
+def get_changed_files()
+  `git status --porcelain | grep -Ev "CHANGELOG|UNRELEASED|package-lock.json"`.lines
+end
+
+def check_pristine()
+  changes = get_changed_files
+  changes.length == 0
+end
+
+desc "Check for build-time errors and warnings"
+task :analyze do
+  sh "set -o pipefail && ! xcodebuild -workspace #{EXAMPLE_WORKSPACE} -scheme \"#{EXAMPLE_SCHEMA}\" -sdk #{BUILD_SDK} -destination \"#{DESTINATION}\" ONLY_ACTIVE_ARCH=YES analyze 2>&1 | xcpretty | grep -v Pods/TTTAttributedLabel/TTTAttributedLabel/ | grep -v Pods/OCMock/ | grep -v Pods/MBProgressHUD/ | grep -A 5 \"#{ANALYZE_FAIL_MESSAGE}\""
+end
+
+desc "Run unit tests"
+task :test do
+  test_command = "set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace #{EXAMPLE_WORKSPACE} -scheme \"#{EXAMPLE_SCHEMA}\" -sdk #{BUILD_SDK} -destination \"#{DESTINATION}\" ONLY_ACTIVE_ARCH=YES | xcpretty"
+  sh test_command
+end
+
+desc "Runs clang-format on all h and m files to ensure formatting is correct"
+task :lint do
+  abort red "The following generated files have changed during setup:\n#{get_changed_files}" unless check_pristine
+  `clang-format -i **/*.h **/*.m`
+  abort red "clang-format has changed the following files:\n#{get_changed_files}" unless check_pristine
+  sh "bundle exec pod lib lint --allow-warnings"
+end
+
+task ci: [:all_checks]
+task all_checks: [:lint, :analyze, :test]
+
+# Helpers
+def green(string)
+  "\033[0;32m#{string}\e[0m"
+end
+
+def red(string)
+  "\033[0;31m#{string}\e[0m"
+end
