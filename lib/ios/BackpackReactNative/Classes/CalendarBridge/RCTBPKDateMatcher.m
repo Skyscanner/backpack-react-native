@@ -17,6 +17,7 @@
  */
 
 #import "RCTBPKDateMatcher.h"
+#import "RCTBPKCalendarDateUtils.h"
 
 NS_ASSUME_NONNULL_BEGIN
 @implementation RCTBPKDateMatcher
@@ -30,6 +31,35 @@ NS_ASSUME_NONNULL_BEGIN
     }
 
     return self;
+}
+
+- (BOOL)matchesDate:(NSDate *)date {
+    switch (self.matcherType) {
+    case RCTBPKDateMatcherTypeRange:
+        if ([RCTBPKCalendarDateUtils date:date isAfterDate:self.dates[0]] &&
+            [RCTBPKCalendarDateUtils date:date isBeforeDate:self.dates[1]]) {
+            return YES;
+        }
+        break;
+    case RCTBPKDateMatcherTypeBefore:
+        if ([RCTBPKCalendarDateUtils date:date isBeforeDate:self.dates[0]]) {
+            return YES;
+        }
+        break;
+    case RCTBPKDateMatcherTypeAfter:
+        if ([RCTBPKCalendarDateUtils date:date isAfterDate:self.dates[0]]) {
+            return YES;
+        }
+        break;
+    case RCTBPKDateMatcherTypeAny:
+        for (NSDate *bucketDate in self.dates) {
+            if ([bucketDate isEqualToDate:date]) {
+                return YES;
+            }
+        }
+        break;
+    }
+    return NO;
 }
 
 @end

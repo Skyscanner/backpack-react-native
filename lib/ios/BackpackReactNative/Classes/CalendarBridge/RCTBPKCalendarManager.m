@@ -114,30 +114,8 @@ RCT_EXPORT_METHOD(forceRender : (nonnull NSNumber *)reactTag) {
 - (RCTBPKColorBucket *_Nullable)colorBucketForDate:(NSDate *)date
                                       colorBuckets:(NSArray<RCTBPKColorBucket *> *)colorBuckets {
     for (RCTBPKColorBucket *bucket in colorBuckets) {
-        switch (bucket.days.matcherType) {
-        case RCTBPKDateMatcherTypeRange:
-            if ([RCTBPKCalendarDateUtils date:date isAfterDate:bucket.days.dates[0]] &&
-                [RCTBPKCalendarDateUtils date:date isBeforeDate:bucket.days.dates[1]]) {
-                return bucket;
-            }
-            break;
-        case RCTBPKDateMatcherTypeBefore:
-            if ([RCTBPKCalendarDateUtils date:date isBeforeDate:bucket.days.dates[0]]) {
-                return bucket;
-            }
-            break;
-        case RCTBPKDateMatcherTypeAfter:
-            if ([RCTBPKCalendarDateUtils date:date isAfterDate:bucket.days.dates[0]]) {
-                return bucket;
-            }
-            return nil;
-        case RCTBPKDateMatcherTypeAny:
-            for (NSDate *bucketDate in bucket.days.dates) {
-                if ([bucketDate isEqualToDate:date]) {
-                    return bucket;
-                }
-            }
-            break;
+        if ([bucket.days matchesDate:date]) {
+            return bucket;
         }
     }
     return nil;
