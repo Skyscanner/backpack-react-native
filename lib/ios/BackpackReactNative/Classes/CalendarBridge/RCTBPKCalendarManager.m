@@ -45,6 +45,7 @@ RCT_EXPORT_MODULE()
 RCT_REMAP_VIEW_PROPERTY(minDate, rct_minDate, NSDate)
 RCT_REMAP_VIEW_PROPERTY(maxDate, rct_maxDate, NSDate)
 RCT_REMAP_VIEW_PROPERTY(colorBuckets, rct_colorBuckets, RCTBPKColorBucketArray);
+RCT_REMAP_VIEW_PROPERTY(disabledDates, rct_disabledDates, RCTBPKDateMatcher);
 RCT_EXPORT_VIEW_PROPERTY(selectionType, BPKCalendarSelection)
 RCT_EXPORT_VIEW_PROPERTY(locale, NSLocale)
 RCT_REMAP_VIEW_PROPERTY(selectedDates, rct_selectedDates, NSArray<NSDate *> *)
@@ -119,6 +120,21 @@ RCT_EXPORT_METHOD(forceRender : (nonnull NSNumber *)reactTag) {
         }
     }
     return nil;
+}
+
+- (BOOL)calendar:(BPKCalendar *)calendar isDateEnabled:(NSDate *)date {
+    NSAssert([calendar isKindOfClass:RCTBPKCalendar.class],
+             @"calendar value is not of type RCTBPKCalendar as expected.");
+    if (![calendar isKindOfClass:RCTBPKCalendar.class]) {
+        return BPKCalendarDateCellStyleNormal;
+    }
+
+    RCTBPKCalendar *rctCalendar = (RCTBPKCalendar *)calendar;
+    if (rctCalendar.rct_disabledDates == nil) {
+        return YES;
+    }
+
+    return ![rctCalendar.rct_disabledDates matchesDate:date];
 }
 
 - (BPKCalendarDateCellStyle)calendar:(BPKCalendar *)calendar cellStyleForDate:(BPKSimpleDate *)date {

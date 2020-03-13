@@ -20,6 +20,8 @@
 #import <Backpack/SimpleDate.h>
 #import <React/RCTViewManager.h>
 
+#import "RCTBPKDateMatcher.h"
+
 @class RCTBPKColorBucket;
 @interface RCTBPKCalendar : BPKCalendar
 
@@ -29,5 +31,6 @@
 @property(nonatomic, nullable) NSDate *rct_minDate;
 @property(nonatomic, nullable) NSDate *rct_maxDate;
 @property(nonatomic, copy, nullable) NSArray<RCTBPKColorBucket *> *rct_colorBuckets;
+@property(nonatomic, copy, nullable) RCTBPKDateMatcher *rct_disabledDates;
 @property(nonatomic, nonnull) NSArray<NSDate *> *rct_selectedDates;
 @end
