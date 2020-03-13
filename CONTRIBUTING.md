@@ -196,9 +196,9 @@ You can also run the tests in 'watch mode', which means the process will continu
 <details>
 <summary>Run Android emulators manually</summary>
 
-The setup process detailed in *[Prerequisites](#prerequisites)* created two Android emulators. One with API version 27 and another with 21.
+The setup process detailed in *[Prerequisites](#prerequisites)* created two Android emulators. One with API version 28 and another with 21.
 
-To run these manually, run `npm run android:emulator` or `npm run android:emulator:min` to run API versions 27 and 21 respectively.
+To run these manually, run `npm run android:emulator` or `npm run android:emulator:min` to run API versions 28 and 21 respectively.
 
 </details>
 

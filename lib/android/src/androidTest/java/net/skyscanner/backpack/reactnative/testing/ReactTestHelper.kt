@@ -23,8 +23,8 @@ import com.facebook.react.bridge.queue.ReactQueueConfiguration
 import com.facebook.react.bridge.queue.ReactQueueConfigurationImpl
 import com.facebook.react.bridge.queue.ReactQueueConfigurationSpec
 import com.facebook.react.uimanager.UIManagerModule
-import org.mockito.Mockito.`when`
-import org.mockito.Mockito.mock
+import io.mockk.every
+import io.mockk.mockk
 
 /**
  * Based on https://github.com/facebook/react-native/blob/master/ReactAndroid/src/test/java/com/facebook/react/bridge/ReactTestHelper.java
@@ -40,10 +40,9 @@ object ReactTestHelper {
     val ReactQueueConfiguration: ReactQueueConfiguration = ReactQueueConfigurationImpl.create(
       spec
     ) { e -> throw RuntimeException(e) }
-    val reactInstance: CatalystInstance = mock(CatalystInstance::class.java)
-    `when`(reactInstance.reactQueueConfiguration).thenReturn(ReactQueueConfiguration)
-    `when`(reactInstance.getNativeModule(UIManagerModule::class.java))
-      .thenReturn(mock(UIManagerModule::class.java))
+    val reactInstance: CatalystInstance = mockk(relaxed = true)
+    every { reactInstance.reactQueueConfiguration } returns ReactQueueConfiguration
+    every { reactInstance.getNativeModule(UIManagerModule::class.java) } returns mockk(relaxed = true)
     return reactInstance
   }
 }

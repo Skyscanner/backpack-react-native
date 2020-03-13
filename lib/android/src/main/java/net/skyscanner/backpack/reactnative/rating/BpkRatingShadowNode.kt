@@ -46,7 +46,7 @@ import com.facebook.yoga.YogaNode
  * 4. [BpkRatingShadowNode.measure] will use the [BpkRatingLocalData] to create a copy of the current
  *   view being rendered and measure itself.
  */
-open class BpkRatingShadowNode internal constructor() : LayoutShadowNode(), YogaMeasureFunction {
+class BpkRatingShadowNode internal constructor() : LayoutShadowNode(), YogaMeasureFunction {
 
   private var localData: BpkRatingLocalData? = null
   private var lastWidth = 0

@@ -21,26 +21,28 @@ import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
+import android.view.ViewGroup
+import android.widget.FrameLayout
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.facebook.react.bridge.JSApplicationIllegalArgumentException
-import com.facebook.react.bridge.JavaOnlyArray
-import com.facebook.react.bridge.JavaOnlyMap
+import androidx.test.platform.app.InstrumentationRegistry
+import com.facebook.react.bridge.*
 import com.facebook.react.uimanager.ReactStylesDiffMap
-import com.nhaarman.mockitokotlin2.spy
-import com.nhaarman.mockitokotlin2.times
-import com.nhaarman.mockitokotlin2.verify
+import com.facebook.react.uimanager.ThemedReactContext
+import io.mockk.*
 import net.skyscanner.backpack.R
 import net.skyscanner.backpack.rating.BpkRating
 import net.skyscanner.backpack.reactnative.testing.Matchers.throws
+import net.skyscanner.backpack.reactnative.testing.ReactTestHelper
 import net.skyscanner.backpack.reactnative.testing.ReactViewManagerTestRule
+import net.skyscanner.backpack.util.BpkTheme
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertThat
 import org.junit.Assert.assertTrue
+import org.junit.Before
 import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
-import org.junit.rules.ExpectedException
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
@@ -51,31 +53,34 @@ class BpkRatingViewManagerTest {
   private val manager: BpkRatingViewManager
     get() = managerRule.manager
 
+  private val themedContext: ThemedReactContext
+    get() = managerRule.themedContext
+
   @Test
   fun test_title() {
-    val view =  manager.createViewInstance(managerRule.themedContext)
+    val view =  manager.createViewInstance(themedContext)
     manager.updateProperties(view, buildProps("title", JavaOnlyArray.of("low", "med", "high")))
 
-    assertNotNull(view.title)
-    assertEquals("low", view.title?.invoke(BpkRating.Score.Low))
-    assertEquals("med", view.title?.invoke(BpkRating.Score.Medium))
-    assertEquals("high", view.title?.invoke(BpkRating.Score.High))
+    assertNotNull(view.state.title)
+    assertEquals("low", view.state.title?.invoke(BpkRating.Score.Low))
+    assertEquals("med", view.state.title?.invoke(BpkRating.Score.Medium))
+    assertEquals("high", view.state.title?.invoke(BpkRating.Score.High))
   }
 
   @Test
   fun test_title_single_value() {
-    val view =  manager.createViewInstance(managerRule.themedContext)
+    val view =  manager.createViewInstance(themedContext)
     manager.updateProperties(view, buildProps("title", JavaOnlyArray.of("all")))
 
-    assertNotNull(view.title)
-    assertEquals("all", view.title?.invoke(BpkRating.Score.Low))
-    assertEquals("all", view.title?.invoke(BpkRating.Score.Medium))
-    assertEquals("all", view.title?.invoke(BpkRating.Score.High))
+    assertNotNull(view.state.title)
+    assertEquals("all", view.state.title?.invoke(BpkRating.Score.Low))
+    assertEquals("all", view.state.title?.invoke(BpkRating.Score.Medium))
+    assertEquals("all", view.state.title?.invoke(BpkRating.Score.High))
   }
 
   @Test
   fun test_title_invalid_values() {
-    val view =  manager.createViewInstance(managerRule.themedContext)
+    val view =  manager.createViewInstance(themedContext)
     assertThat({
       manager.updateProperties(view, buildProps("title", JavaOnlyArray.of(null)))
     }, throws(JSApplicationIllegalArgumentException::class))
@@ -86,29 +91,29 @@ class BpkRatingViewManagerTest {
 
   @Test
   fun test_subtitle() {
-    val view =  manager.createViewInstance(managerRule.themedContext)
+    val view =  manager.createViewInstance(themedContext)
     manager.updateProperties(view, buildProps("subtitle", JavaOnlyArray.of("low", "med", "high")))
 
-    assertNotNull(view.subtitle)
-    assertEquals("low", view.subtitle?.invoke(BpkRating.Score.Low))
-    assertEquals("med", view.subtitle?.invoke(BpkRating.Score.Medium))
-    assertEquals("high", view.subtitle?.invoke(BpkRating.Score.High))
+    assertNotNull(view.state.subtitle)
+    assertEquals("low", view.state.subtitle?.invoke(BpkRating.Score.Low))
+    assertEquals("med", view.state.subtitle?.invoke(BpkRating.Score.Medium))
+    assertEquals("high", view.state.subtitle?.invoke(BpkRating.Score.High))
   }
 
   @Test
   fun test_subtitle_single_value() {
-    val view =  manager.createViewInstance(managerRule.themedContext)
+    val view =  manager.createViewInstance(themedContext)
     manager.updateProperties(view, buildProps("subtitle", JavaOnlyArray.of("all")))
 
-    assertNotNull(view.subtitle)
-    assertEquals("all", view.subtitle?.invoke(BpkRating.Score.Low))
-    assertEquals("all", view.subtitle?.invoke(BpkRating.Score.Medium))
-    assertEquals("all", view.subtitle?.invoke(BpkRating.Score.High))
+    assertNotNull(view.state.subtitle)
+    assertEquals("all", view.state.subtitle?.invoke(BpkRating.Score.Low))
+    assertEquals("all", view.state.subtitle?.invoke(BpkRating.Score.Medium))
+    assertEquals("all", view.state.subtitle?.invoke(BpkRating.Score.High))
   }
 
   @Test
   fun test_subtitle_invalid_values() {
-    val view =  manager.createViewInstance(managerRule.themedContext)
+    val view =  manager.createViewInstance(themedContext)
     assertThat({
       manager.updateProperties(view, buildProps("subtitle", JavaOnlyArray.of(null)))
     }, throws(JSApplicationIllegalArgumentException::class))
@@ -119,15 +124,15 @@ class BpkRatingViewManagerTest {
 
   @Test
   fun test_value() {
-    val view =  manager.createViewInstance(managerRule.themedContext)
+    val view =  manager.createViewInstance(themedContext)
     manager.updateProperties(view, buildProps("value", 1f))
 
-    assertEquals(1f, view.value)
+    assertEquals(1f, view.state.value)
   }
 
   @Test
   fun test_size() {
-    val view =  manager.createViewInstance(managerRule.themedContext)
+    val view =  manager.createViewInstance(themedContext)
     val options = mapOf(
       "icon" to BpkRating.Size.Icon,
       "xs" to BpkRating.Size.ExtraSmall,
@@ -140,7 +145,7 @@ class BpkRatingViewManagerTest {
       val expectedValue = entry.value
 
       manager.updateProperties(view, buildProps("size", jsValue))
-      assertEquals(expectedValue, view.size)
+      assertEquals(expectedValue, view.state.size)
     }
 
     assertThat({
@@ -150,7 +155,7 @@ class BpkRatingViewManagerTest {
 
   @Test
   fun test_orientation() {
-    val view =  manager.createViewInstance(managerRule.themedContext)
+    val view =  manager.createViewInstance(themedContext)
     val options = mapOf(
       "horizontal" to BpkRating.Orientation.Horizontal,
       "vertical" to BpkRating.Orientation.Vertical)
@@ -160,7 +165,7 @@ class BpkRatingViewManagerTest {
       val expectedValue = entry.value
 
       manager.updateProperties(view, buildProps("orientation", jsValue))
-      assertEquals(expectedValue, view.orientation)
+      assertEquals(expectedValue, view.state.orientation)
     }
 
     assertThat({
@@ -170,41 +175,41 @@ class BpkRatingViewManagerTest {
 
   @Test
   fun test_icon() {
-    val view =  manager.createViewInstance(managerRule.themedContext)
+    val view =  manager.createViewInstance(themedContext)
     manager.updateProperties(view, buildProps(
       "size", "icon",
       "icon", JavaOnlyArray.of("bpk_flag", "bpk_food", "bpk_flask")))
 
-    val flag = drawableToBitmap(managerRule.themedContext.getDrawable(R.drawable.bpk_flag))!!
-    val food = drawableToBitmap(managerRule.themedContext.getDrawable(R.drawable.bpk_food))!!
-    val flask = drawableToBitmap(managerRule.themedContext.getDrawable(R.drawable.bpk_flask))!!
+    val flag = drawableToBitmap(themedContext.getDrawable(R.drawable.bpk_flag))!!
+    val food = drawableToBitmap(themedContext.getDrawable(R.drawable.bpk_food))!!
+    val flask = drawableToBitmap(themedContext.getDrawable(R.drawable.bpk_flask))!!
 
-    assertNotNull(view.icon)
+    assertNotNull(view.state.icon)
 
-    assertTrue(flag.sameAs(drawableToBitmap(view.icon?.invoke(BpkRating.Score.Low))))
-    assertTrue(food.sameAs(drawableToBitmap(view.icon?.invoke(BpkRating.Score.Medium))))
-    assertTrue(flask.sameAs(drawableToBitmap(view.icon?.invoke(BpkRating.Score.High))))
+    assertTrue(flag.sameAs(drawableToBitmap(view.state.icon?.invoke(BpkRating.Score.Low))))
+    assertTrue(food.sameAs(drawableToBitmap(view.state.icon?.invoke(BpkRating.Score.Medium))))
+    assertTrue(flask.sameAs(drawableToBitmap(view.state.icon?.invoke(BpkRating.Score.High))))
   }
 
   @Test
   fun test_icon_single_value() {
-    val view =  manager.createViewInstance(managerRule.themedContext)
+    val view =  manager.createViewInstance(themedContext)
     manager.updateProperties(view, buildProps(
       "size", "icon",
       "icon", JavaOnlyArray.of("bpk_flag")))
 
-    val flag = drawableToBitmap(managerRule.themedContext.getDrawable(R.drawable.bpk_flag))!!
+    val flag = drawableToBitmap(themedContext.getDrawable(R.drawable.bpk_flag))!!
 
-    assertNotNull(view.icon)
+    assertNotNull(view.state.icon)
 
-    assertTrue(flag.sameAs(drawableToBitmap(view.icon?.invoke(BpkRating.Score.Low))))
-    assertTrue(flag.sameAs(drawableToBitmap(view.icon?.invoke(BpkRating.Score.Medium))))
-    assertTrue(flag.sameAs(drawableToBitmap(view.icon?.invoke(BpkRating.Score.High))))
+    assertTrue(flag.sameAs(drawableToBitmap(view.state.icon?.invoke(BpkRating.Score.Low))))
+    assertTrue(flag.sameAs(drawableToBitmap(view.state.icon?.invoke(BpkRating.Score.Medium))))
+    assertTrue(flag.sameAs(drawableToBitmap(view.state.icon?.invoke(BpkRating.Score.High))))
   }
 
   @Test
   fun test_icon_invalid_values() {
-    val view =  manager.createViewInstance(managerRule.themedContext)
+    val view =  manager.createViewInstance(themedContext)
     manager.updateProperties(view, buildProps("size", "icon"))
     assertThat({
       manager.updateProperties(view, buildProps("icon", JavaOnlyArray.of(null)))
@@ -218,9 +223,9 @@ class BpkRatingViewManagerTest {
   }
 
   @Test
-  @Ignore("TODO: This is causing weird errors with mockito")
   fun test_render_once_after_transaction() {
-    val view = spy(manager.createViewInstance(managerRule.themedContext))
+    val stateHolder = mockk<RNBpkRating.Companion.StateHolder>(relaxed = true)
+    val view = RNBpkRating(themedContext, stateHolder)
     manager.updateProperties(view, buildProps(
       "value", 1f,
       "icon", JavaOnlyArray.of("bpk_flag", "bpk_food", "bpk_flask"),
@@ -229,7 +234,8 @@ class BpkRatingViewManagerTest {
       "orientation", "horizontal",
       "size", "xs"
     ))
-    verify(view, times(1)).render()
+
+    verify(exactly = 1) { stateHolder.dispatchUpdateTransactionFinished() }
   }
 
   private fun buildProps(vararg keysAndValues: Any?): ReactStylesDiffMap? {

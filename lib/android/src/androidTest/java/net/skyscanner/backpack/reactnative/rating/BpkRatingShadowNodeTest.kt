@@ -20,7 +20,7 @@ package net.skyscanner.backpack.reactnative.rating
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.facebook.soloader.SoLoader
 import com.facebook.yoga.YogaMeasureMode
-import com.nhaarman.mockitokotlin2.mock
+import io.mockk.mockk
 import net.skyscanner.backpack.rating.BpkRating
 import net.skyscanner.backpack.reactnative.testing.ReactContextTestRule
 import org.hamcrest.Matchers.greaterThan
@@ -35,7 +35,6 @@ import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
 class BpkRatingShadowNodeTest {
-
   private lateinit var subject: BpkRatingShadowNode
 
   @get:Rule
@@ -63,7 +62,7 @@ class BpkRatingShadowNodeTest {
 
   @Test
   fun test_measure_with_no_data() {
-    val result = subject.measure(mock(), 0f, YogaMeasureMode.UNDEFINED, 0f, YogaMeasureMode.UNDEFINED)
+    val result = subject.measure(mockk(), 0f, YogaMeasureMode.UNDEFINED, 0f, YogaMeasureMode.UNDEFINED)
     assertEquals(0, result)
   }
 
@@ -75,7 +74,7 @@ class BpkRatingShadowNodeTest {
         BpkRating.Orientation.Vertical,
         BpkRating.Size.Base))
 
-    val result = subject.measure(mock(), 0f, YogaMeasureMode.UNDEFINED, 0f, YogaMeasureMode.UNDEFINED)
+    val result = subject.measure(mockk(), 0f, YogaMeasureMode.UNDEFINED, 0f, YogaMeasureMode.UNDEFINED)
 
     // There is no way to precisely test if the measure is correct here, so we just check if is
     // greater than 0. screenshots tests should cover this.
