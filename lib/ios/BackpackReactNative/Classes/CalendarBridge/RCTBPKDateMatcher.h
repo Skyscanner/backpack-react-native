@@ -36,6 +36,7 @@ typedef NS_ENUM(NSUInteger, RCTBPKDateMatcherType) {
 @property(nonatomic, nullable) NSArray<NSDate *> *dates;
 
 - (instancetype)initWithMatcherType:(RCTBPKDateMatcherType)matcherType dates:(NSArray<NSDate *> *)dates;
+- (BOOL)matchesDate:(NSDate *)date;
 
 @end
 
