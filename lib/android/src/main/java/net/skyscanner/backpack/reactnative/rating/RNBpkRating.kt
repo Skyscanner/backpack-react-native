@@ -87,41 +87,12 @@ class RNBpkRating(
 
   companion object {
     class StateHolder: BpkViewStateHolder() {
-      var title: ((BpkRating.Score) -> String)? = null
-        set(value) {
-          field = value
-          markDirty()
-        }
-
-      var subtitle: ((BpkRating.Score) -> String)? = null
-        set(value) {
-          field = value
-          markDirty()
-        }
-
-      var value: Float = 0f
-        set(value) {
-          field = value
-          markDirty()
-        }
-
-      var icon: ((BpkRating.Score) -> Drawable)? = null
-        set(value) {
-          field = value
-          markDirty()
-        }
-
-      var size: BpkRating.Size = BpkRating.Size.Base
-        set(value) {
-          field = value
-          markInvalid()
-        }
-
-      var orientation: BpkRating.Orientation = BpkRating.Orientation.Horizontal
-        set(value) {
-          field = value
-          markInvalid()
-        }
+      var title: ((BpkRating.Score) -> String)? by markDirtyOnUpdate(null)
+      var subtitle: ((BpkRating.Score) -> String)? by markDirtyOnUpdate(null)
+      var value: Float by markDirtyOnUpdate(0f)
+      var icon: ((BpkRating.Score) -> Drawable)? by markDirtyOnUpdate(null)
+      var size: BpkRating.Size by markInvalidOnUpdate(BpkRating.Size.Base)
+      var orientation: BpkRating.Orientation by markInvalidOnUpdate(BpkRating.Orientation.Horizontal)
     }
   }
 }

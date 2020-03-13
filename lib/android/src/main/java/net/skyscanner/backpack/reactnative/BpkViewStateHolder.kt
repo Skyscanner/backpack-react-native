@@ -17,6 +17,8 @@
  */
 package net.skyscanner.backpack.reactnative
 
+import kotlin.reflect.KProperty
+
 private const val STATE_CLEAN = 0
 private const val STATE_DIRTY = 1
 private const val STATE_INVALID_INSTANCE = 2
@@ -80,4 +82,29 @@ open class BpkViewStateHolder {
       markClean()
     }
   }
+
+  companion object {
+    class StateUpdaterDelegate<in R: BpkViewStateHolder, T>(
+      initialVal: T,
+      val onUpdate: (R) -> Unit
+    ) {
+      private var value: T = initialVal
+      operator fun getValue(thisRef: R, property: KProperty<*>): T {
+        return value
+      }
+
+      operator fun setValue(thisRef: R, property: KProperty<*>, newValue: T) {
+        value = newValue
+        onUpdate(thisRef)
+      }
+    }
+
+    fun <R: BpkViewStateHolder, T>markDirtyOnUpdate(initialVal: T) =
+      StateUpdaterDelegate<R, T>(initialVal) { it.markDirty() }
+
+    fun <R: BpkViewStateHolder, T>markInvalidOnUpdate(initialVal: T) =
+      StateUpdaterDelegate<R, T>(initialVal) { it.markInvalid() }
+  }
 }
+
+
