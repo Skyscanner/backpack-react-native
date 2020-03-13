@@ -56,6 +56,8 @@ android {
     targetSdkVersion _targetSdkVersion
 
     versionName getVersionFromJsPackage(project)
+
+    testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
   }
 }
 

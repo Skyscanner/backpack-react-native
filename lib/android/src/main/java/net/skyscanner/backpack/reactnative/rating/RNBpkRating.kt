@@ -28,7 +28,7 @@ private const val STATE_CLEAN = 0
 private const val STATE_DIRTY = 1
 private const val STATE_INVALID_INSTANCE = 2
 
-class RNBpkRating(private val reactContext: ReactContext): FrameLayout(reactContext) {
+open class RNBpkRating(private val reactContext: ReactContext): FrameLayout(reactContext) {
 
   private var state = STATE_INVALID_INSTANCE
   private var rating: BpkRating? = null
