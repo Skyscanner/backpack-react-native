@@ -31,6 +31,6 @@
 @property(nonatomic, nullable) NSDate *rct_minDate;
 @property(nonatomic, nullable) NSDate *rct_maxDate;
 @property(nonatomic, copy, nullable) NSArray<RCTBPKColorBucket *> *rct_colorBuckets;
-@property(nonatomic, copy, nullable) RCTBPKDateMatcher *rct_disabledDates;
+@property(nonatomic, nullable) RCTBPKDateMatcher *rct_disabledDates;
 @property(nonatomic, nonnull) NSArray<NSDate *> *rct_selectedDates;
 @end

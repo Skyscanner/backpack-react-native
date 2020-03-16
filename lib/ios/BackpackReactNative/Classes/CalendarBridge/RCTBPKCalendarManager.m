@@ -126,7 +126,7 @@ RCT_EXPORT_METHOD(forceRender : (nonnull NSNumber *)reactTag) {
     NSAssert([calendar isKindOfClass:RCTBPKCalendar.class],
              @"calendar value is not of type RCTBPKCalendar as expected.");
     if (![calendar isKindOfClass:RCTBPKCalendar.class]) {
-        return BPKCalendarDateCellStyleNormal;
+        return NO;
     }
 
     RCTBPKCalendar *rctCalendar = (RCTBPKCalendar *)calendar;

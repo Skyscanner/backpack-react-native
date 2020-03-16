@@ -144,22 +144,24 @@ NS_ASSUME_NONNULL_BEGIN
 
         bucket.days.dates = localDates;
     }
-    [self reloadData];
+    [self refreshDateAppearance];
 }
 
 - (void)setRct_disabledDates:(RCTBPKDateMatcher *_Nullable)rct_disabledDates {
-    _rct_disabledDates = rct_disabledDates;
+    if (_rct_disabledDates != rct_disabledDates) {
+        _rct_disabledDates = rct_disabledDates;
 
-    NSMutableArray *localDates = [[NSMutableArray alloc] initWithCapacity:rct_disabledDates.dates.count];
-    for (int j = 0; j < rct_disabledDates.dates.count; j += 1) {
-        localDates[j] = [RCTBPKCalendarDateUtils convertDateToLocal:rct_disabledDates.dates[j]
-                                                      localCalendar:self.gregorian
-                                                        utcCalendar:self.utcCalendar];
+        NSMutableArray *localDates = [[NSMutableArray alloc] initWithCapacity:rct_disabledDates.dates.count];
+        for (int j = 0; j < rct_disabledDates.dates.count; j += 1) {
+            localDates[j] = [RCTBPKCalendarDateUtils convertDateToLocal:rct_disabledDates.dates[j]
+                                                          localCalendar:self.gregorian
+                                                            utcCalendar:self.utcCalendar];
+        }
+
+        rct_disabledDates.dates = localDates;
+
+        [self refreshDateAppearance];
     }
-
-    rct_disabledDates.dates = localDates;
-
-    [self reloadData];
 }
 
 @end
