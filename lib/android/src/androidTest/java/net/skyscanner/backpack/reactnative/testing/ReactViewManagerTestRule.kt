@@ -30,7 +30,7 @@ import org.junit.runner.Description
 import kotlin.reflect.KClass
 
 class ReactViewManagerTestRule<T: Any>(private val managerClass: KClass<T>) : TestWatcher() {
-  private lateinit var context: ReactApplicationContext
+  lateinit var context: ReactApplicationContext
   private lateinit var catalystInstanceMock: CatalystInstance
   lateinit var themedContext: ThemedReactContext
   private var _manager: T? = null
