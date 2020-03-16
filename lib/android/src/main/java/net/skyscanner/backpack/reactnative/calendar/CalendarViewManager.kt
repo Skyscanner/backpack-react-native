@@ -17,6 +17,8 @@
  */
 package net.skyscanner.backpack.reactnative.calendar
 
+import androidx.annotation.VisibleForTesting
+import com.facebook.react.bridge.JSApplicationIllegalArgumentException
 import com.facebook.react.bridge.ReadableArray
 import com.facebook.react.bridge.ReadableMap
 import com.facebook.react.uimanager.ThemedReactContext
@@ -45,52 +47,53 @@ class CalendarViewManager : ViewGroupManager<RNCalendarView>() {
 
   override fun getName() = VIEW_NAME
 
-  override fun createViewInstance(reactContext: ThemedReactContext): RNCalendarView {
+  @VisibleForTesting
+  public override fun createViewInstance(reactContext: ThemedReactContext): RNCalendarView {
     return RNCalendarView(reactContext)
   }
 
   @ReactProp(name = "selectedDates")
   fun setSelectedDates(view: RNCalendarView, dates: ReadableArray) {
-    view.selectedDates = (0..(dates.size() - 1)).map {
+    view.state.selectedDates = (0..(dates.size() - 1)).map {
       unixToCalendarDay(dates.getInt(it))
     }.toTypedArray()
   }
 
   @ReactProp(name = "selectionType")
   fun setSelectionType(view: RNCalendarView, selectionType: String) {
-    view.selectionType = when (selectionType) {
+    view.state.selectionType = when (selectionType) {
       "range" -> SelectionType.RANGE
       "single" -> SelectionType.SINGLE
       "multiple" -> SelectionType.RANGE // TODO: support multiple selection
-      else -> throw IllegalArgumentException("Selection type $selectionType is not supported")
+      else -> throw JSApplicationIllegalArgumentException("Selection type $selectionType is not supported")
     }
   }
 
   @ReactProp(name = "locale")
   fun setLocale(view: RNCalendarView, locale: String) {
-    view.locale = locale
+    view.state.locale = locale
   }
 
   @ReactProp(name = "minDate")
   fun setMinDate(view: RNCalendarView, minDate: Int?) {
     minDate?.let {
-      view.minDate = unixToCalendarDay(it)
+      view.state.minDate = unixToCalendarDay(it)
     }
   }
 
   @ReactProp(name = "maxDate")
   fun setMaxDate(view: RNCalendarView, maxDate: Int?) {
     maxDate?.let {
-      view.maxDate = unixToCalendarDay(it)
+      view.state.maxDate = unixToCalendarDay(it)
     }
   }
 
   @ReactProp(name = "disabledDates")
   fun setDisabledDates(view: RNCalendarView, disableDates: ReadableMap?) {
     if (disableDates != null) {
-      view.disabledDateMatcher = disableDates.toDateMatcher()
+      view.state.disabledDateMatcher = disableDates.toDateMatcher()
     } else {
-      view.disabledDateMatcher = null
+      view.state.disabledDateMatcher = null
     }
   }
 
@@ -99,13 +102,13 @@ class CalendarViewManager : ViewGroupManager<RNCalendarView>() {
     if (colourBuckets != null) {
       val parsedBuckets = (0 until colourBuckets.size()).map {
         val bucket = colourBuckets.getMap(it)
-                ?: throw IllegalArgumentException("Invalid colour bucket provided to BpkCalendar")
+                ?: throw JSApplicationIllegalArgumentException("Invalid colour bucket provided to BpkCalendar")
 
         val textStyle = bucket.safeGet("textStyle", ReadableMap::getString)
 
         val color = bucket.getInt("color")
         val days = bucket.getMap("days")
-                ?: throw IllegalArgumentException("Invalid colour bucket provided to BpkCalendar. `days` is null")
+                ?: throw JSApplicationIllegalArgumentException("Invalid colour bucket provided to BpkCalendar. `days` is null")
 
         val cellStyle = bucket.safeGet("__cellStyle", ReadableMap::getString)
 
@@ -117,16 +120,17 @@ class CalendarViewManager : ViewGroupManager<RNCalendarView>() {
         )
       }.toTypedArray()
 
-      view.colorBuckets = parsedBuckets
+      view.state.colorBuckets = parsedBuckets
     } else {
-      view.colorBuckets = null
+      view.state.colorBuckets = null
     }
   }
 
-  override fun addEventEmitters(reactContext: ThemedReactContext, view: RNCalendarView) {
+  @VisibleForTesting
+  public override fun addEventEmitters(reactContext: ThemedReactContext, view: RNCalendarView) {
     val dispatcher = reactContext.getNativeModule(UIManagerModule::class.java).eventDispatcher
 
-    view.onDatesChange = { selection ->
+    view.state.onDatesChange = { selection ->
       val dates = mutableListOf<LocalDate>()
       when (selection) {
         is CalendarRange -> {
@@ -144,7 +148,7 @@ class CalendarViewManager : ViewGroupManager<RNCalendarView>() {
 
   override fun onAfterUpdateTransaction(view: RNCalendarView) {
     super.onAfterUpdateTransaction(view)
-    view.render()
+    view.state.dispatchUpdateTransactionFinished()
   }
 
   private fun unixToCalendarDay(unixTime: Int): LocalDate {
@@ -164,7 +168,7 @@ class CalendarViewManager : ViewGroupManager<RNCalendarView>() {
     val type = this.getString("type")
     val dates = this.getArray("dates")
     if (type === null || dates === null || dates.size() == 0) {
-      throw IllegalArgumentException("Invalid disabledDates prop, either type` or `dates` is invalid")
+      throw JSApplicationIllegalArgumentException("Invalid disabledDates prop, either type` or `dates` is invalid")
     }
 
     val parsedDates = (0 until dates.size()).map {
