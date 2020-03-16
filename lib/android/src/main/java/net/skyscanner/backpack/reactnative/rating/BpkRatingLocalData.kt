@@ -21,7 +21,7 @@ package net.skyscanner.backpack.reactnative.rating
 import android.content.Context
 import net.skyscanner.backpack.rating.BpkRating
 
-internal open class BpkRatingLocalData(
+internal class BpkRatingLocalData(
   private val rating: BpkRating,
   private val orientation: BpkRating.Orientation,
   private val size: BpkRating.Size

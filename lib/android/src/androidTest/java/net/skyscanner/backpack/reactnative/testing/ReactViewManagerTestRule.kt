@@ -23,6 +23,7 @@ import com.facebook.react.bridge.CatalystInstance
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.uimanager.DisplayMetricsHolder
 import com.facebook.react.uimanager.ThemedReactContext
+import io.mockk.clearAllMocks
 import net.skyscanner.backpack.util.BpkTheme
 import org.junit.rules.TestWatcher
 import org.junit.runner.Description

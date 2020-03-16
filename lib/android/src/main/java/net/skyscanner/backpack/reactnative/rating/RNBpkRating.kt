@@ -23,82 +23,31 @@ import android.widget.FrameLayout
 import net.skyscanner.backpack.rating.BpkRating
 import com.facebook.react.uimanager.UIManagerModule
 import com.facebook.react.bridge.ReactContext
+import net.skyscanner.backpack.reactnative.BpkViewStateHolder
 
-private const val STATE_CLEAN = 0
-private const val STATE_DIRTY = 1
-private const val STATE_INVALID_INSTANCE = 2
+class RNBpkRating(
+  private val reactContext: ReactContext,
+  val state: StateHolder = StateHolder()
+): FrameLayout(reactContext) {
 
-open class RNBpkRating(private val reactContext: ReactContext): FrameLayout(reactContext) {
-
-  private var state = STATE_INVALID_INSTANCE
   private var rating: BpkRating? = null
 
   init {
     layoutParams = LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT)
+    state.onAfterUpdateTransaction(::render)
   }
-
-  var title: ((BpkRating.Score) -> String)? = null
-    set(value) {
-      field = value
-      markDirty()
-    }
-
-  var subtitle: ((BpkRating.Score) -> String)? = null
-    set(value) {
-      field = value
-      markDirty()
-    }
-
-  var value: Float = 0f
-    set(value) {
-      field = value
-      markDirty()
-    }
-
-  var icon: ((BpkRating.Score) -> Drawable)? = null
-    set(value) {
-      field = value
-      markDirty()
-    }
-
-  var size: BpkRating.Size = BpkRating.Size.Base
-    set(value) {
-      field = value
-      markInvalid()
-    }
-
-  var orientation: BpkRating.Orientation = BpkRating.Orientation.Horizontal
-    set(value) {
-      field = value
-      markInvalid()
-    }
 
   fun render() {
-    if (shouldUpdate()) {
-      val view = getUpdatedView(orientation, size)
-      val uiManager = reactContext.getNativeModule(UIManagerModule::class.java)
-      val localData = BpkRatingLocalData(view, orientation, size)
-      // This will trigger measure to run in BpkRatingShadowNode
-      uiManager.setViewLocalData(id, localData)
-      rating = view
-      state = STATE_CLEAN
-    }
+    val view = getUpdatedView(state.orientation, state.size)
+    val uiManager = reactContext.getNativeModule(UIManagerModule::class.java)
+    val localData = BpkRatingLocalData(view, state.orientation, state.size)
+    // This will trigger measure to run in BpkRatingShadowNode
+    uiManager.setViewLocalData(id, localData)
+    rating = view
   }
-
-  private fun markDirty() {
-    state = state or STATE_DIRTY
-  }
-
-  private fun markInvalid() {
-    state = state or STATE_INVALID_INSTANCE
-  }
-
-  private fun isInvalid() = state and STATE_INVALID_INSTANCE == STATE_INVALID_INSTANCE
-
-  private fun shouldUpdate() = state != STATE_CLEAN
 
   private fun getUpdatedView(orientation: BpkRating.Orientation, size: BpkRating.Size): BpkRating {
-    val view = if (rating == null || isInvalid()) {
+    val view = if (rating == null || state.isInvalid()) {
       // Orientation and Size can only be set in the constructor, so we need a new instance for that
       removeAllViews()
       val view = BpkRating(context, orientation, size)
@@ -108,10 +57,10 @@ open class RNBpkRating(private val reactContext: ReactContext): FrameLayout(reac
       rating!!
     }
 
-    title?.let { view.title = it }
-    subtitle?.let { view.subtitle = it }
-    icon?.let { view.icon = it }
-    view.value = value
+    state.title?.let { view.title = it }
+    state.subtitle?.let { view.subtitle = it }
+    state.icon?.let { view.icon = it }
+    view.value = state.value
 
     requestLayout()
 
@@ -134,5 +83,16 @@ open class RNBpkRating(private val reactContext: ReactContext): FrameLayout(reac
     // Rating relies on a measure + layout pass happening after ir calls requestLayout()
     // based on: https://github.com/facebook/react-native/blob/8d5ac8de766b9e435cbfa9bfa6b8a2b75b0e2a19/ReactAndroid/src/main/java/com/facebook/react/views/toolbar/ReactToolbar.java#L175
     this.post(measureAndLayout)
+  }
+
+  companion object {
+    class StateHolder: BpkViewStateHolder() {
+      var title: ((BpkRating.Score) -> String)? by markDirtyOnUpdate(null)
+      var subtitle: ((BpkRating.Score) -> String)? by markDirtyOnUpdate(null)
+      var value: Float by markDirtyOnUpdate(0f)
+      var icon: ((BpkRating.Score) -> Drawable)? by markDirtyOnUpdate(null)
+      var size: BpkRating.Size by markInvalidOnUpdate(BpkRating.Size.Base)
+      var orientation: BpkRating.Orientation by markInvalidOnUpdate(BpkRating.Orientation.Horizontal)
+    }
   }
 }

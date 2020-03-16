@@ -17,6 +17,7 @@
  */
 package net.skyscanner.backpack.reactnative.rating
 
+import androidx.annotation.VisibleForTesting
 import com.facebook.react.bridge.Dynamic
 import com.facebook.react.bridge.JSApplicationIllegalArgumentException
 import com.facebook.react.bridge.ReadableArray
@@ -50,36 +51,36 @@ class BpkRatingViewManager : BaseViewManager<RNBpkRating, BpkRatingShadowNode>()
 
   @ReactProp(name = "title")
   fun setTitle(view: RNBpkRating, titles: ReadableArray) {
-    view.title = { score ->
+    view.state.title = { score ->
       pickValueForScore(score, titles, "title").asString()
     }
   }
 
   @ReactProp(name = "subtitle")
   fun setSubtitle(view: RNBpkRating, subtitles: ReadableArray) {
-    view.subtitle = { score ->
+    view.state.subtitle = { score ->
       pickValueForScore(score, subtitles, "subtitle").asString()
     }
   }
 
   @ReactProp(name = "value")
   fun setValue(view: RNBpkRating, value: Float) {
-    view.value = value
+    view.state.value = value
   }
 
   @ReactProp(name = "size")
   fun setSize(view: RNBpkRating, size: String) {
-    view.size = size.asRatingSize()
+    view.state.size = size.asRatingSize()
   }
 
   @ReactProp(name = "orientation")
   fun setOrientation(view: RNBpkRating, orientation: String) {
-    view.orientation = orientation.asRatingOrientation()
+    view.state.orientation = orientation.asRatingOrientation()
   }
 
   @ReactProp(name = "icon")
   fun setIcon(view: RNBpkRating, icons: ReadableArray) {
-    view.icon = { score ->
+    view.state.icon = { score ->
       val context = view.context
       val iconName = pickValueForScore(score, icons, "icon").asString()
       val iconId = context.resources.getIdentifier(iconName, "drawable", view.context.packageName)
@@ -89,7 +90,7 @@ class BpkRatingViewManager : BaseViewManager<RNBpkRating, BpkRatingShadowNode>()
 
   override fun onAfterUpdateTransaction(view: RNBpkRating) {
     super.onAfterUpdateTransaction(view)
-    view.render()
+    view.state.dispatchUpdateTransactionFinished()
   }
 
   private fun pickValueForScore(score: BpkRating.Score, values: ReadableArray, propName: String): Dynamic {

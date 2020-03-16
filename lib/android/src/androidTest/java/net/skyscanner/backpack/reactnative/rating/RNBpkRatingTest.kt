@@ -20,7 +20,7 @@ package net.skyscanner.backpack.reactnative.rating
 import androidx.core.content.ContextCompat
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.facebook.react.uimanager.UIManagerModule
-import com.nhaarman.mockitokotlin2.*
+import io.mockk.verify
 import net.skyscanner.backpack.R
 import net.skyscanner.backpack.rating.BpkRating
 import net.skyscanner.backpack.reactnative.testing.ReactContextTestRule
@@ -48,13 +48,13 @@ class RNBpkRatingTest {
     val iconRes = ContextCompat.getDrawable(contextRule.context, R.drawable.bpk_flag)!!
     val icon = { _:BpkRating.Score -> iconRes }
 
-    rating.title = title
-    rating.subtitle = subTitle
-    rating.value = value
-    rating.icon = icon
+    rating.state.title = title
+    rating.state.subtitle = subTitle
+    rating.state.value = value
+    rating.state.icon = icon
     rating.render()
 
-    verify(uiModule).setViewLocalData(eq(rating.id), any())
+    verify { uiModule.setViewLocalData(eq(rating.id), any()) }
 
     val bpkRating = rating.getChildAt(0)
     assertTrue(bpkRating is BpkRating)
@@ -71,12 +71,10 @@ class RNBpkRatingTest {
   fun test_updating_orientation() {
     val rating = RNBpkRating(contextRule.context)
     rating.render()
-
     val instance = rating.getChildAt(0)
 
-    rating.orientation = BpkRating.Orientation.Vertical
+    rating.state.orientation = BpkRating.Orientation.Vertical
     rating.render()
-
     val newInstance = rating.getChildAt(0)
 
     // BpkRating does not expose the orientation so we check if a new instance is correctly created
@@ -87,12 +85,10 @@ class RNBpkRatingTest {
   fun test_updating_zie() {
     val rating = RNBpkRating(contextRule.context)
     rating.render()
-
     val instance = rating.getChildAt(0)
 
-    rating.size = BpkRating.Size.Base
+    rating.state.size = BpkRating.Size.Base
     rating.render()
-
     val newInstance = rating.getChildAt(0)
 
     // BpkRating does not expose the size so we check if a new instance is correctly created
@@ -112,18 +108,17 @@ class RNBpkRatingTest {
     val flaskRes = ContextCompat.getDrawable(contextRule.context, R.drawable.bpk_flask)!!
     val flask = { _:BpkRating.Score -> flaskRes }
 
-    rating.title = { "Tile1" }
-    rating.subtitle = { "Subtitle1" }
-    rating.value = 2f
-    rating.icon = flag
+    rating.state.title = { "Tile1" }
+    rating.state.subtitle = { "Subtitle1" }
+    rating.state.value = 2f
+    rating.state.icon = flag
     rating.render()
-
-    rating.title = title
-    rating.subtitle = subTitle
-    rating.value = value
-    rating.icon = flask
+    rating.state.title = title
+    rating.state.subtitle = subTitle
+    rating.state.value = value
+    rating.state.icon = flask
+    rating.state.icon = flask
     rating.render()
-
     val bpkRating = rating.getChildAt(0)
     bpkRating as BpkRating
 
