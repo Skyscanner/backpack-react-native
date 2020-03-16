@@ -20,6 +20,7 @@
 		93A11238766E920180390589 /* libPods-Backpack Native.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABDC175C9DB0F0B9CBD71B51 /* libPods-Backpack Native.a */; };
 		D29228A3231441530046FF30 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29228A2231441530046FF30 /* File.swift */; };
 		D2AFEEA8241945C100111A13 /* RCTBPKRatingManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AFEEA7241945C100111A13 /* RCTBPKRatingManagerTests.m */; };
+		D2DA2ADD241FDA1E00863E1D /* RCTBPKDialogManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DA2AD7241FCAA800863E1D /* RCTBPKDialogManagerTests.m */; };
 		D61144CB2200516700F76EAE /* RCTBPKCalendarDateUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D61144CA2200516700F76EAE /* RCTBPKCalendarDateUtilsTests.m */; };
 		D66FC4882109D8610063B1A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66FC4872109D8610063B1A6 /* Main.storyboard */; };
 		D66FC4912109DA3C0063B1A6 /* StorybookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FC4902109DA3C0063B1A6 /* StorybookViewController.m */; };
@@ -70,6 +71,7 @@
 		D292289F2314411A0046FF30 /* Backpack Native-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Backpack Native-Bridging-Header.h"; sourceTree = "<group>"; };
 		D29228A2231441530046FF30 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		D2AFEEA7241945C100111A13 /* RCTBPKRatingManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTBPKRatingManagerTests.m; sourceTree = "<group>"; };
+		D2DA2AD7241FCAA800863E1D /* RCTBPKDialogManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTBPKDialogManagerTests.m; sourceTree = "<group>"; };
 		D60ACAA41FD8532E009E5946 /* he-IL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "he-IL"; path = "he-IL.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		D61144CA2200516700F76EAE /* RCTBPKCalendarDateUtilsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTBPKCalendarDateUtilsTests.m; sourceTree = "<group>"; };
 		D66FC4872109D8610063B1A6 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				00E356F01AD99517003FC87E /* Supporting Files */,
 				D61144CA2200516700F76EAE /* RCTBPKCalendarDateUtilsTests.m */,
 				D2AFEEA7241945C100111A13 /* RCTBPKRatingManagerTests.m */,
+				D2DA2AD7241FCAA800863E1D /* RCTBPKDialogManagerTests.m */,
 			);
 			path = NativeTests;
 			sourceTree = "<group>";
@@ -485,6 +488,7 @@
 			files = (
 				D2AFEEA8241945C100111A13 /* RCTBPKRatingManagerTests.m in Sources */,
 				D61144CB2200516700F76EAE /* RCTBPKCalendarDateUtilsTests.m in Sources */,
+				D2DA2ADD241FDA1E00863E1D /* RCTBPKDialogManagerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
