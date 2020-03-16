@@ -19,86 +19,81 @@ package net.skyscanner.backpack.reactnative.dialog
 
 import android.content.Context
 import android.widget.FrameLayout
+import androidx.annotation.VisibleForTesting
 import net.skyscanner.backpack.button.BpkButton
 import net.skyscanner.backpack.dialog.BpkDialog
+import net.skyscanner.backpack.reactnative.BpkViewStateHolder
 import net.skyscanner.backpack.reactnative.dialog.events.DialogActionType
 
 typealias  ActionCallback = (DialogActionType, Int) -> Unit
 
 typealias Action = Pair<String, BpkButton.Type>
 
-class RNDialog(context: Context): FrameLayout(context) {
+class RNDialog(
+  context: Context,
+  val state: StateHolder = StateHolder()
+): FrameLayout(context) {
 
-  private var dialog: BpkDialog = BpkDialog(context)
+  @VisibleForTesting
+  internal var dialog: BpkDialog? = null
 
-  private var dirty: Boolean = false
-
-  var dialogType: BpkDialog.Style = BpkDialog.Style.ALERT
-    set(value) {
-      field = value
-      createBpkDialog()
-      dirty = true
-    }
-
-  var title: String? = null
-    set(value) {
-      field = value
-      value?. let { dialog.title = it }
-    }
-
-  var description: String? = null
-    set(value) {
-      field = value
-      value?. let { dialog.description = it }
-    }
-
-  var icon: BpkDialog.Icon? = null
-    set(value) {
-      field = value
-      value?. let { dialog.icon = it }
-    }
-
-  var actions: Array<Action> = arrayOf()
-    set(value) {
-      field = value
-      createBpkDialog()
-      dirty = true
-    }
-
-  var scrimEnabled: Boolean = true
-
-  var isOpen: Boolean = false
-
-  var onAction: ActionCallback? = null
-
-  fun show() = dialog.show()
-
-  fun hide() = dialog.dismiss()
-
-  private fun createBpkDialog() {
-    dialog = BpkDialog(context, dialogType)
-    title?. let { dialog.title = it }
-    description?. let { dialog.description = it }
-    icon?. let { dialog.icon = it }
+  init {
+    state.onAfterUpdateTransaction(::render)
   }
 
-  fun setUpActions() {
-    if (dirty) {
-      dialog.setCanceledOnTouchOutside(scrimEnabled)
-      dialog.setOnCancelListener {
-        onAction?.invoke(DialogActionType.SCRIM_ACTION, 0)
-      }
-      actions.forEachIndexed { index, element ->
-        dialog.addActionButton(
-          BpkButton(context, element.second).apply {
-            text = element.first
-            setOnClickListener {
-              onAction?.invoke(DialogActionType.BUTTON_ACTION, index)
+  private fun render() {
+    val updatedDialog = getUpdatedDialog()
+    if (state.isOpen) {
+      updatedDialog.show()
+    } else {
+      updatedDialog.hide()
+    }
+  }
+
+  private fun getUpdatedDialog(): BpkDialog {
+    val updatedDialog = if (dialog == null || state.isInvalid()) {
+      BpkDialog(context, state.dialogType).apply {
+        // setup actions
+        state.actions.forEachIndexed { index, element ->
+          this.addActionButton(
+            BpkButton(context, element.second).apply {
+              text = element.first
+              setOnClickListener {
+                state.onAction?.invoke(DialogActionType.BUTTON_ACTION, index)
+              }
             }
-          }
-        )
+          )
+        }
+
+        this.setOnCancelListener {
+          state.onAction?.invoke(DialogActionType.SCRIM_ACTION, 0)
+        }
       }
-      dirty = false
+    } else {
+      dialog!!
+    }
+
+    state.title?.let { updatedDialog.title = it }
+    state.description?.let { updatedDialog.description = it }
+    state.icon?.let { updatedDialog.icon = it }
+    updatedDialog.setCanceledOnTouchOutside(state.scrimEnabled)
+
+    dialog = updatedDialog
+
+    return dialog!!
+  }
+
+  companion object {
+    class StateHolder: BpkViewStateHolder() {
+      var dialogType: BpkDialog.Style by markInvalidOnUpdate(BpkDialog.Style.ALERT)
+      var actions: Array<Action> by markInvalidOnUpdate(emptyArray())
+      var onAction: ActionCallback? by markInvalidOnUpdate(null)
+
+      var title: String? by markDirtyOnUpdate(null)
+      var description: String? by markDirtyOnUpdate(null)
+      var icon: BpkDialog.Icon? by markDirtyOnUpdate(null)
+      var scrimEnabled: Boolean by markDirtyOnUpdate(true)
+      var isOpen: Boolean by markDirtyOnUpdate(false)
     }
   }
 }

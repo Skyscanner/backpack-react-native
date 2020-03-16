@@ -18,6 +18,8 @@
 package net.skyscanner.backpack.reactnative.dialog
 
 import android.content.res.Resources
+import androidx.annotation.VisibleForTesting
+import com.facebook.react.bridge.JSApplicationIllegalArgumentException
 import com.facebook.react.bridge.ReadableArray
 import com.facebook.react.bridge.ReadableMap
 import com.facebook.react.uimanager.ThemedReactContext
@@ -38,27 +40,27 @@ class DialogViewManager : ViewGroupManager<RNDialog>() {
 
   override fun getName() = VIEW_NAME
 
-  override fun createViewInstance(reactContext: ThemedReactContext): RNDialog {
+  public override fun createViewInstance(reactContext: ThemedReactContext): RNDialog {
     return RNDialog(reactContext)
   }
 
   @ReactProp(name = "dialogType")
   fun setDialogType(view: RNDialog, dialogType: String) {
-    view.dialogType = when (dialogType) {
+    view.state.dialogType = when (dialogType) {
       "alert" -> Style.ALERT
       "bottomSheet" -> Style.BOTTOM_SHEET
-      else -> throw IllegalArgumentException("Dialog type $dialogType is not supported")
+      else -> throw JSApplicationIllegalArgumentException("Dialog type $dialogType is not supported")
     }
   }
 
   @ReactProp(name = "title")
   fun setTitle(view: RNDialog, title: String?) {
-    view.title = title
+    view.state.title = title
   }
 
   @ReactProp(name = "description")
   fun setDescription(view: RNDialog, description: String?) {
-    view.description = description
+    view.state.description = description
   }
 
   @ReactProp(name = "icon")
@@ -67,21 +69,21 @@ class DialogViewManager : ViewGroupManager<RNDialog>() {
       val resources: Resources = view.context.resources
       val iconId = resources.getIdentifier(icon.getString("iconId"), "drawable", view.context.packageName)
       val iconColor = resources.getIdentifier(icon.getString("iconColor"), "color", view.context.packageName)
-      view.icon = BpkDialog.Icon(iconId, iconColor)
+      view.state.icon = BpkDialog.Icon(iconId, iconColor)
     }
   }
 
   @ReactProp(name = "actions")
   fun setActions(view: RNDialog, actions: ReadableArray?) {
     actions?.let {
-      view.actions = toMapsList(it).map { each ->
+      view.state.actions = toMapsList(it).map { each ->
         val buttonType = when(val type = each?.getString("type")) {
           "primary" -> BpkButton.Type.Primary
           "secondary" -> BpkButton.Type.Secondary
           "outline" -> BpkButton.Type.Outline
           "featured" -> BpkButton.Type.Featured
           "destructive" -> BpkButton.Type.Destructive
-          else -> throw IllegalArgumentException("Action button type $type is not supported")
+          else -> throw JSApplicationIllegalArgumentException("Action button type $type is not supported")
         }
         Pair(each.getString("text")!!, buttonType)
       }.toTypedArray()
@@ -90,30 +92,25 @@ class DialogViewManager : ViewGroupManager<RNDialog>() {
 
   @ReactProp(name = "scrimEnabled")
   fun setScrimEnabled(view: RNDialog, scrimEnabled: Boolean) {
-    view.scrimEnabled = scrimEnabled
+    view.state.scrimEnabled = scrimEnabled
   }
 
   @ReactProp(name = "isOpen")
   fun setIsOpen(view: RNDialog, isOpen: Boolean) {
-    view.isOpen = isOpen
+    view.state.isOpen = isOpen
   }
 
-  override fun addEventEmitters(reactContext: ThemedReactContext, view: RNDialog) {
+  public override fun addEventEmitters(reactContext: ThemedReactContext, view: RNDialog) {
     val dispatcher = reactContext.getNativeModule(UIManagerModule::class.java).eventDispatcher
 
-    view.onAction = { type, pos ->
+    view.state.onAction = { type, pos ->
       dispatcher.dispatchEvent(DialogActionEvent(view.id, type, pos))
     }
   }
 
   override fun onAfterUpdateTransaction(view: RNDialog) {
     super.onAfterUpdateTransaction(view)
-    view.setUpActions()
-    if (view.isOpen) {
-      view.show()
-    } else {
-      view.hide()
-    }
+    view.state.dispatchUpdateTransactionFinished()
   }
 
   private fun toMapsList(readableArray: ReadableArray): List<ReadableMap?> =
