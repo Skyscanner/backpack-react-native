@@ -20,6 +20,7 @@
 
 #import "RCTBPKRating.h"
 #import "RCTBPKRatingShadowView.h"
+#import "RCTConvert+RCTBPKRating.h"
 
 @implementation RCTBPKRatingManager
 
