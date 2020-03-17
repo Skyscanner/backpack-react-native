@@ -169,7 +169,7 @@ const createComponent = async name => {
     );
     addValueToFile(
       spellingFile,
-      `bpk-${name}`,
+      `bpk-component-${name}`,
       SPELLING_PACKAGES_SPLIT_POINT_1,
       SPELLING_PACKAGES_SPLIT_POINT_2,
     );
