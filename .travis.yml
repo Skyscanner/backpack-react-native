@@ -4,7 +4,7 @@ env:
   global:
     - NPM_CONFIG_LOGLEVEL=warn
     - CLOUDSDK_CORE_DISABLE_PROMPTS=1
-    - ANDROID_API_LEVEL=28
+    - ANDROID_API_LEVEL=29
     - ANDROID_BUILD_TOOLS_VERSION=29.0.2
     - ANDROID_SDK_ROOT=/usr/local/android-sdk/
     - secure: ZzSXv0mXeBuJ3Lb+zIHXn04vTxve1C9LYCdVZmqibPCbc0k5DA3up/sSuMsJzUqoS4FxOCm1wOq/oXvEgBEJgxjCkevH7Qo9V7AtCHgs6gF2yaeBFdm1jjf7sB2BxO9F3EcpPSgWXHNNRX6SFxw0a3qMLvE5kDZIzDwIaOtR/j9NweiIXkua2gZkuOKqc18HulTZ5zlK/XBW4TrOwxJyDOYYHTdzhYXVVdK5lFof8pd6MUpk+s5eRxtBPtDq4GO4MPtj1Z5dYmhEUALEepJAjYRWqhzlsVwWwqAChJDEhUYoyAXVS9Mf+LZrD5LDzWYcmCrlsebPczEcEKoN+CMRmNW8w6/l+xPoPYac7nubtQCqZA32LkdGQ/7oG6w2ttsKnotREp/1JAGpi59uEOeJ3EjysGOH5Y+pphNgLjZg2UICoT3rYwqglKSARdLMIBfgzVF3aHVnRgUam8i830DSHTrc5ShxpL6O0mwZa6Bemf9jwsXC5Dpo0XaIbA4zOV+Y4Gq98YBN9U3Y50dyPbbsc5VTRlCJZrC7+vIgNgy8P4vYsITip3Nj9pAmKNFV1t3ChtkxI6Q7CM70CVdJALeireeok0kz+HKbuOy0t0Efz90lPj+WsleZEJBve7AFYPzR1h6Czs072X4sQlPXedcCHRhD48WgbBX0IfzTiAYCuG0=
@@ -65,6 +65,29 @@ jobs:
           - tools
           - build-tools-$ANDROID_BUILD_TOOLS_VERSION
           - android-$ANDROID_API_LEVEL
+
+      before_cache:
+        # Do not cache a few Gradle files/directories (see https://docs.travis-ci.com/user/languages/java/#Caching)
+        - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+        - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+
+      cache:
+        directories:
+          # Gradle dependencies
+          - $HOME/.gradle/caches/
+          - $HOME/.gradle/wrapper/
+
+          # Android build cache (see http://tools.android.com/tech-docs/build-cache)
+          - $HOME/.android/build-cache
+
+          # Node modules
+          - node_modules
+
+          # Maven cache
+          - $HOME/.m2
+
+          # Gcloud
+          - $HOME/google-cloud-sdk
 
 branches:
   only:
