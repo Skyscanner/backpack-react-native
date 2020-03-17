@@ -17,6 +17,7 @@
  */
 package net.skyscanner.backpack.reactnative.calendar
 
+import com.facebook.react.bridge.JSApplicationIllegalArgumentException
 import org.threeten.bp.LocalDate
 
 interface DateMatcher {
@@ -27,7 +28,7 @@ interface DateMatcher {
         "after" -> AfterMatcher(dates[0])
         "before" -> BeforeMatcher(dates[0])
         "any" -> AnyMatcher(dates)
-        else -> throw IllegalArgumentException("Unsupported date matcher type: $type")
+        else -> throw JSApplicationIllegalArgumentException("Unsupported date matcher type: $type")
       }
     }
   }
@@ -35,26 +36,41 @@ interface DateMatcher {
   fun match(date: LocalDate): Boolean
 }
 
-internal class RangeMatcher(internal val start: LocalDate, internal val end: LocalDate): DateMatcher {
+internal data class RangeMatcher(internal val start: LocalDate, internal val end: LocalDate): DateMatcher {
   override fun match(date: LocalDate): Boolean {
     return date in start..end
   }
 }
 
-internal class AfterMatcher(internal val start: LocalDate): DateMatcher {
+internal data class AfterMatcher(internal val start: LocalDate): DateMatcher {
   override fun match(date: LocalDate): Boolean {
     return date > start
   }
 }
 
-internal class BeforeMatcher(internal val end: LocalDate): DateMatcher {
+internal data class BeforeMatcher(internal val end: LocalDate): DateMatcher {
   override fun match(date: LocalDate): Boolean {
     return date < end
   }
 }
 
-internal class AnyMatcher(internal val dates: Array<LocalDate>): DateMatcher {
+internal data class AnyMatcher(internal val dates: Array<LocalDate>): DateMatcher {
   override fun match(date: LocalDate): Boolean {
     return dates.any { it == date }
+  }
+
+  override fun equals(other: Any?): Boolean {
+    if (this === other) return true
+    if (javaClass != other?.javaClass) return false
+
+    other as AnyMatcher
+
+    if (!dates.contentEquals(other.dates)) return false
+
+    return true
+  }
+
+  override fun hashCode(): Int {
+    return dates.contentHashCode()
   }
 }

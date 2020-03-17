@@ -24,17 +24,18 @@ import net.skyscanner.backpack.calendar.BpkCalendar
 import net.skyscanner.backpack.calendar.model.*
 import net.skyscanner.backpack.calendar.presenter.SelectionType
 import net.skyscanner.backpack.calendar.view.OnYearChangedListener
+import net.skyscanner.backpack.reactnative.BpkViewStateHolder
 import org.threeten.bp.LocalDate
 import java.util.*
 
 class RNCalendarView(
-  context: Context
+  context: Context,
+  val state: StateHolder = StateHolder()
 ): FrameLayout(context) {
 
   private var calendar = RNCompatBpkCalendar(context)
   private var controller: CalendarController? = null
   private var selection: CalendarSelection? = null
-  private var shouldUpdateContent = false
 
   init {
     layoutParams = LayoutParams(
@@ -42,89 +43,42 @@ class RNCalendarView(
             LayoutParams.MATCH_PARENT)
 
     addView(calendar)
+    state.onAfterUpdateTransaction(::render)
   }
 
-  var locale: String? = null
-    set(value) {
-      if (field != null && value == null) {
-        throw IllegalArgumentException("[RNCalendarView] Can't set locale to null")
-      }
-
-      if (value != field) {
-        field = value
-        markInvalid()
-      }
-    }
-
-  var minDate: LocalDate? = null
-    set(value) {
-      if (value != field) {
-        field = value
-        markInvalid()
-      }
-    }
-
-  var maxDate: LocalDate? = null
-    set(value) {
-      if (value != field) {
-        field = value
-        markInvalid()
-      }
-    }
-
-  var selectedDates: Array<LocalDate> = arrayOf()
-
-  var selectionType: SelectionType = SelectionType.RANGE
-
-  var onDatesChange: ChangeCallback? = null
-
-  var disabledDateMatcher: DateMatcher? = null
-    set(value) {
-      if (value != field) {
-        field = value
-        shouldUpdateContent = true
-      }
-    }
-
-  internal var colorBuckets: Array<RNColorBucket>? = null
-    set(value) {
-      field = value
-      shouldUpdateContent = true
-    }
-
   fun render() {
-    locale ?: throw IllegalStateException("[RNCalendarView] Locale has not been initialized")
+    state.locale ?: throw IllegalStateException("[RNCalendarView] Locale has not been initialized")
 
-    selection = selectedDaysToSelection(selectedDates)
+    selection = selectedDaysToSelection(state.selectedDates)
 
-    if (isInvalid()) {
+    if (state.isInvalid() || controller == null) {
       controller = createController()
       calendar.setController(controller!!)
       // we set it here to avoid firing the callback when `initiallySelected` dates are provided
-      controller?.onDatesChange = onDatesChange
+      controller?.onDatesChange = state.onDatesChange
     } else {
-      controller?.onDatesChange = onDatesChange
-      controller?.selectionType = selectionType
-      controller?.disabledDateMatcher = disabledDateMatcher
-      controller?.calendarColoring = colorBuckets?.let {
+      controller?.onDatesChange = state.onDatesChange
+      controller?.selectionType = state.selectionType
+      controller?.disabledDateMatcher = state.disabledDateMatcher
+      controller?.calendarColoring = state.colorBuckets?.let {
         CalendarColoring(it.map { bucket -> bucket.toColorBucket() }.toSet())
       }
 
-      if (shouldUpdateContent) {
-        shouldUpdateContent = false
+      if (state.shouldUpdateContent) {
+        state.shouldUpdateContent = false
         controller?.updateContent()
       }
     }
   }
 
   private fun createController(): CalendarController {
-    val currentController = CalendarController(context, Locale.forLanguageTag(locale!!))
-    currentController.selectionType = selectionType
-    minDate?.let { currentController.startDate = it }
-    maxDate?.let { currentController.endDate = it }
+    val currentController = CalendarController(context, Locale.forLanguageTag(state.locale!!))
+    currentController.selectionType = state.selectionType
+    state.minDate?.let { currentController.startDate = it }
+    state.maxDate?.let { currentController.endDate = it }
     selection?.let { currentController.updateSelection(it) }
-    disabledDateMatcher?.let { currentController.disabledDateMatcher = it }
-    colorBuckets?.let { currentController.calendarColoring = CalendarColoring(
+    state.disabledDateMatcher?.let { currentController.disabledDateMatcher = it }
+    state.colorBuckets?.let { currentController.calendarColoring = CalendarColoring(
             it.map { bucket -> bucket.toColorBucket()}.toSet()) }
 
     return currentController
@@ -132,7 +86,7 @@ class RNCalendarView(
 
   private fun selectedDaysToSelection(selectedDays: Array<LocalDate>): CalendarSelection {
     return when (selectedDays.size) {
-      1, 2 -> if (selectionType == SelectionType.RANGE) {
+      1, 2 -> if (state.selectionType == SelectionType.RANGE) {
         val end = if (selectedDays.size == 2) selectedDays[1] else null
         CalendarRange(selectedDays[0], end)
       } else {
@@ -144,12 +98,6 @@ class RNCalendarView(
       else -> throw IllegalStateException("[RNCalendarView] No more than 2 selectedDates are supported")
     }
   }
-
-  private fun markInvalid() {
-    controller = null
-  }
-
-  private fun isInvalid() = controller == null
 
   private val measureAndLayout = Runnable {
     measure(
@@ -166,6 +114,45 @@ class RNCalendarView(
     this.post(measureAndLayout)
   }
 
+  companion object {
+    class StateHolder: BpkViewStateHolder() {
+      internal var shouldUpdateContent = false
+      var locale: String? = null
+        set(value) {
+          if (field != null && value == null) {
+            throw IllegalArgumentException("[RNCalendarView] Can't set locale to null")
+          }
+
+          if (value != field) {
+            field = value
+            markInvalid()
+          }
+        }
+
+      var minDate: LocalDate? by markInvalidOnUpdate(null)
+      var maxDate: LocalDate? by markInvalidOnUpdate(null)
+
+      var selectedDates: Array<LocalDate> by markDirtyOnUpdate(arrayOf())
+      var selectionType: SelectionType by markDirtyOnUpdate(SelectionType.RANGE)
+      var onDatesChange: ChangeCallback? by markDirtyOnUpdate(null)
+
+      var disabledDateMatcher: DateMatcher? = null
+        set(value) {
+          if (value != field) {
+            field = value
+            shouldUpdateContent = true
+            markDirty()
+          }
+        }
+
+      internal var colorBuckets: Array<RNColorBucket>? = null
+        set(value) {
+          field = value
+          shouldUpdateContent = true
+          markDirty()
+        }
+    }
+  }
 
   private inner class RNCompatBpkCalendar @JvmOverloads constructor(
           context: Context,
@@ -206,8 +193,8 @@ class RNCalendarView(
 
     return when (this) {
       is RangeMatcher ->  generateSequence(this.start, plusOne).takeWhile { it <= this.end }.toSet()
-      is BeforeMatcher -> generateSequence(this.end, minusOne).takeWhile { it >= minDate }.toSet()
-      is AfterMatcher -> generateSequence(this.start, plusOne).takeWhile { it <= maxDate }.toSet()
+      is BeforeMatcher -> generateSequence(this.end, minusOne).takeWhile { it >= state.minDate }.toSet()
+      is AfterMatcher -> generateSequence(this.start, plusOne).takeWhile { it <= state.maxDate }.toSet()
       is AnyMatcher -> this.dates.toSet()
       else -> emptySet()
     }

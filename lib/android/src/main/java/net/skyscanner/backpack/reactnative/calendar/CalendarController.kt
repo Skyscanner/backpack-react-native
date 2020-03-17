@@ -19,6 +19,7 @@ package net.skyscanner.backpack.reactnative.calendar
 
 import android.content.Context
 import android.view.View
+import androidx.annotation.VisibleForTesting
 import net.skyscanner.backpack.calendar.model.CalendarColoring
 import net.skyscanner.backpack.calendar.model.CalendarSelection
 import net.skyscanner.backpack.calendar.model.ColoredBucket
