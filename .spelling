@@ -244,6 +244,7 @@ imageComponent
 increaseButtonLabel
 innerStyle
 inputRef
+insetPaddingMode
 inView
 isOpen
 itemStyle

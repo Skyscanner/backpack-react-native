@@ -12,7 +12,9 @@ Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usag
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
-import BpkFlare from 'backpack-react-native/bpk-component-flare';
+import BpkImage from 'backpack-react-native/bpk-component-image';
+import BpkText from 'backpack-react-native/bpk-component-text';
+import BpkFlare, { INSET_PADDING_MODES } from 'backpack-react-native/bpk-component-flare';
 
 const styles = StyleSheet.create({
   container: {
@@ -24,13 +26,23 @@ const styles = StyleSheet.create({
 
 export default () => (
   <View style={styles.container}>
-    <BpkFlare />
+
+    // With arbitrary content.
+    <BpkFlare>
+        <BpkText>Hotels in Valparaiso.</BpkText>
+    </BpkFlare>
+
+    // With an image and insetPaddingMode set.
+    <BpkFlare insetPaddingMode={INSET_PADDING_MODES.bottom}>
+      <BpkImage source={{uri: "imageUri" }} alt="Image title" />
+    </BpkFlare>
   </View>
 );
 ```
 
 ## Props
 
-### BpkFlare
-
-TODO - Add your component's prop types here.
+| Property         | PropType                                                         | Required | Default Value              |
+| ---------------- | ---------------------------------------------------------------- | -------- | -------------------------- |
+| children         | node                                                             | true     | -                          |
+| insetPaddingMode | oneOf([`INSET_PADDING_MODES.none`, `INSET_PADDING_MODES.bottom`) | true     | `INSET_PADDING_MODES.none` |
