@@ -20,7 +20,7 @@ which gcloud > /dev/null
 
 if [ $? -ne 0 ]; then
   echo "'gcloud' command not found in this machine."
-  exit $?
+  exit 1
 fi;
 
 app_path=./android/app/build/outputs/apk/debug/app-debug.apk
@@ -28,10 +28,12 @@ test_app_path=./lib/android/build/outputs/apk/androidTest/debug/backpack-react-n
 
 if [ ! -f $app_path ]; then
   echo "Couldn't find app build, ensure you have run \"./gradlew :app:assembleDebug\""
+  exit 1
 fi
 
 if [ ! -f $test_app_path ]; then
   echo "Couldn't find test app build, ensure you have run \"./gradlew :backpack-react-native:assembleAndroidTest\""
+  exit 1
 fi
 
 set -e
