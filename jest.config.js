@@ -42,6 +42,7 @@ const getConfig = baseConfig => ({
       lines: 75,
     },
   },
+  testPathIgnorePatterns: ['<rootDir>/dist/'],
   setupFilesAfterEnv: ['<rootDir>/jest/setup.js'],
 });
 

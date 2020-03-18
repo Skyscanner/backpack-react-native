@@ -2,3 +2,4 @@ node_modules
 flow-typed
 coverage
 dist
+lib/android/build
