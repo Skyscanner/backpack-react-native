@@ -69,6 +69,7 @@ const hideWarnings = () => {
 
 /* eslint-disable global-require */
 configure(() => {
+  require('../lib/bpk-appearance/stories');
   require('../lib/bpk-component-alert/stories');
   require('../lib/bpk-component-animate-height/stories');
   require('../lib/bpk-component-badge/stories');
@@ -81,6 +82,7 @@ configure(() => {
   require('../lib/bpk-component-carousel/stories');
   require('../lib/bpk-component-chip/stories');
   require('../lib/bpk-component-dialog/stories');
+  require('../lib/bpk-component-flare/stories');
   require('../lib/bpk-component-flat-list/stories');
   require('../lib/bpk-component-horizontal-nav/stories');
   require('../lib/bpk-component-icon/stories');
@@ -102,7 +104,6 @@ configure(() => {
   require('../lib/bpk-component-text/stories');
   require('../lib/bpk-component-touchable-native-feedback/stories');
   require('../lib/bpk-component-touchable-overlay/stories');
-  require('../lib/bpk-appearance/stories');
   require('../lib/bpk-styles/stories');
   require('../lib/bpk-theming/stories');
 }, module);

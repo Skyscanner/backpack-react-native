@@ -34,12 +34,13 @@ BpkDismissibleChip
 BpkDynamicStyleSheet
 BpkFieldset
 BpkFlag
+BpkFlare
 BpkFlatList
 BpkFlatListHeader
 BpkFlatListItem
 BpkFlatListItemSeparator
-BpkFlatListSearchField
 BpkFlatListNoResultsText
+BpkFlatListSearchField
 BpkHorizontalNav
 BpkHorizontalNavItem
 BpkIcon
@@ -62,8 +63,8 @@ BpkSectionList
 BpkSectionListHeader
 BpkSectionListItem
 BpkSectionListItemSeparator
-BpkSectionListSearchField
 BpkSectionListNoResultsText
+BpkSectionListSearchField
 BpkSelect
 BpkTicket
 # End of component names
@@ -243,6 +244,7 @@ imageComponent
 increaseButtonLabel
 innerStyle
 inputRef
+insetPaddingMode
 inView
 isOpen
 itemStyle
@@ -355,6 +357,7 @@ bpk-component-description-list
 bpk-component-dialog
 bpk-component-drawer
 bpk-component-fieldset
+bpk-component-flare
 bpk-component-flat-list
 bpk-component-form-validation
 bpk-component-grid
@@ -381,8 +384,8 @@ bpk-component-nudger
 bpk-component-pagination
 bpk-component-panel
 bpk-component-paragraph
-bpk-component-picker
 bpk-component-phone-input
+bpk-component-picker
 bpk-component-popover
 bpk-component-progress
 bpk-component-radio
@@ -398,8 +401,8 @@ bpk-component-star-rating
 bpk-component-switch
 bpk-component-table
 bpk-component-text
-bpk-component-textarea
 bpk-component-text-input
+bpk-component-textarea
 bpk-component-theme-toggle
 bpk-component-ticket
 bpk-component-tile
@@ -411,9 +414,9 @@ bpk-docs
 bpk-mixins
 bpk-react-utils
 bpk-scrim-utils
+bpk-styles
 bpk-stylesheets
 bpk-svgs
-bpk-styles
 bpk-tether
 bpk-theming
 bpk-tokens
