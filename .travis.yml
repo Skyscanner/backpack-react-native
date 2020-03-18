@@ -16,8 +16,7 @@ jobs:
 ####### JS BUILD ########
     - language: node_js
       install:
-        - npm install
-        - npm run link
+        - npm ci
 
       script:
         - set -e
@@ -32,14 +31,14 @@ jobs:
     - language: android
       dist: trusty
       sudo: required
-      
+
       before_install:
         # Only decode gcloud service key if not in a forked repo
         - |
           if [ $TRAVIS_REPO_SLUG == $MAIN_REPO_SLUG ]; then
             openssl aes-256-cbc -K $encrypted_b11d52d95771_key -iv $encrypted_b11d52d95771_iv -in gcloud-service-key.json.enc -out $HOME/gcloud-service-key.json -d
-            
-            if [ ! -d "$HOME/google-cloud-sdk/bin" ]; then 
+
+            if [ ! -d "$HOME/google-cloud-sdk/bin" ]; then
               rm -rf $HOME/google-cloud-sdk
               export $CLOUDSDK_CORE_DISABLE_PROMPTS
               curl https://sdk.cloud.google.com | bash
@@ -57,7 +56,7 @@ jobs:
       install:
         - npm install
 
-      script: 
+      script:
         - ./android/gradlew -p android :app:assembleDebug :backpack-react-native:assembleAndroidTest
         # Only run tests if not in a forked repo as it depends on secrets not available to forks
         - |
