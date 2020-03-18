@@ -6,6 +6,11 @@
 
 - bpk-component-text-input:
   - Fixed an issue where masked inputs would sometimes behave erratically when deleting characters.
+  
+**Added:**
+
+- `bpk-component-flare`:
+  - Added flare component for Android.
 
 ## How to write a good changelog entry
 
