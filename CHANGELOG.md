@@ -2,6 +2,11 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 1.0.0 - 2020-03-18
+
+**Fixed:**
+Updated `backpack-ios` dependency.
+
 # 0.1.0 - 2020-03-11
 
 **Added:**
