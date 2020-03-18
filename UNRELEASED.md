@@ -1,10 +1,5 @@
 # Unreleased
 
-**Fixed:**
-
-- bpk-component-icon:
-  - Updated hotels icon.
-
 > Place your changes below this line.
 
 ## How to write a good changelog entry
