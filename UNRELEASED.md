@@ -1,6 +1,10 @@
 # Unreleased
 
 > Place your changes below this line.
+**Added:**
+
+- bpk-component-calendar:
+  - `disabledDates` is now supported on iOS as well as Android.
 
 ## How to write a good changelog entry
 
