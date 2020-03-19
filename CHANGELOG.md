@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 1.1.0 - 2020-03-19
+
+**Added:**
+
+- bpk-component-calendar:
+  - `disabledDates` is now supported on iOS as well as Android.
+
 # 1.0.1 - 2020-03-18
 
 **Fixed:**
