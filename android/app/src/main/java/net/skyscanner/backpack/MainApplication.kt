@@ -12,6 +12,7 @@ import com.facebook.soloader.SoLoader
 import com.jakewharton.threetenabp.AndroidThreeTen
 import net.skyscanner.backpack.reactnative.calendar.CalendarPackage
 import net.skyscanner.backpack.reactnative.dialog.DialogPackage
+import net.skyscanner.backpack.reactnative.flare.BpkFlarePackage
 import net.skyscanner.backpack.reactnative.rating.BpkRatingPackage
 import java.util.Arrays
 
@@ -22,8 +23,8 @@ class MainApplication : Application(), ReactApplication {
             // Somehow build BuildConfig.DEBUG was being set to false
             // after the update to androidx and the latest backpack lib
             // which was causing the app not to boot. Since we only ever
-            // use this app in debug mode there is no harm in setting this 
-            // to always true. 
+            // use this app in debug mode there is no harm in setting this
+            // to always true.
             return true
         }
 
@@ -35,6 +36,7 @@ class MainApplication : Application(), ReactApplication {
                     CalendarPackage(),
                     DialogPackage(),
                     BpkRatingPackage(),
+                    BpkFlarePackage(),
                     DarkModePackage()
             )
         }
