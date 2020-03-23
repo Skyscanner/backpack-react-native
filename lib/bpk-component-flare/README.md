@@ -35,7 +35,7 @@ export default () => (
         <BpkText>Hotels in Valparaiso.</BpkText>
     </BpkFlare>
 
-    // With an image and insetPaddingMode set.
+    // With an image.
     <BpkFlare style={styles.flare}>
       <BpkImage source={{uri: "imageUri" }} alt="Image title" />
     </BpkFlare>
