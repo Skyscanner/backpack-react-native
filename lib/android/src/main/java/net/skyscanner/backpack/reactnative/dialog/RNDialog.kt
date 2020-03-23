@@ -25,14 +25,14 @@ import net.skyscanner.backpack.dialog.BpkDialog
 import net.skyscanner.backpack.reactnative.BpkViewStateHolder
 import net.skyscanner.backpack.reactnative.dialog.events.DialogActionType
 
-typealias  ActionCallback = (DialogActionType, Int) -> Unit
+typealias ActionCallback = (DialogActionType, Int) -> Unit
 
 typealias Action = Pair<String, BpkButton.Type>
 
 class RNDialog(
   context: Context,
   val state: StateHolder = StateHolder()
-): FrameLayout(context) {
+) : FrameLayout(context) {
 
   @VisibleForTesting
   internal var dialog: BpkDialog? = null
@@ -84,7 +84,7 @@ class RNDialog(
   }
 
   companion object {
-    class StateHolder: BpkViewStateHolder() {
+    class StateHolder : BpkViewStateHolder() {
       var dialogType: BpkDialog.Style by markInvalidOnUpdate(BpkDialog.Style.ALERT)
       var actions: Array<Action> by markInvalidOnUpdate(emptyArray())
       var onAction: ActionCallback? by markInvalidOnUpdate(null)

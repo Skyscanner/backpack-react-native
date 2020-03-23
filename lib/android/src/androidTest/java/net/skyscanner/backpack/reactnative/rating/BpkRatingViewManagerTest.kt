@@ -21,10 +21,7 @@ import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
-import android.view.ViewGroup
-import android.widget.FrameLayout
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import androidx.test.platform.app.InstrumentationRegistry
 import com.facebook.react.bridge.*
 import com.facebook.react.uimanager.ReactStylesDiffMap
 import com.facebook.react.uimanager.ThemedReactContext
@@ -32,15 +29,11 @@ import io.mockk.*
 import net.skyscanner.backpack.R
 import net.skyscanner.backpack.rating.BpkRating
 import net.skyscanner.backpack.reactnative.testing.Matchers.throws
-import net.skyscanner.backpack.reactnative.testing.ReactTestHelper
 import net.skyscanner.backpack.reactnative.testing.ReactViewManagerTestRule
-import net.skyscanner.backpack.util.BpkTheme
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertThat
 import org.junit.Assert.assertTrue
-import org.junit.Before
-import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -58,7 +51,7 @@ class BpkRatingViewManagerTest {
 
   @Test
   fun test_title() {
-    val view =  manager.createViewInstance(themedContext)
+    val view = manager.createViewInstance(themedContext)
     manager.updateProperties(view, buildProps("title", JavaOnlyArray.of("low", "med", "high")))
 
     assertNotNull(view.state.title)
@@ -69,7 +62,7 @@ class BpkRatingViewManagerTest {
 
   @Test
   fun test_title_single_value() {
-    val view =  manager.createViewInstance(themedContext)
+    val view = manager.createViewInstance(themedContext)
     manager.updateProperties(view, buildProps("title", JavaOnlyArray.of("all")))
 
     assertNotNull(view.state.title)
@@ -80,7 +73,7 @@ class BpkRatingViewManagerTest {
 
   @Test
   fun test_title_invalid_values() {
-    val view =  manager.createViewInstance(themedContext)
+    val view = manager.createViewInstance(themedContext)
     assertThat({
       manager.updateProperties(view, buildProps("title", JavaOnlyArray.of(null)))
     }, throws(JSApplicationIllegalArgumentException::class))
@@ -91,7 +84,7 @@ class BpkRatingViewManagerTest {
 
   @Test
   fun test_subtitle() {
-    val view =  manager.createViewInstance(themedContext)
+    val view = manager.createViewInstance(themedContext)
     manager.updateProperties(view, buildProps("subtitle", JavaOnlyArray.of("low", "med", "high")))
 
     assertNotNull(view.state.subtitle)
@@ -102,7 +95,7 @@ class BpkRatingViewManagerTest {
 
   @Test
   fun test_subtitle_single_value() {
-    val view =  manager.createViewInstance(themedContext)
+    val view = manager.createViewInstance(themedContext)
     manager.updateProperties(view, buildProps("subtitle", JavaOnlyArray.of("all")))
 
     assertNotNull(view.state.subtitle)
@@ -113,7 +106,7 @@ class BpkRatingViewManagerTest {
 
   @Test
   fun test_subtitle_invalid_values() {
-    val view =  manager.createViewInstance(themedContext)
+    val view = manager.createViewInstance(themedContext)
     assertThat({
       manager.updateProperties(view, buildProps("subtitle", JavaOnlyArray.of(null)))
     }, throws(JSApplicationIllegalArgumentException::class))
@@ -124,7 +117,7 @@ class BpkRatingViewManagerTest {
 
   @Test
   fun test_value() {
-    val view =  manager.createViewInstance(themedContext)
+    val view = manager.createViewInstance(themedContext)
     manager.updateProperties(view, buildProps("value", 1f))
 
     assertEquals(1f, view.state.value)
@@ -132,7 +125,7 @@ class BpkRatingViewManagerTest {
 
   @Test
   fun test_size() {
-    val view =  manager.createViewInstance(themedContext)
+    val view = manager.createViewInstance(themedContext)
     val options = mapOf(
       "icon" to BpkRating.Size.Icon,
       "xs" to BpkRating.Size.ExtraSmall,
@@ -155,7 +148,7 @@ class BpkRatingViewManagerTest {
 
   @Test
   fun test_orientation() {
-    val view =  manager.createViewInstance(themedContext)
+    val view = manager.createViewInstance(themedContext)
     val options = mapOf(
       "horizontal" to BpkRating.Orientation.Horizontal,
       "vertical" to BpkRating.Orientation.Vertical)
@@ -175,7 +168,7 @@ class BpkRatingViewManagerTest {
 
   @Test
   fun test_icon() {
-    val view =  manager.createViewInstance(themedContext)
+    val view = manager.createViewInstance(themedContext)
     manager.updateProperties(view, buildProps(
       "size", "icon",
       "icon", JavaOnlyArray.of("bpk_flag", "bpk_food", "bpk_flask")))
@@ -193,7 +186,7 @@ class BpkRatingViewManagerTest {
 
   @Test
   fun test_icon_single_value() {
-    val view =  manager.createViewInstance(themedContext)
+    val view = manager.createViewInstance(themedContext)
     manager.updateProperties(view, buildProps(
       "size", "icon",
       "icon", JavaOnlyArray.of("bpk_flag")))
@@ -209,7 +202,7 @@ class BpkRatingViewManagerTest {
 
   @Test
   fun test_icon_invalid_values() {
-    val view =  manager.createViewInstance(themedContext)
+    val view = manager.createViewInstance(themedContext)
     manager.updateProperties(view, buildProps("size", "icon"))
     assertThat({
       manager.updateProperties(view, buildProps("icon", JavaOnlyArray.of(null)))

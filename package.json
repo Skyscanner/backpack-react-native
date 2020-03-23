@@ -60,6 +60,10 @@
     ],
     "*.md": [
       "mdspell -r --en-gb --ignore-acronyms --ignore-numbers --no-suggestions"
+    ],
+    "*.kt": [
+      "./android/gradlew -p android ktlintFormat",
+      "git add"
     ]
   },
   "documentation": {

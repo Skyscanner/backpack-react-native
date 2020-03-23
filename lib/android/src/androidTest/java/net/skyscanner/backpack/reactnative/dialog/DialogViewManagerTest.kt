@@ -67,7 +67,7 @@ class DialogViewManagerTest {
 
   @Test
   fun test_title() {
-    val view =  manager.createViewInstance(themedContext)
+    val view = manager.createViewInstance(themedContext)
     manager.updateProperties(view, buildProps("title", "Some title"))
 
     assertNotNull(view.state.title)
@@ -76,7 +76,7 @@ class DialogViewManagerTest {
 
   @Test
   fun test_description() {
-    val view =  manager.createViewInstance(themedContext)
+    val view = manager.createViewInstance(themedContext)
     manager.updateProperties(view, buildProps("description", "Some description"))
 
     assertNotNull(view.state.description)
@@ -85,7 +85,7 @@ class DialogViewManagerTest {
 
   @Test
   fun test_dialog_type() {
-    val view =  manager.createViewInstance(themedContext)
+    val view = manager.createViewInstance(themedContext)
 
     manager.updateProperties(view, buildProps("dialogType", "alert"))
     assertEquals(BpkDialog.Style.ALERT, view.state.dialogType)
@@ -96,7 +96,7 @@ class DialogViewManagerTest {
 
   @Test
   fun test_dialog_type_invalid_value() {
-    val view =  manager.createViewInstance(themedContext)
+    val view = manager.createViewInstance(themedContext)
     assertThat({
       manager.updateProperties(view, buildProps("dialogType", "invalid"))
     }, throws(JSApplicationIllegalArgumentException::class))
@@ -104,7 +104,7 @@ class DialogViewManagerTest {
 
   @Test
   fun test_icon() {
-    val view =  manager.createViewInstance(themedContext)
+    val view = manager.createViewInstance(themedContext)
     manager.updateProperties(view, buildProps(
       "icon", JavaOnlyMap.of(
         "iconId", "bpk_food",
@@ -116,7 +116,7 @@ class DialogViewManagerTest {
 
   @Test
   fun test_icon_invalid_values() {
-    val view =  manager.createViewInstance(themedContext)
+    val view = manager.createViewInstance(themedContext)
     assertThat({
       manager.updateProperties(view, buildProps(
         "icon", JavaOnlyMap.of(
@@ -133,7 +133,7 @@ class DialogViewManagerTest {
 
   @Test
   fun test_actions() {
-    val view =  manager.createViewInstance(themedContext)
+    val view = manager.createViewInstance(themedContext)
     val actions = JavaOnlyArray.of(
       JavaOnlyMap.of(
         "text", "Action",
@@ -165,7 +165,7 @@ class DialogViewManagerTest {
 
   @Test
   fun test_actions_invalid_type() {
-    val view =  manager.createViewInstance(themedContext)
+    val view = manager.createViewInstance(themedContext)
     val actions = JavaOnlyArray.of(JavaOnlyMap.of(
       "text", "Action",
       "type", "invalid"))
@@ -177,7 +177,7 @@ class DialogViewManagerTest {
 
   @Test
   fun test_scrim_enabled() {
-    val view =  manager.createViewInstance(themedContext)
+    val view = manager.createViewInstance(themedContext)
     manager.updateProperties(view, buildProps("scrimEnabled", true))
 
     assertTrue(view.state.scrimEnabled)
@@ -188,7 +188,7 @@ class DialogViewManagerTest {
     // Dialog needs a running activity to open
     activityRule.launchActivity(Intent())
     val themedActivityContext = ThemedReactContext(managerRule.context, activityRule.activity)
-    val view =  manager.createViewInstance(themedActivityContext)
+    val view = manager.createViewInstance(themedActivityContext)
     manager.updateProperties(view, buildProps("isOpen", true))
 
     assertTrue(view.state.isOpen)
@@ -218,7 +218,7 @@ class DialogViewManagerTest {
 
   @Test
   fun test_add_event_emitters() {
-    val view =  manager.createViewInstance(themedContext)
+    val view = manager.createViewInstance(themedContext)
     manager.addEventEmitters(managerRule.themedContext, view)
     assertNotNull(view.state.onAction)
   }

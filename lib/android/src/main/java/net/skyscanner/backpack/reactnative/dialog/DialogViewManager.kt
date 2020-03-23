@@ -18,7 +18,6 @@
 package net.skyscanner.backpack.reactnative.dialog
 
 import android.content.res.Resources
-import androidx.annotation.VisibleForTesting
 import com.facebook.react.bridge.JSApplicationIllegalArgumentException
 import com.facebook.react.bridge.ReadableArray
 import com.facebook.react.bridge.ReadableMap
@@ -26,11 +25,10 @@ import com.facebook.react.uimanager.ThemedReactContext
 import com.facebook.react.uimanager.UIManagerModule
 import com.facebook.react.uimanager.ViewGroupManager
 import com.facebook.react.uimanager.annotations.ReactProp
-import net.skyscanner.backpack.reactnative.dialog.events.DialogActionEvent
-import net.skyscanner.backpack.dialog.BpkDialog
 import net.skyscanner.backpack.button.BpkButton
+import net.skyscanner.backpack.dialog.BpkDialog
 import net.skyscanner.backpack.dialog.BpkDialog.Style
-import java.lang.IllegalArgumentException
+import net.skyscanner.backpack.reactnative.dialog.events.DialogActionEvent
 
 class DialogViewManager : ViewGroupManager<RNDialog>() {
 
@@ -77,7 +75,7 @@ class DialogViewManager : ViewGroupManager<RNDialog>() {
   fun setActions(view: RNDialog, actions: ReadableArray?) {
     actions?.let {
       view.state.actions = toMapsList(it).map { each ->
-        val buttonType = when(val type = each?.getString("type")) {
+        val buttonType = when (val type = each?.getString("type")) {
           "primary" -> BpkButton.Type.Primary
           "secondary" -> BpkButton.Type.Secondary
           "outline" -> BpkButton.Type.Outline

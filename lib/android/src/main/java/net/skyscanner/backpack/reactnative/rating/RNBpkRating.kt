@@ -20,15 +20,15 @@ package net.skyscanner.backpack.reactnative.rating
 import android.graphics.drawable.Drawable
 import android.view.ViewGroup
 import android.widget.FrameLayout
-import net.skyscanner.backpack.rating.BpkRating
-import com.facebook.react.uimanager.UIManagerModule
 import com.facebook.react.bridge.ReactContext
+import com.facebook.react.uimanager.UIManagerModule
+import net.skyscanner.backpack.rating.BpkRating
 import net.skyscanner.backpack.reactnative.BpkViewStateHolder
 
 class RNBpkRating(
   private val reactContext: ReactContext,
   val state: StateHolder = StateHolder()
-): FrameLayout(reactContext) {
+) : FrameLayout(reactContext) {
 
   private var rating: BpkRating? = null
 
@@ -86,7 +86,7 @@ class RNBpkRating(
   }
 
   companion object {
-    class StateHolder: BpkViewStateHolder() {
+    class StateHolder : BpkViewStateHolder() {
       var title: ((BpkRating.Score) -> String)? by markDirtyOnUpdate(null)
       var subtitle: ((BpkRating.Score) -> String)? by markDirtyOnUpdate(null)
       var value: Float by markDirtyOnUpdate(0f)

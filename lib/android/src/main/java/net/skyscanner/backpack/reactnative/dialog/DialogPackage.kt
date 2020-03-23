@@ -33,5 +33,4 @@ class DialogPackage : ReactPackage {
       DialogViewManager() as ViewManager<*, *>
     )
   }
-
 }

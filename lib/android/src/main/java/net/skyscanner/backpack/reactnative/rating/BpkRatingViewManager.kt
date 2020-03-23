@@ -17,15 +17,14 @@
  */
 package net.skyscanner.backpack.reactnative.rating
 
-import androidx.annotation.VisibleForTesting
 import com.facebook.react.bridge.Dynamic
 import com.facebook.react.bridge.JSApplicationIllegalArgumentException
 import com.facebook.react.bridge.ReadableArray
 import com.facebook.react.uimanager.BaseViewManager
 import com.facebook.react.uimanager.ThemedReactContext
 import com.facebook.react.uimanager.annotations.ReactProp
-import net.skyscanner.backpack.rating.BpkRating
 import java.util.*
+import net.skyscanner.backpack.rating.BpkRating
 
 class BpkRatingViewManager : BaseViewManager<RNBpkRating, BpkRatingShadowNode>() {
 
@@ -94,7 +93,7 @@ class BpkRatingViewManager : BaseViewManager<RNBpkRating, BpkRatingShadowNode>()
   }
 
   private fun pickValueForScore(score: BpkRating.Score, values: ReadableArray, propName: String): Dynamic {
-    val value = when(values.size()) {
+    val value = when (values.size()) {
       0 -> throw JSApplicationIllegalArgumentException("$propName property should not be an empty array")
       3 -> values.getDynamic(score.index)
       else -> values.getDynamic(0)
@@ -114,7 +113,7 @@ class BpkRatingViewManager : BaseViewManager<RNBpkRating, BpkRatingShadowNode>()
       "sm" -> BpkRating.Size.Small
       "base" -> BpkRating.Size.Base
       "lg" -> BpkRating.Size.Large
-      else -> throw JSApplicationIllegalArgumentException("${this} is not a valid rating size")
+      else -> throw JSApplicationIllegalArgumentException("$this is not a valid rating size")
     }
   }
 
@@ -122,12 +121,12 @@ class BpkRatingViewManager : BaseViewManager<RNBpkRating, BpkRatingShadowNode>()
     return when (this.toLowerCase(Locale.ROOT)) {
       "horizontal" -> BpkRating.Orientation.Horizontal
       "vertical" -> BpkRating.Orientation.Vertical
-      else -> throw JSApplicationIllegalArgumentException("${this} is not a valid rating orientation")
+      else -> throw JSApplicationIllegalArgumentException("$this is not a valid rating orientation")
     }
   }
 
   private val BpkRating.Score.index
-    get() = when(this) {
+    get() = when (this) {
       BpkRating.Score.Low -> 0
       BpkRating.Score.Medium -> 1
       BpkRating.Score.High -> 2

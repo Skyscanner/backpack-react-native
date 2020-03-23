@@ -20,15 +20,10 @@ package net.skyscanner.backpack.reactnative.flare
 
 import android.view.View
 import androidx.annotation.VisibleForTesting
-import com.facebook.react.bridge.JSApplicationIllegalArgumentException
-import com.facebook.react.uimanager.LayoutShadowNode
 import com.facebook.react.uimanager.ThemedReactContext
 import com.facebook.react.uimanager.ViewGroupManager
-import com.facebook.react.uimanager.annotations.ReactProp
-import com.facebook.react.views.view.ReactViewGroup
-import net.skyscanner.backpack.flare.BpkFlare
 
-class BpkFlareViewManager: ViewGroupManager<RNBpkFlare>() {
+class BpkFlareViewManager : ViewGroupManager<RNBpkFlare>() {
   companion object {
     const val VIEW_NAME = "AndroidBPKFlareView"
   }

@@ -25,7 +25,7 @@ import net.skyscanner.backpack.util.BpkTheme
 import org.junit.rules.TestWatcher
 import org.junit.runner.Description
 
-class ReactContextTestRule: TestWatcher() {
+class ReactContextTestRule : TestWatcher() {
   lateinit var context: ReactApplicationContext
   lateinit var catalystInstance: CatalystInstance
   lateinit var themedContext: ThemedReactContext

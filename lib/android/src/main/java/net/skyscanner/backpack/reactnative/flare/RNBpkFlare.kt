@@ -21,15 +21,12 @@ package net.skyscanner.backpack.reactnative.flare
 import android.content.Context
 import android.view.View
 import android.view.ViewGroup
-import android.widget.FrameLayout
 import androidx.annotation.VisibleForTesting
 import com.facebook.react.bridge.ReactContext
-import com.facebook.react.uimanager.UIManagerModule
 import com.facebook.react.views.view.ReactViewGroup
 import net.skyscanner.backpack.flare.BpkFlare
-import net.skyscanner.backpack.reactnative.BpkViewStateHolder
 
-class RNBpkFlare(val reactContext: ReactContext): BpkFlare(reactContext) {
+class RNBpkFlare(val reactContext: ReactContext) : BpkFlare(reactContext) {
 
   @VisibleForTesting
   internal val internalView = ReactChildrenViewWrapper(reactContext)
@@ -49,5 +46,5 @@ class RNBpkFlare(val reactContext: ReactContext): BpkFlare(reactContext) {
    * This view ensure BpkFlare has only one children, it will throw an exception otherwise.
    * To prevent this we only add this view to BpkFlare and add all react views inside this view.
    */
-  internal inner class ReactChildrenViewWrapper(context: Context): ReactViewGroup(context)
+  internal inner class ReactChildrenViewWrapper(context: Context) : ReactViewGroup(context)
 }

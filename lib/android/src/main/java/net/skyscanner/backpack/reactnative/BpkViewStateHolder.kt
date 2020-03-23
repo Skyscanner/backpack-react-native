@@ -84,7 +84,7 @@ open class BpkViewStateHolder {
   }
 
   companion object {
-    class StateUpdaterDelegate<in R: BpkViewStateHolder, T>(
+    class StateUpdaterDelegate<in R : BpkViewStateHolder, T>(
       initialVal: T,
       val onUpdate: (R) -> Unit
     ) {
@@ -99,12 +99,10 @@ open class BpkViewStateHolder {
       }
     }
 
-    fun <R: BpkViewStateHolder, T>markDirtyOnUpdate(initialVal: T) =
+    fun <R : BpkViewStateHolder, T> markDirtyOnUpdate(initialVal: T) =
       StateUpdaterDelegate<R, T>(initialVal) { it.markDirty() }
 
-    fun <R: BpkViewStateHolder, T>markInvalidOnUpdate(initialVal: T) =
+    fun <R : BpkViewStateHolder, T> markInvalidOnUpdate(initialVal: T) =
       StateUpdaterDelegate<R, T>(initialVal) { it.markInvalid() }
   }
 }
-
-

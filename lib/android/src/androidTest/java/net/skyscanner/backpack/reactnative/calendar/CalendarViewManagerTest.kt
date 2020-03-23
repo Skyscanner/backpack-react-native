@@ -61,13 +61,13 @@ class CalendarViewManagerTest {
   @Before
   fun setup() {
     AndroidThreeTen.init(InstrumentationRegistry.getInstrumentation().targetContext)
-    date1 = LocalDate.of(2020,3,16)
-    date2 = LocalDate.of(2020,3,20)
+    date1 = LocalDate.of(2020, 3, 16)
+    date2 = LocalDate.of(2020, 3, 20)
   }
 
   @Test
   fun test_title() {
-    val view =  createWithLocale()
+    val view = createWithLocale()
     manager.updateProperties(view, buildProps(
       "selectedDates",
       JavaOnlyArray.of(date1Seconds, date2Seconds)))
@@ -80,7 +80,7 @@ class CalendarViewManagerTest {
 
   @Test
   fun test_selection_type() {
-    val view =  createWithLocale()
+    val view = createWithLocale()
     val options = mapOf(
       "range" to SelectionType.RANGE,
       "single" to SelectionType.SINGLE,
@@ -100,7 +100,7 @@ class CalendarViewManagerTest {
 
   @Test
   fun test_selection_type_invalid() {
-    val view =  createWithLocale()
+    val view = createWithLocale()
     assertThat({
       manager.updateProperties(view, buildProps("selectionType", "invalid"))
     }, throws(JSApplicationIllegalArgumentException::class))
@@ -108,7 +108,7 @@ class CalendarViewManagerTest {
 
   @Test
   fun test_locale() {
-    val view =  manager.createViewInstance(themedContext)
+    val view = manager.createViewInstance(themedContext)
     manager.updateProperties(view, buildProps("locale", "pt_BR"))
 
     assertNotNull(view.state.locale)
@@ -117,7 +117,7 @@ class CalendarViewManagerTest {
 
   @Test
   fun test_min_date() {
-    val view =  createWithLocale()
+    val view = createWithLocale()
     manager.updateProperties(view, buildProps("minDate", date1Seconds))
 
     assertNotNull(view.state.minDate)
@@ -126,7 +126,7 @@ class CalendarViewManagerTest {
 
   @Test
   fun test_max_date() {
-    val view =  createWithLocale()
+    val view = createWithLocale()
     manager.updateProperties(view, buildProps("maxDate", date2Seconds))
 
     assertNotNull(view.state.maxDate)
@@ -135,7 +135,7 @@ class CalendarViewManagerTest {
 
   @Test
   fun test_disable_dates_matcher() {
-    val view =  createWithLocale()
+    val view = createWithLocale()
     manager.updateProperties(view, buildProps(
       "disabledDates", JavaOnlyMap.of(
         "type", "range",
@@ -148,7 +148,7 @@ class CalendarViewManagerTest {
 
   @Test
   fun test_disable_dates_matcher_invalid() {
-    val view =  createWithLocale()
+    val view = createWithLocale()
     assertThat({
       manager.updateProperties(view, buildProps(
         "disabledDates", JavaOnlyMap.of(
@@ -176,7 +176,7 @@ class CalendarViewManagerTest {
 
   @Test
   fun test_color_buckets() {
-    val view =  createWithLocale()
+    val view = createWithLocale()
     manager.updateProperties(view, buildProps(
       "colorBuckets", JavaOnlyArray.of(
         JavaOnlyMap.of(
@@ -211,7 +211,7 @@ class CalendarViewManagerTest {
 
   @Test
   fun test_color_buckets_invalid() {
-    val view =  createWithLocale()
+    val view = createWithLocale()
 
     assertThat({
       manager.updateProperties(view,

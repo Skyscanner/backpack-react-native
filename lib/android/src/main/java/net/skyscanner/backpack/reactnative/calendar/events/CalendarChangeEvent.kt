@@ -29,7 +29,7 @@ import org.threeten.bp.LocalTime
 class CalendarChangeEvent(
   id: Int,
   private val selectedDates: Array<LocalDate>
-): Event<CalendarChangeEvent>(id) {
+) : Event<CalendarChangeEvent>(id) {
   companion object {
     const val EVENT_NAME = "topChange"
   }

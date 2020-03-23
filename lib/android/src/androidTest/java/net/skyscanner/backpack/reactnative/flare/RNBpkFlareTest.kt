@@ -20,9 +20,7 @@ package net.skyscanner.backpack.reactnative.flare
 import android.view.ViewGroup
 import android.widget.FrameLayout
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.facebook.react.uimanager.ThemedReactContext
 import net.skyscanner.backpack.reactnative.testing.ReactContextTestRule
-import net.skyscanner.backpack.reactnative.testing.ReactViewManagerTestRule
 import org.hamcrest.Matchers.`is`
 import org.hamcrest.Matchers.instanceOf
 import org.junit.Assert.assertEquals

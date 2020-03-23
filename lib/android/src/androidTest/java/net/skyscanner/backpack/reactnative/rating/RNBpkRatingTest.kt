@@ -42,11 +42,11 @@ class RNBpkRatingTest {
 
     val rating = RNBpkRating(contextRule.context)
 
-    val title = { _:BpkRating.Score -> "Title" }
-    val subTitle = { _:BpkRating.Score -> "Subtitle" }
+    val title = { _: BpkRating.Score -> "Title" }
+    val subTitle = { _: BpkRating.Score -> "Subtitle" }
     val value = 1f
     val iconRes = ContextCompat.getDrawable(contextRule.context, R.drawable.bpk_flag)!!
-    val icon = { _:BpkRating.Score -> iconRes }
+    val icon = { _: BpkRating.Score -> iconRes }
 
     rating.state.title = title
     rating.state.subtitle = subTitle
@@ -99,14 +99,14 @@ class RNBpkRatingTest {
   fun test_update() {
     val rating = RNBpkRating(contextRule.context)
 
-    val title = { _:BpkRating.Score -> "Title" }
-    val subTitle = { _:BpkRating.Score -> "Subtitle" }
+    val title = { _: BpkRating.Score -> "Title" }
+    val subTitle = { _: BpkRating.Score -> "Subtitle" }
     val value = 1f
     val flagRes = ContextCompat.getDrawable(contextRule.context, R.drawable.bpk_flag)!!
-    val flag = { _:BpkRating.Score -> flagRes }
+    val flag = { _: BpkRating.Score -> flagRes }
 
     val flaskRes = ContextCompat.getDrawable(contextRule.context, R.drawable.bpk_flask)!!
-    val flask = { _:BpkRating.Score -> flaskRes }
+    val flask = { _: BpkRating.Score -> flaskRes }
 
     rating.state.title = { "Tile1" }
     rating.state.subtitle = { "Subtitle1" }
