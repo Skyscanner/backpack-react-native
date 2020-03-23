@@ -35,8 +35,11 @@
 - (void)setUp {
     self.ratingViewManager = [[RCTBPKRatingManager alloc] init];
     UIView *view = [self.ratingViewManager view];
-    NSAssert([view isKindOfClass:RCTBPKRating.class], @"Rating manager should provide a view of type RCTBPKRating");
     self.ratingView = (RCTBPKRating *)view;
+}
+
+- (void)testViewIsRCTBPKRating {
+  XCTAssert([self.ratingView isKindOfClass:[RCTBPKRating class]], @"Rating manager should provide a view of type RCTBPKRating");
 }
 
 - (void)testRatingSizeEnumConverter {
