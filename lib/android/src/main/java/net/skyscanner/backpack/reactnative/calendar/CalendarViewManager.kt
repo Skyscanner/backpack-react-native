@@ -32,7 +32,6 @@ import net.skyscanner.backpack.reactnative.calendar.events.CalendarChangeEvent
 import org.threeten.bp.Instant
 import org.threeten.bp.LocalDate
 import org.threeten.bp.ZoneId
-import kotlin.IllegalArgumentException
 
 class CalendarViewManager : ViewGroupManager<RNCalendarView>() {
 
@@ -156,7 +155,7 @@ class CalendarViewManager : ViewGroupManager<RNCalendarView>() {
     return Instant.ofEpochMilli(unixTime * 1000L).atZone(ZONE_ID_UTC).toLocalDate()
   }
 
-  private fun <T>ReadableMap.safeGet(key: String, getter: (map: ReadableMap, key: String) -> T): T? {
+  private fun <T> ReadableMap.safeGet(key: String, getter: (map: ReadableMap, key: String) -> T): T? {
     if (!this.hasKey(key)) {
       return null
     }

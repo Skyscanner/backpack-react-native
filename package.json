@@ -60,6 +60,10 @@
     ],
     "*.md": [
       "mdspell -r --en-gb --ignore-acronyms --ignore-numbers --no-suggestions"
+    ],
+    "*.kt": [
+      "./scripts/android/pre-commit-hook.sh",
+      "git add"
     ]
   },
   "documentation": {

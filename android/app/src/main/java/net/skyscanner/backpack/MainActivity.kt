@@ -1,7 +1,6 @@
 package net.skyscanner.backpack
 
 import android.os.Bundle
-
 import com.facebook.react.ReactActivity
 import com.facebook.react.modules.i18nmanager.I18nUtil
 import net.skyscanner.backpack.util.BpkTheme

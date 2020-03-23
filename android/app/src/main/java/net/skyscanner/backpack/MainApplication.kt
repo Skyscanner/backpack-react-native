@@ -10,11 +10,11 @@ import com.facebook.react.ReactPackage
 import com.facebook.react.shell.MainReactPackage
 import com.facebook.soloader.SoLoader
 import com.jakewharton.threetenabp.AndroidThreeTen
+import java.util.Arrays
 import net.skyscanner.backpack.reactnative.calendar.CalendarPackage
 import net.skyscanner.backpack.reactnative.dialog.DialogPackage
 import net.skyscanner.backpack.reactnative.flare.BpkFlarePackage
 import net.skyscanner.backpack.reactnative.rating.BpkRatingPackage
-import java.util.Arrays
 
 class MainApplication : Application(), ReactApplication {
 

@@ -20,18 +20,18 @@ package net.skyscanner.backpack.reactnative.calendar
 import android.content.Context
 import android.util.AttributeSet
 import android.widget.FrameLayout
+import java.util.*
 import net.skyscanner.backpack.calendar.BpkCalendar
 import net.skyscanner.backpack.calendar.model.*
 import net.skyscanner.backpack.calendar.presenter.SelectionType
 import net.skyscanner.backpack.calendar.view.OnYearChangedListener
 import net.skyscanner.backpack.reactnative.BpkViewStateHolder
 import org.threeten.bp.LocalDate
-import java.util.*
 
 class RNCalendarView(
   context: Context,
   val state: StateHolder = StateHolder()
-): FrameLayout(context) {
+) : FrameLayout(context) {
 
   private var calendar = RNCompatBpkCalendar(context)
   private var controller: CalendarController? = null
@@ -79,7 +79,7 @@ class RNCalendarView(
     selection?.let { currentController.updateSelection(it) }
     state.disabledDateMatcher?.let { currentController.disabledDateMatcher = it }
     state.colorBuckets?.let { currentController.calendarColoring = CalendarColoring(
-            it.map { bucket -> bucket.toColorBucket()}.toSet()) }
+            it.map { bucket -> bucket.toColorBucket() }.toSet()) }
 
     return currentController
   }
@@ -115,7 +115,7 @@ class RNCalendarView(
   }
 
   companion object {
-    class StateHolder: BpkViewStateHolder() {
+    class StateHolder : BpkViewStateHolder() {
       internal var shouldUpdateContent = false
       var locale: String? = null
         set(value) {
@@ -155,9 +155,9 @@ class RNCalendarView(
   }
 
   private inner class RNCompatBpkCalendar @JvmOverloads constructor(
-          context: Context,
-          attrs: AttributeSet? = null,
-          defStyle: Int = 0
+    context: Context,
+    attrs: AttributeSet? = null,
+    defStyle: Int = 0
   ) : BpkCalendar(context, attrs, defStyle), OnYearChangedListener {
 
     override fun onYearChanged(year: Int) {
@@ -192,7 +192,7 @@ class RNCalendarView(
     val minusOne = { it: LocalDate -> it.minusDays(1) }
 
     return when (this) {
-      is RangeMatcher ->  generateSequence(this.start, plusOne).takeWhile { it <= this.end }.toSet()
+      is RangeMatcher -> generateSequence(this.start, plusOne).takeWhile { it <= this.end }.toSet()
       is BeforeMatcher -> generateSequence(this.end, minusOne).takeWhile { it >= state.minDate }.toSet()
       is AfterMatcher -> generateSequence(this.start, plusOne).takeWhile { it <= state.maxDate }.toSet()
       is AnyMatcher -> this.dates.toSet()

@@ -26,7 +26,7 @@ class DialogActionEvent(
   id: Int,
   private val actionType: DialogActionType,
   private val pos: Int
-): Event<DialogActionEvent>(id) {
+) : Event<DialogActionEvent>(id) {
   companion object {
     const val EVENT_NAME = "topChange"
   }
@@ -45,5 +45,4 @@ class DialogActionEvent(
     eventData.putInt("actionIndex", pos)
     return eventData
   }
-
 }

@@ -67,3 +67,40 @@ ext {
     androidMapsUtilsVersion = "0.5+"
     internalBuild = project.hasProperty("internalBuild") && project.internalBuild
 }
+
+allprojects { project ->
+  if (project.name == "app" || project.name == "backpack-react-native") {
+    configurations {
+      ktlint
+    }
+
+    dependencies {
+      ktlint "com.pinterest:ktlint:0.36.0"
+    }
+
+    afterEvaluate {
+
+      def files = project.hasProperty("ktlintFiles") ? project.ktlintFiles : "src/**/*.kt"
+
+      task ktlint(type: JavaExec, group: "verification") {
+        description = "Check Kotlin code style."
+        classpath = configurations.ktlint
+        main = "com.pinterest.ktlint.Main"
+        args files, "--editorconfig=${rootProject.projectDir}/.editorconfig"
+        // to generate report in checkstyle format prepend following args:
+        // "--reporter=plain", "--reporter=checkstyle,output=${buildDir}/ktlint.xml"
+        // see https://github.com/pinterest/ktlint#usage for more
+      }
+
+      check.dependsOn ktlint
+
+      task ktlintFormat(type: JavaExec, group: "formatting") {
+        description = "Fix Kotlin code style deviations."
+        classpath = configurations.ktlint
+        main = "com.pinterest.ktlint.Main"
+        args "-F", files, "--editorconfig=${rootProject.projectDir}/.editorconfig"
+      }
+    }
+  }
+}
+

@@ -67,11 +67,12 @@ class BpkRatingShadowNode internal constructor() : LayoutShadowNode(), YogaMeasu
   }
 
   override fun measure(
-          node: YogaNode,
-          width: Float,
-          widthMode: YogaMeasureMode,
-          height: Float,
-          heightMode: YogaMeasureMode): Long {
+    node: YogaNode,
+    width: Float,
+    widthMode: YogaMeasureMode,
+    height: Float,
+    heightMode: YogaMeasureMode
+  ): Long {
     val data = localData
 
     if (data != null) {

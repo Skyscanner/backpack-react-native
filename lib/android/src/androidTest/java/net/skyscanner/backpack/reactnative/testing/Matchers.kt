@@ -17,11 +17,11 @@
  */
 package net.skyscanner.backpack.reactnative.testing
 
+import kotlin.reflect.KClass
 import org.hamcrest.BaseMatcher
 import org.hamcrest.Description
-import kotlin.reflect.KClass
 
-class ThrowsMatcher<T, E: Throwable>(val kclass: KClass<E>): BaseMatcher<T>() {
+class ThrowsMatcher<T, E : Throwable>(val kclass: KClass<E>) : BaseMatcher<T>() {
   private var lastExceptionThrown: Throwable? = null
 
   override fun describeTo(description: Description?) {
@@ -62,5 +62,5 @@ object Matchers {
    * @param kclass the exception class
    * @returns [ThrowsMatcher] a new matcher
    */
-  fun <T, E: Throwable>throws(kclass: KClass<E>) = ThrowsMatcher<T, E>(kclass)
+  fun <T, E : Throwable> throws(kclass: KClass<E>) = ThrowsMatcher<T, E>(kclass)
 }

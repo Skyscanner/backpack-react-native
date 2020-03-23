@@ -57,6 +57,7 @@ jobs:
         - npm install
 
       script:
+        - ./android/gradlew -p android ktlint
         - ./android/gradlew -p android :app:assembleDebug :backpack-react-native:assembleAndroidTest
         # Only run tests if not in a forked repo as it depends on secrets not available to forks
         - |
