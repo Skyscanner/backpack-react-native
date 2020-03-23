@@ -26,18 +26,9 @@
 #import "RCTBPKDialogEventsManager.h"
 #import "RCTBPKDialogManager.h"
 #import "RCTBPKDialogUtils.h"
+#import "RCTConvert+RCTBPKDialog.h"
 
 NS_ASSUME_NONNULL_BEGIN
-@implementation RCTConvert (RCTBPKDialog)
-
-RCT_ENUM_CONVERTER(BPKDialogControllerStyle, (@{
-                       @"alert": @(BPKDialogControllerStyleAlert),
-                       @"bottomSheet": @(BPKDialogControllerStyleBottomSheet),
-                   }),
-                   BPKDialogControllerStyleAlert, integerValue)
-
-@end
-
 @interface RCTBPKDialogManager () <RCTDialogInteractor>
 
 @end
