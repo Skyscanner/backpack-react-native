@@ -39,7 +39,8 @@
 }
 
 - (void)testViewIsRCTBPKRating {
-  XCTAssert([self.ratingView isKindOfClass:[RCTBPKRating class]], @"Rating manager should provide a view of type RCTBPKRating");
+    XCTAssert([self.ratingView isKindOfClass:[RCTBPKRating class]],
+              @"Rating manager should provide a view of type RCTBPKRating");
 }
 
 - (void)testRatingSizeEnumConverter {
