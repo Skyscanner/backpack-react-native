@@ -40,14 +40,12 @@
 }
 
 - (void)testViewTypeIsRCTBPKDialog {
-  XCTAssert([self.dialogView isKindOfClass:[RCTBPKDialog class]], @"View class should be `RCTBPKDialog`");
+    XCTAssert([self.dialogView isKindOfClass:[RCTBPKDialog class]], @"View class should be `RCTBPKDialog`");
 }
 
 - (void)testViewDelegateIsManager {
-  XCTAssertEqual(
-                 self.dialogView.delegate, (id<RCTDialogInteractor>)self.dialogViewManager,
-                 @"The dialog's delegate should be the view manager"
-  );
+    XCTAssertEqual(self.dialogView.delegate, (id<RCTDialogInteractor>)self.dialogViewManager,
+                   @"The dialog's delegate should be the view manager");
 }
 
 - (void)testRatingSizeEnumConverter {

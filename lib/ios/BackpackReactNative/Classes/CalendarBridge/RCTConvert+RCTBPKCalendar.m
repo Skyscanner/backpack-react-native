@@ -73,7 +73,7 @@ RCT_ARRAY_CONVERTER(RCTBPKColorBucket)
     }
 
     if (RCT_DEBUG && ![json isKindOfClass:[NSString class]]) {
-      RCTLogError(@"`__cellStyle` on `ColorBucket` must be a string");
+        RCTLogError(@"`__cellStyle` on `ColorBucket` must be a string");
     }
 
     NSString *stringJson = (NSString *)json;
