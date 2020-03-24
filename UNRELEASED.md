@@ -1,6 +1,11 @@
 # Unreleased
-
 > Place your changes below this line.
+
+**Added:**
+
+- `bpk-component-flare`:
+  - Added flare component for iOS.
+
 
 ## How to write a good changelog entry
 

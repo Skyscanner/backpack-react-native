@@ -16,11 +16,9 @@
  * limitations under the License.
  */
 
-/* @flow */
-import { requireNativeComponent } from 'react-native';
+#import <React/RCTViewManager.h>
 
-const IOSRCTBPKFlareView = requireNativeComponent('RCTBPKFlare');
+@interface RCTBPKFlareManager : RCTViewManager
 
-const NativeFlare = IOSRCTBPKFlareView;
+@end
 
-export default NativeFlare;
