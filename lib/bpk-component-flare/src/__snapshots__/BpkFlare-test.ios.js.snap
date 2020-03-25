@@ -1,61 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`iOS BpkFlare should render correctly 1`] = `
-<Text
-  allowFontScaling={false}
+<RCTBPKFlare
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
-        "fontFamily": "System",
-        "fontSize": 16,
-        "fontWeight": "400",
-        "letterSpacing": 0.12,
+        "flex": 1,
       },
-      Object {},
     ]
   }
 >
-  iOS Flare is not implemented yet
-</Text>
+  <View />
+</RCTBPKFlare>
 `;
 
 exports[`iOS BpkFlare should render correctly with arbitrary props 1`] = `
-<Text
-  allowFontScaling={false}
+<RCTBPKFlare
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
-        "fontFamily": "System",
-        "fontSize": 16,
-        "fontWeight": "400",
-        "letterSpacing": 0.12,
+        "flex": 1,
       },
-      Object {},
     ]
   }
+  testID="123"
 >
-  iOS Flare is not implemented yet
-</Text>
+  <View />
+</RCTBPKFlare>
 `;
 
 exports[`iOS BpkFlare should render correctly with custom style 1`] = `
-<Text
-  allowFontScaling={false}
+<RCTBPKFlare
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
-        "fontFamily": "System",
-        "fontSize": 16,
-        "fontWeight": "400",
-        "letterSpacing": 0.12,
+        "flex": 1,
       },
-      Object {},
+      Object {
+        "flex": 1,
+      },
     ]
   }
 >
-  iOS Flare is not implemented yet
-</Text>
+  <View />
+</RCTBPKFlare>
 `;
