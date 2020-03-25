@@ -2,13 +2,20 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 1.3.0 - 2020-03-25
+
+**Added:**
+
+- `bpk-component-flare`:
+  - Added flare component for iOS.
+
 # 1.2.0 - 2020-03-20
 
 **Fixed:**
 
 - bpk-component-text-input:
   - Fixed an issue where masked inputs would sometimes behave erratically when deleting characters.
-  
+
 **Added:**
 
 - `bpk-component-flare`:
