@@ -6,7 +6,7 @@ EXAMPLE_SCHEMA = 'native'
 ANALYZE_FAIL_MESSAGE = '⚠️'
 
 def get_changed_files()
-  `git status --porcelain | grep -Ev "CHANGELOG|UNRELEASED|package-lock.json"`.lines
+  `git status --porcelain | grep -Ev "CHANGELOG|UNRELEASED|Podfile.lock|package-lock.json"`.lines
 end
 
 def check_pristine()
@@ -28,13 +28,12 @@ end
 desc "Runs clang-format on all h and m files to ensure formatting is correct"
 task :lint do
   abort red "The following generated files have changed during setup:\n#{get_changed_files}" unless check_pristine
-  `clang-format -i **/*.h **/*.m`
+  `clang-format -i ../**/*.h ../**/*.m`
   abort red "clang-format has changed the following files:\n#{get_changed_files}" unless check_pristine
-  sh "bundle exec pod lib lint --allow-warnings"
 end
 
 task ci: [:all_checks]
-task all_checks: [:lint, :analyze, :test]
+task all_checks: [:lint, :test]
 
 # Helpers
 def green(string)
