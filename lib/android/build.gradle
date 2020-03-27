@@ -63,7 +63,7 @@ android {
 
 dependencies {
   compileOnly "com.facebook.react:react-native:${_reactNativeVersion}"
-  implementation "com.github.skyscanner:backpack-android:22.0.0"
+  implementation "com.github.skyscanner:backpack-android:22.0.0-internal"
   if (_internalBuild) {
     // embed deps will be added to the arr directly (fat-jar) and not as a dependency
     embed project(path: ':react-native-dark-mode', configuration: 'default')
