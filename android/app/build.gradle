@@ -187,6 +187,7 @@ dependencies {
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
     implementation "androidx.recyclerview:recyclerview:1.0.0"
     implementation "com.google.android.material:material:1.0.0"
+    implementation "com.jakewharton.threetenabp:threetenabp:${rootProject.ext.threetenabpVersion}"
 
     androidTestImplementation 'junit:junit:4.12'
     androidTestImplementation "androidx.test:runner:1.1.0"

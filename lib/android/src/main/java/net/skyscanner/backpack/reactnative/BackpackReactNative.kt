@@ -58,6 +58,7 @@ class BackpackReactNative {
           fontManger.addCustomFont(context, rnName, resourceId)
         }
 
+        Log.i(TAG, "Relative font configured successfully")
       } catch (e: Throwable) {
         val msg = "Unable to load relative font for Android. To use relative ensure you are using the internal version of backpack-android (backpack-android:X.X.X-internal)"
         Log.w(TAG, msg, e)

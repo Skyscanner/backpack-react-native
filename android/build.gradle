@@ -1,17 +1,18 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+import org.gradle.api.artifacts.repositories.PasswordCredentials
 
 buildscript {
-    ext.kotlin_version = '1.3.21'
+    ext.kotlin_version = '1.3.70'
     repositories {
-        google()
-        jcenter()
-        mavenCentral()
+      google()
+      jcenter()
+      mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.3.2'
+        classpath 'com.android.tools.build:gradle:3.6.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
-        classpath 'com.kezong:fat-aar:1.2.7'
+        classpath 'com.kezong:fat-aar:1.2.9'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -22,6 +23,7 @@ allprojects {
         mavenLocal()
         google()
         jcenter()
+
         maven {
             // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
             url "$rootDir/../node_modules/react-native/android"
@@ -30,6 +32,19 @@ allprojects {
             // Android JSC is installed from npm
             url("$rootDir/../node_modules/jsc-android/dist")
         }
+
+        maven {
+          url project.properties["SKYSCANNER_ARTIFACTORY_MAVEN_URL"]?.toString()
+          credentials(PasswordCredentials.class) {
+            username = project.properties["SKYSCANNER_ARTIFACTORY_MAVEN_USER"]?.toString()
+            password = project.properties["SKYSCANNER_ARTIFACTORY_MAVEN_PASSWORD"]?.toString()
+          }
+
+          content {
+            includeModule("com.github.skyscanner", "backpack-android")
+          }
+        }
+
         maven { url 'https://jitpack.io' }
 
         buildscript {
@@ -55,17 +70,18 @@ allprojects {
 }
 
 ext {
-    backpackVersion     = "22.0.0-internal"
-    compileSdkVersion   = 29
-    targetSdkVersion    = 29
-    minSdkVersion       = 21
-    buildToolsVersion   = "29.0.2"
-    androidx            = '1.0.2'
-    appcompat           = '1.0.2'
-    supportLibVersion = "27.1.1"
-    playServicesVersion = "xxx"
-    androidMapsUtilsVersion = "0.5+"
-    internalBuild = project.hasProperty("internalBuild") && project.internalBuild
+  internalBuild       = project.hasProperty("internalBuild") && project.internalBuild
+  backpackVersion     = "22.2.0${ext.internalBuild || isUseRelative() ? '-internal' : ''}"
+  compileSdkVersion   = 29
+  targetSdkVersion    = 29
+  minSdkVersion       = 21
+  buildToolsVersion   = "29.0.2"
+  androidx            = '1.0.2'
+  appcompat           = '1.0.2'
+  supportLibVersion = "27.1.1"
+  playServicesVersion = "xxx"
+  androidMapsUtilsVersion = "0.5+"
+  threetenabpVersion = "1.2.1"
 }
 
 allprojects { project ->
@@ -102,5 +118,15 @@ allprojects { project ->
       }
     }
   }
+}
+
+def isUseRelative() {
+  Properties localProps = new Properties()
+  def localPropsFile = rootProject.file('../.env')
+  if (localPropsFile.exists()) {
+    localProps.load(localPropsFile.newDataInputStream())
+  }
+
+  return localProps.getOrDefault("USE_RELATIVE", "false") == "true"
 }
 
