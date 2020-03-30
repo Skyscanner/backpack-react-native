@@ -1,5 +1,10 @@
 # Unreleased
+
 > Place your changes below this line.
+
+**Added:**
+
+- Added new `BackpackReactNative.init` method that should be called before the application starts to configure `backpack-react-native` for Android.
 
 ## How to write a good changelog entry
 

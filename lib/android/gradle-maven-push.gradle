@@ -1,13 +1,7 @@
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'maven-publish'
 
-Properties localProps = new Properties()
-def localPropsFile = rootProject.file('local.properties')
-if (localPropsFile.exists()) {
-    localProps.load(localPropsFile.newDataInputStream())
-}
-
-def artifactoryURL = "https://artifactory.skyscannertools.net/artifactory/infrastructure-maven"
+def artifactoryURL = project.properties["SKYSCANNER_ARTIFACTORY_MAVEN_URL"]?.toString()
 
 task sourceJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
