@@ -2,10 +2,6 @@
 
 > Place your changes below this line.
 
-**Added:**
-
-- Added new `BackpackReactNative.init` method that should be called before the application starts to configure `backpack-react-native` for Android.
-
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).

@@ -2,6 +2,12 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 1.4.0 - 2020-03-30
+
+**Added:**
+
+- Added new `BackpackReactNative.init` method that should be called before the application starts to configure `backpack-react-native` for Android.
+
 # 1.3.0 - 2020-03-25
 
 **Added:**
