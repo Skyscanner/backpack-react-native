@@ -73,7 +73,7 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-actions": "5.2.5",
+    "@storybook/addon-actions": "5.3.17",
     "@storybook/addon-ondevice-actions": "5.2.5",
     "@storybook/react-native": "5.3.17",
     "@storybook/react-native-server": "5.3.17",
