@@ -1,0 +1,11 @@
+version: 1
+update_configs:
+  - package_manager: "javascript"
+    directory: "/"
+    update_schedule: "weekly"
+    ignored_updates:
+      - match:
+          # TODO remove this.
+          # When these deps upgrade, addons stop working. We should fix this.
+          # See BPK-3800.
+          dependency_name: "@storybook/react-native*"
