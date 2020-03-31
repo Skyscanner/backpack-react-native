@@ -2,10 +2,6 @@
 
 > Place your changes below this line.
 
-**Fixed:**
-
-- Updated Backpack iOS dependency to `~> 28.0`.
-
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
