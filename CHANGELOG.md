@@ -2,6 +2,12 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 1.4.2 - 2020-03-31
+
+**Fixed:**
+
+- Updated Backpack iOS dependency to `~> 29.0`.
+
 # 1.4.1 - 2020-03-31
 
 **Fixed:**
