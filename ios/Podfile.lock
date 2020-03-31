@@ -1,11 +1,11 @@
 PODS:
-  - Backpack (28.0.0):
+  - Backpack (29.0.0):
     - FloatingPanel (= 1.6.6)
     - FSCalendar (~> 2.8)
     - MBProgressHUD (~> 0.9.1)
     - TTTAttributedLabel (~> 1.13.4)
   - BackpackReactNative (1.4.1):
-    - Backpack (~> 28.0)
+    - Backpack (~> 29.0)
     - React
   - boost-for-react-native (1.63.0)
   - BVLinearGradient (2.5.6):
@@ -238,7 +238,7 @@ PODS:
   - Yoga (1.14.0)
 
 DEPENDENCIES:
-  - Backpack (~> 28.0)
+  - Backpack (~> 29.0)
   - BackpackReactNative (from `../node_modules/backpack-react-native/ios/BackpackReactNative`)
   - BVLinearGradient (from `../node_modules/react-native-linear-gradient`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
@@ -342,8 +342,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  Backpack: 05228ac31b7b4b671464e21f2bac71dc3fe7ffa8
-  BackpackReactNative: 68a4dbd89eab7f49def52e46df887aa1d028891b
+  Backpack: 2373a80d5d57eec734f55466565ef4950e97bc6b
+  BackpackReactNative: 5b5c0c84947e030bf923e43cd75fa791580dc737
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BVLinearGradient: e3aad03778a456d77928f594a649e96995f1c872
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
@@ -378,6 +378,6 @@ SPEC CHECKSUMS:
   TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
   Yoga: f2a7cd4280bfe2cca5a7aed98ba0eb3d1310f18b
 
-PODFILE CHECKSUM: a6f1d7a1ada553b0635a69e73240f6ab0aa57bf6
+PODFILE CHECKSUM: 5ca5b163af24dd5fa9037470a54f98c1b6523100
 
 COCOAPODS: 1.8.4
