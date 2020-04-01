@@ -18,6 +18,21 @@ buildscript {
     }
 }
 
+ext {
+  internalBuild       = project.hasProperty("internalBuild") && project.internalBuild
+  backpackVersion     = "22.2.0${ext.internalBuild || isUseRelative() ? '-internal' : ''}"
+  compileSdkVersion   = 29
+  targetSdkVersion    = 29
+  minSdkVersion       = 21
+  buildToolsVersion   = "29.0.2"
+  androidx            = '1.0.2'
+  appcompat           = '1.0.2'
+  supportLibVersion = "27.1.1"
+  playServicesVersion = "xxx"
+  androidMapsUtilsVersion = "0.5+"
+  threetenabpVersion = "1.2.1"
+}
+
 allprojects {
     repositories {
         mavenLocal()
@@ -33,15 +48,17 @@ allprojects {
             url("$rootDir/../node_modules/jsc-android/dist")
         }
 
-        maven {
-          url project.properties["SKYSCANNER_ARTIFACTORY_MAVEN_URL"]?.toString()
-          credentials(PasswordCredentials.class) {
-            username = project.properties["SKYSCANNER_ARTIFACTORY_MAVEN_USER"]?.toString()
-            password = project.properties["SKYSCANNER_ARTIFACTORY_MAVEN_PASSWORD"]?.toString()
-          }
+        if (rootProject.ext.internalBuild || isUseRelative()) {
+          maven {
+            url project.properties["SKYSCANNER_ARTIFACTORY_MAVEN_URL"]?.toString()
+            credentials(PasswordCredentials.class) {
+              username = project.properties["SKYSCANNER_ARTIFACTORY_MAVEN_USER"]?.toString()
+              password = project.properties["SKYSCANNER_ARTIFACTORY_MAVEN_PASSWORD"]?.toString()
+            }
 
-          content {
-            includeModule("com.github.skyscanner", "backpack-android")
+            content {
+              includeModule("com.github.skyscanner", "backpack-android")
+            }
           }
         }
 
@@ -67,21 +84,6 @@ allprojects {
             }
         }
     }
-}
-
-ext {
-  internalBuild       = project.hasProperty("internalBuild") && project.internalBuild
-  backpackVersion     = "22.2.0${ext.internalBuild || isUseRelative() ? '-internal' : ''}"
-  compileSdkVersion   = 29
-  targetSdkVersion    = 29
-  minSdkVersion       = 21
-  buildToolsVersion   = "29.0.2"
-  androidx            = '1.0.2'
-  appcompat           = '1.0.2'
-  supportLibVersion = "27.1.1"
-  playServicesVersion = "xxx"
-  androidMapsUtilsVersion = "0.5+"
-  threetenabpVersion = "1.2.1"
 }
 
 allprojects { project ->
