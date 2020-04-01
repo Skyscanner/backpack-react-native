@@ -56,12 +56,12 @@ allprojects {
     }
 
     // Force dependency resolution of backpack-android to a specific version
-    if (project.hasProperty("backpack-version")) {
+      if (System.getenv("OVERRIDE_BACKPACK_VERSION")) {
         afterEvaluate { project ->
             project.configurations.all {
                 resolutionStrategy.eachDependency { DependencyResolveDetails details ->
                     if (details.requested.name == "backpack-android") {
-                        details.useVersion project["backpack-version"]
+                        details.useVersion System.getenv("OVERRIDE_BACKPACK_VERSION")
                     }
                 }
             }
