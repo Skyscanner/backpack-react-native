@@ -1,6 +1,11 @@
 # Unreleased
 
 > Place your changes below this line.
+**Added:**
+
+- bpk-component-horizontal-nav:
+  - New `textStyle` prop for `BpkHorizontalNavItem` to enable styling of text in nav items.
+
 
 ## How to write a good changelog entry
 
