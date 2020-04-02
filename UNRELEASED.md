@@ -4,7 +4,8 @@
 **Added:**
 
 - bpk-component-horizontal-nav:
-  - New `textStyle` prop for `BpkHorizontalNavItem` to enable styling of text in nav items.
+  - New `selectedIndicatorStyle` prop for `BpkHorizontalNav` for styling the indicator underneath the selected nav item.
+  - New `textStyle` prop for `BpkHorizontalNavItem` for styling the text inside the nav item.
 
 
 ## How to write a good changelog entry

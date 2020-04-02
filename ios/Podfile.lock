@@ -4,7 +4,7 @@ PODS:
     - FSCalendar (~> 2.8)
     - MBProgressHUD (~> 0.9.1)
     - TTTAttributedLabel (~> 1.13.4)
-  - BackpackReactNative (1.4.1):
+  - BackpackReactNative (1.4.2):
     - Backpack (~> 29.0)
     - React
   - boost-for-react-native (1.63.0)
@@ -343,7 +343,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Backpack: 2373a80d5d57eec734f55466565ef4950e97bc6b
-  BackpackReactNative: 5b5c0c84947e030bf923e43cd75fa791580dc737
+  BackpackReactNative: 3a0c820efcaeeca2dcde77ea46c613cb0d1c03ff
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BVLinearGradient: e3aad03778a456d77928f594a649e96995f1c872
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
