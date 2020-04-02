@@ -2,6 +2,18 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2.0.0 - 2020-04-02
+
+**Added:**
+
+- bpk-component-horizontal-nav:
+  - New `selectedIndicatorStyle` prop for `BpkHorizontalNav` for styling the indicator underneath the selected nav item.
+  - New `textStyle` prop for `BpkHorizontalNavItem` for styling the text inside the nav item.
+
+**Breaking:**
+
+- `backpack-android` was upgraded to 23.0.0
+
 # 1.4.2 - 2020-03-31
 
 **Fixed:**

@@ -1,16 +1,6 @@
 # Unreleased
 
 > Place your changes below this line.
-**Added:**
-
-- bpk-component-horizontal-nav:
-  - New `selectedIndicatorStyle` prop for `BpkHorizontalNav` for styling the indicator underneath the selected nav item.
-  - New `textStyle` prop for `BpkHorizontalNavItem` for styling the text inside the nav item.
-
-
-**Breaking:**
-
-- `backpack-android` was upgraded to 23.0.0
 
 ## How to write a good changelog entry
 
