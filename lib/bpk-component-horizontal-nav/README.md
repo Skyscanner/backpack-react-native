@@ -54,11 +54,16 @@ export default class App extends Component {
 
 ### BpkHorizontalNav
 
-| Property            | PropType                                                    | Required | Default Value |
-| -----------         | ----------------------------------------------------------- | -------- | ------------- |
-| children            | node                                                        | true     | -             |
-| selectedId          | string (matching `id` prop of `BpkHorizontalNavItem` child) | true     | -             |
-| spaceAround         | bool                                                        | false    | false         |
+| Property               | PropType                                                    | Required | Default Value |
+| -----------            | ----------------------------------------------------------- | -------- | ------------- |
+| children               | node                                                        | true     | -             |
+| selectedId             | string (matching `id` prop of `BpkHorizontalNavItem` child) | true     | -             |
+| selectedIndicatorStyle | style object                                                | false    | null          |
+| spaceAround            | bool                                                        | false    | false         |
+
+#### `selectedIndicatorStyle`
+
+Styles to apply to the indicator placed below the selected nav item.
 
 ### BpkHorizontalNavItem
 
@@ -68,9 +73,14 @@ export default class App extends Component {
 | onPress             | func                                  | true     | -             |
 | title               | string                                | true     | -             |
 | accessibilityLabel  | string                                | false    | props.title   |
-| small               | bool                                  | false    | false         |
 | disabled            | bool                                  | false    | false         |
+| small               | bool                                  | false    | false         |
+| textStyle           | style object                          | false    | null          |
 | theme               | See [Theme Props](#theme-props) below | false    | null          |
+
+#### `textStyle`
+
+Styles to apply to the `BpkText` component inside the nav item.
 
 
 ## Theme Props

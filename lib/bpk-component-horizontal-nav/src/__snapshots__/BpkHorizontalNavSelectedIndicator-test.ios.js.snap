@@ -17,11 +17,45 @@ exports[`iOS BpkHorizontalNavSelectedIndicator dark mode should render correctly
 />
 `;
 
+exports[`iOS BpkHorizontalNavSelectedIndicator dark mode should support custom styles 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "rgb(255, 255, 255)",
+      "height": 2,
+      "transform": Array [
+        Object {
+          "translateX": 0,
+        },
+      ],
+      "width": 100,
+    }
+  }
+/>
+`;
+
 exports[`iOS BpkHorizontalNavSelectedIndicator light mode should render correctly 1`] = `
 <View
   style={
     Object {
       "backgroundColor": "rgb(7, 112, 227)",
+      "height": 2,
+      "transform": Array [
+        Object {
+          "translateX": 0,
+        },
+      ],
+      "width": 100,
+    }
+  }
+/>
+`;
+
+exports[`iOS BpkHorizontalNavSelectedIndicator light mode should support custom styles 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "rgb(255, 255, 255)",
       "height": 2,
       "transform": Array [
         Object {

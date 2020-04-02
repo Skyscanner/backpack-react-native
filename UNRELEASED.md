@@ -1,6 +1,12 @@
 # Unreleased
 
 > Place your changes below this line.
+**Added:**
+
+- bpk-component-horizontal-nav:
+  - New `selectedIndicatorStyle` prop for `BpkHorizontalNav` for styling the indicator underneath the selected nav item.
+  - New `textStyle` prop for `BpkHorizontalNavItem` for styling the text inside the nav item.
+
 
 ## How to write a good changelog entry
 

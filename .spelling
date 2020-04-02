@@ -278,6 +278,7 @@ scrimAction
 selectedDates
 selectedId
 selectedIndex
+selectedIndicatorStyle
 selectedValue
 selectionType
 SELECTION_TYPES
