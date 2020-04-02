@@ -19,12 +19,12 @@ package net.skyscanner.backpack.reactnative.calendar
 
 import android.content.Context
 import android.util.AttributeSet
+import android.widget.AbsListView
 import android.widget.FrameLayout
 import java.util.*
 import net.skyscanner.backpack.calendar.BpkCalendar
 import net.skyscanner.backpack.calendar.model.*
 import net.skyscanner.backpack.calendar.presenter.SelectionType
-import net.skyscanner.backpack.calendar.view.OnYearChangedListener
 import net.skyscanner.backpack.reactnative.BpkViewStateHolder
 import org.threeten.bp.LocalDate
 
@@ -158,11 +158,22 @@ class RNCalendarView(
     context: Context,
     attrs: AttributeSet? = null,
     defStyle: Int = 0
-  ) : BpkCalendar(context, attrs, defStyle), OnYearChangedListener {
+  ) : BpkCalendar(context, attrs, defStyle) {
 
-    override fun onYearChanged(year: Int) {
-      super.onYearChanged(year)
-      this@RNCalendarView.requestLayout()
+    private var lastSeenYear = -1
+
+    override fun onScroll(
+      view: AbsListView,
+      firstVisibleItem: Int,
+      visibleItemCount: Int,
+      totalItemCount: Int,
+      year: Int
+    ) {
+      super.onScroll(view, firstVisibleItem, visibleItemCount, totalItemCount, year)
+      if (lastSeenYear != year) {
+        lastSeenYear = year
+        this@RNCalendarView.requestLayout()
+      }
     }
   }
 

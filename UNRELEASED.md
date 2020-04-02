@@ -8,6 +8,10 @@
   - New `textStyle` prop for `BpkHorizontalNavItem` for styling the text inside the nav item.
 
 
+**Breaking:**
+
+- `backpack-android` was upgraded to 23.0.0
+
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
