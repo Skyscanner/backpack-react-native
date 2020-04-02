@@ -20,7 +20,7 @@ buildscript {
 
 ext {
   internalBuild       = project.hasProperty("internalBuild") && project.internalBuild
-  backpackVersion     = "22.2.0${ext.internalBuild || isUseRelative() ? '-internal' : ''}"
+  backpackVersion     = "23.0.0${ext.internalBuild || isUseRelative() ? '-internal' : ''}"
   compileSdkVersion   = 29
   targetSdkVersion    = 29
   minSdkVersion       = 21
