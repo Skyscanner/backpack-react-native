@@ -71,6 +71,7 @@ export default class App extends Component {
 | small               | bool                                  | false    | false         |
 | disabled            | bool                                  | false    | false         |
 | theme               | See [Theme Props](#theme-props) below | false    | null          |
+| textStyle           | style object                          | false    | null          |
 
 
 ## Theme Props

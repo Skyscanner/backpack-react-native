@@ -586,6 +586,65 @@ exports[`Android BpkHorizontalNavItem should render correctly with custom "style
 </View>
 `;
 
+exports[`Android BpkHorizontalNavItem should render item text correctly with custom "textStyle" prop 1`] = `
+<View
+  accessibilityLabel="Nav"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Object {
+        "height": 33,
+        "justifyContent": "center",
+      },
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(17, 18, 54)",
+          "fontFamily": "sans-serif",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": -0.2,
+        },
+        Object {},
+        Array [
+          Object {
+            "paddingHorizontal": 16,
+          },
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
+        ],
+      ]
+    }
+  >
+    NAV
+  </Text>
+</View>
+`;
+
 exports[`Android BpkHorizontalNavItem should support theming 1`] = `
 <View
   accessibilityLabel="Nav"
