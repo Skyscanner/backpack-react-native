@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2.1.0 - 2020-04-06
+
+**Added:**
+
+- bpk-component-badge:
+  - Added `accessoryViewAlignment` prop to allow for accessory views to be aligned on the leading or trailing edge of badges. Prior to this, all accessory views were on the leading edge.
+
 # 2.0.0 - 2020-04-02
 
 **Added:**
