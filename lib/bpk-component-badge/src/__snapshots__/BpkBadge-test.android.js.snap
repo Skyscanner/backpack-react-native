@@ -10,7 +10,6 @@ exports[`Android BpkBadge should render correctly docked to the end 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -68,7 +67,6 @@ exports[`Android BpkBadge should render correctly docked to the end 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -126,7 +124,6 @@ exports[`Android BpkBadge should render correctly docked to the end 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -186,7 +183,6 @@ exports[`Android BpkBadge should render correctly docked to the end 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -244,7 +240,6 @@ exports[`Android BpkBadge should render correctly docked to the end 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -302,7 +297,6 @@ exports[`Android BpkBadge should render correctly docked to the end 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -374,7 +368,6 @@ exports[`Android BpkBadge should render correctly docked to the start 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -432,7 +425,6 @@ exports[`Android BpkBadge should render correctly docked to the start 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -490,7 +482,6 @@ exports[`Android BpkBadge should render correctly docked to the start 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -550,7 +541,6 @@ exports[`Android BpkBadge should render correctly docked to the start 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -608,7 +598,6 @@ exports[`Android BpkBadge should render correctly docked to the start 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -666,7 +655,6 @@ exports[`Android BpkBadge should render correctly docked to the start 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -738,7 +726,6 @@ exports[`Android BpkBadge should render correctly in normal mode 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -788,7 +775,6 @@ exports[`Android BpkBadge should render correctly in normal mode 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -838,7 +824,6 @@ exports[`Android BpkBadge should render correctly in normal mode 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -890,7 +875,6 @@ exports[`Android BpkBadge should render correctly in normal mode 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -940,7 +924,6 @@ exports[`Android BpkBadge should render correctly in normal mode 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -990,7 +973,6 @@ exports[`Android BpkBadge should render correctly in normal mode 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -1054,7 +1036,6 @@ exports[`Android BpkBadge should render correctly with icon 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -1064,6 +1045,9 @@ exports[`Android BpkBadge should render correctly with icon 1`] = `
           "borderBottomRightRadius": 4,
           "borderTopLeftRadius": 4,
           "borderTopRightRadius": 4,
+        },
+        Object {
+          "flexDirection": "row",
         },
         Object {
           "backgroundColor": "rgb(115, 206, 198)",
@@ -1141,7 +1125,6 @@ exports[`Android BpkBadge should render correctly with icon 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -1151,6 +1134,9 @@ exports[`Android BpkBadge should render correctly with icon 1`] = `
           "borderBottomRightRadius": 4,
           "borderTopLeftRadius": 4,
           "borderTopRightRadius": 4,
+        },
+        Object {
+          "flexDirection": "row",
         },
         Object {
           "backgroundColor": "rgb(255, 181, 77)",
@@ -1228,7 +1214,6 @@ exports[`Android BpkBadge should render correctly with icon 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -1238,6 +1223,9 @@ exports[`Android BpkBadge should render correctly with icon 1`] = `
           "borderBottomRightRadius": 4,
           "borderTopLeftRadius": 4,
           "borderTopRightRadius": 4,
+        },
+        Object {
+          "flexDirection": "row",
         },
         Object {
           "backgroundColor": "rgb(209, 67, 91)",
@@ -1319,7 +1307,6 @@ exports[`Android BpkBadge should render correctly with icon 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -1329,6 +1316,9 @@ exports[`Android BpkBadge should render correctly with icon 1`] = `
           "borderBottomRightRadius": 4,
           "borderTopLeftRadius": 4,
           "borderTopRightRadius": 4,
+        },
+        Object {
+          "flexDirection": "row",
         },
         Object {
           "backgroundColor": "rgb(241, 242, 248)",
@@ -1406,7 +1396,6 @@ exports[`Android BpkBadge should render correctly with icon 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -1416,6 +1405,9 @@ exports[`Android BpkBadge should render correctly with icon 1`] = `
           "borderBottomRightRadius": 4,
           "borderTopLeftRadius": 4,
           "borderTopRightRadius": 4,
+        },
+        Object {
+          "flexDirection": "row",
         },
         Object {
           "backgroundColor": "rgb(255, 255, 255)",
@@ -1493,7 +1485,6 @@ exports[`Android BpkBadge should render correctly with icon 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -1503,6 +1494,9 @@ exports[`Android BpkBadge should render correctly with icon 1`] = `
           "borderBottomRightRadius": 4,
           "borderTopLeftRadius": 4,
           "borderTopRightRadius": 4,
+        },
+        Object {
+          "flexDirection": "row",
         },
         Array [
           Object {
@@ -1596,7 +1590,6 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -1606,6 +1599,9 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
           "borderBottomRightRadius": 4,
           "borderTopLeftRadius": 4,
           "borderTopRightRadius": 4,
+        },
+        Object {
+          "flexDirection": "row",
         },
         Object {
           "backgroundColor": "rgb(115, 206, 198)",
@@ -1745,7 +1741,6 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -1755,6 +1750,9 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
           "borderBottomRightRadius": 4,
           "borderTopLeftRadius": 4,
           "borderTopRightRadius": 4,
+        },
+        Object {
+          "flexDirection": "row",
         },
         Object {
           "backgroundColor": "rgb(255, 181, 77)",
@@ -1894,7 +1892,6 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -1904,6 +1901,9 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
           "borderBottomRightRadius": 4,
           "borderTopLeftRadius": 4,
           "borderTopRightRadius": 4,
+        },
+        Object {
+          "flexDirection": "row",
         },
         Object {
           "backgroundColor": "rgb(209, 67, 91)",
@@ -2051,7 +2051,6 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -2061,6 +2060,9 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
           "borderBottomRightRadius": 4,
           "borderTopLeftRadius": 4,
           "borderTopRightRadius": 4,
+        },
+        Object {
+          "flexDirection": "row",
         },
         Object {
           "backgroundColor": "rgb(241, 242, 248)",
@@ -2200,7 +2202,6 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -2210,6 +2211,9 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
           "borderBottomRightRadius": 4,
           "borderTopLeftRadius": 4,
           "borderTopRightRadius": 4,
+        },
+        Object {
+          "flexDirection": "row",
         },
         Object {
           "backgroundColor": "rgb(255, 255, 255)",
@@ -2349,7 +2353,6 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -2359,6 +2362,9 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
           "borderBottomRightRadius": 4,
           "borderTopLeftRadius": 4,
           "borderTopRightRadius": 4,
+        },
+        Object {
+          "flexDirection": "row",
         },
         Array [
           Object {
@@ -2518,7 +2524,6 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -2528,6 +2533,9 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
           "borderBottomRightRadius": 4,
           "borderTopLeftRadius": 4,
           "borderTopRightRadius": 4,
+        },
+        Object {
+          "flexDirection": "row",
         },
         Object {
           "backgroundColor": "rgb(115, 206, 198)",
@@ -2640,7 +2648,6 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -2650,6 +2657,9 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
           "borderBottomRightRadius": 4,
           "borderTopLeftRadius": 4,
           "borderTopRightRadius": 4,
+        },
+        Object {
+          "flexDirection": "row",
         },
         Object {
           "backgroundColor": "rgb(255, 181, 77)",
@@ -2762,7 +2772,6 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -2772,6 +2781,9 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
           "borderBottomRightRadius": 4,
           "borderTopLeftRadius": 4,
           "borderTopRightRadius": 4,
+        },
+        Object {
+          "flexDirection": "row",
         },
         Object {
           "backgroundColor": "rgb(209, 67, 91)",
@@ -2890,7 +2902,6 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -2900,6 +2911,9 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
           "borderBottomRightRadius": 4,
           "borderTopLeftRadius": 4,
           "borderTopRightRadius": 4,
+        },
+        Object {
+          "flexDirection": "row",
         },
         Object {
           "backgroundColor": "rgb(241, 242, 248)",
@@ -3012,7 +3026,6 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -3022,6 +3035,9 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
           "borderBottomRightRadius": 4,
           "borderTopLeftRadius": 4,
           "borderTopRightRadius": 4,
+        },
+        Object {
+          "flexDirection": "row",
         },
         Object {
           "backgroundColor": "rgb(255, 255, 255)",
@@ -3134,7 +3150,6 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -3144,6 +3159,9 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
           "borderBottomRightRadius": 4,
           "borderTopLeftRadius": 4,
           "borderTopRightRadius": 4,
+        },
+        Object {
+          "flexDirection": "row",
         },
         Array [
           Object {
@@ -3264,6 +3282,560 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
 </View>
 `;
 
+exports[`Android BpkBadge should render correctly with trailing icon 1`] = `
+<View>
+  <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "height": 20,
+          "justifyContent": "center",
+          "paddingHorizontal": 8,
+        },
+        Object {
+          "borderBottomLeftRadius": 4,
+          "borderBottomRightRadius": 4,
+          "borderTopLeftRadius": 4,
+          "borderTopRightRadius": 4,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
+        Object {
+          "backgroundColor": "rgb(115, 206, 198)",
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
+            Array [
+              Object {
+                "color": "rgb(17, 18, 54)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
+            Object {
+              "marginEnd": 0,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "includeFontPadding": false,
+            },
+            undefined,
+            Object {
+              "marginEnd": 4,
+            },
+          ],
+        ]
+      }
+    >
+      Badge
+    </Text>
+  </View>
+  <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "height": 20,
+          "justifyContent": "center",
+          "paddingHorizontal": 8,
+        },
+        Object {
+          "borderBottomLeftRadius": 4,
+          "borderBottomRightRadius": 4,
+          "borderTopLeftRadius": 4,
+          "borderTopRightRadius": 4,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
+        Object {
+          "backgroundColor": "rgb(255, 181, 77)",
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
+            Array [
+              Object {
+                "color": "rgb(17, 18, 54)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
+            Object {
+              "marginEnd": 0,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "includeFontPadding": false,
+            },
+            undefined,
+            Object {
+              "marginEnd": 4,
+            },
+          ],
+        ]
+      }
+    >
+      Badge
+    </Text>
+  </View>
+  <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "height": 20,
+          "justifyContent": "center",
+          "paddingHorizontal": 8,
+        },
+        Object {
+          "borderBottomLeftRadius": 4,
+          "borderBottomRightRadius": 4,
+          "borderTopLeftRadius": 4,
+          "borderTopRightRadius": 4,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
+        Object {
+          "backgroundColor": "rgb(209, 67, 91)",
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
+            Array [
+              Object {
+                "color": "rgb(17, 18, 54)",
+                "includeFontPadding": false,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+              },
+            ],
+            Object {
+              "marginEnd": 0,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "includeFontPadding": false,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "marginEnd": 4,
+            },
+          ],
+        ]
+      }
+    >
+      Badge
+    </Text>
+  </View>
+  <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "height": 20,
+          "justifyContent": "center",
+          "paddingHorizontal": 8,
+        },
+        Object {
+          "borderBottomLeftRadius": 4,
+          "borderBottomRightRadius": 4,
+          "borderTopLeftRadius": 4,
+          "borderTopRightRadius": 4,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
+        Object {
+          "backgroundColor": "rgb(241, 242, 248)",
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
+            Array [
+              Object {
+                "color": "rgb(17, 18, 54)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
+            Object {
+              "marginEnd": 0,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "includeFontPadding": false,
+            },
+            undefined,
+            Object {
+              "marginEnd": 4,
+            },
+          ],
+        ]
+      }
+    >
+      Badge
+    </Text>
+  </View>
+  <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "height": 20,
+          "justifyContent": "center",
+          "paddingHorizontal": 8,
+        },
+        Object {
+          "borderBottomLeftRadius": 4,
+          "borderBottomRightRadius": 4,
+          "borderTopLeftRadius": 4,
+          "borderTopRightRadius": 4,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
+        Object {
+          "backgroundColor": "rgb(255, 255, 255)",
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
+            Array [
+              Object {
+                "color": "rgb(17, 18, 54)",
+                "includeFontPadding": false,
+              },
+              undefined,
+            ],
+            Object {
+              "marginEnd": 0,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "includeFontPadding": false,
+            },
+            undefined,
+            Object {
+              "marginEnd": 4,
+            },
+          ],
+        ]
+      }
+    >
+      Badge
+    </Text>
+  </View>
+  <View
+    accessibilityLabel="Badge"
+    accessibilityRole="text"
+    accessible={true}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "height": 20,
+          "justifyContent": "center",
+          "paddingHorizontal": 8,
+        },
+        Object {
+          "borderBottomLeftRadius": 4,
+          "borderBottomRightRadius": 4,
+          "borderTopLeftRadius": 4,
+          "borderTopRightRadius": 4,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
+        Array [
+          Object {
+            "backgroundColor": "rgba(255, 255, 255, 0.2)",
+            "paddingHorizontal": 7,
+          },
+          Object {
+            "borderColor": "rgb(255, 255, 255)",
+            "borderWidth": 1,
+          },
+        ],
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "includeFontPadding": false,
+              "marginEnd": 4,
+            },
+            Array [
+              Object {
+                "color": "rgb(17, 18, 54)",
+                "includeFontPadding": false,
+              },
+              Object {
+                "color": "rgb(255, 255, 255)",
+              },
+            ],
+            Object {
+              "marginEnd": 0,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "includeFontPadding": false,
+            },
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "marginEnd": 4,
+            },
+          ],
+        ]
+      }
+    >
+      Badge
+    </Text>
+  </View>
+</View>
+`;
+
 exports[`Android BpkBadge should render correctly with user provided style 1`] = `
 <View>
   <View
@@ -3274,7 +3846,6 @@ exports[`Android BpkBadge should render correctly with user provided style 1`] =
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -3327,7 +3898,6 @@ exports[`Android BpkBadge should render correctly with user provided style 1`] =
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -3380,7 +3950,6 @@ exports[`Android BpkBadge should render correctly with user provided style 1`] =
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -3435,7 +4004,6 @@ exports[`Android BpkBadge should render correctly with user provided style 1`] =
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -3488,7 +4056,6 @@ exports[`Android BpkBadge should render correctly with user provided style 1`] =
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -3541,7 +4108,6 @@ exports[`Android BpkBadge should render correctly with user provided style 1`] =
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -3608,7 +4174,6 @@ exports[`Android BpkBadge should support theming 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -3667,7 +4232,6 @@ exports[`Android BpkBadge should support theming 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -3726,7 +4290,6 @@ exports[`Android BpkBadge should support theming 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -3787,7 +4350,6 @@ exports[`Android BpkBadge should support theming 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -3840,7 +4402,6 @@ exports[`Android BpkBadge should support theming 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -3893,7 +4454,6 @@ exports[`Android BpkBadge should support theming 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
           "height": 20,
           "justifyContent": "center",
           "paddingHorizontal": 8,
