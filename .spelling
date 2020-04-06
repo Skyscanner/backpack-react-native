@@ -206,6 +206,7 @@ ViewPropTypes
 # Custom prop types
 accessibilityLabel
 accessoryView
+accessoryViewAlignment
 ALERT_TYPES
 animateOnEnter
 animateOnLeave

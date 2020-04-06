@@ -11,7 +11,12 @@ Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usag
 ```js
 import React, { Component } from 'react';
 import { View, StyleSheet } from 'react-native';
-import BpkBadge, { BpkBadgeIcons, BADGE_TYPES, BADGE_DOCKED_TYPES } from 'backpack-react-native/bpk-component-badge';
+import BpkBadge, {
+  BpkBadgeIcons,
+  BADGE_TYPES,
+  BADGE_DOCKED_TYPES,
+  BADGE_ACCESSORY_VIEW_ALIGNMENTS,
+  } from 'backpack-react-native/bpk-component-badge';
 import BpkIcon, { icons } from 'backpack-react-native/bpk-component-icon';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
 
@@ -42,6 +47,7 @@ export default class App extends Component {
               separator="+"
             />
           }
+          accessoryViewAlignment={BADGE_ACCESSORY_VIEW_ALIGNMENTS.leading}
         />
         <BpkBadge message="Badge" docked={BADGE_DOCKED_TYPES.start} type={BADGE_TYPES.warning} />
         <BpkBadge message="Badge" docked={BADGE_DOCKED_TYPES.end} type={BADGE_TYPES.destructive} />
@@ -53,13 +59,14 @@ export default class App extends Component {
 
 ## Props
 
-| Property              | PropType                                                                  | Required              | Default Value |
-| --------------------- | --------------------------------------------------------------------------| --------------------- | ------------- |
-| accessibilityLabel    | string                                                                    | if `message === null` | props.message |
-| accessoryView         | element                                                                   | false                 | null          |
-| docked                | oneOf('start', 'end')                                                     | false                 | null          |
-| message               | string                                                                    | false                 | null          |
-| type                  | oneOf('success', 'warning', 'destructive', 'light', 'inverse', 'outline') | false                 | warning       |
+| Property               | PropType                                                                  | Required              | Default Value |
+| ---------------------- | --------------------------------------------------------------------------| --------------------- | ------------- |
+| accessibilityLabel     | string                                                                    | if `message === null` | props.message |
+| accessoryView          | element                                                                   | false                 | null          |
+| accessoryViewAlignment | oneOf('leading', 'trailing')                                              | false                 | 'leading'     |
+| docked                 | oneOf('start', 'end')                                                     | false                 | null          |
+| message                | string                                                                    | false                 | null          |
+| type                   | oneOf('success', 'warning', 'destructive', 'light', 'inverse', 'outline') | false                 | warning       |
 
 ## `accessoryView`
 

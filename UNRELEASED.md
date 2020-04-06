@@ -2,6 +2,11 @@
 
 > Place your changes below this line.
 
+**Added:**
+
+- bpk-component-badge:
+  - Added `accessoryViewAlignment` prop to allow for accessory views to be aligned on the leading or trailing edge of badges. Prior to this, all accessory views were on the leading edge.
+
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
