@@ -24,7 +24,7 @@ npm install backpack-react-native --save
   #### From source
 
   Our Android code is written in `Kotlin`, so in order to compile it from source you need to have `org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"` in the `classpath`.
-  
+
   Add the following your root `build.gradle` file:
 
   ```groovy
@@ -46,7 +46,7 @@ npm install backpack-react-native --save
         buildToolsVersion   = "28.0.3"
     }
   ```
-  
+
   1. Define the `backpack-react-native` project in your `settings.gradle` file:
 
   ```groovy
@@ -76,7 +76,7 @@ npm install backpack-react-native --save
 
 <details>
   <summary>iOS</summary>
-  
+
   #### From source
 
   Add the following dependencies to your Podfile using the path to the NPM package as follows:
@@ -109,7 +109,8 @@ This package depends on [`react-native-maps`](https://github.com/react-community
           CalendarPackage(),
           DialogPackage(),
           BpkRatingPackage(),
-          DarkModePackage())
+          DarkModePackage(),
+          BpkSnackbarPackage())
   }
   ```
 
@@ -137,7 +138,7 @@ This package depends on [`react-native-maps`](https://github.com/react-community
 
 <details>
   <summary>iOS</summary>
-  
+
   #### Icons
 
   The most reliable way to install the file on iOS is manually, three simple steps are required:

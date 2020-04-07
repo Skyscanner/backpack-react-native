@@ -16,6 +16,7 @@ import net.skyscanner.backpack.reactnative.calendar.CalendarPackage
 import net.skyscanner.backpack.reactnative.dialog.DialogPackage
 import net.skyscanner.backpack.reactnative.flare.BpkFlarePackage
 import net.skyscanner.backpack.reactnative.rating.BpkRatingPackage
+import net.skyscanner.backpack.reactnative.snackbar.BpkSnackbarPackage
 
 class MainApplication : Application(), ReactApplication {
 
@@ -38,7 +39,8 @@ class MainApplication : Application(), ReactApplication {
                     DialogPackage(),
                     BpkRatingPackage(),
                     BpkFlarePackage(),
-                    DarkModePackage()
+                    DarkModePackage(),
+                    BpkSnackbarPackage()
             )
         }
     }

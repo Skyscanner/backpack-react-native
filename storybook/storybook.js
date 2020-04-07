@@ -91,6 +91,7 @@ configure(() => {
   require('../lib/bpk-component-rating/stories');
   require('../lib/bpk-component-section-list/stories');
   require('../lib/bpk-component-select/stories');
+  require('../lib/bpk-component-snackbar/stories');
   require('../lib/bpk-component-spinner/stories');
   require('../lib/bpk-component-star-rating/stories');
   require('../lib/bpk-component-switch/stories');
