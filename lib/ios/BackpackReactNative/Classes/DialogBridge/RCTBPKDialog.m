@@ -18,6 +18,7 @@
 
 #import "RCTBPKDialog.h"
 #import <Backpack/Color.h>
+#import <Backpack/Icon.h>
 #import <React/RCTBridge.h>
 #import <React/RCTTouchHandler.h>
 #import <React/RCTUIManager.h>
@@ -68,6 +69,17 @@ RCT_NOT_IMPLEMENTED(-(instancetype _Nullable)initWithCoder : coder)
     dispatch_async(dispatch_get_main_queue(), ^{
       [self dismiss];
     });
+}
+
+- (void)setIconColor:(UIColor *)iconColor {
+    if(_iconColor != iconColor){
+        _iconColor = iconColor;
+        if(self.dialogController != nil) {
+            self.dialogController.iconDefinition = [[BPKDialogIconDefinition alloc]
+                                                    initWithIcon:[BPKIcon templateIconNamed:self.iconId size:BPKIconSizeLarge] iconBackgroundColor:iconColor
+                                                    ];
+        }
+    }
 }
 
 @end

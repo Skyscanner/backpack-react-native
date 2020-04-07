@@ -1,5 +1,5 @@
 PODS:
-  - Backpack (29.2.0):
+  - Backpack (29.2.1):
     - FloatingPanel (= 1.6.6)
     - FSCalendar (~> 2.8)
     - MBProgressHUD (~> 0.9.1)
