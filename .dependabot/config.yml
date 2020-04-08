@@ -6,6 +6,6 @@ update_configs:
     ignored_updates:
       - match:
           # TODO remove this.
-          # When these deps upgrade, addons stop working. We should fix this.
-          # See BPK-3800.
-          dependency_name: "@storybook/react-native*"
+          # 5.3.x of this dependency stops the addon panel from appearing.
+          # See https://github.com/storybookjs/react-native/issues/24
+          dependency_name: "@storybook/react-native-server"
