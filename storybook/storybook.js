@@ -19,7 +19,7 @@
 /* @flow */
 import React, { type Node } from 'react';
 import addon from '@storybook/addons';
-import { I18nManager, YellowBox, View } from 'react-native';
+import { I18nManager, View } from 'react-native';
 import { getStorybookUI, configure } from '@storybook/react-native';
 import { backgroundColor } from 'bpk-tokens/tokens/base.react.native';
 
@@ -59,12 +59,6 @@ const initRtlAddon = channel => {
 const initDarkModeAddon = channel => {
   channel.emit(DM_INIT, BpkAppearance.get().colorScheme || 'light');
   channel.on(DM_EVENT, colorScheme => BpkAppearance.set({ colorScheme }));
-};
-
-const hideWarnings = () => {
-  // TODO: this warning is being trigger by an internal react code, we can remove it when it gets fixed
-  // see: https://github.com/facebook/react-native/issues/18868#issuecomment-382671739
-  YellowBox.ignoreWarnings(['Warning: isMounted(...) is deprecated']);
 };
 
 /* eslint-disable global-require */
@@ -109,9 +103,12 @@ configure(() => {
 }, module);
 /* eslint-enable global-require */
 
-const StorybookUI = getStorybookUI({ onDeviceUI: false });
+const StorybookUI = getStorybookUI({
+  onDeviceUI: false,
+  asyncStorage: null,
+});
 
-onChannelAvailable(hideWarnings, initRtlAddon, initDarkModeAddon);
+onChannelAvailable(initRtlAddon, initDarkModeAddon);
 
 const BackgroundWrapper = ({ children }: { children: Node }) => (
   <View
