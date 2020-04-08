@@ -47,6 +47,9 @@ const markdown = fileChanges.filter(path => path.endsWith('md'));
 // Be nice to our neighbours.
 if (isPrExternal) {
   message('Thanks for the PR 🎉.');
+  warn(
+    `If this is coming from a fork, CI will fail. This is a known limitation due to CI not sharing secrets to forked repos. Somebody from Backpack can check this manually.`,
+  );
 }
 
 // Ensure new components are extensible by consumers.
