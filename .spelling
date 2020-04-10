@@ -66,6 +66,7 @@ BpkSectionListItemSeparator
 BpkSectionListNoResultsText
 BpkSectionListSearchField
 BpkSelect
+BpkSnackbar
 BpkTicket
 # End of component names
 
@@ -398,6 +399,7 @@ bpk-component-scrollable-calendar
 bpk-component-section-list
 bpk-component-select
 bpk-component-slider
+bpk-component-snackbar
 bpk-component-spinner
 bpk-component-star-rating
 bpk-component-switch
@@ -467,3 +469,4 @@ janky
 onsen
 gray
 grays
+snackbar
