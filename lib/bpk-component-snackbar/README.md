@@ -10,24 +10,24 @@ Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usag
 
 ```js
 import React from 'react';
-import { Alert } from 'react-native';
-import Buttom from 'backpack-react-native/bpk-component-buttom';
+import BpkAlert from 'backpack-react-native/bpk-component-alert';
+import BpkButton from 'backpack-react-native/bpk-component-button';
 import { icons } from 'backpack-react-native/bpk-component-icon';
-import BpkSnackbar, { LENGTH_SHORT } from 'backpack-react-native/bpk-component-snackbar';
+import BpkSnackbar, { SNACKBAR_LENGTHS } from 'backpack-react-native/bpk-component-snackbar';
 
 export default () => (
-  <Buttom
+  <BpkButton
     title="Show"
     onPress={() => {
       BpkSnackbar.show({
         text: 'Snackbar text',
-        duration: LENGTH_SHORT,
+        duration: SNACKBAR_LENGTHS.short,
         title: 'Title',
         icon: icons.flight,
         action: {
           text: 'Action',
           onPress: () => {
-            Alert.alert('Action pressed');
+            BpkAlert.alert('Action pressed');
           }
         }
       })
