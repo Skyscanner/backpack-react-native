@@ -2,6 +2,10 @@
 
 > Place your changes below this line.
 
+**Fixed**
+- bpk-component-dialog:
+  - Changing the icon background color at runtime will now result in an immediate update to the presented dialog.
+
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
