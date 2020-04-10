@@ -2,6 +2,12 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2.1.1 - 2020-04-10
+
+**Fixed**
+- bpk-component-dialog:
+  - Changing the icon background color at runtime will now result in an immediate update to the presented dialog.
+
 # 2.1.0 - 2020-04-06
 
 **Added:**
