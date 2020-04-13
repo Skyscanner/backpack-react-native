@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2.2.0 - 2020-04-13
+
+**Added:**
+
+- `bpk-component-snackbar`:
+  - Added Android version.
+
 # 2.1.1 - 2020-04-10
 
 **Fixed**
