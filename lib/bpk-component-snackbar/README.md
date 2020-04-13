@@ -40,16 +40,16 @@ export default () => (
 
 ### BpkSnackbar
 
-| Property         | PropType                                       | Required | Default Value |
-| ---------------- | ---------------------------------------------- | -------- | ------------- |
-| `duration`       | `number`                                       | true     | `LENGTH_SHORT`|
-| `text`           | `string`                                       | true     | -             |
-| `title`          | `string`                                       | false    | -             |
-| `icon`           | `string`                                       | false    | -             |
-| `action`         | `object`                                       | false    | -             |
-| `action.text*`   | `string`                                       | true     | -             |
-| `action.icon*`   | `string`                                       | true     | -             |
-| `action.onPress` | `function`                                     | true     | -             |
+| Property         | PropType                                       | Required | Default Value           |
+| ---------------- | ---------------------------------------------- | -------- | ----------------------- |
+| `duration`       | `number`                                       | true     | `SNACKBAR_LENGTHS.short`|
+| `text`           | `string`                                       | true     | -                       |
+| `title`          | `string`                                       | false    | -                       |
+| `icon`           | `string`                                       | false    | -                       |
+| `action`         | `object`                                       | false    | -                       |
+| `action.text*`   | `string`                                       | true     | -                       |
+| `action.icon*`   | `string`                                       | true     | -                       |
+| `action.onPress` | `function`                                     | true     | -                       |
 
 **NOTES**
 
