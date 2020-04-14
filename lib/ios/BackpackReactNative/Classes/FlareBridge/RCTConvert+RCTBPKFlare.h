@@ -16,10 +16,11 @@
  * limitations under the License.
  */
 
-/* @flow */
+#import <Backpack/FlareView.h>
+#import <React/RCTConvert.h>
 
-import BpkFlare, { FLARE_POINTER_DIRECTIONS } from './src/BpkFlare';
+@interface RCTConvert (RCTBPKFlare)
 
-export type { Props as BpkFlareProps } from './src/BpkFlare';
-export default BpkFlare;
-export { FLARE_POINTER_DIRECTIONS };
++ (BPKFlarePosition)BPKFlarePosition:(id)json;
+
+@end

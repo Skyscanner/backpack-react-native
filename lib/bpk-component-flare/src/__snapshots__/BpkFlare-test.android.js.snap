@@ -2,6 +2,7 @@
 
 exports[`Android BpkFlare should render correctly 1`] = `
 <AndroidBPKFlareView
+  pointerDirection="down"
   style={
     Array [
       Object {
@@ -16,6 +17,7 @@ exports[`Android BpkFlare should render correctly 1`] = `
 
 exports[`Android BpkFlare should render correctly with arbitrary props 1`] = `
 <AndroidBPKFlareView
+  pointerDirection="down"
   style={
     Array [
       Object {
@@ -31,11 +33,27 @@ exports[`Android BpkFlare should render correctly with arbitrary props 1`] = `
 
 exports[`Android BpkFlare should render correctly with custom style 1`] = `
 <AndroidBPKFlareView
+  pointerDirection="down"
   style={
     Array [
       Object {
         "flex": 1,
       },
+      Object {
+        "flex": 1,
+      },
+    ]
+  }
+>
+  <View />
+</AndroidBPKFlareView>
+`;
+
+exports[`Android BpkFlare should render correctly with pointerDirection=up 1`] = `
+<AndroidBPKFlareView
+  pointerDirection="up"
+  style={
+    Array [
       Object {
         "flex": 1,
       },
