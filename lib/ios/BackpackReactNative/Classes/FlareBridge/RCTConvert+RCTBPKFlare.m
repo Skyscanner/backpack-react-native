@@ -17,7 +17,6 @@
  */
 
 #import "RCTConvert+RCTBPKFlare.h"
-#import <React/RCTConvert+CoreLocation.h>
 
 @implementation RCTConvert (RCTBPKFlare)
 

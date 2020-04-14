@@ -17,7 +17,6 @@
  */
 
 #import <Backpack/FlareView.h>
-#import <CoreLocation/CoreLocation.h>
 #import <React/RCTConvert.h>
 
 @interface RCTConvert (RCTBPKFlare)
