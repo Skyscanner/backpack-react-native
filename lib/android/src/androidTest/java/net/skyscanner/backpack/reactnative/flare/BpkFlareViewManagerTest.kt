@@ -19,7 +19,12 @@ package net.skyscanner.backpack.reactnative.flare
 
 import android.widget.FrameLayout
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.facebook.react.bridge.JSApplicationIllegalArgumentException
+import com.facebook.react.bridge.JavaOnlyMap
+import com.facebook.react.uimanager.ReactStylesDiffMap
 import com.facebook.react.uimanager.ThemedReactContext
+import net.skyscanner.backpack.flare.BpkFlare
+import net.skyscanner.backpack.reactnative.testing.Matchers.throws
 import net.skyscanner.backpack.reactnative.testing.ReactViewManagerTestRule
 import org.hamcrest.Matchers.`is`
 import org.hamcrest.Matchers.instanceOf
@@ -56,5 +61,32 @@ class BpkFlareViewManagerTest {
     val view = manager.createViewInstance(themedContext)
     manager.addView(view, FrameLayout(managerRule.context), 0)
     manager.addView(view, FrameLayout(managerRule.context), 1)
+  }
+
+  @Test
+  fun test_pointerDirection() {
+    val view = manager.createViewInstance(themedContext)
+    manager.updateProperties(view, buildProps(
+      "pointerDirection", "down"))
+
+    assertEquals(BpkFlare.PointerDirection.DOWN, view.state.pointerDirection)
+
+    manager.updateProperties(view, buildProps(
+      "pointerDirection", "up"))
+
+    assertEquals(BpkFlare.PointerDirection.UP, view.state.pointerDirection)
+  }
+
+  @Test
+  fun test_invalid_pointerDirection() {
+    val view = manager.createViewInstance(themedContext)
+    assertThat({
+      manager.updateProperties(view, buildProps(
+        "pointerDirection", "invalid"))
+    }, throws(JSApplicationIllegalArgumentException::class))
+  }
+
+  private fun buildProps(vararg keysAndValues: Any?): ReactStylesDiffMap? {
+    return ReactStylesDiffMap(JavaOnlyMap.of(*keysAndValues))
   }
 }

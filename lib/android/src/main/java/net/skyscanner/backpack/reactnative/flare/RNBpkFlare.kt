@@ -25,8 +25,12 @@ import androidx.annotation.VisibleForTesting
 import com.facebook.react.bridge.ReactContext
 import com.facebook.react.views.view.ReactViewGroup
 import net.skyscanner.backpack.flare.BpkFlare
+import net.skyscanner.backpack.reactnative.BpkViewStateHolder
 
-class RNBpkFlare(val reactContext: ReactContext) : BpkFlare(reactContext) {
+class RNBpkFlare(
+  val reactContext: ReactContext,
+  val state: StateHolder = StateHolder()
+) : BpkFlare(reactContext) {
 
   @VisibleForTesting
   internal val internalView = ReactChildrenViewWrapper(reactContext)
@@ -36,10 +40,22 @@ class RNBpkFlare(val reactContext: ReactContext) : BpkFlare(reactContext) {
       ViewGroup.LayoutParams(
         ViewGroup.LayoutParams.MATCH_PARENT,
         ViewGroup.LayoutParams.MATCH_PARENT))
+
+    state.onAfterUpdateTransaction(::render)
+  }
+
+  private fun render() {
+    this.pointerDirection = state.pointerDirection
   }
 
   fun addViewInternal(child: View, index: Int) {
     internalView.addView(child, index)
+  }
+
+  companion object {
+    class StateHolder : BpkViewStateHolder() {
+      var pointerDirection: PointerDirection by markDirtyOnUpdate(PointerDirection.DOWN)
+    }
   }
 
   /**
