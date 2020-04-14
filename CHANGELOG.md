@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2.3.0 - 2020-04-14
+
+**Added:**
+
+- bpk-component-flare:
+  - Added `pointerDirection` prop for changing the side of the view the arrow appears on.
+
 # 2.2.0 - 2020-04-13
 
 **Added:**
