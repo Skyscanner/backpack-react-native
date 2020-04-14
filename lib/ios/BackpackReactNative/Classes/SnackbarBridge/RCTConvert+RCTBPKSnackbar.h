@@ -16,29 +16,11 @@
  * limitations under the License.
  */
 
-/* @flow */
+#import <Backpack/Snackbar.h>
+#import <React/RCTConvert.h>
 
-import { NativeModules } from 'react-native';
+@interface RCTConvert (RCTBPKSnackbar)
 
-NativeModules.RNDarkMode = {
-  initialMode: 'light',
-  supportsDarkMode: true,
-  addListener: jest.fn(),
-  removeListeners: jest.fn(),
-};
++ (BPKSnackbarDuration)BPKSnackbarDuration:(id)json;
 
-NativeModules.AndroidBpkSnackbar = {
-  LENGTH_SHORT: 0,
-  LENGTH_LONG: 1,
-  LENGTH_INDEFINITE: 2,
-  show: jest.fn(),
-  dismiss: jest.fn(),
-};
-
-NativeModules.BPKSnackbarManager = {
-  LENGTH_SHORT: 0,
-  LENGTH_LONG: 1,
-  LENGTH_INDEFINITE: 2,
-  showWithArgs: jest.fn(),
-  dismissAll: jest.fn(),
-};
+@end
