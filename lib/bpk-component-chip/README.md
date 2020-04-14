@@ -78,9 +78,14 @@ export default class App extends Component {
 | selected              | bool                                                                      | false    | false         |
 | innerChipStyle        | ViewStyle                                                                 | false    | null          |
 | type                  | oneOf(CHIP_TYPES)                                                         | false    | primary       |
+| leadingAccessoryView  | element                                                                   | false    | null          |
 
 **Note that on Android, `style` should be used for positional styling and `innerChipStyle` should be used for other styling.**
 (On iOS, `style` and `innerChipStyle` are applied together so it doesn't matter which you use!)
+
+## `leadingAccessoryView`
+
+ The leading accessory view allows for icons to be placed in front of the text inside the Chip component.
 
 #### Theme Props
 
@@ -99,6 +104,11 @@ export default class App extends Component {
 | disabled              | bool                                                                      | false    | false         |
 | innerChipStyle        | ViewStyle                                                                 | false    | null          |
 | type                  | oneOf(CHIP_TYPES)                                                         | false    | primary       |
+| leadingAccessoryView  | element                                                                   | false    | null          |
 
 **Note that on Android, `style` should be used for positional styling and `innerChipStyle` should be used for other styling.**
 (On iOS, `style` and `innerChipStyle` are applied together so it doesn't matter which you use!)
+
+## `leadingAccessoryView`
+
+ The leading accessory view allows for icons to be placed in front of the text inside the Chip component.

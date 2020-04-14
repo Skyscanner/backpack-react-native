@@ -644,6 +644,129 @@ exports[`Android BpkDismissibleChip light mode should render outline correctly 1
 </View>
 `;
 
+exports[`Android BpkDismissibleChip should render correctly with a supplied icon 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 40,
+        "elevation": 2,
+        "overflow": "hidden",
+      },
+      Array [],
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Dismiss"
+    accessibilityRole="button"
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderRadius": 40,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "includeFontPadding": false,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "includeFontPadding": false,
+            },
+            Object {
+              "marginStart": 4,
+            },
+          ],
+        ]
+      }
+    >
+      Label
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "color": "rgb(104, 105, 127)",
+              "includeFontPadding": false,
+              "marginStart": 4,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</View>
+`;
+
 exports[`Android BpkDismissibleChip should render correctly with arbitrary props 1`] = `
 <View
   style={
