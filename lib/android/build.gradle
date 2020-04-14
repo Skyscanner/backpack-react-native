@@ -22,7 +22,7 @@ def getPackageJson(project) {
 }
 
 def _reactNativeVersion = safeExtGet("reactNative", "+")
-def _backpackAndroidVersion = safeExtGet("backpackVersion", "22.2.0")
+def _backpackAndroidVersion = safeExtGet("backpackVersion", "23.1.0")
 def _compileSdkVersion = safeExtGet("compileSdkVersion", 28)
 def _targetSdkVersion = safeExtGet("targetSdkVersion", 28)
 def _minSdkVersion = safeExtGet("minSdkVersion", 21)

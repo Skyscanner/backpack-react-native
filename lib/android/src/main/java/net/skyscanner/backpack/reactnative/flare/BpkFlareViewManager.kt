@@ -20,8 +20,11 @@ package net.skyscanner.backpack.reactnative.flare
 
 import android.view.View
 import androidx.annotation.VisibleForTesting
+import com.facebook.react.bridge.JSApplicationIllegalArgumentException
 import com.facebook.react.uimanager.ThemedReactContext
 import com.facebook.react.uimanager.ViewGroupManager
+import com.facebook.react.uimanager.annotations.ReactProp
+import net.skyscanner.backpack.flare.BpkFlare
 
 class BpkFlareViewManager : ViewGroupManager<RNBpkFlare>() {
   companion object {
@@ -31,6 +34,20 @@ class BpkFlareViewManager : ViewGroupManager<RNBpkFlare>() {
   @VisibleForTesting
   public override fun createViewInstance(reactContext: ThemedReactContext): RNBpkFlare {
     return RNBpkFlare(reactContext)
+  }
+
+  @ReactProp(name = "pointerDirection")
+  fun setPointerDirection(view: RNBpkFlare, pointerDirection: String) {
+    view.state.pointerDirection = when (pointerDirection) {
+      "down" -> BpkFlare.PointerDirection.DOWN
+      "up" -> BpkFlare.PointerDirection.UP
+      else -> throw JSApplicationIllegalArgumentException("$pointerDirection is not a valid pointerDirection")
+    }
+  }
+
+  override fun onAfterUpdateTransaction(view: RNBpkFlare) {
+    super.onAfterUpdateTransaction(view)
+    view.state.dispatchUpdateTransactionFinished()
   }
 
   override fun getName(): String {
