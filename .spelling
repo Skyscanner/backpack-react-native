@@ -250,6 +250,7 @@ insetPaddingMode
 inView
 isOpen
 itemStyle
+leadingAccessoryView
 leadingButton
 mainStyle
 maxDate
