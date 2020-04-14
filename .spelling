@@ -271,6 +271,7 @@ onToggleExpanded
 onValueChange
 overlayStyle
 pageCount
+pointerDirection
 portalStyle
 props.message
 props.title

@@ -19,6 +19,7 @@
 #import "RCTBPKFlareManager.h"
 
 #import "RCTBPKFlare.h"
+#import "RCTConvert+RCTBPKFlare.h"
 
 @implementation RCTBPKFlareManager
 
@@ -27,5 +28,7 @@ RCT_EXPORT_MODULE()
 - (UIView *)view {
     return [[RCTBPKFlare alloc] initWithFrame:CGRectZero];
 }
+
+RCT_REMAP_VIEW_PROPERTY(pointerDirection, flarePosition, BPKFlarePosition)
 
 @end

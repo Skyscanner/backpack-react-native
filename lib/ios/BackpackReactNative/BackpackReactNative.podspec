@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
   s.source_files  = "Classes/**/*.{h,m}"
 
   s.dependency 'React'
-  s.dependency 'Backpack', '~> 29.0'
+  s.dependency 'Backpack', '~> 30.0'
 end

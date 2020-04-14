@@ -16,10 +16,15 @@
  * limitations under the License.
  */
 
-/* @flow */
+#import "RCTConvert+RCTBPKFlare.h"
+#import <React/RCTConvert+CoreLocation.h>
 
-import BpkFlare, { FLARE_POINTER_DIRECTIONS } from './src/BpkFlare';
+@implementation RCTConvert (RCTBPKFlare)
 
-export type { Props as BpkFlareProps } from './src/BpkFlare';
-export default BpkFlare;
-export { FLARE_POINTER_DIRECTIONS };
+RCT_ENUM_CONVERTER(BPKFlarePosition, (@{
+                       @"down": @(BPKFlarePositionBottom),
+                       @"up": @(BPKFlarePositionTop),
+                   }),
+                   BPKFlarePositionBottom, integerValue)
+
+@end
