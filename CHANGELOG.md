@@ -1,6 +1,11 @@
 # Backpack changelog
 
-[Unreleased changes](./UNRELEASED.md).
+# 2.4.1 - 2020-04-15
+
+**Fixed:**
+
+- bpk-component-text-input:
+  - Fixed an issue where updating `props.mask` had no effect.
 
 # 2.4.0 - 2020-04-15
 
