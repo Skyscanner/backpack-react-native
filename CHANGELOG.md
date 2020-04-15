@@ -2,6 +2,13 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2.4.0 - 2020-04-15
+
+**Added:**
+
+- bpk-component-chip
+  - New `leadingAccessoryView` prop to allow for icons to be added to the BpkChip.
+
 # 2.3.0 - 2020-04-14
 
 **Added:**
