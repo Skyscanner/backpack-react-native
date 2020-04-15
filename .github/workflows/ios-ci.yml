@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: macos-10.15
+
+    steps:
+    # Checkout the repo
+    - uses: actions/checkout@v2
+
+    - name: brew install
+      run: brew install clang-format
+
+    - name: npm install
+      run: npm ci
+
+    - name: install bundler
+      run: gem install bundler --version 2.0.2
+
+    - name: bundler install
+      run: bundle install
+      working-directory: ./ios
+
+    - name: CocoaPod install
+      run: bundle exec pod install
+      working-directory: ./ios
+
+    - name: CI
+      run: bundle exec rake ci
+      working-directory: ./ios
+

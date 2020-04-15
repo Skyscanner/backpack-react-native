@@ -9,8 +9,8 @@
 #import "ToggleNavigationBarMenuModule.h"
 #import <React/RCTDevMenu.h>
 
-@interface ToggleNavigationBarMenuModule()
-@property (nonatomic, strong) RCTDevMenuItem *devMenuItem;
+@interface ToggleNavigationBarMenuModule ()
+@property(nonatomic, strong) RCTDevMenuItem *devMenuItem;
 @end
 
 @implementation ToggleNavigationBarMenuModule
@@ -27,15 +27,17 @@ RCT_EXPORT_MODULE();
     [_bridge.devMenu addItem:self.devMenuItem];
 }
 
-- (RCTDevMenuItem *)devMenuItem
-{
+- (RCTDevMenuItem *)devMenuItem {
     if (!_devMenuItem) {
-        _devMenuItem =
-        [RCTDevMenuItem buttonItemWithTitleBlock:^NSString *{
-            return @"Toggle Navigation Bar";} handler:^{
-                NSLog(@"My Test Clicked!");}];
+        _devMenuItem = [RCTDevMenuItem
+            buttonItemWithTitleBlock:^NSString * {
+              return @"Toggle Navigation Bar";
+            }
+            handler:^{
+              NSLog(@"My Test Clicked!");
+            }];
     }
-    
+
     return _devMenuItem;
 }
 

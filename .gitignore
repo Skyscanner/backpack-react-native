@@ -59,3 +59,7 @@ coverage
 # Native bridges script
 .native-release-info.json
 
+.env
+android/app/src/main/assets/fonts/skyscanner_relative*
+
+dist

@@ -26,3 +26,11 @@ NativeModules.RNDarkMode = {
   addListener: jest.fn(),
   removeListeners: jest.fn(),
 };
+
+NativeModules.AndroidBpkSnackbar = {
+  LENGTH_SHORT: 0,
+  LENGTH_LONG: 1,
+  LENGTH_INDEFINITE: 2,
+  show: jest.fn(),
+  dismiss: jest.fn(),
+};

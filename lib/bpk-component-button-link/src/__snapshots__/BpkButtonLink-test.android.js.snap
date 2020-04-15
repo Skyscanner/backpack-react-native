@@ -1,0 +1,1237 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Android BpkButtonLink dark mode should render correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "overflow": "hidden",
+      },
+      null,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": -9934465,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "minHeight": 32,
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "color": "rgb(109, 159, 235)",
+            },
+          ],
+        ]
+      }
+    >
+      LOREM IPSUM
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Android BpkButtonLink dark mode should support overwriting styles 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "overflow": "hidden",
+      },
+      Object {
+        "width": 4,
+      },
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": -9934465,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "minHeight": 32,
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "color": "rgb(109, 159, 235)",
+            },
+          ],
+        ]
+      }
+    >
+      LOREM IPSUM
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Android BpkButtonLink dark mode should support the "disabled" property 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "overflow": "hidden",
+      },
+      null,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={
+      Array [
+        "disabled",
+      ]
+    }
+    accessible={true}
+    focusable={false}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": -9934465,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "minHeight": 32,
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "color": "rgb(109, 159, 235)",
+            },
+            Object {
+              "color": "rgb(99, 99, 102)",
+            },
+          ],
+        ]
+      }
+    >
+      LOREM IPSUM
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Android BpkButtonLink dark mode should support the "icon" property 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "overflow": "hidden",
+      },
+      null,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": -9934465,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "minHeight": 32,
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "color": "rgb(109, 159, 235)",
+            },
+          ],
+        ]
+      }
+    >
+      LOREM IPSUM
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "color": "rgb(109, 159, 235)",
+              "marginLeft": 4,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Android BpkButtonLink light mode should render correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "overflow": "hidden",
+      },
+      null,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "minHeight": 32,
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "color": "rgb(7, 112, 227)",
+            },
+          ],
+        ]
+      }
+    >
+      LOREM IPSUM
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Android BpkButtonLink light mode should support overwriting styles 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "overflow": "hidden",
+      },
+      Object {
+        "width": 4,
+      },
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "minHeight": 32,
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "color": "rgb(7, 112, 227)",
+            },
+          ],
+        ]
+      }
+    >
+      LOREM IPSUM
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Android BpkButtonLink light mode should support the "disabled" property 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "overflow": "hidden",
+      },
+      null,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={
+      Array [
+        "disabled",
+      ]
+    }
+    accessible={true}
+    focusable={false}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "minHeight": 32,
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "color": "rgb(7, 112, 227)",
+            },
+            Object {
+              "color": "rgb(178, 178, 191)",
+            },
+          ],
+        ]
+      }
+    >
+      LOREM IPSUM
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Android BpkButtonLink light mode should support the "icon" property 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "overflow": "hidden",
+      },
+      null,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "minHeight": 32,
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "color": "rgb(7, 112, 227)",
+            },
+          ],
+        ]
+      }
+    >
+      LOREM IPSUM
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "color": "rgb(7, 112, 227)",
+              "marginLeft": 4,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Android BpkButtonLink should render correctly with iconAlignment="leading" 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "overflow": "hidden",
+      },
+      null,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "minHeight": 32,
+        },
+        Object {
+          "flexDirection": "row-reverse",
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "color": "rgb(7, 112, 227)",
+            },
+          ],
+        ]
+      }
+    >
+      LOREM IPSUM
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "color": "rgb(7, 112, 227)",
+              "marginLeft": 4,
+            },
+            Object {
+              "marginLeft": 0,
+              "marginRight": 4,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Android BpkButtonLink should render correctly with iconAlignment="trailing" 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "overflow": "hidden",
+      },
+      null,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "minHeight": 32,
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "color": "rgb(7, 112, 227)",
+            },
+          ],
+        ]
+      }
+    >
+      LOREM IPSUM
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "color": "rgb(7, 112, 227)",
+              "marginLeft": 4,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Android BpkButtonLink should render correctly with text props provided 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "overflow": "hidden",
+      },
+      null,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "minHeight": 32,
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "color": "rgb(7, 112, 227)",
+            },
+          ],
+        ]
+      }
+    >
+      LOREM IPSUM
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Android BpkButtonLink should render correctly with theme prop 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "overflow": "hidden",
+      },
+      null,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "minHeight": 32,
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "color": "rgb(7, 112, 227)",
+            },
+            Object {
+              "color": "red",
+            },
+          ],
+        ]
+      }
+    >
+      LOREM IPSUM
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Android BpkButtonLink should support elements as icons 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "overflow": "hidden",
+      },
+      null,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "minHeight": 32,
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "color": "rgb(7, 112, 227)",
+            },
+          ],
+        ]
+      }
+    >
+      LOREM IPSUM
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": -0.2,
+          },
+          Object {},
+        ]
+      }
+    >
+      foo
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Android should support "borderlessBackground" equal to false 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "overflow": "hidden",
+      },
+      null,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": false,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "minHeight": 32,
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "color": "rgb(7, 112, 227)",
+            },
+          ],
+        ]
+      }
+    >
+      LOREM IPSUM
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Android should support "uppercase" equal to false 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "overflow": "hidden",
+      },
+      null,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Lorem ipsum"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "minHeight": 32,
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "color": "rgb(7, 112, 227)",
+            },
+          ],
+        ]
+      }
+    >
+      Lorem ipsum
+    </Text>
+  </View>
+</View>
+`;

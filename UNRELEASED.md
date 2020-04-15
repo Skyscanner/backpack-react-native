@@ -2,12 +2,10 @@
 
 > Place your changes below this line.
 
-**Fixed:**
+**Added:**
 
-- react-native-bpk-component-button:
-- react-native-bpk-component-nudger:
-  - Tweaked disabled, secondary and destructive button colours to stand out more when Dark Mode is enabled.
-
+- bpk-component-chip
+  - New `leadingAccessoryView` prop to allow for icons to be added to the BpkChip.
 
 ## How to write a good changelog entry
 
@@ -23,17 +21,16 @@ See [`CHANGELOG.md`](CHANGELOG.md) for real-world examples of good changelog ent
 
 **Breaking:**
 
-- react-native-bpk-styles:
+- bpk-styles:
   - Replaced `charmeleon` icon with new `charizard` icon. To upgrade, replace your references to `charmeleon` with `charizard`.
   - Upgraded `fire` dependency to `3.0.0`.
 
 **Added:**
 
-- react-native-bpk-component-infinity-gauntlet:
+- bpk-component-infinity-gauntlet:
   - New `timeStone` prop for controlling time. See &lt;link to docs site&gt;.
 
 **Fixed:**
 
-- react-native-bpk-component-horcrux:
+- bpk-component-horcrux:
   - Fixed issue where `BpkHorcrux` would occasionally possess the living.
-

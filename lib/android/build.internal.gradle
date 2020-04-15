@@ -1,0 +1,22 @@
+// This build file is used in the internal project to configure internal dependencies (e.g. Tests)
+// We do this because we don't want to publish the public `build.gradle` with our npm package and
+// force users to have those dependencies as well
+apply from: './build.gradle'
+
+def safeExtGet(prop, fallback) {
+  rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
+}
+
+def _reactNativeVersion = safeExtGet("reactNative", "+")
+
+dependencies {
+  testImplementation 'junit:junit:4.13'
+
+  androidTestImplementation "com.facebook.react:react-native:${_reactNativeVersion}"
+
+  androidTestImplementation "androidx.test.ext:junit:1.1.1"
+  androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+  androidTestImplementation 'androidx.test:rules:1.2.0'
+
+  androidTestImplementation "io.mockk:mockk-android:1.9"
+}

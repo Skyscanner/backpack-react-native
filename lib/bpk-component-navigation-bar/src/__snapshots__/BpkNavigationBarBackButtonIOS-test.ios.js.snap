@@ -1,0 +1,256 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`iOS BpkNavigationBarBackButtonIOS dark mode should render correctly 1`] = `
+<View
+  accessibilityLabel="Back"
+  accessibilityRole="button"
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "height": "100%",
+      "opacity": 1,
+      "zIndex": 2,
+    }
+  }
+>
+  <Image
+    source={1}
+    style={
+      Array [
+        Array [
+          Object {
+            "marginEnd": 16,
+          },
+        ],
+        Object {
+          "tintColor": "rgb(255, 255, 255)",
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`iOS BpkNavigationBarBackButtonIOS dark mode should render correctly with title 1`] = `
+<View
+  accessibilityLabel="Back"
+  accessibilityRole="button"
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "height": "100%",
+      "opacity": 1,
+      "zIndex": 2,
+    }
+  }
+>
+  <Image
+    source={1}
+    style={
+      Array [
+        Array [
+          Object {
+            "marginEnd": 8,
+          },
+        ],
+        Object {
+          "tintColor": "rgb(255, 255, 255)",
+        },
+      ]
+    }
+  />
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.12,
+        },
+        Object {},
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+          },
+        ],
+      ]
+    }
+  >
+    Back
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkNavigationBarBackButtonIOS light mode should render correctly 1`] = `
+<View
+  accessibilityLabel="Back"
+  accessibilityRole="button"
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "height": "100%",
+      "opacity": 1,
+      "zIndex": 2,
+    }
+  }
+>
+  <Image
+    source={1}
+    style={
+      Array [
+        Array [
+          Object {
+            "marginEnd": 16,
+          },
+        ],
+        Object {
+          "tintColor": "rgb(17, 18, 54)",
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`iOS BpkNavigationBarBackButtonIOS light mode should render correctly with title 1`] = `
+<View
+  accessibilityLabel="Back"
+  accessibilityRole="button"
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "height": "100%",
+      "opacity": 1,
+      "zIndex": 2,
+    }
+  }
+>
+  <Image
+    source={1}
+    style={
+      Array [
+        Array [
+          Object {
+            "marginEnd": 8,
+          },
+        ],
+        Object {
+          "tintColor": "rgb(17, 18, 54)",
+        },
+      ]
+    }
+  />
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(17, 18, 54)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.12,
+        },
+        Object {},
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+          },
+        ],
+      ]
+    }
+  >
+    Back
+  </Text>
+</View>
+`;
+
+exports[`iOS BpkNavigationBarBackButtonIOS should forward custom props 1`] = `
+<View
+  accessibilityLabel="Back"
+  accessibilityRole="button"
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "height": "100%",
+      "opacity": 1,
+      "zIndex": 2,
+    }
+  }
+  testID="testid"
+>
+  <Image
+    source={1}
+    style={
+      Array [
+        Array [
+          Object {
+            "marginEnd": 16,
+          },
+        ],
+        Object {
+          "tintColor": "rgb(17, 18, 54)",
+        },
+      ]
+    }
+  />
+</View>
+`;

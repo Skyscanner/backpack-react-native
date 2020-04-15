@@ -1,0 +1,10 @@
+bpk-component-boilerplate
+bpk-test-utils
+*.iml
+android/build
+screenshots
+*-test.js
+stories.js
+__snapshots__
+*.mp4
+build.internal.gradle

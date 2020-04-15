@@ -1,0 +1,307 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Android BpkPickerItem dark mode should render correctly 1`] = `
+<View
+  accessibilityLabel="label"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "borderless": false,
+      "color": -9934465,
+      "type": "RippleAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "padding": 16,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "sans-serif",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": -0.2,
+        },
+        Object {},
+        Object {},
+      ]
+    }
+  >
+    label
+  </Text>
+</View>
+`;
+
+exports[`Android BpkPickerItem dark mode should render correctly with an onPress function 1`] = `
+<View
+  accessibilityLabel="label"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "borderless": false,
+      "color": -9934465,
+      "type": "RippleAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "padding": 16,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "sans-serif",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": -0.2,
+        },
+        Object {},
+        Object {},
+      ]
+    }
+  >
+    label
+  </Text>
+</View>
+`;
+
+exports[`Android BpkPickerItem dark mode should render correctly with the selected prop 1`] = `
+<View
+  accessibilityLabel="label"
+  accessibilityRole="button"
+  accessibilityStates={
+    Array [
+      "selected",
+    ]
+  }
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "borderless": false,
+      "color": -9934465,
+      "type": "RippleAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "padding": 16,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "sans-serif",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": -0.2,
+        },
+        Object {},
+        Object {
+          "color": "rgb(109, 159, 235)",
+        },
+      ]
+    }
+  >
+    label
+  </Text>
+</View>
+`;
+
+exports[`Android BpkPickerItem light mode should render correctly 1`] = `
+<View
+  accessibilityLabel="label"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "padding": 16,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(17, 18, 54)",
+          "fontFamily": "sans-serif",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": -0.2,
+        },
+        Object {},
+        Object {},
+      ]
+    }
+  >
+    label
+  </Text>
+</View>
+`;
+
+exports[`Android BpkPickerItem light mode should render correctly with an onPress function 1`] = `
+<View
+  accessibilityLabel="label"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "padding": 16,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(17, 18, 54)",
+          "fontFamily": "sans-serif",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": -0.2,
+        },
+        Object {},
+        Object {},
+      ]
+    }
+  >
+    label
+  </Text>
+</View>
+`;
+
+exports[`Android BpkPickerItem light mode should render correctly with the selected prop 1`] = `
+<View
+  accessibilityLabel="label"
+  accessibilityRole="button"
+  accessibilityStates={
+    Array [
+      "selected",
+    ]
+  }
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "padding": 16,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(17, 18, 54)",
+          "fontFamily": "sans-serif",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": -0.2,
+        },
+        Object {},
+        Object {
+          "color": "rgb(7, 112, 227)",
+        },
+      ]
+    }
+  >
+    label
+  </Text>
+</View>
+`;

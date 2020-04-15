@@ -1,0 +1,631 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Android BpkFlatListItem dark mode should render correctly 1`] = `
+<View
+  accessibilityLabel="List item"
+  accessibilityRole="button"
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "borderless": false,
+      "color": -9934465,
+      "type": "RippleAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "minHeight": 48,
+      "padding": 16,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": -0.2,
+          },
+          Object {},
+          Array [
+            Object {
+              "flex": 1,
+            },
+          ],
+        ]
+      }
+    >
+      List item
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderColor": "rgb(221, 221, 229)",
+          "borderRadius": 20,
+          "borderWidth": 1,
+          "height": 20,
+          "justifyContent": "center",
+          "width": 20,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderRadius": 10,
+            "height": 10,
+            "width": 10,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Android BpkFlatListItem dark mode should support the "selected" property 1`] = `
+<View
+  accessibilityLabel="List item"
+  accessibilityRole="button"
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "borderless": false,
+      "color": -9934465,
+      "type": "RippleAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "minHeight": 48,
+      "padding": 16,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": -0.2,
+          },
+          Object {},
+          Array [
+            Object {
+              "flex": 1,
+            },
+            Object {
+              "color": "rgb(109, 159, 235)",
+            },
+          ],
+        ]
+      }
+    >
+      List item
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderColor": "rgb(221, 221, 229)",
+          "borderRadius": 20,
+          "borderWidth": 1,
+          "height": 20,
+          "justifyContent": "center",
+          "width": 20,
+        },
+        Object {
+          "borderColor": "rgb(109, 159, 235)",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderRadius": 10,
+            "height": 10,
+            "width": 10,
+          },
+          Object {
+            "backgroundColor": "rgb(109, 159, 235)",
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Android BpkFlatListItem light mode should render correctly 1`] = `
+<View
+  accessibilityLabel="List item"
+  accessibilityRole="button"
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "minHeight": 48,
+      "padding": 16,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": -0.2,
+          },
+          Object {},
+          Array [
+            Object {
+              "flex": 1,
+            },
+          ],
+        ]
+      }
+    >
+      List item
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderColor": "rgb(221, 221, 229)",
+          "borderRadius": 20,
+          "borderWidth": 1,
+          "height": 20,
+          "justifyContent": "center",
+          "width": 20,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderRadius": 10,
+            "height": 10,
+            "width": 10,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Android BpkFlatListItem light mode should support the "selected" property 1`] = `
+<View
+  accessibilityLabel="List item"
+  accessibilityRole="button"
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "minHeight": 48,
+      "padding": 16,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": -0.2,
+          },
+          Object {},
+          Array [
+            Object {
+              "flex": 1,
+            },
+            Object {
+              "color": "rgb(7, 112, 227)",
+            },
+          ],
+        ]
+      }
+    >
+      List item
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderColor": "rgb(221, 221, 229)",
+          "borderRadius": 20,
+          "borderWidth": 1,
+          "height": 20,
+          "justifyContent": "center",
+          "width": 20,
+        },
+        Object {
+          "borderColor": "rgb(7, 112, 227)",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderRadius": 10,
+            "height": 10,
+            "width": 10,
+          },
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Android BpkFlatListItem should support the "image" property 1`] = `
+<View
+  accessibilityLabel="List item"
+  accessibilityRole="button"
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "minHeight": 48,
+      "padding": 16,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Image
+      style={
+        Array [
+          undefined,
+          Object {
+            "marginRight": 32,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": -0.2,
+          },
+          Object {},
+          Array [
+            Object {
+              "flex": 1,
+            },
+          ],
+        ]
+      }
+    >
+      List item
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderColor": "rgb(221, 221, 229)",
+          "borderRadius": 20,
+          "borderWidth": 1,
+          "height": 20,
+          "justifyContent": "center",
+          "width": 20,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderRadius": 10,
+            "height": 10,
+            "width": 10,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Android should pass through titleProps to the title 1`] = `
+Object {
+  "children": "List item with pass through props",
+  "emphasize": null,
+  "numberOfLines": 7,
+  "style": Array [
+    Object {
+      "flex": 1,
+    },
+  ],
+  "testID": "ID_for_testing",
+  "textStyle": "base",
+  "theme": null,
+  "weight": "regular",
+}
+`;
+
+exports[`Android should support theming when selected 1`] = `
+<View
+  accessibilityLabel="List item"
+  accessibilityRole="button"
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "borderless": false,
+      "color": null,
+      "type": "RippleAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "minHeight": 48,
+      "padding": 16,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": -0.2,
+          },
+          Object {},
+          Object {
+            "fontFamily": "relative",
+          },
+          Array [
+            Object {
+              "flex": 1,
+            },
+            Object {
+              "color": "rgb(7, 112, 227)",
+            },
+            Object {
+              "color": "red",
+            },
+          ],
+        ]
+      }
+    >
+      List item
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderColor": "rgb(221, 221, 229)",
+          "borderRadius": 20,
+          "borderWidth": 1,
+          "height": 20,
+          "justifyContent": "center",
+          "width": 20,
+        },
+        Object {
+          "borderColor": "red",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderRadius": 10,
+            "height": 10,
+            "width": 10,
+          },
+          Object {
+            "backgroundColor": "red",
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;

@@ -1,0 +1,11 @@
+version: 1
+update_configs:
+  - package_manager: "javascript"
+    directory: "/"
+    update_schedule: "weekly"
+    ignored_updates:
+      - match:
+          # TODO remove this.
+          # 5.3.x of this dependency stops the addon panel from appearing.
+          # See https://github.com/storybookjs/react-native/issues/24
+          dependency_name: "@storybook/react-native-server"

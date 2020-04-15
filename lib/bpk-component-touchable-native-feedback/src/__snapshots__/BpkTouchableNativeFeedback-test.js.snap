@@ -1,0 +1,265 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BpkTouchableNativeFeedback dark mode should render correctly on API < 21 1`] = `
+<FakeComponent
+  accessible={true}
+  focusable={false}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "attribute": "selectableItemBackground",
+      "type": "ThemeAttrAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+/>
+`;
+
+exports[`BpkTouchableNativeFeedback dark mode should render correctly on API >= 21 1`] = `
+<FakeComponent
+  accessible={true}
+  focusable={false}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "borderless": true,
+      "color": -9934465,
+      "type": "RippleAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+/>
+`;
+
+exports[`BpkTouchableNativeFeedback dark mode should render correctly with a dynamic \`color\` prop 1`] = `
+<FakeComponent
+  accessible={true}
+  focusable={false}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "borderless": true,
+      "color": -16777216,
+      "type": "RippleAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+/>
+`;
+
+exports[`BpkTouchableNativeFeedback dark mode should render correctly with a string \`color\` prop 1`] = `
+<FakeComponent
+  accessible={true}
+  focusable={false}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "borderless": true,
+      "color": -1,
+      "type": "RippleAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+/>
+`;
+
+exports[`BpkTouchableNativeFeedback dark mode should render correctly with arbitrary props 1`] = `
+<FakeComponent
+  accessible={true}
+  focusable={false}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "borderless": true,
+      "color": -9934465,
+      "type": "RippleAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  testID="arbitrary value"
+/>
+`;
+
+exports[`BpkTouchableNativeFeedback dark mode should render correctly with custom style prop 1`] = `
+<FakeComponent
+  accessible={true}
+  focusable={false}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "borderless": true,
+      "color": -9934465,
+      "type": "RippleAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+/>
+`;
+
+exports[`BpkTouchableNativeFeedback light mode should render correctly on API < 21 1`] = `
+<FakeComponent
+  accessible={true}
+  focusable={false}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "attribute": "selectableItemBackground",
+      "type": "ThemeAttrAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+/>
+`;
+
+exports[`BpkTouchableNativeFeedback light mode should render correctly on API >= 21 1`] = `
+<FakeComponent
+  accessible={true}
+  focusable={false}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "borderless": true,
+      "color": null,
+      "type": "RippleAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+/>
+`;
+
+exports[`BpkTouchableNativeFeedback light mode should render correctly with a dynamic \`color\` prop 1`] = `
+<FakeComponent
+  accessible={true}
+  focusable={false}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "borderless": true,
+      "color": -1,
+      "type": "RippleAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+/>
+`;
+
+exports[`BpkTouchableNativeFeedback light mode should render correctly with a string \`color\` prop 1`] = `
+<FakeComponent
+  accessible={true}
+  focusable={false}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "borderless": true,
+      "color": -1,
+      "type": "RippleAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+/>
+`;
+
+exports[`BpkTouchableNativeFeedback light mode should render correctly with arbitrary props 1`] = `
+<FakeComponent
+  accessible={true}
+  focusable={false}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "borderless": true,
+      "color": null,
+      "type": "RippleAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  testID="arbitrary value"
+/>
+`;
+
+exports[`BpkTouchableNativeFeedback light mode should render correctly with custom style prop 1`] = `
+<FakeComponent
+  accessible={true}
+  focusable={false}
+  isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "borderless": true,
+      "color": null,
+      "type": "RippleAndroid",
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+/>
+`;

@@ -2,6 +2,239 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2.3.0 - 2020-04-14
+
+**Added:**
+
+- bpk-component-flare:
+  - Added `pointerDirection` prop for changing the side of the view the arrow appears on.
+
+# 2.2.0 - 2020-04-13
+
+**Added:**
+
+- `bpk-component-snackbar`:
+  - Added Android version.
+
+# 2.1.1 - 2020-04-10
+
+**Fixed**
+- bpk-component-dialog:
+  - Changing the icon background color at runtime will now result in an immediate update to the presented dialog.
+
+# 2.1.0 - 2020-04-06
+
+**Added:**
+
+- bpk-component-badge:
+  - Added `accessoryViewAlignment` prop to allow for accessory views to be aligned on the leading or trailing edge of badges. Prior to this, all accessory views were on the leading edge.
+
+# 2.0.0 - 2020-04-02
+
+**Added:**
+
+- bpk-component-horizontal-nav:
+  - New `selectedIndicatorStyle` prop for `BpkHorizontalNav` for styling the indicator underneath the selected nav item.
+  - New `textStyle` prop for `BpkHorizontalNavItem` for styling the text inside the nav item.
+
+**Breaking:**
+
+- `backpack-android` was upgraded to 23.0.0
+
+# 1.4.2 - 2020-03-31
+
+**Fixed:**
+
+- Updated Backpack iOS dependency to `~> 29.0`.
+
+# 1.4.1 - 2020-03-31
+
+**Fixed:**
+
+- Updated Backpack iOS dependency to `~> 28.0`.
+
+# 1.4.0 - 2020-03-30
+
+**Added:**
+
+- Added new `BackpackReactNative.init` method that should be called before the application starts to configure `backpack-react-native` for Android.
+
+# 1.3.0 - 2020-03-25
+
+**Added:**
+
+- `bpk-component-flare`:
+  - Added flare component for iOS.
+
+# 1.2.0 - 2020-03-20
+
+**Fixed:**
+
+- bpk-component-text-input:
+  - Fixed an issue where masked inputs would sometimes behave erratically when deleting characters.
+
+**Added:**
+
+- `bpk-component-flare`:
+  - Added flare component for Android.
+
+# 1.1.0 - 2020-03-19
+
+**Added:**
+
+- bpk-component-calendar:
+  - `disabledDates` is now supported on iOS as well as Android.
+
+# 1.0.1 - 2020-03-18
+
+**Fixed:**
+
+- bpk-component-icon:
+  - Updated hotels icon.
+
+# 1.0.0 - 2020-03-18
+
+**Fixed:**
+Updated `backpack-ios` dependency.
+
+# 0.1.0 - 2020-03-11
+
+**Added:**
+
+- bpk-component-select:
+  - Added `focused` component to highlight the component when it's being interacted with.
+
+# 0.0.3 - 2020-03-09
+
+**Added:**
+
+- bpk-component-switch:
+  - The track colour is now lighter in dark mode to match the design on iOS.
+
+# 2020-03-06
+
+**Breaking:**
+
+- Individual packages have been moved to a single `backpack-react-native` package.
+
+# 2020-02-28
+
+**Added:**
+
+- react-native-bpk-component-calendar:
+  - Added three new predefined colour buckets. `colorBucketNegative`, `colorBucketNeutral` and `colorBucketPositive`.
+
+**Breaking:**
+
+- react-native-bpk-component-calendar: 5.1.1 => 6.0.0
+- react-native-bpk-component-dialog: 5.0.3 => 6.0.0
+- react-native-bpk-component-rating: 1.1.2 => 2.0.0
+  - Updated `backpack-android` to `22.0.0` and addressed breaking changes.
+  - To use this version ensure `backpack-android` version is `22.0.0` or above.
+
+# 2020-02-26
+
+**Added:**
+
+- react-native-bpk-component-calendar:
+  - `colorBuckets` are now supported on iOS.
+
+# 2020-02-20 - `backpack-ios` upgrade
+
+**Fixed:**
+
+- react-native-bpk-component-calendar: 5.0.0 => 5.0.1
+  - Updated `backpack-ios` dependency to `26.0`.
+
+- react-native-bpk-component-dialog: 5.0.0 => 5.0.1
+  - Updated `backpack-ios` dependency to `26.0`.
+
+- react-native-bpk-component-rating: 1.0.0 => 1.1.0
+  - Updated `backpack-ios` dependency to `26.0`.
+  - Bumped to `1.1.0` due to conflicting existing tags.
+
+# 2020-02-20 - Better dialing code filtering
+
+**Changed:**
+
+- react-native-bpk-component-phone-input: 7.0.0 => 7.0.1
+  - `getFilteredDialingCodes` now filters on `dialingCode` in addition to the `name` property.
+
+# 2020-02-19 - RN 0.61.5 upgrade.
+
+**Breaking:**
+
+- react-native-bpk-appearance: 1.4.4 => 2.0.0
+- react-native-bpk-component-alert: 3.0.32 => 4.0.0
+- react-native-bpk-component-animate-height: 3.0.33 => 4.0.0
+- react-native-bpk-component-badge: 5.0.19 => 6.0.0
+- react-native-bpk-component-banner-alert: 7.2.10 => 8.0.0
+- react-native-bpk-component-button-link: 6.1.12 => 7.0.0
+- react-native-bpk-component-button: 11.2.5 => 12.0.0
+- react-native-bpk-component-calendar: 4.2.6 => 5.0.0
+- react-native-bpk-component-card: 2.2.7 => 3.0.0
+- react-native-bpk-component-carousel-indicator: 2.0.32 => 3.0.0
+- react-native-bpk-component-carousel: 2.0.33 => 3.0.0
+- react-native-bpk-component-chip: 5.1.12 => 6.0.0
+- react-native-bpk-component-dialog: 4.0.24 => 5.0.0
+- react-native-bpk-component-flat-list: 5.3.4 => 6.0.0
+- react-native-bpk-component-horizontal-nav: 6.1.12 => 7.0.0
+- react-native-bpk-component-icon: 2.2.11 => 3.0.0
+- react-native-bpk-component-image: 2.1.12 => 3.0.0
+- react-native-bpk-component-navigation-bar: 7.2.6 => 8.0.0
+- react-native-bpk-component-nudger: 4.0.21 => 5.0.0
+- react-native-bpk-component-panel: 1.1.11 => 2.0.0
+- react-native-bpk-component-phone-input: 6.1.6 => 7.0.0
+- react-native-bpk-component-picker: 5.2.7 => 6.0.0
+- react-native-bpk-component-progress: 2.1.9 => 3.0.0
+- react-native-bpk-component-rating: 0.0.17 => 1.0.0
+- react-native-bpk-component-section-list: 5.3.4 => 6.0.0
+- react-native-bpk-component-select: 4.1.11 => 5.0.0
+- react-native-bpk-component-spinner: 2.1.10 => 3.0.0
+- react-native-bpk-component-star-rating: 2.1.8 => 3.0.0
+- react-native-bpk-component-switch: 3.1.10 => 4.0.0
+- react-native-bpk-component-text-input: 4.1.9 => 5.0.0
+- react-native-bpk-component-text: 4.2.12 => 5.0.0
+- react-native-bpk-component-touchable-native-feedback: 2.0.26 => 3.0.0
+- react-native-bpk-component-touchable-overlay: 2.1.11 => 3.0.0
+- react-native-bpk-styles: 2.0.15 => 3.0.0
+- react-native-bpk-theming: 1.4.15 => 2.0.0
+  - Upgraded react-native to 0.61.5
+
+**Fixed:**
+
+- react-native-bpk-component-badge:
+  - We've made the `success` badge lighter as it looked strange with dark text.
+
+# 2020-02-13 - Deprecated `BpkThemeAttributes` and update bpk-tokens.
+
+**Fixed:**
+
+- react-native-bpk-component-animate-height:
+  - Fix flow error for latest flow-bin.
+
+- react-native-bpk-theming:
+  - Deprecated `BpkThemeAttributes` components as no longer required. Will be removed in future version.
+
+- react-native-bpk-appearance:
+  - `useBpkDynamicValue` and `useBpkDynamicStyle` can now handle simple union types. e.g. `string | BpkDynamicValue<string>`.
+
+- react-native-bpk-component-progress:
+  - fixed progress animation duration.
+
+- bpk-tokens was update for all packages.
+
+# 2020-01-31 - Dark mode fixes.
+
+**Fixed:**
+
+- react-native-bpk-component-button: 11.2.3 => 11.2.4
+- react-native-bpk-component-nudger: 4.0.19 => 4.0.20
+  - Tweaked disabled, secondary and destructive button colours to stand out more when Dark Mode is enabled.
+
+- react-native-bpk-component-phone-input: 6.1.4 => 6.1.5
+  - Fixed `borderColor` of `BpkFlag` for dark mode.
+
 # 2020-01-30
 
 **Fixed:**

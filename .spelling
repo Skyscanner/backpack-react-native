@@ -34,12 +34,13 @@ BpkDismissibleChip
 BpkDynamicStyleSheet
 BpkFieldset
 BpkFlag
+BpkFlare
 BpkFlatList
 BpkFlatListHeader
 BpkFlatListItem
 BpkFlatListItemSeparator
-BpkFlatListSearchField
 BpkFlatListNoResultsText
+BpkFlatListSearchField
 BpkHorizontalNav
 BpkHorizontalNavItem
 BpkIcon
@@ -62,9 +63,10 @@ BpkSectionList
 BpkSectionListHeader
 BpkSectionListItem
 BpkSectionListItemSeparator
-BpkSectionListSearchField
 BpkSectionListNoResultsText
+BpkSectionListSearchField
 BpkSelect
+BpkSnackbar
 BpkTicket
 # End of component names
 
@@ -205,6 +207,7 @@ ViewPropTypes
 # Custom prop types
 accessibilityLabel
 accessoryView
+accessoryViewAlignment
 ALERT_TYPES
 animateOnEnter
 animateOnLeave
@@ -243,9 +246,11 @@ imageComponent
 increaseButtonLabel
 innerStyle
 inputRef
+insetPaddingMode
 inView
 isOpen
 itemStyle
+leadingAccessoryView
 leadingButton
 mainStyle
 maxDate
@@ -267,6 +272,7 @@ onToggleExpanded
 onValueChange
 overlayStyle
 pageCount
+pointerDirection
 portalStyle
 props.message
 props.title
@@ -276,6 +282,7 @@ scrimAction
 selectedDates
 selectedId
 selectedIndex
+selectedIndicatorStyle
 selectedValue
 selectionType
 SELECTION_TYPES
@@ -325,7 +332,10 @@ xxxl
 
 # Package names
 bpk-animate-height
+bpk-appearance
 bpk-component-accordion
+bpk-component-alert
+bpk-component-animate-height
 bpk-component-autosuggest
 bpk-component-badge
 bpk-component-banner-alert
@@ -335,8 +345,11 @@ bpk-component-boilerplate
 bpk-component-breadcrumb
 bpk-component-breakpoint
 bpk-component-button
+bpk-component-button-link
 bpk-component-calendar
 bpk-component-card
+bpk-component-carousel
+bpk-component-carousel-indicator
 bpk-component-checkbox
 bpk-component-chip
 bpk-component-close-button
@@ -349,14 +362,18 @@ bpk-component-description-list
 bpk-component-dialog
 bpk-component-drawer
 bpk-component-fieldset
+bpk-component-flare
+bpk-component-flat-list
 bpk-component-form-validation
 bpk-component-grid
 bpk-component-grid-toggle
 bpk-component-heading
+bpk-component-horcrux
 bpk-component-horizontal-nav
 bpk-component-icon
 bpk-component-image
 bpk-component-infinite-scroll
+bpk-component-infinity-gauntlet
 bpk-component-input
 bpk-component-label
 bpk-component-link
@@ -373,29 +390,37 @@ bpk-component-pagination
 bpk-component-panel
 bpk-component-paragraph
 bpk-component-phone-input
+bpk-component-picker
 bpk-component-popover
 bpk-component-progress
 bpk-component-radio
+bpk-component-rating
 bpk-component-router-link
 bpk-component-rtl-toggle
 bpk-component-scrollable-calendar
 bpk-component-section-list
 bpk-component-select
 bpk-component-slider
+bpk-component-snackbar
 bpk-component-spinner
 bpk-component-star-rating
+bpk-component-switch
 bpk-component-table
 bpk-component-text
+bpk-component-text-input
 bpk-component-textarea
 bpk-component-theme-toggle
 bpk-component-ticket
 bpk-component-tile
 bpk-component-tooltip
+bpk-component-touchable-native-feedback
+bpk-component-touchable-overlay
 bpk-dialog-ios
 bpk-docs
 bpk-mixins
 bpk-react-utils
 bpk-scrim-utils
+bpk-styles
 bpk-stylesheets
 bpk-svgs
 bpk-tether
@@ -416,11 +441,9 @@ react-native-bpk-component-carousel-indicator
 react-native-bpk-component-chip
 react-native-bpk-component-dialog
 react-native-bpk-component-flat-list
-react-native-bpk-component-horcrux
 react-native-bpk-component-horizontal-nav
 react-native-bpk-component-icon
 react-native-bpk-component-image
-react-native-bpk-component-infinity-gauntlet
 react-native-bpk-component-map
 react-native-bpk-component-navigation-bar
 react-native-bpk-component-nudger
@@ -448,3 +471,4 @@ janky
 onsen
 gray
 grays
+snackbar

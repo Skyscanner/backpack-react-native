@@ -19,19 +19,32 @@
 set -e
 
 read -p "Username: " username
-read -p "Are you sure you want to remove $username from all packages (y/n)? " confirm
+echo "Do you want to remove ${username} from the old packages (react-native-bpk-*) or the new single package (backpack-react-native)?"
+read -p "Please pick an option (1/2):
+[1] react-native-bpk-*
+[2] backpack-react-native
+" option
+
+read -p "$option selected. Are you sure you want to remove $username (y/n)? " confirm
 
 if [ "$confirm" != "y" ]; then
   echo "Ok bye. 💁"
   exit 0
 fi
 
-for f in packages/*; do
-  package=`basename $f`
+if [ $option == "1" ]; then
+  for f in lib/*; do
+    package=`basename $f`
 
-  if [ "$f" != "packages/react-native-bpk-component-boilerplate" ] && [ -d "$f" ] && [ -e "$f/package.json" ]; then
-    npm owner rm $username $package
-  fi
-done
+    if [ "$f" != "lib/bpk-component-boilerplate" ] && [ -d "$f" ] && [ -e "$f/index.js" ]; then
+      echo npm owner rm $username react-native-$package
+    fi
+  done
+elif [ $option == "2" ]; then
+  echo npm owner rm $username backpack-react-native
+else
+  echo "Invalid option"
+  exit 1
+fi
 
-echo "Removed '${username}' from all packages. Remember to remove them from meta.json.";
+echo "Removed '$username'. Remember to remove them from meta.json.";
