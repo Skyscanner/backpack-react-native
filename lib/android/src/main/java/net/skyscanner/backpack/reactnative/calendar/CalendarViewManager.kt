@@ -130,7 +130,7 @@ class CalendarViewManager : ViewGroupManager<RNCalendarView>() {
     if (footerView == null) {
       view.state.footerView = null
     } else {
-      view.state.footerView = RNFooterView.fromJS(footerView)
+      view.state.footerView = RNFooterView.fromJS(view.context, footerView)
     }
   }
 

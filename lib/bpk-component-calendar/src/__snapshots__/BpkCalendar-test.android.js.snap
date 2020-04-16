@@ -153,6 +153,30 @@ exports[`Android BpkCalendar should render correctly with disabled dates 1`] = `
 />
 `;
 
+exports[`Android BpkCalendar should render correctly with footerView 1`] = `
+<AndroidBPKCalendarView
+  disabledDates={null}
+  footerView={
+    Object {
+      "__type": "highlightedDays",
+      "days": Array [
+        Object {
+          "date": 1576627200,
+          "description": "Test day",
+        },
+      ],
+    }
+  }
+  locale="en_GB"
+  maxDate={null}
+  minDate={null}
+  onChange={[Function]}
+  selectedDates={Array []}
+  selectionType="single"
+  style={null}
+/>
+`;
+
 exports[`Android BpkCalendar should render correctly with maxDate 1`] = `
 <AndroidBPKCalendarView
   disabledDates={null}

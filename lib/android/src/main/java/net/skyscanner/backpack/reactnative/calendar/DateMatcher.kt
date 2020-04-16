@@ -66,8 +66,8 @@ internal data class BeforeMatcher(internal val end: LocalDate) : DateMatcher {
   }
 
   override fun toSet(minDate: LocalDate, maxDate: LocalDate): Set<LocalDate> {
-    val end = getMin(minusOne(this.end), maxDate)
-    return generateSequence(end, ::minusOne).takeWhile { it >= minDate }.toSet()
+    val minEnd = getMin(minusOne(this.end), maxDate)
+    return generateSequence(minEnd, ::minusOne).takeWhile { it >= minDate }.toSet()
   }
 }
 

@@ -70,7 +70,7 @@ class RNCalendarView(
           bucket.asColorBucket(controller!!.startDate, controller!!.endDate)
         }.toSet())
       }
-      controller?.monthFooterAdapter = state.footerView?.asFooterAdapter(context, controller!!.locale)
+      controller?.monthFooterAdapter = state.footerView?.asFooterAdapter(controller!!.locale)
 
       if (state.shouldUpdateContent) {
         state.shouldUpdateContent = false
@@ -94,7 +94,7 @@ class RNCalendarView(
         }.toSet()) }
 
     state.footerView?.let {
-      currentController.monthFooterAdapter = it.asFooterAdapter(context, currentController.locale)
+      currentController.monthFooterAdapter = it.asFooterAdapter(currentController.locale)
     }
 
     return currentController

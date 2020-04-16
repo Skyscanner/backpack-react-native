@@ -30,24 +30,35 @@ import net.skyscanner.backpack.reactnative.extensions.getRequired
 
 interface RNFooterView {
   companion object {
-    fun fromJS(viewDef: ReadableMap): RNFooterView {
+    fun fromJS(context: Context, viewDef: ReadableMap): RNFooterView {
       return when (val type = viewDef.getRequired("__type", ReadableMap::getString)) {
-        "highlightedDays" -> RNHighlightedDaysFooterView(viewDef)
+        "highlightedDays" -> RNHighlightedDaysFooterView.fromJS(context, viewDef)
         else -> throw JSApplicationIllegalArgumentException("Unsupported footer view type: $type")
       }
     }
   }
 
-  fun asFooterAdapter(context: Context, locale: Locale): MonthFooterAdapter
+  fun asFooterAdapter(locale: Locale): MonthFooterAdapter
 }
 
-internal class RNHighlightedDaysFooterView(private val viewDef: ReadableMap) : RNFooterView {
-  override fun asFooterAdapter(context: Context, locale: Locale): MonthFooterAdapter {
-    val days = viewDef.getRequired("days", ReadableMap::getArray)
+internal data class RNHighlightedDaysFooterView(
+  val context: Context,
+  val days: Set<HighlightedDaysAdapter.HighlightedDay>
+) : RNFooterView {
+  override fun asFooterAdapter(locale: Locale): MonthFooterAdapter {
     return HighlightedDaysAdapter(
       context,
       locale,
-      (0 until days.size()).map {
+      days
+    )
+  }
+
+  companion object {
+    fun fromJS(context: Context, viewDef: ReadableMap): RNHighlightedDaysFooterView {
+      val days = viewDef.getRequired("days", ReadableMap::getArray)
+      return RNHighlightedDaysFooterView(
+        context,
+        (0 until days.size()).map {
         val day = days.getRequired("days", it, ReadableArray::getMap)
         val date = day.getRequired("date", ReadableMap::getInt).let(TypeConversions::unixTimestampToLocalDate)
         val description = day.getRequired("description", ReadableMap::getString)
@@ -61,7 +72,7 @@ internal class RNHighlightedDaysFooterView(private val viewDef: ReadableMap) : R
           description = description,
           color = cellStyle?.color(context) ?: color
         )
-      }.toSet()
-    )
+      }.toSet())
+    }
   }
 }

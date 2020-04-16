@@ -18,6 +18,7 @@
 
 package net.skyscanner.backpack.reactnative.calendar
 
+import com.facebook.react.bridge.JSApplicationIllegalArgumentException
 import net.skyscanner.backpack.calendar.model.CalendarCellStyle
 import org.threeten.bp.Instant
 import org.threeten.bp.LocalDate
@@ -29,7 +30,7 @@ internal object TypeConversions {
       "positive" -> CalendarCellStyle.Positive
       "neutral" -> CalendarCellStyle.Neutral
       "highlight" -> CalendarCellStyle.Hightlight
-      else -> throw IllegalStateException("Invalid cellStyle: $cellStyleString")
+      else -> throw JSApplicationIllegalArgumentException("Invalid cellStyle: $cellStyleString")
     }
   }
 

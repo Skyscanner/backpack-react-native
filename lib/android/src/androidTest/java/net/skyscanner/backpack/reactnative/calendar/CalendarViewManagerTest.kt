@@ -28,12 +28,14 @@ import com.facebook.react.uimanager.ThemedReactContext
 import com.jakewharton.threetenabp.AndroidThreeTen
 import io.mockk.mockk
 import io.mockk.verify
+import net.skyscanner.backpack.calendar.presenter.HighlightedDaysAdapter
 import net.skyscanner.backpack.calendar.presenter.SelectionType
 import net.skyscanner.backpack.reactnative.testing.Matchers.throws
 import net.skyscanner.backpack.reactnative.testing.ReactViewManagerTestRule
 import org.junit.Assert.assertArrayEquals
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotNull
+import org.junit.Assert.assertNull
 import org.junit.Assert.assertThat
 import org.junit.Before
 import org.junit.Rule
@@ -230,6 +232,75 @@ class CalendarViewManagerTest {
   }
 
   @Test
+  fun test_footer_view() {
+    val view = createWithLocale()
+    manager.updateProperties(view, buildProps(
+      "footerView", null))
+
+    assertNull(view.state.footerView)
+
+    manager.updateProperties(view, buildProps(
+      "footerView", JavaOnlyMap.of(
+        "__type", "highlightedDays",
+        "days", JavaOnlyArray.of(
+          JavaOnlyMap.of(
+            "date", date1Seconds,
+            "description", "test day",
+            "color", 1
+          )))))
+
+    assertEquals(
+      RNHighlightedDaysFooterView(
+        view.context,
+        setOf(HighlightedDaysAdapter.HighlightedDay(date1, "test day", 1))
+        ),
+      view.state.footerView)
+  }
+
+  @Test
+  fun test_footer_view_invalid() {
+    val view = createWithLocale()
+
+    assertThat({
+      manager.updateProperties(view,
+        buildProps(
+          "footerView", JavaOnlyMap.of(
+            "__type", "invalid")))
+    }, throws(JSApplicationIllegalArgumentException::class))
+
+    assertThat({
+      manager.updateProperties(view, buildProps(
+        "footerView", JavaOnlyMap.of(
+          "__type", "highlightedDays",
+          "daysss", JavaOnlyArray.of(
+            JavaOnlyMap.of(
+              "date", date1Seconds,
+              "description", "test day"
+            )))))
+    }, throws(JSApplicationIllegalArgumentException::class))
+
+    assertThat({
+      manager.updateProperties(view, buildProps(
+        "footerView", JavaOnlyMap.of(
+          "__type", "highlightedDays",
+          "days", JavaOnlyArray.of(
+            JavaOnlyMap.of(
+              "description", "test day"
+              )))))
+    }, throws(JSApplicationIllegalArgumentException::class))
+
+    assertThat({
+      manager.updateProperties(view, buildProps(
+        "footerView", JavaOnlyMap.of(
+          "__type", "highlightedDays",
+          "days", JavaOnlyArray.of(
+            JavaOnlyMap.of(
+              "date", date1Seconds
+            )))))
+    }, throws(JSApplicationIllegalArgumentException::class))
+  }
+
+  @Test
   fun test_render_once_after_transaction() {
     val stateHolder = mockk<RNCalendarView.Companion.StateHolder>(relaxed = true)
     val view = RNCalendarView(themedContext, stateHolder)
@@ -253,7 +324,15 @@ class CalendarViewManagerTest {
             "__cellStyle", "positive",
             "days", JavaOnlyMap.of(
             "type", "any",
-            "dates", JavaOnlyArray.of(date2Seconds))))))
+            "dates", JavaOnlyArray.of(date2Seconds)))),
+        "footerView", JavaOnlyMap.of(
+          "__type", "highlightedDays",
+          "days", JavaOnlyArray.of(
+            JavaOnlyMap.of(
+              "date", date1Seconds,
+              "description", "test day",
+              "color", 1
+            )))))
 
     verify(exactly = 1) { stateHolder.dispatchUpdateTransactionFinished() }
   }

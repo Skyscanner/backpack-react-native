@@ -153,6 +153,30 @@ exports[`iOS BpkCalendar should render correctly with disabled dates 1`] = `
 />
 `;
 
+exports[`iOS BpkCalendar should render correctly with footerView 1`] = `
+<RCTBPKCalendar
+  disabledDates={null}
+  footerView={
+    Object {
+      "__type": "highlightedDays",
+      "days": Array [
+        Object {
+          "date": 1576627200000,
+          "description": "Test day",
+        },
+      ],
+    }
+  }
+  locale="en_GB"
+  maxDate={null}
+  minDate={null}
+  onDateSelection={[Function]}
+  selectedDates={Array []}
+  selectionType="single"
+  style={null}
+/>
+`;
+
 exports[`iOS BpkCalendar should render correctly with maxDate 1`] = `
 <RCTBPKCalendar
   disabledDates={null}
