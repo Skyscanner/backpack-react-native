@@ -23,6 +23,7 @@ import java.util.*
 import net.skyscanner.backpack.calendar.model.CalendarColoring
 import net.skyscanner.backpack.calendar.model.CalendarSelection
 import net.skyscanner.backpack.calendar.presenter.BpkCalendarController
+import net.skyscanner.backpack.calendar.presenter.MonthFooterAdapter
 import net.skyscanner.backpack.calendar.presenter.SelectionType
 import org.threeten.bp.LocalDate
 
@@ -44,6 +45,7 @@ class CalendarController(
   }
 
   override var calendarColoring: CalendarColoring? = null
+  override var monthFooterAdapter: MonthFooterAdapter? = null
 
   var onDatesChange: ChangeCallback? = null
 

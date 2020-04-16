@@ -20,6 +20,7 @@ package net.skyscanner.backpack.reactnative.extensions
 
 import android.content.Context
 import com.facebook.react.bridge.JSApplicationIllegalArgumentException
+import com.facebook.react.bridge.ReadableArray
 import com.facebook.react.bridge.ReadableMap
 
 internal fun <T> ReadableMap.getOptional(key: String, getter: (map: ReadableMap, key: String) -> T?): T? {
@@ -42,4 +43,9 @@ internal fun <T> ReadableMap.getRequired(key: String, getter: (map: ReadableMap,
 internal fun ReadableMap.getDrawableId(context: Context, key: String): Int? {
   val resource = this.getString(key) ?: return null
   return context.resources.getIdentifier(resource, "drawable", context.packageName)
+}
+
+internal fun <T> ReadableArray.getRequired(key: String, idx: Int, getter: (array: ReadableArray, idx: Int) -> T?): T {
+  return getter(this, idx)
+    ?: throw JSApplicationIllegalArgumentException("item $idx is null in $key, and it's a required prop")
 }
