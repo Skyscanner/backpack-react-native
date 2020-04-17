@@ -52,6 +52,30 @@ exports[`Android BpkCalendar should render correctly for selectionType={'single'
 />
 `;
 
+exports[`Android BpkCalendar should render correctly with androidFooterView 1`] = `
+<AndroidBPKCalendarView
+  androidFooterView={
+    Object {
+      "__type": "highlightedDays",
+      "days": Array [
+        Object {
+          "date": 1576627200,
+          "description": "Test day",
+        },
+      ],
+    }
+  }
+  disabledDates={null}
+  locale="en_GB"
+  maxDate={null}
+  minDate={null}
+  onChange={[Function]}
+  selectedDates={Array []}
+  selectionType="single"
+  style={null}
+/>
+`;
+
 exports[`Android BpkCalendar should render correctly with arbitrary props 1`] = `
 <AndroidBPKCalendarView
   disabledDates={null}
@@ -141,30 +165,6 @@ exports[`Android BpkCalendar should render correctly with disabled dates 1`] = `
         1576454400,
       ],
       "type": "after",
-    }
-  }
-  locale="en_GB"
-  maxDate={null}
-  minDate={null}
-  onChange={[Function]}
-  selectedDates={Array []}
-  selectionType="single"
-  style={null}
-/>
-`;
-
-exports[`Android BpkCalendar should render correctly with footerView 1`] = `
-<AndroidBPKCalendarView
-  disabledDates={null}
-  footerView={
-    Object {
-      "__type": "highlightedDays",
-      "days": Array [
-        Object {
-          "date": 1576627200,
-          "description": "Test day",
-        },
-      ],
     }
   }
   locale="en_GB"

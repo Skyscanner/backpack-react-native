@@ -93,7 +93,7 @@ const App = () => (
         DateMatchers.any(Date.UTC(2019, 0, 10)),
       ),
     ]}
-    footerView={highlightedDaysFooterView({
+    androidFooterView={highlightedDaysFooterView({
       days: [
         {
           date: Date.UTC(2019, 0, 10),
@@ -119,7 +119,7 @@ const App = () => (
 | onChangeSelectedDates | function               | false    | null                   |
 | selectedDates         | arrayOf(Date, number)  | false    | \[]                    |
 | selectionType         | oneOf(SELECTION_TYPES) | false    | SELECTION_TYPES.single |
-| footerView            | object                 | false    | undefined              |
+| androidFooterView     | object                 | false    | undefined              |
 
 #### selectedDates
 

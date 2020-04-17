@@ -235,12 +235,12 @@ class CalendarViewManagerTest {
   fun test_footer_view() {
     val view = createWithLocale()
     manager.updateProperties(view, buildProps(
-      "footerView", null))
+      "androidFooterView", null))
 
     assertNull(view.state.footerView)
 
     manager.updateProperties(view, buildProps(
-      "footerView", JavaOnlyMap.of(
+      "androidFooterView", JavaOnlyMap.of(
         "__type", "highlightedDays",
         "days", JavaOnlyArray.of(
           JavaOnlyMap.of(
@@ -264,13 +264,13 @@ class CalendarViewManagerTest {
     assertThat({
       manager.updateProperties(view,
         buildProps(
-          "footerView", JavaOnlyMap.of(
+          "androidFooterView", JavaOnlyMap.of(
             "__type", "invalid")))
     }, throws(JSApplicationIllegalArgumentException::class))
 
     assertThat({
       manager.updateProperties(view, buildProps(
-        "footerView", JavaOnlyMap.of(
+        "androidFooterView", JavaOnlyMap.of(
           "__type", "highlightedDays",
           "daysss", JavaOnlyArray.of(
             JavaOnlyMap.of(
@@ -281,7 +281,7 @@ class CalendarViewManagerTest {
 
     assertThat({
       manager.updateProperties(view, buildProps(
-        "footerView", JavaOnlyMap.of(
+        "androidFooterView", JavaOnlyMap.of(
           "__type", "highlightedDays",
           "days", JavaOnlyArray.of(
             JavaOnlyMap.of(
@@ -291,7 +291,7 @@ class CalendarViewManagerTest {
 
     assertThat({
       manager.updateProperties(view, buildProps(
-        "footerView", JavaOnlyMap.of(
+        "androidFooterView", JavaOnlyMap.of(
           "__type", "highlightedDays",
           "days", JavaOnlyArray.of(
             JavaOnlyMap.of(
@@ -325,7 +325,7 @@ class CalendarViewManagerTest {
             "days", JavaOnlyMap.of(
             "type", "any",
             "dates", JavaOnlyArray.of(date2Seconds)))),
-        "footerView", JavaOnlyMap.of(
+        "androidFooterView", JavaOnlyMap.of(
           "__type", "highlightedDays",
           "days", JavaOnlyArray.of(
             JavaOnlyMap.of(

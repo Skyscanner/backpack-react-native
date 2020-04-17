@@ -238,7 +238,7 @@ dismissButtonLabel
 doneLabel
 expandDelay
 fillStyle
-footerView
+androidFooterView
 gridProps
 headerProps
 iconAlignment

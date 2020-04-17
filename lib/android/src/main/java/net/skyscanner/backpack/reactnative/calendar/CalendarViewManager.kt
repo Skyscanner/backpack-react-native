@@ -125,7 +125,7 @@ class CalendarViewManager : ViewGroupManager<RNCalendarView>() {
     }
   }
 
-  @ReactProp(name = "footerView")
+  @ReactProp(name = "androidFooterView")
   fun setFooterView(view: RNCalendarView, footerView: ReadableMap?) {
     if (footerView == null) {
       view.state.footerView = null
