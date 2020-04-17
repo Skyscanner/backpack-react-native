@@ -25,9 +25,11 @@ import java.util.*
 import net.skyscanner.backpack.calendar.BpkCalendar
 import net.skyscanner.backpack.calendar.model.CalendarCellStyle
 import net.skyscanner.backpack.calendar.model.ColoredBucket
+import net.skyscanner.backpack.calendar.presenter.HighlightedDaysAdapter
 import net.skyscanner.backpack.calendar.presenter.SelectionType
 import net.skyscanner.backpack.reactnative.testing.ReactContextTestRule
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Rule
@@ -65,12 +67,19 @@ class RNCalendarViewTest {
         null,
         null))
 
+    val footerView = RNHighlightedDaysFooterView(
+      contextRule.context,
+      setOf(HighlightedDaysAdapter.HighlightedDay(
+        LocalDate.of(2020, 3, 17),
+        "test")))
+
     calendar.state.minDate = minDate
     calendar.state.maxDate = maxDate
     calendar.state.locale = locale
     calendar.state.selectionType = selectionType
     calendar.state.disabledDateMatcher = disabledDateMatcher
     calendar.state.colorBuckets = colorBuckets
+    calendar.state.footerView = footerView
 
     calendar.state.dispatchUpdateTransactionFinished()
 
@@ -93,6 +102,9 @@ class RNCalendarViewTest {
           setOf(LocalDate.of(2020, 3, 17))
         )),
       controller.calendarColoring?.coloredBuckets)
+
+    // Footer adapter does not support equality by content so we can't compare here.
+    assertNotNull(controller.monthFooterAdapter)
 
     assertEquals(Locale.ENGLISH, controller.locale)
   }

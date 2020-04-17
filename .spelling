@@ -238,6 +238,7 @@ dismissButtonLabel
 doneLabel
 expandDelay
 fillStyle
+androidFooterView
 gridProps
 headerProps
 iconAlignment
@@ -466,9 +467,14 @@ react-native-bpk-theming
 # End of package names
 
 # Other
-
+colorBucketHighlight
+colorBucketPositive
+colorBucketNeutral
+colorBucketNegative
+highlightedDaysFooterView
 janky
 onsen
 gray
 grays
 snackbar
+

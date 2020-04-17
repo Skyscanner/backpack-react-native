@@ -127,4 +127,91 @@ class DateMatcherTest {
     assertFalse(matcher.match(date2.plusDays(1)))
     assertFalse(matcher.match(date1.plusDays(1)))
   }
+
+  @Test
+  fun test_range_matcher_toSet() {
+    val startDate = LocalDate.of(2020, 3, 16)
+    val endDate = LocalDate.of(2020, 3, 20)
+    val matcher = DateMatcher.fromJs("range", arrayOf(startDate, endDate))
+
+    assertArrayEquals(
+      buildRange(startDate, endDate, true).toTypedArray(),
+      matcher.toSet(startDate, endDate).toTypedArray())
+
+    // With lower bounds
+    assertArrayEquals(
+      buildRange(LocalDate.of(2020, 3, 17), endDate, true).toTypedArray(),
+      matcher.toSet(LocalDate.of(2020, 3, 17), endDate).toTypedArray())
+
+    // With upper bounds
+    assertArrayEquals(
+      buildRange(startDate, LocalDate.of(2020, 3, 19), true).toTypedArray(),
+      matcher.toSet(startDate, LocalDate.of(2020, 3, 19)).toTypedArray())
+  }
+
+  @Test
+  fun test_before_matcher_toSet() {
+    val startDate = LocalDate.of(2020, 3, 16)
+    val endDate = LocalDate.of(2020, 3, 20)
+    val matcher = DateMatcher.fromJs("before", arrayOf(endDate))
+
+    assertArrayEquals(
+      buildRange(startDate, endDate).reversed().toTypedArray(),
+      matcher.toSet(startDate, endDate).toTypedArray())
+
+    // With lower bounds
+    assertArrayEquals(
+      buildRange(LocalDate.of(2020, 3, 17), endDate).reversed().toTypedArray(),
+      matcher.toSet(LocalDate.of(2020, 3, 17), endDate).toTypedArray())
+
+    // With upper bounds
+    assertArrayEquals(
+      // Before is exclusive but when the upper bound is smaller than the start date we should include all
+      // dates, because in this case the upper bound is already before the end date
+      buildRange(startDate, LocalDate.of(2020, 3, 19), inclusive = true).reversed().toTypedArray(),
+      matcher.toSet(startDate, LocalDate.of(2020, 3, 19)).toTypedArray())
+  }
+
+  @Test
+  fun test_after_matcher_toSet() {
+    val startDate = LocalDate.of(2020, 3, 16)
+    val endDate = LocalDate.of(2020, 3, 20)
+    val matcher = DateMatcher.fromJs("after", arrayOf(startDate))
+
+    assertArrayEquals(
+      // After should exclude the start date but include the end
+      buildRange(startDate.plusDays(1), endDate, inclusive = true).toTypedArray(),
+      matcher.toSet(startDate, endDate).toTypedArray())
+
+    // With lower bounds
+    assertArrayEquals(
+      // After is exclusive but when the lower bound is bigger than the start date we should include all
+      // dates, because in this case the lower bound is already after the start date
+      buildRange(LocalDate.of(2020, 3, 17), endDate, inclusive = true).toTypedArray(),
+      matcher.toSet(LocalDate.of(2020, 3, 17), endDate).toTypedArray())
+
+    // With upper bounds
+    assertArrayEquals(
+      buildRange(startDate.plusDays(1), LocalDate.of(2020, 3, 19), inclusive = true).toTypedArray(),
+      matcher.toSet(startDate, LocalDate.of(2020, 3, 19)).toTypedArray())
+  }
+
+  @Test
+  fun test_any_matcher_toSet() {
+    val startDate = LocalDate.of(2020, 3, 16)
+    val endDate = LocalDate.of(2020, 3, 20)
+    val matcher = DateMatcher.fromJs("any", arrayOf(startDate, endDate))
+
+    assertArrayEquals(arrayOf(startDate, endDate), matcher.toSet(startDate, endDate).toTypedArray())
+  }
+
+  private fun buildRange(start: LocalDate, end: LocalDate, inclusive: Boolean = false): List<LocalDate> {
+    var range = start.until(end).days
+    if (inclusive) {
+      range += 1
+    }
+    return (0 until range).map {
+      start.plusDays(it.toLong())
+    }
+  }
 }
