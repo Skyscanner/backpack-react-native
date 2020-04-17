@@ -2,12 +2,6 @@
 
 > Place your changes below this line.
 
-**Added:**
-
-- bpk-component-calendar
-  - Android only - Added new `footerView` prop to calendar and `highlightedDaysFooterView` to show a list of highlighted days.
-  - Android only - Added new `colorBucketHighlight` function to create buckets with a `highlight` style.
-
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).

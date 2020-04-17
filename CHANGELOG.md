@@ -1,5 +1,13 @@
 # Backpack changelog
 
+# 2.5.0 - 2020-04-17
+
+**Added:**
+
+- bpk-component-calendar
+  - Android only - Added new `androidFooterView` prop to calendar and `highlightedDaysFooterView` to show a list of highlighted days.
+  - Android only - Added new `colorBucketHighlight` function to create buckets with a `highlight` style.
+
 # 2.4.1 - 2020-04-15
 
 **Fixed:**
