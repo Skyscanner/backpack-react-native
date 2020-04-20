@@ -1,5 +1,17 @@
 # Backpack changelog
 
+# 3.0.0 - 2020-04-20
+
+**Breaking:**
+
+- bpk-component-snackbar
+  - Icon-only actions now require an accessibility label (`accessibilityLabel`).
+
+**Added:**
+
+- bpk-component-snackbar
+  - Added iOS version.
+
 # 2.5.0 - 2020-04-17
 
 **Added:**
