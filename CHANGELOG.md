@@ -1,5 +1,13 @@
 # Backpack changelog
 
+# 3.1.0 - 2020-04-20
+
+**Added:**
+
+- `bpk-component-calendar`:
+  - Added new `descriptionOnly` prop to `highlightedDaysFooterView`.
+  - Upgraded `backpack-android` to `23.2.0`.
+
 # 3.0.0 - 2020-04-20
 
 **Breaking:**
