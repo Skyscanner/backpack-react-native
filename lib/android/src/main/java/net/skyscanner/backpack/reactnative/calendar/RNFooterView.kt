@@ -66,11 +66,13 @@ internal data class RNHighlightedDaysFooterView(
         val cellStyle = day.getOptional("cellStyle") { map, key ->
           map.getString(key)?.let(TypeConversions::stringToCellStyle)
         }
+        val descriptionOnly = day.getOptional("descriptionOnly", ReadableMap::getBoolean)
 
         HighlightedDaysAdapter.HighlightedDay(
           date = date,
           description = description,
-          color = cellStyle?.color(context) ?: color
+          color = cellStyle?.color(context) ?: color,
+          descriptionOnly = descriptionOnly ?: false
         )
       }.toSet())
     }
