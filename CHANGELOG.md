@@ -1,5 +1,12 @@
 # Backpack changelog
 
+# 3.2.0 - 2020-05-07
+
+**Added:**
+
+- bpk-component-banner-alert:
+  - Added new `primary` banner alert.
+
 # 3.1.0 - 2020-04-20
 
 **Added:**
