@@ -47,7 +47,9 @@
     "start": "react-native start",
     "storybook": "(adb reverse tcp:7007 tcp:7007 || true) && start-storybook",
     "documentation": "node ./scripts/npm/documentation.js",
-    "build": "npm run clean:build && ./scripts/build.sh dist"
+    "build": "npm run clean:build && ./scripts/build.sh dist",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "husky": {
     "hooks": {
@@ -101,7 +103,7 @@
     "prop-types": "^15.5.10",
     "react": "16.9.0",
     "react-dom": "16.9.0",
-    "react-native": "0.61.5",
+    "react-native": "0.62.0",
     "react-native-dotenv": "^0.2.0",
     "react-native-linear-gradient": "^2.5.3",
     "react-test-renderer": "16.9.0",
@@ -111,5 +113,9 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
+  },
+  "snyk": true,
+  "dependencies": {
+    "snyk": "^1.319.1"
   }
 }
