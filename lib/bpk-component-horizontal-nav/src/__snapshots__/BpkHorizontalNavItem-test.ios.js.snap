@@ -752,6 +752,7 @@ exports[`iOS BpkHorizontalNavItem should render item text correctly with custom 
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": 0.12,
+            "textAlign": "left",
           },
           Object {},
           Array [

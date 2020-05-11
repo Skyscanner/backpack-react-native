@@ -930,35 +930,27 @@ exports[`iOS BpkBannerAlert dark mode should render correctly with type equal to
         >
           
         </Text>
-        <View
+        <Text
+          allowFontScaling={false}
           style={
-            Object {
-              "flex": 1,
-            }
+            Array [
+              Object {
+                "color": "rgb(255, 255, 255)",
+                "fontFamily": "System",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "letterSpacing": 0.154,
+                "textAlign": "left",
+              },
+              Object {},
+              Object {
+                "flex": 1,
+              },
+            ]
           }
         >
-          <Text
-            allowFontScaling={false}
-            style={
-              Array [
-                Object {
-                  "color": "rgb(255, 255, 255)",
-                  "fontFamily": "System",
-                  "fontSize": 14,
-                  "fontWeight": "400",
-                  "letterSpacing": 0.154,
-                },
-                Object {},
-                Object {
-                  "alignSelf": "flex-start",
-                  "textAlign": "left",
-                },
-              ]
-            }
-          >
-            primary alert.
-          </Text>
-        </View>
+          primary alert.
+        </Text>
       </View>
     </View>
   </View>
@@ -1020,35 +1012,27 @@ exports[`iOS BpkBannerAlert dark mode should render correctly with type equal to
         >
           
         </Text>
-        <View
+        <Text
+          allowFontScaling={false}
           style={
-            Object {
-              "flex": 1,
-            }
+            Array [
+              Object {
+                "color": "rgb(255, 255, 255)",
+                "fontFamily": "System",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "letterSpacing": 0.154,
+                "textAlign": "left",
+              },
+              Object {},
+              Object {
+                "flex": 1,
+              },
+            ]
           }
         >
-          <Text
-            allowFontScaling={false}
-            style={
-              Array [
-                Object {
-                  "color": "rgb(255, 255, 255)",
-                  "fontFamily": "System",
-                  "fontSize": 14,
-                  "fontWeight": "400",
-                  "letterSpacing": 0.154,
-                },
-                Object {},
-                Object {
-                  "alignSelf": "flex-start",
-                  "textAlign": "left",
-                },
-              ]
-            }
-          >
-            primary alert.
-          </Text>
-        </View>
+          primary alert.
+        </Text>
       </View>
     </View>
   </View>
@@ -2353,35 +2337,27 @@ exports[`iOS BpkBannerAlert light mode should render correctly with type equal t
         >
           
         </Text>
-        <View
+        <Text
+          allowFontScaling={false}
           style={
-            Object {
-              "flex": 1,
-            }
+            Array [
+              Object {
+                "color": "rgb(17, 18, 54)",
+                "fontFamily": "System",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "letterSpacing": 0.154,
+                "textAlign": "left",
+              },
+              Object {},
+              Object {
+                "flex": 1,
+              },
+            ]
           }
         >
-          <Text
-            allowFontScaling={false}
-            style={
-              Array [
-                Object {
-                  "color": "rgb(17, 18, 54)",
-                  "fontFamily": "System",
-                  "fontSize": 14,
-                  "fontWeight": "400",
-                  "letterSpacing": 0.154,
-                },
-                Object {},
-                Object {
-                  "alignSelf": "flex-start",
-                  "textAlign": "left",
-                },
-              ]
-            }
-          >
-            primary alert.
-          </Text>
-        </View>
+          primary alert.
+        </Text>
       </View>
     </View>
   </View>
@@ -2443,35 +2419,27 @@ exports[`iOS BpkBannerAlert light mode should render correctly with type equal t
         >
           
         </Text>
-        <View
+        <Text
+          allowFontScaling={false}
           style={
-            Object {
-              "flex": 1,
-            }
+            Array [
+              Object {
+                "color": "rgb(17, 18, 54)",
+                "fontFamily": "System",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "letterSpacing": 0.154,
+                "textAlign": "left",
+              },
+              Object {},
+              Object {
+                "flex": 1,
+              },
+            ]
           }
         >
-          <Text
-            allowFontScaling={false}
-            style={
-              Array [
-                Object {
-                  "color": "rgb(17, 18, 54)",
-                  "fontFamily": "System",
-                  "fontSize": 14,
-                  "fontWeight": "400",
-                  "letterSpacing": 0.154,
-                },
-                Object {},
-                Object {
-                  "alignSelf": "flex-start",
-                  "textAlign": "left",
-                },
-              ]
-            }
-          >
-            primary alert.
-          </Text>
-        </View>
+          primary alert.
+        </Text>
       </View>
     </View>
   </View>

@@ -1100,6 +1100,7 @@ exports[`iOS BpkSelect dark mode should render correctly with the focused and di
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": 0.12,
+            "textAlign": "left",
           },
           Object {},
           Array [
@@ -1205,6 +1206,7 @@ exports[`iOS BpkSelect dark mode should render correctly with the focused prop 1
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": 0.12,
+            "textAlign": "left",
           },
           Object {},
           Array [
@@ -2255,6 +2257,7 @@ exports[`iOS BpkSelect light mode should render correctly with the disabled prop
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": 0.12,
+            "textAlign": "left",
           },
           Object {},
           Array [
@@ -2467,6 +2470,7 @@ exports[`iOS BpkSelect light mode should render correctly with the focused prop 
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": 0.12,
+            "textAlign": "left",
           },
           Object {},
           Array [

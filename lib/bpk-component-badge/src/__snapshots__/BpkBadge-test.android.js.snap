@@ -3671,6 +3671,7 @@ exports[`Android BpkBadge should render correctly with trailing icon 1`] = `
             "fontSize": 12,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {},
           Array [
@@ -3760,6 +3761,7 @@ exports[`Android BpkBadge should render correctly with trailing icon 1`] = `
             "fontSize": 12,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {},
           Array [
@@ -3858,6 +3860,7 @@ exports[`Android BpkBadge should render correctly with trailing icon 1`] = `
             "fontSize": 12,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {},
           Array [
@@ -3920,6 +3923,7 @@ exports[`Android BpkBadge should render correctly with user provided style 1`] =
             "fontSize": 12,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {},
           Array [
@@ -3972,6 +3976,7 @@ exports[`Android BpkBadge should render correctly with user provided style 1`] =
             "fontSize": 12,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {},
           Array [
@@ -4024,6 +4029,7 @@ exports[`Android BpkBadge should render correctly with user provided style 1`] =
             "fontSize": 12,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {},
           Array [

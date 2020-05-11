@@ -728,6 +728,7 @@ exports[`Android BpkDismissibleChip should render correctly with a supplied icon
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {},
           Array [

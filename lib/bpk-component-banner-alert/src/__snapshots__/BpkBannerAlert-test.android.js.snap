@@ -940,35 +940,27 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
         >
           
         </Text>
-        <View
+        <Text
+          allowFontScaling={false}
           style={
-            Object {
-              "flex": 1,
-            }
+            Array [
+              Object {
+                "color": "rgb(255, 255, 255)",
+                "fontFamily": "sans-serif",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "letterSpacing": 0,
+                "textAlign": "left",
+              },
+              Object {},
+              Object {
+                "flex": 1,
+              },
+            ]
           }
         >
-          <Text
-            allowFontScaling={false}
-            style={
-              Array [
-                Object {
-                  "color": "rgb(255, 255, 255)",
-                  "fontFamily": "sans-serif",
-                  "fontSize": 14,
-                  "fontWeight": "400",
-                  "letterSpacing": 0,
-                },
-                Object {},
-                Object {
-                  "alignSelf": "flex-start",
-                  "textAlign": "left",
-                },
-              ]
-            }
-          >
-            primary alert.
-          </Text>
-        </View>
+          primary alert.
+        </Text>
       </View>
     </View>
   </View>
@@ -1028,35 +1020,27 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
         >
           
         </Text>
-        <View
+        <Text
+          allowFontScaling={false}
           style={
-            Object {
-              "flex": 1,
-            }
+            Array [
+              Object {
+                "color": "rgb(255, 255, 255)",
+                "fontFamily": "sans-serif",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "letterSpacing": 0,
+                "textAlign": "left",
+              },
+              Object {},
+              Object {
+                "flex": 1,
+              },
+            ]
           }
         >
-          <Text
-            allowFontScaling={false}
-            style={
-              Array [
-                Object {
-                  "color": "rgb(255, 255, 255)",
-                  "fontFamily": "sans-serif",
-                  "fontSize": 14,
-                  "fontWeight": "400",
-                  "letterSpacing": 0,
-                },
-                Object {},
-                Object {
-                  "alignSelf": "flex-start",
-                  "textAlign": "left",
-                },
-              ]
-            }
-          >
-            primary alert.
-          </Text>
-        </View>
+          primary alert.
+        </Text>
       </View>
     </View>
   </View>
@@ -2363,35 +2347,27 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
         >
           
         </Text>
-        <View
+        <Text
+          allowFontScaling={false}
           style={
-            Object {
-              "flex": 1,
-            }
+            Array [
+              Object {
+                "color": "rgb(17, 18, 54)",
+                "fontFamily": "sans-serif",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "letterSpacing": 0,
+                "textAlign": "left",
+              },
+              Object {},
+              Object {
+                "flex": 1,
+              },
+            ]
           }
         >
-          <Text
-            allowFontScaling={false}
-            style={
-              Array [
-                Object {
-                  "color": "rgb(17, 18, 54)",
-                  "fontFamily": "sans-serif",
-                  "fontSize": 14,
-                  "fontWeight": "400",
-                  "letterSpacing": 0,
-                },
-                Object {},
-                Object {
-                  "alignSelf": "flex-start",
-                  "textAlign": "left",
-                },
-              ]
-            }
-          >
-            primary alert.
-          </Text>
-        </View>
+          primary alert.
+        </Text>
       </View>
     </View>
   </View>
@@ -2451,35 +2427,27 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
         >
           
         </Text>
-        <View
+        <Text
+          allowFontScaling={false}
           style={
-            Object {
-              "flex": 1,
-            }
+            Array [
+              Object {
+                "color": "rgb(17, 18, 54)",
+                "fontFamily": "sans-serif",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "letterSpacing": 0,
+                "textAlign": "left",
+              },
+              Object {},
+              Object {
+                "flex": 1,
+              },
+            ]
           }
         >
-          <Text
-            allowFontScaling={false}
-            style={
-              Array [
-                Object {
-                  "color": "rgb(17, 18, 54)",
-                  "fontFamily": "sans-serif",
-                  "fontSize": 14,
-                  "fontWeight": "400",
-                  "letterSpacing": 0,
-                },
-                Object {},
-                Object {
-                  "alignSelf": "flex-start",
-                  "textAlign": "left",
-                },
-              ]
-            }
-          >
-            primary alert.
-          </Text>
-        </View>
+          primary alert.
+        </Text>
       </View>
     </View>
   </View>

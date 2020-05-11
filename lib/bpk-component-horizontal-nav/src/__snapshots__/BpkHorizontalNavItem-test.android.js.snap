@@ -637,6 +637,7 @@ exports[`Android BpkHorizontalNavItem should render item text correctly with cus
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": -0.2,
+          "textAlign": "left",
         },
         Object {},
         Array [

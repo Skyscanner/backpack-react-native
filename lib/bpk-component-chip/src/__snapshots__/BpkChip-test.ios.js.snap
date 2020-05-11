@@ -799,6 +799,7 @@ exports[`iOS BpkChip should render correctly with a supplied icon 1`] = `
           "fontSize": 14,
           "fontWeight": "400",
           "letterSpacing": 0.154,
+          "textAlign": "left",
         },
         Object {},
         Array [
