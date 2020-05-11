@@ -24,6 +24,7 @@ exports[`Android BpkSectionListHeader dark mode should render correctly 1`] = `
           "fontSize": 14,
           "fontWeight": "400",
           "letterSpacing": 0,
+          "textAlign": "left",
         },
         Object {
           "fontFamily": "sans-serif-medium",
@@ -63,6 +64,7 @@ exports[`Android BpkSectionListHeader light mode should render correctly 1`] = `
           "fontSize": 14,
           "fontWeight": "400",
           "letterSpacing": 0,
+          "textAlign": "left",
         },
         Object {
           "fontFamily": "sans-serif-medium",

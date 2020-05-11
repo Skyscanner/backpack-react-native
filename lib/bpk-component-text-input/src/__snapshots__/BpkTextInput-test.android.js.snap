@@ -452,6 +452,7 @@ exports[`Android BpkTextInput dark mode should render correctly with description
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 0,
+          "textAlign": "left",
         },
         Object {},
         Object {
@@ -573,6 +574,7 @@ exports[`Android BpkTextInput dark mode should render correctly with description
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 0,
+          "textAlign": "left",
         },
         Object {},
         Object {
@@ -1186,6 +1188,7 @@ exports[`Android BpkTextInput dark mode should render correctly with valid false
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 0,
+          "textAlign": "left",
         },
         Object {},
         Object {
@@ -1874,6 +1877,7 @@ exports[`Android BpkTextInput light mode should render correctly with descriptio
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 0,
+          "textAlign": "left",
         },
         Object {},
         Object {
@@ -1995,6 +1999,7 @@ exports[`Android BpkTextInput light mode should render correctly with descriptio
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 0,
+          "textAlign": "left",
         },
         Object {},
         Object {
@@ -2608,6 +2613,7 @@ exports[`Android BpkTextInput light mode should render correctly with valid fals
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 0,
+          "textAlign": "left",
         },
         Object {},
         Object {

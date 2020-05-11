@@ -83,6 +83,7 @@ exports[`ios BpkNavigationBar dark mode should render correctly 1`] = `
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": 0.12,
+              "textAlign": "left",
             },
             Object {},
             Array [
@@ -135,6 +136,7 @@ exports[`ios BpkNavigationBar dark mode should render correctly 1`] = `
                 "fontSize": 16,
                 "fontWeight": "400",
                 "letterSpacing": 0.12,
+                "textAlign": "left",
               },
               Object {
                 "fontWeight": "700",
@@ -242,6 +244,7 @@ exports[`ios BpkNavigationBar dark mode should render correctly with a subtitle 
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": 0.12,
+              "textAlign": "left",
             },
             Object {},
             Array [
@@ -294,6 +297,7 @@ exports[`ios BpkNavigationBar dark mode should render correctly with a subtitle 
                 "fontSize": 16,
                 "fontWeight": "400",
                 "letterSpacing": 0.12,
+                "textAlign": "left",
               },
               Object {
                 "fontWeight": "700",
@@ -409,6 +413,7 @@ exports[`ios BpkNavigationBar dark mode should render correctly with a title vie
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": 0.12,
+              "textAlign": "left",
             },
             Object {},
             Array [
@@ -535,6 +540,7 @@ exports[`ios BpkNavigationBar dark mode should render correctly with an icon in 
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": 0.12,
+              "textAlign": "left",
             },
             Object {},
             Array [
@@ -613,6 +619,7 @@ exports[`ios BpkNavigationBar dark mode should render correctly with an icon in 
                 "fontSize": 16,
                 "fontWeight": "400",
                 "letterSpacing": 0.12,
+                "textAlign": "left",
               },
               Object {
                 "fontWeight": "700",
@@ -722,6 +729,7 @@ exports[`ios BpkNavigationBar dark mode should render correctly with custom styl
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": 0.12,
+              "textAlign": "left",
             },
             Object {},
             Array [
@@ -774,6 +782,7 @@ exports[`ios BpkNavigationBar dark mode should render correctly with custom styl
                 "fontSize": 16,
                 "fontWeight": "400",
                 "letterSpacing": 0.12,
+                "textAlign": "left",
               },
               Object {
                 "fontWeight": "700",
@@ -864,6 +873,7 @@ exports[`ios BpkNavigationBar dark mode should render correctly with trailing bu
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": 0.12,
+              "textAlign": "left",
             },
             Object {},
             Array [
@@ -916,6 +926,7 @@ exports[`ios BpkNavigationBar dark mode should render correctly with trailing bu
                 "fontSize": 16,
                 "fontWeight": "400",
                 "letterSpacing": 0.12,
+                "textAlign": "left",
               },
               Object {
                 "fontWeight": "700",
@@ -967,6 +978,7 @@ exports[`ios BpkNavigationBar dark mode should render correctly with trailing bu
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": 0.12,
+              "textAlign": "left",
             },
             Object {
               "fontWeight": "700",
@@ -1069,6 +1081,7 @@ exports[`ios BpkNavigationBar light mode should render correctly 1`] = `
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": 0.12,
+              "textAlign": "left",
             },
             Object {},
             Array [
@@ -1121,6 +1134,7 @@ exports[`ios BpkNavigationBar light mode should render correctly 1`] = `
                 "fontSize": 16,
                 "fontWeight": "400",
                 "letterSpacing": 0.12,
+                "textAlign": "left",
               },
               Object {
                 "fontWeight": "700",
@@ -1228,6 +1242,7 @@ exports[`ios BpkNavigationBar light mode should render correctly with a subtitle
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": 0.12,
+              "textAlign": "left",
             },
             Object {},
             Array [
@@ -1280,6 +1295,7 @@ exports[`ios BpkNavigationBar light mode should render correctly with a subtitle
                 "fontSize": 16,
                 "fontWeight": "400",
                 "letterSpacing": 0.12,
+                "textAlign": "left",
               },
               Object {
                 "fontWeight": "700",
@@ -1395,6 +1411,7 @@ exports[`ios BpkNavigationBar light mode should render correctly with a title vi
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": 0.12,
+              "textAlign": "left",
             },
             Object {},
             Array [
@@ -1521,6 +1538,7 @@ exports[`ios BpkNavigationBar light mode should render correctly with an icon in
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": 0.12,
+              "textAlign": "left",
             },
             Object {},
             Array [
@@ -1599,6 +1617,7 @@ exports[`ios BpkNavigationBar light mode should render correctly with an icon in
                 "fontSize": 16,
                 "fontWeight": "400",
                 "letterSpacing": 0.12,
+                "textAlign": "left",
               },
               Object {
                 "fontWeight": "700",
@@ -1708,6 +1727,7 @@ exports[`ios BpkNavigationBar light mode should render correctly with custom sty
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": 0.12,
+              "textAlign": "left",
             },
             Object {},
             Array [
@@ -1760,6 +1780,7 @@ exports[`ios BpkNavigationBar light mode should render correctly with custom sty
                 "fontSize": 16,
                 "fontWeight": "400",
                 "letterSpacing": 0.12,
+                "textAlign": "left",
               },
               Object {
                 "fontWeight": "700",
@@ -1850,6 +1871,7 @@ exports[`ios BpkNavigationBar light mode should render correctly with trailing b
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": 0.12,
+              "textAlign": "left",
             },
             Object {},
             Array [
@@ -1902,6 +1924,7 @@ exports[`ios BpkNavigationBar light mode should render correctly with trailing b
                 "fontSize": 16,
                 "fontWeight": "400",
                 "letterSpacing": 0.12,
+                "textAlign": "left",
               },
               Object {
                 "fontWeight": "700",
@@ -1953,6 +1976,7 @@ exports[`ios BpkNavigationBar light mode should render correctly with trailing b
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": 0.12,
+              "textAlign": "left",
             },
             Object {
               "fontWeight": "700",
@@ -2087,6 +2111,7 @@ exports[`ios BpkNavigationBar should forward custom props 1`] = `
                 "fontSize": 16,
                 "fontWeight": "400",
                 "letterSpacing": 0.12,
+                "textAlign": "left",
               },
               Object {
                 "fontWeight": "700",
@@ -2139,6 +2164,7 @@ exports[`ios BpkNavigationBar should forward custom props 1`] = `
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": 0.12,
+              "textAlign": "left",
             },
             Object {
               "fontWeight": "700",

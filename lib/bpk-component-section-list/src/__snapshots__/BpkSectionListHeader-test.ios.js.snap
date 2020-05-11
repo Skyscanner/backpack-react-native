@@ -20,6 +20,7 @@ exports[`iOS BpkSectionListHeader dark mode should render correctly 1`] = `
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": 0.12,
+          "textAlign": "left",
         },
         Object {
           "fontWeight": "700",
@@ -55,6 +56,7 @@ exports[`iOS BpkSectionListHeader light mode should render correctly 1`] = `
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": 0.12,
+          "textAlign": "left",
         },
         Object {
           "fontWeight": "700",

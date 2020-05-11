@@ -50,6 +50,7 @@ exports[`ios TitleView dark mode should render correctly with leading icon 1`] =
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": 0.12,
+          "textAlign": "left",
         },
         Object {
           "fontWeight": "700",
@@ -94,6 +95,7 @@ exports[`ios TitleView dark mode should render correctly with only a title 1`] =
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": 0.12,
+          "textAlign": "left",
         },
         Object {
           "fontWeight": "700",
@@ -136,6 +138,7 @@ exports[`ios TitleView dark mode should render correctly with trailing icon 1`] 
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": 0.12,
+          "textAlign": "left",
         },
         Object {
           "fontWeight": "700",
@@ -232,6 +235,7 @@ exports[`ios TitleView light mode should render correctly with leading icon 1`] 
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": 0.12,
+          "textAlign": "left",
         },
         Object {
           "fontWeight": "700",
@@ -276,6 +280,7 @@ exports[`ios TitleView light mode should render correctly with only a title 1`] 
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": 0.12,
+          "textAlign": "left",
         },
         Object {
           "fontWeight": "700",
@@ -318,6 +323,7 @@ exports[`ios TitleView light mode should render correctly with trailing icon 1`]
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": 0.12,
+          "textAlign": "left",
         },
         Object {
           "fontWeight": "700",

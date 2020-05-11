@@ -492,6 +492,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 0,
+          "textAlign": "left",
         },
         Object {},
         Object {
@@ -637,6 +638,7 @@ exports[`Android BpkSelect dark mode should render correctly with a text label 1
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": -0.2,
+          "textAlign": "left",
         },
         Object {},
         Array [
@@ -783,6 +785,7 @@ exports[`Android BpkSelect dark mode should render correctly with custom styles 
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": -0.2,
+          "textAlign": "left",
         },
         Object {},
         Array [
@@ -871,6 +874,7 @@ exports[`Android BpkSelect dark mode should render correctly with the disabled p
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": -0.2,
+          "textAlign": "left",
         },
         Object {},
         Array [
@@ -965,6 +969,7 @@ exports[`Android BpkSelect dark mode should render correctly with the focused an
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": -0.2,
+          "textAlign": "left",
         },
         Object {},
         Array [
@@ -1058,6 +1063,7 @@ exports[`Android BpkSelect dark mode should render correctly with the focused pr
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": -0.2,
+          "textAlign": "left",
         },
         Object {},
         Array [
@@ -1590,6 +1596,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 0,
+          "textAlign": "left",
         },
         Object {},
         Object {
@@ -1735,6 +1742,7 @@ exports[`Android BpkSelect light mode should render correctly with a text label 
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": -0.2,
+          "textAlign": "left",
         },
         Object {},
         Array [
@@ -1881,6 +1889,7 @@ exports[`Android BpkSelect light mode should render correctly with custom styles
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": -0.2,
+          "textAlign": "left",
         },
         Object {},
         Array [
@@ -1969,6 +1978,7 @@ exports[`Android BpkSelect light mode should render correctly with the disabled 
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": -0.2,
+          "textAlign": "left",
         },
         Object {},
         Array [
@@ -2063,6 +2073,7 @@ exports[`Android BpkSelect light mode should render correctly with the focused a
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": -0.2,
+          "textAlign": "left",
         },
         Object {},
         Array [
@@ -2156,6 +2167,7 @@ exports[`Android BpkSelect light mode should render correctly with the focused p
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": -0.2,
+          "textAlign": "left",
         },
         Object {},
         Array [

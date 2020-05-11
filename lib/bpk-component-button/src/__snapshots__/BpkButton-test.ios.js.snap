@@ -52,6 +52,7 @@ exports[`iOS BpkButton dark mode should render correctly 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -136,6 +137,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="destructive"
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -228,6 +230,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="destructive"
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -319,6 +322,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="featured" 1`
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -410,6 +414,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="featured" an
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -494,6 +499,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="outline" 1`]
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -586,6 +592,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="outline" and
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -677,6 +684,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="primary" 1`]
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -768,6 +776,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="primary" and
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -852,6 +861,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="secondary" 1
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -944,6 +954,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="secondary" a
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -1039,6 +1050,7 @@ exports[`iOS BpkButton dark mode should support overwriting styles 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -1130,6 +1142,7 @@ exports[`iOS BpkButton dark mode should support the "disabled" property 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -1217,6 +1230,7 @@ exports[`iOS BpkButton light mode should render correctly 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -1301,6 +1315,7 @@ exports[`iOS BpkButton light mode should render correctly with type="destructive
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -1393,6 +1408,7 @@ exports[`iOS BpkButton light mode should render correctly with type="destructive
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -1484,6 +1500,7 @@ exports[`iOS BpkButton light mode should render correctly with type="featured" 1
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -1575,6 +1592,7 @@ exports[`iOS BpkButton light mode should render correctly with type="featured" a
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -1659,6 +1677,7 @@ exports[`iOS BpkButton light mode should render correctly with type="outline" 1`
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -1751,6 +1770,7 @@ exports[`iOS BpkButton light mode should render correctly with type="outline" an
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -1842,6 +1862,7 @@ exports[`iOS BpkButton light mode should render correctly with type="primary" 1`
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -1933,6 +1954,7 @@ exports[`iOS BpkButton light mode should render correctly with type="primary" an
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -2017,6 +2039,7 @@ exports[`iOS BpkButton light mode should render correctly with type="secondary" 
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -2109,6 +2132,7 @@ exports[`iOS BpkButton light mode should render correctly with type="secondary" 
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -2204,6 +2228,7 @@ exports[`iOS BpkButton light mode should support overwriting styles 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -2295,6 +2320,7 @@ exports[`iOS BpkButton light mode should support the "disabled" property 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -2405,6 +2431,7 @@ exports[`iOS BpkButton should render correctly with iconAlignment="leading" 1`] 
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -2522,6 +2549,7 @@ exports[`iOS BpkButton should render correctly with iconAlignment="trailing" 1`]
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -2612,6 +2640,7 @@ exports[`iOS BpkButton should support elements as icons 1`] = `
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": 0.12,
+            "textAlign": "left",
           },
           Object {},
           Array [
@@ -2743,6 +2772,7 @@ exports[`iOS BpkButton should support having an icon as well as a title 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -2860,6 +2890,7 @@ exports[`iOS BpkButton should support the "icon" property 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -3151,6 +3182,7 @@ exports[`iOS BpkButtonThemed should render correctly 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.154,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -3268,6 +3300,7 @@ exports[`iOS should support the "icon" and "large" property 1`] = `
             "fontSize": 20,
             "fontWeight": "400",
             "letterSpacing": null,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -3457,6 +3490,7 @@ exports[`iOS should support the "large" and secondary property 1`] = `
             "fontSize": 20,
             "fontWeight": "400",
             "letterSpacing": null,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",
@@ -3551,6 +3585,7 @@ exports[`iOS should support the "large" property 1`] = `
             "fontSize": 20,
             "fontWeight": "400",
             "letterSpacing": null,
+            "textAlign": "left",
           },
           Object {
             "fontWeight": "700",

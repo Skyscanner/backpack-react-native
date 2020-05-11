@@ -122,6 +122,7 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
                 "fontSize": 16,
                 "fontWeight": "400",
                 "letterSpacing": 0.12,
+                "textAlign": "left",
               },
               Object {
                 "fontWeight": "700",
@@ -207,6 +208,7 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
                   "fontSize": 16,
                   "fontWeight": "400",
                   "letterSpacing": 0.12,
+                  "textAlign": "left",
                 },
                 Object {},
                 Array [
@@ -289,6 +291,7 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
                 "fontSize": 16,
                 "fontWeight": "400",
                 "letterSpacing": 0.12,
+                "textAlign": "left",
               },
               Object {
                 "fontWeight": "700",
@@ -374,6 +377,7 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
                   "fontSize": 16,
                   "fontWeight": "400",
                   "letterSpacing": 0.12,
+                  "textAlign": "left",
                 },
                 Object {},
                 Array [
@@ -456,6 +460,7 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
                 "fontSize": 16,
                 "fontWeight": "400",
                 "letterSpacing": 0.12,
+                "textAlign": "left",
               },
               Object {
                 "fontWeight": "700",
@@ -541,6 +546,7 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
                   "fontSize": 16,
                   "fontWeight": "400",
                   "letterSpacing": 0.12,
+                  "textAlign": "left",
                 },
                 Object {},
                 Array [
@@ -726,6 +732,7 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
                 "fontSize": 16,
                 "fontWeight": "400",
                 "letterSpacing": 0.12,
+                "textAlign": "left",
               },
               Object {
                 "fontWeight": "700",
@@ -811,6 +818,7 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
                   "fontSize": 16,
                   "fontWeight": "400",
                   "letterSpacing": 0.12,
+                  "textAlign": "left",
                 },
                 Object {},
                 Array [
@@ -899,6 +907,7 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
                 "fontSize": 16,
                 "fontWeight": "400",
                 "letterSpacing": 0.12,
+                "textAlign": "left",
               },
               Object {
                 "fontWeight": "700",
@@ -984,6 +993,7 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
                   "fontSize": 16,
                   "fontWeight": "400",
                   "letterSpacing": 0.12,
+                  "textAlign": "left",
                 },
                 Object {},
                 Array [
@@ -1066,6 +1076,7 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
                 "fontSize": 16,
                 "fontWeight": "400",
                 "letterSpacing": 0.12,
+                "textAlign": "left",
               },
               Object {
                 "fontWeight": "700",
@@ -1151,6 +1162,7 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
                   "fontSize": 16,
                   "fontWeight": "400",
                   "letterSpacing": 0.12,
+                  "textAlign": "left",
                 },
                 Object {},
                 Array [
