@@ -4,7 +4,7 @@
 
 **Fixed:**
 
-- react-native-bpk-component-text:
+- `bpk-component-text`:
   - Fixed text alignment on Android when using an RTL language but non RTL text.
 
 ## How to write a good changelog entry
