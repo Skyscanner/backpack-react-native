@@ -1,5 +1,11 @@
 # Backpack changelog
 
+# 3.3.1 - 2020-05-12
+
+**Fixed:**
+- `bpk-component-text`:
+  - Fixed text alignment on Android when using an RTL language but non RTL text.
+
 # 3.3.0 - 2020-05-07
 
 **Added:**
