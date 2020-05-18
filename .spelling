@@ -67,6 +67,7 @@ BpkSectionListNoResultsText
 BpkSectionListSearchField
 BpkSelect
 BpkSnackbar
+BpkTextLink
 BpkTicket
 # End of component names
 
@@ -409,6 +410,7 @@ bpk-component-switch
 bpk-component-table
 bpk-component-text
 bpk-component-text-input
+bpk-component-text-link
 bpk-component-textarea
 bpk-component-theme-toggle
 bpk-component-ticket
