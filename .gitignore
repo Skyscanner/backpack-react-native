@@ -63,3 +63,6 @@ coverage
 android/app/src/main/assets/fonts/skyscanner_relative*
 
 dist
+
+# Bundler bundle
+ios/.bundle

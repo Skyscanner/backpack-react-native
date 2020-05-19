@@ -120,6 +120,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
                 "fontSize": 14,
                 "fontWeight": "400",
                 "letterSpacing": 0,
+                "textAlign": "left",
               },
               Object {
                 "fontFamily": "sans-serif-medium",
@@ -209,6 +210,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
                   "fontSize": 16,
                   "fontWeight": "400",
                   "letterSpacing": -0.2,
+                  "textAlign": "left",
                 },
                 Object {},
                 Array [
@@ -283,6 +285,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
                 "fontSize": 14,
                 "fontWeight": "400",
                 "letterSpacing": 0,
+                "textAlign": "left",
               },
               Object {
                 "fontFamily": "sans-serif-medium",
@@ -372,6 +375,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
                   "fontSize": 16,
                   "fontWeight": "400",
                   "letterSpacing": -0.2,
+                  "textAlign": "left",
                 },
                 Object {},
                 Array [
@@ -446,6 +450,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
                 "fontSize": 14,
                 "fontWeight": "400",
                 "letterSpacing": 0,
+                "textAlign": "left",
               },
               Object {
                 "fontFamily": "sans-serif-medium",
@@ -535,6 +540,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
                   "fontSize": 16,
                   "fontWeight": "400",
                   "letterSpacing": -0.2,
+                  "textAlign": "left",
                 },
                 Object {},
                 Array [
@@ -706,6 +712,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
                 "fontSize": 14,
                 "fontWeight": "400",
                 "letterSpacing": 0,
+                "textAlign": "left",
               },
               Object {
                 "fontFamily": "sans-serif-medium",
@@ -795,6 +802,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
                   "fontSize": 16,
                   "fontWeight": "400",
                   "letterSpacing": -0.2,
+                  "textAlign": "left",
                 },
                 Object {},
                 Array [
@@ -878,6 +886,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
                 "fontSize": 14,
                 "fontWeight": "400",
                 "letterSpacing": 0,
+                "textAlign": "left",
               },
               Object {
                 "fontFamily": "sans-serif-medium",
@@ -967,6 +976,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
                   "fontSize": 16,
                   "fontWeight": "400",
                   "letterSpacing": -0.2,
+                  "textAlign": "left",
                 },
                 Object {},
                 Array [
@@ -1041,6 +1051,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
                 "fontSize": 14,
                 "fontWeight": "400",
                 "letterSpacing": 0,
+                "textAlign": "left",
               },
               Object {
                 "fontFamily": "sans-serif-medium",
@@ -1130,6 +1141,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
                   "fontSize": 16,
                   "fontWeight": "400",
                   "letterSpacing": -0.2,
+                  "textAlign": "left",
                 },
                 Object {},
                 Array [

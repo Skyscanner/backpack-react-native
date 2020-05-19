@@ -50,6 +50,7 @@ exports[`Android BpkCard dark mode should render correctly 1`] = `
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": -0.2,
+            "textAlign": "left",
           },
           Object {},
         ]
@@ -114,6 +115,7 @@ exports[`Android BpkCard dark mode should render correctly with the "focused" st
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": -0.2,
+            "textAlign": "left",
           },
           Object {},
         ]
@@ -175,6 +177,7 @@ exports[`Android BpkCard light mode should render correctly 1`] = `
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": -0.2,
+            "textAlign": "left",
           },
           Object {},
         ]
@@ -239,6 +242,7 @@ exports[`Android BpkCard light mode should render correctly with the "focused" s
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": -0.2,
+            "textAlign": "left",
           },
           Object {},
         ]
@@ -303,6 +307,7 @@ exports[`Android BpkCard should render correctly when "cornerStyle=large" 1`] = 
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": -0.2,
+            "textAlign": "left",
           },
           Object {},
         ]
@@ -365,6 +370,7 @@ exports[`Android BpkCard should render correctly with arbitrary props 1`] = `
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": -0.2,
+            "textAlign": "left",
           },
           Object {},
         ]
@@ -429,6 +435,7 @@ exports[`Android BpkCard should render correctly with custom inner style 1`] = `
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": -0.2,
+            "textAlign": "left",
           },
           Object {},
         ]
@@ -493,6 +500,7 @@ exports[`Android BpkCard should render correctly with custom style 1`] = `
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": -0.2,
+            "textAlign": "left",
           },
           Object {},
         ]
@@ -548,6 +556,7 @@ exports[`Android BpkCard should render correctly without padding 1`] = `
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": -0.2,
+            "textAlign": "left",
           },
           Object {},
         ]

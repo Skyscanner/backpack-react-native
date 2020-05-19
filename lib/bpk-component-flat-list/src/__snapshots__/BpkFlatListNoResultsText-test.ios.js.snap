@@ -24,6 +24,7 @@ exports[`iOS BpkFlatListNoResultsText dark mode should render correctly 1`] = `
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": 0.12,
+          "textAlign": "left",
         },
         Object {},
       ]
@@ -58,6 +59,7 @@ exports[`iOS BpkFlatListNoResultsText dark mode should support arbitrary props 1
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": 0.12,
+          "textAlign": "left",
         },
         Object {},
       ]
@@ -95,6 +97,7 @@ exports[`iOS BpkFlatListNoResultsText dark mode should support userland styles 1
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": 0.12,
+          "textAlign": "left",
         },
         Object {},
       ]
@@ -129,6 +132,7 @@ exports[`iOS BpkFlatListNoResultsText light mode should render correctly 1`] = `
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": 0.12,
+          "textAlign": "left",
         },
         Object {},
       ]
@@ -163,6 +167,7 @@ exports[`iOS BpkFlatListNoResultsText light mode should support arbitrary props 
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": 0.12,
+          "textAlign": "left",
         },
         Object {},
       ]
@@ -200,6 +205,7 @@ exports[`iOS BpkFlatListNoResultsText light mode should support userland styles 
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": 0.12,
+          "textAlign": "left",
         },
         Object {},
       ]

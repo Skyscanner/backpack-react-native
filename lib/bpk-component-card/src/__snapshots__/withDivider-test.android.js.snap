@@ -64,6 +64,7 @@ exports[`Android withDivider should render correctly 1`] = `
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": -0.2,
+              "textAlign": "left",
             },
             Object {},
           ]
@@ -107,6 +108,7 @@ exports[`Android withDivider should render correctly 1`] = `
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": -0.2,
+              "textAlign": "left",
             },
             Object {},
           ]
@@ -186,6 +188,7 @@ exports[`Android withDivider should render correctly with "cornerStyle=large" 1`
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": -0.2,
+              "textAlign": "left",
             },
             Object {},
           ]
@@ -229,6 +232,7 @@ exports[`Android withDivider should render correctly with "cornerStyle=large" 1`
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": -0.2,
+              "textAlign": "left",
             },
             Object {},
           ]
@@ -306,6 +310,7 @@ exports[`Android withDivider should render correctly with arbitrary props 1`] = 
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": -0.2,
+              "textAlign": "left",
             },
             Object {},
           ]
@@ -349,6 +354,7 @@ exports[`Android withDivider should render correctly with arbitrary props 1`] = 
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": -0.2,
+              "textAlign": "left",
             },
             Object {},
           ]
@@ -428,6 +434,7 @@ exports[`Android withDivider should render correctly with custom main style 1`] 
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": -0.2,
+              "textAlign": "left",
             },
             Object {},
           ]
@@ -471,6 +478,7 @@ exports[`Android withDivider should render correctly with custom main style 1`] 
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": -0.2,
+              "textAlign": "left",
             },
             Object {},
           ]
@@ -547,6 +555,7 @@ exports[`Android withDivider should render correctly with custom stub style 1`] 
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": -0.2,
+              "textAlign": "left",
             },
             Object {},
           ]
@@ -593,6 +602,7 @@ exports[`Android withDivider should render correctly with custom stub style 1`] 
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": -0.2,
+              "textAlign": "left",
             },
             Object {},
           ]
@@ -666,6 +676,7 @@ exports[`Android withDivider should render correctly without padding 1`] = `
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": -0.2,
+              "textAlign": "left",
             },
             Object {},
           ]
@@ -706,6 +717,7 @@ exports[`Android withDivider should render correctly without padding 1`] = `
               "fontSize": 16,
               "fontWeight": "400",
               "letterSpacing": -0.2,
+              "textAlign": "left",
             },
             Object {},
           ]

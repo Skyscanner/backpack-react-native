@@ -99,6 +99,7 @@ exports[`iOS BpkPicker dark mode should render correctly 1`] = `
                   "fontSize": 14,
                   "fontWeight": "400",
                   "letterSpacing": 0.154,
+                  "textAlign": "left",
                 },
                 Object {
                   "fontWeight": "700",
@@ -250,6 +251,7 @@ exports[`iOS BpkPicker dark mode should render correctly with a selected value 1
                   "fontSize": 14,
                   "fontWeight": "400",
                   "letterSpacing": 0.154,
+                  "textAlign": "left",
                 },
                 Object {
                   "fontWeight": "700",
@@ -401,6 +403,7 @@ exports[`iOS BpkPicker light mode should render correctly 1`] = `
                   "fontSize": 14,
                   "fontWeight": "400",
                   "letterSpacing": 0.154,
+                  "textAlign": "left",
                 },
                 Object {
                   "fontWeight": "700",
@@ -552,6 +555,7 @@ exports[`iOS BpkPicker light mode should render correctly with a selected value 
                   "fontSize": 14,
                   "fontWeight": "400",
                   "letterSpacing": 0.154,
+                  "textAlign": "left",
                 },
                 Object {
                   "fontWeight": "700",

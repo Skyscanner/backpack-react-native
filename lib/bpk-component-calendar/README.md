@@ -64,6 +64,47 @@ class App extends Component {
 }
 ```
 
+### Footer view
+
+NOTE: this is only supported for Android, it will have no effect on iOS.
+
+The Android calendar supports the notion of a footer view for each month, we provide a `highlightedDaysFooterView`
+implementation to show a list of highlighted days for each month:
+
+```js
+import React from 'react';
+import BpkCalendar, {
+  SELECTION_TYPES,
+  highlightedDaysFooterView,
+  colorBucketHighlight,
+  DateMatchers,
+} from 'backpack-react-native/bpk-component-calendar';
+
+const App = () => (
+  <BpkCalendar
+    locale={'en-gb'}
+    selectionType={SELECTION_TYPES.range}
+    minDate={Date.UTC(2019, 0, 2)}
+    maxDate={Date.UTC(2019, 11, 31)}
+    // You can optionally use a highlight color bucket to highlight a day cell in the calendar,
+    // using the same style used by `highlightedDaysFooterView`
+    colorBuckets={[
+      colorBucketHighlight(
+        DateMatchers.any(Date.UTC(2019, 0, 10)),
+      ),
+    ]}
+    androidFooterView={highlightedDaysFooterView({
+      days: [
+        {
+          date: Date.UTC(2019, 0, 10),
+          description: 'A day to remember',
+        },
+      ],
+    })}
+  />
+)
+```
+
 ## Props
 
 ### BpkCalendar
@@ -78,6 +119,7 @@ class App extends Component {
 | onChangeSelectedDates | function               | false    | null                   |
 | selectedDates         | arrayOf(Date, number)  | false    | \[]                    |
 | selectionType         | oneOf(SELECTION_TYPES) | false    | SELECTION_TYPES.single |
+| androidFooterView     | object                 | false    | undefined              |
 
 #### selectedDates
 
@@ -106,6 +148,16 @@ class App extends Component {
 -   [colorBucket](#colorbucket)
     -   [Parameters](#parameters-4)
     -   [Examples](#examples-4)
+-   [colorBucketNegative](#colorbucketnegative)
+    -   [Parameters](#parameters-5)
+-   [colorBucketNeutral](#colorbucketneutral)
+    -   [Parameters](#parameters-6)
+-   [colorBucketPositive](#colorbucketpositive)
+    -   [Parameters](#parameters-7)
+-   [colorBucketHighlight](#colorbuckethighlight)
+    -   [Parameters](#parameters-8)
+-   [highlightedDaysFooterView](#highlighteddaysfooterview)
+    -   [Parameters](#parameters-9)
 
 ### DateMatchers
 
@@ -220,3 +272,65 @@ take precedence.
 ```
 
 Returns **ColorBucket** A new color bucket
+
+### colorBucketNegative
+
+A negative cell style which is suitable to indicate for example
+a date which has a comparatively high price among the dates in
+the calendar.
+
+#### Parameters
+
+-   `days` **DateMatcher** The days in this bucket
+
+Returns **ColorBucket** the negative bucket
+
+### colorBucketNeutral
+
+A neutral cell style which is suitable to indicate for example
+a date which has a comparatively average price among the dates in
+the calendar.
+
+#### Parameters
+
+-   `days` **DateMatcher** The days in this bucket
+
+Returns **ColorBucket** the neutral bucket
+
+### colorBucketPositive
+
+A positive cell style which is suitable to indicate for example
+a date which has a comparatively low price among the dates in
+the calendar.
+
+#### Parameters
+
+-   `days` **DateMatcher** The days in this bucket
+
+Returns **ColorBucket** the positive bucket
+
+### colorBucketHighlight
+
+A cell style which is suitable to indicate a highlighted day, e.g. a holiday.
+Use this in conjunction with `highlightedDaysFooterView` to
+show a footer with the list of highlighted days for a month.
+
+**NOTE: This is an Android only feature.**
+
+#### Parameters
+
+-   `days` **DateMatcher** The days in this bucket
+
+Returns **ColorBucket** the highlighted bucket
+
+### highlightedDaysFooterView
+
+Creates a footer view to show a list of highlighted days.
+
+**NOTE: This is an Android only feature.**
+
+#### Parameters
+
+-   `viewDef` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** the view definition.
+
+Returns **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** a footer view.

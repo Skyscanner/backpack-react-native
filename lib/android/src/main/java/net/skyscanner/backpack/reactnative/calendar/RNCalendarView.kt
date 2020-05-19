@@ -17,17 +17,22 @@
  */
 package net.skyscanner.backpack.reactnative.calendar
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.util.AttributeSet
 import android.widget.AbsListView
 import android.widget.FrameLayout
-import java.util.*
+import java.util.Locale
 import net.skyscanner.backpack.calendar.BpkCalendar
-import net.skyscanner.backpack.calendar.model.*
+import net.skyscanner.backpack.calendar.model.CalendarColoring
+import net.skyscanner.backpack.calendar.model.CalendarRange
+import net.skyscanner.backpack.calendar.model.CalendarSelection
+import net.skyscanner.backpack.calendar.model.SingleDay
 import net.skyscanner.backpack.calendar.presenter.SelectionType
 import net.skyscanner.backpack.reactnative.BpkViewStateHolder
 import org.threeten.bp.LocalDate
 
+@SuppressLint("ViewConstructor")
 class RNCalendarView(
   context: Context,
   val state: StateHolder = StateHolder()
@@ -46,7 +51,7 @@ class RNCalendarView(
     state.onAfterUpdateTransaction(::render)
   }
 
-  fun render() {
+  private fun render() {
     state.locale ?: throw IllegalStateException("[RNCalendarView] Locale has not been initialized")
 
     selection = selectedDaysToSelection(state.selectedDates)
@@ -61,8 +66,11 @@ class RNCalendarView(
       controller?.selectionType = state.selectionType
       controller?.disabledDateMatcher = state.disabledDateMatcher
       controller?.calendarColoring = state.colorBuckets?.let {
-        CalendarColoring(it.map { bucket -> bucket.toColorBucket() }.toSet())
+        CalendarColoring(it.map { bucket ->
+          bucket.asColorBucket(controller!!.startDate, controller!!.endDate)
+        }.toSet())
       }
+      controller?.monthFooterAdapter = state.footerView?.asFooterAdapter(controller!!.locale)
 
       if (state.shouldUpdateContent) {
         state.shouldUpdateContent = false
@@ -78,8 +86,16 @@ class RNCalendarView(
     state.maxDate?.let { currentController.endDate = it }
     selection?.let { currentController.updateSelection(it) }
     state.disabledDateMatcher?.let { currentController.disabledDateMatcher = it }
-    state.colorBuckets?.let { currentController.calendarColoring = CalendarColoring(
-            it.map { bucket -> bucket.toColorBucket() }.toSet()) }
+
+    state.colorBuckets?.let {
+      currentController.calendarColoring =
+        CalendarColoring(it.map {
+            bucket -> bucket.asColorBucket(currentController.startDate, currentController.endDate)
+        }.toSet()) }
+
+    state.footerView?.let {
+      currentController.monthFooterAdapter = it.asFooterAdapter(currentController.locale)
+    }
 
     return currentController
   }
@@ -136,6 +152,15 @@ class RNCalendarView(
       var selectionType: SelectionType by markDirtyOnUpdate(SelectionType.RANGE)
       var onDatesChange: ChangeCallback? by markDirtyOnUpdate(null)
 
+      var footerView: RNFooterView? = null
+        set(value) {
+          if (value != field) {
+            field = value
+            shouldUpdateContent = true
+            markDirty()
+          }
+        }
+
       var disabledDateMatcher: DateMatcher? = null
         set(value) {
           if (value != field) {
@@ -174,40 +199,6 @@ class RNCalendarView(
         lastSeenYear = year
         this@RNCalendarView.requestLayout()
       }
-    }
-  }
-
-  private fun RNColorBucket.toColorBucket(): ColoredBucket {
-    if (this.cellStyle !== null) {
-      when (cellStyle) {
-        "negative" -> ColoredBucket(CalendarCellStyle.Negative, this.days.toSet())
-        "positive" -> ColoredBucket(CalendarCellStyle.Positive, this.days.toSet())
-        "neutral" -> ColoredBucket(CalendarCellStyle.Neutral, this.days.toSet())
-        else -> throw IllegalStateException("Invalid cellStyle: $cellStyle")
-      }
-    }
-
-    val textStyle = this.textStyle?.let {
-      if (it == "dark") {
-        CalendarCellStyle.TextStyle.Dark
-      } else {
-        CalendarCellStyle.TextStyle.Light
-      }
-    }
-
-    return ColoredBucket(CalendarCellStyle.Custom(this.color, textStyle), this.days.toSet())
-  }
-
-  private fun DateMatcher.toSet(): Set<LocalDate> {
-    val plusOne = { it: LocalDate -> it.plusDays(1) }
-    val minusOne = { it: LocalDate -> it.minusDays(1) }
-
-    return when (this) {
-      is RangeMatcher -> generateSequence(this.start, plusOne).takeWhile { it <= this.end }.toSet()
-      is BeforeMatcher -> generateSequence(this.end, minusOne).takeWhile { it >= state.minDate }.toSet()
-      is AfterMatcher -> generateSequence(this.start, plusOne).takeWhile { it <= state.maxDate }.toSet()
-      is AnyMatcher -> this.dates.toSet()
-      else -> emptySet()
     }
   }
 }

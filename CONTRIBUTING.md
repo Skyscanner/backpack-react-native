@@ -214,8 +214,6 @@ To run these manually, run `npm run android:emulator` or `npm run android:emulat
 - Move entries from [unreleased.md](/unreleased.md) to the [changelog](/changelog.md). Update the package versions for the new changes, and group them under a title with today’s date and a brief summary of what has changed.
 - Commit and push to master.
 
-When a component is released for the first time on npm, remember to add the component to the Skyscanner organisation through the [npm UI](https://www.npmjs.com/settings/skyscanner/teams/team/backpack-react-native/access).
-
 ### Native Android bridges
 
 Android bridges should be compiled and published into the internal Artifactory, this process is done automatically as part of the release.
