@@ -34,3 +34,11 @@ NativeModules.AndroidBpkSnackbar = {
   show: jest.fn(),
   dismiss: jest.fn(),
 };
+
+NativeModules.BPKSnackbarManager = {
+  LENGTH_SHORT: 0,
+  LENGTH_LONG: 1,
+  LENGTH_INDEFINITE: 2,
+  showWithArgs: jest.fn(),
+  dismissAll: jest.fn(),
+};

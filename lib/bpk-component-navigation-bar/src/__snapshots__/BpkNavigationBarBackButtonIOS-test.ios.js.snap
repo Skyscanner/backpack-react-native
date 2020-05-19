@@ -91,6 +91,7 @@ exports[`iOS BpkNavigationBarBackButtonIOS dark mode should render correctly wit
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": 0.12,
+          "textAlign": "left",
         },
         Object {},
         Array [
@@ -197,6 +198,7 @@ exports[`iOS BpkNavigationBarBackButtonIOS light mode should render correctly wi
           "fontSize": 16,
           "fontWeight": "400",
           "letterSpacing": 0.12,
+          "textAlign": "left",
         },
         Object {},
         Array [

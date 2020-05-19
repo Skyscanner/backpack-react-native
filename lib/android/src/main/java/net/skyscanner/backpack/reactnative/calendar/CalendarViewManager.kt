@@ -29,7 +29,7 @@ import net.skyscanner.backpack.calendar.model.CalendarRange
 import net.skyscanner.backpack.calendar.model.SingleDay
 import net.skyscanner.backpack.calendar.presenter.SelectionType
 import net.skyscanner.backpack.reactnative.calendar.events.CalendarChangeEvent
-import org.threeten.bp.Instant
+import net.skyscanner.backpack.reactnative.extensions.getOptional
 import org.threeten.bp.LocalDate
 import org.threeten.bp.ZoneId
 
@@ -54,7 +54,7 @@ class CalendarViewManager : ViewGroupManager<RNCalendarView>() {
   @ReactProp(name = "selectedDates")
   fun setSelectedDates(view: RNCalendarView, dates: ReadableArray) {
     view.state.selectedDates = (0..(dates.size() - 1)).map {
-      unixToCalendarDay(dates.getInt(it))
+      TypeConversions.unixTimestampToLocalDate(dates.getInt(it))
     }.toTypedArray()
   }
 
@@ -76,14 +76,14 @@ class CalendarViewManager : ViewGroupManager<RNCalendarView>() {
   @ReactProp(name = "minDate")
   fun setMinDate(view: RNCalendarView, minDate: Int?) {
     minDate?.let {
-      view.state.minDate = unixToCalendarDay(it)
+      view.state.minDate = TypeConversions.unixTimestampToLocalDate(it)
     }
   }
 
   @ReactProp(name = "maxDate")
   fun setMaxDate(view: RNCalendarView, maxDate: Int?) {
     maxDate?.let {
-      view.state.maxDate = unixToCalendarDay(it)
+      view.state.maxDate = TypeConversions.unixTimestampToLocalDate(it)
     }
   }
 
@@ -103,13 +103,13 @@ class CalendarViewManager : ViewGroupManager<RNCalendarView>() {
         val bucket = colourBuckets.getMap(it)
                 ?: throw JSApplicationIllegalArgumentException("Invalid colour bucket provided to BpkCalendar")
 
-        val textStyle = bucket.safeGet("textStyle", ReadableMap::getString)
+        val textStyle = bucket.getOptional("textStyle", ReadableMap::getString)
 
         val color = bucket.getInt("color")
         val days = bucket.getMap("days")
                 ?: throw JSApplicationIllegalArgumentException("Invalid colour bucket provided to BpkCalendar. `days` is null")
 
-        val cellStyle = bucket.safeGet("__cellStyle", ReadableMap::getString)
+        val cellStyle = bucket.getOptional("__cellStyle", ReadableMap::getString)
 
         RNColorBucket(
           color = color,
@@ -122,6 +122,15 @@ class CalendarViewManager : ViewGroupManager<RNCalendarView>() {
       view.state.colorBuckets = parsedBuckets
     } else {
       view.state.colorBuckets = null
+    }
+  }
+
+  @ReactProp(name = "androidFooterView")
+  fun setFooterView(view: RNCalendarView, footerView: ReadableMap?) {
+    if (footerView == null) {
+      view.state.footerView = null
+    } else {
+      view.state.footerView = RNFooterView.fromJS(view.context, footerView)
     }
   }
 
@@ -149,31 +158,18 @@ class CalendarViewManager : ViewGroupManager<RNCalendarView>() {
     super.onAfterUpdateTransaction(view)
     view.state.dispatchUpdateTransactionFinished()
   }
+}
 
-  private fun unixToCalendarDay(unixTime: Int): LocalDate {
-    // TODO: Explore sending a "dummy" date here (01-01-2019) to avoid having to deal with timezones
-    return Instant.ofEpochMilli(unixTime * 1000L).atZone(ZONE_ID_UTC).toLocalDate()
+private fun ReadableMap.toDateMatcher(): DateMatcher {
+  val type = this.getString("type")
+  val dates = this.getArray("dates")
+  if (type === null || dates === null || dates.size() == 0) {
+    throw JSApplicationIllegalArgumentException("Invalid disabledDates prop, either type` or `dates` is invalid")
   }
 
-  private fun <T> ReadableMap.safeGet(key: String, getter: (map: ReadableMap, key: String) -> T): T? {
-    if (!this.hasKey(key)) {
-      return null
-    }
+  val parsedDates = (0 until dates.size()).map {
+    TypeConversions.unixTimestampToLocalDate(dates.getInt(it))
+  }.toTypedArray()
 
-    return getter.invoke(this, key)
-  }
-
-  private fun ReadableMap.toDateMatcher(): DateMatcher {
-    val type = this.getString("type")
-    val dates = this.getArray("dates")
-    if (type === null || dates === null || dates.size() == 0) {
-      throw JSApplicationIllegalArgumentException("Invalid disabledDates prop, either type` or `dates` is invalid")
-    }
-
-    val parsedDates = (0 until dates.size()).map {
-      unixToCalendarDay(dates.getInt(it))
-    }.toTypedArray()
-
-    return DateMatcher.fromJs(type, parsedDates)
-  }
+  return DateMatcher.fromJs(type, parsedDates)
 }

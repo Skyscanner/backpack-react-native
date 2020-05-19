@@ -34,6 +34,7 @@ exports[`Android AnimateAndFade should render correctly 1`] = `
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": -0.2,
+            "textAlign": "left",
           },
           Object {},
         ]
@@ -59,6 +60,7 @@ exports[`Android AnimateAndFade should render correctly 1`] = `
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": -0.2,
+            "textAlign": "left",
           },
           Object {},
         ]
@@ -104,6 +106,7 @@ exports[`Android AnimateAndFade should render correctly when show is false 1`] =
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": -0.2,
+            "textAlign": "left",
           },
           Object {},
         ]
@@ -129,6 +132,7 @@ exports[`Android AnimateAndFade should render correctly when show is false 1`] =
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": -0.2,
+            "textAlign": "left",
           },
           Object {},
         ]
@@ -174,6 +178,7 @@ exports[`Android AnimateAndFade should render correctly with animateOnEnter 1`] 
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": -0.2,
+            "textAlign": "left",
           },
           Object {},
         ]
@@ -199,6 +204,7 @@ exports[`Android AnimateAndFade should render correctly with animateOnEnter 1`] 
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": -0.2,
+            "textAlign": "left",
           },
           Object {},
         ]
@@ -244,6 +250,7 @@ exports[`Android AnimateAndFade should render correctly with animateOnLeave 1`] 
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": -0.2,
+            "textAlign": "left",
           },
           Object {},
         ]
@@ -269,6 +276,7 @@ exports[`Android AnimateAndFade should render correctly with animateOnLeave 1`] 
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": -0.2,
+            "textAlign": "left",
           },
           Object {},
         ]

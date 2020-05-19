@@ -50,6 +50,7 @@ exports[`android TitleView dark mode should render correctly with leading icon 1
           "fontSize": 20,
           "fontWeight": "400",
           "letterSpacing": -0.4,
+          "textAlign": "left",
         },
         Object {
           "fontFamily": "sans-serif-medium",
@@ -94,6 +95,7 @@ exports[`android TitleView dark mode should render correctly with only a title 1
           "fontSize": 20,
           "fontWeight": "400",
           "letterSpacing": -0.4,
+          "textAlign": "left",
         },
         Object {
           "fontFamily": "sans-serif-medium",
@@ -136,6 +138,7 @@ exports[`android TitleView dark mode should render correctly with trailing icon 
           "fontSize": 20,
           "fontWeight": "400",
           "letterSpacing": -0.4,
+          "textAlign": "left",
         },
         Object {
           "fontFamily": "sans-serif-medium",
@@ -232,6 +235,7 @@ exports[`android TitleView light mode should render correctly with leading icon 
           "fontSize": 20,
           "fontWeight": "400",
           "letterSpacing": -0.4,
+          "textAlign": "left",
         },
         Object {
           "fontFamily": "sans-serif-medium",
@@ -276,6 +280,7 @@ exports[`android TitleView light mode should render correctly with only a title 
           "fontSize": 20,
           "fontWeight": "400",
           "letterSpacing": -0.4,
+          "textAlign": "left",
         },
         Object {
           "fontFamily": "sans-serif-medium",
@@ -318,6 +323,7 @@ exports[`android TitleView light mode should render correctly with trailing icon
           "fontSize": 20,
           "fontWeight": "400",
           "letterSpacing": -0.4,
+          "textAlign": "left",
         },
         Object {
           "fontFamily": "sans-serif-medium",

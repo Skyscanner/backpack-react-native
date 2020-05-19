@@ -2,11 +2,6 @@
 
 > Place your changes below this line.
 
-**Added:**
-
-- bpk-component-chip
-  - New `leadingAccessoryView` prop to allow for icons to be added to the BpkChip.
-
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).

@@ -452,6 +452,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with description 1`]
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 0,
+          "textAlign": "left",
         },
         Object {},
         Object {
@@ -573,6 +574,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with description, va
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 0,
+          "textAlign": "left",
         },
         Object {},
         Object {
@@ -1186,6 +1188,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with valid false and
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 0,
+          "textAlign": "left",
         },
         Object {},
         Object {
@@ -1874,6 +1877,7 @@ exports[`iOS BpkTextInput light mode should render correctly with description 1`
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 0,
+          "textAlign": "left",
         },
         Object {},
         Object {
@@ -1995,6 +1999,7 @@ exports[`iOS BpkTextInput light mode should render correctly with description, v
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 0,
+          "textAlign": "left",
         },
         Object {},
         Object {
@@ -2608,6 +2613,7 @@ exports[`iOS BpkTextInput light mode should render correctly with valid false an
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 0,
+          "textAlign": "left",
         },
         Object {},
         Object {

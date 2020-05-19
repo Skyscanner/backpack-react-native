@@ -34,11 +34,18 @@ interface DateMatcher {
   }
 
   fun match(date: LocalDate): Boolean
+  fun toSet(minDate: LocalDate, maxDate: LocalDate): Set<LocalDate>
 }
 
 internal data class RangeMatcher(internal val start: LocalDate, internal val end: LocalDate) : DateMatcher {
   override fun match(date: LocalDate): Boolean {
     return date in start..end
+  }
+
+  override fun toSet(minDate: LocalDate, maxDate: LocalDate): Set<LocalDate> {
+    val start = getMax(this.start, minDate)
+    val end = getMin(this.end, maxDate)
+    return generateSequence(start, ::plusOne).takeWhile { it <= end }.toSet()
   }
 }
 
@@ -46,11 +53,21 @@ internal data class AfterMatcher(internal val start: LocalDate) : DateMatcher {
   override fun match(date: LocalDate): Boolean {
     return date > start
   }
+
+  override fun toSet(minDate: LocalDate, maxDate: LocalDate): Set<LocalDate> {
+    val start = getMax(plusOne(this.start), minDate)
+    return generateSequence(start, ::plusOne).takeWhile { it <= maxDate }.toSet()
+  }
 }
 
 internal data class BeforeMatcher(internal val end: LocalDate) : DateMatcher {
   override fun match(date: LocalDate): Boolean {
     return date < end
+  }
+
+  override fun toSet(minDate: LocalDate, maxDate: LocalDate): Set<LocalDate> {
+    val minEnd = getMin(minusOne(this.end), maxDate)
+    return generateSequence(minEnd, ::minusOne).takeWhile { it >= minDate }.toSet()
   }
 }
 
@@ -73,4 +90,20 @@ internal data class AnyMatcher(internal val dates: Array<LocalDate>) : DateMatch
   override fun hashCode(): Int {
     return dates.contentHashCode()
   }
+
+  override fun toSet(minDate: LocalDate, maxDate: LocalDate): Set<LocalDate> {
+    return dates.toSet()
+  }
+}
+
+private fun plusOne(date: LocalDate) = date.plusDays(1)
+
+private fun minusOne(date: LocalDate) = date.minusDays(1)
+
+private fun getMin(one: LocalDate, two: LocalDate): LocalDate {
+  return if (one.isBefore(two)) one else two
+}
+
+private fun getMax(one: LocalDate, two: LocalDate): LocalDate {
+  return if (one.isBefore(two)) two else one
 }

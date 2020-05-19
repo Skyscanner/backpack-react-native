@@ -1,6 +1,64 @@
 # Backpack changelog
 
-[Unreleased changes](./UNRELEASED.md).
+# 3.3.1 - 2020-05-12
+
+**Fixed:**
+- `bpk-component-text`:
+  - Fixed text alignment on Android when using an RTL language but non RTL text.
+
+# 3.3.0 - 2020-05-07
+
+**Added:**
+  - Added new `account--name`, `ticket-flexible` and `hotel-flexible` icons.
+
+# 3.2.0 - 2020-05-07
+
+**Added:**
+
+- bpk-component-banner-alert:
+  - Added new `primary` banner alert.
+
+# 3.1.0 - 2020-04-20
+
+**Added:**
+
+- `bpk-component-calendar`:
+  - Added new `descriptionOnly` prop to `highlightedDaysFooterView`.
+  - Upgraded `backpack-android` to `23.2.0`.
+
+# 3.0.0 - 2020-04-20
+
+**Breaking:**
+
+- bpk-component-snackbar
+  - Icon-only actions now require an accessibility label (`accessibilityLabel`).
+
+**Added:**
+
+- bpk-component-snackbar
+  - Added iOS version.
+
+# 2.5.0 - 2020-04-17
+
+**Added:**
+
+- bpk-component-calendar
+  - Android only - Added new `androidFooterView` prop to calendar and `highlightedDaysFooterView` to show a list of highlighted days.
+  - Android only - Added new `colorBucketHighlight` function to create buckets with a `highlight` style.
+
+# 2.4.1 - 2020-04-15
+
+**Fixed:**
+
+- bpk-component-text-input:
+  - Fixed an issue where updating `props.mask` had no effect.
+
+# 2.4.0 - 2020-04-15
+
+**Added:**
+
+- bpk-component-chip
+  - New `leadingAccessoryView` prop to allow for icons to be added to the BpkChip.
 
 # 2.3.0 - 2020-04-14
 

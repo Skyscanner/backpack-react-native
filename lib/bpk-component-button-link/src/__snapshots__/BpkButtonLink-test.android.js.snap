@@ -55,6 +55,7 @@ exports[`Android BpkButtonLink dark mode should render correctly 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -130,6 +131,7 @@ exports[`Android BpkButtonLink dark mode should support overwriting styles 1`] =
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -207,6 +209,7 @@ exports[`Android BpkButtonLink dark mode should support the "disabled" property 
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -283,6 +286,7 @@ exports[`Android BpkButtonLink dark mode should support the "icon" property 1`] 
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -380,6 +384,7 @@ exports[`Android BpkButtonLink light mode should render correctly 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -455,6 +460,7 @@ exports[`Android BpkButtonLink light mode should support overwriting styles 1`] 
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -532,6 +538,7 @@ exports[`Android BpkButtonLink light mode should support the "disabled" property
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -608,6 +615,7 @@ exports[`Android BpkButtonLink light mode should support the "icon" property 1`]
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -708,6 +716,7 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="leadi
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -809,6 +818,7 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="trail
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -906,6 +916,7 @@ exports[`Android BpkButtonLink should render correctly with text props provided 
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -979,6 +990,7 @@ exports[`Android BpkButtonLink should render correctly with theme prop 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -1055,6 +1067,7 @@ exports[`Android BpkButtonLink should support elements as icons 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -1079,6 +1092,7 @@ exports[`Android BpkButtonLink should support elements as icons 1`] = `
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": -0.2,
+            "textAlign": "left",
           },
           Object {},
         ]
@@ -1145,6 +1159,7 @@ exports[`Android should support "borderlessBackground" equal to false 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -1218,6 +1233,7 @@ exports[`Android should support "uppercase" equal to false 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",

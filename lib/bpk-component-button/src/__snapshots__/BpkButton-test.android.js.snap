@@ -63,6 +63,7 @@ exports[`Android API levels Android API<21 should render without ripple 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -148,6 +149,7 @@ exports[`Android API levels Android API>=21 should render with ripple 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -233,6 +235,7 @@ exports[`Android BpkButton dark mode should render correctly 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -320,6 +323,7 @@ exports[`Android BpkButton dark mode should render correctly with type="destruct
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -411,6 +415,7 @@ exports[`Android BpkButton dark mode should render correctly with type="destruct
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -496,6 +501,7 @@ exports[`Android BpkButton dark mode should render correctly with type="featured
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -588,6 +594,7 @@ exports[`Android BpkButton dark mode should render correctly with type="featured
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -675,6 +682,7 @@ exports[`Android BpkButton dark mode should render correctly with type="outline"
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -766,6 +774,7 @@ exports[`Android BpkButton dark mode should render correctly with type="outline"
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -851,6 +860,7 @@ exports[`Android BpkButton dark mode should render correctly with type="primary"
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -943,6 +953,7 @@ exports[`Android BpkButton dark mode should render correctly with type="primary"
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -1030,6 +1041,7 @@ exports[`Android BpkButton dark mode should render correctly with type="secondar
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -1121,6 +1133,7 @@ exports[`Android BpkButton dark mode should render correctly with type="secondar
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -1209,6 +1222,7 @@ exports[`Android BpkButton dark mode should support overwriting styles 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -1301,6 +1315,7 @@ exports[`Android BpkButton dark mode should support the "disabled" property 1`] 
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -1386,6 +1401,7 @@ exports[`Android BpkButton light mode should render correctly 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -1473,6 +1489,7 @@ exports[`Android BpkButton light mode should render correctly with type="destruc
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -1564,6 +1581,7 @@ exports[`Android BpkButton light mode should render correctly with type="destruc
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -1649,6 +1667,7 @@ exports[`Android BpkButton light mode should render correctly with type="feature
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -1741,6 +1760,7 @@ exports[`Android BpkButton light mode should render correctly with type="feature
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -1828,6 +1848,7 @@ exports[`Android BpkButton light mode should render correctly with type="outline
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -1919,6 +1940,7 @@ exports[`Android BpkButton light mode should render correctly with type="outline
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -2004,6 +2026,7 @@ exports[`Android BpkButton light mode should render correctly with type="primary
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -2096,6 +2119,7 @@ exports[`Android BpkButton light mode should render correctly with type="primary
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -2183,6 +2207,7 @@ exports[`Android BpkButton light mode should render correctly with type="seconda
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -2274,6 +2299,7 @@ exports[`Android BpkButton light mode should render correctly with type="seconda
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -2362,6 +2388,7 @@ exports[`Android BpkButton light mode should support overwriting styles 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -2454,6 +2481,7 @@ exports[`Android BpkButton light mode should support the "disabled" property 1`]
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -2562,6 +2590,7 @@ exports[`Android BpkButton should render correctly with iconAlignment="leading" 
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -2677,6 +2706,7 @@ exports[`Android BpkButton should render correctly with iconAlignment="trailing"
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -2765,6 +2795,7 @@ exports[`Android BpkButton should support elements as icons 1`] = `
             "fontSize": 16,
             "fontWeight": "400",
             "letterSpacing": -0.2,
+            "textAlign": "left",
           },
           Object {},
           Array [
@@ -2890,6 +2921,7 @@ exports[`Android BpkButton should support having an icon as well as a title 1`] 
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -3005,6 +3037,7 @@ exports[`Android BpkButton should support the "icon" property 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",
@@ -3282,6 +3315,7 @@ exports[`Android BpkButtonThemed should render correctly 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0,
+            "textAlign": "left",
           },
           Object {
             "fontFamily": "sans-serif-medium",

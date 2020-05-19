@@ -289,7 +289,7 @@ functional components we recommend using the provided hooks.
 #### Parameters
 
 -   `children` **[Function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** Function that will receive the current appearance and should return a react Node.
-    -   `children.children`
+    -   `children.children`  
 
 #### Examples
 
@@ -358,7 +358,7 @@ NOTE: If you are using a functional component use one of the provided hooks inst
 
 ```javascript
 import React, { type Config } from 'react';
-import { type WithBpkAppearanceInjectedProps, withBpkAppearance } from 'backpack-react-native/bpk-appearance';
+import { type WithBpkAppearanceInjectedProps, withBpkAppearance } from '../../bpk-appearance';
 
 class MyComponent extends Component<Props & WithBpkAppearanceInjectedProps> {
  render() {
