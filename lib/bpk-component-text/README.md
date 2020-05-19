@@ -41,12 +41,12 @@ export default class App extends Component {
 
 ## Props
 
-| Property                             | PropType                                             | Required | Default Value |
-| ------------------------------------ | ---------------------------------------------------- | -------- | ------------- |
-| children                             | node                                                 | true     | -             |
-| textStyle                            | oneOf('xxl', 'xl', 'lg', 'base', 'sm', 'xs', 'caps') | false    | base          |
-| weight                               | oneOf('regular', 'emphasized', 'heavy')              | false    | regular       |
-| emphasize (deprecated, use `weight`) | bool                                                 | false    | false         |
+| Property                             | PropType                                                        | Required | Default Value |
+| ------------------------------------ | --------------------------------------------------------------- | -------- | ------------- |
+| children                             | node                                                            | true     | -             |
+| textStyle                            | oneOf('xxl', 'xl', 'lg', 'base', 'sm', 'xs', 'caps', inherit)   | false    | base          |
+| weight                               | oneOf('regular', 'emphasized', 'heavy', 'inherit')              | false    | regular       |
+| emphasize (deprecated, use `weight`) | bool                                                            | false    | false         |
 
 ## Theme props
 
