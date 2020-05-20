@@ -33,6 +33,9 @@ export default class App extends Component {
         <BpkText textStyle='sm'>Backpack rocks!</BpkText>
         <BpkText textStyle='xs'>Backpack rocks!</BpkText>
         <BpkText textStyle='caps'>BACKPACK ROCKS!</BpkText>
+        <BpkText textStyle='lg'>
+          <BpkText textStyle='inherit' weight='emphasized'>Backpack</BpkText> rocks!
+        </BpkText>
       </View>
     );
   }

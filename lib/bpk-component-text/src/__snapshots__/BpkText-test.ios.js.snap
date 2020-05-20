@@ -113,6 +113,38 @@ exports[`iOS BpkText should ignore weight prop if deprecated \`emphasize\` prop 
 </Text>
 `;
 
+exports[`iOS BpkText should render correctly when textStyle is set to inherit 1`] = `
+<Text
+  allowFontScaling={false}
+  style={
+    Array [
+      Object {
+        "color": "rgb(17, 18, 54)",
+        "fontFamily": "System",
+        "fontSize": 36,
+        "fontWeight": "400",
+        "letterSpacing": null,
+        "textAlign": "left",
+      },
+      Object {},
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {},
+        Object {},
+      ]
+    }
+  >
+    Inherited text
+  </Text>
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+</Text>
+`;
+
 exports[`iOS BpkText should render correctly with deprecated \`emphasize\` prop 1`] = `
 <Text
   allowFontScaling={false}
@@ -216,6 +248,36 @@ exports[`iOS BpkText should render correctly with textStyle="caps" 1`] = `
         "letterSpacing": 0.28,
         "textAlign": "left",
       },
+      Object {},
+    ]
+  }
+>
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+</Text>
+`;
+
+exports[`iOS BpkText should render correctly with textStyle="inherit and weight="emphasized" 1`] = `
+<Text
+  allowFontScaling={false}
+  style={
+    Array [
+      Object {},
+      Object {
+        "fontWeight": "700",
+      },
+    ]
+  }
+>
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+</Text>
+`;
+
+exports[`iOS BpkText should render correctly with textStyle="inherit" 1`] = `
+<Text
+  allowFontScaling={false}
+  style={
+    Array [
+      Object {},
       Object {},
     ]
   }
@@ -553,6 +615,45 @@ exports[`iOS BpkText should render correctly with textStyle="xxxl" 1`] = `
     ]
   }
 >
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+</Text>
+`;
+
+exports[`iOS BpkText should use default props when nested textStyle is set to anything other than inherit 1`] = `
+<Text
+  allowFontScaling={false}
+  style={
+    Array [
+      Object {
+        "color": "rgb(17, 18, 54)",
+        "fontFamily": "System",
+        "fontSize": 36,
+        "fontWeight": "400",
+        "letterSpacing": null,
+        "textAlign": "left",
+      },
+      Object {},
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(17, 18, 54)",
+          "fontFamily": "System",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.12,
+          "textAlign": "left",
+        },
+        Object {},
+      ]
+    }
+  >
+    Non-inherited text
+  </Text>
   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 </Text>
 `;
