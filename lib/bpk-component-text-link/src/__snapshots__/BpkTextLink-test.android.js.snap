@@ -2,65 +2,11 @@
 
 exports[`Android BpkTextLink should render correctly 1`] = `
 <Text
-  accessibilityLabel={null}
-  accessibilityRole="link"
-  accessible={true}
-  allowFontScaling={false}
-  focusable={true}
-  isTVSelectable={true}
-  nativeBackgroundAndroid={
-    Object {
-      "borderless": true,
-      "color": null,
-      "type": "RippleAndroid",
-    }
-  }
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Array [
-      Object {
-        "color": "rgb(17, 18, 54)",
-        "fontFamily": "sans-serif",
-        "fontSize": 16,
-        "fontWeight": "400",
-        "letterSpacing": -0.2,
-        "textAlign": "left",
-      },
-      Object {},
-      Array [
-        Object {
-          "color": "rgb(7, 112, 227)",
-        },
-        null,
-      ],
-    ]
-  }
->
-  Tappable link
-</Text>
-`;
-
-exports[`Android BpkTextLink should render correctly with accessibilityLabel 1`] = `
-<Text
   accessibilityLabel="Tappble link"
   accessibilityRole="link"
   accessible={true}
   allowFontScaling={false}
   focusable={true}
-  isTVSelectable={true}
-  nativeBackgroundAndroid={
-    Object {
-      "borderless": true,
-      "color": null,
-      "type": "RippleAndroid",
-    }
-  }
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -83,7 +29,6 @@ exports[`Android BpkTextLink should render correctly with accessibilityLabel 1`]
         Object {
           "color": "rgb(7, 112, 227)",
         },
-        null,
       ],
     ]
   }
@@ -99,14 +44,6 @@ exports[`Android BpkTextLink should render correctly with arbitrary props 1`] = 
   accessible={true}
   allowFontScaling={false}
   focusable={true}
-  isTVSelectable={true}
-  nativeBackgroundAndroid={
-    Object {
-      "borderless": true,
-      "color": null,
-      "type": "RippleAndroid",
-    }
-  }
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -129,7 +66,6 @@ exports[`Android BpkTextLink should render correctly with arbitrary props 1`] = 
         Object {
           "color": "rgb(7, 112, 227)",
         },
-        null,
       ],
     ]
   }
@@ -145,14 +81,6 @@ exports[`Android BpkTextLink should support theming 1`] = `
   accessible={true}
   allowFontScaling={false}
   focusable={true}
-  isTVSelectable={true}
-  nativeBackgroundAndroid={
-    Object {
-      "borderless": true,
-      "color": null,
-      "type": "RippleAndroid",
-    }
-  }
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -175,7 +103,6 @@ exports[`Android BpkTextLink should support theming 1`] = `
         Object {
           "color": "rgb(7, 112, 227)",
         },
-        null,
       ],
     ]
   }

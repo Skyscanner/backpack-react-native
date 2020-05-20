@@ -35,14 +35,16 @@ export default () => (
 
 ### BpkTextLink
 
+This component creates a clickable instance of the `BpkText` component and accepts the same props as [`BpkText`](/components/text/?platform=native), alongside the following:
+
 | Property            | PropType                  | Required | Default Value |
 | ------------------- | ------------------------- | -------- | ------------- |
+| accessibilityLabel  | string                    | true     | null          |
 | children            | node                      | true     | -             |
 | onPress             | func                      | true     | -             |
-| accessibilityLabel  | string                    | false    | null          |
 | theme               | See [Theme Props](#theme-props) below     | false    | null          |
 
-This component inherits all props from [`BpkText`](/components/text/?platform=native) component
+
 
 ## Theme Props
 
