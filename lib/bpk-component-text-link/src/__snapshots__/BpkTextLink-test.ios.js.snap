@@ -2,7 +2,7 @@
 
 exports[`iOS BpkTextLink should render correctly 1`] = `
 <Text
-  accessibilityLabel="Tappble link"
+  accessibilityLabel="Tappable link"
   accessibilityRole="link"
   accessible={true}
   allowFontScaling={false}
@@ -39,7 +39,7 @@ exports[`iOS BpkTextLink should render correctly 1`] = `
 
 exports[`iOS BpkTextLink should render correctly with arbitrary props 1`] = `
 <Text
-  accessibilityLabel="Tappble link"
+  accessibilityLabel="Tappable link"
   accessibilityRole="link"
   accessible={true}
   allowFontScaling={false}
@@ -76,7 +76,7 @@ exports[`iOS BpkTextLink should render correctly with arbitrary props 1`] = `
 
 exports[`iOS BpkTextLink should support theming 1`] = `
 <Text
-  accessibilityLabel="Tappble link"
+  accessibilityLabel="Tappable link"
   accessibilityRole="link"
   accessible={true}
   allowFontScaling={false}

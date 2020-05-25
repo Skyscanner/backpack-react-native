@@ -1,6 +1,6 @@
 # bpk-component-text-link
 
-> Backpack React Native text-link component.
+> Backpack React Native text link component.
 
 ## Installation
 
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
 export default () => (
   <View style={styles.container}>
     <BpkText>
-        Check out the website <BpkTextLink accessibilityLabel="link to website" onPress={() => {}}>here</BpkTextLink>
+        Check out the <BpkTextLink accessibilityLabel="link to website" onPress={() => {}}>website</BpkTextLink>
       </BpkText>
   </View>
 );
@@ -35,7 +35,7 @@ export default () => (
 
 ### BpkTextLink
 
-This component creates a clickable instance of the `BpkText` component and accepts the same props as [`BpkText`](/components/text/?platform=native), alongside the following:
+This component creates a pressable instance of the `BpkText` component and accepts the same props as [`BpkText`](/components/text/?platform=native), alongside the following:
 
 | Property            | PropType                  | Required | Default Value |
 | ------------------- | ------------------------- | -------- | ------------- |
@@ -48,4 +48,4 @@ This component creates a clickable instance of the `BpkText` component and accep
 
 ## Theme Props
 
-* `linkTexColor`
+* `linkTextColor`
