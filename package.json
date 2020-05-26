@@ -44,7 +44,7 @@
     "android": "npm run android:copy-fonts && npm run android:emulator & npm run android:build",
     "spellcheck": "mdspell -r --en-gb --ignore-acronyms --ignore-numbers --no-suggestions '*.md' '**/*.md' '!**/node_modules/**/*.md' '!ios/Pods/**/*.md'",
     "spellcheck:interactive": "mdspell --en-gb --ignore-acronyms --ignore-numbers '*.md' '**/*.md' '!**/node_modules/**/*.md' '!ios/Pods/**/*.md'",
-    "start": "react-native start",
+    "start": "react-native start --reset-cache",
     "storybook": "(adb reverse tcp:7007 tcp:7007 || true) && start-storybook",
     "documentation": "node ./scripts/npm/documentation.js",
     "build": "npm run clean:build && ./scripts/build.sh dist"

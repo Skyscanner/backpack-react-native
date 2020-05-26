@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Android BpkTextLink should render correctly 1`] = `
+<Text
+  accessibilityLabel="Tappable link"
+  accessibilityRole="link"
+  accessible={true}
+  allowFontScaling={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Object {
+        "color": "rgb(17, 18, 54)",
+        "fontFamily": "sans-serif",
+        "fontSize": 16,
+        "fontWeight": "400",
+        "letterSpacing": -0.2,
+        "textAlign": "left",
+      },
+      Object {},
+      Array [
+        Object {
+          "color": "rgb(7, 112, 227)",
+        },
+      ],
+    ]
+  }
+>
+  Tappable link
+</Text>
+`;
+
+exports[`Android BpkTextLink should render correctly with arbitrary props 1`] = `
+<Text
+  accessibilityLabel="Tappable link"
+  accessibilityRole="link"
+  accessible={true}
+  allowFontScaling={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Object {
+        "color": "rgb(17, 18, 54)",
+        "fontFamily": "sans-serif",
+        "fontSize": 14,
+        "fontWeight": "400",
+        "letterSpacing": 0,
+        "textAlign": "left",
+      },
+      Object {},
+      Array [
+        Object {
+          "color": "rgb(7, 112, 227)",
+        },
+      ],
+    ]
+  }
+>
+  Tappable link
+</Text>
+`;
+
+exports[`Android BpkTextLink should support theming 1`] = `
+<Text
+  accessibilityLabel="Tappable link"
+  accessibilityRole="link"
+  accessible={true}
+  allowFontScaling={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Object {
+        "color": "rgb(17, 18, 54)",
+        "fontFamily": "sans-serif",
+        "fontSize": 16,
+        "fontWeight": "400",
+        "letterSpacing": -0.2,
+        "textAlign": "left",
+      },
+      Object {},
+      Array [
+        Object {
+          "color": "rgb(7, 112, 227)",
+        },
+      ],
+    ]
+  }
+>
+  Tappable link
+</Text>
+`;

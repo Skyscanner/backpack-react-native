@@ -96,6 +96,7 @@ configure(() => {
   require('../lib/bpk-component-star-rating/stories');
   require('../lib/bpk-component-switch/stories');
   require('../lib/bpk-component-text-input/stories');
+  require('../lib/bpk-component-text-link/stories');
   require('../lib/bpk-component-text/stories');
   require('../lib/bpk-component-touchable-native-feedback/stories');
   require('../lib/bpk-component-touchable-overlay/stories');
