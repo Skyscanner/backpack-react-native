@@ -26,7 +26,7 @@ See [`CHANGELOG.md`](CHANGELOG.md) for real-world examples of good changelog ent
   - New `timeStone` prop for controlling time. See &lt;link to docs site&gt;.
 
 - bpk-component-text
-  - New `inherit` text style making it possible to inherit font size from parent for nested BpkText elements
+  - New `inherit` text style making it possible to inherit font size from parent for nested `BpkText` elements
 
 **Fixed:**
 
