@@ -117,8 +117,8 @@ exports[`iOS BpkButton dark mode should render correctly with type="destructive"
         },
         null,
         Object {
-          "backgroundColor": "rgb(0, 0, 0)",
-          "borderColor": "rgb(72, 72, 74)",
+          "backgroundColor": "rgb(44, 44, 46)",
+          "borderColor": "rgb(104, 105, 127)",
           "borderRadius": 4,
         },
         Object {
@@ -168,7 +168,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="destructive"
           "borderRadius": 4,
         },
         Object {
-          "borderColor": "rgb(72, 72, 74)",
+          "borderColor": "rgb(104, 105, 127)",
           "borderWidth": 2,
         },
       ]
@@ -841,8 +841,8 @@ exports[`iOS BpkButton dark mode should render correctly with type="secondary" 1
         },
         null,
         Object {
-          "backgroundColor": "rgb(0, 0, 0)",
-          "borderColor": "rgb(72, 72, 74)",
+          "backgroundColor": "rgb(44, 44, 46)",
+          "borderColor": "rgb(104, 105, 127)",
           "borderRadius": 4,
         },
         Object {
@@ -892,7 +892,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="secondary" 1
           "borderRadius": 4,
         },
         Object {
-          "borderColor": "rgb(72, 72, 74)",
+          "borderColor": "rgb(104, 105, 127)",
           "borderWidth": 2,
         },
       ]
