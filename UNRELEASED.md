@@ -2,14 +2,6 @@
 
 > Place your changes below this line.
 
-**Added:**
-  - bpk-component-text-link
-    - Added new `BpkTextLink` component
-
-**Fixed:**
-  - bpk-component-button
-    - Fixed dark mode colours for `secondary` and `destructive` buttons.
-
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
@@ -32,9 +24,6 @@ See [`CHANGELOG.md`](CHANGELOG.md) for real-world examples of good changelog ent
 
 - bpk-component-infinity-gauntlet:
   - New `timeStone` prop for controlling time. See &lt;link to docs site&gt;.
-
-- bpk-component-text
-  - New `inherit` text style making it possible to inherit font size from parent for nested `BpkText` elements
 
 **Fixed:**
 

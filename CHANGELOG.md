@@ -1,5 +1,20 @@
 # Backpack changelog
 
+# 3.4.0 - 2020-05-27
+
+**Added:**
+  - bpk-component-text-link
+    - Added new `BpkTextLink` component
+  
+  - bpk-component-text
+    - New `inherit` text style making it possible to inherit font size from parent for nested `BpkText` elements
+
+**Fixed:**
+  - bpk-component-button
+    - Fixed dark mode colours for `secondary` and `destructive` buttons.
+
+    
+
 # 3.3.1 - 2020-05-12
 
 **Fixed:**
