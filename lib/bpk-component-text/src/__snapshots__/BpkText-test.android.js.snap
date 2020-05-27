@@ -113,6 +113,38 @@ exports[`Android BpkText should ignore weight prop if deprecated \`emphasize\` p
 </Text>
 `;
 
+exports[`Android BpkText should render correctly when textStyle is set to inherit 1`] = `
+<Text
+  allowFontScaling={false}
+  style={
+    Array [
+      Object {
+        "color": "rgb(17, 18, 54)",
+        "fontFamily": "sans-serif",
+        "fontSize": 36,
+        "fontWeight": "400",
+        "letterSpacing": -1,
+        "textAlign": "left",
+      },
+      Object {},
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {},
+        Object {},
+      ]
+    }
+  >
+    Inherited text
+  </Text>
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+</Text>
+`;
+
 exports[`Android BpkText should render correctly with deprecated \`emphasize\` prop 1`] = `
 <Text
   allowFontScaling={false}
@@ -216,6 +248,36 @@ exports[`Android BpkText should render correctly with textStyle="caps" 1`] = `
         "letterSpacing": 0.4,
         "textAlign": "left",
       },
+      Object {},
+    ]
+  }
+>
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+</Text>
+`;
+
+exports[`Android BpkText should render correctly with textStyle="inherit and weight="emphasized" 1`] = `
+<Text
+  allowFontScaling={false}
+  style={
+    Array [
+      Object {},
+      Object {
+        "fontFamily": "sans-serif-medium",
+      },
+    ]
+  }
+>
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+</Text>
+`;
+
+exports[`Android BpkText should render correctly with textStyle="inherit" 1`] = `
+<Text
+  allowFontScaling={false}
+  style={
+    Array [
+      Object {},
       Object {},
     ]
   }
@@ -553,6 +615,45 @@ exports[`Android BpkText should render correctly with textStyle="xxxl" 1`] = `
     ]
   }
 >
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+</Text>
+`;
+
+exports[`Android BpkText should use default props when nested textStyle is set to anything other than inherit 1`] = `
+<Text
+  allowFontScaling={false}
+  style={
+    Array [
+      Object {
+        "color": "rgb(17, 18, 54)",
+        "fontFamily": "sans-serif",
+        "fontSize": 36,
+        "fontWeight": "400",
+        "letterSpacing": -1,
+        "textAlign": "left",
+      },
+      Object {},
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(17, 18, 54)",
+          "fontFamily": "sans-serif",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": -0.2,
+          "textAlign": "left",
+        },
+        Object {},
+      ]
+    }
+  >
+    Non-inherited text
+  </Text>
   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 </Text>
 `;

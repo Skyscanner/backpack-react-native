@@ -33,6 +33,9 @@ export default class App extends Component {
         <BpkText textStyle='sm'>Backpack rocks!</BpkText>
         <BpkText textStyle='xs'>Backpack rocks!</BpkText>
         <BpkText textStyle='caps'>BACKPACK ROCKS!</BpkText>
+        <BpkText textStyle='lg'>
+          <BpkText textStyle='inherit' weight='emphasized'>Backpack</BpkText> rocks!
+        </BpkText>
       </View>
     );
   }
@@ -41,12 +44,12 @@ export default class App extends Component {
 
 ## Props
 
-| Property                             | PropType                                             | Required | Default Value |
-| ------------------------------------ | ---------------------------------------------------- | -------- | ------------- |
-| children                             | node                                                 | true     | -             |
-| textStyle                            | oneOf('xxl', 'xl', 'lg', 'base', 'sm', 'xs', 'caps') | false    | base          |
-| weight                               | oneOf('regular', 'emphasized', 'heavy')              | false    | regular       |
-| emphasize (deprecated, use `weight`) | bool                                                 | false    | false         |
+| Property                             | PropType                                                        | Required | Default Value |
+| ------------------------------------ | --------------------------------------------------------------- | -------- | ------------- |
+| children                             | node                                                            | true     | -             |
+| textStyle                            | oneOf('xxl', 'xl', 'lg', 'base', 'sm', 'xs', 'caps', 'inherit')   | false    | base          |
+| weight                               | oneOf('regular', 'emphasized', 'heavy')                         | false    | regular       |
+| emphasize (deprecated, use `weight`) | bool                                                            | false    | false         |
 
 ## Theme props
 
