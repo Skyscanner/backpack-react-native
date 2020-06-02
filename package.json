@@ -77,7 +77,7 @@
     "@storybook/addon-actions": "^5.3.18",
     "@storybook/addon-ondevice-actions": "^5.3.18",
     "@storybook/react-native": "^5.3.18",
-    "@storybook/react-native-server": "5.2.8",
+    "@storybook/react-native-server": "5.3.0",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
     "babel-plugin-jest-hoist": "^24.9.0",
