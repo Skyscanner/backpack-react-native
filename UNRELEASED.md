@@ -2,7 +2,10 @@
 
 > Place your changes below this line.
 
-**Added:**
+**Breaking:**
+
+- bpk-theming:
+  - `ref`s passed to components wrapped in `withTheme` now behave correctly, using React's [forwarding refs behaviour](https://reactjs.org/docs/forwarding-refs.html). Previously, `ref`s would get passed to the `withTheme` HOC. Therefore this change is only breaking if you were using `withTheme` with `ref`s.
 
 - bpk-component-banner-alert
   - Added new `event` style banner alert
