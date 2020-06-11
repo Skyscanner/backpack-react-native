@@ -21,9 +21,7 @@ exports[`Android BpkCarousel should render correctly 1`] = `
           <BpkCarouselItem
             style={null}
           >
-            <withTheme(BpkText)
-              forwardedRef={null}
-            >
+            <withTheme(BpkText)>
               View 1
             </withTheme(BpkText)>
           </BpkCarouselItem>,
@@ -69,9 +67,7 @@ exports[`Android BpkCarousel should render correctly 1`] = `
                   <BpkCarouselItem
                     style={null}
                   >
-                    <withTheme(BpkText)
-                      forwardedRef={null}
-                    >
+                    <withTheme(BpkText)>
                       View 1
                     </withTheme(BpkText)>
                   </BpkCarouselItem>,
@@ -232,9 +228,7 @@ exports[`Android BpkCarousel should render correctly with an "accessibilityLabel
           <BpkCarouselItem
             style={null}
           >
-            <withTheme(BpkText)
-              forwardedRef={null}
-            >
+            <withTheme(BpkText)>
               View 1
             </withTheme(BpkText)>
           </BpkCarouselItem>,
@@ -280,9 +274,7 @@ exports[`Android BpkCarousel should render correctly with an "accessibilityLabel
                   <BpkCarouselItem
                     style={null}
                   >
-                    <withTheme(BpkText)
-                      forwardedRef={null}
-                    >
+                    <withTheme(BpkText)>
                       View 1
                     </withTheme(BpkText)>
                   </BpkCarouselItem>,
@@ -364,9 +356,7 @@ exports[`Android BpkCarousel should render correctly with an "accessibilityLabel
                   <BpkCarouselItem
                     style={null}
                   >
-                    <withTheme(BpkText)
-                      forwardedRef={null}
-                    >
+                    <withTheme(BpkText)>
                       View 1
                     </withTheme(BpkText)>
                   </BpkCarouselItem>,
@@ -535,9 +525,7 @@ exports[`Android BpkCarousel should render correctly without indicators 1`] = `
           <BpkCarouselItem
             style={null}
           >
-            <withTheme(BpkText)
-              forwardedRef={null}
-            >
+            <withTheme(BpkText)>
               View 1
             </withTheme(BpkText)>
           </BpkCarouselItem>,
@@ -583,9 +571,7 @@ exports[`Android BpkCarousel should render correctly without indicators 1`] = `
                   <BpkCarouselItem
                     style={null}
                   >
-                    <withTheme(BpkText)
-                      forwardedRef={null}
-                    >
+                    <withTheme(BpkText)>
                       View 1
                     </withTheme(BpkText)>
                   </BpkCarouselItem>,
@@ -671,9 +657,7 @@ exports[`Android BpkCarousel should render correctly without indicators 1`] = `
                   <BpkCarouselItem
                     style={null}
                   >
-                    <withTheme(BpkText)
-                      forwardedRef={null}
-                    >
+                    <withTheme(BpkText)>
                       View 1
                     </withTheme(BpkText)>
                   </BpkCarouselItem>,
@@ -759,9 +743,7 @@ exports[`Android BpkCarousel should render correctly without indicators 1`] = `
                   <BpkCarouselItem
                     style={null}
                   >
-                    <withTheme(BpkText)
-                      forwardedRef={null}
-                    >
+                    <withTheme(BpkText)>
                       View 1
                     </withTheme(BpkText)>
                   </BpkCarouselItem>,
