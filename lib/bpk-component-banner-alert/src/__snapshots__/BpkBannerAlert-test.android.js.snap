@@ -687,6 +687,186 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
 </View>
 `;
 
+exports[`Android BpkBannerAlert dark mode should render correctly with type equal to event 1`] = `
+<View
+  style={
+    Object {
+      "borderRadius": 0,
+      "height": null,
+      "opacity": 1,
+      "overflow": "hidden",
+    }
+  }
+>
+  <View
+    collapsable={false}
+    style={
+      Array [
+        null,
+        Object {
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(29, 27, 32)",
+            "borderRadius": 4,
+            "minHeight": 1,
+          },
+          null,
+        ]
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "minHeight": 48,
+            "paddingHorizontal": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "rgb(255, 255, 255)",
+                "fontFamily": "BpkIcon",
+                "fontSize": 24,
+                "includeFontPadding": false,
+              },
+              Object {
+                "fontSize": 16,
+              },
+              Array [
+                Object {
+                  "marginEnd": 8,
+                },
+                Object {
+                  "color": "rgb(90, 72, 155)",
+                },
+              ],
+            ]
+          }
+        >
+          
+        </Text>
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "rgb(255, 255, 255)",
+                "fontFamily": "sans-serif",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "letterSpacing": 0,
+                "textAlign": "left",
+              },
+              Object {},
+              Object {
+                "flex": 1,
+              },
+            ]
+          }
+        >
+          event alert.
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        null,
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(29, 27, 32)",
+            "borderRadius": 4,
+            "minHeight": 1,
+          },
+          null,
+        ]
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "minHeight": 48,
+            "paddingHorizontal": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "rgb(255, 255, 255)",
+                "fontFamily": "BpkIcon",
+                "fontSize": 24,
+                "includeFontPadding": false,
+              },
+              Object {
+                "fontSize": 16,
+              },
+              Array [
+                Object {
+                  "marginEnd": 8,
+                },
+                Object {
+                  "color": "rgb(90, 72, 155)",
+                },
+              ],
+            ]
+          }
+        >
+          
+        </Text>
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "rgb(255, 255, 255)",
+                "fontFamily": "sans-serif",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "letterSpacing": 0,
+                "textAlign": "left",
+              },
+              Object {},
+              Object {
+                "flex": 1,
+              },
+            ]
+          }
+        >
+          event alert.
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
 exports[`Android BpkBannerAlert dark mode should render correctly with type equal to neutral 1`] = `
 <View
   style={
@@ -2087,6 +2267,186 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
           }
         >
           error alert.
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Android BpkBannerAlert light mode should render correctly with type equal to event 1`] = `
+<View
+  style={
+    Object {
+      "borderRadius": 0,
+      "height": null,
+      "opacity": 1,
+      "overflow": "hidden",
+    }
+  }
+>
+  <View
+    collapsable={false}
+    style={
+      Array [
+        null,
+        Object {
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(241, 242, 248)",
+            "borderRadius": 4,
+            "minHeight": 1,
+          },
+          null,
+        ]
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "minHeight": 48,
+            "paddingHorizontal": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "rgb(17, 18, 54)",
+                "fontFamily": "BpkIcon",
+                "fontSize": 24,
+                "includeFontPadding": false,
+              },
+              Object {
+                "fontSize": 16,
+              },
+              Array [
+                Object {
+                  "marginEnd": 8,
+                },
+                Object {
+                  "color": "rgb(90, 72, 155)",
+                },
+              ],
+            ]
+          }
+        >
+          
+        </Text>
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "rgb(17, 18, 54)",
+                "fontFamily": "sans-serif",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "letterSpacing": 0,
+                "textAlign": "left",
+              },
+              Object {},
+              Object {
+                "flex": 1,
+              },
+            ]
+          }
+        >
+          event alert.
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        null,
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(241, 242, 248)",
+            "borderRadius": 4,
+            "minHeight": 1,
+          },
+          null,
+        ]
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "minHeight": 48,
+            "paddingHorizontal": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "rgb(17, 18, 54)",
+                "fontFamily": "BpkIcon",
+                "fontSize": 24,
+                "includeFontPadding": false,
+              },
+              Object {
+                "fontSize": 16,
+              },
+              Array [
+                Object {
+                  "marginEnd": 8,
+                },
+                Object {
+                  "color": "rgb(90, 72, 155)",
+                },
+              ],
+            ]
+          }
+        >
+          
+        </Text>
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "rgb(17, 18, 54)",
+                "fontFamily": "sans-serif",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "letterSpacing": 0,
+                "textAlign": "left",
+              },
+              Object {},
+              Object {
+                "flex": 1,
+              },
+            ]
+          }
+        >
+          event alert.
         </Text>
       </View>
     </View>
