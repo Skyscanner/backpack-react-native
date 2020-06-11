@@ -21,7 +21,9 @@ exports[`IOS BpkCarousel should render correctly 1`] = `
           <BpkCarouselItem
             style={null}
           >
-            <withTheme(BpkText)>
+            <withTheme(BpkText)
+              forwardedRef={null}
+            >
               View 1
             </withTheme(BpkText)>
           </BpkCarouselItem>,
@@ -67,7 +69,9 @@ exports[`IOS BpkCarousel should render correctly 1`] = `
                   <BpkCarouselItem
                     style={null}
                   >
-                    <withTheme(BpkText)>
+                    <withTheme(BpkText)
+                      forwardedRef={null}
+                    >
                       View 1
                     </withTheme(BpkText)>
                   </BpkCarouselItem>,
@@ -228,7 +232,9 @@ exports[`IOS BpkCarousel should render correctly with an "accessibilityLabel" fu
           <BpkCarouselItem
             style={null}
           >
-            <withTheme(BpkText)>
+            <withTheme(BpkText)
+              forwardedRef={null}
+            >
               View 1
             </withTheme(BpkText)>
           </BpkCarouselItem>,
@@ -274,7 +280,9 @@ exports[`IOS BpkCarousel should render correctly with an "accessibilityLabel" fu
                   <BpkCarouselItem
                     style={null}
                   >
-                    <withTheme(BpkText)>
+                    <withTheme(BpkText)
+                      forwardedRef={null}
+                    >
                       View 1
                     </withTheme(BpkText)>
                   </BpkCarouselItem>,
@@ -356,7 +364,9 @@ exports[`IOS BpkCarousel should render correctly with an "accessibilityLabel" fu
                   <BpkCarouselItem
                     style={null}
                   >
-                    <withTheme(BpkText)>
+                    <withTheme(BpkText)
+                      forwardedRef={null}
+                    >
                       View 1
                     </withTheme(BpkText)>
                   </BpkCarouselItem>,
@@ -525,7 +535,9 @@ exports[`IOS BpkCarousel should render correctly without indicators 1`] = `
           <BpkCarouselItem
             style={null}
           >
-            <withTheme(BpkText)>
+            <withTheme(BpkText)
+              forwardedRef={null}
+            >
               View 1
             </withTheme(BpkText)>
           </BpkCarouselItem>,
@@ -571,7 +583,9 @@ exports[`IOS BpkCarousel should render correctly without indicators 1`] = `
                   <BpkCarouselItem
                     style={null}
                   >
-                    <withTheme(BpkText)>
+                    <withTheme(BpkText)
+                      forwardedRef={null}
+                    >
                       View 1
                     </withTheme(BpkText)>
                   </BpkCarouselItem>,
@@ -657,7 +671,9 @@ exports[`IOS BpkCarousel should render correctly without indicators 1`] = `
                   <BpkCarouselItem
                     style={null}
                   >
-                    <withTheme(BpkText)>
+                    <withTheme(BpkText)
+                      forwardedRef={null}
+                    >
                       View 1
                     </withTheme(BpkText)>
                   </BpkCarouselItem>,
@@ -743,7 +759,9 @@ exports[`IOS BpkCarousel should render correctly without indicators 1`] = `
                   <BpkCarouselItem
                     style={null}
                   >
-                    <withTheme(BpkText)>
+                    <withTheme(BpkText)
+                      forwardedRef={null}
+                    >
                       View 1
                     </withTheme(BpkText)>
                   </BpkCarouselItem>,

@@ -11,18 +11,23 @@ exports[`iOS BpkStarRating should render correctly 1`] = `
   }
 >
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="full"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="full"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="full"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="empty"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="empty"
   />
 </View>
@@ -39,33 +44,43 @@ exports[`iOS BpkStarRating should render correctly with custom \`maxRating\` att
   }
 >
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="full"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="full"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="full"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="empty"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="empty"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="empty"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="empty"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="empty"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="empty"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="empty"
   />
 </View>
@@ -82,33 +97,43 @@ exports[`iOS BpkStarRating should render correctly with ratingLabel passed as a 
   }
 >
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="full"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="full"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="full"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="empty"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="empty"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="empty"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="empty"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="empty"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="empty"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="empty"
   />
 </View>
@@ -125,18 +150,23 @@ exports[`iOS BpkStarRating should render correctly with stars rounded down 1`] =
   }
 >
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="full"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="full"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="full"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="empty"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="empty"
   />
 </View>
@@ -153,18 +183,23 @@ exports[`iOS BpkStarRating should render correctly with stars rounded down to ha
   }
 >
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="full"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="full"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="full"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="half"
   />
   <withTheme(BpkStar)
+    forwardedRef={null}
     type="empty"
   />
 </View>
