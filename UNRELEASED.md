@@ -2,10 +2,10 @@
 
 > Place your changes below this line.
 
-**Added:**
+**Breaking:**
 
 - bpk-theming:
-  - Added `forwardedRef` prop to `withTheme` HOC, for passing down custom refs to the wrapped component.
+  - `ref`s passed to components wrapped in `withTheme` now behave correctly, using React's [forwarding refs behaviour](https://reactjs.org/docs/forwarding-refs.html). Previously, `ref`s would get passed to the `withTheme` HOC. Therefore this change is only breaking if you were using `withTheme` with `ref`s.
 
 ## How to write a good changelog entry
 
