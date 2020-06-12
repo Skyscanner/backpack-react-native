@@ -1,11 +1,23 @@
 # Backpack changelog
 
+# 4.0.0 - 2020-06-12
+
+**Breaking:**
+
+- bpk-theming:
+  - `ref`s passed to components wrapped in `withTheme` now behave correctly, using React's [forwarding refs behaviour](https://reactjs.org/docs/forwarding-refs.html). Previously, `ref`s would get passed to the `withTheme` HOC. Therefore this change is only breaking if you were using `withTheme` with `ref`s.
+
+**Added:**
+
+- bpk-component-banner-alert
+  - Added new `event` style banner alert.
+
 # 3.4.0 - 2020-05-27
 
 **Added:**
   - bpk-component-text-link
     - Added new `BpkTextLink` component
-  
+
   - bpk-component-text
     - New `inherit` text style making it possible to inherit font size from parent for nested `BpkText` elements
 
@@ -13,7 +25,7 @@
   - bpk-component-button
     - Fixed dark mode colours for `secondary` and `destructive` buttons.
 
-    
+
 
 # 3.3.1 - 2020-05-12
 
