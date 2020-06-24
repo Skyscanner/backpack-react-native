@@ -100,7 +100,7 @@
     "metro-react-native-babel-preset": "^0.59.0",
     "prop-types": "^15.5.10",
     "react": "16.9.0",
-    "react-dom": "16.9.0",
+    "react-dom": "16.13.0",
     "react-native": "0.61.5",
     "react-native-dotenv": "^0.2.0",
     "react-native-linear-gradient": "^2.5.3",
