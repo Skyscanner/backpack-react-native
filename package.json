@@ -90,7 +90,7 @@
     "eslint-plugin-flowtype": "^4.0.0",
     "eslint-plugin-react-hooks": "^1.7.0",
     "eslint_d": "^8.1.1",
-    "flow-bin": "^0.107.0",
+    "flow-bin": "^0.128.0",
     "globby": "^11.0.0",
     "husky": "^4.0.2",
     "jest": "^25.1.0",
