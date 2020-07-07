@@ -1,5 +1,12 @@
 # Backpack changelog
 
+# 4.0.1 - 2020-07-07
+
+**Changed:**
+
+- bpk-theming:
+  - `withTheme` using a ref is now correctly named.
+
 # 4.0.0 - 2020-06-12
 
 **Breaking:**
