@@ -2,6 +2,10 @@
 
 > Place your changes below this line.
 
+**Added:**
+- bpk-theming:
+  - Added `withThemeForwardRef`, which is the same as `withTheme` but uses React's [forwarding refs behaviour](https://reactjs.org/docs/forwarding-refs.html). Use this when you need to use `ref` with `withTheme` to pass them down correctly.
+
 **Changed:**
 - bpk-theming:
   - Reverted the changes made in `4.0.0` and `4.0.1` as they caused some issues.
