@@ -3,9 +3,8 @@
 > Place your changes below this line.
 
 **Changed:**
-
 - bpk-theming:
-  - Added more context to `BpkThemeAttributes` deprecation.
+  - Reverted the changes made in `4.0.0` and `4.0.1` as they caused some issues.
 
 ## How to write a good changelog entry
 
