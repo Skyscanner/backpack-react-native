@@ -111,5 +111,9 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "bpk-svgs": "^11.2.0",
+    "bpk-tokens": "^32.0.5"
   }
 }
