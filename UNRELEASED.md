@@ -2,16 +2,6 @@
 
 > Place your changes below this line.
 
-**Changed:**
- - bpk-component-icon:
-   - The [new Skyscanner icon set](https://backpack.github.io/components/icon?platform=design) is now available for React Native.
-- bpk-component-star-rating:
-  - Updated the star rating component to use the new icon set correctly.
-
-**Added:**
- - bpk-theming:
-   - Reverted the changes to `withTheme` made in `4.0.0` and `4.0.1` as they caused some issues, adding a new `withThemeForwardRef` HOC instead to get React's [forwarding refs behaviour](https://reactjs.org/docs/forwarding-refs.html) when using `withTheme`.
-
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).

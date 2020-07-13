@@ -129,7 +129,7 @@ const isCleanWorkingDirClean = () => {
  * @return {Promise} a promise object
  */
 async function checkEnv() {
-  console.log('🤔  ', '> Checking enviroment');
+  console.log('🤔  ', '> Checking environment');
   await isBranchUpTodate();
   await isGradleAuthenticated();
   isMasterBranch();
