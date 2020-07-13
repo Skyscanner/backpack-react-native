@@ -76,7 +76,7 @@ exports[`android BpkNavigationBar should render correctly 1`] = `
             ]
           }
         >
-          
+          
         </Text>
       </View>
     </View>
@@ -208,7 +208,7 @@ exports[`android BpkNavigationBar should render correctly with a subtitle view 1
             ]
           }
         >
-          
+          
         </Text>
       </View>
     </View>
@@ -348,7 +348,7 @@ exports[`android BpkNavigationBar should render correctly with a title view 1`] 
             ]
           }
         >
-          
+          
         </Text>
       </View>
     </View>
@@ -457,7 +457,7 @@ exports[`android BpkNavigationBar should render correctly with an icon in the ti
             ]
           }
         >
-          
+          
         </Text>
       </View>
     </View>
@@ -617,7 +617,7 @@ exports[`android BpkNavigationBar should render correctly with custom style 1`] 
             ]
           }
         >
-          
+          
         </Text>
       </View>
     </View>
@@ -749,7 +749,7 @@ exports[`android BpkNavigationBar should render correctly with custom theme 1`] 
             ]
           }
         >
-          
+          
         </Text>
       </View>
     </View>
@@ -878,7 +878,7 @@ exports[`android BpkNavigationBar should render correctly with trailing button 1
             ]
           }
         >
-          
+          
         </Text>
       </View>
     </View>
@@ -977,7 +977,7 @@ exports[`android BpkNavigationBar should render correctly with trailing button 1
             ]
           }
         >
-          
+          
         </Text>
       </View>
     </View>
@@ -1063,7 +1063,7 @@ exports[`android should forward custom props 1`] = `
             ]
           }
         >
-          
+          
         </Text>
       </View>
     </View>
@@ -1163,7 +1163,7 @@ exports[`android should forward custom props 1`] = `
             ]
           }
         >
-          
+          
         </Text>
       </View>
     </View>

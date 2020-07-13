@@ -50,7 +50,7 @@ exports[`iOS BpkFlatListSearchField dark mode should render correctly 1`] = `
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -106,7 +106,7 @@ exports[`iOS BpkFlatListSearchField dark mode should support arbitrary props 1`]
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -163,7 +163,7 @@ exports[`iOS BpkFlatListSearchField dark mode should support userland styles 1`]
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -218,7 +218,7 @@ exports[`iOS BpkFlatListSearchField light mode should render correctly 1`] = `
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -274,7 +274,7 @@ exports[`iOS BpkFlatListSearchField light mode should support arbitrary props 1`
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -331,7 +331,7 @@ exports[`iOS BpkFlatListSearchField light mode should support userland styles 1`
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;

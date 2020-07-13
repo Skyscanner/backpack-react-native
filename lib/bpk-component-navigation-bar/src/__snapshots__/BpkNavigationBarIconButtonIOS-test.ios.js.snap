@@ -47,7 +47,7 @@ exports[`iOS BpkNavigationBarIconButtonIOS dark mode should render correctly 1`]
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -103,7 +103,7 @@ exports[`iOS BpkNavigationBarIconButtonIOS dark mode should render correctly dis
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -155,7 +155,7 @@ exports[`iOS BpkNavigationBarIconButtonIOS dark mode should render correctly lea
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -211,7 +211,7 @@ exports[`iOS BpkNavigationBarIconButtonIOS dark mode should resepect "disabledTi
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -263,7 +263,7 @@ exports[`iOS BpkNavigationBarIconButtonIOS dark mode should resepect "tintColor"
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -315,7 +315,7 @@ exports[`iOS BpkNavigationBarIconButtonIOS light mode should render correctly 1`
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -371,7 +371,7 @@ exports[`iOS BpkNavigationBarIconButtonIOS light mode should render correctly di
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -423,7 +423,7 @@ exports[`iOS BpkNavigationBarIconButtonIOS light mode should render correctly le
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -479,7 +479,7 @@ exports[`iOS BpkNavigationBarIconButtonIOS light mode should resepect "disabledT
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -531,7 +531,7 @@ exports[`iOS BpkNavigationBarIconButtonIOS light mode should resepect "tintColor
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -584,7 +584,7 @@ exports[`iOS BpkNavigationBarIconButtonIOS should forward custom props 1`] = `
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
