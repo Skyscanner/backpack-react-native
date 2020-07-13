@@ -5,6 +5,8 @@
 **Changed:**
  - bpk-component-icon:
    - The [new Skyscanner icon set](https://backpack.github.io/components/icon?platform=design) is now available for React Native.
+- bpk-component-star-rating:
+  - Updated the star rating component to use the new icon set correctly.
 
 **Added:**
  - bpk-theming:
