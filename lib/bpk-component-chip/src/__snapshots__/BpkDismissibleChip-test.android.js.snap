@@ -716,7 +716,7 @@ exports[`Android BpkDismissibleChip should render correctly with a supplied icon
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}

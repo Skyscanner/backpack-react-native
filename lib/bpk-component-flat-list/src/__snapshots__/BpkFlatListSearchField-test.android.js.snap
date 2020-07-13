@@ -54,7 +54,7 @@ exports[`Android BpkFlatListSearchField dark mode should render correctly 1`] = 
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -114,7 +114,7 @@ exports[`Android BpkFlatListSearchField dark mode should support arbitrary props
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -175,7 +175,7 @@ exports[`Android BpkFlatListSearchField dark mode should support userland styles
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -234,7 +234,7 @@ exports[`Android BpkFlatListSearchField light mode should render correctly 1`] =
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -294,7 +294,7 @@ exports[`Android BpkFlatListSearchField light mode should support arbitrary prop
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -355,7 +355,7 @@ exports[`Android BpkFlatListSearchField light mode should support userland style
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;

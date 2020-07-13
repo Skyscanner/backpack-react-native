@@ -3288,7 +3288,7 @@ exports[`iOS should support the "icon" and "large" property 1`] = `
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -3413,7 +3413,7 @@ exports[`iOS should support the "iconOnly" and "large" property 1`] = `
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View

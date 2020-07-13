@@ -761,7 +761,7 @@ exports[`iOS BpkDismissibleChip should render correctly with a supplied icon 1`]
       ]
     }
   >
-    
+    
   </Text>
   <Text
     allowFontScaling={false}
