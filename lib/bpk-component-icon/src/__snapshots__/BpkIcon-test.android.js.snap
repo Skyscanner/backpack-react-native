@@ -17,7 +17,7 @@ exports[`Android BpkIcon dark mode should apply user props 1`] = `
     ]
   }
 >
-  
+  
 </Text>
 `;
 
@@ -35,7 +35,7 @@ exports[`Android BpkIcon dark mode should render correctly 1`] = `
     ]
   }
 >
-  
+  
 </Text>
 `;
 
@@ -56,7 +56,7 @@ exports[`Android BpkIcon light mode should apply user props 1`] = `
     ]
   }
 >
-  
+  
 </Text>
 `;
 
@@ -74,7 +74,7 @@ exports[`Android BpkIcon light mode should render correctly 1`] = `
     ]
   }
 >
-  
+  
 </Text>
 `;
 
