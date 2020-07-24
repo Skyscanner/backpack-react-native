@@ -1,5 +1,18 @@
 # Backpack changelog
 
+# 5.0.0 - 2020-07-24
+
+**Breaking:**
+ - Minimum deployment target for iOS is now 12 (was 11).
+
+**Added:**
+- bpk-theming:
+  - Added `withThemeForwardRef`, which is the same as `withTheme` but uses React's [forwarding refs behaviour](https://reactjs.org/docs/forwarding-refs.html). Use this when you need to use `ref` with `withTheme` to pass them down correctly.
+
+**Changed:**
+- bpk-theming:
+  - Reverted the changes made in `4.0.0` and `4.0.1` as they caused some issues.
+
 # 4.1.0 - 2020-07-13
 
 **Changed:**
