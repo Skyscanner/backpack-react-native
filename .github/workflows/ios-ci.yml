@@ -2,36 +2,38 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   build:
     runs-on: macos-10.15
 
     steps:
-    # Checkout the repo
-    - uses: actions/checkout@v2
+      # Checkout the repo
+      - uses: actions/checkout@v2
 
-    - name: brew install
-      run: brew install clang-format
+      - name: select xcode 11.5
+        run: sudo xcode-select -switch /Applications/Xcode_11.5.app
 
-    - name: npm install
-      run: npm ci
+      - name: brew install
+        run: brew install clang-format
 
-    - name: install bundler
-      run: gem install bundler --version 2.0.2
+      - name: npm install
+        run: npm ci
 
-    - name: bundler install
-      run: bundle install
-      working-directory: ./ios
+      - name: install bundler
+        run: gem install bundler --version 2.0.2
 
-    - name: CocoaPod install
-      run: bundle exec pod install
-      working-directory: ./ios
+      - name: bundler install
+        run: bundle install
+        working-directory: ./ios
 
-    - name: CI
-      run: bundle exec rake ci
-      working-directory: ./ios
+      - name: CocoaPod install
+        run: bundle exec pod install
+        working-directory: ./ios
 
+      - name: CI
+        run: bundle exec rake ci
+        working-directory: ./ios
