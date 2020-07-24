@@ -2,6 +2,9 @@
 
 > Place your changes below this line.
 
+**Breaking:**
+ - Minimum deployment target for iOS is now 12 (was 11).
+
 **Added:**
 - bpk-theming:
   - Added `withThemeForwardRef`, which is the same as `withTheme` but uses React's [forwarding refs behaviour](https://reactjs.org/docs/forwarding-refs.html). Use this when you need to use `ref` with `withTheme` to pass them down correctly.
