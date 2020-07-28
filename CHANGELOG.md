@@ -1,5 +1,11 @@
 # Backpack changelog
 
+# 5.0.1 - 2020-07-28
+
+**Fixed:**
+- Fixed icons that weren't displaying.
+- Fixed large icons being used for small icons and vice-versa.
+
 # 5.0.0 - 2020-07-24
 
 **Breaking:**
