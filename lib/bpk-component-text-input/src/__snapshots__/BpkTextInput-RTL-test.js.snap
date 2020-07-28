@@ -560,7 +560,7 @@ exports[`RTL BpkTextInput dark mode should render correctly with description, va
           ]
         }
       >
-        
+        
       </Text>
     </View>
   </View>
@@ -974,7 +974,7 @@ exports[`RTL BpkTextInput dark mode should render correctly with valid 1`] = `
           ]
         }
       >
-        
+        
       </Text>
     </View>
   </View>
@@ -1074,7 +1074,7 @@ exports[`RTL BpkTextInput dark mode should render correctly with valid false 1`]
           ]
         }
       >
-        
+        
       </Text>
     </View>
   </View>
@@ -1174,7 +1174,7 @@ exports[`RTL BpkTextInput dark mode should render correctly with valid false and
           ]
         }
       >
-        
+        
       </Text>
     </View>
   </View>
@@ -1985,7 +1985,7 @@ exports[`RTL BpkTextInput light mode should render correctly with description, v
           ]
         }
       >
-        
+        
       </Text>
     </View>
   </View>
@@ -2399,7 +2399,7 @@ exports[`RTL BpkTextInput light mode should render correctly with valid 1`] = `
           ]
         }
       >
-        
+        
       </Text>
     </View>
   </View>
@@ -2499,7 +2499,7 @@ exports[`RTL BpkTextInput light mode should render correctly with valid false 1`
           ]
         }
       >
-        
+        
       </Text>
     </View>
   </View>
@@ -2599,7 +2599,7 @@ exports[`RTL BpkTextInput light mode should render correctly with valid false an
           ]
         }
       >
-        
+        
       </Text>
     </View>
   </View>

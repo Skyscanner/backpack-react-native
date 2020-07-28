@@ -278,7 +278,7 @@ exports[`iOS BpkButtonLink dark mode should support the "icon" property 1`] = `
         ]
       }
     >
-      
+      
     </Text>
   </View>
 </View>
@@ -562,7 +562,7 @@ exports[`iOS BpkButtonLink light mode should support the "icon" property 1`] = `
         ]
       }
     >
-      
+      
     </Text>
   </View>
 </View>
@@ -656,7 +656,7 @@ exports[`iOS BpkButtonLink should render correctly with iconAlignment="leading" 
         ]
       }
     >
-      
+      
     </Text>
   </View>
 </View>
@@ -743,7 +743,7 @@ exports[`iOS BpkButtonLink should render correctly with iconAlignment="trailing"
         ]
       }
     >
-      
+      
     </Text>
   </View>
 </View>
@@ -1040,7 +1040,7 @@ exports[`iOS should support the "icon" and "large" property 1`] = `
         ]
       }
     >
-      
+      
     </Text>
   </View>
 </View>

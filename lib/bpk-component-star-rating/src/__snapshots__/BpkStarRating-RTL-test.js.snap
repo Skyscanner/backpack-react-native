@@ -36,7 +36,7 @@ exports[`RTL BpkStar dark mode should render correctly when empty 1`] = `
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -77,7 +77,7 @@ exports[`RTL BpkStar dark mode should render correctly when full 1`] = `
       ]
     }
   >
-    
+    
   </Text>
   <Text
     allowFontScaling={false}
@@ -111,7 +111,7 @@ exports[`RTL BpkStar dark mode should render correctly when full 1`] = `
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -152,7 +152,7 @@ exports[`RTL BpkStar dark mode should render correctly when half 1`] = `
       ]
     }
   >
-    
+    
   </Text>
   <Text
     allowFontScaling={false}
@@ -193,7 +193,7 @@ exports[`RTL BpkStar dark mode should render correctly when half 1`] = `
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -237,7 +237,7 @@ exports[`RTL BpkStar dark mode should support theming when empty 1`] = `
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -281,7 +281,7 @@ exports[`RTL BpkStar dark mode should support theming when full 1`] = `
       ]
     }
   >
-    
+    
   </Text>
   <Text
     allowFontScaling={false}
@@ -318,7 +318,7 @@ exports[`RTL BpkStar dark mode should support theming when full 1`] = `
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -362,7 +362,7 @@ exports[`RTL BpkStar dark mode should support theming when half 1`] = `
       ]
     }
   >
-    
+    
   </Text>
   <Text
     allowFontScaling={false}
@@ -406,7 +406,7 @@ exports[`RTL BpkStar dark mode should support theming when half 1`] = `
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -447,7 +447,7 @@ exports[`RTL BpkStar light mode should render correctly when empty 1`] = `
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -488,7 +488,7 @@ exports[`RTL BpkStar light mode should render correctly when full 1`] = `
       ]
     }
   >
-    
+    
   </Text>
   <Text
     allowFontScaling={false}
@@ -522,7 +522,7 @@ exports[`RTL BpkStar light mode should render correctly when full 1`] = `
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -563,7 +563,7 @@ exports[`RTL BpkStar light mode should render correctly when half 1`] = `
       ]
     }
   >
-    
+    
   </Text>
   <Text
     allowFontScaling={false}
@@ -604,7 +604,7 @@ exports[`RTL BpkStar light mode should render correctly when half 1`] = `
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -648,7 +648,7 @@ exports[`RTL BpkStar light mode should support theming when empty 1`] = `
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -692,7 +692,7 @@ exports[`RTL BpkStar light mode should support theming when full 1`] = `
       ]
     }
   >
-    
+    
   </Text>
   <Text
     allowFontScaling={false}
@@ -729,7 +729,7 @@ exports[`RTL BpkStar light mode should support theming when full 1`] = `
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -773,7 +773,7 @@ exports[`RTL BpkStar light mode should support theming when half 1`] = `
       ]
     }
   >
-    
+    
   </Text>
   <Text
     allowFontScaling={false}
@@ -817,7 +817,7 @@ exports[`RTL BpkStar light mode should support theming when half 1`] = `
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;

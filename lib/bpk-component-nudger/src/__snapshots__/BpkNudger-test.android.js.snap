@@ -105,7 +105,7 @@ exports[`Android BpkNudger should render correctly 1`] = `
           ]
         }
       >
-        
+        
       </Text>
     </View>
   </View>
@@ -226,7 +226,7 @@ exports[`Android BpkNudger should render correctly 1`] = `
           ]
         }
       >
-        
+        
       </Text>
     </View>
   </View>
@@ -342,7 +342,7 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
           ]
         }
       >
-        
+        
       </Text>
     </View>
   </View>
@@ -463,7 +463,7 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
           ]
         }
       >
-        
+        
       </Text>
     </View>
   </View>
@@ -575,7 +575,7 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
           ]
         }
       >
-        
+        
       </Text>
     </View>
   </View>
@@ -700,7 +700,7 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
           ]
         }
       >
-        
+        
       </Text>
     </View>
   </View>
@@ -816,7 +816,7 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
           ]
         }
       >
-        
+        
       </Text>
     </View>
   </View>
@@ -937,7 +937,7 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
           ]
         }
       >
-        
+        
       </Text>
     </View>
   </View>

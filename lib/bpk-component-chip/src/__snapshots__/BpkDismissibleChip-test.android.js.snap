@@ -94,7 +94,7 @@ exports[`Android BpkDismissibleChip dark mode should render correctly 1`] = `
         ]
       }
     >
-      
+      
     </Text>
   </View>
 </View>
@@ -203,7 +203,7 @@ exports[`Android BpkDismissibleChip dark mode should render correctly with "disa
         ]
       }
     >
-      
+      
     </Text>
   </View>
 </View>
@@ -319,7 +319,7 @@ exports[`Android BpkDismissibleChip dark mode should render outline correctly 1`
         ]
       }
     >
-      
+      
     </Text>
   </View>
 </View>
@@ -419,7 +419,7 @@ exports[`Android BpkDismissibleChip light mode should render correctly 1`] = `
         ]
       }
     >
-      
+      
     </Text>
   </View>
 </View>
@@ -528,7 +528,7 @@ exports[`Android BpkDismissibleChip light mode should render correctly with "dis
         ]
       }
     >
-      
+      
     </Text>
   </View>
 </View>
@@ -644,7 +644,7 @@ exports[`Android BpkDismissibleChip light mode should render outline correctly 1
         ]
       }
     >
-      
+      
     </Text>
   </View>
 </View>
@@ -716,7 +716,7 @@ exports[`Android BpkDismissibleChip should render correctly with a supplied icon
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -768,7 +768,7 @@ exports[`Android BpkDismissibleChip should render correctly with a supplied icon
         ]
       }
     >
-      
+      
     </Text>
   </View>
 </View>
@@ -869,7 +869,7 @@ exports[`Android BpkDismissibleChip should render correctly with arbitrary props
         ]
       }
     >
-      
+      
     </Text>
   </View>
 </View>
@@ -976,7 +976,7 @@ exports[`Android BpkDismissibleChip should render correctly with custom style 1`
         ]
       }
     >
-      
+      
     </Text>
   </View>
 </View>

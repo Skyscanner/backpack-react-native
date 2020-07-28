@@ -323,7 +323,7 @@ exports[`Android BpkButtonLink dark mode should support the "icon" property 1`] 
         ]
       }
     >
-      
+      
     </Text>
   </View>
 </View>
@@ -652,7 +652,7 @@ exports[`Android BpkButtonLink light mode should support the "icon" property 1`]
         ]
       }
     >
-      
+      
     </Text>
   </View>
 </View>
@@ -757,7 +757,7 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="leadi
         ]
       }
     >
-      
+      
     </Text>
   </View>
 </View>
@@ -855,7 +855,7 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="trail
         ]
       }
     >
-      
+      
     </Text>
   </View>
 </View>

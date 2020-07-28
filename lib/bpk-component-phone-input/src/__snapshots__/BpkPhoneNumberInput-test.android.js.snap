@@ -125,7 +125,7 @@ exports[`Android BpkPhoneNumberInput should render correctly 1`] = `
           ]
         }
       >
-        
+        
       </Text>
     </View>
     <View
@@ -308,7 +308,7 @@ exports[`Android BpkPhoneNumberInput should render correctly with \`editable\` f
           ]
         }
       >
-        
+        
       </Text>
     </View>
     <View

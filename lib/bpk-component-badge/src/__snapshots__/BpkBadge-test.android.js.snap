@@ -1105,7 +1105,7 @@ exports[`Android BpkBadge should render correctly with icon 1`] = `
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -1195,7 +1195,7 @@ exports[`Android BpkBadge should render correctly with icon 1`] = `
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -1287,7 +1287,7 @@ exports[`Android BpkBadge should render correctly with icon 1`] = `
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -1379,7 +1379,7 @@ exports[`Android BpkBadge should render correctly with icon 1`] = `
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -1469,7 +1469,7 @@ exports[`Android BpkBadge should render correctly with icon 1`] = `
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -1568,7 +1568,7 @@ exports[`Android BpkBadge should render correctly with icon 1`] = `
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -1663,7 +1663,7 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -1728,7 +1728,7 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -1816,7 +1816,7 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -1881,7 +1881,7 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -1971,7 +1971,7 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -2040,7 +2040,7 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -2130,7 +2130,7 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -2195,7 +2195,7 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -2283,7 +2283,7 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -2348,7 +2348,7 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -2445,7 +2445,7 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -2514,7 +2514,7 @@ exports[`Android BpkBadge should render correctly with multiple icons 1`] = `
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -2609,7 +2609,7 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -2674,7 +2674,7 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View
@@ -2734,7 +2734,7 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -2799,7 +2799,7 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View
@@ -2861,7 +2861,7 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -2930,7 +2930,7 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View
@@ -2990,7 +2990,7 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -3055,7 +3055,7 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View
@@ -3115,7 +3115,7 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -3180,7 +3180,7 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View
@@ -3249,7 +3249,7 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -3318,7 +3318,7 @@ exports[`Android BpkBadge should render correctly with multiple icons and no mes
         ]
       }
     >
-      
+      
     </Text>
   </View>
 </View>
@@ -3385,7 +3385,7 @@ exports[`Android BpkBadge should render correctly with trailing icon 1`] = `
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -3475,7 +3475,7 @@ exports[`Android BpkBadge should render correctly with trailing icon 1`] = `
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -3567,7 +3567,7 @@ exports[`Android BpkBadge should render correctly with trailing icon 1`] = `
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -3659,7 +3659,7 @@ exports[`Android BpkBadge should render correctly with trailing icon 1`] = `
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -3749,7 +3749,7 @@ exports[`Android BpkBadge should render correctly with trailing icon 1`] = `
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -3848,7 +3848,7 @@ exports[`Android BpkBadge should render correctly with trailing icon 1`] = `
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}

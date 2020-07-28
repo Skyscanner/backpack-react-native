@@ -85,7 +85,7 @@ exports[`iOS BpkDismissibleChip dark mode should render correctly 1`] = `
       ]
     }
   >
-    
+    
   </Text>
   <View
     style={
@@ -203,7 +203,7 @@ exports[`iOS BpkDismissibleChip dark mode should render correctly with "disabled
       ]
     }
   >
-    
+    
   </Text>
   <View
     style={
@@ -328,7 +328,7 @@ exports[`iOS BpkDismissibleChip dark mode should render outline correctly 1`] = 
       ]
     }
   >
-    
+    
   </Text>
   <View
     style={
@@ -437,7 +437,7 @@ exports[`iOS BpkDismissibleChip light mode should render correctly 1`] = `
       ]
     }
   >
-    
+    
   </Text>
   <View
     style={
@@ -555,7 +555,7 @@ exports[`iOS BpkDismissibleChip light mode should render correctly with "disable
       ]
     }
   >
-    
+    
   </Text>
   <View
     style={
@@ -680,7 +680,7 @@ exports[`iOS BpkDismissibleChip light mode should render outline correctly 1`] =
       ]
     }
   >
-    
+    
   </Text>
   <View
     style={
@@ -761,7 +761,7 @@ exports[`iOS BpkDismissibleChip should render correctly with a supplied icon 1`]
       ]
     }
   >
-    
+    
   </Text>
   <Text
     allowFontScaling={false}
@@ -813,7 +813,7 @@ exports[`iOS BpkDismissibleChip should render correctly with a supplied icon 1`]
       ]
     }
   >
-    
+    
   </Text>
   <View
     style={
@@ -923,7 +923,7 @@ exports[`iOS BpkDismissibleChip should render correctly with arbitrary props 1`]
       ]
     }
   >
-    
+    
   </Text>
   <View
     style={
@@ -1039,7 +1039,7 @@ exports[`iOS BpkDismissibleChip should render correctly with custom style 1`] = 
       ]
     }
   >
-    
+    
   </Text>
   <View
     style={

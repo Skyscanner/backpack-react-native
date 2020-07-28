@@ -56,7 +56,7 @@ exports[`Android BpkSelect dark mode should render correctly 1`] = `
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -132,7 +132,7 @@ exports[`Android BpkSelect dark mode should render correctly with "showImage" an
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -205,7 +205,7 @@ exports[`Android BpkSelect dark mode should render correctly with "showImage" an
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -271,7 +271,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
       ]
     }
   >
-    
+    
   </Text>
   <Text
     allowFontScaling={false}
@@ -295,7 +295,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -364,7 +364,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
       ]
     }
   >
-    
+    
   </Text>
   <Text
     allowFontScaling={false}
@@ -388,7 +388,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -455,7 +455,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -479,7 +479,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <Text
@@ -565,7 +565,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" true 1
       ]
     }
   >
-    
+    
   </Text>
   <Text
     allowFontScaling={false}
@@ -589,7 +589,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" true 1
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -674,7 +674,7 @@ exports[`Android BpkSelect dark mode should render correctly with a text label 1
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -736,7 +736,7 @@ exports[`Android BpkSelect dark mode should render correctly with an element lab
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -821,7 +821,7 @@ exports[`Android BpkSelect dark mode should render correctly with custom styles 
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -916,7 +916,7 @@ exports[`Android BpkSelect dark mode should render correctly with the disabled p
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -1011,7 +1011,7 @@ exports[`Android BpkSelect dark mode should render correctly with the focused an
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -1099,7 +1099,7 @@ exports[`Android BpkSelect dark mode should render correctly with the focused pr
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -1160,7 +1160,7 @@ exports[`Android BpkSelect light mode should render correctly 1`] = `
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -1236,7 +1236,7 @@ exports[`Android BpkSelect light mode should render correctly with "showImage" a
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -1309,7 +1309,7 @@ exports[`Android BpkSelect light mode should render correctly with "showImage" a
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -1375,7 +1375,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
       ]
     }
   >
-    
+    
   </Text>
   <Text
     allowFontScaling={false}
@@ -1399,7 +1399,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -1468,7 +1468,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
       ]
     }
   >
-    
+    
   </Text>
   <Text
     allowFontScaling={false}
@@ -1492,7 +1492,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -1559,7 +1559,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -1583,7 +1583,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <Text
@@ -1669,7 +1669,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" true 
       ]
     }
   >
-    
+    
   </Text>
   <Text
     allowFontScaling={false}
@@ -1693,7 +1693,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" true 
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -1778,7 +1778,7 @@ exports[`Android BpkSelect light mode should render correctly with a text label 
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -1840,7 +1840,7 @@ exports[`Android BpkSelect light mode should render correctly with an element la
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -1925,7 +1925,7 @@ exports[`Android BpkSelect light mode should render correctly with custom styles
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -2020,7 +2020,7 @@ exports[`Android BpkSelect light mode should render correctly with the disabled 
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -2115,7 +2115,7 @@ exports[`Android BpkSelect light mode should render correctly with the focused a
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -2203,7 +2203,7 @@ exports[`Android BpkSelect light mode should render correctly with the focused p
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
