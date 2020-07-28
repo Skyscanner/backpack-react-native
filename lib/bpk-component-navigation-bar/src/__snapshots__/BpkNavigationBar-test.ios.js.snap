@@ -605,7 +605,7 @@ exports[`ios BpkNavigationBar dark mode should render correctly with an icon in 
             ]
           }
         >
-          
+          
         </Text>
         <Text
           allowFontScaling={false}
@@ -1603,7 +1603,7 @@ exports[`ios BpkNavigationBar light mode should render correctly with an icon in
             ]
           }
         >
-          
+          
         </Text>
         <Text
           allowFontScaling={false}

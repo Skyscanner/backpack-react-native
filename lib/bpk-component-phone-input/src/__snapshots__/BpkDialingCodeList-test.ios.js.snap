@@ -244,7 +244,7 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
             ]
           }
         >
-          
+          
         </Text>
         <View
           style={
@@ -413,7 +413,7 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
             ]
           }
         >
-          
+          
         </Text>
         <View
           style={
@@ -582,7 +582,7 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
             ]
           }
         >
-          
+          
         </Text>
         <View
           style={
@@ -860,7 +860,7 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
             ]
           }
         >
-          
+          
         </Text>
         <View
           style={
@@ -1029,7 +1029,7 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
             ]
           }
         >
-          
+          
         </Text>
         <View
           style={
@@ -1198,7 +1198,7 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
             ]
           }
         >
-          
+          
         </Text>
         <View
           style={

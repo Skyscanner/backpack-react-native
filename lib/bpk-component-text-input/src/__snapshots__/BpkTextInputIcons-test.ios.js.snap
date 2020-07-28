@@ -26,7 +26,7 @@ exports[`iOS InvalidIcon should render correctly 1`] = `
     ]
   }
 >
-  
+  
 </Text>
 `;
 
@@ -56,6 +56,6 @@ exports[`iOS ValidIcon should render correctly 1`] = `
     ]
   }
 >
-  
+  
 </Text>
 `;

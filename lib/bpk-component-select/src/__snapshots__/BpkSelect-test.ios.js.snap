@@ -51,7 +51,7 @@ exports[`iOS BpkSelect dark mode should render correctly 1`] = `
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View
@@ -139,7 +139,7 @@ exports[`iOS BpkSelect dark mode should render correctly with "showImage" and im
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View
@@ -224,7 +224,7 @@ exports[`iOS BpkSelect dark mode should render correctly with "showImage" and no
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View
@@ -302,7 +302,7 @@ exports[`iOS BpkSelect dark mode should render correctly with "valid" false 1`] 
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -326,7 +326,7 @@ exports[`iOS BpkSelect dark mode should render correctly with "valid" false 1`] 
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View
@@ -407,7 +407,7 @@ exports[`iOS BpkSelect dark mode should render correctly with "valid" false and 
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -431,7 +431,7 @@ exports[`iOS BpkSelect dark mode should render correctly with "valid" false and 
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View
@@ -510,7 +510,7 @@ exports[`iOS BpkSelect dark mode should render correctly with "valid" false and 
           ]
         }
       >
-        
+        
       </Text>
       <Text
         allowFontScaling={false}
@@ -534,7 +534,7 @@ exports[`iOS BpkSelect dark mode should render correctly with "valid" false and 
           ]
         }
       >
-        
+        
       </Text>
     </View>
     <View
@@ -632,7 +632,7 @@ exports[`iOS BpkSelect dark mode should render correctly with "valid" true 1`] =
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -656,7 +656,7 @@ exports[`iOS BpkSelect dark mode should render correctly with "valid" true 1`] =
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View
@@ -753,7 +753,7 @@ exports[`iOS BpkSelect dark mode should render correctly with a text label 1`] =
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View
@@ -827,7 +827,7 @@ exports[`iOS BpkSelect dark mode should render correctly with an element label 1
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View
@@ -928,7 +928,7 @@ exports[`iOS BpkSelect dark mode should render correctly with custom styles 1`] 
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View
@@ -1035,7 +1035,7 @@ exports[`iOS BpkSelect dark mode should render correctly with the disabled prop 
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View
@@ -1142,7 +1142,7 @@ exports[`iOS BpkSelect dark mode should render correctly with the focused and di
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View
@@ -1242,7 +1242,7 @@ exports[`iOS BpkSelect dark mode should render correctly with the focused prop 1
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View
@@ -1315,7 +1315,7 @@ exports[`iOS BpkSelect light mode should render correctly 1`] = `
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View
@@ -1403,7 +1403,7 @@ exports[`iOS BpkSelect light mode should render correctly with "showImage" and i
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View
@@ -1488,7 +1488,7 @@ exports[`iOS BpkSelect light mode should render correctly with "showImage" and n
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View
@@ -1566,7 +1566,7 @@ exports[`iOS BpkSelect light mode should render correctly with "valid" false 1`]
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -1590,7 +1590,7 @@ exports[`iOS BpkSelect light mode should render correctly with "valid" false 1`]
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View
@@ -1671,7 +1671,7 @@ exports[`iOS BpkSelect light mode should render correctly with "valid" false and
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -1695,7 +1695,7 @@ exports[`iOS BpkSelect light mode should render correctly with "valid" false and
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View
@@ -1774,7 +1774,7 @@ exports[`iOS BpkSelect light mode should render correctly with "valid" false and
           ]
         }
       >
-        
+        
       </Text>
       <Text
         allowFontScaling={false}
@@ -1798,7 +1798,7 @@ exports[`iOS BpkSelect light mode should render correctly with "valid" false and
           ]
         }
       >
-        
+        
       </Text>
     </View>
     <View
@@ -1896,7 +1896,7 @@ exports[`iOS BpkSelect light mode should render correctly with "valid" true 1`] 
         ]
       }
     >
-      
+      
     </Text>
     <Text
       allowFontScaling={false}
@@ -1920,7 +1920,7 @@ exports[`iOS BpkSelect light mode should render correctly with "valid" true 1`] 
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View
@@ -2017,7 +2017,7 @@ exports[`iOS BpkSelect light mode should render correctly with a text label 1`] 
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View
@@ -2091,7 +2091,7 @@ exports[`iOS BpkSelect light mode should render correctly with an element label 
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View
@@ -2192,7 +2192,7 @@ exports[`iOS BpkSelect light mode should render correctly with custom styles 1`]
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View
@@ -2299,7 +2299,7 @@ exports[`iOS BpkSelect light mode should render correctly with the disabled prop
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View
@@ -2406,7 +2406,7 @@ exports[`iOS BpkSelect light mode should render correctly with the focused and d
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View
@@ -2506,7 +2506,7 @@ exports[`iOS BpkSelect light mode should render correctly with the focused prop 
         ]
       }
     >
-      
+      
     </Text>
   </View>
   <View

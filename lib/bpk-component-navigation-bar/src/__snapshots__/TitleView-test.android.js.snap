@@ -36,7 +36,7 @@ exports[`android TitleView dark mode should render correctly with leading icon 1
       ]
     }
   >
-    
+    
   </Text>
   <Text
     allowFontScaling={false}
@@ -180,7 +180,7 @@ exports[`android TitleView dark mode should render correctly with trailing icon 
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;
@@ -221,7 +221,7 @@ exports[`android TitleView light mode should render correctly with leading icon 
       ]
     }
   >
-    
+    
   </Text>
   <Text
     allowFontScaling={false}
@@ -365,7 +365,7 @@ exports[`android TitleView light mode should render correctly with trailing icon
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;

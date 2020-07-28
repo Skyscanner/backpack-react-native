@@ -26,7 +26,7 @@ exports[`Android withRtlSupport should apply user props next to transform 1`] = 
     ]
   }
 >
-  
+  
 </Text>
 `;
 
@@ -53,7 +53,7 @@ exports[`Android withRtlSupport should render correctly 1`] = `
     ]
   }
 >
-  
+  
 </Text>
 `;
 
@@ -80,6 +80,6 @@ exports[`Android withRtlSupport should render correctly for RTL 1`] = `
     ]
   }
 >
-  
+  
 </Text>
 `;
