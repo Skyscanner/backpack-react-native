@@ -2,6 +2,11 @@
 
 > Place your changes below this line.
 
+**Fixed:**
+
+- Fixed icons that weren't displaying.
+- Fixed large icons being used for small icons and vice-versa.
+
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
@@ -16,16 +21,13 @@ See [`CHANGELOG.md`](CHANGELOG.md) for real-world examples of good changelog ent
 
 **Breaking:**
 
-- bpk-styles:
-  - Replaced `charmeleon` icon with new `charizard` icon. To upgrade, replace your references to `charmeleon` with `charizard`.
-  - Upgraded `fire` dependency to `3.0.0`.
+- Replaced `charmeleon` icon with new `charizard` icon. To upgrade, replace your references to `charmeleon` with `charizard`.
+- Upgraded `fire` dependency to `3.0.0`.
 
 **Added:**
 
-- bpk-component-infinity-gauntlet:
-  - New `timeStone` prop for controlling time. See &lt;link to docs site&gt;.
+- New `timeStone` prop for controlling time. See &lt;link to docs site&gt;.
 
 **Fixed:**
 
-- bpk-component-horcrux:
-  - Fixed issue where `BpkHorcrux` would occasionally possess the living.
+- Fixed issue where `BpkHorcrux` would occasionally possess the living.

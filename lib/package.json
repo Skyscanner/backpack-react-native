@@ -15,7 +15,7 @@
   "dependencies": {
     "@skyscanner/react-native-dash": "0.0.11",
     "@skyscanner/react-native-transitiongroup": "^1.1.3",
-    "bpk-svgs": "^12.0.2",
+    "bpk-svgs": "^12.1.0",
     "bpk-tokens": "^32.0.5",
     "lodash": "^4.17.15",
     "react-native-dark-mode": "^0.2.2",
