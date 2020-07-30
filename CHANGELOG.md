@@ -1,5 +1,10 @@
 # Backpack changelog
 
+# 5.0.2 - 2020-07-30
+
+**Fixed:**
+ - Upgraded `bpk-svgs` to reinstate some icons that were accidentally removed.
+
 # 5.0.1 - 2020-07-28
 
 **Fixed:**
