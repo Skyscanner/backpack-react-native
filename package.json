@@ -102,7 +102,7 @@
     "react": "16.9.0",
     "react-dom": "16.9.0",
     "react-native": "0.61.5",
-    "react-native-dotenv": "^0.2.0",
+    "react-native-dotenv": "^2.2.6",
     "react-native-linear-gradient": "^2.5.3",
     "react-test-renderer": "16.13.0",
     "tmp": "^0.1.0",
