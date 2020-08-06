@@ -115,7 +115,6 @@ const androidSnapshotsWithIosTokens = fileChanges.filter(filePath => {
 });
 
 if (androidSnapshotsWithIosTokens.length > 0) {
-  // eslint-disable-next-line max-len
   fail(
     `iOS "fontFamily" tokens have been found in the following Android snapshots:\n  - ${androidSnapshotsWithIosTokens.join(
       '\n  - ',
