@@ -1,5 +1,12 @@
 # Backpack changelog
 
+# 5.0.3 - 2020-08-06
+
+**Fixed:**
+
+- Backpack/Icon:
+  - Fixed an issue with the display of the `filter` icon.
+
 # 5.0.2 - 2020-07-30
 
 **Fixed:**
