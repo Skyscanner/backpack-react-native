@@ -69,7 +69,7 @@ addons.register('rtl-toggle', api => {
   addons.addPanel('rtl-toggle/panel', {
     title: 'RTL',
     render: (
-      { active, key }, // eslint-disable-line
+      { active, key }, // eslint-disable-line react/prop-types
     ) => (
       <AddonPanel active={active} key={key}>
         <Panel channel={addons.getChannel()} api={api} />
