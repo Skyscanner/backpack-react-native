@@ -4,7 +4,8 @@
 
 **Fixed:**
 
-- bpk-component-horizontal-nav
+- bpk-component-banner-alert:
+- bpk-component-horizontal-nav:
   - Replaced deprecated `UNSAFE_componentWillReceiveProps` methods.
 
 ## How to write a good changelog entry
