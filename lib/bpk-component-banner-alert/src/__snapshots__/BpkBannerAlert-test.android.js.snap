@@ -5,6 +5,7 @@ exports[`Android BpkBannerAlert dark mode should accept userland styling 1`] = `
   style={
     Object {
       "borderRadius": 0,
+      "height": null,
       "opacity": 1,
       "overflow": "hidden",
       "width": 4,
@@ -511,6 +512,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
   style={
     Object {
       "borderRadius": 0,
+      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }
@@ -690,6 +692,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
   style={
     Object {
       "borderRadius": 0,
+      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }
@@ -869,6 +872,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
   style={
     Object {
       "borderRadius": 0,
+      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }
@@ -1048,6 +1052,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
   style={
     Object {
       "borderRadius": 0,
+      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }
@@ -1227,6 +1232,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
   style={
     Object {
       "borderRadius": 0,
+      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }
@@ -1406,6 +1412,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
   style={
     Object {
       "borderRadius": 0,
+      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }
@@ -1585,6 +1592,7 @@ exports[`Android BpkBannerAlert light mode should accept userland styling 1`] = 
   style={
     Object {
       "borderRadius": 0,
+      "height": null,
       "opacity": 1,
       "overflow": "hidden",
       "width": 4,
@@ -2091,6 +2099,7 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
   style={
     Object {
       "borderRadius": 0,
+      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }
@@ -2270,6 +2279,7 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
   style={
     Object {
       "borderRadius": 0,
+      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }
@@ -2449,6 +2459,7 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
   style={
     Object {
       "borderRadius": 0,
+      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }
@@ -2628,6 +2639,7 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
   style={
     Object {
       "borderRadius": 0,
+      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }
@@ -2807,6 +2819,7 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
   style={
     Object {
       "borderRadius": 0,
+      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }
@@ -2986,6 +2999,7 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
   style={
     Object {
       "borderRadius": 0,
+      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }
@@ -3165,6 +3179,7 @@ exports[`Android BpkBannerAlert should render correctly when not shown 1`] = `
   style={
     Object {
       "borderRadius": 0,
+      "height": 0.01,
       "opacity": 0,
       "overflow": "hidden",
     }
@@ -3344,6 +3359,7 @@ exports[`Android BpkBannerAlert should render correctly with animateOnEnter 1`] 
   style={
     Object {
       "borderRadius": 0,
+      "height": 0.01,
       "opacity": 0,
       "overflow": "hidden",
     }
@@ -3703,6 +3719,7 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
   style={
     Object {
       "borderRadius": 0,
+      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }
@@ -4116,6 +4133,7 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
   style={
     Object {
       "borderRadius": 0,
+      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }

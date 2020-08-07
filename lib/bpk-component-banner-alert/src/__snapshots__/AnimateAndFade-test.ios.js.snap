@@ -5,6 +5,7 @@ exports[`iOS AnimateAndFade should render correctly 1`] = `
   style={
     Object {
       "borderRadius": 0,
+      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }
@@ -76,6 +77,7 @@ exports[`iOS AnimateAndFade should render correctly when show is false 1`] = `
   style={
     Object {
       "borderRadius": 0,
+      "height": 0.01,
       "opacity": 0,
       "overflow": "hidden",
     }
@@ -147,6 +149,7 @@ exports[`iOS AnimateAndFade should render correctly with animateOnEnter 1`] = `
   style={
     Object {
       "borderRadius": 0,
+      "height": 0.01,
       "opacity": 0,
       "overflow": "hidden",
     }
