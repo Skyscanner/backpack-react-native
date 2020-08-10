@@ -1,10 +1,18 @@
 # Backpack changelog
 
+# 5.0.4 - 2020-08-10
+
+**Fixed:**
+
+- bpk-component-banner-alert:
+- bpk-component-horizontal-nav:
+  - Replaced deprecated `UNSAFE_componentWillReceiveProps` methods.
+
 # 5.0.3 - 2020-08-06
 
 **Fixed:**
 
-- Backpack/Icon:
+- bpk-component-icon:
   - Fixed an issue with the display of the `filter` icon.
 
 # 5.0.2 - 2020-07-30
