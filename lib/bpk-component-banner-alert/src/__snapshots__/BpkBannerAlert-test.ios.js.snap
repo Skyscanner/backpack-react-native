@@ -5,7 +5,6 @@ exports[`iOS BpkBannerAlert dark mode should accept userland styling 1`] = `
   style={
     Object {
       "borderRadius": 0,
-      "height": null,
       "opacity": 1,
       "overflow": "hidden",
       "width": 4,
@@ -492,7 +491,6 @@ exports[`iOS BpkBannerAlert dark mode should render correctly with type equal to
   style={
     Object {
       "borderRadius": 0,
-      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }
@@ -676,7 +674,6 @@ exports[`iOS BpkBannerAlert dark mode should render correctly with type equal to
   style={
     Object {
       "borderRadius": 0,
-      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }
@@ -860,7 +857,6 @@ exports[`iOS BpkBannerAlert dark mode should render correctly with type equal to
   style={
     Object {
       "borderRadius": 0,
-      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }
@@ -1044,7 +1040,6 @@ exports[`iOS BpkBannerAlert dark mode should render correctly with type equal to
   style={
     Object {
       "borderRadius": 0,
-      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }
@@ -1228,7 +1223,6 @@ exports[`iOS BpkBannerAlert dark mode should render correctly with type equal to
   style={
     Object {
       "borderRadius": 0,
-      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }
@@ -1412,7 +1406,6 @@ exports[`iOS BpkBannerAlert dark mode should render correctly with type equal to
   style={
     Object {
       "borderRadius": 0,
-      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }
@@ -1596,7 +1589,6 @@ exports[`iOS BpkBannerAlert light mode should accept userland styling 1`] = `
   style={
     Object {
       "borderRadius": 0,
-      "height": null,
       "opacity": 1,
       "overflow": "hidden",
       "width": 4,
@@ -2083,7 +2075,6 @@ exports[`iOS BpkBannerAlert light mode should render correctly with type equal t
   style={
     Object {
       "borderRadius": 0,
-      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }
@@ -2267,7 +2258,6 @@ exports[`iOS BpkBannerAlert light mode should render correctly with type equal t
   style={
     Object {
       "borderRadius": 0,
-      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }
@@ -2451,7 +2441,6 @@ exports[`iOS BpkBannerAlert light mode should render correctly with type equal t
   style={
     Object {
       "borderRadius": 0,
-      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }
@@ -2635,7 +2624,6 @@ exports[`iOS BpkBannerAlert light mode should render correctly with type equal t
   style={
     Object {
       "borderRadius": 0,
-      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }
@@ -2819,7 +2807,6 @@ exports[`iOS BpkBannerAlert light mode should render correctly with type equal t
   style={
     Object {
       "borderRadius": 0,
-      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }
@@ -3003,7 +2990,6 @@ exports[`iOS BpkBannerAlert light mode should render correctly with type equal t
   style={
     Object {
       "borderRadius": 0,
-      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }
@@ -3187,7 +3173,6 @@ exports[`iOS BpkBannerAlert should render correctly when not shown 1`] = `
   style={
     Object {
       "borderRadius": 0,
-      "height": 0.01,
       "opacity": 0,
       "overflow": "hidden",
     }
@@ -3371,7 +3356,6 @@ exports[`iOS BpkBannerAlert should render correctly with animateOnEnter 1`] = `
   style={
     Object {
       "borderRadius": 0,
-      "height": 0.01,
       "opacity": 0,
       "overflow": "hidden",
     }
@@ -3739,7 +3723,6 @@ exports[`iOS BpkBannerAlert should render correctly with children provided (expa
   style={
     Object {
       "borderRadius": 0,
-      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }
@@ -4173,7 +4156,6 @@ exports[`iOS BpkBannerAlert should render correctly with expanded 1`] = `
   style={
     Object {
       "borderRadius": 0,
-      "height": null,
       "opacity": 1,
       "overflow": "hidden",
     }
