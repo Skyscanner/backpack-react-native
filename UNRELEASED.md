@@ -1,6 +1,12 @@
 # Unreleased
 
 > Place your changes below this line.
+**Breaking:**
+
+ - The following dependencies are now peer-dependencies to avoid shipping multiple versions alongside each other.
+   - `@skyscanner/react-native-dash`
+   - `@skyscanner/react-native-transitiongroup`
+   - `react-native-dark-mode`
 
 ## How to write a good changelog entry
 
