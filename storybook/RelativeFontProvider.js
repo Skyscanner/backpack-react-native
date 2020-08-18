@@ -18,7 +18,9 @@
 /* @flow */
 import React, { type Node } from 'react';
 import { Platform } from 'react-native';
-import { USE_RELATIVE } from 'react-native-dotenv';
+// This import for `react-native-dotenv` causes an eslint error although it's fine to use as follows:
+// eslint-disable-next-line import/no-unresolved
+import { USE_RELATIVE } from '@env';
 
 import BpkThemeProvider from '../lib/bpk-theming';
 
