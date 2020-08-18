@@ -91,7 +91,7 @@
     "documentation": "^13.0.2",
     "eslint-config-skyscanner": "^7.0.0",
     "eslint-plugin-flowtype": "^4.0.0",
-    "eslint-plugin-react-hooks": "^1.7.0",
+    "eslint-plugin-react-hooks": "^4.1.0",
     "eslint_d": "^8.1.1",
     "flow-bin": "^0.107.0",
     "globby": "^11.0.1",
