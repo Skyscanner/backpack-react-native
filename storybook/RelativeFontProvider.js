@@ -18,7 +18,7 @@
 /* @flow */
 import React, { type Node } from 'react';
 import { Platform } from 'react-native';
-import { USE_RELATIVE } from 'react-native-dotenv';
+import { USE_RELATIVE } from '@env';
 
 import BpkThemeProvider from '../lib/bpk-theming';
 
