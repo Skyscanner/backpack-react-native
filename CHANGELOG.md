@@ -1,5 +1,14 @@
 # Backpack changelog
 
+# 6.0.0 - 2020-08-17
+
+**Breaking:**
+
+- The following dependencies are now peer-dependencies to avoid shipping multiple versions alongside each other.
+  - `@skyscanner/react-native-dash`
+  - `@skyscanner/react-native-transitiongroup`
+  - `react-native-dark-mode`
+
 # 5.0.4 - 2020-08-10
 
 **Fixed:**
