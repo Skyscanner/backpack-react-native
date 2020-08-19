@@ -16,5 +16,7 @@ Pod::Spec.new do |s|
   s.source_files  = "Classes/**/*.{h,m}"
 
   s.dependency 'React'
+  s.dependency 'react-native-maps'
+  s.dependency 'ReactNativeDarkMode'
   s.dependency 'Backpack', '~> 34.0'
 end

@@ -1,6 +1,11 @@
 # Unreleased
 
 > Place your changes below this line.
+> **Fixed:**
+
+- The following native dependencies are now present in the library `podspec` to ensure that consumers have them available.
+  - `react-native-maps`
+  - `ReactNativeDarkMode`
 
 ## How to write a good changelog entry
 
