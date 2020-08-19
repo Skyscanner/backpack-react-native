@@ -1,5 +1,13 @@
 # Backpack changelog
 
+# 6.0.1 - 2020-08-19
+
+**Fixed:**
+
+- The following native dependencies are now present in the library `podspec` to ensure that consumers have them available.
+  - `react-native-maps`
+  - `ReactNativeDarkMode`
+
 # 6.0.0 - 2020-08-17
 
 **Breaking:**
