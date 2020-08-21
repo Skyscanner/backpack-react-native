@@ -1,5 +1,11 @@
 # Backpack changelog
 
+# 6.0.2 - 2020-08-21
+
+**Fixed:**
+
+- Reverted the changes from `9ca9b4acbda5a786496536aa729bd6f98a3dead0` which caused a banner-alert with `show={false}` to still occupy space on screen.
+
 # 6.0.1 - 2020-08-19
 
 **Fixed:**
