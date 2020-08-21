@@ -2,6 +2,10 @@
 
 > Place your changes below this line.
 
+**Fixed:**
+
+- Reverted the changes from `9ca9b4acbda5a786496536aa729bd6f98a3dead0` which caused a banner-alert with `show={false}` to still occupy space on screen.
+
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
