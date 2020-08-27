@@ -34,16 +34,15 @@ export default class App extends Component {
       showDismissable: true,
       expanded: false,
     };
-
   }
 
   onDismiss = () => {
     this.setState({ showDismissable: false });
-  }
+  };
 
   onExpandablePress = () => {
     this.setState({ expanded: !this.state.expanded });
-  }
+  };
 
   render() {
     return (
@@ -71,9 +70,11 @@ export default class App extends Component {
           expanded={this.state.expanded}
         >
           <BpkText textStyle="sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis sagittis purus, id blandit ipsum.
-            Pellentesque nec diam nec erat condimentum dapibus. Nunc diam augue, egestas id egestas ut, facilisis nec mi.
-            Donec et congue odio, nec laoreet est. Integer rhoncus varius arcu, a fringilla libero laoreet at.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            sagittis sagittis purus, id blandit ipsum. Pellentesque nec diam nec
+            erat condimentum dapibus. Nunc diam augue, egestas id egestas ut,
+            facilisis nec mi. Donec et congue odio, nec laoreet est. Integer
+            rhoncus varius arcu, a fringilla libero laoreet at.
           </BpkText>
         </BpkBannerAlert>
       </View>
@@ -86,7 +87,7 @@ export default class App extends Component {
 
 | Property                  | PropType           | Required | Default Value |
 | ------------------------- | ------------------ | -------- | ------------- |
-| message                   | string             | true     | -             |
+| message                   | string or Node     | true     | -             |
 | type                      | oneOf(ALERT_TYPES) | true     | -             |
 | animateOnEnter            | bool               | false    | false         |
 | animateOnLeave            | bool               | false    | false         |

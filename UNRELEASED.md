@@ -1,6 +1,8 @@
 # Unreleased
 
 > Place your changes below this line.
+**Fixed:**
+ - `bpk-banner-alert` can now accept either string or Node for its message prop.
 
 ## How to write a good changelog entry
 
