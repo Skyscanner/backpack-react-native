@@ -209,7 +209,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with Node mess
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(29, 27, 32)",
+            "backgroundColor": "rgb(241, 242, 248)",
             "borderRadius": 4,
             "minHeight": 1,
           },
@@ -233,7 +233,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with Node mess
           style={
             Array [
               Object {
-                "color": "rgb(255, 255, 255)",
+                "color": "rgb(17, 18, 54)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -246,7 +246,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with Node mess
                   "marginEnd": 8,
                 },
                 Object {
-                  "color": "rgb(142, 142, 147)",
+                  "color": "rgb(104, 105, 127)",
                 },
               ],
             ]
@@ -259,7 +259,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with Node mess
           style={
             Array [
               Object {
-                "color": "rgb(255, 255, 255)",
+                "color": "rgb(17, 18, 54)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -280,7 +280,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with Node mess
             style={
               Array [
                 Object {
-                  "color": "rgb(255, 255, 255)",
+                  "color": "rgb(17, 18, 54)",
                   "fontFamily": "sans-serif",
                   "fontSize": 14,
                   "fontWeight": "400",
@@ -297,79 +297,6 @@ exports[`Android BpkBannerAlert dark mode should render correctly with Node mess
           </Text>
           .
         </Text>
-        <View
-          style={
-            Array [
-              Object {
-                "borderRadius": 0,
-                "overflow": "hidden",
-              },
-              Object {
-                "marginStart": 8,
-              },
-            ]
-          }
-        >
-          <View
-            accessibilityLabel="Dismiss"
-            accessibilityRole="button"
-            accessibilityStates={Array []}
-            accessible={true}
-            focusable={true}
-            isTVSelectable={true}
-            nativeBackgroundAndroid={
-              Object {
-                "borderless": true,
-                "color": -9934465,
-                "type": "RippleAndroid",
-              }
-            }
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                  "justifyContent": "center",
-                  "minHeight": 32,
-                },
-              ]
-            }
-          >
-            <Text
-              allowFontScaling={false}
-              numberOfLines={1}
-              style={
-                Array [
-                  Object {
-                    "color": "rgb(255, 255, 255)",
-                    "fontFamily": "sans-serif",
-                    "fontSize": 14,
-                    "fontWeight": "400",
-                    "letterSpacing": 0,
-                    "textAlign": "left",
-                  },
-                  Object {
-                    "fontFamily": "sans-serif-medium",
-                  },
-                  Array [
-                    Object {
-                      "color": "rgb(109, 159, 235)",
-                    },
-                  ],
-                ]
-              }
-            >
-              DISMISS
-            </Text>
-          </View>
-        </View>
       </View>
     </View>
   </View>
@@ -384,7 +311,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with Node mess
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(29, 27, 32)",
+            "backgroundColor": "rgb(241, 242, 248)",
             "borderRadius": 4,
             "minHeight": 1,
           },
@@ -408,7 +335,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with Node mess
           style={
             Array [
               Object {
-                "color": "rgb(255, 255, 255)",
+                "color": "rgb(17, 18, 54)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -421,7 +348,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with Node mess
                   "marginEnd": 8,
                 },
                 Object {
-                  "color": "rgb(142, 142, 147)",
+                  "color": "rgb(104, 105, 127)",
                 },
               ],
             ]
@@ -434,7 +361,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with Node mess
           style={
             Array [
               Object {
-                "color": "rgb(255, 255, 255)",
+                "color": "rgb(17, 18, 54)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -455,7 +382,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with Node mess
             style={
               Array [
                 Object {
-                  "color": "rgb(255, 255, 255)",
+                  "color": "rgb(17, 18, 54)",
                   "fontFamily": "sans-serif",
                   "fontSize": 14,
                   "fontWeight": "400",
@@ -472,79 +399,6 @@ exports[`Android BpkBannerAlert dark mode should render correctly with Node mess
           </Text>
           .
         </Text>
-        <View
-          style={
-            Array [
-              Object {
-                "borderRadius": 0,
-                "overflow": "hidden",
-              },
-              Object {
-                "marginStart": 8,
-              },
-            ]
-          }
-        >
-          <View
-            accessibilityLabel="Dismiss"
-            accessibilityRole="button"
-            accessibilityStates={Array []}
-            accessible={true}
-            focusable={true}
-            isTVSelectable={true}
-            nativeBackgroundAndroid={
-              Object {
-                "borderless": true,
-                "color": -9934465,
-                "type": "RippleAndroid",
-              }
-            }
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                  "justifyContent": "center",
-                  "minHeight": 32,
-                },
-              ]
-            }
-          >
-            <Text
-              allowFontScaling={false}
-              numberOfLines={1}
-              style={
-                Array [
-                  Object {
-                    "color": "rgb(255, 255, 255)",
-                    "fontFamily": "sans-serif",
-                    "fontSize": 14,
-                    "fontWeight": "400",
-                    "letterSpacing": 0,
-                    "textAlign": "left",
-                  },
-                  Object {
-                    "fontFamily": "sans-serif-medium",
-                  },
-                  Array [
-                    Object {
-                      "color": "rgb(109, 159, 235)",
-                    },
-                  ],
-                ]
-              }
-            >
-              DISMISS
-            </Text>
-          </View>
-        </View>
       </View>
     </View>
   </View>
@@ -2254,79 +2108,6 @@ exports[`Android BpkBannerAlert light mode should render correctly with Node mes
           </Text>
           .
         </Text>
-        <View
-          style={
-            Array [
-              Object {
-                "borderRadius": 0,
-                "overflow": "hidden",
-              },
-              Object {
-                "marginStart": 8,
-              },
-            ]
-          }
-        >
-          <View
-            accessibilityLabel="Dismiss"
-            accessibilityRole="button"
-            accessibilityStates={Array []}
-            accessible={true}
-            focusable={true}
-            isTVSelectable={true}
-            nativeBackgroundAndroid={
-              Object {
-                "borderless": true,
-                "color": null,
-                "type": "RippleAndroid",
-              }
-            }
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                  "justifyContent": "center",
-                  "minHeight": 32,
-                },
-              ]
-            }
-          >
-            <Text
-              allowFontScaling={false}
-              numberOfLines={1}
-              style={
-                Array [
-                  Object {
-                    "color": "rgb(17, 18, 54)",
-                    "fontFamily": "sans-serif",
-                    "fontSize": 14,
-                    "fontWeight": "400",
-                    "letterSpacing": 0,
-                    "textAlign": "left",
-                  },
-                  Object {
-                    "fontFamily": "sans-serif-medium",
-                  },
-                  Array [
-                    Object {
-                      "color": "rgb(7, 112, 227)",
-                    },
-                  ],
-                ]
-              }
-            >
-              DISMISS
-            </Text>
-          </View>
-        </View>
       </View>
     </View>
   </View>
@@ -2429,79 +2210,6 @@ exports[`Android BpkBannerAlert light mode should render correctly with Node mes
           </Text>
           .
         </Text>
-        <View
-          style={
-            Array [
-              Object {
-                "borderRadius": 0,
-                "overflow": "hidden",
-              },
-              Object {
-                "marginStart": 8,
-              },
-            ]
-          }
-        >
-          <View
-            accessibilityLabel="Dismiss"
-            accessibilityRole="button"
-            accessibilityStates={Array []}
-            accessible={true}
-            focusable={true}
-            isTVSelectable={true}
-            nativeBackgroundAndroid={
-              Object {
-                "borderless": true,
-                "color": null,
-                "type": "RippleAndroid",
-              }
-            }
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                  "justifyContent": "center",
-                  "minHeight": 32,
-                },
-              ]
-            }
-          >
-            <Text
-              allowFontScaling={false}
-              numberOfLines={1}
-              style={
-                Array [
-                  Object {
-                    "color": "rgb(17, 18, 54)",
-                    "fontFamily": "sans-serif",
-                    "fontSize": 14,
-                    "fontWeight": "400",
-                    "letterSpacing": 0,
-                    "textAlign": "left",
-                  },
-                  Object {
-                    "fontFamily": "sans-serif-medium",
-                  },
-                  Array [
-                    Object {
-                      "color": "rgb(7, 112, 227)",
-                    },
-                  ],
-                ]
-              }
-            >
-              DISMISS
-            </Text>
-          </View>
-        </View>
       </View>
     </View>
   </View>
