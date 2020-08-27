@@ -76,6 +76,7 @@ configure(() => {
   require('../lib/bpk-component-carousel/stories');
   require('../lib/bpk-component-chip/stories');
   require('../lib/bpk-component-dialog/stories');
+  require('../lib/bpk-component-emoji/stories');
   require('../lib/bpk-component-flare/stories');
   require('../lib/bpk-component-flat-list/stories');
   require('../lib/bpk-component-horizontal-nav/stories');

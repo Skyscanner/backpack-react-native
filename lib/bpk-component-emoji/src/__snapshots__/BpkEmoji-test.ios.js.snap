@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`iOS BpkEmoji should render correctly in normal mode 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontFamily": "System",
+      },
+      null,
+    ]
+  }
+>
+  🎉
+</Text>
+`;
