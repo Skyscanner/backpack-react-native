@@ -1,5 +1,15 @@
 # Backpack changelog
 
+# 6.1.0 - 2020-08-28
+
+**Added:**
+
+- `bpk-component-text` now exports a component `BpkEmoji` for wrapping emoji so that the correct line height is preserved.
+
+**Fixed:**
+
+- `bpk-component-banner-alert` can now accept either string or Node for its message prop.
+
 # 6.0.2 - 2020-08-21
 
 **Fixed:**

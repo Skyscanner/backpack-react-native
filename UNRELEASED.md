@@ -2,14 +2,6 @@
 
 > Place your changes below this line.
 
-**Added:**
-
-- `bpk-component-text` now exports a component `BpkEmoji` for wrapping emoji so that the correct line height is preserved.
-
-**Fixed:**
-
-- `bpk-component-banner-alert` can now accept either string or Node for its message prop.
-
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
