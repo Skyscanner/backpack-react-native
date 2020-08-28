@@ -4,7 +4,7 @@
 
 **Added:**
 
-- `bpk-component-emoji` - for wrapping emoji in `BpkText` so that the correct line height is preserved.
+- `bpk-component-text` now exports a component `BpkEmoji` for wrapping emoji so that the correct line height is preserved.
 
 **Fixed:**
 

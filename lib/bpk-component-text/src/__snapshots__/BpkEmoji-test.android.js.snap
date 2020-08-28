@@ -5,7 +5,7 @@ exports[`Android BpkEmoji should render correctly in normal mode 1`] = `
   style={
     Array [
       Object {
-        "fontFamily": "System",
+        "fontFamily": "sans-serif",
       },
       null,
     ]

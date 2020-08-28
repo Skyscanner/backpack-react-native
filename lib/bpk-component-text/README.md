@@ -8,10 +8,15 @@ Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usag
 
 ## Usage
 
+> Note: If rendering emoji, please wrap them in `BpkEmoji` as this will preserve the correct line height when using a custom font.
+
 ```js
 import React, { Component } from 'react';
 import { View, StyleSheet } from 'react-native';
-import BpkText, { WEIGHT_STYLES } from 'backpack-react-native/bpk-component-text';
+import BpkText, {
+  BpkEmoji,
+  WEIGHT_STYLES,
+} from 'backpack-react-native/bpk-component-text';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
 
 const styles = StyleSheet.create({
@@ -33,6 +38,7 @@ export default class App extends Component {
         <BpkText textStyle='sm'>Backpack rocks!</BpkText>
         <BpkText textStyle='xs'>Backpack rocks!</BpkText>
         <BpkText textStyle='caps'>BACKPACK ROCKS!</BpkText>
+        <BpkText textStyle="caps">BACKPACK ROCKS! <BpkEmoji>🎉</BpkEmoji></BpkText>
         <BpkText textStyle='lg'>
           <BpkText textStyle='inherit' weight='emphasized'>Backpack</BpkText> rocks!
         </BpkText>
