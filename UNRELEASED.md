@@ -1,11 +1,14 @@
 # Unreleased
 
 > Place your changes below this line.
+
 **Added:**
- - `bpk-component-emoji` - for wrapping emoji in `BpkText` so that the correct line-height is preserved.
+
+- `bpk-component-emoji` - for wrapping emoji in `BpkText` so that the correct line height is preserved.
 
 **Fixed:**
- - `bpk-component-banner-alert` can now accept either string or Node for its message prop.
+
+- `bpk-component-banner-alert` can now accept either string or Node for its message prop.
 
 ## How to write a good changelog entry
 
