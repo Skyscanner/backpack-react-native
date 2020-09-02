@@ -1,5 +1,5 @@
 PODS:
-  - Backpack (34.0.0):
+  - Backpack (34.1.0):
     - FloatingPanel (= 1.6.6)
     - FSCalendar (~> 2.8)
     - MBProgressHUD (~> 0.9.1)
@@ -344,7 +344,7 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  Backpack: 5519bce61a5e865a0e5e57d9d79222f76a94a01e
+  Backpack: fa875e2e48bbb4a629bc14096b7ff7c8a56503cc
   BackpackReactNative: a5700b4e73fc5ee28be14e77b6a4ae02c09726d2
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BVLinearGradient: e3aad03778a456d77928f594a649e96995f1c872
