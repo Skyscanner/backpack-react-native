@@ -23,7 +23,6 @@ exports[`iOS dark mode dark mode should render correctly 1`] = `
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -35,19 +34,17 @@ exports[`iOS dark mode dark mode should render correctly 1`] = `
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": "rgb(17, 18, 54)",
-            "shadowOffset": Object {
-              "height": 0.5,
-              "width": 0,
-            },
-            "shadowOpacity": 0.15,
-            "shadowRadius": 1.5,
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
           },
-        ]
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        }
       }
     >
       <View
@@ -56,13 +53,10 @@ exports[`iOS dark mode dark mode should render correctly 1`] = `
             Object {
               "backgroundColor": "rgb(7, 112, 227)",
               "borderRadius": 4,
-              "bottom": 0,
+              "bottom": -4,
               "height": 16,
               "left": "50%",
-              "marginTop": -4,
               "position": "absolute",
-              "right": 0,
-              "top": "100%",
               "transform": Array [
                 Object {
                   "rotate": "45deg",
@@ -114,6 +108,25 @@ exports[`iOS dark mode dark mode should render correctly 1`] = `
         123€
       </Text>
     </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 4,
+          },
+        ]
+      }
+    />
   </View>
 </AIRMapMarker>
 `;
@@ -141,7 +154,6 @@ exports[`iOS dark mode dark mode should render correctly with disabled={true} 1`
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -153,19 +165,17 @@ exports[`iOS dark mode dark mode should render correctly with disabled={true} 1`
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": "rgb(17, 18, 54)",
-            "shadowOffset": Object {
-              "height": 0.5,
-              "width": 0,
-            },
-            "shadowOpacity": 0.15,
-            "shadowRadius": 1.5,
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
           },
-        ]
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        }
       }
     >
       <View
@@ -174,13 +184,10 @@ exports[`iOS dark mode dark mode should render correctly with disabled={true} 1`
             Object {
               "backgroundColor": "rgb(7, 112, 227)",
               "borderRadius": 4,
-              "bottom": 0,
+              "bottom": -4,
               "height": 16,
               "left": "50%",
-              "marginTop": -4,
               "position": "absolute",
-              "right": 0,
-              "top": "100%",
               "transform": Array [
                 Object {
                   "rotate": "45deg",
@@ -241,6 +248,25 @@ exports[`iOS dark mode dark mode should render correctly with disabled={true} 1`
         123€
       </Text>
     </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 4,
+          },
+        ]
+      }
+    />
   </View>
 </AIRMapMarker>
 `;
@@ -268,7 +294,6 @@ exports[`iOS dark mode dark mode should render correctly with status=default 1`]
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -280,19 +305,17 @@ exports[`iOS dark mode dark mode should render correctly with status=default 1`]
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": "rgb(17, 18, 54)",
-            "shadowOffset": Object {
-              "height": 0.5,
-              "width": 0,
-            },
-            "shadowOpacity": 0.15,
-            "shadowRadius": 1.5,
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
           },
-        ]
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        }
       }
     >
       <View
@@ -301,13 +324,10 @@ exports[`iOS dark mode dark mode should render correctly with status=default 1`]
             Object {
               "backgroundColor": "rgb(7, 112, 227)",
               "borderRadius": 4,
-              "bottom": 0,
+              "bottom": -4,
               "height": 16,
               "left": "50%",
-              "marginTop": -4,
               "position": "absolute",
-              "right": 0,
-              "top": "100%",
               "transform": Array [
                 Object {
                   "rotate": "45deg",
@@ -359,6 +379,25 @@ exports[`iOS dark mode dark mode should render correctly with status=default 1`]
         123€
       </Text>
     </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 4,
+          },
+        ]
+      }
+    />
   </View>
 </AIRMapMarker>
 `;
@@ -386,7 +425,6 @@ exports[`iOS dark mode dark mode should render correctly with status=focused 1`]
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -398,22 +436,17 @@ exports[`iOS dark mode dark mode should render correctly with status=focused 1`]
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": "rgb(17, 18, 54)",
-            "shadowOffset": Object {
-              "height": 0.5,
-              "width": 0,
-            },
-            "shadowOpacity": 0.15,
-            "shadowRadius": 1.5,
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 8,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
           },
-          Object {
-            "paddingVertical": 8,
-          },
-        ]
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        }
       }
     >
       <View
@@ -422,13 +455,10 @@ exports[`iOS dark mode dark mode should render correctly with status=focused 1`]
             Object {
               "backgroundColor": "rgb(7, 112, 227)",
               "borderRadius": 4,
-              "bottom": 0,
+              "bottom": -4,
               "height": 16,
               "left": "50%",
-              "marginTop": -4,
               "position": "absolute",
-              "right": 0,
-              "top": "100%",
               "transform": Array [
                 Object {
                   "rotate": "45deg",
@@ -438,7 +468,6 @@ exports[`iOS dark mode dark mode should render correctly with status=focused 1`]
             },
             Object {
               "backgroundColor": "rgb(7, 112, 227)",
-              "marginTop": 4,
             },
           ]
         }
@@ -492,6 +521,25 @@ exports[`iOS dark mode dark mode should render correctly with status=focused 1`]
         123€
       </Text>
     </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 4,
+          },
+        ]
+      }
+    />
   </View>
 </AIRMapMarker>
 `;
@@ -519,7 +567,6 @@ exports[`iOS dark mode dark mode should render correctly with status=viewed 1`] 
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -531,19 +578,17 @@ exports[`iOS dark mode dark mode should render correctly with status=viewed 1`] 
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": "rgb(17, 18, 54)",
-            "shadowOffset": Object {
-              "height": 0.5,
-              "width": 0,
-            },
-            "shadowOpacity": 0.15,
-            "shadowRadius": 1.5,
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
           },
-        ]
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        }
       }
     >
       <View
@@ -552,13 +597,10 @@ exports[`iOS dark mode dark mode should render correctly with status=viewed 1`] 
             Object {
               "backgroundColor": "rgb(7, 112, 227)",
               "borderRadius": 4,
-              "bottom": 0,
+              "bottom": -4,
               "height": 16,
               "left": "50%",
-              "marginTop": -4,
               "position": "absolute",
-              "right": 0,
-              "top": "100%",
               "transform": Array [
                 Object {
                   "rotate": "45deg",
@@ -610,7 +652,7 @@ exports[`iOS dark mode dark mode should render correctly with status=viewed 1`] 
                 "color": "rgb(255, 255, 255)",
               },
               Object {
-                "color": "rgb(109, 159, 235)",
+                "color": "rgb(7, 112, 227)",
               },
             ],
           ]
@@ -619,6 +661,25 @@ exports[`iOS dark mode dark mode should render correctly with status=viewed 1`] 
         123€
       </Text>
     </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 4,
+          },
+        ]
+      }
+    />
   </View>
 </AIRMapMarker>
 `;
@@ -646,7 +707,6 @@ exports[`iOS dark mode light mode should render correctly 1`] = `
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -658,19 +718,17 @@ exports[`iOS dark mode light mode should render correctly 1`] = `
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": "rgb(17, 18, 54)",
-            "shadowOffset": Object {
-              "height": 0.5,
-              "width": 0,
-            },
-            "shadowOpacity": 0.15,
-            "shadowRadius": 1.5,
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
           },
-        ]
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        }
       }
     >
       <View
@@ -679,13 +737,10 @@ exports[`iOS dark mode light mode should render correctly 1`] = `
             Object {
               "backgroundColor": "rgb(7, 112, 227)",
               "borderRadius": 4,
-              "bottom": 0,
+              "bottom": -4,
               "height": 16,
               "left": "50%",
-              "marginTop": -4,
               "position": "absolute",
-              "right": 0,
-              "top": "100%",
               "transform": Array [
                 Object {
                   "rotate": "45deg",
@@ -737,6 +792,25 @@ exports[`iOS dark mode light mode should render correctly 1`] = `
         123€
       </Text>
     </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(17, 18, 54)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 4,
+          },
+        ]
+      }
+    />
   </View>
 </AIRMapMarker>
 `;
@@ -764,7 +838,6 @@ exports[`iOS dark mode light mode should render correctly with disabled={true} 1
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -776,19 +849,17 @@ exports[`iOS dark mode light mode should render correctly with disabled={true} 1
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": "rgb(17, 18, 54)",
-            "shadowOffset": Object {
-              "height": 0.5,
-              "width": 0,
-            },
-            "shadowOpacity": 0.15,
-            "shadowRadius": 1.5,
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
           },
-        ]
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        }
       }
     >
       <View
@@ -797,13 +868,10 @@ exports[`iOS dark mode light mode should render correctly with disabled={true} 1
             Object {
               "backgroundColor": "rgb(7, 112, 227)",
               "borderRadius": 4,
-              "bottom": 0,
+              "bottom": -4,
               "height": 16,
               "left": "50%",
-              "marginTop": -4,
               "position": "absolute",
-              "right": 0,
-              "top": "100%",
               "transform": Array [
                 Object {
                   "rotate": "45deg",
@@ -864,6 +932,25 @@ exports[`iOS dark mode light mode should render correctly with disabled={true} 1
         123€
       </Text>
     </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(17, 18, 54)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 4,
+          },
+        ]
+      }
+    />
   </View>
 </AIRMapMarker>
 `;
@@ -891,7 +978,6 @@ exports[`iOS dark mode light mode should render correctly with status=default 1`
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -903,19 +989,17 @@ exports[`iOS dark mode light mode should render correctly with status=default 1`
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": "rgb(17, 18, 54)",
-            "shadowOffset": Object {
-              "height": 0.5,
-              "width": 0,
-            },
-            "shadowOpacity": 0.15,
-            "shadowRadius": 1.5,
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
           },
-        ]
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        }
       }
     >
       <View
@@ -924,13 +1008,10 @@ exports[`iOS dark mode light mode should render correctly with status=default 1`
             Object {
               "backgroundColor": "rgb(7, 112, 227)",
               "borderRadius": 4,
-              "bottom": 0,
+              "bottom": -4,
               "height": 16,
               "left": "50%",
-              "marginTop": -4,
               "position": "absolute",
-              "right": 0,
-              "top": "100%",
               "transform": Array [
                 Object {
                   "rotate": "45deg",
@@ -982,6 +1063,25 @@ exports[`iOS dark mode light mode should render correctly with status=default 1`
         123€
       </Text>
     </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(17, 18, 54)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 4,
+          },
+        ]
+      }
+    />
   </View>
 </AIRMapMarker>
 `;
@@ -1009,7 +1109,6 @@ exports[`iOS dark mode light mode should render correctly with status=focused 1`
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -1021,22 +1120,17 @@ exports[`iOS dark mode light mode should render correctly with status=focused 1`
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": "rgb(17, 18, 54)",
-            "shadowOffset": Object {
-              "height": 0.5,
-              "width": 0,
-            },
-            "shadowOpacity": 0.15,
-            "shadowRadius": 1.5,
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 8,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
           },
-          Object {
-            "paddingVertical": 8,
-          },
-        ]
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        }
       }
     >
       <View
@@ -1045,13 +1139,10 @@ exports[`iOS dark mode light mode should render correctly with status=focused 1`
             Object {
               "backgroundColor": "rgb(7, 112, 227)",
               "borderRadius": 4,
-              "bottom": 0,
+              "bottom": -4,
               "height": 16,
               "left": "50%",
-              "marginTop": -4,
               "position": "absolute",
-              "right": 0,
-              "top": "100%",
               "transform": Array [
                 Object {
                   "rotate": "45deg",
@@ -1061,7 +1152,6 @@ exports[`iOS dark mode light mode should render correctly with status=focused 1`
             },
             Object {
               "backgroundColor": "rgb(7, 112, 227)",
-              "marginTop": 4,
             },
           ]
         }
@@ -1115,6 +1205,25 @@ exports[`iOS dark mode light mode should render correctly with status=focused 1`
         123€
       </Text>
     </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(17, 18, 54)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 4,
+          },
+        ]
+      }
+    />
   </View>
 </AIRMapMarker>
 `;
@@ -1142,7 +1251,6 @@ exports[`iOS dark mode light mode should render correctly with status=viewed 1`]
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -1154,19 +1262,17 @@ exports[`iOS dark mode light mode should render correctly with status=viewed 1`]
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": "rgb(17, 18, 54)",
-            "shadowOffset": Object {
-              "height": 0.5,
-              "width": 0,
-            },
-            "shadowOpacity": 0.15,
-            "shadowRadius": 1.5,
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
           },
-        ]
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        }
       }
     >
       <View
@@ -1175,13 +1281,10 @@ exports[`iOS dark mode light mode should render correctly with status=viewed 1`]
             Object {
               "backgroundColor": "rgb(7, 112, 227)",
               "borderRadius": 4,
-              "bottom": 0,
+              "bottom": -4,
               "height": 16,
               "left": "50%",
-              "marginTop": -4,
               "position": "absolute",
-              "right": 0,
-              "top": "100%",
               "transform": Array [
                 Object {
                   "rotate": "45deg",
@@ -1233,7 +1336,7 @@ exports[`iOS dark mode light mode should render correctly with status=viewed 1`]
                 "color": "rgb(255, 255, 255)",
               },
               Object {
-                "color": "rgb(109, 159, 235)",
+                "color": "rgb(7, 112, 227)",
               },
             ],
           ]
@@ -1242,6 +1345,25 @@ exports[`iOS dark mode light mode should render correctly with status=viewed 1`]
         123€
       </Text>
     </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(17, 18, 54)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 4,
+          },
+        ]
+      }
+    />
   </View>
 </AIRMapMarker>
 `;
@@ -1269,7 +1391,6 @@ exports[`iOS light mode dark mode should render correctly 1`] = `
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -1281,19 +1402,17 @@ exports[`iOS light mode dark mode should render correctly 1`] = `
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": "rgb(17, 18, 54)",
-            "shadowOffset": Object {
-              "height": 0.5,
-              "width": 0,
-            },
-            "shadowOpacity": 0.15,
-            "shadowRadius": 1.5,
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
           },
-        ]
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        }
       }
     >
       <View
@@ -1302,13 +1421,10 @@ exports[`iOS light mode dark mode should render correctly 1`] = `
             Object {
               "backgroundColor": "rgb(7, 112, 227)",
               "borderRadius": 4,
-              "bottom": 0,
+              "bottom": -4,
               "height": 16,
               "left": "50%",
-              "marginTop": -4,
               "position": "absolute",
-              "right": 0,
-              "top": "100%",
               "transform": Array [
                 Object {
                   "rotate": "45deg",
@@ -1360,6 +1476,25 @@ exports[`iOS light mode dark mode should render correctly 1`] = `
         123€
       </Text>
     </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 4,
+          },
+        ]
+      }
+    />
   </View>
 </AIRMapMarker>
 `;
@@ -1387,7 +1522,6 @@ exports[`iOS light mode dark mode should render correctly with disabled={true} 1
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -1399,19 +1533,17 @@ exports[`iOS light mode dark mode should render correctly with disabled={true} 1
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": "rgb(17, 18, 54)",
-            "shadowOffset": Object {
-              "height": 0.5,
-              "width": 0,
-            },
-            "shadowOpacity": 0.15,
-            "shadowRadius": 1.5,
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
           },
-        ]
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        }
       }
     >
       <View
@@ -1420,13 +1552,10 @@ exports[`iOS light mode dark mode should render correctly with disabled={true} 1
             Object {
               "backgroundColor": "rgb(7, 112, 227)",
               "borderRadius": 4,
-              "bottom": 0,
+              "bottom": -4,
               "height": 16,
               "left": "50%",
-              "marginTop": -4,
               "position": "absolute",
-              "right": 0,
-              "top": "100%",
               "transform": Array [
                 Object {
                   "rotate": "45deg",
@@ -1487,6 +1616,25 @@ exports[`iOS light mode dark mode should render correctly with disabled={true} 1
         123€
       </Text>
     </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 4,
+          },
+        ]
+      }
+    />
   </View>
 </AIRMapMarker>
 `;
@@ -1514,7 +1662,6 @@ exports[`iOS light mode dark mode should render correctly with status=default 1`
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -1526,19 +1673,17 @@ exports[`iOS light mode dark mode should render correctly with status=default 1`
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": "rgb(17, 18, 54)",
-            "shadowOffset": Object {
-              "height": 0.5,
-              "width": 0,
-            },
-            "shadowOpacity": 0.15,
-            "shadowRadius": 1.5,
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
           },
-        ]
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        }
       }
     >
       <View
@@ -1547,13 +1692,10 @@ exports[`iOS light mode dark mode should render correctly with status=default 1`
             Object {
               "backgroundColor": "rgb(7, 112, 227)",
               "borderRadius": 4,
-              "bottom": 0,
+              "bottom": -4,
               "height": 16,
               "left": "50%",
-              "marginTop": -4,
               "position": "absolute",
-              "right": 0,
-              "top": "100%",
               "transform": Array [
                 Object {
                   "rotate": "45deg",
@@ -1605,6 +1747,25 @@ exports[`iOS light mode dark mode should render correctly with status=default 1`
         123€
       </Text>
     </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 4,
+          },
+        ]
+      }
+    />
   </View>
 </AIRMapMarker>
 `;
@@ -1632,7 +1793,6 @@ exports[`iOS light mode dark mode should render correctly with status=focused 1`
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -1644,22 +1804,17 @@ exports[`iOS light mode dark mode should render correctly with status=focused 1`
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": "rgb(17, 18, 54)",
-            "shadowOffset": Object {
-              "height": 0.5,
-              "width": 0,
-            },
-            "shadowOpacity": 0.15,
-            "shadowRadius": 1.5,
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 8,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
           },
-          Object {
-            "paddingVertical": 8,
-          },
-        ]
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        }
       }
     >
       <View
@@ -1668,13 +1823,10 @@ exports[`iOS light mode dark mode should render correctly with status=focused 1`
             Object {
               "backgroundColor": "rgb(7, 112, 227)",
               "borderRadius": 4,
-              "bottom": 0,
+              "bottom": -4,
               "height": 16,
               "left": "50%",
-              "marginTop": -4,
               "position": "absolute",
-              "right": 0,
-              "top": "100%",
               "transform": Array [
                 Object {
                   "rotate": "45deg",
@@ -1684,7 +1836,6 @@ exports[`iOS light mode dark mode should render correctly with status=focused 1`
             },
             Object {
               "backgroundColor": "rgb(7, 112, 227)",
-              "marginTop": 4,
             },
           ]
         }
@@ -1738,6 +1889,25 @@ exports[`iOS light mode dark mode should render correctly with status=focused 1`
         123€
       </Text>
     </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 4,
+          },
+        ]
+      }
+    />
   </View>
 </AIRMapMarker>
 `;
@@ -1765,7 +1935,6 @@ exports[`iOS light mode dark mode should render correctly with status=viewed 1`]
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -1777,19 +1946,17 @@ exports[`iOS light mode dark mode should render correctly with status=viewed 1`]
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": "rgb(17, 18, 54)",
-            "shadowOffset": Object {
-              "height": 0.5,
-              "width": 0,
-            },
-            "shadowOpacity": 0.15,
-            "shadowRadius": 1.5,
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
           },
-        ]
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        }
       }
     >
       <View
@@ -1798,13 +1965,10 @@ exports[`iOS light mode dark mode should render correctly with status=viewed 1`]
             Object {
               "backgroundColor": "rgb(7, 112, 227)",
               "borderRadius": 4,
-              "bottom": 0,
+              "bottom": -4,
               "height": 16,
               "left": "50%",
-              "marginTop": -4,
               "position": "absolute",
-              "right": 0,
-              "top": "100%",
               "transform": Array [
                 Object {
                   "rotate": "45deg",
@@ -1856,7 +2020,7 @@ exports[`iOS light mode dark mode should render correctly with status=viewed 1`]
                 "color": "rgb(255, 255, 255)",
               },
               Object {
-                "color": "rgb(109, 159, 235)",
+                "color": "rgb(7, 112, 227)",
               },
             ],
           ]
@@ -1865,6 +2029,25 @@ exports[`iOS light mode dark mode should render correctly with status=viewed 1`]
         123€
       </Text>
     </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 4,
+          },
+        ]
+      }
+    />
   </View>
 </AIRMapMarker>
 `;
@@ -1892,7 +2075,6 @@ exports[`iOS light mode light mode should render correctly 1`] = `
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -1904,19 +2086,17 @@ exports[`iOS light mode light mode should render correctly 1`] = `
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": "rgb(17, 18, 54)",
-            "shadowOffset": Object {
-              "height": 0.5,
-              "width": 0,
-            },
-            "shadowOpacity": 0.15,
-            "shadowRadius": 1.5,
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
           },
-        ]
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        }
       }
     >
       <View
@@ -1925,13 +2105,10 @@ exports[`iOS light mode light mode should render correctly 1`] = `
             Object {
               "backgroundColor": "rgb(7, 112, 227)",
               "borderRadius": 4,
-              "bottom": 0,
+              "bottom": -4,
               "height": 16,
               "left": "50%",
-              "marginTop": -4,
               "position": "absolute",
-              "right": 0,
-              "top": "100%",
               "transform": Array [
                 Object {
                   "rotate": "45deg",
@@ -1983,6 +2160,25 @@ exports[`iOS light mode light mode should render correctly 1`] = `
         123€
       </Text>
     </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(17, 18, 54)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 4,
+          },
+        ]
+      }
+    />
   </View>
 </AIRMapMarker>
 `;
@@ -2010,7 +2206,6 @@ exports[`iOS light mode light mode should render correctly with disabled={true} 
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -2022,19 +2217,17 @@ exports[`iOS light mode light mode should render correctly with disabled={true} 
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": "rgb(17, 18, 54)",
-            "shadowOffset": Object {
-              "height": 0.5,
-              "width": 0,
-            },
-            "shadowOpacity": 0.15,
-            "shadowRadius": 1.5,
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
           },
-        ]
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        }
       }
     >
       <View
@@ -2043,13 +2236,10 @@ exports[`iOS light mode light mode should render correctly with disabled={true} 
             Object {
               "backgroundColor": "rgb(7, 112, 227)",
               "borderRadius": 4,
-              "bottom": 0,
+              "bottom": -4,
               "height": 16,
               "left": "50%",
-              "marginTop": -4,
               "position": "absolute",
-              "right": 0,
-              "top": "100%",
               "transform": Array [
                 Object {
                   "rotate": "45deg",
@@ -2110,6 +2300,25 @@ exports[`iOS light mode light mode should render correctly with disabled={true} 
         123€
       </Text>
     </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(17, 18, 54)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 4,
+          },
+        ]
+      }
+    />
   </View>
 </AIRMapMarker>
 `;
@@ -2137,7 +2346,6 @@ exports[`iOS light mode light mode should render correctly with status=default 1
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -2149,19 +2357,17 @@ exports[`iOS light mode light mode should render correctly with status=default 1
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": "rgb(17, 18, 54)",
-            "shadowOffset": Object {
-              "height": 0.5,
-              "width": 0,
-            },
-            "shadowOpacity": 0.15,
-            "shadowRadius": 1.5,
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
           },
-        ]
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        }
       }
     >
       <View
@@ -2170,13 +2376,10 @@ exports[`iOS light mode light mode should render correctly with status=default 1
             Object {
               "backgroundColor": "rgb(7, 112, 227)",
               "borderRadius": 4,
-              "bottom": 0,
+              "bottom": -4,
               "height": 16,
               "left": "50%",
-              "marginTop": -4,
               "position": "absolute",
-              "right": 0,
-              "top": "100%",
               "transform": Array [
                 Object {
                   "rotate": "45deg",
@@ -2228,6 +2431,25 @@ exports[`iOS light mode light mode should render correctly with status=default 1
         123€
       </Text>
     </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(17, 18, 54)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 4,
+          },
+        ]
+      }
+    />
   </View>
 </AIRMapMarker>
 `;
@@ -2255,7 +2477,6 @@ exports[`iOS light mode light mode should render correctly with status=focused 1
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -2267,22 +2488,17 @@ exports[`iOS light mode light mode should render correctly with status=focused 1
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": "rgb(17, 18, 54)",
-            "shadowOffset": Object {
-              "height": 0.5,
-              "width": 0,
-            },
-            "shadowOpacity": 0.15,
-            "shadowRadius": 1.5,
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 8,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
           },
-          Object {
-            "paddingVertical": 8,
-          },
-        ]
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        }
       }
     >
       <View
@@ -2291,13 +2507,10 @@ exports[`iOS light mode light mode should render correctly with status=focused 1
             Object {
               "backgroundColor": "rgb(7, 112, 227)",
               "borderRadius": 4,
-              "bottom": 0,
+              "bottom": -4,
               "height": 16,
               "left": "50%",
-              "marginTop": -4,
               "position": "absolute",
-              "right": 0,
-              "top": "100%",
               "transform": Array [
                 Object {
                   "rotate": "45deg",
@@ -2307,7 +2520,6 @@ exports[`iOS light mode light mode should render correctly with status=focused 1
             },
             Object {
               "backgroundColor": "rgb(7, 112, 227)",
-              "marginTop": 4,
             },
           ]
         }
@@ -2361,6 +2573,25 @@ exports[`iOS light mode light mode should render correctly with status=focused 1
         123€
       </Text>
     </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(17, 18, 54)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 4,
+          },
+        ]
+      }
+    />
   </View>
 </AIRMapMarker>
 `;
@@ -2388,7 +2619,6 @@ exports[`iOS light mode light mode should render correctly with status=viewed 1`
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -2400,19 +2630,17 @@ exports[`iOS light mode light mode should render correctly with status=viewed 1`
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": "rgb(17, 18, 54)",
-            "shadowOffset": Object {
-              "height": 0.5,
-              "width": 0,
-            },
-            "shadowOpacity": 0.15,
-            "shadowRadius": 1.5,
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
           },
-        ]
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        }
       }
     >
       <View
@@ -2421,13 +2649,10 @@ exports[`iOS light mode light mode should render correctly with status=viewed 1`
             Object {
               "backgroundColor": "rgb(7, 112, 227)",
               "borderRadius": 4,
-              "bottom": 0,
+              "bottom": -4,
               "height": 16,
               "left": "50%",
-              "marginTop": -4,
               "position": "absolute",
-              "right": 0,
-              "top": "100%",
               "transform": Array [
                 Object {
                   "rotate": "45deg",
@@ -2479,7 +2704,7 @@ exports[`iOS light mode light mode should render correctly with status=viewed 1`
                 "color": "rgb(255, 255, 255)",
               },
               Object {
-                "color": "rgb(109, 159, 235)",
+                "color": "rgb(7, 112, 227)",
               },
             ],
           ]
@@ -2488,6 +2713,25 @@ exports[`iOS light mode light mode should render correctly with status=viewed 1`
         123€
       </Text>
     </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(17, 18, 54)",
+            "bottom": 0,
+            "flex": 1,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "borderRadius": 4,
+          },
+        ]
+      }
+    />
   </View>
 </AIRMapMarker>
 `;

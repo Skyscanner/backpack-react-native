@@ -24,6 +24,13 @@ exports[`Android dark mode dark mode should render correctly 1`] = `
     accessible={true}
     focusable={true}
     isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": -9934465,
+        "type": "RippleAndroid",
+      }
+    }
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -31,89 +38,80 @@ exports[`Android dark mode dark mode should render correctly 1`] = `
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    style={null}
+    style={
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 4,
+        "shadowColor": undefined,
+        "shadowOffset": Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        "shadowOpacity": undefined,
+        "shadowRadius": undefined,
+      }
+    }
   >
     <View
       style={
         Array [
           Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": undefined,
-            "shadowOffset": Object {
-              "height": undefined,
-              "width": undefined,
-            },
-            "shadowOpacity": undefined,
-            "shadowRadius": undefined,
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": -4,
+            "height": 16,
+            "left": "50%",
+            "position": "absolute",
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 16,
           },
         ]
       }
-    >
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "height": 16,
-              "left": "50%",
-              "marginTop": -4,
-              "position": "absolute",
-              "right": 0,
-              "top": "100%",
-              "transform": Array [
-                Object {
-                  "rotate": "45deg",
-                },
-              ],
-              "width": 16,
-            },
-          ]
-        }
-      />
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": -0.2,
+            "textAlign": "left",
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
           Array [
             Object {
               "color": "rgb(255, 255, 255)",
-              "fontFamily": "sans-serif",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": -0.2,
-              "textAlign": "left",
             },
-            Object {
-              "fontFamily": "sans-serif-medium",
-            },
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-          ]
-        }
-      >
-        123€
-      </Text>
-    </View>
+          ],
+        ]
+      }
+    >
+      123€
+    </Text>
   </View>
 </AIRMapMarker>
 `;
@@ -140,8 +138,15 @@ exports[`Android dark mode dark mode should render correctly with disabled={true
 >
   <View
     accessible={true}
-    focusable={true}
+    focusable={false}
     isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": -9934465,
+        "type": "RippleAndroid",
+      }
+    }
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -149,98 +154,89 @@ exports[`Android dark mode dark mode should render correctly with disabled={true
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    style={null}
+    style={
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 4,
+        "shadowColor": undefined,
+        "shadowOffset": Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        "shadowOpacity": undefined,
+        "shadowRadius": undefined,
+      }
+    }
   >
     <View
       style={
         Array [
           Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": undefined,
-            "shadowOffset": Object {
-              "height": undefined,
-              "width": undefined,
-            },
-            "shadowOpacity": undefined,
-            "shadowRadius": undefined,
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": -4,
+            "height": 16,
+            "left": "50%",
+            "position": "absolute",
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 16,
+          },
+          Object {
+            "backgroundColor": "rgb(58, 58, 60)",
           },
         ]
       }
-    >
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "height": 16,
-              "left": "50%",
-              "marginTop": -4,
-              "position": "absolute",
-              "right": 0,
-              "top": "100%",
-              "transform": Array [
-                Object {
-                  "rotate": "45deg",
-                },
-              ],
-              "width": 16,
-            },
-            Object {
-              "backgroundColor": "rgb(58, 58, 60)",
-            },
-          ]
-        }
-      />
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-            Object {
-              "backgroundColor": "rgb(58, 58, 60)",
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "backgroundColor": "rgb(58, 58, 60)",
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": -0.2,
+            "textAlign": "left",
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
           Array [
             Object {
               "color": "rgb(255, 255, 255)",
-              "fontFamily": "sans-serif",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": -0.2,
-              "textAlign": "left",
             },
             Object {
-              "fontFamily": "sans-serif-medium",
+              "color": "rgb(99, 99, 102)",
             },
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(99, 99, 102)",
-              },
-            ],
-          ]
-        }
-      >
-        123€
-      </Text>
-    </View>
+          ],
+        ]
+      }
+    >
+      123€
+    </Text>
   </View>
 </AIRMapMarker>
 `;
@@ -269,6 +265,13 @@ exports[`Android dark mode dark mode should render correctly with status=default
     accessible={true}
     focusable={true}
     isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": -9934465,
+        "type": "RippleAndroid",
+      }
+    }
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -276,89 +279,80 @@ exports[`Android dark mode dark mode should render correctly with status=default
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    style={null}
+    style={
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 4,
+        "shadowColor": undefined,
+        "shadowOffset": Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        "shadowOpacity": undefined,
+        "shadowRadius": undefined,
+      }
+    }
   >
     <View
       style={
         Array [
           Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": undefined,
-            "shadowOffset": Object {
-              "height": undefined,
-              "width": undefined,
-            },
-            "shadowOpacity": undefined,
-            "shadowRadius": undefined,
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": -4,
+            "height": 16,
+            "left": "50%",
+            "position": "absolute",
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 16,
           },
         ]
       }
-    >
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "height": 16,
-              "left": "50%",
-              "marginTop": -4,
-              "position": "absolute",
-              "right": 0,
-              "top": "100%",
-              "transform": Array [
-                Object {
-                  "rotate": "45deg",
-                },
-              ],
-              "width": 16,
-            },
-          ]
-        }
-      />
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": -0.2,
+            "textAlign": "left",
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
           Array [
             Object {
               "color": "rgb(255, 255, 255)",
-              "fontFamily": "sans-serif",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": -0.2,
-              "textAlign": "left",
             },
-            Object {
-              "fontFamily": "sans-serif-medium",
-            },
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-          ]
-        }
-      >
-        123€
-      </Text>
-    </View>
+          ],
+        ]
+      }
+    >
+      123€
+    </Text>
   </View>
 </AIRMapMarker>
 `;
@@ -387,6 +381,13 @@ exports[`Android dark mode dark mode should render correctly with status=focused
     accessible={true}
     focusable={true}
     isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": -9934465,
+        "type": "RippleAndroid",
+      }
+    }
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -394,104 +395,91 @@ exports[`Android dark mode dark mode should render correctly with status=focused
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    style={null}
+    style={
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 8,
+        "shadowColor": undefined,
+        "shadowOffset": Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        "shadowOpacity": undefined,
+        "shadowRadius": undefined,
+      }
+    }
   >
     <View
       style={
         Array [
           Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": undefined,
-            "shadowOffset": Object {
-              "height": undefined,
-              "width": undefined,
-            },
-            "shadowOpacity": undefined,
-            "shadowRadius": undefined,
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": -4,
+            "height": 16,
+            "left": "50%",
+            "position": "absolute",
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 16,
           },
           Object {
-            "paddingVertical": 8,
+            "backgroundColor": "rgb(7, 112, 227)",
           },
         ]
       }
-    >
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "height": 16,
-              "left": "50%",
-              "marginTop": -4,
-              "position": "absolute",
-              "right": 0,
-              "top": "100%",
-              "transform": Array [
-                Object {
-                  "rotate": "45deg",
-                },
-              ],
-              "width": 16,
-            },
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "marginTop": 4,
-            },
-          ]
-        }
-      />
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-            Object {
-              "backgroundColor": "rgb(255, 255, 255)",
-              "borderColor": "rgb(7, 112, 227)",
-              "borderWidth": 2,
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "borderColor": "rgb(7, 112, 227)",
+            "borderWidth": 2,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": -0.2,
+            "textAlign": "left",
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
           Array [
             Object {
               "color": "rgb(255, 255, 255)",
-              "fontFamily": "sans-serif",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": -0.2,
-              "textAlign": "left",
             },
             Object {
-              "fontFamily": "sans-serif-medium",
+              "color": "rgb(7, 112, 227)",
             },
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(7, 112, 227)",
-              },
-            ],
-          ]
-        }
-      >
-        123€
-      </Text>
-    </View>
+          ],
+        ]
+      }
+    >
+      123€
+    </Text>
   </View>
 </AIRMapMarker>
 `;
@@ -520,6 +508,13 @@ exports[`Android dark mode dark mode should render correctly with status=viewed 
     accessible={true}
     focusable={true}
     isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": -9934465,
+        "type": "RippleAndroid",
+      }
+    }
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -527,98 +522,89 @@ exports[`Android dark mode dark mode should render correctly with status=viewed 
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    style={null}
+    style={
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 4,
+        "shadowColor": undefined,
+        "shadowOffset": Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        "shadowOpacity": undefined,
+        "shadowRadius": undefined,
+      }
+    }
   >
     <View
       style={
         Array [
           Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": undefined,
-            "shadowOffset": Object {
-              "height": undefined,
-              "width": undefined,
-            },
-            "shadowOpacity": undefined,
-            "shadowRadius": undefined,
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": -4,
+            "height": 16,
+            "left": "50%",
+            "position": "absolute",
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 16,
+          },
+          Object {
+            "backgroundColor": "rgb(205, 223, 248)",
           },
         ]
       }
-    >
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "height": 16,
-              "left": "50%",
-              "marginTop": -4,
-              "position": "absolute",
-              "right": 0,
-              "top": "100%",
-              "transform": Array [
-                Object {
-                  "rotate": "45deg",
-                },
-              ],
-              "width": 16,
-            },
-            Object {
-              "backgroundColor": "rgb(205, 223, 248)",
-            },
-          ]
-        }
-      />
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-            Object {
-              "backgroundColor": "rgb(205, 223, 248)",
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "backgroundColor": "rgb(205, 223, 248)",
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": -0.2,
+            "textAlign": "left",
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
           Array [
             Object {
               "color": "rgb(255, 255, 255)",
-              "fontFamily": "sans-serif",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": -0.2,
-              "textAlign": "left",
             },
             Object {
-              "fontFamily": "sans-serif-medium",
+              "color": "rgb(7, 112, 227)",
             },
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(109, 159, 235)",
-              },
-            ],
-          ]
-        }
-      >
-        123€
-      </Text>
-    </View>
+          ],
+        ]
+      }
+    >
+      123€
+    </Text>
   </View>
 </AIRMapMarker>
 `;
@@ -647,6 +633,13 @@ exports[`Android dark mode light mode should render correctly 1`] = `
     accessible={true}
     focusable={true}
     isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -654,89 +647,80 @@ exports[`Android dark mode light mode should render correctly 1`] = `
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    style={null}
+    style={
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 4,
+        "shadowColor": undefined,
+        "shadowOffset": Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        "shadowOpacity": undefined,
+        "shadowRadius": undefined,
+      }
+    }
   >
     <View
       style={
         Array [
           Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": undefined,
-            "shadowOffset": Object {
-              "height": undefined,
-              "width": undefined,
-            },
-            "shadowOpacity": undefined,
-            "shadowRadius": undefined,
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": -4,
+            "height": 16,
+            "left": "50%",
+            "position": "absolute",
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 16,
           },
         ]
       }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": -0.2,
+            "textAlign": "left",
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
     >
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "height": 16,
-              "left": "50%",
-              "marginTop": -4,
-              "position": "absolute",
-              "right": 0,
-              "top": "100%",
-              "transform": Array [
-                Object {
-                  "rotate": "45deg",
-                },
-              ],
-              "width": 16,
-            },
-          ]
-        }
-      />
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(17, 18, 54)",
-              "fontFamily": "sans-serif",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": -0.2,
-              "textAlign": "left",
-            },
-            Object {
-              "fontFamily": "sans-serif-medium",
-            },
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-          ]
-        }
-      >
-        123€
-      </Text>
-    </View>
+      123€
+    </Text>
   </View>
 </AIRMapMarker>
 `;
@@ -763,8 +747,15 @@ exports[`Android dark mode light mode should render correctly with disabled={tru
 >
   <View
     accessible={true}
-    focusable={true}
+    focusable={false}
     isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -772,98 +763,89 @@ exports[`Android dark mode light mode should render correctly with disabled={tru
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    style={null}
+    style={
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 4,
+        "shadowColor": undefined,
+        "shadowOffset": Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        "shadowOpacity": undefined,
+        "shadowRadius": undefined,
+      }
+    }
   >
     <View
       style={
         Array [
           Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": undefined,
-            "shadowOffset": Object {
-              "height": undefined,
-              "width": undefined,
-            },
-            "shadowOpacity": undefined,
-            "shadowRadius": undefined,
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": -4,
+            "height": 16,
+            "left": "50%",
+            "position": "absolute",
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 16,
+          },
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
           },
         ]
       }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": -0.2,
+            "textAlign": "left",
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "color": "rgb(178, 178, 191)",
+            },
+          ],
+        ]
+      }
     >
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "height": 16,
-              "left": "50%",
-              "marginTop": -4,
-              "position": "absolute",
-              "right": 0,
-              "top": "100%",
-              "transform": Array [
-                Object {
-                  "rotate": "45deg",
-                },
-              ],
-              "width": 16,
-            },
-            Object {
-              "backgroundColor": "rgb(255, 255, 255)",
-            },
-          ]
-        }
-      />
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-            Object {
-              "backgroundColor": "rgb(255, 255, 255)",
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(17, 18, 54)",
-              "fontFamily": "sans-serif",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": -0.2,
-              "textAlign": "left",
-            },
-            Object {
-              "fontFamily": "sans-serif-medium",
-            },
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(178, 178, 191)",
-              },
-            ],
-          ]
-        }
-      >
-        123€
-      </Text>
-    </View>
+      123€
+    </Text>
   </View>
 </AIRMapMarker>
 `;
@@ -892,6 +874,13 @@ exports[`Android dark mode light mode should render correctly with status=defaul
     accessible={true}
     focusable={true}
     isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -899,89 +888,80 @@ exports[`Android dark mode light mode should render correctly with status=defaul
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    style={null}
+    style={
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 4,
+        "shadowColor": undefined,
+        "shadowOffset": Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        "shadowOpacity": undefined,
+        "shadowRadius": undefined,
+      }
+    }
   >
     <View
       style={
         Array [
           Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": undefined,
-            "shadowOffset": Object {
-              "height": undefined,
-              "width": undefined,
-            },
-            "shadowOpacity": undefined,
-            "shadowRadius": undefined,
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": -4,
+            "height": 16,
+            "left": "50%",
+            "position": "absolute",
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 16,
           },
         ]
       }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": -0.2,
+            "textAlign": "left",
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
     >
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "height": 16,
-              "left": "50%",
-              "marginTop": -4,
-              "position": "absolute",
-              "right": 0,
-              "top": "100%",
-              "transform": Array [
-                Object {
-                  "rotate": "45deg",
-                },
-              ],
-              "width": 16,
-            },
-          ]
-        }
-      />
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(17, 18, 54)",
-              "fontFamily": "sans-serif",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": -0.2,
-              "textAlign": "left",
-            },
-            Object {
-              "fontFamily": "sans-serif-medium",
-            },
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-          ]
-        }
-      >
-        123€
-      </Text>
-    </View>
+      123€
+    </Text>
   </View>
 </AIRMapMarker>
 `;
@@ -1010,6 +990,13 @@ exports[`Android dark mode light mode should render correctly with status=focuse
     accessible={true}
     focusable={true}
     isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -1017,104 +1004,91 @@ exports[`Android dark mode light mode should render correctly with status=focuse
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    style={null}
+    style={
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 8,
+        "shadowColor": undefined,
+        "shadowOffset": Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        "shadowOpacity": undefined,
+        "shadowRadius": undefined,
+      }
+    }
   >
     <View
       style={
         Array [
           Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": undefined,
-            "shadowOffset": Object {
-              "height": undefined,
-              "width": undefined,
-            },
-            "shadowOpacity": undefined,
-            "shadowRadius": undefined,
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": -4,
+            "height": 16,
+            "left": "50%",
+            "position": "absolute",
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 16,
           },
           Object {
-            "paddingVertical": 8,
+            "backgroundColor": "rgb(7, 112, 227)",
           },
         ]
       }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "borderColor": "rgb(7, 112, 227)",
+            "borderWidth": 2,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": -0.2,
+            "textAlign": "left",
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "color": "rgb(7, 112, 227)",
+            },
+          ],
+        ]
+      }
     >
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "height": 16,
-              "left": "50%",
-              "marginTop": -4,
-              "position": "absolute",
-              "right": 0,
-              "top": "100%",
-              "transform": Array [
-                Object {
-                  "rotate": "45deg",
-                },
-              ],
-              "width": 16,
-            },
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "marginTop": 4,
-            },
-          ]
-        }
-      />
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-            Object {
-              "backgroundColor": "rgb(255, 255, 255)",
-              "borderColor": "rgb(7, 112, 227)",
-              "borderWidth": 2,
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(17, 18, 54)",
-              "fontFamily": "sans-serif",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": -0.2,
-              "textAlign": "left",
-            },
-            Object {
-              "fontFamily": "sans-serif-medium",
-            },
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(7, 112, 227)",
-              },
-            ],
-          ]
-        }
-      >
-        123€
-      </Text>
-    </View>
+      123€
+    </Text>
   </View>
 </AIRMapMarker>
 `;
@@ -1143,6 +1117,13 @@ exports[`Android dark mode light mode should render correctly with status=viewed
     accessible={true}
     focusable={true}
     isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -1150,98 +1131,89 @@ exports[`Android dark mode light mode should render correctly with status=viewed
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    style={null}
+    style={
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 4,
+        "shadowColor": undefined,
+        "shadowOffset": Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        "shadowOpacity": undefined,
+        "shadowRadius": undefined,
+      }
+    }
   >
     <View
       style={
         Array [
           Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": undefined,
-            "shadowOffset": Object {
-              "height": undefined,
-              "width": undefined,
-            },
-            "shadowOpacity": undefined,
-            "shadowRadius": undefined,
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": -4,
+            "height": 16,
+            "left": "50%",
+            "position": "absolute",
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 16,
+          },
+          Object {
+            "backgroundColor": "rgb(205, 223, 248)",
           },
         ]
       }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "backgroundColor": "rgb(205, 223, 248)",
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": -0.2,
+            "textAlign": "left",
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "color": "rgb(7, 112, 227)",
+            },
+          ],
+        ]
+      }
     >
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "height": 16,
-              "left": "50%",
-              "marginTop": -4,
-              "position": "absolute",
-              "right": 0,
-              "top": "100%",
-              "transform": Array [
-                Object {
-                  "rotate": "45deg",
-                },
-              ],
-              "width": 16,
-            },
-            Object {
-              "backgroundColor": "rgb(205, 223, 248)",
-            },
-          ]
-        }
-      />
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-            Object {
-              "backgroundColor": "rgb(205, 223, 248)",
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(17, 18, 54)",
-              "fontFamily": "sans-serif",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": -0.2,
-              "textAlign": "left",
-            },
-            Object {
-              "fontFamily": "sans-serif-medium",
-            },
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(109, 159, 235)",
-              },
-            ],
-          ]
-        }
-      >
-        123€
-      </Text>
-    </View>
+      123€
+    </Text>
   </View>
 </AIRMapMarker>
 `;
@@ -1270,6 +1242,13 @@ exports[`Android light mode dark mode should render correctly 1`] = `
     accessible={true}
     focusable={true}
     isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": -9934465,
+        "type": "RippleAndroid",
+      }
+    }
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -1277,89 +1256,80 @@ exports[`Android light mode dark mode should render correctly 1`] = `
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    style={null}
+    style={
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 4,
+        "shadowColor": undefined,
+        "shadowOffset": Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        "shadowOpacity": undefined,
+        "shadowRadius": undefined,
+      }
+    }
   >
     <View
       style={
         Array [
           Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": undefined,
-            "shadowOffset": Object {
-              "height": undefined,
-              "width": undefined,
-            },
-            "shadowOpacity": undefined,
-            "shadowRadius": undefined,
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": -4,
+            "height": 16,
+            "left": "50%",
+            "position": "absolute",
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 16,
           },
         ]
       }
-    >
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "height": 16,
-              "left": "50%",
-              "marginTop": -4,
-              "position": "absolute",
-              "right": 0,
-              "top": "100%",
-              "transform": Array [
-                Object {
-                  "rotate": "45deg",
-                },
-              ],
-              "width": 16,
-            },
-          ]
-        }
-      />
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": -0.2,
+            "textAlign": "left",
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
           Array [
             Object {
               "color": "rgb(255, 255, 255)",
-              "fontFamily": "sans-serif",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": -0.2,
-              "textAlign": "left",
             },
-            Object {
-              "fontFamily": "sans-serif-medium",
-            },
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-          ]
-        }
-      >
-        123€
-      </Text>
-    </View>
+          ],
+        ]
+      }
+    >
+      123€
+    </Text>
   </View>
 </AIRMapMarker>
 `;
@@ -1386,8 +1356,15 @@ exports[`Android light mode dark mode should render correctly with disabled={tru
 >
   <View
     accessible={true}
-    focusable={true}
+    focusable={false}
     isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": -9934465,
+        "type": "RippleAndroid",
+      }
+    }
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -1395,98 +1372,89 @@ exports[`Android light mode dark mode should render correctly with disabled={tru
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    style={null}
+    style={
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 4,
+        "shadowColor": undefined,
+        "shadowOffset": Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        "shadowOpacity": undefined,
+        "shadowRadius": undefined,
+      }
+    }
   >
     <View
       style={
         Array [
           Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": undefined,
-            "shadowOffset": Object {
-              "height": undefined,
-              "width": undefined,
-            },
-            "shadowOpacity": undefined,
-            "shadowRadius": undefined,
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": -4,
+            "height": 16,
+            "left": "50%",
+            "position": "absolute",
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 16,
+          },
+          Object {
+            "backgroundColor": "rgb(58, 58, 60)",
           },
         ]
       }
-    >
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "height": 16,
-              "left": "50%",
-              "marginTop": -4,
-              "position": "absolute",
-              "right": 0,
-              "top": "100%",
-              "transform": Array [
-                Object {
-                  "rotate": "45deg",
-                },
-              ],
-              "width": 16,
-            },
-            Object {
-              "backgroundColor": "rgb(58, 58, 60)",
-            },
-          ]
-        }
-      />
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-            Object {
-              "backgroundColor": "rgb(58, 58, 60)",
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "backgroundColor": "rgb(58, 58, 60)",
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": -0.2,
+            "textAlign": "left",
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
           Array [
             Object {
               "color": "rgb(255, 255, 255)",
-              "fontFamily": "sans-serif",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": -0.2,
-              "textAlign": "left",
             },
             Object {
-              "fontFamily": "sans-serif-medium",
+              "color": "rgb(99, 99, 102)",
             },
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(99, 99, 102)",
-              },
-            ],
-          ]
-        }
-      >
-        123€
-      </Text>
-    </View>
+          ],
+        ]
+      }
+    >
+      123€
+    </Text>
   </View>
 </AIRMapMarker>
 `;
@@ -1515,6 +1483,13 @@ exports[`Android light mode dark mode should render correctly with status=defaul
     accessible={true}
     focusable={true}
     isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": -9934465,
+        "type": "RippleAndroid",
+      }
+    }
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -1522,89 +1497,80 @@ exports[`Android light mode dark mode should render correctly with status=defaul
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    style={null}
+    style={
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 4,
+        "shadowColor": undefined,
+        "shadowOffset": Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        "shadowOpacity": undefined,
+        "shadowRadius": undefined,
+      }
+    }
   >
     <View
       style={
         Array [
           Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": undefined,
-            "shadowOffset": Object {
-              "height": undefined,
-              "width": undefined,
-            },
-            "shadowOpacity": undefined,
-            "shadowRadius": undefined,
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": -4,
+            "height": 16,
+            "left": "50%",
+            "position": "absolute",
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 16,
           },
         ]
       }
-    >
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "height": 16,
-              "left": "50%",
-              "marginTop": -4,
-              "position": "absolute",
-              "right": 0,
-              "top": "100%",
-              "transform": Array [
-                Object {
-                  "rotate": "45deg",
-                },
-              ],
-              "width": 16,
-            },
-          ]
-        }
-      />
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": -0.2,
+            "textAlign": "left",
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
           Array [
             Object {
               "color": "rgb(255, 255, 255)",
-              "fontFamily": "sans-serif",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": -0.2,
-              "textAlign": "left",
             },
-            Object {
-              "fontFamily": "sans-serif-medium",
-            },
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-          ]
-        }
-      >
-        123€
-      </Text>
-    </View>
+          ],
+        ]
+      }
+    >
+      123€
+    </Text>
   </View>
 </AIRMapMarker>
 `;
@@ -1633,6 +1599,13 @@ exports[`Android light mode dark mode should render correctly with status=focuse
     accessible={true}
     focusable={true}
     isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": -9934465,
+        "type": "RippleAndroid",
+      }
+    }
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -1640,104 +1613,91 @@ exports[`Android light mode dark mode should render correctly with status=focuse
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    style={null}
+    style={
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 8,
+        "shadowColor": undefined,
+        "shadowOffset": Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        "shadowOpacity": undefined,
+        "shadowRadius": undefined,
+      }
+    }
   >
     <View
       style={
         Array [
           Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": undefined,
-            "shadowOffset": Object {
-              "height": undefined,
-              "width": undefined,
-            },
-            "shadowOpacity": undefined,
-            "shadowRadius": undefined,
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": -4,
+            "height": 16,
+            "left": "50%",
+            "position": "absolute",
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 16,
           },
           Object {
-            "paddingVertical": 8,
+            "backgroundColor": "rgb(7, 112, 227)",
           },
         ]
       }
-    >
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "height": 16,
-              "left": "50%",
-              "marginTop": -4,
-              "position": "absolute",
-              "right": 0,
-              "top": "100%",
-              "transform": Array [
-                Object {
-                  "rotate": "45deg",
-                },
-              ],
-              "width": 16,
-            },
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "marginTop": 4,
-            },
-          ]
-        }
-      />
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-            Object {
-              "backgroundColor": "rgb(255, 255, 255)",
-              "borderColor": "rgb(7, 112, 227)",
-              "borderWidth": 2,
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "borderColor": "rgb(7, 112, 227)",
+            "borderWidth": 2,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": -0.2,
+            "textAlign": "left",
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
           Array [
             Object {
               "color": "rgb(255, 255, 255)",
-              "fontFamily": "sans-serif",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": -0.2,
-              "textAlign": "left",
             },
             Object {
-              "fontFamily": "sans-serif-medium",
+              "color": "rgb(7, 112, 227)",
             },
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(7, 112, 227)",
-              },
-            ],
-          ]
-        }
-      >
-        123€
-      </Text>
-    </View>
+          ],
+        ]
+      }
+    >
+      123€
+    </Text>
   </View>
 </AIRMapMarker>
 `;
@@ -1766,6 +1726,13 @@ exports[`Android light mode dark mode should render correctly with status=viewed
     accessible={true}
     focusable={true}
     isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": -9934465,
+        "type": "RippleAndroid",
+      }
+    }
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -1773,98 +1740,89 @@ exports[`Android light mode dark mode should render correctly with status=viewed
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    style={null}
+    style={
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 4,
+        "shadowColor": undefined,
+        "shadowOffset": Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        "shadowOpacity": undefined,
+        "shadowRadius": undefined,
+      }
+    }
   >
     <View
       style={
         Array [
           Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": undefined,
-            "shadowOffset": Object {
-              "height": undefined,
-              "width": undefined,
-            },
-            "shadowOpacity": undefined,
-            "shadowRadius": undefined,
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": -4,
+            "height": 16,
+            "left": "50%",
+            "position": "absolute",
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 16,
+          },
+          Object {
+            "backgroundColor": "rgb(205, 223, 248)",
           },
         ]
       }
-    >
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "height": 16,
-              "left": "50%",
-              "marginTop": -4,
-              "position": "absolute",
-              "right": 0,
-              "top": "100%",
-              "transform": Array [
-                Object {
-                  "rotate": "45deg",
-                },
-              ],
-              "width": 16,
-            },
-            Object {
-              "backgroundColor": "rgb(205, 223, 248)",
-            },
-          ]
-        }
-      />
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-            Object {
-              "backgroundColor": "rgb(205, 223, 248)",
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "backgroundColor": "rgb(205, 223, 248)",
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": -0.2,
+            "textAlign": "left",
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
           Array [
             Object {
               "color": "rgb(255, 255, 255)",
-              "fontFamily": "sans-serif",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": -0.2,
-              "textAlign": "left",
             },
             Object {
-              "fontFamily": "sans-serif-medium",
+              "color": "rgb(7, 112, 227)",
             },
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(109, 159, 235)",
-              },
-            ],
-          ]
-        }
-      >
-        123€
-      </Text>
-    </View>
+          ],
+        ]
+      }
+    >
+      123€
+    </Text>
   </View>
 </AIRMapMarker>
 `;
@@ -1893,6 +1851,13 @@ exports[`Android light mode light mode should render correctly 1`] = `
     accessible={true}
     focusable={true}
     isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -1900,89 +1865,80 @@ exports[`Android light mode light mode should render correctly 1`] = `
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    style={null}
+    style={
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 4,
+        "shadowColor": undefined,
+        "shadowOffset": Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        "shadowOpacity": undefined,
+        "shadowRadius": undefined,
+      }
+    }
   >
     <View
       style={
         Array [
           Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": undefined,
-            "shadowOffset": Object {
-              "height": undefined,
-              "width": undefined,
-            },
-            "shadowOpacity": undefined,
-            "shadowRadius": undefined,
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": -4,
+            "height": 16,
+            "left": "50%",
+            "position": "absolute",
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 16,
           },
         ]
       }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": -0.2,
+            "textAlign": "left",
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
     >
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "height": 16,
-              "left": "50%",
-              "marginTop": -4,
-              "position": "absolute",
-              "right": 0,
-              "top": "100%",
-              "transform": Array [
-                Object {
-                  "rotate": "45deg",
-                },
-              ],
-              "width": 16,
-            },
-          ]
-        }
-      />
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(17, 18, 54)",
-              "fontFamily": "sans-serif",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": -0.2,
-              "textAlign": "left",
-            },
-            Object {
-              "fontFamily": "sans-serif-medium",
-            },
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-          ]
-        }
-      >
-        123€
-      </Text>
-    </View>
+      123€
+    </Text>
   </View>
 </AIRMapMarker>
 `;
@@ -2009,8 +1965,15 @@ exports[`Android light mode light mode should render correctly with disabled={tr
 >
   <View
     accessible={true}
-    focusable={true}
+    focusable={false}
     isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -2018,98 +1981,89 @@ exports[`Android light mode light mode should render correctly with disabled={tr
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    style={null}
+    style={
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 4,
+        "shadowColor": undefined,
+        "shadowOffset": Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        "shadowOpacity": undefined,
+        "shadowRadius": undefined,
+      }
+    }
   >
     <View
       style={
         Array [
           Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": undefined,
-            "shadowOffset": Object {
-              "height": undefined,
-              "width": undefined,
-            },
-            "shadowOpacity": undefined,
-            "shadowRadius": undefined,
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": -4,
+            "height": 16,
+            "left": "50%",
+            "position": "absolute",
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 16,
+          },
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
           },
         ]
       }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": -0.2,
+            "textAlign": "left",
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "color": "rgb(178, 178, 191)",
+            },
+          ],
+        ]
+      }
     >
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "height": 16,
-              "left": "50%",
-              "marginTop": -4,
-              "position": "absolute",
-              "right": 0,
-              "top": "100%",
-              "transform": Array [
-                Object {
-                  "rotate": "45deg",
-                },
-              ],
-              "width": 16,
-            },
-            Object {
-              "backgroundColor": "rgb(255, 255, 255)",
-            },
-          ]
-        }
-      />
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-            Object {
-              "backgroundColor": "rgb(255, 255, 255)",
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(17, 18, 54)",
-              "fontFamily": "sans-serif",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": -0.2,
-              "textAlign": "left",
-            },
-            Object {
-              "fontFamily": "sans-serif-medium",
-            },
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(178, 178, 191)",
-              },
-            ],
-          ]
-        }
-      >
-        123€
-      </Text>
-    </View>
+      123€
+    </Text>
   </View>
 </AIRMapMarker>
 `;
@@ -2138,6 +2092,13 @@ exports[`Android light mode light mode should render correctly with status=defau
     accessible={true}
     focusable={true}
     isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -2145,89 +2106,80 @@ exports[`Android light mode light mode should render correctly with status=defau
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    style={null}
+    style={
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 4,
+        "shadowColor": undefined,
+        "shadowOffset": Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        "shadowOpacity": undefined,
+        "shadowRadius": undefined,
+      }
+    }
   >
     <View
       style={
         Array [
           Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": undefined,
-            "shadowOffset": Object {
-              "height": undefined,
-              "width": undefined,
-            },
-            "shadowOpacity": undefined,
-            "shadowRadius": undefined,
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": -4,
+            "height": 16,
+            "left": "50%",
+            "position": "absolute",
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 16,
           },
         ]
       }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": -0.2,
+            "textAlign": "left",
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
     >
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "height": 16,
-              "left": "50%",
-              "marginTop": -4,
-              "position": "absolute",
-              "right": 0,
-              "top": "100%",
-              "transform": Array [
-                Object {
-                  "rotate": "45deg",
-                },
-              ],
-              "width": 16,
-            },
-          ]
-        }
-      />
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(17, 18, 54)",
-              "fontFamily": "sans-serif",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": -0.2,
-              "textAlign": "left",
-            },
-            Object {
-              "fontFamily": "sans-serif-medium",
-            },
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-            ],
-          ]
-        }
-      >
-        123€
-      </Text>
-    </View>
+      123€
+    </Text>
   </View>
 </AIRMapMarker>
 `;
@@ -2256,6 +2208,13 @@ exports[`Android light mode light mode should render correctly with status=focus
     accessible={true}
     focusable={true}
     isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -2263,104 +2222,91 @@ exports[`Android light mode light mode should render correctly with status=focus
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    style={null}
+    style={
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 8,
+        "shadowColor": undefined,
+        "shadowOffset": Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        "shadowOpacity": undefined,
+        "shadowRadius": undefined,
+      }
+    }
   >
     <View
       style={
         Array [
           Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": undefined,
-            "shadowOffset": Object {
-              "height": undefined,
-              "width": undefined,
-            },
-            "shadowOpacity": undefined,
-            "shadowRadius": undefined,
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": -4,
+            "height": 16,
+            "left": "50%",
+            "position": "absolute",
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 16,
           },
           Object {
-            "paddingVertical": 8,
+            "backgroundColor": "rgb(7, 112, 227)",
           },
         ]
       }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "borderColor": "rgb(7, 112, 227)",
+            "borderWidth": 2,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": -0.2,
+            "textAlign": "left",
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "color": "rgb(7, 112, 227)",
+            },
+          ],
+        ]
+      }
     >
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "height": 16,
-              "left": "50%",
-              "marginTop": -4,
-              "position": "absolute",
-              "right": 0,
-              "top": "100%",
-              "transform": Array [
-                Object {
-                  "rotate": "45deg",
-                },
-              ],
-              "width": 16,
-            },
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "marginTop": 4,
-            },
-          ]
-        }
-      />
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-            Object {
-              "backgroundColor": "rgb(255, 255, 255)",
-              "borderColor": "rgb(7, 112, 227)",
-              "borderWidth": 2,
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(17, 18, 54)",
-              "fontFamily": "sans-serif",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": -0.2,
-              "textAlign": "left",
-            },
-            Object {
-              "fontFamily": "sans-serif-medium",
-            },
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(7, 112, 227)",
-              },
-            ],
-          ]
-        }
-      >
-        123€
-      </Text>
-    </View>
+      123€
+    </Text>
   </View>
 </AIRMapMarker>
 `;
@@ -2389,6 +2335,13 @@ exports[`Android light mode light mode should render correctly with status=viewe
     accessible={true}
     focusable={true}
     isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -2396,98 +2349,89 @@ exports[`Android light mode light mode should render correctly with status=viewe
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    style={null}
+    style={
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 4,
+        "shadowColor": undefined,
+        "shadowOffset": Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        "shadowOpacity": undefined,
+        "shadowRadius": undefined,
+      }
+    }
   >
     <View
       style={
         Array [
           Object {
-            "paddingHorizontal": 8,
-            "paddingVertical": 4,
-            "shadowColor": undefined,
-            "shadowOffset": Object {
-              "height": undefined,
-              "width": undefined,
-            },
-            "shadowOpacity": undefined,
-            "shadowRadius": undefined,
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": -4,
+            "height": 16,
+            "left": "50%",
+            "position": "absolute",
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 16,
+          },
+          Object {
+            "backgroundColor": "rgb(205, 223, 248)",
           },
         ]
       }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "backgroundColor": "rgb(205, 223, 248)",
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": -0.2,
+            "textAlign": "left",
+          },
+          Object {
+            "fontFamily": "sans-serif-medium",
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "color": "rgb(7, 112, 227)",
+            },
+          ],
+        ]
+      }
     >
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "height": 16,
-              "left": "50%",
-              "marginTop": -4,
-              "position": "absolute",
-              "right": 0,
-              "top": "100%",
-              "transform": Array [
-                Object {
-                  "rotate": "45deg",
-                },
-              ],
-              "width": 16,
-            },
-            Object {
-              "backgroundColor": "rgb(205, 223, 248)",
-            },
-          ]
-        }
-      />
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "rgb(7, 112, 227)",
-              "borderRadius": 4,
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-            Object {
-              "backgroundColor": "rgb(205, 223, 248)",
-            },
-          ]
-        }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(17, 18, 54)",
-              "fontFamily": "sans-serif",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": -0.2,
-              "textAlign": "left",
-            },
-            Object {
-              "fontFamily": "sans-serif-medium",
-            },
-            Array [
-              Object {
-                "color": "rgb(255, 255, 255)",
-              },
-              Object {
-                "color": "rgb(109, 159, 235)",
-              },
-            ],
-          ]
-        }
-      >
-        123€
-      </Text>
-    </View>
+      123€
+    </Text>
   </View>
 </AIRMapMarker>
 `;
