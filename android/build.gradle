@@ -28,8 +28,8 @@ ext {
   androidx            = '1.0.2'
   appcompat           = '1.0.2'
   supportLibVersion = "27.1.1"
-  playServicesVersion = "xxx"
-  androidMapsUtilsVersion = "0.5+"
+  playServicesVersion = "17.0.0"
+  androidMapsUtilsVersion = "xxx"
   threetenabpVersion = "1.2.1"
 }
 
