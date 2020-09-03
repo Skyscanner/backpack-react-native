@@ -106,7 +106,7 @@ configure(() => {
 /* eslint-enable global-require */
 
 const StorybookUI = getStorybookUI({
-  onDeviceUI: false,
+  onDeviceUI: true,
   asyncStorage: null,
 });
 

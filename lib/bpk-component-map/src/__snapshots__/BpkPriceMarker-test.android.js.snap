@@ -21,35 +21,20 @@ exports[`Android dark mode dark mode should render correctly 1`] = `
   }
 >
   <View
-    accessible={true}
-    focusable={true}
-    isTVSelectable={true}
-    nativeBackgroundAndroid={
-      Object {
-        "borderless": true,
-        "color": -9934465,
-        "type": "RippleAndroid",
-      }
-    }
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "paddingHorizontal": 8,
-        "paddingVertical": 4,
-        "shadowColor": undefined,
-        "shadowOffset": Object {
-          "height": undefined,
-          "width": undefined,
+      Array [
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
         },
-        "shadowOpacity": undefined,
-        "shadowRadius": undefined,
-      }
+      ]
     }
   >
     <View
@@ -137,35 +122,20 @@ exports[`Android dark mode dark mode should render correctly with disabled={true
   }
 >
   <View
-    accessible={true}
-    focusable={false}
-    isTVSelectable={true}
-    nativeBackgroundAndroid={
-      Object {
-        "borderless": true,
-        "color": -9934465,
-        "type": "RippleAndroid",
-      }
-    }
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "paddingHorizontal": 8,
-        "paddingVertical": 4,
-        "shadowColor": undefined,
-        "shadowOffset": Object {
-          "height": undefined,
-          "width": undefined,
+      Array [
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
         },
-        "shadowOpacity": undefined,
-        "shadowRadius": undefined,
-      }
+      ]
     }
   >
     <View
@@ -262,35 +232,20 @@ exports[`Android dark mode dark mode should render correctly with status=default
   }
 >
   <View
-    accessible={true}
-    focusable={true}
-    isTVSelectable={true}
-    nativeBackgroundAndroid={
-      Object {
-        "borderless": true,
-        "color": -9934465,
-        "type": "RippleAndroid",
-      }
-    }
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "paddingHorizontal": 8,
-        "paddingVertical": 4,
-        "shadowColor": undefined,
-        "shadowOffset": Object {
-          "height": undefined,
-          "width": undefined,
+      Array [
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
         },
-        "shadowOpacity": undefined,
-        "shadowRadius": undefined,
-      }
+      ]
     }
   >
     <View
@@ -378,35 +333,23 @@ exports[`Android dark mode dark mode should render correctly with status=focused
   }
 >
   <View
-    accessible={true}
-    focusable={true}
-    isTVSelectable={true}
-    nativeBackgroundAndroid={
-      Object {
-        "borderless": true,
-        "color": -9934465,
-        "type": "RippleAndroid",
-      }
-    }
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "paddingHorizontal": 8,
-        "paddingVertical": 8,
-        "shadowColor": undefined,
-        "shadowOffset": Object {
-          "height": undefined,
-          "width": undefined,
+      Array [
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
         },
-        "shadowOpacity": undefined,
-        "shadowRadius": undefined,
-      }
+        Object {
+          "paddingVertical": 8,
+        },
+      ]
     }
   >
     <View
@@ -505,35 +448,20 @@ exports[`Android dark mode dark mode should render correctly with status=viewed 
   }
 >
   <View
-    accessible={true}
-    focusable={true}
-    isTVSelectable={true}
-    nativeBackgroundAndroid={
-      Object {
-        "borderless": true,
-        "color": -9934465,
-        "type": "RippleAndroid",
-      }
-    }
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "paddingHorizontal": 8,
-        "paddingVertical": 4,
-        "shadowColor": undefined,
-        "shadowOffset": Object {
-          "height": undefined,
-          "width": undefined,
+      Array [
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
         },
-        "shadowOpacity": undefined,
-        "shadowRadius": undefined,
-      }
+      ]
     }
   >
     <View
@@ -630,35 +558,20 @@ exports[`Android dark mode light mode should render correctly 1`] = `
   }
 >
   <View
-    accessible={true}
-    focusable={true}
-    isTVSelectable={true}
-    nativeBackgroundAndroid={
-      Object {
-        "borderless": true,
-        "color": null,
-        "type": "RippleAndroid",
-      }
-    }
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "paddingHorizontal": 8,
-        "paddingVertical": 4,
-        "shadowColor": undefined,
-        "shadowOffset": Object {
-          "height": undefined,
-          "width": undefined,
+      Array [
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
         },
-        "shadowOpacity": undefined,
-        "shadowRadius": undefined,
-      }
+      ]
     }
   >
     <View
@@ -746,35 +659,20 @@ exports[`Android dark mode light mode should render correctly with disabled={tru
   }
 >
   <View
-    accessible={true}
-    focusable={false}
-    isTVSelectable={true}
-    nativeBackgroundAndroid={
-      Object {
-        "borderless": true,
-        "color": null,
-        "type": "RippleAndroid",
-      }
-    }
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "paddingHorizontal": 8,
-        "paddingVertical": 4,
-        "shadowColor": undefined,
-        "shadowOffset": Object {
-          "height": undefined,
-          "width": undefined,
+      Array [
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
         },
-        "shadowOpacity": undefined,
-        "shadowRadius": undefined,
-      }
+      ]
     }
   >
     <View
@@ -871,35 +769,20 @@ exports[`Android dark mode light mode should render correctly with status=defaul
   }
 >
   <View
-    accessible={true}
-    focusable={true}
-    isTVSelectable={true}
-    nativeBackgroundAndroid={
-      Object {
-        "borderless": true,
-        "color": null,
-        "type": "RippleAndroid",
-      }
-    }
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "paddingHorizontal": 8,
-        "paddingVertical": 4,
-        "shadowColor": undefined,
-        "shadowOffset": Object {
-          "height": undefined,
-          "width": undefined,
+      Array [
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
         },
-        "shadowOpacity": undefined,
-        "shadowRadius": undefined,
-      }
+      ]
     }
   >
     <View
@@ -987,35 +870,23 @@ exports[`Android dark mode light mode should render correctly with status=focuse
   }
 >
   <View
-    accessible={true}
-    focusable={true}
-    isTVSelectable={true}
-    nativeBackgroundAndroid={
-      Object {
-        "borderless": true,
-        "color": null,
-        "type": "RippleAndroid",
-      }
-    }
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "paddingHorizontal": 8,
-        "paddingVertical": 8,
-        "shadowColor": undefined,
-        "shadowOffset": Object {
-          "height": undefined,
-          "width": undefined,
+      Array [
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
         },
-        "shadowOpacity": undefined,
-        "shadowRadius": undefined,
-      }
+        Object {
+          "paddingVertical": 8,
+        },
+      ]
     }
   >
     <View
@@ -1114,35 +985,20 @@ exports[`Android dark mode light mode should render correctly with status=viewed
   }
 >
   <View
-    accessible={true}
-    focusable={true}
-    isTVSelectable={true}
-    nativeBackgroundAndroid={
-      Object {
-        "borderless": true,
-        "color": null,
-        "type": "RippleAndroid",
-      }
-    }
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "paddingHorizontal": 8,
-        "paddingVertical": 4,
-        "shadowColor": undefined,
-        "shadowOffset": Object {
-          "height": undefined,
-          "width": undefined,
+      Array [
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
         },
-        "shadowOpacity": undefined,
-        "shadowRadius": undefined,
-      }
+      ]
     }
   >
     <View
@@ -1239,35 +1095,20 @@ exports[`Android light mode dark mode should render correctly 1`] = `
   }
 >
   <View
-    accessible={true}
-    focusable={true}
-    isTVSelectable={true}
-    nativeBackgroundAndroid={
-      Object {
-        "borderless": true,
-        "color": -9934465,
-        "type": "RippleAndroid",
-      }
-    }
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "paddingHorizontal": 8,
-        "paddingVertical": 4,
-        "shadowColor": undefined,
-        "shadowOffset": Object {
-          "height": undefined,
-          "width": undefined,
+      Array [
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
         },
-        "shadowOpacity": undefined,
-        "shadowRadius": undefined,
-      }
+      ]
     }
   >
     <View
@@ -1355,35 +1196,20 @@ exports[`Android light mode dark mode should render correctly with disabled={tru
   }
 >
   <View
-    accessible={true}
-    focusable={false}
-    isTVSelectable={true}
-    nativeBackgroundAndroid={
-      Object {
-        "borderless": true,
-        "color": -9934465,
-        "type": "RippleAndroid",
-      }
-    }
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "paddingHorizontal": 8,
-        "paddingVertical": 4,
-        "shadowColor": undefined,
-        "shadowOffset": Object {
-          "height": undefined,
-          "width": undefined,
+      Array [
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
         },
-        "shadowOpacity": undefined,
-        "shadowRadius": undefined,
-      }
+      ]
     }
   >
     <View
@@ -1480,35 +1306,20 @@ exports[`Android light mode dark mode should render correctly with status=defaul
   }
 >
   <View
-    accessible={true}
-    focusable={true}
-    isTVSelectable={true}
-    nativeBackgroundAndroid={
-      Object {
-        "borderless": true,
-        "color": -9934465,
-        "type": "RippleAndroid",
-      }
-    }
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "paddingHorizontal": 8,
-        "paddingVertical": 4,
-        "shadowColor": undefined,
-        "shadowOffset": Object {
-          "height": undefined,
-          "width": undefined,
+      Array [
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
         },
-        "shadowOpacity": undefined,
-        "shadowRadius": undefined,
-      }
+      ]
     }
   >
     <View
@@ -1596,35 +1407,23 @@ exports[`Android light mode dark mode should render correctly with status=focuse
   }
 >
   <View
-    accessible={true}
-    focusable={true}
-    isTVSelectable={true}
-    nativeBackgroundAndroid={
-      Object {
-        "borderless": true,
-        "color": -9934465,
-        "type": "RippleAndroid",
-      }
-    }
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "paddingHorizontal": 8,
-        "paddingVertical": 8,
-        "shadowColor": undefined,
-        "shadowOffset": Object {
-          "height": undefined,
-          "width": undefined,
+      Array [
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
         },
-        "shadowOpacity": undefined,
-        "shadowRadius": undefined,
-      }
+        Object {
+          "paddingVertical": 8,
+        },
+      ]
     }
   >
     <View
@@ -1723,35 +1522,20 @@ exports[`Android light mode dark mode should render correctly with status=viewed
   }
 >
   <View
-    accessible={true}
-    focusable={true}
-    isTVSelectable={true}
-    nativeBackgroundAndroid={
-      Object {
-        "borderless": true,
-        "color": -9934465,
-        "type": "RippleAndroid",
-      }
-    }
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "paddingHorizontal": 8,
-        "paddingVertical": 4,
-        "shadowColor": undefined,
-        "shadowOffset": Object {
-          "height": undefined,
-          "width": undefined,
+      Array [
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
         },
-        "shadowOpacity": undefined,
-        "shadowRadius": undefined,
-      }
+      ]
     }
   >
     <View
@@ -1848,35 +1632,20 @@ exports[`Android light mode light mode should render correctly 1`] = `
   }
 >
   <View
-    accessible={true}
-    focusable={true}
-    isTVSelectable={true}
-    nativeBackgroundAndroid={
-      Object {
-        "borderless": true,
-        "color": null,
-        "type": "RippleAndroid",
-      }
-    }
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "paddingHorizontal": 8,
-        "paddingVertical": 4,
-        "shadowColor": undefined,
-        "shadowOffset": Object {
-          "height": undefined,
-          "width": undefined,
+      Array [
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
         },
-        "shadowOpacity": undefined,
-        "shadowRadius": undefined,
-      }
+      ]
     }
   >
     <View
@@ -1964,35 +1733,20 @@ exports[`Android light mode light mode should render correctly with disabled={tr
   }
 >
   <View
-    accessible={true}
-    focusable={false}
-    isTVSelectable={true}
-    nativeBackgroundAndroid={
-      Object {
-        "borderless": true,
-        "color": null,
-        "type": "RippleAndroid",
-      }
-    }
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "paddingHorizontal": 8,
-        "paddingVertical": 4,
-        "shadowColor": undefined,
-        "shadowOffset": Object {
-          "height": undefined,
-          "width": undefined,
+      Array [
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
         },
-        "shadowOpacity": undefined,
-        "shadowRadius": undefined,
-      }
+      ]
     }
   >
     <View
@@ -2089,35 +1843,20 @@ exports[`Android light mode light mode should render correctly with status=defau
   }
 >
   <View
-    accessible={true}
-    focusable={true}
-    isTVSelectable={true}
-    nativeBackgroundAndroid={
-      Object {
-        "borderless": true,
-        "color": null,
-        "type": "RippleAndroid",
-      }
-    }
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "paddingHorizontal": 8,
-        "paddingVertical": 4,
-        "shadowColor": undefined,
-        "shadowOffset": Object {
-          "height": undefined,
-          "width": undefined,
+      Array [
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
         },
-        "shadowOpacity": undefined,
-        "shadowRadius": undefined,
-      }
+      ]
     }
   >
     <View
@@ -2205,35 +1944,23 @@ exports[`Android light mode light mode should render correctly with status=focus
   }
 >
   <View
-    accessible={true}
-    focusable={true}
-    isTVSelectable={true}
-    nativeBackgroundAndroid={
-      Object {
-        "borderless": true,
-        "color": null,
-        "type": "RippleAndroid",
-      }
-    }
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "paddingHorizontal": 8,
-        "paddingVertical": 8,
-        "shadowColor": undefined,
-        "shadowOffset": Object {
-          "height": undefined,
-          "width": undefined,
+      Array [
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
         },
-        "shadowOpacity": undefined,
-        "shadowRadius": undefined,
-      }
+        Object {
+          "paddingVertical": 8,
+        },
+      ]
     }
   >
     <View
@@ -2332,35 +2059,20 @@ exports[`Android light mode light mode should render correctly with status=viewe
   }
 >
   <View
-    accessible={true}
-    focusable={true}
-    isTVSelectable={true}
-    nativeBackgroundAndroid={
-      Object {
-        "borderless": true,
-        "color": null,
-        "type": "RippleAndroid",
-      }
-    }
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "paddingHorizontal": 8,
-        "paddingVertical": 4,
-        "shadowColor": undefined,
-        "shadowOffset": Object {
-          "height": undefined,
-          "width": undefined,
+      Array [
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
         },
-        "shadowOpacity": undefined,
-        "shadowRadius": undefined,
-      }
+      ]
     }
   >
     <View
