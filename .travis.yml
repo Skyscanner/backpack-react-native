@@ -49,6 +49,7 @@ jobs:
             gcloud config set project $GCLOUD_PROJECT_ID
             gcloud auth activate-service-account --key-file $HOME/gcloud-service-key.json
           fi
+        - yes | $ANDROID_SDK_ROOT/tools/bin/sdkmanager --licenses
         - chmod +x android/gradlew
         - nvm install
         - nvm use
