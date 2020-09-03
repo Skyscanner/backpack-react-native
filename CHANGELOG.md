@@ -1,5 +1,11 @@
 # Backpack changelog
 
+# 6.2.0 - 2020-09-03
+
+**Added:**
+
+- Added `BpkPriceMarker` to `bpk-component-map` — use it to display pricing markers on maps.
+
 # 6.1.0 - 2020-08-28
 
 **Added:**
