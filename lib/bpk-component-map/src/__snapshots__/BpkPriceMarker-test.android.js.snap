@@ -94,9 +94,9 @@ exports[`Android dark mode dark mode should render correctly 1`] = `
           Object {
             "color": "rgb(255, 255, 255)",
             "fontFamily": "sans-serif",
-            "fontSize": 16,
+            "fontSize": 14,
             "fontWeight": "400",
-            "letterSpacing": -0.2,
+            "letterSpacing": 0,
             "textAlign": "left",
           },
           Object {
@@ -216,9 +216,9 @@ exports[`Android dark mode dark mode should render correctly with disabled={true
           Object {
             "color": "rgb(255, 255, 255)",
             "fontFamily": "sans-serif",
-            "fontSize": 16,
+            "fontSize": 14,
             "fontWeight": "400",
-            "letterSpacing": -0.2,
+            "letterSpacing": 0,
             "textAlign": "left",
           },
           Object {
@@ -335,9 +335,9 @@ exports[`Android dark mode dark mode should render correctly with status=default
           Object {
             "color": "rgb(255, 255, 255)",
             "fontFamily": "sans-serif",
-            "fontSize": 16,
+            "fontSize": 14,
             "fontWeight": "400",
-            "letterSpacing": -0.2,
+            "letterSpacing": 0,
             "textAlign": "left",
           },
           Object {
@@ -584,9 +584,9 @@ exports[`Android dark mode dark mode should render correctly with status=viewed 
           Object {
             "color": "rgb(255, 255, 255)",
             "fontFamily": "sans-serif",
-            "fontSize": 16,
+            "fontSize": 14,
             "fontWeight": "400",
-            "letterSpacing": -0.2,
+            "letterSpacing": 0,
             "textAlign": "left",
           },
           Object {
@@ -703,9 +703,9 @@ exports[`Android dark mode light mode should render correctly 1`] = `
           Object {
             "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
-            "fontSize": 16,
+            "fontSize": 14,
             "fontWeight": "400",
-            "letterSpacing": -0.2,
+            "letterSpacing": 0,
             "textAlign": "left",
           },
           Object {
@@ -825,9 +825,9 @@ exports[`Android dark mode light mode should render correctly with disabled={tru
           Object {
             "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
-            "fontSize": 16,
+            "fontSize": 14,
             "fontWeight": "400",
-            "letterSpacing": -0.2,
+            "letterSpacing": 0,
             "textAlign": "left",
           },
           Object {
@@ -944,9 +944,9 @@ exports[`Android dark mode light mode should render correctly with status=defaul
           Object {
             "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
-            "fontSize": 16,
+            "fontSize": 14,
             "fontWeight": "400",
-            "letterSpacing": -0.2,
+            "letterSpacing": 0,
             "textAlign": "left",
           },
           Object {
@@ -1193,9 +1193,9 @@ exports[`Android dark mode light mode should render correctly with status=viewed
           Object {
             "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
-            "fontSize": 16,
+            "fontSize": 14,
             "fontWeight": "400",
-            "letterSpacing": -0.2,
+            "letterSpacing": 0,
             "textAlign": "left",
           },
           Object {
@@ -1312,9 +1312,9 @@ exports[`Android light mode dark mode should render correctly 1`] = `
           Object {
             "color": "rgb(255, 255, 255)",
             "fontFamily": "sans-serif",
-            "fontSize": 16,
+            "fontSize": 14,
             "fontWeight": "400",
-            "letterSpacing": -0.2,
+            "letterSpacing": 0,
             "textAlign": "left",
           },
           Object {
@@ -1434,9 +1434,9 @@ exports[`Android light mode dark mode should render correctly with disabled={tru
           Object {
             "color": "rgb(255, 255, 255)",
             "fontFamily": "sans-serif",
-            "fontSize": 16,
+            "fontSize": 14,
             "fontWeight": "400",
-            "letterSpacing": -0.2,
+            "letterSpacing": 0,
             "textAlign": "left",
           },
           Object {
@@ -1553,9 +1553,9 @@ exports[`Android light mode dark mode should render correctly with status=defaul
           Object {
             "color": "rgb(255, 255, 255)",
             "fontFamily": "sans-serif",
-            "fontSize": 16,
+            "fontSize": 14,
             "fontWeight": "400",
-            "letterSpacing": -0.2,
+            "letterSpacing": 0,
             "textAlign": "left",
           },
           Object {
@@ -1802,9 +1802,9 @@ exports[`Android light mode dark mode should render correctly with status=viewed
           Object {
             "color": "rgb(255, 255, 255)",
             "fontFamily": "sans-serif",
-            "fontSize": 16,
+            "fontSize": 14,
             "fontWeight": "400",
-            "letterSpacing": -0.2,
+            "letterSpacing": 0,
             "textAlign": "left",
           },
           Object {
@@ -1921,9 +1921,9 @@ exports[`Android light mode light mode should render correctly 1`] = `
           Object {
             "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
-            "fontSize": 16,
+            "fontSize": 14,
             "fontWeight": "400",
-            "letterSpacing": -0.2,
+            "letterSpacing": 0,
             "textAlign": "left",
           },
           Object {
@@ -2043,9 +2043,9 @@ exports[`Android light mode light mode should render correctly with disabled={tr
           Object {
             "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
-            "fontSize": 16,
+            "fontSize": 14,
             "fontWeight": "400",
-            "letterSpacing": -0.2,
+            "letterSpacing": 0,
             "textAlign": "left",
           },
           Object {
@@ -2162,9 +2162,9 @@ exports[`Android light mode light mode should render correctly with status=defau
           Object {
             "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
-            "fontSize": 16,
+            "fontSize": 14,
             "fontWeight": "400",
-            "letterSpacing": -0.2,
+            "letterSpacing": 0,
             "textAlign": "left",
           },
           Object {
@@ -2411,9 +2411,9 @@ exports[`Android light mode light mode should render correctly with status=viewe
           Object {
             "color": "rgb(17, 18, 54)",
             "fontFamily": "sans-serif",
-            "fontSize": 16,
+            "fontSize": 14,
             "fontWeight": "400",
-            "letterSpacing": -0.2,
+            "letterSpacing": 0,
             "textAlign": "left",
           },
           Object {

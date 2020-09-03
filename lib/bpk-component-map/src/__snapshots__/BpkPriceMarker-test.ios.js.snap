@@ -89,9 +89,9 @@ exports[`iOS dark mode dark mode should render correctly 1`] = `
             Object {
               "color": "rgb(255, 255, 255)",
               "fontFamily": "System",
-              "fontSize": 16,
+              "fontSize": 14,
               "fontWeight": "400",
-              "letterSpacing": 0.12,
+              "letterSpacing": 0.154,
               "textAlign": "left",
             },
             Object {
@@ -226,9 +226,9 @@ exports[`iOS dark mode dark mode should render correctly with disabled={true} 1`
             Object {
               "color": "rgb(255, 255, 255)",
               "fontFamily": "System",
-              "fontSize": 16,
+              "fontSize": 14,
               "fontWeight": "400",
-              "letterSpacing": 0.12,
+              "letterSpacing": 0.154,
               "textAlign": "left",
             },
             Object {
@@ -360,9 +360,9 @@ exports[`iOS dark mode dark mode should render correctly with status=default 1`]
             Object {
               "color": "rgb(255, 255, 255)",
               "fontFamily": "System",
-              "fontSize": 16,
+              "fontSize": 14,
               "fontWeight": "400",
-              "letterSpacing": 0.12,
+              "letterSpacing": 0.154,
               "textAlign": "left",
             },
             Object {
@@ -639,9 +639,9 @@ exports[`iOS dark mode dark mode should render correctly with status=viewed 1`] 
             Object {
               "color": "rgb(255, 255, 255)",
               "fontFamily": "System",
-              "fontSize": 16,
+              "fontSize": 14,
               "fontWeight": "400",
-              "letterSpacing": 0.12,
+              "letterSpacing": 0.154,
               "textAlign": "left",
             },
             Object {
@@ -773,9 +773,9 @@ exports[`iOS dark mode light mode should render correctly 1`] = `
             Object {
               "color": "rgb(17, 18, 54)",
               "fontFamily": "System",
-              "fontSize": 16,
+              "fontSize": 14,
               "fontWeight": "400",
-              "letterSpacing": 0.12,
+              "letterSpacing": 0.154,
               "textAlign": "left",
             },
             Object {
@@ -910,9 +910,9 @@ exports[`iOS dark mode light mode should render correctly with disabled={true} 1
             Object {
               "color": "rgb(17, 18, 54)",
               "fontFamily": "System",
-              "fontSize": 16,
+              "fontSize": 14,
               "fontWeight": "400",
-              "letterSpacing": 0.12,
+              "letterSpacing": 0.154,
               "textAlign": "left",
             },
             Object {
@@ -1044,9 +1044,9 @@ exports[`iOS dark mode light mode should render correctly with status=default 1`
             Object {
               "color": "rgb(17, 18, 54)",
               "fontFamily": "System",
-              "fontSize": 16,
+              "fontSize": 14,
               "fontWeight": "400",
-              "letterSpacing": 0.12,
+              "letterSpacing": 0.154,
               "textAlign": "left",
             },
             Object {
@@ -1323,9 +1323,9 @@ exports[`iOS dark mode light mode should render correctly with status=viewed 1`]
             Object {
               "color": "rgb(17, 18, 54)",
               "fontFamily": "System",
-              "fontSize": 16,
+              "fontSize": 14,
               "fontWeight": "400",
-              "letterSpacing": 0.12,
+              "letterSpacing": 0.154,
               "textAlign": "left",
             },
             Object {
@@ -1457,9 +1457,9 @@ exports[`iOS light mode dark mode should render correctly 1`] = `
             Object {
               "color": "rgb(255, 255, 255)",
               "fontFamily": "System",
-              "fontSize": 16,
+              "fontSize": 14,
               "fontWeight": "400",
-              "letterSpacing": 0.12,
+              "letterSpacing": 0.154,
               "textAlign": "left",
             },
             Object {
@@ -1594,9 +1594,9 @@ exports[`iOS light mode dark mode should render correctly with disabled={true} 1
             Object {
               "color": "rgb(255, 255, 255)",
               "fontFamily": "System",
-              "fontSize": 16,
+              "fontSize": 14,
               "fontWeight": "400",
-              "letterSpacing": 0.12,
+              "letterSpacing": 0.154,
               "textAlign": "left",
             },
             Object {
@@ -1728,9 +1728,9 @@ exports[`iOS light mode dark mode should render correctly with status=default 1`
             Object {
               "color": "rgb(255, 255, 255)",
               "fontFamily": "System",
-              "fontSize": 16,
+              "fontSize": 14,
               "fontWeight": "400",
-              "letterSpacing": 0.12,
+              "letterSpacing": 0.154,
               "textAlign": "left",
             },
             Object {
@@ -2007,9 +2007,9 @@ exports[`iOS light mode dark mode should render correctly with status=viewed 1`]
             Object {
               "color": "rgb(255, 255, 255)",
               "fontFamily": "System",
-              "fontSize": 16,
+              "fontSize": 14,
               "fontWeight": "400",
-              "letterSpacing": 0.12,
+              "letterSpacing": 0.154,
               "textAlign": "left",
             },
             Object {
@@ -2141,9 +2141,9 @@ exports[`iOS light mode light mode should render correctly 1`] = `
             Object {
               "color": "rgb(17, 18, 54)",
               "fontFamily": "System",
-              "fontSize": 16,
+              "fontSize": 14,
               "fontWeight": "400",
-              "letterSpacing": 0.12,
+              "letterSpacing": 0.154,
               "textAlign": "left",
             },
             Object {
@@ -2278,9 +2278,9 @@ exports[`iOS light mode light mode should render correctly with disabled={true} 
             Object {
               "color": "rgb(17, 18, 54)",
               "fontFamily": "System",
-              "fontSize": 16,
+              "fontSize": 14,
               "fontWeight": "400",
-              "letterSpacing": 0.12,
+              "letterSpacing": 0.154,
               "textAlign": "left",
             },
             Object {
@@ -2412,9 +2412,9 @@ exports[`iOS light mode light mode should render correctly with status=default 1
             Object {
               "color": "rgb(17, 18, 54)",
               "fontFamily": "System",
-              "fontSize": 16,
+              "fontSize": 14,
               "fontWeight": "400",
-              "letterSpacing": 0.12,
+              "letterSpacing": 0.154,
               "textAlign": "left",
             },
             Object {
@@ -2691,9 +2691,9 @@ exports[`iOS light mode light mode should render correctly with status=viewed 1`
             Object {
               "color": "rgb(17, 18, 54)",
               "fontFamily": "System",
-              "fontSize": 16,
+              "fontSize": 14,
               "fontWeight": "400",
-              "letterSpacing": 0.12,
+              "letterSpacing": 0.154,
               "textAlign": "left",
             },
             Object {
