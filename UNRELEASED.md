@@ -1,6 +1,8 @@
 # Unreleased
 
 > Place your changes below this line.
+**Fixed:**
+ - Upgraded `Backpack` iOS dependency. This involves no changes to the RN library.
 
 ## How to write a good changelog entry
 
