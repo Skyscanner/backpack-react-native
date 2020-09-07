@@ -1,5 +1,10 @@
 # Backpack changelog
 
+# 6.2.1 - 2020-09-07
+
+**Fixed:**
+ - Upgraded `Backpack` iOS dependency. This involves no changes to the RN library.
+
 # 6.2.0 - 2020-09-03
 
 **Added:**
