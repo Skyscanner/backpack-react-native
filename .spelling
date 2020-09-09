@@ -53,6 +53,8 @@ BpkLink
 BpkList
 BpkListItem
 BpkModal
+BpkPriceMarker
+BpkMapMarker
 BpkNavigationBarButtonLink
 BpkPanel
 BpkPhoneNumberInput

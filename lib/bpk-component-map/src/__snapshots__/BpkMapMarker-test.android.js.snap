@@ -1,0 +1,1789 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Android dark mode dark mode should render correctly 1`] = `
+<AIRMapMarker
+  coordinate={
+    Object {
+      "latitude": 52.516379,
+      "longitude": 13.378026,
+    }
+  }
+  onPress={[Function]}
+  stopPropagation={false}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "position": "absolute",
+      },
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 8,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(0, 166, 152)",
+          "borderRadius": 4,
+          "bottom": 5,
+          "height": 16,
+          "left": "50%",
+          "position": "absolute",
+          "transform": Array [
+            Object {
+              "rotate": "45deg",
+            },
+          ],
+          "width": 16,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "paddingHorizontal": 6,
+          "paddingVertical": 6,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(0, 166, 152)",
+            "borderRadius": 40,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</AIRMapMarker>
+`;
+
+exports[`Android dark mode dark mode should render correctly with disabled={true} 1`] = `
+<AIRMapMarker
+  coordinate={
+    Object {
+      "latitude": 52.516379,
+      "longitude": 13.378026,
+    }
+  }
+  onPress={[Function]}
+  stopPropagation={false}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "position": "absolute",
+      },
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 8,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(0, 166, 152)",
+          "borderRadius": 4,
+          "bottom": 5,
+          "height": 16,
+          "left": "50%",
+          "position": "absolute",
+          "transform": Array [
+            Object {
+              "rotate": "45deg",
+            },
+          ],
+          "width": 16,
+        },
+        Object {
+          "backgroundColor": "rgb(208, 238, 236)",
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "paddingHorizontal": 6,
+          "paddingVertical": 6,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(0, 166, 152)",
+            "borderRadius": 40,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "backgroundColor": "rgb(208, 238, 236)",
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "color": "rgb(115, 206, 198)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</AIRMapMarker>
+`;
+
+exports[`Android dark mode dark mode should render correctly with status=default 1`] = `
+<AIRMapMarker
+  coordinate={
+    Object {
+      "latitude": 52.516379,
+      "longitude": 13.378026,
+    }
+  }
+  onPress={[Function]}
+  stopPropagation={false}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "position": "absolute",
+      },
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 8,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(0, 166, 152)",
+          "borderRadius": 4,
+          "bottom": 5,
+          "height": 16,
+          "left": "50%",
+          "position": "absolute",
+          "transform": Array [
+            Object {
+              "rotate": "45deg",
+            },
+          ],
+          "width": 16,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "paddingHorizontal": 6,
+          "paddingVertical": 6,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(0, 166, 152)",
+            "borderRadius": 40,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</AIRMapMarker>
+`;
+
+exports[`Android dark mode dark mode should render correctly with status=focused 1`] = `
+<AIRMapMarker
+  coordinate={
+    Object {
+      "latitude": 52.516379,
+      "longitude": 13.378026,
+    }
+  }
+  onPress={[Function]}
+  stopPropagation={false}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "position": "absolute",
+      },
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 8,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(0, 166, 152)",
+          "borderRadius": 4,
+          "bottom": 5,
+          "height": 16,
+          "left": "50%",
+          "position": "absolute",
+          "transform": Array [
+            Object {
+              "rotate": "45deg",
+            },
+          ],
+          "width": 16,
+        },
+        Object {
+          "backgroundColor": "rgb(58, 58, 60)",
+          "borderBottomLeftRadius": 0,
+          "borderColor": "rgb(0, 166, 152)",
+          "borderLeftColor": "transparent",
+          "borderStyle": "solid",
+          "borderTopColor": "transparent",
+          "borderTopRightRadius": 0,
+          "borderWidth": 1,
+          "bottom": 5,
+          "height": 17,
+          "left": "48%",
+          "width": 17,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "paddingHorizontal": 6,
+          "paddingVertical": 6,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
+        },
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 8,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(0, 166, 152)",
+            "borderRadius": 40,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "backgroundColor": "rgb(58, 58, 60)",
+            "borderBottomColor": "transparent",
+            "borderLeftColor": "rgb(0, 166, 152)",
+            "borderRightColor": "rgb(0, 166, 152)",
+            "borderStyle": "solid",
+            "borderTopColor": "rgb(0, 166, 152)",
+            "borderWidth": 1,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "color": "rgb(0, 166, 152)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</AIRMapMarker>
+`;
+
+exports[`Android dark mode light mode should render correctly 1`] = `
+<AIRMapMarker
+  coordinate={
+    Object {
+      "latitude": 52.516379,
+      "longitude": 13.378026,
+    }
+  }
+  onPress={[Function]}
+  stopPropagation={false}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "position": "absolute",
+      },
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 8,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(0, 166, 152)",
+          "borderRadius": 4,
+          "bottom": 5,
+          "height": 16,
+          "left": "50%",
+          "position": "absolute",
+          "transform": Array [
+            Object {
+              "rotate": "45deg",
+            },
+          ],
+          "width": 16,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "paddingHorizontal": 6,
+          "paddingVertical": 6,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(0, 166, 152)",
+            "borderRadius": 40,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</AIRMapMarker>
+`;
+
+exports[`Android dark mode light mode should render correctly with disabled={true} 1`] = `
+<AIRMapMarker
+  coordinate={
+    Object {
+      "latitude": 52.516379,
+      "longitude": 13.378026,
+    }
+  }
+  onPress={[Function]}
+  stopPropagation={false}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "position": "absolute",
+      },
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 8,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(0, 166, 152)",
+          "borderRadius": 4,
+          "bottom": 5,
+          "height": 16,
+          "left": "50%",
+          "position": "absolute",
+          "transform": Array [
+            Object {
+              "rotate": "45deg",
+            },
+          ],
+          "width": 16,
+        },
+        Object {
+          "backgroundColor": "rgb(208, 238, 236)",
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "paddingHorizontal": 6,
+          "paddingVertical": 6,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(0, 166, 152)",
+            "borderRadius": 40,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "backgroundColor": "rgb(208, 238, 236)",
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "color": "rgb(115, 206, 198)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</AIRMapMarker>
+`;
+
+exports[`Android dark mode light mode should render correctly with status=default 1`] = `
+<AIRMapMarker
+  coordinate={
+    Object {
+      "latitude": 52.516379,
+      "longitude": 13.378026,
+    }
+  }
+  onPress={[Function]}
+  stopPropagation={false}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "position": "absolute",
+      },
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 8,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(0, 166, 152)",
+          "borderRadius": 4,
+          "bottom": 5,
+          "height": 16,
+          "left": "50%",
+          "position": "absolute",
+          "transform": Array [
+            Object {
+              "rotate": "45deg",
+            },
+          ],
+          "width": 16,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "paddingHorizontal": 6,
+          "paddingVertical": 6,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(0, 166, 152)",
+            "borderRadius": 40,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</AIRMapMarker>
+`;
+
+exports[`Android dark mode light mode should render correctly with status=focused 1`] = `
+<AIRMapMarker
+  coordinate={
+    Object {
+      "latitude": 52.516379,
+      "longitude": 13.378026,
+    }
+  }
+  onPress={[Function]}
+  stopPropagation={false}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "position": "absolute",
+      },
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 8,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(0, 166, 152)",
+          "borderRadius": 4,
+          "bottom": 5,
+          "height": 16,
+          "left": "50%",
+          "position": "absolute",
+          "transform": Array [
+            Object {
+              "rotate": "45deg",
+            },
+          ],
+          "width": 16,
+        },
+        Object {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderBottomLeftRadius": 0,
+          "borderColor": "rgb(0, 166, 152)",
+          "borderLeftColor": "transparent",
+          "borderStyle": "solid",
+          "borderTopColor": "transparent",
+          "borderTopRightRadius": 0,
+          "borderWidth": 1,
+          "bottom": 5,
+          "height": 17,
+          "left": "48%",
+          "width": 17,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "paddingHorizontal": 6,
+          "paddingVertical": 6,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
+        },
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 8,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(0, 166, 152)",
+            "borderRadius": 40,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "borderBottomColor": "transparent",
+            "borderLeftColor": "rgb(0, 166, 152)",
+            "borderRightColor": "rgb(0, 166, 152)",
+            "borderStyle": "solid",
+            "borderTopColor": "rgb(0, 166, 152)",
+            "borderWidth": 1,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "color": "rgb(0, 166, 152)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</AIRMapMarker>
+`;
+
+exports[`Android light mode dark mode should render correctly 1`] = `
+<AIRMapMarker
+  coordinate={
+    Object {
+      "latitude": 52.516379,
+      "longitude": 13.378026,
+    }
+  }
+  onPress={[Function]}
+  stopPropagation={false}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "position": "absolute",
+      },
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 8,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(0, 166, 152)",
+          "borderRadius": 4,
+          "bottom": 5,
+          "height": 16,
+          "left": "50%",
+          "position": "absolute",
+          "transform": Array [
+            Object {
+              "rotate": "45deg",
+            },
+          ],
+          "width": 16,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "paddingHorizontal": 6,
+          "paddingVertical": 6,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(0, 166, 152)",
+            "borderRadius": 40,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</AIRMapMarker>
+`;
+
+exports[`Android light mode dark mode should render correctly with disabled={true} 1`] = `
+<AIRMapMarker
+  coordinate={
+    Object {
+      "latitude": 52.516379,
+      "longitude": 13.378026,
+    }
+  }
+  onPress={[Function]}
+  stopPropagation={false}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "position": "absolute",
+      },
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 8,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(0, 166, 152)",
+          "borderRadius": 4,
+          "bottom": 5,
+          "height": 16,
+          "left": "50%",
+          "position": "absolute",
+          "transform": Array [
+            Object {
+              "rotate": "45deg",
+            },
+          ],
+          "width": 16,
+        },
+        Object {
+          "backgroundColor": "rgb(208, 238, 236)",
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "paddingHorizontal": 6,
+          "paddingVertical": 6,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(0, 166, 152)",
+            "borderRadius": 40,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "backgroundColor": "rgb(208, 238, 236)",
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "color": "rgb(115, 206, 198)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</AIRMapMarker>
+`;
+
+exports[`Android light mode dark mode should render correctly with status=default 1`] = `
+<AIRMapMarker
+  coordinate={
+    Object {
+      "latitude": 52.516379,
+      "longitude": 13.378026,
+    }
+  }
+  onPress={[Function]}
+  stopPropagation={false}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "position": "absolute",
+      },
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 8,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(0, 166, 152)",
+          "borderRadius": 4,
+          "bottom": 5,
+          "height": 16,
+          "left": "50%",
+          "position": "absolute",
+          "transform": Array [
+            Object {
+              "rotate": "45deg",
+            },
+          ],
+          "width": 16,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "paddingHorizontal": 6,
+          "paddingVertical": 6,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(0, 166, 152)",
+            "borderRadius": 40,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</AIRMapMarker>
+`;
+
+exports[`Android light mode dark mode should render correctly with status=focused 1`] = `
+<AIRMapMarker
+  coordinate={
+    Object {
+      "latitude": 52.516379,
+      "longitude": 13.378026,
+    }
+  }
+  onPress={[Function]}
+  stopPropagation={false}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "position": "absolute",
+      },
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 8,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(0, 166, 152)",
+          "borderRadius": 4,
+          "bottom": 5,
+          "height": 16,
+          "left": "50%",
+          "position": "absolute",
+          "transform": Array [
+            Object {
+              "rotate": "45deg",
+            },
+          ],
+          "width": 16,
+        },
+        Object {
+          "backgroundColor": "rgb(58, 58, 60)",
+          "borderBottomLeftRadius": 0,
+          "borderColor": "rgb(0, 166, 152)",
+          "borderLeftColor": "transparent",
+          "borderStyle": "solid",
+          "borderTopColor": "transparent",
+          "borderTopRightRadius": 0,
+          "borderWidth": 1,
+          "bottom": 5,
+          "height": 17,
+          "left": "48%",
+          "width": 17,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "paddingHorizontal": 6,
+          "paddingVertical": 6,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
+        },
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 8,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(0, 166, 152)",
+            "borderRadius": 40,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "backgroundColor": "rgb(58, 58, 60)",
+            "borderBottomColor": "transparent",
+            "borderLeftColor": "rgb(0, 166, 152)",
+            "borderRightColor": "rgb(0, 166, 152)",
+            "borderStyle": "solid",
+            "borderTopColor": "rgb(0, 166, 152)",
+            "borderWidth": 1,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "color": "rgb(0, 166, 152)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</AIRMapMarker>
+`;
+
+exports[`Android light mode light mode should render correctly 1`] = `
+<AIRMapMarker
+  coordinate={
+    Object {
+      "latitude": 52.516379,
+      "longitude": 13.378026,
+    }
+  }
+  onPress={[Function]}
+  stopPropagation={false}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "position": "absolute",
+      },
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 8,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(0, 166, 152)",
+          "borderRadius": 4,
+          "bottom": 5,
+          "height": 16,
+          "left": "50%",
+          "position": "absolute",
+          "transform": Array [
+            Object {
+              "rotate": "45deg",
+            },
+          ],
+          "width": 16,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "paddingHorizontal": 6,
+          "paddingVertical": 6,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(0, 166, 152)",
+            "borderRadius": 40,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</AIRMapMarker>
+`;
+
+exports[`Android light mode light mode should render correctly with disabled={true} 1`] = `
+<AIRMapMarker
+  coordinate={
+    Object {
+      "latitude": 52.516379,
+      "longitude": 13.378026,
+    }
+  }
+  onPress={[Function]}
+  stopPropagation={false}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "position": "absolute",
+      },
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 8,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(0, 166, 152)",
+          "borderRadius": 4,
+          "bottom": 5,
+          "height": 16,
+          "left": "50%",
+          "position": "absolute",
+          "transform": Array [
+            Object {
+              "rotate": "45deg",
+            },
+          ],
+          "width": 16,
+        },
+        Object {
+          "backgroundColor": "rgb(208, 238, 236)",
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "paddingHorizontal": 6,
+          "paddingVertical": 6,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(0, 166, 152)",
+            "borderRadius": 40,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "backgroundColor": "rgb(208, 238, 236)",
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "color": "rgb(115, 206, 198)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</AIRMapMarker>
+`;
+
+exports[`Android light mode light mode should render correctly with status=default 1`] = `
+<AIRMapMarker
+  coordinate={
+    Object {
+      "latitude": 52.516379,
+      "longitude": 13.378026,
+    }
+  }
+  onPress={[Function]}
+  stopPropagation={false}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "position": "absolute",
+      },
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 8,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(0, 166, 152)",
+          "borderRadius": 4,
+          "bottom": 5,
+          "height": 16,
+          "left": "50%",
+          "position": "absolute",
+          "transform": Array [
+            Object {
+              "rotate": "45deg",
+            },
+          ],
+          "width": 16,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "paddingHorizontal": 6,
+          "paddingVertical": 6,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(0, 166, 152)",
+            "borderRadius": 40,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</AIRMapMarker>
+`;
+
+exports[`Android light mode light mode should render correctly with status=focused 1`] = `
+<AIRMapMarker
+  coordinate={
+    Object {
+      "latitude": 52.516379,
+      "longitude": 13.378026,
+    }
+  }
+  onPress={[Function]}
+  stopPropagation={false}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "position": "absolute",
+      },
+      Object {
+        "paddingHorizontal": 8,
+        "paddingVertical": 8,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(0, 166, 152)",
+          "borderRadius": 4,
+          "bottom": 5,
+          "height": 16,
+          "left": "50%",
+          "position": "absolute",
+          "transform": Array [
+            Object {
+              "rotate": "45deg",
+            },
+          ],
+          "width": 16,
+        },
+        Object {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderBottomLeftRadius": 0,
+          "borderColor": "rgb(0, 166, 152)",
+          "borderLeftColor": "transparent",
+          "borderStyle": "solid",
+          "borderTopColor": "transparent",
+          "borderTopRightRadius": 0,
+          "borderWidth": 1,
+          "bottom": 5,
+          "height": 17,
+          "left": "48%",
+          "width": 17,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "paddingHorizontal": 6,
+          "paddingVertical": 6,
+          "shadowColor": undefined,
+          "shadowOffset": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
+        },
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 8,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(0, 166, 152)",
+            "borderRadius": 40,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "borderBottomColor": "transparent",
+            "borderLeftColor": "rgb(0, 166, 152)",
+            "borderRightColor": "rgb(0, 166, 152)",
+            "borderStyle": "solid",
+            "borderTopColor": "rgb(0, 166, 152)",
+            "borderWidth": 1,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Object {
+            "fontSize": 16,
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+            Object {
+              "color": "rgb(0, 166, 152)",
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</AIRMapMarker>
+`;
