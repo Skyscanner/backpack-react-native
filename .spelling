@@ -54,7 +54,7 @@ BpkList
 BpkListItem
 BpkModal
 BpkPriceMarker
-BpkMapMarker
+BpkIconMarker
 BpkNavigationBarButtonLink
 BpkPanel
 BpkPhoneNumberInput

@@ -72,14 +72,14 @@ export default class App extends Component {
 }
 ```
 
-### Map markers
+### Icon markers
 
-Map markers are used to display pressable points of interest on a map. They are based on the `Marker` component from `react-native-maps`.
+Icon markers are used to display pressable points of interest on a map using icons. They are based on the `Marker` component from `react-native-maps`.
 
 ```js
 import React from 'react';
 import { icons } from 'bpk-component-icon';
-import BpkMapView, { BpkMapMarker, MARKER_STATUSES } from 'backpack-react-native/bpk-component-map';
+import BpkMapView, { BpkIconMarker, ICON_MARKER_STATUSES } from 'backpack-react-native/bpk-component-map';
 
 
 export default class App extends Component {
@@ -94,14 +94,14 @@ export default class App extends Component {
           longitudeDelta: 0.0421,
         }}
       >
-        <BpkMapMarker
+        <BpkIconsMarker
           icon={icons.landmark}
           onPress={() => {
             console.log("Price marker pressed.")
           }}
           latititude={37.78825}
           longitude={-122.4324}
-          status={MARKER_STATUSES.default}
+          status={ICON_MARKER_STATUSES.default}
         />
       </BpkMapView>
     );
@@ -121,7 +121,7 @@ export default class App extends Component {
 | disabled | bool | false | false |
 | status | oneOf(`PRICE_MARKER_STATUSES.default`, `PRICE_MARKER_STATUSES.focused`, `PRICE_MARKER_STATUSES.viewed`) | false | `PRICE_MARKER_STATUSES.default` |
 
-#### BpkMapMarker
+#### BpkIconMarker
 
 | Property | PropType | Required | Default Value |
 | - | - | - | - |
@@ -129,4 +129,4 @@ export default class App extends Component {
 | latitude | number | true | - |
 | longitude | number | true | - |
 | disabled | bool | false | false |
-| status | oneOf(`MARKER_STATUSES.default`, `MARKER_STATUSES.focused`) | false | `MARKER_STATUSES.default` |
+| status | oneOf(`ICON_MARKER_STATUSES.default`, `ICON_MARKER_STATUSES.focused`) | false | `ICON_MARKER_STATUSES.default` |
