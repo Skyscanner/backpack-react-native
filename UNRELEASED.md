@@ -5,9 +5,6 @@
 **Added:**
   - Added `BpkIconMarker` to `bpk-component-map` — use it to display icon markers on maps.
 
-**Fixed:**
- - Upgraded `Backpack` iOS dependency. This involves no changes to the RN library.
-
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).

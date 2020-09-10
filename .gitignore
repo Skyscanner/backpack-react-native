@@ -30,7 +30,14 @@ project.xcworkspace
 .idea
 .gradle
 local.properties
-*.iml
+
+# We want to ignore *most* iml files but we do want to check in
+# android/react-native-maps/lib/lib.iml, so we manually ignore
+# all other iml files.
+android/native.iml
+android/app/app.iml
+lib/android/backpack-react-native.iml
+
 /.idea/caches/build_file_checksums.ser
 /.idea/libraries
 /.idea/modules.xml
