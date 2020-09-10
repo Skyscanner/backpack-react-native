@@ -1,5 +1,10 @@
 # Backpack changelog
 
+# 6.3.0 - 2020-09-10
+
+**Added:**
+  - Added `BpkIconMarker` to `bpk-component-map` — use it to display icon markers on maps.
+
 # 6.2.1 - 2020-09-07
 
 **Fixed:**
