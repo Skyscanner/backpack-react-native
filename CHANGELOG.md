@@ -1,5 +1,21 @@
 # Backpack changelog
 
+# 6.3.0 - 2020-09-10
+
+**Added:**
+  - Added `BpkIconMarker` to `bpk-component-map` — use it to display icon markers on maps.
+
+# 6.2.1 - 2020-09-07
+
+**Fixed:**
+ - Upgraded `Backpack` iOS dependency. This involves no changes to the RN library.
+
+# 6.2.0 - 2020-09-03
+
+**Added:**
+
+- Added `BpkPriceMarker` to `bpk-component-map` — use it to display pricing markers on maps.
+
 # 6.1.0 - 2020-08-28
 
 **Added:**
