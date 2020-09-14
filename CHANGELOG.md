@@ -1,5 +1,10 @@
 # Backpack changelog
 
+# 6.3.1 - 2020-09-14
+
+**Fixed:**
+  - Migrate `bpk-component-card` from forked `react-native-dash` to upstream.
+
 # 6.3.0 - 2020-09-10
 
 **Added:**
