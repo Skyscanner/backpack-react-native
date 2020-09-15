@@ -14,8 +14,8 @@ jobs:
       # Checkout the repo
       - uses: actions/checkout@v2
 
-      - name: select xcode 11.5
-        run: sudo xcode-select -switch /Applications/Xcode_11.5.app
+      - name: select Xcode version
+        run: sudo xcode-select -switch /Applications/Xcode_11.7.app
 
       - name: brew install
         run: brew install clang-format
