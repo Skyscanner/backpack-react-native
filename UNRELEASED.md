@@ -1,5 +1,9 @@
 # Unreleased
 
+**Fixed:**
+
+- Upgraded Backpack iOS dependency to 35.1.
+
 > Place your changes below this line.
 
 ## How to write a good changelog entry
