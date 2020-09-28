@@ -62,6 +62,10 @@ suppress_type=$FlowFixMe
 suppress_type=$FlowFixMeProps
 suppress_type=$FlowFixMeState
 
+; This config turns off Types-First a now default behaviour from Flow: https://flow.org/en/docs/lang/types-first/
+; We should probably look at doing this but currently it produces over 255 errors so not simple, so for this PR disabling with the idea we create a future PR with this
+types_first=false
+
 [lints]
 sketchy-null-number=warn
 sketchy-null-mixed=warn
@@ -71,7 +75,6 @@ nonstrict-import=warn
 deprecated-type=warn
 unsafe-getters-setters=warn
 unnecessary-invariant=warn
-signature-verification-failure=warn
 deprecated-utility=error
 
 [strict]
@@ -84,4 +87,4 @@ untyped-import
 untyped-type-import
 
 [version]
-^0.133.0
+^0.134.0
