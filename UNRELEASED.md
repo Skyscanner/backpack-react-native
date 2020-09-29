@@ -1,5 +1,8 @@
 # Unreleased
 
+**Fixed:**
+  - Upgraded the version of the `Backpack` pod to version `35.0.0`.
+
 > Place your changes below this line.
 
 ## How to write a good changelog entry

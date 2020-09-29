@@ -122,7 +122,7 @@ RCT_EXPORT_METHOD(forceRender : (nonnull NSNumber *)reactTag) {
     return nil;
 }
 
-- (BOOL)calendar:(BPKCalendar *)calendar isDateEnabled:(NSDate *)date {
+- (BOOL)calendar:(BPKCalendar *)calendar isDateEnabled:(BPKSimpleDate *)date {
     NSAssert([calendar isKindOfClass:RCTBPKCalendar.class],
              @"calendar value is not of type RCTBPKCalendar as expected.");
     if (![calendar isKindOfClass:RCTBPKCalendar.class]) {
@@ -134,7 +134,8 @@ RCT_EXPORT_METHOD(forceRender : (nonnull NSNumber *)reactTag) {
         return YES;
     }
 
-    return ![rctCalendar.rct_disabledDates matchesDate:date];
+    NSDate *localDate = [date dateForCalendar:calendar.gregorian];
+    return ![rctCalendar.rct_disabledDates matchesDate:localDate];
 }
 
 - (BPKCalendarDateCellStyle)calendar:(BPKCalendar *)calendar cellStyleForDate:(BPKSimpleDate *)date {
@@ -151,7 +152,7 @@ RCT_EXPORT_METHOD(forceRender : (nonnull NSNumber *)reactTag) {
     return colorBucket.cellStyle;
 }
 
-- (UIColor *)calendar:(BPKCalendar *)calendar fillColorForDate:(NSDate *)date {
+- (UIColor *)DONT_USE_calendar:(BPKCalendar *)calendar fillColorForDate:(NSDate *)date {
     NSAssert([calendar isKindOfClass:RCTBPKCalendar.class],
              @"calendar value is not of type RCTBPKCalendar as expected.");
     if (![calendar isKindOfClass:RCTBPKCalendar.class]) {
@@ -167,7 +168,7 @@ RCT_EXPORT_METHOD(forceRender : (nonnull NSNumber *)reactTag) {
     return BPKColor.clear;
 }
 
-- (UIColor *)calendar:(BPKCalendar *)calendar titleColorForDate:(NSDate *)date {
+- (UIColor *)DONT_USE_calendar:(BPKCalendar *)calendar titleColorForDate:(NSDate *)date {
     NSAssert([calendar isKindOfClass:RCTBPKCalendar.class],
              @"calendar value is not of type RCTBPKCalendar as expected.");
     if (![calendar isKindOfClass:RCTBPKCalendar.class]) {
