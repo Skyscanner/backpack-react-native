@@ -1,5 +1,10 @@
 # Backpack changelog
 
+# 6.3.2 - 2020-09-29
+
+**Fixed:**
+  - Upgraded the version of the `Backpack` pod to version `35.0.0`.
+
 # 6.3.1 - 2020-09-14
 
 **Fixed:**
