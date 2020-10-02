@@ -2,6 +2,7 @@
 
 **Fixed:**
 
+- Reverted flow-bin upgrade from 0.134.0.
 - Fixed flow typing for refs.
 
 
