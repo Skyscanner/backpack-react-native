@@ -1,5 +1,10 @@
 # Unreleased
 
+**Fixed:**
+
+- Fixed flow typing for refs.
+
+
 > Place your changes below this line.
 
 ## How to write a good changelog entry
