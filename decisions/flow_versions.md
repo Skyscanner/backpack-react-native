@@ -1,7 +1,7 @@
 # Flow versions
 
 ## Decision
-The version of `flow-bin` that we use in Backpack React Native should align to the same version that React Native is using.
+The version of `flow-bin` that we use in Backpack React Native should align to the [same version that React Native is using](https://github.com/facebook/react-native/blob/master/.flowconfig).
 
 
 ## Thinking
