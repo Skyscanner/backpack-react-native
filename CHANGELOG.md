@@ -1,5 +1,12 @@
 # Backpack changelog
 
+# 6.3.3 - 2020-09-29
+
+**Fixed:**
+
+- Reverted flow-bin upgrade from `v0.134.0` back to `v0.107.0`.
+- Fixed flow typing for refs.
+
 # 6.3.2 - 2020-09-29
 
 **Fixed:**

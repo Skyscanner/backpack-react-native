@@ -1,11 +1,5 @@
 # Unreleased
 
-**Fixed:**
-
-- Reverted flow-bin upgrade from 0.134.0.
-- Fixed flow typing for refs.
-
-
 > Place your changes below this line.
 
 ## How to write a good changelog entry
