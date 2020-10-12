@@ -25,6 +25,7 @@
 NS_ASSUME_NONNULL_BEGIN
 @interface RCTBPKCalendar ()
 @property(nonatomic, strong) NSCalendar *utcCalendar;
+@property(nonatomic) BOOL nativeUpdateRequired;
 
 - (void)setupCalendar;
 @end
@@ -66,67 +67,45 @@ NS_ASSUME_NONNULL_BEGIN
     self.utcCalendar.timeZone = [[NSTimeZone alloc] initWithName:@"UTC"];
 }
 
-- (void)setRct_minDate:(nullable NSDate *)rct_minDate {
-    // `BPKCalendar` requires `minDate` to be nonnull
-    // but the RN interface supports `null` for the `minDate`
-    // prop thus we have to ensure we have an explicit default
-    // here. This default is aligned with the Android implementation.
-    if (rct_minDate == nil) {
-        NSDate *today = [[NSDate alloc] init];
-        BPKSimpleDate *date = [[BPKSimpleDate alloc] initWithDate:today forCalendar:self.gregorian];
-
-        [super setMinDate:date];
-        return;
+- (void)setRct_selectionType:(BPKCalendarSelection)rct_selectionType {
+    if(_rct_selectionType != rct_selectionType) {
+        _rct_selectionType = rct_selectionType;
+        self.nativeUpdateRequired = YES;
     }
-
-    NSDate *localDate = [RCTBPKCalendarDateUtils convertDateToLocal:rct_minDate
-                                                      localCalendar:self.gregorian
-                                                        utcCalendar:self.utcCalendar];
-    BPKSimpleDate *simpleDate = [[BPKSimpleDate alloc] initWithDate:localDate forCalendar:self.gregorian];
-    [super setMinDate:simpleDate];
 }
 
-- (nullable NSDate *)rct_minDate {
-    return [self.minDate dateForCalendar:self.gregorian];
+- (void)setRct_minDate:(nullable NSDate *)rct_minDate {
+    if(![_rct_minDate isEqualToDate:rct_minDate]) {
+        _rct_minDate = rct_minDate;
+        self.nativeUpdateRequired = YES;
+    }
 }
 
 - (void)setRct_maxDate:(nullable NSDate *)rct_maxDate {
-    // `BPKCalendar` requires `maxDate` to be nonnull
-    // but the RN interface supports `null` for the `maxDate`
-    // prop thus we have to ensure we have an explicit default
-    // here. This default is aligned with the Android implementation.
-    if (rct_maxDate == nil) {
-        NSDate *today = [[NSDate alloc] init];
-        NSDate *oneYearFromNow = [self.gregorian dateByAddingUnit:NSCalendarUnitYear value:1 toDate:today options:0];
-        BPKSimpleDate *date = [[BPKSimpleDate alloc] initWithDate:oneYearFromNow forCalendar:self.gregorian];
-
-        [super setMaxDate:date];
-        return;
+    if(![_rct_maxDate isEqualToDate:rct_maxDate]) {
+        _rct_maxDate = rct_maxDate;
+        self.nativeUpdateRequired = YES;
     }
-
-    NSDate *localDate = [RCTBPKCalendarDateUtils convertDateToLocal:rct_maxDate
-                                                      localCalendar:self.gregorian
-                                                        utcCalendar:self.utcCalendar];
-    BPKSimpleDate *simpleDate = [[BPKSimpleDate alloc] initWithDate:localDate forCalendar:self.gregorian];
-    [super setMaxDate:simpleDate];
-}
-
-- (nullable NSDate *)rct_maxDate {
-    return [self.maxDate dateForCalendar:self.gregorian];
 }
 
 - (void)setRct_selectedDates:(NSArray<NSDate *> *)rct_selectedDates {
-    NSMutableArray *simpleDates = [[NSMutableArray alloc] initWithCapacity:rct_selectedDates.count];
+    if(![self dateArraysAreEqual:_rct_selectedDates dateList2:rct_selectedDates]) {
+        _rct_selectedDates = rct_selectedDates;
+        self.nativeUpdateRequired = YES;
+    }
+}
 
-    for (NSDate *utcDate in rct_selectedDates) {
-        NSDate *localDate = [RCTBPKCalendarDateUtils convertDateToLocal:utcDate
-                                                          localCalendar:self.gregorian
-                                                            utcCalendar:self.utcCalendar];
-        BPKSimpleDate *simpleDate = [[BPKSimpleDate alloc] initWithDate:localDate forCalendar:self.gregorian];
-        [simpleDates addObject:simpleDate];
+-(BOOL)dateArraysAreEqual:(NSArray<NSDate *> *)dateList1 dateList2:(NSArray<NSDate *> *)dateList2 {
+    if(dateList1.count != dateList2.count) {
+        return NO;
     }
 
-    [super setSelectedDates:simpleDates];
+    for (int index = 0; index < dateList1.count; ++index) {
+        if(![dateList1[index] isEqualToDate:dateList2[index]]) {
+            return NO;
+        }
+    }
+    return YES;
 }
 
 - (void)setRct_colorBuckets:(NSArray<RCTBPKColorBucket *> *_Nullable)rct_colorBuckets {
@@ -144,7 +123,7 @@ NS_ASSUME_NONNULL_BEGIN
 
         bucket.days.dates = localDates;
     }
-    [self refreshDateAppearance];
+    self.nativeUpdateRequired = YES;
 }
 
 - (void)setRct_disabledDates:(RCTBPKDateMatcher *_Nullable)rct_disabledDates {
@@ -160,6 +139,73 @@ NS_ASSUME_NONNULL_BEGIN
 
         rct_disabledDates.dates = localDates;
 
+        self.nativeUpdateRequired = YES;
+    }
+}
+
+-(void)updateNativeSelectedDates:(NSArray<NSDate *> *)selectedDates {
+    NSMutableArray *simpleDates = [[NSMutableArray alloc] initWithCapacity:selectedDates.count];
+
+    for (NSDate *utcDate in selectedDates) {
+        NSDate *localDate = [RCTBPKCalendarDateUtils convertDateToLocal:utcDate
+                                                          localCalendar:self.gregorian
+                                                            utcCalendar:self.utcCalendar];
+        BPKSimpleDate *simpleDate = [[BPKSimpleDate alloc] initWithDate:localDate forCalendar:self.gregorian];
+        [simpleDates addObject:simpleDate];
+    }
+
+    [super setSelectedDates:simpleDates];
+}
+
+- (void)updateNativeMinDate:(nullable NSDate *)minDate {
+    // `BPKCalendar` requires `minDate` to be nonnull
+    // but the RN interface supports `null` for the `minDate`
+    // prop thus we have to ensure we have an explicit default
+    // here. This default is aligned with the Android implementation.
+    if (minDate == nil) {
+        NSDate *today = [[NSDate alloc] init];
+        BPKSimpleDate *date = [[BPKSimpleDate alloc] initWithDate:today forCalendar:self.gregorian];
+
+        [super setMinDate:date];
+        return;
+    }
+
+    NSDate *localDate = [RCTBPKCalendarDateUtils convertDateToLocal:minDate
+                                                      localCalendar:self.gregorian
+                                                        utcCalendar:self.utcCalendar];
+    BPKSimpleDate *simpleDate = [[BPKSimpleDate alloc] initWithDate:localDate forCalendar:self.gregorian];
+    [super setMinDate:simpleDate];
+}
+
+- (void)updateNativeMaxDate:(nullable NSDate *)maxDate {
+    // `BPKCalendar` requires `maxDate` to be nonnull
+    // but the RN interface supports `null` for the `maxDate`
+    // prop thus we have to ensure we have an explicit default
+    // here. This default is aligned with the Android implementation.
+    if (maxDate == nil) {
+        NSDate *today = [[NSDate alloc] init];
+        NSDate *oneYearFromNow = [self.gregorian dateByAddingUnit:NSCalendarUnitYear value:1 toDate:today options:0];
+        BPKSimpleDate *date = [[BPKSimpleDate alloc] initWithDate:oneYearFromNow forCalendar:self.gregorian];
+
+        [super setMaxDate:date];
+        return;
+    }
+
+    NSDate *localDate = [RCTBPKCalendarDateUtils convertDateToLocal:maxDate
+                                                      localCalendar:self.gregorian
+                                                        utcCalendar:self.utcCalendar];
+    BPKSimpleDate *simpleDate = [[BPKSimpleDate alloc] initWithDate:localDate forCalendar:self.gregorian];
+    [super setMaxDate:simpleDate];
+}
+
+- (void)didSetProps:(NSArray<NSString *> *)changedProps {
+    if (self.nativeUpdateRequired) {
+        self.nativeUpdateRequired = false;
+
+        [super setSelectionType:self.rct_selectionType];
+        [self updateNativeMinDate:_rct_minDate]; // Uses synthesized property instead of `self.rct_minDate
+        [self updateNativeMaxDate:_rct_maxDate]; // Uses synthesized property instead of `self.rct_maxDate
+        [self updateNativeSelectedDates:self.rct_selectedDates];
         [self refreshDateAppearance];
     }
 }

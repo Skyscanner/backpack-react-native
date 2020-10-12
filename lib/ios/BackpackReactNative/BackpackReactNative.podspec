@@ -18,5 +18,5 @@ Pod::Spec.new do |s|
   s.dependency 'React'
   s.dependency 'react-native-maps'
   s.dependency 'ReactNativeDarkMode'
-  s.dependency 'Backpack', '~> 36.0'
+  s.dependency 'Backpack', '~> 36.2.1'
 end

@@ -44,46 +44,13 @@ RCT_EXPORT_MODULE()
 
 RCT_REMAP_VIEW_PROPERTY(minDate, rct_minDate, NSDate)
 RCT_REMAP_VIEW_PROPERTY(maxDate, rct_maxDate, NSDate)
-RCT_REMAP_VIEW_PROPERTY(colorBuckets, rct_colorBuckets, RCTBPKColorBucketArray);
-RCT_REMAP_VIEW_PROPERTY(disabledDates, rct_disabledDates, RCTBPKDateMatcher);
-RCT_EXPORT_VIEW_PROPERTY(selectionType, BPKCalendarSelection)
+RCT_REMAP_VIEW_PROPERTY(colorBuckets, rct_colorBuckets, RCTBPKColorBucketArray)
+RCT_REMAP_VIEW_PROPERTY(disabledDates, rct_disabledDates, RCTBPKDateMatcher)
+RCT_REMAP_VIEW_PROPERTY(selectionType, rct_selectionType, BPKCalendarSelection)
 RCT_EXPORT_VIEW_PROPERTY(locale, NSLocale)
 RCT_REMAP_VIEW_PROPERTY(selectedDates, rct_selectedDates, NSArray<NSDate *> *)
 
 RCT_EXPORT_VIEW_PROPERTY(onDateSelection, RCTBubblingEventBlock)
-
-/*
- * When the calendar renders in certain configurations the initial
- * render is incorrect. With this method, called from `componentDidMount`,
- * is called the calendar is forced to re-render to fix the bug.
- */
-RCT_EXPORT_METHOD(forceRender : (nonnull NSNumber *)reactTag) {
-    [self.bridge.uiManager
-        addUIBlock:^(__unused RCTUIManager *uiManager, NSDictionary<NSNumber *, UIView *> *viewRegistry) {
-          UIView *view = viewRegistry[reactTag];
-
-          if ([view isKindOfClass:[BPKCalendar class]]) {
-              BPKCalendar *calendar = (BPKCalendar *)view;
-              NSArray<BPKSimpleDate *> *selectedDates = calendar.selectedDates;
-
-              calendar.selectedDates = @[];
-              [calendar reloadData];
-
-              /*
-               * Force a slight pause before rendering again with the
-               * selected dates.
-               */
-              [[NSOperationQueue currentQueue] addOperationWithBlock:^{
-                calendar.selectedDates = selectedDates;
-                [calendar reloadData];
-              }];
-          } else {
-              RCTLogError(@"tried to force render: on non-BPKCalendar view %@ "
-                           "with tag #%@",
-                          view, reactTag);
-          }
-        }];
-}
 
 #pragma mark RCTCalendarViewDelegate
 
