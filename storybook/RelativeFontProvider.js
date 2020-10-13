@@ -18,7 +18,8 @@
 /* @flow */
 import React, { type Node } from 'react';
 import { Platform } from 'react-native';
-import { USE_RELATIVE } from 'react-native-dotenv';
+// $FlowExpectedError Ignoring as per react-native-dotenv v2 lib https://github.com/goatandsheep/react-native-dotenv/wiki/Migration-Guide#1
+import { USE_RELATIVE } from '@env'; // eslint-disable-line import/no-unresolved
 
 import BpkThemeProvider from '../lib/bpk-theming';
 
