@@ -17,9 +17,6 @@
  */
 
 module.exports = {
-  presets: [
-    'module:metro-react-native-babel-preset',
-    'module:react-native-dotenv',
-  ],
-  plugins: ['jest-hoist'],
+  presets: ['module:metro-react-native-babel-preset'],
+  plugins: ['jest-hoist', 'module:react-native-dotenv'],
 };
