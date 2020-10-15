@@ -1,5 +1,11 @@
 # Backpack changelog
 
+# 6.3.4 - 2020-10-15
+
+**Fixed:**
+
+- Fixed an issue where pre-selected dates in `BpkCalendar` didn't render on iOS.
+
 # 6.3.3 - 2020-09-29
 
 **Fixed:**
