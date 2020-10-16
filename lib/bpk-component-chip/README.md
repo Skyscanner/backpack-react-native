@@ -13,6 +13,8 @@ import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
 import BpkChip, { BpkDismissibleChip } from 'backpack-react-native/bpk-component-chip';
+import BpkIcon, { icons } from 'backpack-react-native//bpk-component-icon';
+
 
 const styles = StyleSheet.create({
   container: {
@@ -51,6 +53,7 @@ export default class App extends Component {
           label="Flights"
           onPress={this.toggle}
           selected={this.state.flightsSelected}
+          leadingAccesoryView={<BpkIcon icon={icons.flight} />}
         />
         { this.state.showHotels &&
           <BpkDismissibleChip
@@ -79,13 +82,14 @@ export default class App extends Component {
 | innerChipStyle        | ViewStyle                                                                 | false    | null          |
 | type                  | oneOf(CHIP_TYPES)                                                         | false    | primary       |
 | leadingAccessoryView  | element                                                                   | false    | null          |
+| trailingAccessoryView | element                                                                   | false    | null          |
 
 **Note that on Android, `style` should be used for positional styling and `innerChipStyle` should be used for other styling.**
 (On iOS, `style` and `innerChipStyle` are applied together so it doesn't matter which you use!)
 
-## `leadingAccessoryView`
+## `leadingAccessoryView` and `trailingAccessoryView`
 
- The leading accessory view allows for icons to be placed in front of the text inside the Chip component.
+Use accessory views to place icons inside the chip.
 
 #### Theme Props
 
@@ -111,4 +115,6 @@ export default class App extends Component {
 
 ## `leadingAccessoryView`
 
- The leading accessory view allows for icons to be placed in front of the text inside the Chip component.
+Use accessory views to place icons inside the chip.
+
+**Note:** Dismissible chips do not support trailing accessory views because they already have a close icon in that position.

@@ -56,6 +56,9 @@ exports[`iOS BpkDismissibleChip dark mode should render correctly 1`] = `
             "color": "rgb(255, 255, 255)",
             "includeFontPadding": false,
           },
+          Object {
+            "marginEnd": 4,
+          },
         ],
       ]
     }
@@ -77,9 +80,8 @@ exports[`iOS BpkDismissibleChip dark mode should render correctly 1`] = `
         },
         Array [
           Object {
-            "color": "rgb(205, 205, 215)",
+            "color": "rgb(255, 255, 255)",
             "includeFontPadding": false,
-            "marginStart": 4,
           },
         ],
       ]
@@ -171,6 +173,9 @@ exports[`iOS BpkDismissibleChip dark mode should render correctly with "disabled
           Object {
             "color": "rgb(99, 99, 102)",
           },
+          Object {
+            "marginEnd": 4,
+          },
         ],
       ]
     }
@@ -192,9 +197,8 @@ exports[`iOS BpkDismissibleChip dark mode should render correctly with "disabled
         },
         Array [
           Object {
-            "color": "rgb(205, 205, 215)",
+            "color": "rgb(255, 255, 255)",
             "includeFontPadding": false,
-            "marginStart": 4,
           },
           Object {
             "color": "rgb(99, 99, 102)",
@@ -296,6 +300,9 @@ exports[`iOS BpkDismissibleChip dark mode should render outline correctly 1`] = 
           Object {
             "color": "rgb(255, 255, 255)",
           },
+          Object {
+            "marginEnd": 4,
+          },
         ],
       ]
     }
@@ -317,12 +324,11 @@ exports[`iOS BpkDismissibleChip dark mode should render outline correctly 1`] = 
         },
         Array [
           Object {
-            "color": "rgb(205, 205, 215)",
+            "color": "rgb(255, 255, 255)",
             "includeFontPadding": false,
-            "marginStart": 4,
           },
           Object {
-            "color": "rgb(205, 205, 215)",
+            "color": "rgb(255, 255, 255)",
           },
         ],
       ]
@@ -408,6 +414,9 @@ exports[`iOS BpkDismissibleChip light mode should render correctly 1`] = `
             "color": "rgb(17, 18, 54)",
             "includeFontPadding": false,
           },
+          Object {
+            "marginEnd": 4,
+          },
         ],
       ]
     }
@@ -429,9 +438,8 @@ exports[`iOS BpkDismissibleChip light mode should render correctly 1`] = `
         },
         Array [
           Object {
-            "color": "rgb(104, 105, 127)",
+            "color": "rgb(17, 18, 54)",
             "includeFontPadding": false,
-            "marginStart": 4,
           },
         ],
       ]
@@ -523,6 +531,9 @@ exports[`iOS BpkDismissibleChip light mode should render correctly with "disable
           Object {
             "color": "rgb(178, 178, 191)",
           },
+          Object {
+            "marginEnd": 4,
+          },
         ],
       ]
     }
@@ -544,9 +555,8 @@ exports[`iOS BpkDismissibleChip light mode should render correctly with "disable
         },
         Array [
           Object {
-            "color": "rgb(104, 105, 127)",
+            "color": "rgb(17, 18, 54)",
             "includeFontPadding": false,
-            "marginStart": 4,
           },
           Object {
             "color": "rgb(178, 178, 191)",
@@ -648,6 +658,9 @@ exports[`iOS BpkDismissibleChip light mode should render outline correctly 1`] =
           Object {
             "color": "rgb(255, 255, 255)",
           },
+          Object {
+            "marginEnd": 4,
+          },
         ],
       ]
     }
@@ -669,12 +682,11 @@ exports[`iOS BpkDismissibleChip light mode should render outline correctly 1`] =
         },
         Array [
           Object {
-            "color": "rgb(104, 105, 127)",
+            "color": "rgb(17, 18, 54)",
             "includeFontPadding": false,
-            "marginStart": 4,
           },
           Object {
-            "color": "rgb(205, 205, 215)",
+            "color": "rgb(255, 255, 255)",
           },
         ],
       ]
@@ -784,6 +796,9 @@ exports[`iOS BpkDismissibleChip should render correctly with a supplied icon 1`]
           Object {
             "marginStart": 4,
           },
+          Object {
+            "marginEnd": 4,
+          },
         ],
       ]
     }
@@ -805,8 +820,10 @@ exports[`iOS BpkDismissibleChip should render correctly with a supplied icon 1`]
         },
         Array [
           Object {
-            "color": "rgb(104, 105, 127)",
+            "color": "rgb(17, 18, 54)",
             "includeFontPadding": false,
+          },
+          Object {
             "marginStart": 4,
           },
         ],
@@ -894,6 +911,9 @@ exports[`iOS BpkDismissibleChip should render correctly with arbitrary props 1`]
             "color": "rgb(17, 18, 54)",
             "includeFontPadding": false,
           },
+          Object {
+            "marginEnd": 4,
+          },
         ],
       ]
     }
@@ -915,9 +935,8 @@ exports[`iOS BpkDismissibleChip should render correctly with arbitrary props 1`]
         },
         Array [
           Object {
-            "color": "rgb(104, 105, 127)",
+            "color": "rgb(17, 18, 54)",
             "includeFontPadding": false,
-            "marginStart": 4,
           },
         ],
       ]
@@ -1010,6 +1029,9 @@ exports[`iOS BpkDismissibleChip should render correctly with custom style 1`] = 
             "color": "rgb(17, 18, 54)",
             "includeFontPadding": false,
           },
+          Object {
+            "marginEnd": 4,
+          },
         ],
       ]
     }
@@ -1031,9 +1053,8 @@ exports[`iOS BpkDismissibleChip should render correctly with custom style 1`] = 
         },
         Array [
           Object {
-            "color": "rgb(104, 105, 127)",
+            "color": "rgb(17, 18, 54)",
             "includeFontPadding": false,
-            "marginStart": 4,
           },
         ],
       ]

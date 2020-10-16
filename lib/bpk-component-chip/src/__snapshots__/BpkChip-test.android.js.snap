@@ -650,105 +650,6 @@ exports[`Android BpkChip light mode should render outline correctly 1`] = `
 </View>
 `;
 
-exports[`Android BpkChip should render correctly with a supplied icon 1`] = `
-<View
-  style={
-    Array [
-      Object {
-        "borderRadius": 40,
-        "elevation": 2,
-        "overflow": "hidden",
-      },
-      Array [],
-    ]
-  }
->
-  <View
-    accessibilityLabel="Accessibility label"
-    accessibilityRole="button"
-    accessible={true}
-    focusable={true}
-    isTVSelectable={true}
-    nativeBackgroundAndroid={
-      Object {
-        "borderless": true,
-        "color": null,
-        "type": "RippleAndroid",
-      }
-    }
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "rgb(255, 255, 255)",
-          "borderRadius": 40,
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-          "paddingHorizontal": 16,
-          "paddingVertical": 8,
-        },
-      ]
-    }
-  >
-    <Text
-      allowFontScaling={false}
-      style={
-        Array [
-          Object {
-            "color": "rgb(17, 18, 54)",
-            "fontFamily": "BpkIcon",
-            "fontSize": 24,
-            "includeFontPadding": false,
-          },
-          Array [
-            Object {
-              "color": "rgb(17, 18, 54)",
-              "includeFontPadding": false,
-            },
-          ],
-        ]
-      }
-    >
-      
-    </Text>
-    <Text
-      allowFontScaling={false}
-      style={
-        Array [
-          Object {
-            "color": "rgb(17, 18, 54)",
-            "fontFamily": "sans-serif",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "letterSpacing": 0,
-            "textAlign": "left",
-          },
-          Object {},
-          Array [
-            Object {
-              "color": "rgb(17, 18, 54)",
-              "includeFontPadding": false,
-            },
-            Object {
-              "marginStart": 4,
-            },
-          ],
-        ]
-      }
-    >
-      Label
-    </Text>
-  </View>
-</View>
-`;
-
 exports[`Android BpkChip should render correctly with arbitrary props 1`] = `
 <View
   style={
@@ -899,6 +800,204 @@ exports[`Android BpkChip should render correctly with custom style 1`] = `
       }
     >
       Label
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Android BpkChip should render correctly with leadingAccessoryView 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 40,
+        "elevation": 2,
+        "overflow": "hidden",
+      },
+      Array [],
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Accessibility label"
+    accessibilityRole="button"
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderRadius": 40,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "includeFontPadding": false,
+            },
+          ],
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+            "textAlign": "left",
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "includeFontPadding": false,
+            },
+            Object {
+              "marginStart": 4,
+            },
+          ],
+        ]
+      }
+    >
+      Label
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Android BpkChip should render correctly with trailingAccessoryView 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 40,
+        "elevation": 2,
+        "overflow": "hidden",
+      },
+      Array [],
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Accessibility label"
+    accessibilityRole="button"
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    nativeBackgroundAndroid={
+      Object {
+        "borderless": true,
+        "color": null,
+        "type": "RippleAndroid",
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderRadius": 40,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "sans-serif",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+            "textAlign": "left",
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "includeFontPadding": false,
+            },
+            Object {
+              "marginEnd": 4,
+            },
+          ],
+        ]
+      }
+    >
+      Label
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "BpkIcon",
+            "fontSize": 24,
+            "includeFontPadding": false,
+          },
+          Array [
+            Object {
+              "color": "rgb(17, 18, 54)",
+              "includeFontPadding": false,
+            },
+          ],
+        ]
+      }
+    >
+      
     </Text>
   </View>
 </View>
