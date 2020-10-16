@@ -305,6 +305,7 @@ textStyle
 titleProps
 titleWithIcon
 toggleExpandedButtonLabel
+trailingAccessoryView
 trailingButton
 TransitionInitialMount
 uppercase

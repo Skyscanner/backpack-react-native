@@ -730,114 +730,6 @@ exports[`iOS BpkChip light mode should render outline correctly 1`] = `
 </View>
 `;
 
-exports[`iOS BpkChip should render correctly with a supplied icon 1`] = `
-<View
-  accessibilityLabel="Accessibility label"
-  accessibilityRole="button"
-  accessibilityStates={Array []}
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Array [
-      Array [
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "rgb(255, 255, 255)",
-          "borderRadius": 40,
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-          "paddingHorizontal": 16,
-          "paddingVertical": 8,
-          "shadowColor": "rgb(17, 18, 54)",
-          "shadowOffset": Object {
-            "height": 0.5,
-            "width": 0,
-          },
-          "shadowOpacity": 0.15,
-          "shadowRadius": 1.5,
-        },
-      ],
-      Array [],
-    ]
-  }
->
-  <Text
-    allowFontScaling={false}
-    style={
-      Array [
-        Object {
-          "color": "rgb(17, 18, 54)",
-          "fontFamily": "BpkIcon",
-          "fontSize": 24,
-          "includeFontPadding": false,
-        },
-        Array [
-          Object {
-            "color": "rgb(17, 18, 54)",
-            "includeFontPadding": false,
-          },
-        ],
-      ]
-    }
-  >
-    
-  </Text>
-  <Text
-    allowFontScaling={false}
-    style={
-      Array [
-        Object {
-          "color": "rgb(17, 18, 54)",
-          "fontFamily": "System",
-          "fontSize": 14,
-          "fontWeight": "400",
-          "letterSpacing": 0.154,
-          "textAlign": "left",
-        },
-        Object {},
-        Array [
-          Object {
-            "color": "rgb(17, 18, 54)",
-            "includeFontPadding": false,
-          },
-          Object {
-            "marginStart": 4,
-          },
-        ],
-      ]
-    }
-  >
-    Label
-  </Text>
-  <View
-    style={
-      Array [
-        Object {
-          "backgroundColor": "rgb(17, 18, 54)",
-          "bottom": 0,
-          "flex": 1,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        },
-        Object {
-          "borderRadius": 40,
-        },
-      ]
-    }
-  />
-</View>
-`;
-
 exports[`iOS BpkChip should render correctly with arbitrary props 1`] = `
 <View
   accessibilityLabel="Accessibility label"
@@ -988,6 +880,222 @@ exports[`iOS BpkChip should render correctly with custom style 1`] = `
     }
   >
     Label
+  </Text>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(17, 18, 54)",
+          "bottom": 0,
+          "flex": 1,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "borderRadius": 40,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`iOS BpkChip should render correctly with leadingAccessoryView 1`] = `
+<View
+  accessibilityLabel="Accessibility label"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderRadius": 40,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
+          },
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        },
+      ],
+      Array [],
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(17, 18, 54)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "includeFontPadding": false,
+          },
+        ],
+      ]
+    }
+  >
+    
+  </Text>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(17, 18, 54)",
+          "fontFamily": "System",
+          "fontSize": 14,
+          "fontWeight": "400",
+          "letterSpacing": 0.154,
+          "textAlign": "left",
+        },
+        Object {},
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "includeFontPadding": false,
+          },
+          Object {
+            "marginStart": 4,
+          },
+        ],
+      ]
+    }
+  >
+    Label
+  </Text>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(17, 18, 54)",
+          "bottom": 0,
+          "flex": 1,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "borderRadius": 40,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`iOS BpkChip should render correctly with trailingAccessoryView 1`] = `
+<View
+  accessibilityLabel="Accessibility label"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderRadius": 40,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
+          },
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        },
+      ],
+      Array [],
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(17, 18, 54)",
+          "fontFamily": "System",
+          "fontSize": 14,
+          "fontWeight": "400",
+          "letterSpacing": 0.154,
+          "textAlign": "left",
+        },
+        Object {},
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "includeFontPadding": false,
+          },
+          Object {
+            "marginEnd": 4,
+          },
+        ],
+      ]
+    }
+  >
+    Label
+  </Text>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "rgb(17, 18, 54)",
+          "fontFamily": "BpkIcon",
+          "fontSize": 24,
+          "includeFontPadding": false,
+        },
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "includeFontPadding": false,
+          },
+        ],
+      ]
+    }
+  >
+    
   </Text>
   <View
     style={

@@ -65,6 +65,9 @@ exports[`Android BpkDismissibleChip dark mode should render correctly 1`] = `
               "color": "rgb(255, 255, 255)",
               "includeFontPadding": false,
             },
+            Object {
+              "marginEnd": 4,
+            },
           ],
         ]
       }
@@ -86,9 +89,8 @@ exports[`Android BpkDismissibleChip dark mode should render correctly 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(205, 205, 215)",
+              "color": "rgb(255, 255, 255)",
               "includeFontPadding": false,
-              "marginStart": 4,
             },
           ],
         ]
@@ -171,6 +173,9 @@ exports[`Android BpkDismissibleChip dark mode should render correctly with "disa
             Object {
               "color": "rgb(99, 99, 102)",
             },
+            Object {
+              "marginEnd": 4,
+            },
           ],
         ]
       }
@@ -192,9 +197,8 @@ exports[`Android BpkDismissibleChip dark mode should render correctly with "disa
           },
           Array [
             Object {
-              "color": "rgb(205, 205, 215)",
+              "color": "rgb(255, 255, 255)",
               "includeFontPadding": false,
-              "marginStart": 4,
             },
             Object {
               "color": "rgb(99, 99, 102)",
@@ -287,6 +291,9 @@ exports[`Android BpkDismissibleChip dark mode should render outline correctly 1`
             Object {
               "color": "rgb(255, 255, 255)",
             },
+            Object {
+              "marginEnd": 4,
+            },
           ],
         ]
       }
@@ -308,12 +315,11 @@ exports[`Android BpkDismissibleChip dark mode should render outline correctly 1`
           },
           Array [
             Object {
-              "color": "rgb(205, 205, 215)",
+              "color": "rgb(255, 255, 255)",
               "includeFontPadding": false,
-              "marginStart": 4,
             },
             Object {
-              "color": "rgb(205, 205, 215)",
+              "color": "rgb(255, 255, 255)",
             },
           ],
         ]
@@ -390,6 +396,9 @@ exports[`Android BpkDismissibleChip light mode should render correctly 1`] = `
               "color": "rgb(17, 18, 54)",
               "includeFontPadding": false,
             },
+            Object {
+              "marginEnd": 4,
+            },
           ],
         ]
       }
@@ -411,9 +420,8 @@ exports[`Android BpkDismissibleChip light mode should render correctly 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(104, 105, 127)",
+              "color": "rgb(17, 18, 54)",
               "includeFontPadding": false,
-              "marginStart": 4,
             },
           ],
         ]
@@ -496,6 +504,9 @@ exports[`Android BpkDismissibleChip light mode should render correctly with "dis
             Object {
               "color": "rgb(178, 178, 191)",
             },
+            Object {
+              "marginEnd": 4,
+            },
           ],
         ]
       }
@@ -517,9 +528,8 @@ exports[`Android BpkDismissibleChip light mode should render correctly with "dis
           },
           Array [
             Object {
-              "color": "rgb(104, 105, 127)",
+              "color": "rgb(17, 18, 54)",
               "includeFontPadding": false,
-              "marginStart": 4,
             },
             Object {
               "color": "rgb(178, 178, 191)",
@@ -612,6 +622,9 @@ exports[`Android BpkDismissibleChip light mode should render outline correctly 1
             Object {
               "color": "rgb(255, 255, 255)",
             },
+            Object {
+              "marginEnd": 4,
+            },
           ],
         ]
       }
@@ -633,12 +646,11 @@ exports[`Android BpkDismissibleChip light mode should render outline correctly 1
           },
           Array [
             Object {
-              "color": "rgb(104, 105, 127)",
+              "color": "rgb(17, 18, 54)",
               "includeFontPadding": false,
-              "marginStart": 4,
             },
             Object {
-              "color": "rgb(205, 205, 215)",
+              "color": "rgb(255, 255, 255)",
             },
           ],
         ]
@@ -739,6 +751,9 @@ exports[`Android BpkDismissibleChip should render correctly with a supplied icon
             Object {
               "marginStart": 4,
             },
+            Object {
+              "marginEnd": 4,
+            },
           ],
         ]
       }
@@ -760,8 +775,10 @@ exports[`Android BpkDismissibleChip should render correctly with a supplied icon
           },
           Array [
             Object {
-              "color": "rgb(104, 105, 127)",
+              "color": "rgb(17, 18, 54)",
               "includeFontPadding": false,
+            },
+            Object {
               "marginStart": 4,
             },
           ],
@@ -840,6 +857,9 @@ exports[`Android BpkDismissibleChip should render correctly with arbitrary props
               "color": "rgb(17, 18, 54)",
               "includeFontPadding": false,
             },
+            Object {
+              "marginEnd": 4,
+            },
           ],
         ]
       }
@@ -861,9 +881,8 @@ exports[`Android BpkDismissibleChip should render correctly with arbitrary props
           },
           Array [
             Object {
-              "color": "rgb(104, 105, 127)",
+              "color": "rgb(17, 18, 54)",
               "includeFontPadding": false,
-              "marginStart": 4,
             },
           ],
         ]
@@ -947,6 +966,9 @@ exports[`Android BpkDismissibleChip should render correctly with custom style 1`
               "color": "rgb(17, 18, 54)",
               "includeFontPadding": false,
             },
+            Object {
+              "marginEnd": 4,
+            },
           ],
         ]
       }
@@ -968,9 +990,8 @@ exports[`Android BpkDismissibleChip should render correctly with custom style 1`
           },
           Array [
             Object {
-              "color": "rgb(104, 105, 127)",
+              "color": "rgb(17, 18, 54)",
               "includeFontPadding": false,
-              "marginStart": 4,
             },
           ],
         ]
