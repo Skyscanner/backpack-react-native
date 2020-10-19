@@ -2,10 +2,6 @@
 
 > Place your changes below this line.
 
-**Added:**
-
-- Added `trailingAccessoryView` prop to `BpkChip`.
-
 
 ## How to write a good changelog entry
 

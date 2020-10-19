@@ -1,5 +1,11 @@
 # Backpack changelog
 
+# 6.4.0 - 2020-10-19
+
+**Added:**
+
+- Added `trailingAccessoryView` prop to `BpkChip`.
+
 # 6.3.4 - 2020-10-15
 
 **Fixed:**
