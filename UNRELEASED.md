@@ -3,7 +3,7 @@
 > Place your changes below this line.
 
 **Breaking:**
- - `bpk-tokens@35.0.1` is now required. To migrate to this version, `spacingSm` must be replaced with `spacingXs`.
+ - Upgraded `bpk-tokens` to `35.0.1`. On Android, this changes `borderRadiusSm` from `4` to `8`. To keep using the old border radius (`4`), change your uses of `borderRadiusSm` to `borderRadiusXs`.
 
 **Fixed:**
  - Cards and Panels now have a corner radius of `bpk-spacing-md` by default.
