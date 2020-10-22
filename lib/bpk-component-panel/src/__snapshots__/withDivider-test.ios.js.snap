@@ -7,7 +7,7 @@ exports[`iOS withDivider dark mode should render correctly 1`] = `
       Object {
         "backgroundColor": "rgb(29, 27, 32)",
         "borderColor": null,
-        "borderRadius": 4,
+        "borderRadius": 12,
         "borderWidth": 0,
       },
       Object {
@@ -104,7 +104,7 @@ exports[`iOS withDivider light mode should render correctly 1`] = `
       Object {
         "backgroundColor": "rgb(255, 255, 255)",
         "borderColor": "rgb(221, 221, 229)",
-        "borderRadius": 4,
+        "borderRadius": 12,
         "borderWidth": 1,
       },
       Object {
@@ -201,7 +201,7 @@ exports[`iOS withDivider should render correctly with arbitrary props 1`] = `
       Object {
         "backgroundColor": "rgb(255, 255, 255)",
         "borderColor": "rgb(221, 221, 229)",
-        "borderRadius": 4,
+        "borderRadius": 12,
         "borderWidth": 1,
       },
       Object {
@@ -299,7 +299,7 @@ exports[`iOS withDivider should render correctly with custom main style 1`] = `
       Object {
         "backgroundColor": "rgb(255, 255, 255)",
         "borderColor": "rgb(221, 221, 229)",
-        "borderRadius": 4,
+        "borderRadius": 12,
         "borderWidth": 1,
       },
       Object {
@@ -399,7 +399,7 @@ exports[`iOS withDivider should render correctly with custom stub style 1`] = `
       Object {
         "backgroundColor": "rgb(255, 255, 255)",
         "borderColor": "rgb(221, 221, 229)",
-        "borderRadius": 4,
+        "borderRadius": 12,
         "borderWidth": 1,
       },
       Object {
@@ -499,7 +499,7 @@ exports[`iOS withDivider should render correctly without padding 1`] = `
       Object {
         "backgroundColor": "rgb(255, 255, 255)",
         "borderColor": "rgb(221, 221, 229)",
-        "borderRadius": 4,
+        "borderRadius": 12,
         "borderWidth": 1,
       },
       Array [

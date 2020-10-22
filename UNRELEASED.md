@@ -2,6 +2,11 @@
 
 > Place your changes below this line.
 
+**Breaking:**
+ - `bpk-tokens@35.0.1` is now required. To migrate to this version, `spacingSm` must be replaced with `spacingXs`.
+
+**Fixed:**
+ - Cards and Panels now have a corner radius of `bpk-spacing-md` by default.
 
 ## How to write a good changelog entry
 
