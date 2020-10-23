@@ -49,8 +49,8 @@ const createParser = () => {
 };
 
 const { action } = decorate([
-  args =>
-    args.map(a => {
+  (args) =>
+    args.map((a) => {
       if (typeof a !== 'object') {
         return a;
       }

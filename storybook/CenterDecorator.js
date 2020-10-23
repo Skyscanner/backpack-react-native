@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const CenterDecorator = Story => (
+const CenterDecorator = (Story) => (
   <ScrollView contentContainerStyle={styles.centered}>
     <Story />
   </ScrollView>

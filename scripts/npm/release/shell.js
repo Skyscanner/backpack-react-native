@@ -59,7 +59,7 @@ const Shell = (root, initialOptions = {}) => {
     if (stderr) shell.stderr.pipe(stderr);
 
     return new Promise((resolve, reject) => {
-      shell.on('close', code => {
+      shell.on('close', (code) => {
         if (code !== 0) {
           reject(code);
         } else {

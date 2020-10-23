@@ -33,7 +33,7 @@ const AVOID_EXACT_WORDS = [
 ];
 
 const BACKPACK_SQUAD_MEMBERS = meta.maintainers.map(
-  maintainer => maintainer.github,
+  (maintainer) => maintainer.github,
 );
 const author = danger.github.pr.user.login;
 const isPrExternal = !BACKPACK_SQUAD_MEMBERS.includes(author);
@@ -42,7 +42,7 @@ const createdFiles = danger.git.created_files;
 const modifiedFiles = danger.git.modified_files;
 const fileChanges = [...modifiedFiles, ...createdFiles];
 const declaredTrivial = danger.github.pr.title.includes('#trivial');
-const markdown = fileChanges.filter(path => path.endsWith('md'));
+const markdown = fileChanges.filter((path) => path.endsWith('md'));
 
 // Be nice to our neighbours.
 if (isPrExternal) {
@@ -53,7 +53,7 @@ if (isPrExternal) {
 }
 
 // Ensure new components are extensible by consumers.
-const componentIntroduced = createdFiles.some(filePath =>
+const componentIntroduced = createdFiles.some((filePath) =>
   filePath.match(/lib\/bpk-component.+\/src\/.+\.js/),
 );
 
@@ -65,7 +65,7 @@ if (componentIntroduced) {
 
 // If any of the packages have changed, the UNRELEASED log should have been updated.
 const unreleasedModified = includes(modifiedFiles, 'UNRELEASED.md');
-const packagesModified = fileChanges.some(filePath =>
+const packagesModified = fileChanges.some((filePath) =>
   filePath.startsWith('lib/'),
 );
 if (packagesModified && !unreleasedModified && !declaredTrivial) {
@@ -81,7 +81,7 @@ if (lockFileUpdated) {
 }
 
 // New files should include the Backpack license heading.
-const unlicensedFiles = createdFiles.filter(filePath => {
+const unlicensedFiles = createdFiles.filter((filePath) => {
   // Applies to js, css, scss and sh files that are not located in dist or flow-typed folders.
   if (
     filePath.match(/\.(js|css|scss|sh|kt|java|c|h)$/) &&
@@ -104,7 +104,7 @@ if (unlicensedFiles.length > 0) {
 }
 
 // iOS tokens should not appear in Android snapshot files
-const androidSnapshotsWithIosTokens = fileChanges.filter(filePath => {
+const androidSnapshotsWithIosTokens = fileChanges.filter((filePath) => {
   if (!filePath.match(/\.android\.js\.snap$/)) {
     return false;
   }
@@ -122,14 +122,14 @@ if (androidSnapshotsWithIosTokens.length > 0) {
   );
 }
 
-markdown.forEach(path => {
+markdown.forEach((path) => {
   const fileContent = fs.readFileSync(path);
 
   fileContent
     .toString()
     .split(/\r?\n/)
     .forEach((line, lineIndex) => {
-      AVOID_EXACT_WORDS.forEach(phrase => {
+      AVOID_EXACT_WORDS.forEach((phrase) => {
         if (line.includes(phrase.word)) {
           warn(`${phrase.reason} on line ${lineIndex + 1} in ${path}`);
         }

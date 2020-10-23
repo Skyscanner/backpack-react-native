@@ -34,12 +34,12 @@ class Panel extends React.Component {
     channel.on(RTL_INIT, this.initRtl);
   }
 
-  initRtl = rtlEnabled => {
+  initRtl = (rtlEnabled) => {
     this.setState({ rtlEnabled });
   };
 
   toggleRtl = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       const rtlEnabled = !prevState.rtlEnabled;
       const channel = addons.getChannel();
       channel.emit(RTL_EVENT, rtlEnabled);
@@ -64,7 +64,7 @@ class Panel extends React.Component {
 }
 
 // Register the addon with a unique name.
-addons.register('rtl-toggle', api => {
+addons.register('rtl-toggle', (api) => {
   // Also need to set a unique name to the panel.
   addons.addPanel('rtl-toggle/panel', {
     title: 'RTL',

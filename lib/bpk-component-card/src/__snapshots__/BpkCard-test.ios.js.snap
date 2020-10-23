@@ -17,7 +17,7 @@ exports[`iOS BpkCard dark mode should render correctly 1`] = `
     Array [
       Object {
         "backgroundColor": "rgb(29, 27, 32)",
-        "borderRadius": 4,
+        "borderRadius": 12,
       },
       Object {
         "padding": 16,
@@ -92,7 +92,7 @@ exports[`iOS BpkCard dark mode should render correctly with the "focused" state 
     Array [
       Object {
         "backgroundColor": "rgb(29, 27, 32)",
-        "borderRadius": 4,
+        "borderRadius": 12,
       },
       Object {
         "padding": 16,
@@ -170,7 +170,7 @@ exports[`iOS BpkCard light mode should render correctly 1`] = `
     Array [
       Object {
         "backgroundColor": "rgb(255, 255, 255)",
-        "borderRadius": 4,
+        "borderRadius": 12,
         "shadowColor": "rgb(17, 18, 54)",
         "shadowOffset": Object {
           "height": 0.5,
@@ -252,7 +252,7 @@ exports[`iOS BpkCard light mode should render correctly with the "focused" state
     Array [
       Object {
         "backgroundColor": "rgb(255, 255, 255)",
-        "borderRadius": 4,
+        "borderRadius": 12,
         "shadowColor": "rgb(17, 18, 54)",
         "shadowOffset": Object {
           "height": 0.5,
@@ -343,7 +343,7 @@ exports[`iOS BpkCard should render correctly when "cornerStyle=large" 1`] = `
     Array [
       Object {
         "backgroundColor": "rgb(255, 255, 255)",
-        "borderRadius": 4,
+        "borderRadius": 12,
         "shadowColor": "rgb(17, 18, 54)",
         "shadowOffset": Object {
           "height": 0.5,
@@ -428,7 +428,7 @@ exports[`iOS BpkCard should render correctly with arbitrary props 1`] = `
     Array [
       Object {
         "backgroundColor": "rgb(255, 255, 255)",
-        "borderRadius": 4,
+        "borderRadius": 12,
         "shadowColor": "rgb(17, 18, 54)",
         "shadowOffset": Object {
           "height": 0.5,
@@ -511,7 +511,7 @@ exports[`iOS BpkCard should render correctly with custom inner style 1`] = `
     Array [
       Object {
         "backgroundColor": "rgb(255, 255, 255)",
-        "borderRadius": 4,
+        "borderRadius": 12,
         "shadowColor": "rgb(17, 18, 54)",
         "shadowOffset": Object {
           "height": 0.5,
@@ -596,7 +596,7 @@ exports[`iOS BpkCard should render correctly with custom style 1`] = `
     Array [
       Object {
         "backgroundColor": "rgb(255, 255, 255)",
-        "borderRadius": 4,
+        "borderRadius": 12,
         "shadowColor": "rgb(17, 18, 54)",
         "shadowOffset": Object {
           "height": 0.5,
@@ -681,7 +681,7 @@ exports[`iOS BpkCard should render correctly without padding 1`] = `
     Array [
       Object {
         "backgroundColor": "rgb(255, 255, 255)",
-        "borderRadius": 4,
+        "borderRadius": 12,
         "shadowColor": "rgb(17, 18, 54)",
         "shadowOffset": Object {
           "height": 0.5,

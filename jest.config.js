@@ -22,7 +22,7 @@ const {
 } = require('jest-expo/config/getPlatformPreset');
 const { withWatchPlugins } = require('jest-expo/config/withWatchPlugins');
 
-const getConfig = baseConfig => ({
+const getConfig = (baseConfig) => ({
   ...baseConfig,
   verbose: true,
   testMatch: null,
