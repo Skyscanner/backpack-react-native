@@ -43,7 +43,7 @@ const onChannelAvailable = (...fns) => {
       const channel = addon.getChannel();
       clearInterval(interval);
       // $FlowFixMe
-      fns.map(fn => fn(channel));
+      fns.map((fn) => fn(channel));
       return true;
     } catch (exe) {
       return false;
@@ -51,14 +51,14 @@ const onChannelAvailable = (...fns) => {
   }, CHANNEL_POLL_INTERVAL);
 };
 
-const initRtlAddon = channel => {
+const initRtlAddon = (channel) => {
   channel.emit(RTL_INIT, I18nManager.isRTL);
-  channel.on(RTL_EVENT, rtlEnabled => I18nManager.forceRTL(rtlEnabled));
+  channel.on(RTL_EVENT, (rtlEnabled) => I18nManager.forceRTL(rtlEnabled));
 };
 
-const initDarkModeAddon = channel => {
+const initDarkModeAddon = (channel) => {
   channel.emit(DM_INIT, BpkAppearance.get().colorScheme || 'light');
-  channel.on(DM_EVENT, colorScheme => BpkAppearance.set({ colorScheme }));
+  channel.on(DM_EVENT, (colorScheme) => BpkAppearance.set({ colorScheme }));
 };
 
 /* eslint-disable global-require */

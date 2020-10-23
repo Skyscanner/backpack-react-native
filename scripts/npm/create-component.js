@@ -62,7 +62,7 @@ const addValueToFile = (
     .split(insertAfterPoint)[1]
     .split(insertBeforePoint)[0]
     .split('\n')
-    .filter(s => !_.isEmpty(s));
+    .filter((s) => !_.isEmpty(s));
 
   valuesToUpdate.push(value);
 
@@ -82,7 +82,7 @@ _.mixin({
 });
 
 // Util to recursively make dirs
-const mkdirp = dir =>
+const mkdirp = (dir) =>
   path
     .resolve(dir)
     .split(path.sep)
@@ -109,7 +109,7 @@ const Replacer = (source, destination) =>
     },
   });
 
-const createComponent = async name => {
+const createComponent = async (name) => {
   const boilerplateComponentPath = `lib/bpk-component-boilerplate`;
   const newComponentPath = `lib/bpk-component-${name}`;
   const storybookConfigFile = `storybook/storybook.js`;
@@ -120,7 +120,7 @@ const createComponent = async name => {
 
   const boilerPlateFilePaths = await globby([`${boilerplateComponentPath}/**`]);
 
-  const processBoilerPlateFiles = boilerPlateFilePath => {
+  const processBoilerPlateFiles = (boilerPlateFilePath) => {
     const newFilePath = boilerPlateFilePath
       .split('boilerplate')
       .join(name)
@@ -139,7 +139,7 @@ const createComponent = async name => {
     });
   };
 
-  const componentCreationProcess = async directoryAlreadyExists => {
+  const componentCreationProcess = async (directoryAlreadyExists) => {
     if (directoryAlreadyExists) {
       throw new Error(
         `Directory ${newComponentPath} already exists. New components must have a unique name.`,
@@ -201,7 +201,7 @@ inquirer
     {
       name: 'name',
       message: 'What is the name of the component you want to create?',
-      validate: name => {
+      validate: (name) => {
         if (!name.match(/^[a-z-]+$/)) {
           return "Invalid component name, please use only letters and snake case. E.g. 'banner-alert'";
         }
@@ -210,7 +210,7 @@ inquirer
     },
   ])
   .then(({ name }) => createComponent(name))
-  .catch(e => {
+  .catch((e) => {
     console.log(colors.red(`Something wrong! ${e.stack}`));
     process.exit(1);
   });

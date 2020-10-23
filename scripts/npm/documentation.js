@@ -33,7 +33,7 @@ if (packagesToRun.length === 0) {
 
 console.log('Generating API docs...\n');
 
-packagesToRun.forEach(pkgName => {
+packagesToRun.forEach((pkgName) => {
   execSync(
     `${process.cwd()}/node_modules/documentation/bin/documentation.js readme index.js --section=API --re=.ios.js`,
     {

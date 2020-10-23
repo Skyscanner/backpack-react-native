@@ -74,7 +74,7 @@ const questions = [
       {
         patch,
       },
-    ].map(i => {
+    ].map((i) => {
       const key = Object.keys(i)[0];
       return {
         key,
@@ -106,10 +106,8 @@ const isGradleAuthenticated = () => {
 
 const isMasterBranch = () => {
   if (
-    shell
-      .execSync('git rev-parse --abbrev-ref HEAD')
-      .toString()
-      .trim() !== 'master'
+    shell.execSync('git rev-parse --abbrev-ref HEAD').toString().trim() !==
+    'master'
   ) {
     throw new Error(ERRORS.branchNotMaster);
   }

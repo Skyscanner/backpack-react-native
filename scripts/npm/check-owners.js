@@ -27,14 +27,14 @@ const meta = require('../../meta.json');
 
 let failures = false;
 
-const owners = meta.maintainers.map(maintainer => maintainer.npm).sort();
+const owners = meta.maintainers.map((maintainer) => maintainer.npm).sort();
 
-const getPackageMaintainers = pkgName =>
+const getPackageMaintainers = (pkgName) =>
   new Promise((resolve, reject) => {
-    https.get(`https://registry.npmjs.org/${pkgName}/`, res => {
+    https.get(`https://registry.npmjs.org/${pkgName}/`, (res) => {
       let body = '';
       res.setEncoding('utf8');
-      res.on('data', d => {
+      res.on('data', (d) => {
         body += d;
       });
       res.on('error', reject);
@@ -44,7 +44,7 @@ const getPackageMaintainers = pkgName =>
         if (pkgData.maintainers) {
           resolve({
             name: pkgName,
-            maintainers: pkgData.maintainers.map(m => m.name),
+            maintainers: pkgData.maintainers.map((m) => m.name),
             new: false,
           });
         } else {
@@ -57,7 +57,7 @@ const getPackageMaintainers = pkgName =>
     });
   });
 
-const verifyMaintainers = data => {
+const verifyMaintainers = (data) => {
   if (data.new) {
     console.log(
       `${data.name} ⁇\n  Package does not seem to be in NPM registry (yet)`,
@@ -68,7 +68,7 @@ const verifyMaintainers = data => {
   // Filter mattface as panel and touchable-overlay still have Matt as maintainer
   // and it fails to remove
   const sortedMaintainers = data.maintainers
-    .filter(u => u !== 'mattface')
+    .filter((u) => u !== 'mattface')
     .sort();
 
   if (sortedMaintainers.join('') === owners.join('')) {
@@ -99,7 +99,7 @@ getPackageMaintainers(pkg.name)
       process.exit(0);
     }
   })
-  .catch(error => {
+  .catch((error) => {
     console.error(
       'An unknown error occured. Please check your network connection and try again.',
     );

@@ -22,7 +22,9 @@ const colors = require('colors');
  * Custom errors with detailed explanations
  */
 const ERRORS = {
-  invalidAndroidEnv: cmd => `Your local environment is not ready to publish native Android bridges.
+  invalidAndroidEnv: (
+    cmd,
+  ) => `Your local environment is not ready to publish native Android bridges.
 
 Check CONTRIBUTING.md to learn how to configure your local environment.
 

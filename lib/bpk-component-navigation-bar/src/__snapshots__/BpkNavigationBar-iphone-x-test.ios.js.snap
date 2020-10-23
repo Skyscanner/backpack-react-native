@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ios - iPhone X  BpkNavigationBar dark mode should render correctly 1`] = `
+exports[`ios - iPhone X BpkNavigationBar dark mode should render correctly 1`] = `
 <View
   style={
     Array [
@@ -161,7 +161,7 @@ exports[`ios - iPhone X  BpkNavigationBar dark mode should render correctly 1`] 
 </View>
 `;
 
-exports[`ios - iPhone X  BpkNavigationBar dark mode should render correctly with trailing button 1`] = `
+exports[`ios - iPhone X BpkNavigationBar dark mode should render correctly with trailing button 1`] = `
 <View
   style={
     Array [
@@ -358,7 +358,7 @@ exports[`ios - iPhone X  BpkNavigationBar dark mode should render correctly with
 </View>
 `;
 
-exports[`ios - iPhone X  BpkNavigationBar light mode should render correctly 1`] = `
+exports[`ios - iPhone X BpkNavigationBar light mode should render correctly 1`] = `
 <View
   style={
     Array [
@@ -519,7 +519,7 @@ exports[`ios - iPhone X  BpkNavigationBar light mode should render correctly 1`]
 </View>
 `;
 
-exports[`ios - iPhone X  BpkNavigationBar light mode should render correctly with trailing button 1`] = `
+exports[`ios - iPhone X BpkNavigationBar light mode should render correctly with trailing button 1`] = `
 <View
   style={
     Array [

@@ -41,12 +41,12 @@ class DarkModePanel extends React.Component<
     channel.on(DM_INIT, this.initDM);
   }
 
-  initDM = colorScheme => {
+  initDM = (colorScheme) => {
     this.setState({ colorScheme });
   };
 
   toggleDM = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       const colorScheme = prevState.colorScheme === 'light' ? 'dark' : 'light';
       const channel = addons.getChannel();
       channel.emit(DM_EVENT, colorScheme);
