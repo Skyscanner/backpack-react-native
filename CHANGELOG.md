@@ -1,5 +1,13 @@
 # Backpack changelog
 
+# 7.0.0 - 2020-10-26
+
+**Breaking:**
+ - Upgraded `bpk-tokens` to `35.0.1`. On Android, this changes `borderRadiusSm` from `4` to `8`. To keep using the old border radius (`4`), change your uses of `borderRadiusSm` to `borderRadiusXs`.
+
+**Fixed:**
+ - Cards and Panels now have a corner radius of `bpk-spacing-md` by default.
+
 # 6.4.0 - 2020-10-19
 
 **Added:**
