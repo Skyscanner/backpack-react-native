@@ -9,7 +9,7 @@ exports[`Android API levels Android API<21 should render without ripple 1`] = `
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
     ]
   }
@@ -45,7 +45,7 @@ exports[`Android API levels Android API<21 should render without ripple 1`] = `
         },
         Object {
           "backgroundColor": "rgb(0, 166, 152)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -94,7 +94,7 @@ exports[`Android API levels Android API>=21 should render with ripple 1`] = `
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
     ]
   }
@@ -131,7 +131,7 @@ exports[`Android API levels Android API>=21 should render with ripple 1`] = `
         },
         Object {
           "backgroundColor": "rgb(0, 166, 152)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -180,7 +180,7 @@ exports[`Android BpkButton dark mode should render correctly 1`] = `
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
     ]
   }
@@ -217,7 +217,7 @@ exports[`Android BpkButton dark mode should render correctly 1`] = `
         },
         Object {
           "backgroundColor": "rgb(0, 166, 152)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -265,7 +265,7 @@ exports[`Android BpkButton dark mode should render correctly with type="destruct
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
       null,
     ]
@@ -305,7 +305,7 @@ exports[`Android BpkButton dark mode should render correctly with type="destruct
         Object {
           "backgroundColor": "rgb(44, 44, 46)",
           "borderColor": "rgb(104, 105, 127)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -353,7 +353,7 @@ exports[`Android BpkButton dark mode should render correctly with type="destruct
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
       null,
     ]
@@ -397,7 +397,7 @@ exports[`Android BpkButton dark mode should render correctly with type="destruct
         Object {
           "backgroundColor": "rgb(72, 72, 74)",
           "borderColor": "rgb(72, 72, 74)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -446,7 +446,7 @@ exports[`Android BpkButton dark mode should render correctly with type="featured
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
     ]
   }
@@ -483,7 +483,7 @@ exports[`Android BpkButton dark mode should render correctly with type="featured
         },
         Object {
           "backgroundColor": "rgb(7, 112, 227)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -532,7 +532,7 @@ exports[`Android BpkButton dark mode should render correctly with type="featured
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
       Object {
         "elevation": 0,
@@ -576,7 +576,7 @@ exports[`Android BpkButton dark mode should render correctly with type="featured
         },
         Object {
           "backgroundColor": "rgb(72, 72, 74)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -624,7 +624,7 @@ exports[`Android BpkButton dark mode should render correctly with type="outline"
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
       null,
     ]
@@ -664,7 +664,7 @@ exports[`Android BpkButton dark mode should render correctly with type="outline"
         Object {
           "backgroundColor": "transparent",
           "borderColor": "rgb(255, 255, 255)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -712,7 +712,7 @@ exports[`Android BpkButton dark mode should render correctly with type="outline"
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
       null,
     ]
@@ -756,7 +756,7 @@ exports[`Android BpkButton dark mode should render correctly with type="outline"
         Object {
           "backgroundColor": "rgb(72, 72, 74)",
           "borderColor": "rgb(72, 72, 74)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -805,7 +805,7 @@ exports[`Android BpkButton dark mode should render correctly with type="primary"
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
     ]
   }
@@ -842,7 +842,7 @@ exports[`Android BpkButton dark mode should render correctly with type="primary"
         },
         Object {
           "backgroundColor": "rgb(0, 166, 152)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -891,7 +891,7 @@ exports[`Android BpkButton dark mode should render correctly with type="primary"
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
       Object {
         "elevation": 0,
@@ -935,7 +935,7 @@ exports[`Android BpkButton dark mode should render correctly with type="primary"
         },
         Object {
           "backgroundColor": "rgb(72, 72, 74)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -983,7 +983,7 @@ exports[`Android BpkButton dark mode should render correctly with type="secondar
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
       null,
     ]
@@ -1023,7 +1023,7 @@ exports[`Android BpkButton dark mode should render correctly with type="secondar
         Object {
           "backgroundColor": "rgb(44, 44, 46)",
           "borderColor": "rgb(104, 105, 127)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1071,7 +1071,7 @@ exports[`Android BpkButton dark mode should render correctly with type="secondar
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
       null,
     ]
@@ -1115,7 +1115,7 @@ exports[`Android BpkButton dark mode should render correctly with type="secondar
         Object {
           "backgroundColor": "rgb(72, 72, 74)",
           "borderColor": "rgb(72, 72, 74)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1164,7 +1164,7 @@ exports[`Android BpkButton dark mode should support overwriting styles 1`] = `
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
       Object {
         "width": 4,
@@ -1204,7 +1204,7 @@ exports[`Android BpkButton dark mode should support overwriting styles 1`] = `
         },
         Object {
           "backgroundColor": "rgb(0, 166, 152)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1253,7 +1253,7 @@ exports[`Android BpkButton dark mode should support the "disabled" property 1`] 
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
       Object {
         "elevation": 0,
@@ -1297,7 +1297,7 @@ exports[`Android BpkButton dark mode should support the "disabled" property 1`] 
         },
         Object {
           "backgroundColor": "rgb(72, 72, 74)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1346,7 +1346,7 @@ exports[`Android BpkButton light mode should render correctly 1`] = `
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
     ]
   }
@@ -1383,7 +1383,7 @@ exports[`Android BpkButton light mode should render correctly 1`] = `
         },
         Object {
           "backgroundColor": "rgb(0, 166, 152)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1431,7 +1431,7 @@ exports[`Android BpkButton light mode should render correctly with type="destruc
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
       null,
     ]
@@ -1471,7 +1471,7 @@ exports[`Android BpkButton light mode should render correctly with type="destruc
         Object {
           "backgroundColor": "rgb(255, 255, 255)",
           "borderColor": "rgb(221, 221, 229)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1519,7 +1519,7 @@ exports[`Android BpkButton light mode should render correctly with type="destruc
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
       null,
     ]
@@ -1563,7 +1563,7 @@ exports[`Android BpkButton light mode should render correctly with type="destruc
         Object {
           "backgroundColor": "rgb(221, 221, 229)",
           "borderColor": "rgb(221, 221, 229)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1612,7 +1612,7 @@ exports[`Android BpkButton light mode should render correctly with type="feature
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
     ]
   }
@@ -1649,7 +1649,7 @@ exports[`Android BpkButton light mode should render correctly with type="feature
         },
         Object {
           "backgroundColor": "rgb(7, 112, 227)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1698,7 +1698,7 @@ exports[`Android BpkButton light mode should render correctly with type="feature
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
       Object {
         "elevation": 0,
@@ -1742,7 +1742,7 @@ exports[`Android BpkButton light mode should render correctly with type="feature
         },
         Object {
           "backgroundColor": "rgb(221, 221, 229)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1790,7 +1790,7 @@ exports[`Android BpkButton light mode should render correctly with type="outline
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
       null,
     ]
@@ -1830,7 +1830,7 @@ exports[`Android BpkButton light mode should render correctly with type="outline
         Object {
           "backgroundColor": "transparent",
           "borderColor": "rgb(255, 255, 255)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1878,7 +1878,7 @@ exports[`Android BpkButton light mode should render correctly with type="outline
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
       null,
     ]
@@ -1922,7 +1922,7 @@ exports[`Android BpkButton light mode should render correctly with type="outline
         Object {
           "backgroundColor": "rgb(221, 221, 229)",
           "borderColor": "rgb(221, 221, 229)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1971,7 +1971,7 @@ exports[`Android BpkButton light mode should render correctly with type="primary
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
     ]
   }
@@ -2008,7 +2008,7 @@ exports[`Android BpkButton light mode should render correctly with type="primary
         },
         Object {
           "backgroundColor": "rgb(0, 166, 152)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -2057,7 +2057,7 @@ exports[`Android BpkButton light mode should render correctly with type="primary
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
       Object {
         "elevation": 0,
@@ -2101,7 +2101,7 @@ exports[`Android BpkButton light mode should render correctly with type="primary
         },
         Object {
           "backgroundColor": "rgb(221, 221, 229)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -2149,7 +2149,7 @@ exports[`Android BpkButton light mode should render correctly with type="seconda
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
       null,
     ]
@@ -2189,7 +2189,7 @@ exports[`Android BpkButton light mode should render correctly with type="seconda
         Object {
           "backgroundColor": "rgb(255, 255, 255)",
           "borderColor": "rgb(221, 221, 229)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -2237,7 +2237,7 @@ exports[`Android BpkButton light mode should render correctly with type="seconda
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
       null,
     ]
@@ -2281,7 +2281,7 @@ exports[`Android BpkButton light mode should render correctly with type="seconda
         Object {
           "backgroundColor": "rgb(221, 221, 229)",
           "borderColor": "rgb(221, 221, 229)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -2330,7 +2330,7 @@ exports[`Android BpkButton light mode should support overwriting styles 1`] = `
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
       Object {
         "width": 4,
@@ -2370,7 +2370,7 @@ exports[`Android BpkButton light mode should support overwriting styles 1`] = `
         },
         Object {
           "backgroundColor": "rgb(0, 166, 152)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -2419,7 +2419,7 @@ exports[`Android BpkButton light mode should support the "disabled" property 1`]
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
       Object {
         "elevation": 0,
@@ -2463,7 +2463,7 @@ exports[`Android BpkButton light mode should support the "disabled" property 1`]
         },
         Object {
           "backgroundColor": "rgb(221, 221, 229)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -2512,7 +2512,7 @@ exports[`Android BpkButton should render correctly with iconAlignment="leading" 
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
     ]
   }
@@ -2549,7 +2549,7 @@ exports[`Android BpkButton should render correctly with iconAlignment="leading" 
         },
         Object {
           "backgroundColor": "rgb(0, 166, 152)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -2621,7 +2621,7 @@ exports[`Android BpkButton should render correctly with iconAlignment="trailing"
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
     ]
   }
@@ -2658,7 +2658,7 @@ exports[`Android BpkButton should render correctly with iconAlignment="trailing"
         },
         Object {
           "backgroundColor": "rgb(0, 166, 152)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -2836,7 +2836,7 @@ exports[`Android BpkButton should support having an icon as well as a title 1`] 
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
     ]
   }
@@ -2873,7 +2873,7 @@ exports[`Android BpkButton should support having an icon as well as a title 1`] 
         },
         Object {
           "backgroundColor": "rgb(0, 166, 152)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -2952,7 +2952,7 @@ exports[`Android BpkButton should support the "icon" property 1`] = `
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
     ]
   }
@@ -2989,7 +2989,7 @@ exports[`Android BpkButton should support the "icon" property 1`] = `
         },
         Object {
           "backgroundColor": "rgb(0, 166, 152)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -3260,7 +3260,7 @@ exports[`Android BpkButtonThemed should render correctly 1`] = `
         "overflow": "hidden",
       },
       Object {
-        "borderRadius": 4,
+        "borderRadius": 8,
       },
     ]
   }
@@ -3297,7 +3297,7 @@ exports[`Android BpkButtonThemed should render correctly 1`] = `
         },
         Object {
           "backgroundColor": "green",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
