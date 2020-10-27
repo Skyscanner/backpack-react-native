@@ -34,7 +34,7 @@ exports[`iOS BpkButton dark mode should render correctly 1`] = `
         },
         null,
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -80,7 +80,7 @@ exports[`iOS BpkButton dark mode should render correctly 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -119,7 +119,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="destructive"
         Object {
           "backgroundColor": "rgb(44, 44, 46)",
           "borderColor": "rgb(104, 105, 127)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -165,7 +165,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="destructive"
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "borderColor": "rgb(104, 105, 127)",
@@ -212,7 +212,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="destructive"
         Object {
           "backgroundColor": "rgb(72, 72, 74)",
           "borderColor": "rgb(72, 72, 74)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -258,7 +258,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="destructive"
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "borderColor": "rgb(72, 72, 74)",
@@ -304,7 +304,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="featured" 1`
         },
         null,
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -350,7 +350,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="featured" 1`
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -396,7 +396,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="featured" an
         },
         null,
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -442,7 +442,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="featured" an
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -481,7 +481,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="outline" 1`]
         Object {
           "backgroundColor": "transparent",
           "borderColor": "rgb(255, 255, 255)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -527,7 +527,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="outline" 1`]
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "borderColor": "rgb(255, 255, 255)",
@@ -574,7 +574,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="outline" and
         Object {
           "backgroundColor": "rgb(72, 72, 74)",
           "borderColor": "rgb(72, 72, 74)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -620,7 +620,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="outline" and
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "borderColor": "rgb(72, 72, 74)",
@@ -666,7 +666,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="primary" 1`]
         },
         null,
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -712,7 +712,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="primary" 1`]
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -758,7 +758,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="primary" and
         },
         null,
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -804,7 +804,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="primary" and
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -843,7 +843,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="secondary" 1
         Object {
           "backgroundColor": "rgb(44, 44, 46)",
           "borderColor": "rgb(104, 105, 127)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -889,7 +889,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="secondary" 1
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "borderColor": "rgb(104, 105, 127)",
@@ -936,7 +936,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="secondary" a
         Object {
           "backgroundColor": "rgb(72, 72, 74)",
           "borderColor": "rgb(72, 72, 74)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -982,7 +982,7 @@ exports[`iOS BpkButton dark mode should render correctly with type="secondary" a
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "borderColor": "rgb(72, 72, 74)",
@@ -1032,7 +1032,7 @@ exports[`iOS BpkButton dark mode should support overwriting styles 1`] = `
         },
         null,
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1078,7 +1078,7 @@ exports[`iOS BpkButton dark mode should support overwriting styles 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -1124,7 +1124,7 @@ exports[`iOS BpkButton dark mode should support the "disabled" property 1`] = `
         },
         null,
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1170,7 +1170,7 @@ exports[`iOS BpkButton dark mode should support the "disabled" property 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -1212,7 +1212,7 @@ exports[`iOS BpkButton light mode should render correctly 1`] = `
         },
         null,
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1258,7 +1258,7 @@ exports[`iOS BpkButton light mode should render correctly 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -1297,7 +1297,7 @@ exports[`iOS BpkButton light mode should render correctly with type="destructive
         Object {
           "backgroundColor": "rgb(255, 255, 255)",
           "borderColor": "rgb(221, 221, 229)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1343,7 +1343,7 @@ exports[`iOS BpkButton light mode should render correctly with type="destructive
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "borderColor": "rgb(221, 221, 229)",
@@ -1390,7 +1390,7 @@ exports[`iOS BpkButton light mode should render correctly with type="destructive
         Object {
           "backgroundColor": "rgb(221, 221, 229)",
           "borderColor": "rgb(221, 221, 229)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1436,7 +1436,7 @@ exports[`iOS BpkButton light mode should render correctly with type="destructive
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "borderColor": "rgb(221, 221, 229)",
@@ -1482,7 +1482,7 @@ exports[`iOS BpkButton light mode should render correctly with type="featured" 1
         },
         null,
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1528,7 +1528,7 @@ exports[`iOS BpkButton light mode should render correctly with type="featured" 1
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -1574,7 +1574,7 @@ exports[`iOS BpkButton light mode should render correctly with type="featured" a
         },
         null,
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1620,7 +1620,7 @@ exports[`iOS BpkButton light mode should render correctly with type="featured" a
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -1659,7 +1659,7 @@ exports[`iOS BpkButton light mode should render correctly with type="outline" 1`
         Object {
           "backgroundColor": "transparent",
           "borderColor": "rgb(255, 255, 255)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1705,7 +1705,7 @@ exports[`iOS BpkButton light mode should render correctly with type="outline" 1`
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "borderColor": "rgb(255, 255, 255)",
@@ -1752,7 +1752,7 @@ exports[`iOS BpkButton light mode should render correctly with type="outline" an
         Object {
           "backgroundColor": "rgb(221, 221, 229)",
           "borderColor": "rgb(221, 221, 229)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1798,7 +1798,7 @@ exports[`iOS BpkButton light mode should render correctly with type="outline" an
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "borderColor": "rgb(221, 221, 229)",
@@ -1844,7 +1844,7 @@ exports[`iOS BpkButton light mode should render correctly with type="primary" 1`
         },
         null,
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1890,7 +1890,7 @@ exports[`iOS BpkButton light mode should render correctly with type="primary" 1`
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -1936,7 +1936,7 @@ exports[`iOS BpkButton light mode should render correctly with type="primary" an
         },
         null,
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -1982,7 +1982,7 @@ exports[`iOS BpkButton light mode should render correctly with type="primary" an
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -2021,7 +2021,7 @@ exports[`iOS BpkButton light mode should render correctly with type="secondary" 
         Object {
           "backgroundColor": "rgb(255, 255, 255)",
           "borderColor": "rgb(221, 221, 229)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -2067,7 +2067,7 @@ exports[`iOS BpkButton light mode should render correctly with type="secondary" 
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "borderColor": "rgb(221, 221, 229)",
@@ -2114,7 +2114,7 @@ exports[`iOS BpkButton light mode should render correctly with type="secondary" 
         Object {
           "backgroundColor": "rgb(221, 221, 229)",
           "borderColor": "rgb(221, 221, 229)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -2160,7 +2160,7 @@ exports[`iOS BpkButton light mode should render correctly with type="secondary" 
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "borderColor": "rgb(221, 221, 229)",
@@ -2210,7 +2210,7 @@ exports[`iOS BpkButton light mode should support overwriting styles 1`] = `
         },
         null,
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -2256,7 +2256,7 @@ exports[`iOS BpkButton light mode should support overwriting styles 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -2302,7 +2302,7 @@ exports[`iOS BpkButton light mode should support the "disabled" property 1`] = `
         },
         null,
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -2348,7 +2348,7 @@ exports[`iOS BpkButton light mode should support the "disabled" property 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -2390,7 +2390,7 @@ exports[`iOS BpkButton should render correctly with iconAlignment="leading" 1`] 
         },
         null,
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -2459,7 +2459,7 @@ exports[`iOS BpkButton should render correctly with iconAlignment="leading" 1`] 
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -2501,7 +2501,7 @@ exports[`iOS BpkButton should render correctly with iconAlignment="trailing" 1`]
         },
         null,
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -2577,7 +2577,7 @@ exports[`iOS BpkButton should render correctly with iconAlignment="trailing" 1`]
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -2724,7 +2724,7 @@ exports[`iOS BpkButton should support having an icon as well as a title 1`] = `
         },
         null,
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -2800,7 +2800,7 @@ exports[`iOS BpkButton should support having an icon as well as a title 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -2842,7 +2842,7 @@ exports[`iOS BpkButton should support the "icon" property 1`] = `
         },
         null,
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -2918,7 +2918,7 @@ exports[`iOS BpkButton should support the "icon" property 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -3164,7 +3164,7 @@ exports[`iOS BpkButtonThemed should render correctly 1`] = `
         },
         null,
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -3210,7 +3210,7 @@ exports[`iOS BpkButtonThemed should render correctly 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -3255,7 +3255,7 @@ exports[`iOS should support the "icon" and "large" property 1`] = `
           "paddingVertical": 12,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -3328,7 +3328,7 @@ exports[`iOS should support the "icon" and "large" property 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -3472,7 +3472,7 @@ exports[`iOS should support the "large" and secondary property 1`] = `
         Object {
           "backgroundColor": "rgb(255, 255, 255)",
           "borderColor": "rgb(221, 221, 229)",
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -3518,7 +3518,7 @@ exports[`iOS should support the "large" and secondary property 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "borderColor": "rgb(221, 221, 229)",
@@ -3567,7 +3567,7 @@ exports[`iOS should support the "large" property 1`] = `
           "paddingVertical": 12,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
         Object {
           "flexDirection": "row-reverse",
@@ -3613,7 +3613,7 @@ exports[`iOS should support the "large" property 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
