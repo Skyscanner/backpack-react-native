@@ -3,7 +3,7 @@
 > Place your changes below this line.
 
 **Fixed:**
-  - `BpkTouchableOverlay` - fixed radius value to align with new `sm` radius from `xs`
+  - `BpkTouchableOverlay` - updated the `sm` value for `borderRadius` to be `8` (previously `4`).
 
 ## How to write a good changelog entry
 
