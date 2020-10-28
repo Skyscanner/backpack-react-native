@@ -67,7 +67,7 @@ exports[`iOS BpkCard dark mode should render correctly 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -145,7 +145,7 @@ exports[`iOS BpkCard dark mode should render correctly with the "focused" state 
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -227,7 +227,7 @@ exports[`iOS BpkCard light mode should render correctly 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -318,7 +318,7 @@ exports[`iOS BpkCard light mode should render correctly with the "focused" state
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -486,7 +486,7 @@ exports[`iOS BpkCard should render correctly with arbitrary props 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -571,7 +571,7 @@ exports[`iOS BpkCard should render correctly with custom inner style 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -656,7 +656,7 @@ exports[`iOS BpkCard should render correctly with custom style 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
@@ -735,7 +735,7 @@ exports[`iOS BpkCard should render correctly without padding 1`] = `
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
