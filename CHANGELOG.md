@@ -1,5 +1,10 @@
 # Backpack changelog
 
+# 9.0.0 - 2020-10-28
+
+**Breaking:**
+  - `BpkButton` now has a `borderRadius` of `8` instead of `4`.
+
 # 8.0.0 - 2020-10-28
 
 **Breaking:**
