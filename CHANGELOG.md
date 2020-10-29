@@ -1,5 +1,10 @@
 # Backpack changelog
 
+# 9.0.1 - 2020-10-29
+
+**Fixed:**
+  - `BpkTouchableOverlay` - updated the `sm` value for `borderRadius` to be `8` (previously `4`).
+
 # 9.0.0 - 2020-10-28
 
 **Breaking:**
