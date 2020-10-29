@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "backpack-react-native",
-  "version": "9.0.0",
+  "version": "9.0.1",
   "engines": {
     "node": "^12.13.0",
     "npm": "^6.12.0"
