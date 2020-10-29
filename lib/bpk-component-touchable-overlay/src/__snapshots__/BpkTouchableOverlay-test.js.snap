@@ -521,7 +521,7 @@ exports[`BpkTouchableOverlay should render correctly with border radius props se
           "top": 0,
         },
         Object {
-          "borderRadius": 4,
+          "borderRadius": 8,
         },
       ]
     }
