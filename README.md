@@ -2,7 +2,8 @@
 
 > Backpack is a collection of design resources, reusable components and guidelines for creating Skyscanner's products.
 
-[![Build Status](https://travis-ci.org/Skyscanner/backpack-react-native.svg?branch=master)](https://travis-ci.org/Skyscanner/backpack-react-native)
+[![Travis Build Status](https://travis-ci.org/Skyscanner/backpack-react-native.svg?branch=master)](https://travis-ci.org/Skyscanner/backpack-react-native)
+[![Actions Build Status](https://github.com/Skyscanner/backpack-react-native/workflows/CI/badge.svg)](https://github.com/Skyscanner/backpack-react-native/actions)
 
 
 ## Quick links

@@ -1,5 +1,11 @@
 # Backpack changelog
 
+# 10.0.0 - 2020-10-29
+
+**Breaking:**
+
+- `backpack-react-native` now requires Backpack for iOS `v38.0.0`.
+
 # 9.0.1 - 2020-10-29
 
 **Fixed:**
