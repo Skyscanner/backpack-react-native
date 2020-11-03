@@ -2,9 +2,6 @@
 
 > Place your changes below this line.
 
-**Breaking:**
-  - Moved `bpk-*` dependencies to peer to avoid version mismatches between projects requiring the libs.
-
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).

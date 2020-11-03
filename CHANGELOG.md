@@ -1,5 +1,10 @@
 # Backpack changelog
 
+# 11.0.0 - 2020-11-03
+
+**Breaking:**
+  - Moved `bpk-*` dependencies to peer to avoid version mismatches between projects requiring the libs.
+
 # 10.0.0 - 2020-10-29
 
 **Breaking:**
