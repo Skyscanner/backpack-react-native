@@ -4,8 +4,8 @@ PODS:
     - FSCalendar (~> 2.8)
     - MBProgressHUD (~> 0.9.1)
     - TTTAttributedLabel (~> 1.13.4)
-  - BackpackReactNative (10.0.0):
-    - Backpack (~> 38.0.0)
+  - BackpackReactNative (11.0.0):
+    - Backpack (~> 38.0)
     - React
     - react-native-maps
     - ReactNativeDarkMode
@@ -345,7 +345,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Backpack: 9153d9b64c407f38d57fa2c01c1e248b8fa6d089
-  BackpackReactNative: a8cefd22c1885f97180941dd6062c8b27462d0e7
+  BackpackReactNative: 6e56a788f68d7c9fca3502c190a8771a28e56720
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BVLinearGradient: e3aad03778a456d77928f594a649e96995f1c872
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2

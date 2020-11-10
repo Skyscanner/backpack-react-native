@@ -1,6 +1,8 @@
 # Unreleased
 
 > Place your changes below this line.
+**Fixed:**
+ - The `backpack-ios` dependency is now only locked to major version, instead of major and minor version.
 
 ## How to write a good changelog entry
 
