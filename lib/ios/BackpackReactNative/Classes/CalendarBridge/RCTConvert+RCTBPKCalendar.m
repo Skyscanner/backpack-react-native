@@ -63,13 +63,13 @@ RCT_ARRAY_CONVERTER(RCTBPKColorBucket)
     return [[RCTBPKColorBucket alloc] initWithColor:color
                                           textStyle:textStyle
                                                days:dateMatcher
-                                          cellStyle:[self BPKCalendarDateCellStyle:json[@"__cellStyle"]]];
+                                          cellData:[self BPKCalendarDateCellData:json[@"__cellStyle"]]];
 }
 
-+ (BPKCalendarDateCellStyle)BPKCalendarDateCellStyle:(nullable id)json {
++ (BPKCalendarTrafficLightCellData *)BPKCalendarDateCellData:(nullable id)json {
     if (json == nil) {
         // Old behaviour via deprecated delegate methods
-        return BPKCalendarDateCellStyleCustom;
+        return nil;
     }
 
     if (RCT_DEBUG && ![json isKindOfClass:[NSString class]]) {
@@ -78,22 +78,18 @@ RCT_ARRAY_CONVERTER(RCTBPKColorBucket)
 
     NSString *stringJson = (NSString *)json;
     if ([stringJson isEqualToString:@"normal"]) {
-        return BPKCalendarDateCellStyleNormal;
+        return nil;
     } else if ([stringJson isEqualToString:@"positive"]) {
-        return BPKCalendarDateCellStylePositive;
+        return BPKCalendarTrafficLightCellData.positive;
     } else if ([stringJson isEqualToString:@"neutral"]) {
-        return BPKCalendarDateCellStyleNeutral;
+        return BPKCalendarTrafficLightCellData.neutral;
     } else if ([stringJson isEqualToString:@"negative"]) {
-        return BPKCalendarDateCellStyleNegative;
+        return BPKCalendarTrafficLightCellData.negative;
     } else {
         if (RCT_DEBUG) {
             RCTLogError(@"Invalid cell style %@", stringJson);
-
-            // Silence Xcode warning.
-            return BPKCalendarDateCellStyleNormal;
-        } else {
-            return BPKCalendarDateCellStyleCustom;
         }
+        return nil;
     }
 }
 

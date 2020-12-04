@@ -25,14 +25,14 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithColor:(UIColor *)color
                     textStyle:(RCTBPKColorBucketTextStyle)textStyle
                          days:(RCTBPKDateMatcher *)days
-                    cellStyle:(BPKCalendarDateCellStyle)cellStyle {
+                    cellData:(BPKCalendarTrafficLightCellData *)cellData {
     self = [super init];
 
     if (self) {
         _color = color;
         _textStyle = textStyle;
         _days = days;
-        _cellStyle = cellStyle;
+        _cellData = cellData;
     }
 
     return self;

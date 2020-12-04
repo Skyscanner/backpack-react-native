@@ -35,12 +35,12 @@ typedef NS_ENUM(NSUInteger, RCTBPKColorBucketTextStyle) {
 @property(nonatomic, readonly, strong) UIColor *color;
 @property(nonatomic, readonly, assign) RCTBPKColorBucketTextStyle textStyle;
 @property(nonatomic, readonly, strong, nullable) RCTBPKDateMatcher *days;
-@property(nonatomic, readonly, assign) BPKCalendarDateCellStyle cellStyle;
+@property(nonatomic, readonly, assign) BPKCalendarTrafficLightCellData * cellData;
 
 - (instancetype)initWithColor:(UIColor *)color
                     textStyle:(RCTBPKColorBucketTextStyle)textStyle
                          days:(RCTBPKDateMatcher *)days
-                    cellStyle:(BPKCalendarDateCellStyle)cellStyle;
+                    cellData:(BPKCalendarTrafficLightCellData *)cellDatas;
 
 @end
 
