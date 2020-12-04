@@ -1,5 +1,10 @@
 # Backpack changelog
 
+# 11.0.1 - 2020-11-10
+
+**Fixed:**
+ - The `backpack-ios` dependency is now only locked to major version, instead of major and minor version.
+
 # 11.0.0 - 2020-11-03
 
 **Breaking:**
