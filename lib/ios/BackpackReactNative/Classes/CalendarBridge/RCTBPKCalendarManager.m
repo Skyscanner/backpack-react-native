@@ -105,18 +105,18 @@ RCT_EXPORT_VIEW_PROPERTY(onDateSelection, RCTBubblingEventBlock)
     return ![rctCalendar.rct_disabledDates matchesDate:localDate];
 }
 
-- (BPKCalendarDateCellStyle)calendar:(BPKCalendar *)calendar cellStyleForDate:(BPKSimpleDate *)date {
+- (id)calendar:(BPKCalendar *)calendar cellDataForDate:(BPKSimpleDate *)date {
     NSAssert([calendar isKindOfClass:RCTBPKCalendar.class],
              @"calendar value is not of type RCTBPKCalendar as expected.");
     if (![calendar isKindOfClass:RCTBPKCalendar.class]) {
-        return BPKCalendarDateCellStyleNormal;
+        return nil;
     }
 
     NSDate *localDate = [date dateForCalendar:calendar.gregorian];
     RCTBPKCalendar *rctCalendar = (RCTBPKCalendar *)calendar;
     RCTBPKColorBucket *colorBucket = [self colorBucketForDate:localDate colorBuckets:rctCalendar.rct_colorBuckets];
 
-    return colorBucket.cellStyle;
+    return colorBucket.cellData;
 }
 
 - (UIColor *)DONT_USE_calendar:(BPKCalendar *)calendar fillColorForDate:(NSDate *)date {
