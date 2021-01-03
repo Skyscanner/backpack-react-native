@@ -3,7 +3,7 @@
 //  Backpack Native
 //
 //  Created by Hugo Tunius on 01/08/2018.
-//  Copyright 2016-2020 Skyscanner Ltd
+//  Copyright 2016-2021 Skyscanner Ltd
 //
 
 #import "ToggleNavigationBarMenuModule.h"
