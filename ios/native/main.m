@@ -1,5 +1,5 @@
 /**
- * Copyright 2016-2020 Skyscanner Ltd
+ * Copyright 2016-2021 Skyscanner Ltd
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
