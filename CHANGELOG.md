@@ -1,5 +1,10 @@
 # Backpack changelog
 
+# 12.0.0 - 2020-12-07
+
+**Breaking:**
+ - The `backpack-ios` dependency is now locked to version `39`.
+
 # 11.0.1 - 2020-11-10
 
 **Fixed:**
