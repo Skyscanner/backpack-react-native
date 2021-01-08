@@ -5,6 +5,11 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: 'Repo that triggered this action'
+        required: true
 
 defaults:
   run:
@@ -32,7 +37,7 @@ jobs:
 
         gcloud version
         gcloud auth activate-service-account --project $GCLOUD_PROJECT_ID --key-file $HOME/gcloud-service-key.json
-    
+
     # We install the NDK as the app requires an older version than bundled in the image
     - name: Install NDK
       run: echo "y" | sudo ${ANDROID_HOME}/tools/bin/sdkmanager --install "ndk;20.0.5594570" --sdk_root=${ANDROID_SDK_ROOT}
