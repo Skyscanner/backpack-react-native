@@ -4,7 +4,6 @@ exports[`iOS BpkHorizontalNavItem dark mode should render correctly 1`] = `
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -73,11 +72,6 @@ exports[`iOS BpkHorizontalNavItem dark mode should render correctly with "disabl
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "disabled",
-    ]
-  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -149,7 +143,6 @@ exports[`iOS BpkHorizontalNavItem dark mode should render correctly with "select
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -221,7 +214,6 @@ exports[`iOS BpkHorizontalNavItem light mode should render correctly 1`] = `
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -290,11 +282,6 @@ exports[`iOS BpkHorizontalNavItem light mode should render correctly with "disab
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "disabled",
-    ]
-  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -366,7 +353,6 @@ exports[`iOS BpkHorizontalNavItem light mode should render correctly with "selec
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -438,7 +424,6 @@ exports[`iOS BpkHorizontalNavItem should render correctly with "small" prop 1`] 
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -510,7 +495,6 @@ exports[`iOS BpkHorizontalNavItem should render correctly with "spaceAround" pro
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -579,7 +563,6 @@ exports[`iOS BpkHorizontalNavItem should render correctly with arbitrary props 1
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -648,7 +631,6 @@ exports[`iOS BpkHorizontalNavItem should render correctly with custom "style" pr
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -720,7 +702,6 @@ exports[`iOS BpkHorizontalNavItem should render item text correctly with custom 
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -792,7 +773,6 @@ exports[`iOS BpkHorizontalNavItem should support theming 1`] = `
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}

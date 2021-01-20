@@ -68,7 +68,6 @@ exports[`Android BpkPicker dark mode should render correctly 1`] = `
       initialScrollIndex={0}
       keyExtractor={[Function]}
       maxToRenderPerBatch={10}
-      numColumns={1}
       onContentSizeChange={[Function]}
       onEndReachedThreshold={2}
       onLayout={[Function]}
@@ -103,14 +102,13 @@ exports[`Android BpkPicker dark mode should render correctly 1`] = `
           <View
             accessibilityLabel="foo"
             accessibilityRole="button"
-            accessibilityStates={Array []}
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
                 "borderless": false,
                 "color": -9934465,
+                "rippleRadius": undefined,
                 "type": "RippleAndroid",
               }
             }
@@ -154,14 +152,13 @@ exports[`Android BpkPicker dark mode should render correctly 1`] = `
           <View
             accessibilityLabel="bar"
             accessibilityRole="button"
-            accessibilityStates={Array []}
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
                 "borderless": false,
                 "color": -9934465,
+                "rippleRadius": undefined,
                 "type": "RippleAndroid",
               }
             }
@@ -273,7 +270,6 @@ exports[`Android BpkPicker dark mode should render correctly with a selected val
       initialScrollIndex={0}
       keyExtractor={[Function]}
       maxToRenderPerBatch={10}
-      numColumns={1}
       onContentSizeChange={[Function]}
       onEndReachedThreshold={2}
       onLayout={[Function]}
@@ -308,18 +304,13 @@ exports[`Android BpkPicker dark mode should render correctly with a selected val
           <View
             accessibilityLabel="foo"
             accessibilityRole="button"
-            accessibilityStates={
-              Array [
-                "selected",
-              ]
-            }
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
                 "borderless": false,
                 "color": -9934465,
+                "rippleRadius": undefined,
                 "type": "RippleAndroid",
               }
             }
@@ -365,14 +356,13 @@ exports[`Android BpkPicker dark mode should render correctly with a selected val
           <View
             accessibilityLabel="bar"
             accessibilityRole="button"
-            accessibilityStates={Array []}
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
                 "borderless": false,
                 "color": -9934465,
+                "rippleRadius": undefined,
                 "type": "RippleAndroid",
               }
             }
@@ -484,7 +474,6 @@ exports[`Android BpkPicker light mode should render correctly 1`] = `
       initialScrollIndex={0}
       keyExtractor={[Function]}
       maxToRenderPerBatch={10}
-      numColumns={1}
       onContentSizeChange={[Function]}
       onEndReachedThreshold={2}
       onLayout={[Function]}
@@ -519,14 +508,13 @@ exports[`Android BpkPicker light mode should render correctly 1`] = `
           <View
             accessibilityLabel="foo"
             accessibilityRole="button"
-            accessibilityStates={Array []}
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
                 "borderless": false,
                 "color": null,
+                "rippleRadius": undefined,
                 "type": "RippleAndroid",
               }
             }
@@ -570,14 +558,13 @@ exports[`Android BpkPicker light mode should render correctly 1`] = `
           <View
             accessibilityLabel="bar"
             accessibilityRole="button"
-            accessibilityStates={Array []}
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
                 "borderless": false,
                 "color": null,
+                "rippleRadius": undefined,
                 "type": "RippleAndroid",
               }
             }
@@ -689,7 +676,6 @@ exports[`Android BpkPicker light mode should render correctly with a selected va
       initialScrollIndex={0}
       keyExtractor={[Function]}
       maxToRenderPerBatch={10}
-      numColumns={1}
       onContentSizeChange={[Function]}
       onEndReachedThreshold={2}
       onLayout={[Function]}
@@ -724,18 +710,13 @@ exports[`Android BpkPicker light mode should render correctly with a selected va
           <View
             accessibilityLabel="foo"
             accessibilityRole="button"
-            accessibilityStates={
-              Array [
-                "selected",
-              ]
-            }
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
                 "borderless": false,
                 "color": null,
+                "rippleRadius": undefined,
                 "type": "RippleAndroid",
               }
             }
@@ -781,14 +762,13 @@ exports[`Android BpkPicker light mode should render correctly with a selected va
           <View
             accessibilityLabel="bar"
             accessibilityRole="button"
-            accessibilityStates={Array []}
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
                 "borderless": false,
                 "color": null,
+                "rippleRadius": undefined,
                 "type": "RippleAndroid",
               }
             }

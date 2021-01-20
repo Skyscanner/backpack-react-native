@@ -3,14 +3,13 @@
 exports[`Android BpkSelect dark mode should render correctly 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": -9934465,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -64,14 +63,13 @@ exports[`Android BpkSelect dark mode should render correctly 1`] = `
 exports[`Android BpkSelect dark mode should render correctly with "showImage" and image 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": -9934465,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -140,14 +138,13 @@ exports[`Android BpkSelect dark mode should render correctly with "showImage" an
 exports[`Android BpkSelect dark mode should render correctly with "showImage" and no image 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": -9934465,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -213,14 +210,13 @@ exports[`Android BpkSelect dark mode should render correctly with "showImage" an
 exports[`Android BpkSelect dark mode should render correctly with "valid" false 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": -9934465,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -303,14 +299,13 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
 exports[`Android BpkSelect dark mode should render correctly with "valid" false and "focused" (focused should take precedence) 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": -9934465,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -397,14 +392,13 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
 <View>
   <View
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": false,
         "color": -9934465,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -510,14 +504,13 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
 exports[`Android BpkSelect dark mode should render correctly with "valid" true 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": -9934465,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -597,14 +590,13 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" true 1
 exports[`Android BpkSelect dark mode should render correctly with a text label 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": -9934465,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -682,14 +674,13 @@ exports[`Android BpkSelect dark mode should render correctly with a text label 1
 exports[`Android BpkSelect dark mode should render correctly with an element label 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": -9934465,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -744,14 +735,13 @@ exports[`Android BpkSelect dark mode should render correctly with an element lab
 exports[`Android BpkSelect dark mode should render correctly with custom styles 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": -9934465,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -829,18 +819,13 @@ exports[`Android BpkSelect dark mode should render correctly with custom styles 
 exports[`Android BpkSelect dark mode should render correctly with the disabled prop 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "disabled",
-    ]
-  }
   accessible={true}
   focusable={false}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": -9934465,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -924,18 +909,13 @@ exports[`Android BpkSelect dark mode should render correctly with the disabled p
 exports[`Android BpkSelect dark mode should render correctly with the focused and disabled props (disabled take precedence) 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "disabled",
-    ]
-  }
   accessible={true}
   focusable={false}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": -9934465,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -1019,14 +999,13 @@ exports[`Android BpkSelect dark mode should render correctly with the focused an
 exports[`Android BpkSelect dark mode should render correctly with the focused prop 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": -9934465,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -1107,14 +1086,13 @@ exports[`Android BpkSelect dark mode should render correctly with the focused pr
 exports[`Android BpkSelect light mode should render correctly 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": null,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -1168,14 +1146,13 @@ exports[`Android BpkSelect light mode should render correctly 1`] = `
 exports[`Android BpkSelect light mode should render correctly with "showImage" and image 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": null,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -1244,14 +1221,13 @@ exports[`Android BpkSelect light mode should render correctly with "showImage" a
 exports[`Android BpkSelect light mode should render correctly with "showImage" and no image 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": null,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -1317,14 +1293,13 @@ exports[`Android BpkSelect light mode should render correctly with "showImage" a
 exports[`Android BpkSelect light mode should render correctly with "valid" false 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": null,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -1407,14 +1382,13 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
 exports[`Android BpkSelect light mode should render correctly with "valid" false and "focused" (focused should take precedence) 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": null,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -1501,14 +1475,13 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
 <View>
   <View
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": false,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -1614,14 +1587,13 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
 exports[`Android BpkSelect light mode should render correctly with "valid" true 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": null,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -1701,14 +1673,13 @@ exports[`Android BpkSelect light mode should render correctly with "valid" true 
 exports[`Android BpkSelect light mode should render correctly with a text label 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": null,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -1786,14 +1757,13 @@ exports[`Android BpkSelect light mode should render correctly with a text label 
 exports[`Android BpkSelect light mode should render correctly with an element label 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": null,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -1848,14 +1818,13 @@ exports[`Android BpkSelect light mode should render correctly with an element la
 exports[`Android BpkSelect light mode should render correctly with custom styles 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": null,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -1933,18 +1902,13 @@ exports[`Android BpkSelect light mode should render correctly with custom styles
 exports[`Android BpkSelect light mode should render correctly with the disabled prop 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "disabled",
-    ]
-  }
   accessible={true}
   focusable={false}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": null,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -2028,18 +1992,13 @@ exports[`Android BpkSelect light mode should render correctly with the disabled 
 exports[`Android BpkSelect light mode should render correctly with the focused and disabled props (disabled take precedence) 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "disabled",
-    ]
-  }
   accessible={true}
   focusable={false}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": null,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -2123,14 +2082,13 @@ exports[`Android BpkSelect light mode should render correctly with the focused a
 exports[`Android BpkSelect light mode should render correctly with the focused prop 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": null,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
