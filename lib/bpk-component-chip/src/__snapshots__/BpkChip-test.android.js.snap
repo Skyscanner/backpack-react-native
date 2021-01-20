@@ -18,11 +18,11 @@ exports[`Android BpkChip dark mode should render correctly 1`] = `
     accessibilityRole="button"
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": -9934465,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -93,11 +93,11 @@ exports[`Android BpkChip dark mode should render correctly with "disabled" 1`] =
     accessibilityRole="button"
     accessible={true}
     focusable={false}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": -9934465,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -174,11 +174,11 @@ exports[`Android BpkChip dark mode should render correctly with "selected" 1`] =
     accessibilityRole="button"
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": -9934465,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -259,11 +259,11 @@ exports[`Android BpkChip dark mode should render outline correctly 1`] = `
     accessibilityRole="button"
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": -9934465,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -343,11 +343,11 @@ exports[`Android BpkChip light mode should render correctly 1`] = `
     accessibilityRole="button"
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -418,11 +418,11 @@ exports[`Android BpkChip light mode should render correctly with "disabled" 1`] 
     accessibilityRole="button"
     accessible={true}
     focusable={false}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -499,11 +499,11 @@ exports[`Android BpkChip light mode should render correctly with "selected" 1`] 
     accessibilityRole="button"
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -584,11 +584,11 @@ exports[`Android BpkChip light mode should render outline correctly 1`] = `
     accessibilityRole="button"
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -668,11 +668,11 @@ exports[`Android BpkChip should render correctly with arbitrary props 1`] = `
     accessibilityRole="button"
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -748,11 +748,11 @@ exports[`Android BpkChip should render correctly with custom style 1`] = `
     accessibilityRole="button"
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -823,11 +823,11 @@ exports[`Android BpkChip should render correctly with leadingAccessoryView 1`] =
     accessibilityRole="button"
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -922,11 +922,11 @@ exports[`Android BpkChip should render correctly with trailingAccessoryView 1`] 
     accessibilityRole="button"
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -1021,11 +1021,11 @@ exports[`Android BpkChip should support theming when selected 1`] = `
     accessibilityRole="button"
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }

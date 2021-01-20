@@ -3,6 +3,7 @@ source 'https://cdn.cocoapods.org/'
 platform :ios, '12.0'
 use_modular_headers!
 
+require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
 target 'Backpack Native' do
@@ -29,12 +30,14 @@ target 'Backpack Native' do
   pod 'React-jsi', :path => '../node_modules/react-native/ReactCommon/jsi', :modular_headers => false
   pod 'React-jsiexecutor', :path => '../node_modules/react-native/ReactCommon/jsiexecutor', :modular_headers => false
   pod 'React-jsinspector', :path => '../node_modules/react-native/ReactCommon/jsinspector', :modular_headers => false
-  pod 'ReactCommon/jscallinvoker', :path => "../node_modules/react-native/ReactCommon"
-  pod 'ReactCommon/turbomodule/core', :path => "../node_modules/react-native/ReactCommon"
+  pod 'React-perflogger', :path => '../node_modules/react-native/ReactCommon/reactperflogger', :modular_headers => false
+  pod 'React-runtimeexecutor', :path => '../node_modules/react-native/ReactCommon/runtimeexecutor', :modular_headers => false
+  pod 'React-callinvoker', :path => "../node_modules/react-native/ReactCommon/callinvoker", :modular_headers => false
+  pod 'ReactCommon/turbomodule/core', :path => "../node_modules/react-native/ReactCommon", :modular_headers => false
   pod 'Yoga', :path => '../node_modules/react-native/ReactCommon/yoga', :modular_headers => false
   pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec', :modular_headers => false
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec', :modular_headers => false
-  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec', :modular_headers => false
+  pod 'RCT-Folly', :podspec => '../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec', :modular_headers => false
 
   # RN Bridging Pods
   pod 'Backpack', '~> 40.0'
@@ -42,11 +45,14 @@ target 'Backpack Native' do
 
   # Third party pods
   pod 'react-native-maps', path: '../node_modules/react-native-maps', :modular_headers => false
-  pod 'ReactNativeDarkMode', path: '../node_modules/react-native-dark-mode/ReactNativeDarkMode.podspec', :modular_headers => false
 
   target 'Backpack Native Tests' do
-    inherit! :search_paths
+    inherit! :complete
   end
 
   use_native_modules!
+
+  pre_install do |installer|
+    codegen_pre_install(installer, { :path => "../node_modules/react-native", :codegen_path => "../node_modules/react-native-codegen" })
+  end
 end
