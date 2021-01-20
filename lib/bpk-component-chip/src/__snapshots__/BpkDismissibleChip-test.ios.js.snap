@@ -4,7 +4,6 @@ exports[`iOS BpkDismissibleChip dark mode should render correctly 1`] = `
 <View
   accessibilityLabel="Dismiss"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -115,7 +114,6 @@ exports[`iOS BpkDismissibleChip dark mode should render correctly with "disabled
 <View
   accessibilityLabel="Dismiss"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -235,7 +233,6 @@ exports[`iOS BpkDismissibleChip dark mode should render outline correctly 1`] = 
 <View
   accessibilityLabel="Dismiss"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -362,7 +359,6 @@ exports[`iOS BpkDismissibleChip light mode should render correctly 1`] = `
 <View
   accessibilityLabel="Dismiss"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -473,7 +469,6 @@ exports[`iOS BpkDismissibleChip light mode should render correctly with "disable
 <View
   accessibilityLabel="Dismiss"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -593,7 +588,6 @@ exports[`iOS BpkDismissibleChip light mode should render outline correctly 1`] =
 <View
   accessibilityLabel="Dismiss"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -720,7 +714,6 @@ exports[`iOS BpkDismissibleChip should render correctly with a supplied icon 1`]
 <View
   accessibilityLabel="Dismiss"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -858,7 +851,6 @@ exports[`iOS BpkDismissibleChip should render correctly with arbitrary props 1`]
 <View
   accessibilityLabel="Dismiss"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -970,7 +962,6 @@ exports[`iOS BpkDismissibleChip should render correctly with custom style 1`] = 
 <View
   accessibilityLabel="Dismiss"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}

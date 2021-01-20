@@ -4,10 +4,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly 1`]
 <View
   accessibilityLabel="Edit"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -55,14 +53,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly dis
 <View
   accessibilityLabel="Done"
   accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "disabled",
-    ]
-  }
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -110,10 +102,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly emp
 <View
   accessibilityLabel="Done"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -163,10 +153,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly lea
 <View
   accessibilityLabel="Cancel"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -214,10 +202,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly wit
 <View
   accessibilityLabel="Done"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -265,14 +251,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly wit
 <View
   accessibilityLabel="Done"
   accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "disabled",
-    ]
-  }
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -320,14 +300,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should respect "disabledTin
 <View
   accessibilityLabel="Done"
   accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "disabled",
-    ]
-  }
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -375,10 +349,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should respect "primaryTint
 <View
   accessibilityLabel="Done"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -426,10 +398,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should respect "tintColor" 
 <View
   accessibilityLabel="Done"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -477,10 +447,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should respect "tintColor" 
 <View
   accessibilityLabel="Done"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -528,10 +496,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly 1`
 <View
   accessibilityLabel="Edit"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -579,14 +545,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly di
 <View
   accessibilityLabel="Done"
   accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "disabled",
-    ]
-  }
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -634,10 +594,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly em
 <View
   accessibilityLabel="Done"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -687,10 +645,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly le
 <View
   accessibilityLabel="Cancel"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -738,10 +694,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly wi
 <View
   accessibilityLabel="Done"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -789,14 +743,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly wi
 <View
   accessibilityLabel="Done"
   accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "disabled",
-    ]
-  }
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -844,14 +792,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should respect "disabledTi
 <View
   accessibilityLabel="Done"
   accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "disabled",
-    ]
-  }
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -899,10 +841,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should respect "primaryTin
 <View
   accessibilityLabel="Done"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -950,10 +890,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should respect "tintColor"
 <View
   accessibilityLabel="Done"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -1001,10 +939,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should respect "tintColor"
 <View
   accessibilityLabel="Done"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -1052,10 +988,8 @@ exports[`iOS BpkNavigationBarTextButtonIOS should forward custom props 1`] = `
 <View
   accessibilityLabel="Edit"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}

@@ -2,7 +2,7 @@
 
 exports[`Android BpkSwitch dark mode should disable theming if the required attribute is omitted 1`] = `
 <AndroidSwitch
-  accessibilityRole="button"
+  accessibilityRole="switch"
   enabled={true}
   on={true}
   onChange={[Function]}
@@ -17,7 +17,7 @@ exports[`Android BpkSwitch dark mode should disable theming if the required attr
 
 exports[`Android BpkSwitch dark mode should render correctly 1`] = `
 <AndroidSwitch
-  accessibilityRole="button"
+  accessibilityRole="switch"
   enabled={true}
   on={false}
   onChange={[Function]}
@@ -32,7 +32,7 @@ exports[`Android BpkSwitch dark mode should render correctly 1`] = `
 
 exports[`Android BpkSwitch dark mode should support the "value" prop 1`] = `
 <AndroidSwitch
-  accessibilityRole="button"
+  accessibilityRole="switch"
   enabled={true}
   on={true}
   onChange={[Function]}
@@ -47,7 +47,7 @@ exports[`Android BpkSwitch dark mode should support the "value" prop 1`] = `
 
 exports[`Android BpkSwitch dark mode should support theming 1`] = `
 <AndroidSwitch
-  accessibilityRole="button"
+  accessibilityRole="switch"
   enabled={true}
   on={true}
   onChange={[Function]}
@@ -62,7 +62,7 @@ exports[`Android BpkSwitch dark mode should support theming 1`] = `
 
 exports[`Android BpkSwitch light mode should disable theming if the required attribute is omitted 1`] = `
 <AndroidSwitch
-  accessibilityRole="button"
+  accessibilityRole="switch"
   enabled={true}
   on={true}
   onChange={[Function]}
@@ -77,7 +77,7 @@ exports[`Android BpkSwitch light mode should disable theming if the required att
 
 exports[`Android BpkSwitch light mode should render correctly 1`] = `
 <AndroidSwitch
-  accessibilityRole="button"
+  accessibilityRole="switch"
   enabled={true}
   on={false}
   onChange={[Function]}
@@ -92,7 +92,7 @@ exports[`Android BpkSwitch light mode should render correctly 1`] = `
 
 exports[`Android BpkSwitch light mode should support the "value" prop 1`] = `
 <AndroidSwitch
-  accessibilityRole="button"
+  accessibilityRole="switch"
   enabled={true}
   on={true}
   onChange={[Function]}
@@ -107,7 +107,7 @@ exports[`Android BpkSwitch light mode should support the "value" prop 1`] = `
 
 exports[`Android BpkSwitch light mode should support theming 1`] = `
 <AndroidSwitch
-  accessibilityRole="button"
+  accessibilityRole="switch"
   enabled={true}
   on={true}
   onChange={[Function]}
