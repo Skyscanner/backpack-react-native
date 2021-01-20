@@ -6,11 +6,11 @@ exports[`Android BpkFlatListItem dark mode should render correctly 1`] = `
   accessibilityRole="button"
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": -9934465,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -102,11 +102,11 @@ exports[`Android BpkFlatListItem dark mode should support the "selected" propert
   accessibilityRole="button"
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": -9934465,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -207,11 +207,11 @@ exports[`Android BpkFlatListItem light mode should render correctly 1`] = `
   accessibilityRole="button"
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": null,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -303,11 +303,11 @@ exports[`Android BpkFlatListItem light mode should support the "selected" proper
   accessibilityRole="button"
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": null,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -408,11 +408,11 @@ exports[`Android BpkFlatListItem should support the "image" property 1`] = `
   accessibilityRole="button"
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": null,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -531,11 +531,11 @@ exports[`Android should support theming when selected 1`] = `
   accessibilityRole="button"
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": null,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }

@@ -40,7 +40,6 @@ exports[`ios BpkNavigationBar dark mode should render correctly 1`] = `
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -201,7 +200,6 @@ exports[`ios BpkNavigationBar dark mode should render correctly with a subtitle 
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -370,7 +368,6 @@ exports[`ios BpkNavigationBar dark mode should render correctly with a title vie
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -497,7 +494,6 @@ exports[`ios BpkNavigationBar dark mode should render correctly with an icon in 
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -686,7 +682,6 @@ exports[`ios BpkNavigationBar dark mode should render correctly with custom styl
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -842,10 +837,8 @@ exports[`ios BpkNavigationBar dark mode should render correctly with trailing bu
     <View
       accessibilityLabel="Cancel"
       accessibilityRole="button"
-      accessibilityStates={Array []}
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -947,10 +940,8 @@ exports[`ios BpkNavigationBar dark mode should render correctly with trailing bu
     <View
       accessibilityLabel="Done"
       accessibilityRole="button"
-      accessibilityStates={Array []}
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -1038,7 +1029,6 @@ exports[`ios BpkNavigationBar light mode should render correctly 1`] = `
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -1199,7 +1189,6 @@ exports[`ios BpkNavigationBar light mode should render correctly with a subtitle
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -1368,7 +1357,6 @@ exports[`ios BpkNavigationBar light mode should render correctly with a title vi
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -1495,7 +1483,6 @@ exports[`ios BpkNavigationBar light mode should render correctly with an icon in
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -1684,7 +1671,6 @@ exports[`ios BpkNavigationBar light mode should render correctly with custom sty
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -1840,10 +1826,8 @@ exports[`ios BpkNavigationBar light mode should render correctly with trailing b
     <View
       accessibilityLabel="Cancel"
       accessibilityRole="button"
-      accessibilityStates={Array []}
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -1945,10 +1929,8 @@ exports[`ios BpkNavigationBar light mode should render correctly with trailing b
     <View
       accessibilityLabel="Done"
       accessibilityRole="button"
-      accessibilityStates={Array []}
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -2037,7 +2019,6 @@ exports[`ios BpkNavigationBar should forward custom props 1`] = `
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -2132,10 +2113,8 @@ exports[`ios BpkNavigationBar should forward custom props 1`] = `
     <View
       accessibilityLabel="Done"
       accessibilityRole="button"
-      accessibilityStates={Array []}
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}

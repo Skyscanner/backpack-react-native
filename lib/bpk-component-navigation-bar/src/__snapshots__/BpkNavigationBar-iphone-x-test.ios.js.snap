@@ -43,7 +43,6 @@ exports[`ios - iPhone X BpkNavigationBar dark mode should render correctly 1`] =
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -202,10 +201,8 @@ exports[`ios - iPhone X BpkNavigationBar dark mode should render correctly with 
     <View
       accessibilityLabel="Cancel"
       accessibilityRole="button"
-      accessibilityStates={Array []}
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -307,10 +304,8 @@ exports[`ios - iPhone X BpkNavigationBar dark mode should render correctly with 
     <View
       accessibilityLabel="Done"
       accessibilityRole="button"
-      accessibilityStates={Array []}
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -401,7 +396,6 @@ exports[`ios - iPhone X BpkNavigationBar light mode should render correctly 1`] 
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -560,10 +554,8 @@ exports[`ios - iPhone X BpkNavigationBar light mode should render correctly with
     <View
       accessibilityLabel="Cancel"
       accessibilityRole="button"
-      accessibilityStates={Array []}
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -665,10 +657,8 @@ exports[`ios - iPhone X BpkNavigationBar light mode should render correctly with
     <View
       accessibilityLabel="Done"
       accessibilityRole="button"
-      accessibilityStates={Array []}
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}

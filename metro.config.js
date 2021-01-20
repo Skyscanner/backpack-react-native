@@ -16,10 +16,10 @@
  * limitations under the License.
  */
 
-const blacklist = require('metro-config/src/defaults/blacklist');
+const exclusionlist = require('metro-config/src/defaults/exclusionList');
 
 module.exports = {
   resolver: {
-    blacklistRE: blacklist([/dist\/package\.json/]),
+    blacklistRE: exclusionlist([/dist\/package\.json/]),
   },
 };
