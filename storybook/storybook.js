@@ -123,7 +123,7 @@ const BackgroundWrapper = ({ children }: { children: Node }) => (
   </View>
 );
 
-export default (props: Object) => (
+export default (props: Object): Node => (
   <RelativeFontProvider>
     <BpkAppearanceProvider>
       <BackgroundWrapper>

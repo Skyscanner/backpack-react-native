@@ -48,6 +48,7 @@ const createParser = () => {
   return parseObject;
 };
 
+// $FlowFixMe - Need to understand the return types and fix this.
 const { action } = decorate([
   (args) =>
     args.map((a) => {

@@ -36,7 +36,7 @@ const theme = {
   textFontFamily: relativeFontFamily,
 };
 
-const RelativeFontProvider = ({ children }: Props) => {
+const RelativeFontProvider = ({ children }: Props): Node => {
   // TODO: add iOS support
   if (USE_RELATIVE !== 'true' || Platform.OS === 'ios') {
     return children;
