@@ -54,7 +54,7 @@ class RNBpkRatingTest {
     rating.state.icon = icon
     rating.render()
 
-    verify { uiModule.setViewLocalData(eq(rating.id), any()) }
+    verify { uiModule?.setViewLocalData(eq(rating.id), any()) }
 
     val bpkRating = rating.getChildAt(0)
     assertTrue(bpkRating is BpkRating)
