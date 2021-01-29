@@ -37,7 +37,7 @@ node_modules/warning/.*
 .*/react-native-linear-gradient/.*
 .*/theming/.*
 
-; TODO: Remove this when we upgrade flow to the latest version
+; TODO [BPK-4377]: Remove this when we upgrade flow to the latest version
 <PROJECT_ROOT>/node_modules/react-native/Libraries/LayoutAnimation/LayoutAnimation.js
 <PROJECT_ROOT>/node_modules/react-native/Libraries/LogBox/Data/LogBoxLog.js
 <PROJECT_ROOT>/node_modules/react-native/Libraries/Animated/.*
