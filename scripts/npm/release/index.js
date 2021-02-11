@@ -104,12 +104,12 @@ const isGradleAuthenticated = () => {
     });
 };
 
-const isMasterBranch = () => {
+const isMainBranch = () => {
   if (
     shell.execSync('git rev-parse --abbrev-ref HEAD').toString().trim() !==
-    'master'
+    'main'
   ) {
-    throw new Error(ERRORS.branchNotMaster);
+    throw new Error(ERRORS.branchNotMain);
   }
 };
 
@@ -130,7 +130,7 @@ async function checkEnv() {
   console.log('🤔  ', '> Checking environment');
   await isBranchUpTodate();
   await isGradleAuthenticated();
-  isMasterBranch();
+  isMainBranch();
   isCleanWorkingDirClean();
 }
 
@@ -158,7 +158,7 @@ async function releaseIt(version) {
   shell.execSync('git add .', { dryRun });
   shell.execSync(`git commit -m"Release ${version}" --no-verify`, { dryRun });
   shell.execSync(`git tag v${version}`, { dryRun });
-  shell.execSync('git push origin master', { dryRun });
+  shell.execSync('git push origin main', { dryRun });
   shell.execSync(`git push origin v${version}`, { dryRun });
 
   shell.execSync(`npm publish . --tag latest ${dryRun ? '--dry-run' : ''}`, {

@@ -48,7 +48,7 @@ For a complete log check:
 Try running git fetch && git pull first.
 `,
 
-  branchNotMaster: `Must be on branch master`,
+  branchNotMain: `Must be on branch main`,
   workingDirNotClean: `Working dir is not pristine. Make sure the changes are intentional and commit them before procedding.`,
 };
 

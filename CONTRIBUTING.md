@@ -44,7 +44,7 @@ limitations under the License.
 
 ## How we review Backpack contributions
 
-Please see the [code review guidelines](https://github.com/Skyscanner/backpack/blob/master/CODE_REVIEW_GUIDELINES.md).
+Please see the [code review guidelines](https://github.com/Skyscanner/backpack/blob/main/CODE_REVIEW_GUIDELINES.md).
 
 ### Decisions
 
@@ -207,7 +207,7 @@ To run these manually, run `npm run android:emulator` or `npm run android:emulat
 - **Run `npm run release`**. Do not run `npm publish`.
 - You’ll be asked to specify a new version. Options are *patch*, *minor* or *major*. These should directly align to the entries you put in the [unreleased changelog](/unreleased.md) in step 1.
 - Move entries from [unreleased.md](/unreleased.md) to the [changelog](/changelog.md). Update the package versions for the new changes, and group them under a title with today’s date and a brief summary of what has changed.
-- Commit and push to master.
+- Commit and push to main.
 
 ### Native Android bridges
 
