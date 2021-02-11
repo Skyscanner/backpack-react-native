@@ -4,7 +4,7 @@ name: Deploy docs
 on:
   workflow_run:
     workflows: ["Android CI", "iOS CI"]
-    branches: [master]
+    branches: [main]
     types: 
       - completed
 
@@ -15,7 +15,7 @@ defaults:
 jobs:
   trigger_docs:
     name: Trigger docs build
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
 
     steps:
@@ -23,4 +23,4 @@ jobs:
         env:
           BACKPACK_DOCS_DEPLOY_TOKEN: ${{ secrets.BACKPACK_DOCS_DEPLOY_TOKEN }}
         run: |
-          curl -f -s -X POST -H "Content-Type: application/json" -H "Accept: application/vnd.github.v3+json" -H "Authorization: token $BACKPACK_DOCS_DEPLOY_TOKEN" -d '{"ref":"master","inputs":{"repo":"backpack-react-native"}}' https://api.github.com/repos/Skyscanner/backpack-docs/actions/workflows/ci.yml/dispatches
+          curl -f -s -X POST -H "Content-Type: application/json" -H "Accept: application/vnd.github.v3+json" -H "Authorization: token $BACKPACK_DOCS_DEPLOY_TOKEN" -d '{"ref":"main","inputs":{"repo":"backpack-react-native"}}' https://api.github.com/repos/Skyscanner/backpack-docs/actions/workflows/ci.yml/dispatches
