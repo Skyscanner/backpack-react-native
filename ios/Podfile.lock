@@ -1,5 +1,5 @@
 PODS:
-  - Backpack (40.0.2):
+  - Backpack (40.3.0):
     - FloatingPanel (= 1.6.6)
     - FSCalendar (~> 2.8.2)
     - MBProgressHUD (~> 1.2.0)
@@ -8,7 +8,6 @@ PODS:
     - Backpack (~> 40.0)
     - React
     - react-native-maps
-    - ReactNativeDarkMode
   - boost-for-react-native (1.63.0)
   - BVLinearGradient (2.5.6):
     - React
@@ -284,8 +283,6 @@ PODS:
     - React-cxxreact (= 0.64.0-rc.1)
     - React-jsi (= 0.64.0-rc.1)
     - React-perflogger (= 0.64.0-rc.1)
-  - ReactNativeDarkMode (0.2.2):
-    - React
   - TTTAttributedLabel (2.0.0)
   - Yoga (1.14.0)
 
@@ -323,7 +320,6 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
-  - ReactNativeDarkMode (from `../node_modules/react-native-dark-mode`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -396,14 +392,12 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/runtimeexecutor"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
-  ReactNativeDarkMode:
-    :path: "../node_modules/react-native-dark-mode"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  Backpack: dd516d375b5511dfdc24b6ae8fc793a24e4b9787
-  BackpackReactNative: 608df601342aaec26298601be5f60320058c743b
+  Backpack: ca9114f4f9f621d55308aa7e7ea9aa6dc08be3b1
+  BackpackReactNative: 084276d5c74f6778275b3652323a6ada82aa72a1
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BVLinearGradient: e3aad03778a456d77928f594a649e96995f1c872
   DoubleConversion: cf9b38bf0b2d048436d9a82ad2abe1404f11e7de
@@ -437,7 +431,6 @@ SPEC CHECKSUMS:
   React-RCTVibration: 728e8721aad96edd9d482592486487b28d1fe459
   React-runtimeexecutor: c1d82f62a713f63ffcf56ee3585f7d5f595ef2f2
   ReactCommon: c566ffa464341e6acf380460fc71e624c2a18405
-  ReactNativeDarkMode: 0178ffca3b10f6a7c9f49d6f9810232b328fa949
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   Yoga: 570bb56834ce4876e4abc24d0dfe1cf3e0c76d33
 
