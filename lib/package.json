@@ -24,7 +24,6 @@
     "bpk-tokens": "^36.1.1",
     "react": "^16.9.0",
     "react-native": ">= 0.61.5",
-    "react-native-dark-mode": "^0.2.2",
     "react-native-dash": "0.0.11",
     "react-native-linear-gradient": "react-native-community/react-native-linear-gradient",
     "react-native-maps": "^0.26.1"

@@ -67,11 +67,4 @@ dependencies {
   implementation "com.github.skyscanner:backpack-android:${_backpackAndroidVersion}"
   implementation "androidx.constraintlayout:constraintlayout:1.1.3"
   implementation "com.jakewharton.threetenabp:threetenabp:${rootProject.ext.threetenabpVersion}"
-
-  if (_internalBuild) {
-    // embed deps will be added to the arr directly (fat-jar) and not as a dependency
-    api project(path: ':react-native-dark-mode', configuration: 'default')
-  } else {
-    api project(':react-native-dark-mode')
-  }
 }
