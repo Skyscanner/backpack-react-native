@@ -15,11 +15,10 @@
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		31FE34E56FD1996AAEBB6C3E /* libPods-Backpack Native-Backpack Native Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B672C303EC65CF0B6897A7CE /* libPods-Backpack Native-Backpack Native Tests.a */; };
 		4E936218F43D4459BC11AFDD /* BpkIconIOS.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1636A374E1F45A88C968BB2 /* BpkIconIOS.ttf */; };
 		53BE2BC678B94ACB91F10BC7 /* BpkIconIOS.woff in Resources */ = {isa = PBXBuildFile; fileRef = AA66E7B8E3114A04B5A1488D /* BpkIconIOS.woff */; };
 		60005AA222382F040076B576 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60005AA122382F040076B576 /* JavaScriptCore.framework */; };
-		80AE0E4AC96A960F75CC171B /* libPods-Backpack Native.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C31C08F173B9D282D966FB /* libPods-Backpack Native.a */; };
+		93A11238766E920180390589 /* libPods-Backpack Native.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABDC175C9DB0F0B9CBD71B51 /* libPods-Backpack Native.a */; };
 		D29228A3231441530046FF30 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29228A2231441530046FF30 /* File.swift */; };
 		D2AFEEA8241945C100111A13 /* RCTBPKRatingManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AFEEA7241945C100111A13 /* RCTBPKRatingManagerTests.m */; };
 		D2DA2ADD241FDA1E00863E1D /* RCTBPKDialogManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DA2AD7241FCAA800863E1D /* RCTBPKDialogManagerTests.m */; };
@@ -30,6 +29,7 @@
 		D6B3C974242A509900C73B7C /* RCTBPKFlareManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B3C973242A509900C73B7C /* RCTBPKFlareManagerTests.m */; };
 		D6B3C976242A51EF00C73B7C /* RCTBPKFlareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B3C975242A51EF00C73B7C /* RCTBPKFlareTests.m */; };
 		E04388EA83264464B5585ECA /* BpkIcon.woff in Resources */ = {isa = PBXBuildFile; fileRef = A2D44C89E02549FABA514E31 /* BpkIcon.woff */; };
+		F8365D3CA58CB2FD589937AC /* libPods-Backpack Native-Backpack Native Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B061E1817B9D970563E1EA30 /* libPods-Backpack Native-Backpack Native Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,15 +62,15 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = native/main.m; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* Backpack Native-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Backpack Native-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* Backpack Native-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Backpack Native-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DE394024AD4A0354C753C1B /* Pods-Backpack Native-Backpack Native Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backpack Native-Backpack Native Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Backpack Native-Backpack Native Tests/Pods-Backpack Native-Backpack Native Tests.release.xcconfig"; sourceTree = "<group>"; };
 		60005AA122382F040076B576 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		63C31C08F173B9D282D966FB /* libPods-Backpack Native.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Backpack Native.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B59545B47D6FA3C28AB6F8B /* Pods-Backpack Native.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backpack Native.release.xcconfig"; path = "Pods/Target Support Files/Pods-Backpack Native/Pods-Backpack Native.release.xcconfig"; sourceTree = "<group>"; };
 		A2D44C89E02549FABA514E31 /* BpkIcon.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = BpkIcon.woff; path = "../node_modules/bpk-svgs/dist/font/BpkIcon.woff"; sourceTree = "<group>"; };
+		A8DF89F03C8A1484B55CC1BC /* Pods-Backpack Native-Backpack Native Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backpack Native-Backpack Native Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Backpack Native-Backpack Native Tests/Pods-Backpack Native-Backpack Native Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA66E7B8E3114A04B5A1488D /* BpkIconIOS.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = BpkIconIOS.woff; path = "../node_modules/bpk-svgs/dist/font/BpkIconIOS.woff"; sourceTree = "<group>"; };
+		ABDC175C9DB0F0B9CBD71B51 /* libPods-Backpack Native.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Backpack Native.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B061E1817B9D970563E1EA30 /* libPods-Backpack Native-Backpack Native Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Backpack Native-Backpack Native Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1636A374E1F45A88C968BB2 /* BpkIconIOS.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = BpkIconIOS.ttf; path = "../node_modules/bpk-svgs/dist/font/BpkIconIOS.ttf"; sourceTree = "<group>"; };
 		B3896E08C3804FF089E1E50B /* libRCTRestart.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTRestart.a; sourceTree = "<group>"; };
-		B672C303EC65CF0B6897A7CE /* libPods-Backpack Native-Backpack Native Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Backpack Native-Backpack Native Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63703994133B719A6838A67 /* Pods-Backpack Native Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backpack Native Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Backpack Native Tests/Pods-Backpack Native Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C97A3DDE34691C31B4D830BA /* Pods-Backpack Native Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backpack Native Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Backpack Native Tests/Pods-Backpack Native Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D292289F2314411A0046FF30 /* Backpack Native-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Backpack Native-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -85,8 +85,8 @@
 		D681AE252445E94600B0CEE9 /* RCTBPKSnackbarManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTBPKSnackbarManagerTests.m; sourceTree = "<group>"; };
 		D6B3C973242A509900C73B7C /* RCTBPKFlareManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTBPKFlareManagerTests.m; sourceTree = "<group>"; };
 		D6B3C975242A51EF00C73B7C /* RCTBPKFlareTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTBPKFlareTests.m; sourceTree = "<group>"; };
-		E7B1EA0C84221E2A56BBAFD5 /* Pods-Backpack Native-Backpack Native Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backpack Native-Backpack Native Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Backpack Native-Backpack Native Tests/Pods-Backpack Native-Backpack Native Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EBA91A53EB924F979E7C641D /* BpkIcon.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = BpkIcon.ttf; path = "../node_modules/bpk-svgs/dist/font/BpkIcon.ttf"; sourceTree = "<group>"; };
+		F02BB6C645632740871E30B9 /* Pods-Backpack Native-Backpack Native Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backpack Native-Backpack Native Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Backpack Native-Backpack Native Tests/Pods-Backpack Native-Backpack Native Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FBB4289347D8862ADA374625 /* Pods-Backpack Native.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backpack Native.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Backpack Native/Pods-Backpack Native.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31FE34E56FD1996AAEBB6C3E /* libPods-Backpack Native-Backpack Native Tests.a in Frameworks */,
+				F8365D3CA58CB2FD589937AC /* libPods-Backpack Native-Backpack Native Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +104,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60005AA222382F040076B576 /* JavaScriptCore.framework in Frameworks */,
-				80AE0E4AC96A960F75CC171B /* libPods-Backpack Native.a in Frameworks */,
+				93A11238766E920180390589 /* libPods-Backpack Native.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,8 +206,8 @@
 				6B59545B47D6FA3C28AB6F8B /* Pods-Backpack Native.release.xcconfig */,
 				C97A3DDE34691C31B4D830BA /* Pods-Backpack Native Tests.debug.xcconfig */,
 				C63703994133B719A6838A67 /* Pods-Backpack Native Tests.release.xcconfig */,
-				E7B1EA0C84221E2A56BBAFD5 /* Pods-Backpack Native-Backpack Native Tests.debug.xcconfig */,
-				4DE394024AD4A0354C753C1B /* Pods-Backpack Native-Backpack Native Tests.release.xcconfig */,
+				A8DF89F03C8A1484B55CC1BC /* Pods-Backpack Native-Backpack Native Tests.debug.xcconfig */,
+				F02BB6C645632740871E30B9 /* Pods-Backpack Native-Backpack Native Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -237,8 +237,8 @@
 			isa = PBXGroup;
 			children = (
 				60005AA122382F040076B576 /* JavaScriptCore.framework */,
-				63C31C08F173B9D282D966FB /* libPods-Backpack Native.a */,
-				B672C303EC65CF0B6897A7CE /* libPods-Backpack Native-Backpack Native Tests.a */,
+				ABDC175C9DB0F0B9CBD71B51 /* libPods-Backpack Native.a */,
+				B061E1817B9D970563E1EA30 /* libPods-Backpack Native-Backpack Native Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -254,7 +254,7 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				DAD502256E8AD7F8A233E681 /* [CP] Copy Pods Resources */,
+				0AB3410C18CECEFDF462EF4E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -275,7 +275,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				5B36E302A4DA162AB6A80AFC /* [CP] Copy Pods Resources */,
+				2FF57E3C5DE8BECE596708E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -333,21 +333,17 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = 85GL58V56K;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = 85GL58V56K;
 						LastSwiftMigration = 1020;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 85GL58V56K;
 						ProvisioningStyle = Automatic;
 					};
 					2D02E48F1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 85GL58V56K;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
 					};
@@ -430,6 +426,26 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
+		0AB3410C18CECEFDF462EF4E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Backpack Native-Backpack Native Tests/Pods-Backpack Native-Backpack Native Tests-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Backpack/Icon.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Icon.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Backpack Native-Backpack Native Tests/Pods-Backpack Native-Backpack Native Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		15D87A37959EDA41EF13445E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -462,7 +478,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		5B36E302A4DA162AB6A80AFC /* [CP] Copy Pods Resources */ = {
+		2FF57E3C5DE8BECE596708E7 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -498,26 +514,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DAD502256E8AD7F8A233E681 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Backpack Native-Backpack Native Tests/Pods-Backpack Native-Backpack Native Tests-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/Backpack/Icon.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Icon.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Backpack Native-Backpack Native Tests/Pods-Backpack Native-Backpack Native Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -594,18 +590,16 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7B1EA0C84221E2A56BBAFD5 /* Pods-Backpack Native-Backpack Native Tests.debug.xcconfig */;
+			baseConfigurationReference = A8DF89F03C8A1484B55CC1BC /* Pods-Backpack Native-Backpack Native Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				DEVELOPMENT_TEAM = 85GL58V56K;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = nativeTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -622,15 +616,13 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4DE394024AD4A0354C753C1B /* Pods-Backpack Native-Backpack Native Tests.release.xcconfig */;
+			baseConfigurationReference = F02BB6C645632740871E30B9 /* Pods-Backpack Native-Backpack Native Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 85GL58V56K;
 				INFOPLIST_FILE = nativeTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -653,7 +645,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = 85GL58V56K;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = native/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -662,7 +654,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.olliecurt.react;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.skyscanner.backpack-native";
 				PRODUCT_NAME = native;
 				SWIFT_OBJC_BRIDGING_HEADER = "Backpack Native-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -678,7 +670,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 85GL58V56K;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = native/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -687,7 +679,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.olliecurt.react;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.skyscanner.backpack-native";
 				PRODUCT_NAME = native;
 				SWIFT_OBJC_BRIDGING_HEADER = "Backpack Native-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -705,7 +697,6 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 85GL58V56K;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "native-tvOS/Info.plist";
@@ -737,7 +728,6 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 85GL58V56K;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "native-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -766,7 +756,6 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 85GL58V56K;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "native-tvOSTests/Info.plist";
@@ -793,7 +782,6 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 85GL58V56K;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "native-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -830,7 +818,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -874,7 +861,6 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
