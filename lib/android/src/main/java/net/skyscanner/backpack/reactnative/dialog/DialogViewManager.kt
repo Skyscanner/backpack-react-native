@@ -18,6 +18,7 @@
 package net.skyscanner.backpack.reactnative.dialog
 
 import android.content.res.Resources
+import androidx.core.content.ContextCompat
 import com.facebook.react.bridge.JSApplicationIllegalArgumentException
 import com.facebook.react.bridge.ReadableArray
 import com.facebook.react.bridge.ReadableMap
@@ -67,7 +68,7 @@ class DialogViewManager : ViewGroupManager<RNDialog>() {
       val resources: Resources = view.context.resources
       val iconId = resources.getIdentifier(icon.getString("iconId"), "drawable", view.context.packageName)
       val iconColor = resources.getIdentifier(icon.getString("iconColor"), "color", view.context.packageName)
-      view.state.icon = BpkDialog.Icon(iconId, iconColor)
+      view.state.icon = BpkDialog.Icon(iconId, ContextCompat.getColor(view.context, iconColor))
     }
   }
 

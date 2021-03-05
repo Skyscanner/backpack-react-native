@@ -23,10 +23,10 @@ import net.skyscanner.backpack.rating.BpkRating
 
 internal class BpkRatingLocalData(
   private val rating: BpkRating,
-  private val orientation: BpkRating.Orientation,
+  private val style: BpkRating.Style,
   private val size: BpkRating.Size
 ) {
-  fun asBpkRating(context: Context) = BpkRating(context, orientation, size).apply {
+  fun asBpkRating(context: Context) = BpkRating(context, style, size).apply {
     title = rating.title
     subtitle = rating.subtitle
     value = rating.value
