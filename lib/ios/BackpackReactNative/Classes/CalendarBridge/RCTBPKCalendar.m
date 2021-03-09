@@ -67,9 +67,10 @@ NS_ASSUME_NONNULL_BEGIN
     self.utcCalendar.timeZone = [[NSTimeZone alloc] initWithName:@"UTC"];
 }
 
-- (void)setRct_selectionType:(BPKCalendarSelection)rct_selectionType {
-    if(_rct_selectionType != rct_selectionType) {
-        _rct_selectionType = rct_selectionType;
+- (void)setRct_selectionConfiguration:(BPKCalendarSelectionConfiguration *)rct_selectionConfiguration {
+    // Object comparison will always be false as we're using new instances each time?
+    if(_rct_selectionConfiguration != rct_selectionConfiguration) {
+        _rct_selectionConfiguration = rct_selectionConfiguration;
         self.nativeUpdateRequired = YES;
     }
 }
@@ -202,7 +203,7 @@ NS_ASSUME_NONNULL_BEGIN
     if (self.nativeUpdateRequired) {
         self.nativeUpdateRequired = false;
 
-        [super setSelectionType:self.rct_selectionType];
+        [super setSelectionConfiguration:self.rct_selectionConfiguration];
         [self updateNativeMinDate:_rct_minDate]; // Uses synthesized property instead of `self.rct_minDate
         [self updateNativeMaxDate:_rct_maxDate]; // Uses synthesized property instead of `self.rct_maxDate
         [self updateNativeSelectedDates:self.rct_selectedDates];
