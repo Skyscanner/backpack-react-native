@@ -117,7 +117,7 @@ class DialogViewManagerTest {
   }
 
   @Test
-  fun test_icon_invalid_values() {
+  fun test_icon_invalid_id() {
     val view = manager.createViewInstance(themedContext)
     assertThat({
       manager.updateProperties(view, buildProps(
@@ -125,6 +125,11 @@ class DialogViewManagerTest {
         "iconId", "invalid",
         "iconColor", "bpkSkyBlue")))
     }, throws(android.content.res.Resources.NotFoundException::class))
+  }
+
+  @Test
+  fun test_icon_invalid_color() {
+    val view = manager.createViewInstance(themedContext)
     assertThat({
       manager.updateProperties(view, buildProps(
         "icon", JavaOnlyMap.of(
