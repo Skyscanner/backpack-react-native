@@ -67,8 +67,11 @@ class DialogViewManager : ViewGroupManager<RNDialog>() {
     icon?.let {
       val resources: Resources = view.context.resources
       val iconId = resources.getIdentifier(icon.getString("iconId"), "drawable", view.context.packageName)
-      val iconColor = resources.getIdentifier(icon.getString("iconColor"), "color", view.context.packageName)
-      view.state.icon = BpkDialog.Icon(iconId, ContextCompat.getColor(view.context, iconColor))
+      val iconColorId = resources.getIdentifier(icon.getString("iconColor"), "color", view.context.packageName)
+      if (iconColorId == 0) {
+        throw Resources.NotFoundException(icon.getString("iconColor"))
+      }
+      view.state.icon = BpkDialog.Icon(iconId, ContextCompat.getColor(view.context, iconColorId))
     }
   }
 
