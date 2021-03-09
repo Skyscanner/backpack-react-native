@@ -19,6 +19,7 @@ package net.skyscanner.backpack.reactnative.dialog
 
 import android.content.Intent
 import android.os.Looper
+import androidx.core.content.ContextCompat
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.rule.ActivityTestRule
 import com.facebook.react.bridge.JSApplicationIllegalArgumentException
@@ -105,13 +106,14 @@ class DialogViewManagerTest {
   @Test
   fun test_icon() {
     val view = manager.createViewInstance(themedContext)
+    val skyBlueValue = ContextCompat.getColor(themedContext, R.color.bpkSkyBlue)
     manager.updateProperties(view, buildProps(
       "icon", JavaOnlyMap.of(
         "iconId", "bpk_food",
         "iconColor", "bpkSkyBlue")))
 
     assertNotNull(view.state.icon)
-    assertEquals(BpkDialog.Icon(R.drawable.bpk_food, R.color.bpkSkyBlue), view.state.icon)
+    assertEquals(BpkDialog.Icon(R.drawable.bpk_food, skyBlueValue), view.state.icon)
   }
 
   @Test
