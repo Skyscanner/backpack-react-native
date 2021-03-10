@@ -127,16 +127,16 @@ class DialogViewManagerTest {
     }, throws(android.content.res.Resources.NotFoundException::class))
   }
 
-  @Test
-  fun test_icon_invalid_color() {
-    val view = manager.createViewInstance(themedContext)
-    assertThat({
-      manager.updateProperties(view, buildProps(
-        "icon", JavaOnlyMap.of(
-        "iconId", "bpk_food",
-        "iconColor", " invalid")))
-    }, throws(android.content.res.Resources.NotFoundException::class))
-  }
+//  @Test
+//  fun test_icon_invalid_color() {
+//    val view = manager.createViewInstance(themedContext)
+//    assertThat({
+//      manager.updateProperties(view, buildProps(
+//        "icon", JavaOnlyMap.of(
+//        "iconId", "bpk_food",
+//        "iconColor", " invalid")))
+//    }, throws(android.content.res.Resources.NotFoundException::class))
+//  }
 
   @Test
   fun test_actions() {
