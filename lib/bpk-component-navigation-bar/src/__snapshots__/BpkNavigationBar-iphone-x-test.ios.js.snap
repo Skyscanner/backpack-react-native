@@ -26,13 +26,9 @@ exports[`ios - iPhone X BpkNavigationBar dark mode should render correctly 1`] =
         Object {
           "alignItems": "center",
           "flexDirection": "row",
-          "height": 64,
+          "height": 88,
           "justifyContent": "space-between",
           "overflow": "visible",
-          "paddingTop": 44,
-        },
-        Object {
-          "height": 88,
           "paddingTop": 44,
         },
       ]
@@ -187,13 +183,9 @@ exports[`ios - iPhone X BpkNavigationBar dark mode should render correctly with 
         Object {
           "alignItems": "center",
           "flexDirection": "row",
-          "height": 64,
+          "height": 88,
           "justifyContent": "space-between",
           "overflow": "visible",
-          "paddingTop": 44,
-        },
-        Object {
-          "height": 88,
           "paddingTop": 44,
         },
       ]
@@ -384,13 +376,9 @@ exports[`ios - iPhone X BpkNavigationBar light mode should render correctly 1`] 
         Object {
           "alignItems": "center",
           "flexDirection": "row",
-          "height": 64,
+          "height": 88,
           "justifyContent": "space-between",
           "overflow": "visible",
-          "paddingTop": 44,
-        },
-        Object {
-          "height": 88,
           "paddingTop": 44,
         },
       ]
@@ -545,13 +533,9 @@ exports[`ios - iPhone X BpkNavigationBar light mode should render correctly with
         Object {
           "alignItems": "center",
           "flexDirection": "row",
-          "height": 64,
+          "height": 88,
           "justifyContent": "space-between",
           "overflow": "visible",
-          "paddingTop": 44,
-        },
-        Object {
-          "height": 88,
           "paddingTop": 44,
         },
       ]
