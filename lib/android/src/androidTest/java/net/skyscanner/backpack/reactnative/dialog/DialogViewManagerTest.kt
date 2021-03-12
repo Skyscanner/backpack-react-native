@@ -41,6 +41,7 @@ import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertThat
 import org.junit.Assert.assertTrue
 import org.junit.Before
+import org.junit.Ignored
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -127,16 +128,17 @@ class DialogViewManagerTest {
     }, throws(android.content.res.Resources.NotFoundException::class))
   }
 
-//  @Test
-//  fun test_icon_invalid_color() {
-//    val view = manager.createViewInstance(themedContext)
-//    assertThat({
-//      manager.updateProperties(view, buildProps(
-//        "icon", JavaOnlyMap.of(
-//        "iconId", "bpk_food",
-//        "iconColor", " invalid")))
-//    }, throws(android.content.res.Resources.NotFoundException::class))
-//  }
+  @Test
+  @Ignored
+  fun test_icon_invalid_color() {
+    val view = manager.createViewInstance(themedContext)
+    assertThat({
+      manager.updateProperties(view, buildProps(
+        "icon", JavaOnlyMap.of(
+        "iconId", "bpk_food",
+        "iconColor", " invalid")))
+    }, throws(android.content.res.Resources.NotFoundException::class))
+  }
 
   @Test
   fun test_actions() {
