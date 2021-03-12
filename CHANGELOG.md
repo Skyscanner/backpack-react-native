@@ -1,5 +1,11 @@
 # Backpack changelog
 
+# 13.0.1 - 2021-03-12
+
+**Fixed:**
+- bpk-component-navigation-bar:
+  - Fixed status bar height for iPhone 12 family of devices.
+
 # 13.0.0 - 2021-01-05
 
 **Breaking:**
