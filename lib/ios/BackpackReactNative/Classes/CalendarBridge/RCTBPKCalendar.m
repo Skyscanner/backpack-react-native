@@ -68,11 +68,8 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 - (void)setRct_selectionConfiguration:(BPKCalendarSelectionConfiguration *)rct_selectionConfiguration {
-    // Object comparison will always be false as we're using new instances each time?
-    if(_rct_selectionConfiguration != rct_selectionConfiguration) {
-        _rct_selectionConfiguration = rct_selectionConfiguration;
-        self.nativeUpdateRequired = YES;
-    }
+    _rct_selectionConfiguration = rct_selectionConfiguration;
+    self.nativeUpdateRequired = YES;
 }
 
 - (void)setRct_minDate:(nullable NSDate *)rct_minDate {
