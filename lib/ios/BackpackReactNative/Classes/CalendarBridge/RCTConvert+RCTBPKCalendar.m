@@ -21,15 +21,9 @@
 
 #import "RCTBPKColorBucket.h"
 #import "RCTBPKDateMatcher.h"
+#import "RCTBPKCalendarSelectionConfigurationConstants.h"
 
 @implementation RCTConvert (RCTBPKCalendar)
-
-RCT_ENUM_CONVERTER(BPKCalendarSelection, (@{
-                       @"single": @(BPKCalendarSelectionSingle),
-                       @"multiple": @(BPKCalendarSelectionMultiple),
-                       @"range": @(BPKCalendarSelectionRange)
-                   }),
-                   BPKCalendarSelectionSingle, integerValue)
 
 RCT_ENUM_CONVERTER(RCTBPKColorBucketTextStyle, (@{
                        @"default": @(RCTBPKColorBucketTextStyleDefault),
@@ -64,6 +58,31 @@ RCT_ARRAY_CONVERTER(RCTBPKColorBucket)
                                           textStyle:textStyle
                                                days:dateMatcher
                                           cellData:[self BPKCalendarDateCellData:json[@"__cellStyle"]]];
+}
+
++ (BPKCalendarSelectionConfiguration *)BPKCalendarSelectionConfiguration:(id)json {
+    if (json == nil) {
+        // Old behaviour via deprecated delegate methods
+        return nil;
+    }
+
+    if (RCT_DEBUG && ![json isKindOfClass:[NSString class]]) {
+        RCTLogError(@"`__selectionType` must be a string");
+    }
+
+    NSString *stringJson = (NSString *)json;
+    if ([stringJson isEqualToString:@"single"]) {
+        return RCTBPKCalendarSelectionConfigurationConstants.single;
+    } else if ([stringJson isEqualToString:@"range"]) {
+        return RCTBPKCalendarSelectionConfigurationConstants.range;
+    } else if ([stringJson isEqualToString:@"multiple"]) {
+        return RCTBPKCalendarSelectionConfigurationConstants.multiple;
+    } else {
+        if (RCT_DEBUG) {
+            RCTLogError(@"Invalid selection type %@", stringJson);
+        }
+        return RCTBPKCalendarSelectionConfigurationConstants.single;
+    }
 }
 
 + (BPKCalendarTrafficLightCellData *)BPKCalendarDateCellData:(nullable id)json {

@@ -33,5 +33,5 @@
 @property(nonatomic, copy, nullable) NSArray<RCTBPKColorBucket *> *rct_colorBuckets;
 @property(nonatomic, nullable) RCTBPKDateMatcher *rct_disabledDates;
 @property(nonatomic, nonnull) NSArray<NSDate *> *rct_selectedDates;
-@property(nonatomic) BPKCalendarSelection rct_selectionType;
+@property(nonatomic, nonnull) BPKCalendarSelectionConfiguration *rct_selectionConfiguration;
 @end
