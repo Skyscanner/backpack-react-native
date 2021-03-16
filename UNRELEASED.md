@@ -3,7 +3,7 @@
 > Place your changes below this line.
 
 **Updated:**
- - The `backpack-android` dependency is now updated to version `27`.
+ - The `backpack-android` dependency is now updated to version `28`.
 
 ## How to write a good changelog entry
 
