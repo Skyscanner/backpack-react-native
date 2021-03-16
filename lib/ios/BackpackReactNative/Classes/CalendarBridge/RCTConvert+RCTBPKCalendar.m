@@ -23,6 +23,18 @@
 #import "RCTBPKDateMatcher.h"
 #import "RCTBPKCalendarSelectionConfigurationConstants.h"
 
+// Trick to stringify a preprocessor argument
+// See https://stackoverflow.com/questions/7605857/preprocessor-macro-value-to-objective-c-string-literal
+#define NSStringize_helper(x) #x
+#define NSStringize(x) @NSStringize_helper(x)
+
+// Extract a given key from `json` and declare an NSString*
+// variable with the same name. Further asserts that this
+// value is non-nil and non-empty.
+#define SELECTION_PROP(key, json) \
+NSString *key = json[NSStringize(key)]; \
+NSAssert(key && key.length > 0, @"`%s` should be present and non-empty in %@.", #key, json); \
+
 @implementation RCTConvert (RCTBPKCalendar)
 
 RCT_ENUM_CONVERTER(RCTBPKColorBucketTextStyle, (@{
@@ -66,20 +78,41 @@ RCT_ARRAY_CONVERTER(RCTBPKColorBucket)
         return nil;
     }
 
-    if (RCT_DEBUG && ![json isKindOfClass:[NSString class]]) {
-        RCTLogError(@"`__selectionType` must be a string");
+    if (RCT_DEBUG && ![json isKindOfClass:[NSDictionary class]]) {
+        RCTLogError(@"`__selectionType` must be an object");
     }
 
-    NSString *stringJson = (NSString *)json;
-    if ([stringJson isEqualToString:@"single"]) {
-        return RCTBPKCalendarSelectionConfigurationConstants.single;
-    } else if ([stringJson isEqualToString:@"range"]) {
-        return RCTBPKCalendarSelectionConfigurationConstants.range;
-    } else if ([stringJson isEqualToString:@"multiple"]) {
-        return RCTBPKCalendarSelectionConfigurationConstants.multiple;
+    NSDictionary *selection = (NSDictionary *)json;
+    NSString *stringType = selection[@"type"];
+    if ([stringType isEqualToString:@"single"]) {
+        SELECTION_PROP(selectHint, selection);
+
+        return [[BPKCalendarSelectionConfigurationSingle alloc] initWithSelectionHint:selectHint];
+    } else if ([stringType isEqualToString:@"range"]) {
+        SELECTION_PROP(startDateSelectHint, selection);
+        SELECTION_PROP(endDateSelectHint, selection);
+        SELECTION_PROP(startDateSelectedState, selection);
+        SELECTION_PROP(endDateSelectedState, selection);
+        SELECTION_PROP(endAndStartDateSelectedState, selection);
+        SELECTION_PROP(dateBetweenStartAndEndSelectedState, selection);
+        SELECTION_PROP(makeNextSelectionPrompt, selection);
+
+        return [[BPKCalendarSelectionConfigurationRange alloc] initWithStartSelectionHint:startDateSelectHint
+                                                                         endSelectionHint:endDateSelectHint
+                                                                      startSelectionState:startDateSelectedState
+                                                                        endSelectionState:endDateSelectedState
+                                                                    betweenSelectionState:dateBetweenStartAndEndSelectedState
+                                                                startAndEndSelectionState:endAndStartDateSelectedState
+                                                                         returnDatePrompt:makeNextSelectionPrompt];
+    } else if ([stringType isEqualToString:@"multiple"]) {
+        SELECTION_PROP(selectHint, selection);
+        SELECTION_PROP(deselectHint, selection);
+
+        return [[BPKCalendarSelectionConfigurationMultiple alloc] initWithSelectionHint:selectHint
+                                                                        deselectionHint:deselectHint];;
     } else {
         if (RCT_DEBUG) {
-            RCTLogError(@"Invalid selection type %@", stringJson);
+            RCTLogError(@"Invalid selection type %@", selection);
         }
         return RCTBPKCalendarSelectionConfigurationConstants.single;
     }
