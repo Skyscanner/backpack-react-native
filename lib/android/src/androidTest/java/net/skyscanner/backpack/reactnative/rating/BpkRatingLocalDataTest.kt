@@ -44,7 +44,7 @@ class BpkRatingLocalDataTest {
 
     val subject = BpkRatingLocalData(
       bpkRating,
-      BpkRating.Orientation.Vertical,
+      BpkRating.Style.Vertical,
       BpkRating.Size.Base
     ).asBpkRating(contextRule.context)
 

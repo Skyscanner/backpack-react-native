@@ -18,7 +18,6 @@
 package net.skyscanner.backpack.reactnative.calendar
 
 import android.content.Context
-import android.view.View
 import java.util.*
 import net.skyscanner.backpack.calendar.model.CalendarColoring
 import net.skyscanner.backpack.calendar.model.CalendarSelection
@@ -48,13 +47,6 @@ class CalendarController(
   override var monthFooterAdapter: MonthFooterAdapter? = null
 
   var onDatesChange: ChangeCallback? = null
-
-  override val isRtl: Boolean
-    get() {
-      // Based on skyscanner-app/android/src/libraries/legacy/src/main/java/net/skyscanner/go/core/localization/RtlManagerImpl.java
-      val config = applicationContext.resources.configuration
-      return config.layoutDirection == View.LAYOUT_DIRECTION_RTL
-    }
 
   override fun onRangeSelected(range: CalendarSelection) {
     onDatesChange?.invoke(range)

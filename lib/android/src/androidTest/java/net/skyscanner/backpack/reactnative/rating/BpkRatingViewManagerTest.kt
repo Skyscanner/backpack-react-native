@@ -150,8 +150,8 @@ class BpkRatingViewManagerTest {
   fun test_orientation() {
     val view = manager.createViewInstance(themedContext)
     val options = mapOf(
-      "horizontal" to BpkRating.Orientation.Horizontal,
-      "vertical" to BpkRating.Orientation.Vertical)
+      "horizontal" to BpkRating.Style.Horizontal,
+      "vertical" to BpkRating.Style.Vertical)
 
     options.entries.forEach { entry ->
       val jsValue = entry.key

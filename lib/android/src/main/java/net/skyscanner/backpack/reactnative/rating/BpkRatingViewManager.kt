@@ -74,7 +74,7 @@ class BpkRatingViewManager : BaseViewManager<RNBpkRating, BpkRatingShadowNode>()
 
   @ReactProp(name = "orientation")
   fun setOrientation(view: RNBpkRating, orientation: String) {
-    view.state.orientation = orientation.asRatingOrientation()
+    view.state.orientation = orientation.asRatingStyle()
   }
 
   @ReactProp(name = "icon")
@@ -117,10 +117,11 @@ class BpkRatingViewManager : BaseViewManager<RNBpkRating, BpkRatingShadowNode>()
     }
   }
 
-  private fun String.asRatingOrientation(): BpkRating.Orientation {
+  private fun String.asRatingStyle(): BpkRating.Style {
     return when (this.toLowerCase(Locale.ROOT)) {
-      "horizontal" -> BpkRating.Orientation.Horizontal
-      "vertical" -> BpkRating.Orientation.Vertical
+      "pill" -> BpkRating.Style.Horizontal
+      "horizontal" -> BpkRating.Style.Horizontal
+      "vertical" -> BpkRating.Style.Vertical
       else -> throw JSApplicationIllegalArgumentException("$this is not a valid rating orientation")
     }
   }

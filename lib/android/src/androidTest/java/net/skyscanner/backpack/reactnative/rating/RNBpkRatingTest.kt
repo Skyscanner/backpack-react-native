@@ -73,7 +73,7 @@ class RNBpkRatingTest {
     rating.render()
     val instance = rating.getChildAt(0)
 
-    rating.state.orientation = BpkRating.Orientation.Vertical
+    rating.state.orientation = BpkRating.Style.Vertical
     rating.render()
     val newInstance = rating.getChildAt(0)
 
