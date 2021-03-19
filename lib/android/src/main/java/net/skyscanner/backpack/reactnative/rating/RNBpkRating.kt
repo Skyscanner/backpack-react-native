@@ -38,9 +38,9 @@ class RNBpkRating(
   }
 
   fun render() {
-    val view = getUpdatedView(state.style, state.size)
+    val view = getUpdatedView(state.orientation, state.size)
     val uiManager = reactContext.getNativeModule(UIManagerModule::class.java)
-    val localData = BpkRatingLocalData(view, state.style, state.size)
+    val localData = BpkRatingLocalData(view, state.orientation, state.size)
     // This will trigger measure to run in BpkRatingShadowNode
     uiManager.setViewLocalData(id, localData)
     rating = view
@@ -92,7 +92,7 @@ class RNBpkRating(
       var value: Float by markDirtyOnUpdate(0f)
       var icon: ((BpkRating.Score) -> Drawable)? by markDirtyOnUpdate(null)
       var size: BpkRating.Size by markInvalidOnUpdate(BpkRating.Size.Base)
-      var style: BpkRating.Style by markInvalidOnUpdate(BpkRating.Style.Horizontal)
+      var orientation: BpkRating.Style by markInvalidOnUpdate(BpkRating.Style.Horizontal)
     }
   }
 }

@@ -158,7 +158,7 @@ class BpkRatingViewManagerTest {
       val expectedValue = entry.value
 
       manager.updateProperties(view, buildProps("orientation", jsValue))
-      assertEquals(expectedValue, view.state.style)
+      assertEquals(expectedValue, view.state.orientation)
     }
 
     assertThat({

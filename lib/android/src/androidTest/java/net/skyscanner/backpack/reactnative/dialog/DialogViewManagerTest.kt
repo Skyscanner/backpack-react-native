@@ -129,7 +129,7 @@ class DialogViewManagerTest {
   }
 
   @Test
-  @Ignore
+  @Ignore("For some reason the test doesn't behave as expected, although on real device the exception is thrown")
   fun test_icon_invalid_color() {
     val view = manager.createViewInstance(themedContext)
     assertThat({
