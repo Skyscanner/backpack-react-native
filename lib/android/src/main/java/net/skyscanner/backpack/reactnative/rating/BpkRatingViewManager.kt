@@ -74,7 +74,7 @@ class BpkRatingViewManager : BaseViewManager<RNBpkRating, BpkRatingShadowNode>()
 
   @ReactProp(name = "orientation")
   fun setOrientation(view: RNBpkRating, orientation: String) {
-    view.state.style = orientation.asRatingStyle()
+    view.state.orientation = orientation.asRatingStyle()
   }
 
   @ReactProp(name = "icon")
