@@ -1,5 +1,10 @@
 # Backpack changelog
 
+# 13.0.2 - 2021-03-19
+
+**Updated:**
+ - The `backpack-android` dependency is now updated to version `28`.
+
 # 13.0.1 - 2021-03-12
 
 **Fixed:**
