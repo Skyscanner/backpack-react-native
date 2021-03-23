@@ -8,7 +8,12 @@ exports[`Android BpkCalendar should render correctly 1`] = `
   minDate={null}
   onChange={[Function]}
   selectedDates={Array []}
-  selectionType="single"
+  selectionType={
+    Object {
+      "selectHint": "Double tap to select date",
+      "type": "single",
+    }
+  }
   style={null}
 />
 `;
@@ -21,7 +26,13 @@ exports[`Android BpkCalendar should render correctly for selectionType={'multipl
   minDate={null}
   onChange={[Function]}
   selectedDates={Array []}
-  selectionType="multiple"
+  selectionType={
+    Object {
+      "deselectHint": "Double tap to deselect date",
+      "selectHint": "Double tap to select date",
+      "type": "multiple",
+    }
+  }
   style={null}
 />
 `;
@@ -34,7 +45,18 @@ exports[`Android BpkCalendar should render correctly for selectionType={'range'}
   minDate={null}
   onChange={[Function]}
   selectedDates={Array []}
-  selectionType="range"
+  selectionType={
+    Object {
+      "dateBetweenStartAndEndSelectedState": "Selected between departure and return date",
+      "endAndStartDateSelectedState": "Selected as both departure and return date",
+      "endDateSelectHint": "Double tap to select return date",
+      "endDateSelectedState": "Selected as return date",
+      "makeNextSelectionPrompt": "Now select a return date",
+      "startDateSelectHint": "Double tap to select departure date",
+      "startDateSelectedState": "Selected as departure date",
+      "type": "range",
+    }
+  }
   style={null}
 />
 `;
@@ -47,7 +69,12 @@ exports[`Android BpkCalendar should render correctly for selectionType={'single'
   minDate={null}
   onChange={[Function]}
   selectedDates={Array []}
-  selectionType="single"
+  selectionType={
+    Object {
+      "selectHint": "Double tap to select date",
+      "type": "single",
+    }
+  }
   style={null}
 />
 `;
@@ -71,7 +98,12 @@ exports[`Android BpkCalendar should render correctly with androidFooterView 1`] 
   minDate={null}
   onChange={[Function]}
   selectedDates={Array []}
-  selectionType="single"
+  selectionType={
+    Object {
+      "selectHint": "Double tap to select date",
+      "type": "single",
+    }
+  }
   style={null}
 />
 `;
@@ -84,7 +116,12 @@ exports[`Android BpkCalendar should render correctly with arbitrary props 1`] = 
   minDate={null}
   onChange={[Function]}
   selectedDates={Array []}
-  selectionType="single"
+  selectionType={
+    Object {
+      "selectHint": "Double tap to select date",
+      "type": "single",
+    }
+  }
   style={null}
   testID="123"
 />
@@ -98,7 +135,12 @@ exports[`Android BpkCalendar should render correctly with both minDate and maxDa
   minDate={1558224000}
   onChange={[Function]}
   selectedDates={Array []}
-  selectionType="single"
+  selectionType={
+    Object {
+      "selectHint": "Double tap to select date",
+      "type": "single",
+    }
+  }
   style={null}
 />
 `;
@@ -135,7 +177,12 @@ exports[`Android BpkCalendar should render correctly with color buckets 1`] = `
   minDate={null}
   onChange={[Function]}
   selectedDates={Array []}
-  selectionType="single"
+  selectionType={
+    Object {
+      "selectHint": "Double tap to select date",
+      "type": "single",
+    }
+  }
   style={null}
 />
 `;
@@ -148,7 +195,12 @@ exports[`Android BpkCalendar should render correctly with custom style 1`] = `
   minDate={null}
   onChange={[Function]}
   selectedDates={Array []}
-  selectionType="single"
+  selectionType={
+    Object {
+      "selectHint": "Double tap to select date",
+      "type": "single",
+    }
+  }
   style={
     Object {
       "flex": 1,
@@ -172,7 +224,12 @@ exports[`Android BpkCalendar should render correctly with disabled dates 1`] = `
   minDate={null}
   onChange={[Function]}
   selectedDates={Array []}
-  selectionType="single"
+  selectionType={
+    Object {
+      "selectHint": "Double tap to select date",
+      "type": "single",
+    }
+  }
   style={null}
 />
 `;
@@ -185,7 +242,12 @@ exports[`Android BpkCalendar should render correctly with maxDate 1`] = `
   minDate={null}
   onChange={[Function]}
   selectedDates={Array []}
-  selectionType="single"
+  selectionType={
+    Object {
+      "selectHint": "Double tap to select date",
+      "type": "single",
+    }
+  }
   style={null}
 />
 `;
@@ -198,7 +260,12 @@ exports[`Android BpkCalendar should render correctly with minDate 1`] = `
   minDate={1558224000}
   onChange={[Function]}
   selectedDates={Array []}
-  selectionType="single"
+  selectionType={
+    Object {
+      "selectHint": "Double tap to select date",
+      "type": "single",
+    }
+  }
   style={null}
 />
 `;
@@ -216,7 +283,13 @@ exports[`Android BpkCalendar should render correctly with selection type "multip
       1558396800,
     ]
   }
-  selectionType="multiple"
+  selectionType={
+    Object {
+      "deselectHint": "Double tap to deselect date",
+      "selectHint": "Double tap to select date",
+      "type": "multiple",
+    }
+  }
   style={null}
 />
 `;
@@ -234,7 +307,18 @@ exports[`Android BpkCalendar should render correctly with selection type "range"
       1558396800,
     ]
   }
-  selectionType="range"
+  selectionType={
+    Object {
+      "dateBetweenStartAndEndSelectedState": "Selected between departure and return date",
+      "endAndStartDateSelectedState": "Selected as both departure and return date",
+      "endDateSelectHint": "Double tap to select return date",
+      "endDateSelectedState": "Selected as return date",
+      "makeNextSelectionPrompt": "Now select a return date",
+      "startDateSelectHint": "Double tap to select departure date",
+      "startDateSelectedState": "Selected as departure date",
+      "type": "range",
+    }
+  }
   style={null}
 />
 `;
@@ -251,7 +335,12 @@ exports[`Android BpkCalendar should render correctly with selection type "single
       1558224000,
     ]
   }
-  selectionType="single"
+  selectionType={
+    Object {
+      "selectHint": "Double tap to select date",
+      "type": "single",
+    }
+  }
   style={null}
 />
 `;
