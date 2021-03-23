@@ -1,5 +1,11 @@
 # Backpack changelog
 
+# 14.0.0 - 2021-03-23
+
+**Breaking:**
+
+- Improved accessibility of the calendar, `BpkCalendar`. When setting the `selectionType` prop it's no longer enough to use e.g. `SELECTION_TYPES.single`. Instead of `SELECTION_TYPES` there are three new functions to use: `makeSingleSelection`, `makeRangeSelection`, `makeMultipleSelection`. These expect a few additional string arguments for assistive technology users. Read more in the [migration guide](docs/14.0.0-calendar-accessibility-migration.md)
+
 # 13.0.2 - 2021-03-19
 
 **Updated:**
