@@ -33,7 +33,17 @@ const formattedDate = date.toLocaleDateString(locale, { timeZone: 'UTC' });
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
-import BpkCalendar, { SELECTION_TYPES } from 'backpack-react-native/bpk-component-calendar';
+import BpkCalendar, { makeRangeSelection } from 'backpack-react-native/bpk-component-calendar';
+
+const rangeSelection = makeRangeSelection({
+  startDateSelectHint: I18n.translate('CALENDAR_RANGE_START_DATE_SELECT_HINT_LABEL'),
+  endDateSelectHint: I18n.translate('CALENDAR_RANGE_END_DATE_SELECT_HINT_LABEL'),
+  startDateSelectedState: I18n.translate('CALENDAR_RANGE_START_DATE_SELECTED_STATE_LABEL'),
+  endDateSelectedState: I18n.translate('CALENDAR_RANGE_END_DATE_SELECTED_STATE_LABEL'),
+  endAndStartDateSelectedState: I18n.translate('CALENDAR_RANGE_END_AND_START_DATE_SELECTED_STATE_LABEL'),
+  dateBetweenStartAndEndSelectedState: I18n.translate('CALENDAR_RANGE_DATE_BETWEEN_START_AND_END_SELECTED_STATE_LABEL'),
+  makeNextSelectionPrompt: I18n.translate('CALENDAR_RANGE_NEXT_SELECTION_PROMPT_LABEL'),
+});
 
 class App extends Component {
   constructor(props) {
@@ -49,11 +59,10 @@ class App extends Component {
   };
 
   render() {
-    const { selectionType, onChangeSelectedDates, ...rest } = this.props;
     return (
       <BpkCalendar
         locale={'en-gb'}
-        selectionType={SELECTION_TYPES.range}
+        selectionType={rangeSelection}
         selectedDates={this.state.selectedDates}
         onChangeSelectedDates={this.handleNewDates}
         minDate={Date.UTC(2019, 0, 2)}
@@ -74,16 +83,25 @@ implementation to show a list of highlighted days for each month:
 ```js
 import React from 'react';
 import BpkCalendar, {
-  SELECTION_TYPES,
   highlightedDaysFooterView,
   colorBucketHighlight,
   DateMatchers,
 } from 'backpack-react-native/bpk-component-calendar';
 
+const rangeSelection = makeRangeSelection({
+  startDateSelectHint: I18n.translate('CALENDAR_RANGE_START_DATE_SELECT_HINT_LABEL'),
+  endDateSelectHint: I18n.translate('CALENDAR_RANGE_END_DATE_SELECT_HINT_LABEL'),
+  startDateSelectedState: I18n.translate('CALENDAR_RANGE_START_DATE_SELECTED_STATE_LABEL'),
+  endDateSelectedState: I18n.translate('CALENDAR_RANGE_END_DATE_SELECTED_STATE_LABEL'),
+  endAndStartDateSelectedState: I18n.translate('CALENDAR_RANGE_END_AND_START_DATE_SELECTED_STATE_LABEL'),
+  dateBetweenStartAndEndSelectedState: I18n.translate('CALENDAR_RANGE_DATE_BETWEEN_START_AND_END_SELECTED_STATE_LABEL'),
+  makeNextSelectionPrompt: I18n.translate('CALENDAR_RANGE_NEXT_SELECTION_PROMPT_LABEL'),
+});
+
 const App = () => (
   <BpkCalendar
     locale={'en-gb'}
-    selectionType={SELECTION_TYPES.range}
+    selectionType={rangeSelection}
     minDate={Date.UTC(2019, 0, 2)}
     maxDate={Date.UTC(2019, 11, 31)}
     // You can optionally use a highlight color bucket to highlight a day cell in the calendar,
@@ -112,19 +130,29 @@ const App = () => (
 | Property              | PropType               | Required | Default Value          |
 | --------------------- | ---------------------- | -------- | ---------------------- |
 | locale                | string                 | true     | -                      |
+| selectionType         | Object                 | true     | null                   |
 | colorBuckets          | arrayOf(ColorBucket)   | false    | undefined              |
 | disabledDates         | DateMatcher            | false    | null                   |
 | maxDate               | oneOf(Date, number)    | false    | today + 1 year         |
 | minDate               | oneOf(Date, number)    | false    | today                  |
 | onChangeSelectedDates | function               | false    | null                   |
 | selectedDates         | arrayOf(Date, number)  | false    | \[]                    |
-| selectionType         | oneOf(SELECTION_TYPES) | false    | SELECTION_TYPES.single |
 | androidFooterView     | object                 | false    | undefined              |
+
+#### selectionType
+
+This prop expects an object created by one of the the three functions:
+
+* `makeSingleSelection`
+* `makeRangeSelection`
+* `makeMultipleSelection`
+
+They each require a single argument providing the necessary translated strings for assistive technology. Consult the Flow types for or the [migration guide for version 14.0.0](/docs/14.0.0-calendar-accessibility-migration.md) for further details.
 
 #### selectedDates
 
--   When `selectionType` is `SELECTION_TYPES.single`, you should only include zero or one entries in the `selectedDates` array.
--   When `selectionType` is `SELECTION_TYPES.range`, you should only include zero, one or two entries in the `selectedDates` array.
+-   When `selectionType` is created by `makeSingleSelection`, you should only include zero or one entries in the `selectedDates` array.
+-   When `selectionType` is created by `makeRangeSelection`, you should only include zero, one or two entries in the `selectedDates` array.
 
 ## API
 
