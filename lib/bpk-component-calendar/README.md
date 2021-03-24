@@ -83,6 +83,7 @@ implementation to show a list of highlighted days for each month:
 ```js
 import React from 'react';
 import BpkCalendar, {
+  makeRangeSelection,
   highlightedDaysFooterView,
   colorBucketHighlight,
   DateMatchers,
@@ -141,7 +142,7 @@ const App = () => (
 
 #### selectionType
 
-This prop expects an object created by one of the the three functions:
+This prop expects an object created by one of these three functions:
 
 * `makeSingleSelection`
 * `makeRangeSelection`
