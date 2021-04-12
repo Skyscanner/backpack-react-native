@@ -8,19 +8,27 @@ task sourceJar(type: Jar) {
     classifier "source"
 }
 
+def localProperties = new Properties()
+if (rootProject.file("../../android/local.properties").exists()) {
+    localProperties.load(rootProject.file("../../android/local.properties").newDataInputStream())
+}
+
 afterEvaluate { project ->
-    project.ext.getJFrogPassword = {
-        if (project.hasProperty("SKYSCANNER_ARTIFACTORY_MAVEN_PASSWORD")) {
-          return project.property("SKYSCANNER_ARTIFACTORY_MAVEN_PASSWORD")
-        }
-        return ""
-    }
 
     project.ext.getJFrogUsername = {
-        if (project.hasProperty("SKYSCANNER_ARTIFACTORY_MAVEN_USER")) {
-          return project.property("SKYSCANNER_ARTIFACTORY_MAVEN_USER")
+        def result = localProperties.getProperty("SKYSCANNER_ARTIFACTORY_OWNER")
+        if (result == null) {
+            return ""
         }
-        return ""
+        return result
+    }
+
+    project.ext.getJFrogPassword = {
+        def result = localProperties.getProperty("SKYSCANNER_ARTIFACTORY_TOKEN")
+        if (result == null) {
+            return ""
+        }
+        return result
     }
 
     publishing {

@@ -49,11 +49,18 @@ allprojects {
         }
 
         if (rootProject.ext.internalBuild || isUseRelative()) {
+
+          // Get the credentials for internal builds
+          def localProperties = new Properties()
+          if (rootProject.file("local.properties").exists()) {
+              localProperties.load(rootProject.file("local.properties").newDataInputStream())
+          }
+
           maven {
-            url project.properties["SKYSCANNER_ARTIFACTORY_MAVEN_URL"]?.toString()
+            url project.properties["SKYSCANNER_ARTIFACTORY_MAVEN_URL"]?.toString()       
             credentials(PasswordCredentials.class) {
-              username = project.properties["SKYSCANNER_ARTIFACTORY_MAVEN_USER"]?.toString()
-              password = project.properties["SKYSCANNER_ARTIFACTORY_MAVEN_PASSWORD"]?.toString()
+              username = getJFrogUsername(localProperties.getProperty("SKYSCANNER_ARTIFACTORY_OWNER"))
+              password = getJFrogToken(localProperties.getProperty("SKYSCANNER_ARTIFACTORY_TOKEN"))
             }
 
             content {
@@ -132,3 +139,16 @@ def isUseRelative() {
   return localProps.getOrDefault("USE_RELATIVE", "false") == "true"
 }
 
+def getJFrogUsername(username) {
+  if (username == null) {
+    return ""
+  }
+  return username
+}
+
+def getJFrogToken(token) {
+  if (token == null) {
+    return ""
+  }
+  return token
+}
