@@ -19,6 +19,7 @@ exports[`iOS dark mode dark mode should render correctly 1`] = `
       undefined,
     ]
   }
+  zIndex={null}
 >
   <View
     style={
@@ -120,6 +121,7 @@ exports[`iOS dark mode dark mode should render correctly with disabled={true} 1`
       undefined,
     ]
   }
+  zIndex={null}
 >
   <View
     style={
@@ -230,6 +232,7 @@ exports[`iOS dark mode dark mode should render correctly with status=default 1`]
       undefined,
     ]
   }
+  zIndex={null}
 >
   <View
     style={
@@ -331,6 +334,7 @@ exports[`iOS dark mode dark mode should render correctly with status=focused 1`]
       undefined,
     ]
   }
+  zIndex={null}
 >
   <View
     style={
@@ -446,6 +450,7 @@ exports[`iOS dark mode dark mode should render correctly with status=viewed 1`] 
       undefined,
     ]
   }
+  zIndex={null}
 >
   <View
     style={
@@ -537,6 +542,108 @@ exports[`iOS dark mode dark mode should render correctly with status=viewed 1`] 
 </AIRMapMarker>
 `;
 
+exports[`iOS dark mode dark mode should render correctly with zIndex 1`] = `
+<AIRMapMarker
+  coordinate={
+    Object {
+      "latitude": 52.516379,
+      "longitude": 13.378026,
+    }
+  }
+  onPress={[Function]}
+  stopPropagation={false}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "position": "absolute",
+      },
+      undefined,
+    ]
+  }
+  zIndex={1000}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
+          },
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": -4,
+            "height": 16,
+            "left": "50%",
+            "position": "absolute",
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 16,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "System",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0.154,
+            "textAlign": "left",
+          },
+          Object {
+            "fontWeight": "700",
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      123€
+    </Text>
+  </View>
+</AIRMapMarker>
+`;
+
 exports[`iOS dark mode light mode should render correctly 1`] = `
 <AIRMapMarker
   coordinate={
@@ -556,6 +663,7 @@ exports[`iOS dark mode light mode should render correctly 1`] = `
       undefined,
     ]
   }
+  zIndex={null}
 >
   <View
     style={
@@ -657,6 +765,7 @@ exports[`iOS dark mode light mode should render correctly with disabled={true} 1
       undefined,
     ]
   }
+  zIndex={null}
 >
   <View
     style={
@@ -767,6 +876,7 @@ exports[`iOS dark mode light mode should render correctly with status=default 1`
       undefined,
     ]
   }
+  zIndex={null}
 >
   <View
     style={
@@ -868,6 +978,7 @@ exports[`iOS dark mode light mode should render correctly with status=focused 1`
       undefined,
     ]
   }
+  zIndex={null}
 >
   <View
     style={
@@ -983,6 +1094,7 @@ exports[`iOS dark mode light mode should render correctly with status=viewed 1`]
       undefined,
     ]
   }
+  zIndex={null}
 >
   <View
     style={
@@ -1074,6 +1186,108 @@ exports[`iOS dark mode light mode should render correctly with status=viewed 1`]
 </AIRMapMarker>
 `;
 
+exports[`iOS dark mode light mode should render correctly with zIndex 1`] = `
+<AIRMapMarker
+  coordinate={
+    Object {
+      "latitude": 52.516379,
+      "longitude": 13.378026,
+    }
+  }
+  onPress={[Function]}
+  stopPropagation={false}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "position": "absolute",
+      },
+      undefined,
+    ]
+  }
+  zIndex={1000}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
+          },
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": -4,
+            "height": 16,
+            "left": "50%",
+            "position": "absolute",
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 16,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "System",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0.154,
+            "textAlign": "left",
+          },
+          Object {
+            "fontWeight": "700",
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      123€
+    </Text>
+  </View>
+</AIRMapMarker>
+`;
+
 exports[`iOS light mode dark mode should render correctly 1`] = `
 <AIRMapMarker
   coordinate={
@@ -1093,6 +1307,7 @@ exports[`iOS light mode dark mode should render correctly 1`] = `
       undefined,
     ]
   }
+  zIndex={null}
 >
   <View
     style={
@@ -1194,6 +1409,7 @@ exports[`iOS light mode dark mode should render correctly with disabled={true} 1
       undefined,
     ]
   }
+  zIndex={null}
 >
   <View
     style={
@@ -1304,6 +1520,7 @@ exports[`iOS light mode dark mode should render correctly with status=default 1`
       undefined,
     ]
   }
+  zIndex={null}
 >
   <View
     style={
@@ -1405,6 +1622,7 @@ exports[`iOS light mode dark mode should render correctly with status=focused 1`
       undefined,
     ]
   }
+  zIndex={null}
 >
   <View
     style={
@@ -1520,6 +1738,7 @@ exports[`iOS light mode dark mode should render correctly with status=viewed 1`]
       undefined,
     ]
   }
+  zIndex={null}
 >
   <View
     style={
@@ -1611,6 +1830,108 @@ exports[`iOS light mode dark mode should render correctly with status=viewed 1`]
 </AIRMapMarker>
 `;
 
+exports[`iOS light mode dark mode should render correctly with zIndex 1`] = `
+<AIRMapMarker
+  coordinate={
+    Object {
+      "latitude": 52.516379,
+      "longitude": 13.378026,
+    }
+  }
+  onPress={[Function]}
+  stopPropagation={false}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "position": "absolute",
+      },
+      undefined,
+    ]
+  }
+  zIndex={1000}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
+          },
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": -4,
+            "height": 16,
+            "left": "50%",
+            "position": "absolute",
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 16,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "System",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0.154,
+            "textAlign": "left",
+          },
+          Object {
+            "fontWeight": "700",
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      123€
+    </Text>
+  </View>
+</AIRMapMarker>
+`;
+
 exports[`iOS light mode light mode should render correctly 1`] = `
 <AIRMapMarker
   coordinate={
@@ -1630,6 +1951,7 @@ exports[`iOS light mode light mode should render correctly 1`] = `
       undefined,
     ]
   }
+  zIndex={null}
 >
   <View
     style={
@@ -1731,6 +2053,7 @@ exports[`iOS light mode light mode should render correctly with disabled={true} 
       undefined,
     ]
   }
+  zIndex={null}
 >
   <View
     style={
@@ -1841,6 +2164,7 @@ exports[`iOS light mode light mode should render correctly with status=default 1
       undefined,
     ]
   }
+  zIndex={null}
 >
   <View
     style={
@@ -1942,6 +2266,7 @@ exports[`iOS light mode light mode should render correctly with status=focused 1
       undefined,
     ]
   }
+  zIndex={null}
 >
   <View
     style={
@@ -2057,6 +2382,7 @@ exports[`iOS light mode light mode should render correctly with status=viewed 1`
       undefined,
     ]
   }
+  zIndex={null}
 >
   <View
     style={
@@ -2137,6 +2463,108 @@ exports[`iOS light mode light mode should render correctly with status=viewed 1`
             },
             Object {
               "color": "rgb(7, 112, 227)",
+            },
+          ],
+        ]
+      }
+    >
+      123€
+    </Text>
+  </View>
+</AIRMapMarker>
+`;
+
+exports[`iOS light mode light mode should render correctly with zIndex 1`] = `
+<AIRMapMarker
+  coordinate={
+    Object {
+      "latitude": 52.516379,
+      "longitude": 13.378026,
+    }
+  }
+  onPress={[Function]}
+  stopPropagation={false}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "position": "absolute",
+      },
+      undefined,
+    ]
+  }
+  zIndex={1000}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "paddingHorizontal": 8,
+          "paddingVertical": 4,
+          "shadowColor": "rgb(17, 18, 54)",
+          "shadowOffset": Object {
+            "height": 0.5,
+            "width": 0,
+          },
+          "shadowOpacity": 0.15,
+          "shadowRadius": 1.5,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": -4,
+            "height": 16,
+            "left": "50%",
+            "position": "absolute",
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 16,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(7, 112, 227)",
+            "borderRadius": 4,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
+      }
+    />
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(17, 18, 54)",
+            "fontFamily": "System",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0.154,
+            "textAlign": "left",
+          },
+          Object {
+            "fontWeight": "700",
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
             },
           ],
         ]
