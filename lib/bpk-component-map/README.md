@@ -120,6 +120,7 @@ export default class App extends Component {
 | longitude | number | true | - |
 | disabled | bool | false | false |
 | status | oneOf(`PRICE_MARKER_STATUSES.default`, `PRICE_MARKER_STATUSES.focused`, `PRICE_MARKER_STATUSES.viewed`) | false | `PRICE_MARKER_STATUSES.default` |
+| zIndex | number | false | null |
 
 #### BpkIconMarker
 
@@ -130,3 +131,4 @@ export default class App extends Component {
 | longitude | number | true | - |
 | disabled | bool | false | false |
 | status | oneOf(`ICON_MARKER_STATUSES.default`, `ICON_MARKER_STATUSES.focused`) | false | `ICON_MARKER_STATUSES.default` |
+| zIndex | number | false | null |

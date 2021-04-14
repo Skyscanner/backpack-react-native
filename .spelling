@@ -328,6 +328,7 @@ BpkDynamicStyleProp
 pickerContentRef
 onShow
 React.Ref
+zIndex
 
 # Sizes
 xs
