@@ -1,9 +1,5 @@
 # Unreleased
 
-**Added:**
-  - bpk-component-map:
-    - Added new `zIndex` prop to map, to control position of markers.
-
 > Place your changes below this line.
 
 ## How to write a good changelog entry

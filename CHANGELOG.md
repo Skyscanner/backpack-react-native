@@ -1,5 +1,11 @@
 # Backpack changelog
 
+# 14.1.0 - 2021-04-15
+
+**Added:**
+  - bpk-component-map:
+    - Added new `zIndex` prop to map, to control position of markers.
+
 # 14.0.0 - 2021-03-23
 
 **Breaking:**
