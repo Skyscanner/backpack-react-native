@@ -9,8 +9,8 @@ task sourceJar(type: Jar) {
 }
 
 def localProperties = new Properties()
-if (rootProject.file("../../android/local.properties").exists()) {
-    localProperties.load(rootProject.file("../../android/local.properties").newDataInputStream())
+if (rootProject.file("../android/local.properties").exists()) {
+    localProperties.load(rootProject.file("../android/local.properties").newDataInputStream())
 }
 
 afterEvaluate { project ->

@@ -59,7 +59,7 @@ allprojects {
           maven {
             url project.properties["SKYSCANNER_ARTIFACTORY_MAVEN_URL"]?.toString()       
             credentials(PasswordCredentials.class) {
-              username = getJFrogUsername(localProperties.getProperty("SKYSCANNER_ARTIFACTORY_OWNER"))
+              username = getJFrogUser(localProperties.getProperty("SKYSCANNER_ARTIFACTORY_OWNER"))
               password = getJFrogToken(localProperties.getProperty("SKYSCANNER_ARTIFACTORY_TOKEN"))
             }
 
@@ -139,7 +139,7 @@ def isUseRelative() {
   return localProps.getOrDefault("USE_RELATIVE", "false") == "true"
 }
 
-def getJFrogUsername(username) {
+def getJFrogUser(username) {
   if (username == null) {
     return ""
   }
