@@ -21,7 +21,6 @@
 
 #import "RCTBPKColorBucket.h"
 #import "RCTBPKDateMatcher.h"
-#import "RCTBPKCalendarSelectionConfigurationConstants.h"
 
 // Trick to stringify a preprocessor argument
 // See https://stackoverflow.com/questions/7605857/preprocessor-macro-value-to-objective-c-string-literal
@@ -114,7 +113,7 @@ RCT_ARRAY_CONVERTER(RCTBPKColorBucket)
         if (RCT_DEBUG) {
             RCTLogError(@"Invalid selection type %@", selection);
         }
-        return RCTBPKCalendarSelectionConfigurationConstants.single;
+        return [[BPKCalendarSelectionConfigurationSingle alloc] initWithSelectionHint:@""];
     }
 }
 
