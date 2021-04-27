@@ -23,15 +23,22 @@
 @implementation RCTBPKCalendarSelectionConfigurationConstants
 
 + (BPKCalendarSelectionConfiguration *)single {
-    return [BPKCalendarSelectionConfigurationSingle new];
+    return [[BPKCalendarSelectionConfigurationSingle alloc] initWithSelectionHint:@""];
 }
 
 + (BPKCalendarSelectionConfiguration *)range {
-    return [BPKCalendarSelectionConfigurationRange new];
+    return [[BPKCalendarSelectionConfigurationRange alloc] initWithStartSelectionHint:@""
+                                                                     endSelectionHint:@""
+                                                                  startSelectionState:@""
+                                                                    endSelectionState:@""
+                                                                betweenSelectionState:@""
+                                                            startAndEndSelectionState:@""
+                                                                     returnDatePrompt:@""];
 }
 
 + (BPKCalendarSelectionConfiguration *)multiple {
-    return [BPKCalendarSelectionConfigurationMultiple new];
+    return [[BPKCalendarSelectionConfigurationMultiple alloc] initWithSelectionHint:@""
+                                                                    deselectionHint:@""];
 }
 
 @end
