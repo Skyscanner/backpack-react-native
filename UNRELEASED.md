@@ -1,6 +1,9 @@
 # Unreleased
 
 > Place your changes below this line.
+**Fixed:**
+
+- Fixed issue that caused BackpackReactNative to fail to compile on Xcode 12.5.
 
 ## How to write a good changelog entry
 
