@@ -1,5 +1,10 @@
 # Backpack changelog
 
+# 14.1.1 - 2021-04-27
+
+**Fixed:**
+ - Removed unused constants that were breaking build in XCode 12.5.
+
 # 14.1.0 - 2021-04-15
 
 **Added:**
