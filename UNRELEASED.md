@@ -1,6 +1,8 @@
 # Unreleased
 
 > Place your changes below this line.
+**Fixed:**
+ - Removed unused constants that were breaking build in XCode 12.5.
 
 ## How to write a good changelog entry
 
