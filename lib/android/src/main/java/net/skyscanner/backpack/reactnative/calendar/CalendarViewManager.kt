@@ -59,8 +59,8 @@ class CalendarViewManager : ViewGroupManager<RNCalendarView>() {
   }
 
   @ReactProp(name = "selectionType")
-  fun setSelectionType(view: RNCalendarView, selectionType: String) {
-    view.state.selectionType = when (selectionType) {
+  fun setSelectionType(view: RNCalendarView, selectionType: ReadableMap) {
+    view.state.selectionType = when (selectionType.getString("type")) {
       "range" -> SelectionType.RANGE
       "single" -> SelectionType.SINGLE
       "multiple" -> SelectionType.RANGE // TODO: support multiple selection
