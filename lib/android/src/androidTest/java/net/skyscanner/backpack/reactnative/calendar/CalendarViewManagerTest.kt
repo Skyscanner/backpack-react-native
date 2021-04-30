@@ -20,17 +20,20 @@ package net.skyscanner.backpack.reactnative.calendar
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
+import com.facebook.react.bridge.Arguments
 import com.facebook.react.bridge.JSApplicationIllegalArgumentException
 import com.facebook.react.bridge.JavaOnlyArray
 import com.facebook.react.bridge.JavaOnlyMap
 import com.facebook.react.uimanager.ReactStylesDiffMap
 import com.facebook.react.uimanager.ThemedReactContext
+import com.facebook.soloader.SoLoader
 import com.jakewharton.threetenabp.AndroidThreeTen
 import io.mockk.mockk
 import io.mockk.verify
 import net.skyscanner.backpack.calendar.presenter.HighlightedDaysAdapter
 import net.skyscanner.backpack.calendar.presenter.SelectionType
 import net.skyscanner.backpack.reactnative.testing.Matchers.throws
+import net.skyscanner.backpack.reactnative.testing.ReactContextTestRule
 import net.skyscanner.backpack.reactnative.testing.ReactViewManagerTestRule
 import org.junit.Assert.assertArrayEquals
 import org.junit.Assert.assertEquals
@@ -45,6 +48,9 @@ import org.threeten.bp.LocalDate
 
 @RunWith(AndroidJUnit4::class)
 class CalendarViewManagerTest {
+
+  @get:Rule
+  val contextRule = ReactContextTestRule()
 
   @get:Rule
   val managerRule = ReactViewManagerTestRule(CalendarViewManager::class)
@@ -62,6 +68,8 @@ class CalendarViewManagerTest {
 
   @Before
   fun setup() {
+    SoLoader.init(contextRule.context, 0)
+
     AndroidThreeTen.init(InstrumentationRegistry.getInstrumentation().targetContext)
     date1 = LocalDate.of(2020, 3, 16)
     date2 = LocalDate.of(2020, 3, 20)
@@ -90,7 +98,9 @@ class CalendarViewManagerTest {
     )
 
     options.entries.forEach { entry ->
-      val selectionType = entry.key
+      val selectionType = Arguments.createMap().apply {
+        putString("type", entry.key)
+      }
       val expected = entry.value
 
       manager.updateProperties(view, buildProps("selectionType", selectionType))
@@ -312,7 +322,9 @@ class CalendarViewManagerTest {
         "disabledDates", JavaOnlyMap.of(
           "type", "range",
           "dates", JavaOnlyArray.of(date1Seconds, date2Seconds)),
-        "selectionType", "range",
+        "selectionType", Arguments.createMap().apply {
+          putString("type", "range")
+        },
         "minDate", date1Seconds,
         "maxDate", date2Seconds,
         "disabledDates", JavaOnlyMap.of(
