@@ -1,5 +1,13 @@
 # Backpack changelog
 
+# 14.1.2 - 2021-04-30
+
+**Breaking:**
+ - Now requires Backpack iOS 43.0.0
+
+**Fixed:**
+ - Fixed an issue that caused the Calendar to crash on Android.
+
 # 14.1.1 - 2021-04-27
 
 **Fixed:**

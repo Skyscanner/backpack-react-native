@@ -1,11 +1,6 @@
 # Unreleased
 
 > Place your changes below this line.
-**Fixed:**
- - Fixed an issue that caused the Calendar to crash on Android.
-
-**Breaking:**
- - Now requires Backpack iOS 43.0.0
 
 ## How to write a good changelog entry
 
