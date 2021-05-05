@@ -26,6 +26,9 @@ const pkg = require('../../lib/package.json');
 const meta = require('../../meta.json');
 
 let failures = false;
+// People who've left but we can't remove them because npm won't let us
+// because they were the original publishers of some packages.
+const DEARLY_DEPARTED = ['tiagohngl'];
 
 const owners = meta.maintainers.map((maintainer) => maintainer.npm).sort();
 
@@ -68,7 +71,7 @@ const verifyMaintainers = (data) => {
   // Filter mattface as panel and touchable-overlay still have Matt as maintainer
   // and it fails to remove
   const sortedMaintainers = data.maintainers
-    .filter((u) => u !== 'mattface')
+    .filter((m) => !DEARLY_DEPARTED.includes(m))
     .sort();
 
   if (sortedMaintainers.join('') === owners.join('')) {
