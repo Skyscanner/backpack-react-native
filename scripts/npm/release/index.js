@@ -47,6 +47,7 @@ const gradle = `${androidAppRoot}/gradlew`;
 const major = semver.inc(pkg.version, 'major');
 const minor = semver.inc(pkg.version, 'minor');
 const patch = semver.inc(pkg.version, 'patch');
+const prerelease = semver.inc(pkg.version, 'prerelease', 'alpha');
 
 const dryRun = process.argv[2] === '--dry-run';
 
@@ -73,6 +74,9 @@ const questions = [
       },
       {
         patch,
+      },
+      {
+        prerelease,
       },
     ].map((i) => {
       const key = Object.keys(i)[0];
@@ -161,7 +165,7 @@ async function releaseIt(version) {
   shell.execSync('git push origin main', { dryRun });
   shell.execSync(`git push origin v${version}`, { dryRun });
 
-  shell.execSync(`npm publish . --tag latest ${dryRun ? '--dry-run' : ''}`, {
+  shell.execSync(`npm publish . --tag canary ${dryRun ? '--dry-run' : ''}`, {
     cwd: distRoot,
   });
 
