@@ -24,9 +24,6 @@ jobs:
           nvm install
           npm ci
 
-      - name: Run tests
-        run: npm test
-
       - name: Validate Gradle Wrapper
         uses: gradle/wrapper-validation-action@v1
 
