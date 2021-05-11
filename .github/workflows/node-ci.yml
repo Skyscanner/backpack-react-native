@@ -24,5 +24,10 @@ jobs:
           nvm install
           npm ci
 
+      - name: Build
+        run: npm run build
+
       - name: Run tests
-        run: npm test
+        run: |
+          nvm use
+          npm test

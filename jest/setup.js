@@ -18,7 +18,10 @@
 
 /* @flow */
 
-import { NativeModules } from 'react-native';
+import { Appearance, NativeModules } from 'react-native';
+
+Appearance.addChangeListener = jest.fn();
+Appearance.removeChangeListener = jest.fn();
 
 NativeModules.AndroidBpkSnackbar = {
   LENGTH_SHORT: 0,
