@@ -17,4 +17,3 @@
  */
 import '@storybook/addon-actions/register';
 import './addons/rtl';
-import './addons/dark-mode';
