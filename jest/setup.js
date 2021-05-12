@@ -18,10 +18,17 @@
 
 /* @flow */
 
-import { Appearance, NativeModules } from 'react-native';
+import { useState } from 'react';
+import { NativeModules } from 'react-native';
 
-Appearance.addChangeListener = jest.fn();
-Appearance.removeChangeListener = jest.fn();
+jest.mock('react', () => ({
+  ...jest.requireActual('react'),
+  useState: jest.fn(),
+  useEffect: jest.fn(),
+}));
+
+// $FlowFixMe
+useState.mockImplementation((init) => [init, jest.fn()]);
 
 NativeModules.AndroidBpkSnackbar = {
   LENGTH_SHORT: 0,
