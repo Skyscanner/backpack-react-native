@@ -27,7 +27,6 @@ end
 
 desc "Runs clang-format on all h and m files to ensure formatting is correct"
 task :lint do
-  sh "git diff"
   abort red "The following generated files have changed during setup:\n#{get_changed_files}" unless check_pristine
   `clang-format -i ../**/*.h ../**/*.m`
   abort red "clang-format has changed the following files:\n#{get_changed_files}" unless check_pristine
