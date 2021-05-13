@@ -47,7 +47,6 @@ const gradle = `${androidAppRoot}/gradlew`;
 const major = semver.inc(pkg.version, 'major');
 const minor = semver.inc(pkg.version, 'minor');
 const patch = semver.inc(pkg.version, 'patch');
-const prerelease = semver.inc(pkg.version, 'prerelease', 'alpha');
 
 const dryRun = process.argv[2] === '--dry-run';
 
@@ -74,9 +73,6 @@ const questions = [
       },
       {
         patch,
-      },
-      {
-        prerelease,
       },
     ].map((i) => {
       const key = Object.keys(i)[0];
@@ -108,14 +104,14 @@ const isGradleAuthenticated = () => {
     });
 };
 
-// const isMainBranch = () => {
-//   if (
-//     shell.execSync('git rev-parse --abbrev-ref HEAD').toString().trim() !==
-//     'main'
-//   ) {
-//     throw new Error(ERRORS.branchNotMain);
-//   }
-// };
+const isMainBranch = () => {
+  if (
+    shell.execSync('git rev-parse --abbrev-ref HEAD').toString().trim() !==
+    'main'
+  ) {
+    throw new Error(ERRORS.branchNotMain);
+  }
+};
 
 const isCleanWorkingDirClean = () => {
   try {
@@ -134,7 +130,7 @@ async function checkEnv() {
   console.log('🤔  ', '> Checking environment');
   await isBranchUpTodate();
   await isGradleAuthenticated();
-  // isMainBranch();
+  isMainBranch();
   isCleanWorkingDirClean();
 }
 
@@ -159,13 +155,13 @@ async function releaseIt(version) {
   });
 
   // Tag and commit the version
-  // shell.execSync('git add .', { dryRun });
-  // shell.execSync(`git commit -m"Release ${version}" --no-verify`, { dryRun });
-  // shell.execSync(`git tag v${version}`, { dryRun });
-  // shell.execSync('git push origin main', { dryRun });
-  // shell.execSync(`git push origin v${version}`, { dryRun });
+  shell.execSync('git add .', { dryRun });
+  shell.execSync(`git commit -m"Release ${version}" --no-verify`, { dryRun });
+  shell.execSync(`git tag v${version}`, { dryRun });
+  shell.execSync('git push origin main', { dryRun });
+  shell.execSync(`git push origin v${version}`, { dryRun });
 
-  shell.execSync(`npm publish . --tag canary ${dryRun ? '--dry-run' : ''}`, {
+  shell.execSync(`npm publish . --tag latest ${dryRun ? '--dry-run' : ''}`, {
     cwd: distRoot,
   });
 

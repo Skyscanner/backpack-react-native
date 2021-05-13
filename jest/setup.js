@@ -27,7 +27,7 @@ jest.mock('react', () => ({
   useEffect: jest.fn(),
 }));
 
-// $FlowFixMe
+// $FlowFixMe - This will need a review to the error being thrown
 useState.mockImplementation((init) => [init, jest.fn()]);
 
 NativeModules.AndroidBpkSnackbar = {
