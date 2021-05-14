@@ -1,5 +1,5 @@
 PODS:
-  - Backpack (43.1.0):
+  - Backpack (43.2.0):
     - FloatingPanel (= 1.6.6)
     - FSCalendar (~> 2.8.2)
     - MBProgressHUD (~> 1.2.0)
@@ -217,8 +217,8 @@ PODS:
     - React-jsi (= 0.64.1)
     - React-perflogger (= 0.64.1)
   - React-jsinspector (0.64.1)
-  - react-native-maps (0.27.1):
-    - React
+  - react-native-maps (0.28.0):
+    - React-Core
   - React-perflogger (0.64.1)
   - React-RCTActionSheet (0.64.1):
     - React-Core/RCTActionSheetHeaders (= 0.64.1)
@@ -396,7 +396,7 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  Backpack: cdeb62fa570654e0ce2fc201a819bcca841ae595
+  Backpack: ce9620298cc324af8d9f0a570801865f6e67bc4e
   BackpackReactNative: 1869aa5e49fa5c06d7d576355dad870d071b1210
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BVLinearGradient: e3aad03778a456d77928f594a649e96995f1c872
@@ -418,7 +418,7 @@ SPEC CHECKSUMS:
   React-jsi: 5de8204706bd872b78ea646aee5d2561ca1214b6
   React-jsiexecutor: 124e8f99992490d0d13e0649d950d3e1aae06fe9
   React-jsinspector: 500a59626037be5b3b3d89c5151bc3baa9abf1a9
-  react-native-maps: f4b89da81626ad7f151a8bfcb79733295d31ce5c
+  react-native-maps: 2d405b4e8cee0282e4c02bac434d81450dfea877
   React-perflogger: aad6d4b4a267936b3667260d1f649b6f6069a675
   React-RCTActionSheet: fc376be462c9c8d6ad82c0905442fd77f82a9d2a
   React-RCTAnimation: ba0a1c3a2738be224a08092fa7f1b444ab77d309
