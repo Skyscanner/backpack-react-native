@@ -25,7 +25,7 @@ import fs from 'fs';
 import { includes } from 'lodash';
 import { danger, fail, warn, markdown } from 'danger';
 
-import { props as iosProps } from './node_modules/bpk-tokens/tokens/base.raw.ios.json';
+import { props as iosProps } from './node_modules/@skyscanner/bpk-react-native/tokens/base.raw.ios.json';
 
 const getRandomFromArray = (arr) => arr[Math.floor(Math.random() * arr.length)];
 const currentYear = new Date().getFullYear();

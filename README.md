@@ -157,7 +157,7 @@ This package depends on [`react-native-maps`](https://github.com/react-community
           <string>BpkIcon.ttf</string>
         </array>
       ```
-  2. In the `Build Phases` of your project, in the section `Copy Bundle Resources` add a reference to the `BpkIcon.ttf` file path like `/path/to/node_modules/bpk-svgs/dist/font/BpkIcon.ttf`
+  2. In the `Build Phases` of your project, in the section `Copy Bundle Resources` add a reference to the `BpkIcon.ttf` file path like `/path/to/node_modules/@skyscanner/bpk-svgs/dist/font/BpkIcon.ttf`
 
   3. Rebuild the app
 

@@ -11,7 +11,7 @@ Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usag
 ```js
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
-import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
+import { spacingBase } from '@skyscanner/bpk-react-native/tokens/base.react.native';
 import BpkChip, { BpkDismissibleChip } from 'backpack-react-native/bpk-component-chip';
 import BpkIcon, { icons } from 'backpack-react-native//bpk-component-icon';
 
