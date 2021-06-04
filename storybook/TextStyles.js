@@ -18,7 +18,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { spacingSm } from 'bpk-tokens/tokens/base.react.native';
+import { spacingSm } from '@skyscanner/bpk-react-native/tokens/base.react.native';
 
 import BpkText from '../lib/bpk-component-text';
 

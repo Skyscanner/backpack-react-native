@@ -24,5 +24,5 @@ module.exports = {
       },
     },
   },
-  assets: ['./packages/node_modules/bpk-svgs/dist/font/'],
+  assets: ['./packages/node_modules/@skyscanner/bpk-svgs/dist/font/'],
 };

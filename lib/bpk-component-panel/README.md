@@ -13,7 +13,7 @@ import React, { Component } from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 import BpkPanel from 'backpack-react-native/bpk-component-panel';
 import BpkText from 'backpack-react-native/bpk-component-text';
-import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
+import { spacingBase } from '@skyscanner/bpk-react-native/tokens/base.react.native';
 
 const styles = StyleSheet.create({
   container: {
@@ -49,7 +49,7 @@ export default class App extends Component {
 import React, { Component } from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 import BpkText from 'backpack-react-native/bpk-component-text';
-import { spacingBase } from 'bpk-tokens/tokens/base.react.native';
+import { spacingBase } from '@skyscanner/bpk-react-native/tokens/base.react.native';
 import BpkPanel, { withDivider } from 'backpack-react-native/bpk-component-panel';
 
 const BpkPanelWithDivider = withDivider(BpkPanel);

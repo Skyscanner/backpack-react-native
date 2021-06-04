@@ -21,7 +21,7 @@ import React, { type Node } from 'react';
 import addon from '@storybook/addons';
 import { I18nManager, View } from 'react-native';
 import { getStorybookUI, configure } from '@storybook/react-native';
-import { backgroundColor } from 'bpk-tokens/tokens/base.react.native';
+import { backgroundColor } from '@skyscanner/bpk-react-native/tokens/base.react.native';
 
 import BpkAppearance, {
   BpkAppearanceProvider,

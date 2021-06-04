@@ -38,7 +38,7 @@ import {
 import {
   backgroundDarkColor,
   backgroundLightColor,
-} from 'bpk-tokens/tokens/base.react.native';
+} from '@skyscanner/bpk-react-native/tokens/base.react.native';
 
 const style = BpkDynamicStyleSheet.create({
   view: {
@@ -83,7 +83,7 @@ import {
 import {
   backgroundDarkColor,
   backgroundLightColor,
-} from 'bpk-tokens/tokens/base.react.native';
+} from '@skyscanner/bpk-react-native/tokens/base.react.native';
 
 const style = BpkDynamicStyleSheet.create({
   view: {
@@ -136,7 +136,7 @@ import {
 import {
   backgroundDarkColor,
   backgroundLightColor,
-} from 'bpk-tokens/tokens/base.react.native';
+} from '@skyscanner/bpk-react-native/tokens/base.react.native';
 
 const style = BpkDynamicStyleSheet.create({
   view: {

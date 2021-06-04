@@ -2,11 +2,11 @@
 
 `BpkThemeAttributes` was introduced in 2019 to facilitate Skyscanner's rebrand. It gave components access to style properties that were not available as tokens at the time.
 
-Now the rebrand is complete and all tokens are available from the `bpk-tokens` package, `BpkThemeAttributes` is deprecated and will be removed at the end of 2020. **All code using it must be migrated to consume tokens from `bpk-tokens`, or it will stop working at the end of 2020.**
+Now the rebrand is complete and all tokens are available from the `@skyscanner/bpk-react-native` package, `BpkThemeAttributes` is deprecated and will be removed at the end of 2020. **All code using it must be migrated to consume tokens from `@skyscanner/bpk-react-native`, or it will stop working at the end of 2020.**
 
 ## Sample migration
 
-To migrate, remove the `BpkThemeAttributes` wrapper from your components and import tokens from `bpk-tokens`.
+To migrate, remove the `BpkThemeAttributes` wrapper from your components and import tokens from `@skyscanner/bpk-react-native`.
 
 ### Before
 
@@ -32,7 +32,7 @@ const MyComponent = () => (
 import {
   colorSkyGrayTint02,
   colorSkyBlue,
-} from 'bpk-tokens/tokens/base.react.native';
+} from '@skyscanner/bpk-react-native/tokens/base.react.native';
 
 const MyComponent = () => (
   <View style={{
@@ -44,9 +44,9 @@ const MyComponent = () => (
 
 ## Token conversions
 
-The token names in `BpkThemeAttributes` and `bpk-tokens` are different, so you'll need to change the names you use.
+The token names in `BpkThemeAttributes` and `@skyscanner/bpk-react-native` are different, so you'll need to change the names you use.
 
-| Name in `BpkThemeAttributes` | Name in `bpk-tokens` |
+| Name in `BpkThemeAttributes` | Name in `@skyscanner/bpk-react-native` |
 |-|-|
 | `colorGray50` | `colorSkyGrayTint07` |
 | `colorGray100` | `colorSkyGrayTint06` |

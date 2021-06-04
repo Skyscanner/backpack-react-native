@@ -11,7 +11,7 @@ Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usag
 ```js
 import React, { Component } from 'react';
 import { Image, View, StyleSheet } from 'react-native';
-import { spacingXl } from 'bpk-tokens/tokens/base.react.native';
+import { spacingXl } from '@skyscanner/bpk-react-native/tokens/base.react.native';
 import BpkCarousel, { BpkCarouselItem } from 'backpack-react-native/bpk-component-carousel';
 import BpkImage, { withLoadingBehaviour } from 'backpack-react-native/bpk-component-image';
 
