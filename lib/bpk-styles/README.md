@@ -20,7 +20,7 @@ import {
   borderRadiusXs,
   elevationBase,
   elevationLg,
-} from '@skyscanner/bpk-react-native/tokens/base.react.native';
+} from '@skyscanner/bpk-foundations-react-native/tokens/base.react.native';
 import { shadows } from 'backpack-react-native/bpk-styles';
 
 const styles = StyleSheet.create({
@@ -69,7 +69,7 @@ import {
   borderRadiusXs,
   elevationBase,
   elevationLg,
-} from '@skyscanner/bpk-react-native/tokens/base.react.native';
+} from '@skyscanner/bpk-foundations-react-native/tokens/base.react.native';
 import { gradients } from 'bpk-styles';
 
 const MyComponent = props => {

@@ -12,7 +12,7 @@ Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usag
 import React, { Component } from 'react';
 import { View, StyleSheet } from 'react-native';
 import BpkText from 'backpack-react-native/bpk-component-text';
-import { spacingBase } from '@skyscanner/bpk-react-native/tokens/base.react.native';
+import { spacingBase } from '@skyscanner/bpk-foundations-react-native/tokens/base.react.native';
 import BpkTouchableOverlay from 'backpack-react-native/bpk-component-touchable-overlay';
 
 const styles = StyleSheet.create({

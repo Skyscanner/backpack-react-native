@@ -3,7 +3,7 @@
 > Place your changes below this line.
 
 **Fixed:**
-- Migrated to new Backpack Foundations packages, `@skyscanner/bpk-react-native` and `@skyscanner/bpk-svgs.`
+- Migrated to new Backpack Foundations packages, `@skyscanner/bpk-foundations-react-native` and `@skyscanner/bpk-svgs.`
 
 ## How to write a good changelog entry
 

@@ -20,7 +20,7 @@ import { StyleSheet, ScrollView } from 'react-native';
 import {
   spacingBase,
   spacingLg,
-} from '@skyscanner/bpk-react-native/tokens/base.react.native';
+} from '@skyscanner/bpk-foundations-react-native/tokens/base.react.native';
 
 const styles = StyleSheet.create({
   centered: {

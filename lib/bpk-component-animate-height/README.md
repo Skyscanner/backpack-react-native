@@ -13,7 +13,7 @@ import React, { Component } from 'react';
 import { View, StyleSheet } from 'react-native';
 import BpkText from 'backpack-react-native/bpk-component-text';
 import BpkButton from 'backpack-react-native/bpk-component-button';
-import { spacingBase } from '@skyscanner/bpk-react-native/tokens/base.react.native';
+import { spacingBase } from '@skyscanner/bpk-foundations-react-native/tokens/base.react.native';
 import BpkAnimateHeight from 'backpack-react-native/bpk-component-animate-height';
 
 const styles = StyleSheet.create({
