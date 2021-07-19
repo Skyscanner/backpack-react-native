@@ -111,7 +111,7 @@
     "react-native-codegen": "0.0.7",
     "react-native-dash": "0.0.11",
     "react-native-dotenv": "^2.5.1",
-    "react-native-linear-gradient": "^2.5.6",
+    "react-native-linear-gradient": "https://github.com/react-native-linear-gradient/react-native-linear-gradient#0e3af58",
     "react-native-maps": "^0.28.0",
     "react-test-renderer": "17.0.1",
     "tmp": "^0.2.1",
