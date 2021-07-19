@@ -2,6 +2,9 @@
 
 > Place your changes below this line.
 
+**Breaking:**
+- Now requires Backpack iOS 44.0.0
+
 **Changed:**
  - Updated the underlying dark mode library to the native React Native implementation instead of a 3rd party library, for compatibility with RN 0.64.0.
 

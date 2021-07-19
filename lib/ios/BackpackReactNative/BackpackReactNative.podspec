@@ -17,5 +17,5 @@ Pod::Spec.new do |s|
 
   s.dependency 'React'
   s.dependency 'react-native-maps'
-  s.dependency 'Backpack', '~> 43.0'
+  s.dependency 'Backpack', '~> 44.0'
 end
