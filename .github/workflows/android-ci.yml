@@ -32,9 +32,15 @@ jobs:
 
       - name: Gradle build
         run: ./android/gradlew -p android :app:assembleDebug :backpack-react-native:assembleAndroidTest
-
-      - name: Run Android unit tests
-        run: ./android/gradlew -p android :app:Test :backpack-react-native:Test
+      
+      # Only run tests if not in a forked repo as it depends on secrets not available to forks
+      - name: Run Android tests
+        if: github.event.pull_request.head.repo.full_name == github.repository
+        run: ./scripts/android/ci-tests.sh
+      
+# For now we will run the old tests compared to #715 as they use features that are available in the RN 64 upgrade. Once the PR is merged these can be reinstated and replaced.
+      # - name: Run Android unit tests
+        # run: ./android/gradlew -p android :app:Test :backpack-react-native:Test
   
   # These tests currently fail so we will need a follow up ticket to fix them.
   # Android:
