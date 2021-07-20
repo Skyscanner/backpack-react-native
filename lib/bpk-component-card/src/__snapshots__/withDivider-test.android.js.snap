@@ -17,11 +17,11 @@ exports[`Android withDivider should render correctly 1`] = `
     accessibilityRole="button"
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -141,11 +141,11 @@ exports[`Android withDivider should render correctly with "cornerStyle=large" 1`
     accessibilityRole="button"
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -262,11 +262,11 @@ exports[`Android withDivider should render correctly with arbitrary props 1`] = 
     accessibilityRole="button"
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -384,11 +384,11 @@ exports[`Android withDivider should render correctly with custom main style 1`] 
     accessibilityRole="button"
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -508,11 +508,11 @@ exports[`Android withDivider should render correctly with custom stub style 1`] 
     accessibilityRole="button"
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -632,11 +632,11 @@ exports[`Android withDivider should render correctly without padding 1`] = `
     accessibilityRole="button"
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }

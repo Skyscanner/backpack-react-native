@@ -28,7 +28,7 @@ const getConfig = (baseConfig) => ({
   testMatch: null,
   snapshotResolver: '<rootDir>/jest/snapshotResolver.js',
   transformIgnorePatterns: [
-    'node_modules/(?!react-native|bpk|@skyscanner|lodash-es)',
+    'node_modules/(?!react-native|@react-native|bpk|@skyscanner|lodash-es)',
   ],
   transform: {
     ...baseConfig.transform,

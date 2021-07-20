@@ -30,14 +30,13 @@ exports[`Android BpkNudger should render correctly 1`] = `
     <View
       accessibilityLabel="Decrease"
       accessibilityRole="button"
-      accessibilityStates={Array []}
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       nativeBackgroundAndroid={
         Object {
           "borderless": true,
           "color": null,
+          "rippleRadius": undefined,
           "type": "RippleAndroid",
         }
       }
@@ -151,14 +150,13 @@ exports[`Android BpkNudger should render correctly 1`] = `
     <View
       accessibilityLabel="Increase"
       accessibilityRole="button"
-      accessibilityStates={Array []}
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       nativeBackgroundAndroid={
         Object {
           "borderless": true,
           "color": null,
+          "rippleRadius": undefined,
           "type": "RippleAndroid",
         }
       }
@@ -263,18 +261,13 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
     <View
       accessibilityLabel="Decrease"
       accessibilityRole="button"
-      accessibilityStates={
-        Array [
-          "disabled",
-        ]
-      }
       accessible={true}
       focusable={false}
-      isTVSelectable={true}
       nativeBackgroundAndroid={
         Object {
           "borderless": true,
           "color": null,
+          "rippleRadius": undefined,
           "type": "RippleAndroid",
         }
       }
@@ -388,14 +381,13 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
     <View
       accessibilityLabel="Increase"
       accessibilityRole="button"
-      accessibilityStates={Array []}
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       nativeBackgroundAndroid={
         Object {
           "borderless": true,
           "color": null,
+          "rippleRadius": undefined,
           "type": "RippleAndroid",
         }
       }
@@ -500,14 +492,13 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
     <View
       accessibilityLabel="Decrease"
       accessibilityRole="button"
-      accessibilityStates={Array []}
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       nativeBackgroundAndroid={
         Object {
           "borderless": true,
           "color": null,
+          "rippleRadius": undefined,
           "type": "RippleAndroid",
         }
       }
@@ -621,18 +612,13 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
     <View
       accessibilityLabel="Increase"
       accessibilityRole="button"
-      accessibilityStates={
-        Array [
-          "disabled",
-        ]
-      }
       accessible={true}
       focusable={false}
-      isTVSelectable={true}
       nativeBackgroundAndroid={
         Object {
           "borderless": true,
           "color": null,
+          "rippleRadius": undefined,
           "type": "RippleAndroid",
         }
       }
@@ -737,18 +723,13 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
     <View
       accessibilityLabel="Decrease"
       accessibilityRole="button"
-      accessibilityStates={
-        Array [
-          "disabled",
-        ]
-      }
       accessible={true}
       focusable={false}
-      isTVSelectable={true}
       nativeBackgroundAndroid={
         Object {
           "borderless": true,
           "color": null,
+          "rippleRadius": undefined,
           "type": "RippleAndroid",
         }
       }
@@ -862,14 +843,13 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
     <View
       accessibilityLabel="Increase"
       accessibilityRole="button"
-      accessibilityStates={Array []}
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       nativeBackgroundAndroid={
         Object {
           "borderless": true,
           "color": null,
+          "rippleRadius": undefined,
           "type": "RippleAndroid",
         }
       }

@@ -4,13 +4,6 @@ exports[`BpkTouchableNativeFeedback dark mode should render correctly on API < 2
 <FakeComponent
   accessible={true}
   focusable={false}
-  isTVSelectable={true}
-  nativeBackgroundAndroid={
-    Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
-    }
-  }
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -25,14 +18,6 @@ exports[`BpkTouchableNativeFeedback dark mode should render correctly on API >= 
 <FakeComponent
   accessible={true}
   focusable={false}
-  isTVSelectable={true}
-  nativeBackgroundAndroid={
-    Object {
-      "borderless": true,
-      "color": -9934465,
-      "type": "RippleAndroid",
-    }
-  }
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -47,14 +32,6 @@ exports[`BpkTouchableNativeFeedback dark mode should render correctly with a dyn
 <FakeComponent
   accessible={true}
   focusable={false}
-  isTVSelectable={true}
-  nativeBackgroundAndroid={
-    Object {
-      "borderless": true,
-      "color": -16777216,
-      "type": "RippleAndroid",
-    }
-  }
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -69,14 +46,6 @@ exports[`BpkTouchableNativeFeedback dark mode should render correctly with a str
 <FakeComponent
   accessible={true}
   focusable={false}
-  isTVSelectable={true}
-  nativeBackgroundAndroid={
-    Object {
-      "borderless": true,
-      "color": -1,
-      "type": "RippleAndroid",
-    }
-  }
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -91,14 +60,6 @@ exports[`BpkTouchableNativeFeedback dark mode should render correctly with arbit
 <FakeComponent
   accessible={true}
   focusable={false}
-  isTVSelectable={true}
-  nativeBackgroundAndroid={
-    Object {
-      "borderless": true,
-      "color": -9934465,
-      "type": "RippleAndroid",
-    }
-  }
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -114,14 +75,6 @@ exports[`BpkTouchableNativeFeedback dark mode should render correctly with custo
 <FakeComponent
   accessible={true}
   focusable={false}
-  isTVSelectable={true}
-  nativeBackgroundAndroid={
-    Object {
-      "borderless": true,
-      "color": -9934465,
-      "type": "RippleAndroid",
-    }
-  }
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -136,13 +89,6 @@ exports[`BpkTouchableNativeFeedback light mode should render correctly on API < 
 <FakeComponent
   accessible={true}
   focusable={false}
-  isTVSelectable={true}
-  nativeBackgroundAndroid={
-    Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
-    }
-  }
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -157,14 +103,6 @@ exports[`BpkTouchableNativeFeedback light mode should render correctly on API >=
 <FakeComponent
   accessible={true}
   focusable={false}
-  isTVSelectable={true}
-  nativeBackgroundAndroid={
-    Object {
-      "borderless": true,
-      "color": null,
-      "type": "RippleAndroid",
-    }
-  }
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -179,14 +117,6 @@ exports[`BpkTouchableNativeFeedback light mode should render correctly with a dy
 <FakeComponent
   accessible={true}
   focusable={false}
-  isTVSelectable={true}
-  nativeBackgroundAndroid={
-    Object {
-      "borderless": true,
-      "color": -1,
-      "type": "RippleAndroid",
-    }
-  }
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -201,14 +131,6 @@ exports[`BpkTouchableNativeFeedback light mode should render correctly with a st
 <FakeComponent
   accessible={true}
   focusable={false}
-  isTVSelectable={true}
-  nativeBackgroundAndroid={
-    Object {
-      "borderless": true,
-      "color": -1,
-      "type": "RippleAndroid",
-    }
-  }
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -223,14 +145,6 @@ exports[`BpkTouchableNativeFeedback light mode should render correctly with arbi
 <FakeComponent
   accessible={true}
   focusable={false}
-  isTVSelectable={true}
-  nativeBackgroundAndroid={
-    Object {
-      "borderless": true,
-      "color": null,
-      "type": "RippleAndroid",
-    }
-  }
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -246,14 +160,6 @@ exports[`BpkTouchableNativeFeedback light mode should render correctly with cust
 <FakeComponent
   accessible={true}
   focusable={false}
-  isTVSelectable={true}
-  nativeBackgroundAndroid={
-    Object {
-      "borderless": true,
-      "color": null,
-      "type": "RippleAndroid",
-    }
-  }
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}

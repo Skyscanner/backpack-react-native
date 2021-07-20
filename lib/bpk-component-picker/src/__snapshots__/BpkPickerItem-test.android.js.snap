@@ -4,14 +4,13 @@ exports[`Android BpkPickerItem dark mode should render correctly 1`] = `
 <View
   accessibilityLabel="label"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": -9934465,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -54,14 +53,13 @@ exports[`Android BpkPickerItem dark mode should render correctly with an onPress
 <View
   accessibilityLabel="label"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": -9934465,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -104,18 +102,13 @@ exports[`Android BpkPickerItem dark mode should render correctly with the select
 <View
   accessibilityLabel="label"
   accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "selected",
-    ]
-  }
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": -9934465,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -160,14 +153,13 @@ exports[`Android BpkPickerItem light mode should render correctly 1`] = `
 <View
   accessibilityLabel="label"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": null,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -210,14 +202,13 @@ exports[`Android BpkPickerItem light mode should render correctly with an onPres
 <View
   accessibilityLabel="label"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": null,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -260,18 +251,13 @@ exports[`Android BpkPickerItem light mode should render correctly with the selec
 <View
   accessibilityLabel="label"
   accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "selected",
-    ]
-  }
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": null,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }

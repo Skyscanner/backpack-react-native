@@ -2,7 +2,7 @@
 
 exports[`iOS BpkSwitch dark mode should disable theming if the required attribute is omitted 1`] = `
 <RCTSwitch
-  accessibilityRole="button"
+  accessibilityRole="switch"
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
@@ -25,7 +25,7 @@ exports[`iOS BpkSwitch dark mode should disable theming if the required attribut
 
 exports[`iOS BpkSwitch dark mode should render correctly 1`] = `
 <RCTSwitch
-  accessibilityRole="button"
+  accessibilityRole="switch"
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
@@ -48,7 +48,7 @@ exports[`iOS BpkSwitch dark mode should render correctly 1`] = `
 
 exports[`iOS BpkSwitch dark mode should support the "value" prop 1`] = `
 <RCTSwitch
-  accessibilityRole="button"
+  accessibilityRole="switch"
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
@@ -71,7 +71,7 @@ exports[`iOS BpkSwitch dark mode should support the "value" prop 1`] = `
 
 exports[`iOS BpkSwitch dark mode should support theming 1`] = `
 <RCTSwitch
-  accessibilityRole="button"
+  accessibilityRole="switch"
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
@@ -94,7 +94,7 @@ exports[`iOS BpkSwitch dark mode should support theming 1`] = `
 
 exports[`iOS BpkSwitch light mode should disable theming if the required attribute is omitted 1`] = `
 <RCTSwitch
-  accessibilityRole="button"
+  accessibilityRole="switch"
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
@@ -117,7 +117,7 @@ exports[`iOS BpkSwitch light mode should disable theming if the required attribu
 
 exports[`iOS BpkSwitch light mode should render correctly 1`] = `
 <RCTSwitch
-  accessibilityRole="button"
+  accessibilityRole="switch"
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
@@ -140,7 +140,7 @@ exports[`iOS BpkSwitch light mode should render correctly 1`] = `
 
 exports[`iOS BpkSwitch light mode should support the "value" prop 1`] = `
 <RCTSwitch
-  accessibilityRole="button"
+  accessibilityRole="switch"
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
@@ -163,7 +163,7 @@ exports[`iOS BpkSwitch light mode should support the "value" prop 1`] = `
 
 exports[`iOS BpkSwitch light mode should support theming 1`] = `
 <RCTSwitch
-  accessibilityRole="button"
+  accessibilityRole="switch"
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}

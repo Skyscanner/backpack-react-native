@@ -17,13 +17,12 @@ exports[`Android API levels Android API<21 should render without ripple 1`] = `
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "attribute": "selectableItemBackground",
+        "rippleRadius": undefined,
         "type": "ThemeAttrAndroid",
       }
     }
@@ -102,14 +101,13 @@ exports[`Android API levels Android API>=21 should render with ripple 1`] = `
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -188,14 +186,13 @@ exports[`Android BpkButton dark mode should render correctly 1`] = `
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": -9934465,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -274,14 +271,13 @@ exports[`Android BpkButton dark mode should render correctly with type="destruct
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": -9934465,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -362,18 +358,13 @@ exports[`Android BpkButton dark mode should render correctly with type="destruct
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={
-      Array [
-        "disabled",
-      ]
-    }
     accessible={true}
     focusable={false}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": -9934465,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -454,14 +445,13 @@ exports[`Android BpkButton dark mode should render correctly with type="featured
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": -9934465,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -543,18 +533,13 @@ exports[`Android BpkButton dark mode should render correctly with type="featured
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={
-      Array [
-        "disabled",
-      ]
-    }
     accessible={true}
     focusable={false}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": -9934465,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -633,14 +618,13 @@ exports[`Android BpkButton dark mode should render correctly with type="outline"
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": -9934465,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -721,18 +705,13 @@ exports[`Android BpkButton dark mode should render correctly with type="outline"
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={
-      Array [
-        "disabled",
-      ]
-    }
     accessible={true}
     focusable={false}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": -9934465,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -813,14 +792,13 @@ exports[`Android BpkButton dark mode should render correctly with type="primary"
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": -9934465,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -902,18 +880,13 @@ exports[`Android BpkButton dark mode should render correctly with type="primary"
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={
-      Array [
-        "disabled",
-      ]
-    }
     accessible={true}
     focusable={false}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": -9934465,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -992,14 +965,13 @@ exports[`Android BpkButton dark mode should render correctly with type="secondar
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": -9934465,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -1080,18 +1052,13 @@ exports[`Android BpkButton dark mode should render correctly with type="secondar
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={
-      Array [
-        "disabled",
-      ]
-    }
     accessible={true}
     focusable={false}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": -9934465,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -1175,14 +1142,13 @@ exports[`Android BpkButton dark mode should support overwriting styles 1`] = `
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": -9934465,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -1264,18 +1230,13 @@ exports[`Android BpkButton dark mode should support the "disabled" property 1`] 
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={
-      Array [
-        "disabled",
-      ]
-    }
     accessible={true}
     focusable={false}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": -9934465,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -1354,14 +1315,13 @@ exports[`Android BpkButton light mode should render correctly 1`] = `
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -1440,14 +1400,13 @@ exports[`Android BpkButton light mode should render correctly with type="destruc
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -1528,18 +1487,13 @@ exports[`Android BpkButton light mode should render correctly with type="destruc
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={
-      Array [
-        "disabled",
-      ]
-    }
     accessible={true}
     focusable={false}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -1620,14 +1574,13 @@ exports[`Android BpkButton light mode should render correctly with type="feature
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -1709,18 +1662,13 @@ exports[`Android BpkButton light mode should render correctly with type="feature
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={
-      Array [
-        "disabled",
-      ]
-    }
     accessible={true}
     focusable={false}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -1799,14 +1747,13 @@ exports[`Android BpkButton light mode should render correctly with type="outline
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -1887,18 +1834,13 @@ exports[`Android BpkButton light mode should render correctly with type="outline
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={
-      Array [
-        "disabled",
-      ]
-    }
     accessible={true}
     focusable={false}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -1979,14 +1921,13 @@ exports[`Android BpkButton light mode should render correctly with type="primary
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -2068,18 +2009,13 @@ exports[`Android BpkButton light mode should render correctly with type="primary
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={
-      Array [
-        "disabled",
-      ]
-    }
     accessible={true}
     focusable={false}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -2158,14 +2094,13 @@ exports[`Android BpkButton light mode should render correctly with type="seconda
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -2246,18 +2181,13 @@ exports[`Android BpkButton light mode should render correctly with type="seconda
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={
-      Array [
-        "disabled",
-      ]
-    }
     accessible={true}
     focusable={false}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -2341,14 +2271,13 @@ exports[`Android BpkButton light mode should support overwriting styles 1`] = `
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -2430,18 +2359,13 @@ exports[`Android BpkButton light mode should support the "disabled" property 1`]
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={
-      Array [
-        "disabled",
-      ]
-    }
     accessible={true}
     focusable={false}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -2520,14 +2444,13 @@ exports[`Android BpkButton should render correctly with iconAlignment="leading" 
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -2629,14 +2552,13 @@ exports[`Android BpkButton should render correctly with iconAlignment="trailing"
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -2745,14 +2667,13 @@ exports[`Android BpkButton should support elements as icons 1`] = `
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -2844,14 +2765,13 @@ exports[`Android BpkButton should support having an icon as well as a title 1`] 
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -2960,14 +2880,13 @@ exports[`Android BpkButton should support the "icon" property 1`] = `
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -3076,14 +2995,13 @@ exports[`Android BpkButton should support the "iconOnly" property 1`] = `
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -3172,14 +3090,13 @@ exports[`Android BpkButtonThemed should not apply border radius when a theme is 
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -3268,14 +3185,13 @@ exports[`Android BpkButtonThemed should render correctly 1`] = `
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }

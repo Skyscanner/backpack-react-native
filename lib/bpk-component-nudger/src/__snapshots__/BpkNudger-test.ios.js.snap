@@ -15,7 +15,6 @@ exports[`iOS BpkNudger should render correctly 1`] = `
   <View
     accessibilityLabel="Decrease"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
     onClick={[Function]}
@@ -143,7 +142,6 @@ exports[`iOS BpkNudger should render correctly 1`] = `
   <View
     accessibilityLabel="Increase"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
     onClick={[Function]}
@@ -262,11 +260,6 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
   <View
     accessibilityLabel="Decrease"
     accessibilityRole="button"
-    accessibilityStates={
-      Array [
-        "disabled",
-      ]
-    }
     accessible={true}
     focusable={true}
     onClick={[Function]}
@@ -394,7 +387,6 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
   <View
     accessibilityLabel="Increase"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
     onClick={[Function]}
@@ -513,7 +505,6 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
   <View
     accessibilityLabel="Decrease"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
     onClick={[Function]}
@@ -641,11 +632,6 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
   <View
     accessibilityLabel="Increase"
     accessibilityRole="button"
-    accessibilityStates={
-      Array [
-        "disabled",
-      ]
-    }
     accessible={true}
     focusable={true}
     onClick={[Function]}
@@ -764,11 +750,6 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
   <View
     accessibilityLabel="Decrease"
     accessibilityRole="button"
-    accessibilityStates={
-      Array [
-        "disabled",
-      ]
-    }
     accessible={true}
     focusable={true}
     onClick={[Function]}
@@ -896,7 +877,6 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
   <View
     accessibilityLabel="Increase"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
     onClick={[Function]}

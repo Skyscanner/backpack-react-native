@@ -18,14 +18,17 @@
 
 /* @flow */
 
+import { useState } from 'react';
 import { NativeModules } from 'react-native';
 
-NativeModules.RNDarkMode = {
-  initialMode: 'light',
-  supportsDarkMode: true,
-  addListener: jest.fn(),
-  removeListeners: jest.fn(),
-};
+jest.mock('react', () => ({
+  ...jest.requireActual('react'),
+  useState: jest.fn(),
+  useEffect: jest.fn(),
+}));
+
+// $FlowFixMe - This will need a review to the error being thrown
+useState.mockImplementation((init) => [init, jest.fn()]);
 
 NativeModules.AndroidBpkSnackbar = {
   LENGTH_SHORT: 0,

@@ -4,14 +4,13 @@ exports[`Android BpkHorizontalNavItem dark mode should render correctly 1`] = `
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": -9934465,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -61,18 +60,13 @@ exports[`Android BpkHorizontalNavItem dark mode should render correctly with "di
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "disabled",
-    ]
-  }
   accessible={true}
   focusable={false}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": -9934465,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -125,14 +119,13 @@ exports[`Android BpkHorizontalNavItem dark mode should render correctly with "se
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={false}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": -9934465,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -185,14 +178,13 @@ exports[`Android BpkHorizontalNavItem light mode should render correctly 1`] = `
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": null,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -242,18 +234,13 @@ exports[`Android BpkHorizontalNavItem light mode should render correctly with "d
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "disabled",
-    ]
-  }
   accessible={true}
   focusable={false}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": null,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -306,14 +293,13 @@ exports[`Android BpkHorizontalNavItem light mode should render correctly with "s
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={false}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": null,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -366,14 +352,13 @@ exports[`Android BpkHorizontalNavItem should render correctly with "small" prop 
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": null,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -426,14 +411,13 @@ exports[`Android BpkHorizontalNavItem should render correctly with "spaceAround"
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": null,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -483,14 +467,13 @@ exports[`Android BpkHorizontalNavItem should render correctly with arbitrary pro
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": null,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -540,14 +523,13 @@ exports[`Android BpkHorizontalNavItem should render correctly with custom "style
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": null,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -600,14 +582,13 @@ exports[`Android BpkHorizontalNavItem should render item text correctly with cus
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": null,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }
@@ -660,14 +641,13 @@ exports[`Android BpkHorizontalNavItem should support theming 1`] = `
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
       "color": null,
+      "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
   }

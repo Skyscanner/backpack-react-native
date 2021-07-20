@@ -515,14 +515,13 @@ exports[`Android BpkBannerAlert dark mode should render correctly with dismissab
           <View
             accessibilityLabel="Dismiss"
             accessibilityRole="button"
-            accessibilityStates={Array []}
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
                 "borderless": true,
                 "color": -9934465,
+                "rippleRadius": undefined,
                 "type": "RippleAndroid",
               }
             }
@@ -668,14 +667,13 @@ exports[`Android BpkBannerAlert dark mode should render correctly with dismissab
           <View
             accessibilityLabel="Dismiss"
             accessibilityRole="button"
-            accessibilityStates={Array []}
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
                 "borderless": true,
                 "color": -9934465,
+                "rippleRadius": undefined,
                 "type": "RippleAndroid",
               }
             }
@@ -2326,14 +2324,13 @@ exports[`Android BpkBannerAlert light mode should render correctly with dismissa
           <View
             accessibilityLabel="Dismiss"
             accessibilityRole="button"
-            accessibilityStates={Array []}
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
                 "borderless": true,
                 "color": null,
+                "rippleRadius": undefined,
                 "type": "RippleAndroid",
               }
             }
@@ -2479,14 +2476,13 @@ exports[`Android BpkBannerAlert light mode should render correctly with dismissa
           <View
             accessibilityLabel="Dismiss"
             accessibilityRole="button"
-            accessibilityStates={Array []}
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
                 "borderless": true,
                 "color": null,
+                "rippleRadius": undefined,
                 "type": "RippleAndroid",
               }
             }
@@ -4203,11 +4199,11 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
         accessibilityRole="button"
         accessible={true}
         focusable={true}
-        isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
             "borderless": true,
             "color": null,
+            "rippleRadius": undefined,
             "type": "RippleAndroid",
           }
         }
@@ -4400,11 +4396,11 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
         accessibilityRole="button"
         accessible={true}
         focusable={true}
-        isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
             "borderless": true,
             "color": null,
+            "rippleRadius": undefined,
             "type": "RippleAndroid",
           }
         }
@@ -4617,11 +4613,11 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
         accessibilityRole="button"
         accessible={true}
         focusable={true}
-        isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
             "borderless": true,
             "color": null,
+            "rippleRadius": undefined,
             "type": "RippleAndroid",
           }
         }
@@ -4814,11 +4810,11 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
         accessibilityRole="button"
         accessible={true}
         focusable={true}
-        isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
             "borderless": true,
             "color": null,
+            "rippleRadius": undefined,
             "type": "RippleAndroid",
           }
         }

@@ -3,7 +3,6 @@
 exports[`iOS BpkSelect dark mode should render correctly 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -76,7 +75,6 @@ exports[`iOS BpkSelect dark mode should render correctly 1`] = `
 exports[`iOS BpkSelect dark mode should render correctly with "showImage" and image 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -164,7 +162,6 @@ exports[`iOS BpkSelect dark mode should render correctly with "showImage" and im
 exports[`iOS BpkSelect dark mode should render correctly with "showImage" and no image 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -249,7 +246,6 @@ exports[`iOS BpkSelect dark mode should render correctly with "showImage" and no
 exports[`iOS BpkSelect dark mode should render correctly with "valid" false 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -351,7 +347,6 @@ exports[`iOS BpkSelect dark mode should render correctly with "valid" false 1`] 
 exports[`iOS BpkSelect dark mode should render correctly with "valid" false and "focused" (focused should take precedence) 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -457,7 +452,6 @@ exports[`iOS BpkSelect dark mode should render correctly with "valid" false and 
 <View>
   <View
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
     onClick={[Function]}
@@ -582,7 +576,6 @@ exports[`iOS BpkSelect dark mode should render correctly with "valid" false and 
 exports[`iOS BpkSelect dark mode should render correctly with "valid" true 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -681,7 +674,6 @@ exports[`iOS BpkSelect dark mode should render correctly with "valid" true 1`] =
 exports[`iOS BpkSelect dark mode should render correctly with a text label 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -778,7 +770,6 @@ exports[`iOS BpkSelect dark mode should render correctly with a text label 1`] =
 exports[`iOS BpkSelect dark mode should render correctly with an element label 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -852,7 +843,6 @@ exports[`iOS BpkSelect dark mode should render correctly with an element label 1
 exports[`iOS BpkSelect dark mode should render correctly with custom styles 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -953,11 +943,6 @@ exports[`iOS BpkSelect dark mode should render correctly with custom styles 1`] 
 exports[`iOS BpkSelect dark mode should render correctly with the disabled prop 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "disabled",
-    ]
-  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -1060,11 +1045,6 @@ exports[`iOS BpkSelect dark mode should render correctly with the disabled prop 
 exports[`iOS BpkSelect dark mode should render correctly with the focused and disabled props (disabled take precedence) 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "disabled",
-    ]
-  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -1167,7 +1147,6 @@ exports[`iOS BpkSelect dark mode should render correctly with the focused and di
 exports[`iOS BpkSelect dark mode should render correctly with the focused prop 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -1267,7 +1246,6 @@ exports[`iOS BpkSelect dark mode should render correctly with the focused prop 1
 exports[`iOS BpkSelect light mode should render correctly 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -1340,7 +1318,6 @@ exports[`iOS BpkSelect light mode should render correctly 1`] = `
 exports[`iOS BpkSelect light mode should render correctly with "showImage" and image 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -1428,7 +1405,6 @@ exports[`iOS BpkSelect light mode should render correctly with "showImage" and i
 exports[`iOS BpkSelect light mode should render correctly with "showImage" and no image 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -1513,7 +1489,6 @@ exports[`iOS BpkSelect light mode should render correctly with "showImage" and n
 exports[`iOS BpkSelect light mode should render correctly with "valid" false 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -1615,7 +1590,6 @@ exports[`iOS BpkSelect light mode should render correctly with "valid" false 1`]
 exports[`iOS BpkSelect light mode should render correctly with "valid" false and "focused" (focused should take precedence) 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -1721,7 +1695,6 @@ exports[`iOS BpkSelect light mode should render correctly with "valid" false and
 <View>
   <View
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
     onClick={[Function]}
@@ -1846,7 +1819,6 @@ exports[`iOS BpkSelect light mode should render correctly with "valid" false and
 exports[`iOS BpkSelect light mode should render correctly with "valid" true 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -1945,7 +1917,6 @@ exports[`iOS BpkSelect light mode should render correctly with "valid" true 1`] 
 exports[`iOS BpkSelect light mode should render correctly with a text label 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -2042,7 +2013,6 @@ exports[`iOS BpkSelect light mode should render correctly with a text label 1`] 
 exports[`iOS BpkSelect light mode should render correctly with an element label 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -2116,7 +2086,6 @@ exports[`iOS BpkSelect light mode should render correctly with an element label 
 exports[`iOS BpkSelect light mode should render correctly with custom styles 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -2217,11 +2186,6 @@ exports[`iOS BpkSelect light mode should render correctly with custom styles 1`]
 exports[`iOS BpkSelect light mode should render correctly with the disabled prop 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "disabled",
-    ]
-  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -2324,11 +2288,6 @@ exports[`iOS BpkSelect light mode should render correctly with the disabled prop
 exports[`iOS BpkSelect light mode should render correctly with the focused and disabled props (disabled take precedence) 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "disabled",
-    ]
-  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -2431,7 +2390,6 @@ exports[`iOS BpkSelect light mode should render correctly with the focused and d
 exports[`iOS BpkSelect light mode should render correctly with the focused prop 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
   onClick={[Function]}

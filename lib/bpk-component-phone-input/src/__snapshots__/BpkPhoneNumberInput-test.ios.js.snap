@@ -32,7 +32,6 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
     </Text>
     <View
       accessibilityRole="button"
-      accessibilityStates={Array []}
       accessible={true}
       focusable={true}
       onClick={[Function]}
@@ -221,11 +220,6 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
     </Text>
     <View
       accessibilityRole="button"
-      accessibilityStates={
-        Array [
-          "disabled",
-        ]
-      }
       accessible={true}
       focusable={true}
       onClick={[Function]}
