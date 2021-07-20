@@ -17,11 +17,11 @@ exports[`Android BpkCard dark mode should render correctly 1`] = `
     accessibilityRole="button"
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": -9934465,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -82,11 +82,11 @@ exports[`Android BpkCard dark mode should render correctly with the "focused" st
     accessibilityRole="button"
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": -9934465,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -144,11 +144,11 @@ exports[`Android BpkCard light mode should render correctly 1`] = `
     accessibilityRole="button"
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -209,11 +209,11 @@ exports[`Android BpkCard light mode should render correctly with the "focused" s
     accessibilityRole="button"
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -274,11 +274,11 @@ exports[`Android BpkCard should render correctly when "cornerStyle=large" 1`] = 
     accessibilityRole="button"
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -336,11 +336,11 @@ exports[`Android BpkCard should render correctly with arbitrary props 1`] = `
     accessibilityRole="button"
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -399,11 +399,11 @@ exports[`Android BpkCard should render correctly with custom inner style 1`] = `
     accessibilityRole="button"
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -467,11 +467,11 @@ exports[`Android BpkCard should render correctly with custom style 1`] = `
     accessibilityRole="button"
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -529,11 +529,11 @@ exports[`Android BpkCard should render correctly without padding 1`] = `
     accessibilityRole="button"
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }

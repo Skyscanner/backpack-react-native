@@ -11,14 +11,13 @@ exports[`android BpkNavigationBarButton should forward custom props 1`] = `
   <View
     accessibilityLabel="Back"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": 872415231,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -69,14 +68,13 @@ exports[`android BpkNavigationBarButton should render correctly back icon 1`] = 
   <View
     accessibilityLabel="Back"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": 872415231,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -126,18 +124,13 @@ exports[`android BpkNavigationBarButton should render correctly disabled 1`] = `
   <View
     accessibilityLabel="Done"
     accessibilityRole="button"
-    accessibilityStates={
-      Array [
-        "disabled",
-      ]
-    }
     accessible={true}
     focusable={false}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": 872415231,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -187,14 +180,13 @@ exports[`android BpkNavigationBarButton should render correctly with close icon 
   <View
     accessibilityLabel="Close"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": 872415231,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -244,14 +236,13 @@ exports[`android BpkNavigationBarButton should render correctly with tick icon 1
   <View
     accessibilityLabel="Done"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": 872415231,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -301,18 +292,13 @@ exports[`android BpkNavigationBarButton should respect "disabledTintColor" 1`] =
   <View
     accessibilityLabel="Done"
     accessibilityRole="button"
-    accessibilityStates={
-      Array [
-        "disabled",
-      ]
-    }
     accessible={true}
     focusable={false}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": 872415231,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -362,14 +348,13 @@ exports[`android BpkNavigationBarButton should respect "tintColor" 1`] = `
   <View
     accessibilityLabel="Done"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": 872415231,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -419,14 +404,13 @@ exports[`android BpkNavigationBarButton should respect "touchableColor" 1`] = `
   <View
     accessibilityLabel="Done"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": 872349696,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }

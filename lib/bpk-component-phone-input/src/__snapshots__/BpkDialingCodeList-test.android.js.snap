@@ -51,44 +51,8 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
   renderItem={[Function]}
-  renderSectionHeader={[Function]}
   scrollEventThrottle={50}
-  sections={
-    Array [
-      Object {
-        "data": Array [
-          Object {
-            "dialingCode": "0",
-            "id": "0",
-            "name": "Zero",
-          },
-        ],
-        "title": "Z",
-      },
-      Object {
-        "data": Array [
-          Object {
-            "dialingCode": "1",
-            "id": "1",
-            "name": "One",
-          },
-        ],
-        "title": "O",
-      },
-      Object {
-        "data": Array [
-          Object {
-            "dialingCode": "2",
-            "id": "2",
-            "name": "Two",
-          },
-        ],
-        "title": "T",
-      },
-    ]
-  }
   stickyHeaderIndices={Array []}
-  stickySectionHeadersEnabled={false}
   updateCellsBatchingPeriod={50}
   windowSize={21}
 >
@@ -144,11 +108,11 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
         accessibilityRole="button"
         accessible={true}
         focusable={true}
-        isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
             "borderless": false,
             "color": null,
+            "rippleRadius": undefined,
             "type": "RippleAndroid",
           }
         }
@@ -309,11 +273,11 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
         accessibilityRole="button"
         accessible={true}
         focusable={true}
-        isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
             "borderless": false,
             "color": null,
+            "rippleRadius": undefined,
             "type": "RippleAndroid",
           }
         }
@@ -474,11 +438,11 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
         accessibilityRole="button"
         accessible={true}
         focusable={true}
-        isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
             "borderless": false,
             "color": null,
+            "rippleRadius": undefined,
             "type": "RippleAndroid",
           }
         }
@@ -643,44 +607,8 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
   renderItem={[Function]}
-  renderSectionHeader={[Function]}
   scrollEventThrottle={50}
-  sections={
-    Array [
-      Object {
-        "data": Array [
-          Object {
-            "dialingCode": "0",
-            "id": "0",
-            "name": "Zero",
-          },
-        ],
-        "title": "Z",
-      },
-      Object {
-        "data": Array [
-          Object {
-            "dialingCode": "1",
-            "id": "1",
-            "name": "One",
-          },
-        ],
-        "title": "O",
-      },
-      Object {
-        "data": Array [
-          Object {
-            "dialingCode": "2",
-            "id": "2",
-            "name": "Two",
-          },
-        ],
-        "title": "T",
-      },
-    ]
-  }
   stickyHeaderIndices={Array []}
-  stickySectionHeadersEnabled={false}
   updateCellsBatchingPeriod={50}
   windowSize={21}
 >
@@ -736,11 +664,11 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
         accessibilityRole="button"
         accessible={true}
         focusable={true}
-        isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
             "borderless": false,
             "color": null,
+            "rippleRadius": undefined,
             "type": "RippleAndroid",
           }
         }
@@ -910,11 +838,11 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
         accessibilityRole="button"
         accessible={true}
         focusable={true}
-        isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
             "borderless": false,
             "color": null,
+            "rippleRadius": undefined,
             "type": "RippleAndroid",
           }
         }
@@ -1075,11 +1003,11 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
         accessibilityRole="button"
         accessible={true}
         focusable={true}
-        isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
             "borderless": false,
             "color": null,
+            "rippleRadius": undefined,
             "type": "RippleAndroid",
           }
         }

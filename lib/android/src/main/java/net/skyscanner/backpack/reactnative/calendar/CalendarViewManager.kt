@@ -136,7 +136,7 @@ class CalendarViewManager : ViewGroupManager<RNCalendarView>() {
 
   @VisibleForTesting
   public override fun addEventEmitters(reactContext: ThemedReactContext, view: RNCalendarView) {
-    val dispatcher = reactContext.getNativeModule(UIManagerModule::class.java).eventDispatcher
+    val dispatcher = reactContext.getNativeModule(UIManagerModule::class.java)?.eventDispatcher
 
     view.state.onDatesChange = { selection ->
       val dates = mutableListOf<LocalDate>()
@@ -150,7 +150,7 @@ class CalendarViewManager : ViewGroupManager<RNCalendarView>() {
         }
       }
 
-      dispatcher.dispatchEvent(CalendarChangeEvent(view.id, dates.toTypedArray()))
+      dispatcher?.dispatchEvent(CalendarChangeEvent(view.id, dates.toTypedArray()))
     }
   }
 

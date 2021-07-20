@@ -162,7 +162,7 @@ android {
             def abi = output.getFilter(OutputFile.ABI)
             if (abi != null) {  // null for the universal-debug, universal-release variants
                 output.versionCodeOverride =
-                        versionCodes.get(abi) * 1048576 + defaultConfig.versionCode
+                defaultConfig.versionCode * 1000 + versionCodes.get(abi)
             }
         }
     }
@@ -172,6 +172,7 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation "androidx.appcompat:appcompat:${rootProject.ext.androidx}"
     implementation "androidx.core:core:${rootProject.ext.androidx}"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
 
     // From node_modules
     implementation 'com.facebook.react:react-native:+'

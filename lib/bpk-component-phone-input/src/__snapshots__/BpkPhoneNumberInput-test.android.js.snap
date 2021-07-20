@@ -32,14 +32,13 @@ exports[`Android BpkPhoneNumberInput should render correctly 1`] = `
     </Text>
     <View
       accessibilityRole="button"
-      accessibilityStates={Array []}
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       nativeBackgroundAndroid={
         Object {
           "borderless": false,
           "color": null,
+          "rippleRadius": undefined,
           "type": "RippleAndroid",
         }
       }
@@ -205,18 +204,13 @@ exports[`Android BpkPhoneNumberInput should render correctly with \`editable\` f
     </Text>
     <View
       accessibilityRole="button"
-      accessibilityStates={
-        Array [
-          "disabled",
-        ]
-      }
       accessible={true}
       focusable={false}
-      isTVSelectable={true}
       nativeBackgroundAndroid={
         Object {
           "borderless": false,
           "color": null,
+          "rippleRadius": undefined,
           "type": "RippleAndroid",
         }
       }

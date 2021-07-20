@@ -42,7 +42,7 @@ class RNBpkRating(
     val uiManager = reactContext.getNativeModule(UIManagerModule::class.java)
     val localData = BpkRatingLocalData(view, state.orientation, state.size)
     // This will trigger measure to run in BpkRatingShadowNode
-    uiManager.setViewLocalData(id, localData)
+    uiManager?.setViewLocalData(id, localData)
     rating = view
   }
 
