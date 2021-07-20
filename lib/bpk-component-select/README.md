@@ -11,7 +11,7 @@ Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usag
 ```js
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import { spacingBase } from '@skyscanner/bpk-react-native/tokens/base.react.native';
+import { spacingBase } from '@skyscanner/bpk-foundations-react-native/tokens/base.react.native';
 import BpkSelect from 'backpack-react-native/bpk-component-select';
 
 const styles = StyleSheet.create({

@@ -32,7 +32,7 @@ const formattedDate = date.toLocaleDateString(locale, { timeZone: 'UTC' });
 ```js
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
-import { spacingBase } from '@skyscanner/bpk-react-native/tokens/base.react.native';
+import { spacingBase } from '@skyscanner/bpk-foundations-react-native/tokens/base.react.native';
 import BpkCalendar, { makeRangeSelection } from 'backpack-react-native/bpk-component-calendar';
 
 const rangeSelection = makeRangeSelection({

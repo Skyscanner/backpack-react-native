@@ -17,7 +17,7 @@ import BpkText, {
   BpkEmoji,
   WEIGHT_STYLES,
 } from 'backpack-react-native/bpk-component-text';
-import { spacingBase } from '@skyscanner/bpk-react-native/tokens/base.react.native';
+import { spacingBase } from '@skyscanner/bpk-foundations-react-native/tokens/base.react.native';
 
 const styles = StyleSheet.create({
   container: {

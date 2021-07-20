@@ -13,7 +13,7 @@ import React, { Component } from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 import BpkCard from 'backpack-react-native/bpk-component-card';
 import BpkText from 'backpack-react-native/bpk-component-text';
-import { spacingBase } from '@skyscanner/bpk-react-native/tokens/base.react.native';
+import { spacingBase } from '@skyscanner/bpk-foundations-react-native/tokens/base.react.native';
 
 const styles = StyleSheet.create({
   container: {
@@ -66,7 +66,7 @@ export default class App extends Component {
 import React, { Component } from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 import BpkText from 'backpack-react-native/bpk-component-text';
-import { spacingBase } from '@skyscanner/bpk-react-native/tokens/base.react.native';
+import { spacingBase } from '@skyscanner/bpk-foundations-react-native/tokens/base.react.native';
 import BpkCard, { CORNER_STYLES, withDivider } from 'backpack-react-native/bpk-component-card';
 
 const BpkCardWithDivider = withDivider(BpkCard);

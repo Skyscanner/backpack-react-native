@@ -13,7 +13,7 @@ Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usag
 ```js
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
-import { spacingBase, spacingLg } from '@skyscanner/bpk-react-native/tokens/base.react.native';
+import { spacingBase, spacingLg } from '@skyscanner/bpk-foundations-react-native/tokens/base.react.native';
 import BpkImage from 'backpack-react-native/bpk-component-image';
 
 const styles = StyleSheet.create({
@@ -40,7 +40,7 @@ export default () => (
 ```js
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
-import { spacingBase, spacingLg } from '@skyscanner/bpk-react-native/tokens/base.react.native';
+import { spacingBase, spacingLg } from '@skyscanner/bpk-foundations-react-native/tokens/base.react.native';
 import BpkImage, { withLoadingBehaviour } from 'backpack-react-native/bpk-component-image';
 
 const BpkImageWithLoading = withLoadingBehaviour(BpkImage);
