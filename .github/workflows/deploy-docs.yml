@@ -3,7 +3,7 @@ name: Deploy docs
 
 on:
   workflow_run:
-    workflows: ["Android CI", "iOS CI"]
+    workflows: ["Android CI", "iOS CI", "Node CI"]
     branches: [main]
     types: 
       - completed
