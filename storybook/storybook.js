@@ -23,18 +23,12 @@ import { I18nManager, View } from 'react-native';
 import { getStorybookUI, configure } from '@storybook/react-native';
 import { backgroundColor } from '@skyscanner/bpk-foundations-react-native/tokens/base.react.native';
 
-import BpkAppearance, {
+import {
   BpkAppearanceProvider,
   useBpkDynamicValue,
 } from '../lib/bpk-appearance';
 
-import {
-  RTL_EVENT,
-  CHANNEL_POLL_INTERVAL,
-  RTL_INIT,
-  DM_EVENT,
-  DM_INIT,
-} from './constants';
+import { RTL_EVENT, CHANNEL_POLL_INTERVAL, RTL_INIT } from './constants';
 import RelativeFontProvider from './RelativeFontProvider';
 
 const onChannelAvailable = (...fns) => {
@@ -54,11 +48,6 @@ const onChannelAvailable = (...fns) => {
 const initRtlAddon = (channel) => {
   channel.emit(RTL_INIT, I18nManager.isRTL);
   channel.on(RTL_EVENT, (rtlEnabled) => I18nManager.forceRTL(rtlEnabled));
-};
-
-const initDarkModeAddon = (channel) => {
-  channel.emit(DM_INIT, BpkAppearance.get().colorScheme || 'light');
-  channel.on(DM_EVENT, (colorScheme) => BpkAppearance.set({ colorScheme }));
 };
 
 /* eslint-disable global-require */
@@ -110,7 +99,7 @@ const StorybookUI = getStorybookUI({
   asyncStorage: null,
 });
 
-onChannelAvailable(initRtlAddon, initDarkModeAddon);
+onChannelAvailable(initRtlAddon);
 
 const BackgroundWrapper = ({ children }: { children: Node }) => (
   <View

@@ -3,7 +3,6 @@ package net.skyscanner.backpack
 import android.app.Application
 import com.BV.LinearGradient.LinearGradientPackage
 import com.airbnb.android.react.maps.MapsPackage
-import com.codemotionapps.reactnativedarkmode.DarkModePackage
 import com.facebook.react.ReactApplication
 import com.facebook.react.ReactNativeHost
 import com.facebook.react.ReactPackage
@@ -39,7 +38,6 @@ class MainApplication : Application(), ReactApplication {
                     DialogPackage(),
                     BpkRatingPackage(),
                     BpkFlarePackage(),
-                    DarkModePackage(),
                     BpkSnackbarPackage()
             )
         }

@@ -59,10 +59,8 @@ exports[`iOS BpkPicker dark mode should render correctly 1`] = `
       <View
         accessibilityLabel="Done"
         accessibilityRole="button"
-        accessibilityStates={Array []}
         accessible={true}
         focusable={true}
-        isTVSelectable={true}
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -133,8 +131,6 @@ exports[`iOS BpkPicker dark mode should render correctly 1`] = `
           ]
         }
         onChange={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         selectedIndex={0}
         style={
           Array [
@@ -211,10 +207,8 @@ exports[`iOS BpkPicker dark mode should render correctly with a selected value 1
       <View
         accessibilityLabel="Done"
         accessibilityRole="button"
-        accessibilityStates={Array []}
         accessible={true}
         focusable={true}
-        isTVSelectable={true}
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -285,8 +279,6 @@ exports[`iOS BpkPicker dark mode should render correctly with a selected value 1
           ]
         }
         onChange={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         selectedIndex={0}
         style={
           Array [
@@ -363,10 +355,8 @@ exports[`iOS BpkPicker light mode should render correctly 1`] = `
       <View
         accessibilityLabel="Done"
         accessibilityRole="button"
-        accessibilityStates={Array []}
         accessible={true}
         focusable={true}
-        isTVSelectable={true}
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -437,8 +427,6 @@ exports[`iOS BpkPicker light mode should render correctly 1`] = `
           ]
         }
         onChange={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         selectedIndex={0}
         style={
           Array [
@@ -515,10 +503,8 @@ exports[`iOS BpkPicker light mode should render correctly with a selected value 
       <View
         accessibilityLabel="Done"
         accessibilityRole="button"
-        accessibilityStates={Array []}
         accessible={true}
         focusable={true}
-        isTVSelectable={true}
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -589,8 +575,6 @@ exports[`iOS BpkPicker light mode should render correctly with a selected value 
           ]
         }
         onChange={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         selectedIndex={0}
         style={
           Array [

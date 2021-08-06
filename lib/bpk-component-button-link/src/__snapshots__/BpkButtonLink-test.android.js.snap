@@ -15,14 +15,13 @@ exports[`Android BpkButtonLink dark mode should render correctly 1`] = `
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": -9934465,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -91,14 +90,13 @@ exports[`Android BpkButtonLink dark mode should support overwriting styles 1`] =
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": -9934465,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -165,18 +163,13 @@ exports[`Android BpkButtonLink dark mode should support the "disabled" property 
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={
-      Array [
-        "disabled",
-      ]
-    }
     accessible={true}
     focusable={false}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": -9934465,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -246,14 +239,13 @@ exports[`Android BpkButtonLink dark mode should support the "icon" property 1`] 
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": -9934465,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -344,14 +336,13 @@ exports[`Android BpkButtonLink light mode should render correctly 1`] = `
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -420,14 +411,13 @@ exports[`Android BpkButtonLink light mode should support overwriting styles 1`] 
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -494,18 +484,13 @@ exports[`Android BpkButtonLink light mode should support the "disabled" property
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={
-      Array [
-        "disabled",
-      ]
-    }
     accessible={true}
     focusable={false}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -575,14 +560,13 @@ exports[`Android BpkButtonLink light mode should support the "icon" property 1`]
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -673,14 +657,13 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="leadi
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -778,14 +761,13 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="trail
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -876,14 +858,13 @@ exports[`Android BpkButtonLink should render correctly with text props provided 
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -950,14 +931,13 @@ exports[`Android BpkButtonLink should render correctly with theme prop 1`] = `
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -1027,14 +1007,13 @@ exports[`Android BpkButtonLink should support elements as icons 1`] = `
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -1119,14 +1098,13 @@ exports[`Android should support "borderlessBackground" equal to false 1`] = `
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": false,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }
@@ -1193,14 +1171,13 @@ exports[`Android should support "uppercase" equal to false 1`] = `
   <View
     accessibilityLabel="Lorem ipsum"
     accessibilityRole="button"
-    accessibilityStates={Array []}
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
         "color": null,
+        "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
     }

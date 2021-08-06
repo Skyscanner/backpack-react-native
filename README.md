@@ -84,7 +84,6 @@ npm install backpack-react-native --save
 
   ```ruby
     pod 'BackpackReactNative', path: '../node_modules/backpack-react-native/ios/BackpackReactNative'
-    pod 'ReactNativeDarkMode', path: '../node_modules/react-native-dark-mode/ReactNativeDarkMode.podspec'
     pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
   ```
 
@@ -110,7 +109,6 @@ This package depends on [`react-native-maps`](https://github.com/react-community
           CalendarPackage(),
           DialogPackage(),
           BpkRatingPackage(),
-          DarkModePackage(),
           BpkSnackbarPackage())
   }
   ```

@@ -1,5 +1,5 @@
 FULL_TESTS = ENV['FULL_TESTS'] != 'false'
-BUILD_SDK = ENV['BUILD_SDK'] || 'iphonesimulator13.7'
+BUILD_SDK = ENV['BUILD_SDK'] || 'iphonesimulator14.4'
 DESTINATION = ENV['DESTINATION'] || 'platform=iOS Simulator,name=iPhone 8'
 EXAMPLE_WORKSPACE = 'native.xcworkspace'
 EXAMPLE_SCHEMA = 'native'

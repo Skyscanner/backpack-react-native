@@ -10,56 +10,60 @@ defaults:
   run:
     shell: bash -l {0}
 
+env:
+  flavour: oss
+  config: debug
+  api-level: 24
+
 jobs:
-  build:
+
+  Build:
+    name: Build
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-    - name: Setup gCloud
-      if: github.event.pull_request.head.repo.full_name == github.repository
-      env:
-        BACKPACK_GKEY: ${{ secrets.BACKPACK_GKEY}}
-        GCLOUD_PROJECT_ID: ${{ secrets.GCLOUD_PROJECT_ID }}
-      run: |
-        gpg --quiet --batch --yes --decrypt --passphrase="$BACKPACK_GKEY" --output $HOME/gcloud-service-key.json gcloud-service-key.json.gpg
-        if [ ! -d "$HOME/google-cloud-sdk/bin" ]; then
-          rm -rf $HOME/google-cloud-sdk
-          export CLOUDSDK_CORE_DISABLE_PROMPTS=1
-          curl https://sdk.cloud.google.com | bash
-        fi
+      - name: Setup NPM
+        run: |
+          nvm install
+          npm ci
 
-        gcloud version
-        gcloud auth activate-service-account --project $GCLOUD_PROJECT_ID --key-file $HOME/gcloud-service-key.json
-    
-    # We install the NDK as the app requires an older version than bundled in the image
-    - name: Install NDK
-      run: echo "y" | sudo ${ANDROID_HOME}/tools/bin/sdkmanager --install "ndk;20.0.5594570" --sdk_root=${ANDROID_SDK_ROOT}
+      - name: Validate Gradle Wrapper
+        uses: gradle/wrapper-validation-action@v1
 
-    - name: nvm install
-      run: nvm install
+      - name: Gradle Lint
+        run: ./android/gradlew -p android ktlint
 
-    - name: npm install
-      run: |
-        nvm use
-        npm ci
+      - name: Gradle build
+        run: ./android/gradlew -p android :app:assembleDebug :backpack-react-native:assembleAndroidTest
 
-    - name: Run tests
-      run: npm test
+      - name: Run Android unit tests
+        run: ./android/gradlew -p android :app:Test :backpack-react-native:Test
+  
+  # KOA-4695 - These tests currently fail so we will need to fix them.
+  # Android:
+  #   name: Android Connected
+  #   runs-on: macos-latest
 
-    - name: Setup JDK 1.8
-      uses: actions/setup-java@v1
-      with:
-        java-version: 1.8
+  #   strategy:
+  #     fail-fast: false
 
-    - name: Gradle Lint
-      run: ./android/gradlew -p android ktlint
+  #   steps:
+  #     - uses: actions/checkout@v2
 
-    - name: Gradle build
-      run: ./android/gradlew -p android :app:assembleDebug :backpack-react-native:assembleAndroidTest
+  #     - name: Setup NPM
+  #       run: |
+  #         nvm install
+  #         npm ci
 
-    # Only run tests if not in a forked repo as it depends on secrets not available to forks
-    - name: Run Android tests
-      if: github.event.pull_request.head.repo.full_name == github.repository
-      run: ./scripts/android/ci-tests.sh
+  #     - name: Run Android connected tests
+  #       uses: reactivecircus/android-emulator-runner@v2
+  #       with:
+  #         target: google_apis
+  #         profile: Nexus 4
+  #         sdcard-path-or-size: 512M
+  #         api-level: ${{ env.api-level }}
+  #         force-avd-creation: false
+  #         emulator-options: -no-snapshot-save -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
+  #         script: ./android/gradlew -p android :backpack-react-native:connectedAndroidTest

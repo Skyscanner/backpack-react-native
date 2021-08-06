@@ -4,10 +4,8 @@ exports[`iOS BpkNavigationBarIconButtonIOS dark mode should render correctly 1`]
 <View
   accessibilityLabel="Edit"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -56,14 +54,8 @@ exports[`iOS BpkNavigationBarIconButtonIOS dark mode should render correctly dis
 <View
   accessibilityLabel="Close"
   accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "disabled",
-    ]
-  }
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -112,10 +104,8 @@ exports[`iOS BpkNavigationBarIconButtonIOS dark mode should render correctly lea
 <View
   accessibilityLabel="Close"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -164,14 +154,8 @@ exports[`iOS BpkNavigationBarIconButtonIOS dark mode should resepect "disabledTi
 <View
   accessibilityLabel="Done"
   accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "disabled",
-    ]
-  }
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -220,10 +204,8 @@ exports[`iOS BpkNavigationBarIconButtonIOS dark mode should resepect "tintColor"
 <View
   accessibilityLabel="Done"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -272,10 +254,8 @@ exports[`iOS BpkNavigationBarIconButtonIOS light mode should render correctly 1`
 <View
   accessibilityLabel="Edit"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -324,14 +304,8 @@ exports[`iOS BpkNavigationBarIconButtonIOS light mode should render correctly di
 <View
   accessibilityLabel="Close"
   accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "disabled",
-    ]
-  }
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -380,10 +354,8 @@ exports[`iOS BpkNavigationBarIconButtonIOS light mode should render correctly le
 <View
   accessibilityLabel="Close"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -432,14 +404,8 @@ exports[`iOS BpkNavigationBarIconButtonIOS light mode should resepect "disabledT
 <View
   accessibilityLabel="Done"
   accessibilityRole="button"
-  accessibilityStates={
-    Array [
-      "disabled",
-    ]
-  }
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -488,10 +454,8 @@ exports[`iOS BpkNavigationBarIconButtonIOS light mode should resepect "tintColor
 <View
   accessibilityLabel="Done"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -540,10 +504,8 @@ exports[`iOS BpkNavigationBarIconButtonIOS should forward custom props 1`] = `
 <View
   accessibilityLabel="Edit"
   accessibilityRole="button"
-  accessibilityStates={Array []}
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
