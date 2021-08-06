@@ -1,5 +1,16 @@
 # Backpack changelog
 
+# 15.0.0 - 2021-08-06
+
+**Breaking:**
+  - Upgraded Backpack RN to use RN 0.64
+
+**Changed:**
+  - Updated the underlying dark mode library to the native React Native implementation instead of a 3rd party library, for compatibility with RN 0.64.0.
+
+**Fixed:**
+  - Migrated to new Backpack Foundations packages, `@skyscanner/bpk-foundations-react-native` and `@skyscanner/bpk-svgs.`
+
 # 14.1.2 - 2021-04-30
 
 **Breaking:**
