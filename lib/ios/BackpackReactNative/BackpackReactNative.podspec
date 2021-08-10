@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Skyscanner/backpack-react-native.git" }
   s.source_files  = "Classes/**/*.{h,m}"
 
-  s.dependency 'React-Core'
+  s.dependency 'React'
   s.dependency 'react-native-maps'
   s.dependency 'Backpack', '~> 44.0'
 end

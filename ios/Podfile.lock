@@ -6,11 +6,11 @@ PODS:
     - TTTAttributedLabel (~> 2.0.0)
   - BackpackReactNative (15.0.0):
     - Backpack (~> 44.0)
-    - React-Core
+    - React
     - react-native-maps
   - boost-for-react-native (1.63.0)
   - BVLinearGradient (2.5.6):
-    - React-Core
+    - React
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.64.2)
   - FBReactNativeSpec (0.64.2):
@@ -397,9 +397,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Backpack: 87f2455632c078e548ab83acbd331e44354f5244
-  BackpackReactNative: fd1f227c1b3fcf6debf234ae8e0bef95f65c3193
+  BackpackReactNative: 1aaf9339819e2f28f00ac1381d0ceaffcda3e90d
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
-  BVLinearGradient: 48f1964a78bddfae412d1aac5f386c2949fe0306
+  BVLinearGradient: e3aad03778a456d77928f594a649e96995f1c872
   DoubleConversion: cf9b38bf0b2d048436d9a82ad2abe1404f11e7de
   FBLazyVector: e686045572151edef46010a6f819ade377dfeb4b
   FBReactNativeSpec: 849a968529cadc0dd1b82e33821e31aaa2159860
