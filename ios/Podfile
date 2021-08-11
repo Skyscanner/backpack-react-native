@@ -4,18 +4,18 @@ require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
 platform :ios, '12.0'
-use_modular_headers!
+use_frameworks!
 
 target 'Backpack Native' do
   # All these libraries below have been removed from the Xcode project file and now live in the Podfile. Cocoapods handles the linking now. Here you can add more libraries with native modules.
-  pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
-  pod 'FBReactNativeSpec', :path => "../node_modules/react-native/React/FBReactNativeSpec"
-  pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
-  pod 'RCTTypeSafety', :path => "../node_modules/react-native/Libraries/TypeSafety"
+  pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector", :modular_headers => true
+  pod 'FBReactNativeSpec', :path => "../node_modules/react-native/React/FBReactNativeSpec", :modular_headers => true
+  pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired", :modular_headers => true
+  pod 'RCTTypeSafety', :path => "../node_modules/react-native/Libraries/TypeSafety", :modular_headers => true
   pod 'React', :path => '../node_modules/react-native/', :modular_headers => false
-  pod 'React-Core', :path => '../node_modules/react-native/'
-  pod 'React-CoreModules', :path => '../node_modules/react-native/React/CoreModules'
-  pod 'React-Core/DevSupport', :path => '../node_modules/react-native/'
+  pod 'React-Core', :path => '../node_modules/react-native/', :modular_headers => true
+  pod 'React-CoreModules', :path => '../node_modules/react-native/React/CoreModules', :modular_headers => true
+  pod 'React-Core/DevSupport', :path => '../node_modules/react-native/', :modular_headers => true
   pod 'React-RCTActionSheet', :path => '../node_modules/react-native/Libraries/ActionSheetIOS', :modular_headers => false
   pod 'React-RCTAnimation', :path => '../node_modules/react-native/Libraries/NativeAnimation', :modular_headers => false
   pod 'React-RCTBlob', :path => '../node_modules/react-native/Libraries/Blob', :modular_headers => false
@@ -25,7 +25,7 @@ target 'Backpack Native' do
   pod 'React-RCTSettings', :path => '../node_modules/react-native/Libraries/Settings', :modular_headers => false
   pod 'React-RCTText', :path => '../node_modules/react-native/Libraries/Text', :modular_headers => false
   pod 'React-RCTVibration', :path => '../node_modules/react-native/Libraries/Vibration', :modular_headers => false
-  pod 'React-Core/RCTWebSocket', :path => '../node_modules/react-native/'
+  pod 'React-Core/RCTWebSocket', :path => '../node_modules/react-native/', :modular_headers => true
   pod 'React-cxxreact', :path => '../node_modules/react-native/ReactCommon/cxxreact', :modular_headers => false
   pod 'React-jsi', :path => '../node_modules/react-native/ReactCommon/jsi', :modular_headers => false
   pod 'React-jsiexecutor', :path => '../node_modules/react-native/ReactCommon/jsiexecutor', :modular_headers => false
@@ -40,7 +40,7 @@ target 'Backpack Native' do
   pod 'RCT-Folly', :podspec => '../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec', :modular_headers => false
 
   # RN Bridging Pods
-  pod 'Backpack', '~> 43.0'
+  pod 'Backpack', '~> 44.0', :modular_headers => true
   pod 'BackpackReactNative', path: '../node_modules/backpack-react-native/ios/BackpackReactNative', :modular_headers => false
 
   # Third party pods
@@ -54,5 +54,21 @@ target 'Backpack Native' do
 
   post_install do |installer|
     react_native_post_install(installer)
+
+    # Solution from https://github.com/facebook/react-native/issues/31034#issuecomment-812564390
+    # Works around an issue in FBReactNativeSpec where "Generate Specs" should be before "Headers" but isn't
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+      end
+
+      if (target.name&.eql?('FBReactNativeSpec'))
+        target.build_phases.each do |build_phase|
+          if (build_phase.respond_to?(:name) && build_phase.name.eql?('[CP-User] Generate Specs'))
+            target.build_phases.move(build_phase, 0)
+          end
+        end
+      end
+    end
   end
 end
