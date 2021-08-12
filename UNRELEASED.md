@@ -1,8 +1,6 @@
 # Unreleased
 
 > Place your changes below this line.
-**Breaking:**
- - Now requires Backpack iOS 44.0.0
 
 ## How to write a good changelog entry
 
