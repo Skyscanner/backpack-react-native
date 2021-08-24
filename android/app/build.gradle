@@ -110,7 +110,6 @@ def hasBackpackDebugCert() {
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
         applicationId "net.skyscanner.backpack"

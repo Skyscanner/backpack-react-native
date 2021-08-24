@@ -41,10 +41,9 @@ npm install backpack-react-native --save
 
   ```groovy
     ext {
-        compileSdkVersion   = 28
-        targetSdkVersion    = 28
+        compileSdkVersion   = 30
+        targetSdkVersion    = 30
         minSdkVersion       = 21
-        buildToolsVersion   = "28.0.3"
     }
   ```
 

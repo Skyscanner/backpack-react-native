@@ -21,10 +21,9 @@ buildscript {
 ext {
   internalBuild       = project.hasProperty("internalBuild") && project.internalBuild
   backpackVersion     = "28.0.0${ext.internalBuild || isUseRelative() ? '-internal' : ''}"
-  compileSdkVersion   = 29
-  targetSdkVersion    = 29
-  minSdkVersion       = 21
-  buildToolsVersion   = "29.0.3"
+  compileSdkVersion   = 30
+  targetSdkVersion    = 30
+  minSdkVersion       = 24
   androidx            = '1.0.2'
   appcompat           = '1.0.2'
   supportLibVersion = "27.1.1"
@@ -58,7 +57,7 @@ allprojects {
           }
 
           maven {
-            url project.properties["SKYSCANNER_ARTIFACTORY_MAVEN_URL"]?.toString()       
+            url project.properties["SKYSCANNER_ARTIFACTORY_MAVEN_URL"]?.toString()
             credentials(PasswordCredentials.class) {
               username = getJFrogUser(localProperties.getProperty("SKYSCANNER_ARTIFACTORY_OWNER"))
               password = getJFrogToken(localProperties.getProperty("SKYSCANNER_ARTIFACTORY_TOKEN"))
