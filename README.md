@@ -30,7 +30,7 @@ npm install backpack-react-native --save
 
   ```groovy
   buildscript {
-    ext.kotlin_version = '1.3.21'
+    ext.kotlin_version = '1.5.21'
     dependencies {
       classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
@@ -43,7 +43,7 @@ npm install backpack-react-native --save
     ext {
         compileSdkVersion   = 30
         targetSdkVersion    = 30
-        minSdkVersion       = 21
+        minSdkVersion       = 24
     }
   ```
 
