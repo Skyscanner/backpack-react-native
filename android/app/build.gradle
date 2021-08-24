@@ -75,7 +75,6 @@ import com.android.build.OutputFile
 
 project.ext.react = [ entryFile: "index.android.js" ]
 apply from: "../../node_modules/react-native/react.gradle"
-apply plugin: 'kotlin-android-extensions'
 
 /**
  * Set this to true to create two separate APKs instead of one:
