@@ -168,9 +168,9 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation "androidx.appcompat:appcompat:${rootProject.ext.androidx}"
+    implementation "androidx.appcompat:appcompat:${rootProject.ext.appcompat}"
     implementation "androidx.core:core:${rootProject.ext.androidx}"
-    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
 
     // From node_modules
     implementation 'com.facebook.react:react-native:+'
@@ -180,8 +180,7 @@ dependencies {
     implementation project(':react-native-maps')
     implementation project(':react-native-linear-gradient')
     implementation project(':backpack-react-native')
-    implementation "androidx.legacy:legacy-support-v4:1.0.0"
-    implementation "androidx.recyclerview:recyclerview:1.0.0"
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
     implementation "com.google.android.material:material:1.0.0"
     implementation "com.jakewharton.threetenabp:threetenabp:${rootProject.ext.threetenabpVersion}"
 
