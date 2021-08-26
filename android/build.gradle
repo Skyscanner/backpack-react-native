@@ -2,17 +2,17 @@
 import org.gradle.api.artifacts.repositories.PasswordCredentials
 
 buildscript {
-    ext.kotlin_version = '1.3.70'
+    ext.kotlin_version = '1.5.21'
     repositories {
       google()
       jcenter()
       mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.1.0'
+        classpath 'com.android.tools.build:gradle:7.0.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
-        classpath 'com.kezong:fat-aar:1.2.9'
+        classpath 'com.github.kezong:fat-aar:1.3.6'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -21,16 +21,14 @@ buildscript {
 ext {
   internalBuild       = project.hasProperty("internalBuild") && project.internalBuild
   backpackVersion     = "28.0.0${ext.internalBuild || isUseRelative() ? '-internal' : ''}"
-  compileSdkVersion   = 29
-  targetSdkVersion    = 29
-  minSdkVersion       = 21
-  buildToolsVersion   = "29.0.3"
-  androidx            = '1.0.2'
-  appcompat           = '1.0.2'
-  supportLibVersion = "27.1.1"
+  compileSdkVersion   = 30
+  targetSdkVersion    = 30
+  minSdkVersion       = 24
+  androidx            = '1.6.0'
+  appcompat           = '1.3.1'
   playServicesVersion = "17.0.0"
   androidMapsUtilsVersion = "xxx"
-  threetenabpVersion = "1.2.1"
+  threetenabpVersion = "1.3.1"
   ndkVersion = "20.0.5948944"
 }
 
@@ -58,7 +56,7 @@ allprojects {
           }
 
           maven {
-            url project.properties["SKYSCANNER_ARTIFACTORY_MAVEN_URL"]?.toString()       
+            url project.properties["SKYSCANNER_ARTIFACTORY_MAVEN_URL"]?.toString()
             credentials(PasswordCredentials.class) {
               username = getJFrogUser(localProperties.getProperty("SKYSCANNER_ARTIFACTORY_OWNER"))
               password = getJFrogToken(localProperties.getProperty("SKYSCANNER_ARTIFACTORY_TOKEN"))

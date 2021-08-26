@@ -23,17 +23,14 @@ def getPackageJson(project) {
 
 def _reactNativeVersion = safeExtGet("reactNative", "+")
 def _backpackAndroidVersion = safeExtGet("backpackVersion", "23.2.0")
-def _compileSdkVersion = safeExtGet("compileSdkVersion", 28)
-def _targetSdkVersion = safeExtGet("targetSdkVersion", 28)
-def _minSdkVersion = safeExtGet("minSdkVersion", 21)
-def _buildToolsVersion = safeExtGet("buildToolsVersion", "28.0.3")
+def _compileSdkVersion = safeExtGet("compileSdkVersion", 30)
+def _targetSdkVersion = safeExtGet("targetSdkVersion", 30)
+def _minSdkVersion = safeExtGet("minSdkVersion", 24)
 def _internalBuild = safeExtGet("internalBuild", false)
 
 apply plugin: "com.android.library"
 
 apply plugin: 'kotlin-android'
-
-apply plugin: 'kotlin-android-extensions'
 
 if (_internalBuild) {
   // This should come after the kotlin plugins
@@ -50,7 +47,6 @@ version=getVersionFromJsPackage(project)
 
 android {
   compileSdkVersion _compileSdkVersion
-  buildToolsVersion _buildToolsVersion
 
   defaultConfig {
     minSdkVersion _minSdkVersion
@@ -65,6 +61,6 @@ android {
 dependencies {
   compileOnly "com.facebook.react:react-native:${_reactNativeVersion}"
   implementation "com.github.skyscanner:backpack-android:${_backpackAndroidVersion}"
-  implementation "androidx.constraintlayout:constraintlayout:1.1.3"
+  implementation "androidx.constraintlayout:constraintlayout:2.0.4"
   implementation "com.jakewharton.threetenabp:threetenabp:${rootProject.ext.threetenabpVersion}"
 }
