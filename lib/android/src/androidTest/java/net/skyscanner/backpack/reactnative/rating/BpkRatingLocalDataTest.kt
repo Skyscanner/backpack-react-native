@@ -45,7 +45,8 @@ class BpkRatingLocalDataTest {
     val subject = BpkRatingLocalData(
       bpkRating,
       BpkRating.Style.Vertical,
-      BpkRating.Size.Base
+      BpkRating.Size.Base,
+      BpkRating.Scale.ZeroToTen
     ).asBpkRating(contextRule.context)
 
     assertEquals(title, subject.title)

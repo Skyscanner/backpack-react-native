@@ -12,7 +12,7 @@
   <application android:hardwareAccelerated="false">
     <activity
       android:name="net.skyscanner.backpack.reactnative.testing.TestActivity"
-      android:theme="@style/Theme.ReactNative.AppCompat.Light.NoActionBar.FullScreen"
+      android:theme="@style/BpkTheme"
       />
   </application>
 </manifest>
