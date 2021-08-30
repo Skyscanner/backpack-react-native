@@ -1,6 +1,9 @@
 {
   "maintainers": [
     {
+      "npm": "anambl"
+    },
+    {
       "npm": "georgegillams"
     },
     {
@@ -8,6 +11,9 @@
     },
     {
       "npm": "ojcurt"
+    },
+    {
+      "npm": "marianeumayer-skyscanner"
     }
   ]
 }
