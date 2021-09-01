@@ -31,9 +31,7 @@ import com.facebook.react.bridge.JavaOnlyMap
 import net.skyscanner.backpack.reactnative.testing.ReactContextTestRule
 import net.skyscanner.backpack.reactnative.testing.TestActivity
 import net.skyscanner.backpack.snackbar.BpkSnackbar
-import net.skyscanner.backpack.util.BpkTheme
 import org.junit.Assert.assertEquals
-import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -46,11 +44,6 @@ class BpkSnackbarModuleTest {
 
   @get:Rule
   val reactContextRule = ReactContextTestRule()
-
-  @Before
-  fun setUp() {
-    BpkTheme.applyDefaultsToContext(activityRule.activity)
-  }
 
   @Test
   fun test_constants() {

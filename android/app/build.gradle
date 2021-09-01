@@ -175,7 +175,7 @@ dependencies {
     // From node_modules
     implementation 'com.facebook.react:react-native:+'
     // From node_modules
-    implementation("com.github.skyscanner:backpack-android:${rootProject.ext.backpackVersion}")
+    implementation("net.skyscanner.backpack:backpack-android:${rootProject.ext.backpackVersion}")
 
     implementation project(':react-native-maps')
     implementation project(':react-native-linear-gradient')

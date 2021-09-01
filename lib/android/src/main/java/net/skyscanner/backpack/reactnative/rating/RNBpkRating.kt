@@ -38,19 +38,19 @@ class RNBpkRating(
   }
 
   fun render() {
-    val view = getUpdatedView(state.orientation, state.size)
+    val view = getUpdatedView(state.orientation, state.size, state.scale)
     val uiManager = reactContext.getNativeModule(UIManagerModule::class.java)
-    val localData = BpkRatingLocalData(view, state.orientation, state.size)
+    val localData = BpkRatingLocalData(view, state.orientation, state.size, state.scale)
     // This will trigger measure to run in BpkRatingShadowNode
     uiManager?.setViewLocalData(id, localData)
     rating = view
   }
 
-  private fun getUpdatedView(style: BpkRating.Style, size: BpkRating.Size): BpkRating {
+  private fun getUpdatedView(style: BpkRating.Style, size: BpkRating.Size, scale: BpkRating.Scale): BpkRating {
     val view = if (rating == null || state.isInvalid()) {
       // Style and Size can only be set in the constructor, so we need a new instance for that
       removeAllViews()
-      val view = BpkRating(context, style, size)
+      val view = BpkRating(context, style, size, scale)
       addView(view)
       view
     } else {
@@ -93,6 +93,7 @@ class RNBpkRating(
       var icon: ((BpkRating.Score) -> Drawable)? by markDirtyOnUpdate(null)
       var size: BpkRating.Size by markInvalidOnUpdate(BpkRating.Size.Base)
       var orientation: BpkRating.Style by markInvalidOnUpdate(BpkRating.Style.Horizontal)
+      var scale: BpkRating.Scale by markInvalidOnUpdate(BpkRating.Scale.ZeroToTen)
     }
   }
 }

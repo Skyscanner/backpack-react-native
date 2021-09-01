@@ -22,7 +22,7 @@ def getPackageJson(project) {
 }
 
 def _reactNativeVersion = safeExtGet("reactNative", "+")
-def _backpackAndroidVersion = safeExtGet("backpackVersion", "23.2.0")
+def _backpackAndroidVersion = safeExtGet("backpackVersion", "32.1.0")
 def _compileSdkVersion = safeExtGet("compileSdkVersion", 30)
 def _targetSdkVersion = safeExtGet("targetSdkVersion", 30)
 def _minSdkVersion = safeExtGet("minSdkVersion", 24)
@@ -60,7 +60,7 @@ android {
 
 dependencies {
   compileOnly "com.facebook.react:react-native:${_reactNativeVersion}"
-  implementation "com.github.skyscanner:backpack-android:${_backpackAndroidVersion}"
+  implementation "net.skyscanner.backpack:backpack-android:${_backpackAndroidVersion}"
   implementation "androidx.constraintlayout:constraintlayout:2.0.4"
   implementation "com.jakewharton.threetenabp:threetenabp:${rootProject.ext.threetenabpVersion}"
 }

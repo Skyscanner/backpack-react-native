@@ -24,7 +24,7 @@ import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.uimanager.DisplayMetricsHolder
 import com.facebook.react.uimanager.ThemedReactContext
 import kotlin.reflect.KClass
-import net.skyscanner.backpack.util.BpkTheme
+import net.skyscanner.backpack.R
 import org.junit.rules.TestWatcher
 import org.junit.runner.Description
 
@@ -39,7 +39,7 @@ class ReactViewManagerTestRule<T : Any>(private val managerClass: KClass<T>) : T
 
   override fun starting(description: Description?) {
     context = ReactApplicationContext(InstrumentationRegistry.getInstrumentation().targetContext)
-    BpkTheme.applyDefaultsToContext(context)
+    context.setTheme(R.style.BpkTheme)
     catalystInstanceMock = ReactTestHelper.createMockCatalystInstance()
     context.initializeWithInstance(catalystInstanceMock)
     themedContext = ThemedReactContext(context, context)

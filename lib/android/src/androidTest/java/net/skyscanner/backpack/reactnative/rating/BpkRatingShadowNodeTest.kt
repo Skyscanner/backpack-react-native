@@ -55,7 +55,8 @@ class BpkRatingShadowNodeTest {
       BpkRatingLocalData(
         BpkRating(contextRule.themedContext),
         BpkRating.Style.Vertical,
-        BpkRating.Size.Base))
+        BpkRating.Size.Base,
+        BpkRating.Scale.ZeroToTen))
 
     assertTrue(subject.isDirty)
   }
@@ -72,7 +73,8 @@ class BpkRatingShadowNodeTest {
       BpkRatingLocalData(
         BpkRating(contextRule.themedContext),
         BpkRating.Style.Vertical,
-        BpkRating.Size.Base))
+        BpkRating.Size.Base,
+        BpkRating.Scale.ZeroToTen))
 
     val result = subject.measure(mockk(), 0f, YogaMeasureMode.UNDEFINED, 0f, YogaMeasureMode.UNDEFINED)
 
