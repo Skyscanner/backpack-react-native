@@ -1,5 +1,11 @@
 # Backpack changelog
 
+# 16.1.0 - 2021-09-01
+
+**Added:**
+
+- Upgraded `backpack-android` to `32.1.0`
+
 # 16.0.0 - 2021-08-12
 
 **Breaking:**
