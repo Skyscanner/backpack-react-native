@@ -1,11 +1,11 @@
 PODS:
-  - Backpack (44.0.4):
+  - Backpack (45.0.0):
     - FloatingPanel (= 1.6.6)
     - FSCalendar (~> 2.8.2)
     - MBProgressHUD (~> 1.2.0)
     - TTTAttributedLabel (~> 2.0.0)
-  - BackpackReactNative (16.0.0):
-    - Backpack (~> 44.0)
+  - BackpackReactNative (16.1.0):
+    - Backpack (~> 45.0)
     - React
     - react-native-maps
   - boost-for-react-native (1.63.0)
@@ -287,7 +287,7 @@ PODS:
   - Yoga (1.14.0)
 
 DEPENDENCIES:
-  - Backpack (~> 44.0)
+  - Backpack (~> 45.0)
   - BackpackReactNative (from `../node_modules/backpack-react-native/ios/BackpackReactNative`)
   - BVLinearGradient (from `../node_modules/react-native-linear-gradient`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
@@ -396,16 +396,16 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  Backpack: 87f2455632c078e548ab83acbd331e44354f5244
-  BackpackReactNative: ec82a218768d65d0962f71de225b674c781de0de
+  Backpack: cf3d29def62afa6fc10b4341a1e09d8a100c0630
+  BackpackReactNative: bdd7e865bf0c62c1b356b106e73dd2d2c314c7e5
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BVLinearGradient: e3aad03778a456d77928f594a649e96995f1c872
-  DoubleConversion: cf9b38bf0b2d048436d9a82ad2abe1404f11e7de
+  DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
   FBLazyVector: e686045572151edef46010a6f819ade377dfeb4b
-  FBReactNativeSpec: 849a968529cadc0dd1b82e33821e31aaa2159860
+  FBReactNativeSpec: eae6922e27ec3c639923e5b617f3d7628ad0a1e2
   FloatingPanel: 5fe605e073e60395bc4bb416fd513d0fa38a6558
   FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
-  glog: 73c2498ac6884b13ede40eda8228cb1eee9d9d62
+  glog: 1f3da668190260b06b429bb211bfbee5cd790c28
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   RCT-Folly: ec7a233ccc97cc556cf7237f0db1ff65b986f27c
   RCTRequired: 6d3e854f0e7260a648badd0d44fc364bc9da9728
@@ -434,6 +434,6 @@ SPEC CHECKSUMS:
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   Yoga: 575c581c63e0d35c9a83f4b46d01d63abc1100ac
 
-PODFILE CHECKSUM: 3fc7b1e3c4ddeed78899ca0df5e64b47c301bc9b
+PODFILE CHECKSUM: 7e7289de37bce5e6f133700cd839bdc09ebd6772
 
 COCOAPODS: 1.10.1

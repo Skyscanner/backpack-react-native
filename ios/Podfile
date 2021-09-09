@@ -40,7 +40,7 @@ target 'Backpack Native' do
   pod 'RCT-Folly', :podspec => '../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec', :modular_headers => false
 
   # RN Bridging Pods
-  pod 'Backpack', '~> 44.0', :modular_headers => true
+  pod 'Backpack', '~> 45.0', :modular_headers => true
   pod 'BackpackReactNative', path: '../node_modules/backpack-react-native/ios/BackpackReactNative', :modular_headers => false
 
   # Third party pods
