@@ -1,5 +1,10 @@
 # Backpack changelog
 
+# 17.0.0 - 2021-09-09
+
+**Breaking:**
+ - Now requires Backpack iOS 45.0.0
+
 # 16.1.0 - 2021-09-01
 
 **Added:**
