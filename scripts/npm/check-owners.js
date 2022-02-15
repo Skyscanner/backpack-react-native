@@ -28,7 +28,7 @@ const meta = require('../../meta.json');
 let failures = false;
 // People who've left but we can't remove them because npm won't let us
 // because they were the original publishers of some packages.
-const DEARLY_DEPARTED = ['tiagohngl'];
+const DEARLY_DEPARTED = ['georgegillams', 'k0nserv', 'tiagohngl'];
 
 const owners = meta.maintainers.map((maintainer) => maintainer.npm).sort();
 

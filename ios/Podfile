@@ -3,7 +3,7 @@ source 'https://cdn.cocoapods.org/'
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-platform :ios, '12.0'
+platform :ios, '14.0'
 use_frameworks!
 
 target 'Backpack Native' do
@@ -40,7 +40,7 @@ target 'Backpack Native' do
   pod 'RCT-Folly', :podspec => '../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec', :modular_headers => false
 
   # RN Bridging Pods
-  pod 'Backpack', '~> 45.0', :modular_headers => true
+  pod 'Backpack', '~> 47.1', :modular_headers => true
   pod 'BackpackReactNative', path: '../node_modules/backpack-react-native/ios/BackpackReactNative', :modular_headers => false
 
   # Third party pods
