@@ -70,7 +70,7 @@ Once you have Ruby, install [Bundler](https://bundler.io) with `gem install bund
 
 Get [Homebrew](https://brew.sh/) if you don't already have it.
 
-Install Watchman with `brew install watchman`, then install Java 8 with `brew cask install adoptopenjdk/openjdk/adoptopenjdk8`.
+Install Watchman with `brew install watchman`, then install Java 11 with `brew cask install adoptopenjdk/openjdk/adoptopenjdk11`.
 
 Get Android Studio with `brew cask install android-studio`. Once installed, open it and a setup wizard will guide you through installing lots of extra things like the Android SDK (choose *Standard* installation). You may be asked for your password during this. You're free to close Android Studio once this is done.
 
@@ -93,13 +93,13 @@ Download Android system images for the minimum and targeted API levels. Note tha
 
 ```
 $ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager "system-images;android-28;google_apis;x86"
-$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager "system-images;android-21;google_apis;x86"
+$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager "system-images;android-24;google_apis;x86"
 ```
 Create Android Virtual Devices (AVDs):
 
 ```
 $ANDROID_SDK_ROOT/cmdline-tools/latest/bin/avdmanager create avd --name "bpk-avd" --package "system-images;android-28;google_apis;x86" --device "pixel" && cp android/bpk-avd.ini ~/.android/avd/bpk-avd.avd/config.ini
-$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/avdmanager create avd --name "bpk-avd-min" --package "system-images;android-21;google_apis;x86" --device "Nexus 5"
+$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/avdmanager create avd --name "bpk-avd-min" --package "system-images;android-24;google_apis;x86" --device "Nexus 5"
 ```
 
 ### Code style
@@ -191,9 +191,9 @@ You can also run the tests in 'watch mode', which means the process will continu
 <details>
 <summary>Run Android emulators manually</summary>
 
-The setup process detailed in *[Prerequisites](#prerequisites)* created two Android emulators. One with API version 28 and another with 21.
+The setup process detailed in *[Prerequisites](#prerequisites)* created two Android emulators. One with API version 28 and another with 24.
 
-To run these manually, run `npm run android:emulator` or `npm run android:emulator:min` to run API versions 28 and 21 respectively.
+To run these manually, run `npm run android:emulator` or `npm run android:emulator:min` to run API versions 28 and 24 respectively.
 
 </details>
 
