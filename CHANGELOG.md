@@ -1,5 +1,10 @@
 # Backpack changelog
 
+# 20.0.0 - 2022-02-28
+
+**Breaking:**
+ - Liberating Backpack-iOS version
+
 # 19.0.0 - 2022-01-26
 
 **Breaking:**
