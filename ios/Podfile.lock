@@ -4,7 +4,7 @@ PODS:
     - FSCalendar (~> 2.8.2)
     - MBProgressHUD (~> 1.2.0)
     - TTTAttributedLabel (~> 2.0.0)
-  - BackpackReactNative (20.0.0):
+  - BackpackReactNative (20.0.1):
     - Backpack
     - React
     - react-native-maps
@@ -397,12 +397,12 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Backpack: 9e9c791ccb9b0df15187077640a8441fdaa417da
-  BackpackReactNative: 5bdbb0f70b22c13e23d828fe4a5fa0f01b189823
+  BackpackReactNative: 2287ae05e0af0a76ad8f433179b392742ed7a469
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BVLinearGradient: e3aad03778a456d77928f594a649e96995f1c872
   DoubleConversion: cf9b38bf0b2d048436d9a82ad2abe1404f11e7de
   FBLazyVector: e686045572151edef46010a6f819ade377dfeb4b
-  FBReactNativeSpec: 75ae1c4daf5feaf185042949263bde6d94c94a43
+  FBReactNativeSpec: 4ba18e430cfa7c809aace6e901f5a505c4059a12
   FloatingPanel: 5fe605e073e60395bc4bb416fd513d0fa38a6558
   FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
   glog: 73c2498ac6884b13ede40eda8228cb1eee9d9d62
