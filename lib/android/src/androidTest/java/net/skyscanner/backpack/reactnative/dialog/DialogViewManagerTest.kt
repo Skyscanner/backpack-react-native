@@ -191,7 +191,7 @@ class DialogViewManagerTest {
       arrayOf(
         "Action" to BpkButton.Type.Primary,
         "Secondary action" to BpkButton.Type.Secondary,
-        "Outline action" to BpkButton.Type.Outline,
+        "Outline action" to BpkButton.Type.PrimaryOnDark,
         "Featured action" to BpkButton.Type.Featured,
         "Destructive action" to BpkButton.Type.Destructive
       ),
