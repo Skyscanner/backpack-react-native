@@ -82,7 +82,7 @@ class DialogViewManager : ViewGroupManager<RNDialog>() {
         val buttonType = when (val type = each?.getString("type")) {
           "primary" -> BpkButton.Type.Primary
           "secondary" -> BpkButton.Type.Secondary
-          "outline" -> BpkButton.Type.Outline
+          "outline" -> BpkButton.Type.PrimaryOnDark
           "featured" -> BpkButton.Type.Featured
           "destructive" -> BpkButton.Type.Destructive
           else -> throw JSApplicationIllegalArgumentException("Action button type $type is not supported")

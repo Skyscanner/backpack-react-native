@@ -56,7 +56,7 @@ class RNDialog(
         // setup actions
         state.actions.forEachIndexed { index, element ->
           this.addActionButton(
-            BpkButton(context, element.second).apply {
+            BpkButton(context, element.second, BpkButton.Size.Standard).apply {
               text = element.first
               setOnClickListener {
                 state.onAction?.invoke(DialogActionType.BUTTON_ACTION, index)
