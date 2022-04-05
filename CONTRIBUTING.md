@@ -130,7 +130,7 @@ We use [Storybook](https://storybook.js.org/) for our development environment.
 1. In another terminal tab/window, run `npm start` to start the React Native server.
 1. In a third terminal tab/window, run `npm run ios` and `npm run android` to run the Backpack app on an iPhone simulator and Android emulator.
 
-At this point, you should have a functioning development environment running on your local machine.
+At this point, you should have a functioning development environment running on your local machine. If you're a Skyscanner employee you can uncomment the forced React Native version in `app/build.gradle` to ensure a crash fix is applied.
 
 ## Adding a new component
 

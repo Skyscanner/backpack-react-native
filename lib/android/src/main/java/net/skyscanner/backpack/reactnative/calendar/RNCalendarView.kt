@@ -22,7 +22,6 @@ import android.content.Context
 import android.util.AttributeSet
 import android.widget.AbsListView
 import android.widget.FrameLayout
-import java.util.Locale
 import net.skyscanner.backpack.calendar.BpkCalendar
 import net.skyscanner.backpack.calendar.model.CalendarColoring
 import net.skyscanner.backpack.calendar.model.CalendarRange
@@ -31,6 +30,7 @@ import net.skyscanner.backpack.calendar.model.SingleDay
 import net.skyscanner.backpack.calendar.presenter.SelectionType
 import net.skyscanner.backpack.reactnative.BpkViewStateHolder
 import org.threeten.bp.LocalDate
+import java.util.Locale
 
 @SuppressLint("ViewConstructor")
 class RNCalendarView(
@@ -44,8 +44,9 @@ class RNCalendarView(
 
   init {
     layoutParams = LayoutParams(
-            LayoutParams.MATCH_PARENT,
-            LayoutParams.MATCH_PARENT)
+      LayoutParams.MATCH_PARENT,
+      LayoutParams.MATCH_PARENT
+    )
 
     addView(calendar)
     state.onAfterUpdateTransaction(::render)
@@ -66,9 +67,11 @@ class RNCalendarView(
       controller?.selectionType = state.selectionType
       controller?.disabledDateMatcher = state.disabledDateMatcher
       controller?.calendarColoring = state.colorBuckets?.let {
-        CalendarColoring(it.map { bucket ->
-          bucket.asColorBucket(controller!!.startDate, controller!!.endDate)
-        }.toSet())
+        CalendarColoring(
+          it.map { bucket ->
+            bucket.asColorBucket(controller!!.startDate, controller!!.endDate)
+          }.toSet()
+        )
       }
       controller?.monthFooterAdapter = state.footerView?.asFooterAdapter(controller!!.locale)
 
@@ -89,9 +92,13 @@ class RNCalendarView(
 
     state.colorBuckets?.let {
       currentController.calendarColoring =
-        CalendarColoring(it.map {
-            bucket -> bucket.asColorBucket(currentController.startDate, currentController.endDate)
-        }.toSet()) }
+        CalendarColoring(
+          it.map {
+            bucket ->
+            bucket.asColorBucket(currentController.startDate, currentController.endDate)
+          }.toSet()
+        )
+    }
 
     state.footerView?.let {
       currentController.monthFooterAdapter = it.asFooterAdapter(currentController.locale)
@@ -117,8 +124,9 @@ class RNCalendarView(
 
   private val measureAndLayout = Runnable {
     measure(
-            MeasureSpec.makeMeasureSpec(width, MeasureSpec.EXACTLY),
-            MeasureSpec.makeMeasureSpec(height, MeasureSpec.EXACTLY))
+      MeasureSpec.makeMeasureSpec(width, MeasureSpec.EXACTLY),
+      MeasureSpec.makeMeasureSpec(height, MeasureSpec.EXACTLY)
+    )
     layout(left, top, right, bottom)
   }
 

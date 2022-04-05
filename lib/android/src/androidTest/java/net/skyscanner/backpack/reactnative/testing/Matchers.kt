@@ -17,9 +17,9 @@
  */
 package net.skyscanner.backpack.reactnative.testing
 
-import kotlin.reflect.KClass
 import org.hamcrest.BaseMatcher
 import org.hamcrest.Description
+import kotlin.reflect.KClass
 
 class ThrowsMatcher<T, E : Throwable>(val kclass: KClass<E>) : BaseMatcher<T>() {
   private var lastExceptionThrown: Throwable? = null

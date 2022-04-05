@@ -21,7 +21,6 @@ package net.skyscanner.backpack.reactnative.calendar
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import com.jakewharton.threetenabp.AndroidThreeTen
-import java.util.*
 import net.skyscanner.backpack.calendar.BpkCalendar
 import net.skyscanner.backpack.calendar.model.CalendarCellStyle
 import net.skyscanner.backpack.calendar.model.ColoredBucket
@@ -36,6 +35,7 @@ import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.threeten.bp.LocalDate
+import java.util.*
 
 @RunWith(AndroidJUnit4::class)
 class RNCalendarViewTest {
@@ -56,22 +56,33 @@ class RNCalendarViewTest {
     val maxDate = LocalDate.of(2020, 3, 20)
     val locale = "en"
     val selectionType = SelectionType.RANGE
-    val disabledDateMatcher = AnyMatcher(arrayOf(
-      LocalDate.of(2020, 3, 19)))
+    val disabledDateMatcher = AnyMatcher(
+      arrayOf(
+        LocalDate.of(2020, 3, 19)
+      )
+    )
     val colorBuckets = arrayOf(
       RNColorBucket(
         1,
         AnyMatcher(
           arrayOf(
-            LocalDate.of(2020, 3, 17))),
+            LocalDate.of(2020, 3, 17)
+          )
+        ),
         null,
-        null))
+        null
+      )
+    )
 
     val footerView = RNHighlightedDaysFooterView(
       contextRule.context,
-      setOf(HighlightedDaysAdapter.HighlightedDay(
-        LocalDate.of(2020, 3, 17),
-        "test")))
+      setOf(
+        HighlightedDaysAdapter.HighlightedDay(
+          LocalDate.of(2020, 3, 17),
+          "test"
+        )
+      )
+    )
 
     calendar.state.minDate = minDate
     calendar.state.maxDate = maxDate
@@ -100,8 +111,10 @@ class RNCalendarViewTest {
         ColoredBucket(
           CalendarCellStyle.Custom(1),
           setOf(LocalDate.of(2020, 3, 17))
-        )),
-      controller.calendarColoring?.coloredBuckets)
+        )
+      ),
+      controller.calendarColoring?.coloredBuckets
+    )
 
     // Footer adapter does not support equality by content so we can't compare here.
     assertNotNull(controller.monthFooterAdapter)

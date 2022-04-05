@@ -78,14 +78,19 @@ class CalendarViewManagerTest {
   @Test
   fun test_title() {
     val view = createWithLocale()
-    manager.updateProperties(view, buildProps(
-      "selectedDates",
-      JavaOnlyArray.of(date1Seconds, date2Seconds)))
+    manager.updateProperties(
+      view,
+      buildProps(
+        "selectedDates",
+        JavaOnlyArray.of(date1Seconds, date2Seconds)
+      )
+    )
 
     assertNotNull(view.state.selectedDates)
     assertArrayEquals(
       arrayOf(date1, date2),
-      view.state.selectedDates)
+      view.state.selectedDates
+    )
   }
 
   @Test
@@ -148,11 +153,16 @@ class CalendarViewManagerTest {
   @Test
   fun test_disable_dates_matcher() {
     val view = createWithLocale()
-    manager.updateProperties(view, buildProps(
-      "disabledDates", JavaOnlyMap.of(
-        "type", "range",
-        "dates", JavaOnlyArray.of(date1Seconds, date2Seconds)
-    )))
+    manager.updateProperties(
+      view,
+      buildProps(
+        "disabledDates",
+        JavaOnlyMap.of(
+          "type", "range",
+          "dates", JavaOnlyArray.of(date1Seconds, date2Seconds)
+        )
+      )
+    )
 
     assertNotNull(view.state.disabledDateMatcher)
     assertEquals(RangeMatcher(date1, date2), view.state.disabledDateMatcher)
@@ -162,47 +172,74 @@ class CalendarViewManagerTest {
   fun test_disable_dates_matcher_invalid() {
     val view = createWithLocale()
     assertThat({
-      manager.updateProperties(view, buildProps(
-        "disabledDates", JavaOnlyMap.of(
-          "type", "invalid",
-          "dates", JavaOnlyArray.of(date1Seconds, date2Seconds)
-      )))
+      manager.updateProperties(
+        view,
+        buildProps(
+          "disabledDates",
+          JavaOnlyMap.of(
+            "type", "invalid",
+            "dates", JavaOnlyArray.of(date1Seconds, date2Seconds)
+          )
+        )
+      )
     }, throws(JSApplicationIllegalArgumentException::class))
 
     assertThat({
-      manager.updateProperties(view, buildProps(
-        "disabledDates", JavaOnlyMap.of(
-          "type", null,
-          "dates", JavaOnlyArray.of(date1Seconds, date2Seconds)
-      )))
+      manager.updateProperties(
+        view,
+        buildProps(
+          "disabledDates",
+          JavaOnlyMap.of(
+            "type", null,
+            "dates", JavaOnlyArray.of(date1Seconds, date2Seconds)
+          )
+        )
+      )
     }, throws(JSApplicationIllegalArgumentException::class))
 
     assertThat({
-      manager.updateProperties(view, buildProps(
-        "disabledDates", JavaOnlyMap.of(
-          "type", "range",
-          "dates", null
-      )))
+      manager.updateProperties(
+        view,
+        buildProps(
+          "disabledDates",
+          JavaOnlyMap.of(
+            "type", "range",
+            "dates", null
+          )
+        )
+      )
     }, throws(JSApplicationIllegalArgumentException::class))
   }
 
   @Test
   fun test_color_buckets() {
     val view = createWithLocale()
-    manager.updateProperties(view, buildProps(
-      "colorBuckets", JavaOnlyArray.of(
-        JavaOnlyMap.of(
-          "color", 1,
-          "textStyle", "light",
-          "days", JavaOnlyMap.of(
-            "type", "range",
-            "dates", JavaOnlyArray.of(date1Seconds, date2Seconds))),
-        JavaOnlyMap.of(
-          "color", 2,
-          "__cellStyle", "positive",
-          "days", JavaOnlyMap.of(
-            "type", "any",
-            "dates", JavaOnlyArray.of(date2Seconds))))))
+    manager.updateProperties(
+      view,
+      buildProps(
+        "colorBuckets",
+        JavaOnlyArray.of(
+          JavaOnlyMap.of(
+            "color", 1,
+            "textStyle", "light",
+            "days",
+            JavaOnlyMap.of(
+              "type", "range",
+              "dates", JavaOnlyArray.of(date1Seconds, date2Seconds)
+            )
+          ),
+          JavaOnlyMap.of(
+            "color", 2,
+            "__cellStyle", "positive",
+            "days",
+            JavaOnlyMap.of(
+              "type", "any",
+              "dates", JavaOnlyArray.of(date2Seconds)
+            )
+          )
+        )
+      )
+    )
 
     assertNotNull(view.state.colorBuckets)
     assertArrayEquals(
@@ -211,12 +248,15 @@ class CalendarViewManagerTest {
           color = 1,
           days = RangeMatcher(date1, date2),
           textStyle = "light",
-          cellStyle = null),
+          cellStyle = null
+        ),
         RNColorBucket(
           color = 2,
           days = AnyMatcher(arrayOf(date2)),
           textStyle = null,
-          cellStyle = "positive")),
+          cellStyle = "positive"
+        )
+      ),
       view.state.colorBuckets
     )
   }
@@ -226,45 +266,68 @@ class CalendarViewManagerTest {
     val view = createWithLocale()
 
     assertThat({
-      manager.updateProperties(view,
+      manager.updateProperties(
+        view,
         buildProps(
-          "colorBuckets", JavaOnlyArray.of(null)))
+          "colorBuckets", JavaOnlyArray.of(null)
+        )
+      )
     }, throws(JSApplicationIllegalArgumentException::class))
 
     assertThat({
-      manager.updateProperties(view, buildProps(
-        "colorBuckets", JavaOnlyArray.of(
-          JavaOnlyMap.of(
-            "color", 1,
-            "textStyle", "light",
-            "days", null))))
+      manager.updateProperties(
+        view,
+        buildProps(
+          "colorBuckets",
+          JavaOnlyArray.of(
+            JavaOnlyMap.of(
+              "color", 1,
+              "textStyle", "light",
+              "days", null
+            )
+          )
+        )
+      )
     }, throws(JSApplicationIllegalArgumentException::class))
   }
 
   @Test
   fun test_footer_view() {
     val view = createWithLocale()
-    manager.updateProperties(view, buildProps(
-      "androidFooterView", null))
+    manager.updateProperties(
+      view,
+      buildProps(
+        "androidFooterView", null
+      )
+    )
 
     assertNull(view.state.footerView)
 
-    manager.updateProperties(view, buildProps(
-      "androidFooterView", JavaOnlyMap.of(
-        "__type", "highlightedDays",
-        "days", JavaOnlyArray.of(
-          JavaOnlyMap.of(
-            "date", date1Seconds,
-            "description", "test day",
-            "color", 1
-          )))))
+    manager.updateProperties(
+      view,
+      buildProps(
+        "androidFooterView",
+        JavaOnlyMap.of(
+          "__type", "highlightedDays",
+          "days",
+          JavaOnlyArray.of(
+            JavaOnlyMap.of(
+              "date", date1Seconds,
+              "description", "test day",
+              "color", 1
+            )
+          )
+        )
+      )
+    )
 
     assertEquals(
       RNHighlightedDaysFooterView(
         view.context,
         setOf(HighlightedDaysAdapter.HighlightedDay(date1, "test day", 1))
-        ),
-      view.state.footerView)
+      ),
+      view.state.footerView
+    )
   }
 
   @Test
@@ -272,41 +335,70 @@ class CalendarViewManagerTest {
     val view = createWithLocale()
 
     assertThat({
-      manager.updateProperties(view,
+      manager.updateProperties(
+        view,
         buildProps(
-          "androidFooterView", JavaOnlyMap.of(
-            "__type", "invalid")))
+          "androidFooterView",
+          JavaOnlyMap.of(
+            "__type", "invalid"
+          )
+        )
+      )
     }, throws(JSApplicationIllegalArgumentException::class))
 
     assertThat({
-      manager.updateProperties(view, buildProps(
-        "androidFooterView", JavaOnlyMap.of(
-          "__type", "highlightedDays",
-          "daysss", JavaOnlyArray.of(
-            JavaOnlyMap.of(
-              "date", date1Seconds,
-              "description", "test day"
-            )))))
+      manager.updateProperties(
+        view,
+        buildProps(
+          "androidFooterView",
+          JavaOnlyMap.of(
+            "__type", "highlightedDays",
+            "daysss",
+            JavaOnlyArray.of(
+              JavaOnlyMap.of(
+                "date", date1Seconds,
+                "description", "test day"
+              )
+            )
+          )
+        )
+      )
     }, throws(JSApplicationIllegalArgumentException::class))
 
     assertThat({
-      manager.updateProperties(view, buildProps(
-        "androidFooterView", JavaOnlyMap.of(
-          "__type", "highlightedDays",
-          "days", JavaOnlyArray.of(
-            JavaOnlyMap.of(
-              "description", "test day"
-              )))))
+      manager.updateProperties(
+        view,
+        buildProps(
+          "androidFooterView",
+          JavaOnlyMap.of(
+            "__type", "highlightedDays",
+            "days",
+            JavaOnlyArray.of(
+              JavaOnlyMap.of(
+                "description", "test day"
+              )
+            )
+          )
+        )
+      )
     }, throws(JSApplicationIllegalArgumentException::class))
 
     assertThat({
-      manager.updateProperties(view, buildProps(
-        "androidFooterView", JavaOnlyMap.of(
-          "__type", "highlightedDays",
-          "days", JavaOnlyArray.of(
-            JavaOnlyMap.of(
-              "date", date1Seconds
-            )))))
+      manager.updateProperties(
+        view,
+        buildProps(
+          "androidFooterView",
+          JavaOnlyMap.of(
+            "__type", "highlightedDays",
+            "days",
+            JavaOnlyArray.of(
+              JavaOnlyMap.of(
+                "date", date1Seconds
+              )
+            )
+          )
+        )
+      )
     }, throws(JSApplicationIllegalArgumentException::class))
   }
 
@@ -315,36 +407,53 @@ class CalendarViewManagerTest {
     val stateHolder = mockk<RNCalendarView.Companion.StateHolder>(relaxed = true)
     val view = RNCalendarView(themedContext, stateHolder)
 
-    manager.updateProperties(view,
+    manager.updateProperties(
+      view,
       buildProps(
         "selectedDates", JavaOnlyArray.of(date1Seconds, date2Seconds),
         "locale", "en",
-        "disabledDates", JavaOnlyMap.of(
+        "disabledDates",
+        JavaOnlyMap.of(
           "type", "range",
-          "dates", JavaOnlyArray.of(date1Seconds, date2Seconds)),
-        "selectionType", Arguments.createMap().apply {
+          "dates", JavaOnlyArray.of(date1Seconds, date2Seconds)
+        ),
+        "selectionType",
+        Arguments.createMap().apply {
           putString("type", "range")
         },
         "minDate", date1Seconds,
         "maxDate", date2Seconds,
-        "disabledDates", JavaOnlyMap.of(
+        "disabledDates",
+        JavaOnlyMap.of(
           "type", "any",
-          "dates", JavaOnlyArray.of(date1Seconds, date2Seconds)),
-        "colorBuckets", JavaOnlyArray.of(
+          "dates", JavaOnlyArray.of(date1Seconds, date2Seconds)
+        ),
+        "colorBuckets",
+        JavaOnlyArray.of(
           JavaOnlyMap.of(
             "color", 2,
             "__cellStyle", "positive",
-            "days", JavaOnlyMap.of(
-            "type", "any",
-            "dates", JavaOnlyArray.of(date2Seconds)))),
-        "androidFooterView", JavaOnlyMap.of(
+            "days",
+            JavaOnlyMap.of(
+              "type", "any",
+              "dates", JavaOnlyArray.of(date2Seconds)
+            )
+          )
+        ),
+        "androidFooterView",
+        JavaOnlyMap.of(
           "__type", "highlightedDays",
-          "days", JavaOnlyArray.of(
+          "days",
+          JavaOnlyArray.of(
             JavaOnlyMap.of(
               "date", date1Seconds,
               "description", "test day",
               "color", 1
-            )))))
+            )
+          )
+        )
+      )
+    )
 
     verify(exactly = 1) { stateHolder.dispatchUpdateTransactionFinished() }
   }

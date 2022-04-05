@@ -9,48 +9,48 @@ import com.facebook.react.ReactPackage
 import com.facebook.react.shell.MainReactPackage
 import com.facebook.soloader.SoLoader
 import com.jakewharton.threetenabp.AndroidThreeTen
-import java.util.Arrays
 import net.skyscanner.backpack.reactnative.BackpackReactNative
 import net.skyscanner.backpack.reactnative.calendar.CalendarPackage
 import net.skyscanner.backpack.reactnative.dialog.DialogPackage
 import net.skyscanner.backpack.reactnative.flare.BpkFlarePackage
 import net.skyscanner.backpack.reactnative.rating.BpkRatingPackage
 import net.skyscanner.backpack.reactnative.snackbar.BpkSnackbarPackage
+import java.util.Arrays
 
 class MainApplication : Application(), ReactApplication {
 
-    private val mReactNativeHost = object : ReactNativeHost(this) {
-        override fun getUseDeveloperSupport(): Boolean {
-            // Somehow build BuildConfig.DEBUG was being set to false
-            // after the update to androidx and the latest backpack lib
-            // which was causing the app not to boot. Since we only ever
-            // use this app in debug mode there is no harm in setting this
-            // to always true.
-            return true
-        }
-
-        override fun getPackages(): List<ReactPackage> {
-            return Arrays.asList(
-                    MainReactPackage(),
-                    MapsPackage(),
-                    LinearGradientPackage(),
-                    CalendarPackage(),
-                    DialogPackage(),
-                    BpkRatingPackage(),
-                    BpkFlarePackage(),
-                    BpkSnackbarPackage()
-            )
-        }
+  private val mReactNativeHost = object : ReactNativeHost(this) {
+    override fun getUseDeveloperSupport(): Boolean {
+      // Somehow build BuildConfig.DEBUG was being set to false
+      // after the update to androidx and the latest backpack lib
+      // which was causing the app not to boot. Since we only ever
+      // use this app in debug mode there is no harm in setting this
+      // to always true.
+      return true
     }
 
-    override fun getReactNativeHost(): ReactNativeHost {
-        return mReactNativeHost
+    override fun getPackages(): List<ReactPackage> {
+      return Arrays.asList(
+        MainReactPackage(),
+        MapsPackage(),
+        LinearGradientPackage(),
+        CalendarPackage(),
+        DialogPackage(),
+        BpkRatingPackage(),
+        BpkFlarePackage(),
+        BpkSnackbarPackage()
+      )
     }
+  }
 
-    override fun onCreate() {
-        super.onCreate()
-        AndroidThreeTen.init(this)
-        BackpackReactNative.init(this)
-        SoLoader.init(this, /* native exopackage */ false)
-    }
+  override fun getReactNativeHost(): ReactNativeHost {
+    return mReactNativeHost
+  }
+
+  override fun onCreate() {
+    super.onCreate()
+    AndroidThreeTen.init(this)
+    BackpackReactNative.init(this)
+    SoLoader.init(this, /* native exopackage */ false)
+  }
 }

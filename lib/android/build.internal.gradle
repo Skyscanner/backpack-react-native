@@ -10,12 +10,12 @@ def safeExtGet(prop, fallback) {
 def _reactNativeVersion = safeExtGet("reactNative", "+")
 
 dependencies {
-  testImplementation 'junit:junit:4.13'
+  testImplementation 'junit:junit:4.13.2'
 
   androidTestImplementation "com.facebook.react:react-native:${_reactNativeVersion}"
 
   androidTestImplementation "androidx.test.ext:junit:1.1.3"
-  androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+  androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
   androidTestImplementation 'androidx.test:rules:1.4.0'
 
   androidTestImplementation "io.mockk:mockk-android:1.12.0"

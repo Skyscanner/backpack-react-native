@@ -21,8 +21,8 @@ import android.view.ViewGroup
 import android.widget.FrameLayout
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import net.skyscanner.backpack.reactnative.testing.ReactContextTestRule
-import org.hamcrest.Matchers.`is`
 import org.hamcrest.Matchers.instanceOf
+import org.hamcrest.Matchers.`is`
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertThat
 import org.junit.Rule

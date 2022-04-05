@@ -69,13 +69,19 @@ class BpkSnackbarModuleTest {
       subject.show(
         JavaOnlyMap.of(
           "text", "Snackbar text",
-          "duration", BpkSnackbar.LENGTH_SHORT),
-        Callback { })
+          "duration", BpkSnackbar.LENGTH_SHORT
+        ),
+        Callback { }
+      )
     }
 
     onView(withText("Snackbar text"))
-      .check(matches(withEffectiveVisibility(
-        ViewMatchers.Visibility.VISIBLE
-      )))
+      .check(
+        matches(
+          withEffectiveVisibility(
+            ViewMatchers.Visibility.VISIBLE
+          )
+        )
+      )
   }
 }

@@ -108,10 +108,16 @@ class DialogViewManagerTest {
   fun test_icon() {
     val view = manager.createViewInstance(themedContext)
     val skyBlueValue = ContextCompat.getColor(themedContext, R.color.bpkSkyBlue)
-    manager.updateProperties(view, buildProps(
-      "icon", JavaOnlyMap.of(
-        "iconId", "bpk_food",
-        "iconColor", "bpkSkyBlue")))
+    manager.updateProperties(
+      view,
+      buildProps(
+        "icon",
+        JavaOnlyMap.of(
+          "iconId", "bpk_food",
+          "iconColor", "bpkSkyBlue"
+        )
+      )
+    )
 
     assertNotNull(view.state.icon)
     assertEquals(BpkDialog.Icon(R.drawable.bpk_food, skyBlueValue), view.state.icon)
@@ -121,10 +127,16 @@ class DialogViewManagerTest {
   fun test_icon_invalid_id() {
     val view = manager.createViewInstance(themedContext)
     assertThat({
-      manager.updateProperties(view, buildProps(
-        "icon", JavaOnlyMap.of(
-        "iconId", "invalid",
-        "iconColor", "bpkSkyBlue")))
+      manager.updateProperties(
+        view,
+        buildProps(
+          "icon",
+          JavaOnlyMap.of(
+            "iconId", "invalid",
+            "iconColor", "bpkSkyBlue"
+          )
+        )
+      )
     }, throws(android.content.res.Resources.NotFoundException::class))
   }
 
@@ -133,10 +145,16 @@ class DialogViewManagerTest {
   fun test_icon_invalid_color() {
     val view = manager.createViewInstance(themedContext)
     assertThat({
-      manager.updateProperties(view, buildProps(
-        "icon", JavaOnlyMap.of(
-        "iconId", "bpk_food",
-        "iconColor", " invalid")))
+      manager.updateProperties(
+        view,
+        buildProps(
+          "icon",
+          JavaOnlyMap.of(
+            "iconId", "bpk_food",
+            "iconColor", " invalid"
+          )
+        )
+      )
     }, throws(android.content.res.Resources.NotFoundException::class))
   }
 
@@ -146,38 +164,50 @@ class DialogViewManagerTest {
     val actions = JavaOnlyArray.of(
       JavaOnlyMap.of(
         "text", "Action",
-        "type", "primary"),
+        "type", "primary"
+      ),
       JavaOnlyMap.of(
         "text", "Secondary action",
-        "type", "secondary"),
+        "type", "secondary"
+      ),
       JavaOnlyMap.of(
         "text", "Outline action",
-        "type", "outline"),
+        "type", "outline"
+      ),
       JavaOnlyMap.of(
         "text", "Featured action",
-        "type", "featured"),
+        "type", "featured"
+      ),
       JavaOnlyMap.of(
         "text", "Destructive action",
-        "type", "destructive"))
+        "type", "destructive"
+      )
+    )
 
     manager.updateProperties(view, buildProps("actions", actions))
 
     assertNotNull(view.state.actions)
-    assertArrayEquals(arrayOf(
-      "Action" to BpkButton.Type.Primary,
-      "Secondary action" to BpkButton.Type.Secondary,
-      "Outline action" to BpkButton.Type.Outline,
-      "Featured action" to BpkButton.Type.Featured,
-      "Destructive action" to BpkButton.Type.Destructive
-    ), view.state.actions)
+    assertArrayEquals(
+      arrayOf(
+        "Action" to BpkButton.Type.Primary,
+        "Secondary action" to BpkButton.Type.Secondary,
+        "Outline action" to BpkButton.Type.PrimaryOnDark,
+        "Featured action" to BpkButton.Type.Featured,
+        "Destructive action" to BpkButton.Type.Destructive
+      ),
+      view.state.actions
+    )
   }
 
   @Test
   fun test_actions_invalid_type() {
     val view = manager.createViewInstance(themedContext)
-    val actions = JavaOnlyArray.of(JavaOnlyMap.of(
-      "text", "Action",
-      "type", "invalid"))
+    val actions = JavaOnlyArray.of(
+      JavaOnlyMap.of(
+        "text", "Action",
+        "type", "invalid"
+      )
+    )
 
     assertThat({
       manager.updateProperties(view, buildProps("actions", actions))
@@ -208,19 +238,28 @@ class DialogViewManagerTest {
     val stateHolder = mockk<RNDialog.Companion.StateHolder>(relaxed = true)
     val view = RNDialog(themedContext, stateHolder)
 
-    manager.updateProperties(view, buildProps(
-      "dialogType", "alert",
-      "title", "title",
-      "description", "description",
-      "icon", JavaOnlyMap.of(
-        "iconId", "bpk_flag",
-        "iconColor", "bpkSkyBlue"),
-      "actions", JavaOnlyArray.of(JavaOnlyMap.of(
-        "text", "Action",
-        "type", "primary")),
-      "scrimEnabled", true,
-      "isOpen", true
-    ))
+    manager.updateProperties(
+      view,
+      buildProps(
+        "dialogType", "alert",
+        "title", "title",
+        "description", "description",
+        "icon",
+        JavaOnlyMap.of(
+          "iconId", "bpk_flag",
+          "iconColor", "bpkSkyBlue"
+        ),
+        "actions",
+        JavaOnlyArray.of(
+          JavaOnlyMap.of(
+            "text", "Action",
+            "type", "primary"
+          )
+        ),
+        "scrimEnabled", true,
+        "isOpen", true
+      )
+    )
 
     verify(exactly = 1) { stateHolder.dispatchUpdateTransactionFinished() }
   }

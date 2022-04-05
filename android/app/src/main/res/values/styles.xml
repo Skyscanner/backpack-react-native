@@ -19,7 +19,7 @@
 
     <style name="AppTheme.AlertDialog" parent="Base.Theme.AppCompat.Light.Dialog.Alert">
         <item name="android:windowTitleStyle">@style/AppTheme.AlertDialog.Title</item>
-        <item name="android:textAppearanceSmall">?bpkTextSmAppearance</item>
+        <item name="android:textAppearanceSmall">?bpkTextFootnoteAppearance</item>
         <item name="android:buttonBarButtonStyle">@style/AppTheme.AlertDialog.ButtonBar.Button</item>
         <item name="buttonBarButtonStyle">@style/AppTheme.AlertDialog.ButtonBar.Button</item>
         <item name="android:background">@color/bpkBackgroundTertiary</item>
@@ -27,11 +27,11 @@
     </style>
 
     <style name="AppTheme.AlertDialog.Title" parent="Base.DialogWindowTitle.AppCompat">
-        <item name="android:textAppearance">?bpkTextLgEmphasizedAppearance</item>
+        <item name="android:textAppearance">?bpkTextHeading4Appearance</item>
     </style>
 
     <style name="AppTheme.AlertDialog.ButtonBar.Button" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
-        <item name="android:textAppearance">?bpkTextSmEmphasizedAppearance</item>
+        <item name="android:textAppearance">?bpkTextLabel2Appearance</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:textColor">?bpkPrimaryColor</item>
     </style>

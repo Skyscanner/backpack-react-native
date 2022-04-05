@@ -15,7 +15,8 @@ internal data class RNColorBucket(
   fun asColorBucket(startDate: LocalDate, endDate: LocalDate): ColoredBucket {
     if (this.cellStyle !== null) {
       return ColoredBucket(
-        TypeConversions.stringToCellStyle(this.cellStyle), days.toSet(startDate, endDate))
+        TypeConversions.stringToCellStyle(this.cellStyle), days.toSet(startDate, endDate)
+      )
     }
 
     val textStyle = this.textStyle?.let {
@@ -27,6 +28,7 @@ internal data class RNColorBucket(
     }
 
     return ColoredBucket(
-      CalendarCellStyle.Custom(this.color, textStyle), days.toSet(startDate, endDate))
+      CalendarCellStyle.Custom(this.color, textStyle), days.toSet(startDate, endDate)
+    )
   }
 }
