@@ -24,17 +24,17 @@ import androidx.test.platform.app.InstrumentationRegistry
 import com.facebook.react.bridge.JSApplicationIllegalArgumentException
 import com.facebook.react.bridge.JavaOnlyArray
 import com.facebook.react.bridge.JavaOnlyMap
-import java.util.Locale
 import net.skyscanner.backpack.calendar.model.CalendarCellStyle
 import net.skyscanner.backpack.calendar.presenter.HighlightedDaysAdapter
 import net.skyscanner.backpack.reactnative.testing.Matchers.throws
-import org.hamcrest.CoreMatchers.`is`
 import org.hamcrest.CoreMatchers.instanceOf
+import org.hamcrest.CoreMatchers.`is`
 import org.junit.Assert.assertArrayEquals
 import org.junit.Assert.assertThat
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.threeten.bp.LocalDate
+import java.util.Locale
 
 @RunWith(AndroidJUnit4::class)
 class RNFooterViewTest {
@@ -49,12 +49,17 @@ class RNFooterViewTest {
   fun test_fromJS() {
     val footerView = RNFooterView.fromJS(
       context,
-      JavaOnlyMap.of("__type", "highlightedDays",
-        "days", JavaOnlyArray.of(
+      JavaOnlyMap.of(
+        "__type", "highlightedDays",
+        "days",
+        JavaOnlyArray.of(
           JavaOnlyMap.of(
             "date", dateSeconds,
             "description", "test day"
-          ))))
+          )
+        )
+      )
+    )
     assertThat(footerView, `is`(instanceOf(RNHighlightedDaysFooterView::class.java)))
   }
 
@@ -63,7 +68,8 @@ class RNFooterViewTest {
     assertThat({
       RNFooterView.fromJS(
         context,
-        JavaOnlyMap.of("__type", "invalid"))
+        JavaOnlyMap.of("__type", "invalid")
+      )
     }, throws(JSApplicationIllegalArgumentException::class))
   }
 
@@ -73,18 +79,25 @@ class RNFooterViewTest {
       context,
       JavaOnlyMap.of(
         "__type", "highlightedDays",
-        "days", JavaOnlyArray.of(
+        "days",
+        JavaOnlyArray.of(
           JavaOnlyMap.of(
             "date", dateSeconds,
             "description", "test day"
-          ))))
+          )
+        )
+      )
+    )
 
     assertArrayEquals(
       arrayOf(
         HighlightedDaysAdapter.HighlightedDay(
           date = LocalDate.of(2020, 4, 16),
-          description = "test day")),
-      footerView.days.toTypedArray())
+          description = "test day"
+        )
+      ),
+      footerView.days.toTypedArray()
+    )
   }
 
   @Test
@@ -93,20 +106,27 @@ class RNFooterViewTest {
       context,
       JavaOnlyMap.of(
         "__type", "highlightedDays",
-        "days", JavaOnlyArray.of(
+        "days",
+        JavaOnlyArray.of(
           JavaOnlyMap.of(
             "date", dateSeconds,
             "description", "test day",
             "color", 1
-          ))))
+          )
+        )
+      )
+    )
 
     assertArrayEquals(
       arrayOf(
         HighlightedDaysAdapter.HighlightedDay(
           date = LocalDate.of(2020, 4, 16),
           description = "test day",
-          color = 1)),
-      footerView.days.toTypedArray())
+          color = 1
+        )
+      ),
+      footerView.days.toTypedArray()
+    )
   }
 
   @Test
@@ -115,20 +135,27 @@ class RNFooterViewTest {
       context,
       JavaOnlyMap.of(
         "__type", "highlightedDays",
-        "days", JavaOnlyArray.of(
+        "days",
+        JavaOnlyArray.of(
           JavaOnlyMap.of(
             "date", dateSeconds,
             "description", "test day",
             "cellStyle", "positive"
-          ))))
+          )
+        )
+      )
+    )
 
     assertArrayEquals(
       arrayOf(
         HighlightedDaysAdapter.HighlightedDay(
           date = LocalDate.of(2020, 4, 16),
           description = "test day",
-          color = CalendarCellStyle.Positive.color(context))),
-      footerView.days.toTypedArray())
+          color = CalendarCellStyle.Positive.color(context)
+        )
+      ),
+      footerView.days.toTypedArray()
+    )
   }
 
   @Test
@@ -137,21 +164,28 @@ class RNFooterViewTest {
       context,
       JavaOnlyMap.of(
         "__type", "highlightedDays",
-        "days", JavaOnlyArray.of(
+        "days",
+        JavaOnlyArray.of(
           JavaOnlyMap.of(
             "date", dateSeconds,
             "description", "test day",
             "color", 1,
             "cellStyle", "positive"
-          ))))
+          )
+        )
+      )
+    )
 
     assertArrayEquals(
       arrayOf(
         HighlightedDaysAdapter.HighlightedDay(
           date = LocalDate.of(2020, 4, 16),
           description = "test day",
-          color = CalendarCellStyle.Positive.color(context))),
-      footerView.days.toTypedArray())
+          color = CalendarCellStyle.Positive.color(context)
+        )
+      ),
+      footerView.days.toTypedArray()
+    )
   }
 
   @Test
@@ -160,15 +194,20 @@ class RNFooterViewTest {
       context,
       JavaOnlyMap.of(
         "__type", "highlightedDays",
-        "days", JavaOnlyArray.of(
+        "days",
+        JavaOnlyArray.of(
           JavaOnlyMap.of(
             "date", dateSeconds,
             "description", "test day"
-          ))))
+          )
+        )
+      )
+    )
 
     assertThat(
       footerView.asFooterAdapter(Locale.UK),
-      `is`(instanceOf(HighlightedDaysAdapter::class.java)))
+      `is`(instanceOf(HighlightedDaysAdapter::class.java))
+    )
   }
 
   @Test
@@ -178,7 +217,8 @@ class RNFooterViewTest {
         context,
         JavaOnlyMap.of(
           "__type", "highlightedDays",
-          "daysss", JavaOnlyArray.of(
+          "daysss",
+          JavaOnlyArray.of(
             JavaOnlyMap.of(
               "date", dateSeconds,
               "description", "test day"
@@ -193,7 +233,8 @@ class RNFooterViewTest {
         context,
         JavaOnlyMap.of(
           "__type", "highlightedDays",
-          "days", JavaOnlyArray.of(
+          "days",
+          JavaOnlyArray.of(
             JavaOnlyMap.of(
               "description", "test day"
             )
@@ -207,7 +248,8 @@ class RNFooterViewTest {
         context,
         JavaOnlyMap.of(
           "__type", "highlightedDays",
-          "days", JavaOnlyArray.of(
+          "days",
+          JavaOnlyArray.of(
             JavaOnlyMap.of(
               "date", dateSeconds
             )

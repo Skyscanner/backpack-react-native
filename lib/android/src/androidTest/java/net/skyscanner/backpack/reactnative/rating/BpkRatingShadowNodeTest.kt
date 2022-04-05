@@ -56,7 +56,9 @@ class BpkRatingShadowNodeTest {
         BpkRating(contextRule.themedContext),
         BpkRating.Style.Vertical,
         BpkRating.Size.Base,
-        BpkRating.Scale.ZeroToTen))
+        BpkRating.Scale.ZeroToTen
+      )
+    )
 
     assertTrue(subject.isDirty)
   }
@@ -74,7 +76,9 @@ class BpkRatingShadowNodeTest {
         BpkRating(contextRule.themedContext),
         BpkRating.Style.Vertical,
         BpkRating.Size.Base,
-        BpkRating.Scale.ZeroToTen))
+        BpkRating.Scale.ZeroToTen
+      )
+    )
 
     val result = subject.measure(mockk(), 0f, YogaMeasureMode.UNDEFINED, 0f, YogaMeasureMode.UNDEFINED)
 

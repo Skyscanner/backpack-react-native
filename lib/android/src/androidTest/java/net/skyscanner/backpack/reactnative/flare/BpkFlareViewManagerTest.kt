@@ -26,8 +26,8 @@ import com.facebook.react.uimanager.ThemedReactContext
 import net.skyscanner.backpack.flare.BpkFlare
 import net.skyscanner.backpack.reactnative.testing.Matchers.throws
 import net.skyscanner.backpack.reactnative.testing.ReactViewManagerTestRule
-import org.hamcrest.Matchers.`is`
 import org.hamcrest.Matchers.instanceOf
+import org.hamcrest.Matchers.`is`
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertThat
 import org.junit.Rule
@@ -66,13 +66,21 @@ class BpkFlareViewManagerTest {
   @Test
   fun test_pointerDirection() {
     val view = manager.createViewInstance(themedContext)
-    manager.updateProperties(view, buildProps(
-      "pointerDirection", "down"))
+    manager.updateProperties(
+      view,
+      buildProps(
+        "pointerDirection", "down"
+      )
+    )
 
     assertEquals(BpkFlare.PointerDirection.DOWN, view.state.pointerDirection)
 
-    manager.updateProperties(view, buildProps(
-      "pointerDirection", "up"))
+    manager.updateProperties(
+      view,
+      buildProps(
+        "pointerDirection", "up"
+      )
+    )
 
     assertEquals(BpkFlare.PointerDirection.UP, view.state.pointerDirection)
   }
@@ -81,8 +89,12 @@ class BpkFlareViewManagerTest {
   fun test_invalid_pointerDirection() {
     val view = manager.createViewInstance(themedContext)
     assertThat({
-      manager.updateProperties(view, buildProps(
-        "pointerDirection", "invalid"))
+      manager.updateProperties(
+        view,
+        buildProps(
+          "pointerDirection", "invalid"
+        )
+      )
     }, throws(JSApplicationIllegalArgumentException::class))
   }
 

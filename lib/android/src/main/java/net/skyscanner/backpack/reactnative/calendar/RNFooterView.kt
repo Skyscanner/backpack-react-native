@@ -22,11 +22,11 @@ import android.content.Context
 import com.facebook.react.bridge.JSApplicationIllegalArgumentException
 import com.facebook.react.bridge.ReadableArray
 import com.facebook.react.bridge.ReadableMap
-import java.util.Locale
 import net.skyscanner.backpack.calendar.presenter.HighlightedDaysAdapter
 import net.skyscanner.backpack.calendar.presenter.MonthFooterAdapter
 import net.skyscanner.backpack.reactnative.extensions.getOptional
 import net.skyscanner.backpack.reactnative.extensions.getRequired
+import java.util.Locale
 
 interface RNFooterView {
   companion object {
@@ -59,22 +59,23 @@ internal data class RNHighlightedDaysFooterView(
       return RNHighlightedDaysFooterView(
         context,
         (0 until days.size()).map {
-        val day = days.getRequired("days", it, ReadableArray::getMap)
-        val date = day.getRequired("date", ReadableMap::getInt).let(TypeConversions::unixTimestampToLocalDate)
-        val description = day.getRequired("description", ReadableMap::getString)
-        val color = day.getOptional("color", ReadableMap::getInt)
-        val cellStyle = day.getOptional("cellStyle") { map, key ->
-          map.getString(key)?.let(TypeConversions::stringToCellStyle)
-        }
-        val descriptionOnly = day.getOptional("descriptionOnly", ReadableMap::getBoolean)
+          val day = days.getRequired("days", it, ReadableArray::getMap)
+          val date = day.getRequired("date", ReadableMap::getInt).let(TypeConversions::unixTimestampToLocalDate)
+          val description = day.getRequired("description", ReadableMap::getString)
+          val color = day.getOptional("color", ReadableMap::getInt)
+          val cellStyle = day.getOptional("cellStyle") { map, key ->
+            map.getString(key)?.let(TypeConversions::stringToCellStyle)
+          }
+          val descriptionOnly = day.getOptional("descriptionOnly", ReadableMap::getBoolean)
 
-        HighlightedDaysAdapter.HighlightedDay(
-          date = date,
-          description = description,
-          color = cellStyle?.color(context) ?: color,
-          descriptionOnly = descriptionOnly ?: false
-        )
-      }.toSet())
+          HighlightedDaysAdapter.HighlightedDay(
+            date = date,
+            description = description,
+            color = cellStyle?.color(context) ?: color,
+            descriptionOnly = descriptionOnly ?: false
+          )
+        }.toSet()
+      )
     }
   }
 }

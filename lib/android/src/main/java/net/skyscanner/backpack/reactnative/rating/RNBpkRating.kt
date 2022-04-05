@@ -73,8 +73,9 @@ class RNBpkRating(
 
   private val measureAndLayout = Runnable {
     measure(
-            MeasureSpec.makeMeasureSpec(width, MeasureSpec.EXACTLY),
-            MeasureSpec.makeMeasureSpec(height, MeasureSpec.EXACTLY))
+      MeasureSpec.makeMeasureSpec(width, MeasureSpec.EXACTLY),
+      MeasureSpec.makeMeasureSpec(height, MeasureSpec.EXACTLY)
+    )
     layout(left, top, right, bottom)
   }
 

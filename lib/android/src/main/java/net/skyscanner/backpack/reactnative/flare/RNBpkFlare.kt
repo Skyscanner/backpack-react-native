@@ -36,10 +36,13 @@ class RNBpkFlare(
   internal val internalView = ReactChildrenViewWrapper(reactContext)
 
   init {
-    addView(internalView,
+    addView(
+      internalView,
       ViewGroup.LayoutParams(
         ViewGroup.LayoutParams.MATCH_PARENT,
-        ViewGroup.LayoutParams.MATCH_PARENT))
+        ViewGroup.LayoutParams.MATCH_PARENT
+      )
+    )
 
     state.onAfterUpdateTransaction(::render)
   }

@@ -131,7 +131,8 @@ class BpkRatingViewManagerTest {
       "xs" to BpkRating.Size.ExtraSmall,
       "sm" to BpkRating.Size.Small,
       "base" to BpkRating.Size.Base,
-      "lg" to BpkRating.Size.Large)
+      "lg" to BpkRating.Size.Large
+    )
 
     options.entries.forEach { entry ->
       val jsValue = entry.key
@@ -151,7 +152,8 @@ class BpkRatingViewManagerTest {
     val view = manager.createViewInstance(themedContext)
     val options = mapOf(
       "horizontal" to BpkRating.Style.Horizontal,
-      "vertical" to BpkRating.Style.Vertical)
+      "vertical" to BpkRating.Style.Vertical
+    )
 
     options.entries.forEach { entry ->
       val jsValue = entry.key
@@ -169,9 +171,13 @@ class BpkRatingViewManagerTest {
   @Test
   fun test_icon() {
     val view = manager.createViewInstance(themedContext)
-    manager.updateProperties(view, buildProps(
-      "size", "icon",
-      "icon", JavaOnlyArray.of("bpk_flag", "bpk_food", "bpk_flask")))
+    manager.updateProperties(
+      view,
+      buildProps(
+        "size", "icon",
+        "icon", JavaOnlyArray.of("bpk_flag", "bpk_food", "bpk_flask")
+      )
+    )
 
     val flag = drawableToBitmap(themedContext.getDrawable(R.drawable.bpk_flag))!!
     val food = drawableToBitmap(themedContext.getDrawable(R.drawable.bpk_food))!!
@@ -187,9 +193,13 @@ class BpkRatingViewManagerTest {
   @Test
   fun test_icon_single_value() {
     val view = manager.createViewInstance(themedContext)
-    manager.updateProperties(view, buildProps(
-      "size", "icon",
-      "icon", JavaOnlyArray.of("bpk_flag")))
+    manager.updateProperties(
+      view,
+      buildProps(
+        "size", "icon",
+        "icon", JavaOnlyArray.of("bpk_flag")
+      )
+    )
 
     val flag = drawableToBitmap(themedContext.getDrawable(R.drawable.bpk_flag))!!
 
@@ -219,14 +229,17 @@ class BpkRatingViewManagerTest {
   fun test_render_once_after_transaction() {
     val stateHolder = mockk<RNBpkRating.Companion.StateHolder>(relaxed = true)
     val view = RNBpkRating(themedContext, stateHolder)
-    manager.updateProperties(view, buildProps(
-      "value", 1f,
-      "icon", JavaOnlyArray.of("bpk_flag", "bpk_food", "bpk_flask"),
-      "subtitle", JavaOnlyArray.of("low", "med", "high"),
-      "title", JavaOnlyArray.of("low", "med", "high"),
-      "orientation", "horizontal",
-      "size", "xs"
-    ))
+    manager.updateProperties(
+      view,
+      buildProps(
+        "value", 1f,
+        "icon", JavaOnlyArray.of("bpk_flag", "bpk_food", "bpk_flask"),
+        "subtitle", JavaOnlyArray.of("low", "med", "high"),
+        "title", JavaOnlyArray.of("low", "med", "high"),
+        "orientation", "horizontal",
+        "size", "xs"
+      )
+    )
 
     verify(exactly = 1) { stateHolder.dispatchUpdateTransactionFinished() }
   }

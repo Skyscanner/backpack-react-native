@@ -46,7 +46,8 @@ class CalendarChangeEventTest {
   fun test_dispatch_event() {
     val dates = arrayOf(
       LocalDate.of(2020, 3, 16),
-      LocalDate.of(2020, 3, 20))
+      LocalDate.of(2020, 3, 20)
+    )
     val subject = CalendarChangeEvent(1, dates)
 
     val eventEmitter = mockk<RCTEventEmitter>(relaxed = true)

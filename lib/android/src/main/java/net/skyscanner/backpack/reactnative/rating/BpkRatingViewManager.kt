@@ -23,8 +23,8 @@ import com.facebook.react.bridge.ReadableArray
 import com.facebook.react.uimanager.BaseViewManager
 import com.facebook.react.uimanager.ThemedReactContext
 import com.facebook.react.uimanager.annotations.ReactProp
-import java.util.*
 import net.skyscanner.backpack.rating.BpkRating
+import java.util.*
 
 class BpkRatingViewManager : BaseViewManager<RNBpkRating, BpkRatingShadowNode>() {
 
