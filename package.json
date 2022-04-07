@@ -3,8 +3,8 @@
   "name": "backpack-react-native-example",
   "version": "0.0.0",
   "engines": {
-    "node": "^12.13.0",
-    "npm": "^6.12.0"
+    "node": "^14.19.0",
+    "npm": "^6.14.16"
   },
   "repository": {
     "type": "git",
@@ -13,7 +13,6 @@
   "author": "Backpack Design System <backpack@skyscanner.net>",
   "license": "Apache-2.0",
   "scripts": {
-    "preinstall": "npx ensure-node-env",
     "postinstall": "if [ ! -f .env ]; then cp .env.template .env; fi",
     "install:cocoapods": "(cd ios && bundle install && bundle exec pod install)",
     "clean:node_modules": "rm -rf node_modules",

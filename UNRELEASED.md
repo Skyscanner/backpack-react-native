@@ -5,6 +5,10 @@
 **Fixed:**
 - Fixed a breaking change from backpack-android that caused backpack-react-native to crash
 
+## Added 
+
+Bumped supported Node version to `lts/fermium` (`v14`) to move away from EOL Node 12.
+
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
