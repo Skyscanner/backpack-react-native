@@ -21,12 +21,21 @@
 #import <React/RCTBridge.h>
 
 NS_ASSUME_NONNULL_BEGIN
+
+@interface RCTBPKButtonManager()
+
+@property(nonatomic, strong) RCTBPKButton *button;
+
+@end
+
 @implementation RCTBPKButtonManager
 
 RCT_EXPORT_MODULE()
 
 - (UIView *)view {
-    return [[RCTBPKButton alloc] initWithType:@"primary" large:NO];
+    self.button = [[RCTBPKButton alloc] initWithType:@"primary" large:NO];
+    [self.button addTarget:self action:@selector(onClick) forControlEvents:UIControlEventTouchUpInside];
+    return self.button;
 }
 
 RCT_REMAP_VIEW_PROPERTY(title, rct_title, NSString)
@@ -37,6 +46,10 @@ RCT_REMAP_VIEW_PROPERTY(large, rct_large, BOOL)
 RCT_REMAP_VIEW_PROPERTY(loading, rct_loading, BOOL)
 RCT_REMAP_VIEW_PROPERTY(enabled, rct_enabled, BOOL)
 RCT_REMAP_VIEW_PROPERTY(onPress, rct_onPress, RCTResponseSenderBlock)
+
+- (void)onClick {
+    self.button.rct_onPress(@[]);
+}
 
 @end
 NS_ASSUME_NONNULL_END
