@@ -13,7 +13,6 @@
 
 - (instancetype)initWithType:(NSString *)type large:(BOOL)large {
     self = [super initWithSize:[RCTBPKButton sizeForIsLarge:large] style:[RCTBPKButton styleForName:type]];
-    [self addTarget:self action:@selector(onClick) forControlEvents:UIControlEventTouchUpInside];
     return self;
 }
 
@@ -47,10 +46,6 @@
 - (void)setRct_large:(BOOL)rct_large {
     _rct_large = rct_large;
     [self setSize: [RCTBPKButton sizeForIsLarge:rct_large]];
-}
-
-- (void)onClick {
-    self.rct_onPress(@[]);
 }
 
 - (void)setRct_onPress:(RCTResponseSenderBlock)rct_onPress {
