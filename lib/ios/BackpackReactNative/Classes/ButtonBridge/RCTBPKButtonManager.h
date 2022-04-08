@@ -16,9 +16,10 @@
  * limitations under the License.
  */
 
-#import <React/RCTBridgeModule.h>
+#import <React/RCTViewManager.h>
 
 NS_ASSUME_NONNULL_BEGIN
-@interface RCTBPKButtonManager: NSObject <RCTBridgeModule>
+@interface RCTBPKButtonManager: RCTViewManager
+
 @end
 NS_ASSUME_NONNULL_END

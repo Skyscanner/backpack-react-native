@@ -15,91 +15,28 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
+
+#import "RCTBPKButton.h"
 #import "RCTBPKButtonManager.h"
-#import "RCTConvert.h"
-#import <Backpack/Icon.h>
-#import <Backpack/Button.h>
+#import <React/RCTBridge.h>
 
-
-@interface RCTBPKButtonManager()
-
-@property(nonatomic, strong) RCTResponseSenderBlock callback;
-@property(nonatomic, strong) BPKButton* button;
-@end
-
+NS_ASSUME_NONNULL_BEGIN
 @implementation RCTBPKButtonManager
 
-RCT_EXPORT_MODULE();
-
-+ (BOOL)requiresMainQueueSetup {
-    return NO;
-}
-
-- (dispatch_queue_t)methodQueue {
-    return dispatch_get_main_queue();
-}
-
-+ (BPKButtonSize)sizeForIsLarge:(BOOL)isLarge {
-    if (isLarge) {
-        return BPKButtonSizeLarge;
-    }
-    return BPKButtonSizeDefault;
-}
-
-+ (BPKButtonStyle)styleForName:(NSString *)name {
-    if ([name isEqual: @"primary"]) {
-        return BPKButtonStylePrimary;
-    } else if ([name isEqual: @"secondary"]) {
-        return BPKButtonStyleSecondary;
-    } else if ([name isEqual: @"destructive"]) {
-        return BPKButtonStyleDestructive;
-    } else if ([name isEqual: @"featured"]) {
-        return BPKButtonStyleFeatured;
-    } else if ([name isEqual: @"link"]) {
-        return BPKButtonStyleLink;
-    } else if ([name isEqual: @"primaryOnDark"]) {
-        return BPKButtonStylePrimaryOnDark;
-    } else if ([name isEqual: @"primaryOnLight"]) {
-        return BPKButtonStylePrimaryOnLight;
-    }
-    return BPKButtonStylePrimary;
-}
-
-RCT_EXPORT_METHOD(showWithArgs:(NSDictionary<NSString *, id> *)args
-                  callback:(RCTResponseSenderBlock)callback) {
-    NSString *title = [RCTConvert NSString:args[@"title"]];
-    NSString *iconAlignment = [RCTConvert NSString:args[@"iconAlignment"]];
-    NSString *type = [RCTConvert NSString:args[@"type"]];
-    NSString *iconName = [RCTConvert NSString:args[@"icon"]];
-    BOOL isLarge = [RCTConvert BOOL:args[@"large"]];
-
-    BPKButton *button = [[BPKButton alloc] initWithSize:[RCTBPKButtonManager sizeForIsLarge:isLarge] style:[RCTBPKButtonManager styleForName:type]];
-
-    UIImage *icon = isLarge ?
-    [BPKIcon largeTemplateIconNamed:iconName]
-    : [BPKIcon smallTemplateIconNamed:iconName];
-    [button setImage:icon];
-    
-    [button setTitle:title];
-    
-    if ([iconAlignment isEqual: @"leading"]) {
-        button.imagePosition = BPKButtonImagePositionLeading;
-    } else if ([iconAlignment isEqual: @"trailing"]) {
-        button.imagePosition = BPKButtonImagePositionTrailing;
-    }
-    
-    self.callback = callback;
-    [button addTarget:self action:@selector(onButtonClick) forControlEvents:UIControlEventTouchUpInside];
-    
-    self.button = button;
-}
+RCT_EXPORT_MODULE()
 
 - (UIView *)view {
-    return self.button;
+    return [[RCTBPKButton alloc] initWithType:@"primary" large:NO];
 }
 
-- (void)onButtonClick {
-    self.callback(@[]);
-}
+RCT_REMAP_VIEW_PROPERTY(title, rct_title, NSString)
+RCT_REMAP_VIEW_PROPERTY(iconAlignment, rct_iconAlignment, NSString)
+RCT_REMAP_VIEW_PROPERTY(type, rct_type, NSString)
+RCT_REMAP_VIEW_PROPERTY(icon, rct_icon, NSString)
+RCT_REMAP_VIEW_PROPERTY(large, rct_large, BOOL)
+RCT_REMAP_VIEW_PROPERTY(loading, rct_loading, BOOL)
+RCT_REMAP_VIEW_PROPERTY(enabled, rct_enabled, BOOL)
+RCT_REMAP_VIEW_PROPERTY(onPress, rct_onPress, RCTResponseSenderBlock)
 
 @end
+NS_ASSUME_NONNULL_END
