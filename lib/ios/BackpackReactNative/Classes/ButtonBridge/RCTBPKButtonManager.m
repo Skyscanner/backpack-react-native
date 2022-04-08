@@ -45,10 +45,10 @@ RCT_REMAP_VIEW_PROPERTY(icon, rct_icon, NSString)
 RCT_REMAP_VIEW_PROPERTY(large, rct_large, BOOL)
 RCT_REMAP_VIEW_PROPERTY(loading, rct_loading, BOOL)
 RCT_REMAP_VIEW_PROPERTY(enabled, rct_enabled, BOOL)
-RCT_REMAP_VIEW_PROPERTY(onPress, rct_onPress, RCTResponseSenderBlock)
+RCT_REMAP_VIEW_PROPERTY(onPress, rct_onPress, void (^rct_onPress)(void) )
 
 - (void)onClick {
-    self.button.rct_onPress(@[]);
+    self.button.rct_onPress();
 }
 
 @end
