@@ -10,6 +10,7 @@ import com.facebook.react.shell.MainReactPackage
 import com.facebook.soloader.SoLoader
 import com.jakewharton.threetenabp.AndroidThreeTen
 import net.skyscanner.backpack.reactnative.BackpackReactNative
+import net.skyscanner.backpack.reactnative.button.BpkButtonPackage
 import net.skyscanner.backpack.reactnative.calendar.CalendarPackage
 import net.skyscanner.backpack.reactnative.dialog.DialogPackage
 import net.skyscanner.backpack.reactnative.flare.BpkFlarePackage
@@ -36,6 +37,7 @@ class MainApplication : Application(), ReactApplication {
         LinearGradientPackage(),
         CalendarPackage(),
         DialogPackage(),
+        BpkButtonPackage(),
         BpkRatingPackage(),
         BpkFlarePackage(),
         BpkSnackbarPackage()

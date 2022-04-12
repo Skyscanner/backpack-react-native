@@ -18,82 +18,58 @@
 package net.skyscanner.backpack.reactnative.button
 
 import android.content.Context
+import android.graphics.drawable.Drawable
+import android.util.Log
+import android.view.View
+import android.view.ViewGroup
 import android.widget.FrameLayout
 import androidx.annotation.VisibleForTesting
+import androidx.appcompat.content.res.AppCompatResources
 import net.skyscanner.backpack.button.BpkButton
-import net.skyscanner.backpack.dialog.BpkDialog
 import net.skyscanner.backpack.reactnative.BpkViewStateHolder
-import net.skyscanner.backpack.reactnative.dialog.events.DialogActionType
+import com.facebook.react.bridge.ReactContext
+import com.facebook.react.views.view.ReactViewGroup
+import net.skyscanner.backpack.reactnative.R
 
-typealias ActionCallback = (DialogActionType, Int) -> Unit
+typealias ActionCallback = () -> Unit
 
 typealias Action = Pair<String, BpkButton.Type>
 
-class RNButton(
-  context: Context,
+class RNBpkButton(
+  private val reactContext: ReactContext,
   val state: StateHolder = StateHolder()
-) : FrameLayout(context) {
+) : FrameLayout(reactContext) {
 
   @VisibleForTesting
   internal var button: BpkButton? = null
 
   init {
+//    addView(button)
     state.onAfterUpdateTransaction(::render)
   }
 
   fun render() {
-    val view = BpkButton(context, element.second).apply {
-      text = element.first
-      setOnClickListener {
-        state.onAction?.invoke(DialogActionType.BUTTON_ACTION, index)
+    button = if(button == null || state.isInvalid()) {
+      val view = BpkButton(reactContext, state.type, BpkButton.Size.Standard).apply {
+        icon = state.icon//AppCompatResources.getDrawable(context, R.drawable.bpk_weather)
+        iconPosition = 1
+        text = state.title
+        loading = false
       }
-    })
-    // if (state.isOpen) {
-    //   updatedDialog.show()
-    // } else {
-    //   updatedDialog.hide()
-    // }
+      addView(view, ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT))
+      view
+    } else {
+      button!!
+    }
+    Log.d("Render: ", "View: ${button}")
   }
-
-  // private fun getUpdatedButton(): BpkButton {
-  //   val updatedButton = if (button == null || state.isInvalid()) {
-  //     BpkDialog(context, state.dialogType).apply {
-  //       // setup actions
-  //       state.actions.forEachIndexed { index, element ->
-  //         this.addActionButton(
-  //           BpkButton(context, element.second).apply {
-  //             text = element.first
-  //             setOnClickListener {
-  //               state.onAction?.invoke(DialogActionType.BUTTON_ACTION, index)
-  //             }
-  //           }
-  //         )
-  //       }
-
-  //       this.setOnCancelListener {
-  //         state.onAction?.invoke(DialogActionType.SCRIM_ACTION, 0)
-  //       }
-  //     }
-  //   } else {
-  //     dialog!!
-  //   }
-
-  //   state.title?.let { updatedDialog.title = it }
-  //   state.description?.let { updatedDialog.description = it }
-  //   state.icon?.let { updatedDialog.icon = it }
-  //   updatedDialog.setCanceledOnTouchOutside(state.scrimEnabled)
-
-  //   dialog = updatedDialog
-
-  //   return dialog!!
-  // }
 
   companion object {
     class StateHolder : BpkViewStateHolder() {
       var title: String? by markDirtyOnUpdate(null)
-      var type: String? by markDirtyOnUpdate(null)
+      var type: BpkButton.Type by markDirtyOnUpdate(BpkButton.Type.Primary)
       var large: Boolean by markDirtyOnUpdate(false)
-      var icon: BpkButton.Icon? by markDirtyOnUpdate(null)
+      var icon: Drawable? by markDirtyOnUpdate(null)
       var iconAlignment: String? by markDirtyOnUpdate(null)
       var onPress: ActionCallback? by markInvalidOnUpdate(null)
     }
