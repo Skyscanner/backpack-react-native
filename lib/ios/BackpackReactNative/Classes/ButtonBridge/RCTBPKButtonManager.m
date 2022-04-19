@@ -22,20 +22,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RCTBPKButtonManager()
-
-@property(nonatomic, strong) RCTBPKButton *button;
-
-@end
-
 @implementation RCTBPKButtonManager
 
 RCT_EXPORT_MODULE()
 
 - (UIView *)view {
-    self.button = [[RCTBPKButton alloc] initWithType:@"primary" large:NO];
-    [self.button addTarget:self action:@selector(onClick) forControlEvents:UIControlEventTouchUpInside];
-    return self.button;
+    return [[RCTBPKButton alloc] initWithType:@"primary" large:NO];
 }
 
 RCT_REMAP_VIEW_PROPERTY(title, rct_title, NSString)
@@ -45,11 +37,7 @@ RCT_REMAP_VIEW_PROPERTY(icon, rct_icon, NSString)
 RCT_REMAP_VIEW_PROPERTY(large, rct_large, BOOL)
 RCT_REMAP_VIEW_PROPERTY(loading, rct_loading, BOOL)
 RCT_REMAP_VIEW_PROPERTY(enabled, rct_enabled, BOOL)
-RCT_REMAP_VIEW_PROPERTY(onPress, rct_onPress, void (^rct_onPress)(void) )
-
-- (void)onClick {
-    self.button.rct_onPress();
-}
+//RCT_REMAP_VIEW_PROPERTY(onPress, RCTResponseSenderBlock)
 
 @end
 NS_ASSUME_NONNULL_END

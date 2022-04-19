@@ -17,7 +17,7 @@
 @property(nonatomic) BOOL rct_large;
 @property(nonatomic) BOOL rct_loading;
 @property(nonatomic) BOOL rct_enabled;
-@property(nonatomic) void (^rct_onPress)(void);
+@property(nonatomic) RCTResponseSenderBlock onPress;
 
 - (instancetype)initWithType:(NSString *)type large:(BOOL)large;
 

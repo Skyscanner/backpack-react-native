@@ -13,7 +13,15 @@
 
 - (instancetype)initWithType:(NSString *)type large:(BOOL)large {
     self = [super initWithSize:[RCTBPKButton sizeForIsLarge:large] style:[RCTBPKButton styleForName:type]];
+    [self addTarget:self action:@selector(didTap) forControlEvents:UIControlEventTouchUpInside];
+    self.translatesAutoresizingMaskIntoConstraints = NO;
     return self;
+}
+
+- (void)didTap {
+    if (self.onPress != nil) {
+        self.onPress(@[[NSNull null]]);
+    }
 }
 
 - (void)setRct_title:(NSString *)rct_title {
@@ -48,8 +56,8 @@
     [self setSize: [RCTBPKButton sizeForIsLarge:rct_large]];
 }
 
-- (void)setRct_onPress:(RCTResponseSenderBlock)rct_onPress {
-    _rct_onPress = rct_onPress;
+- (void)setOnPress:(RCTResponseSenderBlock)onPress {
+    _onPress = onPress;
 }
 
 + (BPKButtonSize)sizeForIsLarge:(BOOL)isLarge {
