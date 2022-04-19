@@ -18,29 +18,36 @@
 
 package net.skyscanner.backpack.reactnative.button
 
-import android.view.View
-import androidx.annotation.VisibleForTesting
-import android.content.res.Resources
 import androidx.appcompat.content.res.AppCompatResources
 import com.facebook.react.bridge.JSApplicationIllegalArgumentException
+import com.facebook.react.common.MapBuilder
+import com.facebook.react.uimanager.BaseViewManager
 import com.facebook.react.uimanager.ThemedReactContext
-import com.facebook.react.uimanager.ViewGroupManager
 import com.facebook.react.uimanager.annotations.ReactProp
 import net.skyscanner.backpack.button.BpkButton
 import net.skyscanner.backpack.reactnative.R
-import java.util.*
+import net.skyscanner.backpack.reactnative.rating.RNBpkRating
 
-class BpkButtonViewManager : ViewGroupManager<RNBpkButton>() {
+class BpkButtonViewManager : BaseViewManager<RNBpkButton, BpkButtonShadowNode>() {
   companion object {
     const val VIEW_NAME = "AndroidBPKButtonView"
   }
 
   override fun getName() = VIEW_NAME
 
-  @VisibleForTesting
   public override fun createViewInstance(reactContext: ThemedReactContext): RNBpkButton {
     return RNBpkButton(reactContext)
   }
+
+  override fun createShadowNodeInstance(): BpkButtonShadowNode {
+    return BpkButtonShadowNode()
+  }
+
+  override fun getShadowNodeClass(): Class<BpkButtonShadowNode> {
+    return BpkButtonShadowNode::class.java
+  }
+
+  override fun updateExtraData(root: RNBpkButton, extraData: Any?) {}
 
   @ReactProp(name = "title")
   fun setTitle(view: RNBpkButton, title: String) {
@@ -60,10 +67,10 @@ class BpkButtonViewManager : ViewGroupManager<RNBpkButton>() {
     }
   }
 
-//  @ReactProp(name = "large")
-//  fun isLarge(view: RNBpkButton, large: Boolean) {
-//    view.state.large = large
-//  }
+  @ReactProp(name = "large")
+  fun isLarge(view: RNBpkButton, large: Boolean) {
+    view.state.size = if (large) BpkButton.Size.Large else BpkButton.Size.Standard
+  }
 
   @ReactProp(name = "icon")
   fun setIcon(view: RNBpkButton, icon: String?) {
@@ -77,23 +84,25 @@ class BpkButtonViewManager : ViewGroupManager<RNBpkButton>() {
     view.state.iconAlignment = iconAlignment
   }
 
-//  @ReactProp(name = "onPress")
-//  fun setOnPress(reactContext: ThemedReactContext, view: RNBpkButton) {
-//    val dispatcher = reactContext.getNativeModule(UIManagerModule::class.java)?.eventDispatcher
-//
-////    view.state.onPress = { () -> Unit }
-//  }
 
-//  public override fun addEventEmitters(reactContext: ThemedReactContext, view: RNDialog) {
-//    val dispatcher = reactContext.getNativeModule(UIManagerModule::class.java)?.eventDispatcher
-//
-//    view.state.onPress = { type, pos ->
-//      dispatcher?.dispatchEvent(ButtonActionEvent(view.id, type, pos))
-//    }
-//  }
+  @ReactProp(name = "iconOnly")
+  fun setIconOnly(view: RNBpkButton, iconOnly: Boolean) {
+    view.state.iconOnly = iconOnly
+  }
+
+  override fun getExportedCustomBubblingEventTypeConstants(): MutableMap<String, Any> {
+    return MapBuilder.builder<String, Any>().put(
+      "buttonClick",
+      MapBuilder.of(
+        "phasedRegistrationNames",
+        MapBuilder.of("bubbled", "onPress")
+      )
+    ).build()
+  }
 
   override fun onAfterUpdateTransaction(view: RNBpkButton) {
     super.onAfterUpdateTransaction(view)
+    view.requestLayout()
     view.state.dispatchUpdateTransactionFinished()
   }
 }

@@ -206,7 +206,7 @@ configurations.all {
     resolutionStrategy {
         force 'com.android.support:support-v4:26.1.0'
         // our fork has applied a fix for https://github.com/facebook/react-native/issues/31572 uncomment for testing the demo app
-        // force 'com.facebook.react:react-native:0.64.1-skyscanner.1.1'
+         force 'com.facebook.react:react-native:0.64.1-skyscanner.1.1'
     }
 }
 repositories {

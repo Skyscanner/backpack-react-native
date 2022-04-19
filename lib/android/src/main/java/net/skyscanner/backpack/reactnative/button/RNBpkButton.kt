@@ -17,61 +17,80 @@
  */
 package net.skyscanner.backpack.reactnative.button
 
-import android.content.Context
 import android.graphics.drawable.Drawable
-import android.util.Log
-import android.view.View
-import android.view.ViewGroup
 import android.widget.FrameLayout
-import androidx.annotation.VisibleForTesting
-import androidx.appcompat.content.res.AppCompatResources
+import com.facebook.react.bridge.Arguments
+import com.facebook.react.bridge.JSApplicationIllegalArgumentException
+import com.facebook.react.bridge.ReactContext
+import com.facebook.react.bridge.WritableMap
+import com.facebook.react.uimanager.UIManagerModule
+import com.facebook.react.uimanager.events.RCTEventEmitter
 import net.skyscanner.backpack.button.BpkButton
 import net.skyscanner.backpack.reactnative.BpkViewStateHolder
-import com.facebook.react.bridge.ReactContext
-import com.facebook.react.views.view.ReactViewGroup
-import net.skyscanner.backpack.reactnative.R
-
-typealias ActionCallback = () -> Unit
-
-typealias Action = Pair<String, BpkButton.Type>
 
 class RNBpkButton(
   private val reactContext: ReactContext,
   val state: StateHolder = StateHolder()
-) : FrameLayout(reactContext) {
-
-  @VisibleForTesting
-  internal var button: BpkButton? = null
+) : BpkButton(reactContext) {
 
   init {
-//    addView(button)
+    layoutParams = FrameLayout.LayoutParams(
+      FrameLayout.LayoutParams.WRAP_CONTENT,
+      FrameLayout.LayoutParams.WRAP_CONTENT
+    )
     state.onAfterUpdateTransaction(::render)
+    setOnClickListener {
+      val event: WritableMap = Arguments.createMap()
+      reactContext
+        .getJSModule(RCTEventEmitter::class.java)
+        .receiveEvent(id, "buttonClick", event)
+    }
   }
 
   fun render() {
-    button = if(button == null || state.isInvalid()) {
-      val view = BpkButton(reactContext, state.type, BpkButton.Size.Standard).apply {
-        icon = state.icon//AppCompatResources.getDrawable(context, R.drawable.bpk_weather)
-        iconPosition = 1
-        text = state.title
-        loading = false
-      }
-      addView(view, ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT))
-      view
+    type = state.type
+    icon = state.icon
+    text = state.title
+    iconPosition = if (state.iconOnly) {
+      ICON_ONLY
     } else {
-      button!!
+      when (state.iconAlignment) {
+        "leading" -> START
+        "trailing", null -> END
+        else -> throw JSApplicationIllegalArgumentException("Button iconAlignment $state.iconAlignment is not supported")
+      }
     }
-    Log.d("Render: ", "View: ${button}")
+    loading = false
+    requestLayout()
+    val uiManager = reactContext.getNativeModule(UIManagerModule::class.java)
+    val localData = BpkButtonLocalData(state.title, state.type, state.size, state.icon, iconPosition)
+    // This will trigger measure to run in BpkRatingShadowNode
+    uiManager?.setViewLocalData(id, localData)
+  }
+
+  private val measureAndLayout = Runnable {
+    measure(
+      MeasureSpec.makeMeasureSpec(width, MeasureSpec.EXACTLY),
+      MeasureSpec.makeMeasureSpec(height, MeasureSpec.EXACTLY)
+    )
+    layout(left, top, right, bottom)
+  }
+
+  override fun requestLayout() {
+    super.requestLayout()
+    // Rating relies on a measure + layout pass happening after it calls requestLayout()
+    // based on: https://github.com/facebook/react-native/blob/8d5ac8de766b9e435cbfa9bfa6b8a2b75b0e2a19/ReactAndroid/src/main/java/com/facebook/react/views/toolbar/ReactToolbar.java#L175
+    this.post(measureAndLayout)
   }
 
   companion object {
     class StateHolder : BpkViewStateHolder() {
       var title: String? by markDirtyOnUpdate(null)
-      var type: BpkButton.Type by markDirtyOnUpdate(BpkButton.Type.Primary)
-      var large: Boolean by markDirtyOnUpdate(false)
+      var type: Type by markDirtyOnUpdate(Type.Primary)
+      var size: Size by markDirtyOnUpdate(Size.Standard)
       var icon: Drawable? by markDirtyOnUpdate(null)
       var iconAlignment: String? by markDirtyOnUpdate(null)
-      var onPress: ActionCallback? by markInvalidOnUpdate(null)
+      var iconOnly: Boolean by markDirtyOnUpdate(false)
     }
   }
 }
