@@ -56,7 +56,7 @@ class BpkButtonViewManager : BaseViewManager<RNBpkButton, BpkButtonShadowNode>()
 
   @ReactProp(name = "type")
   fun setType(view: RNBpkButton, type: String) {
-    view.state.type = when(type) {
+    view.state.type = when (type) {
       "primary" -> BpkButton.Type.Primary
       "secondary" -> BpkButton.Type.Secondary
       "destructive" -> BpkButton.Type.Destructive
@@ -74,9 +74,7 @@ class BpkButtonViewManager : BaseViewManager<RNBpkButton, BpkButtonShadowNode>()
 
   @ReactProp(name = "icon")
   fun setIcon(view: RNBpkButton, icon: String?) {
-    val context = view.context
-    val iconId = context.resources.getIdentifier(icon, "drawable", view.context.packageName)
-    view.state.icon = AppCompatResources.getDrawable(context, R.drawable.bpk_weather)//context.getDrawable(iconId) ?: throw JSApplicationIllegalArgumentException("Icon $icon not found")
+    view.state.icon = icon
   }
 
   @ReactProp(name = "iconAlignment")

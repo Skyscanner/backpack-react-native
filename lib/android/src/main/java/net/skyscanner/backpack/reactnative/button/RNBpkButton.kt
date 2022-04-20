@@ -19,6 +19,7 @@ package net.skyscanner.backpack.reactnative.button
 
 import android.graphics.drawable.Drawable
 import android.widget.FrameLayout
+import androidx.appcompat.content.res.AppCompatResources
 import com.facebook.react.bridge.Arguments
 import com.facebook.react.bridge.JSApplicationIllegalArgumentException
 import com.facebook.react.bridge.ReactContext
@@ -49,7 +50,21 @@ class RNBpkButton(
 
   fun render() {
     type = state.type
-    icon = state.icon
+    icon = if (state.icon == null) {
+      null
+    } else {
+      val bpkIcon = state.icon!!.replace('-', '_').let { "bpk_$it" }
+      val suffix = if (state.size == Size.Standard) {
+        "_sm"
+      } else {
+        ""
+      }
+      val iconId =
+        context.resources.getIdentifier("$bpkIcon$suffix", "drawable", context.packageName)
+      iconId.takeUnless { it == 0 }?.let {
+        AppCompatResources.getDrawable(context, iconId)
+      }
+    }
     text = state.title
     iconPosition = if (state.iconOnly) {
       ICON_ONLY
@@ -62,7 +77,7 @@ class RNBpkButton(
     }
     loading = false
     val uiManager = reactContext.getNativeModule(UIManagerModule::class.java)
-    val localData = BpkButtonLocalData(state.title, state.type, state.size, state.icon, iconPosition)
+    val localData = BpkButtonLocalData(state.title, state.type, state.size, icon, iconPosition)
     // This will trigger measure to run in BpkButtonShadowNode
     uiManager?.setViewLocalData(id, localData)
   }
@@ -72,7 +87,7 @@ class RNBpkButton(
       var title: String? by markDirtyOnUpdate(null)
       var type: Type by markDirtyOnUpdate(Type.Primary)
       var size: Size by markDirtyOnUpdate(Size.Standard)
-      var icon: Drawable? by markDirtyOnUpdate(null)
+      var icon: String? by markDirtyOnUpdate(null)
       var iconAlignment: String? by markDirtyOnUpdate(null)
       var iconOnly: Boolean by markDirtyOnUpdate(false)
     }
