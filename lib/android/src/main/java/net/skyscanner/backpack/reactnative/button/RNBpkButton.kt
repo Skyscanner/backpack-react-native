@@ -19,6 +19,7 @@ package net.skyscanner.backpack.reactnative.button
 
 import android.widget.FrameLayout
 import androidx.appcompat.content.res.AppCompatResources
+import com.facebook.react.R
 import com.facebook.react.bridge.Arguments
 import com.facebook.react.bridge.JSApplicationIllegalArgumentException
 import com.facebook.react.bridge.ReactContext
@@ -65,6 +66,9 @@ class RNBpkButton(
       }
     }
     text = state.title
+    if (getTag(R.id.accessibility_label) == null) {
+      contentDescription = text
+    }
     size = state.size
     iconPosition = if (state.iconOnly) {
       ICON_ONLY
