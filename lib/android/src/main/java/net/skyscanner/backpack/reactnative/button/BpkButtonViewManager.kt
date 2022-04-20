@@ -60,6 +60,9 @@ class BpkButtonViewManager : BaseViewManager<RNBpkButton, BpkButtonShadowNode>()
       "featured" -> BpkButton.Type.Featured
       "primaryOnDark" -> BpkButton.Type.PrimaryOnDark
       "primaryOnLight" -> BpkButton.Type.PrimaryOnLight
+      "secondaryOnDark" -> BpkButton.Type.SecondaryOnDark
+      "link" -> BpkButton.Type.Link
+      "linkOnDark" -> BpkButton.Type.LinkOnDark
       else -> throw JSApplicationIllegalArgumentException("Button type $type is not supported")
     }
   }

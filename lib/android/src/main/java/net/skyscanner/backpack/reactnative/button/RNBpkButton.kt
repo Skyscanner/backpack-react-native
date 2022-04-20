@@ -65,6 +65,7 @@ class RNBpkButton(
       }
     }
     text = state.title
+    size = state.size
     iconPosition = if (state.iconOnly) {
       ICON_ONLY
     } else {
