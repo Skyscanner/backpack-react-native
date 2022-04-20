@@ -89,7 +89,7 @@ class BpkButtonViewManager : BaseViewManager<RNBpkButton, BpkButtonShadowNode>()
   }
 
   @ReactProp(name = "enabled")
-  fun setDisabled(view: RNBpkButton, enabled: Boolean) {
+  fun setEnabled(view: RNBpkButton, enabled: Boolean) {
     view.state.enabled = enabled
   }
 
