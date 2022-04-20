@@ -24,7 +24,6 @@ import com.facebook.yoga.YogaMeasureFunction
 import com.facebook.yoga.YogaMeasureMode
 import com.facebook.yoga.YogaMeasureOutput
 import com.facebook.yoga.YogaNode
-import net.skyscanner.backpack.reactnative.button.BpkButtonLocalData
 
 /**
  * Custom shadow node for [BpkButtonViewManager].

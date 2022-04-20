@@ -17,7 +17,6 @@
  */
 package net.skyscanner.backpack.reactnative.button
 
-import android.graphics.drawable.Drawable
 import android.widget.FrameLayout
 import androidx.appcompat.content.res.AppCompatResources
 import com.facebook.react.bridge.Arguments

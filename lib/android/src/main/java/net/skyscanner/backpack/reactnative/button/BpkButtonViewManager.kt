@@ -18,15 +18,12 @@
 
 package net.skyscanner.backpack.reactnative.button
 
-import androidx.appcompat.content.res.AppCompatResources
 import com.facebook.react.bridge.JSApplicationIllegalArgumentException
 import com.facebook.react.common.MapBuilder
 import com.facebook.react.uimanager.BaseViewManager
 import com.facebook.react.uimanager.ThemedReactContext
 import com.facebook.react.uimanager.annotations.ReactProp
 import net.skyscanner.backpack.button.BpkButton
-import net.skyscanner.backpack.reactnative.R
-import net.skyscanner.backpack.reactnative.rating.RNBpkRating
 
 class BpkButtonViewManager : BaseViewManager<RNBpkButton, BpkButtonShadowNode>() {
   companion object {
