@@ -11,7 +11,7 @@ Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usag
 ```js
 import { StyleSheet, View } from 'react-native';
 import React, { Component } from 'react';
-import BpkButton, { BUTTON_TYPES, ICON_ALIGNMENTS } from 'backpack-react-native/bpk-component-button';
+import { BUTTON_TYPES, ICON_ALIGNMENTS, BpkButtonV2 } from 'backpack-react-native/bpk-component-button';
 import { spacingBase } from '@skyscanner/bpk-foundations-react-native/tokens/base.react.native';
 
 const styles = StyleSheet.create({
@@ -26,42 +26,42 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <BpkButton
+        <BpkButtonV2
           type={BUTTON_TYPES.primary}
           title="Book flight"
           onPress={() => {}}
         />
-        <BpkButton
+        <BpkButtonV2
           type={BUTTON_TYPES.featured}
           title="Book flight"
           onPress={() => {}}
         />
-        <BpkButton
+        <BpkButtonV2
           disabled
           type={BUTTON_TYPES.destructive}
           title="Book flight"
           onPress={() => {}}
         />
-        <BpkButton
+        <BpkButtonV2
           large
           type={BUTTON_TYPES.primary}
           title="Book flight"
           onPress={() => {}}
         />
-        <BpkButton
+        <BpkButtonV2
           type={BUTTON_TYPES.featured}
           title="Book flight"
           icon="baggage"
           onPress={() => {}}
         />
-        <BpkButton
+        <BpkButtonV2
           type={BUTTON_TYPES.primary}
           title="Book flight"
           icon="baggage"
           iconAlignment={ICON_ALIGNMENTS.leading}
           onPress={() => {}}
         />
-        <BpkButton
+        <BpkButtonV2
           type={BUTTON_TYPES.featured}
           title="Book flight"
           icon="baggage"
@@ -84,33 +84,6 @@ export default class App extends Component {
 | disabled              | bool                                                                      | false    | false         |
 | icon                  | oneOf(string, element) Strings must be a [BpkIcon](/components/web/icons) | false    | null          |
 | iconAlignment         | oneOf('leading', 'trailing')                                              | false    | trailing      |
-| iconOnly (iOS only)   | bool                                                                      | false    | false         |
-| large (iOS only)      | bool                                                                      | false    | false         |
-| theme                 | See [Theme Props](#theme-props) below                                     | false    | null          |
-| type                  | oneOf('primary', 'featured', 'secondary', 'destructive', 'outline')       | false    | null          |
-
-## Theme Props
-
-### Primary
-
-* `buttonPrimaryTextColor`
-* `buttonPrimaryGradientStartColor`
-* `buttonPrimaryGradientEndColor`
-
-### Secondary
-
-* `buttonSecondaryTextColor`
-* `buttonSecondaryBackgroundColor`
-* `buttonSecondaryBorderColor`
-
-### Featured
-
-* `buttonFeaturedTextColor`
-* `buttonFeaturedGradientStartColor`
-* `buttonFeaturedGradientEndColor`
-
-### Destructive
-
-* `buttonDestructiveTextColor`
-* `buttonDestructiveBackgroundColor`
-* `buttonDestructiveBorderColor`
+| iconOnly              | bool                                                                      | false    | false         |
+| large                 | bool                                                                      | false    | false         |
+| type                  | oneOf('primary', 'featured', 'secondary', 'destructive', 'primaryOnLight', 'primaryOnDark', 'secondaryOnDark', 'link', 'linkOnDark')       | false    | null          |
