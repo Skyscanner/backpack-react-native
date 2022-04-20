@@ -83,7 +83,13 @@ class BpkButtonShadowNode internal constructor() : LayoutShadowNode(), YogaMeasu
       val spec = View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED)
       view.measure(spec, spec)
 
-      lastWidth = view.measuredWidth
+      val viewWidth = if (view.icon == null) {
+        view.measuredWidth
+      } else {
+        view.measuredWidth + view.iconSize + view.iconPadding
+      }
+
+      lastWidth = viewWidth
       lastHeight = view.measuredHeight
     }
 
