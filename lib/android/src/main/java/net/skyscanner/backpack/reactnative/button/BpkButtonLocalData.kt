@@ -28,12 +28,14 @@ internal class BpkButtonLocalData(
   private val size: BpkButton.Size,
   private val icon: Drawable?,
   private val iconPosition: Int,
-  private val enabled: Boolean
+  private val enabled: Boolean,
+  private val loading: Boolean,
 ) {
   fun asBpkButton(context: Context) = BpkButton(context, type, size).also {
     it.text = title
     it.icon = icon
     it.iconPosition = iconPosition
     it.isEnabled = enabled
+    it.loading = loading
   }
 }

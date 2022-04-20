@@ -93,6 +93,11 @@ class BpkButtonViewManager : BaseViewManager<RNBpkButton, BpkButtonShadowNode>()
     view.state.enabled = enabled
   }
 
+  @ReactProp(name = "loading")
+  fun setLoading(view: RNBpkButton, loading: Boolean) {
+    view.state.loading = loading
+  }
+
   override fun getExportedCustomBubblingEventTypeConstants(): MutableMap<String, Any> {
     return MapBuilder.builder<String, Any>().put(
       "buttonClick",

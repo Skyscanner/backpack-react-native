@@ -79,10 +79,18 @@ class RNBpkButton(
         else -> throw JSApplicationIllegalArgumentException("Button iconAlignment $state.iconAlignment is not supported")
       }
     }
-    loading = false
+    loading = state.loading
     isEnabled = state.enabled
     val uiManager = reactContext.getNativeModule(UIManagerModule::class.java)
-    val localData = BpkButtonLocalData(state.title, state.type, state.size, icon, iconPosition, state.enabled)
+    val localData = BpkButtonLocalData(
+      state.title,
+      state.type,
+      state.size,
+      icon,
+      iconPosition,
+      state.enabled,
+      state.loading
+    )
     // This will trigger measure to run in BpkButtonShadowNode
     uiManager?.setViewLocalData(id, localData)
   }
@@ -96,6 +104,7 @@ class RNBpkButton(
       var iconAlignment: String? by markDirtyOnUpdate(null)
       var iconOnly: Boolean by markDirtyOnUpdate(false)
       var enabled: Boolean by markDirtyOnUpdate(true)
+      var loading: Boolean by markDirtyOnUpdate(false)
     }
   }
 }
