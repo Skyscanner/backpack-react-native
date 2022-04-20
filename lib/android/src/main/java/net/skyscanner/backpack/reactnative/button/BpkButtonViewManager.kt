@@ -81,8 +81,7 @@ class BpkButtonViewManager : BaseViewManager<RNBpkButton, BpkButtonShadowNode>()
   fun setIconAlignment(view: RNBpkButton, iconAlignment: String) {
     view.state.iconAlignment = iconAlignment
   }
-
-
+  
   @ReactProp(name = "iconOnly")
   fun setIconOnly(view: RNBpkButton, iconOnly: Boolean) {
     view.state.iconOnly = iconOnly
