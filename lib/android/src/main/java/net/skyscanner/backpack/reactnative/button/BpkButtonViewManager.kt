@@ -88,6 +88,11 @@ class BpkButtonViewManager : BaseViewManager<RNBpkButton, BpkButtonShadowNode>()
     view.state.iconOnly = iconOnly
   }
 
+  @ReactProp(name = "enabled")
+  fun setDisabled(view: RNBpkButton, enabled: Boolean) {
+    view.state.enabled = enabled
+  }
+
   override fun getExportedCustomBubblingEventTypeConstants(): MutableMap<String, Any> {
     return MapBuilder.builder<String, Any>().put(
       "buttonClick",

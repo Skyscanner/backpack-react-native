@@ -12,102 +12,19 @@ exports[`Android BpkNudger should render correctly 1`] = `
     ]
   }
 >
-  <View
+  <AndroidBPKButtonView
+    disabled={false}
+    icon="minus"
+    iconOnly={true}
+    onPress={[Function]}
     style={
-      Array [
-        Object {
-          "overflow": "hidden",
-        },
-        Object {
-          "borderRadius": 40,
-        },
-        Object {
-          "marginRight": 4,
-        },
-      ]
+      Object {
+        "marginRight": 4,
+      }
     }
-  >
-    <View
-      accessibilityLabel="Decrease"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      nativeBackgroundAndroid={
-        Object {
-          "borderless": true,
-          "color": null,
-          "rippleRadius": undefined,
-          "type": "RippleAndroid",
-        }
-      }
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderWidth": 2,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 10,
-            "paddingVertical": 6,
-          },
-          Object {
-            "backgroundColor": "rgb(255, 255, 255)",
-            "borderColor": "rgb(221, 221, 229)",
-            "borderRadius": 40,
-          },
-          Object {
-            "flexDirection": "row-reverse",
-          },
-          Object {
-            "paddingHorizontal": 8,
-          },
-        ]
-      }
-    >
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(17, 18, 54)",
-              "fontFamily": "BpkIcon",
-              "fontSize": 24,
-              "includeFontPadding": false,
-            },
-            Object {
-              "fontSize": 16,
-            },
-            Array [
-              Object {
-                "marginEnd": 4,
-              },
-              Object {
-                "color": "rgb(7, 112, 227)",
-              },
-              Object {
-                "marginEnd": 0,
-                "marginStart": 4,
-              },
-              Object {
-                "lineHeight": 20,
-                "marginEnd": 0,
-                "marginStart": 0,
-              },
-            ],
-          ]
-        }
-      >
-        
-      </Text>
-    </View>
-  </View>
+    title="Decrease"
+    type="secondary"
+  />
   <Text
     allowFontScaling={false}
     style={
@@ -132,102 +49,19 @@ exports[`Android BpkNudger should render correctly 1`] = `
   >
     3
   </Text>
-  <View
+  <AndroidBPKButtonView
+    disabled={false}
+    icon="plus"
+    iconOnly={true}
+    onPress={[Function]}
     style={
-      Array [
-        Object {
-          "overflow": "hidden",
-        },
-        Object {
-          "borderRadius": 40,
-        },
-        Object {
-          "marginLeft": 4,
-        },
-      ]
+      Object {
+        "marginLeft": 4,
+      }
     }
-  >
-    <View
-      accessibilityLabel="Increase"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      nativeBackgroundAndroid={
-        Object {
-          "borderless": true,
-          "color": null,
-          "rippleRadius": undefined,
-          "type": "RippleAndroid",
-        }
-      }
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderWidth": 2,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 10,
-            "paddingVertical": 6,
-          },
-          Object {
-            "backgroundColor": "rgb(255, 255, 255)",
-            "borderColor": "rgb(221, 221, 229)",
-            "borderRadius": 40,
-          },
-          Object {
-            "flexDirection": "row-reverse",
-          },
-          Object {
-            "paddingHorizontal": 8,
-          },
-        ]
-      }
-    >
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(17, 18, 54)",
-              "fontFamily": "BpkIcon",
-              "fontSize": 24,
-              "includeFontPadding": false,
-            },
-            Object {
-              "fontSize": 16,
-            },
-            Array [
-              Object {
-                "marginEnd": 4,
-              },
-              Object {
-                "color": "rgb(7, 112, 227)",
-              },
-              Object {
-                "marginEnd": 0,
-                "marginStart": 4,
-              },
-              Object {
-                "lineHeight": 20,
-                "marginEnd": 0,
-                "marginStart": 0,
-              },
-            ],
-          ]
-        }
-      >
-        
-      </Text>
-    </View>
-  </View>
+    title="Increase"
+    type="secondary"
+  />
 </View>
 `;
 
@@ -243,102 +77,19 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
     ]
   }
 >
-  <View
+  <AndroidBPKButtonView
+    disabled={true}
+    icon="minus"
+    iconOnly={true}
+    onPress={[Function]}
     style={
-      Array [
-        Object {
-          "overflow": "hidden",
-        },
-        Object {
-          "borderRadius": 40,
-        },
-        Object {
-          "marginRight": 4,
-        },
-      ]
+      Object {
+        "marginRight": 4,
+      }
     }
-  >
-    <View
-      accessibilityLabel="Decrease"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={false}
-      nativeBackgroundAndroid={
-        Object {
-          "borderless": true,
-          "color": null,
-          "rippleRadius": undefined,
-          "type": "RippleAndroid",
-        }
-      }
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderWidth": 2,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 10,
-            "paddingVertical": 6,
-          },
-          Object {
-            "backgroundColor": "rgb(221, 221, 229)",
-            "borderColor": "rgb(221, 221, 229)",
-            "borderRadius": 40,
-          },
-          Object {
-            "flexDirection": "row-reverse",
-          },
-          Object {
-            "paddingHorizontal": 8,
-          },
-        ]
-      }
-    >
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(17, 18, 54)",
-              "fontFamily": "BpkIcon",
-              "fontSize": 24,
-              "includeFontPadding": false,
-            },
-            Object {
-              "fontSize": 16,
-            },
-            Array [
-              Object {
-                "marginEnd": 4,
-              },
-              Object {
-                "color": "rgb(178, 178, 191)",
-              },
-              Object {
-                "marginEnd": 0,
-                "marginStart": 4,
-              },
-              Object {
-                "lineHeight": 20,
-                "marginEnd": 0,
-                "marginStart": 0,
-              },
-            ],
-          ]
-        }
-      >
-        
-      </Text>
-    </View>
-  </View>
+    title="Decrease"
+    type="secondary"
+  />
   <Text
     allowFontScaling={false}
     style={
@@ -363,102 +114,19 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
   >
     1
   </Text>
-  <View
+  <AndroidBPKButtonView
+    disabled={false}
+    icon="plus"
+    iconOnly={true}
+    onPress={[Function]}
     style={
-      Array [
-        Object {
-          "overflow": "hidden",
-        },
-        Object {
-          "borderRadius": 40,
-        },
-        Object {
-          "marginLeft": 4,
-        },
-      ]
+      Object {
+        "marginLeft": 4,
+      }
     }
-  >
-    <View
-      accessibilityLabel="Increase"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      nativeBackgroundAndroid={
-        Object {
-          "borderless": true,
-          "color": null,
-          "rippleRadius": undefined,
-          "type": "RippleAndroid",
-        }
-      }
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderWidth": 2,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 10,
-            "paddingVertical": 6,
-          },
-          Object {
-            "backgroundColor": "rgb(255, 255, 255)",
-            "borderColor": "rgb(221, 221, 229)",
-            "borderRadius": 40,
-          },
-          Object {
-            "flexDirection": "row-reverse",
-          },
-          Object {
-            "paddingHorizontal": 8,
-          },
-        ]
-      }
-    >
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(17, 18, 54)",
-              "fontFamily": "BpkIcon",
-              "fontSize": 24,
-              "includeFontPadding": false,
-            },
-            Object {
-              "fontSize": 16,
-            },
-            Array [
-              Object {
-                "marginEnd": 4,
-              },
-              Object {
-                "color": "rgb(7, 112, 227)",
-              },
-              Object {
-                "marginEnd": 0,
-                "marginStart": 4,
-              },
-              Object {
-                "lineHeight": 20,
-                "marginEnd": 0,
-                "marginStart": 0,
-              },
-            ],
-          ]
-        }
-      >
-        
-      </Text>
-    </View>
-  </View>
+    title="Increase"
+    type="secondary"
+  />
 </View>
 `;
 
@@ -474,102 +142,19 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
     ]
   }
 >
-  <View
+  <AndroidBPKButtonView
+    disabled={false}
+    icon="minus"
+    iconOnly={true}
+    onPress={[Function]}
     style={
-      Array [
-        Object {
-          "overflow": "hidden",
-        },
-        Object {
-          "borderRadius": 40,
-        },
-        Object {
-          "marginRight": 4,
-        },
-      ]
+      Object {
+        "marginRight": 4,
+      }
     }
-  >
-    <View
-      accessibilityLabel="Decrease"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      nativeBackgroundAndroid={
-        Object {
-          "borderless": true,
-          "color": null,
-          "rippleRadius": undefined,
-          "type": "RippleAndroid",
-        }
-      }
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderWidth": 2,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 10,
-            "paddingVertical": 6,
-          },
-          Object {
-            "backgroundColor": "rgb(255, 255, 255)",
-            "borderColor": "rgb(221, 221, 229)",
-            "borderRadius": 40,
-          },
-          Object {
-            "flexDirection": "row-reverse",
-          },
-          Object {
-            "paddingHorizontal": 8,
-          },
-        ]
-      }
-    >
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(17, 18, 54)",
-              "fontFamily": "BpkIcon",
-              "fontSize": 24,
-              "includeFontPadding": false,
-            },
-            Object {
-              "fontSize": 16,
-            },
-            Array [
-              Object {
-                "marginEnd": 4,
-              },
-              Object {
-                "color": "rgb(7, 112, 227)",
-              },
-              Object {
-                "marginEnd": 0,
-                "marginStart": 4,
-              },
-              Object {
-                "lineHeight": 20,
-                "marginEnd": 0,
-                "marginStart": 0,
-              },
-            ],
-          ]
-        }
-      >
-        
-      </Text>
-    </View>
-  </View>
+    title="Decrease"
+    type="secondary"
+  />
   <Text
     allowFontScaling={false}
     style={
@@ -594,102 +179,19 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
   >
     3
   </Text>
-  <View
+  <AndroidBPKButtonView
+    disabled={true}
+    icon="plus"
+    iconOnly={true}
+    onPress={[Function]}
     style={
-      Array [
-        Object {
-          "overflow": "hidden",
-        },
-        Object {
-          "borderRadius": 40,
-        },
-        Object {
-          "marginLeft": 4,
-        },
-      ]
+      Object {
+        "marginLeft": 4,
+      }
     }
-  >
-    <View
-      accessibilityLabel="Increase"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={false}
-      nativeBackgroundAndroid={
-        Object {
-          "borderless": true,
-          "color": null,
-          "rippleRadius": undefined,
-          "type": "RippleAndroid",
-        }
-      }
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderWidth": 2,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 10,
-            "paddingVertical": 6,
-          },
-          Object {
-            "backgroundColor": "rgb(221, 221, 229)",
-            "borderColor": "rgb(221, 221, 229)",
-            "borderRadius": 40,
-          },
-          Object {
-            "flexDirection": "row-reverse",
-          },
-          Object {
-            "paddingHorizontal": 8,
-          },
-        ]
-      }
-    >
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(17, 18, 54)",
-              "fontFamily": "BpkIcon",
-              "fontSize": 24,
-              "includeFontPadding": false,
-            },
-            Object {
-              "fontSize": 16,
-            },
-            Array [
-              Object {
-                "marginEnd": 4,
-              },
-              Object {
-                "color": "rgb(178, 178, 191)",
-              },
-              Object {
-                "marginEnd": 0,
-                "marginStart": 4,
-              },
-              Object {
-                "lineHeight": 20,
-                "marginEnd": 0,
-                "marginStart": 0,
-              },
-            ],
-          ]
-        }
-      >
-        
-      </Text>
-    </View>
-  </View>
+    title="Increase"
+    type="secondary"
+  />
 </View>
 `;
 
@@ -705,102 +207,19 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
     ]
   }
 >
-  <View
+  <AndroidBPKButtonView
+    disabled={true}
+    icon="minus"
+    iconOnly={true}
+    onPress={[Function]}
     style={
-      Array [
-        Object {
-          "overflow": "hidden",
-        },
-        Object {
-          "borderRadius": 40,
-        },
-        Object {
-          "marginRight": 4,
-        },
-      ]
+      Object {
+        "marginRight": 4,
+      }
     }
-  >
-    <View
-      accessibilityLabel="Decrease"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={false}
-      nativeBackgroundAndroid={
-        Object {
-          "borderless": true,
-          "color": null,
-          "rippleRadius": undefined,
-          "type": "RippleAndroid",
-        }
-      }
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderWidth": 2,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 10,
-            "paddingVertical": 6,
-          },
-          Object {
-            "backgroundColor": "rgb(221, 221, 229)",
-            "borderColor": "rgb(221, 221, 229)",
-            "borderRadius": 40,
-          },
-          Object {
-            "flexDirection": "row-reverse",
-          },
-          Object {
-            "paddingHorizontal": 8,
-          },
-        ]
-      }
-    >
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(17, 18, 54)",
-              "fontFamily": "BpkIcon",
-              "fontSize": 24,
-              "includeFontPadding": false,
-            },
-            Object {
-              "fontSize": 16,
-            },
-            Array [
-              Object {
-                "marginEnd": 4,
-              },
-              Object {
-                "color": "rgb(178, 178, 191)",
-              },
-              Object {
-                "marginEnd": 0,
-                "marginStart": 4,
-              },
-              Object {
-                "lineHeight": 20,
-                "marginEnd": 0,
-                "marginStart": 0,
-              },
-            ],
-          ]
-        }
-      >
-        
-      </Text>
-    </View>
-  </View>
+    title="Decrease"
+    type="secondary"
+  />
   <Text
     allowFontScaling={false}
     style={
@@ -825,101 +244,18 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
   >
     3
   </Text>
-  <View
+  <AndroidBPKButtonView
+    disabled={false}
+    icon="plus"
+    iconOnly={true}
+    onPress={[Function]}
     style={
-      Array [
-        Object {
-          "overflow": "hidden",
-        },
-        Object {
-          "borderRadius": 40,
-        },
-        Object {
-          "marginLeft": 4,
-        },
-      ]
+      Object {
+        "marginLeft": 4,
+      }
     }
-  >
-    <View
-      accessibilityLabel="Increase"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      nativeBackgroundAndroid={
-        Object {
-          "borderless": true,
-          "color": null,
-          "rippleRadius": undefined,
-          "type": "RippleAndroid",
-        }
-      }
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderWidth": 2,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingHorizontal": 10,
-            "paddingVertical": 6,
-          },
-          Object {
-            "backgroundColor": "rgb(255, 255, 255)",
-            "borderColor": "rgb(221, 221, 229)",
-            "borderRadius": 40,
-          },
-          Object {
-            "flexDirection": "row-reverse",
-          },
-          Object {
-            "paddingHorizontal": 8,
-          },
-        ]
-      }
-    >
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(17, 18, 54)",
-              "fontFamily": "BpkIcon",
-              "fontSize": 24,
-              "includeFontPadding": false,
-            },
-            Object {
-              "fontSize": 16,
-            },
-            Array [
-              Object {
-                "marginEnd": 4,
-              },
-              Object {
-                "color": "rgb(7, 112, 227)",
-              },
-              Object {
-                "marginEnd": 0,
-                "marginStart": 4,
-              },
-              Object {
-                "lineHeight": 20,
-                "marginEnd": 0,
-                "marginStart": 0,
-              },
-            ],
-          ]
-        }
-      >
-        
-      </Text>
-    </View>
-  </View>
+    title="Increase"
+    type="secondary"
+  />
 </View>
 `;

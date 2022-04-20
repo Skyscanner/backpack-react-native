@@ -76,8 +76,9 @@ class RNBpkButton(
       }
     }
     loading = false
+    isEnabled = state.enabled
     val uiManager = reactContext.getNativeModule(UIManagerModule::class.java)
-    val localData = BpkButtonLocalData(state.title, state.type, state.size, icon, iconPosition)
+    val localData = BpkButtonLocalData(state.title, state.type, state.size, icon, iconPosition, state.enabled)
     // This will trigger measure to run in BpkButtonShadowNode
     uiManager?.setViewLocalData(id, localData)
   }
@@ -90,6 +91,7 @@ class RNBpkButton(
       var icon: String? by markDirtyOnUpdate(null)
       var iconAlignment: String? by markDirtyOnUpdate(null)
       var iconOnly: Boolean by markDirtyOnUpdate(false)
+      var enabled: Boolean by markDirtyOnUpdate(true)
     }
   }
 }
