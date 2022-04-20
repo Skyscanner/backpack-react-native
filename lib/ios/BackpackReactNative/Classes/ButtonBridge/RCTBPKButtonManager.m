@@ -37,7 +37,7 @@ RCT_REMAP_VIEW_PROPERTY(icon, rct_icon, NSString)
 RCT_REMAP_VIEW_PROPERTY(large, rct_large, BOOL)
 RCT_REMAP_VIEW_PROPERTY(loading, rct_loading, BOOL)
 RCT_REMAP_VIEW_PROPERTY(enabled, rct_enabled, BOOL)
-//RCT_REMAP_VIEW_PROPERTY(onPress, RCTResponseSenderBlock)
+RCT_EXPORT_VIEW_PROPERTY(onPress, RCTBubblingEventBlock)
 
 @end
 NS_ASSUME_NONNULL_END

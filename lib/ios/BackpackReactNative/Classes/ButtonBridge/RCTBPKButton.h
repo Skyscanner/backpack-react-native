@@ -6,7 +6,7 @@
 //
 
 #import <Backpack/Button.h>
-#import <React/RCTBridgeModule.h>
+#import <React/RCTComponent.h>
 
 @interface RCTBPKButton : BPKButton
 
@@ -17,7 +17,7 @@
 @property(nonatomic) BOOL rct_large;
 @property(nonatomic) BOOL rct_loading;
 @property(nonatomic) BOOL rct_enabled;
-@property(nonatomic) RCTResponseSenderBlock onPress;
+@property(nonatomic) RCTBubblingEventBlock onPress;
 
 - (instancetype)initWithType:(NSString *)type large:(BOOL)large;
 

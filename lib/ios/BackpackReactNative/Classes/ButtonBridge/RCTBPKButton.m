@@ -20,7 +20,7 @@
 
 - (void)didTap {
     if (self.onPress != nil) {
-        self.onPress(@[[NSNull null]]);
+        self.onPress(@{});
     }
 }
 
@@ -56,7 +56,7 @@
     [self setSize: [RCTBPKButton sizeForIsLarge:rct_large]];
 }
 
-- (void)setOnPress:(RCTResponseSenderBlock)onPress {
+- (void)setOnPress:(RCTBubblingEventBlock)onPress {
     _onPress = onPress;
 }
 
