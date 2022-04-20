@@ -24,9 +24,19 @@
     }
 }
 
+- (void)setRct_iconOnly:(BOOL)rct_iconOnly {
+    _rct_iconOnly = rct_iconOnly;
+}
+
 - (void)setRct_title:(NSString *)rct_title {
     _rct_title = rct_title;
-    [self setTitle:rct_title];
+    if (self.rct_iconOnly) {
+        NSString *existingTitle = _rct_title;
+        [self setTitle:nil];
+        [self setAccessibilityLabel:existingTitle];
+    } else {
+        [self setTitle:rct_title];
+    }
 }
 
 - (void)setRct_icon:(NSString *)rct_icon {

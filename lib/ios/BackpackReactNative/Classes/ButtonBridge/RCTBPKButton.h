@@ -17,6 +17,7 @@
 @property(nonatomic) BOOL rct_large;
 @property(nonatomic) BOOL rct_loading;
 @property(nonatomic) BOOL rct_enabled;
+@property(nonatomic) BOOL rct_iconOnly;
 @property(nonatomic) RCTBubblingEventBlock onPress;
 
 - (instancetype)initWithType:(NSString *)type large:(BOOL)large;
