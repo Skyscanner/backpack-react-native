@@ -102,7 +102,6 @@ class BpkButtonViewManager : BaseViewManager<RNBpkButton, BpkButtonShadowNode>()
 
   override fun onAfterUpdateTransaction(view: RNBpkButton) {
     super.onAfterUpdateTransaction(view)
-    view.requestLayout()
     view.state.dispatchUpdateTransactionFinished()
   }
 }

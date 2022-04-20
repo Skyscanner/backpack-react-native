@@ -61,26 +61,10 @@ class RNBpkButton(
       }
     }
     loading = false
-    requestLayout()
     val uiManager = reactContext.getNativeModule(UIManagerModule::class.java)
     val localData = BpkButtonLocalData(state.title, state.type, state.size, state.icon, iconPosition)
-    // This will trigger measure to run in BpkRatingShadowNode
+    // This will trigger measure to run in BpkButtonShadowNode
     uiManager?.setViewLocalData(id, localData)
-  }
-
-  private val measureAndLayout = Runnable {
-    measure(
-      MeasureSpec.makeMeasureSpec(width, MeasureSpec.EXACTLY),
-      MeasureSpec.makeMeasureSpec(height, MeasureSpec.EXACTLY)
-    )
-    layout(left, top, right, bottom)
-  }
-
-  override fun requestLayout() {
-    super.requestLayout()
-    // Rating relies on a measure + layout pass happening after it calls requestLayout()
-    // based on: https://github.com/facebook/react-native/blob/8d5ac8de766b9e435cbfa9bfa6b8a2b75b0e2a19/ReactAndroid/src/main/java/com/facebook/react/views/toolbar/ReactToolbar.java#L175
-    this.post(measureAndLayout)
   }
 
   companion object {
