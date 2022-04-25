@@ -258,6 +258,7 @@ isOpen
 itemStyle
 leadingAccessoryView
 leadingButton
+linkOnDark
 mainStyle
 maxDate
 maxRating
@@ -280,11 +281,14 @@ overlayStyle
 pageCount
 pointerDirection
 portalStyle
+primaryOnLight
+primaryOnDark
 props.message
 props.title
 ratingLabel
 renderFlag
 scrimAction
+secondaryOnDark
 selectedDates
 selectedId
 selectedIndex

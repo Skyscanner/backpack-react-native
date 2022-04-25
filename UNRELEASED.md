@@ -2,6 +2,10 @@
 
 > Place your changes below this line. 
 
+**Added:**
+
+- Bridged buttons from native apps to React Native - created `BpkButtonV2` which is the bridged button to support transition from JS buttons to Native buttons. Once we have completed the migration internally `BpkButtonV2` will become `BpkButton` by default.
+
 **Fixed:**
 - Fixed a breaking change from backpack-android that caused backpack-react-native to crash
 

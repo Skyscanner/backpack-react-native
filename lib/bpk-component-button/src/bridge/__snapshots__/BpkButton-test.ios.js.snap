@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`iOS BpkButton should render button correctly with all props 1`] = `
+<RCTBPKButton
+  accessibilityLabel={null}
+  enabled={true}
+  icon="tick"
+  iconAlignment="leading"
+  iconOnly={false}
+  large={true}
+  loading={false}
+  onPress={[Function]}
+  title="Primary"
+  type="primary"
+/>
+`;
+
+exports[`iOS BpkButton should render button correctly with icon 1`] = `
+<RCTBPKButton
+  accessibilityLabel={null}
+  enabled={true}
+  icon="tick"
+  iconAlignment="trailing"
+  iconOnly={false}
+  large={false}
+  loading={false}
+  onPress={[Function]}
+  title="Primary"
+  type="primary"
+/>
+`;
+
+exports[`iOS BpkButton should render correctly with required props 1`] = `
+<RCTBPKButton
+  accessibilityLabel={null}
+  enabled={true}
+  icon={null}
+  iconAlignment="trailing"
+  iconOnly={false}
+  large={false}
+  loading={false}
+  onPress={[Function]}
+  title="Primary"
+  type="primary"
+/>
+`;
+
+exports[`iOS BpkButton should render icon only button correctly 1`] = `
+<RCTBPKButton
+  accessibilityLabel={null}
+  enabled={true}
+  icon="tick"
+  iconAlignment="trailing"
+  iconOnly={true}
+  large={false}
+  loading={false}
+  onPress={[Function]}
+  title="Primary"
+  type="primary"
+/>
+`;
+
+exports[`iOS BpkButton should render large button correctly with icon 1`] = `
+<RCTBPKButton
+  accessibilityLabel={null}
+  enabled={true}
+  icon="tick"
+  iconAlignment="trailing"
+  iconOnly={false}
+  large={true}
+  loading={false}
+  onPress={[Function]}
+  title="Primary"
+  type="primary"
+/>
+`;
+
+exports[`iOS BpkButton should render large button correctly with required props 1`] = `
+<RCTBPKButton
+  accessibilityLabel={null}
+  enabled={true}
+  icon={null}
+  iconAlignment="trailing"
+  iconOnly={false}
+  large={true}
+  loading={false}
+  onPress={[Function]}
+  title="Primary"
+  type="primary"
+/>
+`;
+
+exports[`iOS BpkButton should render large icon only button correctly 1`] = `
+<RCTBPKButton
+  accessibilityLabel={null}
+  enabled={true}
+  icon="tick"
+  iconAlignment="trailing"
+  iconOnly={true}
+  large={true}
+  loading={false}
+  onPress={[Function]}
+  title="Primary"
+  type="primary"
+/>
+`;
