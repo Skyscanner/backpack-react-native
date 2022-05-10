@@ -88,6 +88,16 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (BOOL)date:(NSDate *)date isBeforeDate:(NSDate *)reference;
 
+/**
+ * Determine if a date is the same date
+ *
+ * @param date The date which you want to compare.
+ * @param reference The reference date.
+
+ * @return YES if `date` is the same to `reference`.
+ */
++ (BOOL)date:(NSDate *)date isSameDate:(NSDate *)reference;
+
 @end
 
 NS_ASSUME_NONNULL_END

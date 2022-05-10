@@ -49,5 +49,10 @@ NS_ASSUME_NONNULL_BEGIN
     return ordering == NSOrderedDescending;
 }
 
++ (BOOL)date:(NSDate *)date isSameDate:(NSDate *)reference {
+    NSComparisonResult ordering = [reference compare:date];
+    return ordering == NSOrderedSame;
+}
+
 @end
 NS_ASSUME_NONNULL_END

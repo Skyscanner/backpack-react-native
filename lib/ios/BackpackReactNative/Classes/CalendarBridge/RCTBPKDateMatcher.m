@@ -36,10 +36,16 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)matchesDate:(NSDate *)date {
     switch (self.matcherType) {
     case RCTBPKDateMatcherTypeRange:
+        if ([RCTBPKCalendarDateUtils date:date isSameDate:self.dates[0]] ||
+            [RCTBPKCalendarDateUtils date:date isSameDate:self.dates[1]]) {
+            return YES;
+        }
+
         if ([RCTBPKCalendarDateUtils date:date isAfterDate:self.dates[0]] &&
             [RCTBPKCalendarDateUtils date:date isBeforeDate:self.dates[1]]) {
             return YES;
         }
+
         break;
     case RCTBPKDateMatcherTypeBefore:
         if ([RCTBPKCalendarDateUtils date:date isBeforeDate:self.dates[0]]) {
