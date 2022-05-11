@@ -6,6 +6,10 @@
 
 Bumped supported Node version to `lts/fermium` (`v14`) to move away from EOL Node 12.
 
+## Fixed
+
+Fixed calendar range to be inclusive on iOS
+
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
