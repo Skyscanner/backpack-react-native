@@ -118,7 +118,7 @@ $ANDROID_SDK_ROOT/cmdline-tools/latest/bin/avdmanager create avd --name "bpk-avd
 If you are a Skyscanner employee follow the next steps:
 1. In `build.gradle`, under the resolution strategy, uncomment the part of the code which forces `react-native` version `0.64.1-skyscanner.1`
 2. In `package.json`, change the react-native version to `0.64.1-skyscanner.1.1` and then run `npm install` (you might need to first delete the node modules and `package-lock.json` file)
-3. Follow the Backpack RN Confluence guidelines to set up the credentials for artifactory
+3. Follow the Backpack RN Confluence guidelines to set up the credentials for Artifactory
 
 This is in order to use our `react-native` fork which has a fix for https://github.com/facebook/react-native/issues/31572.
 
