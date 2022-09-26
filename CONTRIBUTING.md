@@ -70,9 +70,11 @@ Once you have Ruby, install [Bundler](https://bundler.io) with `gem install bund
 
 Get [Homebrew](https://brew.sh/) if you don't already have it.
 
-Install Watchman with `brew install watchman`, then install Java 11 with `brew cask install adoptopenjdk/openjdk/adoptopenjdk11`.
+Install Watchman with `brew install watchman`, then install Java 11 with `brew install adoptopenjdk/openjdk/adoptopenjdk11 --cask`.
 
-Get Android Studio with `brew cask install android-studio`. Once installed, open it and a setup wizard will guide you through installing lots of extra things like the Android SDK (choose *Standard* installation). You may be asked for your password during this. You're free to close Android Studio once this is done.
+Get Android Studio with `brew install android-studio --cask`. Once installed, open it and a setup wizard will guide you through installing lots of extra things like the Android SDK (choose *Standard* installation). You may be asked for your password during this. You're free to close Android Studio once this is done.
+
+You may also have to install "Android SDK Command Line Tools" from the SDK tools screen in Android Studio.
 
 Add an environment variable pointing to the SDK location to your `~/.bash_profile`
 (or similarly used file):
@@ -92,15 +94,33 @@ $ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager --licenses
 Download Android system images for the minimum and targeted API levels. Note that you may get a warning about a `.cfg` file not being present. You're safe to ignore this.
 
 ```
-$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager "system-images;android-28;google_apis;x86"
+# x86
+$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager "system-images;android-29;google_apis;x86"
 $ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager "system-images;android-24;google_apis;x86"
+
+# ARM
+$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager "system-images;android-29;google_apis;arm64-v8a"
+$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager "system-images;android-24;google_apis;arm64-v8a"
 ```
+
 Create Android Virtual Devices (AVDs):
 
 ```
-$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/avdmanager create avd --name "bpk-avd" --package "system-images;android-28;google_apis;x86" --device "pixel" && cp android/bpk-avd.ini ~/.android/avd/bpk-avd.avd/config.ini
+# x86
+$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/avdmanager create avd --name "bpk-avd" --package "system-images;android-29;google_apis;x86" --device "pixel" && cp android/bpk-avd.ini ~/.android/avd/bpk-avd.avd/config.ini
 $ANDROID_SDK_ROOT/cmdline-tools/latest/bin/avdmanager create avd --name "bpk-avd-min" --package "system-images;android-24;google_apis;x86" --device "Nexus 5"
+
+# ARM
+$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/avdmanager create avd --name "bpk-avd" --package "system-images;android-29;google_apis;arm64-v8a" --device "pixel" && cp android/bpk-avd.ini ~/.android/avd/bpk-avd.avd/config.ini
+$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/avdmanager create avd --name "bpk-avd-min" --package "system-images;android-24;google_apis;arm64-v8a" --device "Nexus 5"
 ```
+
+If you are a Skyscanner employee follow the next steps:
+1. In `build.gradle`, under the resolution strategy, uncomment the part of the code which forces `react-native` version `0.64.1-skyscanner.1`
+2. In `package.json`, change the react-native version to `0.64.1-skyscanner.1.1` and then run `npm install` (you might need to first delete the node modules and `package-lock.json` file)
+3. Follow the Backpack RN Confluence guidelines to set up the credentials for Artifactory
+
+This is in order to use our `react-native` fork which has a fix for https://github.com/facebook/react-native/issues/31572.
 
 ### Code style
 
