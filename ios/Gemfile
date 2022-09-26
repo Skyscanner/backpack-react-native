@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'cocoapods', '~> 1.10.1'
+gem 'cocoapods', '~> 1.11.3'
 gem 'rake'
 gem 'rubocop', '~> 0.80.0'
 gem 'xcpretty'
