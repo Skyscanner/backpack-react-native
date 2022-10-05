@@ -5,7 +5,7 @@ exports[`android BpkNavigationBar should render correctly 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(7, 112, 227)",
+        "backgroundColor": "rgb(0, 98, 227)",
         "elevation": 3,
         "flexDirection": "column",
         "paddingHorizontal": 8,
@@ -59,7 +59,7 @@ exports[`android BpkNavigationBar should render correctly 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(17, 18, 54)",
+                "color": "rgb(22, 22, 22)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -102,7 +102,7 @@ exports[`android BpkNavigationBar should render correctly 1`] = `
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "sans-serif",
               "fontSize": 20,
               "fontWeight": "400",
@@ -133,7 +133,7 @@ exports[`android BpkNavigationBar should render correctly with a subtitle view 1
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(7, 112, 227)",
+        "backgroundColor": "rgb(0, 98, 227)",
         "elevation": 3,
         "flexDirection": "column",
         "paddingHorizontal": 8,
@@ -190,7 +190,7 @@ exports[`android BpkNavigationBar should render correctly with a subtitle view 1
           style={
             Array [
               Object {
-                "color": "rgb(17, 18, 54)",
+                "color": "rgb(22, 22, 22)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -233,7 +233,7 @@ exports[`android BpkNavigationBar should render correctly with a subtitle view 1
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "sans-serif",
               "fontSize": 20,
               "fontWeight": "400",
@@ -275,7 +275,7 @@ exports[`android BpkNavigationBar should render correctly with a title view 1`] 
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(7, 112, 227)",
+        "backgroundColor": "rgb(0, 98, 227)",
         "elevation": 3,
         "flexDirection": "column",
         "paddingHorizontal": 8,
@@ -329,7 +329,7 @@ exports[`android BpkNavigationBar should render correctly with a title view 1`] 
           style={
             Array [
               Object {
-                "color": "rgb(17, 18, 54)",
+                "color": "rgb(22, 22, 22)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -383,7 +383,7 @@ exports[`android BpkNavigationBar should render correctly with an icon in the ti
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(7, 112, 227)",
+        "backgroundColor": "rgb(0, 98, 227)",
         "elevation": 3,
         "flexDirection": "column",
         "paddingHorizontal": 8,
@@ -437,7 +437,7 @@ exports[`android BpkNavigationBar should render correctly with an icon in the ti
           style={
             Array [
               Object {
-                "color": "rgb(17, 18, 54)",
+                "color": "rgb(22, 22, 22)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -478,7 +478,7 @@ exports[`android BpkNavigationBar should render correctly with an icon in the ti
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "BpkIcon",
               "fontSize": 24,
               "includeFontPadding": false,
@@ -506,7 +506,7 @@ exports[`android BpkNavigationBar should render correctly with an icon in the ti
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "sans-serif",
               "fontSize": 20,
               "fontWeight": "400",
@@ -539,7 +539,7 @@ exports[`android BpkNavigationBar should render correctly with custom style 1`] 
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(7, 112, 227)",
+        "backgroundColor": "rgb(0, 98, 227)",
         "elevation": 3,
         "flexDirection": "column",
         "paddingHorizontal": 8,
@@ -596,7 +596,7 @@ exports[`android BpkNavigationBar should render correctly with custom style 1`] 
           style={
             Array [
               Object {
-                "color": "rgb(17, 18, 54)",
+                "color": "rgb(22, 22, 22)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -639,7 +639,7 @@ exports[`android BpkNavigationBar should render correctly with custom style 1`] 
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "sans-serif",
               "fontSize": 20,
               "fontWeight": "400",
@@ -670,7 +670,7 @@ exports[`android BpkNavigationBar should render correctly with custom theme 1`] 
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(7, 112, 227)",
+        "backgroundColor": "rgb(0, 98, 227)",
         "elevation": 3,
         "flexDirection": "column",
         "paddingHorizontal": 8,
@@ -727,7 +727,7 @@ exports[`android BpkNavigationBar should render correctly with custom theme 1`] 
           style={
             Array [
               Object {
-                "color": "rgb(17, 18, 54)",
+                "color": "rgb(22, 22, 22)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -770,7 +770,7 @@ exports[`android BpkNavigationBar should render correctly with custom theme 1`] 
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "sans-serif",
               "fontSize": 20,
               "fontWeight": "400",
@@ -801,7 +801,7 @@ exports[`android BpkNavigationBar should render correctly with trailing button 1
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(7, 112, 227)",
+        "backgroundColor": "rgb(0, 98, 227)",
         "elevation": 3,
         "flexDirection": "column",
         "paddingHorizontal": 8,
@@ -855,7 +855,7 @@ exports[`android BpkNavigationBar should render correctly with trailing button 1
           style={
             Array [
               Object {
-                "color": "rgb(17, 18, 54)",
+                "color": "rgb(22, 22, 22)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -898,7 +898,7 @@ exports[`android BpkNavigationBar should render correctly with trailing button 1
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "sans-serif",
               "fontSize": 20,
               "fontWeight": "400",
@@ -953,7 +953,7 @@ exports[`android BpkNavigationBar should render correctly with trailing button 1
           style={
             Array [
               Object {
-                "color": "rgb(17, 18, 54)",
+                "color": "rgb(22, 22, 22)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -982,7 +982,7 @@ exports[`android should forward custom props 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(7, 112, 227)",
+        "backgroundColor": "rgb(0, 98, 227)",
         "elevation": 3,
         "flexDirection": "column",
         "paddingHorizontal": 8,
@@ -1038,7 +1038,7 @@ exports[`android should forward custom props 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(17, 18, 54)",
+                "color": "rgb(22, 22, 22)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -1081,7 +1081,7 @@ exports[`android should forward custom props 1`] = `
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "sans-serif",
               "fontSize": 20,
               "fontWeight": "400",
@@ -1137,7 +1137,7 @@ exports[`android should forward custom props 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(17, 18, 54)",
+                "color": "rgb(22, 22, 22)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,

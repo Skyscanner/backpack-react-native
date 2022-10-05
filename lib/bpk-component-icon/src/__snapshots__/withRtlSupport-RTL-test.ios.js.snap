@@ -6,7 +6,7 @@ exports[`iOS withRtlSupport should apply user props next to transform 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "BpkIcon",
         "fontSize": 24,
         "includeFontPadding": false,
@@ -20,7 +20,7 @@ exports[`iOS withRtlSupport should apply user props next to transform 1`] = `
           ],
         },
         Object {
-          "color": "rgb(7, 112, 227)",
+          "color": "rgb(0, 98, 227)",
         },
       ],
     ]
@@ -36,7 +36,7 @@ exports[`iOS withRtlSupport should render correctly 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "BpkIcon",
         "fontSize": 24,
         "includeFontPadding": false,
@@ -63,7 +63,7 @@ exports[`iOS withRtlSupport should render correctly for RTL 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "BpkIcon",
         "fontSize": 24,
         "includeFontPadding": false,

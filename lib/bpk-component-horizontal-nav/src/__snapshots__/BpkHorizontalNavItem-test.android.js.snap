@@ -9,7 +9,7 @@ exports[`Android BpkHorizontalNavItem dark mode should render correctly 1`] = `
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": -9934465,
+      "color": -11249568,
       "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
@@ -65,7 +65,7 @@ exports[`Android BpkHorizontalNavItem dark mode should render correctly with "di
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": -9934465,
+      "color": -11249568,
       "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
@@ -104,7 +104,7 @@ exports[`Android BpkHorizontalNavItem dark mode should render correctly with "di
             "paddingHorizontal": 16,
           },
           Object {
-            "color": "rgb(99, 99, 102)",
+            "color": "rgb(68, 80, 95)",
           },
         ],
       ]
@@ -124,7 +124,7 @@ exports[`Android BpkHorizontalNavItem dark mode should render correctly with "se
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": -9934465,
+      "color": -11249568,
       "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
@@ -163,7 +163,7 @@ exports[`Android BpkHorizontalNavItem dark mode should render correctly with "se
             "paddingHorizontal": 16,
           },
           Object {
-            "color": "rgb(109, 159, 235)",
+            "color": "rgb(132, 233, 255)",
           },
         ],
       ]
@@ -209,7 +209,7 @@ exports[`Android BpkHorizontalNavItem light mode should render correctly 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -265,7 +265,7 @@ exports[`Android BpkHorizontalNavItem light mode should render correctly with "d
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -278,7 +278,7 @@ exports[`Android BpkHorizontalNavItem light mode should render correctly with "d
             "paddingHorizontal": 16,
           },
           Object {
-            "color": "rgb(178, 178, 191)",
+            "color": "rgb(194, 201, 205)",
           },
         ],
       ]
@@ -324,7 +324,7 @@ exports[`Android BpkHorizontalNavItem light mode should render correctly with "s
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -337,7 +337,7 @@ exports[`Android BpkHorizontalNavItem light mode should render correctly with "s
             "paddingHorizontal": 16,
           },
           Object {
-            "color": "rgb(7, 112, 227)",
+            "color": "rgb(0, 98, 227)",
           },
         ],
       ]
@@ -386,7 +386,7 @@ exports[`Android BpkHorizontalNavItem should render correctly with "small" prop 
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "sans-serif",
           "fontSize": 14,
           "fontWeight": "400",
@@ -442,7 +442,7 @@ exports[`Android BpkHorizontalNavItem should render correctly with "spaceAround"
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -498,7 +498,7 @@ exports[`Android BpkHorizontalNavItem should render correctly with arbitrary pro
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -557,7 +557,7 @@ exports[`Android BpkHorizontalNavItem should render correctly with custom "style
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -613,7 +613,7 @@ exports[`Android BpkHorizontalNavItem should render item text correctly with cus
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -672,7 +672,7 @@ exports[`Android BpkHorizontalNavItem should support theming 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",

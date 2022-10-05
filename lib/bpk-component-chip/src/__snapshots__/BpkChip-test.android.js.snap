@@ -21,7 +21,7 @@ exports[`Android BpkChip dark mode should render correctly 1`] = `
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": -9934465,
+        "color": -11249568,
         "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
@@ -37,7 +37,7 @@ exports[`Android BpkChip dark mode should render correctly 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(44, 44, 46)",
+          "backgroundColor": "rgb(1, 9, 19)",
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -96,7 +96,7 @@ exports[`Android BpkChip dark mode should render correctly with "disabled" 1`] =
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": -9934465,
+        "color": -11249568,
         "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
@@ -112,7 +112,7 @@ exports[`Android BpkChip dark mode should render correctly with "disabled" 1`] =
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(44, 44, 46)",
+          "backgroundColor": "rgb(1, 9, 19)",
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -120,7 +120,7 @@ exports[`Android BpkChip dark mode should render correctly with "disabled" 1`] =
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(44, 44, 46)",
+          "backgroundColor": "rgb(1, 9, 19)",
         },
       ]
     }
@@ -144,7 +144,7 @@ exports[`Android BpkChip dark mode should render correctly with "disabled" 1`] =
               "includeFontPadding": false,
             },
             Object {
-              "color": "rgb(99, 99, 102)",
+              "color": "rgb(68, 80, 95)",
             },
           ],
         ]
@@ -177,7 +177,7 @@ exports[`Android BpkChip dark mode should render correctly with "selected" 1`] =
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": -9934465,
+        "color": -11249568,
         "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
@@ -193,7 +193,7 @@ exports[`Android BpkChip dark mode should render correctly with "selected" 1`] =
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(44, 44, 46)",
+          "backgroundColor": "rgb(1, 9, 19)",
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -201,7 +201,7 @@ exports[`Android BpkChip dark mode should render correctly with "selected" 1`] =
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(7, 112, 227)",
+          "backgroundColor": "rgb(0, 98, 227)",
         },
       ]
     }
@@ -262,7 +262,7 @@ exports[`Android BpkChip dark mode should render outline correctly 1`] = `
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": -9934465,
+        "color": -11249568,
         "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
@@ -278,7 +278,7 @@ exports[`Android BpkChip dark mode should render outline correctly 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(44, 44, 46)",
+          "backgroundColor": "rgb(1, 9, 19)",
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -287,7 +287,7 @@ exports[`Android BpkChip dark mode should render outline correctly 1`] = `
         },
         Object {
           "backgroundColor": "transparent",
-          "borderColor": "rgb(72, 72, 74)",
+          "borderColor": "rgb(68, 80, 95)",
           "borderWidth": 1,
           "paddingVertical": 7,
         },
@@ -377,7 +377,7 @@ exports[`Android BpkChip light mode should render correctly 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -387,7 +387,7 @@ exports[`Android BpkChip light mode should render correctly 1`] = `
           Object {},
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "includeFontPadding": false,
             },
           ],
@@ -455,7 +455,7 @@ exports[`Android BpkChip light mode should render correctly with "disabled" 1`] 
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -465,11 +465,11 @@ exports[`Android BpkChip light mode should render correctly with "disabled" 1`] 
           Object {},
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "includeFontPadding": false,
             },
             Object {
-              "color": "rgb(178, 178, 191)",
+              "color": "rgb(194, 201, 205)",
             },
           ],
         ]
@@ -526,7 +526,7 @@ exports[`Android BpkChip light mode should render correctly with "selected" 1`] 
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(7, 112, 227)",
+          "backgroundColor": "rgb(0, 98, 227)",
         },
       ]
     }
@@ -536,7 +536,7 @@ exports[`Android BpkChip light mode should render correctly with "selected" 1`] 
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -546,7 +546,7 @@ exports[`Android BpkChip light mode should render correctly with "selected" 1`] 
           Object {},
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "includeFontPadding": false,
             },
             Object {
@@ -612,7 +612,7 @@ exports[`Android BpkChip light mode should render outline correctly 1`] = `
         },
         Object {
           "backgroundColor": "transparent",
-          "borderColor": "rgb(72, 72, 74)",
+          "borderColor": "rgb(68, 80, 95)",
           "borderWidth": 1,
           "paddingVertical": 7,
         },
@@ -624,7 +624,7 @@ exports[`Android BpkChip light mode should render outline correctly 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -634,7 +634,7 @@ exports[`Android BpkChip light mode should render outline correctly 1`] = `
           Object {},
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "includeFontPadding": false,
             },
             Object {
@@ -703,7 +703,7 @@ exports[`Android BpkChip should render correctly with arbitrary props 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -713,7 +713,7 @@ exports[`Android BpkChip should render correctly with arbitrary props 1`] = `
           Object {},
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "includeFontPadding": false,
             },
           ],
@@ -782,7 +782,7 @@ exports[`Android BpkChip should render correctly with custom style 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -792,7 +792,7 @@ exports[`Android BpkChip should render correctly with custom style 1`] = `
           Object {},
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "includeFontPadding": false,
             },
           ],
@@ -857,14 +857,14 @@ exports[`Android BpkChip should render correctly with leadingAccessoryView 1`] =
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
           },
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "includeFontPadding": false,
             },
           ],
@@ -878,7 +878,7 @@ exports[`Android BpkChip should render correctly with leadingAccessoryView 1`] =
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -888,7 +888,7 @@ exports[`Android BpkChip should render correctly with leadingAccessoryView 1`] =
           Object {},
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "includeFontPadding": false,
             },
             Object {
@@ -956,7 +956,7 @@ exports[`Android BpkChip should render correctly with trailingAccessoryView 1`] 
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -966,7 +966,7 @@ exports[`Android BpkChip should render correctly with trailingAccessoryView 1`] 
           Object {},
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "includeFontPadding": false,
             },
             Object {
@@ -983,14 +983,14 @@ exports[`Android BpkChip should render correctly with trailingAccessoryView 1`] 
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
           },
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "includeFontPadding": false,
             },
           ],
@@ -1048,7 +1048,7 @@ exports[`Android BpkChip should support theming when selected 1`] = `
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(7, 112, 227)",
+          "backgroundColor": "rgb(0, 98, 227)",
         },
         Object {
           "backgroundColor": "red",
@@ -1061,7 +1061,7 @@ exports[`Android BpkChip should support theming when selected 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -1074,7 +1074,7 @@ exports[`Android BpkChip should support theming when selected 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "includeFontPadding": false,
             },
             Object {

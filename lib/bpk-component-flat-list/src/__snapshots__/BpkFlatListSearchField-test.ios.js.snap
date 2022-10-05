@@ -16,11 +16,11 @@ exports[`iOS BpkFlatListSearchField dark mode should render correctly 1`] = `
 >
   <TextInput
     allowFontScaling={true}
-    placeholderTextColor="rgb(143, 144, 160)"
+    placeholderTextColor="rgb(84, 88, 96)"
     rejectResponderTermination={true}
     style={
       Object {
-        "backgroundColor": "rgba(221, 221, 229, 0.12)",
+        "backgroundColor": "rgba(224, 227, 229, 0.12)",
         "borderRadius": 8,
         "color": "rgb(255, 255, 255)",
         "flex": 1,
@@ -43,7 +43,7 @@ exports[`iOS BpkFlatListSearchField dark mode should render correctly 1`] = `
           "includeFontPadding": false,
         },
         Object {
-          "color": "rgb(143, 144, 160)",
+          "color": "rgb(84, 88, 96)",
           "left": 8,
           "position": "absolute",
         },
@@ -71,11 +71,11 @@ exports[`iOS BpkFlatListSearchField dark mode should support arbitrary props 1`]
 >
   <TextInput
     allowFontScaling={true}
-    placeholderTextColor="rgb(143, 144, 160)"
+    placeholderTextColor="rgb(84, 88, 96)"
     rejectResponderTermination={true}
     style={
       Object {
-        "backgroundColor": "rgba(221, 221, 229, 0.12)",
+        "backgroundColor": "rgba(224, 227, 229, 0.12)",
         "borderRadius": 8,
         "color": "rgb(255, 255, 255)",
         "flex": 1,
@@ -99,7 +99,7 @@ exports[`iOS BpkFlatListSearchField dark mode should support arbitrary props 1`]
           "includeFontPadding": false,
         },
         Object {
-          "color": "rgb(143, 144, 160)",
+          "color": "rgb(84, 88, 96)",
           "left": 8,
           "position": "absolute",
         },
@@ -129,11 +129,11 @@ exports[`iOS BpkFlatListSearchField dark mode should support userland styles 1`]
 >
   <TextInput
     allowFontScaling={true}
-    placeholderTextColor="rgb(143, 144, 160)"
+    placeholderTextColor="rgb(84, 88, 96)"
     rejectResponderTermination={true}
     style={
       Object {
-        "backgroundColor": "rgba(221, 221, 229, 0.12)",
+        "backgroundColor": "rgba(224, 227, 229, 0.12)",
         "borderRadius": 8,
         "color": "rgb(255, 255, 255)",
         "flex": 1,
@@ -156,7 +156,7 @@ exports[`iOS BpkFlatListSearchField dark mode should support userland styles 1`]
           "includeFontPadding": false,
         },
         Object {
-          "color": "rgb(143, 144, 160)",
+          "color": "rgb(84, 88, 96)",
           "left": 8,
           "position": "absolute",
         },
@@ -184,13 +184,13 @@ exports[`iOS BpkFlatListSearchField light mode should render correctly 1`] = `
 >
   <TextInput
     allowFontScaling={true}
-    placeholderTextColor="rgb(143, 144, 160)"
+    placeholderTextColor="rgb(84, 88, 96)"
     rejectResponderTermination={true}
     style={
       Object {
-        "backgroundColor": "rgba(143, 144, 160, 0.12)",
+        "backgroundColor": "rgba(84, 88, 96, 0.12)",
         "borderRadius": 8,
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "flex": 1,
         "fontSize": 16,
         "paddingEnd": 8,
@@ -205,13 +205,13 @@ exports[`iOS BpkFlatListSearchField light mode should render correctly 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
         },
         Object {
-          "color": "rgb(143, 144, 160)",
+          "color": "rgb(84, 88, 96)",
           "left": 8,
           "position": "absolute",
         },
@@ -239,13 +239,13 @@ exports[`iOS BpkFlatListSearchField light mode should support arbitrary props 1`
 >
   <TextInput
     allowFontScaling={true}
-    placeholderTextColor="rgb(143, 144, 160)"
+    placeholderTextColor="rgb(84, 88, 96)"
     rejectResponderTermination={true}
     style={
       Object {
-        "backgroundColor": "rgba(143, 144, 160, 0.12)",
+        "backgroundColor": "rgba(84, 88, 96, 0.12)",
         "borderRadius": 8,
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "flex": 1,
         "fontSize": 16,
         "paddingEnd": 8,
@@ -261,13 +261,13 @@ exports[`iOS BpkFlatListSearchField light mode should support arbitrary props 1`
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
         },
         Object {
-          "color": "rgb(143, 144, 160)",
+          "color": "rgb(84, 88, 96)",
           "left": 8,
           "position": "absolute",
         },
@@ -297,13 +297,13 @@ exports[`iOS BpkFlatListSearchField light mode should support userland styles 1`
 >
   <TextInput
     allowFontScaling={true}
-    placeholderTextColor="rgb(143, 144, 160)"
+    placeholderTextColor="rgb(84, 88, 96)"
     rejectResponderTermination={true}
     style={
       Object {
-        "backgroundColor": "rgba(143, 144, 160, 0.12)",
+        "backgroundColor": "rgba(84, 88, 96, 0.12)",
         "borderRadius": 8,
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "flex": 1,
         "fontSize": 16,
         "paddingEnd": 8,
@@ -318,13 +318,13 @@ exports[`iOS BpkFlatListSearchField light mode should support userland styles 1`
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
         },
         Object {
-          "color": "rgb(143, 144, 160)",
+          "color": "rgb(84, 88, 96)",
           "left": 8,
           "position": "absolute",
         },

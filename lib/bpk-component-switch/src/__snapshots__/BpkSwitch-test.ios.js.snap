@@ -6,7 +6,7 @@ exports[`iOS BpkSwitch dark mode should disable theming if the required attribut
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  onTintColor="rgb(109, 159, 235)"
+  onTintColor="rgb(132, 233, 255)"
   style={
     Array [
       Object {
@@ -14,7 +14,7 @@ exports[`iOS BpkSwitch dark mode should disable theming if the required attribut
         "width": 51,
       },
       Object {
-        "backgroundColor": "rgb(29, 27, 32)",
+        "backgroundColor": "rgb(19, 29, 43)",
         "borderRadius": 16,
       },
     ]
@@ -29,7 +29,7 @@ exports[`iOS BpkSwitch dark mode should render correctly 1`] = `
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  onTintColor="rgb(109, 159, 235)"
+  onTintColor="rgb(132, 233, 255)"
   style={
     Array [
       Object {
@@ -37,7 +37,7 @@ exports[`iOS BpkSwitch dark mode should render correctly 1`] = `
         "width": 51,
       },
       Object {
-        "backgroundColor": "rgb(29, 27, 32)",
+        "backgroundColor": "rgb(19, 29, 43)",
         "borderRadius": 16,
       },
     ]
@@ -52,7 +52,7 @@ exports[`iOS BpkSwitch dark mode should support the "value" prop 1`] = `
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  onTintColor="rgb(109, 159, 235)"
+  onTintColor="rgb(132, 233, 255)"
   style={
     Array [
       Object {
@@ -60,7 +60,7 @@ exports[`iOS BpkSwitch dark mode should support the "value" prop 1`] = `
         "width": 51,
       },
       Object {
-        "backgroundColor": "rgb(29, 27, 32)",
+        "backgroundColor": "rgb(19, 29, 43)",
         "borderRadius": 16,
       },
     ]
@@ -83,7 +83,7 @@ exports[`iOS BpkSwitch dark mode should support theming 1`] = `
         "width": 51,
       },
       Object {
-        "backgroundColor": "rgb(29, 27, 32)",
+        "backgroundColor": "rgb(19, 29, 43)",
         "borderRadius": 16,
       },
     ]
@@ -98,7 +98,7 @@ exports[`iOS BpkSwitch light mode should disable theming if the required attribu
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  onTintColor="rgb(7, 112, 227)"
+  onTintColor="rgb(0, 98, 227)"
   style={
     Array [
       Object {
@@ -106,7 +106,7 @@ exports[`iOS BpkSwitch light mode should disable theming if the required attribu
         "width": 51,
       },
       Object {
-        "backgroundColor": "rgb(221, 221, 229)",
+        "backgroundColor": "rgb(224, 227, 229)",
         "borderRadius": 16,
       },
     ]
@@ -121,7 +121,7 @@ exports[`iOS BpkSwitch light mode should render correctly 1`] = `
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  onTintColor="rgb(7, 112, 227)"
+  onTintColor="rgb(0, 98, 227)"
   style={
     Array [
       Object {
@@ -129,7 +129,7 @@ exports[`iOS BpkSwitch light mode should render correctly 1`] = `
         "width": 51,
       },
       Object {
-        "backgroundColor": "rgb(221, 221, 229)",
+        "backgroundColor": "rgb(224, 227, 229)",
         "borderRadius": 16,
       },
     ]
@@ -144,7 +144,7 @@ exports[`iOS BpkSwitch light mode should support the "value" prop 1`] = `
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  onTintColor="rgb(7, 112, 227)"
+  onTintColor="rgb(0, 98, 227)"
   style={
     Array [
       Object {
@@ -152,7 +152,7 @@ exports[`iOS BpkSwitch light mode should support the "value" prop 1`] = `
         "width": 51,
       },
       Object {
-        "backgroundColor": "rgb(221, 221, 229)",
+        "backgroundColor": "rgb(224, 227, 229)",
         "borderRadius": 16,
       },
     ]
@@ -175,7 +175,7 @@ exports[`iOS BpkSwitch light mode should support theming 1`] = `
         "width": 51,
       },
       Object {
-        "backgroundColor": "rgb(221, 221, 229)",
+        "backgroundColor": "rgb(224, 227, 229)",
         "borderRadius": 16,
       },
     ]

@@ -18,13 +18,13 @@ exports[`iOS BpkDismissibleChip dark mode should render correctly 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(44, 44, 46)",
+          "backgroundColor": "rgb(1, 9, 19)",
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
           "paddingHorizontal": 16,
           "paddingVertical": 8,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -128,13 +128,13 @@ exports[`iOS BpkDismissibleChip dark mode should render correctly with "disabled
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(44, 44, 46)",
+          "backgroundColor": "rgb(1, 9, 19)",
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
           "paddingHorizontal": 16,
           "paddingVertical": 8,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -143,7 +143,7 @@ exports[`iOS BpkDismissibleChip dark mode should render correctly with "disabled
           "shadowRadius": 1.5,
         },
         Object {
-          "backgroundColor": "rgb(44, 44, 46)",
+          "backgroundColor": "rgb(1, 9, 19)",
         },
       ],
       Array [],
@@ -169,7 +169,7 @@ exports[`iOS BpkDismissibleChip dark mode should render correctly with "disabled
             "includeFontPadding": false,
           },
           Object {
-            "color": "rgb(99, 99, 102)",
+            "color": "rgb(68, 80, 95)",
           },
           Object {
             "marginEnd": 4,
@@ -199,7 +199,7 @@ exports[`iOS BpkDismissibleChip dark mode should render correctly with "disabled
             "includeFontPadding": false,
           },
           Object {
-            "color": "rgb(99, 99, 102)",
+            "color": "rgb(68, 80, 95)",
           },
         ],
       ]
@@ -247,13 +247,13 @@ exports[`iOS BpkDismissibleChip dark mode should render outline correctly 1`] = 
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(44, 44, 46)",
+          "backgroundColor": "rgb(1, 9, 19)",
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
           "paddingHorizontal": 16,
           "paddingVertical": 8,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -263,7 +263,7 @@ exports[`iOS BpkDismissibleChip dark mode should render outline correctly 1`] = 
         },
         Object {
           "backgroundColor": "transparent",
-          "borderColor": "rgb(72, 72, 74)",
+          "borderColor": "rgb(68, 80, 95)",
           "borderWidth": 1,
           "paddingVertical": 7,
         },
@@ -379,7 +379,7 @@ exports[`iOS BpkDismissibleChip light mode should render correctly 1`] = `
           "justifyContent": "space-between",
           "paddingHorizontal": 16,
           "paddingVertical": 8,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -397,7 +397,7 @@ exports[`iOS BpkDismissibleChip light mode should render correctly 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "400",
@@ -407,7 +407,7 @@ exports[`iOS BpkDismissibleChip light mode should render correctly 1`] = `
         Object {},
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "includeFontPadding": false,
           },
           Object {
@@ -424,7 +424,7 @@ exports[`iOS BpkDismissibleChip light mode should render correctly 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -434,7 +434,7 @@ exports[`iOS BpkDismissibleChip light mode should render correctly 1`] = `
         },
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "includeFontPadding": false,
           },
         ],
@@ -447,7 +447,7 @@ exports[`iOS BpkDismissibleChip light mode should render correctly 1`] = `
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(17, 18, 54)",
+          "backgroundColor": "rgb(22, 22, 22)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -489,7 +489,7 @@ exports[`iOS BpkDismissibleChip light mode should render correctly with "disable
           "justifyContent": "space-between",
           "paddingHorizontal": 16,
           "paddingVertical": 8,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -510,7 +510,7 @@ exports[`iOS BpkDismissibleChip light mode should render correctly with "disable
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "400",
@@ -520,11 +520,11 @@ exports[`iOS BpkDismissibleChip light mode should render correctly with "disable
         Object {},
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "includeFontPadding": false,
           },
           Object {
-            "color": "rgb(178, 178, 191)",
+            "color": "rgb(194, 201, 205)",
           },
           Object {
             "marginEnd": 4,
@@ -540,7 +540,7 @@ exports[`iOS BpkDismissibleChip light mode should render correctly with "disable
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -550,11 +550,11 @@ exports[`iOS BpkDismissibleChip light mode should render correctly with "disable
         },
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "includeFontPadding": false,
           },
           Object {
-            "color": "rgb(178, 178, 191)",
+            "color": "rgb(194, 201, 205)",
           },
         ],
       ]
@@ -566,7 +566,7 @@ exports[`iOS BpkDismissibleChip light mode should render correctly with "disable
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(17, 18, 54)",
+          "backgroundColor": "rgb(22, 22, 22)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -608,7 +608,7 @@ exports[`iOS BpkDismissibleChip light mode should render outline correctly 1`] =
           "justifyContent": "space-between",
           "paddingHorizontal": 16,
           "paddingVertical": 8,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -618,7 +618,7 @@ exports[`iOS BpkDismissibleChip light mode should render outline correctly 1`] =
         },
         Object {
           "backgroundColor": "transparent",
-          "borderColor": "rgb(72, 72, 74)",
+          "borderColor": "rgb(68, 80, 95)",
           "borderWidth": 1,
           "paddingVertical": 7,
         },
@@ -636,7 +636,7 @@ exports[`iOS BpkDismissibleChip light mode should render outline correctly 1`] =
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "400",
@@ -646,7 +646,7 @@ exports[`iOS BpkDismissibleChip light mode should render outline correctly 1`] =
         Object {},
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "includeFontPadding": false,
           },
           Object {
@@ -666,7 +666,7 @@ exports[`iOS BpkDismissibleChip light mode should render outline correctly 1`] =
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -676,7 +676,7 @@ exports[`iOS BpkDismissibleChip light mode should render outline correctly 1`] =
         },
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "includeFontPadding": false,
           },
           Object {
@@ -692,7 +692,7 @@ exports[`iOS BpkDismissibleChip light mode should render outline correctly 1`] =
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(17, 18, 54)",
+          "backgroundColor": "rgb(22, 22, 22)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -734,7 +734,7 @@ exports[`iOS BpkDismissibleChip should render correctly with a supplied icon 1`]
           "justifyContent": "space-between",
           "paddingHorizontal": 16,
           "paddingVertical": 8,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -752,14 +752,14 @@ exports[`iOS BpkDismissibleChip should render correctly with a supplied icon 1`]
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
         },
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "includeFontPadding": false,
           },
         ],
@@ -773,7 +773,7 @@ exports[`iOS BpkDismissibleChip should render correctly with a supplied icon 1`]
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "400",
@@ -783,7 +783,7 @@ exports[`iOS BpkDismissibleChip should render correctly with a supplied icon 1`]
         Object {},
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "includeFontPadding": false,
           },
           Object {
@@ -803,7 +803,7 @@ exports[`iOS BpkDismissibleChip should render correctly with a supplied icon 1`]
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -813,7 +813,7 @@ exports[`iOS BpkDismissibleChip should render correctly with a supplied icon 1`]
         },
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "includeFontPadding": false,
           },
           Object {
@@ -829,7 +829,7 @@ exports[`iOS BpkDismissibleChip should render correctly with a supplied icon 1`]
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(17, 18, 54)",
+          "backgroundColor": "rgb(22, 22, 22)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -871,7 +871,7 @@ exports[`iOS BpkDismissibleChip should render correctly with arbitrary props 1`]
           "justifyContent": "space-between",
           "paddingHorizontal": 16,
           "paddingVertical": 8,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -890,7 +890,7 @@ exports[`iOS BpkDismissibleChip should render correctly with arbitrary props 1`]
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "400",
@@ -900,7 +900,7 @@ exports[`iOS BpkDismissibleChip should render correctly with arbitrary props 1`]
         Object {},
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "includeFontPadding": false,
           },
           Object {
@@ -917,7 +917,7 @@ exports[`iOS BpkDismissibleChip should render correctly with arbitrary props 1`]
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -927,7 +927,7 @@ exports[`iOS BpkDismissibleChip should render correctly with arbitrary props 1`]
         },
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "includeFontPadding": false,
           },
         ],
@@ -940,7 +940,7 @@ exports[`iOS BpkDismissibleChip should render correctly with arbitrary props 1`]
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(17, 18, 54)",
+          "backgroundColor": "rgb(22, 22, 22)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -982,7 +982,7 @@ exports[`iOS BpkDismissibleChip should render correctly with custom style 1`] = 
           "justifyContent": "space-between",
           "paddingHorizontal": 16,
           "paddingVertical": 8,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -1007,7 +1007,7 @@ exports[`iOS BpkDismissibleChip should render correctly with custom style 1`] = 
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "400",
@@ -1017,7 +1017,7 @@ exports[`iOS BpkDismissibleChip should render correctly with custom style 1`] = 
         Object {},
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "includeFontPadding": false,
           },
           Object {
@@ -1034,7 +1034,7 @@ exports[`iOS BpkDismissibleChip should render correctly with custom style 1`] = 
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -1044,7 +1044,7 @@ exports[`iOS BpkDismissibleChip should render correctly with custom style 1`] = 
         },
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "includeFontPadding": false,
           },
         ],
@@ -1057,7 +1057,7 @@ exports[`iOS BpkDismissibleChip should render correctly with custom style 1`] = 
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(17, 18, 54)",
+          "backgroundColor": "rgb(22, 22, 22)",
           "bottom": 0,
           "flex": 1,
           "left": 0,

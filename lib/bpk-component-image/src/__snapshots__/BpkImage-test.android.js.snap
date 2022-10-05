@@ -39,7 +39,7 @@ exports[`Android BpkImage dark mode should render correctly when not loaded 1`] 
     style={
       Object {
         "alignItems": "center",
-        "backgroundColor": "rgb(44, 44, 46)",
+        "backgroundColor": "rgb(1, 9, 19)",
         "flex": 1,
         "height": "100%",
         "justifyContent": "center",
@@ -94,7 +94,7 @@ exports[`Android BpkImage dark mode should render correctly when unloaded and ou
     style={
       Object {
         "alignItems": "center",
-        "backgroundColor": "rgb(44, 44, 46)",
+        "backgroundColor": "rgb(1, 9, 19)",
         "flex": 1,
         "height": "100%",
         "justifyContent": "center",
@@ -230,7 +230,7 @@ exports[`Android BpkImage light mode should render correctly when not loaded 1`]
     style={
       Object {
         "alignItems": "center",
-        "backgroundColor": "rgb(178, 178, 191)",
+        "backgroundColor": "rgb(194, 201, 205)",
         "flex": 1,
         "height": "100%",
         "justifyContent": "center",
@@ -242,7 +242,7 @@ exports[`Android BpkImage light mode should render correctly when not loaded 1`]
   >
     <ActivityIndicator
       animating={true}
-      color="rgb(68, 69, 96)"
+      color="rgb(84, 88, 96)"
       hidesWhenStopped={true}
       size="small"
     />
@@ -285,7 +285,7 @@ exports[`Android BpkImage light mode should render correctly when unloaded and o
     style={
       Object {
         "alignItems": "center",
-        "backgroundColor": "rgb(178, 178, 191)",
+        "backgroundColor": "rgb(194, 201, 205)",
         "flex": 1,
         "height": "100%",
         "justifyContent": "center",

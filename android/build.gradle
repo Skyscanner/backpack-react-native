@@ -18,7 +18,7 @@ buildscript {
 
 ext {
   internalBuild       = project.hasProperty("internalBuild") && project.internalBuild
-  backpackVersion     = "36.3.0"
+  backpackVersion     = "41.1.0"
   compileSdkVersion   = 31
   targetSdkVersion    = 31
   minSdkVersion       = 24

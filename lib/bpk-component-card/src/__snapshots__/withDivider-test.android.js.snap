@@ -59,7 +59,7 @@ exports[`Android withDivider should render correctly 1`] = `
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",
@@ -103,7 +103,7 @@ exports[`Android withDivider should render correctly 1`] = `
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",
@@ -183,7 +183,7 @@ exports[`Android withDivider should render correctly with "cornerStyle=large" 1`
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",
@@ -227,7 +227,7 @@ exports[`Android withDivider should render correctly with "cornerStyle=large" 1`
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",
@@ -305,7 +305,7 @@ exports[`Android withDivider should render correctly with arbitrary props 1`] = 
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",
@@ -349,7 +349,7 @@ exports[`Android withDivider should render correctly with arbitrary props 1`] = 
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",
@@ -429,7 +429,7 @@ exports[`Android withDivider should render correctly with custom main style 1`] 
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",
@@ -473,7 +473,7 @@ exports[`Android withDivider should render correctly with custom main style 1`] 
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",
@@ -550,7 +550,7 @@ exports[`Android withDivider should render correctly with custom stub style 1`] 
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",
@@ -597,7 +597,7 @@ exports[`Android withDivider should render correctly with custom stub style 1`] 
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",
@@ -671,7 +671,7 @@ exports[`Android withDivider should render correctly without padding 1`] = `
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",
@@ -712,7 +712,7 @@ exports[`Android withDivider should render correctly without padding 1`] = `
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "sans-serif",
               "fontSize": 16,
               "fontWeight": "400",

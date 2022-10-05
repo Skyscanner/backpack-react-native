@@ -87,7 +87,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly dis
         Object {},
         Array [
           Object {
-            "color": "rgb(99, 99, 102)",
+            "color": "rgb(68, 80, 95)",
           },
         ],
       ]
@@ -236,7 +236,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly wit
         Object {},
         Array [
           Object {
-            "color": "rgb(109, 159, 235)",
+            "color": "rgb(132, 233, 255)",
           },
         ],
       ]
@@ -285,7 +285,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly wit
         Object {},
         Array [
           Object {
-            "color": "rgb(99, 99, 102)",
+            "color": "rgb(68, 80, 95)",
           },
         ],
       ]
@@ -520,7 +520,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly 1`
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -530,7 +530,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly 1`
         Object {},
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
           },
         ],
       ]
@@ -569,7 +569,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly di
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -579,7 +579,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly di
         Object {},
         Array [
           Object {
-            "color": "rgb(178, 178, 191)",
+            "color": "rgb(194, 201, 205)",
           },
         ],
       ]
@@ -618,7 +618,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly em
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -630,7 +630,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly em
         },
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
           },
         ],
       ]
@@ -669,7 +669,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly le
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -679,7 +679,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly le
         Object {},
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
           },
         ],
       ]
@@ -718,7 +718,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly wi
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -728,7 +728,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly wi
         Object {},
         Array [
           Object {
-            "color": "rgb(7, 112, 227)",
+            "color": "rgb(0, 98, 227)",
           },
         ],
       ]
@@ -767,7 +767,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly wi
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -777,7 +777,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly wi
         Object {},
         Array [
           Object {
-            "color": "rgb(178, 178, 191)",
+            "color": "rgb(194, 201, 205)",
           },
         ],
       ]
@@ -816,7 +816,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should respect "disabledTi
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -865,7 +865,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should respect "primaryTin
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -914,7 +914,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should respect "tintColor"
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -963,7 +963,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS light mode should respect "tintColor"
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -1013,7 +1013,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS should forward custom props 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -1023,7 +1023,7 @@ exports[`iOS BpkNavigationBarTextButtonIOS should forward custom props 1`] = `
         Object {},
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
           },
         ],
       ]

@@ -29,7 +29,7 @@ exports[`Android AnimateAndFade should render correctly 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -55,7 +55,7 @@ exports[`Android AnimateAndFade should render correctly 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -101,7 +101,7 @@ exports[`Android AnimateAndFade should render correctly when show is false 1`] =
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -127,7 +127,7 @@ exports[`Android AnimateAndFade should render correctly when show is false 1`] =
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -173,7 +173,7 @@ exports[`Android AnimateAndFade should render correctly with animateOnEnter 1`] 
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -199,7 +199,7 @@ exports[`Android AnimateAndFade should render correctly with animateOnEnter 1`] 
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -245,7 +245,7 @@ exports[`Android AnimateAndFade should render correctly with animateOnLeave 1`] 
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -271,7 +271,7 @@ exports[`Android AnimateAndFade should render correctly with animateOnLeave 1`] 
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",

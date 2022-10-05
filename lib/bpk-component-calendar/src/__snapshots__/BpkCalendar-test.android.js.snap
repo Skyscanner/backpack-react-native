@@ -150,7 +150,7 @@ exports[`Android BpkCalendar should render correctly with color buckets 1`] = `
   colorBuckets={
     Array [
       Object {
-        "color": -3084564,
+        "color": -2818062,
         "days": Object {
           "dates": Array [
             1576627200,
@@ -160,7 +160,7 @@ exports[`Android BpkCalendar should render correctly with color buckets 1`] = `
         "textStyle": undefined,
       },
       Object {
-        "color": -3062949,
+        "color": -1636250,
         "days": Object {
           "dates": Array [
             1576627200,

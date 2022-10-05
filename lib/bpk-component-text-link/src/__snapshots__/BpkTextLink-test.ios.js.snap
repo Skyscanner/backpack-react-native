@@ -17,7 +17,7 @@ exports[`iOS BpkTextLink should render correctly 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "System",
         "fontSize": 16,
         "fontWeight": "400",
@@ -27,7 +27,7 @@ exports[`iOS BpkTextLink should render correctly 1`] = `
       Object {},
       Array [
         Object {
-          "color": "rgb(7, 112, 227)",
+          "color": "rgb(0, 98, 227)",
         },
       ],
     ]
@@ -54,7 +54,7 @@ exports[`iOS BpkTextLink should render correctly with arbitrary props 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "System",
         "fontSize": 14,
         "fontWeight": "400",
@@ -64,7 +64,7 @@ exports[`iOS BpkTextLink should render correctly with arbitrary props 1`] = `
       Object {},
       Array [
         Object {
-          "color": "rgb(7, 112, 227)",
+          "color": "rgb(0, 98, 227)",
         },
       ],
     ]
@@ -91,7 +91,7 @@ exports[`iOS BpkTextLink should support theming 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "System",
         "fontSize": 16,
         "fontWeight": "400",
@@ -101,7 +101,7 @@ exports[`iOS BpkTextLink should support theming 1`] = `
       Object {},
       Array [
         Object {
-          "color": "rgb(7, 112, 227)",
+          "color": "rgb(0, 98, 227)",
         },
       ],
     ]

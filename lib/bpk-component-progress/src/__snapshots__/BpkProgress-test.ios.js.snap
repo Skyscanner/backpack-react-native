@@ -7,7 +7,7 @@ exports[`IOS BpkProgress dark mode should not go bellow the min bound 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(44, 44, 46)",
+        "backgroundColor": "rgb(19, 29, 43)",
         "height": 8,
       },
       Object {
@@ -22,7 +22,7 @@ exports[`IOS BpkProgress dark mode should not go bellow the min bound 1`] = `
   <View
     style={
       Object {
-        "backgroundColor": "rgb(0, 166, 152)",
+        "backgroundColor": "rgb(12, 131, 138)",
         "borderRadius": 40,
         "height": 8,
         "width": 0,
@@ -39,7 +39,7 @@ exports[`IOS BpkProgress dark mode should not go over the max bound 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(44, 44, 46)",
+        "backgroundColor": "rgb(19, 29, 43)",
         "height": 8,
       },
       Object {
@@ -54,7 +54,7 @@ exports[`IOS BpkProgress dark mode should not go over the max bound 1`] = `
   <View
     style={
       Object {
-        "backgroundColor": "rgb(0, 166, 152)",
+        "backgroundColor": "rgb(12, 131, 138)",
         "borderRadius": 40,
         "height": 8,
         "width": 4,
@@ -71,7 +71,7 @@ exports[`IOS BpkProgress dark mode should render correctly 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(44, 44, 46)",
+        "backgroundColor": "rgb(19, 29, 43)",
         "height": 8,
       },
       Object {
@@ -86,7 +86,7 @@ exports[`IOS BpkProgress dark mode should render correctly 1`] = `
   <View
     style={
       Object {
-        "backgroundColor": "rgb(0, 166, 152)",
+        "backgroundColor": "rgb(12, 131, 138)",
         "borderRadius": 40,
         "height": 8,
         "width": 0.4,
@@ -103,7 +103,7 @@ exports[`IOS BpkProgress dark mode should render correctly with "min" and "max" 
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(44, 44, 46)",
+        "backgroundColor": "rgb(19, 29, 43)",
         "height": 8,
       },
       Object {
@@ -118,7 +118,7 @@ exports[`IOS BpkProgress dark mode should render correctly with "min" and "max" 
   <View
     style={
       Object {
-        "backgroundColor": "rgb(0, 166, 152)",
+        "backgroundColor": "rgb(12, 131, 138)",
         "borderRadius": 40,
         "height": 8,
         "width": 0.8,
@@ -135,7 +135,7 @@ exports[`IOS BpkProgress dark mode should render correctly with a "fillStyle" at
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(44, 44, 46)",
+        "backgroundColor": "rgb(19, 29, 43)",
         "height": 8,
       },
       Object {
@@ -150,7 +150,7 @@ exports[`IOS BpkProgress dark mode should render correctly with a "fillStyle" at
   <View
     style={
       Object {
-        "backgroundColor": "rgb(209, 67, 91)",
+        "backgroundColor": "rgb(231, 8, 102)",
         "borderRadius": 40,
         "height": 8,
         "width": 0,
@@ -167,7 +167,7 @@ exports[`IOS BpkProgress dark mode should render correctly with a "style" attrib
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(44, 44, 46)",
+        "backgroundColor": "rgb(19, 29, 43)",
         "height": 8,
       },
       Object {
@@ -184,7 +184,7 @@ exports[`IOS BpkProgress dark mode should render correctly with a "style" attrib
   <View
     style={
       Object {
-        "backgroundColor": "rgb(0, 166, 152)",
+        "backgroundColor": "rgb(12, 131, 138)",
         "borderRadius": 40,
         "height": 8,
         "width": 0,
@@ -201,7 +201,7 @@ exports[`IOS BpkProgress dark mode should render correctly with a "type" attribu
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(44, 44, 46)",
+        "backgroundColor": "rgb(19, 29, 43)",
         "height": 8,
       },
       Object {
@@ -215,7 +215,7 @@ exports[`IOS BpkProgress dark mode should render correctly with a "type" attribu
   <View
     style={
       Object {
-        "backgroundColor": "rgb(0, 166, 152)",
+        "backgroundColor": "rgb(12, 131, 138)",
         "height": 8,
         "width": 0,
       }
@@ -231,7 +231,7 @@ exports[`IOS BpkProgress dark mode should render correctly with accessibilityLab
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(44, 44, 46)",
+        "backgroundColor": "rgb(19, 29, 43)",
         "height": 8,
       },
       Object {
@@ -246,7 +246,7 @@ exports[`IOS BpkProgress dark mode should render correctly with accessibilityLab
   <View
     style={
       Object {
-        "backgroundColor": "rgb(0, 166, 152)",
+        "backgroundColor": "rgb(12, 131, 138)",
         "borderRadius": 40,
         "height": 8,
         "width": 0,
@@ -263,7 +263,7 @@ exports[`IOS BpkProgress dark mode should support theming 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(44, 44, 46)",
+        "backgroundColor": "rgb(19, 29, 43)",
         "height": 8,
       },
       Object {
@@ -297,7 +297,7 @@ exports[`IOS BpkProgress light mode should not go bellow the min bound 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(221, 221, 229)",
+        "backgroundColor": "rgb(224, 227, 229)",
         "height": 8,
       },
       Object {
@@ -312,7 +312,7 @@ exports[`IOS BpkProgress light mode should not go bellow the min bound 1`] = `
   <View
     style={
       Object {
-        "backgroundColor": "rgb(0, 166, 152)",
+        "backgroundColor": "rgb(12, 131, 138)",
         "borderRadius": 40,
         "height": 8,
         "width": 0,
@@ -329,7 +329,7 @@ exports[`IOS BpkProgress light mode should not go over the max bound 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(221, 221, 229)",
+        "backgroundColor": "rgb(224, 227, 229)",
         "height": 8,
       },
       Object {
@@ -344,7 +344,7 @@ exports[`IOS BpkProgress light mode should not go over the max bound 1`] = `
   <View
     style={
       Object {
-        "backgroundColor": "rgb(0, 166, 152)",
+        "backgroundColor": "rgb(12, 131, 138)",
         "borderRadius": 40,
         "height": 8,
         "width": 4,
@@ -361,7 +361,7 @@ exports[`IOS BpkProgress light mode should render correctly 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(221, 221, 229)",
+        "backgroundColor": "rgb(224, 227, 229)",
         "height": 8,
       },
       Object {
@@ -376,7 +376,7 @@ exports[`IOS BpkProgress light mode should render correctly 1`] = `
   <View
     style={
       Object {
-        "backgroundColor": "rgb(0, 166, 152)",
+        "backgroundColor": "rgb(12, 131, 138)",
         "borderRadius": 40,
         "height": 8,
         "width": 0.4,
@@ -393,7 +393,7 @@ exports[`IOS BpkProgress light mode should render correctly with "min" and "max"
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(221, 221, 229)",
+        "backgroundColor": "rgb(224, 227, 229)",
         "height": 8,
       },
       Object {
@@ -408,7 +408,7 @@ exports[`IOS BpkProgress light mode should render correctly with "min" and "max"
   <View
     style={
       Object {
-        "backgroundColor": "rgb(0, 166, 152)",
+        "backgroundColor": "rgb(12, 131, 138)",
         "borderRadius": 40,
         "height": 8,
         "width": 0.8,
@@ -425,7 +425,7 @@ exports[`IOS BpkProgress light mode should render correctly with a "fillStyle" a
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(221, 221, 229)",
+        "backgroundColor": "rgb(224, 227, 229)",
         "height": 8,
       },
       Object {
@@ -440,7 +440,7 @@ exports[`IOS BpkProgress light mode should render correctly with a "fillStyle" a
   <View
     style={
       Object {
-        "backgroundColor": "rgb(209, 67, 91)",
+        "backgroundColor": "rgb(231, 8, 102)",
         "borderRadius": 40,
         "height": 8,
         "width": 0,
@@ -457,7 +457,7 @@ exports[`IOS BpkProgress light mode should render correctly with a "style" attri
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(221, 221, 229)",
+        "backgroundColor": "rgb(224, 227, 229)",
         "height": 8,
       },
       Object {
@@ -474,7 +474,7 @@ exports[`IOS BpkProgress light mode should render correctly with a "style" attri
   <View
     style={
       Object {
-        "backgroundColor": "rgb(0, 166, 152)",
+        "backgroundColor": "rgb(12, 131, 138)",
         "borderRadius": 40,
         "height": 8,
         "width": 0,
@@ -491,7 +491,7 @@ exports[`IOS BpkProgress light mode should render correctly with a "type" attrib
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(221, 221, 229)",
+        "backgroundColor": "rgb(224, 227, 229)",
         "height": 8,
       },
       Object {
@@ -505,7 +505,7 @@ exports[`IOS BpkProgress light mode should render correctly with a "type" attrib
   <View
     style={
       Object {
-        "backgroundColor": "rgb(0, 166, 152)",
+        "backgroundColor": "rgb(12, 131, 138)",
         "height": 8,
         "width": 0,
       }
@@ -521,7 +521,7 @@ exports[`IOS BpkProgress light mode should render correctly with accessibilityLa
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(221, 221, 229)",
+        "backgroundColor": "rgb(224, 227, 229)",
         "height": 8,
       },
       Object {
@@ -536,7 +536,7 @@ exports[`IOS BpkProgress light mode should render correctly with accessibilityLa
   <View
     style={
       Object {
-        "backgroundColor": "rgb(0, 166, 152)",
+        "backgroundColor": "rgb(12, 131, 138)",
         "borderRadius": 40,
         "height": 8,
         "width": 0,
@@ -553,7 +553,7 @@ exports[`IOS BpkProgress light mode should support theming 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(221, 221, 229)",
+        "backgroundColor": "rgb(224, 227, 229)",
         "height": 8,
       },
       Object {

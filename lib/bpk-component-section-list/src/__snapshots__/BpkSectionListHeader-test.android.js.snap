@@ -5,7 +5,7 @@ exports[`Android BpkSectionListHeader dark mode should render correctly 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "borderTopColor": "rgb(72, 72, 74)",
+      "borderTopColor": "rgb(68, 80, 95)",
       "borderTopWidth": 1,
       "flexDirection": "row",
       "height": 48,
@@ -30,7 +30,7 @@ exports[`Android BpkSectionListHeader dark mode should render correctly 1`] = `
           "fontFamily": "sans-serif-medium",
         },
         Object {
-          "color": "rgb(142, 142, 147)",
+          "color": "rgb(189, 196, 203)",
         },
       ]
     }
@@ -45,7 +45,7 @@ exports[`Android BpkSectionListHeader light mode should render correctly 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "borderTopColor": "rgb(221, 221, 229)",
+      "borderTopColor": "rgb(224, 227, 229)",
       "borderTopWidth": 1,
       "flexDirection": "row",
       "height": 48,
@@ -59,7 +59,7 @@ exports[`Android BpkSectionListHeader light mode should render correctly 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "sans-serif",
           "fontSize": 14,
           "fontWeight": "400",
@@ -70,7 +70,7 @@ exports[`Android BpkSectionListHeader light mode should render correctly 1`] = `
           "fontFamily": "sans-serif-medium",
         },
         Object {
-          "color": "rgb(104, 105, 127)",
+          "color": "rgb(84, 88, 96)",
         },
       ]
     }

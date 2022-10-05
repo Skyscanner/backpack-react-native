@@ -43,7 +43,7 @@ exports[`Android API levels Android API<21 should render without ripple 1`] = `
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(0, 166, 152)",
+          "backgroundColor": "rgb(12, 131, 138)",
           "borderRadius": 8,
         },
         Object {
@@ -57,7 +57,7 @@ exports[`Android API levels Android API<21 should render without ripple 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -128,7 +128,7 @@ exports[`Android API levels Android API>=21 should render with ripple 1`] = `
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(0, 166, 152)",
+          "backgroundColor": "rgb(12, 131, 138)",
           "borderRadius": 8,
         },
         Object {
@@ -142,7 +142,7 @@ exports[`Android API levels Android API>=21 should render with ripple 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -191,7 +191,7 @@ exports[`Android BpkButton dark mode should render correctly 1`] = `
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": -9934465,
+        "color": -11249568,
         "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
@@ -213,7 +213,7 @@ exports[`Android BpkButton dark mode should render correctly 1`] = `
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(0, 166, 152)",
+          "backgroundColor": "rgb(12, 131, 138)",
           "borderRadius": 8,
         },
         Object {
@@ -276,7 +276,7 @@ exports[`Android BpkButton dark mode should render correctly with type="destruct
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": -9934465,
+        "color": -11249568,
         "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
@@ -299,8 +299,8 @@ exports[`Android BpkButton dark mode should render correctly with type="destruct
           "paddingVertical": 6,
         },
         Object {
-          "backgroundColor": "rgb(44, 44, 46)",
-          "borderColor": "rgb(104, 105, 127)",
+          "backgroundColor": "rgb(19, 29, 43)",
+          "borderColor": "rgb(84, 88, 96)",
           "borderRadius": 8,
         },
         Object {
@@ -329,7 +329,7 @@ exports[`Android BpkButton dark mode should render correctly with type="destruct
               "lineHeight": 20,
             },
             Object {
-              "color": "rgb(209, 67, 91)",
+              "color": "rgb(231, 8, 102)",
             },
           ],
         ]
@@ -363,7 +363,7 @@ exports[`Android BpkButton dark mode should render correctly with type="destruct
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": -9934465,
+        "color": -11249568,
         "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
@@ -386,8 +386,8 @@ exports[`Android BpkButton dark mode should render correctly with type="destruct
           "paddingVertical": 6,
         },
         Object {
-          "backgroundColor": "rgb(72, 72, 74)",
-          "borderColor": "rgb(72, 72, 74)",
+          "backgroundColor": "rgb(68, 80, 95)",
+          "borderColor": "rgb(68, 80, 95)",
           "borderRadius": 8,
         },
         Object {
@@ -416,7 +416,7 @@ exports[`Android BpkButton dark mode should render correctly with type="destruct
               "lineHeight": 20,
             },
             Object {
-              "color": "rgb(142, 142, 147)",
+              "color": "rgb(189, 196, 203)",
             },
           ],
         ]
@@ -450,7 +450,7 @@ exports[`Android BpkButton dark mode should render correctly with type="featured
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": -9934465,
+        "color": -11249568,
         "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
@@ -472,7 +472,7 @@ exports[`Android BpkButton dark mode should render correctly with type="featured
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(7, 112, 227)",
+          "backgroundColor": "rgb(0, 98, 227)",
           "borderRadius": 8,
         },
         Object {
@@ -538,7 +538,7 @@ exports[`Android BpkButton dark mode should render correctly with type="featured
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": -9934465,
+        "color": -11249568,
         "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
@@ -560,7 +560,7 @@ exports[`Android BpkButton dark mode should render correctly with type="featured
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(72, 72, 74)",
+          "backgroundColor": "rgb(68, 80, 95)",
           "borderRadius": 8,
         },
         Object {
@@ -589,7 +589,7 @@ exports[`Android BpkButton dark mode should render correctly with type="featured
               "lineHeight": 20,
             },
             Object {
-              "color": "rgb(142, 142, 147)",
+              "color": "rgb(189, 196, 203)",
             },
           ],
         ]
@@ -623,7 +623,7 @@ exports[`Android BpkButton dark mode should render correctly with type="outline"
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": -9934465,
+        "color": -11249568,
         "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
@@ -710,7 +710,7 @@ exports[`Android BpkButton dark mode should render correctly with type="outline"
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": -9934465,
+        "color": -11249568,
         "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
@@ -733,8 +733,8 @@ exports[`Android BpkButton dark mode should render correctly with type="outline"
           "paddingVertical": 6,
         },
         Object {
-          "backgroundColor": "rgb(72, 72, 74)",
-          "borderColor": "rgb(72, 72, 74)",
+          "backgroundColor": "rgb(68, 80, 95)",
+          "borderColor": "rgb(68, 80, 95)",
           "borderRadius": 8,
         },
         Object {
@@ -763,7 +763,7 @@ exports[`Android BpkButton dark mode should render correctly with type="outline"
               "lineHeight": 20,
             },
             Object {
-              "color": "rgb(142, 142, 147)",
+              "color": "rgb(189, 196, 203)",
             },
           ],
         ]
@@ -797,7 +797,7 @@ exports[`Android BpkButton dark mode should render correctly with type="primary"
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": -9934465,
+        "color": -11249568,
         "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
@@ -819,7 +819,7 @@ exports[`Android BpkButton dark mode should render correctly with type="primary"
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(0, 166, 152)",
+          "backgroundColor": "rgb(12, 131, 138)",
           "borderRadius": 8,
         },
         Object {
@@ -885,7 +885,7 @@ exports[`Android BpkButton dark mode should render correctly with type="primary"
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": -9934465,
+        "color": -11249568,
         "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
@@ -907,7 +907,7 @@ exports[`Android BpkButton dark mode should render correctly with type="primary"
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(72, 72, 74)",
+          "backgroundColor": "rgb(68, 80, 95)",
           "borderRadius": 8,
         },
         Object {
@@ -936,7 +936,7 @@ exports[`Android BpkButton dark mode should render correctly with type="primary"
               "lineHeight": 20,
             },
             Object {
-              "color": "rgb(142, 142, 147)",
+              "color": "rgb(189, 196, 203)",
             },
           ],
         ]
@@ -970,7 +970,7 @@ exports[`Android BpkButton dark mode should render correctly with type="secondar
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": -9934465,
+        "color": -11249568,
         "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
@@ -993,8 +993,8 @@ exports[`Android BpkButton dark mode should render correctly with type="secondar
           "paddingVertical": 6,
         },
         Object {
-          "backgroundColor": "rgb(44, 44, 46)",
-          "borderColor": "rgb(104, 105, 127)",
+          "backgroundColor": "rgb(19, 29, 43)",
+          "borderColor": "rgb(84, 88, 96)",
           "borderRadius": 8,
         },
         Object {
@@ -1023,7 +1023,7 @@ exports[`Android BpkButton dark mode should render correctly with type="secondar
               "lineHeight": 20,
             },
             Object {
-              "color": "rgb(109, 159, 235)",
+              "color": "rgb(132, 233, 255)",
             },
           ],
         ]
@@ -1057,7 +1057,7 @@ exports[`Android BpkButton dark mode should render correctly with type="secondar
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": -9934465,
+        "color": -11249568,
         "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
@@ -1080,8 +1080,8 @@ exports[`Android BpkButton dark mode should render correctly with type="secondar
           "paddingVertical": 6,
         },
         Object {
-          "backgroundColor": "rgb(72, 72, 74)",
-          "borderColor": "rgb(72, 72, 74)",
+          "backgroundColor": "rgb(68, 80, 95)",
+          "borderColor": "rgb(68, 80, 95)",
           "borderRadius": 8,
         },
         Object {
@@ -1110,7 +1110,7 @@ exports[`Android BpkButton dark mode should render correctly with type="secondar
               "lineHeight": 20,
             },
             Object {
-              "color": "rgb(142, 142, 147)",
+              "color": "rgb(189, 196, 203)",
             },
           ],
         ]
@@ -1147,7 +1147,7 @@ exports[`Android BpkButton dark mode should support overwriting styles 1`] = `
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": -9934465,
+        "color": -11249568,
         "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
@@ -1169,7 +1169,7 @@ exports[`Android BpkButton dark mode should support overwriting styles 1`] = `
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(0, 166, 152)",
+          "backgroundColor": "rgb(12, 131, 138)",
           "borderRadius": 8,
         },
         Object {
@@ -1235,7 +1235,7 @@ exports[`Android BpkButton dark mode should support the "disabled" property 1`] 
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": -9934465,
+        "color": -11249568,
         "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
@@ -1257,7 +1257,7 @@ exports[`Android BpkButton dark mode should support the "disabled" property 1`] 
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(72, 72, 74)",
+          "backgroundColor": "rgb(68, 80, 95)",
           "borderRadius": 8,
         },
         Object {
@@ -1286,7 +1286,7 @@ exports[`Android BpkButton dark mode should support the "disabled" property 1`] 
               "lineHeight": 20,
             },
             Object {
-              "color": "rgb(142, 142, 147)",
+              "color": "rgb(189, 196, 203)",
             },
           ],
         ]
@@ -1342,7 +1342,7 @@ exports[`Android BpkButton light mode should render correctly 1`] = `
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(0, 166, 152)",
+          "backgroundColor": "rgb(12, 131, 138)",
           "borderRadius": 8,
         },
         Object {
@@ -1356,7 +1356,7 @@ exports[`Android BpkButton light mode should render correctly 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -1429,7 +1429,7 @@ exports[`Android BpkButton light mode should render correctly with type="destruc
         },
         Object {
           "backgroundColor": "rgb(255, 255, 255)",
-          "borderColor": "rgb(221, 221, 229)",
+          "borderColor": "rgb(224, 227, 229)",
           "borderRadius": 8,
         },
         Object {
@@ -1443,7 +1443,7 @@ exports[`Android BpkButton light mode should render correctly with type="destruc
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -1458,7 +1458,7 @@ exports[`Android BpkButton light mode should render correctly with type="destruc
               "lineHeight": 20,
             },
             Object {
-              "color": "rgb(209, 67, 91)",
+              "color": "rgb(231, 8, 102)",
             },
           ],
         ]
@@ -1515,8 +1515,8 @@ exports[`Android BpkButton light mode should render correctly with type="destruc
           "paddingVertical": 6,
         },
         Object {
-          "backgroundColor": "rgb(221, 221, 229)",
-          "borderColor": "rgb(221, 221, 229)",
+          "backgroundColor": "rgb(224, 227, 229)",
+          "borderColor": "rgb(224, 227, 229)",
           "borderRadius": 8,
         },
         Object {
@@ -1530,7 +1530,7 @@ exports[`Android BpkButton light mode should render correctly with type="destruc
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -1545,7 +1545,7 @@ exports[`Android BpkButton light mode should render correctly with type="destruc
               "lineHeight": 20,
             },
             Object {
-              "color": "rgb(178, 178, 191)",
+              "color": "rgb(194, 201, 205)",
             },
           ],
         ]
@@ -1601,7 +1601,7 @@ exports[`Android BpkButton light mode should render correctly with type="feature
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(7, 112, 227)",
+          "backgroundColor": "rgb(0, 98, 227)",
           "borderRadius": 8,
         },
         Object {
@@ -1615,7 +1615,7 @@ exports[`Android BpkButton light mode should render correctly with type="feature
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -1689,7 +1689,7 @@ exports[`Android BpkButton light mode should render correctly with type="feature
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(221, 221, 229)",
+          "backgroundColor": "rgb(224, 227, 229)",
           "borderRadius": 8,
         },
         Object {
@@ -1703,7 +1703,7 @@ exports[`Android BpkButton light mode should render correctly with type="feature
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -1718,7 +1718,7 @@ exports[`Android BpkButton light mode should render correctly with type="feature
               "lineHeight": 20,
             },
             Object {
-              "color": "rgb(178, 178, 191)",
+              "color": "rgb(194, 201, 205)",
             },
           ],
         ]
@@ -1790,7 +1790,7 @@ exports[`Android BpkButton light mode should render correctly with type="outline
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -1862,8 +1862,8 @@ exports[`Android BpkButton light mode should render correctly with type="outline
           "paddingVertical": 6,
         },
         Object {
-          "backgroundColor": "rgb(221, 221, 229)",
-          "borderColor": "rgb(221, 221, 229)",
+          "backgroundColor": "rgb(224, 227, 229)",
+          "borderColor": "rgb(224, 227, 229)",
           "borderRadius": 8,
         },
         Object {
@@ -1877,7 +1877,7 @@ exports[`Android BpkButton light mode should render correctly with type="outline
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -1892,7 +1892,7 @@ exports[`Android BpkButton light mode should render correctly with type="outline
               "lineHeight": 20,
             },
             Object {
-              "color": "rgb(178, 178, 191)",
+              "color": "rgb(194, 201, 205)",
             },
           ],
         ]
@@ -1948,7 +1948,7 @@ exports[`Android BpkButton light mode should render correctly with type="primary
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(0, 166, 152)",
+          "backgroundColor": "rgb(12, 131, 138)",
           "borderRadius": 8,
         },
         Object {
@@ -1962,7 +1962,7 @@ exports[`Android BpkButton light mode should render correctly with type="primary
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -2036,7 +2036,7 @@ exports[`Android BpkButton light mode should render correctly with type="primary
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(221, 221, 229)",
+          "backgroundColor": "rgb(224, 227, 229)",
           "borderRadius": 8,
         },
         Object {
@@ -2050,7 +2050,7 @@ exports[`Android BpkButton light mode should render correctly with type="primary
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -2065,7 +2065,7 @@ exports[`Android BpkButton light mode should render correctly with type="primary
               "lineHeight": 20,
             },
             Object {
-              "color": "rgb(178, 178, 191)",
+              "color": "rgb(194, 201, 205)",
             },
           ],
         ]
@@ -2123,7 +2123,7 @@ exports[`Android BpkButton light mode should render correctly with type="seconda
         },
         Object {
           "backgroundColor": "rgb(255, 255, 255)",
-          "borderColor": "rgb(221, 221, 229)",
+          "borderColor": "rgb(224, 227, 229)",
           "borderRadius": 8,
         },
         Object {
@@ -2137,7 +2137,7 @@ exports[`Android BpkButton light mode should render correctly with type="seconda
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -2152,7 +2152,7 @@ exports[`Android BpkButton light mode should render correctly with type="seconda
               "lineHeight": 20,
             },
             Object {
-              "color": "rgb(7, 112, 227)",
+              "color": "rgb(0, 98, 227)",
             },
           ],
         ]
@@ -2209,8 +2209,8 @@ exports[`Android BpkButton light mode should render correctly with type="seconda
           "paddingVertical": 6,
         },
         Object {
-          "backgroundColor": "rgb(221, 221, 229)",
-          "borderColor": "rgb(221, 221, 229)",
+          "backgroundColor": "rgb(224, 227, 229)",
+          "borderColor": "rgb(224, 227, 229)",
           "borderRadius": 8,
         },
         Object {
@@ -2224,7 +2224,7 @@ exports[`Android BpkButton light mode should render correctly with type="seconda
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -2239,7 +2239,7 @@ exports[`Android BpkButton light mode should render correctly with type="seconda
               "lineHeight": 20,
             },
             Object {
-              "color": "rgb(178, 178, 191)",
+              "color": "rgb(194, 201, 205)",
             },
           ],
         ]
@@ -2298,7 +2298,7 @@ exports[`Android BpkButton light mode should support overwriting styles 1`] = `
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(0, 166, 152)",
+          "backgroundColor": "rgb(12, 131, 138)",
           "borderRadius": 8,
         },
         Object {
@@ -2312,7 +2312,7 @@ exports[`Android BpkButton light mode should support overwriting styles 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -2386,7 +2386,7 @@ exports[`Android BpkButton light mode should support the "disabled" property 1`]
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(221, 221, 229)",
+          "backgroundColor": "rgb(224, 227, 229)",
           "borderRadius": 8,
         },
         Object {
@@ -2400,7 +2400,7 @@ exports[`Android BpkButton light mode should support the "disabled" property 1`]
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -2415,7 +2415,7 @@ exports[`Android BpkButton light mode should support the "disabled" property 1`]
               "lineHeight": 20,
             },
             Object {
-              "color": "rgb(178, 178, 191)",
+              "color": "rgb(194, 201, 205)",
             },
           ],
         ]
@@ -2471,7 +2471,7 @@ exports[`Android BpkButton should render correctly with iconAlignment="leading" 
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(0, 166, 152)",
+          "backgroundColor": "rgb(12, 131, 138)",
           "borderRadius": 8,
         },
       ]
@@ -2482,7 +2482,7 @@ exports[`Android BpkButton should render correctly with iconAlignment="leading" 
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -2508,7 +2508,7 @@ exports[`Android BpkButton should render correctly with iconAlignment="leading" 
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -2579,7 +2579,7 @@ exports[`Android BpkButton should render correctly with iconAlignment="trailing"
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(0, 166, 152)",
+          "backgroundColor": "rgb(12, 131, 138)",
           "borderRadius": 8,
         },
         Object {
@@ -2593,7 +2593,7 @@ exports[`Android BpkButton should render correctly with iconAlignment="trailing"
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -2623,7 +2623,7 @@ exports[`Android BpkButton should render correctly with iconAlignment="trailing"
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -2694,7 +2694,7 @@ exports[`Android BpkButton should support elements as icons 1`] = `
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(0, 166, 152)",
+          "backgroundColor": "rgb(12, 131, 138)",
           "borderRadius": 40,
         },
         Object {
@@ -2711,7 +2711,7 @@ exports[`Android BpkButton should support elements as icons 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -2792,7 +2792,7 @@ exports[`Android BpkButton should support having an icon as well as a title 1`] 
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(0, 166, 152)",
+          "backgroundColor": "rgb(12, 131, 138)",
           "borderRadius": 8,
         },
         Object {
@@ -2806,7 +2806,7 @@ exports[`Android BpkButton should support having an icon as well as a title 1`] 
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -2836,7 +2836,7 @@ exports[`Android BpkButton should support having an icon as well as a title 1`] 
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -2907,7 +2907,7 @@ exports[`Android BpkButton should support the "icon" property 1`] = `
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(0, 166, 152)",
+          "backgroundColor": "rgb(12, 131, 138)",
           "borderRadius": 8,
         },
         Object {
@@ -2921,7 +2921,7 @@ exports[`Android BpkButton should support the "icon" property 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -2951,7 +2951,7 @@ exports[`Android BpkButton should support the "icon" property 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -3022,7 +3022,7 @@ exports[`Android BpkButton should support the "iconOnly" property 1`] = `
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(0, 166, 152)",
+          "backgroundColor": "rgb(12, 131, 138)",
           "borderRadius": 40,
         },
         Object {
@@ -3039,7 +3039,7 @@ exports[`Android BpkButton should support the "iconOnly" property 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -3134,7 +3134,7 @@ exports[`Android BpkButtonThemed should not apply border radius when a theme is 
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -3226,7 +3226,7 @@ exports[`Android BpkButtonThemed should render correctly 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",

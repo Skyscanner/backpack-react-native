@@ -127,7 +127,7 @@ exports[`iOS BpkFlatListNoResultsText light mode should render correctly 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -162,7 +162,7 @@ exports[`iOS BpkFlatListNoResultsText light mode should support arbitrary props 
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -200,7 +200,7 @@ exports[`iOS BpkFlatListNoResultsText light mode should support userland styles 
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",

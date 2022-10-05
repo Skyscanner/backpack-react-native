@@ -8,7 +8,7 @@ exports[`Android BpkSelect dark mode should render correctly 1`] = `
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": -9934465,
+      "color": -11249568,
       "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
@@ -25,7 +25,7 @@ exports[`Android BpkSelect dark mode should render correctly 1`] = `
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(72, 72, 74)",
+        "borderColor": "rgb(68, 80, 95)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -68,7 +68,7 @@ exports[`Android BpkSelect dark mode should render correctly with "showImage" an
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": -9934465,
+      "color": -11249568,
       "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
@@ -85,7 +85,7 @@ exports[`Android BpkSelect dark mode should render correctly with "showImage" an
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(72, 72, 74)",
+        "borderColor": "rgb(68, 80, 95)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -99,7 +99,7 @@ exports[`Android BpkSelect dark mode should render correctly with "showImage" an
         undefined,
         Array [
           Object {
-            "backgroundColor": "rgb(29, 27, 32)",
+            "backgroundColor": "rgb(19, 29, 43)",
             "height": 12,
             "marginEnd": 8,
             "width": 16,
@@ -143,7 +143,7 @@ exports[`Android BpkSelect dark mode should render correctly with "showImage" an
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": -9934465,
+      "color": -11249568,
       "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
@@ -160,7 +160,7 @@ exports[`Android BpkSelect dark mode should render correctly with "showImage" an
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(72, 72, 74)",
+        "borderColor": "rgb(68, 80, 95)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -172,7 +172,7 @@ exports[`Android BpkSelect dark mode should render correctly with "showImage" an
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(29, 27, 32)",
+          "backgroundColor": "rgb(19, 29, 43)",
           "height": 12,
           "marginEnd": 8,
           "width": 16,
@@ -215,7 +215,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": -9934465,
+      "color": -11249568,
       "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
@@ -232,13 +232,13 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(72, 72, 74)",
+        "borderColor": "rgb(68, 80, 95)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
       },
       Object {
-        "borderColor": "rgb(209, 67, 91)",
+        "borderColor": "rgb(231, 8, 102)",
       },
     ]
   }
@@ -261,7 +261,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
             "marginStart": 4,
           },
           Object {
-            "color": "rgb(209, 67, 91)",
+            "color": "rgb(231, 8, 102)",
           },
         ],
       ]
@@ -304,7 +304,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": -9934465,
+      "color": -11249568,
       "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
@@ -321,16 +321,16 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(72, 72, 74)",
+        "borderColor": "rgb(68, 80, 95)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
       },
       Object {
-        "borderColor": "rgb(209, 67, 91)",
+        "borderColor": "rgb(231, 8, 102)",
       },
       Object {
-        "borderColor": "rgb(109, 159, 235)",
+        "borderColor": "rgb(132, 233, 255)",
       },
     ]
   }
@@ -353,7 +353,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
             "marginStart": 4,
           },
           Object {
-            "color": "rgb(209, 67, 91)",
+            "color": "rgb(231, 8, 102)",
           },
         ],
       ]
@@ -397,7 +397,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
     nativeBackgroundAndroid={
       Object {
         "borderless": false,
-        "color": -9934465,
+        "color": -11249568,
         "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
@@ -414,13 +414,13 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
         Object {
           "alignItems": "center",
           "borderBottomWidth": 1,
-          "borderColor": "rgb(72, 72, 74)",
+          "borderColor": "rgb(68, 80, 95)",
           "flexDirection": "row",
           "justifyContent": "space-between",
           "paddingVertical": 4,
         },
         Object {
-          "borderColor": "rgb(209, 67, 91)",
+          "borderColor": "rgb(231, 8, 102)",
         },
       ]
     }
@@ -443,7 +443,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
               "marginStart": 4,
             },
             Object {
-              "color": "rgb(209, 67, 91)",
+              "color": "rgb(231, 8, 102)",
             },
           ],
         ]
@@ -490,7 +490,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
         },
         Object {},
         Object {
-          "color": "rgb(209, 67, 91)",
+          "color": "rgb(231, 8, 102)",
           "paddingTop": 4,
         },
       ]
@@ -509,7 +509,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" true 1
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": -9934465,
+      "color": -11249568,
       "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
@@ -526,7 +526,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" true 1
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(72, 72, 74)",
+        "borderColor": "rgb(68, 80, 95)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -552,7 +552,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" true 1
             "marginStart": 4,
           },
           Object {
-            "color": "rgb(0, 166, 152)",
+            "color": "rgb(12, 131, 138)",
           },
         ],
       ]
@@ -595,7 +595,7 @@ exports[`Android BpkSelect dark mode should render correctly with a text label 1
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": -9934465,
+      "color": -11249568,
       "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
@@ -612,7 +612,7 @@ exports[`Android BpkSelect dark mode should render correctly with a text label 1
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(72, 72, 74)",
+        "borderColor": "rgb(68, 80, 95)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -679,7 +679,7 @@ exports[`Android BpkSelect dark mode should render correctly with an element lab
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": -9934465,
+      "color": -11249568,
       "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
@@ -696,7 +696,7 @@ exports[`Android BpkSelect dark mode should render correctly with an element lab
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(72, 72, 74)",
+        "borderColor": "rgb(68, 80, 95)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -740,7 +740,7 @@ exports[`Android BpkSelect dark mode should render correctly with custom styles 
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": -9934465,
+      "color": -11249568,
       "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
@@ -757,7 +757,7 @@ exports[`Android BpkSelect dark mode should render correctly with custom styles 
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(72, 72, 74)",
+        "borderColor": "rgb(68, 80, 95)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -824,7 +824,7 @@ exports[`Android BpkSelect dark mode should render correctly with the disabled p
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": -9934465,
+      "color": -11249568,
       "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
@@ -841,7 +841,7 @@ exports[`Android BpkSelect dark mode should render correctly with the disabled p
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(72, 72, 74)",
+        "borderColor": "rgb(68, 80, 95)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -868,7 +868,7 @@ exports[`Android BpkSelect dark mode should render correctly with the disabled p
           },
           Array [
             Object {
-              "color": "rgb(99, 99, 102)",
+              "color": "rgb(68, 80, 95)",
             },
           ],
         ],
@@ -895,7 +895,7 @@ exports[`Android BpkSelect dark mode should render correctly with the disabled p
             "marginStart": 4,
           },
           Object {
-            "color": "rgb(99, 99, 102)",
+            "color": "rgb(68, 80, 95)",
           },
         ],
       ]
@@ -914,7 +914,7 @@ exports[`Android BpkSelect dark mode should render correctly with the focused an
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": -9934465,
+      "color": -11249568,
       "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
@@ -931,7 +931,7 @@ exports[`Android BpkSelect dark mode should render correctly with the focused an
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(72, 72, 74)",
+        "borderColor": "rgb(68, 80, 95)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -958,7 +958,7 @@ exports[`Android BpkSelect dark mode should render correctly with the focused an
           },
           Array [
             Object {
-              "color": "rgb(99, 99, 102)",
+              "color": "rgb(68, 80, 95)",
             },
           ],
         ],
@@ -985,7 +985,7 @@ exports[`Android BpkSelect dark mode should render correctly with the focused an
             "marginStart": 4,
           },
           Object {
-            "color": "rgb(99, 99, 102)",
+            "color": "rgb(68, 80, 95)",
           },
         ],
       ]
@@ -1004,7 +1004,7 @@ exports[`Android BpkSelect dark mode should render correctly with the focused pr
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": -9934465,
+      "color": -11249568,
       "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
@@ -1021,13 +1021,13 @@ exports[`Android BpkSelect dark mode should render correctly with the focused pr
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(72, 72, 74)",
+        "borderColor": "rgb(68, 80, 95)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
       },
       Object {
-        "borderColor": "rgb(109, 159, 235)",
+        "borderColor": "rgb(132, 233, 255)",
       },
     ]
   }
@@ -1108,7 +1108,7 @@ exports[`Android BpkSelect light mode should render correctly 1`] = `
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(221, 221, 229)",
+        "borderColor": "rgb(224, 227, 229)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -1121,7 +1121,7 @@ exports[`Android BpkSelect light mode should render correctly 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -1168,7 +1168,7 @@ exports[`Android BpkSelect light mode should render correctly with "showImage" a
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(221, 221, 229)",
+        "borderColor": "rgb(224, 227, 229)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -1182,7 +1182,7 @@ exports[`Android BpkSelect light mode should render correctly with "showImage" a
         undefined,
         Array [
           Object {
-            "backgroundColor": "rgb(241, 242, 248)",
+            "backgroundColor": "rgb(239, 241, 242)",
             "height": 12,
             "marginEnd": 8,
             "width": 16,
@@ -1196,7 +1196,7 @@ exports[`Android BpkSelect light mode should render correctly with "showImage" a
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -1243,7 +1243,7 @@ exports[`Android BpkSelect light mode should render correctly with "showImage" a
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(221, 221, 229)",
+        "borderColor": "rgb(224, 227, 229)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -1255,7 +1255,7 @@ exports[`Android BpkSelect light mode should render correctly with "showImage" a
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(241, 242, 248)",
+          "backgroundColor": "rgb(239, 241, 242)",
           "height": 12,
           "marginEnd": 8,
           "width": 16,
@@ -1268,7 +1268,7 @@ exports[`Android BpkSelect light mode should render correctly with "showImage" a
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -1315,13 +1315,13 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(221, 221, 229)",
+        "borderColor": "rgb(224, 227, 229)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
       },
       Object {
-        "borderColor": "rgb(209, 67, 91)",
+        "borderColor": "rgb(231, 8, 102)",
       },
     ]
   }
@@ -1331,7 +1331,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -1344,7 +1344,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
             "marginStart": 4,
           },
           Object {
-            "color": "rgb(209, 67, 91)",
+            "color": "rgb(231, 8, 102)",
           },
         ],
       ]
@@ -1357,7 +1357,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -1404,16 +1404,16 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(221, 221, 229)",
+        "borderColor": "rgb(224, 227, 229)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
       },
       Object {
-        "borderColor": "rgb(209, 67, 91)",
+        "borderColor": "rgb(231, 8, 102)",
       },
       Object {
-        "borderColor": "rgb(7, 112, 227)",
+        "borderColor": "rgb(0, 98, 227)",
       },
     ]
   }
@@ -1423,7 +1423,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -1436,7 +1436,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
             "marginStart": 4,
           },
           Object {
-            "color": "rgb(209, 67, 91)",
+            "color": "rgb(231, 8, 102)",
           },
         ],
       ]
@@ -1449,7 +1449,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -1497,13 +1497,13 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
         Object {
           "alignItems": "center",
           "borderBottomWidth": 1,
-          "borderColor": "rgb(221, 221, 229)",
+          "borderColor": "rgb(224, 227, 229)",
           "flexDirection": "row",
           "justifyContent": "space-between",
           "paddingVertical": 4,
         },
         Object {
-          "borderColor": "rgb(209, 67, 91)",
+          "borderColor": "rgb(231, 8, 102)",
         },
       ]
     }
@@ -1513,7 +1513,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -1526,7 +1526,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
               "marginStart": 4,
             },
             Object {
-              "color": "rgb(209, 67, 91)",
+              "color": "rgb(231, 8, 102)",
             },
           ],
         ]
@@ -1539,7 +1539,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -1564,7 +1564,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "sans-serif",
           "fontSize": 12,
           "fontWeight": "400",
@@ -1573,7 +1573,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
         },
         Object {},
         Object {
-          "color": "rgb(209, 67, 91)",
+          "color": "rgb(231, 8, 102)",
           "paddingTop": 4,
         },
       ]
@@ -1609,7 +1609,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" true 
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(221, 221, 229)",
+        "borderColor": "rgb(224, 227, 229)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -1622,7 +1622,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" true 
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -1635,7 +1635,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" true 
             "marginStart": 4,
           },
           Object {
-            "color": "rgb(0, 166, 152)",
+            "color": "rgb(12, 131, 138)",
           },
         ],
       ]
@@ -1648,7 +1648,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" true 
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -1695,7 +1695,7 @@ exports[`Android BpkSelect light mode should render correctly with a text label 
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(221, 221, 229)",
+        "borderColor": "rgb(224, 227, 229)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -1708,7 +1708,7 @@ exports[`Android BpkSelect light mode should render correctly with a text label 
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -1732,7 +1732,7 @@ exports[`Android BpkSelect light mode should render correctly with a text label 
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -1779,7 +1779,7 @@ exports[`Android BpkSelect light mode should render correctly with an element la
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(221, 221, 229)",
+        "borderColor": "rgb(224, 227, 229)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -1793,7 +1793,7 @@ exports[`Android BpkSelect light mode should render correctly with an element la
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -1840,7 +1840,7 @@ exports[`Android BpkSelect light mode should render correctly with custom styles
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(221, 221, 229)",
+        "borderColor": "rgb(224, 227, 229)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -1853,7 +1853,7 @@ exports[`Android BpkSelect light mode should render correctly with custom styles
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -1877,7 +1877,7 @@ exports[`Android BpkSelect light mode should render correctly with custom styles
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -1924,7 +1924,7 @@ exports[`Android BpkSelect light mode should render correctly with the disabled 
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(221, 221, 229)",
+        "borderColor": "rgb(224, 227, 229)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -1937,7 +1937,7 @@ exports[`Android BpkSelect light mode should render correctly with the disabled 
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -1951,7 +1951,7 @@ exports[`Android BpkSelect light mode should render correctly with the disabled 
           },
           Array [
             Object {
-              "color": "rgb(221, 221, 229)",
+              "color": "rgb(224, 227, 229)",
             },
           ],
         ],
@@ -1965,7 +1965,7 @@ exports[`Android BpkSelect light mode should render correctly with the disabled 
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -1978,7 +1978,7 @@ exports[`Android BpkSelect light mode should render correctly with the disabled 
             "marginStart": 4,
           },
           Object {
-            "color": "rgb(221, 221, 229)",
+            "color": "rgb(224, 227, 229)",
           },
         ],
       ]
@@ -2014,7 +2014,7 @@ exports[`Android BpkSelect light mode should render correctly with the focused a
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(221, 221, 229)",
+        "borderColor": "rgb(224, 227, 229)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -2027,7 +2027,7 @@ exports[`Android BpkSelect light mode should render correctly with the focused a
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -2041,7 +2041,7 @@ exports[`Android BpkSelect light mode should render correctly with the focused a
           },
           Array [
             Object {
-              "color": "rgb(221, 221, 229)",
+              "color": "rgb(224, 227, 229)",
             },
           ],
         ],
@@ -2055,7 +2055,7 @@ exports[`Android BpkSelect light mode should render correctly with the focused a
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -2068,7 +2068,7 @@ exports[`Android BpkSelect light mode should render correctly with the focused a
             "marginStart": 4,
           },
           Object {
-            "color": "rgb(221, 221, 229)",
+            "color": "rgb(224, 227, 229)",
           },
         ],
       ]
@@ -2104,13 +2104,13 @@ exports[`Android BpkSelect light mode should render correctly with the focused p
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(221, 221, 229)",
+        "borderColor": "rgb(224, 227, 229)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
       },
       Object {
-        "borderColor": "rgb(7, 112, 227)",
+        "borderColor": "rgb(0, 98, 227)",
       },
     ]
   }
@@ -2120,7 +2120,7 @@ exports[`Android BpkSelect light mode should render correctly with the focused p
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -2144,7 +2144,7 @@ exports[`Android BpkSelect light mode should render correctly with the focused p
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,

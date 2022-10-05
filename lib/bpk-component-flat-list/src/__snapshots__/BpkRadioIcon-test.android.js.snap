@@ -6,7 +6,7 @@ exports[`Android BpkRadioIcon should render correctly 1`] = `
     Array [
       Object {
         "alignItems": "center",
-        "borderColor": "rgb(221, 221, 229)",
+        "borderColor": "rgb(224, 227, 229)",
         "borderRadius": 20,
         "borderWidth": 1,
         "height": 20,
@@ -37,7 +37,7 @@ exports[`Android BpkRadioIcon should render correctly with "selected" 1`] = `
     Array [
       Object {
         "alignItems": "center",
-        "borderColor": "rgb(221, 221, 229)",
+        "borderColor": "rgb(224, 227, 229)",
         "borderRadius": 20,
         "borderWidth": 1,
         "height": 20,

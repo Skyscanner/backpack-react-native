@@ -4,7 +4,7 @@ exports[`iOS BpkSectionListHeader dark mode should render correctly 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "rgb(44, 44, 46)",
+      "backgroundColor": "rgb(1, 9, 19)",
       "paddingHorizontal": 16,
       "paddingVertical": 4,
     }
@@ -40,7 +40,7 @@ exports[`iOS BpkSectionListHeader light mode should render correctly 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "rgb(241, 242, 248)",
+      "backgroundColor": "rgb(239, 241, 242)",
       "paddingHorizontal": 16,
       "paddingVertical": 4,
     }
@@ -51,7 +51,7 @@ exports[`iOS BpkSectionListHeader light mode should render correctly 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -62,7 +62,7 @@ exports[`iOS BpkSectionListHeader light mode should render correctly 1`] = `
           "fontWeight": "700",
         },
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
         },
       ]
     }

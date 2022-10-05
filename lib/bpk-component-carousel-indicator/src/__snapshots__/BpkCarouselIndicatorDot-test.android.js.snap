@@ -4,7 +4,7 @@ exports[`Android BpkCarouselIndicator should render correctly 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "rgb(178, 178, 191)",
+      "backgroundColor": "rgb(194, 201, 205)",
       "borderRadius": 40,
       "height": 6,
       "marginHorizontal": 2,
@@ -32,7 +32,7 @@ exports[`Android BpkCarouselIndicator should render correctly with size=base 1`]
 <View
   style={
     Object {
-      "backgroundColor": "rgb(178, 178, 191)",
+      "backgroundColor": "rgb(194, 201, 205)",
       "borderRadius": 40,
       "height": 6,
       "marginHorizontal": 2,
@@ -46,7 +46,7 @@ exports[`Android BpkCarouselIndicator should render correctly with size=invisibl
 <View
   style={
     Object {
-      "backgroundColor": "rgb(178, 178, 191)",
+      "backgroundColor": "rgb(194, 201, 205)",
       "borderRadius": 40,
       "height": 0,
       "marginHorizontal": 2,
@@ -60,7 +60,7 @@ exports[`Android BpkCarouselIndicator should render correctly with size=md 1`] =
 <View
   style={
     Object {
-      "backgroundColor": "rgb(178, 178, 191)",
+      "backgroundColor": "rgb(194, 201, 205)",
       "borderRadius": 40,
       "height": 4,
       "marginHorizontal": 2,
@@ -74,7 +74,7 @@ exports[`Android BpkCarouselIndicator should render correctly with size=sm 1`] =
 <View
   style={
     Object {
-      "backgroundColor": "rgb(178, 178, 191)",
+      "backgroundColor": "rgb(194, 201, 205)",
       "borderRadius": 40,
       "height": 2,
       "marginHorizontal": 2,

@@ -27,7 +27,7 @@ exports[`iOS dark mode dark mode should render correctly 1`] = `
         Object {
           "paddingHorizontal": 6,
           "paddingVertical": 6,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -42,7 +42,7 @@ exports[`iOS dark mode dark mode should render correctly 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 40,
             "bottom": 0,
             "left": 0,
@@ -57,7 +57,7 @@ exports[`iOS dark mode dark mode should render correctly 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 4,
             "bottom": -3,
             "height": 16,
@@ -127,7 +127,7 @@ exports[`iOS dark mode dark mode should render correctly with disabled={true} 1`
         Object {
           "paddingHorizontal": 6,
           "paddingVertical": 6,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -142,7 +142,7 @@ exports[`iOS dark mode dark mode should render correctly with disabled={true} 1`
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 40,
             "bottom": 0,
             "left": 0,
@@ -151,7 +151,7 @@ exports[`iOS dark mode dark mode should render correctly with disabled={true} 1`
             "top": 0,
           },
           Object {
-            "backgroundColor": "rgb(208, 238, 236)",
+            "backgroundColor": "rgb(212, 255, 242)",
           },
         ]
       }
@@ -160,7 +160,7 @@ exports[`iOS dark mode dark mode should render correctly with disabled={true} 1`
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 4,
             "bottom": -3,
             "height": 16,
@@ -174,7 +174,7 @@ exports[`iOS dark mode dark mode should render correctly with disabled={true} 1`
             "width": 16,
           },
           Object {
-            "backgroundColor": "rgb(208, 238, 236)",
+            "backgroundColor": "rgb(212, 255, 242)",
           },
         ]
       }
@@ -197,7 +197,7 @@ exports[`iOS dark mode dark mode should render correctly with disabled={true} 1`
               "color": "rgb(255, 255, 255)",
             },
             Object {
-              "color": "rgb(115, 206, 198)",
+              "color": "rgb(98, 241, 198)",
             },
           ],
         ]
@@ -236,7 +236,7 @@ exports[`iOS dark mode dark mode should render correctly with status=default 1`]
         Object {
           "paddingHorizontal": 6,
           "paddingVertical": 6,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -251,7 +251,7 @@ exports[`iOS dark mode dark mode should render correctly with status=default 1`]
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 40,
             "bottom": 0,
             "left": 0,
@@ -266,7 +266,7 @@ exports[`iOS dark mode dark mode should render correctly with status=default 1`]
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 4,
             "bottom": -3,
             "height": 16,
@@ -336,7 +336,7 @@ exports[`iOS dark mode dark mode should render correctly with status=focused 1`]
         Object {
           "paddingHorizontal": 6,
           "paddingVertical": 6,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -355,7 +355,7 @@ exports[`iOS dark mode dark mode should render correctly with status=focused 1`]
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 40,
             "bottom": 0,
             "left": 0,
@@ -364,12 +364,12 @@ exports[`iOS dark mode dark mode should render correctly with status=focused 1`]
             "top": 0,
           },
           Object {
-            "backgroundColor": "rgb(58, 58, 60)",
+            "backgroundColor": "rgb(36, 51, 70)",
             "borderBottomColor": "transparent",
-            "borderLeftColor": "rgb(0, 166, 152)",
-            "borderRightColor": "rgb(0, 166, 152)",
+            "borderLeftColor": "rgb(12, 131, 138)",
+            "borderRightColor": "rgb(12, 131, 138)",
             "borderStyle": "solid",
-            "borderTopColor": "rgb(0, 166, 152)",
+            "borderTopColor": "rgb(12, 131, 138)",
             "borderWidth": 1,
           },
         ]
@@ -379,7 +379,7 @@ exports[`iOS dark mode dark mode should render correctly with status=focused 1`]
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 4,
             "bottom": -3,
             "height": 16,
@@ -393,9 +393,9 @@ exports[`iOS dark mode dark mode should render correctly with status=focused 1`]
             "width": 16,
           },
           Object {
-            "backgroundColor": "rgb(58, 58, 60)",
+            "backgroundColor": "rgb(36, 51, 70)",
             "borderBottomLeftRadius": 0,
-            "borderColor": "rgb(0, 166, 152)",
+            "borderColor": "rgb(12, 131, 138)",
             "borderLeftColor": "transparent",
             "borderStyle": "solid",
             "borderTopColor": "transparent",
@@ -427,7 +427,7 @@ exports[`iOS dark mode dark mode should render correctly with status=focused 1`]
               "color": "rgb(255, 255, 255)",
             },
             Object {
-              "color": "rgb(0, 166, 152)",
+              "color": "rgb(12, 131, 138)",
             },
           ],
         ]
@@ -466,7 +466,7 @@ exports[`iOS dark mode dark mode should render correctly with zIndex 1`] = `
         Object {
           "paddingHorizontal": 6,
           "paddingVertical": 6,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -481,7 +481,7 @@ exports[`iOS dark mode dark mode should render correctly with zIndex 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 40,
             "bottom": 0,
             "left": 0,
@@ -496,7 +496,7 @@ exports[`iOS dark mode dark mode should render correctly with zIndex 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 4,
             "bottom": -3,
             "height": 16,
@@ -566,7 +566,7 @@ exports[`iOS dark mode light mode should render correctly 1`] = `
         Object {
           "paddingHorizontal": 6,
           "paddingVertical": 6,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -581,7 +581,7 @@ exports[`iOS dark mode light mode should render correctly 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 40,
             "bottom": 0,
             "left": 0,
@@ -596,7 +596,7 @@ exports[`iOS dark mode light mode should render correctly 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 4,
             "bottom": -3,
             "height": 16,
@@ -617,7 +617,7 @@ exports[`iOS dark mode light mode should render correctly 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -666,7 +666,7 @@ exports[`iOS dark mode light mode should render correctly with disabled={true} 1
         Object {
           "paddingHorizontal": 6,
           "paddingVertical": 6,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -681,7 +681,7 @@ exports[`iOS dark mode light mode should render correctly with disabled={true} 1
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 40,
             "bottom": 0,
             "left": 0,
@@ -690,7 +690,7 @@ exports[`iOS dark mode light mode should render correctly with disabled={true} 1
             "top": 0,
           },
           Object {
-            "backgroundColor": "rgb(208, 238, 236)",
+            "backgroundColor": "rgb(212, 255, 242)",
           },
         ]
       }
@@ -699,7 +699,7 @@ exports[`iOS dark mode light mode should render correctly with disabled={true} 1
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 4,
             "bottom": -3,
             "height": 16,
@@ -713,7 +713,7 @@ exports[`iOS dark mode light mode should render correctly with disabled={true} 1
             "width": 16,
           },
           Object {
-            "backgroundColor": "rgb(208, 238, 236)",
+            "backgroundColor": "rgb(212, 255, 242)",
           },
         ]
       }
@@ -723,7 +723,7 @@ exports[`iOS dark mode light mode should render correctly with disabled={true} 1
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -736,7 +736,7 @@ exports[`iOS dark mode light mode should render correctly with disabled={true} 1
               "color": "rgb(255, 255, 255)",
             },
             Object {
-              "color": "rgb(115, 206, 198)",
+              "color": "rgb(98, 241, 198)",
             },
           ],
         ]
@@ -775,7 +775,7 @@ exports[`iOS dark mode light mode should render correctly with status=default 1`
         Object {
           "paddingHorizontal": 6,
           "paddingVertical": 6,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -790,7 +790,7 @@ exports[`iOS dark mode light mode should render correctly with status=default 1`
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 40,
             "bottom": 0,
             "left": 0,
@@ -805,7 +805,7 @@ exports[`iOS dark mode light mode should render correctly with status=default 1`
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 4,
             "bottom": -3,
             "height": 16,
@@ -826,7 +826,7 @@ exports[`iOS dark mode light mode should render correctly with status=default 1`
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -875,7 +875,7 @@ exports[`iOS dark mode light mode should render correctly with status=focused 1`
         Object {
           "paddingHorizontal": 6,
           "paddingVertical": 6,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -894,7 +894,7 @@ exports[`iOS dark mode light mode should render correctly with status=focused 1`
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 40,
             "bottom": 0,
             "left": 0,
@@ -905,10 +905,10 @@ exports[`iOS dark mode light mode should render correctly with status=focused 1`
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
             "borderBottomColor": "transparent",
-            "borderLeftColor": "rgb(0, 166, 152)",
-            "borderRightColor": "rgb(0, 166, 152)",
+            "borderLeftColor": "rgb(12, 131, 138)",
+            "borderRightColor": "rgb(12, 131, 138)",
             "borderStyle": "solid",
-            "borderTopColor": "rgb(0, 166, 152)",
+            "borderTopColor": "rgb(12, 131, 138)",
             "borderWidth": 1,
           },
         ]
@@ -918,7 +918,7 @@ exports[`iOS dark mode light mode should render correctly with status=focused 1`
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 4,
             "bottom": -3,
             "height": 16,
@@ -934,7 +934,7 @@ exports[`iOS dark mode light mode should render correctly with status=focused 1`
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
             "borderBottomLeftRadius": 0,
-            "borderColor": "rgb(0, 166, 152)",
+            "borderColor": "rgb(12, 131, 138)",
             "borderLeftColor": "transparent",
             "borderStyle": "solid",
             "borderTopColor": "transparent",
@@ -953,7 +953,7 @@ exports[`iOS dark mode light mode should render correctly with status=focused 1`
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -966,7 +966,7 @@ exports[`iOS dark mode light mode should render correctly with status=focused 1`
               "color": "rgb(255, 255, 255)",
             },
             Object {
-              "color": "rgb(0, 166, 152)",
+              "color": "rgb(12, 131, 138)",
             },
           ],
         ]
@@ -1005,7 +1005,7 @@ exports[`iOS dark mode light mode should render correctly with zIndex 1`] = `
         Object {
           "paddingHorizontal": 6,
           "paddingVertical": 6,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -1020,7 +1020,7 @@ exports[`iOS dark mode light mode should render correctly with zIndex 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 40,
             "bottom": 0,
             "left": 0,
@@ -1035,7 +1035,7 @@ exports[`iOS dark mode light mode should render correctly with zIndex 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 4,
             "bottom": -3,
             "height": 16,
@@ -1056,7 +1056,7 @@ exports[`iOS dark mode light mode should render correctly with zIndex 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -1105,7 +1105,7 @@ exports[`iOS light mode dark mode should render correctly 1`] = `
         Object {
           "paddingHorizontal": 6,
           "paddingVertical": 6,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -1120,7 +1120,7 @@ exports[`iOS light mode dark mode should render correctly 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 40,
             "bottom": 0,
             "left": 0,
@@ -1135,7 +1135,7 @@ exports[`iOS light mode dark mode should render correctly 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 4,
             "bottom": -3,
             "height": 16,
@@ -1205,7 +1205,7 @@ exports[`iOS light mode dark mode should render correctly with disabled={true} 1
         Object {
           "paddingHorizontal": 6,
           "paddingVertical": 6,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -1220,7 +1220,7 @@ exports[`iOS light mode dark mode should render correctly with disabled={true} 1
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 40,
             "bottom": 0,
             "left": 0,
@@ -1229,7 +1229,7 @@ exports[`iOS light mode dark mode should render correctly with disabled={true} 1
             "top": 0,
           },
           Object {
-            "backgroundColor": "rgb(208, 238, 236)",
+            "backgroundColor": "rgb(212, 255, 242)",
           },
         ]
       }
@@ -1238,7 +1238,7 @@ exports[`iOS light mode dark mode should render correctly with disabled={true} 1
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 4,
             "bottom": -3,
             "height": 16,
@@ -1252,7 +1252,7 @@ exports[`iOS light mode dark mode should render correctly with disabled={true} 1
             "width": 16,
           },
           Object {
-            "backgroundColor": "rgb(208, 238, 236)",
+            "backgroundColor": "rgb(212, 255, 242)",
           },
         ]
       }
@@ -1275,7 +1275,7 @@ exports[`iOS light mode dark mode should render correctly with disabled={true} 1
               "color": "rgb(255, 255, 255)",
             },
             Object {
-              "color": "rgb(115, 206, 198)",
+              "color": "rgb(98, 241, 198)",
             },
           ],
         ]
@@ -1314,7 +1314,7 @@ exports[`iOS light mode dark mode should render correctly with status=default 1`
         Object {
           "paddingHorizontal": 6,
           "paddingVertical": 6,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -1329,7 +1329,7 @@ exports[`iOS light mode dark mode should render correctly with status=default 1`
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 40,
             "bottom": 0,
             "left": 0,
@@ -1344,7 +1344,7 @@ exports[`iOS light mode dark mode should render correctly with status=default 1`
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 4,
             "bottom": -3,
             "height": 16,
@@ -1414,7 +1414,7 @@ exports[`iOS light mode dark mode should render correctly with status=focused 1`
         Object {
           "paddingHorizontal": 6,
           "paddingVertical": 6,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -1433,7 +1433,7 @@ exports[`iOS light mode dark mode should render correctly with status=focused 1`
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 40,
             "bottom": 0,
             "left": 0,
@@ -1442,12 +1442,12 @@ exports[`iOS light mode dark mode should render correctly with status=focused 1`
             "top": 0,
           },
           Object {
-            "backgroundColor": "rgb(58, 58, 60)",
+            "backgroundColor": "rgb(36, 51, 70)",
             "borderBottomColor": "transparent",
-            "borderLeftColor": "rgb(0, 166, 152)",
-            "borderRightColor": "rgb(0, 166, 152)",
+            "borderLeftColor": "rgb(12, 131, 138)",
+            "borderRightColor": "rgb(12, 131, 138)",
             "borderStyle": "solid",
-            "borderTopColor": "rgb(0, 166, 152)",
+            "borderTopColor": "rgb(12, 131, 138)",
             "borderWidth": 1,
           },
         ]
@@ -1457,7 +1457,7 @@ exports[`iOS light mode dark mode should render correctly with status=focused 1`
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 4,
             "bottom": -3,
             "height": 16,
@@ -1471,9 +1471,9 @@ exports[`iOS light mode dark mode should render correctly with status=focused 1`
             "width": 16,
           },
           Object {
-            "backgroundColor": "rgb(58, 58, 60)",
+            "backgroundColor": "rgb(36, 51, 70)",
             "borderBottomLeftRadius": 0,
-            "borderColor": "rgb(0, 166, 152)",
+            "borderColor": "rgb(12, 131, 138)",
             "borderLeftColor": "transparent",
             "borderStyle": "solid",
             "borderTopColor": "transparent",
@@ -1505,7 +1505,7 @@ exports[`iOS light mode dark mode should render correctly with status=focused 1`
               "color": "rgb(255, 255, 255)",
             },
             Object {
-              "color": "rgb(0, 166, 152)",
+              "color": "rgb(12, 131, 138)",
             },
           ],
         ]
@@ -1544,7 +1544,7 @@ exports[`iOS light mode dark mode should render correctly with zIndex 1`] = `
         Object {
           "paddingHorizontal": 6,
           "paddingVertical": 6,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -1559,7 +1559,7 @@ exports[`iOS light mode dark mode should render correctly with zIndex 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 40,
             "bottom": 0,
             "left": 0,
@@ -1574,7 +1574,7 @@ exports[`iOS light mode dark mode should render correctly with zIndex 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 4,
             "bottom": -3,
             "height": 16,
@@ -1644,7 +1644,7 @@ exports[`iOS light mode light mode should render correctly 1`] = `
         Object {
           "paddingHorizontal": 6,
           "paddingVertical": 6,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -1659,7 +1659,7 @@ exports[`iOS light mode light mode should render correctly 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 40,
             "bottom": 0,
             "left": 0,
@@ -1674,7 +1674,7 @@ exports[`iOS light mode light mode should render correctly 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 4,
             "bottom": -3,
             "height": 16,
@@ -1695,7 +1695,7 @@ exports[`iOS light mode light mode should render correctly 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -1744,7 +1744,7 @@ exports[`iOS light mode light mode should render correctly with disabled={true} 
         Object {
           "paddingHorizontal": 6,
           "paddingVertical": 6,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -1759,7 +1759,7 @@ exports[`iOS light mode light mode should render correctly with disabled={true} 
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 40,
             "bottom": 0,
             "left": 0,
@@ -1768,7 +1768,7 @@ exports[`iOS light mode light mode should render correctly with disabled={true} 
             "top": 0,
           },
           Object {
-            "backgroundColor": "rgb(208, 238, 236)",
+            "backgroundColor": "rgb(212, 255, 242)",
           },
         ]
       }
@@ -1777,7 +1777,7 @@ exports[`iOS light mode light mode should render correctly with disabled={true} 
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 4,
             "bottom": -3,
             "height": 16,
@@ -1791,7 +1791,7 @@ exports[`iOS light mode light mode should render correctly with disabled={true} 
             "width": 16,
           },
           Object {
-            "backgroundColor": "rgb(208, 238, 236)",
+            "backgroundColor": "rgb(212, 255, 242)",
           },
         ]
       }
@@ -1801,7 +1801,7 @@ exports[`iOS light mode light mode should render correctly with disabled={true} 
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -1814,7 +1814,7 @@ exports[`iOS light mode light mode should render correctly with disabled={true} 
               "color": "rgb(255, 255, 255)",
             },
             Object {
-              "color": "rgb(115, 206, 198)",
+              "color": "rgb(98, 241, 198)",
             },
           ],
         ]
@@ -1853,7 +1853,7 @@ exports[`iOS light mode light mode should render correctly with status=default 1
         Object {
           "paddingHorizontal": 6,
           "paddingVertical": 6,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -1868,7 +1868,7 @@ exports[`iOS light mode light mode should render correctly with status=default 1
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 40,
             "bottom": 0,
             "left": 0,
@@ -1883,7 +1883,7 @@ exports[`iOS light mode light mode should render correctly with status=default 1
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 4,
             "bottom": -3,
             "height": 16,
@@ -1904,7 +1904,7 @@ exports[`iOS light mode light mode should render correctly with status=default 1
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -1953,7 +1953,7 @@ exports[`iOS light mode light mode should render correctly with status=focused 1
         Object {
           "paddingHorizontal": 6,
           "paddingVertical": 6,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -1972,7 +1972,7 @@ exports[`iOS light mode light mode should render correctly with status=focused 1
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 40,
             "bottom": 0,
             "left": 0,
@@ -1983,10 +1983,10 @@ exports[`iOS light mode light mode should render correctly with status=focused 1
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
             "borderBottomColor": "transparent",
-            "borderLeftColor": "rgb(0, 166, 152)",
-            "borderRightColor": "rgb(0, 166, 152)",
+            "borderLeftColor": "rgb(12, 131, 138)",
+            "borderRightColor": "rgb(12, 131, 138)",
             "borderStyle": "solid",
-            "borderTopColor": "rgb(0, 166, 152)",
+            "borderTopColor": "rgb(12, 131, 138)",
             "borderWidth": 1,
           },
         ]
@@ -1996,7 +1996,7 @@ exports[`iOS light mode light mode should render correctly with status=focused 1
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 4,
             "bottom": -3,
             "height": 16,
@@ -2012,7 +2012,7 @@ exports[`iOS light mode light mode should render correctly with status=focused 1
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
             "borderBottomLeftRadius": 0,
-            "borderColor": "rgb(0, 166, 152)",
+            "borderColor": "rgb(12, 131, 138)",
             "borderLeftColor": "transparent",
             "borderStyle": "solid",
             "borderTopColor": "transparent",
@@ -2031,7 +2031,7 @@ exports[`iOS light mode light mode should render correctly with status=focused 1
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -2044,7 +2044,7 @@ exports[`iOS light mode light mode should render correctly with status=focused 1
               "color": "rgb(255, 255, 255)",
             },
             Object {
-              "color": "rgb(0, 166, 152)",
+              "color": "rgb(12, 131, 138)",
             },
           ],
         ]
@@ -2083,7 +2083,7 @@ exports[`iOS light mode light mode should render correctly with zIndex 1`] = `
         Object {
           "paddingHorizontal": 6,
           "paddingVertical": 6,
-          "shadowColor": "rgb(17, 18, 54)",
+          "shadowColor": "rgb(22, 22, 22)",
           "shadowOffset": Object {
             "height": 0.5,
             "width": 0,
@@ -2098,7 +2098,7 @@ exports[`iOS light mode light mode should render correctly with zIndex 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 40,
             "bottom": 0,
             "left": 0,
@@ -2113,7 +2113,7 @@ exports[`iOS light mode light mode should render correctly with zIndex 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(0, 166, 152)",
+            "backgroundColor": "rgb(12, 131, 138)",
             "borderRadius": 4,
             "bottom": -3,
             "height": 16,
@@ -2134,7 +2134,7 @@ exports[`iOS light mode light mode should render correctly with zIndex 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,

@@ -88,7 +88,7 @@ class RNDialogTest {
 
     val instance = dialog.dialog
 
-    dialog.state.dialogType = BpkDialog.Style.BOTTOM_SHEET
+    dialog.state.dialogType = BpkDialog.Style.FLARE
     stateHolder.dispatchUpdateTransactionFinished()
     val newInstance = dialog.dialog
 

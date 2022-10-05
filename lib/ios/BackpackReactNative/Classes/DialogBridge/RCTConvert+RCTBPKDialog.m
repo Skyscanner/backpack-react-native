@@ -23,7 +23,6 @@
 
 RCT_ENUM_CONVERTER(BPKDialogControllerStyle, (@{
                        @"alert": @(BPKDialogControllerStyleAlert),
-                       @"bottomSheet": @(BPKDialogControllerStyleBottomSheet),
                    }),
                    BPKDialogControllerStyleAlert, integerValue)
 

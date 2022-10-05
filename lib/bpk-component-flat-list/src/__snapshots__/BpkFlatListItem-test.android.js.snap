@@ -9,7 +9,7 @@ exports[`Android BpkFlatListItem dark mode should render correctly 1`] = `
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": -9934465,
+      "color": -11249568,
       "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
@@ -70,7 +70,7 @@ exports[`Android BpkFlatListItem dark mode should render correctly 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "borderColor": "rgb(221, 221, 229)",
+          "borderColor": "rgb(224, 227, 229)",
           "borderRadius": 20,
           "borderWidth": 1,
           "height": 20,
@@ -105,7 +105,7 @@ exports[`Android BpkFlatListItem dark mode should support the "selected" propert
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": -9934465,
+      "color": -11249568,
       "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
@@ -155,7 +155,7 @@ exports[`Android BpkFlatListItem dark mode should support the "selected" propert
               "flex": 1,
             },
             Object {
-              "color": "rgb(109, 159, 235)",
+              "color": "rgb(132, 233, 255)",
             },
           ],
         ]
@@ -169,7 +169,7 @@ exports[`Android BpkFlatListItem dark mode should support the "selected" propert
       Array [
         Object {
           "alignItems": "center",
-          "borderColor": "rgb(221, 221, 229)",
+          "borderColor": "rgb(224, 227, 229)",
           "borderRadius": 20,
           "borderWidth": 1,
           "height": 20,
@@ -177,7 +177,7 @@ exports[`Android BpkFlatListItem dark mode should support the "selected" propert
           "width": 20,
         },
         Object {
-          "borderColor": "rgb(109, 159, 235)",
+          "borderColor": "rgb(132, 233, 255)",
         },
       ]
     }
@@ -192,7 +192,7 @@ exports[`Android BpkFlatListItem dark mode should support the "selected" propert
             "width": 10,
           },
           Object {
-            "backgroundColor": "rgb(109, 159, 235)",
+            "backgroundColor": "rgb(132, 233, 255)",
           },
         ]
       }
@@ -247,7 +247,7 @@ exports[`Android BpkFlatListItem light mode should render correctly 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -271,7 +271,7 @@ exports[`Android BpkFlatListItem light mode should render correctly 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "borderColor": "rgb(221, 221, 229)",
+          "borderColor": "rgb(224, 227, 229)",
           "borderRadius": 20,
           "borderWidth": 1,
           "height": 20,
@@ -343,7 +343,7 @@ exports[`Android BpkFlatListItem light mode should support the "selected" proper
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -356,7 +356,7 @@ exports[`Android BpkFlatListItem light mode should support the "selected" proper
               "flex": 1,
             },
             Object {
-              "color": "rgb(7, 112, 227)",
+              "color": "rgb(0, 98, 227)",
             },
           ],
         ]
@@ -370,7 +370,7 @@ exports[`Android BpkFlatListItem light mode should support the "selected" proper
       Array [
         Object {
           "alignItems": "center",
-          "borderColor": "rgb(221, 221, 229)",
+          "borderColor": "rgb(224, 227, 229)",
           "borderRadius": 20,
           "borderWidth": 1,
           "height": 20,
@@ -378,7 +378,7 @@ exports[`Android BpkFlatListItem light mode should support the "selected" proper
           "width": 20,
         },
         Object {
-          "borderColor": "rgb(7, 112, 227)",
+          "borderColor": "rgb(0, 98, 227)",
         },
       ]
     }
@@ -393,7 +393,7 @@ exports[`Android BpkFlatListItem light mode should support the "selected" proper
             "width": 10,
           },
           Object {
-            "backgroundColor": "rgb(7, 112, 227)",
+            "backgroundColor": "rgb(0, 98, 227)",
           },
         ]
       }
@@ -458,7 +458,7 @@ exports[`Android BpkFlatListItem should support the "image" property 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -482,7 +482,7 @@ exports[`Android BpkFlatListItem should support the "image" property 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "borderColor": "rgb(221, 221, 229)",
+          "borderColor": "rgb(224, 227, 229)",
           "borderRadius": 20,
           "borderWidth": 1,
           "height": 20,
@@ -571,7 +571,7 @@ exports[`Android should support theming when selected 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -587,7 +587,7 @@ exports[`Android should support theming when selected 1`] = `
               "flex": 1,
             },
             Object {
-              "color": "rgb(7, 112, 227)",
+              "color": "rgb(0, 98, 227)",
             },
             Object {
               "color": "red",
@@ -604,7 +604,7 @@ exports[`Android should support theming when selected 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "borderColor": "rgb(221, 221, 229)",
+          "borderColor": "rgb(224, 227, 229)",
           "borderRadius": 20,
           "borderWidth": 1,
           "height": 20,

@@ -36,7 +36,7 @@ exports[`Android BpkText dark mode should support overwriting styles 1`] = `
       },
       Object {},
       Object {
-        "color": "rgb(209, 67, 91)",
+        "color": "rgb(231, 8, 102)",
       },
     ]
   }
@@ -51,7 +51,7 @@ exports[`Android BpkText light mode should render correctly 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "sans-serif",
         "fontSize": 16,
         "fontWeight": "400",
@@ -72,7 +72,7 @@ exports[`Android BpkText light mode should support overwriting styles 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "sans-serif",
         "fontSize": 16,
         "fontWeight": "400",
@@ -81,7 +81,7 @@ exports[`Android BpkText light mode should support overwriting styles 1`] = `
       },
       Object {},
       Object {
-        "color": "rgb(209, 67, 91)",
+        "color": "rgb(231, 8, 102)",
       },
     ]
   }
@@ -96,7 +96,7 @@ exports[`Android BpkText should ignore weight prop if deprecated \`emphasize\` p
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "sans-serif",
         "fontSize": 30,
         "fontWeight": "400",
@@ -119,7 +119,7 @@ exports[`Android BpkText should render correctly when textStyle is set to inheri
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "sans-serif",
         "fontSize": 36,
         "fontWeight": "400",
@@ -151,7 +151,7 @@ exports[`Android BpkText should render correctly with deprecated \`emphasize\` p
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "sans-serif",
         "fontSize": 16,
         "fontWeight": "400",
@@ -174,7 +174,7 @@ exports[`Android BpkText should render correctly with textStyle="base and weight
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "sans-serif",
         "fontSize": 16,
         "fontWeight": "400",
@@ -197,7 +197,7 @@ exports[`Android BpkText should render correctly with textStyle="base" 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "sans-serif",
         "fontSize": 16,
         "fontWeight": "400",
@@ -218,7 +218,7 @@ exports[`Android BpkText should render correctly with textStyle="caps and weight
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "sans-serif",
         "fontSize": 10,
         "fontWeight": "400",
@@ -241,7 +241,7 @@ exports[`Android BpkText should render correctly with textStyle="caps" 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "sans-serif",
         "fontSize": 10,
         "fontWeight": "400",
@@ -292,7 +292,7 @@ exports[`Android BpkText should render correctly with textStyle="lg and weight="
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "sans-serif",
         "fontSize": 20,
         "fontWeight": "400",
@@ -315,7 +315,7 @@ exports[`Android BpkText should render correctly with textStyle="lg" 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "sans-serif",
         "fontSize": 20,
         "fontWeight": "400",
@@ -336,7 +336,7 @@ exports[`Android BpkText should render correctly with textStyle="sm and weight="
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "sans-serif",
         "fontSize": 14,
         "fontWeight": "400",
@@ -359,7 +359,7 @@ exports[`Android BpkText should render correctly with textStyle="sm" 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "sans-serif",
         "fontSize": 14,
         "fontWeight": "400",
@@ -380,7 +380,7 @@ exports[`Android BpkText should render correctly with textStyle="xl and weight="
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "sans-serif",
         "fontSize": 24,
         "fontWeight": "400",
@@ -403,7 +403,7 @@ exports[`Android BpkText should render correctly with textStyle="xl and weight="
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "sans-serif",
         "fontSize": 24,
         "fontWeight": "400",
@@ -426,7 +426,7 @@ exports[`Android BpkText should render correctly with textStyle="xl" 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "sans-serif",
         "fontSize": 24,
         "fontWeight": "400",
@@ -447,7 +447,7 @@ exports[`Android BpkText should render correctly with textStyle="xs and weight="
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "sans-serif",
         "fontSize": 12,
         "fontWeight": "400",
@@ -470,7 +470,7 @@ exports[`Android BpkText should render correctly with textStyle="xs" 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "sans-serif",
         "fontSize": 12,
         "fontWeight": "400",
@@ -491,7 +491,7 @@ exports[`Android BpkText should render correctly with textStyle="xxl and weight=
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "sans-serif",
         "fontSize": 30,
         "fontWeight": "400",
@@ -514,7 +514,7 @@ exports[`Android BpkText should render correctly with textStyle="xxl and weight=
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "sans-serif",
         "fontSize": 30,
         "fontWeight": "400",
@@ -537,7 +537,7 @@ exports[`Android BpkText should render correctly with textStyle="xxl" 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "sans-serif",
         "fontSize": 30,
         "fontWeight": "400",
@@ -558,7 +558,7 @@ exports[`Android BpkText should render correctly with textStyle="xxxl and weight
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "sans-serif",
         "fontSize": 36,
         "fontWeight": "400",
@@ -581,7 +581,7 @@ exports[`Android BpkText should render correctly with textStyle="xxxl and weight
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "sans-serif",
         "fontSize": 36,
         "fontWeight": "400",
@@ -604,7 +604,7 @@ exports[`Android BpkText should render correctly with textStyle="xxxl" 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "sans-serif",
         "fontSize": 36,
         "fontWeight": "400",
@@ -625,7 +625,7 @@ exports[`Android BpkText should use default props when nested textStyle is set t
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "sans-serif",
         "fontSize": 36,
         "fontWeight": "400",
@@ -641,7 +641,7 @@ exports[`Android BpkText should use default props when nested textStyle is set t
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -664,7 +664,7 @@ exports[`Android should render correctly with custom font for weight emphasized 
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "sans-serif",
         "fontSize": 30,
         "fontWeight": "400",
@@ -690,7 +690,7 @@ exports[`Android should render correctly with custom font for weight heavy 1`] =
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "sans-serif",
         "fontSize": 30,
         "fontWeight": "400",
@@ -716,7 +716,7 @@ exports[`Android should render correctly with custom font for weight regular 1`]
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "sans-serif",
         "fontSize": 30,
         "fontWeight": "400",
