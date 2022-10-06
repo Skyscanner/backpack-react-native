@@ -23,7 +23,7 @@ exports[`RTL BpkStar dark mode should render correctly when empty 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(68, 80, 95)",
+            "color": "rgba(255, 255, 255, 0.2)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -64,7 +64,7 @@ exports[`RTL BpkStar dark mode should render correctly when full 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(68, 80, 95)",
+            "color": "rgba(255, 255, 255, 0.2)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -92,7 +92,7 @@ exports[`RTL BpkStar dark mode should render correctly when full 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(68, 80, 95)",
+            "color": "rgba(255, 255, 255, 0.2)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -139,7 +139,7 @@ exports[`RTL BpkStar dark mode should render correctly when half 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(68, 80, 95)",
+            "color": "rgba(255, 255, 255, 0.2)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -167,7 +167,7 @@ exports[`RTL BpkStar dark mode should render correctly when half 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(68, 80, 95)",
+            "color": "rgba(255, 255, 255, 0.2)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -221,7 +221,7 @@ exports[`RTL BpkStar dark mode should support theming when empty 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(68, 80, 95)",
+            "color": "rgba(255, 255, 255, 0.2)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -265,7 +265,7 @@ exports[`RTL BpkStar dark mode should support theming when full 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(68, 80, 95)",
+            "color": "rgba(255, 255, 255, 0.2)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -296,7 +296,7 @@ exports[`RTL BpkStar dark mode should support theming when full 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(68, 80, 95)",
+            "color": "rgba(255, 255, 255, 0.2)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -346,7 +346,7 @@ exports[`RTL BpkStar dark mode should support theming when half 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(68, 80, 95)",
+            "color": "rgba(255, 255, 255, 0.2)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -377,7 +377,7 @@ exports[`RTL BpkStar dark mode should support theming when half 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(68, 80, 95)",
+            "color": "rgba(255, 255, 255, 0.2)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -434,7 +434,7 @@ exports[`RTL BpkStar light mode should render correctly when empty 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(224, 227, 229)",
+            "color": "rgba(0, 0, 0, 0.2)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -475,7 +475,7 @@ exports[`RTL BpkStar light mode should render correctly when full 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(224, 227, 229)",
+            "color": "rgba(0, 0, 0, 0.2)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -503,7 +503,7 @@ exports[`RTL BpkStar light mode should render correctly when full 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(224, 227, 229)",
+            "color": "rgba(0, 0, 0, 0.2)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -516,7 +516,7 @@ exports[`RTL BpkStar light mode should render correctly when full 1`] = `
             "zIndex": 2,
           },
           Object {
-            "color": "rgb(254, 235, 135)",
+            "color": "rgb(245, 93, 66)",
           },
         ],
       ]
@@ -550,7 +550,7 @@ exports[`RTL BpkStar light mode should render correctly when half 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(224, 227, 229)",
+            "color": "rgba(0, 0, 0, 0.2)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -578,7 +578,7 @@ exports[`RTL BpkStar light mode should render correctly when half 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(224, 227, 229)",
+            "color": "rgba(0, 0, 0, 0.2)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -591,7 +591,7 @@ exports[`RTL BpkStar light mode should render correctly when half 1`] = `
             "zIndex": 2,
           },
           Object {
-            "color": "rgb(254, 235, 135)",
+            "color": "rgb(245, 93, 66)",
           },
           Object {
             "transform": Array [
@@ -632,7 +632,7 @@ exports[`RTL BpkStar light mode should support theming when empty 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(224, 227, 229)",
+            "color": "rgba(0, 0, 0, 0.2)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -676,7 +676,7 @@ exports[`RTL BpkStar light mode should support theming when full 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(224, 227, 229)",
+            "color": "rgba(0, 0, 0, 0.2)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -707,7 +707,7 @@ exports[`RTL BpkStar light mode should support theming when full 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(224, 227, 229)",
+            "color": "rgba(0, 0, 0, 0.2)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -720,7 +720,7 @@ exports[`RTL BpkStar light mode should support theming when full 1`] = `
             "zIndex": 2,
           },
           Object {
-            "color": "rgb(254, 235, 135)",
+            "color": "rgb(245, 93, 66)",
           },
           Object {
             "color": "pink",
@@ -757,7 +757,7 @@ exports[`RTL BpkStar light mode should support theming when half 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(224, 227, 229)",
+            "color": "rgba(0, 0, 0, 0.2)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -788,7 +788,7 @@ exports[`RTL BpkStar light mode should support theming when half 1`] = `
         Array [
           Object {
             "backgroundColor": "transparent",
-            "color": "rgb(224, 227, 229)",
+            "color": "rgba(0, 0, 0, 0.2)",
             "fontSize": 12,
             "left": 0,
             "lineHeight": 12,
@@ -801,7 +801,7 @@ exports[`RTL BpkStar light mode should support theming when half 1`] = `
             "zIndex": 2,
           },
           Object {
-            "color": "rgb(254, 235, 135)",
+            "color": "rgb(245, 93, 66)",
           },
           Object {
             "color": "pink",
