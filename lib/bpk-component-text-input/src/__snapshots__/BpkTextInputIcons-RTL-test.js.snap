@@ -6,7 +6,7 @@ exports[`RTL InvalidIcon should render correctly 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "BpkIcon",
         "fontSize": 24,
         "includeFontPadding": false,
@@ -20,7 +20,7 @@ exports[`RTL InvalidIcon should render correctly 1`] = `
           "right": 9,
         },
         Object {
-          "color": "rgb(209, 67, 91)",
+          "color": "rgb(231, 8, 102)",
         },
       ],
     ]
@@ -36,7 +36,7 @@ exports[`RTL ValidIcon should render correctly 1`] = `
   style={
     Array [
       Object {
-        "color": "rgb(17, 18, 54)",
+        "color": "rgb(22, 22, 22)",
         "fontFamily": "BpkIcon",
         "fontSize": 24,
         "includeFontPadding": false,
@@ -50,7 +50,7 @@ exports[`RTL ValidIcon should render correctly 1`] = `
           "right": 9,
         },
         Object {
-          "color": "rgb(0, 166, 152)",
+          "color": "rgb(12, 131, 138)",
         },
       ],
     ]

@@ -5,7 +5,7 @@ exports[`ios - iPhone X BpkNavigationBar dark mode should render correctly 1`] =
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(29, 27, 32)",
+        "backgroundColor": "rgb(19, 29, 43)",
         "flexDirection": "column",
         "paddingHorizontal": 8,
         "shadowColor": null,
@@ -161,7 +161,7 @@ exports[`ios - iPhone X BpkNavigationBar dark mode should render correctly with 
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(29, 27, 32)",
+        "backgroundColor": "rgb(19, 29, 43)",
         "flexDirection": "column",
         "paddingHorizontal": 8,
         "shadowColor": null,
@@ -350,10 +350,10 @@ exports[`ios - iPhone X BpkNavigationBar light mode should render correctly 1`] 
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(241, 242, 248)",
+        "backgroundColor": "rgb(239, 241, 242)",
         "flexDirection": "column",
         "paddingHorizontal": 8,
-        "shadowColor": "rgb(221, 221, 229)",
+        "shadowColor": "rgb(224, 227, 229)",
         "shadowOffset": Object {
           "height": 1,
           "width": 0,
@@ -411,7 +411,7 @@ exports[`ios - iPhone X BpkNavigationBar light mode should render correctly 1`] 
               },
             ],
             Object {
-              "tintColor": "rgb(17, 18, 54)",
+              "tintColor": "rgb(22, 22, 22)",
             },
           ]
         }
@@ -421,7 +421,7 @@ exports[`ios - iPhone X BpkNavigationBar light mode should render correctly 1`] 
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "System",
               "fontSize": 16,
               "fontWeight": "400",
@@ -431,7 +431,7 @@ exports[`ios - iPhone X BpkNavigationBar light mode should render correctly 1`] 
             Object {},
             Array [
               Object {
-                "color": "rgb(17, 18, 54)",
+                "color": "rgb(22, 22, 22)",
               },
             ],
           ]
@@ -474,7 +474,7 @@ exports[`ios - iPhone X BpkNavigationBar light mode should render correctly 1`] 
           style={
             Array [
               Object {
-                "color": "rgb(17, 18, 54)",
+                "color": "rgb(22, 22, 22)",
                 "fontFamily": "System",
                 "fontSize": 16,
                 "fontWeight": "400",
@@ -486,7 +486,7 @@ exports[`ios - iPhone X BpkNavigationBar light mode should render correctly 1`] 
               },
               Array [
                 Object {
-                  "color": "rgb(17, 18, 54)",
+                  "color": "rgb(22, 22, 22)",
                 },
                 null,
               ],
@@ -506,10 +506,10 @@ exports[`ios - iPhone X BpkNavigationBar light mode should render correctly with
   style={
     Array [
       Object {
-        "backgroundColor": "rgb(241, 242, 248)",
+        "backgroundColor": "rgb(239, 241, 242)",
         "flexDirection": "column",
         "paddingHorizontal": 8,
-        "shadowColor": "rgb(221, 221, 229)",
+        "shadowColor": "rgb(224, 227, 229)",
         "shadowOffset": Object {
           "height": 1,
           "width": 0,
@@ -562,7 +562,7 @@ exports[`ios - iPhone X BpkNavigationBar light mode should render correctly with
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "System",
               "fontSize": 16,
               "fontWeight": "400",
@@ -572,7 +572,7 @@ exports[`ios - iPhone X BpkNavigationBar light mode should render correctly with
             Object {},
             Array [
               Object {
-                "color": "rgb(17, 18, 54)",
+                "color": "rgb(22, 22, 22)",
               },
             ],
           ]
@@ -615,7 +615,7 @@ exports[`ios - iPhone X BpkNavigationBar light mode should render correctly with
           style={
             Array [
               Object {
-                "color": "rgb(17, 18, 54)",
+                "color": "rgb(22, 22, 22)",
                 "fontFamily": "System",
                 "fontSize": 16,
                 "fontWeight": "400",
@@ -627,7 +627,7 @@ exports[`ios - iPhone X BpkNavigationBar light mode should render correctly with
               },
               Array [
                 Object {
-                  "color": "rgb(17, 18, 54)",
+                  "color": "rgb(22, 22, 22)",
                 },
                 null,
               ],
@@ -665,7 +665,7 @@ exports[`ios - iPhone X BpkNavigationBar light mode should render correctly with
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "System",
               "fontSize": 16,
               "fontWeight": "400",
@@ -677,7 +677,7 @@ exports[`ios - iPhone X BpkNavigationBar light mode should render correctly with
             },
             Array [
               Object {
-                "color": "rgb(17, 18, 54)",
+                "color": "rgb(22, 22, 22)",
               },
             ],
           ]

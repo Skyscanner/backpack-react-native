@@ -37,25 +37,6 @@ exports[`Android BpkDialog should render correctly open 1`] = `
 />
 `;
 
-exports[`Android BpkDialog should render correctly with bottom sheet style 1`] = `
-<AndroidBPKDialogView
-  actions={Array []}
-  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-  dialogType="alert"
-  icon={
-    Object {
-      "iconColor": "bpkMonteverde",
-      "iconId": "bpk_tick",
-    }
-  }
-  isOpen={true}
-  onChange={[Function]}
-  scrimEnabled={true}
-  title="BackpackDialog"
-  type="bottomSheet"
-/>
-`;
-
 exports[`Android BpkDialog should render correctly with disabled scrim actions 1`] = `
 <AndroidBPKDialogView
   actions={Array []}
@@ -72,6 +53,25 @@ exports[`Android BpkDialog should render correctly with disabled scrim actions 1
   scrimEnabled={false}
   title="BackpackDialog"
   type="alert"
+/>
+`;
+
+exports[`Android BpkDialog should render correctly with flare style 1`] = `
+<AndroidBPKDialogView
+  actions={Array []}
+  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  dialogType="alert"
+  icon={
+    Object {
+      "iconColor": "bpkMonteverde",
+      "iconId": "bpk_tick",
+    }
+  }
+  isOpen={true}
+  onChange={[Function]}
+  scrimEnabled={true}
+  title="BackpackDialog"
+  type="flare"
 />
 `;
 

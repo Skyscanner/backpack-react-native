@@ -20,7 +20,7 @@ exports[`Android BpkButtonLink dark mode should render correctly 1`] = `
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": -9934465,
+        "color": -11249568,
         "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
@@ -61,7 +61,7 @@ exports[`Android BpkButtonLink dark mode should render correctly 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(109, 159, 235)",
+              "color": "rgb(132, 233, 255)",
             },
           ],
         ]
@@ -95,7 +95,7 @@ exports[`Android BpkButtonLink dark mode should support overwriting styles 1`] =
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": -9934465,
+        "color": -11249568,
         "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
@@ -136,7 +136,7 @@ exports[`Android BpkButtonLink dark mode should support overwriting styles 1`] =
           },
           Array [
             Object {
-              "color": "rgb(109, 159, 235)",
+              "color": "rgb(132, 233, 255)",
             },
           ],
         ]
@@ -168,7 +168,7 @@ exports[`Android BpkButtonLink dark mode should support the "disabled" property 
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": -9934465,
+        "color": -11249568,
         "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
@@ -209,10 +209,10 @@ exports[`Android BpkButtonLink dark mode should support the "disabled" property 
           },
           Array [
             Object {
-              "color": "rgb(109, 159, 235)",
+              "color": "rgb(132, 233, 255)",
             },
             Object {
-              "color": "rgb(99, 99, 102)",
+              "color": "rgb(68, 80, 95)",
             },
           ],
         ]
@@ -244,7 +244,7 @@ exports[`Android BpkButtonLink dark mode should support the "icon" property 1`] 
     nativeBackgroundAndroid={
       Object {
         "borderless": true,
-        "color": -9934465,
+        "color": -11249568,
         "rippleRadius": undefined,
         "type": "RippleAndroid",
       }
@@ -285,7 +285,7 @@ exports[`Android BpkButtonLink dark mode should support the "icon" property 1`] 
           },
           Array [
             Object {
-              "color": "rgb(109, 159, 235)",
+              "color": "rgb(132, 233, 255)",
             },
           ],
         ]
@@ -308,7 +308,7 @@ exports[`Android BpkButtonLink dark mode should support the "icon" property 1`] 
           },
           Array [
             Object {
-              "color": "rgb(109, 159, 235)",
+              "color": "rgb(132, 233, 255)",
               "marginLeft": 4,
             },
           ],
@@ -370,7 +370,7 @@ exports[`Android BpkButtonLink light mode should render correctly 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -382,7 +382,7 @@ exports[`Android BpkButtonLink light mode should render correctly 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(7, 112, 227)",
+              "color": "rgb(0, 98, 227)",
             },
           ],
         ]
@@ -445,7 +445,7 @@ exports[`Android BpkButtonLink light mode should support overwriting styles 1`] 
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -457,7 +457,7 @@ exports[`Android BpkButtonLink light mode should support overwriting styles 1`] 
           },
           Array [
             Object {
-              "color": "rgb(7, 112, 227)",
+              "color": "rgb(0, 98, 227)",
             },
           ],
         ]
@@ -518,7 +518,7 @@ exports[`Android BpkButtonLink light mode should support the "disabled" property
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -530,10 +530,10 @@ exports[`Android BpkButtonLink light mode should support the "disabled" property
           },
           Array [
             Object {
-              "color": "rgb(7, 112, 227)",
+              "color": "rgb(0, 98, 227)",
             },
             Object {
-              "color": "rgb(178, 178, 191)",
+              "color": "rgb(194, 201, 205)",
             },
           ],
         ]
@@ -594,7 +594,7 @@ exports[`Android BpkButtonLink light mode should support the "icon" property 1`]
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -606,7 +606,7 @@ exports[`Android BpkButtonLink light mode should support the "icon" property 1`]
           },
           Array [
             Object {
-              "color": "rgb(7, 112, 227)",
+              "color": "rgb(0, 98, 227)",
             },
           ],
         ]
@@ -619,7 +619,7 @@ exports[`Android BpkButtonLink light mode should support the "icon" property 1`]
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -629,7 +629,7 @@ exports[`Android BpkButtonLink light mode should support the "icon" property 1`]
           },
           Array [
             Object {
-              "color": "rgb(7, 112, 227)",
+              "color": "rgb(0, 98, 227)",
               "marginLeft": 4,
             },
           ],
@@ -694,7 +694,7 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="leadi
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -706,7 +706,7 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="leadi
           },
           Array [
             Object {
-              "color": "rgb(7, 112, 227)",
+              "color": "rgb(0, 98, 227)",
             },
           ],
         ]
@@ -719,7 +719,7 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="leadi
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -729,7 +729,7 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="leadi
           },
           Array [
             Object {
-              "color": "rgb(7, 112, 227)",
+              "color": "rgb(0, 98, 227)",
               "marginLeft": 4,
             },
             Object {
@@ -795,7 +795,7 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="trail
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -807,7 +807,7 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="trail
           },
           Array [
             Object {
-              "color": "rgb(7, 112, 227)",
+              "color": "rgb(0, 98, 227)",
             },
           ],
         ]
@@ -820,7 +820,7 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="trail
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "BpkIcon",
             "fontSize": 24,
             "includeFontPadding": false,
@@ -830,7 +830,7 @@ exports[`Android BpkButtonLink should render correctly with iconAlignment="trail
           },
           Array [
             Object {
-              "color": "rgb(7, 112, 227)",
+              "color": "rgb(0, 98, 227)",
               "marginLeft": 4,
             },
           ],
@@ -892,7 +892,7 @@ exports[`Android BpkButtonLink should render correctly with text props provided 
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -904,7 +904,7 @@ exports[`Android BpkButtonLink should render correctly with text props provided 
           },
           Array [
             Object {
-              "color": "rgb(7, 112, 227)",
+              "color": "rgb(0, 98, 227)",
             },
           ],
         ]
@@ -965,7 +965,7 @@ exports[`Android BpkButtonLink should render correctly with theme prop 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -977,7 +977,7 @@ exports[`Android BpkButtonLink should render correctly with theme prop 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(7, 112, 227)",
+              "color": "rgb(0, 98, 227)",
             },
             Object {
               "color": "red",
@@ -1041,7 +1041,7 @@ exports[`Android BpkButtonLink should support elements as icons 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -1053,7 +1053,7 @@ exports[`Android BpkButtonLink should support elements as icons 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(7, 112, 227)",
+              "color": "rgb(0, 98, 227)",
             },
           ],
         ]
@@ -1066,7 +1066,7 @@ exports[`Android BpkButtonLink should support elements as icons 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 16,
             "fontWeight": "400",
@@ -1132,7 +1132,7 @@ exports[`Android should support "borderlessBackground" equal to false 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -1144,7 +1144,7 @@ exports[`Android should support "borderlessBackground" equal to false 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(7, 112, 227)",
+              "color": "rgb(0, 98, 227)",
             },
           ],
         ]
@@ -1205,7 +1205,7 @@ exports[`Android should support "uppercase" equal to false 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "sans-serif",
             "fontSize": 14,
             "fontWeight": "400",
@@ -1217,7 +1217,7 @@ exports[`Android should support "uppercase" equal to false 1`] = `
           },
           Array [
             Object {
-              "color": "rgb(7, 112, 227)",
+              "color": "rgb(0, 98, 227)",
             },
           ],
         ]

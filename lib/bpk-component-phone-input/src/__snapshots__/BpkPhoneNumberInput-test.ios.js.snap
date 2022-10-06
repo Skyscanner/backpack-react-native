@@ -18,7 +18,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(104, 105, 127, 1)",
+          "color": "rgba(84, 88, 96, 1)",
           "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "400",
@@ -53,7 +53,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
             Object {
               "alignItems": "center",
               "borderBottomWidth": 1,
-              "borderColor": "rgb(221, 221, 229)",
+              "borderColor": "rgb(224, 227, 229)",
               "flexDirection": "row",
               "justifyContent": "space-between",
               "paddingVertical": 4,
@@ -68,7 +68,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
               undefined,
               Array [
                 Object {
-                  "backgroundColor": "rgb(241, 242, 248)",
+                  "backgroundColor": "rgb(239, 241, 242)",
                   "height": 12,
                   "marginEnd": 8,
                   "width": 16,
@@ -82,7 +82,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(17, 18, 54)",
+                "color": "rgb(22, 22, 22)",
                 "fontFamily": "System",
                 "fontSize": 16,
                 "fontWeight": "400",
@@ -106,7 +106,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(17, 18, 54)",
+                "color": "rgb(22, 22, 22)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -130,7 +130,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "rgb(17, 18, 54)",
+              "backgroundColor": "rgb(22, 22, 22)",
               "bottom": 0,
               "flex": 1,
               "left": 0,
@@ -147,7 +147,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(221, 221, 229, 1)",
+          "borderBottomColor": "rgba(224, 227, 229, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -163,13 +163,13 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(205, 205, 215)"
+        placeholderTextColor="rgb(194, 201, 205)"
         rejectResponderTermination={true}
         style={
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",
@@ -206,7 +206,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(221, 221, 229, 1)",
+          "color": "rgba(224, 227, 229, 1)",
           "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "400",
@@ -241,7 +241,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
             Object {
               "alignItems": "center",
               "borderBottomWidth": 1,
-              "borderColor": "rgb(221, 221, 229)",
+              "borderColor": "rgb(224, 227, 229)",
               "flexDirection": "row",
               "justifyContent": "space-between",
               "paddingVertical": 4,
@@ -256,7 +256,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
               undefined,
               Array [
                 Object {
-                  "backgroundColor": "rgb(241, 242, 248)",
+                  "backgroundColor": "rgb(239, 241, 242)",
                   "height": 12,
                   "marginEnd": 8,
                   "width": 16,
@@ -270,7 +270,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
           style={
             Array [
               Object {
-                "color": "rgb(17, 18, 54)",
+                "color": "rgb(22, 22, 22)",
                 "fontFamily": "System",
                 "fontSize": 16,
                 "fontWeight": "400",
@@ -284,7 +284,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
                 },
                 Array [
                   Object {
-                    "color": "rgb(221, 221, 229)",
+                    "color": "rgb(224, 227, 229)",
                   },
                 ],
               ],
@@ -298,7 +298,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
           style={
             Array [
               Object {
-                "color": "rgb(17, 18, 54)",
+                "color": "rgb(22, 22, 22)",
                 "fontFamily": "BpkIcon",
                 "fontSize": 24,
                 "includeFontPadding": false,
@@ -311,7 +311,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
                   "marginStart": 4,
                 },
                 Object {
-                  "color": "rgb(221, 221, 229)",
+                  "color": "rgb(224, 227, 229)",
                 },
               ],
             ]
@@ -324,7 +324,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
         style={
           Array [
             Object {
-              "backgroundColor": "rgb(17, 18, 54)",
+              "backgroundColor": "rgb(22, 22, 22)",
               "bottom": 0,
               "flex": 1,
               "left": 0,
@@ -341,7 +341,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(221, 221, 229, 1)",
+          "borderBottomColor": "rgba(224, 227, 229, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -357,13 +357,13 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(205, 205, 215)"
+        placeholderTextColor="rgb(194, 201, 205)"
         rejectResponderTermination={true}
         style={
           Array [
             Object {
               "borderBottomWidth": 0,
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "flex": 1,
               "fontSize": 16,
               "fontWeight": "400",

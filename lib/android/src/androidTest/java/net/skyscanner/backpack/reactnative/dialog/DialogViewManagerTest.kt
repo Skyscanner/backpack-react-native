@@ -92,8 +92,8 @@ class DialogViewManagerTest {
     manager.updateProperties(view, buildProps("dialogType", "alert"))
     assertEquals(BpkDialog.Style.ALERT, view.state.dialogType)
 
-    manager.updateProperties(view, buildProps("dialogType", "bottomSheet"))
-    assertEquals(BpkDialog.Style.BOTTOM_SHEET, view.state.dialogType)
+    manager.updateProperties(view, buildProps("dialogType", "flare"))
+    assertEquals(BpkDialog.Style.FLARE, view.state.dialogType)
   }
 
   @Test

@@ -82,7 +82,7 @@ exports[`Android BpkPicker dark mode should render correctly 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(44, 44, 46)",
+            "backgroundColor": "rgb(1, 9, 19)",
             "borderRadius": 4,
             "elevation": 0,
           },
@@ -107,7 +107,7 @@ exports[`Android BpkPicker dark mode should render correctly 1`] = `
             nativeBackgroundAndroid={
               Object {
                 "borderless": false,
-                "color": -9934465,
+                "color": -11249568,
                 "rippleRadius": undefined,
                 "type": "RippleAndroid",
               }
@@ -157,7 +157,7 @@ exports[`Android BpkPicker dark mode should render correctly 1`] = `
             nativeBackgroundAndroid={
               Object {
                 "borderless": false,
-                "color": -9934465,
+                "color": -11249568,
                 "rippleRadius": undefined,
                 "type": "RippleAndroid",
               }
@@ -284,7 +284,7 @@ exports[`Android BpkPicker dark mode should render correctly with a selected val
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(44, 44, 46)",
+            "backgroundColor": "rgb(1, 9, 19)",
             "borderRadius": 4,
             "elevation": 0,
           },
@@ -309,7 +309,7 @@ exports[`Android BpkPicker dark mode should render correctly with a selected val
             nativeBackgroundAndroid={
               Object {
                 "borderless": false,
-                "color": -9934465,
+                "color": -11249568,
                 "rippleRadius": undefined,
                 "type": "RippleAndroid",
               }
@@ -341,7 +341,7 @@ exports[`Android BpkPicker dark mode should render correctly with a selected val
                   },
                   Object {},
                   Object {
-                    "color": "rgb(109, 159, 235)",
+                    "color": "rgb(132, 233, 255)",
                   },
                 ]
               }
@@ -361,7 +361,7 @@ exports[`Android BpkPicker dark mode should render correctly with a selected val
             nativeBackgroundAndroid={
               Object {
                 "borderless": false,
-                "color": -9934465,
+                "color": -11249568,
                 "rippleRadius": undefined,
                 "type": "RippleAndroid",
               }
@@ -536,7 +536,7 @@ exports[`Android BpkPicker light mode should render correctly 1`] = `
               style={
                 Array [
                   Object {
-                    "color": "rgb(17, 18, 54)",
+                    "color": "rgb(22, 22, 22)",
                     "fontFamily": "sans-serif",
                     "fontSize": 16,
                     "fontWeight": "400",
@@ -586,7 +586,7 @@ exports[`Android BpkPicker light mode should render correctly 1`] = `
               style={
                 Array [
                   Object {
-                    "color": "rgb(17, 18, 54)",
+                    "color": "rgb(22, 22, 22)",
                     "fontFamily": "sans-serif",
                     "fontSize": 16,
                     "fontWeight": "400",
@@ -738,7 +738,7 @@ exports[`Android BpkPicker light mode should render correctly with a selected va
               style={
                 Array [
                   Object {
-                    "color": "rgb(17, 18, 54)",
+                    "color": "rgb(22, 22, 22)",
                     "fontFamily": "sans-serif",
                     "fontSize": 16,
                     "fontWeight": "400",
@@ -747,7 +747,7 @@ exports[`Android BpkPicker light mode should render correctly with a selected va
                   },
                   Object {},
                   Object {
-                    "color": "rgb(7, 112, 227)",
+                    "color": "rgb(0, 98, 227)",
                   },
                 ]
               }
@@ -790,7 +790,7 @@ exports[`Android BpkPicker light mode should render correctly with a selected va
               style={
                 Array [
                   Object {
-                    "color": "rgb(17, 18, 54)",
+                    "color": "rgb(22, 22, 22)",
                     "fontFamily": "sans-serif",
                     "fontSize": 16,
                     "fontWeight": "400",

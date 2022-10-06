@@ -2,13 +2,18 @@
 
 > Place your changes below this line. 
 
-## Added 
+## Breaking:
 
-Bumped supported Node version to `lts/fermium` (`v14`) to move away from EOL Node 12.
+- bpk-component-dialog:
+  - Removed `bottomSheet` style
+  - Added `flare` style.
 
 ## Fixed
 
-Fixed calendar range to be inclusive on iOS
+- Upgraded Backpack Android version to the latest.
+
+- bpk-component-calendar:
+  - Fixed calendar range to be inclusive on iOS
 
 ## How to write a good changelog entry
 

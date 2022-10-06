@@ -52,9 +52,6 @@
     BPKDialogControllerStyle dialogStyleAlert = [RCTConvert BPKDialogControllerStyle:@"alert"];
     XCTAssertTrue(dialogStyleAlert == BPKDialogControllerStyleAlert);
 
-    BPKDialogControllerStyle dialogStyleBottomSheet = [RCTConvert BPKDialogControllerStyle:@"bottomSheet"];
-    XCTAssertTrue(dialogStyleBottomSheet == BPKDialogControllerStyleBottomSheet);
-
     // test that invalid values fall back to a sensible default
     BPKDialogControllerStyle dialogStyleInvalid = [RCTConvert BPKDialogControllerStyle:@"invalid"];
     XCTAssertTrue(dialogStyleInvalid == BPKDialogControllerStyleAlert);

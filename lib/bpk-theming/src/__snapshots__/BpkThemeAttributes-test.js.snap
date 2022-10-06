@@ -4,7 +4,7 @@ exports[`BpkThemeAttributes uses the default primary color when rendered outside
 <View
   style={
     Object {
-      "backgroundColor": "rgb(7, 112, 227)",
+      "backgroundColor": "rgb(0, 98, 227)",
     }
   }
 />

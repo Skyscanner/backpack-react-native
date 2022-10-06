@@ -65,7 +65,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "borderTopColor": "rgb(221, 221, 229)",
+            "borderTopColor": "rgb(224, 227, 229)",
             "borderTopWidth": 1,
             "flexDirection": "row",
             "height": 48,
@@ -79,7 +79,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(17, 18, 54)",
+                "color": "rgb(22, 22, 22)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -90,7 +90,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
                 "fontFamily": "sans-serif-medium",
               },
               Object {
-                "color": "rgb(104, 105, 127)",
+                "color": "rgb(84, 88, 96)",
               },
             ]
           }
@@ -148,7 +148,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
             style={
               Array [
                 Object {
-                  "borderColor": "rgb(221, 221, 229)",
+                  "borderColor": "rgb(224, 227, 229)",
                   "borderWidth": 1,
                 },
                 Object {
@@ -169,7 +169,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
             style={
               Array [
                 Object {
-                  "color": "rgb(17, 18, 54)",
+                  "color": "rgb(22, 22, 22)",
                   "fontFamily": "sans-serif",
                   "fontSize": 16,
                   "fontWeight": "400",
@@ -193,7 +193,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
             Array [
               Object {
                 "alignItems": "center",
-                "borderColor": "rgb(221, 221, 229)",
+                "borderColor": "rgb(224, 227, 229)",
                 "borderRadius": 20,
                 "borderWidth": 1,
                 "height": 20,
@@ -230,7 +230,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "borderTopColor": "rgb(221, 221, 229)",
+            "borderTopColor": "rgb(224, 227, 229)",
             "borderTopWidth": 1,
             "flexDirection": "row",
             "height": 48,
@@ -244,7 +244,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(17, 18, 54)",
+                "color": "rgb(22, 22, 22)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -255,7 +255,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
                 "fontFamily": "sans-serif-medium",
               },
               Object {
-                "color": "rgb(104, 105, 127)",
+                "color": "rgb(84, 88, 96)",
               },
             ]
           }
@@ -313,7 +313,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
             style={
               Array [
                 Object {
-                  "borderColor": "rgb(221, 221, 229)",
+                  "borderColor": "rgb(224, 227, 229)",
                   "borderWidth": 1,
                 },
                 Object {
@@ -334,7 +334,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
             style={
               Array [
                 Object {
-                  "color": "rgb(17, 18, 54)",
+                  "color": "rgb(22, 22, 22)",
                   "fontFamily": "sans-serif",
                   "fontSize": 16,
                   "fontWeight": "400",
@@ -358,7 +358,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
             Array [
               Object {
                 "alignItems": "center",
-                "borderColor": "rgb(221, 221, 229)",
+                "borderColor": "rgb(224, 227, 229)",
                 "borderRadius": 20,
                 "borderWidth": 1,
                 "height": 20,
@@ -395,7 +395,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "borderTopColor": "rgb(221, 221, 229)",
+            "borderTopColor": "rgb(224, 227, 229)",
             "borderTopWidth": 1,
             "flexDirection": "row",
             "height": 48,
@@ -409,7 +409,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
           style={
             Array [
               Object {
-                "color": "rgb(17, 18, 54)",
+                "color": "rgb(22, 22, 22)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -420,7 +420,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
                 "fontFamily": "sans-serif-medium",
               },
               Object {
-                "color": "rgb(104, 105, 127)",
+                "color": "rgb(84, 88, 96)",
               },
             ]
           }
@@ -478,7 +478,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
             style={
               Array [
                 Object {
-                  "borderColor": "rgb(221, 221, 229)",
+                  "borderColor": "rgb(224, 227, 229)",
                   "borderWidth": 1,
                 },
                 Object {
@@ -499,7 +499,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
             style={
               Array [
                 Object {
-                  "color": "rgb(17, 18, 54)",
+                  "color": "rgb(22, 22, 22)",
                   "fontFamily": "sans-serif",
                   "fontSize": 16,
                   "fontWeight": "400",
@@ -523,7 +523,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
             Array [
               Object {
                 "alignItems": "center",
-                "borderColor": "rgb(221, 221, 229)",
+                "borderColor": "rgb(224, 227, 229)",
                 "borderRadius": 20,
                 "borderWidth": 1,
                 "height": 20,
@@ -621,7 +621,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
         style={
           Object {
             "alignItems": "center",
-            "borderTopColor": "rgb(221, 221, 229)",
+            "borderTopColor": "rgb(224, 227, 229)",
             "borderTopWidth": 1,
             "flexDirection": "row",
             "height": 48,
@@ -635,7 +635,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
           style={
             Array [
               Object {
-                "color": "rgb(17, 18, 54)",
+                "color": "rgb(22, 22, 22)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -646,7 +646,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
                 "fontFamily": "sans-serif-medium",
               },
               Object {
-                "color": "rgb(104, 105, 127)",
+                "color": "rgb(84, 88, 96)",
               },
             ]
           }
@@ -704,7 +704,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
             style={
               Array [
                 Object {
-                  "borderColor": "rgb(221, 221, 229)",
+                  "borderColor": "rgb(224, 227, 229)",
                   "borderWidth": 1,
                 },
                 Object {
@@ -725,7 +725,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
             style={
               Array [
                 Object {
-                  "color": "rgb(17, 18, 54)",
+                  "color": "rgb(22, 22, 22)",
                   "fontFamily": "sans-serif",
                   "fontSize": 16,
                   "fontWeight": "400",
@@ -738,7 +738,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
                     "flex": 1,
                   },
                   Object {
-                    "color": "rgb(7, 112, 227)",
+                    "color": "rgb(0, 98, 227)",
                   },
                 ],
               ]
@@ -752,7 +752,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
             Array [
               Object {
                 "alignItems": "center",
-                "borderColor": "rgb(221, 221, 229)",
+                "borderColor": "rgb(224, 227, 229)",
                 "borderRadius": 20,
                 "borderWidth": 1,
                 "height": 20,
@@ -760,7 +760,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
                 "width": 20,
               },
               Object {
-                "borderColor": "rgb(7, 112, 227)",
+                "borderColor": "rgb(0, 98, 227)",
               },
             ]
           }
@@ -775,7 +775,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
                   "width": 10,
                 },
                 Object {
-                  "backgroundColor": "rgb(7, 112, 227)",
+                  "backgroundColor": "rgb(0, 98, 227)",
                 },
               ]
             }
@@ -795,7 +795,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
         style={
           Object {
             "alignItems": "center",
-            "borderTopColor": "rgb(221, 221, 229)",
+            "borderTopColor": "rgb(224, 227, 229)",
             "borderTopWidth": 1,
             "flexDirection": "row",
             "height": 48,
@@ -809,7 +809,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
           style={
             Array [
               Object {
-                "color": "rgb(17, 18, 54)",
+                "color": "rgb(22, 22, 22)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -820,7 +820,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
                 "fontFamily": "sans-serif-medium",
               },
               Object {
-                "color": "rgb(104, 105, 127)",
+                "color": "rgb(84, 88, 96)",
               },
             ]
           }
@@ -878,7 +878,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
             style={
               Array [
                 Object {
-                  "borderColor": "rgb(221, 221, 229)",
+                  "borderColor": "rgb(224, 227, 229)",
                   "borderWidth": 1,
                 },
                 Object {
@@ -899,7 +899,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
             style={
               Array [
                 Object {
-                  "color": "rgb(17, 18, 54)",
+                  "color": "rgb(22, 22, 22)",
                   "fontFamily": "sans-serif",
                   "fontSize": 16,
                   "fontWeight": "400",
@@ -923,7 +923,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
             Array [
               Object {
                 "alignItems": "center",
-                "borderColor": "rgb(221, 221, 229)",
+                "borderColor": "rgb(224, 227, 229)",
                 "borderRadius": 20,
                 "borderWidth": 1,
                 "height": 20,
@@ -960,7 +960,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
         style={
           Object {
             "alignItems": "center",
-            "borderTopColor": "rgb(221, 221, 229)",
+            "borderTopColor": "rgb(224, 227, 229)",
             "borderTopWidth": 1,
             "flexDirection": "row",
             "height": 48,
@@ -974,7 +974,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
           style={
             Array [
               Object {
-                "color": "rgb(17, 18, 54)",
+                "color": "rgb(22, 22, 22)",
                 "fontFamily": "sans-serif",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -985,7 +985,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
                 "fontFamily": "sans-serif-medium",
               },
               Object {
-                "color": "rgb(104, 105, 127)",
+                "color": "rgb(84, 88, 96)",
               },
             ]
           }
@@ -1043,7 +1043,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
             style={
               Array [
                 Object {
-                  "borderColor": "rgb(221, 221, 229)",
+                  "borderColor": "rgb(224, 227, 229)",
                   "borderWidth": 1,
                 },
                 Object {
@@ -1064,7 +1064,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
             style={
               Array [
                 Object {
-                  "color": "rgb(17, 18, 54)",
+                  "color": "rgb(22, 22, 22)",
                   "fontFamily": "sans-serif",
                   "fontSize": 16,
                   "fontWeight": "400",
@@ -1088,7 +1088,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
             Array [
               Object {
                 "alignItems": "center",
-                "borderColor": "rgb(221, 221, 229)",
+                "borderColor": "rgb(224, 227, 229)",
                 "borderRadius": 20,
                 "borderWidth": 1,
                 "height": 20,

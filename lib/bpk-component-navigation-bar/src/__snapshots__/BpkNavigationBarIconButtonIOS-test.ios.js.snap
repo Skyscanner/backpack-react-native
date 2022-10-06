@@ -89,7 +89,7 @@ exports[`iOS BpkNavigationBarIconButtonIOS dark mode should render correctly dis
             "lineHeight": 28,
           },
           Object {
-            "color": "rgb(178, 178, 191)",
+            "color": "rgb(194, 201, 205)",
           },
         ],
       ]
@@ -278,7 +278,7 @@ exports[`iOS BpkNavigationBarIconButtonIOS light mode should render correctly 1`
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -289,7 +289,7 @@ exports[`iOS BpkNavigationBarIconButtonIOS light mode should render correctly 1`
             "lineHeight": 28,
           },
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
           },
         ],
       ]
@@ -328,7 +328,7 @@ exports[`iOS BpkNavigationBarIconButtonIOS light mode should render correctly di
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -339,7 +339,7 @@ exports[`iOS BpkNavigationBarIconButtonIOS light mode should render correctly di
             "lineHeight": 28,
           },
           Object {
-            "color": "rgb(178, 178, 191)",
+            "color": "rgb(194, 201, 205)",
           },
         ],
       ]
@@ -378,7 +378,7 @@ exports[`iOS BpkNavigationBarIconButtonIOS light mode should render correctly le
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -389,7 +389,7 @@ exports[`iOS BpkNavigationBarIconButtonIOS light mode should render correctly le
             "lineHeight": 28,
           },
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
           },
         ],
       ]
@@ -428,7 +428,7 @@ exports[`iOS BpkNavigationBarIconButtonIOS light mode should resepect "disabledT
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -478,7 +478,7 @@ exports[`iOS BpkNavigationBarIconButtonIOS light mode should resepect "tintColor
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -529,7 +529,7 @@ exports[`iOS BpkNavigationBarIconButtonIOS should forward custom props 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "BpkIcon",
           "fontSize": 24,
           "includeFontPadding": false,
@@ -540,7 +540,7 @@ exports[`iOS BpkNavigationBarIconButtonIOS should forward custom props 1`] = `
             "lineHeight": 28,
           },
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
           },
         ],
       ]

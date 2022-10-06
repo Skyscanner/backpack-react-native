@@ -111,7 +111,7 @@ exports[`iOS BpkHorizontalNavItem dark mode should render correctly with "disabl
               "paddingHorizontal": 16,
             },
             Object {
-              "color": "rgb(99, 99, 102)",
+              "color": "rgb(68, 80, 95)",
             },
           ],
         ]
@@ -182,7 +182,7 @@ exports[`iOS BpkHorizontalNavItem dark mode should render correctly with "select
               "paddingHorizontal": 16,
             },
             Object {
-              "color": "rgb(109, 159, 235)",
+              "color": "rgb(132, 233, 255)",
             },
           ],
         ]
@@ -240,7 +240,7 @@ exports[`iOS BpkHorizontalNavItem light mode should render correctly 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -263,7 +263,7 @@ exports[`iOS BpkHorizontalNavItem light mode should render correctly 1`] = `
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(17, 18, 54)",
+          "backgroundColor": "rgb(22, 22, 22)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -308,7 +308,7 @@ exports[`iOS BpkHorizontalNavItem light mode should render correctly with "disab
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -321,7 +321,7 @@ exports[`iOS BpkHorizontalNavItem light mode should render correctly with "disab
               "paddingHorizontal": 16,
             },
             Object {
-              "color": "rgb(178, 178, 191)",
+              "color": "rgb(194, 201, 205)",
             },
           ],
         ]
@@ -334,7 +334,7 @@ exports[`iOS BpkHorizontalNavItem light mode should render correctly with "disab
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(17, 18, 54)",
+          "backgroundColor": "rgb(22, 22, 22)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -379,7 +379,7 @@ exports[`iOS BpkHorizontalNavItem light mode should render correctly with "selec
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -392,7 +392,7 @@ exports[`iOS BpkHorizontalNavItem light mode should render correctly with "selec
               "paddingHorizontal": 16,
             },
             Object {
-              "color": "rgb(7, 112, 227)",
+              "color": "rgb(0, 98, 227)",
             },
           ],
         ]
@@ -405,7 +405,7 @@ exports[`iOS BpkHorizontalNavItem light mode should render correctly with "selec
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(17, 18, 54)",
+          "backgroundColor": "rgb(22, 22, 22)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -453,7 +453,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly with "small" prop 1`] 
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "System",
             "fontSize": 14,
             "fontWeight": "400",
@@ -476,7 +476,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly with "small" prop 1`] 
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(17, 18, 54)",
+          "backgroundColor": "rgb(22, 22, 22)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -521,7 +521,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly with "spaceAround" pro
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -544,7 +544,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly with "spaceAround" pro
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(17, 18, 54)",
+          "backgroundColor": "rgb(22, 22, 22)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -589,7 +589,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly with arbitrary props 1
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -612,7 +612,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly with arbitrary props 1
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(17, 18, 54)",
+          "backgroundColor": "rgb(22, 22, 22)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -660,7 +660,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly with custom "style" pr
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -683,7 +683,7 @@ exports[`iOS BpkHorizontalNavItem should render correctly with custom "style" pr
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(17, 18, 54)",
+          "backgroundColor": "rgb(22, 22, 22)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -728,7 +728,7 @@ exports[`iOS BpkHorizontalNavItem should render item text correctly with custom 
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -754,7 +754,7 @@ exports[`iOS BpkHorizontalNavItem should render item text correctly with custom 
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(17, 18, 54)",
+          "backgroundColor": "rgb(22, 22, 22)",
           "bottom": 0,
           "flex": 1,
           "left": 0,
@@ -799,7 +799,7 @@ exports[`iOS BpkHorizontalNavItem should support theming 1`] = `
       style={
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -822,7 +822,7 @@ exports[`iOS BpkHorizontalNavItem should support theming 1`] = `
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(17, 18, 54)",
+          "backgroundColor": "rgb(22, 22, 22)",
           "bottom": 0,
           "flex": 1,
           "left": 0,

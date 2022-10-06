@@ -91,7 +91,7 @@ exports[`IOS BpkCarousel should render correctly 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgba(17, 18, 54, 0.3)",
+          "backgroundColor": "rgba(22, 22, 22, 0.3)",
           "borderRadius": 4,
           "flexDirection": "row",
           "height": 24,
@@ -209,7 +209,7 @@ exports[`IOS BpkCarousel should render correctly with an "accessibilityLabel" fu
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgba(17, 18, 54, 0.3)",
+          "backgroundColor": "rgba(22, 22, 22, 0.3)",
           "borderRadius": 4,
           "flexDirection": "row",
           "height": 24,

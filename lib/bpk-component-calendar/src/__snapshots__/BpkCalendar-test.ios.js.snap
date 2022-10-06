@@ -150,7 +150,7 @@ exports[`iOS BpkCalendar should render correctly with color buckets 1`] = `
   colorBuckets={
     Array [
       Object {
-        "color": 4291882732,
+        "color": 4292149234,
         "days": Object {
           "dates": Array [
             1576627200000,
@@ -160,7 +160,7 @@ exports[`iOS BpkCalendar should render correctly with color buckets 1`] = `
         "textStyle": undefined,
       },
       Object {
-        "color": 4291904347,
+        "color": 4293331046,
         "days": Object {
           "dates": Array [
             1576627200000,

@@ -138,7 +138,7 @@ exports[`iOS BpkNavigationBarBackButtonIOS light mode should render correctly 1`
           },
         ],
         Object {
-          "tintColor": "rgb(17, 18, 54)",
+          "tintColor": "rgb(22, 22, 22)",
         },
       ]
     }
@@ -179,7 +179,7 @@ exports[`iOS BpkNavigationBarBackButtonIOS light mode should render correctly wi
           },
         ],
         Object {
-          "tintColor": "rgb(17, 18, 54)",
+          "tintColor": "rgb(22, 22, 22)",
         },
       ]
     }
@@ -189,7 +189,7 @@ exports[`iOS BpkNavigationBarBackButtonIOS light mode should render correctly wi
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -199,7 +199,7 @@ exports[`iOS BpkNavigationBarBackButtonIOS light mode should render correctly wi
         Object {},
         Array [
           Object {
-            "color": "rgb(17, 18, 54)",
+            "color": "rgb(22, 22, 22)",
           },
         ],
       ]
@@ -244,7 +244,7 @@ exports[`iOS BpkNavigationBarBackButtonIOS should forward custom props 1`] = `
           },
         ],
         Object {
-          "tintColor": "rgb(17, 18, 54)",
+          "tintColor": "rgb(22, 22, 22)",
         },
       ]
     }

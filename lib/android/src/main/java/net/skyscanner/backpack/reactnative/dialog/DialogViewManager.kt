@@ -47,7 +47,7 @@ class DialogViewManager : ViewGroupManager<RNDialog>() {
   fun setDialogType(view: RNDialog, dialogType: String) {
     view.state.dialogType = when (dialogType) {
       "alert" -> Style.ALERT
-      "bottomSheet" -> Style.BOTTOM_SHEET
+      "flare" -> Style.FLARE
       else -> throw JSApplicationIllegalArgumentException("Dialog type $dialogType is not supported")
     }
   }

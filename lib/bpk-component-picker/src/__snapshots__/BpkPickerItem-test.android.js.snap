@@ -9,7 +9,7 @@ exports[`Android BpkPickerItem dark mode should render correctly 1`] = `
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": -9934465,
+      "color": -11249568,
       "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
@@ -58,7 +58,7 @@ exports[`Android BpkPickerItem dark mode should render correctly with an onPress
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": -9934465,
+      "color": -11249568,
       "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
@@ -107,7 +107,7 @@ exports[`Android BpkPickerItem dark mode should render correctly with the select
   nativeBackgroundAndroid={
     Object {
       "borderless": false,
-      "color": -9934465,
+      "color": -11249568,
       "rippleRadius": undefined,
       "type": "RippleAndroid",
     }
@@ -139,7 +139,7 @@ exports[`Android BpkPickerItem dark mode should render correctly with the select
         },
         Object {},
         Object {
-          "color": "rgb(109, 159, 235)",
+          "color": "rgb(132, 233, 255)",
         },
       ]
     }
@@ -181,7 +181,7 @@ exports[`Android BpkPickerItem light mode should render correctly 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -230,7 +230,7 @@ exports[`Android BpkPickerItem light mode should render correctly with an onPres
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -279,7 +279,7 @@ exports[`Android BpkPickerItem light mode should render correctly with the selec
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "sans-serif",
           "fontSize": 16,
           "fontWeight": "400",
@@ -288,7 +288,7 @@ exports[`Android BpkPickerItem light mode should render correctly with the selec
         },
         Object {},
         Object {
-          "color": "rgb(7, 112, 227)",
+          "color": "rgb(0, 98, 227)",
         },
       ]
     }

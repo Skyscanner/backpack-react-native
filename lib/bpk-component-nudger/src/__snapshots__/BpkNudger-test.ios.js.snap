@@ -44,7 +44,7 @@ exports[`iOS BpkNudger should render correctly 1`] = `
           null,
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
-            "borderColor": "rgb(221, 221, 229)",
+            "borderColor": "rgb(224, 227, 229)",
             "borderRadius": 40,
           },
           Object {
@@ -61,7 +61,7 @@ exports[`iOS BpkNudger should render correctly 1`] = `
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "BpkIcon",
               "fontSize": 24,
               "includeFontPadding": false,
@@ -74,7 +74,7 @@ exports[`iOS BpkNudger should render correctly 1`] = `
                 "marginEnd": 4,
               },
               Object {
-                "color": "rgb(7, 112, 227)",
+                "color": "rgb(0, 98, 227)",
               },
               Object {
                 "marginEnd": 0,
@@ -95,7 +95,7 @@ exports[`iOS BpkNudger should render correctly 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(17, 18, 54)",
+            "backgroundColor": "rgb(22, 22, 22)",
             "bottom": 0,
             "flex": 1,
             "left": 0,
@@ -108,7 +108,7 @@ exports[`iOS BpkNudger should render correctly 1`] = `
             "borderRadius": 40,
           },
           Object {
-            "borderColor": "rgb(221, 221, 229)",
+            "borderColor": "rgb(224, 227, 229)",
             "borderWidth": 2,
           },
         ]
@@ -120,7 +120,7 @@ exports[`iOS BpkNudger should render correctly 1`] = `
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "System",
           "fontSize": 20,
           "fontWeight": "400",
@@ -171,7 +171,7 @@ exports[`iOS BpkNudger should render correctly 1`] = `
           null,
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
-            "borderColor": "rgb(221, 221, 229)",
+            "borderColor": "rgb(224, 227, 229)",
             "borderRadius": 40,
           },
           Object {
@@ -188,7 +188,7 @@ exports[`iOS BpkNudger should render correctly 1`] = `
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "BpkIcon",
               "fontSize": 24,
               "includeFontPadding": false,
@@ -201,7 +201,7 @@ exports[`iOS BpkNudger should render correctly 1`] = `
                 "marginEnd": 4,
               },
               Object {
-                "color": "rgb(7, 112, 227)",
+                "color": "rgb(0, 98, 227)",
               },
               Object {
                 "marginEnd": 0,
@@ -222,7 +222,7 @@ exports[`iOS BpkNudger should render correctly 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(17, 18, 54)",
+            "backgroundColor": "rgb(22, 22, 22)",
             "bottom": 0,
             "flex": 1,
             "left": 0,
@@ -235,7 +235,7 @@ exports[`iOS BpkNudger should render correctly 1`] = `
             "borderRadius": 40,
           },
           Object {
-            "borderColor": "rgb(221, 221, 229)",
+            "borderColor": "rgb(224, 227, 229)",
             "borderWidth": 2,
           },
         ]
@@ -288,8 +288,8 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
           },
           null,
           Object {
-            "backgroundColor": "rgb(221, 221, 229)",
-            "borderColor": "rgb(221, 221, 229)",
+            "backgroundColor": "rgb(224, 227, 229)",
+            "borderColor": "rgb(224, 227, 229)",
             "borderRadius": 40,
           },
           Object {
@@ -306,7 +306,7 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "BpkIcon",
               "fontSize": 24,
               "includeFontPadding": false,
@@ -319,7 +319,7 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
                 "marginEnd": 4,
               },
               Object {
-                "color": "rgb(178, 178, 191)",
+                "color": "rgb(194, 201, 205)",
               },
               Object {
                 "marginEnd": 0,
@@ -340,7 +340,7 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(17, 18, 54)",
+            "backgroundColor": "rgb(22, 22, 22)",
             "bottom": 0,
             "flex": 1,
             "left": 0,
@@ -353,7 +353,7 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
             "borderRadius": 40,
           },
           Object {
-            "borderColor": "rgb(221, 221, 229)",
+            "borderColor": "rgb(224, 227, 229)",
             "borderWidth": 2,
           },
         ]
@@ -365,7 +365,7 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "System",
           "fontSize": 20,
           "fontWeight": "400",
@@ -416,7 +416,7 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
           null,
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
-            "borderColor": "rgb(221, 221, 229)",
+            "borderColor": "rgb(224, 227, 229)",
             "borderRadius": 40,
           },
           Object {
@@ -433,7 +433,7 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "BpkIcon",
               "fontSize": 24,
               "includeFontPadding": false,
@@ -446,7 +446,7 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
                 "marginEnd": 4,
               },
               Object {
-                "color": "rgb(7, 112, 227)",
+                "color": "rgb(0, 98, 227)",
               },
               Object {
                 "marginEnd": 0,
@@ -467,7 +467,7 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(17, 18, 54)",
+            "backgroundColor": "rgb(22, 22, 22)",
             "bottom": 0,
             "flex": 1,
             "left": 0,
@@ -480,7 +480,7 @@ exports[`iOS BpkNudger should render correctly when value is a not an integer 1`
             "borderRadius": 40,
           },
           Object {
-            "borderColor": "rgb(221, 221, 229)",
+            "borderColor": "rgb(224, 227, 229)",
             "borderWidth": 2,
           },
         ]
@@ -534,7 +534,7 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
           null,
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
-            "borderColor": "rgb(221, 221, 229)",
+            "borderColor": "rgb(224, 227, 229)",
             "borderRadius": 40,
           },
           Object {
@@ -551,7 +551,7 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "BpkIcon",
               "fontSize": 24,
               "includeFontPadding": false,
@@ -564,7 +564,7 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
                 "marginEnd": 4,
               },
               Object {
-                "color": "rgb(7, 112, 227)",
+                "color": "rgb(0, 98, 227)",
               },
               Object {
                 "marginEnd": 0,
@@ -585,7 +585,7 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(17, 18, 54)",
+            "backgroundColor": "rgb(22, 22, 22)",
             "bottom": 0,
             "flex": 1,
             "left": 0,
@@ -598,7 +598,7 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
             "borderRadius": 40,
           },
           Object {
-            "borderColor": "rgb(221, 221, 229)",
+            "borderColor": "rgb(224, 227, 229)",
             "borderWidth": 2,
           },
         ]
@@ -610,7 +610,7 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "System",
           "fontSize": 20,
           "fontWeight": "400",
@@ -660,8 +660,8 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
           },
           null,
           Object {
-            "backgroundColor": "rgb(221, 221, 229)",
-            "borderColor": "rgb(221, 221, 229)",
+            "backgroundColor": "rgb(224, 227, 229)",
+            "borderColor": "rgb(224, 227, 229)",
             "borderRadius": 40,
           },
           Object {
@@ -678,7 +678,7 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "BpkIcon",
               "fontSize": 24,
               "includeFontPadding": false,
@@ -691,7 +691,7 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
                 "marginEnd": 4,
               },
               Object {
-                "color": "rgb(178, 178, 191)",
+                "color": "rgb(194, 201, 205)",
               },
               Object {
                 "marginEnd": 0,
@@ -712,7 +712,7 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(17, 18, 54)",
+            "backgroundColor": "rgb(22, 22, 22)",
             "bottom": 0,
             "flex": 1,
             "left": 0,
@@ -725,7 +725,7 @@ exports[`iOS BpkNudger should render correctly when value is greater than max 1`
             "borderRadius": 40,
           },
           Object {
-            "borderColor": "rgb(221, 221, 229)",
+            "borderColor": "rgb(224, 227, 229)",
             "borderWidth": 2,
           },
         ]
@@ -778,8 +778,8 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
           },
           null,
           Object {
-            "backgroundColor": "rgb(221, 221, 229)",
-            "borderColor": "rgb(221, 221, 229)",
+            "backgroundColor": "rgb(224, 227, 229)",
+            "borderColor": "rgb(224, 227, 229)",
             "borderRadius": 40,
           },
           Object {
@@ -796,7 +796,7 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "BpkIcon",
               "fontSize": 24,
               "includeFontPadding": false,
@@ -809,7 +809,7 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
                 "marginEnd": 4,
               },
               Object {
-                "color": "rgb(178, 178, 191)",
+                "color": "rgb(194, 201, 205)",
               },
               Object {
                 "marginEnd": 0,
@@ -830,7 +830,7 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(17, 18, 54)",
+            "backgroundColor": "rgb(22, 22, 22)",
             "bottom": 0,
             "flex": 1,
             "left": 0,
@@ -843,7 +843,7 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
             "borderRadius": 40,
           },
           Object {
-            "borderColor": "rgb(221, 221, 229)",
+            "borderColor": "rgb(224, 227, 229)",
             "borderWidth": 2,
           },
         ]
@@ -855,7 +855,7 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
     style={
       Array [
         Object {
-          "color": "rgb(17, 18, 54)",
+          "color": "rgb(22, 22, 22)",
           "fontFamily": "System",
           "fontSize": 20,
           "fontWeight": "400",
@@ -906,7 +906,7 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
           null,
           Object {
             "backgroundColor": "rgb(255, 255, 255)",
-            "borderColor": "rgb(221, 221, 229)",
+            "borderColor": "rgb(224, 227, 229)",
             "borderRadius": 40,
           },
           Object {
@@ -923,7 +923,7 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
         style={
           Array [
             Object {
-              "color": "rgb(17, 18, 54)",
+              "color": "rgb(22, 22, 22)",
               "fontFamily": "BpkIcon",
               "fontSize": 24,
               "includeFontPadding": false,
@@ -936,7 +936,7 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
                 "marginEnd": 4,
               },
               Object {
-                "color": "rgb(7, 112, 227)",
+                "color": "rgb(0, 98, 227)",
               },
               Object {
                 "marginEnd": 0,
@@ -957,7 +957,7 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(17, 18, 54)",
+            "backgroundColor": "rgb(22, 22, 22)",
             "bottom": 0,
             "flex": 1,
             "left": 0,
@@ -970,7 +970,7 @@ exports[`iOS BpkNudger should render correctly when value is less than min 1`] =
             "borderRadius": 40,
           },
           Object {
-            "borderColor": "rgb(221, 221, 229)",
+            "borderColor": "rgb(224, 227, 229)",
             "borderWidth": 2,
           },
         ]

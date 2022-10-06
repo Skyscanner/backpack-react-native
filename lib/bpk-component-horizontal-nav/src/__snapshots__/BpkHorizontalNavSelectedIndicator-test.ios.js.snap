@@ -4,7 +4,7 @@ exports[`iOS BpkHorizontalNavSelectedIndicator dark mode should render correctly
 <View
   style={
     Object {
-      "backgroundColor": "rgb(109, 159, 235)",
+      "backgroundColor": "rgb(132, 233, 255)",
       "height": 2,
       "transform": Array [
         Object {
@@ -38,7 +38,7 @@ exports[`iOS BpkHorizontalNavSelectedIndicator light mode should render correctl
 <View
   style={
     Object {
-      "backgroundColor": "rgb(7, 112, 227)",
+      "backgroundColor": "rgb(0, 98, 227)",
       "height": 2,
       "transform": Array [
         Object {
