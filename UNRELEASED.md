@@ -7,6 +7,10 @@
 - bpk-component-dialog:
   - Removed `bottomSheet` style
   - Added `flare` style.
+## Changed
+
+- bpk-component-rating
+  - Updated Rating to use new semantic tokens.
 
 ## Fixed
 
