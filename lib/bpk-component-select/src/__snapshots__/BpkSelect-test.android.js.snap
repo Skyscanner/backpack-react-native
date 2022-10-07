@@ -238,7 +238,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
         "paddingVertical": 4,
       },
       Object {
-        "borderColor": "rgb(231, 8, 102)",
+        "borderColor": "rgb(255, 100, 156)",
       },
     ]
   }
@@ -261,7 +261,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
             "marginStart": 4,
           },
           Object {
-            "color": "rgb(231, 8, 102)",
+            "color": "rgb(255, 100, 156)",
           },
         ],
       ]
@@ -327,7 +327,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
         "paddingVertical": 4,
       },
       Object {
-        "borderColor": "rgb(231, 8, 102)",
+        "borderColor": "rgb(255, 100, 156)",
       },
       Object {
         "borderColor": "rgb(132, 233, 255)",
@@ -353,7 +353,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
             "marginStart": 4,
           },
           Object {
-            "color": "rgb(231, 8, 102)",
+            "color": "rgb(255, 100, 156)",
           },
         ],
       ]
@@ -420,7 +420,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
           "paddingVertical": 4,
         },
         Object {
-          "borderColor": "rgb(231, 8, 102)",
+          "borderColor": "rgb(255, 100, 156)",
         },
       ]
     }
@@ -443,7 +443,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
               "marginStart": 4,
             },
             Object {
-              "color": "rgb(231, 8, 102)",
+              "color": "rgb(255, 100, 156)",
             },
           ],
         ]
@@ -490,7 +490,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" false 
         },
         Object {},
         Object {
-          "color": "rgb(231, 8, 102)",
+          "color": "rgb(255, 100, 156)",
           "paddingTop": 4,
         },
       ]
@@ -552,7 +552,7 @@ exports[`Android BpkSelect dark mode should render correctly with "valid" true 1
             "marginStart": 4,
           },
           Object {
-            "color": "rgb(12, 131, 138)",
+            "color": "rgb(98, 241, 198)",
           },
         ],
       ]
@@ -846,6 +846,9 @@ exports[`Android BpkSelect dark mode should render correctly with the disabled p
         "justifyContent": "space-between",
         "paddingVertical": 4,
       },
+      Object {
+        "borderColor": "rgb(36, 51, 70)",
+      },
     ]
   }
 >
@@ -868,7 +871,7 @@ exports[`Android BpkSelect dark mode should render correctly with the disabled p
           },
           Array [
             Object {
-              "color": "rgb(68, 80, 95)",
+              "color": "rgba(255, 255, 255, 0.2)",
             },
           ],
         ],
@@ -895,7 +898,7 @@ exports[`Android BpkSelect dark mode should render correctly with the disabled p
             "marginStart": 4,
           },
           Object {
-            "color": "rgb(68, 80, 95)",
+            "color": "rgba(255, 255, 255, 0.2)",
           },
         ],
       ]
@@ -936,6 +939,9 @@ exports[`Android BpkSelect dark mode should render correctly with the focused an
         "justifyContent": "space-between",
         "paddingVertical": 4,
       },
+      Object {
+        "borderColor": "rgb(36, 51, 70)",
+      },
     ]
   }
 >
@@ -958,7 +964,7 @@ exports[`Android BpkSelect dark mode should render correctly with the focused an
           },
           Array [
             Object {
-              "color": "rgb(68, 80, 95)",
+              "color": "rgba(255, 255, 255, 0.2)",
             },
           ],
         ],
@@ -985,7 +991,7 @@ exports[`Android BpkSelect dark mode should render correctly with the focused an
             "marginStart": 4,
           },
           Object {
-            "color": "rgb(68, 80, 95)",
+            "color": "rgba(255, 255, 255, 0.2)",
           },
         ],
       ]
@@ -1108,7 +1114,7 @@ exports[`Android BpkSelect light mode should render correctly 1`] = `
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(224, 227, 229)",
+        "borderColor": "rgb(194, 201, 205)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -1168,7 +1174,7 @@ exports[`Android BpkSelect light mode should render correctly with "showImage" a
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(224, 227, 229)",
+        "borderColor": "rgb(194, 201, 205)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -1243,7 +1249,7 @@ exports[`Android BpkSelect light mode should render correctly with "showImage" a
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(224, 227, 229)",
+        "borderColor": "rgb(194, 201, 205)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -1315,7 +1321,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(224, 227, 229)",
+        "borderColor": "rgb(194, 201, 205)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -1404,7 +1410,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(224, 227, 229)",
+        "borderColor": "rgb(194, 201, 205)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -1497,7 +1503,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" false
         Object {
           "alignItems": "center",
           "borderBottomWidth": 1,
-          "borderColor": "rgb(224, 227, 229)",
+          "borderColor": "rgb(194, 201, 205)",
           "flexDirection": "row",
           "justifyContent": "space-between",
           "paddingVertical": 4,
@@ -1609,7 +1615,7 @@ exports[`Android BpkSelect light mode should render correctly with "valid" true 
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(224, 227, 229)",
+        "borderColor": "rgb(194, 201, 205)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -1695,7 +1701,7 @@ exports[`Android BpkSelect light mode should render correctly with a text label 
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(224, 227, 229)",
+        "borderColor": "rgb(194, 201, 205)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -1779,7 +1785,7 @@ exports[`Android BpkSelect light mode should render correctly with an element la
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(224, 227, 229)",
+        "borderColor": "rgb(194, 201, 205)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -1840,7 +1846,7 @@ exports[`Android BpkSelect light mode should render correctly with custom styles
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(224, 227, 229)",
+        "borderColor": "rgb(194, 201, 205)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
@@ -1924,10 +1930,13 @@ exports[`Android BpkSelect light mode should render correctly with the disabled 
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(224, 227, 229)",
+        "borderColor": "rgb(194, 201, 205)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
+      },
+      Object {
+        "borderColor": "rgb(224, 227, 229)",
       },
     ]
   }
@@ -1951,7 +1960,7 @@ exports[`Android BpkSelect light mode should render correctly with the disabled 
           },
           Array [
             Object {
-              "color": "rgb(224, 227, 229)",
+              "color": "rgba(0, 0, 0, 0.2)",
             },
           ],
         ],
@@ -1978,7 +1987,7 @@ exports[`Android BpkSelect light mode should render correctly with the disabled 
             "marginStart": 4,
           },
           Object {
-            "color": "rgb(224, 227, 229)",
+            "color": "rgba(0, 0, 0, 0.2)",
           },
         ],
       ]
@@ -2014,10 +2023,13 @@ exports[`Android BpkSelect light mode should render correctly with the focused a
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(224, 227, 229)",
+        "borderColor": "rgb(194, 201, 205)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,
+      },
+      Object {
+        "borderColor": "rgb(224, 227, 229)",
       },
     ]
   }
@@ -2041,7 +2053,7 @@ exports[`Android BpkSelect light mode should render correctly with the focused a
           },
           Array [
             Object {
-              "color": "rgb(224, 227, 229)",
+              "color": "rgba(0, 0, 0, 0.2)",
             },
           ],
         ],
@@ -2068,7 +2080,7 @@ exports[`Android BpkSelect light mode should render correctly with the focused a
             "marginStart": 4,
           },
           Object {
-            "color": "rgb(224, 227, 229)",
+            "color": "rgba(0, 0, 0, 0.2)",
           },
         ],
       ]
@@ -2104,7 +2116,7 @@ exports[`Android BpkSelect light mode should render correctly with the focused p
       Object {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "rgb(224, 227, 229)",
+        "borderColor": "rgb(194, 201, 205)",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 4,

@@ -65,7 +65,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "borderTopColor": "rgb(224, 227, 229)",
+            "borderTopColor": "rgb(194, 201, 205)",
             "borderTopWidth": 1,
             "flexDirection": "row",
             "height": 48,
@@ -148,7 +148,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
             style={
               Array [
                 Object {
-                  "borderColor": "rgb(224, 227, 229)",
+                  "borderColor": "rgb(194, 201, 205)",
                   "borderWidth": 1,
                 },
                 Object {
@@ -230,7 +230,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "borderTopColor": "rgb(224, 227, 229)",
+            "borderTopColor": "rgb(194, 201, 205)",
             "borderTopWidth": 1,
             "flexDirection": "row",
             "height": 48,
@@ -313,7 +313,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
             style={
               Array [
                 Object {
-                  "borderColor": "rgb(224, 227, 229)",
+                  "borderColor": "rgb(194, 201, 205)",
                   "borderWidth": 1,
                 },
                 Object {
@@ -395,7 +395,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "borderTopColor": "rgb(224, 227, 229)",
+            "borderTopColor": "rgb(194, 201, 205)",
             "borderTopWidth": 1,
             "flexDirection": "row",
             "height": 48,
@@ -478,7 +478,7 @@ exports[`Android BpkDialingCodeList should render correctly 1`] = `
             style={
               Array [
                 Object {
-                  "borderColor": "rgb(224, 227, 229)",
+                  "borderColor": "rgb(194, 201, 205)",
                   "borderWidth": 1,
                 },
                 Object {
@@ -621,7 +621,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
         style={
           Object {
             "alignItems": "center",
-            "borderTopColor": "rgb(224, 227, 229)",
+            "borderTopColor": "rgb(194, 201, 205)",
             "borderTopWidth": 1,
             "flexDirection": "row",
             "height": 48,
@@ -704,7 +704,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
             style={
               Array [
                 Object {
-                  "borderColor": "rgb(224, 227, 229)",
+                  "borderColor": "rgb(194, 201, 205)",
                   "borderWidth": 1,
                 },
                 Object {
@@ -795,7 +795,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
         style={
           Object {
             "alignItems": "center",
-            "borderTopColor": "rgb(224, 227, 229)",
+            "borderTopColor": "rgb(194, 201, 205)",
             "borderTopWidth": 1,
             "flexDirection": "row",
             "height": 48,
@@ -878,7 +878,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
             style={
               Array [
                 Object {
-                  "borderColor": "rgb(224, 227, 229)",
+                  "borderColor": "rgb(194, 201, 205)",
                   "borderWidth": 1,
                 },
                 Object {
@@ -960,7 +960,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
         style={
           Object {
             "alignItems": "center",
-            "borderTopColor": "rgb(224, 227, 229)",
+            "borderTopColor": "rgb(194, 201, 205)",
             "borderTopWidth": 1,
             "flexDirection": "row",
             "height": 48,
@@ -1043,7 +1043,7 @@ exports[`Android BpkDialingCodeList should render correctly with "selectedId" se
             style={
               Array [
                 Object {
-                  "borderColor": "rgb(224, 227, 229)",
+                  "borderColor": "rgb(194, 201, 205)",
                   "borderWidth": 1,
                 },
                 Object {

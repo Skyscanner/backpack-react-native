@@ -70,7 +70,7 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "rgb(239, 241, 242)",
+            "backgroundColor": "rgb(224, 227, 229)",
             "paddingHorizontal": 16,
             "paddingVertical": 4,
           }
@@ -146,7 +146,7 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
             style={
               Array [
                 Object {
-                  "borderColor": "rgb(224, 227, 229)",
+                  "borderColor": "rgb(194, 201, 205)",
                   "borderWidth": 1,
                 },
                 Object {
@@ -239,7 +239,7 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "rgb(239, 241, 242)",
+            "backgroundColor": "rgb(224, 227, 229)",
             "paddingHorizontal": 16,
             "paddingVertical": 4,
           }
@@ -315,7 +315,7 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
             style={
               Array [
                 Object {
-                  "borderColor": "rgb(224, 227, 229)",
+                  "borderColor": "rgb(194, 201, 205)",
                   "borderWidth": 1,
                 },
                 Object {
@@ -408,7 +408,7 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "rgb(239, 241, 242)",
+            "backgroundColor": "rgb(224, 227, 229)",
             "paddingHorizontal": 16,
             "paddingVertical": 4,
           }
@@ -484,7 +484,7 @@ exports[`iOS BpkDialingCodeList should render correctly 1`] = `
             style={
               Array [
                 Object {
-                  "borderColor": "rgb(224, 227, 229)",
+                  "borderColor": "rgb(194, 201, 205)",
                   "borderWidth": 1,
                 },
                 Object {
@@ -644,7 +644,7 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
       <View
         style={
           Object {
-            "backgroundColor": "rgb(239, 241, 242)",
+            "backgroundColor": "rgb(224, 227, 229)",
             "paddingHorizontal": 16,
             "paddingVertical": 4,
           }
@@ -720,7 +720,7 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
             style={
               Array [
                 Object {
-                  "borderColor": "rgb(224, 227, 229)",
+                  "borderColor": "rgb(194, 201, 205)",
                   "borderWidth": 1,
                 },
                 Object {
@@ -819,7 +819,7 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
       <View
         style={
           Object {
-            "backgroundColor": "rgb(239, 241, 242)",
+            "backgroundColor": "rgb(224, 227, 229)",
             "paddingHorizontal": 16,
             "paddingVertical": 4,
           }
@@ -895,7 +895,7 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
             style={
               Array [
                 Object {
-                  "borderColor": "rgb(224, 227, 229)",
+                  "borderColor": "rgb(194, 201, 205)",
                   "borderWidth": 1,
                 },
                 Object {
@@ -988,7 +988,7 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
       <View
         style={
           Object {
-            "backgroundColor": "rgb(239, 241, 242)",
+            "backgroundColor": "rgb(224, 227, 229)",
             "paddingHorizontal": 16,
             "paddingVertical": 4,
           }
@@ -1064,7 +1064,7 @@ exports[`iOS BpkDialingCodeList should render correctly with "selectedId" set 1`
             style={
               Array [
                 Object {
-                  "borderColor": "rgb(224, 227, 229)",
+                  "borderColor": "rgb(194, 201, 205)",
                   "borderWidth": 1,
                 },
                 Object {
