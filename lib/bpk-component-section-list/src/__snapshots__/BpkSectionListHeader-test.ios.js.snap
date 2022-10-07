@@ -4,7 +4,7 @@ exports[`iOS BpkSectionListHeader dark mode should render correctly 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "rgb(1, 9, 19)",
+      "backgroundColor": "rgb(36, 51, 70)",
       "paddingHorizontal": 16,
       "paddingVertical": 4,
     }
@@ -40,7 +40,7 @@ exports[`iOS BpkSectionListHeader light mode should render correctly 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "rgb(239, 241, 242)",
+      "backgroundColor": "rgb(224, 227, 229)",
       "paddingHorizontal": 16,
       "paddingVertical": 4,
     }

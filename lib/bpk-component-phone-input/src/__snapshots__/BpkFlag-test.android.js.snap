@@ -5,7 +5,7 @@ exports[`Android BpkFlag should render correctly 1`] = `
   style={
     Array [
       Object {
-        "borderColor": "rgb(224, 227, 229)",
+        "borderColor": "rgb(194, 201, 205)",
         "borderWidth": 1,
       },
       Object {
@@ -22,7 +22,7 @@ exports[`Android BpkFlag should render correctly with a custom style 1`] = `
   style={
     Array [
       Object {
-        "borderColor": "rgb(224, 227, 229)",
+        "borderColor": "rgb(194, 201, 205)",
         "borderWidth": 1,
       },
       Object {
@@ -42,7 +42,7 @@ exports[`Android BpkFlag should render correctly with a custom width 1`] = `
   style={
     Array [
       Object {
-        "borderColor": "rgb(224, 227, 229)",
+        "borderColor": "rgb(194, 201, 205)",
         "borderWidth": 1,
       },
       Object {
@@ -60,7 +60,7 @@ exports[`Android BpkFlag should render correctly with an image 1`] = `
   style={
     Array [
       Object {
-        "borderColor": "rgb(224, 227, 229)",
+        "borderColor": "rgb(194, 201, 205)",
         "borderWidth": 1,
       },
       Object {

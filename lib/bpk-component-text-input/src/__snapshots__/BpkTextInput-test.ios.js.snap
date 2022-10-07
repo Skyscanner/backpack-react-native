@@ -18,7 +18,7 @@ exports[`iOS BpkTextInput dark mode should ignore when placeholder is provided, 
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(194, 201, 205, 1)",
+          "color": "rgba(255, 255, 255, 0.2)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -48,7 +48,7 @@ exports[`iOS BpkTextInput dark mode should ignore when placeholder is provided, 
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(255, 255, 255, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -91,7 +91,7 @@ exports[`iOS BpkTextInput dark mode should render correctly 1`] = `
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(194, 201, 205, 1)",
+          "color": "rgba(255, 255, 255, 0.2)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -121,7 +121,7 @@ exports[`iOS BpkTextInput dark mode should render correctly 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(255, 255, 255, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -164,7 +164,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with \`accessoryView
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(189, 196, 203, 1)",
+          "color": "rgba(255, 255, 255, 1)",
           "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "400",
@@ -196,7 +196,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with \`accessoryView
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(255, 255, 255, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -239,7 +239,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with arbitrary props
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(194, 201, 205, 1)",
+          "color": "rgba(255, 255, 255, 0.2)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -269,7 +269,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with arbitrary props
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(255, 255, 255, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -317,7 +317,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with custom style 1`
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(194, 201, 205, 1)",
+          "color": "rgba(255, 255, 255, 0.2)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -347,7 +347,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with custom style 1`
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(255, 255, 255, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -390,7 +390,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with description 1`]
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(189, 196, 203, 1)",
+          "color": "rgba(255, 255, 255, 1)",
           "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "400",
@@ -420,7 +420,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with description 1`]
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(255, 255, 255, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -485,7 +485,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with description, va
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(231, 8, 102, 1)",
+          "color": "rgba(255, 100, 156, 1)",
           "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "400",
@@ -501,7 +501,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with description, va
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(231, 8, 102, 1)",
+          "borderBottomColor": "rgba(255, 100, 156, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -515,7 +515,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with description, va
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(255, 255, 255, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -554,7 +554,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with description, va
                 "right": 6,
               },
               Object {
-                "color": "rgb(231, 8, 102)",
+                "color": "rgb(255, 100, 156)",
               },
             ],
           ]
@@ -578,7 +578,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with description, va
         },
         Object {},
         Object {
-          "color": "rgb(231, 8, 102)",
+          "color": "rgb(255, 100, 156)",
           "paddingTop": 4,
         },
       ]
@@ -607,7 +607,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with editable=false 
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(68, 80, 95, 1)",
+          "color": "rgba(255, 255, 255, 0.2)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -637,7 +637,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with editable=false 
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(255, 255, 255, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -680,7 +680,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with inputRef set 1`
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(194, 201, 205, 1)",
+          "color": "rgba(255, 255, 255, 0.2)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -710,7 +710,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with inputRef set 1`
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(255, 255, 255, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -753,7 +753,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with mask="99/99" 1`
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(189, 196, 203, 1)",
+          "color": "rgba(255, 255, 255, 1)",
           "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "400",
@@ -783,7 +783,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with mask="99/99" 1`
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(255, 255, 255, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -826,7 +826,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with mask="9999-9999
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(189, 196, 203, 1)",
+          "color": "rgba(255, 255, 255, 1)",
           "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "400",
@@ -856,7 +856,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with mask="9999-9999
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(255, 255, 255, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -899,7 +899,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with valid 1`] = `
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(194, 201, 205, 1)",
+          "color": "rgba(255, 255, 255, 0.2)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -929,7 +929,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with valid 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(255, 255, 255, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -968,7 +968,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with valid 1`] = `
                 "right": 6,
               },
               Object {
-                "color": "rgb(12, 131, 138)",
+                "color": "rgb(98, 241, 198)",
               },
             ],
           ]
@@ -999,7 +999,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with valid false 1`]
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(194, 201, 205, 1)",
+          "color": "rgba(255, 255, 255, 0.2)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -1015,7 +1015,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with valid false 1`]
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(231, 8, 102, 1)",
+          "borderBottomColor": "rgba(255, 100, 156, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -1029,7 +1029,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with valid false 1`]
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(255, 255, 255, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -1068,7 +1068,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with valid false 1`]
                 "right": 6,
               },
               Object {
-                "color": "rgb(231, 8, 102)",
+                "color": "rgb(255, 100, 156)",
               },
             ],
           ]
@@ -1099,7 +1099,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with valid false and
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(194, 201, 205, 1)",
+          "color": "rgba(255, 255, 255, 0.2)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -1115,7 +1115,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with valid false and
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(231, 8, 102, 1)",
+          "borderBottomColor": "rgba(255, 100, 156, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -1129,7 +1129,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with valid false and
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(255, 255, 255, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -1168,7 +1168,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with valid false and
                 "right": 6,
               },
               Object {
-                "color": "rgb(231, 8, 102)",
+                "color": "rgb(255, 100, 156)",
               },
             ],
           ]
@@ -1192,7 +1192,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with valid false and
         },
         Object {},
         Object {
-          "color": "rgb(231, 8, 102)",
+          "color": "rgb(255, 100, 156)",
           "paddingTop": 4,
         },
       ]
@@ -1221,7 +1221,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with value 1`] = `
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(189, 196, 203, 1)",
+          "color": "rgba(255, 255, 255, 1)",
           "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "400",
@@ -1251,7 +1251,7 @@ exports[`iOS BpkTextInput dark mode should render correctly with value 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(255, 255, 255, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -1294,7 +1294,7 @@ exports[`iOS BpkTextInput dark mode should support font theming 1`] = `
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(194, 201, 205, 1)",
+          "color": "rgba(255, 255, 255, 0.2)",
           "fontFamily": "relative",
           "fontSize": 16,
           "fontWeight": "400",
@@ -1324,7 +1324,7 @@ exports[`iOS BpkTextInput dark mode should support font theming 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(255, 255, 255, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -1370,7 +1370,7 @@ exports[`iOS BpkTextInput dark mode should support theming 1`] = `
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(194, 201, 205, 1)",
+          "color": "rgba(255, 255, 255, 0.2)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -1400,7 +1400,7 @@ exports[`iOS BpkTextInput dark mode should support theming 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(255, 255, 255, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -1443,7 +1443,7 @@ exports[`iOS BpkTextInput light mode should ignore when placeholder is provided,
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(194, 201, 205, 1)",
+          "color": "rgba(0, 0, 0, 0.2)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -1459,7 +1459,7 @@ exports[`iOS BpkTextInput light mode should ignore when placeholder is provided,
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(224, 227, 229, 1)",
+          "borderBottomColor": "rgba(194, 201, 205, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -1473,7 +1473,7 @@ exports[`iOS BpkTextInput light mode should ignore when placeholder is provided,
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(0, 0, 0, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -1516,7 +1516,7 @@ exports[`iOS BpkTextInput light mode should render correctly 1`] = `
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(194, 201, 205, 1)",
+          "color": "rgba(0, 0, 0, 0.2)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -1532,7 +1532,7 @@ exports[`iOS BpkTextInput light mode should render correctly 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(224, 227, 229, 1)",
+          "borderBottomColor": "rgba(194, 201, 205, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -1546,7 +1546,7 @@ exports[`iOS BpkTextInput light mode should render correctly 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(0, 0, 0, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -1589,7 +1589,7 @@ exports[`iOS BpkTextInput light mode should render correctly with \`accessoryVie
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(84, 88, 96, 1)",
+          "color": "rgba(22, 22, 22, 1)",
           "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "400",
@@ -1606,7 +1606,7 @@ exports[`iOS BpkTextInput light mode should render correctly with \`accessoryVie
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(224, 227, 229, 1)",
+          "borderBottomColor": "rgba(194, 201, 205, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -1621,7 +1621,7 @@ exports[`iOS BpkTextInput light mode should render correctly with \`accessoryVie
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(0, 0, 0, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -1664,7 +1664,7 @@ exports[`iOS BpkTextInput light mode should render correctly with arbitrary prop
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(194, 201, 205, 1)",
+          "color": "rgba(0, 0, 0, 0.2)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -1680,7 +1680,7 @@ exports[`iOS BpkTextInput light mode should render correctly with arbitrary prop
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(224, 227, 229, 1)",
+          "borderBottomColor": "rgba(194, 201, 205, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -1694,7 +1694,7 @@ exports[`iOS BpkTextInput light mode should render correctly with arbitrary prop
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(0, 0, 0, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -1742,7 +1742,7 @@ exports[`iOS BpkTextInput light mode should render correctly with custom style 1
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(194, 201, 205, 1)",
+          "color": "rgba(0, 0, 0, 0.2)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -1758,7 +1758,7 @@ exports[`iOS BpkTextInput light mode should render correctly with custom style 1
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(224, 227, 229, 1)",
+          "borderBottomColor": "rgba(194, 201, 205, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -1772,7 +1772,7 @@ exports[`iOS BpkTextInput light mode should render correctly with custom style 1
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(0, 0, 0, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -1815,7 +1815,7 @@ exports[`iOS BpkTextInput light mode should render correctly with description 1`
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(84, 88, 96, 1)",
+          "color": "rgba(22, 22, 22, 1)",
           "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "400",
@@ -1831,7 +1831,7 @@ exports[`iOS BpkTextInput light mode should render correctly with description 1`
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(224, 227, 229, 1)",
+          "borderBottomColor": "rgba(194, 201, 205, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -1845,7 +1845,7 @@ exports[`iOS BpkTextInput light mode should render correctly with description 1`
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(0, 0, 0, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -1940,7 +1940,7 @@ exports[`iOS BpkTextInput light mode should render correctly with description, v
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(0, 0, 0, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -2032,7 +2032,7 @@ exports[`iOS BpkTextInput light mode should render correctly with editable=false
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(224, 227, 229, 1)",
+          "color": "rgba(0, 0, 0, 0.2)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -2048,7 +2048,7 @@ exports[`iOS BpkTextInput light mode should render correctly with editable=false
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(224, 227, 229, 1)",
+          "borderBottomColor": "rgba(194, 201, 205, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -2062,7 +2062,7 @@ exports[`iOS BpkTextInput light mode should render correctly with editable=false
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(0, 0, 0, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -2105,7 +2105,7 @@ exports[`iOS BpkTextInput light mode should render correctly with inputRef set 1
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(194, 201, 205, 1)",
+          "color": "rgba(0, 0, 0, 0.2)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -2121,7 +2121,7 @@ exports[`iOS BpkTextInput light mode should render correctly with inputRef set 1
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(224, 227, 229, 1)",
+          "borderBottomColor": "rgba(194, 201, 205, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -2135,7 +2135,7 @@ exports[`iOS BpkTextInput light mode should render correctly with inputRef set 1
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(0, 0, 0, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -2178,7 +2178,7 @@ exports[`iOS BpkTextInput light mode should render correctly with mask="99/99" 1
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(84, 88, 96, 1)",
+          "color": "rgba(22, 22, 22, 1)",
           "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "400",
@@ -2194,7 +2194,7 @@ exports[`iOS BpkTextInput light mode should render correctly with mask="99/99" 1
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(224, 227, 229, 1)",
+          "borderBottomColor": "rgba(194, 201, 205, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -2208,7 +2208,7 @@ exports[`iOS BpkTextInput light mode should render correctly with mask="99/99" 1
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(0, 0, 0, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -2251,7 +2251,7 @@ exports[`iOS BpkTextInput light mode should render correctly with mask="9999-999
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(84, 88, 96, 1)",
+          "color": "rgba(22, 22, 22, 1)",
           "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "400",
@@ -2267,7 +2267,7 @@ exports[`iOS BpkTextInput light mode should render correctly with mask="9999-999
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(224, 227, 229, 1)",
+          "borderBottomColor": "rgba(194, 201, 205, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -2281,7 +2281,7 @@ exports[`iOS BpkTextInput light mode should render correctly with mask="9999-999
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(0, 0, 0, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -2324,7 +2324,7 @@ exports[`iOS BpkTextInput light mode should render correctly with valid 1`] = `
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(194, 201, 205, 1)",
+          "color": "rgba(0, 0, 0, 0.2)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -2340,7 +2340,7 @@ exports[`iOS BpkTextInput light mode should render correctly with valid 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(224, 227, 229, 1)",
+          "borderBottomColor": "rgba(194, 201, 205, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -2354,7 +2354,7 @@ exports[`iOS BpkTextInput light mode should render correctly with valid 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(0, 0, 0, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -2424,7 +2424,7 @@ exports[`iOS BpkTextInput light mode should render correctly with valid false 1`
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(194, 201, 205, 1)",
+          "color": "rgba(0, 0, 0, 0.2)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -2454,7 +2454,7 @@ exports[`iOS BpkTextInput light mode should render correctly with valid false 1`
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(0, 0, 0, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -2524,7 +2524,7 @@ exports[`iOS BpkTextInput light mode should render correctly with valid false an
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(194, 201, 205, 1)",
+          "color": "rgba(0, 0, 0, 0.2)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -2554,7 +2554,7 @@ exports[`iOS BpkTextInput light mode should render correctly with valid false an
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(0, 0, 0, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -2646,7 +2646,7 @@ exports[`iOS BpkTextInput light mode should render correctly with value 1`] = `
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(84, 88, 96, 1)",
+          "color": "rgba(22, 22, 22, 1)",
           "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "400",
@@ -2662,7 +2662,7 @@ exports[`iOS BpkTextInput light mode should render correctly with value 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(224, 227, 229, 1)",
+          "borderBottomColor": "rgba(194, 201, 205, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -2676,7 +2676,7 @@ exports[`iOS BpkTextInput light mode should render correctly with value 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(0, 0, 0, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -2719,7 +2719,7 @@ exports[`iOS BpkTextInput light mode should support font theming 1`] = `
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(194, 201, 205, 1)",
+          "color": "rgba(0, 0, 0, 0.2)",
           "fontFamily": "relative",
           "fontSize": 16,
           "fontWeight": "400",
@@ -2735,7 +2735,7 @@ exports[`iOS BpkTextInput light mode should support font theming 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(224, 227, 229, 1)",
+          "borderBottomColor": "rgba(194, 201, 205, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -2749,7 +2749,7 @@ exports[`iOS BpkTextInput light mode should support font theming 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(0, 0, 0, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
@@ -2795,7 +2795,7 @@ exports[`iOS BpkTextInput light mode should support theming 1`] = `
       numberOfLines={1}
       style={
         Object {
-          "color": "rgba(194, 201, 205, 1)",
+          "color": "rgba(0, 0, 0, 0.2)",
           "fontFamily": "System",
           "fontSize": 16,
           "fontWeight": "400",
@@ -2811,7 +2811,7 @@ exports[`iOS BpkTextInput light mode should support theming 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "rgba(224, 227, 229, 1)",
+          "borderBottomColor": "rgba(194, 201, 205, 1)",
           "borderBottomWidth": 1,
           "flex": 1,
           "flexDirection": "row",
@@ -2825,7 +2825,7 @@ exports[`iOS BpkTextInput light mode should support theming 1`] = `
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
-        placeholderTextColor="rgb(194, 201, 205)"
+        placeholderTextColor="rgba(0, 0, 0, 0.2)"
         rejectResponderTermination={true}
         style={
           Array [
