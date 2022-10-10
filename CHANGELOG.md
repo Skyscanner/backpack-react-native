@@ -1,5 +1,33 @@
 # Backpack changelog
 
+# 21.0.0 - 2022-10-10
+
+## Breaking:
+
+- bpk-component-dialog:
+  - Removed `bottomSheet` style
+  - Added `flare` style.
+## Changed
+
+- bpk-component-rating
+  - Updated Rating to use new semantic tokens.
+
+- bpk-component-select
+  - Updated to new semantic tokens
+
+- bpk-component-text-input
+  - Updated to new semantic tokens
+
+- bpk-component-section-list
+  - Updated to new semantic tokens
+
+## Fixed
+
+- Upgraded Backpack Android version to the latest.
+
+- bpk-component-calendar:
+  - Fixed calendar range to be inclusive on iOS
+
 # 20.1.0 - 2022-04-26
 
 **Added:**

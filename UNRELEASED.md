@@ -2,32 +2,6 @@
 
 > Place your changes below this line. 
 
-## Breaking:
-
-- bpk-component-dialog:
-  - Removed `bottomSheet` style
-  - Added `flare` style.
-## Changed
-
-- bpk-component-rating
-  - Updated Rating to use new semantic tokens.
-
-- bpk-component-select
-  - Updated to new semantic tokens
-
-- bpk-component-text-input
-  - Updated to new semantic tokens
-
-- bpk-component-section-list
-  - Updated to new semantic tokens
-
-## Fixed
-
-- Upgraded Backpack Android version to the latest.
-
-- bpk-component-calendar:
-  - Fixed calendar range to be inclusive on iOS
-
 ## How to write a good changelog entry
 
 1. Add 'Breaking', 'Added' or 'Fixed' in bold depending on if the change will be major, minor or patch according to [semver](semver.org).
