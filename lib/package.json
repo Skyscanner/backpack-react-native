@@ -19,8 +19,8 @@
     "tinymask": "^1.0.2"
   },
   "peerDependencies": {
-    "@skyscanner/bpk-foundations-react-native": "^1.0.0",
-    "@skyscanner/bpk-svgs": "^12.7.1",
+    "@skyscanner/bpk-foundations-react-native": "^3.0.0",
+    "@skyscanner/bpk-svgs": "^15.0.0",
     "@skyscanner/react-native-transitiongroup": "^1.1.3",
     "react": "^17.0.0",
     "react-native": ">= 0.64.0",
