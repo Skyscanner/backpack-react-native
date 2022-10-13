@@ -1,10 +1,12 @@
 PODS:
-  - Backpack (48.1.0):
-    - FloatingPanel (= 1.6.6)
+  - Backpack (56.0.0):
+    - Backpack-Common
+    - FloatingPanel (= 2.5.3)
     - FSCalendar (~> 2.8.2)
     - MBProgressHUD (~> 1.2.0)
     - TTTAttributedLabel (~> 2.0.0)
-  - BackpackReactNative (20.1.0):
+  - Backpack-Common (56.0.0)
+  - BackpackReactNative (21.0.0):
     - Backpack
     - React
     - react-native-maps
@@ -20,7 +22,7 @@ PODS:
     - React-Core (= 0.64.2)
     - React-jsi (= 0.64.2)
     - ReactCommon/turbomodule/core (= 0.64.2)
-  - FloatingPanel (1.6.6)
+  - FloatingPanel (2.5.3)
   - FSCalendar (2.8.4)
   - glog (0.3.5)
   - MBProgressHUD (1.2.0)
@@ -325,6 +327,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Backpack
+    - Backpack-Common
     - boost-for-react-native
     - FloatingPanel
     - FSCalendar
@@ -396,14 +399,15 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  Backpack: 980e3f60acf7d11c813fb0f032ca0a1b6c143550
-  BackpackReactNative: a83839e0469e53cccf97a9483802205b9cb6c9a9
+  Backpack: d85950aef20b2ab349641c57b7bab094eec90ff4
+  Backpack-Common: 08bb52016782d829803821f23f64022f116ee551
+  BackpackReactNative: 4860e8c15525a246718246c07e846b51d068d4c4
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BVLinearGradient: e3aad03778a456d77928f594a649e96995f1c872
   DoubleConversion: cf9b38bf0b2d048436d9a82ad2abe1404f11e7de
   FBLazyVector: e686045572151edef46010a6f819ade377dfeb4b
-  FBReactNativeSpec: d6bf4e829b14502684c7eaf03763e3a382f0c68e
-  FloatingPanel: 5fe605e073e60395bc4bb416fd513d0fa38a6558
+  FBReactNativeSpec: 4ba18e430cfa7c809aace6e901f5a505c4059a12
+  FloatingPanel: 3cee815e9ded75b632543fa73ab655a1ef941452
   FSCalendar: 2d1d0d9398f12d439f55c1fe0f01525b151b8260
   glog: 73c2498ac6884b13ede40eda8228cb1eee9d9d62
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
@@ -436,4 +440,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: fcf9d1ebed9e236314299522a2ebb30069ee9556
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.3
