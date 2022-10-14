@@ -1,5 +1,11 @@
 # Backpack changelog
 
+# 21.1.0 - 2022-10-14
+
+## Changed
+
+- Updated Backpack iOS to the latest version to adopt new colours.
+
 # 21.0.0 - 2022-10-10
 
 ## Breaking:

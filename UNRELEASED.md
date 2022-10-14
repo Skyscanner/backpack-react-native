@@ -2,9 +2,6 @@
 
 > Place your changes below this line. 
 
-**Changed:**
-
-- Updated Backpack iOS to the latest version.
 
 ## How to write a good changelog entry
 
