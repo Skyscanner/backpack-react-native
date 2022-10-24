@@ -37,7 +37,7 @@ exports[`Android BpkDismissibleChip dark mode should render correctly 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(1, 9, 19)",
+          "backgroundColor": "rgb(11, 18, 29)",
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -139,7 +139,7 @@ exports[`Android BpkDismissibleChip dark mode should render correctly with "disa
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(1, 9, 19)",
+          "backgroundColor": "rgb(11, 18, 29)",
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -147,7 +147,7 @@ exports[`Android BpkDismissibleChip dark mode should render correctly with "disa
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(1, 9, 19)",
+          "backgroundColor": "rgb(11, 18, 29)",
         },
       ]
     }
@@ -171,7 +171,7 @@ exports[`Android BpkDismissibleChip dark mode should render correctly with "disa
               "includeFontPadding": false,
             },
             Object {
-              "color": "rgb(68, 80, 95)",
+              "color": "rgba(255, 255, 255, 0.2)",
             },
             Object {
               "marginEnd": 4,
@@ -201,7 +201,7 @@ exports[`Android BpkDismissibleChip dark mode should render correctly with "disa
               "includeFontPadding": false,
             },
             Object {
-              "color": "rgb(68, 80, 95)",
+              "color": "rgba(255, 255, 255, 0.2)",
             },
           ],
         ]
@@ -254,7 +254,7 @@ exports[`Android BpkDismissibleChip dark mode should render outline correctly 1`
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(1, 9, 19)",
+          "backgroundColor": "rgb(11, 18, 29)",
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -262,9 +262,7 @@ exports[`Android BpkDismissibleChip dark mode should render outline correctly 1`
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "transparent",
-          "borderColor": "rgb(68, 80, 95)",
-          "borderWidth": 1,
+          "backgroundColor": "rgb(11, 18, 29)",
           "paddingVertical": 7,
         },
       ]
@@ -368,7 +366,7 @@ exports[`Android BpkDismissibleChip light mode should render correctly 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(224, 227, 229)",
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -470,7 +468,7 @@ exports[`Android BpkDismissibleChip light mode should render correctly with "dis
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(224, 227, 229)",
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -478,7 +476,7 @@ exports[`Android BpkDismissibleChip light mode should render correctly with "dis
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(224, 227, 229)",
         },
       ]
     }
@@ -502,7 +500,7 @@ exports[`Android BpkDismissibleChip light mode should render correctly with "dis
               "includeFontPadding": false,
             },
             Object {
-              "color": "rgb(194, 201, 205)",
+              "color": "rgba(0, 0, 0, 0.2)",
             },
             Object {
               "marginEnd": 4,
@@ -532,7 +530,7 @@ exports[`Android BpkDismissibleChip light mode should render correctly with "dis
               "includeFontPadding": false,
             },
             Object {
-              "color": "rgb(194, 201, 205)",
+              "color": "rgba(0, 0, 0, 0.2)",
             },
           ],
         ]
@@ -585,7 +583,7 @@ exports[`Android BpkDismissibleChip light mode should render outline correctly 1
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(224, 227, 229)",
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -593,9 +591,7 @@ exports[`Android BpkDismissibleChip light mode should render outline correctly 1
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "transparent",
-          "borderColor": "rgb(68, 80, 95)",
-          "borderWidth": 1,
+          "backgroundColor": "rgba(255, 255, 255, 0.2)",
           "paddingVertical": 7,
         },
       ]
@@ -699,7 +695,7 @@ exports[`Android BpkDismissibleChip should render correctly with a supplied icon
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(224, 227, 229)",
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -828,7 +824,7 @@ exports[`Android BpkDismissibleChip should render correctly with arbitrary props
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(224, 227, 229)",
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -935,7 +931,7 @@ exports[`Android BpkDismissibleChip should render correctly with custom style 1`
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(224, 227, 229)",
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",

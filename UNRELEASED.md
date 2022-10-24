@@ -2,6 +2,9 @@
 
 > Place your changes below this line. 
 
+## Fixed
+
+- Updated Chip component to not clash in Dark Mode.
 
 ## How to write a good changelog entry
 

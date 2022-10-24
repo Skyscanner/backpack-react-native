@@ -6,7 +6,7 @@ PODS:
     - MBProgressHUD (~> 1.2.0)
     - TTTAttributedLabel (~> 2.0.0)
   - Backpack-Common (56.0.0)
-  - BackpackReactNative (21.0.0):
+  - BackpackReactNative (21.1.0):
     - Backpack
     - React
     - react-native-maps
@@ -401,7 +401,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Backpack: d85950aef20b2ab349641c57b7bab094eec90ff4
   Backpack-Common: 08bb52016782d829803821f23f64022f116ee551
-  BackpackReactNative: 4860e8c15525a246718246c07e846b51d068d4c4
+  BackpackReactNative: aa25e93809492cd9ab06dfac56efe42e30f00cad
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BVLinearGradient: e3aad03778a456d77928f594a649e96995f1c872
   DoubleConversion: cf9b38bf0b2d048436d9a82ad2abe1404f11e7de
