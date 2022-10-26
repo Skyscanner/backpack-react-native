@@ -18,7 +18,7 @@ exports[`iOS BpkDismissibleChip dark mode should render correctly 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(11, 18, 29)",
+          "backgroundColor": "rgb(36, 51, 70)",
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -128,7 +128,7 @@ exports[`iOS BpkDismissibleChip dark mode should render correctly with "disabled
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(11, 18, 29)",
+          "backgroundColor": "rgb(36, 51, 70)",
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -247,7 +247,7 @@ exports[`iOS BpkDismissibleChip dark mode should render outline correctly 1`] = 
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(11, 18, 29)",
+          "backgroundColor": "rgb(36, 51, 70)",
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -262,7 +262,7 @@ exports[`iOS BpkDismissibleChip dark mode should render outline correctly 1`] = 
           "shadowRadius": 1.5,
         },
         Object {
-          "backgroundColor": "rgb(11, 18, 29)",
+          "backgroundColor": "rgb(36, 51, 70)",
           "paddingVertical": 7,
         },
       ],

@@ -106,7 +106,7 @@ exports[`iOS BpkSelect dark mode should render correctly with "showImage" and im
           undefined,
           Array [
             Object {
-              "backgroundColor": "rgb(19, 29, 43)",
+              "backgroundColor": "rgb(1, 9, 19)",
               "height": 12,
               "marginEnd": 8,
               "width": 16,
@@ -191,7 +191,7 @@ exports[`iOS BpkSelect dark mode should render correctly with "showImage" and no
       style={
         Array [
           Object {
-            "backgroundColor": "rgb(19, 29, 43)",
+            "backgroundColor": "rgb(1, 9, 19)",
             "height": 12,
             "marginEnd": 8,
             "width": 16,

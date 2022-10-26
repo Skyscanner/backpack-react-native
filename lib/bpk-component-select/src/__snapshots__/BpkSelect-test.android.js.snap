@@ -99,7 +99,7 @@ exports[`Android BpkSelect dark mode should render correctly with "showImage" an
         undefined,
         Array [
           Object {
-            "backgroundColor": "rgb(19, 29, 43)",
+            "backgroundColor": "rgb(1, 9, 19)",
             "height": 12,
             "marginEnd": 8,
             "width": 16,
@@ -172,7 +172,7 @@ exports[`Android BpkSelect dark mode should render correctly with "showImage" an
     style={
       Array [
         Object {
-          "backgroundColor": "rgb(19, 29, 43)",
+          "backgroundColor": "rgb(1, 9, 19)",
           "height": 12,
           "marginEnd": 8,
           "width": 16,
