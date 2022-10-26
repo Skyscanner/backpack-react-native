@@ -5,6 +5,8 @@
 ## Fixed
 
 - Updated Chip component to not clash in Dark Mode.
+- Bump `foundations` and `svgs` to latest
+
 
 ## How to write a good changelog entry
 
