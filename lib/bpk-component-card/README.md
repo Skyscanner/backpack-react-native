@@ -2,6 +2,48 @@
 
 > Backpack React Native card component.
 
+## Default
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-card/ios/default.png" alt="bpk-component-card default iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-card/ios/default_dm.png" alt="bpk-component-card default iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-card/android/default.png" alt="bpk-component-card default Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-card/android/default_dm.png" alt="bpk-component-card default Google Pixel emulator - dark mode" width="375" /> |
+
+## Without padding
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-card/ios/without-padding.png" alt="bpk-component-card without-padding iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-card/ios/without-padding_dm.png" alt="bpk-component-card without-padding iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-card/android/without-padding.png" alt="bpk-component-card without-padding Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-card/android/without-padding_dm.png" alt="bpk-component-card without-padding Google Pixel emulator - dark mode" width="375" /> |
+
+## Focused
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-card/ios/focused.png" alt="bpk-component-card focused iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-card/ios/focused_dm.png" alt="bpk-component-card focused iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-card/android/focused.png" alt="bpk-component-card focused Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-card/android/focused_dm.png" alt="bpk-component-card focused Google Pixel emulator - dark mode" width="375" /> |
+
+## Large corner style
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-card/ios/large-corner-style.png" alt="bpk-component-card large-corner-style iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-card/ios/large-corner-style_dm.png" alt="bpk-component-card large-corner-style iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-card/android/large-corner-style.png" alt="bpk-component-card large-corner-style Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-card/android/large-corner-style_dm.png" alt="bpk-component-card large-corner-style Google Pixel emulator - dark mode" width="375" /> |
+
+## With divider
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-card/ios/with-divider.png" alt="bpk-component-card with-divider iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-card/ios/with-divider_dm.png" alt="bpk-component-card with-divider iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-card/android/with-divider.png" alt="bpk-component-card with-divider Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-card/android/with-divider_dm.png" alt="bpk-component-card with-divider Google Pixel emulator - dark mode" width="375" /> |
+
+## With divider arranged vertically
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-card/ios/with-divider-arranged-vertically.png" alt="bpk-component-card with-divider-arranged-vertically iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-card/ios/with-divider-arranged-vertically_dm.png" alt="bpk-component-card with-divider-arranged-vertically iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-card/android/with-divider-arranged-vertically.png" alt="bpk-component-card with-divider-arranged-vertically Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-card/android/with-divider-arranged-vertically_dm.png" alt="bpk-component-card with-divider-arranged-vertically Google Pixel emulator - dark mode" width="375" /> |
+
 ## Installation
 
 Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.

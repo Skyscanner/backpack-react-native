@@ -2,6 +2,13 @@
 
 > Backpack React Native carousel component.
 
+## Default
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-carousel/ios/default.png" alt="bpk-component-carousel default iPhone 8 simulator" width="375" /> | <img src="undefined" alt="bpk-component-carousel default iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-carousel/android/default.png" alt="bpk-component-carousel default Google Pixel emulator" width="375" /> | <img src="undefined" alt="bpk-component-carousel default Google Pixel emulator - dark mode" width="375" /> |
+
 ## Installation
 
 Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.

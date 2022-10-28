@@ -2,6 +2,34 @@
 
 > Backpack React Native calendar component.
 
+## Single
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-calendar/ios/single.png" alt="bpk-component-calendar single iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-calendar/ios/single_dm.png" alt="bpk-component-calendar single iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-calendar/android/single.png" alt="bpk-component-calendar single Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-calendar/android/single_dm.png" alt="bpk-component-calendar single Google Pixel emulator - dark mode" width="375" /> |
+
+## Multiple
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-calendar/ios/multiple.png" alt="bpk-component-calendar multiple iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-calendar/ios/multiple_dm.png" alt="bpk-component-calendar multiple iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="undefined" alt="bpk-component-calendar multiple Google Pixel emulator" width="375" /> | <img src="undefined" alt="bpk-component-calendar multiple Google Pixel emulator - dark mode" width="375" /> |
+
+## Range
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-calendar/ios/range.png" alt="bpk-component-calendar range iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-calendar/ios/range_dm.png" alt="bpk-component-calendar range iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-calendar/android/range.png" alt="bpk-component-calendar range Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-calendar/android/range_dm.png" alt="bpk-component-calendar range Google Pixel emulator - dark mode" width="375" /> |
+
+## Custom colours
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-calendar/ios/colored.png" alt="bpk-component-calendar colored iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-calendar/ios/colored_dm.png" alt="bpk-component-calendar colored iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-calendar/android/colored.png" alt="bpk-component-calendar colored Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-calendar/android/colored_dm.png" alt="bpk-component-calendar colored Google Pixel emulator - dark mode" width="375" /> |
+
 ## Installation
 
 Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.

@@ -2,6 +2,20 @@
 
 > Backpack React Native telephone input component.
 
+## Dialing code list
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-phone-input/ios/dialing-code-list.png" alt="bpk-component-phone-input dialing-code-list iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-phone-input/ios/dialing-code-list_dm.png" alt="bpk-component-phone-input dialing-code-list iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-phone-input/android/dialing-code-list.png" alt="bpk-component-phone-input dialing-code-list Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-phone-input/android/dialing-code-list_dm.png" alt="bpk-component-phone-input dialing-code-list Google Pixel emulator - dark mode" width="375" /> |
+
+## Phone number input
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-phone-input/ios/phone-number-input.png" alt="bpk-component-phone-input phone-number-input iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-phone-input/ios/phone-number-input_dm.png" alt="bpk-component-phone-input phone-number-input iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-phone-input/android/phone-number-input.png" alt="bpk-component-phone-input phone-number-input Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-phone-input/android/phone-number-input_dm.png" alt="bpk-component-phone-input phone-number-input Google Pixel emulator - dark mode" width="375" /> |
+
 ## Installation
 
 Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.

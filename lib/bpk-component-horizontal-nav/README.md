@@ -2,6 +2,27 @@
 
 > Backpack React Native horizontal navigation component.
 
+## Default
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-horizontal-nav/ios/default.png" alt="bpk-component-horizontal-nav default iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-horizontal-nav/ios/default_dm.png" alt="bpk-component-horizontal-nav default iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-horizontal-nav/android/default.png" alt="bpk-component-horizontal-nav default Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-horizontal-nav/android/default_dm.png" alt="bpk-component-horizontal-nav default Google Pixel emulator - dark mode" width="375" /> |
+
+## Small
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-horizontal-nav/ios/small.png" alt="bpk-component-horizontal-nav small iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-horizontal-nav/ios/small_dm.png" alt="bpk-component-horizontal-nav small iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-horizontal-nav/android/small.png" alt="bpk-component-horizontal-nav small Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-horizontal-nav/android/small_dm.png" alt="bpk-component-horizontal-nav small Google Pixel emulator - dark mode" width="375" /> |
+
+## Space around
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-horizontal-nav/ios/space-around.png" alt="bpk-component-horizontal-nav space-around iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-horizontal-nav/ios/space-around_dm.png" alt="bpk-component-horizontal-nav space-around iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-horizontal-nav/android/space-around.png" alt="bpk-component-horizontal-nav space-around Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-horizontal-nav/android/space-around_dm.png" alt="bpk-component-horizontal-nav space-around Google Pixel emulator - dark mode" width="375" /> |
+
 ## Installation
 
 Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.

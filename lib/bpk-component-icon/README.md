@@ -2,6 +2,13 @@
 
 > Backpack React Native icon component.
 
+## Icons
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-icon/ios/icons.png" alt="bpk-component-icon icons iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-icon/ios/icons_dm.png" alt="bpk-component-icon icons iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-icon/android/icons.png" alt="bpk-component-icon icons Google Pixel emulator" width="375" /> | <img src="undefined" alt="bpk-component-icon icons Google Pixel emulator - dark mode" width="375" /> |
+
 ## Installation
 
 Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.

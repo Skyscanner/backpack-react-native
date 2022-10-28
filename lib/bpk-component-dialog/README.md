@@ -2,6 +2,27 @@
 
 > Backpack React Native dialog dialog.
 
+## Simple
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-dialog/ios/simple.png" alt="bpk-component-dialog simple iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-dialog/ios/simple_dm.png" alt="bpk-component-dialog simple iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-dialog/android/simple.png" alt="bpk-component-dialog simple Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-dialog/android/simple_dm.png" alt="bpk-component-dialog simple Google Pixel emulator - dark mode" width="375" /> |
+
+## Multiple CTAs
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-dialog/ios/option.png" alt="bpk-component-dialog option iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-dialog/ios/option_dm.png" alt="bpk-component-dialog option iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-dialog/android/option.png" alt="bpk-component-dialog option Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-dialog/android/option_dm.png" alt="bpk-component-dialog option Google Pixel emulator - dark mode" width="375" /> |
+
+## Bottom
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-dialog/ios/bottom.png" alt="bpk-component-dialog bottom iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-dialog/ios/bottom_dm.png" alt="bpk-component-dialog bottom iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-dialog/android/bottom.png" alt="bpk-component-dialog bottom Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-dialog/android/bottom_dm.png" alt="bpk-component-dialog bottom Google Pixel emulator - dark mode" width="375" /> |
+
 ## Installation
 
 Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.
