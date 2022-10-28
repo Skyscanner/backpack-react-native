@@ -2,6 +2,35 @@
 
 > Backpack React Native panel component.
 
+## Default
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-panel/ios/default.png" alt="bpk-component-panel default iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-panel/ios/default_dm.png" alt="bpk-component-panel default iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-panel/android/default.png" alt="bpk-component-panel default Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-panel/android/default_dm.png" alt="bpk-component-panel default Google Pixel emulator - dark mode" width="375" /> |
+
+
+## Without padding
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-panel/ios/without-padding.png" alt="bpk-component-panel without-padding iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-panel/ios/without-padding_dm.png" alt="bpk-component-panel without-padding iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-panel/android/without-padding.png" alt="bpk-component-panel without-padding Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-panel/android/without-padding_dm.png" alt="bpk-component-panel without-padding Google Pixel emulator - dark mode" width="375" /> |
+
+## With divider
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-panel/ios/with-divider.png" alt="bpk-component-panel with-divider iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-panel/ios/with-divider_dm.png" alt="bpk-component-panel with-divider iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-panel/android/with-divider.png" alt="bpk-component-panel with-divider Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-panel/android/with-divider_dm.png" alt="bpk-component-panel with-divider Google Pixel emulator - dark mode" width="375" /> |
+
+## With divider arranged vertically
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-panel/ios/with-divider-arranged-vertically.png" alt="bpk-component-panel with-divider-arranged-vertically iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-panel/ios/with-divider-arranged-vertically_dm.png" alt="bpk-component-panel with-divider-arranged-vertically iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-panel/android/with-divider-arranged-vertically.png" alt="bpk-component-panel with-divider-arranged-vertically Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-panel/android/with-divider-arranged-vertically_dm.png" alt="bpk-component-panel with-divider-arranged-vertically Google Pixel emulator - dark mode" width="375" /> |
+
 ## Installation
 
 Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.

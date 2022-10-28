@@ -2,6 +2,27 @@
 
 > Backpack React Native flare component.
 
+## Default
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-flare/ios/default.png" alt="bpk-component-flare default iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-flare/ios/default_dm.png" alt="bpk-component-flare default iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-flare/android/default.png" alt="bpk-component-flare default Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-flare/android/default_dm.png" alt="bpk-component-flare default Google Pixel emulator - dark mode" width="375" /> |
+
+## With Image
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-flare/ios/image.png" alt="bpk-component-flare image iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-flare/ios/image_dm.png" alt="bpk-component-flare image iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-flare/android/image.png" alt="bpk-component-flare image Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-flare/android/image_dm.png" alt="bpk-component-flare image Google Pixel emulator - dark mode" width="375" /> |
+
+## Pointer up
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-flare/ios/pointer-up.png" alt="bpk-component-flare pointer-up iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-flare/ios/pointer-up_dm.png" alt="bpk-component-flare pointer-up iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-flare/android/pointer-up.png" alt="bpk-component-flare pointer-up Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-flare/android/pointer-up_dm.png" alt="bpk-component-flare pointer-up Google Pixel emulator - dark mode" width="375" /> |
+
 ## Installation
 
 Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.

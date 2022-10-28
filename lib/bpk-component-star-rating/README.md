@@ -2,6 +2,11 @@
 
 > Backpack React Native star rating component.
 
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-star-rating/ios/default.png" alt="bpk-component-star-rating default iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-star-rating/ios/default_dm.png" alt="bpk-component-star-rating default iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-star-rating/android/default.png" alt="bpk-component-star-rating default Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-star-rating/android/default_dm.png" alt="bpk-component-star-rating default Google Pixel emulator - dark mode" width="375" /> |
+
 ## Installation
 
 Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.

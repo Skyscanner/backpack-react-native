@@ -2,6 +2,13 @@
 
 > Backpack React Native text link component.
 
+## Default
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-text-link/ios/default.png" alt="bpk-component-text-link default iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-text-link/ios/default_dm.png" alt="bpk-component-text-link default iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-text-link/android/default.png" alt="bpk-component-text-link default Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-text-link/android/default_dm.png" alt="bpk-component-text-link default Google Pixel emulator - dark mode" width="375" /> |
+
 ## Installation
 
 Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.

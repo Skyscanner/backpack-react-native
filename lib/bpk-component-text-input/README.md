@@ -2,6 +2,21 @@
 
 > Backpack React Native text input component.
 
+## Text inputs
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-text-input/ios/text-inputs.png" alt="bpk-component-text-input text-inputs iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-text-input/ios/text-inputs_dm.png" alt="bpk-component-text-input text-inputs iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-text-input/android/text-inputs.png" alt="bpk-component-text-input text-inputs Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-text-input/android/text-inputs_dm.png" alt="bpk-component-text-input text-inputs Google Pixel emulator - dark mode" width="375" /> |
+
+
+## Text inputs with accessory view
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-text-input/ios/text-inputs-with-accessory-view.png" alt="bpk-component-text-input text-inputs-with-accessory-view iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-text-input/ios/text-inputs-with-accessory-view_dm.png" alt="bpk-component-text-input text-inputs-with-accessory-view iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-text-input/android/text-inputs-with-accessory-view.png" alt="bpk-component-text-input text-inputs-with-accessory-view Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-text-input/android/text-inputs-with-accessory-view_dm.png" alt="bpk-component-text-input text-inputs-with-accessory-view Google Pixel emulator - dark mode" width="375" /> |
+
 ## Installation
 
 Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.

@@ -2,6 +2,50 @@
 
 > Backpack React Native chip component.
 
+## Default
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-chip/ios/default.png" alt="bpk-component-chip default iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-chip/ios/default_dm.png" alt="bpk-component-chip default iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-chip/android/default.png" alt="bpk-component-chip default Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-chip/android/default_dm.png" alt="bpk-component-chip default Google Pixel emulator - dark mode" width="375" /> |
+
+## With icons
+
+### With leading icon
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-chip/ios/defaultWithIcon.png" alt="bpk-component-chip defaultWithIcon iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-chip/ios/defaultWithIcon_dm.png" alt="bpk-component-chip defaultWithIcon iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-chip/android/defaultWithIcon.png" alt="bpk-component-chip defaultWithIcon Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-chip/android/defaultWithIcon_dm.png" alt="bpk-component-chip defaultWithIcon Google Pixel emulator - dark mode" width="375" /> |
+
+### With trailing icon
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-chip/ios/defaultWithTrailingIcon.png" alt="bpk-component-chip defaultWithTrailingIcon iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-chip/ios/defaultWithTrailingIcon_dm.png" alt="bpk-component-chip defaultWithTrailingIcon iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-chip/android/defaultWithTrailingIcon.png" alt="bpk-component-chip defaultWithTrailingIcon Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-chip/android/defaultWithTrailingIcon_dm.png" alt="bpk-component-chip defaultWithTrailingIcon Google Pixel emulator - dark mode" width="375" /> |
+
+## Dismissible
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-chip/ios/dismissible.png" alt="bpk-component-chip dismissible iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-chip/ios/dismissible_dm.png" alt="bpk-component-chip dismissible iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-chip/android/dismissible.png" alt="bpk-component-chip dismissible Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-chip/android/dismissible_dm.png" alt="bpk-component-chip dismissible Google Pixel emulator - dark mode" width="375" /> |
+
+## Outline
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-chip/ios/outline.png" alt="bpk-component-chip outline iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-chip/ios/outline_dm.png" alt="bpk-component-chip outline iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-chip/android/outline.png" alt="bpk-component-chip outline Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-chip/android/outline_dm.png" alt="bpk-component-chip outline Google Pixel emulator - dark mode" width="375" /> |
+
+## Outline Dismissible
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-chip/ios/outlineDismissible.png" alt="bpk-component-chip outlineDismissible iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-chip/ios/outlineDismissible_dm.png" alt="bpk-component-chip outlineDismissible iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-chip/android/outlineDismissible.png" alt="bpk-component-chip outlineDismissible Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-chip/android/outlineDismissible_dm.png" alt="bpk-component-chip outlineDismissible Google Pixel emulator - dark mode" width="375" /> |
+
 ## Installation
 
 Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.

@@ -2,6 +2,27 @@
 
 > Backpack React Native map component.
 
+## Default
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-map/ios/default.png" alt="bpk-component-map default iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-map/ios/default_dm.png" alt="bpk-component-map default iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-map/android/default.png" alt="bpk-component-map default Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-map/android/default_dm.png" alt="bpk-component-map default Google Pixel emulator - dark mode" width="375" /> |
+
+## Map markers
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-map/ios/map-markers.png" alt="bpk-component-map map-markers iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-map/ios/map-markers_dm.png" alt="bpk-component-map map-markers iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-map/android/map-markers.png" alt="bpk-component-map map-markers Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-map/android/map-markers_dm.png" alt="bpk-component-map map-markers Google Pixel emulator - dark mode" width="375" /> |
+
+## Price markers
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-map/ios/price-markers.png" alt="bpk-component-map price-markers iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-map/ios/price-markers_dm.png" alt="bpk-component-map price-markers iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-map/android/price-markers.png" alt="bpk-component-map price-markers Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-map/android/price-markers_dm.png" alt="bpk-component-map price-markers Google Pixel emulator - dark mode" width="375" /> |
+
 ## Installation
 
 Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.

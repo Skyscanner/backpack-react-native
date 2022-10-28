@@ -2,6 +2,49 @@
 
 > Backpack React Native badge component.
 
+## Default
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-badge/ios/default.png" alt="bpk-component-badge default iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-badge/ios/default_dm.png" alt="bpk-component-badge default iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-badge/android/default.png" alt="bpk-component-badge default Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-badge/android/default_dm.png" alt="bpk-component-badge default Google Pixel emulator - dark mode" width="375" /> |
+
+## With icon
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-badge/ios/with-icon.png" alt="bpk-component-badge with-icon iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-badge/ios/with-icon_dm.png" alt="bpk-component-badge with-icon iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-badge/android/with-icon.png" alt="bpk-component-badge with-icon Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-badge/android/with-icon_dm.png" alt="bpk-component-badge with-icon Google Pixel emulator - dark mode" width="375" /> |
+
+## With trailing icon
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-badge/ios/with-trailing-icon.png" alt="bpk-component-badge with-trailing-icon iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-badge/ios/with-trailing-icon_dm.png" alt="bpk-component-badge with-trailing-icon iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-badge/android/with-trailing-icon.png" alt="bpk-component-badge with-trailing-icon Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-badge/android/with-trailing-icon_dm.png" alt="bpk-component-badge with-trailing-icon Google Pixel emulator - dark mode" width="375" /> |
+
+
+## With multiple icons
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-badge/ios/with-multiple-icons.png" alt="bpk-component-badge with-multiple-icons iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-badge/ios/with-multiple-icons_dm.png" alt="bpk-component-badge with-multiple-icons iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-badge/android/with-multiple-icons.png" alt="bpk-component-badge with-multiple-icons Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-badge/android/with-multiple-icons_dm.png" alt="bpk-component-badge with-multiple-icons Google Pixel emulator - dark mode" width="375" /> |
+
+## Docked start
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-badge/ios/docked-start.png" alt="bpk-component-badge docked-start iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-badge/ios/docked-start_dm.png" alt="bpk-component-badge docked-start iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-badge/android/docked-start.png" alt="bpk-component-badge docked-start Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-badge/android/docked-start_dm.png" alt="bpk-component-badge docked-start Google Pixel emulator - dark mode" width="375" /> |
+
+## Docked end
+
+| Day | Night |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-badge/ios/docked-end.png" alt="bpk-component-badge docked-end iPhone 8 simulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-badge/ios/docked-end_dm.png" alt="bpk-component-badge docked-end iPhone 8 simulator - dark mode" width="375" /> |
+| <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-badge/android/docked-end.png" alt="bpk-component-badge docked-end Google Pixel emulator" width="375" /> | <img src="https://raw.githubusercontent.com/Skyscanner/backpack-react-native/main/screenshots/bpk-component-badge/android/docked-end_dm.png" alt="bpk-component-badge docked-end Google Pixel emulator - dark mode" width="375" /> |
+
 ## Installation
 
 Check the main [Readme](https://github.com/skyscanner/backpack-react-native#usage) for a complete installation guide.
