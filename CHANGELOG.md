@@ -1,5 +1,19 @@
 # Backpack changelog
 
+# 21.2.0 - 2022-10-16
+
+## Added
+
+- `BpkNavigationBar`
+  - Added support for `iPhone 14 Pro` and `iPhone 14 Pro Max` devices.
+
+## Fixed
+
+- Bump `foundations` and `svgs` to latest
+
+- `BpkChip`
+  - Updated Chip component to not clash in Dark Mode.
+
 # 21.1.0 - 2022-10-14
 
 ## Changed
