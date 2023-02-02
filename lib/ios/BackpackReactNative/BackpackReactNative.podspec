@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.summary      = "Backpack for React Native"
 
   s.authors      = { "backpack" => "backpacksquad@skyscanner.net" }
-  s.homepage     = "https://backpack.github.io/components/calendar?platform=ios"
+  s.homepage     = "https://skyscanner.design/latest/components/calendar/i-os.html"
   s.license      = "MIT"
   s.platform     = :ios, "11.0"
 

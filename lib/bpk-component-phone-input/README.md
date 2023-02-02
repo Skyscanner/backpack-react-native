@@ -208,7 +208,7 @@ export default class App extends Component {
 
 ### Props
 
-Inherits all props from [`BpkTextInput`](https://backpack.github.io/components/native/text-input) except `accessoryView`.
+Inherits all props from [`BpkTextInput`](../bpk-component-text-input/README.md#props) except `accessoryView`.
 
 
 | Property                    | PropType                                                    | Required | Default Value |

@@ -59,4 +59,4 @@ The token names in `BpkThemeAttributes` and `@skyscanner/bpk-foundations-react-n
 | `primaryColor` | `colorSkyBlue` |
 | `textFontFamily` | `fontFamily` |
 
-There are also a number of [dynamic tokens available](https://backpack.github.io/guidelines/colors) that will automatically change to support both light and dark mode, so your code doesn't need to perform that logic itself. This may be a good opportunity to switch to those instead.
+There are also a number of [dynamic tokens available](https://skyscanner.design/latest/foundations/product-colour/overview.html) that will automatically change to support both light and dark mode, so your code doesn't need to perform that logic itself. This may be a good opportunity to switch to those instead.
