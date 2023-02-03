@@ -55,7 +55,6 @@ RCT_EXPORT_MODULE()
                                   iconBackgroundColor:dialog.iconColor];
     dialog.dialogController = [BPKDialogController dialogControllerWithTitle:dialog.title
                                                                      message:dialog.message
-                                                                       style:dialog.style
                                                               iconDefinition:iconDefinition];
 
     BPKDialogScrimAction *scrimAction = [BPKDialogScrimAction
