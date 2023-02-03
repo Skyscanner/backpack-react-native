@@ -20,7 +20,6 @@
 
 #import <BackpackReactNative/RCTBPKDialog.h>
 #import <BackpackReactNative/RCTBPKDialogManager.h>
-#import <BackpackReactNative/RCTConvert+RCTBPKDialog.h>
 
 #import <Backpack/Color.h>
 #import <Backpack/Label.h>
@@ -46,15 +45,6 @@
 - (void)testViewDelegateIsManager {
     XCTAssertEqual(self.dialogView.delegate, (id<RCTDialogInteractor>)self.dialogViewManager,
                    @"The dialog's delegate should be the view manager");
-}
-
-- (void)testRatingSizeEnumConverter {
-    BPKDialogControllerStyle dialogStyleAlert = [RCTConvert BPKDialogControllerStyle:@"alert"];
-    XCTAssertTrue(dialogStyleAlert == BPKDialogControllerStyleAlert);
-
-    // test that invalid values fall back to a sensible default
-    BPKDialogControllerStyle dialogStyleInvalid = [RCTConvert BPKDialogControllerStyle:@"invalid"];
-    XCTAssertTrue(dialogStyleInvalid == BPKDialogControllerStyleAlert);
 }
 
 @end
