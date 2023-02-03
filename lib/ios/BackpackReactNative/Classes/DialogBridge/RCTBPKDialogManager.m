@@ -26,7 +26,6 @@
 #import "RCTBPKDialogEventsManager.h"
 #import "RCTBPKDialogManager.h"
 #import "RCTBPKDialogUtils.h"
-#import "RCTConvert+RCTBPKDialog.h"
 
 NS_ASSUME_NONNULL_BEGIN
 @interface RCTBPKDialogManager () <RCTDialogInteractor>
@@ -51,7 +50,7 @@ RCT_EXPORT_MODULE()
 
 - (void)presentDialog:(RCTBPKDialog *)dialog {
     BPKDialogIconDefinition *iconDefinition =
-        [[BPKDialogIconDefinition alloc] initWithIcon:[BPKIcon templateIconNamed:dialog.iconId size:BPKIconSizeLarge]
+        [[BPKDialogIconDefinition alloc] initWithIcon:[BPKIcon largeTemplateIconNamed:dialog.iconId]
                                   iconBackgroundColor:dialog.iconColor];
     dialog.dialogController = [BPKDialogController dialogControllerWithTitle:dialog.title
                                                                      message:dialog.message

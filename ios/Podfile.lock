@@ -1,11 +1,11 @@
 PODS:
-  - Backpack (56.0.0):
+  - Backpack (58.0.0):
     - Backpack-Common
     - FloatingPanel (= 2.5.3)
     - FSCalendar (~> 2.8.2)
     - MBProgressHUD (~> 1.2.0)
     - TTTAttributedLabel (~> 2.0.0)
-  - Backpack-Common (56.0.0)
+  - Backpack-Common (58.0.0)
   - BackpackReactNative (21.2.0):
     - Backpack
     - React
@@ -399,8 +399,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  Backpack: d85950aef20b2ab349641c57b7bab094eec90ff4
-  Backpack-Common: 08bb52016782d829803821f23f64022f116ee551
+  Backpack: abb8fcb2d23e8d84437c07ca206ef973fd52edd9
+  Backpack-Common: f5848fa07b6e9efa4cc0649ed016ef44abe0a71d
   BackpackReactNative: 9bf67db89b6daecd9fcc5c42e85fc1ceed11f21a
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BVLinearGradient: e3aad03778a456d77928f594a649e96995f1c872
