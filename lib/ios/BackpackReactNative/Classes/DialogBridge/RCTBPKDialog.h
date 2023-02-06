@@ -40,7 +40,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, copy) NSString *title;
 @property(nonatomic) NSString *message;
 @property(nonatomic) NSString *iconId;
-@property(nonatomic) BPKDialogControllerStyle style;
 @property(nonatomic, strong) UIColor *iconColor;
 @property(nonatomic, strong) NSMutableArray<RCTBPKDialogButtonAction *> *actions;
 @property(nonatomic) BOOL *scrimEnabled;
