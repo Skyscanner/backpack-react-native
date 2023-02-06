@@ -1,5 +1,12 @@
 # Backpack changelog
 
+# 22.0.0 - 2023-02-06
+
+## Breaking
+
+- `BpkDialog`
+  - Removed `bottomSheet` style from iOS.
+
 # 21.2.0 - 2022-10-16
 
 ## Added
