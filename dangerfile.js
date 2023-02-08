@@ -76,9 +76,7 @@ if (isPrExternal) {
   Thanks for the PR 🎉! Contributions like yours help to improve the design system
   for everybody and we appreciate you taking the effort to create this PR.
   ![Thanks](${getRandomFromArray(thanksGifs)})
-  - [ ] Check this if you have read and followed the [contributing guidelines](https://github.com/Skyscanner/backpack-docs/blob/main/CONTRIBUTING.md)
-  If you're curious about how we review, please read through the
-  [code review guidelines](https://github.com/Skyscanner/backpack-docs/blob/main/CODE_REVIEW_GUIDELINES.md).
+  - [ ] Check this if you have read and followed the [contributing guidelines](https://www.skyscanner.design/latest/getting-started/contributing/for-engineers.html)
   `);
   warn(
     `If this is coming from a fork, CI will fail. This is a known limitation due to CI not sharing secrets to forked repos. Somebody from Backpack can check this manually.`,
