@@ -204,6 +204,3 @@ To contribute please see [contributing.md](CONTRIBUTING.md).
 - [bpk-component-touchable-overlay](/lib/bpk-component-touchable-overlay)
 - [bpk-styles](/lib/bpk-styles)
 - [bpk-theming](/lib/bpk-theming)
-
-## Contact
-- backpack@skyscanner.net
