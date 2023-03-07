@@ -77,7 +77,6 @@ configure(() => {
   require('../lib/bpk-component-phone-input/stories');
   require('../lib/bpk-component-picker/stories');
   require('../lib/bpk-component-progress/stories');
-  require('../lib/bpk-component-rating/stories');
   require('../lib/bpk-component-section-list/stories');
   require('../lib/bpk-component-select/stories');
   require('../lib/bpk-component-snackbar/stories');

@@ -20,7 +20,6 @@
 		53BE2BC678B94ACB91F10BC7 /* BpkIconIOS.woff in Resources */ = {isa = PBXBuildFile; fileRef = AA66E7B8E3114A04B5A1488D /* BpkIconIOS.woff */; };
 		60005AA222382F040076B576 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60005AA122382F040076B576 /* JavaScriptCore.framework */; };
 		D29228A3231441530046FF30 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29228A2231441530046FF30 /* File.swift */; };
-		D2AFEEA8241945C100111A13 /* RCTBPKRatingManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AFEEA7241945C100111A13 /* RCTBPKRatingManagerTests.m */; };
 		D2DA2ADD241FDA1E00863E1D /* RCTBPKDialogManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DA2AD7241FCAA800863E1D /* RCTBPKDialogManagerTests.m */; };
 		D61144CB2200516700F76EAE /* RCTBPKCalendarDateUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D61144CA2200516700F76EAE /* RCTBPKCalendarDateUtilsTests.m */; };
 		D66FC4882109D8610063B1A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66FC4872109D8610063B1A6 /* Main.storyboard */; };
@@ -75,7 +74,6 @@
 		CA6B78B2857E4CBCDBB6E13A /* Pods_Backpack_Native_Backpack_Native_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Backpack_Native_Backpack_Native_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D292289F2314411A0046FF30 /* Backpack Native-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Backpack Native-Bridging-Header.h"; sourceTree = "<group>"; };
 		D29228A2231441530046FF30 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		D2AFEEA7241945C100111A13 /* RCTBPKRatingManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTBPKRatingManagerTests.m; sourceTree = "<group>"; };
 		D2DA2AD7241FCAA800863E1D /* RCTBPKDialogManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTBPKDialogManagerTests.m; sourceTree = "<group>"; };
 		D60ACAA41FD8532E009E5946 /* he-IL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "he-IL"; path = "he-IL.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		D61144CA2200516700F76EAE /* RCTBPKCalendarDateUtilsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTBPKCalendarDateUtilsTests.m; sourceTree = "<group>"; };
@@ -130,7 +128,6 @@
 			children = (
 				00E356F01AD99517003FC87E /* Supporting Files */,
 				D61144CA2200516700F76EAE /* RCTBPKCalendarDateUtilsTests.m */,
-				D2AFEEA7241945C100111A13 /* RCTBPKRatingManagerTests.m */,
 				D2DA2AD7241FCAA800863E1D /* RCTBPKDialogManagerTests.m */,
 				D6B3C973242A509900C73B7C /* RCTBPKFlareManagerTests.m */,
 				D6B3C975242A51EF00C73B7C /* RCTBPKFlareTests.m */,
@@ -424,7 +421,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		15D87A37959EDA41EF13445E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -639,7 +636,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2AFEEA8241945C100111A13 /* RCTBPKRatingManagerTests.m in Sources */,
 				D61144CB2200516700F76EAE /* RCTBPKCalendarDateUtilsTests.m in Sources */,
 				D681AE262445E94600B0CEE9 /* RCTBPKSnackbarManagerTests.m in Sources */,
 				D6B3C974242A509900C73B7C /* RCTBPKFlareManagerTests.m in Sources */,
@@ -934,7 +930,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -978,7 +974,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
