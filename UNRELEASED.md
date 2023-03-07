@@ -1,7 +1,8 @@
 # Unreleased
 
 > Place your changes below this line. 
-
+**Breaking:**
+- Removed BPKRating component
 
 ## How to write a good changelog entry
 
