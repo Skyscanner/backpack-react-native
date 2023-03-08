@@ -39,7 +39,10 @@ jobs:
         run: ./android/gradlew -p android :app:assembleDebug :backpack-react-native:assembleAndroidTest
 
       - name: Run Android unit tests
-        run: ./android/gradlew -p android :app:Test :backpack-react-native:Test
+        run: |
+          export NODE_OPTIONS=--openssl-legacy-provider
+          ./android/gradlew -p android :app:Test :backpack-react-native:Test
+
   
   # KOA-4695 - These tests currently fail so we will need to fix them.
   # Android:
