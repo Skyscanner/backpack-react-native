@@ -107,7 +107,6 @@ This package depends on [`react-native-maps`](https://github.com/react-community
           LinearGradientPackage(),
           CalendarPackage(),
           DialogPackage(),
-          BpkRatingPackage(),
           BpkSnackbarPackage())
   }
   ```
@@ -192,7 +191,6 @@ To contribute please see [contributing.md](CONTRIBUTING.md).
 - [bpk-component-phone-input](/lib/bpk-component-phone-input)
 - [bpk-component-picker](/lib/bpk-component-picker)
 - [bpk-component-progress](/lib/bpk-component-progress)
-- [bpk-component-rating](/lib/bpk-component-rating)
 - [bpk-component-section-list](/lib/bpk-component-section-list)
 - [bpk-component-select](/lib/bpk-component-select)
 - [bpk-component-spinner](/lib/bpk-component-spinner)

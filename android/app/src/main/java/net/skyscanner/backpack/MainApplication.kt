@@ -14,7 +14,6 @@ import net.skyscanner.backpack.reactnative.button.BpkButtonPackage
 import net.skyscanner.backpack.reactnative.calendar.CalendarPackage
 import net.skyscanner.backpack.reactnative.dialog.DialogPackage
 import net.skyscanner.backpack.reactnative.flare.BpkFlarePackage
-import net.skyscanner.backpack.reactnative.rating.BpkRatingPackage
 import net.skyscanner.backpack.reactnative.snackbar.BpkSnackbarPackage
 import java.util.Arrays
 
@@ -38,7 +37,6 @@ class MainApplication : Application(), ReactApplication {
         CalendarPackage(),
         DialogPackage(),
         BpkButtonPackage(),
-        BpkRatingPackage(),
         BpkFlarePackage(),
         BpkSnackbarPackage()
       )

@@ -1,7 +1,8 @@
 # Unreleased
 
 > Place your changes below this line. 
-
+**Breaking:**
+- Removed bpk-component-rating.
 
 ## How to write a good changelog entry
 
