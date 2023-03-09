@@ -1,5 +1,10 @@
 # Backpack changelog
 
+# 23.0.0 - 2023-03-09
+
+**Breaking:**
+  - Removed `bpk-component-rating`.
+
 # 22.0.0 - 2023-02-06
 
 ## Breaking
