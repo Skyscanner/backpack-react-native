@@ -2,6 +2,7 @@
 
 exports[`Android BpkCarouselIndicator should render correctly 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "backgroundColor": "rgb(194, 201, 205)",
@@ -16,6 +17,7 @@ exports[`Android BpkCarouselIndicator should render correctly 1`] = `
 
 exports[`Android BpkCarouselIndicator should render correctly with selected 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "backgroundColor": "rgb(255, 255, 255)",
@@ -30,6 +32,7 @@ exports[`Android BpkCarouselIndicator should render correctly with selected 1`] 
 
 exports[`Android BpkCarouselIndicator should render correctly with size=base 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "backgroundColor": "rgb(194, 201, 205)",
@@ -44,6 +47,7 @@ exports[`Android BpkCarouselIndicator should render correctly with size=base 1`]
 
 exports[`Android BpkCarouselIndicator should render correctly with size=invisible 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "backgroundColor": "rgb(194, 201, 205)",
@@ -58,6 +62,7 @@ exports[`Android BpkCarouselIndicator should render correctly with size=invisibl
 
 exports[`Android BpkCarouselIndicator should render correctly with size=md 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "backgroundColor": "rgb(194, 201, 205)",
@@ -72,6 +77,7 @@ exports[`Android BpkCarouselIndicator should render correctly with size=md 1`] =
 
 exports[`Android BpkCarouselIndicator should render correctly with size=sm 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "backgroundColor": "rgb(194, 201, 205)",

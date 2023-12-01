@@ -2,6 +2,7 @@
 
 exports[`Android BpkBannerAlert dark mode should accept userland styling 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "borderRadius": 0,
@@ -183,6 +184,7 @@ exports[`Android BpkBannerAlert dark mode should accept userland styling 1`] = `
 
 exports[`Android BpkBannerAlert dark mode should render correctly with Node message 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "borderRadius": 0,
@@ -407,6 +409,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with Node mess
 
 exports[`Android BpkBannerAlert dark mode should render correctly with dismissable 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "borderRadius": 0,
@@ -515,6 +518,11 @@ exports[`Android BpkBannerAlert dark mode should render correctly with dismissab
           <View
             accessibilityLabel="Dismiss"
             accessibilityRole="button"
+            accessibilityState={
+              Object {
+                "disabled": false,
+              }
+            }
             accessible={true}
             focusable={true}
             nativeBackgroundAndroid={
@@ -667,6 +675,11 @@ exports[`Android BpkBannerAlert dark mode should render correctly with dismissab
           <View
             accessibilityLabel="Dismiss"
             accessibilityRole="button"
+            accessibilityState={
+              Object {
+                "disabled": false,
+              }
+            }
             accessible={true}
             focusable={true}
             nativeBackgroundAndroid={
@@ -731,6 +744,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with dismissab
 
 exports[`Android BpkBannerAlert dark mode should render correctly with type equal to error 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "borderRadius": 0,
@@ -911,6 +925,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
 
 exports[`Android BpkBannerAlert dark mode should render correctly with type equal to event 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "borderRadius": 0,
@@ -1091,6 +1106,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
 
 exports[`Android BpkBannerAlert dark mode should render correctly with type equal to neutral 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "borderRadius": 0,
@@ -1271,6 +1287,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
 
 exports[`Android BpkBannerAlert dark mode should render correctly with type equal to primary 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "borderRadius": 0,
@@ -1451,6 +1468,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
 
 exports[`Android BpkBannerAlert dark mode should render correctly with type equal to success 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "borderRadius": 0,
@@ -1631,6 +1649,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
 
 exports[`Android BpkBannerAlert dark mode should render correctly with type equal to warn 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "borderRadius": 0,
@@ -1811,6 +1830,7 @@ exports[`Android BpkBannerAlert dark mode should render correctly with type equa
 
 exports[`Android BpkBannerAlert light mode should accept userland styling 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "borderRadius": 0,
@@ -1992,6 +2012,7 @@ exports[`Android BpkBannerAlert light mode should accept userland styling 1`] = 
 
 exports[`Android BpkBannerAlert light mode should render correctly with Node message 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "borderRadius": 0,
@@ -2216,6 +2237,7 @@ exports[`Android BpkBannerAlert light mode should render correctly with Node mes
 
 exports[`Android BpkBannerAlert light mode should render correctly with dismissable 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "borderRadius": 0,
@@ -2324,6 +2346,11 @@ exports[`Android BpkBannerAlert light mode should render correctly with dismissa
           <View
             accessibilityLabel="Dismiss"
             accessibilityRole="button"
+            accessibilityState={
+              Object {
+                "disabled": false,
+              }
+            }
             accessible={true}
             focusable={true}
             nativeBackgroundAndroid={
@@ -2476,6 +2503,11 @@ exports[`Android BpkBannerAlert light mode should render correctly with dismissa
           <View
             accessibilityLabel="Dismiss"
             accessibilityRole="button"
+            accessibilityState={
+              Object {
+                "disabled": false,
+              }
+            }
             accessible={true}
             focusable={true}
             nativeBackgroundAndroid={
@@ -2540,6 +2572,7 @@ exports[`Android BpkBannerAlert light mode should render correctly with dismissa
 
 exports[`Android BpkBannerAlert light mode should render correctly with type equal to error 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "borderRadius": 0,
@@ -2720,6 +2753,7 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
 
 exports[`Android BpkBannerAlert light mode should render correctly with type equal to event 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "borderRadius": 0,
@@ -2900,6 +2934,7 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
 
 exports[`Android BpkBannerAlert light mode should render correctly with type equal to neutral 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "borderRadius": 0,
@@ -3080,6 +3115,7 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
 
 exports[`Android BpkBannerAlert light mode should render correctly with type equal to primary 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "borderRadius": 0,
@@ -3260,6 +3296,7 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
 
 exports[`Android BpkBannerAlert light mode should render correctly with type equal to success 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "borderRadius": 0,
@@ -3440,6 +3477,7 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
 
 exports[`Android BpkBannerAlert light mode should render correctly with type equal to warn 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "borderRadius": 0,
@@ -3620,6 +3658,7 @@ exports[`Android BpkBannerAlert light mode should render correctly with type equ
 
 exports[`Android BpkBannerAlert should render correctly when not shown 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "borderRadius": 0,
@@ -3800,6 +3839,7 @@ exports[`Android BpkBannerAlert should render correctly when not shown 1`] = `
 
 exports[`Android BpkBannerAlert should render correctly with animateOnEnter 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "borderRadius": 0,
@@ -3980,6 +4020,7 @@ exports[`Android BpkBannerAlert should render correctly with animateOnEnter 1`] 
 
 exports[`Android BpkBannerAlert should render correctly with animateOnLeave 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "borderRadius": 0,
@@ -4160,6 +4201,7 @@ exports[`Android BpkBannerAlert should render correctly with animateOnLeave 1`] 
 
 exports[`Android BpkBannerAlert should render correctly with children provided (expandable) 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "borderRadius": 0,
@@ -4294,6 +4336,7 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
         </Text>
       </View>
       <View
+        collapsable={false}
         style={
           Object {
             "borderRadius": 0,
@@ -4491,6 +4534,7 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
         </Text>
       </View>
       <View
+        collapsable={false}
         style={
           Object {
             "borderRadius": 0,
@@ -4574,6 +4618,7 @@ exports[`Android BpkBannerAlert should render correctly with children provided (
 
 exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "borderRadius": 0,
@@ -4708,6 +4753,7 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
         </Text>
       </View>
       <View
+        collapsable={false}
         style={
           Object {
             "borderRadius": 0,
@@ -4905,6 +4951,7 @@ exports[`Android BpkBannerAlert should render correctly with expanded 1`] = `
         </Text>
       </View>
       <View
+        collapsable={false}
         style={
           Object {
             "borderRadius": 0,

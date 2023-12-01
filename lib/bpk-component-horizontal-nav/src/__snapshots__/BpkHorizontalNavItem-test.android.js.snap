@@ -4,6 +4,11 @@ exports[`Android BpkHorizontalNavItem dark mode should render correctly 1`] = `
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   nativeBackgroundAndroid={
@@ -60,6 +65,11 @@ exports[`Android BpkHorizontalNavItem dark mode should render correctly with "di
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
   accessible={true}
   focusable={false}
   nativeBackgroundAndroid={
@@ -119,6 +129,11 @@ exports[`Android BpkHorizontalNavItem dark mode should render correctly with "se
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
   accessible={true}
   focusable={false}
   nativeBackgroundAndroid={
@@ -178,6 +193,11 @@ exports[`Android BpkHorizontalNavItem light mode should render correctly 1`] = `
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   nativeBackgroundAndroid={
@@ -234,6 +254,11 @@ exports[`Android BpkHorizontalNavItem light mode should render correctly with "d
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
   accessible={true}
   focusable={false}
   nativeBackgroundAndroid={
@@ -293,6 +318,11 @@ exports[`Android BpkHorizontalNavItem light mode should render correctly with "s
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
   accessible={true}
   focusable={false}
   nativeBackgroundAndroid={
@@ -352,6 +382,11 @@ exports[`Android BpkHorizontalNavItem should render correctly with "small" prop 
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   nativeBackgroundAndroid={
@@ -411,6 +446,11 @@ exports[`Android BpkHorizontalNavItem should render correctly with "spaceAround"
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   nativeBackgroundAndroid={
@@ -467,6 +507,11 @@ exports[`Android BpkHorizontalNavItem should render correctly with arbitrary pro
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   nativeBackgroundAndroid={
@@ -523,6 +568,11 @@ exports[`Android BpkHorizontalNavItem should render correctly with custom "style
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   nativeBackgroundAndroid={
@@ -582,6 +632,11 @@ exports[`Android BpkHorizontalNavItem should render item text correctly with cus
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   nativeBackgroundAndroid={
@@ -641,6 +696,11 @@ exports[`Android BpkHorizontalNavItem should support theming 1`] = `
 <View
   accessibilityLabel="Nav"
   accessibilityRole="button"
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   nativeBackgroundAndroid={

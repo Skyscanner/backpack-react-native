@@ -11,6 +11,11 @@ exports[`android BpkNavigationBarButton should forward custom props 1`] = `
   <View
     accessibilityLabel="Back"
     accessibilityRole="button"
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
     accessible={true}
     focusable={true}
     nativeBackgroundAndroid={
@@ -68,6 +73,11 @@ exports[`android BpkNavigationBarButton should render correctly back icon 1`] = 
   <View
     accessibilityLabel="Back"
     accessibilityRole="button"
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
     accessible={true}
     focusable={true}
     nativeBackgroundAndroid={
@@ -124,6 +134,11 @@ exports[`android BpkNavigationBarButton should render correctly disabled 1`] = `
   <View
     accessibilityLabel="Done"
     accessibilityRole="button"
+    accessibilityState={
+      Object {
+        "disabled": true,
+      }
+    }
     accessible={true}
     focusable={false}
     nativeBackgroundAndroid={
@@ -180,6 +195,11 @@ exports[`android BpkNavigationBarButton should render correctly with close icon 
   <View
     accessibilityLabel="Close"
     accessibilityRole="button"
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
     accessible={true}
     focusable={true}
     nativeBackgroundAndroid={
@@ -236,6 +256,11 @@ exports[`android BpkNavigationBarButton should render correctly with tick icon 1
   <View
     accessibilityLabel="Done"
     accessibilityRole="button"
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
     accessible={true}
     focusable={true}
     nativeBackgroundAndroid={
@@ -292,6 +317,11 @@ exports[`android BpkNavigationBarButton should respect "disabledTintColor" 1`] =
   <View
     accessibilityLabel="Done"
     accessibilityRole="button"
+    accessibilityState={
+      Object {
+        "disabled": true,
+      }
+    }
     accessible={true}
     focusable={false}
     nativeBackgroundAndroid={
@@ -348,6 +378,11 @@ exports[`android BpkNavigationBarButton should respect "tintColor" 1`] = `
   <View
     accessibilityLabel="Done"
     accessibilityRole="button"
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
     accessible={true}
     focusable={true}
     nativeBackgroundAndroid={
@@ -404,6 +439,11 @@ exports[`android BpkNavigationBarButton should respect "touchableColor" 1`] = `
   <View
     accessibilityLabel="Done"
     accessibilityRole="button"
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
     accessible={true}
     focusable={true}
     nativeBackgroundAndroid={

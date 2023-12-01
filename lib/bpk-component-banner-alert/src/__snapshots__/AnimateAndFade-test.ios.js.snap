@@ -2,6 +2,7 @@
 
 exports[`iOS AnimateAndFade should render correctly 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "borderRadius": 0,
@@ -74,6 +75,7 @@ exports[`iOS AnimateAndFade should render correctly 1`] = `
 
 exports[`iOS AnimateAndFade should render correctly when show is false 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "borderRadius": 0,
@@ -146,6 +148,7 @@ exports[`iOS AnimateAndFade should render correctly when show is false 1`] = `
 
 exports[`iOS AnimateAndFade should render correctly with animateOnEnter 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "borderRadius": 0,
@@ -218,6 +221,7 @@ exports[`iOS AnimateAndFade should render correctly with animateOnEnter 1`] = `
 
 exports[`iOS AnimateAndFade should render correctly with animateOnLeave 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "borderRadius": 0,

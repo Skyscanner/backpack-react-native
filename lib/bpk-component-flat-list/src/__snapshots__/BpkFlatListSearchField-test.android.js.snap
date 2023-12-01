@@ -15,9 +15,7 @@ exports[`Android BpkFlatListSearchField dark mode should render correctly 1`] = 
   }
 >
   <TextInput
-    allowFontScaling={true}
     placeholderTextColor="rgb(84, 88, 96)"
-    rejectResponderTermination={true}
     style={
       Object {
         "backgroundColor": "rgb(1, 9, 19)",
@@ -32,7 +30,6 @@ exports[`Android BpkFlatListSearchField dark mode should render correctly 1`] = 
         "paddingVertical": 8,
       }
     }
-    underlineColorAndroid="transparent"
   />
   <Text
     allowFontScaling={false}
@@ -74,9 +71,7 @@ exports[`Android BpkFlatListSearchField dark mode should support arbitrary props
   }
 >
   <TextInput
-    allowFontScaling={true}
     placeholderTextColor="rgb(84, 88, 96)"
-    rejectResponderTermination={true}
     style={
       Object {
         "backgroundColor": "rgb(1, 9, 19)",
@@ -92,7 +87,6 @@ exports[`Android BpkFlatListSearchField dark mode should support arbitrary props
       }
     }
     testID="123"
-    underlineColorAndroid="transparent"
   />
   <Text
     allowFontScaling={false}
@@ -136,9 +130,7 @@ exports[`Android BpkFlatListSearchField dark mode should support userland styles
   }
 >
   <TextInput
-    allowFontScaling={true}
     placeholderTextColor="rgb(84, 88, 96)"
-    rejectResponderTermination={true}
     style={
       Object {
         "backgroundColor": "rgb(1, 9, 19)",
@@ -153,7 +145,6 @@ exports[`Android BpkFlatListSearchField dark mode should support userland styles
         "paddingVertical": 8,
       }
     }
-    underlineColorAndroid="transparent"
   />
   <Text
     allowFontScaling={false}
@@ -195,9 +186,7 @@ exports[`Android BpkFlatListSearchField light mode should render correctly 1`] =
   }
 >
   <TextInput
-    allowFontScaling={true}
     placeholderTextColor="rgb(84, 88, 96)"
-    rejectResponderTermination={true}
     style={
       Object {
         "backgroundColor": "rgb(255, 255, 255)",
@@ -212,7 +201,6 @@ exports[`Android BpkFlatListSearchField light mode should render correctly 1`] =
         "paddingVertical": 8,
       }
     }
-    underlineColorAndroid="transparent"
   />
   <Text
     allowFontScaling={false}
@@ -254,9 +242,7 @@ exports[`Android BpkFlatListSearchField light mode should support arbitrary prop
   }
 >
   <TextInput
-    allowFontScaling={true}
     placeholderTextColor="rgb(84, 88, 96)"
-    rejectResponderTermination={true}
     style={
       Object {
         "backgroundColor": "rgb(255, 255, 255)",
@@ -272,7 +258,6 @@ exports[`Android BpkFlatListSearchField light mode should support arbitrary prop
       }
     }
     testID="123"
-    underlineColorAndroid="transparent"
   />
   <Text
     allowFontScaling={false}
@@ -316,9 +301,7 @@ exports[`Android BpkFlatListSearchField light mode should support userland style
   }
 >
   <TextInput
-    allowFontScaling={true}
     placeholderTextColor="rgb(84, 88, 96)"
-    rejectResponderTermination={true}
     style={
       Object {
         "backgroundColor": "rgb(255, 255, 255)",
@@ -333,7 +316,6 @@ exports[`Android BpkFlatListSearchField light mode should support userland style
         "paddingVertical": 8,
       }
     }
-    underlineColorAndroid="transparent"
   />
   <Text
     allowFontScaling={false}

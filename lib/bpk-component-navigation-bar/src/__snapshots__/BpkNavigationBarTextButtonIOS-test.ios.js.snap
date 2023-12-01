@@ -1,1035 +1,1077 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly 1`] = `
-<View
-  accessibilityLabel="Edit"
-  accessibilityRole="button"
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "height": "100%",
-      "justifyContent": "center",
-      "marginEnd": 8,
-      "opacity": 1,
-      "zIndex": 2,
-    }
-  }
+<RNGestureHandlerButton
+  collapsable={false}
+  onGestureEvent={[Function]}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+  onHandlerStateChange={[Function]}
+  rippleColor={0}
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessibilityLabel="Edit"
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
     style={
-      Array [
-        Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
-          "textAlign": "left",
-        },
-        Object {},
+      Object {
+        "height": "100%",
+        "justifyContent": "center",
+        "marginEnd": 8,
+        "opacity": 1,
+        "zIndex": 2,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
         Array [
           Object {
             "color": "rgb(255, 255, 255)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+            "textAlign": "left",
           },
-        ],
-      ]
-    }
-  >
-    Edit
-  </Text>
-</View>
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      Edit
+    </Text>
+  </View>
+</RNGestureHandlerButton>
 `;
 
 exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly disabled 1`] = `
-<View
-  accessibilityLabel="Done"
-  accessibilityRole="button"
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "height": "100%",
-      "justifyContent": "center",
-      "marginEnd": 8,
-      "opacity": 1,
-      "zIndex": 2,
-    }
-  }
+<RNGestureHandlerButton
+  collapsable={false}
+  onGestureEvent={[Function]}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+  onHandlerStateChange={[Function]}
+  rippleColor={0}
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessibilityLabel="Done"
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
     style={
-      Array [
-        Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
-          "textAlign": "left",
-        },
-        Object {},
-        Array [
-          Object {
-            "color": "rgb(68, 80, 95)",
-          },
-        ],
-      ]
+      Object {
+        "height": "100%",
+        "justifyContent": "center",
+        "marginEnd": 8,
+        "opacity": 1,
+        "zIndex": 2,
+      }
     }
   >
-    Done
-  </Text>
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+            "textAlign": "left",
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(68, 80, 95)",
+            },
+          ],
+        ]
+      }
+    >
+      Done
+    </Text>
+  </View>
+</RNGestureHandlerButton>
 `;
 
 exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly emphasize 1`] = `
-<View
-  accessibilityLabel="Done"
-  accessibilityRole="button"
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "height": "100%",
-      "justifyContent": "center",
-      "marginEnd": 8,
-      "opacity": 1,
-      "zIndex": 2,
-    }
-  }
+<RNGestureHandlerButton
+  collapsable={false}
+  onGestureEvent={[Function]}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+  onHandlerStateChange={[Function]}
+  rippleColor={0}
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessibilityLabel="Done"
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
     style={
-      Array [
-        Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
-          "textAlign": "left",
-        },
-        Object {
-          "fontWeight": "700",
-        },
+      Object {
+        "height": "100%",
+        "justifyContent": "center",
+        "marginEnd": 8,
+        "opacity": 1,
+        "zIndex": 2,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
         Array [
           Object {
             "color": "rgb(255, 255, 255)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+            "textAlign": "left",
           },
-        ],
-      ]
-    }
-  >
-    Done
-  </Text>
-</View>
+          Object {
+            "fontWeight": "700",
+          },
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      Done
+    </Text>
+  </View>
+</RNGestureHandlerButton>
 `;
 
 exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly leading configuration 1`] = `
-<View
-  accessibilityLabel="Cancel"
-  accessibilityRole="button"
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "height": "100%",
-      "justifyContent": "center",
-      "marginStart": 8,
-      "opacity": 1,
-      "zIndex": 2,
-    }
-  }
+<RNGestureHandlerButton
+  collapsable={false}
+  onGestureEvent={[Function]}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+  onHandlerStateChange={[Function]}
+  rippleColor={0}
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessibilityLabel="Cancel"
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
     style={
-      Array [
-        Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
-          "textAlign": "left",
-        },
-        Object {},
+      Object {
+        "height": "100%",
+        "justifyContent": "center",
+        "marginStart": 8,
+        "opacity": 1,
+        "zIndex": 2,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
         Array [
           Object {
             "color": "rgb(255, 255, 255)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+            "textAlign": "left",
           },
-        ],
-      ]
-    }
-  >
-    Cancel
-  </Text>
-</View>
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(255, 255, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      Cancel
+    </Text>
+  </View>
+</RNGestureHandlerButton>
 `;
 
 exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly with type="primary" 1`] = `
-<View
-  accessibilityLabel="Done"
-  accessibilityRole="button"
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "height": "100%",
-      "justifyContent": "center",
-      "marginEnd": 8,
-      "opacity": 1,
-      "zIndex": 2,
-    }
-  }
+<RNGestureHandlerButton
+  collapsable={false}
+  onGestureEvent={[Function]}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+  onHandlerStateChange={[Function]}
+  rippleColor={0}
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessibilityLabel="Done"
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
     style={
-      Array [
-        Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
-          "textAlign": "left",
-        },
-        Object {},
-        Array [
-          Object {
-            "color": "rgb(132, 233, 255)",
-          },
-        ],
-      ]
+      Object {
+        "height": "100%",
+        "justifyContent": "center",
+        "marginEnd": 8,
+        "opacity": 1,
+        "zIndex": 2,
+      }
     }
   >
-    Done
-  </Text>
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+            "textAlign": "left",
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(132, 233, 255)",
+            },
+          ],
+        ]
+      }
+    >
+      Done
+    </Text>
+  </View>
+</RNGestureHandlerButton>
 `;
 
 exports[`iOS BpkNavigationBarTextButtonIOS dark mode should render correctly with type="primary" and disabled 1`] = `
-<View
-  accessibilityLabel="Done"
-  accessibilityRole="button"
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "height": "100%",
-      "justifyContent": "center",
-      "marginEnd": 8,
-      "opacity": 1,
-      "zIndex": 2,
-    }
-  }
+<RNGestureHandlerButton
+  collapsable={false}
+  onGestureEvent={[Function]}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+  onHandlerStateChange={[Function]}
+  rippleColor={0}
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessibilityLabel="Done"
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
     style={
-      Array [
-        Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
-          "textAlign": "left",
-        },
-        Object {},
-        Array [
-          Object {
-            "color": "rgb(68, 80, 95)",
-          },
-        ],
-      ]
+      Object {
+        "height": "100%",
+        "justifyContent": "center",
+        "marginEnd": 8,
+        "opacity": 1,
+        "zIndex": 2,
+      }
     }
   >
-    Done
-  </Text>
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+            "textAlign": "left",
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(68, 80, 95)",
+            },
+          ],
+        ]
+      }
+    >
+      Done
+    </Text>
+  </View>
+</RNGestureHandlerButton>
 `;
 
 exports[`iOS BpkNavigationBarTextButtonIOS dark mode should respect "disabledTintColor" over "type" 1`] = `
-<View
-  accessibilityLabel="Done"
-  accessibilityRole="button"
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "height": "100%",
-      "justifyContent": "center",
-      "marginEnd": 8,
-      "opacity": 1,
-      "zIndex": 2,
-    }
-  }
+<RNGestureHandlerButton
+  collapsable={false}
+  onGestureEvent={[Function]}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+  onHandlerStateChange={[Function]}
+  rippleColor={0}
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessibilityLabel="Done"
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
     style={
-      Array [
-        Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
-          "textAlign": "left",
-        },
-        Object {},
-        Array [
-          Object {
-            "color": "red",
-          },
-        ],
-      ]
+      Object {
+        "height": "100%",
+        "justifyContent": "center",
+        "marginEnd": 8,
+        "opacity": 1,
+        "zIndex": 2,
+      }
     }
   >
-    Done
-  </Text>
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+            "textAlign": "left",
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "red",
+            },
+          ],
+        ]
+      }
+    >
+      Done
+    </Text>
+  </View>
+</RNGestureHandlerButton>
 `;
 
 exports[`iOS BpkNavigationBarTextButtonIOS dark mode should respect "primaryTintColor" over "tintColor" if type="primary" 1`] = `
-<View
-  accessibilityLabel="Done"
-  accessibilityRole="button"
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "height": "100%",
-      "justifyContent": "center",
-      "marginEnd": 8,
-      "opacity": 1,
-      "zIndex": 2,
-    }
-  }
+<RNGestureHandlerButton
+  collapsable={false}
+  onGestureEvent={[Function]}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+  onHandlerStateChange={[Function]}
+  rippleColor={0}
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessibilityLabel="Done"
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
     style={
-      Array [
-        Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
-          "textAlign": "left",
-        },
-        Object {},
-        Array [
-          Object {
-            "color": "blue",
-          },
-        ],
-      ]
+      Object {
+        "height": "100%",
+        "justifyContent": "center",
+        "marginEnd": 8,
+        "opacity": 1,
+        "zIndex": 2,
+      }
     }
   >
-    Done
-  </Text>
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+            "textAlign": "left",
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "blue",
+            },
+          ],
+        ]
+      }
+    >
+      Done
+    </Text>
+  </View>
+</RNGestureHandlerButton>
 `;
 
 exports[`iOS BpkNavigationBarTextButtonIOS dark mode should respect "tintColor" over "primaryTintColor" if type="default" 1`] = `
-<View
-  accessibilityLabel="Done"
-  accessibilityRole="button"
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "height": "100%",
-      "justifyContent": "center",
-      "marginEnd": 8,
-      "opacity": 1,
-      "zIndex": 2,
-    }
-  }
+<RNGestureHandlerButton
+  collapsable={false}
+  onGestureEvent={[Function]}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+  onHandlerStateChange={[Function]}
+  rippleColor={0}
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessibilityLabel="Done"
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
     style={
-      Array [
-        Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
-          "textAlign": "left",
-        },
-        Object {},
-        Array [
-          Object {
-            "color": "red",
-          },
-        ],
-      ]
+      Object {
+        "height": "100%",
+        "justifyContent": "center",
+        "marginEnd": 8,
+        "opacity": 1,
+        "zIndex": 2,
+      }
     }
   >
-    Done
-  </Text>
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+            "textAlign": "left",
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "red",
+            },
+          ],
+        ]
+      }
+    >
+      Done
+    </Text>
+  </View>
+</RNGestureHandlerButton>
 `;
 
 exports[`iOS BpkNavigationBarTextButtonIOS dark mode should respect "tintColor" over "type" 1`] = `
-<View
-  accessibilityLabel="Done"
-  accessibilityRole="button"
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "height": "100%",
-      "justifyContent": "center",
-      "marginEnd": 8,
-      "opacity": 1,
-      "zIndex": 2,
-    }
-  }
+<RNGestureHandlerButton
+  collapsable={false}
+  onGestureEvent={[Function]}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+  onHandlerStateChange={[Function]}
+  rippleColor={0}
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessibilityLabel="Done"
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
     style={
-      Array [
-        Object {
-          "color": "rgb(255, 255, 255)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
-          "textAlign": "left",
-        },
-        Object {},
-        Array [
-          Object {
-            "color": "red",
-          },
-        ],
-      ]
+      Object {
+        "height": "100%",
+        "justifyContent": "center",
+        "marginEnd": 8,
+        "opacity": 1,
+        "zIndex": 2,
+      }
     }
   >
-    Done
-  </Text>
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+            "textAlign": "left",
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "red",
+            },
+          ],
+        ]
+      }
+    >
+      Done
+    </Text>
+  </View>
+</RNGestureHandlerButton>
 `;
 
 exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly 1`] = `
-<View
-  accessibilityLabel="Edit"
-  accessibilityRole="button"
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "height": "100%",
-      "justifyContent": "center",
-      "marginEnd": 8,
-      "opacity": 1,
-      "zIndex": 2,
-    }
-  }
+<RNGestureHandlerButton
+  collapsable={false}
+  onGestureEvent={[Function]}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+  onHandlerStateChange={[Function]}
+  rippleColor={0}
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessibilityLabel="Edit"
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
     style={
-      Array [
-        Object {
-          "color": "rgb(22, 22, 22)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
-          "textAlign": "left",
-        },
-        Object {},
+      Object {
+        "height": "100%",
+        "justifyContent": "center",
+        "marginEnd": 8,
+        "opacity": 1,
+        "zIndex": 2,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
         Array [
           Object {
             "color": "rgb(22, 22, 22)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+            "textAlign": "left",
           },
-        ],
-      ]
-    }
-  >
-    Edit
-  </Text>
-</View>
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(22, 22, 22)",
+            },
+          ],
+        ]
+      }
+    >
+      Edit
+    </Text>
+  </View>
+</RNGestureHandlerButton>
 `;
 
 exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly disabled 1`] = `
-<View
-  accessibilityLabel="Done"
-  accessibilityRole="button"
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "height": "100%",
-      "justifyContent": "center",
-      "marginEnd": 8,
-      "opacity": 1,
-      "zIndex": 2,
-    }
-  }
+<RNGestureHandlerButton
+  collapsable={false}
+  onGestureEvent={[Function]}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+  onHandlerStateChange={[Function]}
+  rippleColor={0}
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessibilityLabel="Done"
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
     style={
-      Array [
-        Object {
-          "color": "rgb(22, 22, 22)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
-          "textAlign": "left",
-        },
-        Object {},
-        Array [
-          Object {
-            "color": "rgb(194, 201, 205)",
-          },
-        ],
-      ]
+      Object {
+        "height": "100%",
+        "justifyContent": "center",
+        "marginEnd": 8,
+        "opacity": 1,
+        "zIndex": 2,
+      }
     }
   >
-    Done
-  </Text>
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(22, 22, 22)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+            "textAlign": "left",
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(194, 201, 205)",
+            },
+          ],
+        ]
+      }
+    >
+      Done
+    </Text>
+  </View>
+</RNGestureHandlerButton>
 `;
 
 exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly emphasize 1`] = `
-<View
-  accessibilityLabel="Done"
-  accessibilityRole="button"
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "height": "100%",
-      "justifyContent": "center",
-      "marginEnd": 8,
-      "opacity": 1,
-      "zIndex": 2,
-    }
-  }
+<RNGestureHandlerButton
+  collapsable={false}
+  onGestureEvent={[Function]}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+  onHandlerStateChange={[Function]}
+  rippleColor={0}
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessibilityLabel="Done"
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
     style={
-      Array [
-        Object {
-          "color": "rgb(22, 22, 22)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
-          "textAlign": "left",
-        },
-        Object {
-          "fontWeight": "700",
-        },
+      Object {
+        "height": "100%",
+        "justifyContent": "center",
+        "marginEnd": 8,
+        "opacity": 1,
+        "zIndex": 2,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
         Array [
           Object {
             "color": "rgb(22, 22, 22)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+            "textAlign": "left",
           },
-        ],
-      ]
-    }
-  >
-    Done
-  </Text>
-</View>
+          Object {
+            "fontWeight": "700",
+          },
+          Array [
+            Object {
+              "color": "rgb(22, 22, 22)",
+            },
+          ],
+        ]
+      }
+    >
+      Done
+    </Text>
+  </View>
+</RNGestureHandlerButton>
 `;
 
 exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly leading configuration 1`] = `
-<View
-  accessibilityLabel="Cancel"
-  accessibilityRole="button"
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "height": "100%",
-      "justifyContent": "center",
-      "marginStart": 8,
-      "opacity": 1,
-      "zIndex": 2,
-    }
-  }
+<RNGestureHandlerButton
+  collapsable={false}
+  onGestureEvent={[Function]}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+  onHandlerStateChange={[Function]}
+  rippleColor={0}
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessibilityLabel="Cancel"
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
     style={
-      Array [
-        Object {
-          "color": "rgb(22, 22, 22)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
-          "textAlign": "left",
-        },
-        Object {},
+      Object {
+        "height": "100%",
+        "justifyContent": "center",
+        "marginStart": 8,
+        "opacity": 1,
+        "zIndex": 2,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
         Array [
           Object {
             "color": "rgb(22, 22, 22)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+            "textAlign": "left",
           },
-        ],
-      ]
-    }
-  >
-    Cancel
-  </Text>
-</View>
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(22, 22, 22)",
+            },
+          ],
+        ]
+      }
+    >
+      Cancel
+    </Text>
+  </View>
+</RNGestureHandlerButton>
 `;
 
 exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly with type="primary" 1`] = `
-<View
-  accessibilityLabel="Done"
-  accessibilityRole="button"
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "height": "100%",
-      "justifyContent": "center",
-      "marginEnd": 8,
-      "opacity": 1,
-      "zIndex": 2,
-    }
-  }
+<RNGestureHandlerButton
+  collapsable={false}
+  onGestureEvent={[Function]}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+  onHandlerStateChange={[Function]}
+  rippleColor={0}
 >
-  <Text
-    allowFontScaling={false}
+  <View
+    accessibilityLabel="Done"
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
     style={
-      Array [
-        Object {
-          "color": "rgb(22, 22, 22)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
-          "textAlign": "left",
-        },
-        Object {},
-        Array [
-          Object {
-            "color": "rgb(0, 98, 227)",
-          },
-        ],
-      ]
+      Object {
+        "height": "100%",
+        "justifyContent": "center",
+        "marginEnd": 8,
+        "opacity": 1,
+        "zIndex": 2,
+      }
     }
   >
-    Done
-  </Text>
-</View>
-`;
-
-exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly with type="primary" and disabled 1`] = `
-<View
-  accessibilityLabel="Done"
-  accessibilityRole="button"
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "height": "100%",
-      "justifyContent": "center",
-      "marginEnd": 8,
-      "opacity": 1,
-      "zIndex": 2,
-    }
-  }
->
-  <Text
-    allowFontScaling={false}
-    style={
-      Array [
-        Object {
-          "color": "rgb(22, 22, 22)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
-          "textAlign": "left",
-        },
-        Object {},
-        Array [
-          Object {
-            "color": "rgb(194, 201, 205)",
-          },
-        ],
-      ]
-    }
-  >
-    Done
-  </Text>
-</View>
-`;
-
-exports[`iOS BpkNavigationBarTextButtonIOS light mode should respect "disabledTintColor" over "type" 1`] = `
-<View
-  accessibilityLabel="Done"
-  accessibilityRole="button"
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "height": "100%",
-      "justifyContent": "center",
-      "marginEnd": 8,
-      "opacity": 1,
-      "zIndex": 2,
-    }
-  }
->
-  <Text
-    allowFontScaling={false}
-    style={
-      Array [
-        Object {
-          "color": "rgb(22, 22, 22)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
-          "textAlign": "left",
-        },
-        Object {},
-        Array [
-          Object {
-            "color": "red",
-          },
-        ],
-      ]
-    }
-  >
-    Done
-  </Text>
-</View>
-`;
-
-exports[`iOS BpkNavigationBarTextButtonIOS light mode should respect "primaryTintColor" over "tintColor" if type="primary" 1`] = `
-<View
-  accessibilityLabel="Done"
-  accessibilityRole="button"
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "height": "100%",
-      "justifyContent": "center",
-      "marginEnd": 8,
-      "opacity": 1,
-      "zIndex": 2,
-    }
-  }
->
-  <Text
-    allowFontScaling={false}
-    style={
-      Array [
-        Object {
-          "color": "rgb(22, 22, 22)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
-          "textAlign": "left",
-        },
-        Object {},
-        Array [
-          Object {
-            "color": "blue",
-          },
-        ],
-      ]
-    }
-  >
-    Done
-  </Text>
-</View>
-`;
-
-exports[`iOS BpkNavigationBarTextButtonIOS light mode should respect "tintColor" over "primaryTintColor" if type="default" 1`] = `
-<View
-  accessibilityLabel="Done"
-  accessibilityRole="button"
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "height": "100%",
-      "justifyContent": "center",
-      "marginEnd": 8,
-      "opacity": 1,
-      "zIndex": 2,
-    }
-  }
->
-  <Text
-    allowFontScaling={false}
-    style={
-      Array [
-        Object {
-          "color": "rgb(22, 22, 22)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
-          "textAlign": "left",
-        },
-        Object {},
-        Array [
-          Object {
-            "color": "red",
-          },
-        ],
-      ]
-    }
-  >
-    Done
-  </Text>
-</View>
-`;
-
-exports[`iOS BpkNavigationBarTextButtonIOS light mode should respect "tintColor" over "type" 1`] = `
-<View
-  accessibilityLabel="Done"
-  accessibilityRole="button"
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "height": "100%",
-      "justifyContent": "center",
-      "marginEnd": 8,
-      "opacity": 1,
-      "zIndex": 2,
-    }
-  }
->
-  <Text
-    allowFontScaling={false}
-    style={
-      Array [
-        Object {
-          "color": "rgb(22, 22, 22)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
-          "textAlign": "left",
-        },
-        Object {},
-        Array [
-          Object {
-            "color": "red",
-          },
-        ],
-      ]
-    }
-  >
-    Done
-  </Text>
-</View>
-`;
-
-exports[`iOS BpkNavigationBarTextButtonIOS should forward custom props 1`] = `
-<View
-  accessibilityLabel="Edit"
-  accessibilityRole="button"
-  accessible={true}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "height": "100%",
-      "justifyContent": "center",
-      "marginEnd": 8,
-      "opacity": 1,
-      "zIndex": 2,
-    }
-  }
-  testID="testid"
->
-  <Text
-    allowFontScaling={false}
-    style={
-      Array [
-        Object {
-          "color": "rgb(22, 22, 22)",
-          "fontFamily": "System",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "letterSpacing": 0.12,
-          "textAlign": "left",
-        },
-        Object {},
+    <Text
+      allowFontScaling={false}
+      style={
         Array [
           Object {
             "color": "rgb(22, 22, 22)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+            "textAlign": "left",
           },
-        ],
-      ]
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(0, 98, 227)",
+            },
+          ],
+        ]
+      }
+    >
+      Done
+    </Text>
+  </View>
+</RNGestureHandlerButton>
+`;
+
+exports[`iOS BpkNavigationBarTextButtonIOS light mode should render correctly with type="primary" and disabled 1`] = `
+<RNGestureHandlerButton
+  collapsable={false}
+  onGestureEvent={[Function]}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+  onHandlerStateChange={[Function]}
+  rippleColor={0}
+>
+  <View
+    accessibilityLabel="Done"
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
+    style={
+      Object {
+        "height": "100%",
+        "justifyContent": "center",
+        "marginEnd": 8,
+        "opacity": 1,
+        "zIndex": 2,
+      }
     }
   >
-    Edit
-  </Text>
-</View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(22, 22, 22)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+            "textAlign": "left",
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(194, 201, 205)",
+            },
+          ],
+        ]
+      }
+    >
+      Done
+    </Text>
+  </View>
+</RNGestureHandlerButton>
+`;
+
+exports[`iOS BpkNavigationBarTextButtonIOS light mode should respect "disabledTintColor" over "type" 1`] = `
+<RNGestureHandlerButton
+  collapsable={false}
+  onGestureEvent={[Function]}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+  onHandlerStateChange={[Function]}
+  rippleColor={0}
+>
+  <View
+    accessibilityLabel="Done"
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
+    style={
+      Object {
+        "height": "100%",
+        "justifyContent": "center",
+        "marginEnd": 8,
+        "opacity": 1,
+        "zIndex": 2,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(22, 22, 22)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+            "textAlign": "left",
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "red",
+            },
+          ],
+        ]
+      }
+    >
+      Done
+    </Text>
+  </View>
+</RNGestureHandlerButton>
+`;
+
+exports[`iOS BpkNavigationBarTextButtonIOS light mode should respect "primaryTintColor" over "tintColor" if type="primary" 1`] = `
+<RNGestureHandlerButton
+  collapsable={false}
+  onGestureEvent={[Function]}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+  onHandlerStateChange={[Function]}
+  rippleColor={0}
+>
+  <View
+    accessibilityLabel="Done"
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
+    style={
+      Object {
+        "height": "100%",
+        "justifyContent": "center",
+        "marginEnd": 8,
+        "opacity": 1,
+        "zIndex": 2,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(22, 22, 22)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+            "textAlign": "left",
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "blue",
+            },
+          ],
+        ]
+      }
+    >
+      Done
+    </Text>
+  </View>
+</RNGestureHandlerButton>
+`;
+
+exports[`iOS BpkNavigationBarTextButtonIOS light mode should respect "tintColor" over "primaryTintColor" if type="default" 1`] = `
+<RNGestureHandlerButton
+  collapsable={false}
+  onGestureEvent={[Function]}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+  onHandlerStateChange={[Function]}
+  rippleColor={0}
+>
+  <View
+    accessibilityLabel="Done"
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
+    style={
+      Object {
+        "height": "100%",
+        "justifyContent": "center",
+        "marginEnd": 8,
+        "opacity": 1,
+        "zIndex": 2,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(22, 22, 22)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+            "textAlign": "left",
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "red",
+            },
+          ],
+        ]
+      }
+    >
+      Done
+    </Text>
+  </View>
+</RNGestureHandlerButton>
+`;
+
+exports[`iOS BpkNavigationBarTextButtonIOS light mode should respect "tintColor" over "type" 1`] = `
+<RNGestureHandlerButton
+  collapsable={false}
+  onGestureEvent={[Function]}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+  onHandlerStateChange={[Function]}
+  rippleColor={0}
+>
+  <View
+    accessibilityLabel="Done"
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
+    style={
+      Object {
+        "height": "100%",
+        "justifyContent": "center",
+        "marginEnd": 8,
+        "opacity": 1,
+        "zIndex": 2,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(22, 22, 22)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+            "textAlign": "left",
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "red",
+            },
+          ],
+        ]
+      }
+    >
+      Done
+    </Text>
+  </View>
+</RNGestureHandlerButton>
+`;
+
+exports[`iOS BpkNavigationBarTextButtonIOS should forward custom props 1`] = `
+<RNGestureHandlerButton
+  collapsable={false}
+  onGestureEvent={[Function]}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+  onHandlerStateChange={[Function]}
+  rippleColor={0}
+  testID="testid"
+>
+  <View
+    accessibilityLabel="Edit"
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
+    style={
+      Object {
+        "height": "100%",
+        "justifyContent": "center",
+        "marginEnd": 8,
+        "opacity": 1,
+        "zIndex": 2,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(22, 22, 22)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.12,
+            "textAlign": "left",
+          },
+          Object {},
+          Array [
+            Object {
+              "color": "rgb(22, 22, 22)",
+            },
+          ],
+        ]
+      }
+    >
+      Edit
+    </Text>
+  </View>
+</RNGestureHandlerButton>
 `;

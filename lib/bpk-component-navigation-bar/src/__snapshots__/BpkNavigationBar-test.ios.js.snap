@@ -34,67 +34,69 @@ exports[`ios BpkNavigationBar dark mode should render correctly 1`] = `
       ]
     }
   >
-    <View
-      accessibilityLabel="Back"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": "100%",
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
+    <RNGestureHandlerButton
+      collapsable={false}
+      onGestureEvent={[Function]}
+      onGestureHandlerEvent={[Function]}
+      onGestureHandlerStateChange={[Function]}
+      onHandlerStateChange={[Function]}
+      rippleColor={0}
     >
-      <Image
-        source={1}
+      <View
+        accessibilityLabel="Back"
+        accessibilityRole="button"
+        accessible={true}
+        collapsable={false}
         style={
-          Array [
-            Array [
-              Object {
-                "marginEnd": 8,
-              },
-            ],
-            Object {
-              "tintColor": "rgb(255, 255, 255)",
-            },
-          ]
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": "100%",
+            "opacity": 1,
+            "zIndex": 2,
+          }
         }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-              "textAlign": "left",
-            },
-            Object {},
+      >
+        <Image
+          source={1}
+          style={
+            Array [
+              Array [
+                Object {
+                  "marginEnd": 8,
+                },
+              ],
+              Object {
+                "tintColor": "rgb(255, 255, 255)",
+              },
+            ]
+          }
+        />
+        <Text
+          allowFontScaling={false}
+          style={
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.12,
+                "textAlign": "left",
               },
-            ],
-          ]
-        }
-      >
-        Back
-      </Text>
-    </View>
+              Object {},
+              Array [
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                },
+              ],
+            ]
+          }
+        >
+          Back
+        </Text>
+      </View>
+    </RNGestureHandlerButton>
     <View
       style={
         Object {
@@ -193,67 +195,69 @@ exports[`ios BpkNavigationBar dark mode should render correctly with a subtitle 
       ]
     }
   >
-    <View
-      accessibilityLabel="Back"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": "100%",
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
+    <RNGestureHandlerButton
+      collapsable={false}
+      onGestureEvent={[Function]}
+      onGestureHandlerEvent={[Function]}
+      onGestureHandlerStateChange={[Function]}
+      onHandlerStateChange={[Function]}
+      rippleColor={0}
     >
-      <Image
-        source={1}
+      <View
+        accessibilityLabel="Back"
+        accessibilityRole="button"
+        accessible={true}
+        collapsable={false}
         style={
-          Array [
-            Array [
-              Object {
-                "marginEnd": 8,
-              },
-            ],
-            Object {
-              "tintColor": "rgb(255, 255, 255)",
-            },
-          ]
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": "100%",
+            "opacity": 1,
+            "zIndex": 2,
+          }
         }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-              "textAlign": "left",
-            },
-            Object {},
+      >
+        <Image
+          source={1}
+          style={
+            Array [
+              Array [
+                Object {
+                  "marginEnd": 8,
+                },
+              ],
+              Object {
+                "tintColor": "rgb(255, 255, 255)",
+              },
+            ]
+          }
+        />
+        <Text
+          allowFontScaling={false}
+          style={
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.12,
+                "textAlign": "left",
               },
-            ],
-          ]
-        }
-      >
-        Back
-      </Text>
-    </View>
+              Object {},
+              Array [
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                },
+              ],
+            ]
+          }
+        >
+          Back
+        </Text>
+      </View>
+    </RNGestureHandlerButton>
     <View
       style={
         Object {
@@ -360,67 +364,69 @@ exports[`ios BpkNavigationBar dark mode should render correctly with a title vie
       ]
     }
   >
-    <View
-      accessibilityLabel="Back"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": "100%",
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
+    <RNGestureHandlerButton
+      collapsable={false}
+      onGestureEvent={[Function]}
+      onGestureHandlerEvent={[Function]}
+      onGestureHandlerStateChange={[Function]}
+      onHandlerStateChange={[Function]}
+      rippleColor={0}
     >
-      <Image
-        source={1}
+      <View
+        accessibilityLabel="Back"
+        accessibilityRole="button"
+        accessible={true}
+        collapsable={false}
         style={
-          Array [
-            Array [
-              Object {
-                "marginEnd": 8,
-              },
-            ],
-            Object {
-              "tintColor": "rgb(255, 255, 255)",
-            },
-          ]
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": "100%",
+            "opacity": 1,
+            "zIndex": 2,
+          }
         }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-              "textAlign": "left",
-            },
-            Object {},
+      >
+        <Image
+          source={1}
+          style={
+            Array [
+              Array [
+                Object {
+                  "marginEnd": 8,
+                },
+              ],
+              Object {
+                "tintColor": "rgb(255, 255, 255)",
+              },
+            ]
+          }
+        />
+        <Text
+          allowFontScaling={false}
+          style={
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.12,
+                "textAlign": "left",
               },
-            ],
-          ]
-        }
-      >
-        Back
-      </Text>
-    </View>
+              Object {},
+              Array [
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                },
+              ],
+            ]
+          }
+        >
+          Back
+        </Text>
+      </View>
+    </RNGestureHandlerButton>
     <View
       style={
         Object {
@@ -485,67 +491,69 @@ exports[`ios BpkNavigationBar dark mode should render correctly with an icon in 
       ]
     }
   >
-    <View
-      accessibilityLabel="Back"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": "100%",
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
+    <RNGestureHandlerButton
+      collapsable={false}
+      onGestureEvent={[Function]}
+      onGestureHandlerEvent={[Function]}
+      onGestureHandlerStateChange={[Function]}
+      onHandlerStateChange={[Function]}
+      rippleColor={0}
     >
-      <Image
-        source={1}
+      <View
+        accessibilityLabel="Back"
+        accessibilityRole="button"
+        accessible={true}
+        collapsable={false}
         style={
-          Array [
-            Array [
-              Object {
-                "marginEnd": 8,
-              },
-            ],
-            Object {
-              "tintColor": "rgb(255, 255, 255)",
-            },
-          ]
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": "100%",
+            "opacity": 1,
+            "zIndex": 2,
+          }
         }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-              "textAlign": "left",
-            },
-            Object {},
+      >
+        <Image
+          source={1}
+          style={
+            Array [
+              Array [
+                Object {
+                  "marginEnd": 8,
+                },
+              ],
+              Object {
+                "tintColor": "rgb(255, 255, 255)",
+              },
+            ]
+          }
+        />
+        <Text
+          allowFontScaling={false}
+          style={
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.12,
+                "textAlign": "left",
               },
-            ],
-          ]
-        }
-      >
-        Back
-      </Text>
-    </View>
+              Object {},
+              Array [
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                },
+              ],
+            ]
+          }
+        >
+          Back
+        </Text>
+      </View>
+    </RNGestureHandlerButton>
     <View
       style={
         Object {
@@ -672,67 +680,69 @@ exports[`ios BpkNavigationBar dark mode should render correctly with custom styl
       ]
     }
   >
-    <View
-      accessibilityLabel="Back"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": "100%",
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
+    <RNGestureHandlerButton
+      collapsable={false}
+      onGestureEvent={[Function]}
+      onGestureHandlerEvent={[Function]}
+      onGestureHandlerStateChange={[Function]}
+      onHandlerStateChange={[Function]}
+      rippleColor={0}
     >
-      <Image
-        source={1}
+      <View
+        accessibilityLabel="Back"
+        accessibilityRole="button"
+        accessible={true}
+        collapsable={false}
         style={
-          Array [
-            Array [
-              Object {
-                "marginEnd": 8,
-              },
-            ],
-            Object {
-              "tintColor": "rgb(255, 255, 255)",
-            },
-          ]
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": "100%",
+            "opacity": 1,
+            "zIndex": 2,
+          }
         }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-              "textAlign": "left",
-            },
-            Object {},
+      >
+        <Image
+          source={1}
+          style={
+            Array [
+              Array [
+                Object {
+                  "marginEnd": 8,
+                },
+              ],
+              Object {
+                "tintColor": "rgb(255, 255, 255)",
+              },
+            ]
+          }
+        />
+        <Text
+          allowFontScaling={false}
+          style={
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.12,
+                "textAlign": "left",
               },
-            ],
-          ]
-        }
-      >
-        Back
-      </Text>
-    </View>
+              Object {},
+              Array [
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                },
+              ],
+            ]
+          }
+        >
+          Back
+        </Text>
+      </View>
+    </RNGestureHandlerButton>
     <View
       style={
         Object {
@@ -828,52 +838,54 @@ exports[`ios BpkNavigationBar dark mode should render correctly with trailing bu
       ]
     }
   >
-    <View
-      accessibilityLabel="Cancel"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "height": "100%",
-          "justifyContent": "center",
-          "marginStart": 8,
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
+    <RNGestureHandlerButton
+      collapsable={false}
+      onGestureEvent={[Function]}
+      onGestureHandlerEvent={[Function]}
+      onGestureHandlerStateChange={[Function]}
+      onHandlerStateChange={[Function]}
+      rippleColor={0}
     >
-      <Text
-        allowFontScaling={false}
+      <View
+        accessibilityLabel="Cancel"
+        accessibilityRole="button"
+        accessible={true}
+        collapsable={false}
         style={
-          Array [
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-              "textAlign": "left",
-            },
-            Object {},
+          Object {
+            "height": "100%",
+            "justifyContent": "center",
+            "marginStart": 8,
+            "opacity": 1,
+            "zIndex": 2,
+          }
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          style={
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.12,
+                "textAlign": "left",
               },
-            ],
-          ]
-        }
-      >
-        Cancel
-      </Text>
-    </View>
+              Object {},
+              Array [
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                },
+              ],
+            ]
+          }
+        >
+          Cancel
+        </Text>
+      </View>
+    </RNGestureHandlerButton>
     <View
       style={
         Object {
@@ -931,54 +943,56 @@ exports[`ios BpkNavigationBar dark mode should render correctly with trailing bu
         </Text>
       </View>
     </View>
-    <View
-      accessibilityLabel="Done"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "height": "100%",
-          "justifyContent": "center",
-          "marginEnd": 8,
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
+    <RNGestureHandlerButton
+      collapsable={false}
+      onGestureEvent={[Function]}
+      onGestureHandlerEvent={[Function]}
+      onGestureHandlerStateChange={[Function]}
+      onHandlerStateChange={[Function]}
+      rippleColor={0}
     >
-      <Text
-        allowFontScaling={false}
+      <View
+        accessibilityLabel="Done"
+        accessibilityRole="button"
+        accessible={true}
+        collapsable={false}
         style={
-          Array [
-            Object {
-              "color": "rgb(255, 255, 255)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-              "textAlign": "left",
-            },
-            Object {
-              "fontWeight": "700",
-            },
+          Object {
+            "height": "100%",
+            "justifyContent": "center",
+            "marginEnd": 8,
+            "opacity": 1,
+            "zIndex": 2,
+          }
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          style={
             Array [
               Object {
                 "color": "rgb(255, 255, 255)",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.12,
+                "textAlign": "left",
               },
-            ],
-          ]
-        }
-      >
-        Done
-      </Text>
-    </View>
+              Object {
+                "fontWeight": "700",
+              },
+              Array [
+                Object {
+                  "color": "rgb(255, 255, 255)",
+                },
+              ],
+            ]
+          }
+        >
+          Done
+        </Text>
+      </View>
+    </RNGestureHandlerButton>
   </View>
 </View>
 `;
@@ -1017,67 +1031,69 @@ exports[`ios BpkNavigationBar light mode should render correctly 1`] = `
       ]
     }
   >
-    <View
-      accessibilityLabel="Back"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": "100%",
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
+    <RNGestureHandlerButton
+      collapsable={false}
+      onGestureEvent={[Function]}
+      onGestureHandlerEvent={[Function]}
+      onGestureHandlerStateChange={[Function]}
+      onHandlerStateChange={[Function]}
+      rippleColor={0}
     >
-      <Image
-        source={1}
+      <View
+        accessibilityLabel="Back"
+        accessibilityRole="button"
+        accessible={true}
+        collapsable={false}
         style={
-          Array [
-            Array [
-              Object {
-                "marginEnd": 8,
-              },
-            ],
-            Object {
-              "tintColor": "rgb(22, 22, 22)",
-            },
-          ]
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": "100%",
+            "opacity": 1,
+            "zIndex": 2,
+          }
         }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(22, 22, 22)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-              "textAlign": "left",
-            },
-            Object {},
+      >
+        <Image
+          source={1}
+          style={
+            Array [
+              Array [
+                Object {
+                  "marginEnd": 8,
+                },
+              ],
+              Object {
+                "tintColor": "rgb(22, 22, 22)",
+              },
+            ]
+          }
+        />
+        <Text
+          allowFontScaling={false}
+          style={
             Array [
               Object {
                 "color": "rgb(22, 22, 22)",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.12,
+                "textAlign": "left",
               },
-            ],
-          ]
-        }
-      >
-        Back
-      </Text>
-    </View>
+              Object {},
+              Array [
+                Object {
+                  "color": "rgb(22, 22, 22)",
+                },
+              ],
+            ]
+          }
+        >
+          Back
+        </Text>
+      </View>
+    </RNGestureHandlerButton>
     <View
       style={
         Object {
@@ -1176,67 +1192,69 @@ exports[`ios BpkNavigationBar light mode should render correctly with a subtitle
       ]
     }
   >
-    <View
-      accessibilityLabel="Back"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": "100%",
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
+    <RNGestureHandlerButton
+      collapsable={false}
+      onGestureEvent={[Function]}
+      onGestureHandlerEvent={[Function]}
+      onGestureHandlerStateChange={[Function]}
+      onHandlerStateChange={[Function]}
+      rippleColor={0}
     >
-      <Image
-        source={1}
+      <View
+        accessibilityLabel="Back"
+        accessibilityRole="button"
+        accessible={true}
+        collapsable={false}
         style={
-          Array [
-            Array [
-              Object {
-                "marginEnd": 8,
-              },
-            ],
-            Object {
-              "tintColor": "rgb(22, 22, 22)",
-            },
-          ]
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": "100%",
+            "opacity": 1,
+            "zIndex": 2,
+          }
         }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(22, 22, 22)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-              "textAlign": "left",
-            },
-            Object {},
+      >
+        <Image
+          source={1}
+          style={
+            Array [
+              Array [
+                Object {
+                  "marginEnd": 8,
+                },
+              ],
+              Object {
+                "tintColor": "rgb(22, 22, 22)",
+              },
+            ]
+          }
+        />
+        <Text
+          allowFontScaling={false}
+          style={
             Array [
               Object {
                 "color": "rgb(22, 22, 22)",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.12,
+                "textAlign": "left",
               },
-            ],
-          ]
-        }
-      >
-        Back
-      </Text>
-    </View>
+              Object {},
+              Array [
+                Object {
+                  "color": "rgb(22, 22, 22)",
+                },
+              ],
+            ]
+          }
+        >
+          Back
+        </Text>
+      </View>
+    </RNGestureHandlerButton>
     <View
       style={
         Object {
@@ -1343,67 +1361,69 @@ exports[`ios BpkNavigationBar light mode should render correctly with a title vi
       ]
     }
   >
-    <View
-      accessibilityLabel="Back"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": "100%",
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
+    <RNGestureHandlerButton
+      collapsable={false}
+      onGestureEvent={[Function]}
+      onGestureHandlerEvent={[Function]}
+      onGestureHandlerStateChange={[Function]}
+      onHandlerStateChange={[Function]}
+      rippleColor={0}
     >
-      <Image
-        source={1}
+      <View
+        accessibilityLabel="Back"
+        accessibilityRole="button"
+        accessible={true}
+        collapsable={false}
         style={
-          Array [
-            Array [
-              Object {
-                "marginEnd": 8,
-              },
-            ],
-            Object {
-              "tintColor": "rgb(22, 22, 22)",
-            },
-          ]
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": "100%",
+            "opacity": 1,
+            "zIndex": 2,
+          }
         }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(22, 22, 22)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-              "textAlign": "left",
-            },
-            Object {},
+      >
+        <Image
+          source={1}
+          style={
+            Array [
+              Array [
+                Object {
+                  "marginEnd": 8,
+                },
+              ],
+              Object {
+                "tintColor": "rgb(22, 22, 22)",
+              },
+            ]
+          }
+        />
+        <Text
+          allowFontScaling={false}
+          style={
             Array [
               Object {
                 "color": "rgb(22, 22, 22)",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.12,
+                "textAlign": "left",
               },
-            ],
-          ]
-        }
-      >
-        Back
-      </Text>
-    </View>
+              Object {},
+              Array [
+                Object {
+                  "color": "rgb(22, 22, 22)",
+                },
+              ],
+            ]
+          }
+        >
+          Back
+        </Text>
+      </View>
+    </RNGestureHandlerButton>
     <View
       style={
         Object {
@@ -1468,67 +1488,69 @@ exports[`ios BpkNavigationBar light mode should render correctly with an icon in
       ]
     }
   >
-    <View
-      accessibilityLabel="Back"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": "100%",
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
+    <RNGestureHandlerButton
+      collapsable={false}
+      onGestureEvent={[Function]}
+      onGestureHandlerEvent={[Function]}
+      onGestureHandlerStateChange={[Function]}
+      onHandlerStateChange={[Function]}
+      rippleColor={0}
     >
-      <Image
-        source={1}
+      <View
+        accessibilityLabel="Back"
+        accessibilityRole="button"
+        accessible={true}
+        collapsable={false}
         style={
-          Array [
-            Array [
-              Object {
-                "marginEnd": 8,
-              },
-            ],
-            Object {
-              "tintColor": "rgb(22, 22, 22)",
-            },
-          ]
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": "100%",
+            "opacity": 1,
+            "zIndex": 2,
+          }
         }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(22, 22, 22)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-              "textAlign": "left",
-            },
-            Object {},
+      >
+        <Image
+          source={1}
+          style={
+            Array [
+              Array [
+                Object {
+                  "marginEnd": 8,
+                },
+              ],
+              Object {
+                "tintColor": "rgb(22, 22, 22)",
+              },
+            ]
+          }
+        />
+        <Text
+          allowFontScaling={false}
+          style={
             Array [
               Object {
                 "color": "rgb(22, 22, 22)",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.12,
+                "textAlign": "left",
               },
-            ],
-          ]
-        }
-      >
-        Back
-      </Text>
-    </View>
+              Object {},
+              Array [
+                Object {
+                  "color": "rgb(22, 22, 22)",
+                },
+              ],
+            ]
+          }
+        >
+          Back
+        </Text>
+      </View>
+    </RNGestureHandlerButton>
     <View
       style={
         Object {
@@ -1655,67 +1677,69 @@ exports[`ios BpkNavigationBar light mode should render correctly with custom sty
       ]
     }
   >
-    <View
-      accessibilityLabel="Back"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": "100%",
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
+    <RNGestureHandlerButton
+      collapsable={false}
+      onGestureEvent={[Function]}
+      onGestureHandlerEvent={[Function]}
+      onGestureHandlerStateChange={[Function]}
+      onHandlerStateChange={[Function]}
+      rippleColor={0}
     >
-      <Image
-        source={1}
+      <View
+        accessibilityLabel="Back"
+        accessibilityRole="button"
+        accessible={true}
+        collapsable={false}
         style={
-          Array [
-            Array [
-              Object {
-                "marginEnd": 8,
-              },
-            ],
-            Object {
-              "tintColor": "rgb(22, 22, 22)",
-            },
-          ]
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": "100%",
+            "opacity": 1,
+            "zIndex": 2,
+          }
         }
-      />
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "rgb(22, 22, 22)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-              "textAlign": "left",
-            },
-            Object {},
+      >
+        <Image
+          source={1}
+          style={
+            Array [
+              Array [
+                Object {
+                  "marginEnd": 8,
+                },
+              ],
+              Object {
+                "tintColor": "rgb(22, 22, 22)",
+              },
+            ]
+          }
+        />
+        <Text
+          allowFontScaling={false}
+          style={
             Array [
               Object {
                 "color": "rgb(22, 22, 22)",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.12,
+                "textAlign": "left",
               },
-            ],
-          ]
-        }
-      >
-        Back
-      </Text>
-    </View>
+              Object {},
+              Array [
+                Object {
+                  "color": "rgb(22, 22, 22)",
+                },
+              ],
+            ]
+          }
+        >
+          Back
+        </Text>
+      </View>
+    </RNGestureHandlerButton>
     <View
       style={
         Object {
@@ -1811,52 +1835,54 @@ exports[`ios BpkNavigationBar light mode should render correctly with trailing b
       ]
     }
   >
-    <View
-      accessibilityLabel="Cancel"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "height": "100%",
-          "justifyContent": "center",
-          "marginStart": 8,
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
+    <RNGestureHandlerButton
+      collapsable={false}
+      onGestureEvent={[Function]}
+      onGestureHandlerEvent={[Function]}
+      onGestureHandlerStateChange={[Function]}
+      onHandlerStateChange={[Function]}
+      rippleColor={0}
     >
-      <Text
-        allowFontScaling={false}
+      <View
+        accessibilityLabel="Cancel"
+        accessibilityRole="button"
+        accessible={true}
+        collapsable={false}
         style={
-          Array [
-            Object {
-              "color": "rgb(22, 22, 22)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-              "textAlign": "left",
-            },
-            Object {},
+          Object {
+            "height": "100%",
+            "justifyContent": "center",
+            "marginStart": 8,
+            "opacity": 1,
+            "zIndex": 2,
+          }
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          style={
             Array [
               Object {
                 "color": "rgb(22, 22, 22)",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.12,
+                "textAlign": "left",
               },
-            ],
-          ]
-        }
-      >
-        Cancel
-      </Text>
-    </View>
+              Object {},
+              Array [
+                Object {
+                  "color": "rgb(22, 22, 22)",
+                },
+              ],
+            ]
+          }
+        >
+          Cancel
+        </Text>
+      </View>
+    </RNGestureHandlerButton>
     <View
       style={
         Object {
@@ -1914,54 +1940,56 @@ exports[`ios BpkNavigationBar light mode should render correctly with trailing b
         </Text>
       </View>
     </View>
-    <View
-      accessibilityLabel="Done"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "height": "100%",
-          "justifyContent": "center",
-          "marginEnd": 8,
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
+    <RNGestureHandlerButton
+      collapsable={false}
+      onGestureEvent={[Function]}
+      onGestureHandlerEvent={[Function]}
+      onGestureHandlerStateChange={[Function]}
+      onHandlerStateChange={[Function]}
+      rippleColor={0}
     >
-      <Text
-        allowFontScaling={false}
+      <View
+        accessibilityLabel="Done"
+        accessibilityRole="button"
+        accessible={true}
+        collapsable={false}
         style={
-          Array [
-            Object {
-              "color": "rgb(22, 22, 22)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-              "textAlign": "left",
-            },
-            Object {
-              "fontWeight": "700",
-            },
+          Object {
+            "height": "100%",
+            "justifyContent": "center",
+            "marginEnd": 8,
+            "opacity": 1,
+            "zIndex": 2,
+          }
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          style={
             Array [
               Object {
                 "color": "rgb(22, 22, 22)",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.12,
+                "textAlign": "left",
               },
-            ],
-          ]
-        }
-      >
-        Done
-      </Text>
-    </View>
+              Object {
+                "fontWeight": "700",
+              },
+              Array [
+                Object {
+                  "color": "rgb(22, 22, 22)",
+                },
+              ],
+            ]
+          }
+        >
+          Done
+        </Text>
+      </View>
+    </RNGestureHandlerButton>
   </View>
 </View>
 `;
@@ -2001,45 +2029,47 @@ exports[`ios BpkNavigationBar should forward custom props 1`] = `
       ]
     }
   >
-    <View
-      accessibilityLabel="Back"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": "100%",
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
+    <RNGestureHandlerButton
+      collapsable={false}
+      onGestureEvent={[Function]}
+      onGestureHandlerEvent={[Function]}
+      onGestureHandlerStateChange={[Function]}
+      onHandlerStateChange={[Function]}
+      rippleColor={0}
       testID="leading"
     >
-      <Image
-        source={1}
+      <View
+        accessibilityLabel="Back"
+        accessibilityRole="button"
+        accessible={true}
+        collapsable={false}
         style={
-          Array [
-            Array [
-              Object {
-                "marginEnd": 16,
-              },
-            ],
-            Object {
-              "tintColor": "rgb(22, 22, 22)",
-            },
-          ]
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": "100%",
+            "opacity": 1,
+            "zIndex": 2,
+          }
         }
-      />
-    </View>
+      >
+        <Image
+          source={1}
+          style={
+            Array [
+              Array [
+                Object {
+                  "marginEnd": 16,
+                },
+              ],
+              Object {
+                "tintColor": "rgb(22, 22, 22)",
+              },
+            ]
+          }
+        />
+      </View>
+    </RNGestureHandlerButton>
     <View
       style={
         Object {
@@ -2097,55 +2127,57 @@ exports[`ios BpkNavigationBar should forward custom props 1`] = `
         </Text>
       </View>
     </View>
-    <View
-      accessibilityLabel="Done"
-      accessibilityRole="button"
-      accessible={true}
-      focusable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "height": "100%",
-          "justifyContent": "center",
-          "marginEnd": 8,
-          "opacity": 1,
-          "zIndex": 2,
-        }
-      }
+    <RNGestureHandlerButton
+      collapsable={false}
+      onGestureEvent={[Function]}
+      onGestureHandlerEvent={[Function]}
+      onGestureHandlerStateChange={[Function]}
+      onHandlerStateChange={[Function]}
+      rippleColor={0}
       testID="trailing"
     >
-      <Text
-        allowFontScaling={false}
+      <View
+        accessibilityLabel="Done"
+        accessibilityRole="button"
+        accessible={true}
+        collapsable={false}
         style={
-          Array [
-            Object {
-              "color": "rgb(22, 22, 22)",
-              "fontFamily": "System",
-              "fontSize": 16,
-              "fontWeight": "400",
-              "letterSpacing": 0.12,
-              "textAlign": "left",
-            },
-            Object {
-              "fontWeight": "700",
-            },
+          Object {
+            "height": "100%",
+            "justifyContent": "center",
+            "marginEnd": 8,
+            "opacity": 1,
+            "zIndex": 2,
+          }
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          style={
             Array [
               Object {
                 "color": "rgb(22, 22, 22)",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.12,
+                "textAlign": "left",
               },
-            ],
-          ]
-        }
-      >
-        Done
-      </Text>
-    </View>
+              Object {
+                "fontWeight": "700",
+              },
+              Array [
+                Object {
+                  "color": "rgb(22, 22, 22)",
+                },
+              ],
+            ]
+          }
+        >
+          Done
+        </Text>
+      </View>
+    </RNGestureHandlerButton>
   </View>
 </View>
 `;

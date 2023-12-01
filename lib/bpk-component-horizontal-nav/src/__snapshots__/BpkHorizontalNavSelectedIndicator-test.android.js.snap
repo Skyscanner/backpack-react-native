@@ -2,6 +2,7 @@
 
 exports[`Android BpkHorizontalNavSelectedIndicator dark mode should render correctly 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "backgroundColor": "rgb(132, 233, 255)",
@@ -19,6 +20,7 @@ exports[`Android BpkHorizontalNavSelectedIndicator dark mode should render corre
 
 exports[`Android BpkHorizontalNavSelectedIndicator dark mode should support custom styles 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "backgroundColor": "rgb(255, 255, 255)",
@@ -36,6 +38,7 @@ exports[`Android BpkHorizontalNavSelectedIndicator dark mode should support cust
 
 exports[`Android BpkHorizontalNavSelectedIndicator light mode should render correctly 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "backgroundColor": "rgb(0, 98, 227)",
@@ -53,6 +56,7 @@ exports[`Android BpkHorizontalNavSelectedIndicator light mode should render corr
 
 exports[`Android BpkHorizontalNavSelectedIndicator light mode should support custom styles 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "backgroundColor": "rgb(255, 255, 255)",
@@ -70,6 +74,7 @@ exports[`Android BpkHorizontalNavSelectedIndicator light mode should support cus
 
 exports[`Android BpkHorizontalNavSelectedIndicator should support theming 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "backgroundColor": "red",

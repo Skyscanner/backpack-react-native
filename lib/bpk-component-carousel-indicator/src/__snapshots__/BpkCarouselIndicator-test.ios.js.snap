@@ -22,6 +22,7 @@ exports[`iOS BpkCarouselIndicator should render correctly 1`] = `
   }
 >
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(194, 201, 205)",
@@ -33,6 +34,7 @@ exports[`iOS BpkCarouselIndicator should render correctly 1`] = `
     }
   />
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(194, 201, 205)",
@@ -44,6 +46,7 @@ exports[`iOS BpkCarouselIndicator should render correctly 1`] = `
     }
   />
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(255, 255, 255)",
@@ -55,6 +58,7 @@ exports[`iOS BpkCarouselIndicator should render correctly 1`] = `
     }
   />
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(194, 201, 205)",
@@ -66,6 +70,7 @@ exports[`iOS BpkCarouselIndicator should render correctly 1`] = `
     }
   />
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(194, 201, 205)",
@@ -101,6 +106,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with a page count > 5 
   }
 >
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(194, 201, 205)",
@@ -112,6 +118,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with a page count > 5 
     }
   />
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(194, 201, 205)",
@@ -123,6 +130,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with a page count > 5 
     }
   />
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(255, 255, 255)",
@@ -134,6 +142,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with a page count > 5 
     }
   />
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(194, 201, 205)",
@@ -145,6 +154,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with a page count > 5 
     }
   />
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(194, 201, 205)",
@@ -180,6 +190,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with a page count equa
   }
 >
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(194, 201, 205)",
@@ -191,6 +202,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with a page count equa
     }
   />
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(194, 201, 205)",
@@ -202,6 +214,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with a page count equa
     }
   />
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(194, 201, 205)",
@@ -213,6 +226,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with a page count equa
     }
   />
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(255, 255, 255)",
@@ -224,6 +238,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with a page count equa
     }
   />
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(194, 201, 205)",
@@ -260,6 +275,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with arbitrary props 1
   testID="123"
 >
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(255, 255, 255)",
@@ -271,6 +287,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with arbitrary props 1
     }
   />
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(194, 201, 205)",
@@ -282,6 +299,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with arbitrary props 1
     }
   />
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(194, 201, 205)",
@@ -293,6 +311,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with arbitrary props 1
     }
   />
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(194, 201, 205)",
@@ -304,6 +323,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with arbitrary props 1
     }
   />
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(194, 201, 205)",
@@ -341,6 +361,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with custom styles 1`]
   }
 >
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(255, 255, 255)",
@@ -352,6 +373,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with custom styles 1`]
     }
   />
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(194, 201, 205)",
@@ -363,6 +385,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with custom styles 1`]
     }
   />
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(194, 201, 205)",
@@ -374,6 +397,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with custom styles 1`]
     }
   />
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(194, 201, 205)",
@@ -385,6 +409,7 @@ exports[`iOS BpkCarouselIndicator should render correctly with custom styles 1`]
     }
   />
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(194, 201, 205)",

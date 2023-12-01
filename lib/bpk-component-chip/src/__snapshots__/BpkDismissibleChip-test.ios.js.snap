@@ -4,6 +4,11 @@ exports[`iOS BpkDismissibleChip dark mode should render correctly 1`] = `
 <View
   accessibilityLabel="Dismiss"
   accessibilityRole="button"
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -18,7 +23,7 @@ exports[`iOS BpkDismissibleChip dark mode should render correctly 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(36, 51, 70)",
+          "backgroundColor": undefined,
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -114,6 +119,11 @@ exports[`iOS BpkDismissibleChip dark mode should render correctly with "disabled
 <View
   accessibilityLabel="Dismiss"
   accessibilityRole="button"
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -128,7 +138,7 @@ exports[`iOS BpkDismissibleChip dark mode should render correctly with "disabled
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(36, 51, 70)",
+          "backgroundColor": undefined,
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -233,6 +243,11 @@ exports[`iOS BpkDismissibleChip dark mode should render outline correctly 1`] = 
 <View
   accessibilityLabel="Dismiss"
   accessibilityRole="button"
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -247,7 +262,7 @@ exports[`iOS BpkDismissibleChip dark mode should render outline correctly 1`] = 
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(36, 51, 70)",
+          "backgroundColor": undefined,
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -262,7 +277,7 @@ exports[`iOS BpkDismissibleChip dark mode should render outline correctly 1`] = 
           "shadowRadius": 1.5,
         },
         Object {
-          "backgroundColor": "rgb(36, 51, 70)",
+          "backgroundColor": undefined,
           "paddingVertical": 7,
         },
       ],
@@ -357,6 +372,11 @@ exports[`iOS BpkDismissibleChip light mode should render correctly 1`] = `
 <View
   accessibilityLabel="Dismiss"
   accessibilityRole="button"
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -371,7 +391,7 @@ exports[`iOS BpkDismissibleChip light mode should render correctly 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(224, 227, 229)",
+          "backgroundColor": undefined,
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -467,6 +487,11 @@ exports[`iOS BpkDismissibleChip light mode should render correctly with "disable
 <View
   accessibilityLabel="Dismiss"
   accessibilityRole="button"
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -481,7 +506,7 @@ exports[`iOS BpkDismissibleChip light mode should render correctly with "disable
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(224, 227, 229)",
+          "backgroundColor": undefined,
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -586,6 +611,11 @@ exports[`iOS BpkDismissibleChip light mode should render outline correctly 1`] =
 <View
   accessibilityLabel="Dismiss"
   accessibilityRole="button"
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -600,7 +630,7 @@ exports[`iOS BpkDismissibleChip light mode should render outline correctly 1`] =
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(224, 227, 229)",
+          "backgroundColor": undefined,
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -615,7 +645,7 @@ exports[`iOS BpkDismissibleChip light mode should render outline correctly 1`] =
           "shadowRadius": 1.5,
         },
         Object {
-          "backgroundColor": "rgba(255, 255, 255, 0.2)",
+          "backgroundColor": undefined,
           "paddingVertical": 7,
         },
       ],
@@ -710,6 +740,11 @@ exports[`iOS BpkDismissibleChip should render correctly with a supplied icon 1`]
 <View
   accessibilityLabel="Dismiss"
   accessibilityRole="button"
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -724,7 +759,7 @@ exports[`iOS BpkDismissibleChip should render correctly with a supplied icon 1`]
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(224, 227, 229)",
+          "backgroundColor": undefined,
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -847,6 +882,11 @@ exports[`iOS BpkDismissibleChip should render correctly with arbitrary props 1`]
 <View
   accessibilityLabel="Dismiss"
   accessibilityRole="button"
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -861,7 +901,7 @@ exports[`iOS BpkDismissibleChip should render correctly with arbitrary props 1`]
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(224, 227, 229)",
+          "backgroundColor": undefined,
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -958,6 +998,11 @@ exports[`iOS BpkDismissibleChip should render correctly with custom style 1`] = 
 <View
   accessibilityLabel="Dismiss"
   accessibilityRole="button"
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -972,7 +1017,7 @@ exports[`iOS BpkDismissibleChip should render correctly with custom style 1`] = 
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(224, 227, 229)",
+          "backgroundColor": undefined,
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
