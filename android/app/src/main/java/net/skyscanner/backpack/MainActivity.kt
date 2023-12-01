@@ -3,6 +3,8 @@ package net.skyscanner.backpack
 import android.content.res.Configuration
 import android.os.Bundle
 import com.facebook.react.ReactActivity
+import com.facebook.react.ReactActivityDelegate;
+import com.facebook.react.ReactRootView;
 import com.facebook.react.modules.i18nmanager.I18nUtil
 
 class MainActivity : ReactActivity() {

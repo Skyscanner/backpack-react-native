@@ -6,6 +6,7 @@ import com.airbnb.android.react.maps.MapsPackage
 import com.facebook.react.ReactApplication
 import com.facebook.react.ReactNativeHost
 import com.facebook.react.ReactPackage
+import com.facebook.react.config.ReactFeatureFlags;
 import com.facebook.react.shell.MainReactPackage
 import com.facebook.soloader.SoLoader
 import com.jakewharton.threetenabp.AndroidThreeTen
@@ -44,7 +45,7 @@ class MainApplication : Application(), ReactApplication {
   }
 
   override fun getReactNativeHost(): ReactNativeHost {
-    return mReactNativeHost
+      return mReactNativeHost;
   }
 
   override fun onCreate() {

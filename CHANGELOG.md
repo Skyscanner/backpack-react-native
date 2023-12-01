@@ -1,5 +1,9 @@
 # Backpack changelog
 
+# 24.0.0
+
+- Upgrade to React Native 0.70.9
+
 # 23.0.0 - 2023-03-09
 
 **Breaking:**
