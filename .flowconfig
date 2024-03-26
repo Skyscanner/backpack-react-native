@@ -32,6 +32,12 @@ node_modules/warning/.*
 ; Flow doesn't support platforms
 <PROJECT_ROOT>/node_modules/react-native/Libraries/StyleSheet/PlatformColorValueTypesIOS.js
 
+.*/resolve/test/resolver/malformed_package_json/package.json
+.*/metro/.*
+.*/metro-file-map/.*
+.*/hermes-parser/.*
+.*/hermes-estree/.*
+
 [untyped]
 .*/node_modules/@react-native-community/cli/.*/.*
 .*/react-native-linear-gradient/.*
@@ -50,6 +56,11 @@ node_modules/warning/.*
 <PROJECT_ROOT>/node_modules/react-native/Libraries/StyleSheet/.*
 <PROJECT_ROOT>/node_modules/react-native/Libraries/Text/.*
 <PROJECT_ROOT>/node_modules/react-native/Libraries/Utilities/.*
+<PROJECT_ROOT>/node_modules/react-native/Libraries/.*
+<PROJECT_ROOT>/node_modules/metro/.*
+<PROJECT_ROOT>/node_modules/resolve/.*
+<PROJECT_ROOT>/node_modules/metro-resolver/.*
+<PROJECT_ROOT>/node_modules/hermes-parser/.*
 
 [include]
 

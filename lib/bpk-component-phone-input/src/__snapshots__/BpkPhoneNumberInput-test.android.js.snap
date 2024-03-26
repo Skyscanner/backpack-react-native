@@ -14,6 +14,7 @@ exports[`Android BpkPhoneNumberInput should render correctly 1`] = `
   >
     <Text
       allowFontScaling={false}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -32,6 +33,11 @@ exports[`Android BpkPhoneNumberInput should render correctly 1`] = `
     </Text>
     <View
       accessibilityRole="button"
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
       accessible={true}
       focusable={true}
       nativeBackgroundAndroid={
@@ -128,6 +134,7 @@ exports[`Android BpkPhoneNumberInput should render correctly 1`] = `
       </Text>
     </View>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -140,7 +147,6 @@ exports[`Android BpkPhoneNumberInput should render correctly 1`] = `
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         keyboardType="phone-pad"
@@ -148,7 +154,6 @@ exports[`Android BpkPhoneNumberInput should render correctly 1`] = `
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(0, 0, 0, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -186,6 +191,7 @@ exports[`Android BpkPhoneNumberInput should render correctly with \`editable\` f
   >
     <Text
       allowFontScaling={false}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -204,6 +210,11 @@ exports[`Android BpkPhoneNumberInput should render correctly with \`editable\` f
     </Text>
     <View
       accessibilityRole="button"
+      accessibilityState={
+        Object {
+          "disabled": true,
+        }
+      }
       accessible={true}
       focusable={false}
       nativeBackgroundAndroid={
@@ -309,6 +320,7 @@ exports[`Android BpkPhoneNumberInput should render correctly with \`editable\` f
       </Text>
     </View>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -321,7 +333,6 @@ exports[`Android BpkPhoneNumberInput should render correctly with \`editable\` f
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={false}
         keyboardType="phone-pad"
@@ -329,7 +340,6 @@ exports[`Android BpkPhoneNumberInput should render correctly with \`editable\` f
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(0, 0, 0, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {

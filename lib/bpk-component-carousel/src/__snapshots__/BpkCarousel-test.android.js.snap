@@ -108,6 +108,7 @@ exports[`Android BpkCarousel should render correctly 1`] = `
     }
   >
     <View
+      collapsable={false}
       style={
         Object {
           "backgroundColor": "rgb(255, 255, 255)",
@@ -226,6 +227,7 @@ exports[`Android BpkCarousel should render correctly with an "accessibilityLabel
     }
   >
     <View
+      collapsable={false}
       style={
         Object {
           "backgroundColor": "rgb(255, 255, 255)",

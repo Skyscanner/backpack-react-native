@@ -20,6 +20,7 @@ exports[`IOS BpkProgress dark mode should not go bellow the min bound 1`] = `
   }
 >
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(12, 131, 138)",
@@ -52,6 +53,7 @@ exports[`IOS BpkProgress dark mode should not go over the max bound 1`] = `
   }
 >
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(12, 131, 138)",
@@ -84,6 +86,7 @@ exports[`IOS BpkProgress dark mode should render correctly 1`] = `
   }
 >
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(12, 131, 138)",
@@ -116,6 +119,7 @@ exports[`IOS BpkProgress dark mode should render correctly with "min" and "max" 
   }
 >
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(12, 131, 138)",
@@ -148,6 +152,7 @@ exports[`IOS BpkProgress dark mode should render correctly with a "fillStyle" at
   }
 >
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(231, 8, 102)",
@@ -182,6 +187,7 @@ exports[`IOS BpkProgress dark mode should render correctly with a "style" attrib
   }
 >
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(12, 131, 138)",
@@ -213,6 +219,7 @@ exports[`IOS BpkProgress dark mode should render correctly with a "type" attribu
   }
 >
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(12, 131, 138)",
@@ -244,6 +251,7 @@ exports[`IOS BpkProgress dark mode should render correctly with accessibilityLab
   }
 >
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(12, 131, 138)",
@@ -278,6 +286,7 @@ exports[`IOS BpkProgress dark mode should support theming 1`] = `
   }
 >
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "blue",
@@ -310,6 +319,7 @@ exports[`IOS BpkProgress light mode should not go bellow the min bound 1`] = `
   }
 >
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(12, 131, 138)",
@@ -342,6 +352,7 @@ exports[`IOS BpkProgress light mode should not go over the max bound 1`] = `
   }
 >
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(12, 131, 138)",
@@ -374,6 +385,7 @@ exports[`IOS BpkProgress light mode should render correctly 1`] = `
   }
 >
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(12, 131, 138)",
@@ -406,6 +418,7 @@ exports[`IOS BpkProgress light mode should render correctly with "min" and "max"
   }
 >
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(12, 131, 138)",
@@ -438,6 +451,7 @@ exports[`IOS BpkProgress light mode should render correctly with a "fillStyle" a
   }
 >
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(231, 8, 102)",
@@ -472,6 +486,7 @@ exports[`IOS BpkProgress light mode should render correctly with a "style" attri
   }
 >
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(12, 131, 138)",
@@ -503,6 +518,7 @@ exports[`IOS BpkProgress light mode should render correctly with a "type" attrib
   }
 >
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(12, 131, 138)",
@@ -534,6 +550,7 @@ exports[`IOS BpkProgress light mode should render correctly with accessibilityLa
   }
 >
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "rgb(12, 131, 138)",
@@ -568,6 +585,7 @@ exports[`IOS BpkProgress light mode should support theming 1`] = `
   }
 >
   <View
+    collapsable={false}
     style={
       Object {
         "backgroundColor": "blue",

@@ -16,6 +16,11 @@ exports[`Android BpkDismissibleChip dark mode should render correctly 1`] = `
   <View
     accessibilityLabel="Dismiss"
     accessibilityRole="button"
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
     accessible={true}
     focusable={true}
     nativeBackgroundAndroid={
@@ -37,7 +42,7 @@ exports[`Android BpkDismissibleChip dark mode should render correctly 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(36, 51, 70)",
+          "backgroundColor": undefined,
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -118,6 +123,11 @@ exports[`Android BpkDismissibleChip dark mode should render correctly with "disa
   <View
     accessibilityLabel="Dismiss"
     accessibilityRole="button"
+    accessibilityState={
+      Object {
+        "disabled": true,
+      }
+    }
     accessible={true}
     focusable={false}
     nativeBackgroundAndroid={
@@ -139,7 +149,7 @@ exports[`Android BpkDismissibleChip dark mode should render correctly with "disa
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(36, 51, 70)",
+          "backgroundColor": undefined,
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -233,6 +243,11 @@ exports[`Android BpkDismissibleChip dark mode should render outline correctly 1`
   <View
     accessibilityLabel="Dismiss"
     accessibilityRole="button"
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
     accessible={true}
     focusable={true}
     nativeBackgroundAndroid={
@@ -254,7 +269,7 @@ exports[`Android BpkDismissibleChip dark mode should render outline correctly 1`
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(36, 51, 70)",
+          "backgroundColor": undefined,
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -262,7 +277,7 @@ exports[`Android BpkDismissibleChip dark mode should render outline correctly 1`
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgb(36, 51, 70)",
+          "backgroundColor": undefined,
           "paddingVertical": 7,
         },
       ]
@@ -345,6 +360,11 @@ exports[`Android BpkDismissibleChip light mode should render correctly 1`] = `
   <View
     accessibilityLabel="Dismiss"
     accessibilityRole="button"
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
     accessible={true}
     focusable={true}
     nativeBackgroundAndroid={
@@ -366,7 +386,7 @@ exports[`Android BpkDismissibleChip light mode should render correctly 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(224, 227, 229)",
+          "backgroundColor": undefined,
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -447,6 +467,11 @@ exports[`Android BpkDismissibleChip light mode should render correctly with "dis
   <View
     accessibilityLabel="Dismiss"
     accessibilityRole="button"
+    accessibilityState={
+      Object {
+        "disabled": true,
+      }
+    }
     accessible={true}
     focusable={false}
     nativeBackgroundAndroid={
@@ -468,7 +493,7 @@ exports[`Android BpkDismissibleChip light mode should render correctly with "dis
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(224, 227, 229)",
+          "backgroundColor": undefined,
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -562,6 +587,11 @@ exports[`Android BpkDismissibleChip light mode should render outline correctly 1
   <View
     accessibilityLabel="Dismiss"
     accessibilityRole="button"
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
     accessible={true}
     focusable={true}
     nativeBackgroundAndroid={
@@ -583,7 +613,7 @@ exports[`Android BpkDismissibleChip light mode should render outline correctly 1
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(224, 227, 229)",
+          "backgroundColor": undefined,
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -591,7 +621,7 @@ exports[`Android BpkDismissibleChip light mode should render outline correctly 1
           "paddingVertical": 8,
         },
         Object {
-          "backgroundColor": "rgba(255, 255, 255, 0.2)",
+          "backgroundColor": undefined,
           "paddingVertical": 7,
         },
       ]
@@ -674,6 +704,11 @@ exports[`Android BpkDismissibleChip should render correctly with a supplied icon
   <View
     accessibilityLabel="Dismiss"
     accessibilityRole="button"
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
     accessible={true}
     focusable={true}
     nativeBackgroundAndroid={
@@ -695,7 +730,7 @@ exports[`Android BpkDismissibleChip should render correctly with a supplied icon
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(224, 227, 229)",
+          "backgroundColor": undefined,
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -803,6 +838,11 @@ exports[`Android BpkDismissibleChip should render correctly with arbitrary props
   <View
     accessibilityLabel="Dismiss"
     accessibilityRole="button"
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
     accessible={true}
     focusable={true}
     nativeBackgroundAndroid={
@@ -824,7 +864,7 @@ exports[`Android BpkDismissibleChip should render correctly with arbitrary props
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(224, 227, 229)",
+          "backgroundColor": undefined,
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -910,6 +950,11 @@ exports[`Android BpkDismissibleChip should render correctly with custom style 1`
   <View
     accessibilityLabel="Dismiss"
     accessibilityRole="button"
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
     accessible={true}
     focusable={true}
     nativeBackgroundAndroid={
@@ -931,7 +976,7 @@ exports[`Android BpkDismissibleChip should render correctly with custom style 1`
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgb(224, 227, 229)",
+          "backgroundColor": undefined,
           "borderRadius": 40,
           "flexDirection": "row",
           "justifyContent": "space-between",

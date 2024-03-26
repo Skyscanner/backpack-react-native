@@ -14,6 +14,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
   >
     <Text
       allowFontScaling={false}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -32,6 +33,11 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
     </Text>
     <View
       accessibilityRole="button"
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
       accessible={true}
       focusable={true}
       onClick={[Function]}
@@ -144,6 +150,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
       />
     </View>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -156,7 +163,6 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         keyboardType="phone-pad"
@@ -164,7 +170,6 @@ exports[`iOS BpkPhoneNumberInput should render correctly 1`] = `
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(0, 0, 0, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -202,6 +207,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
   >
     <Text
       allowFontScaling={false}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -220,6 +226,11 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
     </Text>
     <View
       accessibilityRole="button"
+      accessibilityState={
+        Object {
+          "disabled": true,
+        }
+      }
       accessible={true}
       focusable={true}
       onClick={[Function]}
@@ -341,6 +352,7 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
       />
     </View>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -353,7 +365,6 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={false}
         keyboardType="phone-pad"
@@ -361,7 +372,6 @@ exports[`iOS BpkPhoneNumberInput should render correctly with \`editable\` false
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(0, 0, 0, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {

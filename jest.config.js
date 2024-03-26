@@ -32,7 +32,6 @@ const getConfig = (baseConfig) => ({
   ],
   transform: {
     ...baseConfig.transform,
-    '^.+\\.js$': '<rootDir>/node_modules/react-native/jest/preprocessor.js',
   },
   coverageThreshold: {
     global: {

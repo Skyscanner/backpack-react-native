@@ -3,6 +3,7 @@
 exports[`Android BpkImage dark mode should render correctly 1`] = `
 <Image
   alt="test"
+  collapsable={false}
   onLoad={null}
   source={
     Object {
@@ -36,6 +37,7 @@ exports[`Android BpkImage dark mode should render correctly when not loaded 1`] 
   }
 >
   <View
+    collapsable={false}
     style={
       Object {
         "alignItems": "center",
@@ -50,14 +52,13 @@ exports[`Android BpkImage dark mode should render correctly when not loaded 1`] 
     }
   >
     <ActivityIndicator
-      animating={true}
       color="rgb(255, 255, 255)"
-      hidesWhenStopped={true}
       size="small"
     />
   </View>
   <Image
     alt="test"
+    collapsable={false}
     onLoad={null}
     source={
       Object {
@@ -91,6 +92,7 @@ exports[`Android BpkImage dark mode should render correctly when unloaded and ou
   }
 >
   <View
+    collapsable={false}
     style={
       Object {
         "alignItems": "center",
@@ -134,6 +136,7 @@ exports[`Android BpkImage dark mode should render correctly with a custom image 
 exports[`Android BpkImage dark mode should render correctly with arbitrary props 1`] = `
 <Image
   alt="test"
+  collapsable={false}
   onLoad={null}
   source={
     Object {
@@ -155,6 +158,7 @@ exports[`Android BpkImage dark mode should render correctly with arbitrary props
 exports[`Android BpkImage dark mode should render correctly with custom style 1`] = `
 <Image
   alt="test"
+  collapsable={false}
   onLoad={null}
   source={
     Object {
@@ -176,6 +180,7 @@ exports[`Android BpkImage dark mode should render correctly with custom style 1`
 exports[`Android BpkImage dark mode should render correctly without border radius 1`] = `
 <Image
   alt="test"
+  collapsable={false}
   onLoad={null}
   source={
     Object {
@@ -194,6 +199,7 @@ exports[`Android BpkImage dark mode should render correctly without border radiu
 exports[`Android BpkImage light mode should render correctly 1`] = `
 <Image
   alt="test"
+  collapsable={false}
   onLoad={null}
   source={
     Object {
@@ -227,6 +233,7 @@ exports[`Android BpkImage light mode should render correctly when not loaded 1`]
   }
 >
   <View
+    collapsable={false}
     style={
       Object {
         "alignItems": "center",
@@ -241,14 +248,13 @@ exports[`Android BpkImage light mode should render correctly when not loaded 1`]
     }
   >
     <ActivityIndicator
-      animating={true}
       color="rgb(84, 88, 96)"
-      hidesWhenStopped={true}
       size="small"
     />
   </View>
   <Image
     alt="test"
+    collapsable={false}
     onLoad={null}
     source={
       Object {
@@ -282,6 +288,7 @@ exports[`Android BpkImage light mode should render correctly when unloaded and o
   }
 >
   <View
+    collapsable={false}
     style={
       Object {
         "alignItems": "center",
@@ -325,6 +332,7 @@ exports[`Android BpkImage light mode should render correctly with a custom image
 exports[`Android BpkImage light mode should render correctly with arbitrary props 1`] = `
 <Image
   alt="test"
+  collapsable={false}
   onLoad={null}
   source={
     Object {
@@ -346,6 +354,7 @@ exports[`Android BpkImage light mode should render correctly with arbitrary prop
 exports[`Android BpkImage light mode should render correctly with custom style 1`] = `
 <Image
   alt="test"
+  collapsable={false}
   onLoad={null}
   source={
     Object {
@@ -367,6 +376,7 @@ exports[`Android BpkImage light mode should render correctly with custom style 1
 exports[`Android BpkImage light mode should render correctly without border radius 1`] = `
 <Image
   alt="test"
+  collapsable={false}
   onLoad={null}
   source={
     Object {

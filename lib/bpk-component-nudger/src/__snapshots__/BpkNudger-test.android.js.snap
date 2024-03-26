@@ -30,6 +30,11 @@ exports[`Android BpkNudger should render correctly 1`] = `
     <View
       accessibilityLabel="Decrease"
       accessibilityRole="button"
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
       accessible={true}
       focusable={true}
       nativeBackgroundAndroid={
@@ -150,6 +155,11 @@ exports[`Android BpkNudger should render correctly 1`] = `
     <View
       accessibilityLabel="Increase"
       accessibilityRole="button"
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
       accessible={true}
       focusable={true}
       nativeBackgroundAndroid={
@@ -261,6 +271,11 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
     <View
       accessibilityLabel="Decrease"
       accessibilityRole="button"
+      accessibilityState={
+        Object {
+          "disabled": true,
+        }
+      }
       accessible={true}
       focusable={false}
       nativeBackgroundAndroid={
@@ -381,6 +396,11 @@ exports[`Android BpkNudger should render correctly when value is a not an intege
     <View
       accessibilityLabel="Increase"
       accessibilityRole="button"
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
       accessible={true}
       focusable={true}
       nativeBackgroundAndroid={
@@ -492,6 +512,11 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
     <View
       accessibilityLabel="Decrease"
       accessibilityRole="button"
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
       accessible={true}
       focusable={true}
       nativeBackgroundAndroid={
@@ -612,6 +637,11 @@ exports[`Android BpkNudger should render correctly when value is greater than ma
     <View
       accessibilityLabel="Increase"
       accessibilityRole="button"
+      accessibilityState={
+        Object {
+          "disabled": true,
+        }
+      }
       accessible={true}
       focusable={false}
       nativeBackgroundAndroid={
@@ -723,6 +753,11 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
     <View
       accessibilityLabel="Decrease"
       accessibilityRole="button"
+      accessibilityState={
+        Object {
+          "disabled": true,
+        }
+      }
       accessible={true}
       focusable={false}
       nativeBackgroundAndroid={
@@ -843,6 +878,11 @@ exports[`Android BpkNudger should render correctly when value is less than min 1
     <View
       accessibilityLabel="Increase"
       accessibilityRole="button"
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
       accessible={true}
       focusable={true}
       nativeBackgroundAndroid={

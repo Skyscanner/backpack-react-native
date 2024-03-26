@@ -2,6 +2,7 @@ apply plugin: "com.android.application"
 apply plugin: 'kotlin-android'
 
 import com.android.build.OutputFile
+import org.apache.tools.ant.taskdefs.condition.Os
 
 /**
  * The react.gradle file registers a task for each build variant (e.g. bundleDebugJsAndAssets
@@ -73,7 +74,7 @@ import com.android.build.OutputFile
  * ]
  */
 
-project.ext.react = [ entryFile: "index.android.js" ]
+project.ext.react = [ entryFile: "index.android.js", enableHermes: false ]
 apply from: "../../node_modules/react-native/react.gradle"
 
 /**

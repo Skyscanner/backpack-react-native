@@ -1,5 +1,13 @@
 # Backpack changelog
 
+# 24.1.0
+
+- Fix bug with latest map version
+
+# 24.0.0
+
+- Upgrade to React Native 0.70.9
+
 # 23.0.0 - 2023-03-09
 
 **Breaking:**
@@ -78,7 +86,7 @@
 
 **Breaking:**
  - Now requires Backpack iOS 47.1.0
- 
+
 # 18.0.0 - 2022-01-26
 
 **Breaking:**

@@ -14,6 +14,7 @@ exports[`Android BpkTextInput dark mode should ignore when placeholder is provid
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -31,6 +32,7 @@ exports[`Android BpkTextInput dark mode should ignore when placeholder is provid
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -42,14 +44,12 @@ exports[`Android BpkTextInput dark mode should ignore when placeholder is provid
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(255, 255, 255, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -87,6 +87,7 @@ exports[`Android BpkTextInput dark mode should render correctly 1`] = `
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -104,6 +105,7 @@ exports[`Android BpkTextInput dark mode should render correctly 1`] = `
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -115,14 +117,12 @@ exports[`Android BpkTextInput dark mode should render correctly 1`] = `
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(255, 255, 255, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -160,6 +160,7 @@ exports[`Android BpkTextInput dark mode should render correctly with \`accessory
   >
     <Text
       allowFontScaling={false}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -178,6 +179,7 @@ exports[`Android BpkTextInput dark mode should render correctly with \`accessory
     </Text>
     <View />
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -190,14 +192,12 @@ exports[`Android BpkTextInput dark mode should render correctly with \`accessory
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(255, 255, 255, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -235,6 +235,7 @@ exports[`Android BpkTextInput dark mode should render correctly with arbitrary p
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -252,6 +253,7 @@ exports[`Android BpkTextInput dark mode should render correctly with arbitrary p
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -263,14 +265,12 @@ exports[`Android BpkTextInput dark mode should render correctly with arbitrary p
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(255, 255, 255, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -313,6 +313,7 @@ exports[`Android BpkTextInput dark mode should render correctly with custom styl
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -330,6 +331,7 @@ exports[`Android BpkTextInput dark mode should render correctly with custom styl
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -341,14 +343,12 @@ exports[`Android BpkTextInput dark mode should render correctly with custom styl
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(255, 255, 255, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -386,6 +386,7 @@ exports[`Android BpkTextInput dark mode should render correctly with description
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -403,6 +404,7 @@ exports[`Android BpkTextInput dark mode should render correctly with description
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -414,14 +416,12 @@ exports[`Android BpkTextInput dark mode should render correctly with description
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(255, 255, 255, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -481,6 +481,7 @@ exports[`Android BpkTextInput dark mode should render correctly with description
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -498,6 +499,7 @@ exports[`Android BpkTextInput dark mode should render correctly with description
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -509,14 +511,12 @@ exports[`Android BpkTextInput dark mode should render correctly with description
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(255, 255, 255, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -603,6 +603,7 @@ exports[`Android BpkTextInput dark mode should render correctly with editable=fa
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -620,6 +621,7 @@ exports[`Android BpkTextInput dark mode should render correctly with editable=fa
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -631,14 +633,12 @@ exports[`Android BpkTextInput dark mode should render correctly with editable=fa
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={false}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(255, 255, 255, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -676,6 +676,7 @@ exports[`Android BpkTextInput dark mode should render correctly with inputRef se
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -693,6 +694,7 @@ exports[`Android BpkTextInput dark mode should render correctly with inputRef se
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -704,14 +706,12 @@ exports[`Android BpkTextInput dark mode should render correctly with inputRef se
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(255, 255, 255, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -749,6 +749,7 @@ exports[`Android BpkTextInput dark mode should render correctly with mask="99/99
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -766,6 +767,7 @@ exports[`Android BpkTextInput dark mode should render correctly with mask="99/99
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -777,14 +779,12 @@ exports[`Android BpkTextInput dark mode should render correctly with mask="99/99
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(255, 255, 255, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -822,6 +822,7 @@ exports[`Android BpkTextInput dark mode should render correctly with mask="9999-
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -839,6 +840,7 @@ exports[`Android BpkTextInput dark mode should render correctly with mask="9999-
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -850,14 +852,12 @@ exports[`Android BpkTextInput dark mode should render correctly with mask="9999-
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(255, 255, 255, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -895,6 +895,7 @@ exports[`Android BpkTextInput dark mode should render correctly with valid 1`] =
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -912,6 +913,7 @@ exports[`Android BpkTextInput dark mode should render correctly with valid 1`] =
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -923,14 +925,12 @@ exports[`Android BpkTextInput dark mode should render correctly with valid 1`] =
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(255, 255, 255, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -995,6 +995,7 @@ exports[`Android BpkTextInput dark mode should render correctly with valid false
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -1012,6 +1013,7 @@ exports[`Android BpkTextInput dark mode should render correctly with valid false
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -1023,14 +1025,12 @@ exports[`Android BpkTextInput dark mode should render correctly with valid false
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(255, 255, 255, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -1095,6 +1095,7 @@ exports[`Android BpkTextInput dark mode should render correctly with valid false
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -1112,6 +1113,7 @@ exports[`Android BpkTextInput dark mode should render correctly with valid false
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -1123,14 +1125,12 @@ exports[`Android BpkTextInput dark mode should render correctly with valid false
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(255, 255, 255, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -1217,6 +1217,7 @@ exports[`Android BpkTextInput dark mode should render correctly with value 1`] =
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -1234,6 +1235,7 @@ exports[`Android BpkTextInput dark mode should render correctly with value 1`] =
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -1245,14 +1247,12 @@ exports[`Android BpkTextInput dark mode should render correctly with value 1`] =
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(255, 255, 255, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -1290,6 +1290,7 @@ exports[`Android BpkTextInput dark mode should support font theming 1`] = `
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -1307,6 +1308,7 @@ exports[`Android BpkTextInput dark mode should support font theming 1`] = `
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -1318,14 +1320,12 @@ exports[`Android BpkTextInput dark mode should support font theming 1`] = `
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(255, 255, 255, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -1366,6 +1366,7 @@ exports[`Android BpkTextInput dark mode should support theming 1`] = `
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -1383,6 +1384,7 @@ exports[`Android BpkTextInput dark mode should support theming 1`] = `
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -1394,14 +1396,12 @@ exports[`Android BpkTextInput dark mode should support theming 1`] = `
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(255, 255, 255, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -1439,6 +1439,7 @@ exports[`Android BpkTextInput light mode should ignore when placeholder is provi
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -1456,6 +1457,7 @@ exports[`Android BpkTextInput light mode should ignore when placeholder is provi
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -1467,14 +1469,12 @@ exports[`Android BpkTextInput light mode should ignore when placeholder is provi
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(0, 0, 0, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -1512,6 +1512,7 @@ exports[`Android BpkTextInput light mode should render correctly 1`] = `
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -1529,6 +1530,7 @@ exports[`Android BpkTextInput light mode should render correctly 1`] = `
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -1540,14 +1542,12 @@ exports[`Android BpkTextInput light mode should render correctly 1`] = `
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(0, 0, 0, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -1585,6 +1585,7 @@ exports[`Android BpkTextInput light mode should render correctly with \`accessor
   >
     <Text
       allowFontScaling={false}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -1603,6 +1604,7 @@ exports[`Android BpkTextInput light mode should render correctly with \`accessor
     </Text>
     <View />
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -1615,14 +1617,12 @@ exports[`Android BpkTextInput light mode should render correctly with \`accessor
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(0, 0, 0, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -1660,6 +1660,7 @@ exports[`Android BpkTextInput light mode should render correctly with arbitrary 
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -1677,6 +1678,7 @@ exports[`Android BpkTextInput light mode should render correctly with arbitrary 
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -1688,14 +1690,12 @@ exports[`Android BpkTextInput light mode should render correctly with arbitrary 
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(0, 0, 0, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -1738,6 +1738,7 @@ exports[`Android BpkTextInput light mode should render correctly with custom sty
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -1755,6 +1756,7 @@ exports[`Android BpkTextInput light mode should render correctly with custom sty
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -1766,14 +1768,12 @@ exports[`Android BpkTextInput light mode should render correctly with custom sty
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(0, 0, 0, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -1811,6 +1811,7 @@ exports[`Android BpkTextInput light mode should render correctly with descriptio
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -1828,6 +1829,7 @@ exports[`Android BpkTextInput light mode should render correctly with descriptio
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -1839,14 +1841,12 @@ exports[`Android BpkTextInput light mode should render correctly with descriptio
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(0, 0, 0, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -1906,6 +1906,7 @@ exports[`Android BpkTextInput light mode should render correctly with descriptio
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -1923,6 +1924,7 @@ exports[`Android BpkTextInput light mode should render correctly with descriptio
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -1934,14 +1936,12 @@ exports[`Android BpkTextInput light mode should render correctly with descriptio
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(0, 0, 0, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -2028,6 +2028,7 @@ exports[`Android BpkTextInput light mode should render correctly with editable=f
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -2045,6 +2046,7 @@ exports[`Android BpkTextInput light mode should render correctly with editable=f
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -2056,14 +2058,12 @@ exports[`Android BpkTextInput light mode should render correctly with editable=f
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={false}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(0, 0, 0, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -2101,6 +2101,7 @@ exports[`Android BpkTextInput light mode should render correctly with inputRef s
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -2118,6 +2119,7 @@ exports[`Android BpkTextInput light mode should render correctly with inputRef s
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -2129,14 +2131,12 @@ exports[`Android BpkTextInput light mode should render correctly with inputRef s
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(0, 0, 0, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -2174,6 +2174,7 @@ exports[`Android BpkTextInput light mode should render correctly with mask="99/9
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -2191,6 +2192,7 @@ exports[`Android BpkTextInput light mode should render correctly with mask="99/9
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -2202,14 +2204,12 @@ exports[`Android BpkTextInput light mode should render correctly with mask="99/9
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(0, 0, 0, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -2247,6 +2247,7 @@ exports[`Android BpkTextInput light mode should render correctly with mask="9999
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -2264,6 +2265,7 @@ exports[`Android BpkTextInput light mode should render correctly with mask="9999
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -2275,14 +2277,12 @@ exports[`Android BpkTextInput light mode should render correctly with mask="9999
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(0, 0, 0, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -2320,6 +2320,7 @@ exports[`Android BpkTextInput light mode should render correctly with valid 1`] 
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -2337,6 +2338,7 @@ exports[`Android BpkTextInput light mode should render correctly with valid 1`] 
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -2348,14 +2350,12 @@ exports[`Android BpkTextInput light mode should render correctly with valid 1`] 
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(0, 0, 0, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -2420,6 +2420,7 @@ exports[`Android BpkTextInput light mode should render correctly with valid fals
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -2437,6 +2438,7 @@ exports[`Android BpkTextInput light mode should render correctly with valid fals
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -2448,14 +2450,12 @@ exports[`Android BpkTextInput light mode should render correctly with valid fals
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(0, 0, 0, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -2520,6 +2520,7 @@ exports[`Android BpkTextInput light mode should render correctly with valid fals
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -2537,6 +2538,7 @@ exports[`Android BpkTextInput light mode should render correctly with valid fals
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -2548,14 +2550,12 @@ exports[`Android BpkTextInput light mode should render correctly with valid fals
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(0, 0, 0, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -2642,6 +2642,7 @@ exports[`Android BpkTextInput light mode should render correctly with value 1`] 
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -2659,6 +2660,7 @@ exports[`Android BpkTextInput light mode should render correctly with value 1`] 
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -2670,14 +2672,12 @@ exports[`Android BpkTextInput light mode should render correctly with value 1`] 
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(0, 0, 0, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -2715,6 +2715,7 @@ exports[`Android BpkTextInput light mode should support font theming 1`] = `
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -2732,6 +2733,7 @@ exports[`Android BpkTextInput light mode should support font theming 1`] = `
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -2743,14 +2745,12 @@ exports[`Android BpkTextInput light mode should support font theming 1`] = `
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(0, 0, 0, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
@@ -2791,6 +2791,7 @@ exports[`Android BpkTextInput light mode should support theming 1`] = `
   >
     <Text
       allowFontScaling={true}
+      collapsable={false}
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
@@ -2808,6 +2809,7 @@ exports[`Android BpkTextInput light mode should support theming 1`] = `
       Name
     </Text>
     <View
+      collapsable={false}
       style={
         Object {
           "alignItems": "center",
@@ -2819,14 +2821,12 @@ exports[`Android BpkTextInput light mode should support theming 1`] = `
       }
     >
       <TextInput
-        allowFontScaling={true}
         clearButtonMode="while-editing"
         editable={true}
         onBlur={[Function]}
         onFocus={[Function]}
         placeholder={null}
         placeholderTextColor="rgba(0, 0, 0, 0.2)"
-        rejectResponderTermination={true}
         style={
           Array [
             Object {
