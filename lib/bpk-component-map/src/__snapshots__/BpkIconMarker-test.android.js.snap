@@ -22,6 +22,7 @@ exports[`Android dark mode dark mode should render correctly 1`] = `
       },
     ]
   }
+  tracksViewChanges={false}
   zIndex={null}
 >
   <View
@@ -125,6 +126,7 @@ exports[`Android dark mode dark mode should render correctly with disabled={true
       },
     ]
   }
+  tracksViewChanges={false}
   zIndex={null}
 >
   <View
@@ -237,6 +239,7 @@ exports[`Android dark mode dark mode should render correctly with status=default
       },
     ]
   }
+  tracksViewChanges={false}
   zIndex={null}
 >
   <View
@@ -340,6 +343,7 @@ exports[`Android dark mode dark mode should render correctly with status=focused
       },
     ]
   }
+  tracksViewChanges={false}
   zIndex={null}
 >
   <View
@@ -473,6 +477,7 @@ exports[`Android dark mode dark mode should render correctly with zIndex 1`] = `
       },
     ]
   }
+  tracksViewChanges={false}
   zIndex={1000}
 >
   <View
@@ -576,6 +581,7 @@ exports[`Android dark mode light mode should render correctly 1`] = `
       },
     ]
   }
+  tracksViewChanges={false}
   zIndex={null}
 >
   <View
@@ -679,6 +685,7 @@ exports[`Android dark mode light mode should render correctly with disabled={tru
       },
     ]
   }
+  tracksViewChanges={false}
   zIndex={null}
 >
   <View
@@ -791,6 +798,7 @@ exports[`Android dark mode light mode should render correctly with status=defaul
       },
     ]
   }
+  tracksViewChanges={false}
   zIndex={null}
 >
   <View
@@ -894,6 +902,7 @@ exports[`Android dark mode light mode should render correctly with status=focuse
       },
     ]
   }
+  tracksViewChanges={false}
   zIndex={null}
 >
   <View
@@ -1027,6 +1036,7 @@ exports[`Android dark mode light mode should render correctly with zIndex 1`] = 
       },
     ]
   }
+  tracksViewChanges={false}
   zIndex={1000}
 >
   <View
@@ -1130,6 +1140,7 @@ exports[`Android light mode dark mode should render correctly 1`] = `
       },
     ]
   }
+  tracksViewChanges={false}
   zIndex={null}
 >
   <View
@@ -1233,6 +1244,7 @@ exports[`Android light mode dark mode should render correctly with disabled={tru
       },
     ]
   }
+  tracksViewChanges={false}
   zIndex={null}
 >
   <View
@@ -1345,6 +1357,7 @@ exports[`Android light mode dark mode should render correctly with status=defaul
       },
     ]
   }
+  tracksViewChanges={false}
   zIndex={null}
 >
   <View
@@ -1448,6 +1461,7 @@ exports[`Android light mode dark mode should render correctly with status=focuse
       },
     ]
   }
+  tracksViewChanges={false}
   zIndex={null}
 >
   <View
@@ -1581,6 +1595,7 @@ exports[`Android light mode dark mode should render correctly with zIndex 1`] = 
       },
     ]
   }
+  tracksViewChanges={false}
   zIndex={1000}
 >
   <View
@@ -1684,6 +1699,7 @@ exports[`Android light mode light mode should render correctly 1`] = `
       },
     ]
   }
+  tracksViewChanges={false}
   zIndex={null}
 >
   <View
@@ -1787,6 +1803,7 @@ exports[`Android light mode light mode should render correctly with disabled={tr
       },
     ]
   }
+  tracksViewChanges={false}
   zIndex={null}
 >
   <View
@@ -1899,6 +1916,7 @@ exports[`Android light mode light mode should render correctly with status=defau
       },
     ]
   }
+  tracksViewChanges={false}
   zIndex={null}
 >
   <View
@@ -2002,6 +2020,7 @@ exports[`Android light mode light mode should render correctly with status=focus
       },
     ]
   }
+  tracksViewChanges={false}
   zIndex={null}
 >
   <View
@@ -2135,6 +2154,7 @@ exports[`Android light mode light mode should render correctly with zIndex 1`] =
       },
     ]
   }
+  tracksViewChanges={false}
   zIndex={1000}
 >
   <View
