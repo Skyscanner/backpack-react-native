@@ -20,22 +20,15 @@ package net.skyscanner.backpack.reactnative.calendar
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
-import com.jakewharton.threetenabp.AndroidThreeTen
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
-import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.threeten.bp.LocalDate
+import java.time.LocalDate
 import java.util.Locale
 
 @RunWith(AndroidJUnit4::class)
 class CalendarControllerTest {
-
-  @Before
-  fun setup() {
-    AndroidThreeTen.init(InstrumentationRegistry.getInstrumentation().targetContext)
-  }
 
   @Test
   fun test_is_date_disabled() {

@@ -26,7 +26,7 @@ import org.junit.Assert.assertEquals
 import org.junit.Assert.assertThat
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.threeten.bp.LocalDate
+import java.time.LocalDate
 
 @RunWith(AndroidJUnit4::class)
 class TypeConversionsTest {

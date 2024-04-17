@@ -18,7 +18,7 @@
 package net.skyscanner.backpack.reactnative.calendar
 
 import com.facebook.react.bridge.JSApplicationIllegalArgumentException
-import org.threeten.bp.LocalDate
+import java.time.bp.LocalDate
 
 interface DateMatcher {
   companion object {
