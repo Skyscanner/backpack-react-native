@@ -20,7 +20,6 @@ package net.skyscanner.backpack.reactnative.calendar
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
-import com.jakewharton.threetenabp.AndroidThreeTen
 import net.skyscanner.backpack.calendar.BpkCalendar
 import net.skyscanner.backpack.calendar.model.CalendarCellStyle
 import net.skyscanner.backpack.calendar.model.ColoredBucket
@@ -30,11 +29,10 @@ import net.skyscanner.backpack.reactnative.testing.ReactContextTestRule
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertTrue
-import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.threeten.bp.LocalDate
+import java.time.LocalDate
 import java.util.*
 
 @RunWith(AndroidJUnit4::class)
@@ -42,11 +40,6 @@ class RNCalendarViewTest {
 
   @get:Rule
   val contextRule = ReactContextTestRule()
-
-  @Before
-  fun setup() {
-    AndroidThreeTen.init(InstrumentationRegistry.getInstrumentation().targetContext)
-  }
 
   @Test
   fun test_render() {

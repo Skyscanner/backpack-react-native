@@ -20,22 +20,15 @@ package net.skyscanner.backpack.reactnative.calendar
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import com.facebook.react.bridge.JSApplicationIllegalArgumentException
-import com.jakewharton.threetenabp.AndroidThreeTen
 import net.skyscanner.backpack.reactnative.testing.Matchers.throws
 import org.hamcrest.Matchers.*
 import org.junit.Assert.*
-import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.threeten.bp.LocalDate
+import java.time.LocalDate
 
 @RunWith(AndroidJUnit4::class)
 class DateMatcherTest {
-
-  @Before
-  fun setup() {
-    AndroidThreeTen.init(InstrumentationRegistry.getInstrumentation().targetContext)
-  }
 
   @Test
   fun test_create_range_matcher_from_js() {

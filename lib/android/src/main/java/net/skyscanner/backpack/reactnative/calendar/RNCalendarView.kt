@@ -29,7 +29,7 @@ import net.skyscanner.backpack.calendar.model.CalendarSelection
 import net.skyscanner.backpack.calendar.model.SingleDay
 import net.skyscanner.backpack.calendar.presenter.SelectionType
 import net.skyscanner.backpack.reactnative.BpkViewStateHolder
-import org.threeten.bp.LocalDate
+import java.time.bp.LocalDate
 import java.util.Locale
 
 @SuppressLint("ViewConstructor")

@@ -3,7 +3,7 @@ package net.skyscanner.backpack.reactnative.calendar
 import androidx.annotation.ColorInt
 import net.skyscanner.backpack.calendar.model.CalendarCellStyle
 import net.skyscanner.backpack.calendar.model.ColoredBucket
-import org.threeten.bp.LocalDate
+import java.time.bp.LocalDate
 
 internal data class RNColorBucket(
   @ColorInt val color: Int,

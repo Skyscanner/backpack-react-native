@@ -20,8 +20,8 @@ package net.skyscanner.backpack.reactnative.calendar
 
 import com.facebook.react.bridge.JSApplicationIllegalArgumentException
 import net.skyscanner.backpack.calendar.model.CalendarCellStyle
-import org.threeten.bp.Instant
-import org.threeten.bp.LocalDate
+import java.time.Instant
+import java.time.LocalDate
 
 internal object TypeConversions {
   fun stringToCellStyle(cellStyleString: String): CalendarCellStyle {

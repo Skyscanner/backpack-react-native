@@ -9,7 +9,6 @@ import com.facebook.react.ReactPackage
 import com.facebook.react.config.ReactFeatureFlags
 import com.facebook.react.shell.MainReactPackage
 import com.facebook.soloader.SoLoader
-import com.jakewharton.threetenabp.AndroidThreeTen
 import net.skyscanner.backpack.reactnative.BackpackReactNative
 import net.skyscanner.backpack.reactnative.button.BpkButtonPackage
 import net.skyscanner.backpack.reactnative.calendar.CalendarPackage
@@ -50,7 +49,6 @@ class MainApplication : Application(), ReactApplication {
 
   override fun onCreate() {
     super.onCreate()
-    AndroidThreeTen.init(this)
     BackpackReactNative.init(this)
     SoLoader.init(this, /* native exopackage */ false)
   }

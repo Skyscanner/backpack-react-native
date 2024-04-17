@@ -27,7 +27,6 @@ import com.facebook.react.bridge.JavaOnlyMap
 import com.facebook.react.uimanager.ReactStylesDiffMap
 import com.facebook.react.uimanager.ThemedReactContext
 import com.facebook.soloader.SoLoader
-import com.jakewharton.threetenabp.AndroidThreeTen
 import io.mockk.mockk
 import io.mockk.verify
 import net.skyscanner.backpack.calendar.presenter.HighlightedDaysAdapter
@@ -44,7 +43,7 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.threeten.bp.LocalDate
+import java.time.LocalDate
 
 @RunWith(AndroidJUnit4::class)
 class CalendarViewManagerTest {
@@ -70,7 +69,6 @@ class CalendarViewManagerTest {
   fun setup() {
     SoLoader.init(contextRule.context, 0)
 
-    AndroidThreeTen.init(InstrumentationRegistry.getInstrumentation().targetContext)
     date1 = LocalDate.of(2020, 3, 16)
     date2 = LocalDate.of(2020, 3, 20)
   }

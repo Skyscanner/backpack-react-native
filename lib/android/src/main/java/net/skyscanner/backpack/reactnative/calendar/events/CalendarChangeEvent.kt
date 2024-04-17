@@ -22,9 +22,9 @@ import com.facebook.react.bridge.WritableMap
 import com.facebook.react.uimanager.events.Event
 import com.facebook.react.uimanager.events.RCTEventEmitter
 import net.skyscanner.backpack.reactnative.calendar.CalendarViewManager
-import org.threeten.bp.LocalDate
-import org.threeten.bp.LocalDateTime
-import org.threeten.bp.LocalTime
+import java.time.LocalDate
+import java.time.LocalDateTime
+import java.time.LocalTime
 
 class CalendarChangeEvent(
   id: Int,

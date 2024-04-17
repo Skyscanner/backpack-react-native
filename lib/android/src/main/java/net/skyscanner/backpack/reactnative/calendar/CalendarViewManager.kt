@@ -30,8 +30,8 @@ import net.skyscanner.backpack.calendar.model.SingleDay
 import net.skyscanner.backpack.calendar.presenter.SelectionType
 import net.skyscanner.backpack.reactnative.calendar.events.CalendarChangeEvent
 import net.skyscanner.backpack.reactnative.extensions.getOptional
-import org.threeten.bp.LocalDate
-import org.threeten.bp.ZoneId
+import java.time.LocalDate
+import java.time.ZoneId
 
 class CalendarViewManager : ViewGroupManager<RNCalendarView>() {
 

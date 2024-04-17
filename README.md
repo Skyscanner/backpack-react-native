@@ -43,7 +43,7 @@ npm install backpack-react-native --save
     ext {
         compileSdkVersion   = 30
         targetSdkVersion    = 30
-        minSdkVersion       = 24
+        minSdkVersion       = 26
     }
   ```
 

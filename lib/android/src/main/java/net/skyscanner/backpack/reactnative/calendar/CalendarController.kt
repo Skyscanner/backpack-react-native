@@ -23,7 +23,7 @@ import net.skyscanner.backpack.calendar.model.CalendarSelection
 import net.skyscanner.backpack.calendar.presenter.BpkCalendarController
 import net.skyscanner.backpack.calendar.presenter.MonthFooterAdapter
 import net.skyscanner.backpack.calendar.presenter.SelectionType
-import org.threeten.bp.LocalDate
+import java.time.LocalDate
 import java.util.*
 
 typealias ChangeCallback = (CalendarSelection) -> Unit
