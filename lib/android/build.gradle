@@ -22,10 +22,10 @@ def getPackageJson(project) {
 }
 
 def _reactNativeVersion = safeExtGet("reactNative", "+")
-def _backpackAndroidVersion = safeExtGet("backpackVersion", "42.2.2")
-def _compileSdkVersion = safeExtGet("compileSdkVersion", 33)
-def _targetSdkVersion = safeExtGet("targetSdkVersion", 33)
-def _minSdkVersion = safeExtGet("minSdkVersion", 26)
+def _backpackAndroidVersion = safeExtGet("backpackVersion", "62.0.0")
+def _compileSdkVersion = safeExtGet("compileSdkVersion", 34)
+def _targetSdkVersion = safeExtGet("targetSdkVersion", 34)
+def _minSdkVersion = safeExtGet("minSdkVersion", 28)
 def _internalBuild = safeExtGet("internalBuild", false)
 
 apply plugin: "com.android.library"
